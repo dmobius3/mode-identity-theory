@@ -1590,4 +1590,14 @@ logical dependence runs the other way, and the paper is ordered by the logic.
 
 ---
 
+## Citation
+
+```
+Shatto, B. (2026)
+The Surviving Ray: channel selection for a cubic self-interaction on S³/2I
+https://doi.org/10.5281/zenodo.22681501
+```
+
+---
+
 / **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
