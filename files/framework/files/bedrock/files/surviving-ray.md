@@ -631,7 +631,8 @@ drawing any conclusion from the index $`K`$ alone. Since $`M_0`$ turns out to be
 direction, the selection theorem needs only that $`M_6`$ is *not* radial, which is what makes the
 surviving ray a ray rather than nothing. That is proved in Section 5 from material the theorem needs
 anyway, and is not assumed here. The seven $`M_K`$ together span $`\mathscr{E}_3`$, verified by
-exact computation. That is a separate fact and is not used below.
+exact computation. That is a separate fact: the selection argument does not use it, and Section 5.2
+uses it only to explain how the weights $`w_K`$ are defined.
 
 ### 4.3 The spine
 
@@ -809,7 +810,10 @@ $`\lVert\rho_K(u)\rVert^2`$ are not linearly independent. A real $`\mathrm{SU}(2
 quartic of type $`(2,2)`$ on $`V_3`$ has the form $`\langle u \otimes u,\, T(u \otimes u)\rangle`$
 for a Hermitian equivariant endomorphism $`T`$ of
 $`\mathrm{Sym}^2 V_3 = V_6 \oplus V_4 \oplus V_2 \oplus V_0`$, and because that decomposition is
-multiplicity-free such $`T`$ form a real four-dimensional space. The seven quartics span it, so they
+multiplicity-free such $`T`$ form a real four-dimensional space. The seven quartics span it: by
+Euler's identity the map $`\widetilde{Q} \mapsto \nabla_{\bar u}\widetilde{Q}`$ is injective on
+homogeneous quartics (Section 7.5), it sends $`\lVert\rho_K\rVert^2`$ to $`c_K M_K`$ with every
+$`c_K`$ nonzero (Section 5.5), and the seven $`M_K`$ span $`\mathscr{E}_3`$ (Section 4.2). So they
 satisfy three independent linear relations, and $`Q`$ alone does not fix the coefficients of an
 expansion in them: the $`w_K`$ are the ones the Peter-Weyl factorisation produces, not coefficients
 read off from $`Q`$. Nothing downstream turns on this. Only $`w_0`$ and $`w_6`$ are nonzero, since
