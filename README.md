@@ -247,12 +247,6 @@ All predictions below were locked before Data Release 1 and deposited on Zenodo.
 
 ---
 
->[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave)
->
->**[OpenWave](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)**: an open-source subatomic physics simulator, and a neutral arena that holds candidate field theories to the same public pass/fail criteria.
-
----
-
 >[![The Whole of the Moon](https://img.youtube.com/vi/pu7AR0-FRro/mqdefault.jpg)](https://www.youtube.com/watch?v=pu7AR0-FRro)
 >
 >*Video: [The Waterboys - The Whole of the Moon](https://www.youtube.com/watch?v=pu7AR0-FRro)*
