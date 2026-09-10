@@ -243,7 +243,7 @@ Technical gaps with specific paths forward.
 - **dist/30 Hierarchy Exponent:** Three convergent paths connect McKay graph distance to the Coxeter number of $`E_8`$ as the scaling exponent; single-principle derivation open. *Deps:* McKay correspondence, $`E_8`$ Coxeter number.
 - **Scale Consistency:** Three gauge couplings evaluated at different energy scales; $`\alpha`$ hits 0.4% at low energy but 6.2% at $`M_Z`$, so the framework must commit to one evaluation scale or derive running from MIT structure. *Deps:* gauge coupling derivation (engine §15), scaling law.
 - **$`\alpha`$ Exponent:** The $`\alpha`$ exponent equals the minimum grid step; two convergent paths remain and the uniqueness scan confirms, but single-principle derivation is open. *Deps:* grid structure, scaling law.
-- **Plato Twist Derivation:** $`\cos(\pi/10)`$ is motivated by the dodecahedral half-defect and parity violation; the open link is the operator-level mechanism connecting $`\mathbb{Z}_2`$ holonomy to the multiplicative cosine projection on weak coupling. *Deps:* Möbius non-orientability, stabilizer decomposition.
+- **Plato Twist Derivation:** the value $`\cos(\pi/10)`$ has a computed geometric realization, the spin lift of the Levi-Civita holonomy around the shortest closed geodesic of $`S^3/2I`$, where the flat $`2I`$ holonomy gives $`\cos(\pi/5)`$ instead; the open link is its insertion into the weak coupling: which loop, which power, and why the weak row alone. See [The Plato Twist](files/plato-twist.md). *Deps:* spin structure of $`S^3/2I`$, stabilizer decomposition.
 
 ---
 
