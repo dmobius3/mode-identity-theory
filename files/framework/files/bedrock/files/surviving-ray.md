@@ -553,7 +553,7 @@ survives only when $`\left(V_K\right)^{2I} \neq 0`$.
 The density's left content is $`V_3 \otimes \overline{V_3}`$, which spans ranks 0 through 6, that is
 levels 0 through 12. That window is closed: the density cannot reach beyond level 12, so what
 happens at level 20 and above is irrelevant to it. Within the window, the dimensions recorded in
-Section 2.4 leave exactly two survivors, at levels 0 and 12.
+Section 2.4 leave exactly two survivors, at levels 0 and 12 (Figure 1).
 
 > **Lemma 4.1.** The density of a block state at level 6 has the form
 >
@@ -562,6 +562,10 @@ Section 2.4 leave exactly two survivors, at levels 0 and 12.
 > ```
 >
 > a constant plus a level-12 component. No intermediate level occurs.
+
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/channel-filter.png?raw=true" width="75%" alt="The channel filter: the left factor is nonzero at every rank from 0 to 6, the right factor only at ranks 0 and 6, so the self-interaction lies in the span of M0 and M6 and, modulo the radial M0, is the single ray M6">
+
+**Figure 1.** The channel filter. At level 6 the left factor $`\rho_K(u)`$ of the density's level-$`2K`$ component is generically nonzero at every rank $`K = 0, \dots, 6`$, but the right factor $`R_K(P)`$ lies in $`(V_K)^{2I}`$, which is zero except at $`K = 0`$ and $`K = 6`$ (Lemma 4.1). Only those two channels survive: the self-interaction lies in $`\mathrm{span}\{M_0, M_6\}`$ with $`M_0`$ radial, and modulo the radial direction it spans the single projective ray $`[M_6]`$ (Theorem 5.1).
 
 This is the first of the paper's two icosahedral inputs, the invariant-degree filter. It gives five
 vanishings and is silent both on whether the surviving ranks select single maps and on whether the
@@ -1217,7 +1221,11 @@ row there, $`1/7, 0, 0, 0, 6/11, 0, 24/77`$. Its reappearance is a check rather 
 an octahedron has a three-fold axis through opposite faces, so it has to occur in this locus. The
 tabulated state is exact by the same standard, with no root-finding: its sextic is a constant times
 $`z(z^4+1)`$, of degree 5, so one root sits at the far pole, one at the origin and four at the
-fourth roots of $`-1`$, spaced $`90^\circ`$ apart on the equator.
+fourth roots of $`-1`$, spaced $`90^\circ`$ apart on the equator. Figure 2 draws the four shapes.
+
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/majorana-constellations.png?raw=true" width="90%" alt="Majorana constellations on the unit sphere: a hexagon on the equator, an octahedron, a pentagonal pyramid and a trigonal prism, each labelled with its value of the rank-6 multipole norm">
+
+**Figure 2.** Majorana constellations of the four six-vertex shapes among the critical rays of Section 5.8, each drawn on the unit sphere with its value of $`\lVert\rho_6\rVert^2`$: the hexagon $`(v_3 + v_{-3})/\sqrt{2}`$, the octahedron $`(v_2 + v_{-2})/\sqrt{2}`$, the pentagonal pyramid on the line $`\cos t\, v_2 + \sin t\, v_{-3}`$ at $`\sin^2 t = 12/25`$, and the trigonal prism $`v_3 + \sqrt{23/10}\, v_0 + v_{-3}`$, whose two triangles are aligned. Filled points face the viewer, and dashed edges are hidden.
 
 The hexagonal value is the largest of the four, and it is not this paper's. Romero, Klimov,
 Goldberg, Leuchs and Sanchez-Soto give the closed form
@@ -1481,7 +1489,8 @@ least 3.
 
 *Critical rays occur here with all four of the shape types [BTD] names*: the hexagon at $`463/924`$,
 the octahedron at $`288/924`$, the pentagonal pyramid at $`9/35`$ and the trigonal prism at
-$`200/903`$, the last two found in Section 5.8 on symmetric loci rather than at isolated points.
+$`200/903`$ (Figure 2), the last two found in Section 5.8 on symmetric loci rather than at isolated
+points.
 
 That is a statement about shape types and not yet about that paper's phase orbits, and the
 difference is real. "Pentagonal pyramid" is not one ray but a one-parameter family, a pole plus a
