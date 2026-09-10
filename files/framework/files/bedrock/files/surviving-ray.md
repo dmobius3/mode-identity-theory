@@ -804,6 +804,25 @@ and the critical set do not.
 Lemma 4.1 in this language says $`R_K(P) = 0`$ for $`K = 1,\dots,5`$, which is a statement about
 $`P`$ and leaves $`\rho_K(u)`$ untouched.
 
+The formula is also what defines the individual $`w_K`$, because the seven quartics
+$`\lVert\rho_K(u)\rVert^2`$ are not linearly independent. A real $`\mathrm{SU}(2)`$-invariant
+quartic of type $`(2,2)`$ on $`V_3`$ has the form $`\langle u \otimes u,\, T(u \otimes u)\rangle`$
+for a Hermitian equivariant endomorphism $`T`$ of
+$`\mathrm{Sym}^2 V_3 = V_6 \oplus V_4 \oplus V_2 \oplus V_0`$, and because that decomposition is
+multiplicity-free such $`T`$ form a real four-dimensional space. The seven quartics span it, so they
+satisfy three independent linear relations, and $`Q`$ alone does not fix the coefficients of an
+expansion in them: the $`w_K`$ are the ones the Peter-Weyl factorisation produces, not coefficients
+read off from $`Q`$. Nothing downstream turns on this. Only $`w_0`$ and $`w_6`$ are nonzero, since
+$`R_K(P) = 0`$ for $`K = 1,\dots,5`$, and the $`K = 0`$ term is the constant $`w_0/7 = 1`$, so
+
+```math
+Q([u]) \;=\; 1 + w_6\,\frac{\lVert\rho_6(u)\rVert^2}{\lVert u\rVert^4} .
+```
+
+The ratio on the right is not constant on rays, so $`Q`$ determines $`w_6`$ as its slope against
+that ratio: the weight derived in Section 5.3 belongs to the functional, not to the way it is
+written.
+
 ### 5.3 The weight
 
 > **Lemma 5.2.** $`\lVert R_6(P)\rVert^2 = d(7-d)/7`$, and $`\lVert R_0(P)\rVert^2 = d^2/7`$.
@@ -1598,6 +1617,20 @@ The Surviving Ray: channel selection for a cubic self-interaction on S³/2I.
 Zenodo.
 https://doi.org/10.5281/zenodo.22681501
 ```
+
+---
+
+## Independent numerical certification
+
+[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md)
+
+The results of this paper have been reproduced on the OpenWave M8 track by an independent, blind computation. Two agents, a solver and an auditor, built every object from its definition in their own code, working from a two-stage handout with no access to the paper, its title or any value it claims. The group entered only as the two unit quaternions that generate it, and both agents derived its order, perfectness, invariant degrees and branching from those generators instead of importing them from a recognised group. The auditor worked on disjoint primitives, with its own Racah-formula couplings, the group in exact $`\mathbb{Q}(\sqrt{5}, i)`$ arithmetic, projectors from Casimir operators and a Haar quadrature that does not use Schur orthogonality, and then tried to refute every answer the solver gave. It refuted no value: 80 of its 81 exact comparisons agreed outright, and the last differed by a change of convention that the audit proved.
+
+All twenty-one pre-registered claims reproduced. On the ambient side, $`\mathrm{Sym}^3 V_3 = V_1 \oplus 2V_3 \oplus V_4 \oplus V_5 \oplus V_6 \oplus V_7 \oplus V_9`$ came out with no $`V_8`$, $`M_0(u) = -\lVert u\rVert^2 u/\sqrt{7}`$ is radial, and $`M_6`$ is diagonal on the weight basis with entries proportional to the squared binomials $`1, 36, 225, 400, 225, 36, 1`$. Proposition 3.3 is where the run was built to be hardest. The first stage withheld the normalisation that points toward the first transvectant, and both agents still found that route on their own and proved, rather than sampled, that the spin-8 channel vanishes exactly on the time-reversal-invariant rays.
+
+On the quotient, the invariants among ranks 0 to 6 sit only at ranks 0 and 6, and $`V_3`$ restricts to two constituents of dimensions 3 and 4. Theorem 5.1 reproduced: the self-interaction came out as $`(d/7)\lVert u\rVert^2 u - ((7-d)/\sqrt{91})\,M_6(u)`$ in the sector of dimension $`d`$, a radial term plus a nonzero multiple of $`M_6`$, the single projective ray of clause 4, with $`\lVert R_6\rVert^2 = 12/7`$ in both sectors, $`w_0 = 7`$, $`w_6/w_0 = (7-d)/(13d)`$ and normalisations 1287 and 2288. The degree-12 invariant $`I_{12}`$ has twelve simple roots, and the transvectant map Section 5.7 builds on it is injective. The tabulated critical rays came out at $`924\,\lVert\rho_6\rVert^2 = 1, 400, 288, 463`$, the chart carries exactly five critical points, found by Gröbner elimination and confirmed by an independent Newton census, and the named shapes came out as Section 5.8 gives them: the trigonal prism and the regular octahedron on the three-fold locus, and the pentagonal pyramid at $`9/35`$. Corollaries 5.4 to 5.6 reproduced as stated, down to $`Q_{\mathbf{3}'} - Q_{\mathbf{4}} = \tfrac{49}{156}\,\widehat{r}_6`$. The second quartic, built from $`\psi\psi^{T}`$, lands on a different plane: the four maps involved have rank 4.
+
+The audit also supplied a clarification rather than a correction. The seven multipole quartics $`\lVert\rho_K(u)\rVert^2`$ satisfy three linear relations, so the individual weights of Section 5.2 are fixed by its Peter-Weyl formula rather than by the quartic alone; that section records the point, and no reported value depends on it. This is a blind recomputation of what the paper claims, from definitions, not a second proof: the proofs were not checked line by line, the run stops at level 6 and at the two interactions built there, the general-spin constant of Section 5.9 was left out of the claims because checking several spins does not verify a formula in $`j`$, and no dynamics was run. The [method note](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md) carries the full record.
 
 ---
 
