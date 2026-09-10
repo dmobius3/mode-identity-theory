@@ -241,8 +241,8 @@ All predictions below were locked before Data Release 1 and deposited on Zenodo.
 
 ---
 
->[![Interactive NotebookLM](/files/assets/notebooklm-banner-aligned.svg)](https://notebook.google.com/notebook/510d4424-8462-44fe-9c96-25a0aedd71d1)
->
+[![Interactive NotebookLM](/files/assets/notebooklm-banner-aligned.svg)](https://notebook.google.com/notebook/510d4424-8462-44fe-9c96-25a0aedd71d1)
+
 >**[Gemini Notebook](https://notebook.google.com/notebook/510d4424-8462-44fe-9c96-25a0aedd71d1)**: a NotebookLM grounded in the framework; ask it anything, or hear the audio overview.
 
 ---
