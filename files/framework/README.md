@@ -451,9 +451,9 @@ The same stabilizers give two further entries that are not primes but correction
 | Combination | Value | Role | Mechanism |
 |---|---|---|---|
 | Face / base-edge stabilizer | 3/2 | gravity correspondence | ratio of the $`Z_3`$ face order to the base $`Z_2`$ edge order, matched to the vacuum-reference 3/2; the geometric conversion is derived separately in One Interface |
-| Vertex $`\times`$ twist | $`\cos(\pi/10)`$ | weak coupling correction | dodecahedral defect $`\pi/5`$, taken to be halved by the Möbius $`Z_2`$ |
+| Vertex $`\times`$ twist | $`\cos(\pi/10)`$ | weak coupling correction | the $`\pi/5`$ gluing twist of the shortest closed geodesic, a five-fold axis, whose spin lift has half-trace $`\cos(\pi/10)`$; its entry into the coupling is open |
 
-The 3/2 entry is the conjectural one and is not this section's to adjudicate: it is the raw stabilizer ratio, and the fence separating it from the vacuum conversion and the clock exponent is kept in [One Interface](#one-interface), which owns the geometric derivation. The $`\cos(\pi/10)`$ entry is motivated, not derived, and is stated where it is used, in the gauge ladder, with the operator-level step from the Möbius orientation $`Z_2`$ to a multiplicative cosine still open. That Möbius $`Z_2`$ is the orientation twist, distinct again from the central $`-I`$ two rows above.
+The 3/2 entry is the conjectural one and is not this section's to adjudicate: it is the raw stabilizer ratio, and the fence separating it from the vacuum conversion and the clock exponent is kept in [One Interface](#one-interface), which owns the geometric derivation. The $`\cos(\pi/10)`$ entry is stated where it is used, in the gauge ladder: the number is a computed holonomy invariant, and its entry into the weak coupling is motivated, not derived. Its halving comes from the spin double cover, the same integer-versus-half-integer split the central $`-I`$ sorts, not from the Möbius orientation $`Z_2`$, which stays a distinct sign.
 
 The stabilizers determine the decompositions and MIT's dictionary gives them their physical reading, all from the same topology. What leaves this section is what the rest of the page samples: the two grids, and the address $`(\rho, \sigma)`$ with its color, spin and electroweak content fixed. The observable law that reads them is already in hand; which entry lands on which measured fermion is decided later, by the masses rather than the topology.
 
@@ -497,7 +497,7 @@ The couplings then follow one assignment rule: the phase slot inherits the grid 
 | Weak ($`\alpha_W`$) | 120 (fermion-changing action) | 120 (fermion transitions) | $`C(17/120) \cdot \Omega_\Lambda^{-1/120} \cdot \cos(\pi/10)`$ | 0.0339 | 0.0338 | 0.3% |
 | Vacant 120/60 pairing (SUSY reading) | 120 (fermionic carrier) | 60R (bosonic target) | none: would change fermion/boson class | — | no superpartners | vacant (ladder rule) |
 
-The $`\cos(\pi/10)`$ factor on the weak coupling is a motivated correction, the dodecahedral defect taken to be halved by the Möbius $`Z_2`$, not a derived one.
+The $`\cos(\pi/10)`$ factor on the weak coupling is a motivated correction, not a derived one: the number occurs as the spin-lifted Levi-Civita holonomy around the shortest closed geodesic, and why the coupling carries it is open.
 
 **Reference scale.** The displayed values compare $`\alpha`$ at low energy with $`\alpha_s`$ and $`\alpha_W`$ in their conventional $`Z`$-mass normalizations; run to the $`Z`$ mass, $`\alpha`$ itself is about 6% from the grid value. The grid returns base assignments; reconciling the reference scales, or deriving the running from the topology, remains open.
 
@@ -719,7 +719,7 @@ One number the distance fit uses is not an input at all: the matter fraction $`\
 
 *What is still open, and what would settle it?*
 
-The body is the theory as it stands; this is the theory as a program. The largest open items are not scattered: three problems carry what the framework has spent and most of what it still bets. They are not the whole debt. Smaller opens stay in their home sections and are named there, among them $`\Lambda_\text{QCD}`$, the running of the couplings, the Möbius-to-ALE bridge, and the operator step behind the $`\cos(\pi/10)`$ correction. The full apparatus, the controls, and the dates live in the claim ledger and the [working register](files/working/README.md); the Frontier names the three problems and points to where each already lives.
+The body is the theory as it stands; this is the theory as a program. The largest open items are not scattered: three problems carry what the framework has spent and most of what it still bets. They are not the whole debt. Smaller opens stay in their home sections and are named there, among them $`\Lambda_\text{QCD}`$, the running of the couplings, the Möbius-to-ALE bridge, and the step that carries the $`\cos(\pi/10)`$ correction into the weak coupling. The full apparatus, the controls, and the dates live in the claim ledger and the [working register](files/working/README.md); the Frontier names the three problems and points to where each already lives.
 
 >**📒 [Claim Ledger](files/working/files/claim-ledger.md):** the skeptical audit of every quantitative claim, the eight-cycle calibration web, and the two live internal tensions.
 
