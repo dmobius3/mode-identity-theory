@@ -1,0 +1,22 @@
+OPH tables at 621edbb2: 60 rows, 20 faces; face signs {1: 1200}; proven character values, conjugation, squaring rule, equivariance and 12/12 split all reproduced
+
+Committed port frame: its character equals chi(W-) (lambda- = 3-sqrt5) on all sixty rotations
+Mutation arm: comparing the port frame with chi(W+) fails, as required
+
+OPH order-five port rotations: (step, port-frame character, chi on W+ (lambda+ = 3+sqrt5), chi on W- (lambda- = 3-sqrt5)): count
+  ('one-step', 'phi', '1-phi', 'phi'): 12
+  ('two-step', '1-phi', 'phi', '1-phi'): 12
+
+MIT 2I: 120 unit quaternions; Ad Q preserves the icosahedron (0, +-1, +-phi); elements acting with order five: (step, chi on Sym^2 Q): count
+  ('one-step', 'phi'): 24
+  ('two-step', '1-phi'): 24
+  (each rotation appears twice, once for each of its two lifts +-g; Sym^2 Q' is the Galois conjugate)
+  chi(Sym^2 Q) = 3, -1, 0 on the elements acting with order 1, 2, 3
+
+Bridge: chi(Sym^2 Q) = chi(W-) on every class (orders 1, 2, 3 and both step classes), so Sym^2 Q = W- and Sym^2 Q' = W+
+Mutation arm: classifying MIT's rotations with the distance-two graph breaks the bridge, as required
+
+OPH faceNormalZ = 3I - (face adjacency), and N*PLUS = (3+sqrt5)*PLUS, N*MINUS = (3-sqrt5)*MINUS, checked entrywise
+Mutation arm: swapping the two eigenvalues breaks the entrywise check, as required
+
+ALL PASS

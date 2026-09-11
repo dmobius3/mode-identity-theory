@@ -238,6 +238,14 @@ Technical gaps with specific paths forward.
 
 ---
 
+### [S³/2I and the OPH Carrier](files/s3-2i-oph-dictionary.md)
+
+**Dictionary (2026-09-11):** Where MIT's reading of $`S^3/2I`$ meets the twelve-port carrier of Observer Patch Holography, each side computing in its own terms. Classically, the carrier's coset geometry is the base of the Seifert fibration of $`S^3/2I`$, and OPH's compatibility condition $`xyz = 1`$ is that base's orbifold relation. Computed in exact arithmetic against OPH's committed tables, OPH's two golden triplets are the adjoints $`\mathrm{Sym}^2 Q`$ and $`\mathrm{Sym}^2 Q^\prime`$ of the two irreducible flat connections, with the committed port frame on $`\mathrm{Sym}^2 Q`$; the shared Galois ordering is recorded as an ordering only. Next: the low-ℓ Molien structure of $`2I`$ against OPH's frozen angular multiplet signature.
+
+**Inputs:** [Coexact gap](../bedrock/files/coexact-gap.md) §4.4, OPH's committed tables at commit 621edbb2, [golden-sector-match.test.py](files/scripts/golden-sector-match.test.py).
+
+---
+
 **Coupling and scaling exponents.** Each is a distinct single-principle-derivation gap on a gauge or scaling exponent; the load-bearing number stays in place.
 
 - **dist/30 Hierarchy Exponent:** Three convergent paths connect McKay graph distance to the Coxeter number of $`E_8`$ as the scaling exponent; single-principle derivation open. *Deps:* McKay correspondence, $`E_8`$ Coxeter number.
