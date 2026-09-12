@@ -7,7 +7,7 @@
 
 **Type:** Note
 **State:** Active
-**Status (2026-09-11):** The character match is computed: as A5 representations, the two golden triplets of OPH's committed face operator are the adjoints of the holonomies of the two irreducible flat SU(2) connections on S³/2I, with W− ≅ Sym²Q (OPH's committed port frame) and W+ ≅ Sym²Q′, checked class by class in exact arithmetic against OPH commit 621edbb2. The Seifert rows are classical and checked against their sources. Next: the low-ℓ Molien structure of 2I against OPH's frozen angular multiplet signature, FZ-02, compared as branching templates.
+**Status (2026-09-12):** The character match is computed: as A5 representations, the two golden triplets of OPH's committed face operator are the adjoints of the holonomies of the two irreducible flat SU(2) connections on S³/2I, with W− ≅ Sym²Q (OPH's committed port frame) and W+ ≅ Sym²Q′, checked class by class in exact arithmetic against OPH commit 621edbb2. The Seifert rows are classical and checked against their sources. Next: MIT's own low-ℓ Molien structure of 2I, for the CMB line, with OPH's angular packet FZ-02 beside it as a source template.
 **Summary:** Where MIT's reading of S³/2I meets the twelve-port carrier of Observer Patch Holography (OPH), each framework computing in its own terms: the Seifert base and its orbifold relation against OPH's coset carrier certificate, and OPH's two golden triplets against the adjoints of MIT's two flat connections.
 **Inputs:** `../../bedrock/files/coexact-gap.md` §4.4, `scripts/golden-sector-match.test.py`
 
@@ -23,7 +23,7 @@
 | $`\mathrm{Sym}^2 Q`$: McKay distance 2, twisted coexact gap $`4/R^2`$ | $`W_-`$, the golden image at $`\lambda_- = 3 - \sqrt5`$, with the character of the committed port frame | computed here (§II); the gap from [Coexact gap](../../bedrock/files/coexact-gap.md) §4.4 |
 | $`\mathrm{Sym}^2 Q^\prime`$: McKay distance 6, twisted coexact gap $`36/R^2`$ | $`W_+`$, the golden image at $`\lambda_+ = 3 + \sqrt5`$ | computed here (§II); the gap as above |
 | the Galois twin has the higher gap, $`36/R^2`$ against $`4/R^2`$ | the Galois twin has the higher eigenvalue, $`3 + \sqrt5`$ against $`3 - \sqrt5`$ | ordering only (§III) |
-| the low-ℓ Molien structure of $`2I`$ | FZ-02, OPH's frozen angular multiplet signature: the $`A_5`$ branching of the harmonics through $`\ell = 6`$, with the first nonconstant invariant at $`\ell = 6`$ | open (§IV) |
+| the low-ℓ Molien structure of $`2I`$ | FZ-02, OPH's frozen angular multiplet packet: the $`A_5`$ branching of the harmonics through $`\ell = 6`$, with the first nonconstant invariant at $`\ell = 6`$; since [OPH #643](https://github.com/FloatingPragma/observer-patch-holography/issues/643) a source template, its sky-facing frame-lock clause retired | open (§IV) |
 | $`2I`$ singled out by perfectness and the coexact exception | the row-4 family menu, whose convergence question is parked in [OPH #769](https://github.com/FloatingPragma/observer-patch-holography/discussions/769) | open, parked |
 
 Classical topology and the certificate together identify the compatibility condition the certificate found by exhaustive search with the orbifold relation of the Seifert base: on the icosahedron the corners of a $`(2,3,5)`$ triangle are a vertex, the midpoint of an edge at that vertex, and the centre of a face containing both, which is the incident triple the criterion detects. They also identify the binary presentation that selects the compatible placements with the fundamental group of $`S^3/2I`$. The certificate takes the finite group as supplied and claims neither identification; both are this note's reading.
@@ -51,7 +51,7 @@ A check by hand needs neither the committed projectors nor quaternions. The face
 
 ## IV. Open
 
-- **Next:** the low-ℓ Molien structure of $`2I`$ against FZ-02, comparing the two branching patterns as templates. FZ-02 is a frozen forward target in OPH's register, with its own kill bands and custody, and the comparison leaves those untouched.
+- **Next:** MIT's own low-ℓ Molien structure of $`2I`$, worked for the CMB line, with FZ-02 beside it as a source template. OPH's register keeps FZ-02 frozen, with its kill bands and custody; the status correction recorded under [OPH #643](https://github.com/FloatingPragma/observer-patch-holography/issues/643) retired the sky-facing frame-lock clause and keeps it closed until a source-derived screen-to-sky map exists. Setting two branching templates side by side touches none of that.
 - Whether the ordering in §III reflects anything beyond itself.
 - Whether OPH's $`\lambda_+`$ triplet plays any distinguished role there beyond being the Galois partner of the $`\lambda_-`$ triplet.
 - Selection: why $`2I`$ among the finite subgroups of $`\mathrm{SU}(2)`$. Parked on both sides.
