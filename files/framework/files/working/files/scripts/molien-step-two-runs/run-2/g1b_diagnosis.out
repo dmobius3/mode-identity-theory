@@ -1,0 +1,54 @@
+ l   CAMB/Planck - 1   (lensed; unlensed/lensed - 1)
+ 2   +0.00036   (-3.2e-06)
+ 3   -0.00072   (-6.8e-06)
+ 4   -0.00110   (-1.2e-05)
+ 5   -0.00144   (-1.9e-05)
+ 6   -0.00165   (-2.7e-05)
+ 7   -0.00196   (-3.7e-05)
+ 8   -0.00216  > 2e-3   (-4.8e-05)
+ 9   -0.00211  > 2e-3   (-6.0e-05)
+10   -0.00200   (-7.3e-05)
+11   -0.00158   (-8.7e-05)
+12   -0.00184   (-1.0e-04)
+13   -0.00162   (-1.2e-04)
+14   -0.00091   (-1.3e-04)
+15   -0.00026   (-1.5e-04)
+16   -0.00003   (-1.7e-04)
+17   -0.00025   (-1.8e-04)
+18   -0.00123   (-2.0e-04)
+19   -0.00137   (-2.2e-04)
+20   -0.00148   (-2.4e-04)
+21   -0.00141   (-2.6e-04)
+22   -0.00131   (-2.8e-04)
+23   -0.00143   (-2.9e-04)
+24   -0.00153   (-3.1e-04)
+25   -0.00146   (-3.3e-04)
+26   -0.00154   (-3.5e-04)
+27   -0.00162   (-3.7e-04)
+28   -0.00169   (-3.9e-04)
+29   -0.00175   (-4.0e-04)
+max |dev| 0.00216 at l = 8; multipoles above 2e-3: [8, 9]
+
+configuration CAMB actually used:
+  H0 67.3328  ombh2 0.02237737  omch2 0.1201035  omnuh2 0.000645  YHe 0.24540  TCMB 2.7255
+  num_nu_massive 1  num_nu_massless 2.0307  nu_mass_eigenstates 1  degeneracies [1.0153333333333332]  fractions [1.0]  numbers [1]  share_delta_neff False
+  Reion: class: <TanhReionization>
+ Reionization = True
+ include_heating = False
+ reion_temperature = 10000.0
+ use_optical_depth = True
+ redshift = 10.0
+ optical_depth = 0.05430138
+ fraction = -1.0
+ include_helium_fullreion = True
+ helium_redshift = 3.5
+ helium_delta_redshift = 0.5
+ helium_redshiftstart = 5.0
+ tau_solve_accuracy_boost = 1.0
+ timestep_boost = 1.0
+ max_redshift = 50.0
+ delta_redshift = 0.5
+ 
+  derived: zstar 1089.9, zdrag 1060, thetastar 1.0411
+  z_re 10.0000
+  lSampleBoost 1.0  AccuracyBoost 1.0  lAccuracyBoost 1.0

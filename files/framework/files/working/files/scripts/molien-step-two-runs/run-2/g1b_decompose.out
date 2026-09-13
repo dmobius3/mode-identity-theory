@@ -1,0 +1,18 @@
+builder reproduces run 1's G1b: max |dev| 0.00222194 at l = 8 (recorded 0.00222194 at l = 8): True
+builder reproduces run 2's G1b: max |dev| 0.00216374 at l = 8 (recorded 0.00216374 at l = 8): True
+
+E1's total shift: l = 2 +0.00153, l = 8 +0.00006, l = 9 -0.00001, l = 29 -0.00063; largest |shift| 0.00153
+
+setting            added alone to run 1: l=2      l=8      l=29     max|.|    removed alone from run 2: l=2      l=8      l=29     max|.|
+standard_neff      -0.00000  -0.00000  +0.00000  0.00000      +0.00000  +0.00000  -0.00000  0.00000
+omnuh2_handoff     -0.00000  -0.00000  -0.00000  0.00000      +0.00000  +0.00000  +0.00000  0.00000
+helium_width       +0.00018  +0.00002  -0.00000  0.00018      +0.00121  +0.00007  -0.00000  0.00121
+helium_start       +0.00032  +0.00002  -0.00000  0.00032      +0.00135  +0.00007  -0.00000  0.00135
+ppf                -0.00000  +0.00000  +0.00000  0.00000      +0.00000  -0.00000  -0.00000  0.00000
+lensing_method     -0.00000  +0.00000  +0.00000  0.00000      +0.00000  -0.00000  -0.00000  0.00000
+lmax               -0.00000  -0.00000  +0.00000  0.00000      -0.00000  -0.00000  +0.00000  0.00000
+keta_max           -0.00000  -0.00003  -0.00063  0.00063      -0.00000  -0.00003  -0.00063  0.00063
+
+sum of the single additions against the total shift: largest difference 1.0e-03
+helium width and start added together to run 1: l = 2 +0.00153, l = 8 +0.00009, l = 29 -0.00000; max |.| 0.00153
+what the helium pair and keta_max leave of the total shift: largest |.| 3.7e-06

@@ -248,7 +248,7 @@ Technical gaps with specific paths forward.
 
 ### [The Molien Shells](files/molien-shells.md)
 
-**Source structure (2026-09-13):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. Next: run the sky step, frozen as a preregistered test in [The Molien Shells, Step Two](files/molien-step-two.md); under its P1 prescription no points are identified, so the matched-circle observable is N/A.
+**Source structure (2026-09-13):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. The sky step's preregistered test, [The Molien Shells, Step Two](files/molien-step-two.md), closed Uninformative at its CAMB reproduction gate before any P1 quantity was computed; under its P1 prescription no points are identified, so the matched-circle observable is N/A. Whether a new registration follows is open.
 
 **Inputs:** [CMB Anomalies](../../../cosmos/files/cmb-anomalies.md) §IV, [molien-shells.test.py](files/scripts/molien-shells.test.py).
 
@@ -341,7 +341,7 @@ Registered and exploratory tests run against public datasets, with verdicts.
 
 **Test:** How does the Molien shell spectrum of $`S^3/2I`$, carried to the sky by the P1 spectral-transfer prescription, score against ΛCDM on the Planck 2018 low-ℓ temperature likelihood, at each of MIT's two independently read radii? Frozen before any run: the prescription, the shell weights, both radii, the codes and data pinned by hash, three gates, and ±2 decision bands on $`\Delta \ln L`$. Route A (the coupling radius, 6.13 Gpc) sets the Verdict; route B (the electron-muon radius, 19.7 Gpc) is reported beside it. The expectation recorded before the freeze: route A strongly disfavoured, route B unsettled.
 
-**Status (2026-09-13):** Run 1 stopped at G1b as Uninformative, before any P1 quantity was computed: CAMB 2.0.4 reproduced Planck's baseline spectrum to 2.2 × 10⁻³ against a 2 × 10⁻³ gate. Erratum E1 restores CAMB settings from the code behind the Planck fits, and every gate reruns from G1a.
+**Result (2026-09-13):** Uninformative. Both runs stopped at G1b, CAMB 2.0.4's reproduction of Planck's baseline spectrum (2.22 × 10⁻³, then 2.16 × 10⁻³ after erratum E1, against 2 × 10⁻³), before any P1 quantity was computed, so the prescription was never scored against the data. A diagnosis after the verdict finds CAMB's low-ℓ output moving at the 10⁻³ level with the late reionization history and with kη_max, the order of the gate's tolerance.
 
 ---
 

@@ -56,7 +56,7 @@ So the Molien gap fixes the shell structure, and $`R`$ fixes where that structur
 
 ## VI. Matched circles
 
-A compact quotient can produce matched circles where the last-scattering sphere meets its topological copies. Planck's searches returned a null over the topology classes and circle statistics tested, which constrains standard compact FLRW geometries whose fundamental domain reaches the last-scattering surface. This framework uses the topology as a global boundary condition while keeping CMB propagation flat-FLRW, so the standard curved-space circle exclusion describes a different geometry than the one here. The model therefore owes its own circle prediction, computed from the same $`R`$, transfer functions, and boundary prescription that set the low-ℓ spectrum. Until that calculation runs, the matched-circle null stays a consistency check, sitting to one side of both support and exclusion.
+A compact quotient can produce matched circles where the last-scattering sphere meets its topological copies. Planck's searches returned a null over the topology classes and circle statistics tested, which constrains standard compact FLRW geometries whose fundamental domain reaches the last-scattering surface. This framework uses the topology as a global boundary condition while keeping CMB propagation flat-FLRW, so the standard curved-space circle exclusion describes a different geometry than the one here. The model therefore owes its own circle prediction, computed from the same $`R`$, transfer functions, and boundary prescription that set the low-ℓ spectrum. Until that calculation runs, the matched-circle null stays a consistency check, sitting to one side of both support and exclusion. Under the P1 spectral-transfer prescription of [The Molien Shells, Step Two](../../framework/files/working/files/molien-step-two.md), which identifies no points, the circle observable is N/A.
 
 ## VII. Falsification
 
@@ -66,6 +66,7 @@ A compact quotient can produce matched circles where the last-scattering sphere 
 | The orientation-reversing grading route to parity is shut | A parity grading is derived from that route on the orientable quotient |
 | Molien shell gap: first invariant at $`N = 12`$, shells 2-10 empty | A $`2I`$-invariant harmonic appears at $`N = 2, 4, 6, 8`$, or $`10`$ |
 | The deficit lands at the observed multipoles | The independently read $`R`$ places the cutoff outside the observed $`\ell \lesssim 30`$ band |
+| Under the P1 spectral-transfer prescription, the shell gap accounts for the low-ℓ deficit | $`\Delta \ln L \le -2`$ against ΛCDM at the coupling-route $`R`$, the out-of-support sentinel included |
 
 ---
 
