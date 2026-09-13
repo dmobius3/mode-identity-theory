@@ -1,0 +1,5 @@
+configuration                  width  start  widths out  x_e just below  x_e just above  step in x_e   f_He (1 + tanh(-n)) / 2
+CAMB 2.0.4 defaults (run 1)     0.40   5.50        5.00      1.08157397      1.08157370    2.746e-07     3.717e-06
+width 0.5 alone                 0.50   5.50        4.00      1.08157606      1.08157541    6.462e-07     2.746e-05
+start 5.0 alone                 0.40   5.00        3.75      1.08187185      1.08187113    7.273e-07     4.526e-05
+E1's pair (the 2017 values)     0.50   5.00        3.00      1.08202270      1.08201959    3.103e-06     2.025e-04
