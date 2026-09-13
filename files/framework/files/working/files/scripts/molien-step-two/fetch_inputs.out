@@ -1,0 +1,14 @@
+COM_Likelihood_Data-baseline_R3.00.tar.gz: already here, 60,323,470 bytes, sha256 0b73171e3acc671c28184466a45485a2d1c1d93676b832abdfe688c7b04024e6
+COM_PowerSpect_CMB-TT-full_R3.01.txt: already here, 170,547 bytes, sha256 ccf3113604020536f6f13ccf51680a7316ad0f32da558eee7f625e613bdd5522
+COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip: 65,362,284 bytes on the server, 169 entries in its central directory
+   base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE.minimum: 8,691 bytes, CRC32 ok, sha256 5f2c50602242fef1f39b62a1b1268e1c15ff6f2e24b513d9fa38e9186e13e14e
+   base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE.minimum.theory_cl: 205,647 bytes, CRC32 ok, sha256 f39ee98810acf991385a2c40514467810ed689036aeff054b99116526034d350
+   base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE.minimum.inputparams: 4,714 bytes, CRC32 ok, sha256 ba8b130ce1611488974e764b8517bdf6af9fc0d6683c6338c3096f5aba9f8c6c
+   TTTEEE fits without lowl in this zip: []
+   fetched 612,716 bytes in 3 range requests
+COM_CosmoParams_base-plikHM_R3.01.zip: 493,702,839 bytes on the server, 1003 entries in its central directory
+   base/plikHM_TTTEEE_lowE/base_plikHM_TTTEEE_lowE.minimum: 8,568 bytes, CRC32 ok, sha256 fcb082b44206bd14f2225cdf1a17c39c5173877c14315a8474a337938d4bb831
+   base/plikHM_TTTEEE_lowE/base_plikHM_TTTEEE_lowE.minimum.inputparams: 4,571 bytes, CRC32 ok, sha256 998c87f5b1da499ebd268b2f91060ac8a253c7c407a7a46daf4e72bfc631d16b
+   TTTEEE fits without lowl in this zip: ['plikHM_TTTEEE', 'plikHM_TTTEEE_lowE']
+   fetched 609,975 bytes in 3 range requests
+provenance written: 7 files

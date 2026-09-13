@@ -1,0 +1,70 @@
+== Fixtures
+PASS  fast Molien counts equal the direct count to N = 2000, with step one's rows
+PASS  j_2, j_3 match closed forms in both recurrence regimes
+PASS  upward and downward recurrences agree at x = 60 for l <= 29
+   int dx/x j_l^2 times 2l(l+1), to x = 3000: l = 2: 1.00000, l = 10: 0.99999, l = 29: 0.99995
+PASS  continuum Sachs-Wolfe normalization is 1 (within 2e-3)
+
+== Machinery check: at R = 200 chi* the gap sits far below l = 2, so the shell sum must return ratio 1
+   max |ratio - 1| over 2 <= l <= 29: 1.93e-04 (truncation at k chi* = 1500 alone accounts for up to 2e-4)
+PASS  Molien shell sum reproduces the continuum at large R (within 1e-3)
+PASS  mutation arm (the 1/120 dropped) is caught
+
+== Sachs-Wolfe-only ratio C_l(P1)/C_l(LCDM) at chi* = 14.0 Gpc (shells to k chi* = 6000; tail below 2e-5)
+     l          A 6.13       B 19.7        A 6.1  mu-top 10.5         B 20
+     2           0.011        0.019        0.012        0.032        0.022
+     3           0.004        0.226        0.003        0.021        0.245
+     4           0.039        0.267        0.039        0.080        0.236
+     5           0.011        0.152        0.013        0.126        0.182
+     6           0.072        0.789        0.065        0.050        0.890
+     7           0.050        1.643        0.061        0.354        1.712
+     8           0.070        1.753        0.055        0.179        1.675
+     9           0.157        1.024        0.166        0.166        0.892
+    10           0.048        0.527        0.050        0.787        0.549
+    11           0.220        0.751        0.199        0.548        0.816
+    12           0.211        0.952        0.234        0.150        0.937
+    13           0.089        0.985        0.081        0.794        1.027
+    14           0.410        1.210        0.374        1.852        1.270
+    15           0.332        1.289        0.379        2.379        1.230
+    16           0.083        1.004        0.076        2.044        0.915
+    17           0.637        0.765        0.553        1.338        0.757
+    18           0.662        0.818        0.736        0.722        0.877
+    19           0.083        1.006        0.119        0.557        1.051
+    20           0.557        1.097        0.436        0.766        1.086
+    21           1.221        1.082        1.200        0.558        1.088
+    22           0.949        1.095        1.023        0.202        1.099
+    23           0.339        1.037        0.403        0.554        0.961
+    24           0.402        0.866        0.333        1.293        0.829
+    25           1.536        0.850        1.337        1.570        0.925
+    26           2.706        1.017        2.598        1.273        1.067
+    27           2.999        1.099        3.018        1.017        1.083
+    28           2.480        1.064        2.595        0.989        1.049
+    29           1.716        1.030        1.821        1.013        1.018
+
+   against F2's round-two table (ours / F2's), routes A 6.1, mu-top, B:
+   l =  2: 0.012/0.012   0.032/0.032   0.022/0.022
+   l =  3: 0.003/0.003   0.021/0.021   0.245/0.246
+   l =  4: 0.039/0.039   0.080/0.08   0.236/0.236
+   l =  5: 0.013/0.013   0.126/0.126   0.182/0.182
+   l =  8: 0.055/0.055   0.179/0.179   1.675/1.68
+   l = 15: 0.379/0.379   2.379/2.38   1.230/1.23
+   l = 29: 1.821/1.82   1.013/1.01   1.018/1.02
+   A 6.13: over 2 <= l <= 20 the ratio runs 0.004 to 0.662, median 0.083; largest ratio 3.00 at l = 27; l = 2 to 5: 0.011, 0.004, 0.039, 0.011
+   B 19.7: over 2 <= l <= 20 the ratio runs 0.019 to 1.753, median 0.952; largest ratio 1.75 at l = 8; l = 2 to 5: 0.019, 0.226, 0.267, 0.152
+   A 6.1: over 2 <= l <= 20 the ratio runs 0.003 to 0.736, median 0.081; largest ratio 3.02 at l = 27; l = 2 to 5: 0.012, 0.003, 0.039, 0.013
+   mu-top 10.5: over 2 <= l <= 20 the ratio runs 0.021 to 2.379, median 0.548; largest ratio 2.38 at l = 15; l = 2 to 5: 0.032, 0.021, 0.080, 0.126
+   B 20: over 2 <= l <= 20 the ratio runs 0.022 to 1.712, median 0.892; largest ratio 1.71 at l = 7; l = 2 to 5: 0.022, 0.245, 0.236, 0.182
+
+== Where the shells project (l = sqrt(N(N+2)) chi*/R; r-problem.md subtracts 1/2)
+   chi* = 13.9  R =  5.38:  last empty shell N = 10 at 28.30 (minus 1/2: 27.80);  first shell N = 12 at 33.49
+   chi* = 13.9  R =  6.10:  last empty shell N = 10 at 24.96 (minus 1/2: 24.46);  first shell N = 12 at 29.54
+   chi* = 13.9  R =  6.13:  last empty shell N = 10 at 24.84 (minus 1/2: 24.34);  first shell N = 12 at 29.39
+   chi* = 13.9  R = 10.50:  last empty shell N = 10 at 14.50 (minus 1/2: 14.00);  first shell N = 12 at 17.16
+   chi* = 13.9  R = 20.00:  last empty shell N = 10 at  7.61 (minus 1/2:  7.11);  first shell N = 12 at  9.01
+   chi* = 14.0  R =  5.38:  last empty shell N = 10 at 28.51 (minus 1/2: 28.01);  first shell N = 12 at 33.73
+   chi* = 14.0  R =  6.10:  last empty shell N = 10 at 25.14 (minus 1/2: 24.64);  first shell N = 12 at 29.75
+   chi* = 14.0  R =  6.13:  last empty shell N = 10 at 25.02 (minus 1/2: 24.52);  first shell N = 12 at 29.60
+   chi* = 14.0  R = 10.50:  last empty shell N = 10 at 14.61 (minus 1/2: 14.11);  first shell N = 12 at 17.28
+   chi* = 14.0  R = 20.00:  last empty shell N = 10 at  7.67 (minus 1/2:  7.17);  first shell N = 12 at  9.07
+
+ALL PASS

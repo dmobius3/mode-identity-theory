@@ -1,0 +1,53 @@
+== Tripwires
+PASS  CAMB tripwire fires
+
+== Shells and weights
+PASS  vectorized Molien counts equal the direct count to N = 4000
+PASS  step one's rows: m_N = 1 at 0, 12, 20, 24, 30; 2 at 60; zero at odd N
+PASS  W_12, W_20, W_24, W_30 = {12: 9.0027, 20: 3.4311, 24: 2.4185, 30: 1.5716} match shell_weights_check.out
+
+== Shell sum on a synthetic Sachs-Wolfe transfer (reproducing the declared pre-freeze estimate)
+PASS  cubic interpolation of Delta_l on a 10-points-per-period grid: max error 3.1e-05 (< 1e-4)
+PASS  grid spacing reported against the rule
+PASS  route A: the runner's shell sum reproduces sw_estimate.out at all 28 multipoles (worst 0.0005 <= 0.0015); cutoff converged at N_max = 8192
+PASS  route B: the runner's shell sum reproduces sw_estimate.out at all 28 multipoles (worst 0.0006 <= 0.0015); cutoff converged at N_max = 16384
+
+== G2 logic on the synthetic transfer
+   R = 2.800e+06 Mpc; max deviation: s3 1.37e-04, molien 1.37e-04, molien_no120 9.92e-01
+PASS  G2 passes on correct machinery (both spectra within 1e-3, the mutation outside it)
+PASS  the cutoff rule reports non-convergence when the cap is reached first
+
+== Inputs (metadata and arithmetic only)
+PASS  baseline fit parsed: omegabh2, theta, calPlanck, chi2_lowl = 23.25721, table lowl 23.257
+PASS  comparison fit parsed: calPlanck 1.00076, logA, ns, no lowl term
+PASS  theory_cl read as C_l = 2 pi D_l / (l(l+1)): C_2 from D_2 = 1017.48
+PASS  C_2/C_3 from a synthetic spectrum: 2 D_2 / D_3
+
+== Likelihood wrapper, on the file's own test vector only
+PASS  the runner's wrapper returns the self-test value: -11.6257408575
+PASS  the test vector sits in the interior at all 28 multipoles, largest |x| 1.932
+PASS  likelihood tripwire fires on any other vector
+
+== Support classification (a pure function, no likelihood call)
+PASS  two multipoles outside (l = 3 and 5), largest fractional distance 0.5, one edge flagged
+PASS  support_record: the spline sees only values inside the table, and outside multipoles carry no x
+
+== score(), both branches, with a stub likelihood (no likelihood call)
+PASS  out-of-support branch: label Negative, delta_lnL recorded as out of support, outside l = [3, 5]
+PASS  in-support branch: Delta lnL -3, +1.5, +3 give ['Negative', 'Inconclusive', 'Positive']
+PASS  band labels: +2 Positive, -2 Negative, 1.99 Inconclusive, None Unevaluated
+
+== Runtime check and the refusal to run early
+PASS  the runtime check passes on this environment, on the packet without its manifest (0 mismatches)
+PASS  with the manifest required (as --run requires it), a missing manifest fails closed
+PASS  with a matching freeze manifest the runtime check passes
+PASS  a packet file changed after the manifest fails the runtime check
+PASS  the runtime check fails closed on a changed version
+PASS  without --run the runner exits 2 and evaluates nothing
+
+== CAMB settings (object setup only, no computation)
+PASS  halofit_version 5 maps to 'mead2016'; Recfast 'planck' set has fudge_He 0.86 and no He rate correction
+PASS  the BBN table named in the settings ships with CAMB
+
+30 checks passed, 0 failed
+ALL PASS

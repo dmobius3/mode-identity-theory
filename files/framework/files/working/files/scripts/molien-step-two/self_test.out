@@ -1,0 +1,38 @@
+Commander file matches its recorded hashes (7 files)
+clipy clipy_0.15 | numpy 2.5.0 | astropy 8.0.1 | CLIPY_NOJAX=1 | jax used: False
+clipy's own load-time self-test: clipy_0.15 | Checking likelihood '<step_two>/planck/baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik' on test data. got -11.6257 expected -11.6257 (diff 1.02746e-06)
+full precision, same file-supplied vector: expected -11.62573983, obtained -11.6257408575, residual -1.027e-06
+as chi2_eff = -2 ln L: expected 23.25147966, obtained 23.2514817149
+   relative residual 8.84e-08; check_value is stored to 1e-8 (half a unit: 5e-9); the decision band is 2 in ln L, 1.9e+06 times the residual
+tabulated support: clipy's bounds equal an independent reading of sigma.fits: True (LMIN 2, LMAX 250, NBIN 1000; likelihood uses l = 2..29)
+self-test vector: inside the support at every l: True; Gaussianized |x| max 1.932; classes: 28 interior, 0 edge
+   l    support lower D_l    support upper D_l    self-test D_l    x
+    2             35.850          2441630.992         1015.832   0.740
+    3            183.623           570229.890          962.876  -0.725
+    4            160.982            94308.370          911.802  -0.140
+    5            356.586            69614.616          873.704  -1.932
+    6            135.440            14633.576          847.759   0.396
+    7            309.623            25356.444          831.347  -1.407
+    8            191.445             7649.916          821.569   0.297
+    9            206.366             8791.250          817.081  -0.008
+   10            240.626             7523.359          816.452  -0.376
+   11            274.281             8037.751          818.310  -0.602
+   12            246.642             5929.805          823.303  -0.147
+   13            188.723             4112.774          829.800   0.672
+   14            278.736             4945.794          836.917  -0.233
+   15            386.893             5314.403          845.058  -1.074
+   16            207.328             3633.553          854.747   0.781
+   17            389.162             4794.980          865.973  -1.043
+   18            244.640             2991.653          877.842   0.672
+   19            349.678             4169.142          891.192  -0.574
+   20            239.494             2678.984          904.357   0.941
+   21            199.928             2566.641          917.711   1.309
+   22            232.194             2343.050          931.551   1.422
+   23            288.598             2664.460          945.711   0.701
+   24            324.307             3089.570          960.262   0.247
+   25            320.861             3163.167          975.161   0.495
+   26            331.084             2703.639          990.232   0.554
+   27            434.562             3167.462         1005.721  -0.251
+   28            475.745             3550.434         1021.467  -0.838
+   29            427.525             3000.118         1037.523   0.024
+commander_support.json written

@@ -1,0 +1,267 @@
+{
+  "recorded_utc": "2026-09-13T19:13:24Z",
+  "status": "pre-freeze; installs, imports and the Commander file's own self-test only; no other likelihood evaluation, no spectrum computed",
+  "redaction": "in this committed copy, machine-local path prefixes are written <step_two> (the local folder that holds the environment and the Planck inputs) and <miniforge base>; the installed-tree fingerprints hash the distribution-relative paths each package lists, so no hashed or checked field is affected, and the unredacted original is kept locally",
+  "venv": {
+    "path": "step_two/.venv",
+    "python": "3.13.13",
+    "system_site_packages": true,
+    "base": "miniforge python at <miniforge base>"
+  },
+  "camb": {
+    "version": "2.0.4",
+    "installed_from": "camb-2.0.4-py3-none-macosx_15_0_arm64.whl",
+    "bytes": 1501545,
+    "sha256": "4f3236b82c443309af38501f09fd537e7253359cb4080f8f24eb5c24647a7ccd",
+    "pypi_digest_match": true,
+    "note": "prebuilt wheel, allowed by the contract's Codes bullet; the sdist needs gfortran, which is not installed"
+  },
+  "from_base_env": {
+    "numpy": "2.5.0",
+    "scipy": "1.18.0",
+    "sympy": "1.14.0",
+    "packaging": "26.2"
+  },
+  "commander_file_contents": {
+    "_mdb": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "clik/_mdb": {
+      "bytes": 50,
+      "sha256": "3be1c5b56c52390c101b0323744cc2532a9cc5bf3822e35acc4db559ba462a6a"
+    },
+    "clik/check_param": {
+      "bytes": 5760,
+      "sha256": "3038714c99a2e485049f652402f4b1d8522c268eb0186e71bb9b00305949e2a6"
+    },
+    "clik/lmax": {
+      "bytes": 5760,
+      "sha256": "1ea412f6f0aabcaa8bf540a77a4598d697bdbbea83e9cbd893155699e60c8723"
+    },
+    "clik/lkl_0/_mdb": {
+      "bytes": 181,
+      "sha256": "8055330eefeefb8c31d07fe214029ece36f6893889d7641bf791f09fb31a3334"
+    },
+    "clik/lkl_0/has_cl": {
+      "bytes": 5760,
+      "sha256": "264d74648124b54c120dbcc08aeba6686b25b3347f21ce0c9e26190595c909f8"
+    },
+    "clik/lkl_0/_external/sigma.fits": {
+      "bytes": 6491520,
+      "sha256": "d5d3fcf06bffe5b770c62ff7ca8c4d6e57d4b8cb2916e4a39790d80d5933e069"
+    }
+  },
+  "commander_self_test": {
+    "check_value": -11.62573983,
+    "chi2_eff": 23.25147966,
+    "A_planck_in_check_param": 1.000442,
+    "check_param_vs_baseline_best_fit_D_l": "ratio 0.99926 to 0.99966 over l = 2..29"
+  },
+  "astropy_stack": {
+    "astropy": {
+      "version": "8.0.1",
+      "file": "astropy-8.0.1-cp311-abi3-macosx_11_0_arm64.whl",
+      "bytes": 6607950,
+      "sha256": "222f0b9837e79fd3d101e6d4e4579e3aa98c490000bb01e35cd32fd3e3c12bf5",
+      "pypi_digest_match": true
+    },
+    "pyerfa": {
+      "version": "2.0.1.5",
+      "file": "pyerfa-2.0.1.5-cp39-abi3-macosx_11_0_arm64.whl",
+      "bytes": 329370,
+      "sha256": "be1aeb70390dd03a34faf96749d5cabc58437410b4aab7213c512323932427df",
+      "pypi_digest_match": true
+    },
+    "astropy-iers-data": {
+      "version": "0.2026.9.7.0.56.14",
+      "file": "astropy_iers_data-0.2026.9.7.0.56.14-py3-none-any.whl",
+      "bytes": 2001670,
+      "sha256": "b24396f527feb4ec4b4ef0dcba820246ac7ecb1eed91ebb9e767d64774349659",
+      "pypi_digest_match": true
+    },
+    "PyYAML": {
+      "version": "6.0.3",
+      "file": "pyyaml-6.0.3-cp313-cp313-macosx_11_0_arm64.whl",
+      "bytes": 173252,
+      "sha256": "2283a07e2c21a2aa78d9c4442724ec1eb15f5e42a723b99cb3d822d48f5f7ad1",
+      "pypi_digest_match": true
+    }
+  },
+  "likelihood_implementation": {
+    "package": "clipy-like",
+    "version": "0.15",
+    "version_string": "clipy_0.15",
+    "released_on_pypi": "2025-07-10",
+    "description": "the pure-Python clik-compatible implementation used by current Cobaya for Planck clik likelihoods",
+    "authors": "K. Benabed, L. Balkenhol",
+    "license": "MIT",
+    "installed": true,
+    "file": "clipy_like-0.15-py3-none-any.whl",
+    "bytes": 41355,
+    "sha256": "9bf56a1c648cab345e9fcb7f83c9a79cd82f92e4f6fe4392900eec23b96f49d0",
+    "pypi_digest_match": true,
+    "CLIPY_NOJAX": "1, mandatory; jax is not installed in this environment",
+    "fork_comparison": {
+      "repo": "CobayaSampler/clipy",
+      "commit": "4260853bbc6a6e998896ef2b22b48161209562c5",
+      "tag_in_fork": "v0.16, a fork tag, not a PyPI release",
+      "archive": "clipy_candidates/clipy-4260853.tar.gz",
+      "archive_bytes": 36346,
+      "archive_sha256": "9006366462fc18607ede87aeef39d676b0289f9b53e9f21059af400bd506b2fe",
+      "commander_path_identical": [
+        "gibbs.py",
+        "lkl.py",
+        "minicldf.py",
+        "miniparse.py",
+        "bflike.py",
+        "cmbonly.py",
+        "simall.py"
+      ],
+      "differs": [
+        "__init__.py (version string only)",
+        "smica.py",
+        "smica_component.py"
+      ],
+      "only_in_0.15": [
+        "reorg.py"
+      ]
+    }
+  },
+  "inherited_from_base": {
+    "numpy": {
+      "version": "2.5.0",
+      "build": "pypi_0",
+      "channel": "pypi",
+      "platform": "pypi",
+      "resolved_from": "<miniforge base>/lib/python3.13/site-packages",
+      "dist_version": "2.5.0"
+    },
+    "packaging": {
+      "version": "26.2",
+      "build": "pyhc364b38_0",
+      "channel": "conda-forge",
+      "platform": "noarch",
+      "resolved_from": "<miniforge base>/lib/python3.13/site-packages",
+      "dist_version": "26.2"
+    },
+    "scipy": {
+      "version": "1.18.0",
+      "build": "pypi_0",
+      "channel": "pypi",
+      "platform": "pypi",
+      "resolved_from": "<miniforge base>/lib/python3.13/site-packages",
+      "dist_version": "1.18.0"
+    },
+    "sympy": {
+      "version": "1.14.0",
+      "build": "pypi_0",
+      "channel": "pypi",
+      "platform": "pypi",
+      "resolved_from": "<miniforge base>/lib/python3.13/site-packages",
+      "dist_version": "1.14.0"
+    }
+  },
+  "platform": {
+    "machine": "arm64",
+    "macos": "15.7.9",
+    "python": "3.13.13",
+    "python_build": "main Apr  8 2026 02:29:07",
+    "python_from_conda": {
+      "version": "3.13.13",
+      "build": "h20e6be0_100_cp313",
+      "channel": "conda-forge",
+      "platform": "osx-arm64"
+    }
+  },
+  "inheritance_note": "numpy, scipy, sympy and packaging are inherited from the miniforge base (system_site_packages) and pinned by version and conda build, not by bytes; the step-two script checks the runtime before G1a and fails closed",
+  "installed_tree_fingerprints": {
+    "method": "sha256 over sorted (path, file sha256) for every file the distribution lists, bytecode excluded; RECORD hashes re-checked where present",
+    "packages": {
+      "numpy": {
+        "version": "2.5.0",
+        "files": 929,
+        "tree_sha256": "1dd0594193e18819985fc96c2ea23cea4508a07d522614f60618cf4fec56703f",
+        "record_hashes_checked": 928,
+        "record_mismatches": 0,
+        "location": "<miniforge base>/lib/python3.13/site-packages"
+      },
+      "scipy": {
+        "version": "1.18.0",
+        "files": 1431,
+        "tree_sha256": "eb915f944a95d2b68351e696b9decc729299f97534715a11790a7e493189a237",
+        "record_hashes_checked": 1430,
+        "record_mismatches": 0,
+        "location": "<miniforge base>/lib/python3.13/site-packages"
+      },
+      "sympy": {
+        "version": "1.14.0",
+        "files": 1573,
+        "tree_sha256": "35f66e3f735739812560e2f4acb0d6175768e6960ecd1d8d21ed29bcd328aaa2",
+        "record_hashes_checked": 1572,
+        "record_mismatches": 0,
+        "location": "<miniforge base>/lib/python3.13/site-packages"
+      },
+      "packaging": {
+        "version": "26.2",
+        "files": 30,
+        "tree_sha256": "3dcf2d9520ba7cef32e210256d36c440f4af78fe74603f96b6d0c2365011438f",
+        "record_hashes_checked": 29,
+        "record_mismatches": 1,
+        "location": "<miniforge base>/lib/python3.13/site-packages",
+        "record_mismatch_files": [
+          "packaging-26.2.dist-info/INSTALLER"
+        ],
+        "record_mismatch_note": "conda-forge installed this noarch package and rewrote the listed metadata file after its RECORD was generated; the tree fingerprint pins the bytes as installed, so the runtime check compares fingerprints, not RECORD consistency"
+      },
+      "camb": {
+        "version": "2.0.4",
+        "files": 48,
+        "tree_sha256": "10174f924e3212dd3269b38f82b990f09f2092c52f494abb04cd3953afe34063",
+        "record_hashes_checked": 47,
+        "record_mismatches": 0,
+        "location": "<step_two>/.venv/lib/python3.13/site-packages"
+      },
+      "clipy-like": {
+        "version": "0.15",
+        "files": 25,
+        "tree_sha256": "ccb47aed6f422bff9360ae2123106bdfef441237f786eff9cdcb69ac1026e351",
+        "record_hashes_checked": 24,
+        "record_mismatches": 0,
+        "location": "<step_two>/.venv/lib/python3.13/site-packages"
+      },
+      "astropy": {
+        "version": "8.0.1",
+        "files": 1449,
+        "tree_sha256": "a96989de3cfc054c8beb75f17af4a41c7aae0f1981cfaf90dc18690a66e60cbd",
+        "record_hashes_checked": 1448,
+        "record_mismatches": 0,
+        "location": "<step_two>/.venv/lib/python3.13/site-packages"
+      },
+      "pyerfa": {
+        "version": "2.0.1.5",
+        "files": 17,
+        "tree_sha256": "b10e8fe405a2cded4d63c70db17c5b66462a97842fb84d04b5fa6dd8e55a8400",
+        "record_hashes_checked": 16,
+        "record_mismatches": 0,
+        "location": "<step_two>/.venv/lib/python3.13/site-packages"
+      },
+      "astropy-iers-data": {
+        "version": "0.2026.9.7.0.56.14",
+        "files": 15,
+        "tree_sha256": "6e356c5f1b76ba2c2a292fe31d62c1ce4ef647718a09534c90f46f3c5f414d0f",
+        "record_hashes_checked": 14,
+        "record_mismatches": 0,
+        "location": "<step_two>/.venv/lib/python3.13/site-packages"
+      },
+      "PyYAML": {
+        "version": "6.0.3",
+        "files": 27,
+        "tree_sha256": "bee6acb0882f78ab4273dfb713a32a80c5f6bccbcd68e06bc7dc7d2c361a83a6",
+        "record_hashes_checked": 26,
+        "record_mismatches": 0,
+        "location": "<step_two>/.venv/lib/python3.13/site-packages"
+      }
+    }
+  }
+}

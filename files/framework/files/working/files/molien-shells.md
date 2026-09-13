@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-13):** Step one is done: up to N = 30 each surviving shell of S³/2I holds a single 2I-invariant form, whose roots on the sphere are the icosahedron's vertices (N = 12), face centres (N = 20) and edge midpoints (N = 30), with N = 24 the square of the first; the counts, the patterns and the even-spin descent to A5 are checked independently. Next: write the preregistration contract for the sky step, which does not run before that contract exists.
+**Status (2026-09-13):** Step one is done: up to N = 30 each surviving shell of S³/2I holds a single 2I-invariant form, whose roots on the sphere are the icosahedron's vertices (N = 12), face centres (N = 20) and edge midpoints (N = 30), with N = 24 the square of the first; the counts, the patterns and the even-spin descent to A5 are checked independently. Next: run the sky step, whose preregistered test is frozen as [The Molien Shells, Step Two](molien-step-two.md).
 **Summary:** The Molien shells of S³/2I as MIT's CMB source structure: what the surviving shells carry, checked by an executable of its own, and the preregistered test that would take them to the sky.
 **Inputs:** `../../../../cosmos/files/cmb-anomalies.md` §IV, `scripts/molien-shells.test.py`
 
@@ -46,6 +46,8 @@ The sky question: given this source structure, one invariant-factor state per sh
 - MIT's own matched-circle prediction from the same inputs, which [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §VI says the framework owes, stated as circle radii and judged against a named search. Whether a null excludes a model turns on those radii and on the search's sensitivity, which is where the published dispute over the Poincaré space lives (Caillerie et al. 2007), so the contract fixes both in advance. For instance, Cornish et al. 2004 found no matched circles, back-to-back or nearly so, of radius above 25° in the WMAP first-year maps. Circles predicted within the named search's reach, where it found none, would be a miss.
 
 Flatness is not a test here, because MIT's reading keeps the apparent $`\Omega_K`$ at zero by construction. The published analyses of the conventional Poincaré-space model work in a finite, positively curved space, $`\Omega_0 \approx 1.013`$ in Luminet et al. 2003 and $`\Omega_0 = 1.018`$ in Caillerie et al. 2007. Their fits do not transfer to MIT's flat reading, so the circle test runs through MIT's own prediction.
+
+The contract is frozen as [The Molien Shells, Step Two](molien-step-two.md). It fixes the projection as the P1 spectral-transfer prescription and the hit and miss as ±2 decision bands on the Planck low-ℓ likelihood. Since P1 identifies no points, the contract rules the circle observable N/A and records the countermodel that would carry circles, with the searches that exclude it.
 
 ## IV. Sources
 

@@ -1,0 +1,36 @@
+== Fixtures (step one's counts)
+PASS  m_N = 1 at N = 0, 12, 20, 24, 30
+PASS  m_N = 0 at N = 2, 4, 6, 8, 10 and at every odd N
+PASS  m_60 = 2
+PASS  both closed forms agree to N = 2000
+
+== The first shell weights, W_N = 480 pi m_N (N+1) / (N(N+2))^(3/2)
+   N = 12  m_N = 1  g_N =  13  W_N = 9.0027
+   N = 20  m_N = 1  g_N =  21  W_N = 3.4311
+   N = 24  m_N = 1  g_N =  25  W_N = 2.4185
+   N = 30  m_N = 1  g_N =  31  W_N = 1.5716
+   N = 32  m_N = 1  g_N =  33  W_N = 1.3866
+   N = 36  m_N = 1  g_N =  37  W_N = 1.1027
+   N = 40  m_N = 1  g_N =  41  W_N = 0.8979
+   N = 42  m_N = 1  g_N =  43  W_N = 0.8162
+   N = 60  m_N = 2  g_N = 122  W_N = 0.8108
+   closed-space per-mode convention beta(beta^2-1) against (N(N+2))^(3/2) at N = 12: ratio 1.00297
+
+== Parent: the Molien weights reproduce 4 pi dln k (tolerance 0.005 at the two largest centres)
+   bump at kR =   300: ratio = 1.000006
+   bump at kR =  1000: ratio = 1.000001
+   bump at kR =  3000: ratio = 1.000000
+   bump at kR = 10000: ratio = 1.000000
+PASS  Molien weights converge to the continuum measure
+   full S^3 weights: kR = 3000: 1.000000, kR = 10000: 1.000000
+PASS  full S^3 weights converge to the same measure (second parent)
+
+== Mutation arms (run only on a green parent; each must fail the same tolerance)
+   M1: S^3 volume with the quotient counts (the 1/120 dropped): ratio at kR = 10000 = 0.00833333
+PASS  M1: S^3 volume with the quotient counts (the 1/120 dropped) is caught
+   M2: the free spin label dropped (g_N = m_N): ratio at kR = 10000 = 0.000103174
+PASS  M2: the free spin label dropped (g_N = m_N) is caught
+   M3: weights halved (the slip an even-only bookkeeping error makes): ratio at kR = 10000 = 0.5
+PASS  M3: weights halved (the slip an even-only bookkeeping error makes) is caught
+
+ALL PASS

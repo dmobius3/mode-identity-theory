@@ -1,0 +1,22 @@
+{
+  "written_utc": "2026-09-13T21:37:36Z",
+  "files": {
+    "step_two_run.py": "14401450d8b486c5c9f726f483f59804dbe9983593e1054b84dc087cdf483cac",
+    "step_two_tests.py": "5493fc905c45dc561d29afb1f8482963cc4c8db1e8a15b47946f3014fa8dada3",
+    "step_two_tests.out": "46906da4a7590069f55d31ecf28cf6b0323e5c02a9e40eb44d66c2cb4d5c3acd",
+    "fetch_inputs.py": "ffb74b16cc36e5d55cb8d62fc3dd69c9d402366c3f0154a0effb665b81baf525",
+    "self_test.py": "314fe027f96bfbe3385b9f3d38114bc01ad26f11a274b6a3746b9d02faebc94c",
+    "self_test.out": "8dd72dd9ee2731afbe6b20272d1f3088cde83281358e779a2f6b6f3a7c822e00",
+    "environment.json": "dbb6c1c3b060911bba8204228724dba39a890d1374607ab72e7a1d4bea9d8346",
+    "provenance.json": "93da693e3779e497dc27dbe855b12fa90bf6b8cf726f89910ec0300d7df97a6b",
+    "commander_support.json": "f4a61137028d88273f18ba0f7b4d19d24783d546eaff0c3c5150a7976da5cbb6",
+    "fetch_inputs.out": "19252209ad00c5519626d3576055e102d6b8ba7222fc4bef275e169cec6de3da",
+    "sw_estimate.py": "1bc9df0cfa61be41182241b2ba2847176bbe7a6f6bf21455c99479015d11beb2",
+    "sw_estimate.out": "c9df1300d1d9b4a28d3df04b2fe40cf45606ed0a3572eac8738e32a55f3adc22",
+    "isw_estimate.py": "9b66ba44497dc4f910b63138e05e9e3591814a5a0666c76d61c9e5ca25051ff8",
+    "isw_estimate.out": "1a444b050953278b650d237c4321f906cd30f3b2c425b8cb2091cf9cdd96c51e",
+    "shell_weights_check.py": "bb0140f34550695356f375486070071804cb3dff5f40d4e922972b650a0fdf8d",
+    "shell_weights_check.out": "08e48c8ccffe64227f56a0fe1ae7064671f42d3c1e1b57168b62391101cb82fd"
+  },
+  "coverage": "the runner's nine PACKET_FILES, then every other file committed in this folder; the runner's runtime check verifies every entry"
+}

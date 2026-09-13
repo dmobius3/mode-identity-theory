@@ -248,7 +248,7 @@ Technical gaps with specific paths forward.
 
 ### [The Molien Shells](files/molien-shells.md)
 
-**Source structure (2026-09-13):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. Next: a preregistered test for the sky, fixing MIT's projection, the low-ℓ hit and miss, and MIT's own matched-circle prediction against a named search before anything runs.
+**Source structure (2026-09-13):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. Next: run the sky step, frozen as a preregistered test in [The Molien Shells, Step Two](files/molien-step-two.md); under its P1 prescription no points are identified, so the matched-circle observable is N/A.
 
 **Inputs:** [CMB Anomalies](../../../cosmos/files/cmb-anomalies.md) §IV, [molien-shells.test.py](files/scripts/molien-shells.test.py).
 
@@ -334,6 +334,14 @@ Registered and exploratory tests run against public datasets, with verdicts.
 **Test:** Does the fermion mass scorecard's within-×3 hit rate carry information about the specific torsion values, or is it density? Pre-registered design frozen at tag `mass-null-v1.0`, one registered run (Generator PCG64, seed 120, $`M = 100{,}000`$). Statistic: the compatible-coverage count $`S_1`$ under four nulls (permute the 24 torsions across slots, within-vacuum, log-uniform redraw, within-spin-class exact), verdict fixed on Null A.
 
 **Result (2026-07-28):** The ×3 count is uninformative about the torsion values. Randomly reassigning the 24 torsion factors across the fixed quantum-number slots reproduces or exceeds the observed coverage in 69.0% of draws (Null A, $`p_A = 0.690`$; the null $`S_1`$ mean of 5.02 sits at the observed coverage of 5, and the B / C / D secondaries stay far above the 0.01 information band). The mass table's evidential weight rests on the structural outputs (the 24-entry count, the $`T_3`$ gate evaluations, the $`\varphi^{-4}`$ ratio) and the falsifiable outliers, not on the ×3 proximity count; the test does not validate those structural outputs, it removes the proximity scorecard as torsion evidence. This is the re-run on the corrected torsion table (tag `mass-null-v1.1`); the pre-correction run (`mass-null-v1.0`, $`p_A = 0.174`$) is retained as history. Design frozen before each run (tag on the frozen bundle), results committed separately.
+
+---
+
+### [The Molien Shells, Step Two (Preregistered Low-ℓ Test)](files/molien-step-two.md)
+
+**Test:** How does the Molien shell spectrum of $`S^3/2I`$, carried to the sky by the P1 spectral-transfer prescription, score against ΛCDM on the Planck 2018 low-ℓ temperature likelihood, at each of MIT's two independently read radii? Frozen before any run: the prescription, the shell weights, both radii, the codes and data pinned by hash, three gates, and ±2 decision bands on $`\Delta \ln L`$. Route A (the coupling radius, 6.13 Gpc) sets the Verdict; route B (the electron-muon radius, 19.7 Gpc) is reported beside it. The expectation recorded before the freeze: route A strongly disfavoured, route B unsettled.
+
+**Status (2026-09-13):** Frozen; the pipeline has not run, and the run waits on the go.
 
 ---
 
