@@ -240,9 +240,17 @@ Technical gaps with specific paths forward.
 
 ### [S³/2I and the OPH Carrier](files/s3-2i-oph-dictionary.md)
 
-**Dictionary (2026-09-12):** Where MIT's reading of $`S^3/2I`$ meets the twelve-port carrier of Observer Patch Holography, each side computing in its own terms. Classically, the carrier's coset geometry is the base of the Seifert fibration of $`S^3/2I`$, and OPH's compatibility condition $`xyz = 1`$ is that base's orbifold relation. Computed in exact arithmetic against OPH's committed tables, OPH's two golden triplets are the adjoints $`\mathrm{Sym}^2 Q`$ and $`\mathrm{Sym}^2 Q^\prime`$ of the two irreducible flat connections, with the committed port frame on $`\mathrm{Sym}^2 Q`$; the shared Galois ordering is recorded as an ordering only. Next: MIT's own work on the Molien shells of $`S^3/2I`$, with OPH's angular packet beside it as a source template.
+**Dictionary (2026-09-13):** Where MIT's reading of $`S^3/2I`$ meets the twelve-port carrier of Observer Patch Holography, each side computing in its own terms. Classically, the carrier's coset geometry is the base of the Seifert fibration of $`S^3/2I`$, and OPH's compatibility condition $`xyz = 1`$ is that base's orbifold relation. Computed in exact arithmetic against OPH's committed tables, OPH's two golden triplets are the adjoints $`\mathrm{Sym}^2 Q`$ and $`\mathrm{Sym}^2 Q^\prime`$ of the two irreducible flat connections, with the committed port frame on $`\mathrm{Sym}^2 Q`$; the shared Galois ordering is recorded as an ordering only. Next: the Molien-shell work, in [The Molien Shells](files/molien-shells.md), with OPH's angular packet beside it as a source template.
 
 **Inputs:** [Coexact gap](../bedrock/files/coexact-gap.md) §4.4, OPH's committed tables at commit 621edbb2, [golden-sector-match.test.py](files/scripts/golden-sector-match.test.py).
+
+---
+
+### [The Molien Shells](files/molien-shells.md)
+
+**Source structure (2026-09-13):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. Next: a preregistered test for the sky, fixing MIT's projection, the low-ℓ hit and miss, and MIT's own matched-circle prediction against a named search before anything runs.
+
+**Inputs:** [CMB Anomalies](../../../cosmos/files/cmb-anomalies.md) §IV, [molien-shells.test.py](files/scripts/molien-shells.test.py).
 
 ---
 

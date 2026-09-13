@@ -1,0 +1,25 @@
+[1] Fixture, exact in Z[phi] (2I by SU(2) half-angle, A5 by rotation angle)
+     l   H_l^A5   Sym^{2l}(C^2)^2I
+     2       0          0
+     6       1          1
+    10       1          1
+    15       1          1
+    30       2          2
+    agreement for every l <= 30; no 2I-invariant in odd degree up to N = 60
+    mutation arm: A5 indexed by half-angle gives {2: None, 6: None, 10: None, 15: None, 30: None} (None = not an integer), breaking the fixture, as required
+    mutation arm: 2I indexed by rotation angle gives integers {2: 1, 6: 4, 10: 6, 15: 9, 30: 17}, plausible-looking and wrong, breaking the fixture, as required
+
+[2] Molien counts match (1+t^30)/((1-t^12)(1-t^20)) = (1-t^60)/((1-t^12)(1-t^20)(1-t^30)) to N = 60
+    shells N <= 30 as (N, invariants m_N, surviving modes m_N (N+1)): [(0, 1, 1), (12, 1, 13), (20, 1, 21), (24, 1, 25), (30, 1, 31)]
+
+[3] Reynolds projector over the 120 quaternions: rank = m_N for every N <= 30
+    mutation arm: over the binary tetrahedral subgroup the rank at N = 6 is 1, where 2I has 0, as required
+
+[4] Patterns: root sets (Majorana constellations) of the invariant forms on S^2
+    N = 12: 12 points, a regular icosahedron (angles from one vertex [63.43, 116.57, 180.0] deg): the vertices, 6 axes
+    N = 20: 20 points, the face centres of that icosahedron: 10 axes
+    N = 24: the invariant is the square of the N = 12 one: the vertices, doubled
+    N = 30: 30 points, the edge midpoints of that icosahedron: 15 axes
+    mutation arm: a generic binary tetrahedral invariant of degree 12 (a 2-dimensional space) fails the icosahedron test, as required
+
+ALL PASS
