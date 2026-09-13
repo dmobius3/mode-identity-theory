@@ -197,6 +197,14 @@ pars.Recomb.set_params(recfast_approx_model="planck")
 check(f"halofit_version 5 maps to '{names.get(5)}'; Recfast 'planck' set has fudge_He 0.86 and no He rate correction",
       5 in names and abs(pars.Recomb.RECFAST_fudge_He - 0.86) < 1e-12 and pars.Recomb.RECFAST_He_rate_correction is False)
 check("the BBN table named in the settings ships with CAMB", os.path.isfile(os.path.join(os.path.dirname(camb.__file__), R.CAMB_SETTINGS["bbn_table"])))
+e1 = R.camb_params(pb, for_g1b=True)
+check("erratum E1 reaches CAMB: one massive eigenstate carrying 3.046/3 of N_eff with 2.030667 massless, the fit's omega_nu h^2 "
+      "and Y_P, helium reionization width 0.5 from z = 5, PPF dark energy, curved-sky lensing, l_max 2850, k eta_max 14000",
+      e1.nu_mass_eigenstates == 1 and abs(e1.nu_mass_degeneracies[0] - 3.046 / 3) < 1e-12
+      and abs(e1.num_nu_massless - (3.046 - 3.046 / 3)) < 1e-12 and abs(e1.omnuh2 / pb["omeganuh2"] - 1) < 1e-12
+      and abs(e1.YHe / pb["yheused"] - 1) < 1e-5 and e1.Reion.helium_delta_redshift == 0.5 and e1.Reion.helium_redshiftstart == 5.0
+      and type(e1.DarkEnergy).__name__ == "DarkEnergyPPF" and camb.config.lensing_method == 1
+      and e1.max_l == 2850 and e1.max_eta_k == 14000.0)
 
 print(f"\n{len(PASSES)} checks passed, {len(FAILS)} failed")
 print("ALL PASS" if not FAILS else f"FAILED: {FAILS}")

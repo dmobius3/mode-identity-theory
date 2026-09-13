@@ -39,9 +39,15 @@ COMPARISON_FIT = "base_plikHM_TTTEEE_lowE"      # the parameters of the comparis
 CLIK_REL = "baseline/plc_3.0/low_l/commander/commander_dx12_v3_2_29.clik"
 # CAMB settings matched to the fits' .minimum.inputparams (CosmoMC Sept2017, CAMB Aug17, Recfast 1.5.2, tanh reionization,
 # BBN consistency, normal hierarchy with mnu = 0.06, halofit_version 5, lensed spectra with nonlinear lensing).
+# Erratum E1 (2026-09-13): the settings those files leave to the code, set as the code behind the fits set them (CosmoMC's
+# 2017 CAMB calculator over CAMB Aug2017) where CAMB 2.0.4's defaults differ: the standard N_eff that fixes the neutrino
+# split and the BBN input, the helium reionization width and start, PPF dark energy, curved-sky lensing, and G1b's CAMB
+# l_max (2650 plus CAMB's 200 margin = 2850, CosmoMC's lmax_computed_cl + 150) and k eta_max (14000).
 CAMB_SETTINGS = {"recfast_approx_model": "planck", "deltazrei": 0.5, "bbn_table": "PArthENoPE_880.2_standard.dat",
                  "neutrino_hierarchy": "normal", "mnu": 0.06, "nnu": 3.046, "pivot_scalar": 0.05, "halofit_version_int": 5,
-                 "g1b_lmax": 2500, "lens_potential_accuracy": 1}
+                 "g1b_lmax": 2650, "g1b_max_eta_k": 14000.0, "lens_potential_accuracy": 1,
+                 "standard_neutrino_neff": 3.046, "helium_delta_redshift": 0.5, "helium_redshiftstart": 5.0,
+                 "dark_energy_model": "ppf", "lensing_method": 1}
 # The transfer run for G2 and scoring: every l to 60, k eta_0 to 12000, and a grid rule fixed before the freeze. The accuracy
 # boost starts at 2 and rises by 1 until the q grid has at least 8 points per acoustic period 2 pi / chi* above the smallest
 # scored wavenumber (N = 12 at R_B); if that has not happened by 6, the run fails closed.
@@ -259,22 +265,33 @@ def published_c2_over_c3(path):
 
 # -------------------------------------------------------- CAMB --------------------------------------------------------
 def camb_params(p, for_g1b=False, accuracy_boost=None):
-    """CAMBparams for a fit's parameters, with every setting written out (contract section 2, Codes)."""
+    """CAMBparams for a fit's parameters, with every setting written out (contract section 2, Codes; erratum E1)."""
     import camb
     from camb import model, nonlinear
+    if p["mnu"] != CAMB_SETTINGS["mnu"]:
+        raise RunStop(f"the fit's mnu {p['mnu']} is not the frozen {CAMB_SETTINGS['mnu']}")
+    camb.config.lensing_method = CAMB_SETTINGS["lensing_method"]
     pars = camb.CAMBparams()
     pars.set_classes(recombination_model="Recfast")
     pars.Recomb.set_params(recfast_approx_model=CAMB_SETTINGS["recfast_approx_model"])
+    pars.set_dark_energy(w=-1.0, cs2=1.0, wa=0, dark_energy_model=CAMB_SETTINGS["dark_energy_model"])
+    # E1: CosmoMC handed CAMB the fit's omega_nu h^2 (recorded in the .minimum for mnu = 0.06), not the mass
     pars.set_cosmology(cosmomc_theta=p["theta"] / 100.0, ombh2=p["omegabh2"], omch2=p["omegach2"], omk=0.0,
-                       mnu=CAMB_SETTINGS["mnu"], nnu=CAMB_SETTINGS["nnu"], neutrino_hierarchy=CAMB_SETTINGS["neutrino_hierarchy"],
+                       mnu=None, omnuh2_active=p["omeganuh2"], nnu=CAMB_SETTINGS["nnu"],
+                       neutrino_hierarchy=CAMB_SETTINGS["neutrino_hierarchy"],
+                       standard_neutrino_neff=CAMB_SETTINGS["standard_neutrino_neff"],
                        tau=p["tau"], YHe=None, bbn_predictor=CAMB_SETTINGS["bbn_table"])
     pars.Reion.set_extra_params(deltazrei=CAMB_SETTINGS["deltazrei"])
+    pars.Reion.helium_delta_redshift = CAMB_SETTINGS["helium_delta_redshift"]
+    pars.Reion.helium_redshiftstart = CAMB_SETTINGS["helium_redshiftstart"]
     pars.InitPower.set_params(As=math.exp(p["logA"]) * 1e-10, ns=p["ns"], pivot_scalar=CAMB_SETTINGS["pivot_scalar"])
     pars.WantTensors = False
     if for_g1b:
         names = {v: k for k, v in nonlinear.halofit_version_names.items()}
         pars.NonLinearModel.set_params(halofit_version=names[CAMB_SETTINGS["halofit_version_int"]])
-        pars.set_for_lmax(CAMB_SETTINGS["g1b_lmax"], lens_potential_accuracy=CAMB_SETTINGS["lens_potential_accuracy"])
+        pars.set_for_lmax(CAMB_SETTINGS["g1b_lmax"], max_eta_k=CAMB_SETTINGS["g1b_max_eta_k"],
+                          lens_potential_accuracy=CAMB_SETTINGS["lens_potential_accuracy"])
+        pars.max_eta_k = CAMB_SETTINGS["g1b_max_eta_k"]   # set_for_lmax raises it to 18000 for lens_potential_accuracy = 1
         pars.NonLinear = model.NonLinear_lens
         pars.DoLensing = True
     else:

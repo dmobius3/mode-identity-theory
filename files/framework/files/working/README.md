@@ -341,7 +341,7 @@ Registered and exploratory tests run against public datasets, with verdicts.
 
 **Test:** How does the Molien shell spectrum of $`S^3/2I`$, carried to the sky by the P1 spectral-transfer prescription, score against ΛCDM on the Planck 2018 low-ℓ temperature likelihood, at each of MIT's two independently read radii? Frozen before any run: the prescription, the shell weights, both radii, the codes and data pinned by hash, three gates, and ±2 decision bands on $`\Delta \ln L`$. Route A (the coupling radius, 6.13 Gpc) sets the Verdict; route B (the electron-muon radius, 19.7 Gpc) is reported beside it. The expectation recorded before the freeze: route A strongly disfavoured, route B unsettled.
 
-**Status (2026-09-13):** Frozen; the pipeline has not run, and the run waits on the go.
+**Status (2026-09-13):** Run 1 stopped at G1b as Uninformative, before any P1 quantity was computed: CAMB 2.0.4 reproduced Planck's baseline spectrum to 2.2 × 10⁻³ against a 2 × 10⁻³ gate. Erratum E1 restores CAMB settings from the code behind the Planck fits, and every gate reruns from G1a.
 
 ---
 

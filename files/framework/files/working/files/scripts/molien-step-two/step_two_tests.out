@@ -48,6 +48,7 @@ PASS  without --run the runner exits 2 and evaluates nothing
 == CAMB settings (object setup only, no computation)
 PASS  halofit_version 5 maps to 'mead2016'; Recfast 'planck' set has fudge_He 0.86 and no He rate correction
 PASS  the BBN table named in the settings ships with CAMB
+PASS  erratum E1 reaches CAMB: one massive eigenstate carrying 3.046/3 of N_eff with 2.030667 massless, the fit's omega_nu h^2 and Y_P, helium reionization width 0.5 from z = 5, PPF dark energy, curved-sky lensing, l_max 2850, k eta_max 14000
 
-30 checks passed, 0 failed
+31 checks passed, 0 failed
 ALL PASS
