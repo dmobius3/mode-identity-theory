@@ -1,0 +1,39 @@
+PASS  growth: g -> 1 deep in matter domination
+   g(a = 1) = 0.7878 (linear growth suppression today)
+   r(a = 0.05) = 10868 Mpc; the ISW source dg/da is negligible before that
+
+== Fixture: continuum Sachs-Wolfe integral times 2l(l+1) (must be 1)
+   l = 2: 1.00000, l = 5: 0.99991, l = 10: 0.99966
+PASS  continuum normalization
+
+== Fixture: ISW switched off reproduces sw_estimate.py (A 6.13, B 19.7 at l = 2..5)
+   R =  6.13 Gpc: 0.011, 0.004, 0.039, 0.011   (sw_estimate: 0.011, 0.004, 0.039, 0.011)
+   R = 19.70 Gpc: 0.019, 0.226, 0.267, 0.152   (sw_estimate: 0.019, 0.226, 0.267, 0.152)
+PASS  ISW-off ratios match sw_estimate.py to its printed precision
+
+== LCDM in the same crude model: share of C_l from the ISW term alone, and the cross term
+   l =  2: ISW auto  0.381   SW auto  0.731   cross -0.111
+   l =  3: ISW auto  0.289   SW auto  0.755   cross -0.044
+   l =  4: ISW auto  0.237   SW auto  0.783   cross -0.020
+   l =  5: ISW auto  0.201   SW auto  0.809   cross -0.010
+   l =  6: ISW auto  0.175   SW auto  0.830   cross -0.006
+   l =  7: ISW auto  0.155   SW auto  0.848   cross -0.003
+   l =  8: ISW auto  0.139   SW auto  0.863   cross -0.002
+   l =  9: ISW auto  0.126   SW auto  0.876   cross -0.001
+   l = 10: ISW auto  0.114   SW auto  0.886   cross -0.001
+
+== C_l(P1)/C_l(LCDM) with and without the ISW term
+     l    A 6.13: SW only   with ISW      B 19.7: SW only   with ISW
+     2            0.011      0.107               0.019      0.356
+     3            0.004      0.185               0.226      0.647
+     4            0.039      0.321               0.267      0.577
+     5            0.011      0.217               0.152      0.304
+     6            0.072      0.105               0.789      0.747
+     7            0.050      0.109               1.643      1.494
+     8            0.070      0.285               1.753      1.658
+     9            0.157      0.397               1.024      1.061
+    10            0.048      0.162               0.527      0.607
+
+   A: quadrupole 9.5 times the Sachs-Wolfe-only figure; median over l = 2..10 with ISW 0.185 (SW only 0.048)
+
+ALL PASS

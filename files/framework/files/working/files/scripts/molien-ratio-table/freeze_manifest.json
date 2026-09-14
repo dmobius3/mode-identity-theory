@@ -1,0 +1,13 @@
+{
+  "written_utc": "2026-09-14T14:06:53Z",
+  "files": {
+    "ratio_table_run.py": "e0d4a8676eda472ff8506101bc51bbb36d50725f564f6ca4c05d929d94ca7e6e",
+    "ratio_table_tests.py": "8007bd77f488c32e0e0a0202563079d06b42e2d3d173c230592fb3c0fddf11b8",
+    "ratio_table_tests.out": "29d01ded5f9d2184b2e471d2d113c767077003b331f7299510c461d32daa2206",
+    "ratio_table_figures.py": "a774ac5e026f5b83efe199017590125846b0facc8be81458846a2047b2109350",
+    "environment.json": "dbb6c1c3b060911bba8204228724dba39a890d1374607ab72e7a1d4bea9d8346",
+    "provenance.json": "93da693e3779e497dc27dbe855b12fa90bf6b8cf726f89910ec0300d7df97a6b",
+    "sw_estimate.out": "c9df1300d1d9b4a28d3df04b2fe40cf45606ed0a3572eac8738e32a55f3adc22",
+    "isw_estimate.out": "1a444b050953278b650d237c4321f906cd30f3b2c425b8cb2091cf9cdd96c51e"
+  }
+}

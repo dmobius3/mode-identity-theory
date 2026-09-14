@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-13):** Step one is done: up to N = 30 each surviving shell of S³/2I holds a single 2I-invariant form, whose roots on the sphere are the icosahedron's vertices (N = 12), face centres (N = 20) and edge midpoints (N = 30), with N = 24 the square of the first; the counts, the patterns and the even-spin descent to A5 are checked independently. The sky step's preregistered test, [The Molien Shells, Step Two](molien-step-two.md), closed Uninformative at its CAMB reproduction gate, before any P1 quantity was computed; whether a new registration follows is open.
+**Status (2026-09-14):** Step one is done: up to N = 30 each surviving shell of S³/2I holds a single 2I-invariant form, whose roots on the sphere are the icosahedron's vertices (N = 12), face centres (N = 20) and edge midpoints (N = 30), with N = 24 the square of the first; the counts, the patterns and the even-spin descent to A5 are checked independently. The sky step's preregistered test, [The Molien Shells, Step Two](molien-step-two.md), closed Uninformative at its CAMB reproduction gate, before any P1 quantity was computed; a theory-only registration of P1's full-transfer spectrum, [The Molien Shells: The Full-Transfer Ratio Table](molien-ratio-table.md), is frozen and waits to run.
 **Summary:** The Molien shells of S³/2I as MIT's CMB source structure: what the surviving shells carry, checked by an executable of its own, and the preregistered test that would take them to the sky.
 **Inputs:** `../../../../cosmos/files/cmb-anomalies.md` §IV, `scripts/molien-shells.test.py`
 

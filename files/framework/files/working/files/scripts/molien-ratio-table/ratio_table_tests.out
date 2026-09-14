@@ -1,0 +1,91 @@
+== Tripwires and the theta stub
+PASS  CAMB tripwires fire on all 6 compute entry points tried
+PASS  theta is never solved: CAMB's theta-to-H0 solver is a stub that records theta and sets a placeholder H0
+
+== The packet's copies of v1's records
+PASS  environment.json, provenance.json, sw_estimate.out and isw_estimate.out are byte-identical to v1's committed packet
+
+== v1's shell machinery, unchanged
+PASS  Molien counts, the three weight tables, the spline transfer, the shell sum and G2 give v1's results exactly on test inputs
+PASS  Molien counts equal the direct count to N = 4000, with step one's rows (1 at 0, 12, 20, 24, 30; 2 at 60; zero at odd N)
+PASS  W_12, W_20, W_24, W_30 = {12: 9.0027, 20: 3.4311, 24: 2.4185, 30: 1.5716} equal 480 pi m_N (N+1)/[N(N+2)]^(3/2) and v1's recorded values
+
+== Shell sum on a synthetic Sachs-Wolfe transfer (the estimate declared before v1's freeze)
+PASS  route A: the shell sum reproduces sw_estimate.out at all 28 multipoles (worst 0.0005 <= 0.0015); cutoff converged at N_max = 8192
+PASS  route B: the shell sum reproduces sw_estimate.out at all 28 multipoles (worst 0.0006 <= 0.0015); cutoff converged at N_max = 16384
+PASS  the first shell's share at A, recomputed from W_12, P(k_12) and Delta_l(k_12)^2, matches the runner's (largest 0.911, within (0, 1])
+
+== G2 on the synthetic transfer
+   R = 2.800e+06 Mpc; max deviation: s3 1.37e-04, molien 1.37e-04, molien_no120 9.92e-01
+PASS  G2 passes on correct machinery at 1e-3 (both spectra within it, the 1/120 mutation outside it)
+PASS  G2 fails when the continuum is off by 1%
+PASS  the cutoff rule reports non-convergence when the cap is reached first
+
+== The grid rule, bounded above, and the reach
+PASS  a grid fine from k12(R_B) to k chi* = 1000, with a coarse block above, meets the bounded rule, where v1's unbounded rule fails
+PASS  a grid coarse inside the range misses the rule
+PASS  a step straddling the range's upper edge counts, and a step wholly above it does not
+
+== The separation measure and the two labels
+PASS  K_P1 and K_Lambda reproduce a hand computation (R_2 = 0.5, R_3 = 2, the rest 1): 1.556853 and 1.443147
+PASS  K_P1 + K_Lambda = sum (2l+1)/2 (R + 1/R - 2) on a random table (the logarithms cancel), and the terms sum to the totals
+PASS  uniform departures of 10% give the contract's 1.97 to 2.58: [2.101, 1.9717, 2.4015, 2.5763]
+PASS  the shape label: Near unity, Departing and Unresolved branches, with 0.1 itself Near unity
+PASS  the separation label on K_min: Separated, Not separated and Unresolved branches, with 2 itself Separated
+PASS  F1's corner case (frozen K_P1 1.5, K_Lambda 3; repeat K_P1 3, K_Lambda 1.5) is Not separated
+PASS  a zero, negative or non-finite ratio, or a table without 28 entries, stops the run
+
+== End to end on a synthetic transfer provider (no CAMB)
+PASS  the grid rule misses at boost 2 and is met at 3, and the repeat runs at 4: calls [2, 3, 4]
+PASS  G2 passes in the pipeline, and both routes' ratios reproduce sw_estimate.out (worst 0.0006 <= 0.0015)
+PASS  labels on the Sachs-Wolfe transfer: A {'shape': 'Departing', 'separation': 'Separated'}, B {'shape': 'Departing', 'separation': 'Separated'}
+PASS  the repeat's table is reported beside the frozen one and moves no ratio by more than 1e-3 (A 2.6e-04, B 4.9e-04)
+PASS  the estimates are carried as recorded, and R_l is divided by them at every l (Sachs-Wolfe) and to l = 10 (with the integrated term)
+PASS  the report prints 28 rows per route, both labels per route, G2, every grid and every cutoff (56 rows)
+
+== Every stop keeps its partial record
+PASS  a failing gate stops the run and keeps its partial record: the grid rule never met by boost 6
+PASS  a failing gate stops the run and keeps its partial record: the grid ending below k chi* = 1000
+PASS  a failing gate stops the run and keeps its partial record: max_l not reaching CAMB
+PASS  a failing gate stops the run and keeps its partial record: the lensing potential left on
+PASS  a failing gate stops the run and keeps its partial record: multipole 17 missing
+PASS  a failing gate stops the run and keeps its partial record: G2 failing (the continuum 1% off)
+PASS  route B's frozen cutoff failing (forced in a wrapper) keeps route A's whole table, G2 and B's unconverged table, with no labels
+PASS  the report of a stopped run prints its partial record: the grid, G2 and the continuum's reason, and no label
+
+== The repeat's declared failures (a control, not a gate)
+PASS  the repeat's cutoff not converging (a block that never decays, at boost 4 only): the frozen table stands, identical to the clean run's, and both routes are Unresolved with the failure and its reason recorded
+PASS  the unconverged repeat enters no label: the frozen table alone reads Departing and Separated, the labels stay Unresolved, and the failed repeat carries no d_inf or K_min, only its unconverged ratios, marked as such
+PASS  an error of CAMB's own in the repeat: the frozen table stands, both routes are Unresolved, and the error is recorded
+PASS  the repeat's transfer not as registered (max_l 60 at boost 4): the frozen table stands and both routes are Unresolved
+PASS  any other failure in the repeat is an infrastructure defect: it propagates, and still keeps both frozen tables as its partial record
+PASS  the report of a failed repeat shows both routes Unresolved, the reason, and no repeat column
+
+== The runner's main, in process, on the synthetic provider (runtime check stubbed; no CAMB)
+PASS  main records a complete run: exit 0, status Complete, both labels, and a report beside the result
+PASS  main keeps a stopped run's partial record in the result file and its report: exit 1, Uninformative, G2's deviations kept
+
+== The figures, from the synthetic end-to-end result
+PASS  the spectra figure is well-formed SVG with LambdaCDM, A and B at 28 points each, every point a value of the result file
+PASS  the ratios figure has each route's panel: 28 full-transfer points, 28 Sachs-Wolfe and 9 integrated-term estimate markers, the 10% band and the unity line, every point a value of the result file
+PASS  no text in either figure wears a series colour: all 54 text elements use ink classes
+
+== CAMB parameter object (theta by the declared stub; nothing computed)
+PASS  the transfer settings reach CAMB's parameter object: max_l 260, both lensing flags off, lSampleBoost 50, lAccuracyBoost 2, AccuracyBoost 3, max_eta_k 12000, no nonlinear correction, no tensors
+PASS  erratum E1's physics settings reach it: one massive eigenstate carrying 3.046/3 of N_eff, the fit's omega_nu h^2 and Y_P, tanh width 0.5, helium reionization width 0.5 from z = 5, PPF dark energy, Recfast 'planck' (fudge_He 0.86)
+PASS  theta reached the stub once, as the fit's theta/100, and nothing was solved
+PASS  the fit's mnu is the frozen 0.06, and any other value stops the run
+
+== Runtime check and the refusal to run early
+PASS  the runtime check passes on this environment, on the packet without its manifest (0 mismatches)
+PASS  with the manifest required (as --run requires it), a missing manifest fails closed
+PASS  with a matching freeze manifest the runtime check passes
+PASS  a manifest that pins a different script fails closed: the runner is not the frozen one
+PASS  a packet file changed after the manifest fails the runtime check
+PASS  the runtime check fails closed on a changed version
+PASS  a changed parameter file fails the runtime check
+PASS  without --run the runner exits 2 and computes nothing
+PASS  --out inside the packet is refused before anything runs
+
+60 checks passed, 0 failed
+ALL PASS

@@ -1,0 +1,82 @@
+{
+  "user_agent": "molien-shells-step-two/1.0 (independent research; contact via GitHub dmobius3)",
+  "fetched_utc": "2026-09-13T19:54:08Z",
+  "files": [
+    {
+      "file": "COM_Likelihood_Data-baseline_R3.00.tar.gz",
+      "url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/software/COM_Likelihood_Data-baseline_R3.00.tar.gz",
+      "bytes": 60323470,
+      "sha256": "0b73171e3acc671c28184466a45485a2d1c1d93676b832abdfe688c7b04024e6",
+      "last_modified": "Wed, 31 Jul 2019 06:10:56 GMT",
+      "method": "whole file (fetched earlier this session; size re-checked against the server, hash recomputed)"
+    },
+    {
+      "file": "COM_PowerSpect_CMB-TT-full_R3.01.txt",
+      "url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_PowerSpect_CMB-TT-full_R3.01.txt",
+      "bytes": 170547,
+      "sha256": "ccf3113604020536f6f13ccf51680a7316ad0f32da558eee7f625e613bdd5522",
+      "last_modified": "Wed, 11 Jul 2018 12:18:38 GMT",
+      "method": "whole file (fetched earlier this session; size re-checked against the server, hash recomputed)"
+    },
+    {
+      "file": "base_plikHM_TTTEEE_lowl_lowE.minimum",
+      "from_zip": "COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+      "zip_url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+      "zip_bytes": 65362284,
+      "zip_last_modified": "Tue, 09 Jul 2019 08:11:06 GMT",
+      "member_path": "base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE.minimum",
+      "bytes": 8691,
+      "crc32": "aaf6a65f",
+      "sha256": "5f2c50602242fef1f39b62a1b1268e1c15ff6f2e24b513d9fa38e9186e13e14e",
+      "method": "HTTP range reads through zipfile; CRC32 and size checked"
+    },
+    {
+      "file": "base_plikHM_TTTEEE_lowl_lowE.minimum.theory_cl",
+      "from_zip": "COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+      "zip_url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+      "zip_bytes": 65362284,
+      "zip_last_modified": "Tue, 09 Jul 2019 08:11:06 GMT",
+      "member_path": "base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE.minimum.theory_cl",
+      "bytes": 205647,
+      "crc32": "25104ef1",
+      "sha256": "f39ee98810acf991385a2c40514467810ed689036aeff054b99116526034d350",
+      "method": "HTTP range reads through zipfile; CRC32 and size checked"
+    },
+    {
+      "file": "base_plikHM_TTTEEE_lowl_lowE.minimum.inputparams",
+      "from_zip": "COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+      "zip_url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_CosmoParams_base-plikHM-TTTEEE-lowl-lowE_R3.00.zip",
+      "zip_bytes": 65362284,
+      "zip_last_modified": "Tue, 09 Jul 2019 08:11:06 GMT",
+      "member_path": "base/plikHM_TTTEEE_lowl_lowE/base_plikHM_TTTEEE_lowl_lowE.minimum.inputparams",
+      "bytes": 4714,
+      "crc32": "a7cb4d7e",
+      "sha256": "ba8b130ce1611488974e764b8517bdf6af9fc0d6683c6338c3096f5aba9f8c6c",
+      "method": "HTTP range reads through zipfile; CRC32 and size checked"
+    },
+    {
+      "file": "base_plikHM_TTTEEE_lowE.minimum",
+      "from_zip": "COM_CosmoParams_base-plikHM_R3.01.zip",
+      "zip_url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_CosmoParams_base-plikHM_R3.01.zip",
+      "zip_bytes": 493702839,
+      "zip_last_modified": "Wed, 31 Jul 2019 06:17:48 GMT",
+      "member_path": "base/plikHM_TTTEEE_lowE/base_plikHM_TTTEEE_lowE.minimum",
+      "bytes": 8568,
+      "crc32": "9ae10a74",
+      "sha256": "fcb082b44206bd14f2225cdf1a17c39c5173877c14315a8474a337938d4bb831",
+      "method": "HTTP range reads through zipfile; CRC32 and size checked"
+    },
+    {
+      "file": "base_plikHM_TTTEEE_lowE.minimum.inputparams",
+      "from_zip": "COM_CosmoParams_base-plikHM_R3.01.zip",
+      "zip_url": "https://irsa.ipac.caltech.edu/data/Planck/release_3/ancillary-data/cosmoparams/COM_CosmoParams_base-plikHM_R3.01.zip",
+      "zip_bytes": 493702839,
+      "zip_last_modified": "Wed, 31 Jul 2019 06:17:48 GMT",
+      "member_path": "base/plikHM_TTTEEE_lowE/base_plikHM_TTTEEE_lowE.minimum.inputparams",
+      "bytes": 4571,
+      "crc32": "85370a6e",
+      "sha256": "998c87f5b1da499ebd268b2f91060ac8a253c7c407a7a46daf4e72bfc631d16b",
+      "method": "HTTP range reads through zipfile; CRC32 and size checked"
+    }
+  ]
+}
