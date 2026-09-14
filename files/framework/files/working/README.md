@@ -285,7 +285,7 @@ Technical gaps with specific paths forward.
 
 ## :white_check_mark: Results
 
-Closed: executed computations and derivations with verdicts in hand.
+Closed: executed computations and derivations with their outcomes in hand.
 
 ---
 
