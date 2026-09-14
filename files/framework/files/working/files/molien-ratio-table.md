@@ -6,8 +6,8 @@
 # The Molien Shells: The Full-Transfer Ratio Table
 
 **Type:** Result
-**State:** Waiting
-**Status (2026-09-14):** Run 1 stopped Uninformative at G2, before either route's table, where the shell sum's cubic spline overshot a 300-fold jump in CAMB's grid; erratum E1 corrects that interpolation, and the computation restarts from the runtime check on the author's go. Both are recorded below. No P1 spectrum has been computed at either radius.
+**State:** Closed
+**Status (2026-09-14):** Complete: both routes are Departing and Separated, in the frozen computation and in the repeat, at A (R = 6130 Mpc) with d∞ = 0.92 and K_min = 109 and at B (R = 19700 Mpc) with d∞ = 0.71 and K_min = 9.6. So no Planck-era CAMB is built for either route, and the table stands as P1's predicted spectrum at each radius, a theory result not scored against data. Run 1 stopped at G2, erratum E1 corrected the shell sum's interpolation, and Run 2 completed; all three are recorded below.
 **Summary:** A registered, theory-only computation: the low-ℓ temperature spectrum that the P1 spectral-transfer prescription gives at MIT's two radii, as per-multipole ratios to ΛCDM through CAMB's full transfer function, with no data.
 **Inputs:** `molien-step-two.md`, `molien-shells.md`, `scripts/molien-shells.test.py`, `scripts/molien-step-two/step_two_run.py`, `scripts/molien-step-two/shell_weights_check.py`, `scripts/molien-step-two/sw_estimate.py`, `scripts/molien-step-two/isw_estimate.py`, `scripts/molien-step-two/environment.json`, `scripts/molien-step-two/provenance.json`, `r-problem.md`, `claim-ledger.md`, `r-from-mass-spectrum.md`, `../../../../cosmos/files/cmb-anomalies.md` §IV-V
 **Parent:** `molien-shells.md`
@@ -146,6 +146,93 @@ The synthetic suite restores the coarse block its provider carried before the fr
 Expected effect, stated before the rerun and drawn from the diagnosis alone: the first coarse interval carries 2.32 × 10⁻⁴ of the failing doubling's 2.51 × 10⁻⁴, so taking away the slope it inherited across the jump is expected to reduce that change substantially. What the decomposition supports is the remainder once that interval's share is gone, 1.9 × 10⁻⁵, five times under the rule's 10⁻⁴. Most of it sits in the next two coarse intervals, 1.7 × 10⁻⁵ and 1.4 × 10⁻⁶, each more than ten times smaller than the one before, as a spline's ringing would be; if they are that ringing, the change falls further, toward the 8.8 × 10⁻⁷ of the fine band below the jump, but the decomposition does not show that, and the expectation does not count on it. The margin is thin even so: the doubling before, 1.7 × 10⁻⁴, lies within the fine grid and is unchanged, so the cutoff can converge only on the last two doublings the cap allows. What the corrected gate gives is unknown until the rerun. E1 is the only correction this registration takes: if G2 fails again, the registration closes Uninformative.
 
 After E1 the runner's SHA-256 is 64e195a4dac1c50342953fc3b7aaf519c1fd05685dddae02feba7c801e8140c7 and the manifest's is 1d231363666fc11c6248691abf1e95acd0c9d207fb9ace6232081613312705ec; the synthetic suite records 67 passes. Per §3, the computation restarts from the runtime check, on the author's go.
+
+**Run 2 (2026-09-14): Complete.** Run 2 ran with the E1 runner from the commits that recorded the erratum, and the runtime check found no mismatch. The grid rule missed at boost 2 and was met at boost 3, as in Run 1, and the repeat's grid at boost 4 met it too; at all three boosts CAMB's block boundary sat at kη₀ = 3000 with its 300-fold step, and the grid reached kχ* = 11762. G2 passed: its deviations were 8.33 × 10⁻⁵ for the full S³ spectrum and for the Molien spectrum, inside 10⁻³, and the spectrum with the 1/120 dropped missed by 0.99. Its cutoff converged at the cap, on the last two doublings the cap allows: the largest change in any C_ℓ was 1.70 × 10⁻⁴ on the doubling to N_max = 524,288, 1.29 × 10⁻⁶ on the one to 1,048,576, and 9.8 × 10⁻¹¹ on the last. The routes' cutoffs converged at N_max = 4096 at A and 8192 at B, in both computations. The repeat at boost 4 was valid at both routes and moved no R_ℓ by more than 1.79 × 10⁻³ at A and 2.40 × 10⁻³ at B, while ΛCDM's own spectrum moved by up to 1.56 × 10⁻³ between the two boosts, so R_ℓ is given to two significant figures, as §4 requires. The records, with the two figures, are in [scripts/molien-ratio-table-runs/run-2](scripts/molien-ratio-table-runs/run-2/).
+
+The labels, with each quantity from the frozen computation and then from the repeat:
+
+| Route | R | d∞ | K_P1 | K_Λ | K_min | Shape | Separation |
+|---|---:|---:|---:|---:|---:|---|---|
+| A | 6130 Mpc | 0.924 / 0.9239 | 109.2 / 109.2 | 307.4 / 307.2 | 109.2 / 109.2 | Departing | Separated |
+| B | 19700 Mpc | 0.7088 / 0.7082 | 9.559 / 9.544 | 14.28 / 14.25 | 9.559 / 9.544 | Departing | Separated |
+
+Both routes' tables follow, with the numbers the report prints: D_ℓ = ℓ(ℓ+1)C_ℓ/2π in μK² for ΛCDM and for P1 from the frozen computation; R_ℓ from the frozen computation and from the repeat; the share of C_ℓ(P1) carried by the first shell, N = 12; the per-multipole terms of K_P1 and K_Λ; and R_ℓ divided by the ratio of the Sachs-Wolfe estimate (SW) at every ℓ and of the estimate with the integrated term (ISW) to ℓ = 10. The repeat's D_ℓ, shares and terms are in the result file.
+
+**Route A, R = 6130 Mpc.**
+
+| ℓ | D_ℓ ΛCDM (μK²) | D_ℓ P1 (μK²) | R_ℓ | R_ℓ, repeat | first shell's share | K_P1 term | K_Λ term | R_ℓ / SW | R_ℓ / ISW |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2 | 1019.98 | 77.47 | 0.076 | 0.076 | 0.5243 | 4.1339 | 23.9705 | 6.905 | 0.710 |
+| 3 | 967.28 | 92.90 | 0.096 | 0.096 | 0.4910 | 5.0366 | 24.7422 | 24.010 | 0.519 |
+| 4 | 916.96 | 251.75 | 0.27 | 0.27 | 0.6949 | 2.5523 | 6.0737 | 7.040 | 0.855 |
+| 5 | 879.35 | 267.29 | 0.3 | 0.3 | 0.7139 | 2.7214 | 6.0446 | 27.633 | 1.401 |
+| 6 | 853.52 | 101.75 | 0.12 | 0.12 | 0.1485 | 8.0991 | 34.1979 | 1.656 | 1.135 |
+| 7 | 836.94 | 78.03 | 0.093 | 0.093 | 0.0630 | 10.9945 | 55.1521 | 1.865 | 0.855 |
+| 8 | 827.27 | 145.48 | 0.18 | 0.18 | 0.2215 | 7.7687 | 25.0622 | 2.512 | 0.617 |
+| 9 | 822.83 | 375.71 | 0.46 | 0.46 | 0.6528 | 2.2851 | 3.8583 | 2.908 | 1.150 |
+| 10 | 822.27 | 260.34 | 0.32 | 0.32 | 0.4840 | 4.9001 | 10.5875 | 6.596 | 1.954 |
+| 11 | 824.62 | 165.48 | 0.2 | 0.2 | 0.0906 | 9.2778 | 27.3381 | 0.912 |  |
+| 12 | 829.30 | 215.25 | 0.26 | 0.26 | 0.4860 | 7.6042 | 18.7993 | 1.230 |  |
+| 13 | 835.78 | 206.66 | 0.25 | 0.25 | 0.0100 | 8.7016 | 22.2340 | 2.778 |  |
+| 14 | 843.67 | 525.99 | 0.62 | 0.62 | 0.6519 | 1.3910 | 1.9065 | 1.521 |  |
+| 15 | 852.72 | 703.53 | 0.83 | 0.82 | 0.6514 | 0.2691 | 0.3059 | 2.485 |  |
+| 16 | 862.79 | 266.97 | 0.31 | 0.31 | 0.0843 | 7.9607 | 17.4697 | 3.728 |  |
+| 17 | 873.74 | 501.92 | 0.57 | 0.57 | 0.6546 | 2.2539 | 3.2630 | 0.902 |  |
+| 18 | 884.82 | 1183.30 | 1.3 | 1.3 | 0.6990 | 0.8631 | 0.7110 | 2.020 |  |
+| 19 | 897.61 | 637.83 | 0.71 | 0.71 | 0.5857 | 1.0189 | 1.2797 | 8.561 |  |
+| 20 | 910.54 | 391.10 | 0.43 | 0.43 | 0.0250 | 5.6294 | 9.9033 | 0.771 |  |
+| 21 | 923.87 | 1062.79 | 1.2 | 1.2 | 0.5508 | 0.2212 | 0.2014 | 0.942 |  |
+| 22 | 937.61 | 1288.71 | 1.4 | 1.4 | 0.8240 | 1.2690 | 1.0265 | 1.448 |  |
+| 23 | 951.74 | 1197.99 | 1.3 | 1.3 | 0.5550 | 0.6727 | 0.5771 | 3.713 |  |
+| 24 | 966.24 | 709.57 | 0.73 | 0.73 | 0.1120 | 1.0563 | 1.2978 | 1.827 |  |
+| 25 | 981.08 | 573.81 | 0.58 | 0.58 | 0.1747 | 3.0913 | 4.4218 | 0.381 |  |
+| 26 | 996.23 | 1222.79 | 1.2 | 1.2 | 0.4926 | 0.5964 | 0.5203 | 0.454 |  |
+| 27 | 1011.67 | 1659.96 | 1.6 | 1.6 | 0.6104 | 4.0046 | 2.8778 | 0.547 |  |
+| 28 | 1027.39 | 1687.19 | 1.6 | 1.6 | 0.6185 | 4.1657 | 2.9919 | 0.662 |  |
+| 29 | 1043.38 | 1285.31 | 1.2 | 1.2 | 0.6180 | 0.6885 | 0.5991 | 0.718 |  |
+
+**Route B, R = 19700 Mpc.**
+
+| ℓ | D_ℓ ΛCDM (μK²) | D_ℓ P1 (μK²) | R_ℓ | R_ℓ, repeat | first shell's share | K_P1 term | K_Λ term | R_ℓ / SW | R_ℓ / ISW |
+|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|
+| 2 | 1019.98 | 297.02 | 0.29 | 0.29 | 0.3047 | 1.3124 | 3.0008 | 15.326 | 0.818 |
+| 3 | 967.28 | 578.77 | 0.6 | 0.6 | 0.4945 | 0.3918 | 0.5519 | 2.648 | 0.925 |
+| 4 | 916.96 | 571.01 | 0.62 | 0.62 | 0.5195 | 0.4337 | 0.5949 | 2.332 | 1.079 |
+| 5 | 879.35 | 289.76 | 0.33 | 0.33 | 0.0171 | 2.4181 | 5.0854 | 2.168 | 1.084 |
+| 6 | 853.52 | 575.75 | 0.67 | 0.67 | 0.5686 | 0.4437 | 0.5769 | 0.855 | 0.903 |
+| 7 | 836.94 | 1102.07 | 1.3 | 1.3 | 0.8421 | 0.3119 | 0.2596 | 0.801 | 0.881 |
+| 8 | 827.27 | 1354.36 | 1.6 | 1.6 | 0.7063 | 1.2256 | 0.8821 | 0.934 | 0.987 |
+| 9 | 822.83 | 1033.28 | 1.3 | 1.3 | 0.5494 | 0.2662 | 0.2287 | 1.226 | 1.184 |
+| 10 | 822.27 | 548.83 | 0.67 | 0.67 | 0.4149 | 0.7532 | 0.9864 | 1.267 | 1.100 |
+| 11 | 824.62 | 602.14 | 0.73 | 0.73 | 0.1113 | 0.5133 | 0.6330 | 0.972 |  |
+| 12 | 829.30 | 817.46 | 0.99 | 0.99 | 0.0187 | 0.0013 | 0.0013 | 1.035 |  |
+| 13 | 835.78 | 771.28 | 0.92 | 0.92 | 0.0036 | 0.0424 | 0.0447 | 0.937 |  |
+| 14 | 843.67 | 863.17 | 1 | 1 | 0.0005 | 0.0038 | 0.0038 | 0.846 |  |
+| 15 | 852.72 | 1061.52 | 1.2 | 1.2 | 0.0000 | 0.4005 | 0.3461 | 0.966 |  |
+| 16 | 862.79 | 983.79 | 1.1 | 1.1 | 0.0000 | 0.1485 | 0.1361 | 1.136 |  |
+| 17 | 873.74 | 794.09 | 0.91 | 0.91 | 0.0000 | 0.0775 | 0.0826 | 1.188 |  |
+| 18 | 884.82 | 739.49 | 0.84 | 0.84 | 0.0000 | 0.2807 | 0.3164 | 1.022 |  |
+| 19 | 897.61 | 828.27 | 0.92 | 0.92 | 0.0000 | 0.0614 | 0.0647 | 0.917 |  |
+| 20 | 910.54 | 954.45 | 1 | 1 | 0.0000 | 0.0231 | 0.0224 | 0.956 |  |
+| 21 | 923.87 | 959.73 | 1 | 1 | 0.0000 | 0.0158 | 0.0154 | 0.960 |  |
+| 22 | 937.61 | 954.48 | 1 | 1 | 0.0000 | 0.0036 | 0.0036 | 0.930 |  |
+| 23 | 951.74 | 1043.70 | 1.1 | 1.1 | 0.0000 | 0.1031 | 0.0970 | 1.057 |  |
+| 24 | 966.24 | 994.70 | 1 | 1 | 0.0000 | 0.0104 | 0.0102 | 1.189 |  |
+| 25 | 981.08 | 860.53 | 0.88 | 0.88 | 0.0000 | 0.2099 | 0.2290 | 1.032 |  |
+| 26 | 996.23 | 924.89 | 0.93 | 0.93 | 0.0000 | 0.0714 | 0.0750 | 0.913 |  |
+| 27 | 1011.67 | 1049.46 | 1 | 1 | 0.0000 | 0.0187 | 0.0183 | 0.944 |  |
+| 28 | 1027.39 | 1059.50 | 1 | 1 | 0.0000 | 0.0136 | 0.0134 | 0.969 |  |
+| 29 | 1043.38 | 1059.35 | 1 | 1 | 0.0000 | 0.0034 | 0.0034 | 0.986 |  |
+
+The two figures, drawn from the result file by the script frozen with the packet, carry no data, no likelihood value and no cosmic-variance band.
+
+![P1's low-ℓ spectrum at routes A and B beside ΛCDM's, D_ℓ in μK² on a logarithmic scale, for ℓ = 2 to 29](scripts/molien-ratio-table-runs/run-2/ratio_table_spectra.svg)
+
+![R_ℓ at routes A and B with the 10% band, beside the two estimates made before v1's freeze](scripts/molien-ratio-table-runs/run-2/ratio_table_ratios.svg)
+
+**What the table shows.** At A, R = 6130 Mpc, P1's spectrum lies far below ΛCDM's through ℓ = 13, at 7.6% to 46% of it, and then rises unevenly through unity to 1.6 at ℓ = 27 and 28. The first shell carries most of C_ℓ(P1) at 15 of the 28 multipoles, the quadrupole among them, and K_min = K_P1 = 109 in both computations, its largest terms at ℓ = 7, 11 and 13. At B, R = 19700 Mpc, the quadrupole is 29% of ΛCDM's and ℓ = 5 is 33%, ℓ = 7 to 9 stand 1.3 to 1.6 times above it, where the first shell carries most of C_ℓ(P1), and from ℓ = 12 up the ratios lie between 0.84 and 1.2; K_min = K_P1 = 9.6 in both computations, half of it from ℓ = 2, 5 and 8. Both routes are Departing, since both computations put d∞ above 0.1, and Separated, since both put K_min above 2. By §5 no Planck-era CAMB is built for either route, and the table stands as P1's predicted spectrum at each radius. It is not set against the sky here, and neither label is a Verdict on P1, on the Molien shells or on MIT.
+
+**The expectations, against the run.** The labels came out as §8 expected, Departing and Separated at both routes, but the stated margins did not. §5 expected the smaller separation to clear 2 by more than a factor of a hundred at A and of five at B; it clears it by a factor of 55 at A and 4.8 at B. The estimates put K_P1 and K_Λ near 250 and 740 at A, and 11 and 16 at B; the full transfer gives 109 and 307, and 9.6 and 14. They put A's largest departure near 2.0 at ℓ = 27, where the Sachs-Wolfe term alone had ℓ = 25 to 29 at 1.5 to 3.0 times ΛCDM's; the full transfer brings those multipoles to 0.58 to 1.6 times, so A's largest departure is its quadrupole's, 0.92. At B they put it near 0.70 at ℓ = 5; the full transfer gives 0.71 at the quadrupole, with ℓ = 5 at 0.67. The expectation therefore held in its conclusion and missed in its margins, and neither miss reaches a label, since K_min clears 2 at both routes in both computations. E1's expected effect held: the doubling that failed in Run 1 fell from 2.51 × 10⁻⁴ to 1.29 × 10⁻⁶, inside the 1.9 × 10⁻⁵ the decomposition supported and close to the 8.8 × 10⁻⁷ of the fine band, which the expectation had declined to count on, and the cutoff converged only at the cap, as expected.
 
 ---
 

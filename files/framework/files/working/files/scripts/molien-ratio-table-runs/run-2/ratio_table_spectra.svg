@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" width="760" height="470" role="img" aria-labelledby="t d"><title id="t">P1's low-ℓ temperature spectrum at MIT's two radii</title><desc id="d">D_l for LambdaCDM and for P1 at routes A and B, l = 2 to 29, from the ratio table's frozen computation; theory only, no data.</desc>
+<style>
+svg { --surface: #fcfcfb; --ink: #0b0b0b; --ink2: #52514e; --muted: #898781; --grid: #e1e0d9; --axis: #c3c2b7; --band: #f0efec; --a: #2a78d6; --b: #eb6834; font-family: system-ui, -apple-system, 'Segoe UI', sans-serif }
+@media (prefers-color-scheme: dark) { svg { --surface: #1a1a19; --ink: #ffffff; --ink2: #c3c2b7; --muted: #898781; --grid: #2c2c2a; --axis: #383835; --band: #383835; --a: #3987e5; --b: #d95926 } }
+.bg { fill: #fcfcfb; fill: var(--surface) }
+.grid { stroke: #e1e0d9; stroke: var(--grid); stroke-width: 1; shape-rendering: crispEdges }
+.axis { stroke: #c3c2b7; stroke: var(--axis); stroke-width: 1; shape-rendering: crispEdges }
+.band { fill: #e1e0d9; fill: var(--grid) }
+.t1 { fill: #0b0b0b; fill: var(--ink); font-size: 15px; font-weight: 600 }
+.t2 { fill: #52514e; fill: var(--ink2); font-size: 12px }
+.tm { fill: #898781; fill: var(--muted); font-size: 11px; font-variant-numeric: tabular-nums }
+.l-lcdm { stroke: #52514e; stroke: var(--ink2); fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round }
+.l-A { stroke: #2a78d6; stroke: var(--a); fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round }
+.l-B { stroke: #eb6834; stroke: var(--b); fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round }
+.m-lcdm { fill: #52514e; fill: var(--ink2); stroke: #fcfcfb; stroke: var(--surface); stroke-width: 2 }
+.m-A { fill: #2a78d6; fill: var(--a); stroke: #fcfcfb; stroke: var(--surface); stroke-width: 2 }
+.m-B { fill: #eb6834; fill: var(--b); stroke: #fcfcfb; stroke: var(--surface); stroke-width: 2 }
+.o-A { fill: #fcfcfb; fill: var(--surface); stroke: #2a78d6; stroke: var(--a); stroke-width: 1.5 }
+.o-B { fill: #fcfcfb; fill: var(--surface); stroke: #eb6834; stroke: var(--b); stroke-width: 1.5 }
+.k-line { stroke: #52514e; stroke: var(--ink2); fill: none; stroke-width: 2; stroke-linejoin: round; stroke-linecap: round }
+.k-dot { fill: #52514e; fill: var(--ink2); stroke: #fcfcfb; stroke: var(--surface); stroke-width: 2 }
+.k-open { fill: #fcfcfb; fill: var(--surface); stroke: #52514e; stroke: var(--ink2); stroke-width: 1.5 }
+</style>
+<rect class="bg" width="760" height="470"/>
+<text class="t1" x="24" y="32">P1's low-ℓ temperature spectrum at MIT's two radii</text>
+<text class="t2" x="24" y="52">D_ℓ = ℓ(ℓ+1)C_ℓ/2π, unlensed, from CAMB 2.0.4 transfer functions; theory only, no data</text>
+<line class="l-lcdm" x1="24" x2="46" y1="80" y2="80"/>
+<circle class="m-lcdm" cx="35" cy="80" r="4"/>
+<text class="t2" x="54" y="84">ΛCDM</text>
+<line class="l-A" x1="101.6" x2="123.6" y1="80" y2="80"/>
+<circle class="m-A" cx="112.6" cy="80" r="4"/>
+<text class="t2" x="131.6" y="84">P1, route A</text>
+<line class="l-B" x1="224.0" x2="246.0" y1="80" y2="80"/>
+<circle class="m-B" cx="235.0" cy="80" r="4"/>
+<text class="t2" x="254.0" y="84">P1, route B</text>
+<line class="grid" x1="72.0" x2="636.0" y1="412.0" y2="412.0"/>
+<text class="tm" x="64.0" y="416.0" text-anchor="end">10</text>
+<line class="grid" x1="72.0" x2="636.0" y1="312.0" y2="312.0"/>
+<text class="tm" x="64.0" y="316.0" text-anchor="end">100</text>
+<line class="grid" x1="72.0" x2="636.0" y1="212.0" y2="212.0"/>
+<text class="tm" x="64.0" y="216.0" text-anchor="end">1,000</text>
+<line class="grid" x1="72.0" x2="636.0" y1="112.0" y2="112.0"/>
+<text class="tm" x="64.0" y="116.0" text-anchor="end">10,000</text>
+<line class="axis" x1="72.0" x2="636.0" y1="412.0" y2="412.0"/>
+<text class="tm" x="72.0" y="430.0" text-anchor="middle">2</text>
+<text class="tm" x="134.7" y="430.0" text-anchor="middle">5</text>
+<text class="tm" x="239.1" y="430.0" text-anchor="middle">10</text>
+<text class="tm" x="343.6" y="430.0" text-anchor="middle">15</text>
+<text class="tm" x="448.0" y="430.0" text-anchor="middle">20</text>
+<text class="tm" x="552.4" y="430.0" text-anchor="middle">25</text>
+<text class="tm" x="636.0" y="430.0" text-anchor="middle">29</text>
+<text class="tm" x="354.0" y="448.0" text-anchor="middle">multipole ℓ</text>
+<text class="tm" x="64.0" y="100.0" text-anchor="end">μK²</text>
+<path class="l-lcdm" d="M72.0,211.1 L92.9,213.4 L113.8,215.8 L134.7,217.6 L155.6,218.9 L176.4,219.7 L197.3,220.2 L218.2,220.5 L239.1,220.5 L260.0,220.4 L280.9,220.1 L301.8,219.8 L322.7,219.4 L343.6,218.9 L364.4,218.4 L385.3,217.9 L406.2,217.3 L427.1,216.7 L448.0,216.1 L468.9,215.4 L489.8,214.8 L510.7,214.1 L531.6,213.5 L552.4,212.8 L573.3,212.2 L594.2,211.5 L615.1,210.8 L636.0,210.2"/>
+<circle class="m-lcdm" cx="72.0" cy="211.1" r="4" data-l="2" data-v="1019.9782268488378"><title>ΛCDM, ℓ = 2: 1020</title></circle>
+<circle class="m-lcdm" cx="92.9" cy="213.4" r="4" data-l="3" data-v="967.2800571249322"><title>ΛCDM, ℓ = 3: 967.3</title></circle>
+<circle class="m-lcdm" cx="113.8" cy="215.8" r="4" data-l="4" data-v="916.9564868470627"><title>ΛCDM, ℓ = 4: 917</title></circle>
+<circle class="m-lcdm" cx="134.7" cy="217.6" r="4" data-l="5" data-v="879.346753777396"><title>ΛCDM, ℓ = 5: 879.3</title></circle>
+<circle class="m-lcdm" cx="155.6" cy="218.9" r="4" data-l="6" data-v="853.5228367755152"><title>ΛCDM, ℓ = 6: 853.5</title></circle>
+<circle class="m-lcdm" cx="176.4" cy="219.7" r="4" data-l="7" data-v="836.9356195004848"><title>ΛCDM, ℓ = 7: 836.9</title></circle>
+<circle class="m-lcdm" cx="197.3" cy="220.2" r="4" data-l="8" data-v="827.2731693275126"><title>ΛCDM, ℓ = 8: 827.3</title></circle>
+<circle class="m-lcdm" cx="218.2" cy="220.5" r="4" data-l="9" data-v="822.8323644014956"><title>ΛCDM, ℓ = 9: 822.8</title></circle>
+<circle class="m-lcdm" cx="239.1" cy="220.5" r="4" data-l="10" data-v="822.2655336116565"><title>ΛCDM, ℓ = 10: 822.3</title></circle>
+<circle class="m-lcdm" cx="260.0" cy="220.4" r="4" data-l="11" data-v="824.6222869550663"><title>ΛCDM, ℓ = 11: 824.6</title></circle>
+<circle class="m-lcdm" cx="280.9" cy="220.1" r="4" data-l="12" data-v="829.299159525479"><title>ΛCDM, ℓ = 12: 829.3</title></circle>
+<circle class="m-lcdm" cx="301.8" cy="219.8" r="4" data-l="13" data-v="835.7842907684416"><title>ΛCDM, ℓ = 13: 835.8</title></circle>
+<circle class="m-lcdm" cx="322.7" cy="219.4" r="4" data-l="14" data-v="843.6662614949676"><title>ΛCDM, ℓ = 14: 843.7</title></circle>
+<circle class="m-lcdm" cx="343.6" cy="218.9" r="4" data-l="15" data-v="852.7182435503734"><title>ΛCDM, ℓ = 15: 852.7</title></circle>
+<circle class="m-lcdm" cx="364.4" cy="218.4" r="4" data-l="16" data-v="862.7900307632245"><title>ΛCDM, ℓ = 16: 862.8</title></circle>
+<circle class="m-lcdm" cx="385.3" cy="217.9" r="4" data-l="17" data-v="873.7390875344315"><title>ΛCDM, ℓ = 17: 873.7</title></circle>
+<circle class="m-lcdm" cx="406.2" cy="217.3" r="4" data-l="18" data-v="884.8196222796532"><title>ΛCDM, ℓ = 18: 884.8</title></circle>
+<circle class="m-lcdm" cx="427.1" cy="216.7" r="4" data-l="19" data-v="897.6073366068689"><title>ΛCDM, ℓ = 19: 897.6</title></circle>
+<circle class="m-lcdm" cx="448.0" cy="216.1" r="4" data-l="20" data-v="910.5424077874942"><title>ΛCDM, ℓ = 20: 910.5</title></circle>
+<circle class="m-lcdm" cx="468.9" cy="215.4" r="4" data-l="21" data-v="923.867771395694"><title>ΛCDM, ℓ = 21: 923.9</title></circle>
+<circle class="m-lcdm" cx="489.8" cy="214.8" r="4" data-l="22" data-v="937.6085910748285"><title>ΛCDM, ℓ = 22: 937.6</title></circle>
+<circle class="m-lcdm" cx="510.7" cy="214.1" r="4" data-l="23" data-v="951.742391135683"><title>ΛCDM, ℓ = 23: 951.7</title></circle>
+<circle class="m-lcdm" cx="531.6" cy="213.5" r="4" data-l="24" data-v="966.2407638970637"><title>ΛCDM, ℓ = 24: 966.2</title></circle>
+<circle class="m-lcdm" cx="552.4" cy="212.8" r="4" data-l="25" data-v="981.0753887172444"><title>ΛCDM, ℓ = 25: 981.1</title></circle>
+<circle class="m-lcdm" cx="573.3" cy="212.2" r="4" data-l="26" data-v="996.2252846934856"><title>ΛCDM, ℓ = 26: 996.2</title></circle>
+<circle class="m-lcdm" cx="594.2" cy="211.5" r="4" data-l="27" data-v="1011.6661682635578"><title>ΛCDM, ℓ = 27: 1012</title></circle>
+<circle class="m-lcdm" cx="615.1" cy="210.8" r="4" data-l="28" data-v="1027.3903673999687"><title>ΛCDM, ℓ = 28: 1027</title></circle>
+<circle class="m-lcdm" cx="636.0" cy="210.2" r="4" data-l="29" data-v="1043.3782845399362"><title>ΛCDM, ℓ = 29: 1043</title></circle>
+<path class="l-A" d="M72.0,323.1 L92.9,315.2 L113.8,271.9 L134.7,269.3 L155.6,311.2 L176.4,322.8 L197.3,295.7 L218.2,254.5 L239.1,270.4 L260.0,290.1 L280.9,278.7 L301.8,280.5 L322.7,239.9 L343.6,227.3 L364.4,269.4 L385.3,241.9 L406.2,204.7 L427.1,231.5 L448.0,252.8 L468.9,209.4 L489.8,201.0 L510.7,204.2 L531.6,226.9 L552.4,236.1 L573.3,203.3 L594.2,190.0 L615.1,189.3 L636.0,201.1"/>
+<circle class="m-A" cx="72.0" cy="323.1" r="4" data-l="2" data-v="77.47165639179305"><title>P1, route A, ℓ = 2: 77.47</title></circle>
+<circle class="m-A" cx="92.9" cy="315.2" r="4" data-l="3" data-v="92.89897517444075"><title>P1, route A, ℓ = 3: 92.9</title></circle>
+<circle class="m-A" cx="113.8" cy="271.9" r="4" data-l="4" data-v="251.74974320269726"><title>P1, route A, ℓ = 4: 251.7</title></circle>
+<circle class="m-A" cx="134.7" cy="269.3" r="4" data-l="5" data-v="267.29018394873253"><title>P1, route A, ℓ = 5: 267.3</title></circle>
+<circle class="m-A" cx="155.6" cy="311.2" r="4" data-l="6" data-v="101.75499414653889"><title>P1, route A, ℓ = 6: 101.8</title></circle>
+<circle class="m-A" cx="176.4" cy="322.8" r="4" data-l="7" data-v="78.02635204571578"><title>P1, route A, ℓ = 7: 78.03</title></circle>
+<circle class="m-A" cx="197.3" cy="295.7" r="4" data-l="8" data-v="145.4773861020712"><title>P1, route A, ℓ = 8: 145.5</title></circle>
+<circle class="m-A" cx="218.2" cy="254.5" r="4" data-l="9" data-v="375.70988237874997"><title>P1, route A, ℓ = 9: 375.7</title></circle>
+<circle class="m-A" cx="239.1" cy="270.4" r="4" data-l="10" data-v="260.3429237059608"><title>P1, route A, ℓ = 10: 260.3</title></circle>
+<circle class="m-A" cx="260.0" cy="290.1" r="4" data-l="11" data-v="165.476340103148"><title>P1, route A, ℓ = 11: 165.5</title></circle>
+<circle class="m-A" cx="280.9" cy="278.7" r="4" data-l="12" data-v="215.2499617883592"><title>P1, route A, ℓ = 12: 215.2</title></circle>
+<circle class="m-A" cx="301.8" cy="280.5" r="4" data-l="13" data-v="206.6591804221447"><title>P1, route A, ℓ = 13: 206.7</title></circle>
+<circle class="m-A" cx="322.7" cy="239.9" r="4" data-l="14" data-v="525.9937239421743"><title>P1, route A, ℓ = 14: 526</title></circle>
+<circle class="m-A" cx="343.6" cy="227.3" r="4" data-l="15" data-v="703.5349108390182"><title>P1, route A, ℓ = 15: 703.5</title></circle>
+<circle class="m-A" cx="364.4" cy="269.4" r="4" data-l="16" data-v="266.96770139767773"><title>P1, route A, ℓ = 16: 267</title></circle>
+<circle class="m-A" cx="385.3" cy="241.9" r="4" data-l="17" data-v="501.9185318035185"><title>P1, route A, ℓ = 17: 501.9</title></circle>
+<circle class="m-A" cx="406.2" cy="204.7" r="4" data-l="18" data-v="1183.299518639202"><title>P1, route A, ℓ = 18: 1183</title></circle>
+<circle class="m-A" cx="427.1" cy="231.5" r="4" data-l="19" data-v="637.8273489181071"><title>P1, route A, ℓ = 19: 637.8</title></circle>
+<circle class="m-A" cx="448.0" cy="252.8" r="4" data-l="20" data-v="391.0982320675414"><title>P1, route A, ℓ = 20: 391.1</title></circle>
+<circle class="m-A" cx="468.9" cy="209.4" r="4" data-l="21" data-v="1062.791667245952"><title>P1, route A, ℓ = 21: 1063</title></circle>
+<circle class="m-A" cx="489.8" cy="201.0" r="4" data-l="22" data-v="1288.7098044922138"><title>P1, route A, ℓ = 22: 1289</title></circle>
+<circle class="m-A" cx="510.7" cy="204.2" r="4" data-l="23" data-v="1197.99065844685"><title>P1, route A, ℓ = 23: 1198</title></circle>
+<circle class="m-A" cx="531.6" cy="226.9" r="4" data-l="24" data-v="709.5726622301121"><title>P1, route A, ℓ = 24: 709.6</title></circle>
+<circle class="m-A" cx="552.4" cy="236.1" r="4" data-l="25" data-v="573.8105294918175"><title>P1, route A, ℓ = 25: 573.8</title></circle>
+<circle class="m-A" cx="573.3" cy="203.3" r="4" data-l="26" data-v="1222.793316188632"><title>P1, route A, ℓ = 26: 1223</title></circle>
+<circle class="m-A" cx="594.2" cy="190.0" r="4" data-l="27" data-v="1659.956172578416"><title>P1, route A, ℓ = 27: 1660</title></circle>
+<circle class="m-A" cx="615.1" cy="189.3" r="4" data-l="28" data-v="1687.1865312430666"><title>P1, route A, ℓ = 28: 1687</title></circle>
+<circle class="m-A" cx="636.0" cy="201.1" r="4" data-l="29" data-v="1285.3140822434473"><title>P1, route A, ℓ = 29: 1285</title></circle>
+<path class="l-B" d="M72.0,264.7 L92.9,235.7 L113.8,236.3 L134.7,265.8 L155.6,236.0 L176.4,207.8 L197.3,198.8 L218.2,210.6 L239.1,238.1 L260.0,234.0 L280.9,220.8 L301.8,223.3 L322.7,218.4 L343.6,209.4 L364.4,212.7 L385.3,222.0 L406.2,225.1 L427.1,220.2 L448.0,214.0 L468.9,213.8 L489.8,214.0 L510.7,210.1 L531.6,212.2 L552.4,218.5 L573.3,215.4 L594.2,209.9 L615.1,209.5 L636.0,209.5"/>
+<circle class="m-B" cx="72.0" cy="264.7" r="4" data-l="2" data-v="297.0184167316279"><title>P1, route B, ℓ = 2: 297</title></circle>
+<circle class="m-B" cx="92.9" cy="235.7" r="4" data-l="3" data-v="578.7682415358914"><title>P1, route B, ℓ = 3: 578.8</title></circle>
+<circle class="m-B" cx="113.8" cy="236.3" r="4" data-l="4" data-v="571.006257058882"><title>P1, route B, ℓ = 4: 571</title></circle>
+<circle class="m-B" cx="134.7" cy="265.8" r="4" data-l="5" data-v="289.75839356163686"><title>P1, route B, ℓ = 5: 289.8</title></circle>
+<circle class="m-B" cx="155.6" cy="236.0" r="4" data-l="6" data-v="575.7517234214886"><title>P1, route B, ℓ = 6: 575.8</title></circle>
+<circle class="m-B" cx="176.4" cy="207.8" r="4" data-l="7" data-v="1102.0662770464187"><title>P1, route B, ℓ = 7: 1102</title></circle>
+<circle class="m-B" cx="197.3" cy="198.8" r="4" data-l="8" data-v="1354.363285600517"><title>P1, route B, ℓ = 8: 1354</title></circle>
+<circle class="m-B" cx="218.2" cy="210.6" r="4" data-l="9" data-v="1033.2848238798852"><title>P1, route B, ℓ = 9: 1033</title></circle>
+<circle class="m-B" cx="239.1" cy="238.1" r="4" data-l="10" data-v="548.8281108535973"><title>P1, route B, ℓ = 10: 548.8</title></circle>
+<circle class="m-B" cx="260.0" cy="234.0" r="4" data-l="11" data-v="602.1445598896624"><title>P1, route B, ℓ = 11: 602.1</title></circle>
+<circle class="m-B" cx="280.9" cy="220.8" r="4" data-l="12" data-v="817.4637950300108"><title>P1, route B, ℓ = 12: 817.5</title></circle>
+<circle class="m-B" cx="301.8" cy="223.3" r="4" data-l="13" data-v="771.278614419766"><title>P1, route B, ℓ = 13: 771.3</title></circle>
+<circle class="m-B" cx="322.7" cy="218.4" r="4" data-l="14" data-v="863.1697516038912"><title>P1, route B, ℓ = 14: 863.2</title></circle>
+<circle class="m-B" cx="343.6" cy="209.4" r="4" data-l="15" data-v="1061.5248755236335"><title>P1, route B, ℓ = 15: 1062</title></circle>
+<circle class="m-B" cx="364.4" cy="212.7" r="4" data-l="16" data-v="983.7879440211789"><title>P1, route B, ℓ = 16: 983.8</title></circle>
+<circle class="m-B" cx="385.3" cy="222.0" r="4" data-l="17" data-v="794.0850537284007"><title>P1, route B, ℓ = 17: 794.1</title></circle>
+<circle class="m-B" cx="406.2" cy="225.1" r="4" data-l="18" data-v="739.4907310221374"><title>P1, route B, ℓ = 18: 739.5</title></circle>
+<circle class="m-B" cx="427.1" cy="220.2" r="4" data-l="19" data-v="828.2671519002278"><title>P1, route B, ℓ = 19: 828.3</title></circle>
+<circle class="m-B" cx="448.0" cy="214.0" r="4" data-l="20" data-v="954.4493480890886"><title>P1, route B, ℓ = 20: 954.4</title></circle>
+<circle class="m-B" cx="468.9" cy="213.8" r="4" data-l="21" data-v="959.732515562566"><title>P1, route B, ℓ = 21: 959.7</title></circle>
+<circle class="m-B" cx="489.8" cy="214.0" r="4" data-l="22" data-v="954.484679301726"><title>P1, route B, ℓ = 22: 954.5</title></circle>
+<circle class="m-B" cx="510.7" cy="210.1" r="4" data-l="23" data-v="1043.7041200467656"><title>P1, route B, ℓ = 23: 1044</title></circle>
+<circle class="m-B" cx="531.6" cy="212.2" r="4" data-l="24" data-v="994.7034612628372"><title>P1, route B, ℓ = 24: 994.7</title></circle>
+<circle class="m-B" cx="552.4" cy="218.5" r="4" data-l="25" data-v="860.5305965405123"><title>P1, route B, ℓ = 25: 860.5</title></circle>
+<circle class="m-B" cx="573.3" cy="215.4" r="4" data-l="26" data-v="924.8855876564716"><title>P1, route B, ℓ = 26: 924.9</title></circle>
+<circle class="m-B" cx="594.2" cy="209.9" r="4" data-l="27" data-v="1049.4554718561242"><title>P1, route B, ℓ = 27: 1049</title></circle>
+<circle class="m-B" cx="615.1" cy="209.5" r="4" data-l="28" data-v="1059.4995978881673"><title>P1, route B, ℓ = 28: 1059</title></circle>
+<circle class="m-B" cx="636.0" cy="209.5" r="4" data-l="29" data-v="1059.3517137512927"><title>P1, route B, ℓ = 29: 1059</title></circle>
+</svg>

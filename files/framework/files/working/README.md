@@ -248,7 +248,7 @@ Technical gaps with specific paths forward.
 
 ### [The Molien Shells](files/molien-shells.md)
 
-**Source structure (2026-09-14):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. The sky step's preregistered test, [The Molien Shells, Step Two](files/molien-step-two.md), closed Uninformative at its CAMB reproduction gate before any P1 quantity was computed; under its P1 prescription no points are identified, so the matched-circle observable is N/A. A theory-only registration of P1's full-transfer spectrum, [The Molien Shells: The Full-Transfer Ratio Table](files/molien-ratio-table.md), stopped in its first run at its shell-sum gate, before either route's table; an erratum corrects the interpolation, and the run restarts on the author's go.
+**Source structure (2026-09-14):** What the surviving Molien shells of $`S^3/2I`$ carry, as MIT's CMB source structure. Up to $`N = 30`$ each shell holds a single $`2I`$-invariant form, and those forms' roots on the sphere are the icosahedron's vertices ($`N = 12`$), face centres ($`N = 20`$) and edge midpoints ($`N = 30`$), with $`N = 24`$ the square of the first; an executable checks the counts, the patterns and the even-spin descent to $`A_5`$, with four deliberately broken variants. The sky step's preregistered test, [The Molien Shells, Step Two](files/molien-step-two.md), closed Uninformative at its CAMB reproduction gate before any P1 quantity was computed; under its P1 prescription no points are identified, so the matched-circle observable is N/A. A theory-only registration of P1's full-transfer spectrum, [The Molien Shells: The Full-Transfer Ratio Table](files/molien-ratio-table.md), tabulates it at both radii: after an erratum to its interpolation, its second run found both routes Departing and Separated, a theory result not scored against data.
 
 **Inputs:** [CMB Anomalies](../../../cosmos/files/cmb-anomalies.md) §IV, [molien-shells.test.py](files/scripts/molien-shells.test.py).
 
@@ -302,6 +302,14 @@ Closed: executed computations and derivations with verdicts in hand.
 **Reopened by the torsion correction (2026-07-28):** The 2026-06 verdict (no parameter-free propagator or branch-point correction tracks the high-distance mass residuals; the route was closed, the residuals read as irreducible scatter) was computed on the pre-correction torsion table. The [half-integer torsion correction](files/torsion-correction.md) revised twelve of the twenty-four products and the whole mass comparison, so the propagator question is reopened; the frozen 2026-06 record, with its overshoot figures and vacuum-dependent hits, is preserved on the [linked page](files/mckay-propagator-correction.md) under its 2026-07-28 banner. Separately, the Coxeter-Galois gate still locks all $`R_4`$ entries to $`T_3 = -1/2`$, and charm remains unplaced.
 
 **Inputs:** McKay graph for $`2I`$, $`C_\text{geom}`$ values for all irreps, torsion table $`T^2(\rho \otimes \sigma)`$ across vacua, Coxeter-Galois gate.
+
+---
+
+### [The Molien Shells: The Full-Transfer Ratio Table](files/molien-ratio-table.md)
+
+**Result (2026-09-14):** The low-ℓ temperature spectrum that the P1 spectral-transfer prescription gives the Molien shells of $`S^3/2I`$ at MIT's two radii, as per-multipole ratios to ΛCDM through CAMB 2.0.4's full transfer function, with no data. Both routes come out Departing and Separated, in the frozen computation and in a repeat at a higher accuracy boost. At the coupling radius, 6130 Mpc, the quadrupole sits at 7.6% of ΛCDM's and the ratios reach 1.6 at ℓ = 27 and 28, with K_min = 109; at the electron-muon radius, 19700 Mpc, the quadrupole sits at 29%, ℓ = 7 to 9 at 1.3 to 1.6 times, and the ratios within 0.84 to 1.2 from ℓ = 12 up, with K_min = 9.6. So no Planck-era likelihood test is built for either route; the table is a theory result, not scored against data. The first run stopped at the shell-sum gate, and an erratum to the interpolation preceded the second.
+
+**Inputs:** [The Molien Shells](files/molien-shells.md), [The Molien Shells, Step Two](files/molien-step-two.md), CAMB 2.0.4 at the Planck 2018 best fit base_plikHM_TTTEEE_lowE.
 
 ---
 
