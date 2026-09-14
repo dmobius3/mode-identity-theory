@@ -4,7 +4,9 @@ Tripwires make the contract's boundary mechanical: every CAMB entry point that c
 spectra raises and fails the suite. CAMB's theta-to-H0 solver computes backgrounds, so it is replaced by a declared stub
 that records theta and sets a placeholder H0 without solving anything; the parameter object is inspected with it in place.
 The shell machinery is checked against v1's runner and against the Sachs-Wolfe estimate recorded before v1's freeze,
-and the whole pipeline runs end to end on a synthetic transfer provider, never on CAMB.
+and the whole pipeline runs end to end on a synthetic transfer provider, never on CAMB. Erratum E1 restores the coarse
+block the provider carried before the freeze: its grids are built as CAMB builds its own, fine up to the native block
+boundary at k eta0 = 3000 and coarse above it, and on them the frozen single spline must fail G2 while the split passes.
 """
 import contextlib, hashlib, importlib.util, io, json, math, os, re, shutil, subprocess, sys, tempfile
 import xml.etree.ElementTree as ET
@@ -177,29 +179,41 @@ check("a zero, negative or non-finite ratio, or a table without 28 entries, stop
 
 print("\n== End to end on a synthetic transfer provider (no CAMB)")
 STEPS = lambda b: 6 if b == 2 else 2 * b + 4          # boost 2: period/6 (misses the rule); 3: period/10; 4: period/12
+TAU0 = 14300.0         # a synthetic conformal time today: CAMB's block boundary, k eta0 = 3000, sits at q = 3000/TAU0
+
+
+def camb_grid(boost, steps, boundary=R.SPLIT_KETA0):
+    """A q grid built as CAMB 2.0.4 builds its own (erratum E1): a logarithmic block, a fine linear block ending on the block
+    boundary (k eta0 = 3000 unless moved for a test), and the coarse block CAMB appends above it, steps of about 0.04/boost
+    Mpc^-1 up to k eta0 = max_eta_k = 12000. The coarse block restores the one the provider carried before the freeze."""
+    qb, qe = boundary / TAU0, R.TRANSFER["max_eta_k"] / TAU0
+    fine = np.linspace(1e-4, qb, int(math.ceil((qb - 1e-4) / (period / steps))) + 1)
+    coarse = np.linspace(qb, qe, int(round((qe - qb) / (0.04 / boost))) + 1)[1:]
+    return np.concatenate([np.geomspace(1e-7, 1e-4, 400, endpoint=False), fine, coarse])
 
 
 def provider(steps=STEPS, reach_kchi=None, max_l=260, want_lensing=False, drop_l=None, cont_scale=1.0,
-             plateau_at=(), raise_at=None, max_l_at=None):
+             plateau_at=(), raise_at=None, max_l_at=None, boundary_at=None):
     calls = []
 
     def compute(p, boost):
         calls.append(boost)
         if raise_at and boost in raise_at:
             raise raise_at[boost]
-        qq = np.concatenate([np.geomspace(1e-7, 1e-4, 400, endpoint=False), np.arange(1e-4, 0.45, period / steps(boost))])
+        qq = camb_grid(boost, steps(boost), (boundary_at or {}).get(boost, R.SPLIT_KETA0))
         LL = np.array([l for l in range(0, 61) if l != drop_l])
         DD = np.array([spherical_jn(l, qq * chi) for l in LL])
-        if boost in plateau_at:           # a block that never decays: the shell sums at A and B keep growing to the cap
-            qp = np.geomspace(0.5, 400.0, 300)
+        if boost in plateau_at:           # a block that never decays, from q = 0.25 through the coarse block and on to q = 400:
+            DD[:, qq >= 0.25] = 1e-3      # the shell sums at A and B keep growing to the cap
+            qp = np.geomspace(0.9, 400.0, 300)
             qq, DD = np.concatenate([qq, qp]), np.concatenate([DD, np.full((len(LL), len(qp)), 1e-3)], axis=1)
         if reach_kchi is not None:
             keep = qq <= reach_kchi / chi
             qq, DD = qq[keep], DD[:, keep]
         cl = np.zeros(R.LMAX + 1)
         cl[R.LMIN:] = cont * cont_scale
-        return {"boost": boost, "q": qq, "L": LL, "delta": DD, "chi_star": chi, "cl_lcdm_uK2": cl, "tcmb2": 1.0, "power": one,
-                "max_l": (max_l_at or {}).get(boost, max_l), "do_lensing": False, "want_cmb_lensing": want_lensing,
+        return {"boost": boost, "q": qq, "L": LL, "delta": DD, "chi_star": chi, "tau0": TAU0, "cl_lcdm_uK2": cl, "tcmb2": 1.0,
+                "power": one, "max_l": (max_l_at or {}).get(boost, max_l), "do_lensing": False, "want_cmb_lensing": want_lensing,
                 "derived": {"zstar": 1090.0}}
     return compute, calls
 
@@ -229,6 +243,52 @@ check(f"the report prints 28 rows per route, both labels per route, G2, every gr
       len(rows) == 56 and rep.count("Shape: Departing.  Separation: Separated.") == 2 and "G2 at R" in rep and rep.count("Grid at AccuracyBoost") == 3
       and rep.count("Cutoff, route") == 4 and json.loads(json.dumps(res, default=float))["chosen_boost"] == 3)
 
+print("\n== Erratum E1: CAMB's native block boundary and the split interpolation")
+bnd = [R.native_boundary(provider()[0]({}, b)) for b in (2, 3, 4)]
+ratios = ", ".join(f"x{b[1]['step_ratio']:.0f}" for b in bnd)
+check(f"on grids built as CAMB builds its own, at boosts 2, 3 and 4, the boundary is found from tau0 at k eta0 = 3000, where the "
+      f"largest step ratio sits ({ratios})",
+      all(b[2] is None and b[0] is not None and abs(b[1]["k_eta0"] - 3000.0) < 1e-6 and b[1]["step_ratio"] > 100 for b in bnd))
+t3 = provider()[0]({}, 3)
+tr3 = R.check_transfer(t3)
+Dq = np.array([t3["delta"][list(t3["L"]).index(l)] for l in lv])
+scale, j3, qb3 = float(np.max(np.abs(Dq))), tr3.split, t3["q"][tr3.split]
+resid = float(np.max(np.abs(tr3(lv, t3["q"]) - Dq)))
+edge = max(abs(float(tr3.lower[int(l)](qb3)) - Dq[i, j3]) for i, l in enumerate(lv))
+check(f"the split interpolation passes through every native knot (largest residual {resid:.1e} of a largest |Delta_l| of {scale:.2f}), "
+      f"and at the boundary both splines give the knot's value (the lower within {edge:.1e}), so it is continuous and single-valued there",
+      resid <= 1e-14 * scale and edge <= 1e-14 * scale and all(float(tr3.upper[int(l)](qb3)) == Dq[i, j3] for i, l in enumerate(lv)))
+pairs = []
+for b in (3, 4):
+    tb = provider()[0]({}, b)
+    pairs.append((b, R.gate_g2(R.GridTransfer(tb["L"], tb["q"], tb["delta"]), one, chi, cont), R.gate_g2(R.check_transfer(tb), one, chi, cont)))
+desc = "; ".join(f"boost {b}: single {g1['s3']['max_fractional_deviation']:.1e} and converged {g1['s3']['cutoff']['converged']}, "
+                 f"split {g2['s3']['max_fractional_deviation']:.1e} and converged {g2['s3']['cutoff']['converged']}" for b, g1, g2 in pairs)
+check(f"with the coarse block restored, G2 fails with the frozen single spline and passes with the split, at the chosen boost and "
+      f"at the repeat's ({desc})", all(g1["passed"] is False and g2["passed"] is True for _, g1, g2 in pairs))
+saved_nb = R.native_boundary
+R.native_boundary = lambda t: (None, {"k_eta0": None, "step_ratio": None}, None)     # E1 reverted: one spline across the jump
+try:
+    try:
+        R.compute_all({}, provider()[0], est)
+        check("with E1 reverted, the pipeline stops at G2 as Run 1 did, keeping its partial record, with no route table", False)
+    except R.RunStop as e:
+        pt = e.partial or {}
+        check("with E1 reverted, the pipeline stops at G2 as Run 1 did, keeping its partial record, with no route table",
+              str(e) == "G2 failed" and pt["G2"]["passed"] is False and "A" not in pt and "B" not in pt)
+finally:
+    R.native_boundary = saved_nb
+x3 = t3["q"] * TAU0
+hole = (x3 < 1500.0) | (x3 > 2990.0)
+t_hole = {**t3, "q": t3["q"][hole], "delta": t3["delta"][:, hole]}
+t_moved = provider(boundary_at={3: 3100.0})[0]({}, 3)
+t_short = {**t3, "q": t3["q"][x3 <= 2500.0], "delta": t3["delta"][:, x3 <= 2500.0]}
+f_hole, f_moved, n_short = R.native_boundary(t_hole)[2], R.native_boundary(t_moved)[2], R.native_boundary(t_short)
+check("a grid whose largest step ratio sits away from k eta0 = 3000, or that runs past it without a knot there, is not as registered; "
+      "a grid ending below the boundary has no coarse block and takes one spline",
+      f_hole is not None and "largest step ratio" in f_hole and f_moved is not None and "without a single interior knot" in f_moved
+      and n_short[0] is None and n_short[2] is None and R.check_transfer(t_short).split is None)
+
 print("\n== Every stop keeps its partial record")
 SCENARIOS = (
     ("the grid rule never met by boost 6", dict(steps=lambda b: 6), "not met by AccuracyBoost 6",
@@ -238,6 +298,8 @@ SCENARIOS = (
     ("max_l not reaching CAMB", dict(steps=lambda b: 10, max_l=60), "did not reach CAMB", lambda pt, cl: len(pt["grid"]) == 1),
     ("the lensing potential left on", dict(steps=lambda b: 10, want_lensing=True), "did not reach CAMB", lambda pt, cl: len(pt["grid"]) == 1),
     ("multipole 17 missing", dict(steps=lambda b: 10, drop_l=17), "lacks l = [17]", lambda pt, cl: len(pt["grid"]) == 1),
+    ("CAMB's block boundary not where its construction puts it (erratum E1)", dict(boundary_at={2: 3100.0}), "without a single interior knot",
+     lambda pt, cl: len(pt["grid"]) == 1 and cl == [2]),
     ("G2 failing (the continuum 1% off)", dict(steps=lambda b: 10, cont_scale=1.01), "G2 failed",
      lambda pt, cl: pt["G2"]["passed"] is False and pt["G2"]["molien"]["max_fractional_deviation"] > 1e-3
      and len(pt["LCDM_D_l_uK2"]["frozen"]) == 28 and "A" not in pt and "B" not in pt),
@@ -312,6 +374,11 @@ comp, _ = provider(max_l_at={4: 60})
 res_set = R.compute_all({}, comp, est)
 check("the repeat's transfer not as registered (max_l 60 at boost 4): the frozen table stands and both routes are Unresolved",
       frozen_as_clean(res_set) and both_unresolved(res_set) and "not as registered" in res_set["repeat"]["failure"])
+comp, _ = provider(boundary_at={4: 3100.0})
+res_bnd = R.compute_all({}, comp, est)
+check("the repeat's grid with CAMB's block boundary out of place (erratum E1) is its second declared failure: the frozen table stands "
+      "and both routes are Unresolved", frozen_as_clean(res_bnd) and both_unresolved(res_bnd)
+      and "not as registered" in res_bnd["repeat"]["failure"] and "without a single interior knot" in res_bnd["repeat"]["failure"])
 comp, _ = provider(raise_at={4: ValueError("synthetic defect")})
 try:
     R.compute_all({}, comp, est)

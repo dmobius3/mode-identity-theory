@@ -1,0 +1,121 @@
+== 1. The transfer run at AccuracyBoost 3, repeated by the frozen code
+  max_spacing     4.419938741696827e-05   run: 4.419938741696827e-05
+  required        5.666526277322403e-05   run: 5.666526277322403e-05
+  reach_kchi         11762.251284677246   run: 11762.251284677246
+  chi_star_mpc       13860.310972890635   run: 13860.310972890635
+  n_q                              5975   run: 5975
+  D_l(LCDM) against the run's record: largest relative difference 0.0e+00
+
+== 2. CAMB's q grid in k eta0 (eta0 = 14140.467 Mpc, the conformal time today, from the same transfer run)
+  5975 points, from k eta0 = 0.03333 to 12000; max_eta_k is 12000
+  the contract's reading (sections 3 and 8) put the end at k eta0 = 2.5 x 260 x 3 = 1950
+  the run's parameters, read back: Want_CMB True, Want_CMB_lensing False, limber_windows False, limber_phi_lmin 100, max_l 260, max_eta_k 12000.0, AccuracyBoost 3.0, BessIntBoost 1.0; the runner sets no source windows; transfer multipoles 2 to 260 (259)
+  limber_windows: in a fresh CAMBparams() True; in the runner's parameter object before any run True; after a background calculation False; after the transfer run False; with both lensing flags on (v1's), after a background calculation False
+  the step changes at k eta0 =   600.000: 0.33333 -> 0.625 (x 1.875)
+  the step changes at k eta0 =  3000.000: 0.625 -> 187.5 (x 300)
+  the largest jump: at k eta0 = 3000.000, from 0.625 to 187.5 (x 300.0); the steps the contract names are 1.875/boost = 0.625 and 0.04 tau0/boost = 188.54; 48 coarse steps run from there to the end
+
+== 3. Where each Delta_l is nonzero on CAMB's grid (k eta0 of the knots)
+   l  first nonzero   last nonzero   next knot   zeros inside   nonzero above the jump   max |Delta_l|
+   2       0.033333           2280      2280.62             0                       0   5.521e-02
+   3       0.040858        2520.62      2521.25             0                       0   4.570e-02
+   4        0.18291           2760      2760.62             0                       0   3.858e-02
+   5        0.42846           3000       3187.5             0                       0   3.332e-02
+   6        0.76039         3187.5         3375             0                       1   2.928e-02
+   7         1.0224           3375       3562.5             0                       2   2.612e-02
+   8         1.4265         3562.5         3750             0                       3   2.357e-02
+   9         1.8484         3937.5         4125             0                       5   2.149e-02
+  10         2.4397           4125       4312.5             0                       6   1.972e-02
+  11         2.9905         4312.5         4500             0                       7   1.819e-02
+  12         3.5983           4500       4687.5             0                       8   1.689e-02
+  13         4.1725           4875       5062.5             0                      10   1.575e-02
+  14         4.8382         5062.5         5250             0                      11   1.477e-02
+  15         5.1144           5250       5437.5             0                      12   1.386e-02
+  16         5.9304           5625       5812.5             0                      14   1.304e-02
+  17         6.5053         5812.5         6000             0                      15   1.231e-02
+  18         14.685           6000       6187.5             0                      16   1.166e-02
+  19         14.685         6187.5         6375             0                      17   1.106e-02
+  20         14.685         6562.5         6750             0                      19   1.051e-02
+  21         14.685           6750       6937.5             0                      20   9.994e-03
+  22         14.685         6937.5         7125             0                      21   9.519e-03
+  23         14.685         7312.5         7500             0                      23   9.076e-03
+  24         14.685           7500       7687.5             0                      24   8.758e-03
+  25         14.685         7687.5         7875             0                      25   8.558e-03
+  26         14.685           7875       8062.5             0                      26   8.400e-03
+  27         14.685           8250       8437.5             0                      28   8.260e-03
+  28         15.523         8437.5         8625             0                      29   8.114e-03
+  29         16.409           8625       8812.5             0                      30   7.963e-03
+
+== 4. G2's shell cutoff: the doublings, and the failing one split by wavenumber (full S^3 spectrum, R = 200 chi*)
+  change at N_max 1048576: 2.510540e-04 (run 2.510540e-04); at 2097152: 9.836368e-11 (run 9.836368e-11)
+  shells 524288 < N <= 1048576 lie at k eta0 = 2674.4 to 5348.9; N_max = 2^21 reaches k eta0 = 10697.7
+  G2's deviation of the sum to 2^21 from CAMB's continuum, largest over l: 2.334157e-04 (run 2.334157e-04)
+   l   change at 1048576   change at 2097152   deviation at 2097152
+   2           0.000e+00           0.000e+00            -4.027e-05
+   3           0.000e+00           0.000e+00            -4.701e-05
+   4           1.666e-16           0.000e+00            -4.085e-05
+   5           3.910e-14           0.000e+00            -1.276e-05
+   6           2.538e-14           0.000e+00            -2.538e-05
+   7           1.828e-14           0.000e+00            -4.550e-05
+   8           3.553e-13           0.000e+00            -2.496e-05
+   9           2.215e-14           0.000e+00            -3.999e-05
+  10           2.134e-14           0.000e+00            -3.288e-05
+  11           1.622e-08           0.000e+00            +6.768e-06
+  12           1.862e-07           0.000e+00            -8.142e-06
+  13           4.506e-06           0.000e+00            -3.334e-05
+  14           8.430e-05           0.000e+00            +8.031e-05
+  15           6.506e-06           0.000e+00            +6.417e-05
+  16           1.060e-04           0.000e+00            +1.888e-04
+  17           8.780e-06           0.000e+00            +7.213e-05
+  18           1.291e-04           1.845e-16            +1.490e-04
+  19           1.158e-05           4.043e-16            +1.460e-05
+  20           1.529e-04           9.294e-14            +1.452e-04
+  21           1.501e-05           1.415e-12            +1.877e-06
+  22           1.774e-04           1.806e-12            +1.625e-04
+  23           1.917e-05           2.070e-11            +3.066e-06
+  24           2.021e-04           7.303e-11            +1.859e-04
+  25           2.419e-05           4.490e-11            +7.615e-06
+  26           2.268e-04           8.435e-11            +2.098e-04
+  27           3.022e-05           5.247e-11            +1.286e-05
+  28           2.511e-04           9.836e-11            +2.334e-04
+  29           3.742e-05           5.922e-11            +1.991e-05
+  the largest change is at l = 28; each part below is its share of C_l there, and the largest share over l
+  below the jump     k eta0  2674.4 to  3000.0: +8.829e-07 at l = 28; largest over l 9.321e-07
+  coarse interval 1  k eta0  3000.0 to  3187.5: +2.320e-04 at l = 28; largest over l 2.320e-04
+  coarse interval 2  k eta0  3187.5 to  3375.0: +1.656e-05 at l = 28; largest over l 1.656e-05
+  coarse interval 3  k eta0  3375.0 to  3562.5: +1.430e-06 at l = 28; largest over l 1.430e-06
+  beyond interval 3  k eta0  3562.5 to  5348.9: +2.206e-07 at l = 28; largest over l 2.206e-07
+  the parts reproduce the change to 2.7e-16
+
+== 5. The frozen spline in the first coarse interval (k eta0 3000 to 3187.5), against Delta_l just below the jump
+  A: the largest |Delta_l| at the knots over the last three 2 pi/chi* periods below the jump. Then, over A: the largest
+  |spline| in the interval, |Delta_l| at its two knots, and the spline's slope at the jump times one period.
+   l           A   spline/A   left knot/A   right knot/A   slope x period/A
+   2  zero below the jump (its last nonzero knot is at k eta0 2280)
+   3  zero below the jump (its last nonzero knot is at k eta0 2520.62)
+   4  zero below the jump (its last nonzero knot is at k eta0 2760)
+   5   3.207e-09      10.81        0.0562              0              2.18
+   6   2.881e-09      8.045         0.874          0.331              1.77
+   7   2.727e-09       6.02         0.792           0.57              1.06
+   8   9.078e-09      7.178             1         0.0258              1.29
+   9   1.855e-09      7.063         0.471          0.556              1.35
+  10   2.104e-09      5.514         0.824         0.0261              1.23
+  11   2.279e-09      34.62         0.487          0.367              6.86
+  12   2.079e-08      9.205         0.568         0.0561              1.94
+  13   1.981e-05       7.34         0.883         0.0125              1.61
+  14   1.931e-05      31.05         0.431          0.601              6.22
+  15   1.980e-05      7.789         0.879          0.427              1.67
+  16   1.936e-05      30.88         0.439          0.604              6.19
+  17   1.979e-05      8.131         0.875          0.421              1.74
+  18   1.941e-05       30.7         0.448          0.607              6.15
+  19   1.977e-05      8.516          0.87          0.415              1.81
+  20   1.947e-05       30.5         0.459          0.611              6.11
+  21   1.975e-05      8.944         0.865          0.407               1.9
+  22   1.952e-05      30.28          0.47          0.615              6.06
+  23   1.972e-05      9.415         0.859          0.399                 2
+  24   1.958e-05      30.04         0.483          0.619              6.01
+  25   1.968e-05       9.93         0.853           0.39               2.1
+  26   1.964e-05      29.78         0.496          0.623              5.96
+  27   1.964e-05      10.49         0.846           0.38              2.21
+  28   1.970e-05       29.5         0.511          0.628               5.9
+  29   1.960e-05      11.08         0.837           0.37              2.33

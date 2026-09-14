@@ -43,12 +43,20 @@ PASS  the repeat's table is reported beside the frozen one and moves no ratio by
 PASS  the estimates are carried as recorded, and R_l is divided by them at every l (Sachs-Wolfe) and to l = 10 (with the integrated term)
 PASS  the report prints 28 rows per route, both labels per route, G2, every grid and every cutoff (56 rows)
 
+== Erratum E1: CAMB's native block boundary and the split interpolation
+PASS  on grids built as CAMB builds its own, at boosts 2, 3 and 4, the boundary is found from tau0 at k eta0 = 3000, where the largest step ratio sits (x271, x298, x267)
+PASS  the split interpolation passes through every native knot (largest residual 1.4e-20 of a largest |Delta_l| of 0.31), and at the boundary both splines give the knot's value (the lower within 5.4e-20), so it is continuous and single-valued there
+PASS  with the coarse block restored, G2 fails with the frozen single spline and passes with the split, at the chosen boost and at the repeat's (boost 3: single 5.3e-03 and converged False, split 1.4e-04 and converged True; boost 4: single 2.3e-03 and converged False, split 6.4e-05 and converged True)
+PASS  with E1 reverted, the pipeline stops at G2 as Run 1 did, keeping its partial record, with no route table
+PASS  a grid whose largest step ratio sits away from k eta0 = 3000, or that runs past it without a knot there, is not as registered; a grid ending below the boundary has no coarse block and takes one spline
+
 == Every stop keeps its partial record
 PASS  a failing gate stops the run and keeps its partial record: the grid rule never met by boost 6
 PASS  a failing gate stops the run and keeps its partial record: the grid ending below k chi* = 1000
 PASS  a failing gate stops the run and keeps its partial record: max_l not reaching CAMB
 PASS  a failing gate stops the run and keeps its partial record: the lensing potential left on
 PASS  a failing gate stops the run and keeps its partial record: multipole 17 missing
+PASS  a failing gate stops the run and keeps its partial record: CAMB's block boundary not where its construction puts it (erratum E1)
 PASS  a failing gate stops the run and keeps its partial record: G2 failing (the continuum 1% off)
 PASS  route B's frozen cutoff failing (forced in a wrapper) keeps route A's whole table, G2 and B's unconverged table, with no labels
 PASS  the report of a stopped run prints its partial record: the grid, G2 and the continuum's reason, and no label
@@ -58,6 +66,7 @@ PASS  the repeat's cutoff not converging (a block that never decays, at boost 4 
 PASS  the unconverged repeat enters no label: the frozen table alone reads Departing and Separated, the labels stay Unresolved, and the failed repeat carries no d_inf or K_min, only its unconverged ratios, marked as such
 PASS  an error of CAMB's own in the repeat: the frozen table stands, both routes are Unresolved, and the error is recorded
 PASS  the repeat's transfer not as registered (max_l 60 at boost 4): the frozen table stands and both routes are Unresolved
+PASS  the repeat's grid with CAMB's block boundary out of place (erratum E1) is its second declared failure: the frozen table stands and both routes are Unresolved
 PASS  any other failure in the repeat is an infrastructure defect: it propagates, and still keeps both frozen tables as its partial record
 PASS  the report of a failed repeat shows both routes Unresolved, the reason, and no repeat column
 
@@ -87,5 +96,5 @@ PASS  a changed parameter file fails the runtime check
 PASS  without --run the runner exits 2 and computes nothing
 PASS  --out inside the packet is refused before anything runs
 
-60 checks passed, 0 failed
+67 checks passed, 0 failed
 ALL PASS

@@ -1,9 +1,9 @@
 {
-  "written_utc": "2026-09-14T14:06:53Z",
+  "written_utc": "2026-09-14T15:52:55Z",
   "files": {
-    "ratio_table_run.py": "e0d4a8676eda472ff8506101bc51bbb36d50725f564f6ca4c05d929d94ca7e6e",
-    "ratio_table_tests.py": "8007bd77f488c32e0e0a0202563079d06b42e2d3d173c230592fb3c0fddf11b8",
-    "ratio_table_tests.out": "29d01ded5f9d2184b2e471d2d113c767077003b331f7299510c461d32daa2206",
+    "ratio_table_run.py": "64e195a4dac1c50342953fc3b7aaf519c1fd05685dddae02feba7c801e8140c7",
+    "ratio_table_tests.py": "9df0d3945ab8aa6f2e45407613c4b29bc23c4ab13fd68008823ae54269a5ed33",
+    "ratio_table_tests.out": "319273d853e123f781f6c075ee1d8f0cec5dd3b473bd2d5fee494221c35537c1",
     "ratio_table_figures.py": "a774ac5e026f5b83efe199017590125846b0facc8be81458846a2047b2109350",
     "environment.json": "dbb6c1c3b060911bba8204228724dba39a890d1374607ab72e7a1d4bea9d8346",
     "provenance.json": "93da693e3779e497dc27dbe855b12fa90bf6b8cf726f89910ec0300d7df97a6b",

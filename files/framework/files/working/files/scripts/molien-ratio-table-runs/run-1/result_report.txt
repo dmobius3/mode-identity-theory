@@ -1,0 +1,10 @@
+Molien shells, the full-transfer ratio table. Status: Uninformative.
+Reason: G2 failed
+
+Partial record: the run stopped, so no labels are assigned; what was computed before the stop is recorded as computed.
+Chosen AccuracyBoost 3; chi* = 13860.31 Mpc.
+R_l printed to 3 significant digits, the precision G2's deviations and the valid repeats support.
+
+G2 at R = 2.772e+06 Mpc: S^3 2.33e-04, Molien 2.33e-04, 1/120 dropped 9.92e-01 (tolerance 0.001); passed False.
+Grid at AccuracyBoost 2: largest step 6.630e-05 against 5.667e-05 required, reach k chi* = 11762, 3969 points, misses the rule.
+Grid at AccuracyBoost 3: largest step 4.420e-05 against 5.667e-05 required, reach k chi* = 11762, 5975 points, meets the rule.

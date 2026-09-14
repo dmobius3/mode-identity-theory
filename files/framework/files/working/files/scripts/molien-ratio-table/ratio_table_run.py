@@ -22,6 +22,9 @@ Order of work, as frozen in the contract (sections 2 to 4):
   5. The labels, per route: shape (d_inf = max |R_l - 1| against 0.1) and separation (K_min = min(K_P1, K_Lambda) against 2),
      each Unresolved when the frozen computation and the repeat fall on opposite sides of its threshold.
 A stop never discards what was computed: the record built before it is kept as a partial record, with no labels.
+Erratum E1 (2026-09-14), after Run 1 stopped at G2: Delta_l is interpolated by one cubic spline on each side of CAMB's
+native block boundary at k eta0 = 3000, where its grid step grows 300-fold, rather than by one spline across it, and the
+script checks that the boundary is where CAMB's grid construction puts it.
 
 This script must not run before the freeze. Before the freeze it is exercised only by ratio_table_tests.py, on synthetic
 inputs, behind tripwires. After the freeze:
@@ -41,6 +44,9 @@ G2_TOL, G2_R_OVER_CHI = 1e-3, 200.0
 CUT_START, CUT_CAP, CUT_TOL = 1024, 2 ** 21, 1e-4
 SHAPE_THRESHOLD, SEPARATION_THRESHOLD = 0.1, 2.0
 REACH_KCHI = 1000.0
+# Erratum E1: CAMB's native block boundary, max_k_dk = max(3000, 2 maximum_l)/tau0 in SetkValuesForInt (cmbmain.f90,
+# line 1324), k eta0 = 3000 for these settings at every boost; above it the grid steps about 0.04/boost Mpc^-1 (line 1330).
+SPLIT_KETA0 = 3000.0
 K12_B = math.sqrt(168.0) / R_B_MPC   # the smallest wavenumber either route sums: N = 12 at R_B
 RUNTIME = {"python": "3.13.13", "camb": "2.0.4", "numpy": "2.5.0", "scipy": "1.18.0"}
 MANIFEST = "freeze_manifest.json"
@@ -108,9 +114,12 @@ def shell_table(nmax, spectrum):
 
 
 class GridTransfer:
-    """Delta_l(k) sampled on a q grid, interpolated per l by a cubic spline in q, and zero off the grid."""
+    """Delta_l(k) sampled on a q grid, interpolated per l by a cubic spline in q, and zero off the grid. Given split, the index
+    of CAMB's native block boundary (erratum E1), one cubic spline runs through the knots up to and including the boundary and
+    serves below it, and another runs through the knots from the boundary on and serves at and above it: each passes through
+    every native knot, the boundary takes its knot value, and no slope is carried across the jump in CAMB's step there."""
 
-    def __init__(self, L, q, delta):
+    def __init__(self, L, q, delta, split=None):
         from scipy.interpolate import CubicSpline
         self.q = np.asarray(q, dtype=np.float64)
         if np.any(np.diff(self.q) <= 0):
@@ -119,7 +128,15 @@ class GridTransfer:
         missing = [l for l in range(LMIN, LMAX + 1) if l not in idx]
         if missing:
             raise RunStop(f"transfer data lacks l = {missing}")
-        self.splines = {l: CubicSpline(self.q, np.asarray(delta[idx[l]], dtype=np.float64)) for l in range(LMIN, LMAX + 1)}
+        self.split = split
+        if split is None:
+            self.splines = {l: CubicSpline(self.q, np.asarray(delta[idx[l]], dtype=np.float64)) for l in range(LMIN, LMAX + 1)}
+        else:
+            if not 0 < split < len(self.q) - 1:
+                raise RunStop(f"the interpolation's split, knot {split}, is not an interior knot")
+            rows = {l: np.asarray(delta[idx[l]], dtype=np.float64) for l in range(LMIN, LMAX + 1)}
+            self.lower = {l: CubicSpline(self.q[:split + 1], rows[l][:split + 1]) for l in rows}
+            self.upper = {l: CubicSpline(self.q[split:], rows[l][split:]) for l in rows}
 
     def max_spacing_above(self, kmin):
         sel = self.q >= kmin
@@ -128,9 +145,18 @@ class GridTransfer:
     def __call__(self, lvals, k):
         out = np.zeros((len(lvals), len(k)))
         inside = (k >= self.q[0]) & (k <= self.q[-1])
-        if np.any(inside):
-            for i, l in enumerate(lvals):
-                out[i, inside] = self.splines[int(l)](k[inside])
+        if self.split is None:
+            if np.any(inside):
+                for i, l in enumerate(lvals):
+                    out[i, inside] = self.splines[int(l)](k[inside])
+            return out
+        qb = self.q[self.split]
+        below, above = inside & (k < qb), inside & (k >= qb)
+        for i, l in enumerate(lvals):
+            if np.any(below):
+                out[i, below] = self.lower[int(l)](k[below])
+            if np.any(above):
+                out[i, above] = self.upper[int(l)](k[above])
         return out
 
 
@@ -186,15 +212,41 @@ def grid_record(t):
     required = 2 * math.pi / chi / TRANSFER["points_per_period"]
     spacing = max_spacing_between(q, K12_B, REACH_KCHI / chi)
     return {"AccuracyBoost": int(t["boost"]), "max_spacing": spacing, "required": required, "meets_rule": bool(spacing <= required),
-            "reach_kchi": float(q[-1] * chi), "chi_star_mpc": chi, "n_q": int(len(q))}
+            "reach_kchi": float(q[-1] * chi), "chi_star_mpc": chi, "n_q": int(len(q)), "boundary": native_boundary(t)[1]}
+
+
+def native_boundary(t):
+    """Erratum E1: CAMB's native block boundary on this grid, as (split index or None, record, fault or None). A grid that ends
+    at or below k eta0 = SPLIT_KETA0 has no coarse block, and one spline serves. A grid that runs past it must have exactly one
+    knot there, an interior one, at which the grid's largest step ratio sits; otherwise the fault says what differs, and the
+    transfer is not as registered."""
+    q = np.asarray(t["q"], dtype=np.float64)
+    x = q * float(t["tau0"])
+    if x[-1] <= SPLIT_KETA0:
+        return None, {"k_eta0": None, "step_ratio": None}, None
+    hit = np.nonzero(np.abs(x - SPLIT_KETA0) <= 1e-9 * SPLIT_KETA0)[0]
+    if len(hit) != 1 or not 0 < hit[0] < len(q) - 1:
+        return None, {"k_eta0": None, "step_ratio": None}, (f"CAMB's grid runs past k eta0 = {SPLIT_KETA0:g} without a single "
+                                                             f"interior knot there")
+    s = np.diff(q)
+    ratio = s[1:] / s[:-1]
+    j, top = int(hit[0]), int(np.argmax(ratio)) + 1
+    rec = {"k_eta0": float(x[j]), "step_ratio": float(ratio[j - 1])}
+    if top != j:
+        return None, rec, f"the grid's largest step ratio is at k eta0 = {x[top]:.6g}, not at CAMB's block boundary"
+    return j, rec, None
 
 
 def check_transfer(t):
-    """The settings that must have reached CAMB, and every multipole from 2 to 29 computed (contract section 3)."""
+    """The settings that must have reached CAMB, and every multipole from 2 to 29 computed (contract section 3); from erratum
+    E1, CAMB's native block boundary where its construction puts it, with the interpolation split there."""
     if t["max_l"] != TRANSFER["max_l"] or t["do_lensing"] or t["want_cmb_lensing"]:
         raise RunStop(f"the transfer settings did not reach CAMB: max_l {t['max_l']}, DoLensing {t['do_lensing']}, "
                       f"Want_CMB_lensing {t['want_cmb_lensing']}")
-    return GridTransfer(t["L"], t["q"], t["delta"])
+    split, _, fault = native_boundary(t)
+    if fault:
+        raise RunStop(fault)
+    return GridTransfer(t["L"], t["q"], t["delta"], split=split)
 
 
 # ------------------------------------------- the table and its two labels -------------------------------------------
@@ -410,7 +462,8 @@ def compute_transfer(p, boost):
     data.power_spectra_from_transfer()
     cl = data.get_cmb_power_spectra(CMB_unit="muK", raw_cl=True, spectra=("unlensed_scalar",), lmax=LMAX)["unlensed_scalar"][:, 0]
     return {"boost": int(boost), "q": np.array(ct.q, dtype=np.float64), "L": np.array(ct.L), "delta": np.array(ct.delta_p_l_k[0], dtype=np.float64),
-            "chi_star": chi_star, "cl_lcdm_uK2": np.array(cl[: LMAX + 1], dtype=np.float64), "tcmb2": (pars.TCMB * 1e6) ** 2,
+            "chi_star": chi_star, "tau0": float(data.tau0), "cl_lcdm_uK2": np.array(cl[: LMAX + 1], dtype=np.float64),
+            "tcmb2": (pars.TCMB * 1e6) ** 2,
             "power": pars.scalar_power, "max_l": int(pars.max_l), "do_lensing": bool(pars.DoLensing),
             "want_cmb_lensing": bool(pars.Want_CMB_lensing), "derived": {k: float(v) for k, v in der.items()}}
 
@@ -467,8 +520,10 @@ def report_sections(r):
         lines.append(f"G2 at R = {g2['R_mpc']:.4g} Mpc: S^3 {g2['s3']['max_fractional_deviation']:.2e}, Molien {g2['molien']['max_fractional_deviation']:.2e}, "
                      f"1/120 dropped {g2['molien_no120']['max_fractional_deviation']:.2e} (tolerance {G2_TOL:g}); passed {g2['passed']}.")
     for g in r.get("grid", []) + ([rep["grid"]] if "grid" in rep else []):
+        b = g.get("boundary") or {}
+        split = f"; CAMB's block boundary at k eta0 = {b['k_eta0']:.1f}, step x{b['step_ratio']:.1f}" if b.get("k_eta0") else ""
         lines.append(f"Grid at AccuracyBoost {g['AccuracyBoost']}: largest step {g['max_spacing']:.3e} against {g['required']:.3e} required, "
-                     f"reach k chi* = {g['reach_kchi']:.0f}, {g['n_q']} points, {'meets' if g['meets_rule'] else 'misses'} the rule.")
+                     f"reach k chi* = {g['reach_kchi']:.0f}, {g['n_q']} points, {'meets' if g['meets_rule'] else 'misses'} the rule{split}.")
     for name, _ in ROUTES:
         for which in ("frozen", "repeat"):
             c = r.get(name, {}).get(which, {}).get("cutoff")
