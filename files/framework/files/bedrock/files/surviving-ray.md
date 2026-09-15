@@ -1627,8 +1627,8 @@ logical dependence runs the other way, and the paper is ordered by the logic.
 ```
 Shatto, B. (2026).
 The Surviving Ray: channel selection for a cubic self-interaction on S³/2I.
-Zenodo.
-https://doi.org/10.5281/zenodo.22681501
+SSRN.
+https://ssrn.com/abstract=7443959
 ```
 
 ---
