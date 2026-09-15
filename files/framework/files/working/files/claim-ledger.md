@@ -143,6 +143,7 @@ Retrodictions that match observation with no adjustable parameter. Not circular,
 | Stabilizer decomposition: faces Z₃, edges Z₄, vertices Z₅ from 2I = 2³·3·5 | three exact restriction decompositions of any irrep | none (representation theory) | 2I | the arithmetic is forced; reading the three axes as color, spin, and electroweak address is the dictionary, and the force count built on it is graded under Loose comparisons |
 | Yang-Mills mass gap > 0 at 4/R² | gap exists, ADE-uniform | none (spectral) | McKay graph, R | gap is a spectral necessity |
 | Chirality of S³/2I (no orientation-reversing isometry) | parity route shut | none | 2I, quaternions | clean theorem; parity-grading corollary double-counts it |
+| A5 isotropy of S³/2I (the alignment corollary) | ℓ = 2/3 alignment route shut | none, given a Gaussian source and an A5-preserving map | 2I, Schur | clean theorem (P1 bridge §II); shuts a route rather than supplying a match, so it adds no retrodiction and takes one anomaly off this topology's books |
 | Boson/fermion split D = 60/120 | \|I\|/\|2I\| = int/half-int spin | spin-statistics mapping | 2I | structural identity |
 | Color Z₃ singlet/triplet; isospin gate; eta-sign gate | every assigned fermion has its required color channel; T₃ gate evaluated at eleven featured addresses (9 marked ✓, 2 unassigned) | binary/bespoke gate fits known set; charm unplaced | irrep assignment | matches but gate is bespoke; see flags; the source page now carries this caveat inline and cites this ledger for it (2026-09-04) |
 

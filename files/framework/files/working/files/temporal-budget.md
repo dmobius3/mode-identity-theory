@@ -360,7 +360,7 @@ The apparent phantom crossing is demonstrated for CPL, BA, and JBP fitted to the
 | CMB $`\ell_\text{cut}`$ | ~28 (Molien gap) | no cutoff |
 | $`C_2/C_3`$ | 0.13 | ~0.3 |
 
-*Parity ($`R_{TT}`$) and the $`\ell = 2/3`$ alignment are dropped here: chirality severs them from this topology (see [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md)).*
+*Parity ($`R_{TT}`$) and the $`\ell = 2/3`$ alignment are dropped here, for different reasons. Chirality shuts only the orientation-reversing grading route to parity; parity itself stays open to this topology through the eigenmode covariance, and is not forecast here. The alignment is severed from this topology, by the quotient's $`A_5`$ isotropy rather than by its chirality (see [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §III).*
 
 ### H. Clock-setting logic
 
