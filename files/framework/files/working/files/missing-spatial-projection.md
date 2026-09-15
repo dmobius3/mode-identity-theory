@@ -52,7 +52,7 @@ The machinery reads out from the space onto its temporal structure, the band and
 
 Flat space enters only as the effective metric the readings rest on: $`a_\text{eff} \propto S`$ "carries the volume", and the FLRW distance relation is "recovered as the translation layer". The engine page says so directly: "the map from the static geometry to the effective metric the distance model runs on has no derived source". The Waltz names the step, "projecting them onto a four-dimensional chart", without defining it.
 
-The one arrow into a flat three-space the inputs reach is standard geometry: the exponential map at the observer's point, a comparator. The observer data neither selects nor alters it. The domain is homogeneous, so the observer's position is not a parameter, and at $`3.2 \times 10^{-31}`$ of $`R_\Lambda`$ the observer scale leaves every Molien shell unchanged.
+The one arrow into a flat three-space the inputs reach is standard geometry: the exponential map at the observer's point, a comparator. The observer data neither selects nor alters it. The domain is homogeneous, so the observer's position is not a parameter, and at $`3.2 \times 10^{-31}`$ of $`R_\Lambda`$ the observer scale leaves every Molien shell through $`N = 60`$ unchanged, to $`2 \times 10^{-58}`$.
 
 The outcome is O0.
 
@@ -82,7 +82,7 @@ The arrow the corpus names and does not construct must supply four things:
 3. linearity and positivity, so that it lands in the classified family, where C8 and the directional page can score it;
 4. a comoving tie between the target's scale and the domain's, which $`a_\text{eff}`$ moves in time but does not set.
 
-The corpus names this object twice, in the Stress-Tensor Bridge's question for "a genuine projection or coarse-graining that explains flat effective slices over a closed substrate" and in the Waltz's projection onto a chart. It is a new effective-metric object, not a further reading of the existing machinery, and the Stress-Tensor Bridge now carries its second requirement as C9.
+The corpus names this object twice, in the Stress-Tensor Bridge's question for "a genuine projection or coarse-graining that explains flat effective slices over a closed substrate" and in the Waltz's projection onto a chart. It is a new effective-metric object, not a further reading of the existing machinery, and the Stress-Tensor Bridge now carries its second requirement as C9. **(Pointer added 2026-09-15.)** [The Effective-Metric Floors](effective-metric-floors.md) asks whether MIT contains or independently motivates that object, and finds four floors on any candidate but nothing that says what it is.
 
 ## V. Checks
 

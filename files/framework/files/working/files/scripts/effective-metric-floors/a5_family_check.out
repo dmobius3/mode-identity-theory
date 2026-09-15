@@ -1,0 +1,16 @@
+PASS  A1 2I closed, rho a representation, standard pairing
+      parity 0, |G| 120, homomorphism 8.5e-15, pairing 8.9e-15
+PASS  A2 Molien counts, 1 + 3 + 4 + 5, invariant state in the trivial summand
+      counts [0, 12, 20, 24, 30], commutant 4.000000, sizes [1, 3, 4, 5], psi fixed to 2.4e-15
+PASS  A3 constant 2I-commuting transfers agree on the invariant state
+      covariance 2.0e-15, power on psi - a_1 4.4e-16, two members differ on psi by 3.6e-33 and on a generic state by 0.062
+PASS  A4 classified family: the invariant state's averaged power is 1/(N+1) for every t
+      worst deviation 2.8e-17 over five random t
+PASS  A5 direction-dependent A5 transfers reach patterns outside the classified span
+      f: invariant to 4.5e-15, covariance 1.1e-15, residual 1.5e-03; classified span rank 4, P1 residual 1.3e-15, Q 1.5e-15; g: covariance 4.0e-13, minimum 0.23, residual 0.289
+control  A1 reversed rotation sense breaks the pairing                                    as required
+control  A2 the 24 Hurwitz units alone give a larger commutant                            as required
+control  A3 a generic positive constant is not covariant, and the members differ on a generic state as required
+control  A4 a trace-1 constant A5 member gives a different averaged power                 as required
+control  A5 the same construction on a generic state is not covariant                     as required
+5/5 checks pass; 5/5 controls as required
