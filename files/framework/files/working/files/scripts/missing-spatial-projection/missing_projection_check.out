@@ -1,0 +1,17 @@
+A  exponential-map pullback, unit S³, 4000 pairs within 0.10 with shifts up to 0.10
+   the pulled-back distance changes under translation by up to 0.00048 on the round S³; on flat R³ below 1e-12: PASS
+B  the N = 12 whole-shell law, 4000 pairs within 0.15 with shifts up to 0.15
+   the pulled-back correlation changes under translation by up to 0.008; the flat shell kernel below 1e-12: PASS
+C  so(3): the bracket of the domain's isometry generators
+   [x, y] equals the cross product (below 1e-12), nonzero on every non-parallel pair (least 0.098): PASS
+D  the observer scale, sqrt(l_P R_Lambda) = 50 micrometres (the engine page)
+   l_obs / R_Lambda = 3.2e-31; the largest change to a shell N <= 60 is 1.9e-58: PASS
+E  the isotropy group A5 on the tangent space
+   60 rotations, closed under products: yes; invariant symmetric 2-tensors: 1 (the metric): PASS
+arms
+   arm: flat distance in place of the round one (A)    RED
+   arm: flat kernel in place of the shell's (B)        RED
+   arm: zero bracket in place of the cross product (C) RED
+   arm: a scale of R/10 (D)                            RED
+   arm: the cyclic group of order 5 in place of A5 (E) RED
+0 claims failed; 5/5 arms red
