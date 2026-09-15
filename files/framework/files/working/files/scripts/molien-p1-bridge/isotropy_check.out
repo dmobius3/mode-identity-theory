@@ -1,0 +1,24 @@
+1. 2I: 120 unit quaternions (norms 1 to 0e+00); closed under multiplication: True
+2. right multiplication is well defined on cosets: [(g x) b] = [x b] for 20 random (x, b) and 40 g each: True; transitive: [x x^-1] = [1] for random x: True
+3. stabilizer of [1]: every b in 2I fixes it (True), no random b does (True); b in 2I moves the tangent space at [1] by Ad(b^-1): the representative of [exp(v) b] nearest 1 equals exp(Ad(b^-1) v) to 2e-16
+4. Ad(2I): 60 distinct rotations; the 12 vertices of the icosahedron are permuted by all of them: True; rotation-angle classes [('0', 1), ('2pi/5', 12), ('2pi/3', 20), ('4pi/5', 12), ('pi', 15)]
+5. A5 content of spin l. An A5-invariant covariance is a scalar on each constituent that appears once and a positive matrix on
+   the multiplicity of one that repeats (first at l = 8); a spin whose content is a single irreducible is forced isotropic:
+   l =  0: 1                      forced isotropic
+   l =  1: 3                      forced isotropic
+   l =  2: 5                      forced isotropic
+   l =  3: 3' + 4                 anisotropy allowed
+   l =  4: 4 + 5                  anisotropy allowed
+   l =  5: 3 + 3' + 5             anisotropy allowed
+   l =  6: 1 + 3 + 4 + 5          anisotropy allowed
+   l =  7: 3 + 3' + 4 + 5         anisotropy allowed
+   l =  8: 3' + 4 + 2x5           anisotropy allowed
+   l =  9: 3 + 3' + 2x4 + 5       anisotropy allowed
+   l = 10: 1 + 3 + 3' + 4 + 2x5   anisotropy allowed
+   pairs (l, l') that may be coupled (share a constituent) and that are forced to zero, for 1 <= l < l' <= 6:
+   (1,2) zero; (1,3) zero; (1,4) zero; (1,5) shares 3; (1,6) shares 3
+   (2,3) zero; (2,4) shares 5; (2,5) shares 5; (2,6) shares 5
+   (3,4) shares 4; (3,5) shares 3'; (3,6) shares 4
+   (4,5) shares 5; (4,6) shares 4+5
+   (5,6) shares 3+5
+6. A5 invariants at spin l equal the Molien count m_(2l) for l = 0 to 40: True (l = 6, 10, 15: [1, 1, 1]; l = 30: 2); first m_N > 1 at N = 60

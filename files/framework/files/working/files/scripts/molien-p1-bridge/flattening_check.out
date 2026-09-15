@@ -1,0 +1,67 @@
+K1. The whole-shell law in the flat limit: its correlation at c = k_N |v| against the flat shell kernel j0(c)
+   N =   12: max |U_N(cos(c/k_N))/(N+1) - j0(c)| over c = 1, 3 and 6: 2.7e-03
+   N =   20: max |U_N(cos(c/k_N))/(N+1) - j0(c)| over c = 1, 3 and 6: 1.0e-03
+   N =   60: max |U_N(cos(c/k_N))/(N+1) - j0(c)| over c = 1, 3 and 6: 1.2e-04
+   N =  120: max |U_N(cos(c/k_N))/(N+1) - j0(c)| over c = 1, 3 and 6: 3.1e-05
+   N =  600: max |U_N(cos(c/k_N))/(N+1) - j0(c)| over c = 1, 3 and 6: 1.2e-06
+   N = 1200: max |U_N(cos(c/k_N))/(N+1) - j0(c)| over c = 1, 3 and 6: 3.1e-07
+
+K2. The quotient's own law P near the observer at c = 6.0: K_P(1, exp(v))/m_N over the directions of v, |v| = c/k_N
+   N =   12 (m_N = 1): direction average -0.04518 against j0(c) = -0.04657; direction-dependent rms 1.82e-01, times N 2.2; the central pair alone isotropic to 0e+00
+   N =   20 (m_N = 1): direction average -0.04605 against j0(c) = -0.04657; direction-dependent rms 1.26e-01, times N 2.5; the central pair alone isotropic to 0e+00
+   N =   60 (m_N = 2): direction average -0.04651 against j0(c) = -0.04657; direction-dependent rms 2.59e-02, times N 1.6; the central pair alone isotropic to 3e-18
+   N =  120 (m_N = 3): direction average -0.04655 against j0(c) = -0.04657; direction-dependent rms 1.42e-02, times N 1.7; the central pair alone isotropic to 0e+00
+   N =  600 (m_N = 11): direction average -0.04657 against j0(c) = -0.04657; direction-dependent rms 3.03e-03, times N 1.8; the central pair alone isotropic to 0e+00
+   N = 1200 (m_N = 21): direction average -0.04657 against j0(c) = -0.04657; direction-dependent rms 1.53e-03, times N 1.8; the central pair alone isotropic to 0e+00
+
+K3. A smooth anisotropic A5 law A_f at c = 6.0: f = sum over 2I of exp(8.0 m.(R_g e)), e a vertex direction, so f peaks on the 12 vertices; invariant under the 60 Bloch rotations to 2e-15 (relative); its direction-dependent rms over its mean 0.17; coherent states' Bloch vectors to 3e-16
+   flat shell kernel with weight f, over 60 directions: mean -0.0461, direction-dependent rms 1.819e-02, imaginary part at most 8e-17
+   N =   12: sphere kernel against the flat one, largest difference 3.1e-02, times N 0.37; its own direction-dependent rms 2.959e-03
+   N =   20: sphere kernel against the flat one, largest difference 2.4e-02, times N 0.48; its own direction-dependent rms 6.303e-03
+   N =   60: sphere kernel against the flat one, largest difference 1.1e-02, times N 0.63; its own direction-dependent rms 1.282e-02
+   N =  120: sphere kernel against the flat one, largest difference 5.7e-03, times N 0.69; its own direction-dependent rms 1.527e-02
+   N =  600: sphere kernel against the flat one, largest difference 1.2e-03, times N 0.74; its own direction-dependent rms 1.756e-02
+   N = 1200: sphere kernel against the flat one, largest difference 6.2e-04, times N 0.74; its own direction-dependent rms 1.787e-02
+
+K4. The coherent-state symbol of P, Q_P(m) = (1/120) sum_g <m|U_g|m>^N, on a 300 x 600 grid, and on the axis directions
+   N =   12: mean 0.076923 against m_N/(N+1) = 0.076923; imaginary part at most 1e-16; direction-dependent rms over the mean 0.408; over the mean at the vertices -0.000 to 0.000, faces 1.498 to 1.498, edges 1.333 to 1.333
+   N =   20: mean 0.047619 against m_N/(N+1) = 0.047619; imaginary part at most 1e-16; direction-dependent rms over the mean 0.523; over the mean at the vertices 2.094 to 2.094, faces -0.000 to 0.000, edges 0.899 to 0.899
+   N =   60: mean 0.032787 against m_N/(N+1) = 0.032787; imaginary part at most 3e-16; direction-dependent rms over the mean 0.439; over the mean at the vertices 2.542 to 2.542, faces 1.602 to 1.602, edges 0.971 to 0.971
+   N =  120: mean 0.024793 against m_N/(N+1) = 0.024793; imaginary part at most 1e-15; direction-dependent rms over the mean 0.518; over the mean at the vertices 3.361 to 3.361, faces 2.018 to 2.018, edges 1.333 to 1.333
+   N =  600: mean 0.018303 against m_N/(N+1) = 0.018303; imaginary part at most 6e-15; direction-dependent rms over the mean 0.360; over the mean at the vertices 4.553 to 4.553, faces 2.732 to 2.732, edges 1.821 to 1.821
+   N = 1200: mean 0.017485 against m_N/(N+1) = 0.017485; imaginary part at most 1e-14; direction-dependent rms over the mean 0.270; over the mean at the vertices 4.766 to 4.766, faces 2.860 to 2.860, edges 1.906 to 1.906
+
+K5. The symbol transfer of P, the flat shell kernel with direction weight Q_P, against P's own kernel on the sphere, at c = 6.0, over 200 random directions
+   N =   12: symbol-transfer kernel mean -0.04725, rms 3.83e-02 (imaginary part at most 9e-17); sphere kernel mean -0.04831, rms 1.83e-01; largest difference 3.46e-01
+   N =   20: symbol-transfer kernel mean -0.04570, rms 4.77e-02 (imaginary part at most 1e-16); sphere kernel mean -0.04358, rms 1.27e-01; largest difference 1.81e-01
+   N =   60: symbol-transfer kernel mean -0.04630, rms 1.84e-02 (imaginary part at most 2e-16); sphere kernel mean -0.04619, rms 2.58e-02; largest difference 1.87e-02
+   N =  120: symbol-transfer kernel mean -0.04642, rms 1.19e-02 (imaginary part at most 3e-16); sphere kernel mean -0.04639, rms 1.42e-02; largest difference 5.74e-03
+   N =  600: symbol-transfer kernel mean -0.04654, rms 2.91e-03 (imaginary part at most 1e-15); sphere kernel mean -0.04654, rms 3.02e-03; largest difference 2.68e-04
+   N = 1200: symbol-transfer kernel mean -0.04655, rms 1.49e-03 (imaginary part at most 3e-15); sphere kernel mean -0.04655, rms 1.52e-03; largest difference 6.82e-05
+
+K6. The 12 vertex vectors split over Q(sqrt 5) (x = p + q sqrt 5, reassembled to 0e+00): rank of the 12 x 6 rational matrix 6, so their Z-span has rank 6 in R^3
+
+K7. Zeros of the symbol of P: on each shell with a unique invariant, exactly the roots of its form; none at N = 60
+   N = 12: f12^1 f20^0 f30^0; over the mean, largest on the vertices 6.5e-16, faces 1.5e+00, edges 1.3e+00; zero exactly on the form's roots: True
+   N = 20: f12^0 f20^1 f30^0; over the mean, largest on the vertices 2.1e+00, faces 3.1e-15, edges 9.0e-01; zero exactly on the form's roots: True
+   N = 24: f12^2 f20^0 f30^0; over the mean, largest on the vertices 3.3e-15, faces 1.9e+00, edges 1.5e+00; zero exactly on the form's roots: True
+   N = 30: f12^0 f20^0 f30^1; over the mean, largest on the vertices 2.5e+00, faces 9.3e-01, edges 3.9e-15; zero exactly on the form's roots: True
+   N = 32: f12^1 f20^1 f30^0; over the mean, largest on the vertices 1.4e-15, faces 6.0e-15, edges 1.5e+00; zero exactly on the form's roots: True
+   N = 36: f12^3 f20^0 f30^0; over the mean, largest on the vertices 7.5e-15, faces 2.3e+00, edges 1.6e+00; zero exactly on the form's roots: True
+   N = 40: f12^0 f20^2 f30^0; over the mean, largest on the vertices 3.4e+00, faces 4.0e-15, edges 6.3e-01; zero exactly on the form's roots: True
+   N = 42: f12^1 f20^0 f30^1; over the mean, largest on the vertices 3.0e-15, faces 1.8e+00, edges 5.2e-15; zero exactly on the form's roots: True
+   N = 44: f12^2 f20^1 f30^0; over the mean, largest on the vertices 9.8e-15, faces 9.9e-15, edges 2.0e+00; zero exactly on the form's roots: True
+   N = 48: f12^4 f20^0 f30^0; over the mean, largest on the vertices 5.5e-15, faces 2.7e+00, edges 1.7e+00; zero exactly on the form's roots: True
+   N = 50: f12^0 f20^1 f30^1; over the mean, largest on the vertices 4.2e+00, faces 1.2e-14, edges 5.6e-15; zero exactly on the form's roots: True
+   N = 52: f12^1 f20^2 f30^0; over the mean, largest on the vertices 5.1e-15, faces 5.9e-15, edges 1.3e+00; zero exactly on the form's roots: True
+   N = 54: f12^2 f20^0 f30^1; over the mean, largest on the vertices 1.5e-14, faces 2.5e+00, edges 7.1e-15; zero exactly on the form's roots: True
+   N = 56: f12^3 f20^1 f30^0; over the mean, largest on the vertices 1.8e-14, faces 1.7e-14, edges 2.3e+00; zero exactly on the form's roots: True
+   N = 60 (m_N = 2, forms [(5, 0, 0), (0, 3, 0)]): smallest value over the mean on the 180000-point grid 0.532, on the axes 0.971
+   every shell with a unique invariant: True
+
+K8. A rank-two source on the invariants at c = 6.0: the invariant parts of the coherent states at a generic n and at -n
+   the flat kernel of its orbit's measure, the limit: mean -0.0460, direction-dependent rms 6.352e-02
+   N =   60: mean -0.0462, direction-dependent rms 8.208e-02 (imaginary part at most 6e-16); largest difference from the limit 3.77e-02; P's rms on the same directions 2.72e-02
+   N =  120: mean -0.0460, direction-dependent rms 6.927e-02 (imaginary part at most 1e-15); largest difference from the limit 1.21e-02; P's rms on the same directions 1.49e-02
+   N =  600: mean -0.0460, direction-dependent rms 6.134e-02 (imaginary part at most 1e-14); largest difference from the limit 4.95e-03; P's rms on the same directions 3.18e-03
+   N = 1200: mean -0.0460, direction-dependent rms 6.242e-02 (imaginary part at most 3e-14); largest difference from the limit 2.50e-03; P's rms on the same directions 1.60e-03
