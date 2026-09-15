@@ -253,10 +253,6 @@ All predictions below were locked before Data Release 1 and deposited on Zenodo.
 
 ---
 
->[![The Whole of the Moon](https://img.youtube.com/vi/pu7AR0-FRro/mqdefault.jpg)](https://www.youtube.com/watch?v=pu7AR0-FRro)
->
->*Video: [The Waterboys - The Whole of the Moon](https://www.youtube.com/watch?v=pu7AR0-FRro)*
-
 *What you hold in your hand is not matter. It is where the wave resolved when you sampled it.*
 
 *The thing is the sample. The identity is the wave Ψ*
