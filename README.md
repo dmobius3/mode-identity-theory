@@ -17,6 +17,12 @@ In 300 BC, Euclid proved Plato's observation that only five solids close perfect
 
 ---
 
+>[![Topology before Matter](https://img.youtube.com/vi/ANzQhGGzoAk/mqdefault.jpg)](https://www.youtube.com/watch?v=ANzQhGGzoAk)
+>
+>*Video: [Topology before Matter](https://www.youtube.com/watch?v=ANzQhGGzoAk)*
+
+---
+
 **💬 Frequently Asked Questions**
 
 ***What shape is the universe?*** A three-sphere (S³): finite, closed, simply connected. By the Poincaré theorem, any closed, simply connected 3-manifold is topologically S³. Its size is fixed; what we interpret as cosmic expansion is the phase-advance of the cosmic wave, not space stretching. We see more of the wave realized, so distances appear to grow.
