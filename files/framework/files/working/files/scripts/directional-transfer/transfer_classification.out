@@ -1,0 +1,123 @@
+Setup. 2I as 120 unit quaternions; rotation axes by order, as directions: 12 five-fold, 20 three-fold, 30 two-fold.
+
+T1. Covariance forces E(z) to be diagonal, leaving the N + 1 weights t_m >= 0 free.
+   N = 12: diagonal E(z) with random t: covariance defect below 1e-12; a generic pure E(z): defect above 1e-3, so not covariant
+   N = 20: diagonal E(z) with random t: covariance defect below 1e-12; a generic pure E(z): defect above 1e-3, so not covariant
+   N = 24: diagonal E(z) with random t: covariance defect below 1e-12; a generic pure E(z): defect above 1e-3, so not covariant
+   N = 30: diagonal E(z) with random t: covariance defect below 1e-12; a generic pure E(z): defect above 1e-3, so not covariant
+   So the admissible transfers are exactly the nonnegative weights (t_-j, ..., t_j): an (N + 1)-parameter cone,
+   which normalization (sum of t = 1) cuts to an N-simplex. Positivity, covariance and normalization single out no member.
+
+T2. The barycenter of the simplex and a vertex.
+   uniform t, the barycenter (P1, spectral transfer): A_eff over 5 directions spans below 1e-12, and equals Tr A/(N+1) = 23.995675 (below 1e-12)
+   vertex t_m = delta_{m,j} (Q-symbol transfer): A_eff over the same 5 directions spans 7.310785
+   vertex t_m = delta_{m,-j}: equals the Q-symbol at the antipode, <-n|A|-n> (below 1e-12)
+   Uniform t is the average of the N + 1 vertices, the barycenter of the simplex, not a vertex. It keeps the trace
+   and discards every direction; the vertex at m = j keeps the coherent-state value. Different maps.
+
+T3. Strong zero preservation (every pure source) forces the vertex at m = j: the ray through Q.
+   N = 12: all 12 states |j,m> with m != j are nodal at the pole, each forcing its own t_m = 0: yes
+   N = 20: all 20 states |j,m> with m != j are nodal at the pole, each forcing its own t_m = 0: yes
+   N = 30: all 30 states |j,m> with m != j are nodal at the pole, each forcing its own t_m = 0: yes
+   Therefore t_m = 0 for every m != j, so E(z) is a nonnegative multiple of |j,j><j,j|: the ray through Q.
+   Normalization (sum of t = 1) fixes the multiple at 1, which is Q itself.
+
+T4. Weak zero preservation (the shell's own invariant only) does NOT force Q.
+   N = 12: 12/12 vertices are nodal. The 5-fold stabilizer of a nodal direction allows only m = 0 mod 5
+           (3 values: [5, 0, -5]); the invariant's support there is 3 of them: [5, 0, -5]
+           5 half-turn axes perpendicular to the nodal axis also preserve it; each sends |j,0> to (-1)^j |j,0>,
+           and j = 6 is even, so the m = 0 amplitude of the rotated invariant is free (here 0.6633).
+           Weak preservation kills 3 of the 13 weights and leaves a 10-parameter cone; Q is one point in it.
+           Explicit second member (uniform on the surviving m): vanishes at every nodal direction (below 1e-15),
+           and at a non-nodal axis gives 0.086420 where Q gives 0.115226. Weak preservation does not tell them apart.
+   N = 20: 20/20 face centres are nodal. The 3-fold stabilizer of a nodal direction allows only m = 0 mod 3
+           (7 values: [9, 6, 3, 0, -3, -6, -9]); the invariant's support there is 7 of them: [9, 6, 3, 0, -3, -6, -9]
+           3 half-turn axes perpendicular to the nodal axis also preserve it; each sends |j,0> to (-1)^j |j,0>,
+           and j = 10 is even, so the m = 0 amplitude of the rotated invariant is free (here 0.5601).
+           Weak preservation kills 7 of the 21 weights and leaves a 14-parameter cone; Q is one point in it.
+           Explicit second member (uniform on the surviving m): vanishes at every nodal direction (below 1e-15),
+           and at a non-nodal axis gives 0.062019 where Q gives 0.099733. Weak preservation does not tell them apart.
+   N = 30: 30/30 edge midpoints are nodal. The 2-fold stabilizer of a nodal direction allows only m = 0 mod 2
+           (15 values: [14, 12, 10, 8, 6, 4, 2, 0, -2, -4, -6, -8, -10, -12, -14]); the invariant's support there is 14 of them: [14, 12, 10, 8, 6, 4, 2, -2, -4, -6, -8, -10, -12, -14]
+           2 half-turn axes perpendicular to the nodal axis also preserve it; each sends |j,0> to (-1)^j |j,0>,
+           and j = 15 is odd, so the m = 0 amplitude of the rotated invariant is below 1e-12.
+           Weak preservation kills 14 of the 31 weights and leaves a 17-parameter cone; Q is one point in it.
+           Explicit second member (uniform on the surviving m): vanishes at every nodal direction (below 1e-15),
+           and at a non-nodal axis gives 0.040809 where Q gives 0.080080. Weak preservation does not tell them apart.
+   The gap between T3 and T4 is what MIT would have to supply. Preservation for the shell's own invariant can be
+   formulated from the realized source alone; preservation for every pure state on the shell is a statement about
+   the map; only the second gives Q.
+
+T5. The nodal sets on the one-invariant shells, against step one's Majorana constellations.
+   N = 12: zeros at 12/12 five-fold, 0/20 three-fold, 0/30 two-fold axes; 2j = 12 zeros expected on vertices; antipodally closed: True
+           each zero is simple: at every nodal direction the rotated invariant's top component is m = 5 = j - 1.
+   N = 20: zeros at 0/12 five-fold, 20/20 three-fold, 0/30 two-fold axes; 2j = 20 zeros expected on face centres; antipodally closed: True
+           each zero is simple: at every nodal direction the rotated invariant's top component is m = 9 = j - 1.
+   N = 30: zeros at 0/12 five-fold, 0/20 three-fold, 30/30 two-fold axes; 2j = 30 zeros expected on edge midpoints; antipodally closed: True
+           each zero is simple: at every nodal direction the rotated invariant's top component is m = 14 = j - 1.
+   The zero count matches 2j = N in each case, and each nodal set is antipodally closed, so the zero set of
+   the overlap and the Majorana constellation agree as sets on these shells.
+
+T6. What reaches the prediction. Below N = 60 the source is rank one, so a transfer meets it only through
+    f_m(n) = |<j,m|D_n^dagger psi_N>|^2, and the predicted pattern is sum_m t_m f_m.
+   N = 12: f_-m = f_m (below 1e-12); every f_m integrates to 4 pi/(N+1) (below 1e-12).
+           Density multipoles of psi_N nonzero at ranks [0, 6, 10, 12] (4; smallest 0.28), zero at the other ranks (below 1e-12).
+           Distinct even degrees <= 12 carrying an A5 invariant: [0, 6, 10, 12] (4; 4 harmonics with multiplicity).
+           Diagonal transfers reach 13 of 13 ranks, Q's E(z) answers at 13, and the weight swap changes exactly the odd ranks (all 6 of them).
+           Span over all m: rank 4 (smallest kept singular value 2.1, largest dropped below 1e-12);
+           over the 10 weights weak preservation leaves: rank 3 (smallest kept 2.3, largest dropped below 1e-12).
+           Weight moved from the vertex at -j to the vertex at j, t_{+-j} = (1 +- 1/2)/(N+1): on psi_N the pattern
+           is P1's flat 1/(N+1) (below 1e-12); on the coherent source at the pole it is 0.115385 at the pole and 0.038462 at the antipode.
+   N = 20: f_-m = f_m (below 1e-12); every f_m integrates to 4 pi/(N+1) (below 1e-12).
+           Density multipoles of psi_N nonzero at ranks [0, 6, 10, 12, 16, 18, 20] (7; smallest 0.22), zero at the other ranks (below 1e-12).
+           Distinct even degrees <= 20 carrying an A5 invariant: [0, 6, 10, 12, 16, 18, 20] (7; 7 harmonics with multiplicity).
+           Diagonal transfers reach 21 of 21 ranks, Q's E(z) answers at 21, and the weight swap changes exactly the odd ranks (all 10 of them).
+           Span over all m: rank 7 (smallest kept singular value 1.3, largest dropped below 1e-12);
+           over the 14 weights weak preservation leaves: rank 6 (smallest kept 0.7, largest dropped below 1e-12).
+           Weight moved from the vertex at -j to the vertex at j, t_{+-j} = (1 +- 1/2)/(N+1): on psi_N the pattern
+           is P1's flat 1/(N+1) (below 1e-12); on the coherent source at the pole it is 0.071429 at the pole and 0.023810 at the antipode.
+   N = 30: f_-m = f_m (below 1e-12); every f_m integrates to 4 pi/(N+1) (below 1e-12).
+           Density multipoles of psi_N nonzero at ranks [0, 6, 10, 12, 16, 18, 20, 22, 24, 26, 28, 30] (12; smallest 0.07), zero at the other ranks (below 1e-12).
+           Distinct even degrees <= 30 carrying an A5 invariant: [0, 6, 10, 12, 16, 18, 20, 22, 24, 26, 28, 30] (12; 13 harmonics with multiplicity).
+           Diagonal transfers reach 31 of 31 ranks, Q's E(z) answers at 31, and the weight swap changes exactly the odd ranks (all 15 of them).
+           Span over all m: rank 12 (smallest kept singular value 0.25, largest dropped below 1e-12);
+           over the 17 weights weak preservation leaves: rank 9 (smallest kept 0.22, largest dropped below 1e-12).
+           Weight moved from the vertex at -j to the vertex at j, t_{+-j} = (1 +- 1/2)/(N+1): on psi_N the pattern
+           is P1's flat 1/(N+1) (below 1e-12); on the coherent source at the pole it is 0.048387 at the pole and 0.016129 at the antipode.
+   After normalization, which is one condition since every f_m has the same integral:
+   N = 12: the transfer keeps 12 free parameters,  9 under weak preservation; the predicted pattern keeps  3, 2 under it.
+   N = 20: the transfer keeps 20 free parameters, 13 under weak preservation; the predicted pattern keeps  6, 5 under it.
+   N = 30: the transfer keeps 30 free parameters, 16 under weak preservation; the predicted pattern keeps 11, 8 under it.
+   N = 60, where the invariant is no longer unique:
+           The invariants form a plane (dimension 2). A generic one is not fixed by time reversal (|<v|Theta v>| = 0.56):
+           its pairing fails (max |f_m - f_-m| = 0.098) and its constellation is not centrally symmetric (max |Q(n) - Q(-n)| = 0.015).
+           A time-reversal-fixed one pairs (below 1e-12), with an even Q-function (below 1e-12): below N = 60, uniqueness is what forces the pairing.
+   Time reversal throughout is exp(-i pi J_y) then complex conjugation, Theta v_m = (-1)^(j-m) v_-m at N = 12, 20, 30 and 60
+   (below 1e-12): the Surviving Ray's Theta_j with epsilon_j = 1.
+   Most of the cone never reaches a rank-one source. The weak condition leaves the predicted pattern undetermined,
+   by the amounts in the last column, and leaves the map undetermined by more.
+
+T7. The real-field quotient. A real field's covariance commutes with time reversal, so only the pair sums
+    u_0 = t_0 and u_m = t_m + t_-m act on it; what the weak family leaves open runs through a sign change.
+   N = 12: on a random time-reversal-invariant covariance (invariance below 1e-12), two transfers with the same pair sums
+           agree (below 1e-12); on a generic covariance they differ (above 1e-3); Q and the antipodal Q agree on it (below 1e-12).
+           The j + 1 = 7 pair-sum vertices give independent patterns on it (rank 7). The time-reversal-fixed states
+           |j,0> and (|j,m0> + e^{ia}|j,-m0>)/sqrt 2, 0 < m0 < j, are nodal at the pole: yes.
+           Weak preservation kills the pair sums at |m| = [0, 5] and leaves 5 of 7.
+           Leading anisotropic response (rank 6 over rank 0) across the weak family, as a ratio to Q's: from -0.909 (|m| = 1)
+           to +1.955 (|m| = 3); the exhibited second member sits at +0.682.
+   N = 20: on a random time-reversal-invariant covariance (invariance below 1e-12), two transfers with the same pair sums
+           agree (below 1e-12); on a generic covariance they differ (above 1e-3); Q and the antipodal Q agree on it (below 1e-12).
+           The j + 1 = 11 pair-sum vertices give independent patterns on it (rank 11). The time-reversal-fixed states
+           |j,0> and (|j,m0> + e^{ia}|j,-m0>)/sqrt 2, 0 < m0 < j, are nodal at the pole: yes.
+           Weak preservation kills the pair sums at |m| = [0, 3, 6, 9] and leaves 7 of 11.
+           Leading anisotropic response (rank 6 over rank 0) across the weak family, as a ratio to Q's: from -0.989 (|m| = 8)
+           to +1.000 (|m| = 10); the exhibited second member sits at +0.088.
+   N = 30: on a random time-reversal-invariant covariance (invariance below 1e-12), two transfers with the same pair sums
+           agree (below 1e-12); on a generic covariance they differ (above 1e-3); Q and the antipodal Q agree on it (below 1e-12).
+           The j + 1 = 16 pair-sum vertices give independent patterns on it (rank 16). The time-reversal-fixed states
+           |j,0> and (|j,m0> + e^{ia}|j,-m0>)/sqrt 2, 0 < m0 < j, are nodal at the pole: yes.
+           Weak preservation kills the pair sums at |m| = [2, 4, 6, 8, 10, 12, 14] and leaves 9 of 16.
+           Leading anisotropic response (rank 6 over rank 0) across the weak family, as a ratio to Q's: from -0.834 (|m| = 13)
+           to +1.000 (|m| = 15); the exhibited second member sits at +0.022.
+   After normalization the real-field map keeps 6, 10, 15 free parameters, and 4, 6, 8 under weak preservation.
