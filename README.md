@@ -17,12 +17,6 @@ In 300 BC, Euclid proved Plato's observation that only five solids close perfect
 
 ---
 
->[![Topology before Matter](https://img.youtube.com/vi/ANzQhGGzoAk/mqdefault.jpg)](https://www.youtube.com/watch?v=ANzQhGGzoAk)
->
->*Video: [Topology before Matter](https://www.youtube.com/watch?v=ANzQhGGzoAk)*
-
----
-
 **💬 Frequently Asked Questions**
 
 ***What shape is the universe?*** A three-sphere (S³): finite, closed, simply connected. By the Poincaré theorem, any closed, simply connected 3-manifold is topologically S³. Its size is fixed; what we interpret as cosmic expansion is the phase-advance of the cosmic wave, not space stretching. We see more of the wave realized, so distances appear to grow.
@@ -34,6 +28,12 @@ In 300 BC, Euclid proved Plato's observation that only five solids close perfect
 ***How did it begin?*** The Big Bang was not an explosion nor the beginning of space. Finite space was already present. What began was measured time, defined by the cosmic wave starting at full potential with almost nothing realized. As time progresses, more of the wave resolves into matter. The early universe wasn’t smaller; it was the same space at an earlier stage of realization, like a three-dimensional cymatic pattern gradually energizing.
 
 ***How does this complement the Standard Model?*** MIT does not replace the Standard Model or general relativity. It keeps their local physics (particles, forces, field equations) and adds a global geometric structure beneath them. The aim is to explain why certain constants, patterns, and symmetries have the values they do. Some connections are exact geometric identities, others are motivated correspondences, and others remain open for refinement.
+
+---
+
+>[![Topology before Matter](https://img.youtube.com/vi/ANzQhGGzoAk/mqdefault.jpg)](https://www.youtube.com/watch?v=ANzQhGGzoAk)
+>
+>*Video: [Topology before Matter](https://www.youtube.com/watch?v=ANzQhGGzoAk)*
 
 ---
 
