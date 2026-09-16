@@ -25,7 +25,7 @@ In 300 BC, Euclid proved Plato's observation that only five solids close perfect
 
 ***What is matter, and what are we?*** Matter is the realized form of the cosmic wave, the part that resolves into stable physical states. In this framework, an atom is already an observer: a bounded region where the wave takes on definite values. Humans are compound observers, intricate realizations of the same underlying wave. We are not external to the universe; we are the places where it becomes definite.
 
-***How did it begin?*** The Big Bang was not an explosion nor the beginning of space. Finite space was already present. What began was measured time, defined by the cosmic wave starting at full potential with almost nothing realized. As time progresses, more of the wave resolves into matter. The early universe wasn’t smaller; it was the same space at an earlier stage of realization, like a three-dimensional cymatic pattern gradually energizing.
+***How did it begin?*** The Big Bang was neither an explosion nor the beginning of space. Finite space was already present. What began was measured time, defined by the cosmic wave starting at full potential with almost nothing realized. As time progresses, more of the wave resolves into matter. The early universe wasn’t smaller; it was the same space at an earlier stage of realization, like a three-dimensional cymatic pattern gradually energizing.
 
 ***How does this complement the Standard Model?*** MIT does not replace the Standard Model or general relativity. It keeps their local physics (particles, forces, field equations) and adds a global geometric structure beneath them. The aim is to explain why certain constants, patterns, and symmetries have the values they do. Some connections are exact geometric identities, others are motivated correspondences, and others remain open for refinement.
 
@@ -59,7 +59,7 @@ mode-identity-theory/
     │   └─ euclid-dr1                 # the falsification gate
     ├─ spectrum/                   # the near boundary: matter and gauge on S³/2I
     │   ├─ yang-mills                 # the linearized gauge gap and three vacua
-    │   ├─ mass-spectrum              # fermion mass as positions on the lattice
+    │   ├─ mass-spectrum              # fermion masses as position on the lattice
     │   ├─ fine-structure             # α is the first realized step of Λ
     │   ├─ the-waltz                  # the gravity between surface and space
     │   └─ the-mirror                 # curvature duality of primes and matter
@@ -76,9 +76,9 @@ mode-identity-theory/
 \Large \boxed{S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
 ```
 
-Start with space itself: a finite three-sphere with no boundary and nothing outside. Inside a Möbius surface; its single edge carries the framework's boundary conditions.
+Start with space itself: a finite three-sphere with no boundary and nothing outside. Inside is a Möbius surface; its single edge carries the framework's boundary conditions.
 
-The three-sphere can be folded by its binary icosahedral symmetry. The space stays smooth, but the observable structure resolves into 120 positions. The three-sphere gives the universe its volume, the Möbius band gives its area the twist. The 120-fold quotient gives the framework a structure to read the physics.
+The three-sphere can be folded by its binary icosahedral symmetry. The space stays smooth, but the observable structure resolves into 120 positions. The three-sphere gives the universe its volume; the Möbius band gives its area the twist. The 120-fold quotient gives the framework a structure to read the physics.
 
 ---
 
@@ -88,9 +88,9 @@ The three-sphere can be folded by its binary icosahedral symmetry. The space sta
 \Large \boxed{\Psi = \cos(t/2), \quad \text{period } 4\pi}
 ```
 
-Space reamains static. What changes is the phase of a standing wave carried on the Möbius boundary.
+Space remains static. What changes is the phase of a standing wave carried on the Möbius boundary.
 
-The twist makes the wave flip sign after one trip and return only after two, giving the fundamental mode its $`4\pi`$ period. It began at full amplitude and advanced in discrete phase from there.
+The twist makes the wave flip sign after one trip and return only after two, giving the fundamental mode its $`4\pi`$ period. It begins at full amplitude and advances in discrete phase.
 
 Matter is what becomes resolved when the wave is sampled. Most modes cancel; the surviving patterns are read as physical states.
 
@@ -102,7 +102,7 @@ Matter is what becomes resolved when the wave is sampled. Most modes cancel; the
 \Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
 ```
 
-The scaling law asks two questions about a physical quantity: **where are you on the wave, and how deep in the geometry are you reading from?**
+The scaling law asks two questions about a physical quantity: **where are you on the wave, and how deep into the geometry are you reading from?**
 
 > **$`A/A_P`$** is your dimensionless value.
 
@@ -110,11 +110,11 @@ It is a measured amplitude over its Planck-scale reference.
 
 > **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** tells you the position.
 
-$`\Theta`$ is a position on the wave, but the 120-domain is not sampled everywhere. The framework primarily carries Fibonacci wells at 13 and 34, and an anti-node at 60, inherited from the arithmetic present in the icosahedral structure. Which wells are realized is a selection rule the theory is still working to fully derive.
+$`\Theta`$ is a position on the wave, but the 120-domain is not sampled everywhere. The framework primarily carries Fibonacci wells at 13 and 34, and an antinode at 60, inherited from the arithmetic present in the icosahedral structure. Which wells are realized is a selection rule the theory is still working to fully derive.
 
 > **$`(\sqrt{\Omega})^{-n}`$** tells you the scale.
 
-$`\Omega`$ measures the enormous hierarchy between the Planck and cosmic scale. The exponent $`n`$ says which geometric layer is being read:
+$`\Omega`$ measures the enormous hierarchy between the Planck and cosmic scales. The exponent $`n`$ says which geometric layer is being read:
 
 > (n = 1) **Edge:** rates such as $`H_0`$ and $`a_0`$.
 
@@ -148,19 +148,19 @@ The representation theory supplies the decompositions. The identification of tho
 \Large \boxed{m(\rho,\sigma) = \mu_\Lambda \cdot C_{\text{geom}}(\rho) \cdot (\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30} \cdot T^2(\rho \otimes \sigma)}
 ```
 
-The mass formula builds a particle mass in four steps: **set the floor, choose the seat, ride the elevator, turn the dial.**
+The mass formula builds a particle mass in four steps:
 
 > **The Floor.** $`\mu_\Lambda`$ sets the minimum energy scale from which the spectrum is built.
 
-> **The Seat.** $`C_{\text{geom}}(\rho)`$ gives each representation a position in the geometry.
+> **The Sunflower.** $`C_{\text{geom}}(\rho)`$ gives each representation a position in the geometry.
 
 > **The Elevator.** $`(\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30}`$ moves that seat through orders of magnitude according to its distance on the McKay graph.
 
 > **The Dial.** $`T^2(\rho \otimes \sigma)`$ adjusts the mass according to which flat vacuum the state occupies.
 
-In the mathematics, those pieces are the vacuum-energy floor, the Kostant weight, the McKay distance, and Reidemeister torsion. Together they generate 24 entries across the fermion mass range.
+In the mathematics, those pieces are the vacuum-energy baseline, the Kostant weight, the McKay distance, and Reidemeister torsion. Together they generate 24 entries across the fermion mass range.
 
-The topology gives exactly three flat vacua. MIT reads those three as the three generations; that identification, and the mapping of individual entries to measured particles, is a comparison with the Standard Model.
+The topology gives exactly three flat vacua. MIT reads those three as the three generations; that identification, and the mapping of individual entries to particles, is a comparison with the Standard Model.
 
 ---
 
@@ -170,7 +170,7 @@ The topology gives exactly three flat vacua. MIT reads those three as the three 
 \Large \boxed{\Lambda_\text{ref} = \frac{3}{2}\ \cdot \Lambda_\text{top}}
 ```
 
-The theory has two kinds of structure; the smooth space of $`S^3`$, and the discrete patterns inherited from the 120-position quotient and informational surface. Gravity is what has to connect the two.
+The theory has two layers: the smooth space of $`S^3`$, and the discrete patterns inherited from the 120-fold quotient and informational surface. Gravity is what has to connect the two.
 
 The Möbius surface sets the vacuum spectral seed, while the quotient sets the matter-side grid. Passing from the surface curvature to the three-dimensional vacuum reference introduces the factor $`3/2`$ above.
 
