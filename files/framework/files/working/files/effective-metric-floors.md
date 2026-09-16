@@ -90,7 +90,7 @@ Three findings now share one shape: the corpus names an object, states requireme
 
 MIT constrains a future effective-metric object in four ways, and does not say what that object is; even the full rotation covariance the two transfer classifications use is something the object must earn. [The Stress-Tensor Bridge](stress-tensor-bridge.md) carries that as C10: a candidate must declare how the domain's isometries act on the flat target's rotations. A declaration of the full rotation group brings the two classifications and the power conservation with it. A declaration of $`A_5`$ alone leaves both to be supplied, the larger family classified before any scoring and each shell's power shown to be conserved. C8's intertwining and locality tests apply either way.
 
-Not computed: the classification of the $`A_5`$-covariant family, which would have opened only on a generative handle; and anything from $`N = 60`$, where a shell's invariant space has more than one dimension.
+Not computed: the classification of the $`A_5`$-covariant family, which would have opened only on a generative handle; and anything from $`N = 60`$, where a shell's invariant space has more than one dimension. **(Pointer added 2026-09-15.)** [The Spatial Carriers](spatial-carriers.md) takes up the field-level question this page leaves open, and classifies which $`A_5`$ spectra a shell can carry.
 
 ## VIII. Checks
 

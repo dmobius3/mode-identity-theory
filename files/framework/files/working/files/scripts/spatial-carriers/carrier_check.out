@@ -1,0 +1,28 @@
+PASS  K1 2I closed, real spin representations, standard pairing
+      |2I| 120, rotations 60, real form and homomorphism below 1e-08, pairing below 1e-08
+PASS  K2 shell content by character and by commutant
+      N=12: 1^1 + 3a^1 + 4^1 + 5^1; N=20: 1^1 + 3a^1 + 3b^1 + 4^1 + 5^2; N=30: 1^1 + 3a^2 + 3b^2 + 4^2 + 5^2
+PASS  K3 orbit modules, by permutation and by plane waves
+      12: 1^1 + 3a^1 + 3b^1 + 5^1; 20: 1^1 + 3a^1 + 3b^1 + 4^2 + 5^1; 30: 1^1 + 3a^1 + 3b^1 + 4^2 + 5^3
+PASS  K4 orbit fit and orbit-module containment
+      N=12: 12 fit=y contained=n, 20 fit=n contained=n, 30 fit=n contained=n; N=20: 12 fit=y contained=y, 20 fit=y contained=n, 30 fit=n contained=n; N=30: 12 fit=y contained=y, 20 fit=y contained=y, 30 fit=y contained=n; one trivial per shell and per orbit, so at most one component
+PASS  K5 carriers exist exactly where the module is contained
+      N=12 orbit 12: rank 9 of 12 needed; N=20 orbit 12: rank 12 of 12 needed, carrier built; N=20 orbit 20: rank 16 of 20 needed; N=30 orbit 12: rank 12 of 12 needed, carrier built; N=30 orbit 20: rank 20 of 20 needed, carrier built; N=30 orbit 30: rank 25 of 30 needed; equivariance and tightness of every carrier below 1e-08
+PASS  K6 no shell carries an SO(3)-invariant vector
+      invariant dimensions {12: 0, 20: 0, 30: 0}
+PASS  K7 thirteen atoms on arbitrary axes, stationary, and fourteen need one rank more
+      rank 13 at N = 12 with d_N = 13, stationarity below 1e-08; fourteen atoms need rank 14
+PASS  K8 the uniform angular measure's kernel outranks the shell
+      rank 30 over 30 points against d_N = 13
+PASS  K9 power conservation fixes the tight map's scalar
+      N=20 orbit 12: scalar 2 d_N / s = 3.500, variance 21; N=30 orbit 12: scalar 2 d_N / s = 5.167, variance 31; N=30 orbit 20: scalar 2 d_N / s = 3.100, variance 31; variance and equivariance after rescaling below 1e-08
+control  K1 a wrong class assignment is detectable                                as required
+control  K2 a shell's multiplicities are not all equal                            as required
+control  K3 the plane-wave space of an orbit is not the constant                  as required
+control  K4 fit alone does not decide containment                                 as required
+control  K5 a shell without containment cannot reach full rank                    as required
+control  K6 the trivial representation does carry one                             as required
+control  K7 a non-stationary combination is detectable                            as required
+control  K8 the atomic kernel does not outrank it                                 as required
+control  K9 the unrescaled tight map does not carry the shell's power             as required
+9/9 checks pass; 9/9 controls as required
