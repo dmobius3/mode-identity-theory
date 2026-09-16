@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-07-15):** Working bench: Section II derived, Section III joints under load, Section IV pieces motivated, Section V gaps. The central question is whether the 120-grid nests at every gravitationally coherent scale.
+**Status (2026-09-16):** Working bench: Section II derived, Section III joints under load, Section IV pieces motivated, Section V gaps. The central question is whether the 120-grid nests at every gravitationally coherent scale.
 **Summary:** Asks whether MIT's structure projects into every gravitationally coherent scale, making the Oort Cloud the solar-scale coherence boundary.
 **Inputs:** the Sector A eigenvalue, the phase-field coherence scale (L_f SPARC-falsified, L_g open), the 120-grid scale-free projection, the 3/2 conversion
 
@@ -36,7 +36,7 @@ Derived, tested, load-bearing. Pick up and use.
 | Part | What it is | Derived from | Reference |
 |------|-----------|--------------|-----------|
 | $`\Psi(t) = \cos(t/2)`$ | Cosmic wave, period $`4\pi`$ | Anti-periodic BC on $`S^1`$ | MIT II.B |
-| $`C(\alpha) = 2\sin^2(\pi\alpha)`$ | Phase operator | Anti-periodic BC, unit normalization | MIT II.D |
+| $`C(\Theta) = 2\sin^2(\pi\Theta)`$ | Phase operator | Anti-periodic BC, unit normalization | MIT II.D |
 | 120-grid | Phase resolution native to $`S^3`$ | Binary icosahedral group ($`\|2I\| = 120`$) | MIT II.D |
 | $`\sqrt{\Omega} = 10^{61}`$ | Observer midpoint | UV-IR fixed point on bounded domain | MIT II.C |
 | $`(\sqrt{\Omega})^{-n}`$ | Hierarchy factor | Volume dilution in $`n`$-manifold | MIT II.C |
@@ -45,8 +45,8 @@ Derived, tested, load-bearing. Pick up and use.
 | $`\tau = T/120`$ | Chronon at any scale | 120-grid applied to mode period $`T`$ | Chronon note |
 | $`\tau_c/\tau_P = \sqrt{\Omega}`$ | Chronon ratio spans $`10^{61}`$ | Same midpoint, temporal channel | Chronon note |
 | $`L_f = v_c^2/a_0`$ | Coherence scale (galactic, ~13 kpc). SPARC-falsified as single coherence radius; retained as the tested candidate | Phase field mechanics | MIT II.G |
-| $`\Delta\alpha_{\min} = 2/120`$ | Minimum bosonic step | Spinor-to-scalar projection | MIT II.D |
-| $`\alpha_f^{\text{env}} \approx 2/120`$ (MW) | Environmental phase shift | Minimum step at Milky Way potential | MIT II.G |
+| $`\Delta\Theta_{\min} = 2/120`$ | Minimum bosonic step | Spinor-to-scalar projection | MIT II.D |
+| $`\Theta_f^{\text{env}} \approx 2/120`$ (MW) | Environmental phase shift | Minimum step at Milky Way potential | MIT II.G |
 
 ---
 
@@ -87,11 +87,11 @@ Ratio: $`\tau_c/\tau_P \approx 10^{61} = \sqrt{\Omega}`$. The observer's structu
 
 Status: DERIVED. The 120-grid projects identically at every scale.
 
-Independent confirmation: the Molien series on $`S^3/2I`$ shows $`2I`$ filtering scalar harmonics on the full 3D $`S^3`$, producing a sparse zone below $`j = 10`$ that matches the observed CMB low-<i>ℓ</i> deficit. The same algebra that sets the 120 domain on the surface operates on the 3D harmonics of the venue. The filtering is genuinely volumetric, not confined to the 2D Mobius surface. This strengthens the claim that the 120-grid projects into every gravitationally coherent scale: the structure is already confirmed to operate at both 2D (surface eigenvalue) and 3D (cavity mode spectrum) levels.
+A second setting: the Molien series on $`S^3/2I`$ shows $`2I`$ filtering scalar harmonics on the full 3D $`S^3`$, producing a gap in the invariant spectrum that MIT reads as the counterpart of the CMB low-<i>ℓ</i> deficit. The gap is a spectral fact about the quotient and holds independent of cosmology; where it lands on the sky rides on the independently read curvature radius, and reaching a multipole at all takes a spatial projection the framework does not yet derive ([CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §IV). The same algebra that sets the 120 domain on the surface operates on the 3D harmonics of the venue, so the filtering is genuinely volumetric rather than confined to the 2D Möbius surface. That much supports the claim that the 120-grid projects into every gravitationally coherent scale, at both the 2D surface eigenvalue and the 3D cavity spectrum; whether it projects onto the sky is a separate question, and open.
 
 ### Joint 3: Observation is sampling through a coherent domain
 
-Phase field mechanics: $`\alpha = \alpha_0 + \alpha_f`$, where $`\alpha_f`$ depends on environment (gravitational potential). Sampling requires a domain where potential is coherent. At galactic scale, the proposed coherence radius was $`L_f \approx 13`$ kpc (SPARC-falsified).
+Phase field mechanics: $`\Theta = \Theta_0 + \Theta_f`$, where $`\Theta_f`$ depends on environment (gravitational potential). Sampling requires a domain where potential is coherent. At galactic scale, the proposed coherence radius was $`L_f \approx 13`$ kpc (SPARC-falsified).
 
 Status: The principle (coherence required for sampling) is DERIVED and general. The specific galactic scale $`L_f = v_c^2/a_0`$ was derived, tested against SPARC, and falsified. The galactic coherence scale $`L_g`$ is open.
 
@@ -117,13 +117,13 @@ The observer's actual reception channels:
 
 | Channel | Dimension | MIT source | Character |
 |---------|-----------|------------|-----------|
-| Angular reception | 2D ($`\theta, \varphi`$) | Mobius surface ($`n = 2`$) | Native. Observer receives on the surface. |
+| Angular reception | 2D ($`\theta, \varphi`$) | Möbius surface ($`n = 2`$) | Native. Observer receives on the surface. |
 | Radial sampling | 1D ($`z`$, via redshift) | Phase-reading along $`S^1`$ | The edge carries the wave; redshift is what phase-reading looks like from the edge looking outward. |
 | Temporal flow | 1D ($`c`$) | $`S^1`$ edge | The edge IS time. Not a container. |
 
 Nobody perceives 3D volume directly. It is constructed: 2D angular + 1D radial = perceived "3D."
 
-This gives the 3/2 a physical interpretation: the topology produces 2, the observer constructs 3, and the Gauss-Codazzi conversion is the formal expression of that construction. The observer is already inside $`S^3`$. Already in the venue. The 3/2 is how observation works through the Mobius twist, not a toll levied for the privilege.
+This gives the 3/2 a physical interpretation: the topology produces 2, the observer constructs 3, and the Gauss-Codazzi conversion is the formal expression of that construction. The observer is already inside $`S^3`$. Already in the venue. The 3/2 is how observation works through the Möbius twist, not a toll levied for the privilege.
 
 Status: MOTIVATED. Structurally clean. The radial channel (phase-reading along $`S^1`$) is conceptually identified; formal operator definition remains open.
 
@@ -168,7 +168,7 @@ MIT-specific claim:
 |--------|---------|
 | Angular + radial channels phase-locked to solar mode | Sampling transitions to galactic mode |
 | 2D-to-3D perception anchored to ecliptic | Perception anchored to galactic plane |
-| $`\alpha_f`$ referenced to solar potential | $`\alpha_f`$ referenced to galactic potential |
+| $`\Theta_f`$ referenced to solar potential | $`\Theta_f`$ referenced to galactic potential |
 
 **Boundary test (standard dynamics, no MIT content).** Dominance made precise (Piece B) as a tidal-crossover condition:
 
@@ -208,7 +208,7 @@ Status: OBSERVATION. The numerical coincidence is real. Whether MIT predicts it 
 
 ### Piece E: CMB-ecliptic alignment
 
-Standard cosmology calls it the "axis of evil": the CMB quadrupole and octopole align with our ecliptic plane. No causal mechanism in ΛCDM connects a cosmological signal to a local solar system feature.
+Standard cosmology calls it the "axis of evil": the CMB quadrupole and octupole align with our ecliptic plane. No causal mechanism in ΛCDM connects a cosmological signal to a local solar system feature.
 
 MIT reading: if the observer's coherence domain is anchored to the ecliptic (Piece C), then the CMB is resolved through the ecliptic sampling frame. The alignment is not contamination; it is the sampling theorem operating through the local coherence domain.
 

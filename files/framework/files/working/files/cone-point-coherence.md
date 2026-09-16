@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-02):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g.
+**Status (2026-09-16):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g.
 **Summary:** Asks whether galactic coherence is the W-independence of a nested cone-point eigenvalue problem, and what sources the galactic-scale curvature.
 **Inputs:** the Sector A cone-point analysis (`../../bedrock/files/first-eigenvalue.md`), the 120-grid scale-free projection, the phase-field coherence scale (L_f SPARC-falsified, L_g open)
 
@@ -21,9 +21,9 @@ The cosmic cone point analysis is DERIVED (Sector $`\mathcal{A}`$ paper). The pr
 
 ## I. The Question
 
-Within a galaxy, all observers measure the same $`\mathbb{R}^4`$: same $`\Lambda`$, same $`G`$, same particle masses, same coupling constants. The phase field mechanics proposed a coherence scale $`L_f = v_c^2/a_0 \approx 13`$ kpc within which the environmental phase shift $`\alpha_f`$ would be uniform. The SPARC test falsified $`L_f`$ as a single coherence radius: the gravitational transition lands at $`0.38\,L_f`$ and tracks baryonic mass ($`\rho \approx 0.68`$) more tightly than $`L_f`$ ($`\rho \approx 0.61`$). The geometric question survives: if galactic coherence has a topological origin, what sets the scale? But the target radius is no longer $`L_f`$.
+Within a galaxy, all observers measure the same $`\mathbb{R}^4`$: same $`\Lambda`$, same $`G`$, same particle masses, same coupling constants. The phase field mechanics proposed a coherence scale $`L_f = v_c^2/a_0 \approx 13`$ kpc within which the environmental phase shift $`\Theta_f`$ would be uniform. The SPARC test falsified $`L_f`$ as a single coherence radius: the gravitational transition lands at $`0.38\,L_f`$ and tracks baryonic mass ($`\rho \approx 0.68`$) more tightly than $`L_f`$ ($`\rho \approx 0.61`$). The geometric question survives: if galactic coherence has a topological origin, what sets the scale? But the target radius is no longer $`L_f`$.
 
-On the cosmic Mobius band, the cone point at $`y = \pi R/2`$ collapses all transverse positions to a single geometric point. In the zonal sector (Sector $`\mathcal{A}`$), the first positive eigenvalue $`\lambda_1 = 2/R^2`$ is $`W`$-independent: it does not depend on the transverse width of the band. The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) shows this $`W`$-independence holds for the full operator only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$); for wider bands an azimuthal mode undercuts the zonal level. At cosmic scale the physical band sits well within the narrow regime, so the coherence argument is unaffected.
+On the cosmic Möbius band, the cone point at $`y = \pi R/2`$ collapses all transverse positions to a single geometric point. In the zonal sector (Sector $`\mathcal{A}`$), the first positive eigenvalue $`\lambda_1 = 2/R^2`$ is $`W`$-independent: it does not depend on the transverse width of the band. The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) shows this $`W`$-independence holds for the full operator only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$); for wider bands an azimuthal mode undercuts the zonal level. At cosmic scale the physical band sits well within the narrow regime, so the coherence argument is unaffected.
 
 **The proposal:** galactic coherence is the $`W`$-independence of a nested eigenvalue problem, guaranteed by a cone point at galactic scale. Observers within the galaxy share the cone point of the wave, and the cone point identification is why they all measure equal $`\mathbb{R}^4`$ values.
 
@@ -60,23 +60,23 @@ The key structural feature: the $`W`$-cancellation (step 9) works because the ar
 
 ### Reading A: Shared Cosmic Cone Point
 
-The cosmic Mobius band has one cone point at $`y = \pi R/2`$. Every meridional line (every $`w`$-position) passes through it. In Sector $`\mathcal{A}`$ (the $`w`$-constant first-positive mode), the eigenfunction $`u_0 = \sin(y/R)`$ takes the same value at each $`y`$ regardless of $`w`$. The cone point ($`u_0 = 1`$) is the shared maximum of all meridional lines.
+The cosmic Möbius band has one cone point at $`y = \pi R/2`$. Every meridional line (every $`w`$-position) passes through it. In Sector $`\mathcal{A}`$ (the $`w`$-constant first-positive mode), the eigenfunction $`u_0 = \sin(y/R)`$ takes the same value at each $`y`$ regardless of $`w`$. The cone point ($`u_0 = 1`$) is the shared maximum of all meridional lines.
 
-Galactic observers are at different $`w`$-positions on the cosmic Mobius band but share this cone point. The first positive eigenvalue $`\lambda_1 = 2/R^2`$ is established through integration that passes through the cone point. All observers inherit the same eigenvalue because they sample the same first-positive mode on the same band.
+Galactic observers are at different $`w`$-positions on the cosmic Möbius band but share this cone point. The first positive eigenvalue $`\lambda_1 = 2/R^2`$ is established through integration that passes through the cone point. All observers inherit the same eigenvalue because they sample the same first-positive mode on the same band.
 
 In this reading, galactic coherence is a consequence of:
-- One Mobius band (the cosmic one)
+- One Möbius band (the cosmic one)
 - One first-positive mode (Sector $`\mathcal{A}`$)
 - One cone point (at $`y = \pi R/2`$)
 - $`W`$-independence (the transverse width of the galaxy doesn't matter)
 
-The galactic gravitational field enters through the $`\Phi \to \Theta`$ mapping, which shifts the observer's phase position by $`\alpha_f \approx 2/120`$. This is a perturbation of the phase coordinate, not the transverse coordinate. The cone point structure is unaffected because the perturbation is in $`y`$ (meridional), not in $`w`$ (transverse).
+The galactic gravitational field enters through the $`\Phi \to \Theta`$ mapping, which shifts the observer's phase position by $`\Theta_f \approx 2/120`$. This is a perturbation of the phase coordinate, not the transverse coordinate. The cone point structure is unaffected because the perturbation is in $`y`$ (meridional), not in $`w`$ (transverse).
 
-**What needs to be checked:** does the $`\alpha_f`$ perturbation spoil the cone point analysis? Specifically: does the perturbed eigenfunction still belong to the bridging domain (regular branch, finite Dirichlet integral, regularized-value continuity across the apex) at the cone point? The input is the galactic potential, $`\Phi/c^2 \sim 10^{-6}`$; the environmental grid rule floors the response at the minimum bosonic step, so the displacement actually applied to the phase coordinate is $`\alpha_f \approx 2/120`$. That is small in absolute terms, and the check is owed there rather than at the potential that feeds it. But "small" is not "zero," and the cone point is a singular endpoint where small perturbations could change the qualitative character.
+**What needs to be checked:** does the $`\Theta_f`$ perturbation spoil the cone point analysis? Specifically: does the perturbed eigenfunction still belong to the bridging domain (regular branch, finite Dirichlet integral, regularized-value continuity across the apex) at the cone point? The input is the galactic potential, $`\Phi/c^2 \sim 10^{-6}`$; the environmental grid rule floors the response at the minimum bosonic step, so the displacement actually applied to the phase coordinate is $`\Theta_f \approx 2/120`$. That is small in absolute terms, and the check is owed there rather than at the potential that feeds it. But "small" is not "zero," and the cone point is a singular endpoint where small perturbations could change the qualitative character.
 
 ### Reading B: Nested Galactic Cone Point
 
-If the 120-grid is scale-free and the Mobius structure projects at every gravitationally coherent scale, then at galactic scale there is a nested Mobius band with its own metric, its own cone point, and its own eigenvalue.
+If the 120-grid is scale-free and the Möbius structure projects at every gravitationally coherent scale, then at galactic scale there is a nested Möbius band with its own metric, its own cone point, and its own eigenvalue.
 
 | Cosmic | Galactic (proposed) |
 |--------|---------------------|
@@ -105,7 +105,7 @@ At the central circle ($`y = 0, \pi R`$): $`u_0 = 0`$, $`J = 1`$. Full budget in
 
 The budget identity holds because both $`u_0`$ and $`J`$ satisfy second-order ODEs sourced by the same constant curvature $`K = 1/R^2`$, and both are trigonometric functions of $`y/R`$.
 
-For Reading A: the budget identity holds as written. The galactic perturbation shifts the observer's $`y`$-position by $`\alpha_f`$, changing the $`u_0/J`$ balance slightly, but the identity itself is unperturbed.
+For Reading A: the budget identity holds as written. The galactic perturbation shifts the observer's $`y`$-position by $`\Theta_f`$, changing the $`u_0/J`$ balance slightly, but the identity itself is unperturbed.
 
 For Reading B: the budget identity at galactic scale requires $`u_g^2 + J_g^2 = \text{const}`$. This holds if $`K_g`$ is constant (same trigonometric solutions). If $`K_g`$ varies, the identity takes a different form, or may not hold as a simple sum-of-squares.
 
@@ -164,7 +164,7 @@ This is parallel to the MOND regime: $`a_0`$ marks where Newtonian gravity alone
 
 The [SPARC phase field notes](sparc-phase-field.md) tested $`L_f`$ empirically across the quality-filtered SPARC sample, asking whether $`L_f`$ predicts the gravitational transition radius. The SPARC correlations did not hold; the transition tracks $`M_b`$, not $`L_f`$. The curvature sourcing question remains open but its target has shifted from $`L_f`$ to whatever $`L_g`$ turns out to be.
 
-**Assessment:** The galactic cone point (Reading B) cannot be sourced by GR curvature. It requires the topological scale $`a_0`$. If the 120-grid projects at every scale with constant curvature inherited from the Mobius structure (not from the gravitational field), then $`K_g = \pi^2/L_g^2`$ is set by the topology-gravity interface, and the cone point exists. If the curvature must be sourced purely by GR, the cone point does not exist within the galaxy, and galactic coherence must work by a different mechanism (Reading A or something else).
+**Assessment:** The galactic cone point (Reading B) cannot be sourced by GR curvature. It requires the topological scale $`a_0`$. If the 120-grid projects at every scale with constant curvature inherited from the Möbius structure (not from the gravitational field), then $`K_g = \pi^2/L_g^2`$ is set by the topology-gravity interface, and the cone point exists. If the curvature must be sourced purely by GR, the cone point does not exist within the galaxy, and galactic coherence must work by a different mechanism (Reading A or something else).
 
 This is the fork. The Frobenius program (Section VII) sits on the far side of it.
 
@@ -259,7 +259,7 @@ For variable curvature (Scenario B): the eigenfunction $`u_g`$ and Jacobi field 
 
 ### If Reading B holds (nested cone point exists):
 
-The coherence boundary at each scale is $`2W`$ (the transverse width of that scale's Mobius band). The cone point identification guarantees $`W`$-independence of the eigenvalue, which guarantees coherence within the domain. The first-eigenvalue paper adds a constraint: the $`W`$-independence holds only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$). For nested bands, this means $`W_g \leq \pi R_g/2`$ is required; otherwise the first positive level is azimuthal and $`W_g`$-dependent.
+The coherence boundary at each scale is $`2W`$ (the transverse width of that scale's Möbius band). The cone point identification guarantees $`W`$-independence of the eigenvalue, which guarantees coherence within the domain. The first-eigenvalue paper adds a constraint: the $`W`$-independence holds only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$). For nested bands, this means $`W_g \leq \pi R_g/2`$ is required; otherwise the first positive level is azimuthal and $`W_g`$-dependent.
 
 | Scale | $`2W`$ | Coherence domain |
 |-------|------|------------------|
@@ -277,7 +277,7 @@ Galactic coherence follows from all observers sampling the cosmic first-positive
 
 ### The Oort Cloud radius
 
-If Reading B holds and the stellar-scale Mobius band has meridional length $`\pi R_\odot`$, the Oort Cloud radius is $`L_\odot/2 = \pi R_\odot/2`$ (half the meridional length, the stellar cone point location measured from the edge). Alternatively, $`2W_\odot`$ (the transverse width) sets the domain, and the boundary is at $`w_\odot = \pm W_\odot`$ where the dominant stellar mode's potential gives way to the galactic one.
+If Reading B holds and the stellar-scale Möbius band has meridional length $`\pi R_\odot`$, the Oort Cloud radius is $`L_\odot/2 = \pi R_\odot/2`$ (half the meridional length, the stellar cone point location measured from the edge). Alternatively, $`2W_\odot`$ (the transverse width) sets the domain, and the boundary is at $`w_\odot = \pm W_\odot`$ where the dominant stellar mode's potential gives way to the galactic one.
 
 To derive the Oort Cloud radius, one would need: the stellar analog of $`L_g`$, or equivalently, $`R_\odot`$ from the stellar potential. What plays the role of $`v_c`$ and $`a_0`$ at stellar scale?
 
@@ -292,7 +292,7 @@ To derive the Oort Cloud radius, one would need: the stellar analog of $`L_g`$, 
 | 3 | Reading A or B? One cone point or many? | Questions 1 and 2 | HIGH |
 | 4 | Variable-curvature budget identity: what replaces $`u^2 + J^2 = 1`$ when $`K`$ is not constant? | Frobenius program, Step 7 | MEDIUM |
 | 5 | What sets $`W_g`$? The meridional length is $`L_g`$ (originally identified with $`L_f = v_c^2/a_0`$, now falsified). What sets the transverse width? | Reading B | MEDIUM |
-| 6 | Perturbative stability of the cosmic cone point: does the $`\alpha_f \approx 2/120`$ phase displacement spoil any step in the chain? | Reading A | Unsettled. The earlier LOW was assessed against the $`\Phi/c^2 \sim 10^{-6}`$ potential rather than the displacement the grid rule produces from it, and has not been re-derived |
+| 6 | Perturbative stability of the cosmic cone point: does the $`\Theta_f \approx 2/120`$ phase displacement spoil any step in the chain? | Reading A | Unsettled. The earlier LOW was assessed against the $`\Phi/c^2 \sim 10^{-6}`$ potential rather than the displacement the grid rule produces from it, and has not been re-derived |
 | 7 | Width regime constraint: nested galactic bands (Reading B) require $`W_g \leq \pi R_g/2`$ for the zonal mode to be the first positive level. If $`W_g > \pi R_g/2`$, the first positive level is azimuthal and $`W_g`$-dependent, breaking the coherence mechanism. What constrains $`W_g`$ at galactic scale? | Width transition (first-eigenvalue paper), Reading B | HIGH |
 
 ---
@@ -315,7 +315,7 @@ To derive the Oort Cloud radius, one would need: the stellar analog of $`L_g`$, 
 
 The curvature sourcing question (§V) is the fork. Everything else sits on one side or the other.
 
-**Before the fork:** determine whether the 120-grid projects constant curvature at every scale (Question 2). This is an algebraic question about the Mobius structure, not a dynamical calculation. If the answer is yes, the cone point exists at every scale and the full Frobenius program (§VII) runs with known tools. If the answer is no, the curvature must be sourced by the gravitational field (which fails by a factor of $`10^7`$) or by the topology-gravity interface (which needs its own derivation).
+**Before the fork:** determine whether the 120-grid projects constant curvature at every scale (Question 2). This is an algebraic question about the Möbius structure, not a dynamical calculation. If the answer is yes, the cone point exists at every scale and the full Frobenius program (§VII) runs with known tools. If the answer is no, the curvature must be sourced by the gravitational field (which fails by a factor of $`10^7`$) or by the topology-gravity interface (which needs its own derivation).
 
 **After the fork:** run the Frobenius program at galactic scale (§VII), establish or exclude $`W_g`$-independence, and connect to the Oort Cloud project's nested coherence picture.
 
