@@ -158,9 +158,7 @@ The mass formula builds a particle mass in four steps:
 
 > **The Dial.** $`T^2(\rho \otimes \sigma)`$ adjusts the mass according to which flat vacuum the state occupies.
 
-In the mathematics, those pieces are the vacuum-energy baseline, the Kostant weight, the McKay distance, and Reidemeister torsion. Together they generate 24 entries across the fermion mass range.
-
-The topology gives exactly three flat vacua. MIT reads those three as the three generations; that identification, and the mapping of individual entries to particles, is a comparison with the Standard Model.
+The topology gives exactly three flat vacua, which the framework reads as the three generations of matter. Together they generate 24 entries across the fermion mass range, which are then compared with the Standard Model particle content.
 
 ---
 
