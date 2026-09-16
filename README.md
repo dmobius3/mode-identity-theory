@@ -76,9 +76,9 @@ mode-identity-theory/
 \Large \boxed{S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
 ```
 
-Start with the space itself: a finite three-sphere, closed on itself with no edge or outside. Inside it sits a Möbius surface. Its single edge carries the theory's temporal boundary, and its twist supplies the sign-flip that separates one trip around from two.
+Start with space itself: a finite three-sphere with no boundary and nothing outside. Inside a Möbius surface; its single edge carries the framework's boundary conditions.
 
-Then fold the three-sphere by its binary icosahedral symmetry. The smooth space stays smooth underneath, but the observable structure resolves into 120 positions. The three-sphere gives the universe its space; the Möbius band gives it the twist; the 120-fold quotient gives the theory somewhere to read physics.
+The three-sphere can be folded by its binary icosahedral symmetry. The space stays smooth, but the observable structure resolves into 120 positions. The three-sphere gives the universe its volume, the Möbius band gives its area the twist. The 120-fold quotient gives the framework a structure to read the physics.
 
 ---
 
@@ -88,11 +88,11 @@ Then fold the three-sphere by its binary icosahedral symmetry. The smooth space 
 \Large \boxed{\Psi = \cos(t/2), \quad \text{period } 4\pi}
 ```
 
-The space stays put. What changes is the phase of a standing wave carried on its temporal edge.
+Space reamains static. What changes is the phase of a standing wave carried on the Möbius boundary.
 
-The Möbius twist makes that wave flip sign after one trip and return only after two, giving the fundamental mode its $`4\pi`$ period. It begins at full amplitude and advances in phase from there.
+The twist makes the wave flip sign after one trip and return only after two, giving the fundamental mode its $`4\pi`$ period. It began at full amplitude and advanced in discrete phase from there.
 
-Matter is what becomes resolved when the wave is sampled. Most possible modes cancel; the surviving patterns are the ones the framework reads as physical states.
+Matter is what becomes resolved when the wave is sampled. Most modes cancel; the surviving patterns are read as physical states.
 
 ---
 
@@ -102,23 +102,25 @@ Matter is what becomes resolved when the wave is sampled. Most possible modes ca
 \Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
 ```
 
-The scaling law asks two questions about a physical quantity: **where are you on the wave, and how deep in the geometry are you reading it?**
+The scaling law asks two questions about a physical quantity: **where are you on the wave, and how deep in the geometry are you reading from?**
+
+> **$`A/A_P`$** is your dimensionless value.
+
+It is a measured amplitude over its Planck-scale reference.
 
 > **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** tells you the position.
 
-The 120-position domain is not sampled everywhere. The framework carries four Fibonacci wells at 13, 21, 34, and 55, inherited from arithmetic already present in the icosahedral structure. Which wells are realized is a selection rule the theory is still working to derive.
+$`\Theta`$ is a position on the wave, but the 120-domain is not sampled everywhere. The framework primarily carries Fibonacci wells at 13 and 34, and an anti-node at 60, inherited from the arithmetic present in the icosahedral structure. Which wells are realized is a selection rule the theory is still working to fully derive.
 
 > **$`(\sqrt{\Omega})^{-n}`$** tells you the scale.
 
-$`\Omega`$ measures the enormous hierarchy between the Planck scale and the cosmic scale. The exponent $`n`$ says which geometric layer is being read:
+$`\Omega`$ measures the enormous hierarchy between the Planck and cosmic scale. The exponent $`n`$ says which geometric layer is being read:
 
 > (n = 1) **Edge:** rates such as $`H_0`$ and $`a_0`$.
 
 > (n = 2) **Surface:** the vacuum spectral scale $`\Lambda_\text{top}`$.
 
-> (n = 3) **Space:** the three-dimensional sector, whose observable assignment remains open.
-
-The hierarchy sets the order of magnitude. The position on the wave sets the leading number. The law puts the two together.
+> (n = 3) **Space:** the three-dimensional sector, whose observable assignment remains dark.
 
 ---
 
@@ -128,7 +130,7 @@ The hierarchy sets the order of magnitude. The position on the wave sets the lea
 \Large \boxed{|2I| = 120 = 2^3 \cdot 3 \cdot 5}
 ```
 
-The 120-fold symmetry has three basic kinds of stabilizer: faces, edges, and vertices. Restrict a particle's representation to each one and a different part of its identity becomes visible.
+The 120-fold symmetry has three basic stabilizers: faces, edges, and vertices. They restrict a particle's representation through each one to create a visible identity.
 
 > **Faces.** The three-fold structure separates singlet from triplet channels. MIT reads that decomposition as **color**.
 
@@ -137,8 +139,6 @@ The 120-fold symmetry has three basic kinds of stabilizer: faces, edges, and ver
 > **Vertices.** The five-fold structure exposes the Galois sectors used by the Coxeter-Galois gate. MIT reads that structure as the **electroweak address**, with the eta sign constraining charge.
 
 The representation theory supplies the decompositions. The identification of those decompositions with physical quantum numbers is the framework's reading.
-
-One geometry, three cuts through it, three pieces of a particle's address.
 
 ---
 
@@ -160,7 +160,7 @@ The mass formula builds a particle mass in four steps: **set the floor, choose t
 
 In the mathematics, those pieces are the vacuum-energy floor, the Kostant weight, the McKay distance, and Reidemeister torsion. Together they generate 24 entries across the fermion mass range.
 
-The topology gives exactly three flat vacua. MIT reads those three as the three generations; that identification, and the mapping of individual entries to measured particles, is a comparison rather than something the mass formula proves by itself.
+The topology gives exactly three flat vacua. MIT reads those three as the three generations; that identification, and the mapping of individual entries to measured particles, is a comparison with the Standard Model.
 
 ---
 
@@ -170,13 +170,11 @@ The topology gives exactly three flat vacua. MIT reads those three as the three 
 \Large \boxed{\Lambda_\text{ref} = \frac{3}{2}\ \cdot \Lambda_\text{top}}
 ```
 
-The theory has two kinds of structure. Underneath is smooth $`S^3`$. Built on it are the Möbius surface, the 120-position quotient, and the discrete patterns that carry particle identity. Gravity is what has to connect the two.
+The theory has two kinds of structure; the smooth space of $`S^3`$, and the discrete patterns inherited from the 120-position quotient and informational surface. Gravity is what has to connect the two.
 
 The Möbius surface sets the vacuum spectral seed, while the quotient sets the matter-side grid. Passing from the surface curvature to the three-dimensional vacuum reference introduces the factor $`3/2`$ above.
 
-> Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT reads it as what crosses between the smooth geometry below and the discrete structure above. Einstein's field equations remain unchanged; what is still open is the dynamical bridge telling them exactly how the realized wave content sources the geometry.
-
-The $`3/2`$ relation is geometric. Whether that reference value is dynamically realized as the physical cosmological constant of the static domain is still an open Interface problem.
+> Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT reads it as an exchange rate when crossing between smooth geometry and discrete structure. Einstein's field equations remain unchanged; what is still open is the dynamical bridge telling them exactly how the realized wave content sources the geometry.
 
 ---
 
