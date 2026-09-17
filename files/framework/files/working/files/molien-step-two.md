@@ -8,7 +8,7 @@
 **Type:** Test
 **State:** Closed
 **Verdict:** Uninformative
-**Status (2026-09-14):** Closed Uninformative. Both runs stopped at G1b, CAMB 2.0.4's reproduction of Planck's baseline spectrum, before any P1 quantity was computed; run 2 followed erratum E1. Both runs and the erratum are recorded below, followed by two notes from after the close: on the gap between CAMB releases that survives E1, and on the transfer run's grid rule, which could not have been met; the second note's mechanism is corrected after it.
+**Status (2026-09-17):** Closed Uninformative. Both runs stopped at G1b, CAMB 2.0.4's reproduction of Planck's baseline spectrum, before any P1 quantity was computed; run 2 followed erratum E1. Both runs and the erratum are recorded below, followed by two notes from after the close: on the gap between CAMB releases that survives E1, and on the transfer run's grid rule, which could not have been met; the second note's mechanism is corrected after it.
 **Summary:** A preregistered retrospective test of the P1 spectral-transfer prescription: the Molien shell spectrum of S³/2I, at the coupling and electron-muon radii, scored against ΛCDM on the Planck low-ℓ temperature likelihood.
 **Inputs:** `molien-shells.md`, `scripts/molien-shells.test.py`, `scripts/molien-step-two/shell_weights_check.py`, `scripts/molien-step-two/sw_estimate.py`, `scripts/molien-step-two/isw_estimate.py`, `scripts/molien-step-two/self_test.py`, `scripts/molien-step-two/environment.json`, `scripts/molien-step-two/provenance.json`, `scripts/molien-step-two/commander_support.json`, `r-problem.md`, `claim-ledger.md`, `r-from-mass-spectrum.md`, `../../../../cosmos/files/cmb-anomalies.md` §I and §IV-VII
 **Parent:** `molien-shells.md`
