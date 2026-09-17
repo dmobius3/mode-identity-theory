@@ -61,12 +61,12 @@ The spectrum is the near boundary of the same finite space. $`S^3/2I`$ discretis
 
 ## 🌈 Score
 
-**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X · `input` a ruler, not a test · `null` a registered test that failed or returned nothing · `open` unresolved.
+**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `null` one of the framework's own registered tests, failed · `open` unresolved.
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
-| [↗](files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) Null dark matter | `open` | no particle dark-matter sector in the present construction | observational interpretation remains open | — |
-| [↗](files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$ | linearized coexact gap on the compact space; the flat $`\mathbb{R}^4`$ quantum gap is open | — |
+| [↗](files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) Null dark matter | `open` | no particle dark-matter sector in the present construction | ongoing direct-detection nulls | — |
+| [↗](files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$; the linearized coexact gap on the compact space, not the flat $`\mathbb{R}^4`$ quantum gap | — | — |
 | [↗](files/yang-mills.md#ii-three-vacua) Flat-vacuum count | `exact` | 3 isolated flat $`SU(2)`$ connections (identification with generations is MIT's reading) | 3 generations | — |
 | [↗](files/fine-structure.md#the-prediction) Force count | `exact` | 3 occupied rungs by grid exhaustion (identification with EM, strong, weak is a reading) | 3 observed gauge interactions | — |
 | [↗](files/fine-structure.md#the-prediction) Null SUSY | `open` | no realized gaugino-mediated force (conjecture) | no such interaction observed to date | — |
@@ -75,11 +75,11 @@ The spectrum is the near boundary of the same finite space. $`S^3/2I`$ discretis
 | [↗](files/mass-spectrum.md#2-domain-from-edges) Domain from $`Z_4`$ | `exact` | $`D = 60`$ (int) vs $`120`$ (half-int) | integer/half-integer split | — |
 | [↗](files/mass-spectrum.md#4-weak-isospin-from-the-coxeter-galois-gate) Weak isospin $`T_3`$ | `exact` | $`j_\text{first}`$ parity + Coxeter-Galois gate | eleven featured (5 assigned + 2 neutrino-proxy + 4 structural) | — |
 | [↗](files/mass-spectrum.md#3-the-eta-sign-gate) Eta sign gate | `exact` | $`\eta > 0 \implies Q \leq 0`$ | all SM-assigned entries | — |
-| [↗](files/mass-spectrum.md#iii-the-24-entries) Fermion masses | `anchored (m_e, Λ)` | 24 entries | 5 of the remaining 8 charged fermions land within ×3 of a quantum-number-compatible entry | proximity score uninformative under the random-torsion null, $`p = 0.690`$ |
+| [↗](files/mass-spectrum.md#iii-the-24-entries) Fermion masses | `anchored (m_e, Λ)` | 24 entries | 5 of the remaining 8 charged fermions have compatible entries within ×3; 4 survive sector-first adjudication | proximity score uninformative under the random-torsion null, $`p = 0.690`$ |
 | [↗](files/mass-spectrum.md#iii-the-24-entries) $`m_\mu`$ (muon) | `anchored (m_e, Λ)` | $`1.03 \times 10^{-1}`$ GeV | $`1.057 \times 10^{-1}`$ GeV | ~3% |
 | [↗](files/mass-spectrum.md#iii-the-24-entries) $`m_t`$ (top quark) | `anchored (m_e, Λ)` | $`1.613 \times 10^{2}`$ GeV | $`1.727 \times 10^{2}`$ GeV | 7% |
 | [↗](files/mass-spectrum.md#iii-the-24-entries) $`m_e`$ (electron) | `input` | — | 0.511 MeV | — |
-| [↗](files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Rank 16 entry | `open` | $`R_5`$ gal, ~418 MeV | no known fermion | — |
+| [↗](files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Rank 16 entry | `open` | $`R_5`$ gal, ~418 MeV; structural residual by default | no measured fermion; ordinary colored state excluded | — |
 | [↗](files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Dead zone | `open` | 6 states, eV to keV | no SM fermions in range | — |
 | [↗](files/mass-spectrum.md#1-mass-sector-floor--mu_lambda) $`\mu_\Lambda`$ Λ-derived mass floor | `anchored (Λ)` | $`\mu_\Lambda \approx 2.25`$ meV | derived scale; not directly measured | — |
 | [↗](files/fine-structure.md#alpha_s-the-strong-coupling) $`\alpha_s`$ | `anchored (Λ)` | 0.1162 | 0.1180 | 1.5% |
