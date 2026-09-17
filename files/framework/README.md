@@ -743,7 +743,7 @@ The framework spent these to find where the three problems actually sit, and eac
 
 The exams are thin by design. The phase-clock relation is read through correlated channels rather than counted as separate bets: the epoch relation $`a_0(z) \propto H(z)`$ and the sign-fixed $`(1+z)^1`$ term of the phase-clock $`H^2(z)`$ are two faces of it, the second an identity of the construction rather than a fitted amplitude. Alongside them sit a vacuum-sector test, a flat dark-energy history $`\Omega_\text{DE}(z)`$, and a high-redshift galaxy-abundance test riding on the $`a_0(z)`$ enhancement. Euclid DR1 is the next registered observational gate, with the channels, thresholds, and falsification conditions on the pre-registration card; the release date lives there, not on this page. Because the clock channels are one relation, a single release can take them down together, which is the point of setting them that way.
 
->**📗 [CMB Anomalies](../cosmos/files/cmb-anomalies.md):** the low-ℓ suppression read as the Molien shell gap, a standing CMB signature with parity still open and the quadrupole-octupole alignment closed against this topology.
+>**📗 [CMB Anomalies](../cosmos/files/cmb-anomalies.md):** the low-ℓ suppression read as the Molien shell gap, a standing CMB signature with parity still open and the quadrupole-octupole alignment closed against this topology; the geometry supplies the gap, its scale rides on the independently read curvature radius, and carrying it to the observed sky still requires a spatial projection MIT constrains but does not yet derive.
 
 >**📗 [Early Galaxies](../cosmos/files/early-galaxies.md):** early massive galaxies in a static geometry, the high-redshift abundance test riding on the $`a_0(z)`$ enhancement.
 
