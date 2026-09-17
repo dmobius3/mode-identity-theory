@@ -180,42 +180,42 @@ The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its nume
 
 ## 🎼 Score
 
-Outputs of a fixed structure, checked against observation:
+The framework's quantitative claims, with their standing shown explicitly:
 
 **Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X · `input` a ruler, not a test · `null` a registered test that failed or returned nothing · `open` unresolved.
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
 | [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (coupling $`\alpha`$ route) | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ | $`2.845 \times 10^{-122}`$ | ~23% |
-| [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (mass-spectrum cross-check) | `anchored (m)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | order of magnitude |
-| [↗](/files/spectrum/files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2 (gravitational cost) | 3 Gauss/Ricci lift × 1/2 de Sitter vacuum | — |
-| [↗](/files/cosmos/files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | topological ($`2/R_\Lambda^2`$) seed | antinode topologically selected; stationary to first order | — |
+| [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (mass-spectrum cross-check) | `anchored (m)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | 13.4× |
+| [↗](/files/spectrum/files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2; numerator derived, denominator the de Sitter normalization imported from GR; physical identification open | — | — |
+| [↗](/files/cosmos/files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | surface spectral seed $`2/R_\Lambda^2`$ | — | — |
 | [↗](/files/cosmos/files/dark-energy.md#iii-w_texteffz---1-at-all-redshifts-fiducial-split) Fiducial-split $`w_\text{eff}(z)`$ sign | `exact` | $`w_\text{eff}(z) > -1`$ for all $`z \ge 0`$ | DESI DR2 compatible | — |
 | [↗](/files/cosmos/files/dark-energy.md#primary-fit-snbao) $`\Delta\chi^2`$ vs ΛCDM | `anchored (Λ)` | $`+0.11`$ (same $`k`$) | Pantheon+ & DESI DR2 BAO | $`+0.11`$, degenerate with ΛCDM at the same parameter count |
 | [↗](/files/cosmos/files/dark-energy.md#the-1z1-term) $`(1+z)^1`$ term | `open` | negative, tied to $`s_0`$ | awaiting next-gen BAO | — |
 | [↗](/files/cosmos/files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap, lands $`\ell \approx 28`$ at the measured-$`\Lambda`$ back-read R | deficit below $`\ell \lesssim 30`$ | — |
-| [↗](/files/cosmos/files/hubble-tension.md#i-the-tension) $`H_0 \cdot t_P`$ | `anchored (Λ)` | $`1.2 \times 10^{-61}`$ | $`1.18 \times 10^{-61}`$ | ~2% |
+| [↗](/files/cosmos/files/hubble-tension.md#i-the-tension) $`H_0 \cdot t_P`$ | `input` | — | $`1.18 \times 10^{-61}`$ from measured $`H_0`$ | — |
 | [↗](/files/cosmos/files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `null` | 8.4% lattice step | coherence trigger failed; the $`H_0`$ distribution did not split | — |
-| [↗](/files/cosmos/files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 | <1% |
-| [↗](/files/framework/README.md#the-assembled-engine) $`a_0/a_P`$ | `anchored (Λ)` | $`2.2 \times 10^{-62}`$ | $`2.16 \times 10^{-62}`$ | ~2% |
+| [↗](/files/cosmos/files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 | 0.55% |
+| [↗](/files/framework/README.md#the-assembled-engine) $`a_0/a_P`$ | `anchored (H₀)` | $`2.20 \times 10^{-62}`$ | $`2.16 \times 10^{-62}`$ | 1.9% |
 | [↗](/files/cosmos/files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | $`a_0(z{=}2) \approx 3\times`$ local | awaiting high-z rotation curves | — |
-| [↗](/files/spectrum/files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) Null dark matter | `null` | permanent | ongoing null results | — |
-| [↗](/files/spectrum/files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$ | confinement observed | — |
+| [↗](/files/spectrum/files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) Null dark matter | `open` | no particle dark-matter sector in the present construction | observational interpretation remains open | — |
+| [↗](/files/spectrum/files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$ | linearized coexact gap on the compact space; the flat $`\mathbb{R}^4`$ quantum gap is open | — |
 | [↗](/files/spectrum/files/yang-mills.md#ii-three-vacua) Flat-vacuum count | `exact` | 3 isolated flat $`SU(2)`$ connections (identification with generations is MIT's reading) | 3 generations | — |
 | [↗](/files/spectrum/files/fine-structure.md#the-prediction) Force count | `exact` | 3 occupied rungs by grid exhaustion (identification with EM, strong, weak is a reading) | 3 observed gauge interactions | — |
-| [↗](/files/spectrum/files/fine-structure.md#the-prediction) Null SUSY | `null` | no realized gaugino-mediated force (open conjecture) | ongoing null results | — |
-| [↗](/files/spectrum/files/the-mirror.md#ii-main-theorem) Spectral inaccessibility | `exact` | no $`\mathcal{F}`$-construction constrains L-function zeros | proved (Theorem 1, 8 lemmas) | — |
+| [↗](/files/spectrum/files/fine-structure.md#the-prediction) Null SUSY | `open` | no realized gaugino-mediated force (conjecture) | no such interaction observed to date | — |
+| [↗](/files/spectrum/files/the-mirror.md#ii-main-theorem) Spectral inaccessibility | `exact` | no $`\mathcal{F}`$-construction constrains L-function zeros | — | — |
 | [↗](/files/spectrum/files/mass-spectrum.md#1-color-from-faces) Color from $`Z_3`$ | `exact` | singlet and triplet/anti-triplet channels | every assigned fermion has its required color channel | — |
 | [↗](/files/spectrum/files/mass-spectrum.md#2-domain-from-edges) Domain from $`Z_4`$ | `exact` | $`D = 60`$ (int) vs $`120`$ (half-int) | integer/half-integer split | — |
 | [↗](/files/spectrum/files/mass-spectrum.md#4-weak-isospin-from-the-coxeter-galois-gate) Weak isospin $`T_3`$ | `exact` | $`j_\text{first}`$ parity + Coxeter-Galois gate | eleven featured (5 assigned + 2 neutrino-proxy + 4 structural) | — |
 | [↗](/files/spectrum/files/mass-spectrum.md#3-the-eta-sign-gate) Eta sign gate | `exact` | $`\eta > 0 \implies Q \leq 0`$ | all SM-assigned entries | — |
-| [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) Fermion masses | `anchored (Λ)` | 24 entries | 5 compatible / 4 adjudicated within ×3 ($`m_e`$ benchmark; d assigned but outside ×3 at 3.2, u and c unassigned, b compatible but out-of-sector, μ/s share rank 15, τ at 2.75) | 5 of 24 within ×3; random-torsion null $`p = 0.690`$ |
-| [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) $`m_\mu`$ (muon) | `anchored (Λ)` | $`1.03 \times 10^{-1}`$ GeV | $`1.057 \times 10^{-1}`$ GeV | ~3% |
-| [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) $`m_t`$ (top quark) | `anchored (Λ)` | $`1.613 \times 10^{2}`$ GeV | $`1.727 \times 10^{2}`$ GeV | 7% |
+| [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) Fermion masses | `anchored (m_e, Λ)` | 24 entries | 5 of the remaining 8 charged fermions land within ×3 of a quantum-number-compatible entry | proximity score uninformative under the random-torsion null, $`p = 0.690`$ |
+| [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) $`m_\mu`$ (muon) | `anchored (m_e, Λ)` | $`1.03 \times 10^{-1}`$ GeV | $`1.057 \times 10^{-1}`$ GeV | ~3% |
+| [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) $`m_t`$ (top quark) | `anchored (m_e, Λ)` | $`1.613 \times 10^{2}`$ GeV | $`1.727 \times 10^{2}`$ GeV | 7% |
 | [↗](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) $`m_e`$ (electron) | `input` | — | 0.511 MeV | — |
 | [↗](/files/spectrum/files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Rank 16 entry | `open` | $`R_5`$ gal, ~418 MeV | no known fermion | — |
 | [↗](/files/spectrum/files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Dead zone | `open` | 6 states, eV to keV | no SM fermions in range | — |
-| [↗](/files/spectrum/files/mass-spectrum.md#1-mass-sector-floor--mu_lambda) $`\mu_\Lambda`$ mass-sector floor | `anchored (Λ)` | $`\mu_\Lambda \approx 2.25`$ meV | absolute neutrino masses unmeasured; KATRIN $`m_{\nu_e}^\text{eff} < 0.45`$ eV (90% CL) | — |
+| [↗](/files/spectrum/files/mass-spectrum.md#1-mass-sector-floor--mu_lambda) $`\mu_\Lambda`$ Λ-derived mass floor | `anchored (Λ)` | $`\mu_\Lambda \approx 2.25`$ meV | derived scale; not directly measured | — |
 | [↗](/files/spectrum/files/fine-structure.md#alpha_s-the-strong-coupling) $`\alpha_s`$ | `anchored (Λ)` | 0.1162 | 0.1180 | 1.5% |
 | [↗](/files/spectrum/files/fine-structure.md#alpha_w-the-weak-coupling-and-the-plato-twist) $`\alpha_W`$ | `anchored (Λ)` | 0.0339 | 0.0338 | 0.3% |
 | [↗](/files/spectrum/files/fine-structure.md#alpha_s--alpha_w-pure-geometry) $`\alpha_s / \alpha_W`$ | `anchor-free` | 3.426 (pure geometry) | 3.490 | 1.8% |
