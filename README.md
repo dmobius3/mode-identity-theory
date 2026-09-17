@@ -114,7 +114,7 @@ The scaling law asks two questions about a quantity: **where is it sampled, and 
 
 The powers of ten come from the hierarchy; the wave position sets the leading digits. The index $`n`$ accounts for the *form* of the suppression, one power per geometric layer. It does not predict the hierarchy's own size: $`\Omega`$ is fixed from an anchor and then read across the rest of the structure.
 
-The wave is not sampled everywhere. The golden field $`\mathbb{Q}(\sqrt5)`$ is already native to the $`2I`$ geometry, but continuing that arithmetic into the realized Fibonacci wells is a separate selection step that remains open. A variational search across eight candidate boundary-mode functionals failed to derive those positions, so the framework records the recurrence as structure rather than a solved dynamics.
+The wave is not sampled everywhere. The golden field $`\mathbb{Q}(\sqrt5)`$ is already native to the $`2I`$ geometry, but continuing that arithmetic into the realized Fibonacci wells is a separate selection step that remains open.
 
 ---
 
