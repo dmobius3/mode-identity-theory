@@ -172,7 +172,7 @@ The framework has two seams, and they do different jobs.
 
 The Möbius embedding supplies the vacuum-side surface geometry. The quotient $`S^3 \to S^3/2I`$ supplies the matter-side representation structure. One is an embedded surface inside the smooth space; the other is a quotient of that space by symmetry. They are not the same operation, and the framework does not collapse them into one.
 
-The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its numerator comes from the derived geometry of the embedded surface in isotropic $`S^3`$, while its denominator is the de Sitter normalization imported from general relativity. Whether that reference value is the physical constant of a static domain is part of the same open question.
+The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its numerator comes from the derived geometry of the embedded surface in isotropic $`S^3`$, while its denominator is the de Sitter normalization imported from general relativity.
 
 >Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT puts gravity at the interface between the smooth substrate and the discrete structure built on it. Einstein's field equations remain the local gravitational law; what is still open is the dynamical bridge that tells them exactly how the realized wave content sources the geometry.
 
