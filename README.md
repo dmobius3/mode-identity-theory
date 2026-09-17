@@ -227,7 +227,7 @@ Outputs of a fixed structure, checked against observation:
 >
 >*[ESA Euclid Mission:](https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview) Euclid is designed to explore the evolution of the dark Universe. It is creating a 3D-map of the Universe by observing billions of galaxies across more than a third of the sky, measuring how the universe expands and how structure grows.*
 
-All five tests below were locked before Euclid DR1 and deposited on Zenodo, with their scoring thresholds stated in advance. They are not five independent bets: the labels below mark shared baselines and correlated consequences.
+All five tests below were locked before Euclid DR1 and deposited on Zenodo, with their scoring thresholds stated in advance.
 
 | Test | MIT says | Field baseline | MIT loses if |
 |---|---|---|---|
