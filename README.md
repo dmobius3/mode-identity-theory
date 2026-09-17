@@ -7,27 +7,27 @@
 
 ---
 
-**Mode Identity Theory** starts with a simple bet: fundamental physics is not missing more ingredients, it's missing better boundary conditions. Instead of changing Einstein's equations or calling numbers accidents, MIT asks: what follows when form comes before function?
+**Mode Identity Theory** starts with a simple bet: fundamental physics is not missing more ingredients. It is missing the boundary conditions that fix the forms and values the existing ingredients take. Instead of changing Einstein's equations or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
 
-What began as an inadvertent search query turned philosophy, turned topology, turned theory. What followed were the constants of the universe popping out like some sort of cosmic game genie. None of this was planned...
+MIT keeps Einstein's field equations and the Standard Model as the local rules, and adds a global geometric structure beneath them. Read that way: topology comes first, the wave is fundamental, matter appears where the wave is sampled, and time is its phase. The observer is part of that realization, not something standing outside it. Some consequences are exact mathematics, some are quantitative correspondences, and some remain open research.
 
-Topology is structure, and de Broglie’s wave becomes fundamental; matter appears when the wave is sampled. The observer is part of that realization, not external to it; while time ticks in phase, not in the background.
+What began as an accidental search query turned philosophy, turned topology, turned theory. The surprise was that once the geometry was fixed, quantities that normally look unrelated began appearing as different readings of the same structure: cosmic scales, particle identities, couplings, and masses. None of this was planned.
 
-In 300 BC, Euclid proved Plato's observation that only five solids close perfectly in space. Today, ESA's Euclid telescope asks: what geometry gives the universe its shape? MIT is betting on one shape and one wave. The rest, is accounting.
+In 300 BC, Euclid proved Plato's observation that only five regular solids close perfectly in ordinary space. Today, ESA's Euclid telescope is surveying billions of galaxies to measure how the universe expands and structure grows. MIT makes its own geometric bet: **one shape, one wave, and the rest is accounting.**
 
 ---
 
 **💬 Frequently Asked Questions**
 
-***What shape is the universe?*** A three-sphere (S³): finite, closed, simply connected. By the Poincaré theorem, any closed, simply connected 3-manifold is topologically S³. Its size is fixed; what we interpret as cosmic expansion is the phase-advance of the cosmic wave, not space stretching. We see more of the wave realized, so distances appear to grow.
+***What shape is the universe?*** MIT starts with a three-sphere, $`S^3`$: a finite space that closes on itself, with no boundary and no outside. By the Poincaré theorem it is the only such space that is simply connected. The observable domain is the smooth quotient $`S^3/2I`$. The 120-element group $`2I`$ used to form that quotient supplies the discrete representation labels the framework uses to resolve physical states. The underlying space does not stretch; MIT models cosmic expansion as changing phase and realization of the wave. We see more of the wave realized, so distances appear to grow.
 
-***Why a Möbius band?*** S³ provides the universe’s ambient space; the Möbius band provides its informational surface. Gravity already hints that information scales with area, not volume. The Möbius band is the simplest one-sided surface with a twist, and that twist naturally yields the sign-flip, orientation reversal, and half-step mode behavior associated with fermions. It is the minimal geometric structure that encodes the observer’s boundary conditions.
+***Why a Möbius band?*** The three-sphere supplies the space; the Möbius band supplies the boundary structure inside it. It is the simplest one-sided surface with a single edge. Go around it once and orientation reverses, giving the sign flip and anti-periodic behavior MIT associates with fermionic modes. Its single edge also gives the theory one continuous place to carry phase, which is where time enters.
 
-***What is matter, and what are we?*** Matter is the realized form of the cosmic wave, the part that resolves into stable physical states. In this framework, an atom is already an observer: a bounded region where the wave takes on definite values. Humans are compound observers, intricate realizations of the same underlying wave. We are not external to the universe; we are the places where it becomes definite.
+***Why 120?*** The number is not chosen as a fit parameter. It is the order of $`2I`$, the binary icosahedral group used to form the observable quotient. Two independent arguments converge on $`2I`$: it is the terminal case among the exceptional finite subgroups of $`SU(2)`$, and the unique nontrivial perfect one. The second of those is what keeps the framework's standard and Galois vacua distinct. What is still missing is a single theorem proving that these requirements force $`2I`$ uniquely, and the framework lists that as an open problem.
 
-***How did it begin?*** The Big Bang was neither an explosion nor the beginning of space. Finite space was already present. What began was measured time, defined by the cosmic wave starting at full potential with almost nothing realized. As time progresses, more of the wave resolves into matter. The early universe wasn’t smaller; it was the same space at an earlier stage of realization, like a three-dimensional cymatic pattern gradually energizing.
+***What is matter, and what are we?*** Matter is the realized form of the wave: stable patterns that become definite when the underlying mode is sampled. "Observer" is used in that minimal physical sense. An atom already qualifies because it is a bounded system in which the wave takes on definite values; a human is an enormously more complicated observer built from the same process. We are not outside the universe looking in. We are part of the structure doing the resolving.
 
-***How does this complement the Standard Model?*** MIT does not replace the Standard Model or general relativity. It keeps their local physics (particles, forces, field equations) and adds a global geometric structure beneath them. The aim is to explain why certain constants, patterns, and symmetries have the values they do. Some connections are exact geometric identities, others are motivated correspondences, and others remain open for refinement.
+***How did it begin?*** In MIT, the Big Bang is not the creation of space. The closed spatial domain is already there. What begins is the measurable phase history of the wave, starting at maximum standing-wave amplitude and evolving toward greater realization. The early universe is therefore not a smaller copy of today's space, but the same underlying domain read at an earlier phase of the cycle: like a three-dimensional cymatic pattern gradually energizing.
 
 ---
 
@@ -76,9 +76,11 @@ mode-identity-theory/
 \Large \boxed{S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
 ```
 
-Start with space itself: a finite three-sphere with no boundary and nothing outside. Inside is a Möbius surface; its single edge carries the framework's boundary conditions.
+MIT starts with a finite space that closes on itself, so there is no outer boundary. Inside it sits a Möbius surface with one continuous edge. The three-sphere supplies the space; the Möbius band supplies the twist and the boundary on which phase is carried.
 
-The three-sphere can be folded by its binary icosahedral symmetry. The space stays smooth, but the observable structure resolves into 120 positions. The three-sphere gives the universe its volume; the Möbius band gives its area the twist. The 120-fold quotient gives the framework a structure to read the physics.
+The observable domain is the smooth quotient $`S^3/2I`$. It remains a smooth manifold, while the 120-element symmetry group $`2I`$ supplies the representation structure the framework uses to distinguish physical states.
+
+So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band supplies the boundary condition, and $`2I`$ supplies the symmetry structure from which the physics is read.**
 
 ---
 
@@ -88,11 +90,11 @@ The three-sphere can be folded by its binary icosahedral symmetry. The space sta
 \Large \boxed{\Psi = \cos(t/2), \quad \text{period } 4\pi}
 ```
 
-Space remains static. What changes is the phase of a standing wave carried on the Möbius boundary.
+The underlying space stays fixed. What changes is the phase of a standing wave carried by the temporal boundary.
 
-The twist makes the wave flip sign after one trip and return only after two, giving the fundamental mode its $`4\pi`$ period. It begins at full amplitude and advances in discrete phase.
+The Möbius twist makes the lifted wave change sign after one lap and return only after two, so its fundamental phase period is $`4\pi`$ rather than $`2\pi`$. The closed edge itself returns after two laps, so nothing on it is double-valued. MIT reads the advance of that phase as time.
 
-Matter is what becomes resolved when the wave is sampled. Most modes cancel; the surviving patterns are read as physical states.
+Matter appears when the wave is sampled. **Most modes cancel; the surviving patterns are read as physical states.** In that sense the universe is not built from separate particles placed into space; particles are stable realizations of the same underlying wave.
 
 ---
 
@@ -102,25 +104,17 @@ Matter is what becomes resolved when the wave is sampled. Most modes cancel; the
 \Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
 ```
 
-The scaling law asks two questions about a physical quantity: **where are you on the wave, and how deep into the geometry are you reading from?**
+The scaling law asks two questions about a quantity: **where is it sampled, and at what geometric scale does it live?**
 
-> **$`A/A_P`$** is your dimensionless value.
+> **$`A/A_P`$** says how large the quantity is compared with the natural Planck-scale unit of the same kind.
 
-It is a measured amplitude over its Planck-scale reference.
+> **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** gives the position on the wave.
 
-> **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** tells you the position.
+> **$`(\sqrt{\Omega})^{-n}`$** gives the suppression associated with the geometric layer being read.
 
-$`\Theta`$ is a position on the wave, but the 120-domain is not sampled everywhere. The framework primarily carries Fibonacci wells at 13 and 34, and an antinode at 60, inherited from the arithmetic present in the icosahedral structure. Which wells are realized is a selection rule the theory is still working to fully derive.
+The powers of ten come from the hierarchy; the wave position sets the leading digits. The index $`n`$ accounts for the *form* of the suppression, one power per geometric layer. It does not predict the hierarchy's own size: $`\Omega`$ is fixed from an anchor and then read across the rest of the structure.
 
-> **$`(\sqrt{\Omega})^{-n}`$** tells you the scale.
-
-$`\Omega`$ measures the enormous hierarchy between the Planck and cosmic scales. The exponent $`n`$ says which geometric layer is being read:
-
-> (n = 1) **Edge:** rates such as $`H_0`$ and $`a_0`$.
-
-> (n = 2) **Surface:** the vacuum spectral scale $`\Lambda_\text{top}`$.
-
-> (n = 3) **Space:** the three-dimensional sector, whose observable assignment remains dark.
+The wave is not sampled everywhere. The golden field $`\mathbb{Q}(\sqrt5)`$ is already native to the $`2I`$ geometry, but continuing that arithmetic into the realized Fibonacci wells is a separate selection step that remains open. A variational search across eight candidate boundary-mode functionals failed to derive those positions, so the framework records the recurrence as structure rather than a solved dynamics.
 
 ---
 
@@ -130,15 +124,19 @@ $`\Omega`$ measures the enormous hierarchy between the Planck and cosmic scales.
 \Large \boxed{|2I| = 120 = 2^3 \cdot 3 \cdot 5}
 ```
 
-The 120-fold symmetry has three basic stabilizers: faces, edges, and vertices. They restrict a particle's representation through each one to create a visible identity.
+A particle is not identified by one number. It has an address in the symmetry: a representation seat $`\rho`$ together with a flat-vacuum label $`\sigma`$.
 
-> **Faces.** The three-fold structure separates singlet from triplet channels. MIT reads that decomposition as **color**.
+The 120-element structure contains three natural stabilizers associated with faces, edges, and vertices. Looking at the same state through each one reveals a different part of its identity:
 
-> **Edges.** The four-fold structure separates integer-spin from half-integer-spin representations. MIT reads that split as the **boson/fermion and spin** distinction.
+> **Faces sort color.**
 
-> **Vertices.** The five-fold structure exposes the Galois sectors used by the Coxeter-Galois gate. MIT reads that structure as the **electroweak address**, with the eta sign constraining charge.
+> **Edges sort the boson-fermion divide.**
 
-The representation theory supplies the decompositions. The identification of those decompositions with physical quantum numbers is the framework's reading.
+> **Vertices sort the electroweak address.**
+
+The representation theory supplies those decompositions. MIT's physical claim is that they are the geometric origin of the corresponding Standard Model quantum numbers. The three flat vacua supply the second part of the address; their identification with the three generations is MIT's reading, while the specific vacuum-to-generation assignment remains open.
+
+**The address says what kind of particle it is and which generation; the mass formula then says how heavy.**
 
 ---
 
@@ -148,31 +146,35 @@ The representation theory supplies the decompositions. The identification of tho
 \Large \boxed{m(\rho,\sigma) = \mu_\Lambda \cdot C_{\text{geom}}(\rho) \cdot (\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30} \cdot T^2(\rho \otimes \sigma)}
 ```
 
-The mass formula builds a particle mass in four steps:
+The mass formula treats particle masses as different addresses in one geometric spectrum rather than as unrelated input numbers.
 
-> **The Floor.** $`\mu_\Lambda`$ sets the minimum energy scale from which the spectrum is built.
+It builds a mass from four pieces:
 
-> **The Sunflower.** $`C_{\text{geom}}(\rho)`$ gives each representation a position in the geometry.
+> **The Floor:** $`\mu_\Lambda`$ sets the mass scale from which the spectrum is built.
 
-> **The Elevator.** $`(\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30}`$ moves that seat through orders of magnitude according to its distance on the McKay graph.
+> **The Position (Kostant sunflower):** $`C_{\text{geom}}(\rho)`$ gives each representation its seat in the geometry.
 
-> **The Dial.** $`T^2(\rho \otimes \sigma)`$ adjusts the mass according to which flat vacuum the state occupies.
+> **The Distance (McKay elevator):** $`(\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30}`$ moves that seat through orders of magnitude according to its distance on the McKay graph.
 
-The topology gives exactly three flat vacua, which the framework reads as the three generations of matter. Together they generate 24 entries across the fermion mass range, which are then compared with the Standard Model particle content.
+> **The Vacuum (torsion dial):** $`T^2(\rho \otimes \sigma)`$ adjusts the result according to which flat vacuum the state occupies.
+
+Across the eight nontrivial representation seats and three vacua, the formula produces 24 fermion entries. Their proximity to the measured masses is a **comparison, not a prediction.** The weight of the construction instead rests on the geometric spectrum, the quantum-number gates, and the independently reproduced exact torsion algebra.
 
 ---
 
 🪡 **One Interface:**
 
 ```math
-\Large \boxed{\Lambda_\text{ref} = \frac{3}{2}\ \cdot \Lambda_\text{top}}
+\Large \boxed{\text{Möbius} \hookrightarrow S^3 \qquad\Big|\qquad S^3 \to S^3/2I}
 ```
 
-The theory has two layers: the smooth space of $`S^3`$, and the discrete patterns inherited from the 120-fold quotient and informational surface. Gravity is what has to connect the two.
+The framework has two seams, and they do different jobs.
 
-The Möbius surface sets the vacuum spectral seed, while the quotient sets the matter-side grid. Passing from the surface curvature to the three-dimensional vacuum reference introduces the factor $`3/2`$ above.
+The Möbius embedding supplies the vacuum-side surface geometry. The quotient $`S^3 \to S^3/2I`$ supplies the matter-side representation structure. One is an embedded surface inside the smooth space; the other is a quotient of that space by symmetry. They are not the same operation, and the framework does not collapse them into one.
 
-> Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT reads it as an exchange rate when crossing between smooth geometry and discrete structure. Einstein's field equations remain unchanged; what is still open is the dynamical bridge telling them exactly how the realized wave content sources the geometry.
+The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its numerator comes from the derived geometry of the embedded surface in isotropic $`S^3`$, while its denominator is the de Sitter normalization imported from general relativity. Whether that reference value is the physical constant of a static domain is part of the same open question.
+
+>Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT puts gravity at the interface between the smooth substrate and the discrete structure built on it. Einstein's field equations remain the local gravitational law; what is still open is the dynamical bridge that tells them exactly how the realized wave content sources the geometry.
 
 ---
 
@@ -223,17 +225,17 @@ Outputs of a fixed structure, checked against observation:
 
 ><a href="https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview"><img src="https://img1.wsimg.com/isteam/ip/21cc2ac0-6dc4-4b19-93ef-6a7079ac9d3c/Euclid_mission_poster_horizontal.png/:/rs=w:2560,h:1440" width="320" alt="Euclid Mission"></a>
 >
->*[ESA Euclid Mission:](https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview) Euclid is designed to explore the evolution of the dark Universe. It is creating a 3D-map of the Universe (with time as the third dimension) by observing billions of galaxies out to 10 billion light-years, across more than a third of the sky. This addresses two core themes of ESA’s Cosmic Vision programme: What are the fundamental physical laws of the Universe? and How did the Universe originate and what is it made of?*
+>*[ESA Euclid Mission:](https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview) Euclid is designed to explore the evolution of the dark Universe. It is creating a 3D-map of the Universe by observing billions of galaxies across more than a third of the sky, measuring how the universe expands and how structure grows.*
 
-All predictions below were locked before Data Release 1 and deposited on Zenodo.
+All five tests below were locked before Euclid DR1 and deposited on Zenodo, with their scoring thresholds stated in advance. They are not five independent bets: the labels below mark shared baselines and correlated consequences.
 
-| Prediction | Value | Euclid DR1 channel | Falsified if |
+| Test | MIT says | Field baseline | MIT loses if |
 |---|---|---|---|
-| [↗](/files/cosmos/files/euclid-dr1.md#i-lambda-epoch-independence) $`\Lambda`$ epoch-independence | $`\Lambda_\text{obs} = 3/R^2`$ is topologically fixed; $`\Omega_\text{DE}(z)`$ flat across all DR1 redshift bins | Spectroscopic BAO across four $`z`$ bins + photometric weak lensing (3×2pt); $`\Omega_\text{DE}(z)`$ reconstruction and CPL fit | Reconstructed $`\Omega_\text{DE}(z)`$ varies at $`\geq 2\sigma`$ across DR1 bins in a model-independent (binned or non-parametric) reconstruction |
-| [↗](/files/cosmos/files/euclid-dr1.md#ii-a_0z-evolution) $`a_0(z)`$ evolution | $`a_0(z) = a_0(0) \cdot H(z)/H_0`$; $`a_0(z{=}1.5) \approx 2.4\times`$ local | Galaxy-galaxy weak lensing stellar-mass-halo-mass relation; photometric/spectroscopic galaxy samples for high-<i>z</i> scaling relations | Euclid DR1 galaxy-galaxy lensing and stellar-mass-halo-mass scaling show no enhancement consistent with the predicted $`a_0(z)`$ evolution, while external $`z \approx 1`$–1.5 kinematic follow-up finds $`a_0`$ consistent with $`a_0(0)`$ at $`\geq 2\sigma`$ |
-| [↗](/files/cosmos/files/euclid-dr1.md#iii-w_texteffz-trajectory) $`w_\text{eff}(z)`$ trajectory | $`w_\text{eff}(z) > -1`$ at all $`z`$ (fiducial split, proven) | Spectroscopic BAO ($`z = 0.9`$–1.8, four bins) combined with photometric weak lensing; CPL parameter posterior | Fiducial split gives $`w_\text{eff}(z) < -1`$ at $`\geq 2\sigma`$ |
-| [↗](/files/cosmos/files/euclid-dr1.md#iv-stellar-mass-function-at-z-gtrsim-10) Stellar mass function at $`z \gtrsim 10`$ | JWST-style massive galaxies persist in Euclid wide-area statistics; reachable with $`\varepsilon_\text{SF} \lesssim 1`$ under $`a_0(z{=}10) \approx 20.5\times`$ | Wide-area photometric source catalog with high-<i>z</i> selection; NISP/ancillary spectroscopic confirmation where available | Abundance of $`M_{*} \sim 10^{10}\ M_\odot`$ galaxies at $`z > 10`$ falls within Boylan-Kolchin (2023) ΛCDM SMF forecast at $`\geq 2\sigma`$ |
-| [↗](/files/cosmos/files/euclid-dr1.md#v-1z1-coefficient-in-h2z) $`(1+z)^1`$ coefficient in $`H^2(z)`$ | Negative, magnitude $`\lvert\beta\rvert < 0.012`$ tied to $`s_0`$ | Spectroscopic BAO precision across $`z = 0.9`$–1.8 (forecast 1–2% per bin); coefficient extracted from the $`H^2(z)`$ form | Coefficient positive at $`\geq 2\sigma`$, or magnitude inconsistent with fitted $`s_0`$ |
+| [↗](/files/cosmos/files/euclid-dr1.md#i-lambda-epoch-independence) $`\Lambda`$ epoch-independence | $`\Lambda_\text{obs} = 3/R^2`$ is topologically fixed; $`\Omega_\text{DE}(z)`$ flat across all DR1 redshift bins *(deposited notation)* | Flat ΛCDM also uses an epoch-independent cosmological constant; dynamical-dark-energy models allow the dark-energy sector to evolve. | Reconstructed $`\Omega_\text{DE}(z)`$ varies at $`\geq 2\sigma`$ across DR1 bins in a model-independent (binned or non-parametric) reconstruction |
+| [↗](/files/cosmos/files/euclid-dr1.md#ii-a_0z-evolution) $`a_0(z)`$ evolution | $`a_0(z) = a_0(0) \cdot H(z)/H_0`$; $`a_0(z{=}1.5) \approx 2.4\times`$ local. The ratio is anchor-independent. | ΛCDM has no fundamental universal $`a_0`$; standard MOND phenomenology normally treats $`a_0`$ as approximately constant. | Euclid DR1 galaxy-galaxy lensing and stellar-mass-halo-mass scaling show no enhancement consistent with the predicted $`a_0(z)`$ evolution, while external $`z \approx 1`$–1.5 kinematic follow-up finds $`a_0`$ consistent with $`a_0(0)`$ at $`\geq 2\sigma`$ |
+| [↗](/files/cosmos/files/euclid-dr1.md#iii-w_texteffz-trajectory) $`w_\text{eff}(z)`$ trajectory | $`w_\text{eff}(z) > -1`$ at all $`z`$ in the registered fiducial split. | Flat ΛCDM gives $`w=-1`$; phenomenological dynamical-dark-energy fits allow departures on either side, including phantom crossing. | Fiducial split gives $`w_\text{eff}(z) < -1`$ at $`\geq 2\sigma`$ |
+| [↗](/files/cosmos/files/euclid-dr1.md#iv-stellar-mass-function-at-z-gtrsim-10) Stellar mass function at $`z \gtrsim 10`$ | JWST-style massive galaxies persist in Euclid wide-area statistics; reachable with $`\varepsilon_\text{SF} \lesssim 1`$ under $`a_0(z{=}10) \approx 20.5\times`$. | Standard ΛCDM galaxy formation predicts the abundance from halo statistics and baryonic star-formation efficiency; the registered Boylan-Kolchin (2023) SMF forecast is the comparison. | Abundance of $`M_{*} \sim 10^{10}\ M_\odot`$ galaxies at $`z > 10`$ falls within Boylan-Kolchin (2023) ΛCDM SMF forecast at $`\geq 2\sigma`$ |
+| [↗](/files/cosmos/files/euclid-dr1.md#v-1z1-coefficient-in-h2z) $`(1+z)^1`$ coefficient in $`H^2(z)`$ | A small negative coefficient is **sign-fixed by the construction**, with magnitude $`\lvert\beta\rvert < 0.012`$ tied to $`s_0`$. | Flat ΛCDM has no $`(1+z)^1`$ term in $`H^2(z)`$: the coefficient is zero. | Coefficient positive at $`\geq 2\sigma`$, or magnitude inconsistent with fitted $`s_0`$ |
 
 ---
 
