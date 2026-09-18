@@ -186,8 +186,8 @@ The framework's quantitative claims, with their standing shown explicitly:
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
-| [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (coupling $`\alpha`$ route) | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ | $`2.845 \times 10^{-122}`$ | ~23% |
-| [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (mass-spectrum cross-check) | `anchored (m_μ/m_e)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | 13.4× |
+| [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ | $`2.845 \times 10^{-122}`$ | ~23% |
+| [↗](/files/cosmos/files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (cross-check) | `anchored (m_μ/m_e)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | 13.4× |
 | [↗](/files/spectrum/files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2; numerator derived, denominator the de Sitter normalization imported from GR; physical identification open | — | — |
 | [↗](/files/cosmos/files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | surface spectral seed $`2/R_\Lambda^2`$ | — | — |
 | [↗](/files/cosmos/files/dark-energy.md#iii-w_texteffz---1-at-all-redshifts-fiducial-split) Fiducial-split $`w_\text{eff}(z)`$ sign | `exact` | $`w_\text{eff}(z) > -1`$ for all $`z \ge 0`$ | DESI DR2 compatible | — |
