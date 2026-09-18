@@ -61,7 +61,7 @@ The spectrum is the near boundary of the same finite space. $`S^3/2I`$ discretis
 
 ## 🌈 Score
 
-**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `null` one of the framework's own registered tests, failed · `open` unresolved.
+**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `open` unresolved.
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|

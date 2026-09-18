@@ -182,7 +182,7 @@ The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its nume
 
 The framework's quantitative claims, with their standing shown explicitly:
 
-**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `null` one of the framework's own registered tests, failed · `open` unresolved.
+**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `open` unresolved.
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
@@ -195,7 +195,7 @@ The framework's quantitative claims, with their standing shown explicitly:
 | [↗](/files/cosmos/files/dark-energy.md#the-1z1-term) $`(1+z)^1`$ term | `open` | negative, tied to $`s_0`$ | awaiting next-gen BAO | — |
 | [↗](/files/cosmos/files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap, lands $`\ell \approx 28`$ at the measured-$`\Lambda`$ back-read R | deficit below $`\ell \lesssim 30`$ | — |
 | [↗](/files/cosmos/files/hubble-tension.md#i-the-tension) $`H_0 \cdot t_P`$ | `input` | — | $`1.18 \times 10^{-61}`$ from measured $`H_0`$ | — |
-| [↗](/files/cosmos/files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `null` | 8.4% lattice step | coherence trigger failed; the $`H_0`$ distribution did not split | — |
+| [↗](/files/cosmos/files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `open` | 8.4% lattice step, $`67.4 \to 73.04`$ | SH0ES scale; retrospective, and the mechanism that would realize the step is falsified | — |
 | [↗](/files/cosmos/files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 | 0.55% |
 | [↗](/files/framework/README.md#the-assembled-engine) $`a_0/a_P`$ | `anchored (H₀)` | $`2.171 \times 10^{-62}`$ | $`2.16 \times 10^{-62}`$ | 0.5% |
 | [↗](/files/cosmos/files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | $`a_0(z{=}2) \approx 3\times`$ local | awaiting high-z rotation curves | — |
