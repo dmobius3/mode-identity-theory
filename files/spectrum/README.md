@@ -53,7 +53,15 @@ The spectrum is the near boundary of the same finite space. $`S^3/2I`$ discretis
 
 ## [The Waltz](files/the-waltz.md)
 
-**The Cost to Dance.** Embed the surface in space and the vacuum seed is lifted by 3/2, from $`\Lambda_\text{top}`$ to $`\Lambda_\text{ref}`$. That factor belongs to the vacuum seam; gravity is the separate interface, and $`G`$ remains the measured exchange rate between curvature and energy. Decades of increasingly sensitive searches have found no non-gravitational dark matter signal, and MIT reads that silence as geometry rather than a missing particle: the space mode couples gravitationally and carries no gauge degrees of freedom to detect. That assignment is a reading, and it is open.
+**The Cost to Dance.** This page treats $`\Lambda`$ as a note added to Einstein's field equations. Its spectral seed is the first positive level of the Möbius surface, $`\Lambda_\text{top} = 2/R^2`$, and a factor of 3/2 carries it to the vacuum reference $`\Lambda_\text{ref} = 3/R^2`$: the Gauss equation gives the geometric 3, lifting the surface's curvature into the three-sphere, and general relativity's de Sitter relation supplies the 1/2, imported rather than derived. Whether that reference is the constant we measure is open. The icosahedron's face and edge symmetry orders give the same numbers, 3 and 2; whether that is the same 3/2 or a coincidence is open.
+
+**G: an exchange rate, still measured.** MIT reads Newton's constant as the exchange rate between its calibrated curvature and mass sectors. Inside one calibration the relation can be solved for $`G`$: a closure, not a prediction. The electron alone returns it about 6% high and the muon about 7% low; their average lands within 1% because the misses cancel, not because $`G`$ is determined that well. Every such $`G`$ inherits the radius calibration, where the framework's largest internal tension sits. The 3/2 belongs to the vacuum sector only: two masses attract through the ordinary $`8\pi G`$ coupling, with no 3/2.
+
+**Quantizing the interface: open.** In MIT, gravity joins a continuous space to a discrete 120-position domain, and forcing either side into the other's kind removes something one side sources. MIT has no quantum completion that keeps both; that is a claim about this construction, not a general no-go.
+
+**The dark sector: a reading.** MIT reads dark matter as the geometry of space itself, which couples to gravity but carries no gauge fields a detector could see, so decades of null searches are expected rather than accidental, and the Bullet Cluster's separation of mass from gas follows qualitatively. How that sector maps onto the measured dark matter is open: the scaling law's own entry at that depth matches nothing measured, so the reading rests on the phenomenology, and the lensing profile is unmodeled. Dark energy is read as the surface's first positive mode.
+
+Einstein's field equations are the score; 3/2 is the time signature.
 
 >[![The Waltz](https://img.youtube.com/vi/aoLJwZDkNGk/mqdefault.jpg)](https://www.youtube.com/watch?v=aoLJwZDkNGk)
 >
