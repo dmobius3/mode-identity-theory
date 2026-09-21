@@ -9,9 +9,9 @@
 
 Measurements of the Hubble constant have split into two persistent camps: the cosmic microwave background gives 67.4 km/s/Mpc, local distance ladders give 73.04. The discrepancy has survived a decade of systematic checks. Mode Identity Theory, referred to below as the framework, reads the pair as one Fibonacci well sampled at two positions on the 120-domain.
 
-**What matched.** One lattice step at the $`H_0`$ well carries 67.4 to 73.04 km/s/Mpc. The 8.4% size of that step is fixed by the geometry.
+**What matched.** One lattice step at the $`H_0`$ well carries 67.4 to 73.04 km/s/Mpc. The 8.4% size of that step follows once four choices are fixed, all imported rather than derived (§VI): a retrospective match, not a prediction.
 
-**What failed.** The galactic mechanism proposed to realize the step, pre-registered and falsified against SPARC. And the two-population signature that mechanism predicted, looked for and not found.
+**What failed.** The galactic mechanism proposed to realize the step, pre-registered and falsified against SPARC. And, in a separate, weaker exploratory check, no support for the two-population signature that mechanism predicted.
 
 **What remains.** An unexplained numerical correspondence. Not a solution to the Hubble tension.
 
