@@ -24,7 +24,7 @@ MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse
 | Quantity | Value |
 |---|---|
 | Scaling law | $`a_0(z) = a_0(0) \times H(z)/H_0`$ |
-| $`a_0/(cH_0)`$ ratio | predicted: 0.184 / observed: 0.183 |
+| $`a_0/(cH_0)`$ ratio | predicted: 0.184 / observed: 0.183 (SPARC $`a_0`$, Planck $`H_0`$; $`a_0`$ uncertain at tens of percent) |
 | At $`z = 10`$ | $`a_0 \approx 2.46 \times 10^{-9}`$ m/s² (20.5× local) |
 | Collapse speedup | ~2.1× faster (required $`\varepsilon_\text{SF}`$ drops below 1) |
 
@@ -64,7 +64,7 @@ Both $`a_0`$ and $`H`$ sit on the temporal edge ($`n = 1`$), referencing the sam
 \frac{a_0}{cH} = \frac{C(13/120)}{C(34/120)} = \frac{2\sin^2(13\pi/120)}{2\sin^2(34\pi/120)} = \frac{0.223}{1.208} = 0.184
 ```
 
-With $`H_0 = 67.4`$ km/s/Mpc (the measured Planck anchor), $`cH_0 = 6.55 \times 10^{-10}`$ m/s², giving observed $`a_0/(cH_0) = 1.2/6.55 = 0.183`$. The positions 13/120 and 34/120 are Fibonacci numbers on the 120-grid, occupying stability wells where destructive interference is minimised.
+With $`H_0 = 67.4`$ km/s/Mpc (the measured Planck anchor), $`cH_0 = 6.55 \times 10^{-10}`$ m/s², giving observed $`a_0/(cH_0) = 1.2/6.55 = 0.183`$, with $`a_0`$ itself uncertain at tens of percent ([Update 1](early-galaxies-update1.md)). The positions 13/120 and 34/120 are Fibonacci numbers on the 120-grid, occupying stability wells where destructive interference is minimised.
 
 Two scope notes follow from this. The absolute scale is calibrated off the measured $`H_0`$ through the kinematic hierarchy $`\Omega_H = (c/(H\ell_P))^2`$, so the prediction does not depend on the open curvature radius $`R`$; only the companion claim that $`\Lambda`$ is constant touches it (the open [R problem](../../framework/files/working/files/r-problem.md)). And the ratio rests on the edge-mode positions alone, not on the galactic coherence mechanism $`L_f = v_c^2/a_0`$ that the SPARC test falsified.
 
@@ -131,7 +131,7 @@ MIT's dimensional hierarchy draws a sharp line between modes that live on the te
 
 This is an inversion of standard assumptions, where $`\Lambda`$ is often treated as potentially evolving (the DESI phantom-crossing signal) while $`a_0`$ is assumed constant (standard MOND). MIT predicts the opposite: $`\Lambda`$ is fixed by the static curvature radius, and $`a_0`$ rides the phase clock.
 
-The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper shows that $`a_0`$ evolves with $`H(z)`$ and resolves the JWST early-galaxy tension. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
+The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$, which, on an upper-bound estimate taken against constant-$`a_0`$ MOND, moves the JWST early galaxies out of the impossible column. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
 
 Observations of both quantities at high redshift provide complementary tests. A universe where $`\Lambda`$ evolves and $`a_0`$ stays constant would falsify MIT. The converse does not confirm it: a rising $`a_0`$ also follows from other evolving-scale models and from ΛCDM simulations, so the discriminating content is the locked form and the exponent structure, not the direction of the climb.
 
@@ -151,9 +151,9 @@ MUSE-DARK III (2026) supplies the first robust intermediate-redshift corroborati
 
 ---
 
-In 1983, Milgrom identified $`a_0`$ as a fundamental acceleration scale. For four decades the coincidence $`a_0 \approx cH_0`$ had no explanation. Both are edge modes; the ratio is fixed by where they sit on the standing wave. $`a_0`$ evolves with $`H(z)`$.
+In 1983, Milgrom identified $`a_0`$ as a fundamental acceleration scale. For four decades the coincidence $`a_0 \approx cH_0`$ has had no settled explanation. MIT reads both as edge modes, with the ratio set by where they sit on the standing wave, and predicts that $`a_0`$ evolves with $`H(z)`$.
 
-*The galaxies found too early were formed under a stronger tide.*
+*Read this way, the galaxies found too early were formed under a stronger tide.*
 
 ---
 
