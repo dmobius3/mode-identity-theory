@@ -47,7 +47,7 @@ The cosmos is the same finite space seen whole: a static three-sphere. Redshift 
 
 ## [Early Galaxies](files/early-galaxies.md)
 
-**A Stronger Tide.** In 1983, Milgrom identified $`a_0`$ as a fundamental acceleration scale. For four decades the coincidence $`a_0 \approx cH_0`$ had no explanation. Both are edge modes, and the ratio is fixed by where they sit on the standing wave. So $`a_0`$ evolves with $`H(z)`$, and the galaxies JWST found too early were formed under a stronger tide.
+**A Stronger Tide.** In 1983, Milgrom identified $`a_0`$, the characteristic acceleration at which galaxy dynamics begin to depart from Newtonian expectations, as a fundamental scale. Its closeness to $`cH_0`$, the speed of light times the Hubble rate, has had no settled explanation in the four decades since. MIT reads both as edge modes on the same standing wave, so their ratio is set by where each sits: given those two positions, it comes out at 0.184, consistent with the measured ratio, though both of its inputs, the local $`a_0`$ and $`H_0`$, are themselves unsettled. MIT predicts the ratio holds at every epoch, so $`a_0`$ was larger in the past, in step with the Hubble rate, and reads the galaxies JWST found too early as formed under that stronger tide. Intermediate-redshift data from MUSE-DARK III show $`a_0`$ rising, which supports the direction without singling MIT out: other evolving-scale models and ΛCDM simulations rise too.
 
 >[![Early Galaxies](https://img.youtube.com/vi/BuxnEmMGMFE/mqdefault.jpg)](https://www.youtube.com/watch?v=BuxnEmMGMFE)
 >
