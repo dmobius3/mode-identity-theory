@@ -409,11 +409,11 @@ $`S^3/2I`$ is a perfect arithmetic mirror. It reflects:
 
 ## IX. Physics Application
 
-The spectral inaccessibility theorem is a negative result for the RH direction. It is a positive result for physics. The same L-function structure that cannot constrain zeros feeds the physical comparisons and structural readings of the MIT framework.
+The spectral inaccessibility theorem is a negative result for the RH direction. For physics it is a resource and a constraint rather than a verdict: the same L-function structure that cannot constrain zeros feeds the physical comparisons and structural readings of the MIT framework, at the statuses their own pages give them, and Lemma 8 closes one route to completing the mass formula (§VII).
 
 | Spectral object | Role in § III | MIT physics role |
 |----------------|--------------|-----------------|
-| Reidemeister torsion | L-factorization at $`s=0`$ | Fermion mass comparison ($`m_e`$ anchors the scale; 5 of 8 charged compatible within $`\times3`$, 4 after sector adjudication) |
+| Reidemeister torsion | L-factorization at $`s=0`$ | Fermion mass comparison ($`m_e`$ anchors the scale; 5 of 8 charged compatible within $`\times3`$, 4 after sector adjudication; the $`\times3`$ count is uninformative under the registered null, $`p_A = 0.690`$) |
 | $`\varphi^{-4}`$ Galois pair | $`-2\sqrt{5}\cdot L(1,\chi_2)`$, exact to 79 digits | Exact torsion ratio; contributes to mass-shell fine structure through $`T^2`$ |
 | $`h(E_8)=30`$ | McKay multiplicity period | Mass hierarchy exponent ($`\mathrm{dist}/30`$) |
 | Three flat connections | Three isolated vacua, $`H^1=0`$ | MIT reads as three generations; vacuum-to-generation assignment open |
