@@ -5,7 +5,13 @@
 
 # 🌈 Στοιχεῖα
 
-The spectrum is the near boundary of the same finite space. $`S^3/2I`$ discretises the domain into 120 positions; its three isolated flat connections are the three vacua, which MIT reads as the generations; positive curvature gaps the coexact gauge modes. The three prime stabilisers $`(2,3,5)`$ assign spin, color, and electroweak identity. Gauge couplings are the fine structure of $`\Lambda`$, diluted by the same hierarchy that sets the neutrino floor. One curvature shields the primes and gaps the gauge sector.
+The spectrum is the near boundary of the same finite space. The space MIT uses, $`S^3/2I`$, is formed from the three-sphere by a 120-element group, which also gives it a 120-position grid, and this page reads what lives on it: gauge fields, particles, couplings, and gravity's exchange rate.
+
+Some of it is exact. Positive curvature guarantees the physical gauge fluctuations a gap at the linearized level. The group allows exactly three isolated vacua, which MIT reads as the three generations. The mass formula's torsion values are exact closed forms, and one theorem shows that, within a stated class of constructions, the space reads the L-function structure of the primes with arbitrary precision but cannot pin down an individual zero of those L-functions.
+
+Contact with measured numbers is weaker, and each section says how much. Rules built on the group assign what MIT reads as the charge, weak isospin and color of each mass-formula entry before any mass is compared, though the isospin rule was written with the known assignments in view. With the electron setting the scale, entries fall within a factor of 3 of five of the other eight charged fermions, but that is a count, not evidence: a pre-registered null test matches it 69% of the time. The fine structure constant lands within 0.4% at low energy, about 6% off at the Z mass, once the vacuum hierarchy is fixed from the measured cosmological constant, and the strong and weak couplings follow on a conjectural ladder whose one empty rung conditionally predicts that no gaugino-mediated supersymmetric force appears as a fundamental interaction. Newton's constant stays measured, read as an exchange rate, and the dark sector is read as geometry.
+
+Some of this is derived, some is a reading or a match, and some is open, above all the radius every absolute scale here rests on, which the couplings and the masses read differently. In MIT's reading, one curvature floors the gauge sector and blocks one road to the zeros.
 
 ---
 
