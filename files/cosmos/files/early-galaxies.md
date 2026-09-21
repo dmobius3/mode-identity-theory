@@ -9,13 +9,13 @@
 
 JWST has found galaxies too massive, too early. Stellar masses of $`\sim 10^{10}\,M_\odot`$ at $`z \approx 10`$ require star formation efficiencies exceeding unity under ΛCDM with a constant MOND acceleration scale, a physical impossibility.
 
-Mode Identity Theory resolves this. The MOND acceleration scale $`a_0`$ and the Hubble rate $`H`$ are both edge modes ($`n = 1`$) on the 120-domain (the discrete phase grid native to $`S^3/2I`$, the quotient of the three-sphere by the binary icosahedral group $`2I`$ with $`|2I| = 120`$). Their ratio is fixed by the Fibonacci wells:
+Mode Identity Theory offers a reading that eases it. The MOND acceleration scale $`a_0`$ and the Hubble rate $`H`$ are both edge modes ($`n = 1`$) on the 120-domain (the discrete phase grid native to $`S^3/2I`$, the quotient of the three-sphere by the binary icosahedral group $`2I`$ with $`|2I| = 120`$). Their ratio is fixed by the Fibonacci wells:
 
 ```math
 \frac{a_0}{cH} = \frac{C(13/120)}{C(34/120)} = 0.184
 ```
 
-Because the ratio holds at every epoch, $`a_0(z) = a_0(0) \times H(z)/H_0`$, where $`H(z)`$ is the phase-clock Hubble rate derived from the static $`S^3`$ baseline. At $`z = 10`$, this gives $`a_0 \approx 20.5 \times`$ the local value, enhancing effective gravitational acceleration and reducing the required star formation efficiency to $`\varepsilon_\text{SF} \sim 0.5`$, within the physically permitted range.
+Because the ratio holds at every epoch, $`a_0(z) = a_0(0) \times H(z)/H_0`$, where $`H(z)`$ is the phase-clock Hubble rate derived from the static $`S^3`$ baseline. At $`z = 10`$, this gives $`a_0 \approx 20.5 \times`$ the local value, enhancing effective gravitational acceleration and, on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III), reducing the implied star formation efficiency to $`\varepsilon_\text{SF} \sim 0.5`$, within the physically permitted range; clearing any individual candidate is a separate question.
 
 MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse of standard assumptions. This is the companion to the dark energy cornerstone, where the same $`H(z)`$ introduces no independent phantom fluid. One static universe, two signatures.
 
@@ -131,7 +131,7 @@ MIT's dimensional hierarchy draws a sharp line between modes that live on the te
 
 This is an inversion of standard assumptions, where $`\Lambda`$ is often treated as potentially evolving (the DESI phantom-crossing signal) while $`a_0`$ is assumed constant (standard MOND). MIT predicts the opposite: $`\Lambda`$ is fixed by the static curvature radius, and $`a_0`$ rides the phase clock.
 
-The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$, which, on an upper-bound estimate taken against constant-$`a_0`$ MOND, moves the JWST early galaxies out of the impossible column. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
+The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$; on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III), the faster collapse moves the implied star-formation efficiency of the JWST galaxies out of the impossible range. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
 
 Observations of both quantities at high redshift provide complementary tests. A universe where $`\Lambda`$ evolves and $`a_0`$ stays constant would falsify MIT. The converse does not confirm it: a rising $`a_0`$ also follows from other evolving-scale models and from ΛCDM simulations, so the discriminating content is the locked form and the exponent structure, not the direction of the climb.
 
