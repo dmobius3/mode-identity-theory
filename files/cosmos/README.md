@@ -63,7 +63,7 @@ Some of this is derived, some is a reading or a match, some is open, and one pro
 
 ## [Hubble Tension](files/hubble-tension.md)
 
-**One Well, Two Seats.** Hubble fixed the velocity-distance relation in 1929, and two headline determinations of its constant disagree: 67.4 km/s/Mpc from the microwave background and 73.04 from the local distance ladder. The framework reads that pair as one well sampled at two positions: the microwave-background anchor at the bare well and the local value two positions away on the 120-position grid, because the framework takes this kind of measurement to use only every other position. Once four framework choices are fixed, including that every-other-position rule and which way the step goes, the step comes out at 8.4%, carrying 67.4 to 73.04. Those choices are imported rather than derived, and a single-position step, half the size, lands near a different local determination, so this is a retrospective match, not a prediction. A galactic mechanism proposed to produce the step was pre-registered and falsified. Separately, a weaker exploratory check found no support for the two-population structure that mechanism predicted. What stands is the correspondence rather than the cause: an unexplained numerical match, not a solution to the tension.
+**One Well, Two Seats.** Hubble fixed the velocity-distance relation in 1929, and two headline determinations of its constant disagree: 67.4 km/s/Mpc from the microwave background and 73.04 from the local distance ladder. MIT reads that pair as one well sampled at two positions: the microwave-background anchor at the bare well and the local value two positions away on the 120-position grid, because MIT takes this kind of measurement to use only every other position. Once four framework choices are fixed, including that every-other-position rule and which way the step goes, the step comes out at 8.4%, carrying 67.4 to 73.04. Those choices are imported rather than derived, and a single-position step, half the size, lands near a different local determination, so this is a retrospective match, not a prediction. A galactic mechanism proposed to produce the step was pre-registered and falsified. Separately, a weaker exploratory check found no support for the two-population structure that mechanism predicted. Even granting a local shift, methods that average along the line of sight would barely feel it, leaving the values near 74 from megamasers and one standard treatment of time-delay lensing unexplained. What stands is the correspondence rather than the cause: an unexplained numerical match, not a solution to the tension.
 
 >[![Hubble Tension](https://img.youtube.com/vi/ZICE7beEQh8/mqdefault.jpg)](https://www.youtube.com/watch?v=ZICE7beEQh8)
 >
@@ -113,19 +113,18 @@ The wave $`\Psi`$ still flows. The surface still hums at $`\Lambda_\text{top}`$.
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
-| [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ | $`2.845 \times 10^{-122}`$ | ~23% |
-| [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (cross-check) | `anchored (m_μ/m_e)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | 13.4× |
+| [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ | $`2.845 \times 10^{-122}`$ | ~23% (identification open) |
+| [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (cross-check) | `anchored (m_μ/m_e)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | 13.4× low, a miss (identification open) |
 | [↗](../spectrum/files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2; numerator derived, denominator the de Sitter normalization imported from GR; physical identification open | — | — |
-| [↗](files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | surface spectral seed $`2/R_\Lambda^2`$ | — | — |
-| [↗](files/dark-energy.md#iii-w_texteffz---1-at-all-redshifts-fiducial-split) Fiducial-split $`w_\text{eff}(z)`$ sign | `exact` | $`w_\text{eff}(z) > -1`$ for all $`z \ge 0`$ | DESI DR2 compatible | — |
+| [↗](files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | surface spectral seed $`2/R^2`$ | — | — |
+| [↗](files/dark-energy.md#iii-w_texteffz---1-at-all-redshifts-fiducial-split) Fiducial-split $`w_\text{eff}(z)`$ sign (diagnostic) | `exact` | $`w_\text{eff}(z) > -1`$ for all $`z \ge 0`$ | awaiting Euclid DR1 Row III, scored in the fiducial split | — |
 | [↗](files/dark-energy.md#primary-fit-snbao) $`\Delta\chi^2`$ vs ΛCDM | `anchored (Λ)` | $`+0.11`$ (same $`k`$) | Pantheon+ & DESI DR2 BAO | degenerate with ΛCDM at the same parameter count |
 | [↗](files/dark-energy.md#the-1z1-term) $`(1+z)^1`$ term | `open` | negative, tied to $`s_0`$ | awaiting next-gen BAO | — |
-| [↗](files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap, lands $`\ell \approx 28`$ at the measured-$`\Lambda`$ back-read R | deficit below $`\ell \lesssim 30`$ | — |
+| [↗](files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap; last empty level near $`\ell \approx 24`$ on the coupling route's R ($`\ell \approx 28`$ on the circular $`\Lambda`$ back-read); sky projection not derived | deficit below $`\ell \lesssim 30`$ | — |
 | [↗](files/hubble-tension.md#i-the-tension) $`H_0 \cdot t_P`$ | `input` | — | $`1.18 \times 10^{-61}`$ from measured $`H_0`$ | — |
 | [↗](files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `open` | 8.4% lattice step, $`67.4 \to 73.04`$ | SH0ES scale; retrospective, and the mechanism that would realize the step is falsified | — |
-| [↗](files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 | 0.55% |
-| [↗](../framework/README.md#the-assembled-engine) $`a_0/a_P`$ | `anchored (H₀)` | $`2.171 \times 10^{-62}`$ | $`2.16 \times 10^{-62}`$ | 0.5% |
-| [↗](files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | $`a_0(z{=}2) \approx 3\times`$ local | awaiting high-z rotation curves | — |
+| [↗](files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 (SPARC $`a_0`$, Planck $`H_0`$) | central values within 1%; $`a_0`$ normalization uncertain at tens of percent |
+| [↗](files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | $`a_0(z{=}2) \approx 3\times`$ local | rising direction corroborated to $`z = 1.44`$ (MUSE-DARK III); rate open; the $`z > 2`$ test pending | — |
 
 ---
 
