@@ -5,7 +5,13 @@
 
 # 🪐 Κόσμος
 
-The cosmos is the same finite space seen whole: a static three-sphere. Redshift is the observer's phase advancing along a standing wave on the temporal edge of the Möbius surface embedded in it, so the curvature enters as a fixed boundary condition and the sky an observer measures is flat-FLRW. The surface's first positive eigenvalue is the vacuum seed. Gauss and de Sitter lift it by 3/2, and the lifted value is epoch-independent. Whether it is the constant we measure is the open seam. The acceleration scale $`a_0`$ is an edge mode riding the same phase clock, so $`a_0(z) \propto H(z)`$. One constant, one evolving, both read from the same standing wave.
+In MIT the cosmos is a finite, static space seen whole: a three-sphere, with no boundary and no outside. Nothing stretches. The single edge of a Möbius surface inside it carries a standing wave, and the observer's phase along that wave is what we read as cosmic time and as redshift. The sphere's curvature enters as a fixed boundary condition rather than as a term in Friedmann's equation, so the apparent curvature in the data is zero.
+
+What stays fixed, in MIT, is a vacuum reference built from geometry. MIT proposes its seed: the first positive vibration level of the Möbius surface, set by the sphere's radius, which does not change. How large it is, and whether it is the constant we measure, are open. What moves is the observer's phase, and in MIT that motion has three faces: an apparent phantom crossing in standard dark-energy templates, an acceleration scale, $`a_0`$, that tracks the Hubble rate, and a small extra term in the squared Hubble rate.
+
+The 120-element group MIT uses to form the space leaves an empty stretch in its vibration spectrum, and MIT reads the missing large-angle power in the oldest light as that gap on the sky: a candidate reading. The two headline values of the Hubble constant sit two positions apart on the framework's 120-position grid: a match found after the fact under imported choices, not a solution. And in MIT, for an observer hovering outside a black hole, the reading of the wave goes silent at the horizon.
+
+Some of this is derived, some is a reading or a match, some is open, and one proposed mechanism has been falsified. Five predictions face Euclid DR1, each with a falsification threshold registered before the data. One constant, one evolving, both read from the same standing wave.
 
 ---
 
