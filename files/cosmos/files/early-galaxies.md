@@ -143,7 +143,7 @@ Observations of both quantities at high redshift provide complementary tests. A 
 | $`a_0(z)`$ evolution | Rotation curves / RAR / BTFR at $`z > 2`$ | $`a_0(z)/a_0(0) = 1`$, or the trend is inconsistent with $`E(z)`$ under matched systematics |
 | $`\Lambda`$ epoch-independence | SNe Ia / BAO at high $`z`$ | $`\Lambda`$ varies with redshift at $`\geq 2\sigma`$ |
 
-The first row would be the cleanest discriminator and is conditional on a relativistic completion the framework has not supplied; the second is the necessary direction-and-rate check, and it carries the near-term weight. A rising $`a_0`$ alone is now corroborated but non-discriminating.
+The first row would be the cleanest discriminator and is conditional on a relativistic completion the framework has not supplied; the second is the necessary direction-and-rate check, and it carries the near-term weight. A rising $`a_0`$ alone is now corroborated but non-discriminating. The third row does not say how matter is subtracted when the dark-energy density is reconstructed, and in the phase-clock background no subtraction leaves an exactly flat residual. The Euclid card re-registered its matching row on 2026-09-21 for that reason; the note there sets the rule used for DR1 ([Euclid DR1](euclid-dr1.md) §I).
 
 At $`z = 2`$, the prediction is $`a_0(z{=}2) \approx 3 \times a_0(0)`$. This is within reach of resolved rotation curves from JWST/NIRSpec and the ELT; Euclid's slitless NISP delivers redshifts rather than resolved rotation curves. These predictions distinguish MIT from both standard MOND (constant $`a_0`$) and ΛCDM (no acceleration threshold).
 
