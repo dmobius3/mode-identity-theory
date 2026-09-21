@@ -71,7 +71,15 @@ Einstein's field equations are the score; 3/2 is the time signature.
 
 ## [The Mirror](files/the-mirror.md)
 
-**One Curvature, Two Jobs.** The same manifold that organizes the mass ladder and predicts the couplings reads L-function structure with arbitrary precision, including the Riemann zeta function itself. However, it cannot constrain individual zeros. The reading capacity and writing incapacity are two faces of the same geometric fact: MIT reads one curvature as doing both jobs, gapping the gauge sector and shielding the primes.
+**One Curvature, Two Jobs.** The zeros of the Riemann zeta function and its relatives, the L-functions, encode how the primes are distributed, and the Riemann hypothesis is a claim about where they lie. One hoped-for route, named for Hilbert and Pólya, looks for a spectrum that encodes those zeros. The space MIT uses reads that arithmetic with arbitrary precision: for the nontrivial integer-spin representations, its torsion, a topological invariant, factors exactly into L-values built on the primes 2, 3 and 5, derived by two independent methods and numerically verified to 79 digits, and one of its invariants contains the zeta function itself.
+
+**The theorem: it reads, but cannot constrain.** Within a stated class of natural constructions on this space, none can pin down an individual zero of the L-functions attached to its group: every way a construction could vanish reduces to one of four obstructions, from shifted-value coincidences to the limits of the group's character table. The claim is narrow by design: one space, one class of constructions and a precise sense of "constrain", not a verdict on every approach to the zeros.
+
+**The curvature duality: a reading.** MIT reads the same positive curvature as doing both: it puts a floor under the physical gauge fluctuations, which guarantees the linearized gap on the Yang-Mills page, and it shifts the vibration levels in a way that blocks the factorization needed to reach the zeros. That explains one of the four obstructions, not all of them; the other three rest on separate mechanisms. Whether the same obstruction extends to other positively curved compact spaces with comparable L-function structure is a conjecture.
+
+**For the physics: a constraint.** The same L-function structure feeds the mass comparisons, and one lemma closes a door: no natural map joins the grid's phase positions to the spectral parameter $`s`$, so the mass formula's fine structure cannot be completed by extending this arithmetic.
+
+Mirrors show you everything. They determine nothing.
 
 >[![The Mirror](https://img.youtube.com/vi/78nEAE8Se4o/mqdefault.jpg)](https://www.youtube.com/watch?v=78nEAE8Se4o)
 >
