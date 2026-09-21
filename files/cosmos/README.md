@@ -67,7 +67,17 @@ The cosmos is the same finite space seen whole: a static three-sphere. Redshift 
 
 ## [Black Holes](files/black-hole.md)
 
-**Black Double Zeros.** The wave $`\Psi`$ still flows. The surface still hums at $`\Lambda_\text{top}`$. The topology holds and information is not lost. The observer is still in space but unable to speak.
+**Black Double Zeros.** In MIT, a black hole is, for now, a statement about the outside only. Enough wave content gathers on the surface that the phase position reaches the edge of its range, and the sampling amplitude, the factor that lets the wave be read, falls to zero. The wave does not stop; the reading does, like a node on a guitar string: the string is still there, the displacement is zero.
+
+**The first zero: derived, for a hovering observer.** MIT pairs the sampling amplitude with general relativity's redshift factor for a non-rotating black hole. Given that pairing, its leading near-horizon power is forced, so the vanishing is derived for an observer hovering outside. One falling in is not shown to lose anything, and the interior is not modeled.
+
+**The second zero: conjectured.** A second collapse over the same approach, of the local scale hierarchy, is proposed but not derived, and even granted, the combined limit is zero times infinity, unresolved. "Double zero" labels a conjecture, not a result.
+
+**Information: a reading, not a resolution.** Because the wave persists, MIT reads the information as still existing in it. That is an ontological claim, not a resolution of the information paradox in the technical sense: whether the information comes back out in Hawking radiation is open.
+
+**Temperature, area and mergers.** The wave's slope at the horizon falls as $`1/M`$, the mass dependence of Hawking's temperature, provided one coefficient does not depend on mass; the temperature's normalization and thermal spectrum are inherited, not derived here. Entropy scaling with area is motivated, but the factor $`1/4`$ is open. Merger dynamics and waveforms are inherited from general relativity; translating them into MIT's sampling variables remains open.
+
+The wave $`\Psi`$ still flows. The surface still hums at $`\Lambda_\text{top}`$. The topology holds. Seen from outside, the observer goes silent.
 
 >[![Black Double Zeros](https://img.youtube.com/vi/iByR_Bv5Vng/mqdefault.jpg)](https://www.youtube.com/watch?v=iByR_Bv5Vng)
 >
