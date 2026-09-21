@@ -37,7 +37,13 @@ The spectrum is the near boundary of the same finite space. $`S^3/2I`$ discretis
 
 ## [Fine Structure](files/fine-structure.md)
 
-**The Number Has an Address.** In 1985, Feynman described 1/137 as a number that arrives without explanation. Within the selected ladder it lands at the matter Fibonacci seat on the bosonic grid, $`13/60`$, one grid step of the hierarchy. Take the formula to its Planck floor and the suppression drops out, leaving a coupling of order unity, a structural limit of the expression rather than a statement about the early universe. Under the $`\Lambda`$-anchored reading, the suppression to 1/137 is the hierarchy expressed across the domain.
+**The Number Has an Address.** In 1985, Feynman described 1/137, the strength of electromagnetism, as a number that arrives without explanation. MIT gives it an address: the matter seat, position 13 on the 60-position grid MIT assigns to intensity-like couplings, suppressed by one grid step of the vacuum hierarchy behind the cosmological constant. The result lands within 0.4% once that hierarchy is fixed from the measured cosmological constant. Run the other way, with 1/137 fixing the hierarchy, the 0.4% becomes a closure check and the output is MIT's vacuum reference, 23% off.
+
+**Selected, not just accurate.** Accuracy alone proves little: of 7,200 similar combinations, 9 land within 0.5%, about as many as chance gives, and one is seven times closer. Within MIT's own rules, exactly one of 24 candidates lands, and the closer rival breaks those rules. The seat and the grid are motivated rather than derived; the step size is provisional.
+
+**The ladder: conjectural.** Position 13's partner, 17, placed on the other grids, gives the strong coupling within 1.5%; with a twist factor, $`\cos(\pi/10)`$, inserted, it gives the weak within 0.3% and the strong-to-weak ratio within 1.8%, the ratio needing no hierarchy input at all. That 17 governs both is a working hypothesis, and the twist is a computed geometric number whose insertion in the weak row alone is not derived. The percentages also depend on conventions: 1/137 is the low-energy value, and at the Z mass, where the other two are compared, the same number is about 6% off, with no running between the two scales derived. Reading the sphere's radius from the masses instead would move 1/137 by about 4%.
+
+**The empty rung: conditional.** In MIT's reading the three forces fill three of four pairings of grids. The fourth, a fermionic carrier acting on bosonic matter, is where gaugino-mediated supersymmetric forces would sit, and MIT predicts that sector never appears as a fundamental interaction. The claim is not that superpartners are heavy. It is a prediction of the ladder's own rule, beyond the deposited paper, not a theorem, and gaugino-mediated interactions seen at any energy would kill it.
 
 >[![Fine Structure](https://img.youtube.com/vi/vTbUXsrQKi8/mqdefault.jpg)](https://www.youtube.com/watch?v=vTbUXsrQKi8)
 >
