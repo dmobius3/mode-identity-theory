@@ -13,8 +13,6 @@ What stays fixed is the vacuum. Its geometric seed is the first positive vibrati
 
 The 120-element group that forms the space leaves an empty stretch in its vibration spectrum, which lines up with the missing large-angle power in the oldest light. The two headline values of the Hubble constant sit two positions apart on its 120-position grid. At a black hole, the wave goes silent for an observer hovering outside. Five predictions are locked in ahead of Euclid's DR1 data.
 
-One constant, one evolving, both read from the same standing wave.
-
 ---
 
 ## [Cosmological Constant](files/cosmological-constant.md)
@@ -70,8 +68,6 @@ One constant, one evolving, both read from the same standing wave.
 ## [Black Holes](files/black-hole.md)
 
 **Black Double Zeros.** In MIT, a black hole is where enough wave content gathers on the surface that the observer's phase reaches the edge of its range, and the sampling amplitude, the factor that lets the wave be read, falls to zero. The wave doesn't stop; the reading does, like a node on a guitar string: the string is still there, the displacement is zero. For an observer hovering outside, that first zero follows from matching the amplitude to general relativity's redshift near the horizon. A second zero, the local scale hierarchy collapsing over the same approach, is the conjecture behind the name. Because the wave persists, the information is still in it; whether it comes back out in Hawking radiation is open. The wave's slope at the horizon reproduces the $`1/M`$ in Hawking's temperature, the rest of the thermodynamics and the merger waveforms still come from standard physics, and the interior isn't modeled yet.
-
-The wave $`\Psi`$ still flows. The surface still hums at $`\Lambda_\text{top}`$. The topology holds. Seen from outside, the observer goes silent.
 
 >[![Black Double Zeros](https://img.youtube.com/vi/iByR_Bv5Vng/mqdefault.jpg)](https://www.youtube.com/watch?v=iByR_Bv5Vng)
 >
