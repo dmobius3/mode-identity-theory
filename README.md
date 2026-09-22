@@ -62,7 +62,7 @@ mode-identity-theory/
     │   ├─ mass-spectrum              # fermion masses as position on the lattice
     │   ├─ fine-structure             # α is the first realized step of Λ
     │   ├─ the-waltz                  # the gravity between surface and space
-    │   └─ the-mirror                 # curvature duality of primes and matter
+    │   └─ the-mirror                 # curvature duality: gauge gap and zero inaccessibility
     └─ tools/                      # interactive, publications, and references
 ```
 
@@ -92,9 +92,9 @@ So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band s
 
 The underlying space stays fixed. What changes is the phase of a standing wave carried by the temporal boundary.
 
-The Möbius twist makes the lifted wave change sign after one lap and return only after two, so its fundamental phase period is $`4\pi`$ rather than $`2\pi`$. The closed edge itself returns after two laps, so nothing on it is double-valued. MIT reads the advance of that phase as time.
+The Möbius twist makes the lifted wave change sign after one lap and return only after two, so its fundamental phase period is $`4\pi`$ rather than $`2\pi`$. The closed edge itself returns after two laps, so nothing on it is double-valued. The advance of that phase is time.
 
-Matter appears when the wave is sampled. **Most modes cancel; the surviving patterns are read as physical states.** In that sense the universe is not built from separate particles placed into space; particles are stable realizations of the same underlying wave.
+Matter appears when the wave is sampled. **Most modes cancel; the surviving patterns are the physical states.** In that sense the universe is not built from separate particles placed into space; particles are stable realizations of the same underlying wave.
 
 ---
 
@@ -134,9 +134,9 @@ The 120-element structure contains three natural stabilizers associated with fac
 
 > **Vertices sort the electroweak address.**
 
-The representation theory supplies those decompositions. MIT's physical claim is that they are the geometric origin of the corresponding Standard Model quantum numbers. The three flat vacua supply the second part of the address; their identification with the three generations is MIT's reading, while the specific vacuum-to-generation assignment remains open.
+The representation theory supplies those decompositions, and in MIT they are the geometric origin of the Standard Model's quantum numbers. The three flat vacua supply the second part of the address: MIT identifies them with the three generations, though which vacuum carries which generation is still open.
 
-**The address says what kind of particle it is and which generation; the mass formula then says how heavy.**
+**The address says what kind of particle it is; the mass formula says how heavy, and the mass settles which generation.**
 
 ---
 
@@ -158,7 +158,7 @@ It builds a mass from four pieces:
 
 > **The Vacuum (torsion dial):** $`T^2(\rho \otimes \sigma)`$ adjusts the result according to which flat vacuum the state occupies.
 
-Across the eight nontrivial representation seats and three vacua, the formula produces 24 fermion entries. Their proximity to the measured masses is a **comparison, not a prediction.** The weight of the construction instead rests on the geometric spectrum, the quantum-number gates, and the independently reproduced exact torsion algebra.
+Across the eight nontrivial representation seats and three vacua, the formula produces 24 fermion entries. Their proximity to the measured masses is a **comparison, not a prediction.** The weight of the construction rests instead on the 24-entry geometric spectrum and the exact torsion algebra, whose eight nontrivial irrep-level forms an independent method reproduced.
 
 ---
 
