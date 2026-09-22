@@ -228,8 +228,6 @@ The framework's quantitative claims, with their standing shown explicitly:
 >
 >*[ESA Euclid Mission:](https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview) Euclid is designed to explore the evolution of the dark Universe. It is creating a 3D-map of the Universe by observing billions of galaxies across more than a third of the sky, measuring how the universe expands and how structure grows.*
 
-All five tests below were fixed before any Euclid DR1 data, with their scoring thresholds stated in advance. Four stand as deposited on Zenodo on 5 June 2026; the first, $`\Lambda`$ epoch-independence, was re-registered on 21 September 2026 under a stricter rule, because its June threshold left open how matter is treated in the reconstruction.
-
 | Test | MIT says | Field baseline | MIT loses if |
 |---|---|---|---|
 | [↗](/files/cosmos/files/euclid-dr1.md#i-lambda-epoch-independence) $`\Lambda`$ epoch-independence | $`\Lambda_\text{obs} = 3/R^2`$ is topologically fixed; $`\Omega_\text{DE}(z)`$ flat across all DR1 redshift bins *(deposited notation)* | Flat ΛCDM also uses an epoch-independent cosmological constant; dynamical-dark-energy models allow the dark-energy sector to evolve. | Either of two binned reconstructions in the DR1 BAO bins, one holding matter at the fiducial fraction and one fitting it, varies at $`\geq 2\sigma`$ (re-registered 2026-09-21) |
