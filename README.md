@@ -37,7 +37,7 @@ In 300 BC, Euclid proved Plato's observation that only five regular solids close
 
 ---
 
-## 📂 Repo Structure
+## 📂 Repo Layout
 
 ```
 mode-identity-theory/
