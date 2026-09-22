@@ -11,8 +11,6 @@ Much of it is exact mathematics. Positive curvature gives the physical gauge flu
 
 Where the structure meets measured numbers, the scorecard is mixed. With the electron setting the scale, the mass formula's entries land within a factor of 3 of five of the other eight charged fermions, but a pre-registered null test shows scrambled values do as well, so that count is not evidence. The fine structure constant lands within 0.4% of its low-energy value, the strong and weak couplings follow on a ladder of grid assignments, and that ladder's one empty rung predicts that no gaugino-mediated supersymmetric force appears. Newton's constant stays measured, and dark matter is the geometry of space itself.
 
-One curvature floors the gauge sector and blocks one road to the zeros.
-
 ---
 
 ## [Yang-Mills](files/yang-mills.md)
@@ -51,8 +49,6 @@ With the electron setting the scale, entries land within a factor of 3 of five o
 
 **The Cost to Dance.** This page treats $`\Lambda`$ as a note added to Einstein's field equations. Its seed is the first positive level of the Möbius surface, $`\Lambda_\text{top} = 2/R^2`$, and a factor of 3/2 carries it to the vacuum reference $`\Lambda_\text{ref} = 3/R^2`$: the Gauss equation gives the geometric 3, and general relativity's de Sitter relation supplies the 1/2. That 3/2 belongs to the vacuum alone; two masses still attract through the ordinary $`8\pi G`$, with no 3/2. In MIT, Newton's constant is the exchange rate between the curvature and mass sectors, and it stays measured: solving the relation for $`G`$ closes a loop rather than predicting a number. Gravity joins a continuous space to a discrete 120-position domain, and quantizing either side into the other's kind would remove something one side supplies; MIT has no quantum completion that keeps both. Dark matter is the geometry of space itself: it couples to gravity but carries no gauge fields a detector could see, so decades of null searches are expected, and the Bullet Cluster's split between mass and gas follows qualitatively. How that sector maps onto the measured dark matter is still open.
 
-Einstein's field equations are the score; 3/2 is the time signature.
-
 >[![The Waltz](https://img.youtube.com/vi/aoLJwZDkNGk/mqdefault.jpg)](https://www.youtube.com/watch?v=aoLJwZDkNGk)
 >
 >*Video: [The Waltz: Λ Note to Einstein's Field Equations](https://www.youtube.com/watch?v=aoLJwZDkNGk)*
@@ -62,8 +58,6 @@ Einstein's field equations are the score; 3/2 is the time signature.
 ## [The Mirror](files/the-mirror.md)
 
 **One Curvature, Two Jobs.** The zeros of the Riemann zeta function and its relatives, the L-functions, encode how the primes are distributed, and the Riemann hypothesis is a claim about where they lie. One hoped-for route, named for Hilbert and Pólya, looks for a spectrum that encodes those zeros. The space MIT uses reads that arithmetic with arbitrary precision: for the integer-spin representations its torsion factors exactly into L-values built on the primes 2, 3 and 5, and one of its invariants contains the zeta function itself. But a theorem shows that no natural construction in a stated class on this space can pin down an individual zero: every way one could vanish runs into one of four obstructions. In MIT the same positive curvature does two jobs, putting a floor under the gauge field and accounting for one of those four obstructions. One lemma also closes a door for the mass formula: no natural map joins the grid's positions to the spectral parameter $`s`$, so the formula can't be completed by extending this arithmetic.
-
-Mirrors show you everything. They determine nothing.
 
 >[![The Mirror](https://img.youtube.com/vi/78nEAE8Se4o/mqdefault.jpg)](https://www.youtube.com/watch?v=78nEAE8Se4o)
 >
