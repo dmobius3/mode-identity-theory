@@ -1,4 +1,23 @@
-MIT License
+Copyright (c) 2025-2026 Blake Shatto
+
+This repository carries two licenses, by content type.
+
+  Code: everything inside any `scripts/` folder, and the interactive HTML
+  pages in `files/tools/files/`. Licensed under the MIT License, below.
+
+  Content: everything else, including the text, papers, figures and images.
+  Licensed under the Creative Commons Attribution 4.0 International License
+  (CC BY 4.0); the notice and links are below. This matches the license on
+  the Zenodo deposits.
+
+Third-party material quoted or reproduced in this repository is not
+relicensed by this notice and remains subject to its original terms and
+applicable copyright exceptions.
+
+------------------------------------------------------------------------------
+MIT License (code; the standard open-source license, unrelated to the
+theory's name)
+------------------------------------------------------------------------------
 
 Copyright (c) 2025-2026 Blake Shatto
 
@@ -19,3 +38,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+------------------------------------------------------------------------------
+Creative Commons Attribution 4.0 International (content)
+------------------------------------------------------------------------------
+
+Copyright (c) 2025-2026 Blake Shatto
+
+The content of this repository is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+You are free to share (copy and redistribute the material in any medium or
+format) and to adapt (remix, transform, and build upon the material) for any
+purpose, even commercially, provided you give appropriate credit, provide a
+link to the license, and indicate if changes were made.
+
+License summary: https://creativecommons.org/licenses/by/4.0/
+Full legal code: https://creativecommons.org/licenses/by/4.0/legalcode
