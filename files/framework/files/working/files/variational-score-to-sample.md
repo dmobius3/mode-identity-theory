@@ -7,11 +7,11 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-02):** WORKING / MOTIVATED. Nothing derived: no functional fixed, no lapse equation solved. The page fixes the conventions any candidate must respect and pre-registers its PASS/FAIL before running.
+**Status (2026-09-23):** WORKING / MOTIVATED. The first clock arm has run, recorded at `variational-clock-arm.md`: in the class of §11 the lapse equation is solved and the variation selects no level, since the potential's level sets the lapse, so the independent route fails and the half power returns only as R-HALF's operator realization, below the promotion bar. The later arms (§13) are open; the pre-registered PASS/FAIL stands unchanged.
 **Summary:** Frames the dynamics problem as a variational principle for the global score-to-sample relation; the program page for the variational reading, which works the exponent derivation rather than waiting on it.
 **Inputs:** `postulate-bridge.md`, `temporal-budget.md`, `friedmann-as-output.md`, `stress-tensor-bridge.md`, the engine (chronon, sign flip, Hubble clock)
 
-WORKING / MOTIVATED. Ledger effect: none. Engine effect: none. Nothing on this page is derived: no candidate MIT functional is fixed, and no lapse equation is solved. The page fixes the corpus conventions any candidate must respect, states the two-level action architecture, names the one bounded computation, and pre-registers its PASS and FAIL conditions before it is run. This is the working program behind the variational reading recorded on the [postulate bridge](postulate-bridge.md).
+WORKING / MOTIVATED. Ledger effect: none. Engine effect: none. The first clock arm has run, recorded at [The Variational Clock Arm](variational-clock-arm.md): in the class of §11 the lapse equation is solved and the variation selects no level, so the independent route fails and the half power returns only as R-HALF's operator realization. No functional outside that class is fixed. The page fixes the corpus conventions any candidate must respect, states the two-level action architecture, names the one bounded computation, and pre-registered its PASS and FAIL conditions before the run. This is the working program behind the variational reading recorded on the [postulate bridge](postulate-bridge.md).
 
 **Primary promotion gate:** derive the observer lapse $`N = S^{1/2}`$ from the native global functional, without inserting the exponent by hand.
 
@@ -391,6 +391,8 @@ N(t)=S(t)^{1/2}
 ```
 
 with the exponent fixed by the native functional.
+
+*Run 2026-09-23 and recorded at [The Variational Clock Arm](variational-clock-arm.md). The registration above is unchanged. With its kinetic-and-potential table public, no freeze of a functional could have been blind, so the arm is recorded as a Result scored against these terms.*
 
 ## 12. Existing negative evidence
 

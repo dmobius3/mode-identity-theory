@@ -1,0 +1,25 @@
+PASS  V1 budget identity = Rayleigh energy integral; S = -2 Psi'
+      Psi'' + Psi/4, 4(Psi'^2 + Psi^2/4) - 1 and S + 2 Psi' all vanish
+PASS  V2 T/N + N W is reparametrization invariant; degree p needs T/N^(p-1)
+      gap vanishes at a = b = 1, and at a = p - 1 for degree p
+PASS  V3 N^2 = T/W, eliminated value 2 sqrt(T W), symmetric; degree p: N^p = (p-1) T/W
+      N = sqrt(T)/sqrt(W), value = 2*sqrt(T)*sqrt(W)
+PASS  V4 the level table: N = 1, S^(1/2), S at w = 2, 1, 0
+      N = s**(1 - w/2)/(2*sqrt(c)), action = sqrt(c)*s**(w/2 + 1)
+PASS  V5 the standing wave solves the constrained variation at every w
+      multiplier = -sqrt(c)*s**(w/2 - 1)*w/4
+PASS  V6 budget metric needs W = 1/(4S) for N = S^(1/2)
+      T' = 1/4, W = 1/(4*s)
+PASS  V7 tick measure is 2 N W; rate candidate same weight; Lambda piece absent
+      action = 2 N W; action at amplitude = s**(3/2)/2; dressed fit [{alpha: 1/4, beta: 0}]
+PASS  V8 exponent 1/2 in the class; action x lapse = 2T; class and eps family meet only at eps = 0
+      exponent 1/2; potential for S^(1/2+eps): s**(1 - 2*epsilon)/4; class action exponent 3/2 - epsilon; meet at eps = [0]
+control  V1 the whole-angle wave's energy integral is not its budget        as required
+control  V2 T/N^2 + N W is not                                              as required
+control  V3 unequal powers eliminate to an asymmetric mean                  as required
+control  V4 with the budget-metric kinetic term the amplitude level misses  as required
+control  V5 without the constraint force the amplitude level fails          as required
+control  V6 no native level gives the half power with the budget metric     as required
+control  V7 a lapse carrying a Lambda piece fits with beta != 0             as required
+control  V8 unequal lapse powers move the exponent                          as required
+8/8 checks pass; 8/8 controls as required
