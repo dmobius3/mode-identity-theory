@@ -1,0 +1,71 @@
+script verify_certificates.py: SHA-256 6db8b4f1b0e15336ac52345652443f5c98c847d9f48a267c8b0ef7ae99fcaa38
+data sr_v2_certificates.json: SHA-256 eb174fa1b15f0ad9b309b7c45fa43814381188a37ef86afeebf7543b77ebe7ff
+python 3.13.13, sympy 1.14.0, numpy 2.5.0, mpmath 1.3.0
+PASS r = [P_u P_(Theta u)]^2 is a real polynomial with rational coefficients
+PASS convention: Theta R_y(pi) acts as w -> -conj(w) (deviation 1.47e-50) and R_z(pi) as w_k -> (-1)^(k-3) w_k (deviation 2.67e-50)
+PASS the model gives M8.12's values 924 r6 = 1, 36, 225, 400 at the weight states v3, v2, v1, v0
+
+controls: the six finite-stabiliser census orbits of M8.12, from its exact representatives
+  octahedron: certified on the whole sphere at radius 1e-50; signature (6, 0, 3); M8.12 (6, 0, 3)
+PASS control octahedron: certified from its exact point; signature equals M8.12's (6, 0, 3); 924 r6 encloses 288
+  hexagon: certified on the whole sphere at radius 1e-50; signature (9, 0, 0); M8.12 (9, 0, 0)
+PASS control hexagon: certified from its exact point; signature equals M8.12's (9, 0, 0); 924 r6 encloses 463
+  pyramid: certified on the whole sphere at radius 1e-50; signature (5, 0, 4); M8.12 (5, 0, 4)
+PASS control pyramid: certified from its exact point; signature equals M8.12's (5, 0, 4); 924 r6 encloses 1188/5
+  prism: certified on the whole sphere at radius 1e-50; signature (3, 0, 6); M8.12 (3, 0, 6)
+PASS control prism: certified from its exact point; signature equals M8.12's (3, 0, 6); 924 r6 encloses 8800/43
+  C3ray: certified on the whole sphere at radius 1e-50; signature (5, 0, 4); M8.12 (5, 0, 4)
+PASS control C3ray: certified from its exact point; signature equals M8.12's (5, 0, 4); 924 r6 encloses 1188/5
+  D2ray: certified on the whole sphere at radius 1e-50; signature (5, 0, 4); M8.12 (5, 0, 4)
+PASS control D2ray: certified from its exact point; signature equals M8.12's (5, 0, 4); 924 r6 encloses 225
+
+controls in their own fixed sets: the pyramid (C5, real) and the prism (D3, real), from exact points
+  pyramid: fixed set of real dimension 2, certified at radius 1e-50; stars (proper, improper, undecided) (5, 5, 0); full (5, 0, 4); on the fixed set (1, 0, 0)
+PASS control pyramid: isotropy order 10 (5 proper, 5 improper) from the stars of its box; full signature (5, 0, 4); on its fixed set (1, 0, 0), its line extremum
+  prism: fixed set of real dimension 2, certified at radius 1e-50; stars (proper, improper, undecided) (6, 6, 0); full (3, 0, 6); on the fixed set (0, 0, 1)
+PASS control prism: isotropy order 12 (6 proper, 6 improper) from the stars of its box; full signature (3, 0, 6); on its fixed set (0, 0, 1), its line extremum
+PASS control D2 ray: isotropy order 8 (4 proper, 4 improper) from the stars of its whole-sphere box ((4, 4, 0))
+
+the three outside orbits, each re-checked at its published box
+PASS O1: the published fixed set is the real part of the C2 character subspace m0 = 1, and the stated group fixes it exactly
+PASS O1: the Krawczyk test passes at the published centre and radius 1e-55: one critical orbit in the box (fixed-set dimension 4, slices [])
+PASS O1: isotropy of order 4 from the stars of this box ((2, 2, 0))
+  O1: 924 r6 in [215.775792501668413495232338935878268247683235575953591, 215.7757925016684134952323389358782682476832355759535913], width 3.23e-52
+PASS O1: the value enclosure has width below 1e-50 and begins 215.7757925…, as Section 7.2 prints
+  O1: signatures: full (4, 0, 5), on the isotropy fixed set (1, 0, 2), on the complex C2 fixed set (2, 0, 3)
+PASS O1: signatures certified as Section 7.2 prints them: full (4, 0, 5), on the isotropy fixed set (1, 0, 2), on the C2 fixed set (2, 0, 3)
+PASS O2: the published fixed set is the real part of the whole space, and the stated group fixes it exactly
+PASS O2: the Krawczyk test passes at the published centre and radius 1e-55: one critical orbit in the box (fixed-set dimension 7, slices ['Ty'])
+PASS O2: isotropy of order 2 from the stars of this box ((1, 1, 0))
+  O2: 924 r6 in [238.0165289256198347107438016528925619834710743801652891, 238.0165289256198347107438016528925619834710743801652894], width 3.1e-52
+PASS O2: the value enclosure has width below 1e-50 and begins 238.0165289…, as Section 7.2 prints
+  O2: signatures: full (6, 0, 3), on the isotropy fixed set (4, 0, 1)
+PASS O2: signatures certified as Section 7.2 prints them: full (6, 0, 3), on the isotropy fixed set (4, 0, 1)
+PASS O3: the published fixed set is the real part of the C2 character subspace m0 = 1, and the stated group fixes it exactly
+PASS O3: the Krawczyk test passes at the published centre and radius 1e-55: one critical orbit in the box (fixed-set dimension 4, slices [])
+PASS O3: isotropy of order 4 from the stars of this box ((2, 2, 0))
+  O3: 924 r6 in [238.3568547430952703455321233837554885019944758334713339, 238.3568547430952703455321233837554885019944758334713345], width 6.14e-52
+PASS O3: the value enclosure has width below 1e-50 and begins 238.3568547…, as Section 7.2 prints
+  O3: signatures: full (7, 0, 2), on the isotropy fixed set (2, 0, 1), on the complex C2 fixed set (3, 0, 2)
+PASS O3: signatures certified as Section 7.2 prints them: full (7, 0, 2), on the isotropy fixed set (2, 0, 1), on the C2 fixed set (3, 0, 2)
+PASS O2: 28800/121 lies in its value enclosure
+
+arms
+PASS arm: with its centre moved by 1e-50, O1's box of radius 1e-55 no longer certifies
+PASS arm: without -2 mu G the pyramid's full signature changes (to (3, 0, 6))
+PASS arm: without its slice columns the full bordered matrix at O1's box is not certified
+PASS arm: O1's fixed set is not inside the complex C2 subspace of the other character
+PASS arm: the stated group check fails for the other character
+PASS arm: 28801/121 lies outside O2's value enclosure
+PASS arm: 28800/121 + 1e-40 lies outside O2's value enclosure
+PASS arm: 28800/121 - 1e-40 lies outside O2's value enclosure
+PASS arm: a pyramid displaced by 1e-6 keeps only the identity among its star permutations ((1, 0, 0))
+PASS arm: a random unit state does not certify as critical
+PASS arm: a misprinted value, 215.7757926…, would not match O1's enclosure
+PASS arm: v0, whose stabiliser is continuous, does not certify with four slices
+
+summary
+  O1: 924 r6 width 3.23e-52; full (4, 0, 5); isotropy fixed set (1, 0, 2); C2 fixed set (2, 0, 3)
+  O2: 924 r6 width 3.1e-52; full (6, 0, 3); isotropy fixed set (4, 0, 1); C2 fixed set None
+  O3: 924 r6 width 6.14e-52; full (7, 0, 2); isotropy fixed set (2, 0, 1); C2 fixed set (3, 0, 2)
+ALL PASS

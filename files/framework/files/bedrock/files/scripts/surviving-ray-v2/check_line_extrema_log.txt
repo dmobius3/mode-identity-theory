@@ -1,0 +1,11 @@
+script check_line_extrema.py: SHA-256 88f07825506465fbf51b8e92795b63531e52496c80388387d7d93a652c379c66
+924 r6 on C5 line: -875*s**2 + 840*s + 36  | on C3 line: -315*s**2 + 504*s + 36
+PASS C5 line: downward parabola, interior critical point s = 12/25 is the line maximum (the pyramid, 1188/5)
+PASS C3 line: downward parabola, interior critical point s = 4/5 is the line maximum (the C3 ray v2 + 2 v-1, 1188/5)
+PASS the minima on those two lines are endpoints: coherent (1) on C5 and v2 (36) on C3
+PASS arm: an upward parabola would fail the maximum test
+D3 line critical values: {'hexagon z=0': '463', 'prism z=sqrt(23/10)': '8800/43', 'octahedron z=i sqrt(10)/2': '288', 'zonal z=inf': '400'}
+D2 line critical values: {'octahedron z=0': '288', 'hexagon z=sqrt(30)/3': '463', 'D2 ray z=i sqrt(30)/5': '225', 'zonal z=inf': '400'}
+PASS D3 line: the prism (8800/43) is the lowest critical value, the hexagon (463) the highest
+PASS D2 line: the D2 ray (225) is the lowest critical value, a rotated hexagon (463) the highest
+ALL PASS

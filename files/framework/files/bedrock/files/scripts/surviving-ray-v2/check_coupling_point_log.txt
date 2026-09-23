@@ -1,0 +1,16 @@
+script check_coupling_point.py: SHA-256 93d879660610d23626a04e98a7d2462d7702713fa4e39476b5025ef4ac9450fa
+eta at the point: {'H': '2/5', 'E': '3/43', 'I': '-2/5', 'B': '-1/4'}
+PASS KU eta at the point: H 2/5, E 3/43, I -2/5, B -1/4
+PASS KU energies at the point give the ten census values of 924 r6
+PASS arm: at (1, -32, -11) the energies miss the census
+PASS KU states H, E, I, B at those eta are the census pyramid, prism, C3 ray and D2 ray (squared moduli)
+PASS arm: a prism at eta = 1/43 would not match
+PASS r6 = (64 - 7 E)/924 at (1, -32, -12) as a polynomial identity in the 14 real coordinates
+PASS arm: at (1, -32, -11) the identity fails
+PASS <3 0; 3 0|2 0> = 2/sqrt(21), so |B_20|^2 at v0 is 7 c^2 = 4/3, as KU's table uses
+PASS KU's printed coefficient sqrt(2/3) would give 2/3 instead
+KU E3prime coefficients at the point: ['6', '-84', '-2/3']  ratios (c~3/|c~1|, c~2/|c~1|): ['-1/9', '-14']
+PASS the point is (c~3/|c~1|, c~2/|c~1|) = (-1/9, -14) with c~1 > 0, inside the drawn window of the phase-A region
+PASS the invariant form agrees: r6 = -5/231 - |f|^2/22 + (7/11)|a00|^2 + TrN^2/198 gives the same ratios for -r6
+PASS arm: the point (1, -32, -11) would sit elsewhere
+ALL PASS

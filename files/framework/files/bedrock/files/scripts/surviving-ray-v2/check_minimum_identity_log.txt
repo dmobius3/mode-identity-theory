@@ -1,0 +1,14 @@
+script check_minimum_identity.py: SHA-256 683f4764894df603140ee0db43cf04c0123be89352284e6fe8f0844c14281ba1
+PASS all 49 coefficients <3 m1; 3 m2 | 6 m1+m2> = sqrt(C(6,3+m1) C(6,3+m2) / C(12,6+m1+m2)) (0 mismatches)
+PASS arm: spin-4 coefficients fail the same test (43 mismatches)
+PASS |[u (x) Theta u]_6|^2 = [P_u P_(Theta u)]^2 identically (14 real variables)
+PASS arm: [P_u P_u]^2 is not |rho_6(u)|^2
+PASS arm: dropping the 1/C(12,k) weights breaks it
+PASS [P_u]^2 = |u|^2 and [P_(Theta u)]^2 = |u|^2
+PASS v1's F_u homogenised equals P_u(x, -y)
+PASS coherent v_3: 1/924 = 1/924; hexagon: 463/924 = 463/924
+PASS roots of F_(Theta u) are the antipodes of the roots of F_u (max distance 2.4e-15)
+PASS P_(Theta u)(x, y) = -conj(P_u)(y, -x) identically
+PASS arm: +conj(P_u)(y, -x) fails
+PASS upper bound: max ratio over 20000 random pairs 0.8404 <= 1, and x^6 x^6 gives exactly 1
+ALL PASS

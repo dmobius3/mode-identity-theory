@@ -1,0 +1,78 @@
+packet work_item_4b_packet.md: SHA-256 22df97691c84e7b7aabb1bd164bb0527d6b6c541665774cdf4f06fa39e7a2f12
+script certify_isotropy.py: SHA-256 6c6efca7e23428ed5acf8675322e37bb8d37bd76c142d3cad3152f512db7fdd9
+definitions from certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+--- the definitions' own checks (work item 4 provenance and model) ---
+packet work_item_4_packet.md: SHA-256 458de644a3639d9a08b4a98a8cb11f5142bc447022a6d5380b096bbe8b1dd4ca
+script certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r4.npz: matches the packet pin
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r5.npz: matches the packet pin
+  input OpenWave/M8_S/identify_census_states.py: matches the packet pin
+  input OpenWave/M8_S/identify_census_states_log.txt: matches the packet pin
+PASS the four inputs match the packet pins
+PASS r = [P_u P_(Theta u)]^2 is a real polynomial
+model built: r has 263 terms; gradient 512 monomials; Hessian 105 monomials
+PASS the model gives 924 r6 = 1, 36, 225, 400 at v3, v2, v1, v0
+PASS R_x(pi) acts as w_k -> -w_(6-k) in these coordinates
+PASS both sectors hold the three targets and the three controls
+--- work item 4b ---
+PASS Theta o D(R_y(pi)) acts as w -> -conj(w) in these coordinates (max deviation 3.5e-15)
+PASS Theta commutes with rotations (max deviation 1.9e-15)
+
+part 1: controls first
+  pyramid (full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.26e-61; |nu| <= 5.97e-62; smallest singular value 0.00364004); 924 r6 in [237.6, 237.6]
+  pyramid: upper bound from the stars: 5 unitary + 5 antiunitary (undecided 0)
+  pyramid: mirror normal found with antiunitary defect -2.2e-16
+  pyramid: aligned state lies in the joint fixed set to residual 3.0e-08
+  pyramid: CERTIFIED in the joint fixed set (real dimension 2, slices 0) at radius 1e-30; 924 r6 in [237.6, 237.6]; generated group of order 10; phase lifts: C5 about z: e^(-2 pi i 2/5); Theta D(R_y(pi)) w = -w to 7.7e-16
+PASS control pyramid: isotropy certified exactly, order 10 (5 unitary, 5 antiunitary); fingerprints agree
+  prism (full sphere): CERTIFIED at radius 1e-30 (Newton residual 1.21e-61; |nu| <= 2.67e-62; smallest singular value 0.0306935); 924 r6 in [204.6511627906977, 204.6511627906977]
+  prism: upper bound from the stars: 6 unitary + 6 antiunitary (undecided 0)
+  prism: mirror normal found with antiunitary defect 2.2e-16
+  prism: aligned state lies in the joint fixed set to residual 2.0e-08
+  prism: CERTIFIED in the joint fixed set (real dimension 2, slices 0) at radius 1e-30; 924 r6 in [204.6511627906977, 204.6511627906977]; generated group of order 12; phase lifts: C3 about z: e^(-2 pi i 0/3), C2 about x: -1; Theta D(R_y(pi)) w = -w to 7.4e-16
+PASS control prism: isotropy certified exactly, order 12 (6 unitary, 6 antiunitary); fingerprints agree
+  D2ray (full sphere): CERTIFIED at radius 1e-30 (Newton residual 9.7e-62; |nu| <= 4.33e-62; smallest singular value 0.0389997); 924 r6 in [225.0, 225.0]
+  D2ray: upper bound from the stars: 4 unitary + 4 antiunitary (undecided 0)
+  D2ray: mirror normal found with antiunitary defect 7.5e-01
+  D2ray: aligned state lies in the joint fixed set to residual 1.5e+00
+FAIL control D2ray: isotropy certified exactly, order 8 (4 unitary, 4 antiunitary); fingerprints agree
+PASS arm: the displaced pyramid admits no antiunitary element (smallest defect 1.1e-13 > 1e-14)
+
+part 1: targets
+  T1 (full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.86e-61; |nu| <= 2.6e-62; smallest singular value 0.0232687); 924 r6 in [215.7757925016684, 215.7757925016684]
+  T1: upper bound from the stars: 2 unitary + 2 antiunitary (undecided 0)
+  T1: mirror normal found with antiunitary defect -6.7e-16
+  T1: aligned state lies in the joint fixed set to residual 1.6e-08
+  T1: CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-30; 924 r6 in [215.7757925016684, 215.7757925016684]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 1.0e-15
+PASS target T1: isotropy certified exactly, order 4 (2 unitary, 2 antiunitary); fingerprints agree
+  T2 (full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.96e-61; |nu| <= 4.87e-62; smallest singular value 0.0029841); 924 r6 in [238.0165289256198, 238.0165289256198]
+  T2: upper bound from the stars: 1 unitary + 1 antiunitary (undecided 0)
+  T2: mirror normal found with antiunitary defect -6.7e-16
+  T2: aligned state lies in the joint fixed set to residual 9.9e-09
+  T2: CERTIFIED in the joint fixed set (real dimension 7, slices 1) at radius 1e-30; 924 r6 in [238.0165289256198, 238.0165289256198]; generated group of order 2; phase lifts: no unitary part; Theta D(R_y(pi)) w = -w to 1.4e-15
+PASS target T2: isotropy certified exactly, order 2 (1 unitary, 1 antiunitary); fingerprints agree
+  T3 (full sphere): CERTIFIED at radius 1e-30 (Newton residual 1.83e-61; |nu| <= 4.43e-62; smallest singular value 0.00245354); 924 r6 in [238.3568547430953, 238.3568547430953]
+  T3: upper bound from the stars: 2 unitary + 2 antiunitary (undecided 0)
+  T3: mirror normal found with antiunitary defect -6.7e-16
+  T3: aligned state lies in the joint fixed set to residual 1.7e-08
+  T3: CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-30; 924 r6 in [238.3568547430953, 238.3568547430953]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 9.2e-16
+PASS target T3: isotropy certified exactly, order 4 (2 unitary, 2 antiunitary); fingerprints agree
+PASS F2: in every certified fixed set, the coherent state and the hexagon are fixed by every element
+
+part 2: [KU] Table II at (c_gamma, c_alpha, c_beta) = (1, -32, -12)
+  G: eta = 99/145, xi = 67/145, 1 - eta - xi = -21/145
+  R: eta = -11/45
+  J: eta = -1, amplitudes squared (0, 1) on m = 3 and m = -1
+PASS G does not exist at the point (its a_pm need the square root of 1 - eta - xi < 0)
+PASS R does not exist at the point (its sqrt(eta) has eta < 0)
+PASS J reduces to the weight state m = -1 (state P, 924 r6 = 225) at the point
+  unitary part of each row's isotropy group (read from Table II): {'FF': 'SO(2)', 'F': 'SO(2)', 'P': 'SO(2)', 'Q': 'D_inf', 'D': 'O', 'A': 'D6', 'H': 'C5', 'J': 'C4', 'E': 'D3', 'I': 'C3', 'R': 'C3', 'B': 'D2', 'G': 'C2', 'C': 'C2'}
+PASS every row of Table II has a nontrivial unitary part, so none has T2's isotropy type
+PASS T1's certified isotropy is of state C's type: e^(i pi) C2z on odd m, with an antiunitary C2 T about a perpendicular axis
+PASS T3's certified isotropy is of state C's type: e^(i pi) C2z on odd m, with an antiunitary C2 T about a perpendicular axis
+
+summary
+  T1: isotropy order 4 (2 unitary + 2 antiunitary), exact; joint-set 924 r6 in [215.7757925016684135, 215.7757925016684135]
+  T2: isotropy order 2 (1 unitary + 1 antiunitary), exact; joint-set 924 r6 in [238.01652892561983471, 238.01652892561983471]
+  T3: isotropy order 4 (2 unitary + 2 antiunitary), exact; joint-set 924 r6 in [238.35685474309527035, 238.35685474309527035]
+1 FAILED

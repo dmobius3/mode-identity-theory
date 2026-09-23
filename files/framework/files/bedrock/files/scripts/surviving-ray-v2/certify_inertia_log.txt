@@ -1,0 +1,100 @@
+packet work_item_4c_packet.md: SHA-256 b0879b63ebc8dcb4179ca095c1f4b339ecc9215f5b02c952f8bce20523c9900d
+script certify_inertia.py: SHA-256 de2bff19c1705df2b501fb6f761d246f498e6e8722b3a59f940d3cf3cd1f28db
+definitions from certify_isotropy.py: SHA-256 8b2f08ea4c0069fbe508458dae94c4fd2d318e764929b20ab83855fa34352609
+--- the definitions' own checks ---
+packet work_item_4b_packet.md: SHA-256 22df97691c84e7b7aabb1bd164bb0527d6b6c541665774cdf4f06fa39e7a2f12
+script certify_isotropy.py: SHA-256 8b2f08ea4c0069fbe508458dae94c4fd2d318e764929b20ab83855fa34352609
+definitions from certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+--- the definitions' own checks (work item 4 provenance and model) ---
+packet work_item_4_packet.md: SHA-256 458de644a3639d9a08b4a98a8cb11f5142bc447022a6d5380b096bbe8b1dd4ca
+script certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r4.npz: matches the packet pin
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r5.npz: matches the packet pin
+  input OpenWave/M8_S/identify_census_states.py: matches the packet pin
+  input OpenWave/M8_S/identify_census_states_log.txt: matches the packet pin
+PASS the four inputs match the packet pins
+PASS r = [P_u P_(Theta u)]^2 is a real polynomial
+model built: r has 263 terms; gradient 512 monomials; Hessian 105 monomials
+PASS the model gives 924 r6 = 1, 36, 225, 400 at v3, v2, v1, v0
+PASS R_x(pi) acts as w_k -> -w_(6-k) in these coordinates
+PASS both sectors hold the three targets and the three controls
+--- work item 4b ---
+PASS Theta o D(R_y(pi)) acts as w -> -conj(w) in these coordinates (max deviation 3.5e-15)
+PASS Theta commutes with rotations (max deviation 1.9e-15)
+--- work item 4c ---
+PASS the census holds the six controls
+
+controls: the six finite-stabiliser census orbits against M8.12's exact signatures
+  octahedron (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 8.2e-62; |nu| <= 4.89e-62; smallest singular value 0.0461804); 924 r6 in [288.0, 288.0]
+  octahedron: certified transverse signature (6, 0, 3); M8.12 exact (6, 0, 3)
+PASS control octahedron: certified signature equals M8.12's exact (6, 0, 3)
+  hexagon (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.37e-61; |nu| <= 9.95e-62; smallest singular value 0.0801314); 924 r6 in [463.0, 463.0]
+  hexagon: certified transverse signature (9, 0, 0); M8.12 exact (9, 0, 0)
+PASS control hexagon: certified signature equals M8.12's exact (9, 0, 0)
+  pyramid (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.26e-61; |nu| <= 5.97e-62; smallest singular value 0.00364004); 924 r6 in [237.6, 237.6]
+  pyramid: certified transverse signature (5, 0, 4); M8.12 exact (5, 0, 4)
+PASS control pyramid: certified signature equals M8.12's exact (5, 0, 4)
+  prism (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 1.21e-61; |nu| <= 2.67e-62; smallest singular value 0.0306935); 924 r6 in [204.6511627906977, 204.6511627906977]
+  prism: certified transverse signature (3, 0, 6); M8.12 exact (3, 0, 6)
+PASS control prism: certified signature equals M8.12's exact (3, 0, 6)
+  C3ray (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 7.63e-62; |nu| <= 6.22e-62; smallest singular value 0.00777448); 924 r6 in [237.6, 237.6]
+  C3ray: certified transverse signature (5, 0, 4); M8.12 exact (5, 0, 4)
+PASS control C3ray: certified signature equals M8.12's exact (5, 0, 4)
+  D2ray (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 9.7e-62; |nu| <= 4.33e-62; smallest singular value 0.0389997); 924 r6 in [225.0, 225.0]
+  D2ray: certified transverse signature (5, 0, 4); M8.12 exact (5, 0, 4)
+PASS control D2ray: certified signature equals M8.12's exact (5, 0, 4)
+
+arms (each on a green parent)
+  hexagon without the -2 mu G term: (4, 0, 5)
+PASS arm (packet): dropping the -2 mu G term gives a certified signature different from the hexagon's (9, 0, 0)
+  hexagon without the slice columns: None
+PASS arm (added): without the slice columns the orbit directions are null and no signature is certified
+
+targets
+  T1 (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.86e-61; |nu| <= 2.6e-62; smallest singular value 0.0232687); 924 r6 in [215.7757925016684, 215.7757925016684]
+  T1 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T1 (isotropy fixed set): aligned state lies in the joint fixed set to residual 1.6e-08
+  T1 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-30; 924 r6 in [215.7757925016684, 215.7757925016684]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 1.0e-15
+  T1: aligned state lies in the C2 character subspace (m0 = 1) to residual 1.6e-08
+  T1: CERTIFIED in the complex C2 subspace (real dimension 8, slices 2) at radius 1e-30; 924 r6 in [215.7757925016684, 215.7757925016684]
+  T1: certified signatures: full transverse (4, 0, 5) (work item 4 reconnaissance (4, 0, 5)); isotropy fixed set (1, 0, 2); complex C2 subspace (2, 0, 3)
+PASS T1: full transverse signature certified, dimension 9, agreeing with the reconnaissance
+PASS T1: restricted signature on the isotropy fixed set certified, dimension 3, same orbit
+PASS T1: fixed-set counts bounded by the full counts (block diagonality)
+PASS T1: restricted signature on the complex C2 subspace certified, dimension 5, same orbit
+PASS T1: fixed set within C2 subspace within full, counts nested
+PASS arm (added): in the C2 subspace without its slice columns, no signature is certified
+  T2 (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.96e-61; |nu| <= 4.87e-62; smallest singular value 0.0029841); 924 r6 in [238.0165289256198, 238.0165289256198]
+  T2 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T2 (isotropy fixed set): aligned state lies in the joint fixed set to residual 9.9e-09
+  T2 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 7, slices 1) at radius 1e-30; 924 r6 in [238.0165289256198, 238.0165289256198]; generated group of order 2; phase lifts: no unitary part; Theta D(R_y(pi)) w = -w to 1.4e-15
+  T2: certified signatures: full transverse (6, 0, 3) (work item 4 reconnaissance (6, 0, 3)); isotropy fixed set (4, 0, 1)
+PASS T2: full transverse signature certified, dimension 9, agreeing with the reconnaissance
+PASS T2: restricted signature on the isotropy fixed set certified, dimension 5, same orbit
+PASS T2: fixed-set counts bounded by the full counts (block diagonality)
+  T3 (r4, full sphere): CERTIFIED at radius 1e-30 (Newton residual 1.83e-61; |nu| <= 4.43e-62; smallest singular value 0.00245354); 924 r6 in [238.3568547430953, 238.3568547430953]
+  T3 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T3 (isotropy fixed set): aligned state lies in the joint fixed set to residual 1.7e-08
+  T3 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-30; 924 r6 in [238.3568547430953, 238.3568547430953]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 9.2e-16
+  T3: aligned state lies in the C2 character subspace (m0 = 1) to residual 1.7e-08
+  T3: CERTIFIED in the complex C2 subspace (real dimension 8, slices 2) at radius 1e-30; 924 r6 in [238.3568547430953, 238.3568547430953]
+  T3: certified signatures: full transverse (7, 0, 2) (work item 4 reconnaissance (7, 0, 2)); isotropy fixed set (2, 0, 1); complex C2 subspace (3, 0, 2)
+PASS T3: full transverse signature certified, dimension 9, agreeing with the reconnaissance
+PASS T3: restricted signature on the isotropy fixed set certified, dimension 3, same orbit
+PASS T3: fixed-set counts bounded by the full counts (block diagonality)
+PASS T3: restricted signature on the complex C2 subspace certified, dimension 5, same orbit
+PASS T3: fixed set within C2 subspace within full, counts nested
+
+reading at the two signs: a local minimum of the energy on a set has restricted n- = 0 at g = 1, n+ = 0 at g = -1
+  T1 on the full transverse space: (4, 0, 5); local minimum at g = 1: no; at g = -1: no
+  T1 on the isotropy fixed set: (1, 0, 2); local minimum at g = 1: no; at g = -1: no
+  T1 on the complex C2 subspace: (2, 0, 3); local minimum at g = 1: no; at g = -1: no
+  T2 on the full transverse space: (6, 0, 3); local minimum at g = 1: no; at g = -1: no
+  T2 on the isotropy fixed set: (4, 0, 1); local minimum at g = 1: no; at g = -1: no
+  T3 on the full transverse space: (7, 0, 2); local minimum at g = 1: no; at g = -1: no
+  T3 on the isotropy fixed set: (2, 0, 1); local minimum at g = 1: no; at g = -1: no
+  T3 on the complex C2 subspace: (3, 0, 2); local minimum at g = 1: no; at g = -1: no
+
+T3 against the octahedron at g = 1: T3 index 7 (certified here) at 924 r6 in [238.3568547430953, 238.3568547430953]; octahedron index 6 (M8.12 exact; certified here as a control) at 924 r6 in [288.0, 288.0]
+ALL PASS
+exit 0

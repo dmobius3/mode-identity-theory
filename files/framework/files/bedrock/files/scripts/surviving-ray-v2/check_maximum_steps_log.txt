@@ -1,0 +1,45 @@
+script check_maximum_steps.py: SHA-256 e3bda618ac9cadd3c7a8474a32f0420f134fd0ac8b40e74f81e713afdee7cea6
+PASS B_0 = -<Theta u, u>/sqrt(7) identically
+PASS |Theta u|^2 = |u|^2 identically
+PASS Tr N = 12 |u|^2 identically
+PASS arm: Tr N = 13 |u|^2 fails
+PASS Step 1 identity holds as a polynomial in 14 real variables
+PASS arm: 1/199 in place of 1/198 fails
+PASS weight rows [[1, 9, 0, 171/2], [1, 4, 0, 48], [1, 1, 0, 123/2], [1, 0, 1/7, 72]]
+PASS determinant 180/7 = 180/7
+PASS 924 r6 at the weight states = [1, 36, 225, 400]; coefficients [-5/231, -1/22, 7/11, 1/198]
+PASS Tr(QE) = <u, A_E u> for every traceless symmetric E
+PASS e1 Fx^2 + e2 Fy^2 + e3 Fz^2 = a(Fz^2 - 4) + b(F+^2 + F-^2), with e3 = 2a/3, e1 - e2 = 4b
+PASS e is traceless and |e|^2 = (2/3)a^2 + 8b^2
+PASS A_E = M1 (+) M1(a,-b) (+) M3 (+) 0 exactly in that basis
+PASS arm: with t1 unflipped the middle block is not literally M1(a,-b)
+PASS arm: M1 and M2 differ as matrices (so the b -> -b step is needed)
+PASS lambda_max(M1) = a + 6*b + sqrt(16*a**2 - 48*a*b + 96*b**2)
+PASS lambda_max(M3) = -2*a + sqrt(4*a**2 + 240*b**2)
+PASS on the ellipse 4a^2 + 240b^2 = 30 - 16a^2
+PASS arm: 2 * (the 8b^2 of the ellipse) breaks that
+PASS K^2 = 75/2 and K^2 N^2 = 25a^2 + 300b^2
+PASS (K - a - 6b)^2 - (16a^2 - 48ab + 96b^2) = K^2 - 2K(a + 6b) - 15a^2 + 60ab - 60b^2
+PASS homogenised: 25a^2 + 300b^2 - 2KN(a + 6b) - 15a^2 + 60ab - 60b^2 = 10[(a^2 + 6ab + 24b^2) - (3/sqrt 6) N (a + 6b)]
+PASS (a^2 + 6ab + 24b^2)^2 - (3/2)(a + 6b)^2 N^2 = 36 b^2 (a + 2b)^2
+PASS arm: 23b^2 in place of 24b^2 breaks it
+PASS a^2 + 6ab + 24b^2 = (a + 3b)^2 + 15b^2
+PASS 6 N^2 - (a + 6b)^2 = 3(a - 2b)^2, so a + 6b <= sqrt 6 on the ellipse; K - sqrt 6 = 9/sqrt 6 > 0
+PASS (3/2) N^2 - a^2 = 12 b^2, so |a| <= sqrt(3/2); K + 2a >= K - 2 sqrt(3/2) = 9/sqrt 6 > 0; 30 - 16a^2 >= 6
+PASS arm: 5 N^2 in place of 6 N^2 is not a sum of squares (a = 2b makes it negative)
+PASS (K + 2a)^2 - (30 - 16a^2) = 20 (a + sqrt 6/4)^2
+     M1: equality points (x, y) = [(-1/4, 1/8), (1/2, 0)]
+     M2: equality points (x, y) = [(-1/4, -1/8), (1/2, 0)]
+     M3: equality points (x, y) = [(-1/4, -1/8), (-1/4, 1/8)]
+PASS three equality points in all: [(-1/4, -1/8), (-1/4, 1/8), (1/2, 0)]
+PASS they are the three permutations of (2, -1, -1)/sqrt 6: sqrt6 * e in [(-1, -1, 2), (-1, 2, -1), (2, -1, -1)]
+PASS A_E = (3 (n.F)^2 - (F.F))/sqrt 6, and F.F = 12
+PASS |E|^2 = 1 when |n| = 1, and Tr E = 0
+PASS (3Fz^2 - 12)/sqrt6 is diagonal; top value 5*sqrt(6)/2 = 15/sqrt 6, only at m = +-3
+PASS f = (0, 0, 3(|alpha|^2 - |beta|^2)) on the span
+PASS <Theta w, w> = -2 alpha beta, so |B_0|^2 = 4|alpha|^2|beta|^2/7
+PASS N = diag(3/2, 3/2, 9) |w|^2 on the span, so Tr N^2 = 171/2 on its unit sphere
+PASS |rho_6|^2 = (463/924)|w|^4 - D^2/2 on the span, D = |alpha|^2 - |beta|^2
+PASS arm: -D^2/3 fails
+PASS -5/231 + 1/11 + 171/396 = 463/924, 48 + 75/2 = 171/2, 6!6!/12! = 1/924
+ALL PASS

@@ -1,0 +1,17 @@
+script check_prior_diagrams.py: SHA-256 06017d37a89bfe9f3e0308b219409d553b36d7d24dddf80a3f757c5bea63b8a3
+PASS [SP]: sum_ij O_ij O_ij = TrN^2 - |f|^2/2 on five random states, exactly (a convention check; proof above)
+PASS [SP]: |A00|^2 = (4/7)|s_-|^2 on five random states, exactly (a convention check; proof above)
+PASS arm: sum O^2 = TrN^2 + |f|^2/2 fails
+  [SP] printed minus sum O_ij O_ij at m = 3, 2, 1, 0: ['5', '5', '5', '5']; minus sum O_ij O_ji: ['-4', '1', '4', '5']
+PASS [SP]'s printed expression is sum_ij O_ij O_ij plus a constant (5), the reading the conversion uses
+PASS arm: the other reading, sum_ij O_ij O_ji, does not differ from it by a constant
+  the point in [SP]'s couplings: c1 = 17/3, c2 = -84, c3 = -2/3; c1/c3 = -17/2; chromium: -59/2
+PASS the point is not on [SP]'s chromium slice (c1/c3 = -17/2 against about -59/2)
+  the point in [DH]'s coordinates: (alpha, beta, gamma) = (-32, -12, 1) at g = -1
+PASS the point is (alpha, beta, gamma) = (-32, -12, 1) in [DH]'s form, [KU]'s (c_alpha, c_beta, c_gamma)
+PASS the point is not on [DH]'s chromium line (beta/gamma = -12 against -0.892)
+PASS arm: beta_bar = beta/126 would give a different point
+  the point in [DH]'s figures: ('-32', '-12') in the gamma > 0 one, ('32', '12') in the gamma < 0 one
+PASS the point lies outside both of [DH]'s drawn windows, with a tick-spacing margin and either axis assignment
+PASS arm: a point inside a window is found inside
+ALL PASS

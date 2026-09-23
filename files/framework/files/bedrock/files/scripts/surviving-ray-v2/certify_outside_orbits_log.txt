@@ -1,0 +1,65 @@
+packet work_item_4_packet.md: SHA-256 458de644a3639d9a08b4a98a8cb11f5142bc447022a6d5380b096bbe8b1dd4ca
+script certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r4.npz: matches the packet pin
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r5.npz: matches the packet pin
+  input OpenWave/M8_S/identify_census_states.py: matches the packet pin
+  input OpenWave/M8_S/identify_census_states_log.txt: matches the packet pin
+PASS the four inputs match the packet pins
+PASS r = [P_u P_(Theta u)]^2 is a real polynomial
+model built: r has 263 terms; gradient 512 monomials; Hessian 105 monomials
+PASS the model gives 924 r6 = 1, 36, 225, 400 at v3, v2, v1, v0
+PASS R_x(pi) acts as w_k -> -w_(6-k) in these coordinates
+PASS both sectors hold the three targets and the three controls
+
+controls: known groups (pyramid C5, prism D3, D2 ray D2), from r4
+  pyramid (full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.26e-61; |nu| <= 5.97e-62; smallest singular value 0.00364004); 924 r6 in [237.6, 237.6]
+  pyramid (subspace): certified inside the C5-fixed subspace (character m0 = 2; dimension 2 complex) at radius 1e-30; 924 r6 in [237.6, 237.6]
+  pyramid (stars): six stars certified; permutations surviving the distance test: 5 rotations, 5 reflections, 0 undecided; per-star sums separate 5 of 15 pairs
+PASS control pyramid: critical on the full sphere and in its subspace, stabiliser exactly C5 (order 5), fingerprints agree
+  prism (full sphere): CERTIFIED at radius 1e-30 (Newton residual 1.21e-61; |nu| <= 2.67e-62; smallest singular value 0.0306935); 924 r6 in [204.6511627906977, 204.6511627906977]
+  prism (subspace): certified inside the D3-fixed subspace (character m0 = 0, R_x(pi) = -1; dimension 2 complex) at radius 1e-30; 924 r6 in [204.6511627906977, 204.6511627906977]
+  prism (stars): six stars certified; permutations surviving the distance test: 6 rotations, 6 reflections, 0 undecided; per-star sums separate 0 of 15 pairs
+PASS control prism: critical on the full sphere and in its subspace, stabiliser exactly D3 (order 6), fingerprints agree
+  D2ray (full sphere): CERTIFIED at radius 1e-30 (Newton residual 9.7e-62; |nu| <= 4.33e-62; smallest singular value 0.0389997); 924 r6 in [225.0, 225.0]
+  D2ray (subspace): certified inside the D2-fixed subspace (character m0 = 1, R_x(pi) = -1; dimension 2 complex) at radius 1e-30; 924 r6 in [225.0, 225.0]
+  D2ray (stars): six stars certified; permutations surviving the distance test: 4 rotations, 4 reflections, 0 undecided; per-star sums separate 0 of 15 pairs
+PASS control D2ray: critical on the full sphere and in its subspace, stabiliser exactly D2 (order 4), fingerprints agree
+
+arms
+  displaced pyramid (stars): six stars certified; permutations surviving the distance test: 1 rotations, 0 reflections, 0 undecided; per-star sums separate 15 of 15 pairs
+PASS arm, perturbation: the displaced pyramid keeps only the identity among rotations
+  displaced pyramid, refined: CERTIFIED at radius 1e-30 (Newton residual 9.82e-62; |nu| <= 1.81e-62; smallest singular value 0.00364004); 924 r6 in [237.6, 237.6]
+PASS arm, perturbation: refined from the displaced start, the pyramid certifies again, same fingerprint
+  random state, not refined: not certified; smallest singular value 0.0291552
+PASS arm, non-critical: a random state does not certify
+  v0 with three rotation slices: not certified; smallest singular value 0.0
+PASS arm, degenerate: v0 (continuous stabiliser) does not certify
+
+targets, each from both sectors
+T1 (924 r6 ~ 215.7758)
+  T1 from r4: CERTIFIED at radius 1e-30 (Newton residual 2.86e-61; |nu| <= 2.6e-62; smallest singular value 0.0232687); 924 r6 in [215.7757925016684, 215.7757925016684]
+  T1 from r5: CERTIFIED at radius 1e-30 (Newton residual 2.18e-61; |nu| <= 3.93e-62; smallest singular value 0.0233095); 924 r6 in [215.7757925016684, 215.7757925016684]
+PASS T1: certified from both sectors, same fingerprint
+  T1 (stars, from r4): six stars certified; permutations surviving the distance test: 2 rotations, 2 reflections, 0 undecided; per-star sums separate 12 of 15 pairs
+T2 (924 r6 ~ 238.0165)
+  T2 from r4: CERTIFIED at radius 1e-30 (Newton residual 2.96e-61; |nu| <= 4.87e-62; smallest singular value 0.0029841); 924 r6 in [238.0165289256198, 238.0165289256198]
+  T2 from r5: CERTIFIED at radius 1e-30 (Newton residual 1.91e-61; |nu| <= 4.22e-62; smallest singular value 0.00297323); 924 r6 in [238.0165289256198, 238.0165289256198]
+PASS T2: certified from both sectors, same fingerprint
+  T2 (stars, from r4): six stars certified; permutations surviving the distance test: 1 rotations, 1 reflections, 0 undecided; per-star sums separate 12 of 15 pairs
+T3 (924 r6 ~ 238.3569)
+  T3 from r4: CERTIFIED at radius 1e-30 (Newton residual 1.83e-61; |nu| <= 4.43e-62; smallest singular value 0.00245354); 924 r6 in [238.3568547430953, 238.3568547430953]
+  T3 from r5: CERTIFIED at radius 1e-30 (Newton residual 1.21e-61; |nu| <= 4.79e-62; smallest singular value 0.0024557); 924 r6 in [238.3568547430953, 238.3568547430953]
+PASS T3: certified from both sectors, same fingerprint
+  T3 (stars, from r4): six stars certified; permutations surviving the distance test: 2 rotations, 2 reflections, 0 undecided; per-star sums separate 12 of 15 pairs
+  T1 (C2 subspace): certified inside the C2-fixed subspace (character m0 = 1; dimension 4 complex) at radius 1e-30; 924 r6 in [215.7757925016684, 215.7757925016684]
+PASS T1: stabiliser exactly C2 (certified in its C2 subspace; two surviving rotations)
+  T3 (C2 subspace): certified inside the C2-fixed subspace (character m0 = 1; dimension 4 complex) at radius 1e-30; 924 r6 in [238.3568547430953, 238.3568547430953]
+PASS T3: stabiliser exactly C2 (certified in its C2 subspace; two surviving rotations)
+PASS T2: stabiliser trivial (only the identity survives among rotations; none undecided)
+PASS the three value enclosures are disjoint from each other and from the ten census values
+
+summary
+  T1: 924 r6 in [215.7757925016684135, 215.7757925016684135]; |f|^2 in [0.09519172704, 0.09519172704]; |B0|^2 in [0.004807024704, 0.004807024704]; TrN^2 in [50.77442454, 50.77442454]; box radius 1e-30; rotations surviving 2; transverse signature (n-, n0, n+) = (4, 0, 5) (reconnaissance)
+  T2: 924 r6 in [238.01652892561983471, 238.01652892561983471]; |f|^2 in [0.1147462605, 0.1147462605]; |B0|^2 in [9.757335077e-6, 9.757335077e-6]; TrN^2 in [56.32074312, 56.32074312]; box radius 1e-30; rotations surviving 1; transverse signature (n-, n0, n+) = (6, 0, 3) (reconnaissance)
+  T3: 924 r6 in [238.35685474309527035, 238.35685474309527035]; |f|^2 in [0.07594891357, 0.07594891357]; |B0|^2 in [3.460143927e-6, 3.460143927e-6]; TrN^2 in [56.0452874, 56.0452874]; box radius 1e-30; rotations surviving 2; transverse signature (n-, n0, n+) = (7, 0, 2) (reconnaissance)
+ALL PASS

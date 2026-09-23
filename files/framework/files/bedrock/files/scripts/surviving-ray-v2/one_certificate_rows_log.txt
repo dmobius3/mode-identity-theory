@@ -1,0 +1,108 @@
+script one_certificate_rows.py: SHA-256 0cfdbabfede570c34f7afd9e514bc447ce33238e8bbd0f039ea8414dc5e5946f
+definitions from certify_inertia.py: SHA-256 de2bff19c1705df2b501fb6f761d246f498e6e8722b3a59f940d3cf3cd1f28db
+packet work_item_4c_packet.md: SHA-256 b0879b63ebc8dcb4179ca095c1f4b339ecc9215f5b02c952f8bce20523c9900d
+script certify_inertia.py: SHA-256 de2bff19c1705df2b501fb6f761d246f498e6e8722b3a59f940d3cf3cd1f28db
+definitions from certify_isotropy.py: SHA-256 8b2f08ea4c0069fbe508458dae94c4fd2d318e764929b20ab83855fa34352609
+--- the definitions' own checks ---
+packet work_item_4b_packet.md: SHA-256 22df97691c84e7b7aabb1bd164bb0527d6b6c541665774cdf4f06fa39e7a2f12
+script certify_isotropy.py: SHA-256 8b2f08ea4c0069fbe508458dae94c4fd2d318e764929b20ab83855fa34352609
+definitions from certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+--- the definitions' own checks (work item 4 provenance and model) ---
+packet work_item_4_packet.md: SHA-256 458de644a3639d9a08b4a98a8cb11f5142bc447022a6d5380b096bbe8b1dd4ca
+script certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r4.npz: matches the packet pin
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r5.npz: matches the packet pin
+  input OpenWave/M8_S/identify_census_states.py: matches the packet pin
+  input OpenWave/M8_S/identify_census_states_log.txt: matches the packet pin
+PASS the four inputs match the packet pins
+PASS r = [P_u P_(Theta u)]^2 is a real polynomial
+model built: r has 263 terms; gradient 512 monomials; Hessian 105 monomials
+PASS the model gives 924 r6 = 1, 36, 225, 400 at v3, v2, v1, v0
+PASS R_x(pi) acts as w_k -> -w_(6-k) in these coordinates
+PASS both sectors hold the three targets and the three controls
+--- work item 4b ---
+PASS Theta o D(R_y(pi)) acts as w -> -conj(w) in these coordinates (max deviation 3.5e-15)
+PASS Theta commutes with rotations (max deviation 1.9e-15)
+--- work item 4c ---
+--- supplement ---
+
+controls
+  pyramid: mirror normal found with antiunitary defect -2.2e-16
+  pyramid: aligned state lies in the joint fixed set to residual 3.0e-08
+  pyramid: CERTIFIED in the joint fixed set (real dimension 2, slices 0) at radius 1e-55; 924 r6 in [237.6, 237.6]; generated group of order 10; phase lifts: C5 about z: e^(-2 pi i 2/5); Theta D(R_y(pi)) w = -w to 7.7e-16
+  pyramid: radius 1e-55; stars (5, 5); full (5, 0, 4); on its fixed set (1, 0, 0)
+PASS control pyramid: isotropy of order 10 from the stars of this one box
+PASS control pyramid: full signature at the fixed-set point equals M8.12's exact (5, 0, 4)
+PASS control pyramid: signature on its fixed set is (1, 0, 0), its line extremum
+  prism: mirror normal found with antiunitary defect 2.2e-16
+  prism: aligned state lies in the joint fixed set to residual 2.0e-08
+  prism: CERTIFIED in the joint fixed set (real dimension 2, slices 0) at radius 1e-55; 924 r6 in [204.6511627906977, 204.6511627906977]; generated group of order 12; phase lifts: C3 about z: e^(-2 pi i 0/3), C2 about x: -1; Theta D(R_y(pi)) w = -w to 7.4e-16
+  prism: radius 1e-55; stars (6, 6); full (3, 0, 6); on its fixed set (0, 0, 1)
+PASS control prism: isotropy of order 12 from the stars of this one box
+PASS control prism: full signature at the fixed-set point equals M8.12's exact (3, 0, 6)
+PASS control prism: signature on its fixed set is (0, 0, 1), its line extremum
+  D2ray: mirror normal found with antiunitary defect -8.9e-16
+  D2ray: aligned state lies in the joint fixed set to residual 7.0e-09
+  D2ray: CERTIFIED in the joint fixed set (real dimension 2, slices 0) at radius 1e-55; 924 r6 in [225.0, 225.0]; generated group of order 8; phase lifts: C2 about z: 1, C2 about (1, 1, 0)/sqrt2: -1; Theta D(R_y(pi)) w = -w to 6.7e-16
+  D2ray: radius 1e-55; stars (4, 4); full (5, 0, 4); on its fixed set (0, 0, 1)
+PASS control D2ray: isotropy of order 8 from the stars of this one box
+PASS control D2ray: full signature at the fixed-set point equals M8.12's exact (5, 0, 4)
+PASS control D2ray: signature on its fixed set is (0, 0, 1), its line extremum
+
+arms (each on a green parent)
+PASS arm: without -2 mu G the pyramid's full signature changes (to (3, 0, 6))
+
+targets
+  T1 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T1 (isotropy fixed set): aligned state lies in the joint fixed set to residual 1.6e-08
+  T1 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-55; 924 r6 in [215.7757925016684, 215.7757925016684]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 1.0e-15
+PASS T1: certified in the fixed set of its full isotropy at radius 1e-55 (below 1e-50)
+PASS T1: isotropy of order 4 from the stars of this one box ((2, 2))
+PASS T1: its fixed set lies inside the complex C2 subspace of character m0 = 1
+  T1: 924 r6 in [215.775792501668413495232338935878268247683235575953591, 215.7757925016684134952323389358782682476832355759535913], width 3.23e-52; signatures: full (4, 0, 5), on the isotropy fixed set (1, 0, 2), on the C2 fixed set (2, 0, 3)
+PASS T1: all signatures certified, with dimensions 9, 3, 5
+PASS T1: the counts nest (fixed set within C2 set within full)
+PASS T1: the one-point signatures equal 4c's separately certified ones ((4, 0, 5), (1, 0, 2), (2, 0, 3))
+PASS T1: the value enclosure is narrower than 1e-45
+  T2 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T2 (isotropy fixed set): aligned state lies in the joint fixed set to residual 9.9e-09
+  T2 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 7, slices 1) at radius 1e-55; 924 r6 in [238.0165289256198, 238.0165289256198]; generated group of order 2; phase lifts: no unitary part; Theta D(R_y(pi)) w = -w to 1.4e-15
+PASS T2: certified in the fixed set of its full isotropy at radius 1e-55 (below 1e-50)
+PASS T2: isotropy of order 2 from the stars of this one box ((1, 1))
+  T2: 924 r6 in [238.0165289256198347107438016528925619834710743801652891, 238.0165289256198347107438016528925619834710743801652894], width 3.1e-52; signatures: full (6, 0, 3), on the isotropy fixed set (4, 0, 1)
+PASS T2: all signatures certified, with dimensions 9, 5
+PASS T2: the counts nest (fixed set within C2 set within full)
+PASS T2: the one-point signatures equal 4c's separately certified ones ((6, 0, 3), (4, 0, 1), None)
+PASS T2: the value enclosure is narrower than 1e-45
+  T3 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T3 (isotropy fixed set): aligned state lies in the joint fixed set to residual 1.7e-08
+  T3 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-55; 924 r6 in [238.3568547430953, 238.3568547430953]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 9.2e-16
+PASS T3: certified in the fixed set of its full isotropy at radius 1e-55 (below 1e-50)
+PASS T3: isotropy of order 4 from the stars of this one box ((2, 2))
+PASS T3: its fixed set lies inside the complex C2 subspace of character m0 = 1
+  T3: 924 r6 in [238.3568547430952703455321233837554885019944758334713339, 238.3568547430952703455321233837554885019944758334713345], width 6.14e-52; signatures: full (7, 0, 2), on the isotropy fixed set (2, 0, 1), on the C2 fixed set (3, 0, 2)
+PASS T3: all signatures certified, with dimensions 9, 3, 5
+PASS T3: the counts nest (fixed set within C2 set within full)
+PASS T3: the one-point signatures equal 4c's separately certified ones ((7, 0, 2), (2, 0, 1), (3, 0, 2))
+PASS T3: the value enclosure is narrower than 1e-45
+PASS arm: without its slice columns the full bordered matrix at T1's point is not certified
+PASS arm: T1's fixed set does not lie inside the complex C2 subspace of the other character
+PASS T2: 28800/121 lies in the value enclosure of this certificate
+PASS arm: 28801/121 lies outside it
+PASS arm: 28800/121 + 1e-40 lies outside it
+PASS arm: 28800/121 - 1e-40 lies outside it
+
+cross-check, not load-bearing: work item 4's full-sphere certificates carry the same invariants
+  T1 (work item 4 route, full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.86e-61; |nu| <= 2.6e-62; smallest singular value 0.0232687); 924 r6 in [215.7757925016684, 215.7757925016684]
+  T1: invariants overlap: True
+  T2 (work item 4 route, full sphere): CERTIFIED at radius 1e-30 (Newton residual 2.96e-61; |nu| <= 4.87e-62; smallest singular value 0.0029841); 924 r6 in [238.0165289256198, 238.0165289256198]
+  T2: invariants overlap: True
+  T3 (work item 4 route, full sphere): CERTIFIED at radius 1e-30 (Newton residual 1.83e-61; |nu| <= 4.43e-62; smallest singular value 0.00245354); 924 r6 in [238.3568547430953, 238.3568547430953]
+  T3: invariants overlap: True
+
+summary: one certified point per row
+  T1: full (4, 0, 5); isotropy fixed set (1, 0, 2); C2 fixed set (2, 0, 3); value width 3.23e-52
+  T2: full (6, 0, 3); isotropy fixed set (4, 0, 1); C2 fixed set None; value width 3.1e-52
+  T3: full (7, 0, 2); isotropy fixed set (2, 0, 1); C2 fixed set (3, 0, 2); value width 6.14e-52
+ALL PASS
+exit 0

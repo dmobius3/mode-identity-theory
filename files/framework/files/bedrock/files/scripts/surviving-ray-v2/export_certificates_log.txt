@@ -1,0 +1,48 @@
+script export_certificates.py: SHA-256 90ef902be548d3acc4c90980d57a573c56f0b9c6319f8817de029833a2b5211f
+definitions from certify_inertia.py: SHA-256 de2bff19c1705df2b501fb6f761d246f498e6e8722b3a59f940d3cf3cd1f28db
+input one_certificate_rows_log.txt: SHA-256 b13a587521cf7b3aae188d78137d9ce9af0f14077a932578a67e3793e9105af6
+packet work_item_4c_packet.md: SHA-256 b0879b63ebc8dcb4179ca095c1f4b339ecc9215f5b02c952f8bce20523c9900d
+script certify_inertia.py: SHA-256 de2bff19c1705df2b501fb6f761d246f498e6e8722b3a59f940d3cf3cd1f28db
+definitions from certify_isotropy.py: SHA-256 8b2f08ea4c0069fbe508458dae94c4fd2d318e764929b20ab83855fa34352609
+--- the definitions' own checks ---
+packet work_item_4b_packet.md: SHA-256 22df97691c84e7b7aabb1bd164bb0527d6b6c541665774cdf4f06fa39e7a2f12
+script certify_isotropy.py: SHA-256 8b2f08ea4c0069fbe508458dae94c4fd2d318e764929b20ab83855fa34352609
+definitions from certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+--- the definitions' own checks (work item 4 provenance and model) ---
+packet work_item_4_packet.md: SHA-256 458de644a3639d9a08b4a98a8cb11f5142bc447022a6d5380b096bbe8b1dd4ca
+script certify_outside_orbits.py: SHA-256 d254d5319b912bc3af2bc0e412290d953f7e9883a95ca235afbeeb0b3aecf511
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r4.npz: matches the packet pin
+  input OpenWave/M8_DYNAMICS/out/pencil_census_r5.npz: matches the packet pin
+  input OpenWave/M8_S/identify_census_states.py: matches the packet pin
+  input OpenWave/M8_S/identify_census_states_log.txt: matches the packet pin
+PASS the four inputs match the packet pins
+PASS r = [P_u P_(Theta u)]^2 is a real polynomial
+model built: r has 263 terms; gradient 512 monomials; Hessian 105 monomials
+PASS the model gives 924 r6 = 1, 36, 225, 400 at v3, v2, v1, v0
+PASS R_x(pi) acts as w_k -> -w_(6-k) in these coordinates
+PASS both sectors hold the three targets and the three controls
+--- work item 4b ---
+PASS Theta o D(R_y(pi)) acts as w -> -conj(w) in these coordinates (max deviation 3.5e-15)
+PASS Theta commutes with rotations (max deviation 1.9e-15)
+--- work item 4c ---
+--- export ---
+  T1 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T1 (isotropy fixed set): aligned state lies in the joint fixed set to residual 1.6e-08
+  T1 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-55; 924 r6 in [215.7757925016684, 215.7757925016684]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 1.0e-15
+PASS T1: certified in the fixed set of its full isotropy at radius 1e-55
+PASS T1: the value enclosure is the one one_certificate_rows_log.txt prints
+  T1: exported (fixed-set dimension 4, slices [], radius 1e-55)
+  T2 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T2 (isotropy fixed set): aligned state lies in the joint fixed set to residual 9.9e-09
+  T2 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 7, slices 1) at radius 1e-55; 924 r6 in [238.0165289256198, 238.0165289256198]; generated group of order 2; phase lifts: no unitary part; Theta D(R_y(pi)) w = -w to 1.4e-15
+PASS T2: certified in the fixed set of its full isotropy at radius 1e-55
+PASS T2: the value enclosure is the one one_certificate_rows_log.txt prints
+  T2: exported (fixed-set dimension 7, slices ['Ty'], radius 1e-55)
+  T3 (isotropy fixed set): mirror normal found with antiunitary defect -6.7e-16
+  T3 (isotropy fixed set): aligned state lies in the joint fixed set to residual 1.7e-08
+  T3 (isotropy fixed set): CERTIFIED in the joint fixed set (real dimension 4, slices 0) at radius 1e-55; 924 r6 in [238.3568547430953, 238.3568547430953]; generated group of order 4; phase lifts: C2 about z: e^(-2 pi i 1/2); Theta D(R_y(pi)) w = -w to 9.2e-16
+PASS T3: certified in the fixed set of its full isotropy at radius 1e-55
+PASS T3: the value enclosure is the one one_certificate_rows_log.txt prints
+  T3: exported (fixed-set dimension 4, slices [], radius 1e-55)
+wrote sr_v2_certificates.json: SHA-256 eb174fa1b15f0ad9b309b7c45fa43814381188a37ef86afeebf7543b77ebe7ff
+ALL PASS

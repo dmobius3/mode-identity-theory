@@ -1,0 +1,7 @@
+script run_exact_checks.py: SHA-256 7a933cbc52636943bfa0f4c9e9b3b20c3b0c6da9ae6af1d2fc20bb876021f655
+python 3.13.13, sympy 1.14.0, numpy 2.5.0, mpmath 1.3.0
+PASS check_coupling_point.py (Section 6: Proposition 6.1, the point): exit 0, 12 PASS lines, log check_coupling_point_log.txt
+PASS check_line_extrema.py (Section 7.2: the line extrema of the census orbits): exit 0, 6 PASS lines, log check_line_extrema_log.txt
+PASS check_minimum_identity.py (Section 7.3: Lemma 7.3 and the minimum): exit 0, 12 PASS lines, log check_minimum_identity_log.txt
+PASS check_maximum_steps.py (Section 7.3: the steps of the maximum): exit 0, 40 PASS lines, log check_maximum_steps_log.txt
+ALL PASS
