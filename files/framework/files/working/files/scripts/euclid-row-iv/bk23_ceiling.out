@@ -1,0 +1,23 @@
+camb 2.0.4
+PASS  C1 number-density arm, the paper's z ~ 9.1 candidate
+      eps = 1.00: nu = 4.63 (paper 4.5), log10 n = -5.11 (paper -5.2)
+      eps = 0.32: nu = 5.36 (paper 5.4), log10 n = -6.76 (paper -7.0)
+      eps = 0.10: nu = 6.32 (paper 6.4), log10 n = -9.01 (paper -9.3)
+PASS  C2 stellar-mass-density arm, the efficiencies the paper finds for its two most massive candidates
+      z ~ 9.1: log10 rho_obs = 5.38, eps = 0.95 (paper 0.99)
+      z ~ 9.1, lower 1-sigma edge: log10 rho_obs = 4.61, eps = 0.55 (paper 0.57)
+      z ~ 7.5: log10 rho_obs = 5.65, eps = 0.81 (paper 0.84)
+C3  the registered ceilings, M* >= 10^10 M_sun (M_halo >= 6.410e+10 M_sun), epsilon = 1
+      z = 10.0: log10 n_ceil = -4.57, log10 rho_ceil = 5.60, nu = 4.53
+      z = 11.0: log10 n_ceil = -5.19, log10 rho_ceil = 4.97, nu = 4.94
+      z = 12.0: log10 n_ceil = -5.85, log10 rho_ceil = 4.29, nu = 5.35
+      averaged over 10 < z < 11: log10 n_ceil = -4.84, log10 rho_ceil = 5.33, 0.26 and 0.27 dex below their values at z = 10
+      averaged over 10 < z < 12: log10 n_ceil = -5.03, log10 rho_ceil = 5.13, 0.46 and 0.47 dex below their values at z = 10
+      averaged over 10 < z < 14: log10 n_ceil = -5.28, log10 rho_ceil = 4.88, 0.71 and 0.72 dex below their values at z = 10
+C4  context, not a score: JWST measurements against the ceiling averaged over their windows
+      Shuntov et al. 2025, 10.0 < z < 12.0 over 1520 arcmin^2, no occupied bin above 10^10: log10 n < -6.10 at 2 sigma, 1.06 dex inside the ceiling (log10 -5.03); the limit reaches the ceiling only below 8.6% completeness
+      Harvey et al. 2025, 9.5 < z < 11.5 over 187 arcmin^2, no occupied bin above 10^10: log10 n < -5.21 at 2 sigma, 0.48 dex inside the ceiling (log10 -4.73); the limit reaches the ceiling only below 33.5% completeness
+      Casey et al. 2024, 10 < z < 14, about 10^-6 Mpc^-3 for M* ~ 10^10: 0.72 dex inside the ceiling (log10 -5.28)
+control  C1 with sigma_8 = 0.70 fails the validation  as required
+control  C2 with sigma_8 = 0.70 fails the validation  as required
+all checks pass; control as required
