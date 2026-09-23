@@ -1953,30 +1953,4 @@ checks; the manifest's own SHA-256 is `6a3e3027683e6baad41fafa8204acd21e52b7226a
 
 ---
 
-## Changes from the first version
-
-The first version stays deposited as it was. This one extends it.
-
-- **Moved.** The first version's Section 5.8 is Section 7.1 here, shortened, and its Lemmas 5.3 and
-  5.3(b) are Lemmas 7.1 and 7.2. Its Section 6 grows into Section 8, and its Section 7 is revised as
-  Section 9. Its certification block stays at the end, shortened, with the later runs recorded beside
-  it.
-- **Shortened.** Sections 2 to 5, less the section that moved, are the first version's text with its
-  remarks and repetitions cut, its cross-references pointed at the sections this version adds, and the
-  projected self-interaction renamed from $`\mathcal N`$ to $`\mathcal I`$, since $`\mathcal N`$ now
-  names the nematic tensor. Every numbered statement is kept with its proof, except Lemma 2.1, which
-  nothing cited. The first version's numbers are kept, so there is no Lemma 2.1 and no Section 5.8.
-- **Rewritten.** Section 1.
-- **New.** The selected point (Section 6); the census within its class, the three certified orbits
-  outside it and the extremes (Sections 7.2 and 7.3); the first correction and the local branch germs
-  (Sections 8.2 and 8.3); and, at the end, the records of the runs behind Sections 7 and 8 and of this
-  paper's certificates.
-- **What the first version said and this one does not.** It left the critical set unclassified and did
-  not show that $`463/924`$ is the global maximum. Section 7.2 classifies the critical orbits within a
-  stated class and certifies three outside it, and Section 7.3 answers the maximum at spin 3
-  (Theorem 7.5). It also gave the Majorana polynomial of $`v_2`$ as $`z^5`$, which up to scale is that of
-  $`v_{-2}`$; it is $`-\sqrt6\,z`$, as Section 9.2 now says.
-
----
-
 / **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
