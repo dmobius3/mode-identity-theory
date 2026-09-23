@@ -100,6 +100,8 @@ The R-VAR level-selection residue is now the whole clock-arm problem: why should
 
 Two things could change the verdict: new structural input that selects $`W \propto S`$, or a later arm of the parent's §13 (embedding, sampler, connections, metric) that yields a consequence the mean does not already fix. The scaling law's [boundary-mode uniformity](scaling-law-uniqueness.md#proof-the-schur-separation) marks one place to look, posed as a question: a coupling that keeps every block's boundary profile proportional to $`C(\Theta)`$ leaves the scaling law intact, and one that breaks it would predict sector-dependent shifts of $`C`$ at the wells, which nothing in this arm could produce.
 
+*Added 2026-09-23: the parent is parked on this residue ([§16](variational-score-to-sample.md#16-parked)). A proposal for the first route now has to meet the standing admission bar there, and the §13 arms stay closed while the clock gate has not passed.*
+
 [`clock_arm_check.py`](scripts/variational-clock-arm/clock_arm_check.py) needs sympy, and its record [`clock_arm_check.out`](scripts/variational-clock-arm/clock_arm_check.out) reproduces all eight checks, each against a control that must come out the other way; every quantity is exact.
 
 ---

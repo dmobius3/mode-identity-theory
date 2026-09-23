@@ -6,12 +6,12 @@
 # Variational Score-to-Sample Program
 
 **Type:** Program
-**State:** Active
-**Status (2026-09-23):** WORKING / MOTIVATED. The first clock arm has run, recorded at `variational-clock-arm.md`: in the class of §11 the lapse equation is solved and the variation selects no level, since the potential's level sets the lapse, so the independent route fails and the half power returns only as R-HALF's operator realization, below the promotion bar. The later arms (§13) are open; the pre-registered PASS/FAIL stands unchanged.
+**State:** Open
+**Status (2026-09-23):** WORKING / MOTIVATED, parked. The first clock arm has run, recorded at `variational-clock-arm.md`: in the class of §11 the lapse equation is solved and the variation selects no level, since the potential's level sets the lapse, so the independent route fails and the half power returns only as R-HALF's operator realization, below the promotion bar. The program is parked on what that leaves, why the potential carries amplitude weight (§16): no search is run, the §13 arms stay closed behind the clock gate, and a standing admission bar governs any later proposal. The pre-registered PASS/FAIL stands unchanged.
 **Summary:** Frames the dynamics problem as a variational principle for the global score-to-sample relation; the program page for the variational reading, which works the exponent derivation rather than waiting on it.
 **Inputs:** `postulate-bridge.md`, `temporal-budget.md`, `friedmann-as-output.md`, `stress-tensor-bridge.md`, the engine (chronon, sign flip, Hubble clock)
 
-WORKING / MOTIVATED. Ledger effect: none. Engine effect: none. The first clock arm has run, recorded at [The Variational Clock Arm](variational-clock-arm.md): in the class of §11 the lapse equation is solved and the variation selects no level, so the independent route fails and the half power returns only as R-HALF's operator realization. No functional outside that class is fixed. The page fixes the corpus conventions any candidate must respect, states the two-level action architecture, names the one bounded computation, and pre-registered its PASS and FAIL conditions before the run. This is the working program behind the variational reading recorded on the [postulate bridge](postulate-bridge.md).
+WORKING / MOTIVATED. Ledger effect: none. Engine effect: none. The first clock arm has run, recorded at [The Variational Clock Arm](variational-clock-arm.md): in the class of §11 the lapse equation is solved and the variation selects no level, so the independent route fails and the half power returns only as R-HALF's operator realization. The program is parked on the question that leaves, why the potential carries amplitude weight, under a standing admission bar (§16). No functional outside that class is fixed. The page fixes the corpus conventions any candidate must respect, states the two-level action architecture, names the one bounded computation, and pre-registered its PASS and FAIL conditions before the run. This is the working program behind the variational reading recorded on the [postulate bridge](postulate-bridge.md).
 
 **Primary promotion gate:** derive the observer lapse $`N = S^{1/2}`$ from the native global functional, without inserting the exponent by hand.
 
@@ -445,6 +445,23 @@ N=S^{1/2}
 without importing the exponent, with any stabilizer-based route carrying its operator-level bridge.
 
 At that point the score-to-sample reframing becomes a derivational result rather than program architecture.
+
+## 16. Parked
+
+*Added 2026-09-23, after the first clock arm.* The first clock arm leaves one question: why should the variational potential carry amplitude weight, $`W \propto S`$? The level the clock needs is already known, so a search run now would be run knowing what it has to find, and whatever it turned up would carry little evidence. Its likely result, that nothing in the corpus qualifies, is what the [clock arm's residue](variational-clock-arm.md#viii-what-could-change-the-verdict) already records. The program is therefore parked: no search is run, and no next arm is named.
+
+**The standing admission bar.** An object proposed later as the potential $`W \propto S`$ counts only if all four conditions hold:
+
+1. it was introduced for a reason unrelated to the clock: it existed before the first clock arm's result of 2026-09-23, or it was built later for another stated purpose, fixed in a dated record that names, before its weight in $`S`$ is checked, both that purpose and the consequence it offers under condition 4;
+2. its $`S^1`$ weight follows from its own construction, not from the wish for $`N = S^{1/2}`$;
+3. it is eligible to enter an action as the potential $`W`$, rather than being merely another quantity proportional to $`S`$;
+4. using it produces a consequence besides the half power, and for a construction built after 2026-09-23 that consequence is the one its dated record named.
+
+The fourth is §7's second-consequence requirement, with §7's rule that the consequence be named in advance carried over to later constructions, and §14's stop against decoration, applied to the input rather than to the output.
+
+**What stays closed.** §13 opens its arms only after the clock gate passes, and it has not, so the embedding, sampler and connection arms stay closed; none is opened to rescue the clock. The fixed-boundary area branch that the [postulate bridge](postulate-bridge.md) recorded on 2026-07-13 as its Tier 2 ground floor is a separate problem: it runs there, with no clock target, and anything it returns reaches this program only through the bar above.
+
+**What reopens it.** A construction motivated for its own reasons that meets all four conditions. The likeliest place for one is the independently motivated action both bridges wait on, coupling the wave and budget sector to the matter degrees of freedom, with the clock as a downstream check rather than its target. For such an action two things are fixed now. Its lapse variation, $`\delta\mathcal{S}_\text{MIT}/\delta N = 0`$, should return $`N = S^{1/2}`$ without the level being chosen. And whether its couplings keep every block's boundary profile proportional to $`C(\Theta)`$, the scaling law's open [uniformity condition](scaling-law-uniqueness.md#proof-the-schur-separation), is scored either way: if they do, the factored scaling law gains a derivation for single-position observables; if they do not, the shifts of $`C`$ they predict at the wells are a consequence under condition 4, tested rather than grounds for rejecting the action. Until then `gate:variational-independence-bar` stays Open with no worker, and the postulate bridge and the stress-tensor bridge's route R6 wait on it.
 
 ---
 
