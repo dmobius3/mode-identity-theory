@@ -6,10 +6,9 @@
 # Fibonacci Wells: Forcing Worksheet
 
 **Type:** Note
-**State:** Blocked
-**Status (2026-07-18):** Structurally reduced, not derived. The wells are reframed as the additive continuation of the icosahedral branch orders on the locked 120-grid. The variational route to DERIVED was tested and failed; the residual well-functional is blocked by the commutant / Lemma-8 structure that rules out a bulk functional.
+**State:** Open
+**Status (2026-09-23):** Structurally reduced, not derived. The wells are reframed as the additive continuation of the icosahedral branch orders on the locked 120-grid. The variational route to DERIVED was tested across eight boundary-mode functionals (Lemma 8 already rules out a bulk one) and failed, so the residual most likely reads as structural rather than variational.
 **Summary:** The worksheet tracking why the realized sampling wells land at {13, 21, 34, 55} on the 120-grid.
-**Gated by:** `gate:commutant`
 
 *Working note. Tracks the well-placement problem: where it stands, what has been ruled out, and the one residual that remains. Workbench voice (status tags, raw numbers); the public [framework page](../../../README.md) now carries the relationship-level version of this framing (recurrence + lcm seam + the open residual), with the detailed status and the probe log kept here.*
 
@@ -180,7 +179,7 @@ A dynamical answer would have been a functional with the wells at its minimum; t
 
 ## Adjacent thread (scaling-law, not wells)
 
-The same Lemma 8 that locates the well functional on the boundary also bears on the [scaling-law factorization](scaling-law-uniqueness.md), which is currently **open** (the commutant theorem `A_obs = A_Θ ⊗ A_spec` is the named open target; the FORCED flip was walked back at the Step C gap). The mirror's character ceiling (Props 1 to 3, Lemma 7) plus Lemma 8 is a candidate closer for that theorem via a bridge lemma. Tracked separately; not part of the wells problem.
+The same Lemma 8 that locates the well functional on the boundary also bears on the [scaling-law factorization](scaling-law-uniqueness.md), which is currently **open** (the FORCED flip was walked back at the Step C gap). Its open step was restated on 2026-09-23 as boundary-mode uniformity, every contributing spectral block carrying the first-positive profile times a fixed spectral weight; the commutant theorem `A_obs = A_Θ ⊗ A_spec` it replaces could not forbid a cross-term, and the character-ceiling candidate fell with it. Tracked separately; not part of the wells problem.
 
 ---
 
