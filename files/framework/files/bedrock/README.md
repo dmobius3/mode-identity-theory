@@ -7,7 +7,7 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/the%20bridge%20banner.png?raw=true" width="100%" alt="Bedrock">
 
-The postulate is one line, $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal seam $`S^1`$, the Möbius surface it bounds, and the space $`S^3`$ in which the seam is anchored. The standalone mathematics papers below put operators on two of those objects, the surface and the space, and a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds. The seam $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum. A fourth paper below asks a different question of the same quotient space: which self-interaction channels a mode of definite spin keeps under that finite symmetry. It shares the arena with the Space and the Filling but not the postulate's own argument, and is catalogued here rather than folded into the three objects above.
+The postulate is one line, $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal seam $`S^1`$, the Möbius surface it bounds, and the space $`S^3`$ in which the seam is anchored. The standalone mathematics papers below put operators on two of those objects, the surface and the space, and a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds. The seam $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum. A fourth paper below asks a different question of the same quotient space: which self-interaction channels a mode of definite spin keeps under that finite symmetry, and the geometry of the one that survives. It shares the arena with the Space and the Filling but not the postulate's own argument, and is catalogued here rather than folded into the three objects above.
 
 ---
 
@@ -43,12 +43,7 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`
 
 ## [Surviving Ray](files/surviving-ray.md)
 
-**The Selection:** On the Poincaré homology sphere's spin-3 representation, binary-icosahedral
-symmetry restricts the four-channel family of scattering self-interactions down to two, one of
-them radial; modulo the radial part, the surviving self-interaction is forced onto a single
-projective ray. The result is representation-theoretic rather than postulate-facing: it asks a
-different question of the same quotient $`S^3/2I`$ that the Coexact Gap and the Galois Pair
-already use, and it does not feed the embedding argument above.
+**The Selection:** On the Poincaré homology sphere's spin-3 representation, binary-icosahedral symmetry restricts the four-channel family of scattering self-interactions down to two, one of them radial; modulo the radial part, the surviving self-interaction is forced onto a single projective ray. In the coordinates of the spin-3 condensate literature that ray is one coupling point, and the paper maps the critical geometry of the governing quartic there: ten critical orbits within a stated symmetry class, three more certified outside it, and the extremes of the top multipole, $`1/924`$ on the coherent states and $`463/924`$ on the hexagon. Back on the quotient, the OpenWave runs give the first correction at the four symmetry-pinned rays and local branch germs, for sufficiently small amplitude, at eight. The result is representation-theoretic rather than postulate-facing: it asks a different question of the same quotient $`S^3/2I`$ that the Coexact Gap and the Galois Pair already use, and it does not feed the embedding argument above.
 
 ---
 
