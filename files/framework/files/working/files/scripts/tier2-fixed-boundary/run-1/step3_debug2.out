@@ -1,0 +1,27 @@
+Test D_t @ sin(2t): max error = 4.00e+00
+Test D2_t @ sin(2t): max error = 1.09e-11
+
+Eigenvalues of -D2 with Dirichlet on [0,pi/2]:
+  computed=-349.95387987, exact=4, diff=-3.54e+02
+  computed=-5.81785526, exact=16, diff=-2.18e+01
+  computed=16.97013564, exact=36, diff=-1.90e+01
+  computed=43.12524170, exact=64, diff=-2.09e+01
+  computed=77.33987508, exact=100, diff=-2.27e+01
+
+Full operator applied to psi_X at all N+1 points:
+Max |residual| at interior: 8.232291e-01
+|residual| at boundaries: 4.802136e-10, 0.000000e+00
+
+psi_X at boundaries: t[0]=1.570796, psi_X=6.12e-17; t[N]=0.000000, psi_X=0.00e+00
+
+The boundary values of psi_X are:
+  phi[0] = psi_X(pi/2) = 6.123234e-17
+  phi[N] = psi_X(0) = 0.000000e+00
+Both are 0 (sin(pi)=0, sin(0)=0), so this shouldn't be the issue.
+
+A @ psi_X_interior: max |residual| = 8.232291e-01
+norm(res)/norm(phi_int) = 1.827604e+00
+
+(L_op @ psi_X_full)[interior]: max |residual| = 8.232291e-01
+Boundary column contributions: max = 5.132219e-11
+Diff (A@phi_int - full_int): 5.093170e-11

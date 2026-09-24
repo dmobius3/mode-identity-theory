@@ -1,0 +1,44 @@
+PASS (a1) R^2 J_1 (cos t/sqrt f) = -2 cos t/sqrt f, symbolic in u = sin t: residual 0
+PASS (a2) the same at 60 points, 60 digits: max |residual| = 1.09e-60
+PASS (a3) profile even, zero at pi/2, positive on [0, pi/2)
+PASS (a4) normal components: <e3,n> = sin(s/2)*cos(t), <e4,n> = -cos(s/2)*cos(t), |n|^2 = f
+
+(b) symmetric finite differences, N = 4000, 8000, 16000, Richardson; spread = |two extrapolants' difference|
+  m=0  mu_0 = -0.0000000242  (spread 2.0e-08)   run, Chebyshev N=128: -0.0000000000
+PASS (b) m=0 mu_0 agrees with the run to 1e-6
+  m=0  mu_1 =  11.6598859045  (spread 8.5e-09)   run, Chebyshev N=128:  11.6598859022
+PASS (b) m=0 mu_1 agrees with the run to 1e-6
+  m=0  negative eigenvalues: 0, near-zero (|mu| <= 1e-06): 1
+  m=1  mu_0 = -2.0000000558  (spread 4.8e-08)   run, Chebyshev N=128: -2.0000000000
+PASS (b) m=1 mu_0 agrees with the run to 1e-6
+  m=1  mu_1 =  5.2454486652  (spread 3.4e-08)   run, Chebyshev N=128:  5.2454487079
+PASS (b) m=1 mu_1 agrees with the run to 1e-6
+  m=1  negative eigenvalues: 1, near-zero (|mu| <= 1e-06): 0
+  m=2  mu_0 =  1.8494133645  (spread 2.8e-08)   run, Chebyshev N=128:  1.8494133367
+PASS (b) m=2 mu_0 agrees with the run to 1e-6
+  m=2  negative eigenvalues: 0, near-zero (|mu| <= 1e-06): 0
+  m=3  mu_0 =  0.6916191206  (spread 1.1e-08)   run, Chebyshev N=128:  0.6916191422
+PASS (b) m=3 mu_0 agrees with the run to 1e-6
+  m=3  mu_1 =  9.1229352639  (spread 1.6e-08)   run, Chebyshev N=128:  9.1229352395
+PASS (b) m=3 mu_1 agrees with the run to 1e-6
+  m=3  negative eigenvalues: 0, near-zero (|mu| <= 1e-06): 0
+PASS (b1) m=1 ground state = -2 to 1e-6 (the exact value of (a))
+PASS (b2) m=2 has no eigenvalue below 1 (index 0, no near-zero case)
+
+(c) Sturm count at mu = 0, Radau
+  m=0  zeros 0  rho 1.921e-15   (run: 0, 4.779e-12)
+PASS (c) m=0 zero count matches the run, and rho agrees on near-zero status
+  m=1  zeros 1  rho 1.000e+00   (run: 1, 1.000e+00)
+PASS (c) m=1 zero count matches the run, and rho agrees on near-zero status
+  m=2  zeros 0  rho 7.380e-01   (run: 0, 7.380e-01)
+PASS (c) m=2 zero count matches the run, and rho agrees on near-zero status
+  m=3  zeros 0  rho 1.000e+00   (run: 0, 1.000e+00)
+PASS (c) m=3 zero count matches the run, and rho agrees on near-zero status
+
+(d) mutation arm: Ric 2 -> 3
+PASS (d0) parent green: (b1) passed on the unmutated operator
+  mutated m=1 ground state: -3.0000000558
+PASS (d1) mutated ground state is -3 (the identity shifts with the Ricci term)
+PASS (d2) the mutation fails check (b1)
+
+ALL PASS: 0 failed

@@ -1,0 +1,9 @@
+=== Verifying J_1 phi_K^{(1)} = 0 ===
+R^2 J_1 phi1 = 0
+
+=== Verifying J_3 phi_K^{(3)} = 0 ===
+R^2 J_3 phi3 = 0
+
+=== Control: Verifying J_0 psi_X = 0 ===
+psi_X simplified: 0
+R^2 J_0 psi_X = 135*sqrt(2)*(-32*sin(t)**5*cos(t) + 5*sin(2*t) - 4*sin(4*t) + sin(6*t))/(8*(3*cos(2*t) + 5)**(7/2))

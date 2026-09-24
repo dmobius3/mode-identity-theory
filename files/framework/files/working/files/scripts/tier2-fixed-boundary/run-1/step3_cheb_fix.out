@@ -1,0 +1,33 @@
+Test on [-1,1]: D @ sin(pi*x) vs pi*cos(pi*x)
+  max error = 3.91e-14
+  D2 @ sin(pi*x) vs -pi^2*sin(pi*x): max error = 7.28e-12
+
+-D2 eigenvalues on [-1,1] with Dirichlet:
+  eig_1 = -215.86914706, exact = 2.46740110, err = 2.18e+02
+  eig_2 = -3.58874562, exact = 9.86960440, err = 1.35e+01
+  eig_3 = 10.46803284, exact = 22.20660990, err = 1.17e+01
+  eig_4 = 26.60181720, exact = 39.47841760, err = 1.29e+01
+  eig_5 = 47.70712322, exact = 61.68502751, err = 1.40e+01
+
+-D2 eigenvalues on [0,pi/2] with Dirichlet:
+  eig_1 = 4.00000000, exact = 4, err = 7.11e-14
+  eig_2 = 16.00000000, exact = 16, err = 7.82e-14
+  eig_3 = 36.00000000, exact = 36, err = 2.49e-13
+  eig_4 = 64.00000000, exact = 64, err = 5.68e-14
+  eig_5 = 100.00000000, exact = 100, err = 4.12e-13
+
+============================================================
+Testing m=0 operator on psi_X
+============================================================
+psi_X values at boundaries: 6.12e-17, 0.00e+00
+Max |residual| at interior points: 1.465668e-10
+Max |residual| at all points: 4.802140e-10
+
+Chebyshev eigenvalues for m=0 (first 5):
+  mu_0 = -0.000000000000
+  mu_1 = 11.659885902175
+  mu_2 = 31.592839410684
+  mu_3 = 59.576526367594
+  mu_4 = 95.570923786711
+
+Rayleigh quotient of psi_X: -5.286657866944e-13

@@ -1,0 +1,19 @@
+PASS  S1 metric g = R^2 [f ds^2 + dt^2], f = 1 - (3/4) sin^2 t, f in [1/4, 1]
+PASS  S2 p lies on S^3(R)
+PASS  S3 unit normal nu = n/|n| with n orthogonal to p, p_s, p_t and |n|^2 = R^6 f
+PASS  S4 mean curvature trace(g^-1 A) = 0: B is minimal
+PASS  S5 |A|^2 = 1/(2 R^2 f^2): 1/(2R^2) on the core t = 0, 8/R^2 on gamma
+PASS  S6a deck map tau(s,t) = (s + 2pi, -t) fixes p: B is the quotient of the annulus by tau
+PASS  S6b nu(tau x) = -nu(x): the normal bundle is the orientation bundle; normal fields are tau-odd functions
+PASS  S7 boundary t = pi/2 is R(cos(s/2) e3 + sin(s/2) e4): on the double cover s in [0, 4pi) it runs once round gamma, and t = -pi/2 is its tau-image
+PASS  S8 numerical spot check of the embedding proved in section 1.2: over 400000 random pairs, min |p(x)-p(y)|/d(x,y) = 0.405 (R = 1)
+PASS  S9 area(B) = 4 pi R^2 E(3/4) = 15.218579 R^2 = 2.4221 x 2 pi R^2 (the hemisphere's area)
+PASS  S10 projection lemma, computational part: Pi(z,w) = (|z|,w) maps S^3 into the closed hemisphere D (area 2 pi R^2), fixes gamma, and |x-y|^2 - |Pi x - Pi y|^2 = 2(|z1||z2| - Re z1 conj(z2)) >= 0
+PASS  S11 sector operator: R^2 J_m phi = -(1/sqrt f)(sqrt f phi')' + V_m phi, V_m = m^2/(4f) - 1/(2f^2) - 2 (Ric(nu,nu) = 2/R^2 included)
+PASS  S12 V_m is even in t; tau-oddness of e^{ims/2} phi(t) reads (-1)^m phi(-t) = -phi(t): phi odd for m even, phi even for m odd
+PASS  S13 completeness: with u = 1/f in [1,4], V_m = (m^2/4)u - u^2/2 - 2 is concave in u; at m^2 = 16 its end values are 3/2, 6 (grid min 1.5000), and V_m grows with m^2: sectors |m| >= 4 are positive
+PASS  S14 rotation about gamma: X12 + X34/2 = p_s; psi_X = <X12, nu> = sqrt(2)*R*sin(2*t)/(2*sqrt(3*cos(2*t) + 5)) is s-free, odd, zero at t = 0 and +-pi/2 only, and solves the m = 0 sector equation
+control  M1 the Ricci term 3/R^2 in place of 2/R^2: S11  fails as required
+control  M2 the claimed metric coefficient 2/3 in place of 3/4: S1  fails as required
+control  M3 a full turn in place of the half turn: S6a  fails as required
+all setup checks pass; all three controls fail as required

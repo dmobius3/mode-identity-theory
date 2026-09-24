@@ -1,0 +1,47 @@
+Computing cross product for normal vector...
+Simplifying normal components...
+n_raw (unnormalized):
+  n[0] = -sin(s)*sin(t)/2
+  n[1] = sin(t)*cos(s)/2
+  n[2] = sin(s/2)*cos(t)
+  n[3] = -cos(s/2)*cos(t)
+
+|n|^2 = 1 - 3*sin(t)**2/4
+|n|^2 simplified = 1 - 3*sin(t)**2/4
+
+f = 1 - 3*sin(t)**2/4
+
+Killing field normal components (times |n_raw|/R):
+  <X13, n_raw>/R = sin(s/2)*cos(s)*cos(t)**2 + sin(s)*sin(t)**2*cos(s/2)/2
+  <X14, n_raw>/R = sin(s/2)*sin(s)*sin(t)**2/2 - cos(s/2)*cos(s)*cos(t)**2
+  <X23, n_raw>/R = sin(s/2)*sin(s)*cos(t)**2 - sin(t)**2*cos(s/2)*cos(s)/2
+  <X24, n_raw>/R = -sin(s/2)*sin(t)**2*cos(s)/2 - sin(s)*cos(s/2)*cos(t)**2
+
+
+Now decomposing into Fourier modes in s...
+
+=== Direct computation ===
+
+X13: p[0]*n[2] - p[2]*n[0] = sin(s/2)*cos(s)*cos(t)**2 + sin(s)*sin(t)**2*cos(s/2)/2
+  coeff of cos(1s/2): sin(s)*sin(t)**2/2
+  coeff of sin(1s/2): cos(s)*cos(t)**2
+  coeff of cos(1s): sin(s/2)*cos(t)**2
+  coeff of sin(1s): sin(t)**2*cos(s/2)/2
+
+X14: p[0]*n[3] - p[3]*n[0] = sin(s/2)*sin(s)*sin(t)**2/2 - cos(s/2)*cos(s)*cos(t)**2
+  coeff of cos(1s/2): -cos(s)*cos(t)**2
+  coeff of sin(1s/2): sin(s)*sin(t)**2/2
+  coeff of cos(1s): -cos(s/2)*cos(t)**2
+  coeff of sin(1s): sin(s/2)*sin(t)**2/2
+
+X23: p[1]*n[2] - p[2]*n[1] = sin(s/2)*sin(s)*cos(t)**2 - sin(t)**2*cos(s/2)*cos(s)/2
+  coeff of cos(1s/2): -sin(t)**2*cos(s)/2
+  coeff of sin(1s/2): sin(s)*cos(t)**2
+  coeff of cos(1s): -sin(t)**2*cos(s/2)/2
+  coeff of sin(1s): sin(s/2)*cos(t)**2
+
+X24: p[1]*n[3] - p[3]*n[1] = -sin(s/2)*sin(t)**2*cos(s)/2 - sin(s)*cos(s/2)*cos(t)**2
+  coeff of cos(1s/2): -sin(s)*cos(t)**2
+  coeff of sin(1s/2): -sin(t)**2*cos(s)/2
+  coeff of cos(1s): -sin(s/2)*sin(t)**2/2
+  coeff of sin(1s): -cos(s/2)*cos(t)**2

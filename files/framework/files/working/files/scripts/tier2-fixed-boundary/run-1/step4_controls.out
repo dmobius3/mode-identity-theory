@@ -1,0 +1,60 @@
+============================================================
+CONTROL C1: m=0 standard operator
+============================================================
+Sturm count: 0
+rho = 4.778534e-12
+First eigenvalue (N=64): -7.298375679700e-14
+First eigenvalue (N=128): -1.403562511105e-12
+Index: 0
+Near-zero eigenvalues: [np.float64(-1.4035625111052034e-12)]
+C1 basic check: index=0 and one near-zero: True
+
+Eigenfunction comparison:
+  sup |ef_normalized - psi_X_normalized| = 1.332823e-13
+  Matches to 1e-6: True
+
+C1 PASS: True
+
+============================================================
+CONTROL C2: symbolic verification + route agreement
+============================================================
+J_1 phi_K = 0: verified symbolically in step2 (result = 0)
+J_3 phi_K = 0: verified symbolically in step2 (result = 0)
+J_0 psi_X = 0: verified symbolically in step2 (numerator = 0)
+
+Route agreement:
+  m=1: §4.1 index=1, §4.2 Sturm=1, Cheb index=1 -> AGREE
+  m=3: §4.1 index=0, §4.2 Sturm=0, Cheb index=0 -> AGREE
+
+C2 PASS: True
+
+============================================================
+CONTROL C3: Mutated operators
+============================================================
+
+--- Mutation 1: Ric(nu,nu) = 3/R^2 ---
+Sturm count: 1
+rho = 3.769128e-01
+First eigenvalue (N=128): -1.000000000000e+00
+Index: 1, Near-zero: []
+C1 check passes for mutation 1: False
+C3 mutation 1 DETECTED (C1 fails): True
+
+--- Mutation 2: |A|^2 dropped ---
+Sturm count: 0
+rho = 8.891905e-01
+First eigenvalue (N=128): 1.854758312086e+00
+Index: 0, Near-zero: []
+C1 check passes for mutation 2: False
+C3 mutation 2 DETECTED (C1 fails): True
+
+C3 PASS (both mutations detected): True
+
+============================================================
+ALL CONTROLS SUMMARY
+============================================================
+Traceback (most recent call last):
+  File "/Users/Shared/tier2_room/step4_controls.py", line 204, in <module>
+    print(f"C1: {['FAIL','PASS'][c1_pass]}")
+                 ~~~~~~~~~~~~~~~^^^^^^^^^
+TypeError: list indices must be integers or slices, not numpy.bool

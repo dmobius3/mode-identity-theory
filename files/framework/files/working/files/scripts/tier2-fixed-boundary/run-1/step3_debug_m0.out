@@ -1,0 +1,29 @@
+Total eigenvalues: 63
+Max |imag|: 0.00e+00
+
+First 10 eigenvalues (sorted by real part):
+  mu_0 = 0.326262178094 + 0.00e+00i
+  mu_1 = 11.755273636441 + 0.00e+00i
+  mu_2 = 31.633573255762 + 0.00e+00i
+  mu_3 = 59.598780868533 + 0.00e+00i
+  mu_4 = 95.585029631942 + 0.00e+00i
+  mu_5 = 139.578027392726 + 0.00e+00i
+  mu_6 = 191.573885933125 + 0.00e+00i
+  mu_7 = 251.571211787063 + 0.00e+00i
+  mu_8 = 319.569381210915 + 0.00e+00i
+  mu_9 = 395.568072642927 + 0.00e+00i
+
+||L_op @ psi_X|| = 2.894787e+00
+||psi_X|| = 1.583925e+00
+Rayleigh quotient = 4.115710846581e-01
+
+psi_X at boundary points:
+  psi_X(t=0) should be 0: 0.0
+  psi_X(t=pi/2) should be 0: 6.123233995736766e-17
+
+Smallest eigenvector (normalized) at a few points:
+  t=1.5699: ev=0.002177, psi_X=0.000597
+  t=1.3128: ev=0.549679, psi_X=0.142445
+  t=0.7469: ev=0.988391, psi_X=0.194611
+  t=0.2035: ev=0.375764, psi_X=0.063447
+  t=0.0009: ev=0.001791, psi_X=0.000299

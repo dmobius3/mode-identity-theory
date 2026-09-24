@@ -1,0 +1,17 @@
+sqrt(f)*phi' = (6*sin(t)**2*cos(2*t) - 3*sin(t)*sin(2*t)*cos(t) - 8*cos(2*t))/(12*sin(t)**2 - 16)
+(sqrt(f)*phi')' = ... (computing)
+
+R^2 J_0 phi (cancelled) = (9*sin(t)**4*sin(2*t) + 18*sin(t)**3*cos(t)*cos(2*t) - 9*sin(t)**2*sin(2*t)*cos(t)**2 - 36*sin(t)**2*sin(2*t) - 24*sin(t)*cos(t)*cos(2*t) - 12*sin(2*t)*cos(t)**2 + 24*sin(2*t))/(18*sqrt(4 - 3*sin(t)**2)*sin(t)**4 - 48*sqrt(4 - 3*sin(t)**2)*sin(t)**2 + 32*sqrt(4 - 3*sin(t)**2))
+
+Numerical check of J_0 psi_X at several points:
+  t=0.3: J_0 phi = -7.41e-08
+  t=0.5: J_0 phi = 1.91e-09
+  t=0.7: J_0 phi = 1.05e-07
+  t=1.0: J_0 phi = 1.70e-08
+  t=1.2: J_0 phi = 5.29e-07
+
+Trying full symbolic expansion...
+sqrt(f)*phi' radsimp = (2*(3*sin(t)**2 - 4)**2*cos(2*t) - 9*sin(t)**3*sin(2*t)*cos(t) + 12*sin(t)*sin(2*t)*cos(t))/(36*sin(t)**4 - 96*sin(t)**2 + 64)
+Result radsimp = (2*(4 - 3*sin(t)**2)**(5/2)*(-8*(-144*sin(t)**3*cos(t) + 192*sin(t)*cos(t))*(2*(3*sin(t)**2 - 4)**2*cos(2*t) - 9*sin(t)**3*sin(2*t)*cos(t) + 12*sin(t)*sin(2*t)*cos(t))*(36*sin(t)**4 - 96*sin(t)**2 + 64) - 8*(36*sin(t)**4 - 96*sin(t)**2 + 64)**2*(-4*(3*sin(t)**2 - 4)**2*sin(2*t) + 24*(3*sin(t)**2 - 4)*sin(t)*cos(t)*cos(2*t) + 9*sin(t)**4*sin(2*t) - 18*sin(t)**3*cos(t)*cos(2*t) - 27*sin(t)**2*sin(2*t)*cos(t)**2 - 12*sin(t)**2*sin(2*t) + 24*sin(t)*cos(t)*cos(2*t) + 12*sin(2*t)*cos(t)**2)) + 2*sqrt(4 - 3*sin(t)**2)*(-4*(4 - 3*sin(t)**2)**2 - 16)*(36*sin(t)**4 - 96*sin(t)**2 + 64)**3*sin(2*t))/(8*(4 - 3*sin(t)**2)**3*(36*sin(t)**4 - 96*sin(t)**2 + 64)**3)
+Result nsimplify = (2*(4 - 3*sin(t)**2)**(5/2)*(-8*(-144*sin(t)**3*cos(t) + 192*sin(t)*cos(t))*(2*(3*sin(t)**2 - 4)**2*cos(2*t) - 9*sin(t)**3*sin(2*t)*cos(t) + 12*sin(t)*sin(2*t)*cos(t))*(36*sin(t)**4 - 96*sin(t)**2 + 64) - 8*(36*sin(t)**4 - 96*sin(t)**2 + 64)**2*(-4*(3*sin(t)**2 - 4)**2*sin(2*t) + 24*(3*sin(t)**2 - 4)*sin(t)*cos(t)*cos(2*t) + 9*sin(t)**4*sin(2*t) - 18*sin(t)**3*cos(t)*cos(2*t) - 27*sin(t)**2*sin(2*t)*cos(t)**2 - 12*sin(t)**2*sin(2*t) + 24*sin(t)*cos(t)*cos(2*t) + 12*sin(2*t)*cos(t)**2)) + 2*sqrt(4 - 3*sin(t)**2)*(-4*(4 - 3*sin(t)**2)**2 - 16)*(36*sin(t)**4 - 96*sin(t)**2 + 64)**3*sin(2*t))/(8*(4 - 3*sin(t)**2)**3*(36*sin(t)**4 - 96*sin(t)**2 + 64)**3)
+Numerator of together = 0

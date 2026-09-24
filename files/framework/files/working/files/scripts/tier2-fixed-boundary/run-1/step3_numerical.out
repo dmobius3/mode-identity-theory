@@ -1,0 +1,89 @@
+======================================================================
+NUMERICAL RESULTS FOR ALL SECTORS
+======================================================================
+
+==================================================
+Sector m = 0
+==================================================
+
+Sturm count: 0 interior zeros
+Endpoint ratio rho = 4.778534e-12
+phi(pi/2) = 3.185689559371e-12
+
+Chebyshev eigenvalues (mu = lambda*R^2):
+                  N=64                 N=128        |diff|    agree?
+       -0.000000000000       -0.000000000001      1.33e-12       YES
+       11.659885902175       11.659885902174      1.28e-12       YES
+
+Index (Chebyshev, mu < -1e-8): 0
+Near-zero eigenvalues: [np.float64(-1.4035625111052034e-12)]
+Sturm count = 0
+Sturm-Chebyshev agreement: True
+Endpoint ratio rho <= 1e-8: True
+  -> NEAR-ZERO CASE from Sturm
+
+==================================================
+Sector m = 1
+==================================================
+
+Sturm count: 1 interior zeros
+  zero 1 at t = 0.955316618125
+Endpoint ratio rho = 1.000000e+00
+phi(pi/2) = -1.000000000000e+00
+
+Chebyshev eigenvalues (mu = lambda*R^2):
+                  N=64                 N=128        |diff|    agree?
+       -1.999999999998       -1.999999999952      4.54e-11       YES
+        5.245448707917        5.245448707880      3.69e-11       YES
+
+Index (Chebyshev, mu < -1e-8): 1
+Near-zero eigenvalues: none
+Sturm count = 1
+Sturm-Chebyshev agreement: True
+Endpoint ratio rho <= 1e-8: False
+
+==================================================
+Sector m = 2
+==================================================
+
+Sturm count: 0 interior zeros
+Endpoint ratio rho = 7.380306e-01
+phi(pi/2) = 6.852160330221e-01
+
+Chebyshev eigenvalues (mu = lambda*R^2):
+                  N=64                 N=128        |diff|    agree?
+        1.849413336656        1.849413336655      1.24e-12       YES
+
+Index (Chebyshev, mu < -1e-8): 0
+Near-zero eigenvalues: none
+Sturm count = 0
+Sturm-Chebyshev agreement: True
+Endpoint ratio rho <= 1e-8: False
+
+==================================================
+Sector m = 3
+==================================================
+
+Sturm count: 0 interior zeros
+Endpoint ratio rho = 1.000000e+00
+phi(pi/2) = 9.999999999999e-01
+
+Chebyshev eigenvalues (mu = lambda*R^2):
+                  N=64                 N=128        |diff|    agree?
+        0.691619142281        0.691619142238      4.33e-11       YES
+        9.122935239526        9.122935239500      2.59e-11       YES
+
+Index (Chebyshev, mu < -1e-8): 0
+Near-zero eigenvalues: none
+Sturm count = 0
+Sturm-Chebyshev agreement: True
+Endpoint ratio rho <= 1e-8: False
+
+
+======================================================================
+SUMMARY
+======================================================================
+m=0: Sturm=0, Cheb_index=0, near_zero=True, rho=4.78e-12
+m=1: Sturm=1, Cheb_index=1, near_zero=False, rho=1.00e+00
+m=2: Sturm=0, Cheb_index=0, near_zero=False, rho=7.38e-01
+m=3: Sturm=0, Cheb_index=0, near_zero=False, rho=1.00e+00

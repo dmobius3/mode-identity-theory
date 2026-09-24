@@ -115,6 +115,8 @@ A sampler reading of that split is recorded open: the quotient carries the nativ
 
 A variational reading now sits over both, as program architecture rather than a fourth tier: the dynamics problem is a variational principle for the global score-to-sample relation, not a search for a conventional $`L(q,\dot q,t)`$. The corpus phase $`t`$ stays fundamental and observer time is reconstructed through a lapse $`d\tau_H = N(t)\,dt`$, with the two-level descent $`\mathcal{S}_\text{MIT} \to \mathcal{S}_\text{eff}`$ carrying the sampled degrees of freedom. Its promotion gate is the observer clock: whether $`\delta\mathcal{S}_\text{MIT}/\delta N = 0`$ forces $`N = S^{1/2}`$ without the exponent being inserted by hand, with $`\Psi^2 + S^2 = 1`$ entering only as an on-shell constraint. The gate, the fixed conventions, the one bounded computation and its pre-registered PASS and FAIL conditions are on the program page, [Variational Score-to-Sample](files/variational-score-to-sample.md). Its first clock arm has run ([The Variational Clock Arm](files/variational-clock-arm.md)): in the program's class, a quadratic kinetic term with the lapse equation a genuine constraint, the potential's level sets the lapse and the variation selects none, so the independent route fails and the half power returns only as R-HALF's operator realization. It is now parked on the one question left, why the potential carries amplitude weight, with a standing admission bar for any proposal that claims to answer it.
 
+The dynamical direction's Tier 2 has run its first computation ([The Tier 2 Fixed-Boundary Run](files/tier2-fixed-boundary.md)). The specified band, Lawson's Möbius band, is unstable under the fixed-boundary area functional, with index 2 and nullity 1. The index was already stated in the literature, and the nullity follows from a published computation. Every minimal Möbius band spanning a great circle is unstable the same way, so in that regime no smooth embedded band attains the infimum of area.
+
 **Gated by:** `gate:variational-independence-bar`
 
 **Inputs:** [First eigenvalue](../bedrock/files/first-eigenvalue.md), [Coexact gap](../bedrock/files/coexact-gap.md).
@@ -309,6 +311,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 **Inputs:** [Variational Score-to-Sample](files/variational-score-to-sample.md) §4, §7, §11, §14, [The Half-Power Clock](files/friedmann-as-output.md) §II, §III, [The Tick Lemma](files/tick-lemma.md) §III, [The Clock-Asymmetry Fit](files/clock-asymmetry-fit.md), [clock_arm_check.py](files/scripts/variational-clock-arm/clock_arm_check.py).
 
 **Parent:** [Variational Score-to-Sample](files/variational-score-to-sample.md)
+
+---
+
+### [The Tier 2 Fixed-Boundary Run](files/tier2-fixed-boundary.md)
+
+**Result (2026-09-23):** The postulate bridge's first Tier 2 computation, run blind against terms frozen before it: the Dirichlet Jacobi spectrum of a specified minimal Möbius band bounded by a great circle in $`S^3`$. The band is Lawson's Möbius band, half of his Klein bottle $`\tau_{2,1}`$. Its index is 2, carried by $`\langle e_3, \nu\rangle`$ and $`\langle e_4, \nu\rangle`$ at $`-2/R^2`$ exactly, and its nullity is 1, the rotation about the boundary circle: it is unstable. Both values follow by reflection from Morozov and Penskoi's index 7 and nullity 5 for the closed Klein bottle. The index was also stated by Bernstein and Ketover the day before the freeze; a standalone statement of the nullity was not located. The review adds that no smooth embedded Möbius band spanning a great circle attains the infimum of area, whose value stays open. The eigenvalue $`-2/R^2`$ belongs to every minimal surface in $`S^3`$ and counts for nothing.
+
+**Inputs:** [The Postulate Bridge](files/postulate-bridge.md) (the Tier 2 ground floor), [scripts](files/scripts/tier2-fixed-boundary/).
+
+**Parent:** [The Postulate Bridge](files/postulate-bridge.md)
 
 ---
 

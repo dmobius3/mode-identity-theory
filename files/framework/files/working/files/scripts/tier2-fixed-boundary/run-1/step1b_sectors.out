@@ -1,0 +1,54 @@
+A(t) = cos(t)**2/4 + 1/4 = 1/2 - sin(t)**2/4
+B(t) = 3*sin(t)**2/4 - 1/2 = 3*sin(t)**2/4 - 1/2
+
+X13: raw - decomp = 0
+X14: raw - decomp = -(3*sin(t)**2 - 2)*cos(s/2)/4 + (cos(t)**2 + 1)*cos(3*s/2)/4 + sin(s/2)*sin(s)*sin(t)**2/2 - cos(s/2)*cos(s)*cos(t)**2
+X23: raw - decomp = (3*sin(t)**2 - 2)*cos(s/2)/4 + (cos(t)**2 + 1)*cos(3*s/2)/4 + sin(s/2)*sin(s)*cos(t)**2 - sin(t)**2*cos(s/2)*cos(s)/2
+X24: raw - decomp = 0
+
+=== Sector-pure combinations ===
+For |m|=1 (sin(s/2) mode):
+  X13 + X24 = 2*sin(s/2)*B(t)
+  Direct: (3*sin(t)**2/2 - 1)*sin(s/2)
+  Expected: (3*sin(t)**2 - 2)*sin(s/2)/2
+  Match: True
+
+For |m|=1 (cos(s/2) mode):
+  X14 - X23 = 2*cos(s/2)*B(t)
+  Direct: (3*sin(t)**2/2 - 1)*cos(s/2)
+  Match: True
+
+For |m|=3 (sin(3s/2) mode):
+  X13 - X24 = 2*sin(3s/2)*A(t)
+  Direct: (1 - sin(t)**2/2)*sin(3*s/2)
+  Match: True
+
+For |m|=3 (cos(3s/2) mode):
+  -(X14 + X23) = 2*cos(3s/2)*A(t)
+  Direct: (1 - sin(t)**2/2)*cos(3*s/2)
+  Match: True
+
+=== t-profiles phi_K(t) ===
+phi_K for |m|=1: (3*sin(t)**2 - 2)/(2*sqrt(4 - 3*sin(t)**2))
+phi_K for |m|=3: (cos(t)**2 + 1)/(2*sqrt(3*cos(t)**2 + 1))
+
+phi1(0) = -1/2
+phi1(pi/2) = 1/2
+phi3(0) = 1/2
+phi3(pi/2) = 1/2
+
+Zeros of phi1: B(t) = 0 when sin^2(t) = 2/3
+  t* = arcsin(sqrt(2/3)) = asin(sqrt(6)/3)
+  Numerical: 0.9553166181
+  pi/2 = 1.5707963268
+  t* < pi/2: True
+  t* > 0: True
+  So exactly 1 zero in (0, pi/2) for m=1 sector
+
+Zeros of phi3: A(t) = (1+cos^2(t))/4 >= 1/4 > 0 always
+  A(0) = 1/2, A(pi/2) = 1/4
+  No zeros in (0, pi/2) for m=3 sector
+
+=== Summary ===
+m=1: index = 1 (one zero), nullity = 0 (phi_K(pi/2) != 0)
+m=3: index = 0 (no zeros), nullity = 0 (phi_K(pi/2) != 0)

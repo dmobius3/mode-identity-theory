@@ -1,0 +1,45 @@
+PASS (a1) -p(s, -t) = R12(pi) p(s, t)
+PASS (a2) V_m(pi - t) = V_m(t)
+PASS (b1) R^2 J_2 (sin t/sqrt f) = -2 sin t/sqrt f
+PASS (b2) (sin t/sqrt f)' = 0 at pi/2, odd
+PASS (b3) rotation profiles solve J_1, J_3 = 0 and have zero slope at pi/2
+
+(c) finite differences, h = pi/16000 at the finest level; |m| >= 4 contributes nothing (V_m > 0)
+  m=0  B Dirichlet: -0.0000000  11.6598859
+       B Neumann:   -4.9244782  4.5614749
+       closed [0,pi]: -4.9244783 -0.0000000  4.5614749  11.6598859   (max spread 5.5e-08)
+       counts (index, nullity): Dirichlet (0, 1), Neumann (1, 0), closed (1, 1); closed = Dirichlet u Neumann below 12: True
+  m=1  B Dirichlet: -2.0000000  5.2454487
+       B Neumann:   -4.4859074  0.0000000
+       closed [0,pi]: -4.4859074 -2.0000000  0.0000001  5.2454487   (max spread 6.5e-08)
+       counts (index, nullity): Dirichlet (1, 0), Neumann (1, 1), closed (2, 1); closed = Dirichlet u Neumann below 12: True
+  m=2  B Dirichlet:  1.8494134
+       B Neumann:   -2.0000000  6.4701555
+       closed [0,pi]: -2.0000000  1.8494133  6.4701556   (max spread 5.7e-08)
+       counts (index, nullity): Dirichlet (0, 0), Neumann (1, 0), closed (1, 0); closed = Dirichlet u Neumann below 12: True
+  m=3  B Dirichlet:  0.6916192  9.1229352
+       B Neumann:   -0.0000000  4.0961818
+       closed [0,pi]: -0.0000000  0.6916192  4.0961818  9.1229353   (max spread 5.9e-08)
+       counts (index, nullity): Dirichlet (0, 0), Neumann (0, 1), closed (0, 1); closed = Dirichlet u Neumann below 12: True
+  totals with multiplicity (index, nullity): Dirichlet [2, 1], Neumann [5, 4], closed [7, 5]
+PASS (c1) the splitting holds sector by sector
+PASS (c2) B Dirichlet totals = (2, 1), the run's
+PASS (c3) B Neumann totals = (5, 4)
+PASS (c4) closed totals = (7, 5), Morozov-Penskoi's Theorem 2
+PASS (d1) V_1 = u/4 - u^2/2 - 2 in u = 1/f: exactly V_1
+PASS (d2) V_1 <= -9/4 on u in [1, 4] (its critical point u = 1/4 lies outside), so the constant profile has Q_1 < 0
+
+(d) Q_0(sin t) = -2.10695884849 = 0.702319616164 - 1.01747282281 - 1.79180564185 (per unit s-length, R = 1)
+PASS (d3) sin t in m = 0: the bound's pieces hold (first <= pi/4 <= second, third > 0), so Q_0 < 0 without decimals
+  Q_1(1) = -4.3050951984; m = +-2: <e1,nu>, <e2,nu> are Neumann eigenfunctions at -2 (b1, b2)
+PASS (d4) the constant profile's form in m = 1 is negative
+  so the Neumann index is >= 5 exactly; the Dirichlet index is >= 2 exactly; closed index 7 (Morozov-Penskoi)
+  forces Dirichlet index = 2 and Neumann index = 5. Closed nullity 5, with Neumann nullity >= 4 (b3) and
+  Dirichlet nullity >= 1 (psi_X), forces Dirichlet nullity = 1 and Neumann nullity = 4.
+
+(e) mutation arm: |A|^2 dropped
+PASS (e0) parent green: (c2)-(c4) passed
+  mutated totals: Dirichlet [2, 0], Neumann [3, 0], closed [5, 0]
+PASS (e1) the mutation breaks the closed totals (7, 5)
+
+ALL PASS: 0 failed
