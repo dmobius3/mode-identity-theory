@@ -159,23 +159,23 @@ Equivalently: $`C/2 + J^2 = 1`$. Observation amplitude and transverse geometry a
 
 | Location | $`y`$ | $`\lvert J\rvert`$ (surface width) | $`u_0`$ (eigenfunction) | $`C`$ (observation) | Reading |
 |---|---|---|---|---|---|
-| Central circle | 0 or $`\pi R`$ (identified) | 1 (full width) | 0 (zero) | 0 | Surface at maximum extent. Observation silent. |
+| Gluing seam | 0 or $`\pi R`$ (identified) | 1 (full width) | 0 (zero) | 0 | Surface at maximum extent. Observation silent. |
 | Antinode (cone point) | $`\pi R/2`$ | 0 (collapsed to a point) | 1 (maximum) | 2 | Surface collapsed. Observation peaks. |
 | Fibonacci wells | intermediate | intermediate | intermediate | 0.22 to 1.97 | Where sampling reads finite observables. |
 
 $`J(y) = \cos(y/R)`$ is signed: $`J(0) = 1`$ but $`J(\pi R) = -1`$. The table above lists $`\lvert J\rvert`$, the transverse extent, which is what "surface width" means physically; the budget identity itself is stated in $`J^2`$ ($`u_0^2 + J^2 = 1`$), so the sign is immaterial there. Retain the signed $`J`$ when discussing the Jacobi field as such.
 
-**Where the zeros live.** The Möbius identification $`(0, w) \sim (\pi R, -w)`$ maps $`y = 0`$ and $`y = \pi R`$ to a single closed curve: the central circle of the band. This is interior to the surface, where the twist acts. The boundary $`\partial M = S^1`$ consists of the transverse edges $`w = \pm W`$, forming a single loop that runs in the $`y`$-direction and carries all values of $`u_0`$ from 0 to 1. The $`C = 0`$ locus sits on the central circle, interior to the Möbius band.
+**Where the zeros live.** The Möbius identification $`(0, w) \sim (\pi R, -w)`$ glues the transverse arcs $`y = 0`$ and $`y = \pi R`$ into one transverse arc, the gluing seam, parametrized by $`w \in [-W, W]`$. The twist acts across it. The boundary $`\partial M = S^1`$ consists of the longitudinal edges $`w = \pm W`$, which the same identification joins into a single loop running in the $`y`$-direction; it carries all values of $`u_0`$ from 0 to 1. The $`C = 0`$ locus is the gluing seam: it crosses the band's core, the closed curve $`w = 0`$ along which $`\Theta`$ runs once from 0 to 1, at a single point, and meets the temporal edge $`\partial M`$ at its two ends.
 
-**Why sin, why there.** On the flat strip, the anti-periodic BC admits both $`\sin(y/R)`$ and $`\cos(y/R)`$ as lowest flat-strip modes at the same eigenvalue $`1/R^2`$: a degenerate pair. Cosine has no zeros at $`y = 0, \pi R`$. The curvature of $`S^3`$ breaks this degeneracy. The $`\tan(y/R)`$ term in the curved Laplacian ($`\Delta u = u'' - R^{-1}\tan(y/R)\,u'`$) eliminates cosine as a solution entirely. Only $`\sin(y/R)`$ survives, and the eigenvalue is simple (Sector $`\mathcal{A}`$, §7, Sturm-Liouville). The same curvature that lifts the eigenvalue from $`1/R^2`$ to $`2/R^2`$ selects the eigenfunction that vanishes on the central circle. The zeros are placed by the curvature, through the selection of sin over cos.
+**Why sin, why there.** On the flat strip, the anti-periodic BC admits both $`\sin(y/R)`$ and $`\cos(y/R)`$ as lowest flat-strip modes at the same eigenvalue $`1/R^2`$: a degenerate pair. Cosine has no zeros at $`y = 0, \pi R`$. The curvature of $`S^3`$ breaks this degeneracy. The $`\tan(y/R)`$ term in the curved Laplacian ($`\Delta u = u'' - R^{-1}\tan(y/R)\,u'`$) eliminates cosine as a solution entirely. Only $`\sin(y/R)`$ survives, and the eigenvalue is simple (Sector $`\mathcal{A}`$, §7, Sturm-Liouville). The same curvature that lifts the eigenvalue from $`1/R^2`$ to $`2/R^2`$ selects the eigenfunction that vanishes on the gluing seam. The zeros are placed by the curvature, through the selection of sin over cos.
 
-At the $`C = 0`$ locus, the surface is at its most geometrically intact. The Möbius band is wide open. The transverse direction has full extent ($`J = 1`$). The wave has maximum room. The eigenfunction vanishes because the curvature of the embedding uniquely selects a first positive mode whose zeros land on the central circle. The surface is healthy. Sampling is what fails.
+At the $`C = 0`$ locus, the surface is at its most geometrically intact. The Möbius band is wide open. The transverse direction has full extent ($`\lvert J\rvert = 1`$). The wave has maximum room. The eigenfunction vanishes because the curvature of the embedding uniquely selects a first positive mode whose zeros land on the gluing seam. The surface is healthy. Sampling is what fails.
 
 This complementarity is created by the curvature of $`S^3`$. On the flat strip, $`J = 1`$ everywhere, sin and cos are equally valid lowest modes, and there is no trade-off between geometry and observation. The totally geodesic great $`S^2 \subset S^3`$ on which the band lies curves $`J`$ into $`\cos(y/R)`$, breaks the eigenfunction degeneracy in favor of $`\sin(y/R)`$, and couples the two through a shared curvature $`K = 1/R^2`$. The complementarity and the zero placement are both consequences of the great-$`S^2`$ geometry.
 
 **Status:** DERIVED. Follows from the Sector $`\mathcal{A}`$ eigenfunction, the Jacobi equation on $`S^2 \subset S^3`$, and the Pythagorean identity. The complementarity is forced by the totally geodesic great-$`S^2`$ geometry the band inherits; any other ambient geometry would break it.
 
-**Local flatness at the node, precisely.** At $`y = 0`$ (the central circle), the curvature term's coefficient in the surface's Laplace-Beltrami operator ($`\Delta u = u'' - \tfrac1R\tan(y/R)\,u'`$) vanishes, so the first-order drift term drops out there and the operator coincides pointwise with the flat-strip operator ($`u''`$); the principal symbol, from $`u''`$ alone, is the same everywhere and was never in question. This is a pointwise coincidence, not a neighborhood one: expanding $`\tfrac1R\tan(y/R) \approx \tfrac{y}{R^2} + \tfrac{y^3}{3R^4} + O(y^5/R^6)`$ shows the curvature term reappears at next order immediately off the point, the same way Christoffel symbols vanish at a point in Riemann normal coordinates without curvature disappearing nearby. The eigenvalue $`\lambda_0 = 2/R^2`$ remains a global property of the whole surface throughout.
+**Local flatness at the node, precisely.** At $`y = 0`$ (on the gluing seam), the curvature term's coefficient in the surface's Laplace-Beltrami operator ($`\Delta u = u'' - \tfrac1R\tan(y/R)\,u'`$) vanishes, so the first-order drift term drops out there and the operator coincides pointwise with the flat-strip operator ($`u''`$); the principal symbol, from $`u''`$ alone, is the same everywhere and was never in question. This is a pointwise coincidence, not a neighborhood one: expanding $`\tfrac1R\tan(y/R) \approx \tfrac{y}{R^2} + \tfrac{y^3}{3R^4} + O(y^5/R^6)`$ shows the curvature term reappears at next order immediately off the point, the same way Christoffel symbols vanish at a point in Riemann normal coordinates without curvature disappearing nearby. The eigenvalue $`\lambda_0 = 2/R^2`$ remains a global property of the whole surface throughout.
 
 ---
 
@@ -231,9 +231,9 @@ What the framework has not yet done is restate that motion in its own language. 
 
 ## VI. The Phase Walk and the Closed Domain
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/bh-closed-domain.png?raw=true" width="85%" alt="The phase operator C(Theta) over the closed domain: the bosonic domain [0, 60/120] shaded up to its wall at the antinode, Lambda; the H0 well at 34/120 with its one step toward 36/120; the horizon walking continuously from the well down to the node at Theta = 0; and Theta = 0 and Theta = 1 joined as one node with two coordinate addresses">
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/bh-closed-domain.png?raw=true" width="85%" alt="The phase operator C(Theta) over the closed domain: the bosonic domain [0, 60/120] shaded up to its wall at the antinode, Lambda; the H0 well at 34/120 and the one-step displacement toward 36/120 that the Hubble-tension correspondence would need; the horizon walking continuously from the well down to the node at Theta = 0; and Theta = 0 and Theta = 1 joined as one node with two coordinate addresses">
 
-The §9 phase field and the black hole case both move $`\Theta`$ on the same phase operator $`C(\Theta)`$, but not through the same trigger. The §9 shift is a discrete environmental step (2/120), with its own separately-motivated trigger; the black hole case is the continuous Schwarzschild response $`C/C_0 = 1 - r_s/r`$ (§VIII.1), which in an ordinary galactic potential gives a smooth shift orders of magnitude below one bosonic step (§VIII.1, weak-field decoupling). They share the operator, not the response law, and the two numbers should not be expected to agree.
+The [phase field](../../framework/README.md#the-phase-field) and the black hole case both move $`\Theta`$ on the same phase operator $`C(\Theta)`$, but not by the same mechanism. The phase-field shift would be a discrete environmental step (2/120). The trigger proposed to realize it is withdrawn: the pre-registered SPARC coherence test falsified it, and a separate exploratory check did not detect the two-cluster $`H_0`$ structure it predicted, so that correspondence has no active mechanism ([Hubble Tension](hubble-tension.md), §III and §V). The black hole case is a different, continuous mechanism: the Schwarzschild response $`C/C_0 = 1 - r_s/r`$ (§VIII.1), which in an ordinary galactic potential gives a smooth shift orders of magnitude below one bosonic step (§VIII.1, weak-field decoupling). They share the operator, not the response law, and the two numbers should not be expected to agree.
 
 ### The bosonic domain has a wall
 
@@ -241,9 +241,9 @@ The full 120-grid comes from $`|2I| = 120`$. Observation squares the wavefunctio
 
 ### The two nodes are one point
 
-The eigenfunction $`u_0 = \sin(y/R)`$ vanishes at $`y = 0`$ and $`y = \pi R`$. The Möbius identification $`(y + \pi R, w) \sim (y, -w)`$ maps these two endpoints to the same central circle. The anti-periodic boundary condition gives $`u_0(\pi R) = -u_0(0) = 0`$. $`\Theta = 0`$ and $`\Theta = 1`$ are two coordinate addresses for one physical location on the band.
+The eigenfunction $`u_0 = \sin(y/R)`$ vanishes at $`y = 0`$ and $`y = \pi R`$. The Möbius identification $`(y + \pi R, w) \sim (y, -w)`$ glues these two ends into one transverse arc, the gluing seam of §IV.A. The anti-periodic boundary condition gives $`u_0(\pi R) = -u_0(0) = 0`$. On the phase circle, the band's core, $`\Theta = 0`$ and $`\Theta = 1`$ are two coordinate addresses for one point; on the band, the node is the whole gluing seam through that point.
 
-The Hubble tension (stepping from 34/120 toward 36/120) moves toward the antinode, away from the node. The black hole horizon (walking from 34/120 toward 0/120) moves toward the node where $`C`$ vanishes. Both are shifts on the same closed domain, one away from the zero, one toward it.
+The Hubble-tension step (from 34/120 to 36/120) would move toward the antinode, away from the node, were a mechanism to realize it. The black hole horizon (walking from 34/120 toward 0/120) moves toward the node where $`C`$ vanishes. Both are shifts on the same closed domain, one away from the zero, one toward it.
 
 One arch, one node (with two coordinate addresses), one antinode.
 
@@ -285,7 +285,7 @@ The power $`\beta = 1`$ is uniquely forced by the requirement that the eigenfunc
 
 | Property | Result |
 |----------|--------|
-| Weak-field behavior, under the minimal global extension | For $`C/C_0=1-r_s/r`$, the smooth shift at $`r/r_s=10^6`$ is $`2\times10^{-7}`$, far below one bosonic step (2/120): the Schwarzschild response does not reach, and does not explain, the separate §9 environmental step. Not protected by the near-horizon uniqueness proof, which constrains only $`f(x)\sim x`$ as $`x\to0`$; a different global $`f`$ with the same horizon limit could give a different weak-field derivative $`f'(1)`$ |
+| Weak-field behavior, under the minimal global extension | For $`C/C_0=1-r_s/r`$, the smooth shift at $`r/r_s=10^6`$ is $`2\times10^{-7}`$, far below one bosonic step (2/120): the Schwarzschild response does not reach, and does not explain, the separate phase-field step, whose proposed trigger is withdrawn (§VI). Not protected by the near-horizon uniqueness proof, which constrains only $`f(x)\sim x`$ as $`x\to0`$; a different global $`f`$ with the same horizon limit could give a different weak-field derivative $`f'(1)`$ |
 | Near-horizon slope | $`du_0/d\ell\vert_H = \sqrt{A}\,\sin(\pi\Theta_0) \cdot \kappa_\text{geom}`$, finite and nonzero for mass-independent $`A`$, proportional to surface gravity; $`\sin(\pi\Theta_0)`$ alone requires the further choice $`A=1`$ (§V) |
 | Uniqueness of $`\beta = 1`$ | Only value giving finite nonzero slope; all other $`\beta`$ fail |
 | Identity under the minimal extension | $`C(\Theta)/C(\Theta_0) \div (1 - r_s/r) = 1`$ exactly at all radii, by construction of the minimal choice, not an independent check |
@@ -346,13 +346,13 @@ The GR third law (extremal horizons, $`\kappa = 0`$, cannot be reached in finite
 
 ### VIII.5 Spectral-Physical Bridge (Priority 5)
 
-The structural parallel between the scaling-side zero ($`\Theta \to 0`$ driving $`C \to 0`$, DERIVED, with $`\Omega_\Psi \to 0`$ conjectured alongside it, §II) and the spectral zero ($`Z_\sigma(0) = 0`$, driven by the Pochhammer collapse $`(s)_k = 0`$) is established (§II.A). The $`s \leftrightarrow \Theta`$ map on the spectral side is proved not to exist by Lemma 8 (The Mirror): the spectral and scaling sides are structurally parallel but cannot be connected by a natural map. The open question is whether the torsion survivor $`Z'_\sigma(0) = \log T^2`$ can be connected to the physical survivor (Hawking radiation gradient) through a route other than the direct spectral-to-phase bridge. The $`\Phi \to \Theta`$ mapping provides the discrete localization that spectral geometry lacks (mass breaks the right-SU(2) isometry). If the torsion values $`\{\log 2, \log 3, \log 5, \log\varphi\}`$ constrain the horizon structure through the same arithmetic that constrains the fermion mass spectrum (engine §13), the spectral and physical sides of the double zero would be unified. This would close the loop between Tools 3 and 5 at the boundary of the domain. Status: OPEN.
+The structural parallel between the scaling-side zero ($`\Theta \to 0`$ driving $`C \to 0`$, DERIVED, with $`\Omega_\Psi \to 0`$ conjectured alongside it, §II) and the spectral zero ($`Z_\sigma(0) = 0`$, driven by the Pochhammer collapse $`(s)_k = 0`$) is established (§II.A). The $`s \leftrightarrow \Theta`$ map on the spectral side is proved not to exist by Lemma 8 (The Mirror): the spectral and scaling sides are structurally parallel but cannot be connected by a natural map. The open question is whether the torsion survivor $`Z'_\sigma(0) = \log T^2`$ can be connected to the physical survivor (Hawking radiation gradient) through a route other than the direct spectral-to-phase bridge. The $`\Phi \to \Theta`$ mapping provides the discrete localization that spectral geometry lacks (mass breaks the right-SU(2) isometry). If the torsion values $`\{\log 2, \log 3, \log 5, \log\varphi\}`$ constrain the horizon structure through the same arithmetic that constrains the fermion mass spectrum ([mass spectrum](../../spectrum/files/mass-spectrum.md) §II.4), the spectral and physical sides of the double zero would be unified. This would close the loop between Tools 3 and 5 at the boundary of the domain. Status: OPEN.
 
 ### VIII.6 The Directional Problem: Critical-Point Geometry
 
 **Status: Critical-point identification DERIVED; dynamical interpretation OPEN (no evolution law for $`\Theta`$ is given anywhere in this framework).**
 
-The Hubble tension walks $`\Theta`$ away from $`0`$ toward the antinode ($`C`$ increases); the horizon requires $`\Theta \to 0`$ (toward the node, $`C`$ decreases). These look like opposite directions on the domain coordinate, but coordinate direction is not the relevant variable; proximity to a critical point of $`C`$ is.
+The Hubble-tension correspondence would walk $`\Theta`$ away from $`0`$ toward the antinode ($`C`$ increases), though no active mechanism realizes it (§VI); the horizon requires $`\Theta \to 0`$ (toward the node, $`C`$ decreases). These look like opposite directions on the domain coordinate, but coordinate direction is not the relevant variable; proximity to a critical point of $`C`$ is.
 
 ```math
 \frac{dC}{d\Theta} = 2\pi\sin(2\pi\Theta)
@@ -378,7 +378,7 @@ diverges as $`\Theta \to 0`$ and vanishes at $`\Theta = 1/2`$: this says $`C`$ i
 
 **A numerical check worth recording.** $`\Theta_0 = 34/120`$, the Hubble-tension well, is not near the antinode plateau: $`C'(34/120) \approx 6.15`$, within 2.2% of the arch's maximum possible slope $`2\pi \approx 6.28`$, and 26 grid steps from $`60/120`$. It sits near the steepest part of the arch, not a flat region. Whatever protects $`\Lambda`$ (whose own well sits exactly at the true zero-slope antinode) does not extend to 34/120.
 
-**Connection to the complementarity.** The two critical points of $`C`$ are the two poles of $`u_0^2 + J^2 = 1`$ (§IV.A): antinode ($`u_0 = 1`$, $`J = 0`$, cone point, curvature dominates) and node ($`u_0 = 0`$, $`J = 1`$, central circle, geometry dominates).
+**Connection to the complementarity.** The two critical points of $`C`$ are the two poles of $`u_0^2 + J^2 = 1`$ (§IV.A): antinode ($`u_0 = 1`$, $`J = 0`$, cone point, curvature dominates) and node ($`u_0 = 0`$, $`J = \pm 1`$, gluing seam, geometry dominates).
 
 ---
 
@@ -386,7 +386,7 @@ diverges as $`\Theta \to 0`$ and vanishes at $`\Theta = 1/2`$: this says $`C`$ i
 
 | Quantity | Value | Source |
 |---|---|---|
-| $`\Theta = 0`$ and $`\Theta = 1`$ | Same physical point (central circle) | Möbius identification; both are zeros of $`C`$; domain is closed |
+| $`\Theta = 0`$ and $`\Theta = 1`$ | One point of the phase circle (the core); on the band, the gluing seam | Möbius identification; both are zeros of $`C`$; domain is closed |
 | $`C(0) = C(1)`$ | 0 | Phase operator at boundary ($`\Theta`$ at the wall drives $`C`$ to zero) |
 | $`C'(0) = C'(1)`$ | 0 | Quadratic vanishing |
 | $`C''(0)`$ | $`4\pi^2`$ | Leading nonvanishing order |

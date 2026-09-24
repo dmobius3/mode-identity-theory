@@ -101,7 +101,7 @@ Both may be correct at different levels. Reading A says all observers share the 
 At cosmic scale: $`u_0^2 + J^2 = 1`$, where $`u_0 = \sin(y/R)`$ and $`J = \cos(y/R)`$.
 
 At the cone point ($`y = \pi R/2`$): $`u_0 = 1`$, $`J = 0`$. Full budget in sampling, none in transverse geometry.
-At the central circle ($`y = 0, \pi R`$): $`u_0 = 0`$, $`J = 1`$. Full budget in geometry, none in sampling.
+At the gluing seam ($`y = 0 \equiv \pi R`$): $`u_0 = 0`$, $`J = \pm 1`$. Full budget in geometry, none in sampling.
 
 The budget identity holds because both $`u_0`$ and $`J`$ satisfy second-order ODEs sourced by the same constant curvature $`K = 1/R^2`$, and both are trigonometric functions of $`y/R`$.
 
@@ -109,10 +109,10 @@ For Reading A: the budget identity holds as written. The galactic perturbation s
 
 For Reading B: the budget identity at galactic scale requires $`u_g^2 + J_g^2 = \text{const}`$. This holds if $`K_g`$ is constant (same trigonometric solutions). If $`K_g`$ varies, the identity takes a different form, or may not hold as a simple sum-of-squares.
 
-| Budget | Cone point | Central circle | Interpretation |
+| Budget | Cone point | Gluing seam | Interpretation |
 |--------|-----------|----------------|----------------|
 | $`u_0 = 1,\; J = 0`$ | All sampling, no extent | | Coherence maximum: transverse positions identified |
-| $`u_0 = 0,\; J = 1`$ | | All extent, no sampling | Coherence minimum: transverse positions maximally distinct |
+| $`u_0 = 0,\; J = \pm 1`$ | | All extent, no sampling | Coherence minimum: transverse positions maximally distinct |
 | $`u_0^2 + J^2 = 1`$ | | | Fixed total: what the surface spends on extent, it loses in sampling |
 
 At the galactic cone point (if it exists): all spatial positions within the galaxy are metrically identified. The galactic eigenfunction is at maximum. The transverse geometry has collapsed. This is the geometric content of the statement "observers within the galaxy measure equal $`\mathbb{R}^4`$ values."
