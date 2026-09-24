@@ -7,7 +7,7 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/early%20galaxy%20banner.png?raw=true" width="100%" alt="Early Galaxies">
 
-JWST has found galaxies too massive, too early. Stellar masses of $`\sim 10^{10}\,M_\odot`$ at $`z \approx 10`$ require star formation efficiencies exceeding unity under ΛCDM with a constant MOND acceleration scale, a physical impossibility.
+JWST has found galaxies too massive, too early. Stellar masses of $`\sim 10^{10}\,M_\odot`$ at $`z \approx 10`$ push the inferred star formation efficiency toward or past unity, the limit at which every available baryon has become stars, under standard ΛCDM halo abundances.
 
 Mode Identity Theory offers a reading that eases it. The MOND acceleration scale $`a_0`$ and the Hubble rate $`H`$ are both edge modes ($`n = 1`$) on the 120-domain (the discrete phase grid native to $`S^3/2I`$, the quotient of the three-sphere by the binary icosahedral group $`2I`$ with $`|2I| = 120`$). Their ratio is fixed by the Fibonacci wells:
 
@@ -26,15 +26,17 @@ MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse
 | Scaling law | $`a_0(z) = a_0(0) \times H(z)/H_0`$ |
 | $`a_0/(cH_0)`$ ratio | predicted: 0.184 / observed: 0.183 (SPARC $`a_0`$, Planck $`H_0`$; $`a_0`$ uncertain at tens of percent) |
 | At $`z = 10`$ | $`a_0 \approx 2.46 \times 10^{-9}`$ m/s² (20.5× local) |
-| Collapse speedup | ~2.1× faster (required $`\varepsilon_\text{SF}`$ drops below 1) |
+| Collapse speedup | ~2.1× faster (upper-bound estimate against constant-$`a_0`$ MOND: $`\varepsilon_\text{SF} \sim 0.5`$) |
 
 ## I. The Observational Tension
 
 JWST observations (Labbé et al.) reveal stellar masses $`M_\star \sim 10^{10}\,M_\odot`$ already assembled at $`z \approx 10`$, roughly 500 Myr after the standing wave began its cycle. These masses approach or exceed the maximal baryon abundance permitted in standard dark matter halos under ΛCDM, creating the "impossibly early galaxy" problem.
 
-The tension is quantitative. Assembling $`10^{10}\,M_\odot`$ of stars in 500 Myr requires converting baryons into stars faster than the available gas supply allows. Under standard assumptions (constant $`a_0`$, ΛCDM collapse timescales), the implied star formation efficiency $`\varepsilon_\text{SF}`$ exceeds unity: a physical impossibility. Either the observations contain systematic errors, the mass estimates are wrong, or the gravitational physics governing early collapse is different from what we assume locally.
+The tension is quantitative. Assembling $`10^{10}\,M_\odot`$ of stars in 500 Myr requires converting nearly every available baryon into stars. Under standard ΛCDM halo abundances, the implied star formation efficiency $`\varepsilon_\text{SF}`$ approaches or exceeds unity, the physical limit. Either the observations contain systematic errors, the mass estimates are wrong, or the gravitational physics governing early collapse is different from what we assume locally.
 
 MIT takes the third option. The acceleration scale governing collapse is not constant; it tracks the phase clock.
+
+Whether the candidates sit past that limit at all is less settled than the problem's name suggests. [Boylan-Kolchin (2023)](https://doi.org/10.1038/s41550-023-01937-7) finds that the stellar-mass densities of the two most massive Labbé et al. candidates imply conversion efficiencies of 0.99 at $`z \approx 9.1`$ and 0.84 at $`z \approx 7.5`$, at or below the full-efficiency ceiling rather than above it, and the wider JWST measurements above $`z \approx 10`$ that the [Euclid card](euclid-dr1.md) examines lie inside that ceiling. Whether the population persists in Euclid's wide-area data is the card's Row IV (§V).
 
 ## II. Epoch-Dependent Acceleration Scale
 
@@ -82,7 +84,7 @@ This is the paper's central prediction. $`a_0`$ is not a fundamental constant; i
 
 ## III. Early Structure Formation at z = 10
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-boost-cascade.png?raw=true" width="95%" alt="The boost step by step: a0 times 20.5 at z = 10 gives effective gravity times 4.5 in deep MOND, collapse about 2.1 times faster, and a star-formation efficiency down from above 1 to about 0.5; upper bounds, taken against constant-a0 MOND">
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-boost-cascade.png?raw=true" width="95%" alt="The boost step by step: a0 times 20.5 at z = 10 gives effective gravity times 4.5 in deep MOND, collapse about 2.1 times faster, and a star-formation efficiency down from about 1 or more to about 0.5; upper bounds, taken against constant-a0 MOND">
 
 ### The Boost
 
@@ -120,7 +122,7 @@ Since free-fall timescale scales as $`t_\text{ff} \propto 1/\sqrt{g}`$, structur
 
 ### Easing the Constraint
 
-For the Labbé et al. observations requiring $`\varepsilon_\text{SF} > 1`$ under standard assumptions, the 2.1× faster collapse brings the implied efficiency down to $`\varepsilon_\text{SF} \sim 0.5`$, inside the physically permitted range. That ratio is taken against constant-$`a_0`$ MOND, which is the baseline the 2.1$`\times`$ is computed from, rather than against the ΛCDM halos the original efficiency was derived in. That moves the "impossibly early galaxy" problem out of the impossible column without invoking exotic physics, new particles, or any modification to general relativity. Clearing any individual candidate is a separate question, set by halo-mass assumptions the framework leaves untouched.
+For the Labbé et al. observations, whose implied $`\varepsilon_\text{SF}`$ approaches or exceeds 1 under standard ΛCDM assumptions, the 2.1× faster collapse brings the implied efficiency down to $`\varepsilon_\text{SF} \sim 0.5`$, inside the physically permitted range. That ratio is taken against constant-$`a_0`$ MOND, which is the baseline the 2.1$`\times`$ is computed from, rather than against the ΛCDM halos the original efficiency was derived in. That eases the "impossibly early galaxy" tension without invoking exotic physics, new particles, or any modification to general relativity. Clearing any individual candidate is a separate question, set by halo-mass assumptions the framework leaves untouched.
 
 *The acceleration scale was simply larger when those galaxies formed.*
 
@@ -135,7 +137,7 @@ MIT's dimensional hierarchy draws a sharp line between modes that live on the te
 
 This is an inversion of standard assumptions, where $`\Lambda`$ is often treated as potentially evolving (the DESI phantom-crossing signal) while $`a_0`$ is assumed constant (standard MOND). MIT predicts the opposite: $`\Lambda`$ is fixed by the static curvature radius, and $`a_0`$ rides the phase clock.
 
-The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$; on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III), the faster collapse moves the implied star-formation efficiency of the JWST galaxies out of the impossible range. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
+The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$; on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III), the faster collapse roughly halves the implied star-formation efficiency of the JWST galaxies. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
 
 Observations of both quantities at high redshift provide complementary tests. A universe where $`\Lambda`$ evolves and $`a_0`$ stays constant would falsify MIT. The converse does not confirm it: a rising $`a_0`$ also follows from other evolving-scale models and from ΛCDM simulations, so the discriminating content is the locked form and the exponent structure, not the direction of the climb.
 
@@ -146,8 +148,9 @@ Observations of both quantities at high redshift provide complementary tests. A 
 | $`a_0`$ universality in lensing (conditional) | Euclid DR1 stacked galaxy–galaxy lensing at $`z \approx 0.5`$ to $`2`$, under a relativistic completion carrying the $`E(z)`$ scaling into the lensing potential | The inferred $`M_\text{dyn}/M_b`$ enhancement is mass- or aperture-dependent in the ΛCDM sense, rather than the framework's mass-independent $`\sqrt{E(z)}`$ scaling |
 | $`a_0(z)`$ evolution | Rotation curves / RAR / BTFR at $`z > 2`$ | $`a_0(z)/a_0(0) = 1`$, or the trend is inconsistent with $`E(z)`$ under matched systematics |
 | $`\Lambda`$ epoch-independence | SNe Ia / BAO at high $`z`$ | $`\Lambda`$ varies with redshift at $`\geq 2\sigma`$ |
+| Abundance above $`10^{10}\,M_\odot`$ at $`z > 10`$ | The first qualifying Euclid wide-area measurement of the cumulative number and stellar-mass densities | Either density lies inside the full-efficiency ceiling of [Boylan-Kolchin (2023)](https://doi.org/10.1038/s41550-023-01937-7) at $`\geq 2\sigma`$ |
 
-The first row would be the cleanest discriminator and is conditional on a relativistic completion the framework has not supplied; the second is the necessary direction-and-rate check, and it carries the near-term weight. A rising $`a_0`$ alone is now corroborated but non-discriminating. The third row does not say how matter is subtracted when the dark-energy density is reconstructed, and in the phase-clock background no subtraction leaves an exactly flat residual. The Euclid card re-registered its matching row on 2026-09-21 for that reason; the note there sets the rule used for DR1 ([Euclid DR1](euclid-dr1.md) §I).
+The first row would be the cleanest discriminator and is conditional on a relativistic completion the framework has not supplied; the second is the necessary direction-and-rate check, and it carries the near-term weight. A rising $`a_0`$ alone is now corroborated but non-discriminating. The third row does not say how matter is subtracted when the dark-energy density is reconstructed, and in the phase-clock background no subtraction leaves an exactly flat residual. The Euclid card set its matching row's rule on 2026-09-21 for that reason; the note there gives the rule used for DR1 ([Euclid DR1](euclid-dr1.md) §I). The fourth row is the page's own population, scored as Row IV of the Euclid card against that ceiling since 2026-09-23. It can score before Euclid's full release, on the first qualifying measurement, and the JWST measurements the card examines lie inside the ceiling, so the row points toward failure. A failure would record that ΛCDM reaches the measured abundance below full efficiency, not that massive galaxies are absent above $`z = 10`$ ([Euclid DR1](euclid-dr1.md) §IV).
 
 At $`z = 2`$, the prediction is $`a_0(z{=}2) \approx 3 \times a_0(0)`$. This is within reach of resolved rotation curves from JWST/NIRSpec and the ELT; Euclid's slitless NISP delivers redshifts rather than resolved rotation curves. These predictions distinguish MIT from both standard MOND (constant $`a_0`$) and ΛCDM (no acceleration threshold).
 
