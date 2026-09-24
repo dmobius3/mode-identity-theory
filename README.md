@@ -72,7 +72,7 @@ mode-identity-theory/
 
 🏟️ **One Shape:**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="The three jobs of the geometry: S³ closed with no boundary, the Möbius band with its single edge, and the icosahedral symmetry 2I">
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with the Möbius band and its single edge S¹ inside it">
 
 ```math
 \Large \boxed{S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
@@ -88,7 +88,7 @@ So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band s
 
 Ψ **One Wave:**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) over two laps, flipping sign after one lap and restored at 4π, and the closed edge traversed in two laps">
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1">
 
 ```math
 \Large \boxed{\Psi = \cos(t/2), \quad \text{period } 4\pi}
@@ -97,6 +97,8 @@ So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band s
 The underlying space stays fixed. What changes is the phase of a standing wave carried by the temporal boundary.
 
 The Möbius twist makes the lifted wave change sign after one lap and return only after two, so its fundamental phase period is $`4\pi`$ rather than $`2\pi`$. The closed edge itself returns after two laps, so nothing on it is double-valued. The advance of that phase is time.
+
+The cosine has a complement, $`S = \sin(t/2)`$, and together they always make one whole: $`\Psi^2 + S^2 = 1`$. $`\Psi^2`$ is the share still standing as wave; $`S^2`$ is the share already realized as modes. As the phase advances, weight moves from the first to the second, and that single number $`S`$ is what cosmological observations read.
 
 Matter appears when the wave is sampled. **Most modes cancel; the surviving patterns are the physical states.** In that sense the universe is not built from separate particles placed into space; particles are stable realizations of the same underlying wave.
 
