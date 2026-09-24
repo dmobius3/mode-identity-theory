@@ -1879,6 +1879,7 @@ which member of it the icosahedral quotient permits, for the density-type intera
 - **[Maj]** E. Majorana, Atomi orientati in campo magnetico variabile. *Nuovo Cimento* **9** (1932), 43.
 - **[Re]** B. Reznick, An inequality for products of polynomials. *Proc. Amer. Math. Soc.* **117** (1993), no. 4, 1063–1073.
 - **[RK]** J. L. Romero, A. B. Klimov, A. Z. Goldberg, G. Leuchs and L. L. Sánchez-Soto, Multipoles from Majorana constellations. *Phys. Rev. A* **109** (2024), 012214; arXiv:2401.07904.
+- **[Sh]** B. Shatto, The Surviving Ray: channel selection for a cubic self-interaction on $`S^3/2I`$. *Zenodo* (2026), [https://doi.org/10.5281/zenodo.22681502](https://doi.org/10.5281/zenodo.22681502).
 - **[SP]** L. Santos and T. Pfau, Spin-3 chromium Bose-Einstein condensates. *Phys. Rev. Lett.* **96** (2006), 190404; arXiv:cond-mat/0510634.
 
 ---
@@ -1898,7 +1899,7 @@ https://ssrn.com/abstract=7443959
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md)
 
-Twenty-one claims pre-registered from this paper have been reproduced on the OpenWave M8 track
+Twenty-one claims pre-registered from the concept paper [Sh] have been reproduced on the OpenWave M8 track
 by an independent, blind computation. Two agents, a solver and an auditor, built every object from its
 definition in their own code, with no access to the paper, its title or any value it claims, and the
 auditor, working on disjoint primitives, tried to refute every answer the solver gave and refuted none.
