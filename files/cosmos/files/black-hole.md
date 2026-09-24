@@ -141,6 +141,8 @@ The spectral mirror (§II.A) reinforces the ontological point: at $`s = 0`$, the
 
 ### IV.A The Geometric Complement
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/bh-budget.png?raw=true" width="80%" alt="The budget identity on the Moebius band. Top: the intrinsic quotient [0, pi R] x [-W, W] / (0, w) ~ (pi R, -w), drawn with width |J| and not as an embedding. The gluing seam at y = 0 ~ pi R is a transverse arc with flip arrows, ending on the longitudinal edges w = +W and w = -W, which join into the boundary. The dashed core w = 0, the phase circle, crosses the seam at one point, Theta = 0 = 1, and runs through the pinch at the cone point y = pi R/2. On the seam u0 = 0, J = +1 or -1, C = 0; at the cone point u0 = 1, J = 0, C = 2. Bottom: u0 squared, J squared and their constant sum 1 against y from 0 to pi R, the signed J falling from +1 to -1, and C = 2 u0 squared on a second axis">
+
 The [Sector A eigenvalue problem](../../framework/files/bedrock/files/first-eigenvalue.md) gives the first positive eigenfunction and the metric coefficient on a band of the totally geodesic great $`S^2 \subset S^3`$, whose edge-identified quotient is the Möbius band:
 
 ```math
