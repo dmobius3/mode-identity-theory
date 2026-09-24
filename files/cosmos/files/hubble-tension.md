@@ -67,6 +67,8 @@ $`a_0`$ at slope 17.74 marks a steep, sensitive well. The derivative alone says 
 
 ### The 8.4% displacement
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/ht-well-steps.png?raw=true" width="80%" alt="The phase operator C(Theta) near the H0 well at 34/120, with the even positions of the bosonic sublattice filled and the odd positions open: one bosonic step up carries 67.4 to 73.04 (+8.4%), one step down carries it to 61.6 (-8.6%), and the odd step carries it to 70.24 (+4.2%)">
+
 At the bare well $`\Theta_0 = 34/120`$, and at the adjacent bosonic position $`\Theta = 36/120`$:
 
 ```math
