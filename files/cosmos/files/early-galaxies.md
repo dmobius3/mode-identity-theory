@@ -70,6 +70,8 @@ Two scope notes follow from this. The absolute scale is calibrated off the measu
 
 ### The Evolutionary Law
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-rising-a0.png?raw=true" width="70%" alt="a0(z)/a0(0) = H(z)/H0 on a log axis, rising to 20.5 times the local value at z = 10, where JWST finds its early galaxies, against the flat line of constant a0 in standard MOND">
+
 Because the ratio is fixed at every epoch, the acceleration scale inherits the full redshift dependence of $`H(z)`$:
 
 ```math
@@ -80,6 +82,8 @@ This is the paper's central prediction. $`a_0`$ is not a fundamental constant; i
 
 ## III. Early Structure Formation at z = 10
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-boost-cascade.png?raw=true" width="95%" alt="The boost step by step: a0 times 20.5 at z = 10 gives effective gravity times 4.5 in deep MOND, collapse about 2.1 times faster, and a star-formation efficiency down from above 1 to about 0.5; upper bounds, taken against constant-a0 MOND">
+
 ### The Boost
 
 Using the phase-clock $`H(z)`$ from the static baseline, with $`\Omega_\Lambda = 0.685`$ and $`s_0 < 0.19`$:
@@ -88,10 +92,10 @@ Using the phase-clock $`H(z)`$ from the static baseline, with $`\Omega_\Lambda =
 \frac{H^2(z)}{H_0^2} = \frac{1 - \Omega_\Lambda}{1 - s_0^2}(1+z)^3 - \frac{(1 - \Omega_\Lambda)\,s_0^2}{1 - s_0^2}(1+z) + \Omega_\Lambda
 ```
 
-At $`z = 10`$, $`(1+z)^3 = 1331`$. The matter term dominates: $`\frac{1-\Omega_\Lambda}{1-s_0^2}(1+z)^3`$ contributes ~421 while the $`(1+z)^1`$ correction subtracts about 0.1 even at the $`s_0`$ bound. The result is effectively independent of $`s_0`$:
+At $`z = 10`$, $`(1+z)^3 = 1331`$. The matter term dominates: $`\frac{1-\Omega_\Lambda}{1-s_0^2}(1+z)^3`$ contributes about 419 as $`s_0 \to 0`$ and about 435 at the $`s_0`$ bound, while the $`(1+z)^1`$ correction subtracts about 0.1 even at the bound. The result barely depends on $`s_0`$, rising from 20.5 as $`s_0 \to 0`$ to about 20.9 at the bound:
 
 ```math
-\frac{H(z{=}10)}{H_0} \approx \sqrt{422} \approx 20.5
+\frac{H(z{=}10)}{H_0} \approx \sqrt{420} \approx 20.5
 ```
 
 Applying the evolutionary law:
