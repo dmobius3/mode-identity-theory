@@ -61,6 +61,8 @@ Each vacuum is stable on the physical fluctuation space. This is independent of 
 
 ## III. The Spectral Filter
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/ym-mckay-gaps.png?raw=true" width="90%" alt="The affine E8 McKay graph of 2I with each irreducible representation R0 to R8 labeled by its McKay distance from R0; the adjoints of the three vacua are open circles: R0 and R3 = Sym2 Q first appear at level m = 2, a gap of 4/R^2, and R4 = Sym2 Q prime at distance 6 first appears at m = 6, a gap of 36/R^2">
+
 The McKay graph of $`2I`$ is the extended (affine) $`E_8`$ Dynkin diagram. Each node corresponds to an irreducible representation of $`2I`$; the edges encode tensor product with the fundamental 2-dimensional representation. The restriction of the spin-j representation of $`\mathrm{SU}(2)`$ to $`2I`$ follows the McKay recursion along this graph. Since each recursion step extends the reachable subgraph by at most one edge, an irrep at graph distance $`d`$ from $`R_0`$ requires at least $`d`$ steps to first appear: distance controls the filtration depth.
 
 ### Coexact spectrum on $`S^3`$
