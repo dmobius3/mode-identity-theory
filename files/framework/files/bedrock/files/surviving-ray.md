@@ -27,7 +27,7 @@ arithmetic are icosahedral and which are universal facts about spin 3 with time 
 
 In the coordinates of that literature the surviving ray is one coupling point, by a polynomial
 identity with the spin-3 mean-field energy, where the literature has the stationary states and,
-numerically, the ground states. This version gives an audited census within a stated class,
+numerically, the ground states. This paper gives an audited census within a stated class,
 certified critical orbits outside it, and exact results at the two ends. Within the class of orbits
 whose fixed locus has projective dimension at most one there are exactly ten critical orbits, with
 their Morse indices; three outside it are certified by interval arithmetic, and with them the index
@@ -135,15 +135,13 @@ of the selection is which member of a known family a specific geometry forces, a
 accounting of what that forcing does and does not explain. At the point the boundary has a companion:
 *knowing the phases is not classifying the critical geometry* (Section 7.2).
 
-The sentences above naming the wider constellation literature rest, as in the first version, on
-abstracts and publisher records, and every search is reported as a search (Section 9.3).
+The sentences above naming the wider constellation literature rest on abstracts and publisher records, and every search is reported as a search (Section 9.3).
 
 Sections 2 to 5 set up the state space, the quotient and the interaction, prove the ambient proposition
 and the selection theorem, and derive its consequences across levels and sectors. Section 6 places the
 selected interaction in the condensate literature's coupling space, Section 7 gives the critical
 geometry there, and Section 8 returns to the quotient. Section 9 gives the limits, the prior art, the
-search and the open historical question; the certification and the changes from the first version
-close the page.
+search and the open historical question; the certification closes the page.
 
 ---
 
@@ -1619,7 +1617,7 @@ The leading cubic term of the reduction is the projection of the nonlinearity on
 which is the self-interaction of Sections 4 and 5, and the quartic $`Q`$ plays the part of the reduced
 energy (Section 5.5). The critical rays of $`Q`$ are therefore the **critical directions of the leading
 reduced problem**, and not by themselves solutions of the equation: a solution needs the range equation
-as well, which the first version of this paper did not carry out.
+as well.
 
 Both records work with $`(-\Delta - \lambda)\psi + g\lvert\psi\rvert^2\psi = 0`$ at general real
 $`g \neq 0`$ and state every value per power of $`g`$, which covers both signs of Section 6.2. They
@@ -1900,11 +1898,11 @@ https://ssrn.com/abstract=7443959
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md)
 
-Twenty-one claims pre-registered from the first version have been reproduced on the OpenWave M8 track
+Twenty-one claims pre-registered from this paper have been reproduced on the OpenWave M8 track
 by an independent, blind computation. Two agents, a solver and an auditor, built every object from its
 definition in their own code, with no access to the paper, its title or any value it claims, and the
 auditor, working on disjoint primitives, tried to refute every answer the solver gave and refuted none.
-This is a blind recomputation of what the first version claims, from definitions, not a second proof:
+This is a blind recomputation of those claims, from definitions, not a second proof:
 the proofs were not checked line by line, the run stops at level 6 and at the two interactions built
 there, the general-spin constant of Section 5.9 was left out of the claims, and no dynamics was run.
 The [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md) carries the full record.
