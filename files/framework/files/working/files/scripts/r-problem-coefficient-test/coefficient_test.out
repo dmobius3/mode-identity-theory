@@ -1,0 +1,14 @@
+PASS  K1 the printed values reproduce, Theta = 13/60
+      C(13/60) = 0.7921, alpha predicted 0.007329 against measured 0.007297: residual 0.436%
+      60-fold lever: ln(Lambda_obs R^2 / 3) = 0.2612, so Lambda_obs R_ind^2 = 3.896
+      R_ind = 6.129 Gpc against the anchor's 5.3787 Gpc; Lambda_ref 23.0% below Lambda_obs, Lambda_ref l_P^2 = 2.191e-122
+K2  the two readings of the formula's accuracy delta (diagnostics, not registered verdicts)
+      sigma(Lambda_obs) = 1%: delta = 0 gives 26.1 sigma log-fractional, 26.1 sigma in alpha space, 23.0 sigma linear on the observed Q, 29.9 sigma null-normalized; delta = the residual gives 0.999 sigma
+      sigma(Lambda_obs) = 2%: delta = 0 gives 13.1 sigma log-fractional, 13.1 sigma in alpha space, 11.5 sigma linear on the observed Q, 14.9 sigma null-normalized; delta = the residual gives 0.997 sigma
+      sigma(Lambda_obs) = 3%: delta = 0 gives 8.7 sigma log-fractional, 8.7 sigma in alpha space, 7.7 sigma linear on the observed Q, 10.0 sigma null-normalized; delta = the residual gives 0.993 sigma
+K3  the formula accuracy that would put the observed departure at 5 sigma (a diagnostic, not a criterion)
+      sigma(Lambda_obs) = 1%: delta = 0.085%
+      sigma(Lambda_obs) = 2%: delta = 0.080%
+      sigma(Lambda_obs) = 3%: delta = 0.071%
+K4  the reference scale: a 6% change in the alpha that is inverted moves Lambda_obs R_ind^2 by a factor of 33.0
+PASS  control: K1 fails at Theta = 17/60, as it must (residual 53.2%, Lambda_obs R^2 = 3.86e+11)
