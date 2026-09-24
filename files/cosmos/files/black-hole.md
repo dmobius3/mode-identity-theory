@@ -108,12 +108,14 @@ Bekenstein-Hawking entropy $`S \propto A`$ is motivated by surface primacy. The 
 | Step | Content | Status |
 |---|---|---|
 | 1 | The Möbius surface ($`n = 2`$) carries the boundary condition | AXIOM |
-| 2 | $`S^3`$ volume ($`n = 3`$) has no independent gauge degrees of freedom | DERIVED (engine §13) |
+| 2 | $`S^3`$ volume ($`n = 3`$) carries the deepest dilution, $`(\sqrt{\Omega})^{-3}`$, and no assigned observable ([Manifold Index](../../framework/README.md#manifold-index)) | MOTIVATED |
 | 3 | Degrees of freedom of a bounded region are counted by the surface, not the volume | MOTIVATED by 1 + 2 |
 | 4 | $`S \propto A`$ (area, not volume) | MOTIVATED |
 | 5 | $`S = A/(4\ell_P^2)`$ with the factor 1/4 | OPEN |
 
-In standard physics, area scaling is a deep question: why area rather than volume? In MIT, volume ($`n = 3`$) carries no independent gauge content. Entropy lives on the surface because the surface carries the boundary condition. The horizon area is the natural count of $`n = 2`$ degrees of freedom at the sampling boundary.
+*Whether the volume carries independent gauge degrees of freedom is not settled here: the [coexact gap](../../framework/files/bedrock/files/coexact-gap.md) computes gauge fluctuations on the three-dimensional quotient, and its relation to the surface count of step 3 awaits reconciliation.*
+
+In standard physics, area scaling is a deep question: why area rather than volume? In MIT, the volume layer ($`n = 3`$) carries the deepest dilution and no assigned observable, which motivates counting at the surface. Entropy lives on the surface because the surface carries the boundary condition. The horizon area is the natural count of $`n = 2`$ degrees of freedom at the sampling boundary.
 
 What remains open is the coefficient. Since $`r_k = \rho_k r_s`$ for a fixed dimensionless $`\rho_k`$ depending only on $`k`$ (§VIII.3), the shell areas scale exactly like horizon area, $`A_k = \rho_k^2 A_H`$, and the sum over the 33 finite shells is finite, not divergent: $`\sum_{k=1}^{33}\rho_k^2 \approx 891`$ for the full grid, $`\approx 219`$ for the bosonic even-$`k`$ subgrid ($`k=2,4,\ldots,32`$, 16 finite addresses). It does not reproduce $`S_{BH}`$ either way: it gives a large, mapping-dependent multiple of $`A_H`$ with no established interpretation as entropy or a microstate count. That the sum scales with area at all is close to automatic, a consequence of every $`r_k`$ being proportional to $`r_s`$, not a nontrivial structural result; the real open problem is the weighting or state-count rule that would turn the raw coefficient ($`\approx891`$ or $`\approx219`$) into $`1/4`$, not whether area scaling holds in the first place. Including the $`k=34`$ reference point, which is $`r\to\infty`$ exactly (§VIII.3), would make the sum infinite; that point is the asymptotic reference, not a physical shell, and does not belong in it. The factor 1/4 is not produced by the 3/2 vacuum-reference conversion, by the structural coefficient $`\sin(\pi\Theta_0)`$, or by any evident combination of current framework quantities. A microstate counting rule, a spectral degeneracy law, or a topological partition function on the horizon would be needed.
 
