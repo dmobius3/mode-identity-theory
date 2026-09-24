@@ -13,6 +13,8 @@ This page fixes what the Poincaré homology sphere $`S^3/2I`$ contributes. Two f
 
 ## I. The four anomalies
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cmb-anomalies-sorted.png?raw=true" width="80%" alt="The four anomalies sorted: the low-ℓ deficit and the low quadrupole are read as the shell gap; the parity asymmetry stays open through the eigenmode covariance; the quadrupole-octupole alignment is not this topology's, by its A5 isotropy">
+
 At the largest angles ($`\ell < 30`$), Planck analyses continue to report four features first seen by COBE and WMAP:
 
 - **Low-ℓ deficit.** Less large-angle power than best-fit ΛCDM.
@@ -37,6 +39,8 @@ What this closes is one route to parity. An even/odd-ℓ grading driven by an or
 **The alignment corollary.** The quadrupole-octupole half is closed, by the quotient's symmetry rather than its chirality. $`S^3/2I`$ is homogeneous with isotropy group $`A_5`$ at every point, so a sky covariance commuting with $`A_5`$ is forced isotropic at $`\ell = 2`$, whose $`A_5`$ content is a single irreducible, and forced to vanish between $`\ell = 2`$ and $`\ell = 3`$, which share no constituent. An isotropic quadrupole independent of the octupole leaves their relative orientation uniform. So a Gaussian source carried to the sky by any map preserving the observer's $`A_5`$ produces no quadrupole-octupole alignment beyond what full isotropy gives: the feature is not this topology's to supply, and the covariance route reaches parity alone. Outside the corollary sit a non-Gaussian source and a map that breaks the observer's $`A_5`$, the second being where [the Oort Cloud project](../../framework/files/working/files/oort-cloud-project.md)'s local-sampling reading of the alignment now has to live. The derivation, with the per-$`\ell`$ table of which spins may be anisotropic and which pairs may couple, and its script check, is [The Molien Shells: The P1 Bridge](../../framework/files/working/files/molien-p1-bridge.md) §II.
 
 ## IV. The Molien shell gap
+
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cmb-shells-to-sky.png?raw=true" width="90%" alt="The 2I-invariant shells by degree N, with the gap from N = 2 to 10 empty, carried to the sky by the radius R and a projection MIT does not yet derive: ℓ ≈ 24 at the coupling route's R, ℓ ≈ 28 read back from Λ, inside the observed deficit ℓ ≲ 30">
 
 Scalar harmonics on $`S^3`$ are graded by polynomial degree $`N = 0, 1, 2, \ldots`$ with eigenvalue $`N(N+2)/R^2`$ and degeneracy $`(N+1)^2`$. On $`S^3/2I`$ only $`2I`$-invariant harmonics survive; the centre $`\{-1\}`$ acts on degree $`N`$ by $`(-1)^N`$, restricting invariants to even $`N`$. Among these the Molien series of the invariant ring is
 
