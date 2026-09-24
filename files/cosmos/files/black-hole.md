@@ -231,6 +231,8 @@ What the framework has not yet done is restate that motion in its own language. 
 
 ## VI. The Phase Walk and the Closed Domain
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/bh-closed-domain.png?raw=true" width="85%" alt="The phase operator C(Theta) over the closed domain: the bosonic domain [0, 60/120] shaded up to its wall at the antinode, Lambda; the H0 well at 34/120 with its one step toward 36/120; the horizon walking continuously from the well down to the node at Theta = 0; and Theta = 0 and Theta = 1 joined as one node with two coordinate addresses">
+
 The §9 phase field and the black hole case both move $`\Theta`$ on the same phase operator $`C(\Theta)`$, but not through the same trigger. The §9 shift is a discrete environmental step (2/120), with its own separately-motivated trigger; the black hole case is the continuous Schwarzschild response $`C/C_0 = 1 - r_s/r`$ (§VIII.1), which in an ordinary galactic potential gives a smooth shift orders of magnitude below one bosonic step (§VIII.1, weak-field decoupling). They share the operator, not the response law, and the two numbers should not be expected to agree.
 
 ### The bosonic domain has a wall
