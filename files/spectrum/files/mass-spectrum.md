@@ -173,6 +173,8 @@ The two definitions are joined by the Cheeger-Müller theorem, which equates the
 
 ## III. The 24 Entries
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/ms-ladder.png?raw=true" width="95%" alt="The 24 entries on a logarithmic mass axis, one row per McKay distance from d = 1 (R1) to d = 7 (R2), each shell about two decades above the last; below them every measured charged fermion, the electron marked as the benchmark, and the solar and atmospheric neutrino scales dashed; a shaded band marks the dead zone of ranks 4 to 9, where no known fermion sits">
+
 24 entries from the formula. The table below shows the comparison to Standard Model (SM) fermions and the entries with no SM match. Bold rows are the preferred SM assignments counted in the headline scorecard. Unbolded repeated labels show nearby candidate entries or mass-shell clusters; they are not counted as separate assignments.
 
 The assignment is constrained, not free. The formula produces 24 ranked entries; four structural filters narrow which entries can correspond to which fermions. The Coxeter-Galois gate (§IV.4) assigns weak isospin $`T_3 = \pm 1/2`$ to each entry. The $`Z_3`$ face decomposition (§IV.1) restricts color-charged assignments to irreps carrying colored pairs. The $`Z_4`$ edge decomposition (§IV.2) fixes the domain for each spin parity. The eta sign gate (§IV.3) restricts positive electric charge to negative-eta entries. Together these filters determine the quantum numbers $`(T_3, Y, Q)`$ at each $`(\rho, \sigma)`$ pair before any mass comparison is made.
@@ -183,10 +185,10 @@ A pre-registered null test quantifies the table's counting caveat. Randomly reas
 
 The mass table's evidential weight rests on the exact structural outputs: the 24-entry construction, the $`T_3`$ gate evaluations (bespoke, per the caveat above), and the closed-form torsion algebra (the Galois pairs $`\varphi^{-4}`$ and $`\varphi^{-8}`$, the exact-inverse sector products $`4`$ and $`1/4`$, $`R_7`$'s Galois-blind $`4`$), now reproduced by an independent method (§II.5), together with the falsifiable outliers, not on the ×3 proximity count.
 
-The three counts answer progressively stricter questions: raw mass density covers 5 of 8 charged fermions within ×3; enforcing the frozen quantum-number gates leaves compatible coverage at the same 5 of 8; retaining the adjudicated no-slide assignments gives the ledger's 4 of 8.
+The three counts answer progressively stricter questions: raw mass density covers 6 of 8 charged fermions within ×3; enforcing the frozen quantum-number gates drops the up quark, whose only covers within ×3 are the two electron-candidate slots, and leaves compatible coverage at 5 of 8; retaining the adjudicated no-slide assignments gives the ledger's 4 of 8.
 
 ```math
-5 = \text{raw density}, \qquad 5 = \text{compatible density}, \qquad 4 = \text{adjudicated assignments}
+6 = \text{raw density}, \qquad 5 = \text{compatible density}, \qquad 4 = \text{adjudicated assignments}
 ```
 
 | Rank | $`\rho`$ | dist | $`\sigma`$ | Mass (GeV) | SM | Observed (GeV) | Ratio |
