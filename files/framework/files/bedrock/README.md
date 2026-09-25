@@ -5,7 +5,7 @@
 
 # 🏔️ Bedrock Mathematics
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/the%20bridge%20banner.png?raw=true" width="100%" alt="Bedrock">
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/the_bridge_banner.png?raw=true" width="100%" alt="Bedrock">
 
 The postulate is one line, $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal edge $`S^1`$, the Möbius surface it bounds, and the space $`S^3`$ in which the edge is anchored. The standalone mathematics papers below put operators on two of those objects, the surface and the space, and a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds. The temporal edge $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum. A fourth paper below asks a different question of the same quotient space: which self-interaction channels a mode of definite spin keeps under that finite symmetry, and the geometry of the one that survives. It shares the arena with the Space and the Filling but not the postulate's own argument, and is catalogued here rather than folded into the three objects above.
 
