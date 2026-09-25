@@ -130,7 +130,7 @@ Among the candidate wells, only `13` is coprime to 120. It is the full-resolutio
 |---|---:|---:|---:|---|
 | 13 | 13 | 1 | 13 | full resolution |
 | 21 | 3·7 | 3 | 7 | face / `Z₃` branch factor |
-| 34 | 2·17 | 2 | 17 | edge / bosonic-projection factor |
+| 34 | 2·17 | 2 | 17 | edge / `Z₂` branch factor |
 | 55 | 5·11 | 5 | 11 | vertex / `Z₅` branch factor |
 
 The first well is full-resolution; the later wells each combine one icosahedral branch prime with one new E₈/totative prime (`{7, 17, 11}`, which together with `13` are the four smallest nontrivial E₈ exponents). The set looks less accidental under this reading.

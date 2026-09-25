@@ -45,7 +45,7 @@ Derived, tested, load-bearing. Pick up and use.
 | $`\tau = T/120`$ | Chronon at any scale | 120-grid applied to mode period $`T`$ | Chronon note |
 | $`\tau_c/\tau_P = \sqrt{\Omega}`$ | Chronon ratio spans $`10^{61}`$ | Same midpoint, temporal channel | Chronon note |
 | $`L_f = v_c^2/a_0`$ | Coherence scale (galactic, ~13 kpc). SPARC-falsified as single coherence radius; retained as the tested candidate | Phase field mechanics | MIT II.G |
-| $`\Delta\Theta_{\min} = 2/120`$ | Minimum bosonic step | Spinor-to-scalar projection | MIT II.D |
+| $`\Delta\Theta_{\min} = 2/120`$ | Minimum bosonic step | 60R resolution, $`\lvert I\rvert = 60`$ | MIT II.D |
 | $`\Theta_f^{\text{env}} \approx 2/120`$ (MW) | Environmental phase shift | Minimum step at Milky Way potential | MIT II.G |
 
 ---
