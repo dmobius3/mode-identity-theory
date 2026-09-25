@@ -169,7 +169,7 @@ Equivalently: $`C/2 + J^2 = 1`$. Observation amplitude and transverse geometry a
 
 $`J(y) = \cos(y/R)`$ is signed: $`J(0) = 1`$ but $`J(\pi R) = -1`$. The table above lists $`\lvert J\rvert`$, the transverse extent, which is what "surface width" means physically; the budget identity itself is stated in $`J^2`$ ($`u_0^2 + J^2 = 1`$), so the sign is immaterial there. Retain the signed $`J`$ when discussing the Jacobi field as such.
 
-**Where the zeros live.** The Möbius identification $`(0, w) \sim (\pi R, -w)`$ glues the transverse arcs $`y = 0`$ and $`y = \pi R`$ into one transverse arc, the gluing seam, parametrized by $`w \in [-W, W]`$. The twist acts across it. The boundary $`\partial M = S^1`$ consists of the longitudinal edges $`w = \pm W`$, which the same identification joins into a single loop running in the $`y`$-direction; it carries all values of $`u_0`$ from 0 to 1. The $`C = 0`$ locus is the gluing seam: it crosses the band's core, the closed curve $`w = 0`$ along which $`\Theta`$ runs once from 0 to 1, at a single point, and meets the temporal edge $`\partial M`$ at its two ends.
+**Where the zeros live.** The Möbius identification $`(0, w) \sim (\pi R, -w)`$ glues the transverse arcs $`y = 0`$ and $`y = \pi R`$ into one transverse arc, the gluing seam, parametrized by $`w \in [-W, W]`$. The twist acts across it. The boundary $`\partial M = S^1`$ consists of the longitudinal edges $`w = \pm W`$, which the same identification joins into a single loop running in the $`y`$-direction; it carries all values of $`u_0`$ from 0 to 1. The $`C = 0`$ locus is the gluing seam: it crosses the band's core, the closed curve $`w = 0`$ along which $`\Theta`$ runs once from 0 to 1, at a single point, and meets the temporal edge $`\partial M`$ at its two ends. What that contact means for the horizon reading is open (§VIII.7).
 
 **Why sin, why there.** On the flat strip, the anti-periodic BC admits both $`\sin(y/R)`$ and $`\cos(y/R)`$ as lowest flat-strip modes at the same eigenvalue $`1/R^2`$: a degenerate pair. Cosine has no zeros at $`y = 0, \pi R`$. The curvature of $`S^3`$ breaks this degeneracy. The $`\tan(y/R)`$ term in the curved Laplacian ($`\Delta u = u'' - R^{-1}\tan(y/R)\,u'`$) eliminates cosine as a solution entirely. Only $`\sin(y/R)`$ survives, and the eigenvalue is simple (Sector $`\mathcal{A}`$, §7, Sturm-Liouville). The same curvature that lifts the eigenvalue from $`1/R^2`$ to $`2/R^2`$ selects the eigenfunction that vanishes on the gluing seam. The zeros are placed by the curvature, through the selection of sin over cos.
 
@@ -383,6 +383,10 @@ diverges as $`\Theta \to 0`$ and vanishes at $`\Theta = 1/2`$: this says $`C`$ i
 **A numerical check worth recording.** $`\Theta_0 = 34/120`$, the Hubble-tension well, is not near the antinode plateau: $`C'(34/120) \approx 6.15`$, within 2.2% of the arch's maximum possible slope $`2\pi \approx 6.28`$, and 26 grid steps from $`60/120`$. It sits near the steepest part of the arch, not a flat region. Whatever protects $`\Lambda`$ (whose own well sits exactly at the true zero-slope antinode) does not extend to 34/120.
 
 **Connection to the complementarity.** The two critical points of $`C`$ are the two poles of $`u_0^2 + J^2 = 1`$ (§IV.A): antinode ($`u_0 = 1`$, $`J = 0`$, cone point, curvature dominates) and node ($`u_0 = 0`$, $`J = \pm 1`$, gluing seam, geometry dominates).
+
+### VIII.7 Where the Gluing Seam Meets the Temporal Edge
+
+**Status: OPEN.** On the band, the $`C = 0`$ locus is the gluing seam, and its two ends lie on the temporal edge $`\partial M`$ (§IV.A). The page reads the horizon as this node (§I, §VIII.1). Whether the two contact points bear on that reading is not derived here.
 
 ---
 
