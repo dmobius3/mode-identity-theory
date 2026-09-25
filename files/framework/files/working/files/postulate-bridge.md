@@ -39,14 +39,17 @@ The postulate nests three objects: the temporal edge $`S^1 = \partial(\text{Möb
 
 ## Three routes
 
+<a id="route-1"></a>
 ### Route 1, spectral restriction via $`\mathbb{Z}_2`$ holonomy: closed
 
 The idea was to link the band's orientation $`\mathbb{Z}_2`$ holonomy to a non-orientable or flat-bundle structure on the quotient. Two walls. First, $`S^3/2I`$ is orientable (an integral homology sphere), so there is no non-orientable structure downstairs to host the band's twist. Second, $`2I`$ is perfect ($`H^1(2I) = 0`$), so it has no $`\mathbb{Z}_2`$ quotient and no order-two character; the band's $`\mathbb{Z}_2`$ cannot be a $`2I`$-equivariant datum. The perfectness that makes $`2I`$ the unique gauge exception in the coexact paper is exactly what forbids the orientation bridge.
 
+<a id="route-2"></a>
 ### Route 2, heat kernel: set aside
 
 Heat traces relate a space to its covers and subspaces. The band is neither a cover nor a subspace of $`S^3/2I`$. The leading asymptotics mismatch ($`t^{-1}`$ for a surface versus $`t^{-3/2}`$ for the $`3`$-manifold), and the trace formula organizes the twisted spectrum by conjugacy classes and closed geodesics, with no slot for an embedded surface.
 
+<a id="route-3"></a>
 ### Route 3, APS index theory on the $`E_8`$ plumbing: run, resolved as a split
 
 **Why this is the route.** $`S^3/2I`$ bounds a compact oriented $`4`$-manifold $`W`$, the $`E_8`$ plumbing, whose intersection form is the $`E_8`$ lattice. This is not a second, coincidental $`E_8`$. The McKay correspondence identifies it with the one the coexact paper uses: the minimal resolution of the $`\mathbb{C}^2/2I`$ Kleinian singularity has eight exceptional $`(-2)`$-curves in bijection with the eight nontrivial irreps of $`2I`$, their intersection matrix is the negative of the finite $`E_8`$ Cartan matrix (self-intersections $`-2`$, off-diagonal $`+1`$ for $`E_8`$-adjacency), and the affine node of the McKay graph is the trivial irrep that the resolution drops. So the Galois node $`\mathrm{Sym}^2 Q'`$ at McKay distance six corresponds to a definite homology class in $`H_2(W)`$. The research question is whether the APS machinery respects that identification, not whether a map between two $`E_8`$s exists.
@@ -149,6 +152,7 @@ The successor question is accordingly not what distinguishes the lifts but what 
 
 ---
 
+<a id="dynamical-direction"></a>
 ## A dynamical direction (candidate; Tier 2's first computation run)
 
 The three routes above are index-theoretic and therefore topological on the interior by construction: they see homology classes and characteristic numbers, but are structurally blind to stress, extrinsic curvature, local action density, and variation of the metric. Their route-specific negative constrains the *topological* reading of the temporal edge and says nothing about a dynamical one. A dynamical reading is a different direction, not a rephrasing, and is no more owed by the framework than the topological bridge was. It is recorded here at three tiers of decreasing tractability and decreasing warrant.
@@ -175,6 +179,7 @@ The three routes above are index-theoretic and therefore topological on the inte
 
 ---
 
+<a id="variational-reading"></a>
 ## A variational reading (candidate, not run)
 
 **Recorded 2026-09-02. Status: MOTIVATED. Ledger effect: none. Engine effect: none.**
