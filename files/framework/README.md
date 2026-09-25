@@ -140,6 +140,8 @@ The hierarchy terminates here. "What's outside?" is malformed; there is no bound
 
 ### Surface
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-one-side-one-edge.png?raw=true" width="90%" alt="Two views of the Möbius band. Left, one side: the normal n, carried once around the core, comes back to its starting point as −n. Right, one edge: the single edge runs around twice, a first lap and a second lap, before it closes where it began"></p>
+
 A Möbius strip has one side and one edge. Carry the normal once around the Möbius core and it returns reversed. That sign is the holonomy of the orientation line bundle; the resulting anti-periodic sector supplies the topological origin of fermionic character in the framework. The Möbius strip is also the simplest surface that carries such a bundle: by the classification of compact surfaces, a connected non-orientable surface with one boundary component is a disk removed from a connected sum of $`k`$ crosscaps, and the Möbius strip is the minimal case ($`k = 1`$), the one minimality selects. Non-orientability produces three consequences:
 
 | Consequence | Mechanism |
