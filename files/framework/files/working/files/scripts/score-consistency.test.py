@@ -16,19 +16,27 @@ limit) and sat wrong until someone thought to compare by eye. If this test start
 failing often, that is the evidence that generating the root Score from the two
 section tables has become worth the build step.
 
+Repaired 2026-09-25. The Score header had gained a Standing column, which the parser
+never matched, so every page parsed zero rows and the test passed while comparing
+nothing. It now fails when a page lacks the header or parses no rows, compares every
+column, Standing included, at an exact row width, and runs controls: planted defects,
+each of which must fail before the test reports a pass.
+
 Scope: internal propagation only. It does NOT check whether a value is scientifically
 current -- that is a data-maintenance question and mixing it in would turn a
 deterministic repo test into a monitor.
 
 Convention: run after any edit to the root, cosmos, or spectrum Score tables.
-Run:  python3 score-consistency.test.py     (stdlib only; exit 1 on drift)
+Run:  python3 score-consistency.test.py     (stdlib only; exit 1 on drift, or when a control does not fail)
 """
 import os, re, sys
 
 # The Euclid card is a deposited pre-registration with its own header
 # ("| Prediction | Value | Euclid DR1 channel | Falsified if |"). It is excluded by
 # construction here rather than by luck: it must never be asserted against a landing.
-SCORE_HEADER = "| Observable | Output | Observed | Agreement |"
+SCORE_HEADER = "| Observable | Standing | Output | Observed | Agreement |"
+# The data columns, read off the header, so a renamed or added column changes what is compared.
+COLUMNS = [c.strip() for c in SCORE_HEADER.strip().strip("|").split("|")][1:]
 
 LANDINGS = {"cosmos": "files/cosmos/README.md", "spectrum": "files/spectrum/README.md"}
 ROOT = "README.md"
@@ -52,12 +60,18 @@ def canonical(target, page):
     return os.path.normpath(path) + ("#" + anchor if anchor else "")
 
 
-def score_rows(root, page):
-    """Return {identity: (label, [data cells])} for the page's Score table only."""
-    rows, inside = {}, False
-    for line in open(os.path.join(root, page), encoding="utf-8").read().split("\n"):
+def split_cells(line):
+    """A table row's cells, split on unescaped pipes only, as GitHub splits them."""
+    return [c.strip() for c in re.split(r"(?<!\\)\|", line.strip().strip("|"))]
+
+
+def score_rows(text, page):
+    """Parse the page's Score table only. Returns (header_found, rows, width_errors), with
+    rows as {identity: (label, [data cells])}."""
+    rows, errors, inside, found = {}, [], False, False
+    for line in text.split("\n"):
         if line.strip() == SCORE_HEADER:
-            inside = True
+            inside = found = True
             continue
         if inside:
             if not line.startswith("|"):
@@ -68,9 +82,13 @@ def score_rows(root, page):
             # never sees is a row the test never checks.
             if set(line.strip()) <= set("|-: "):
                 continue
-            cells = [c.strip() for c in line.strip().strip("|").split("|")]
+            cells = split_cells(line)
             m = re.search(r"\[↗\]\(([^)]+)\)", cells[0])
             label = re.sub(r"\[↗\]\([^)]*\)", "", cells[0]).strip()
+            # A row of the wrong width is an error in its own right: comparing it cell by
+            # cell would silently skip a missing or extra trailing cell.
+            if len(cells) != len(COLUMNS) + 1:
+                errors.append(f"{page}: {label!r} has {len(cells)} cells, the header {len(COLUMNS) + 1}")
             # Identity is the link target PLUS the visible label. Target alone is not
             # unique: several rows share one anchor (#iii-the-24-entries carries four),
             # and keying on it silently collapses them, so rows would drop out of the
@@ -84,15 +102,25 @@ def score_rows(root, page):
             data = [re.sub(r"\]\(([^)]+)\)", lambda m: "](" + canonical(m.group(1), page) + ")", c)
                     for c in cells[1:]]
             rows[ident] = (label, data)
-    return rows
+    return found, rows, errors
 
 
-def main():
-    root = repo_root()
-    r = score_rows(root, ROOT)
-    locals_ = {k: score_rows(root, p) for k, p in LANDINGS.items()}
-    c, s = locals_["cosmos"], locals_["spectrum"]
-    hard, warn = [], []
+def compare(texts):
+    """Check the three Score tables against each other. texts maps each page to its text.
+    Returns (hard failures, warnings, (root rows, cosmos rows, spectrum rows, shared rows))."""
+    hard, warn, parsed = [], [], {}
+    # 0. every page must carry the header and parse rows; a missing header or an empty
+    #    table is a failure, never a vacuous pass
+    for page in [ROOT, *LANDINGS.values()]:
+        found, rows, errors = score_rows(texts[page], page)
+        if not found:
+            hard.append(f"Score header missing on {page} (expected {SCORE_HEADER})")
+        elif not rows:
+            hard.append(f"zero rows parsed on {page}")
+        hard += errors
+        parsed[page] = rows
+    r, c, s = parsed[ROOT], parsed[LANDINGS["cosmos"]], parsed[LANDINGS["spectrum"]]
+    locals_ = {"cosmos": c, "spectrum": s}
 
     # 1. the landings partition: no row may be owned by two sections at once
     both = set(c) & set(s)
@@ -117,29 +145,84 @@ def main():
     hard += [f"on a landing, absent from root (deletion or unpairable rename): {k}" for k in only_local]
     hard += [f"on root, no landing owns it (addition or unpairable rename):    {k}" for k in only_root]
 
-    # 3. cell equality on every shared row. This is unambiguous drift, so it is hard.
-    #    Nothing is normalised except surrounding whitespace: math wrappers, signs,
+    # 3. cell equality on every shared row, every column. This is unambiguous drift, so it
+    #    is hard. Nothing is normalised except surrounding whitespace: math wrappers, signs,
     #    units, status words and numeric formatting are exactly what we want to catch.
     for owner, rows in locals_.items():
         for ident, (label, cells) in rows.items():
             if ident not in r:
                 continue
             rl, rc = r[ident]
-            for i, (a, b) in enumerate(zip(rc, cells)):
+            for i in range(max(len(rc), len(cells))):
+                a = rc[i] if i < len(rc) else "(no cell)"
+                b = cells[i] if i < len(cells) else "(no cell)"
                 if a != b:
-                    col = ["Output", "Observed", "Agreement"][i] if i < 3 else f"col{i}"
+                    col = COLUMNS[i] if i < len(COLUMNS) else f"col{i + 2}"
                     hard.append(f"{owner}: {label or rl}\n      [{col}]  root: {a}\n      "
                                 f"{' ' * len(col)}   {owner}: {b}")
+    return hard, warn, (len(r), len(c), len(s), len(set(r) & union))
+
+
+def first_row(text):
+    """The first data row of a page's Score table."""
+    lines = text.split("\n")
+    k = next(i for i, l in enumerate(lines) if l.strip() == SCORE_HEADER)
+    return next(l for l in lines[k + 1:] if not set(l.strip()) <= set("|-: "))
+
+
+def controls(texts):
+    """Planted defects, each of which must fail. Returns [(name, fired)]."""
+    out = []
+    sp, co = LANDINGS["spectrum"], LANDINGS["cosmos"]
+    # a drifted Standing cell on a landing must fail, naming the row and the column
+    row = first_row(texts[sp])
+    cells = re.split(r"(?<!\\)\|", row)
+    label = re.sub(r"\[↗\]\([^)]*\)", "", cells[1]).strip()
+    cells[2] = " `planted` "
+    hard, _, _ = compare({**texts, sp: texts[sp].replace(row, "|".join(cells), 1)})
+    out.append((f"a drifted Standing cell on {sp}", any(label in h and "[Standing]" in h for h in hard)))
+    # a renamed header must fail as a missing header, not pass as an empty table
+    hard, _, _ = compare({**texts, co: texts[co].replace(SCORE_HEADER, SCORE_HEADER.replace(" Standing |", ""), 1)})
+    out.append((f"the Score header renamed on {co}", any("Score header missing on " + co in h for h in hard)))
+    # a header with no rows under it must fail
+    lines = texts[sp].split("\n")
+    k = next(i for i, l in enumerate(lines) if l.strip() == SCORE_HEADER)
+    body = [i for i in range(k + 1, len(lines)) if lines[i].startswith("|")]
+    body = body[:next((j for j, i in enumerate(body) if i != body[0] + j), len(body))]
+    kept = [l for i, l in enumerate(lines) if i not in body or set(l.strip()) <= set("|-: ")]
+    hard, _, _ = compare({**texts, sp: "\n".join(kept)})
+    out.append((f"the Score rows removed on {sp}", any("zero rows parsed on " + sp in h for h in hard)))
+    # a root row missing its last cell must fail on width
+    rrow = first_row(texts[ROOT])
+    short = "|".join(re.split(r"(?<!\\)\|", rrow.rstrip())[:-2]) + "|"
+    hard, _, _ = compare({**texts, ROOT: texts[ROOT].replace(rrow, short, 1)})
+    out.append(("a root row missing its last cell", any("cells, the header" in h for h in hard)))
+    return out
+
+
+def main():
+    root = repo_root()
+    texts = {p: open(os.path.join(root, p), encoding="utf-8").read() for p in [ROOT, *LANDINGS.values()]}
+    hard, warn, (nr, nc, ns, shared) = compare(texts)
+    if nr != nc + ns and not hard:
+        hard.append(f"root {nr} rows, but cosmos {nc} + spectrum {ns}")
+    ran = not any("Score header missing" in h or "zero rows parsed" in h for h in hard)
+    ctl = controls(texts) if ran else []
 
     for w in warn:
         print(f"  WARN  {w}")
     for h in hard:
         print(f"  FAIL  {h}")
-    if hard:
-        print(f"\nFAIL: {len(hard)} scorecard disagreement(s)")
+    for name, fired in ctl:
+        print(f"  {'control fails as required' if fired else 'CONTROL DID NOT FAIL'}: {name}")
+    missed = [n for n, f in ctl if not f]
+    if hard or missed or not ctl:
+        print(f"\nFAIL: {len(hard)} scorecard disagreement(s)"
+              + (f"; {len(missed)} control(s) did not fail" if missed else "")
+              + ("; controls not run" if not ctl else ""))
         return 1
-    print(f"PASS: root {len(r)} = cosmos {len(c)} + spectrum {len(s)}; "
-          f"{len(set(r) & union)} shared rows match"
+    print(f"PASS: root {nr} = cosmos {nc} + spectrum {ns}; {shared} shared rows match; "
+          f"{len(ctl)}/{len(ctl)} controls fail as required"
           + (f"; {len(warn)} warning(s) needing human adjudication" if warn else ""))
     return 0
 
