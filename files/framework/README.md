@@ -300,6 +300,8 @@ So $`A/A_P`$ just asks how big the measured thing is in those units. For the Hub
 
 ### The Phase Operator
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-phase-operator.png?raw=true" width="90%" alt="Where the 2 in C(Θ) comes from, in three panels on one vertical scale: the amplitude ψ₁ = sin(πΘ), zero at both boundaries and peaking at the antinode; squared, the intensity sin²(πΘ), whose mean over the domain is 1/2; doubled, the unit-mean weight C(Θ), with mean 1 and peak 2 at the antinode. In the last two panels the shading above the dashed mean line balances the shading below it"></p>
+
 $`C(\Theta)`$ is fixed within the spectral-boundary class in two steps. The anti-periodic boundary condition (the Möbius sign flip) forces the sinusoidal family: the eigenbasis is the half-integer tower, with no polynomial, exponential, or rational profile surviving (the uniqueness argument carries the detail). Background symmetry then selects the member: isotropy and orthogonality pick the lowest harmonic, the first-positive mode, and the boundary node picks sine over cosine, giving $`\psi_1(\Theta) = \sin(\pi\Theta)`$, zero at the two boundaries and peaking at the antinode. An observer registers intensity, the squared amplitude, so the weight is $`\lvert\psi_1\rvert^2 = \sin^2(\pi\Theta)`$, normalized to unit mean over the domain in the flat measure $`d\Theta`$, the normalization being the second selection principle the boundary condition does not supply and the one that fixes the leading 2:
 
 ```math
