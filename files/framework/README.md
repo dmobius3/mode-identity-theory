@@ -120,6 +120,8 @@ Mode Identity Theory is built upon a specific order of operation. Each step depe
 
 *What space is this, and why must it be this one?*
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with the Möbius band and its single edge S¹ inside it"></p>
+
 ```math
 \Large {S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
 ```
@@ -201,6 +203,8 @@ MIT associates that phase increment with the action step $`\Delta\mathcal{S}_{\m
 
 *What is waving, and what makes it time?*
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1"></p>
+
 The domain is static; its temporal edge carries a standing wave, and cosmic time is the observer's phase along it. On the one-lap lift of that edge the Möbius identification is anti-periodic, the same sign flip that gives matter its fermionic character: one traversal flips the wave, the closed edge restores it after the second, and the fundamental phase period is $`4\pi`$ rather than $`2\pi`$. It opens at full amplitude, holds its selected fundamental mode, and where the observer samples it, matter appears.
 
 Anti-periodicity, the initial-maximum condition ($`\Psi(0) = +1`$), and selection of the fundamental temporal mode ($`m = 0`$) together fix:
@@ -223,6 +227,8 @@ The cosine has a complement. Write $`S = \sin(t/2)`$; then $`\Psi^2 + S^2 = 1`$ 
 >**📗 [Dark Energy](../cosmos/files/dark-energy.md):** the effective, phase-based expansion history in full, where what evolves is not $`\Lambda`$ but perception.
 
 ### Redshift and Cooling
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/de-redshift-phase-ratio.png?raw=true" width="80%" alt="Redshift as a ratio of phase positions: on the wave S = sin(t/2) the observer sits at s0 and light from z = 1 and z = 3 was emitted at s0/2 and s0/4, so 1 + z = s0/S; shown at the 95% bound s0 = 0.19, with an inset of the whole first half-lap"></p>
 
 Redshift is a phase ratio, $`1 + z = S(t_\text{obs})/S(t_\text{emit})`$, the observer reading the wave from farther along it rather than space carrying source and observer apart. The effective distance relation carries a scale factor $`a_\text{eff} \propto S`$, and in that effective metric the phase ratio is the ordinary null-geodesic result, so the standard FLRW distance relation is recovered as the translation layer for comparison with observations.
 
@@ -259,6 +265,8 @@ Two phase parameterizations meet at the present epoch. The engine phase $`\Phi =
 ## ⚖️ One Equation
 
 *Why does a constant have the size it has?*
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-equation.png?raw=true" width="80%" alt="The wave C(Θ) = 2 sin²(πΘ) with a₀, α, H₀ and Λ at their positions, and the depth ladder of powers of √Ω"></p>
 
 ```math
 \Large {\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
@@ -395,6 +403,8 @@ The forward content that survives the null is the epoch relation $`a_0(z) \propt
 
 ### The Assembled Engine
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-two-grids.png?raw=true" width="85%" alt="The phase operator C(Theta) over the rising half of the domain, above two rulers: the spinor grid k/120 and the bosonic grid k/60. The same well label 13 lands at 13/120 on the first and 13/60 on the second, giving C = 0.22 for a0 and C = 0.79 for alpha"></p>
+
 Evaluating the scaling law at each well:
 
 | Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
@@ -427,6 +437,8 @@ The $`a_0/(cH_0)`$ ratio is locked by well positions: $`C(13/120)/C(34/120) = 0.
 ## 🔺 One Identity
 
 *What tells one particle from another?*
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-identity.png?raw=true" width="50%" alt="An icosahedron with a face, an edge and a vertex marked: faces sort color, edges sort the boson-fermion divide, vertices sort the electroweak address"></p>
 
 ```math
 \Large {\lvert 2I\rvert = 120 = 2^3 \cdot 3 \cdot 5}
@@ -472,6 +484,8 @@ The stabilizers determine the decompositions and MIT's dictionary gives them the
 The same sampling engine resolves the coupling sector as a discrete ladder of phase positions and representation channels. Every ingredient it uses is already in hand: the two grids from [One Shape](#one-shape) and [One Identity](#one-identity), and the phase weight, the wells and the hierarchy from [One Equation](#one-equation).
 
 ### The Gauge Ladder
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-grid-ladder.png?raw=true" width="65%" alt="The grid matrix: columns are the carrier phase grid, rows the target exponent grid, 60R first. EM at 60R/60R, C(13/60) Omega^(-1/60), zero spinorial slots; strong at carrier 60R and target 120, C(17/60) Omega^(-1/120), one slot; weak at 120/120, C(17/120) Omega^(-1/120) cos(pi/10), two slots; the upper off-diagonal cell, a fermionic carrier with a bosonic target, is vacant"></p>
 
 Everything in this sector lives at two phase slots, the Fibonacci well 13 and its $`E_8`$ Coxeter conjugate 17, the Coxeter complement $`30 - 13`$ rather than a Fibonacci well of its own. The Coxeter pair $`(13, 17)`$ sums to the Coxeter number of $`E_8`$: $`13 + 17 = 30 = h(E_8)`$. The McKay correspondence ties $`2I`$ directly to $`E_8`$, so the domain's natural arithmetic runs modulo 30, and 13 and 17 are the conjugate exponents that pair across it.
 
@@ -534,6 +548,8 @@ Confinement is usually told as a story about energy: the cost keeps climbing unt
 
 ### Three Generations
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-mckay-gaps.png?raw=true" width="90%" alt="The affine E8 McKay graph of 2I with each irreducible representation R0 to R8 labeled by its McKay distance from R0; the adjoints of the three vacua are open circles: R0 and R3 = Sym2 Q first appear at level m = 2, a gap of 4/R_Lambda^2, and R4 = Sym2 Q prime at distance 6 first appears at m = 6, a gap of 36/R_Lambda^2"></p>
+
 Why three, and not two or seven? Because the space has exactly three ways to hold a flat field still, with no path from one to another. Flat $`\text{SU}(2)`$ connections on $`S^3/2I`$ are classified by conjugacy classes of homomorphisms $`2I \to \text{SU}(2)`$, and exactly three exist: the trivial map, the standard connection $`Q`$, and its Galois conjugate $`Q'`$. Each is isolated ($`H^1 = 0`$), with no continuous moduli and no Goldstone mode bridging the families.
 
 | Vacuum | Mass gap | Source |
@@ -549,6 +565,8 @@ The coexact gap paper establishes the spectral side: across the whole ADE classi
 >**📗 [Coexact Gap](files/bedrock/files/coexact-gap.md):** the adjoint coexact gap uniform at $`4/R_\Lambda^2`$ across the whole ADE classification, with the single Galois break to $`36/R_\Lambda^2`$ on $`S^3/2I`$.
 
 ### The Mass Formula
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-formula.png?raw=true" width="85%" alt="The mass formula's four pieces: the floor, the seats on the E8 McKay graph with their distances and the elevator step, and the three-vacuum dial"></p>
 
 For the particle address $`(\rho, \sigma)`$ defined in [One Identity](#one-identity), the mass law reads left to right as one motion: start at the floor, choose a seat, ride the elevator, turn the dial.
 
@@ -588,11 +606,15 @@ The gauge gap above and this mass spectrum share the McKay structure and little 
 
 *What is gravity, and why does it not sit on the grid with the rest?*
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The two seams: the Möbius band embedded in S³ on the vacuum side, and the quotient of S³ by 2I on the matter side"></p>
+
 All of it, the wells, the spectrum, the stabilizer sorting, lives on a smooth space that knows none of it. The last question is how that discrete structure sits on the $`S^3`$ underneath, and what gravity is across the seam. The answer is not one operation but two.
 
 Underneath everything is $`S^3`$: smooth, continuous, every point equivalent, with uniform Ricci curvature. It knows nothing about 120. The discrete structure is built on top of it, in two distinct ways.
 
 ### The two seams
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-conversion-chain.png?raw=true" width="90%" alt="The conversion chain: the surface seed Λ_top = 2/R_Λ², times 3 by the Gauss equation to spatial curvature 6/R_Λ², divided by 2 by the vacuum constraint to the vacuum reference 3/R_Λ²; identifying it with the observed Λ is open"></p>
 
 | Seam | Operation | Produces | Carries |
 |---|---|---|---|
