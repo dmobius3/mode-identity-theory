@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-23):** Active, scoped to the spectral-boundary observable class. Two rows are forced; the factored form separates on a Schur+homothety+Lemma 8 argument but is not closed. For single-position observables a derived block-by-block lemma makes it equivalent to boundary-mode uniformity, every contributing spectral block carrying the first-positive profile times a fixed spectral weight, and that uniformity is the open step; it replaces the commutant theorem, which could not forbid a cross-term. The mass sector's geometric-mean seat falls outside the lemma and is its own question.
+**Status (2026-09-25):** Active, scoped to the spectral-boundary observable class. Two rows are forced; the factored form separates on a Schur+homothety+Lemma 8 argument but is not closed. For single-position observables a derived block-by-block lemma makes it equivalent to boundary-mode uniformity, every contributing spectral block carrying the first-positive profile times a fixed spectral weight, and that uniformity is the open step; it replaces the commutant theorem, which could not forbid a cross-term. The mass sector's geometric-mean seat falls outside the lemma and is its own question. Audited row by row (below), nothing contradicts uniformity and nothing derives it: $`\Lambda_\text{top}`$ supplies an exact same-mode identity, $`H_0`$ calibrates the edge weight, and $`a_0/(cH_0)`$ exposes the shared weight to an anchor-free ratio, which checks.
 **Summary:** Asks whether the scaling law A/A_P = C(Θ)·(√Ω)^{-n} is forced rather than postulated, within the spectral-boundary observable class.
 **Inputs:** the first-eigenvalue paper's first-positive eigenvalue, `the-mirror.md` (Lemma 8, the character ceiling), the mass-spectrum R determination, the gauge-ladder note
 
@@ -197,6 +197,30 @@ Second, and decisively, C(Θ) does not depend on δ₀ at all. It is built from 
 
 ---
 
+## Audit: uniformity by observable
+
+Audited row by row, nothing contradicts uniformity and nothing derives it. One row supplies an exact same-mode identity, one calibrates the edge weight, and one exposes the shared weight to an anchor-free ratio. Each dimensionful row reads one position, so no single row can establish uniformity. For each row the audit records the block it reads, whether a page derives the two per-block conditions (first-positive input; linear readout at a position-independent weight), and what the row contributes as evidence. A status of MEETS would need a derivation on a page today, and FAILS a derivation that contradicts a condition; no row has either.
+
+| Row | Block read | First-positive input | Linear readout, fixed weight | Uniformity | Role in evidence |
+|---|---|---|---|---|---|
+| $`\Lambda_\text{top}`$: $`\Theta = 1/2`$, $`n = 2`$ | the surface mode $`u_0 = \sin(y/R)`$ | DERIVED on the [Λ page](../../../../cosmos/files/cosmological-constant.md): $`\lambda_+ = 2/R^2`$, the $`\ell = 1`$ zonal mode, on a narrow band taken as a physical input | OPEN | ASSUMED | an exact same-mode identity, $`\lambda_+ R^2 = C(1/2) = 2`$ with $`C = 2u_0^2`$ ([black holes](../../../../cosmos/files/black-hole.md)); one position cannot tell $`C`$ from $`C^2/2`$ |
+| $`H_0`$: $`\Theta = 34/120`$, $`n = 1`$ | the same profile, assigned to the edge | ASSIGNED | ASSUMED | ASSUMED | calibration: the row defines $`N = H_0 t_P / C(34/120)`$, so it is numerically unscored |
+| $`a_0`$: $`\Theta = 13/120`$, $`n = 1`$ | as $`H_0`$ | ASSIGNED | ASSUMED: the ratio takes the shared weight as its premise | ASSUMED | the one test, anchor-free: $`a_0/(cH_0) = C(13/120)/C(34/120) = 0.1845`$ against $`0.1834`$ (SPARC $`a_0`$, Planck $`H_0`$) |
+
+**The antinode.** The equality $`\lambda_+ R^2 = C(1/2) = 2`$ is exact under the framework's flat phase normalization, $`\int_0^1 C\,d\Theta = 1`$, and only there: normalizing the same mode over the band's area measure, $`\lvert\cos(y/R)\rvert\,dy`$, gives a peak of 3. Both 2s belong to the first-positive mode, but they are fixed separately, one as $`\ell(\ell+1)`$ at $`\ell = 1`$ and the other by the normalization, so the equality is a same-mode identity, not a derivation of the measure or of the linear readout. The measure meets data in the couplings, which use $`C`$'s absolute value. Under the area measure $`C`$ is 1.5 times larger at every position, and $`\alpha`$, $`\alpha_s`$ and $`\alpha_W`$ would come out 50% high on the $`\Lambda`$-anchored $`\Omega_\Lambda`$; under the flat measure they land within 0.3 to 1.5%. Granted the coupling rule's choices ([claim ledger](claim-ledger.md), row 5b), the coupling data select the flat measure the identity uses.
+
+**The edge pair.** The $`H_0`$ row fixes the weight, so it tests nothing. The framework's dynamical account of the rate is the Waltz clock, $`H \propto \Psi/S^{3/2}`$, written in the budget phase $`t`$; the engine's reading at $`\Theta = 34/120`$ is a second, calibrating account, and the relation between $`t`$ and $`\Theta`$ is not derived. If the two edge blocks share one weight, $`a_0/(cH_0)`$ is fixed by the two positions alone, and it lands within 1% of the observed ratio; the pair is a selection, since of 7,021 phase-position pairs, 24 fall within 1% ([claim ledger](claim-ledger.md), row 6). The ratio's constancy across epochs, $`a_0(z) \propto H(z)`$ (Euclid DR1 Row II), does not need the shared weight: both rows read the same edge ledger $`\Omega_H`$ at fixed positions with $`R`$-invariant weights (Step B). What Row II rests on is the typing of $`a_0`$ as an edge mode, read on $`\Omega_H`$ at $`n = 1`$ by the scale selection rule, and that typing is the hypothesis the row tests.
+
+**What would close it.** Two global questions, not one per row. A shared boundary mode: why every eligible single-position block restricts to the same first-positive profile rather than a block-specific $`f_l(\Theta)`$. A linear measurement: why the readout is linear in the intensity. For a separated boundary state $`\Psi_l(\Theta) = \psi_1(\Theta)\,v_l`$ and a fixed quadratic readout,
+
+```math
+K_l(\Theta) = \langle \Psi_l(\Theta), B_l \Psi_l(\Theta) \rangle = \lvert\psi_1(\Theta)\rvert^2 \langle v_l, B_l v_l \rangle \propto C(\Theta)\, A_l ,
+```
+
+so a $`C^2`$ term would need a readout nonlinear in the state. Declaring the admissible observables quadratic would only rename the assumption. The open target is to derive the quadratic form from properties a measurement has on independent grounds: positivity, blindness to the state's sign and phase, additivity over orthogonal sectors, a fixed normalization, and an operator that does not depend on the amplitude it measures.
+
+---
+
 ## What the Residual Requires
 
 The integer-depth rigidity is units plus exact homothety, and the coupling exponents come from the ladder rule, so the heavy approaches below come off both. They are kept for the record, and because the representation-theoretic row is the candidate for lifting the ladder rule from established to forced.
@@ -254,6 +278,8 @@ On the pre-correction mass table the path-product propagator search returned no 
 The strongest version of this result would show the scaling law is the ONLY measurement rule within the class, not merely the simplest. Two of its pieces reach that bar outright: the phase operator and the integer hierarchy, by the anti-periodic BC (plus the member selection) and by units together with exact homothety. The factored structure is argued there (the Schur separation), not closed: boundary-mode uniformity is the remaining step, and dimensionlessness does not stand in for it. Simplicity never entered.
 
 The honest deflation that came with closing the integer hierarchy: the apparent miracle of "many orders of magnitude from topology" is units. R/ℓ_P is a calibrated ratio, and raising it to the observable's dimension is dimensional analysis plus the homothety weight. The genuine content sits in C(Θ), and the coupling exponents sit in the ladder rule that units do not reach. Naming this plainly is what lets the open mechanisms stand out as the real work.
+
+**Provenance.** The core equation, $`A \underset{\Omega,n,\theta}{=} B`$, is on public record from 2025-12-13, in an image post by the author that shows that line and nothing else: no profile, no wells, no values. The functional form, $`A/A_P = C\cdot\Omega^{-n/2}`$ with $`C(\theta) = 2\sin^2(1.5\theta)`$ (the profile written here as $`2\sin^2(\pi\Theta)`$, with $`\theta = 120\Theta`$ in degrees), first appears together with its fits to $`\Lambda`$, $`H_0`$ and $`a_0`$ in the framework's deposit of 2025-12-26 ([10.5281/zenodo.18064857](https://doi.org/10.5281/zenodo.18064857)). The chronology bears on the look-elsewhere exposure of the later matches; it is not a derivation of the law.
 
 ---
 

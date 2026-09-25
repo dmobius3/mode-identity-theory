@@ -178,7 +178,7 @@ Proved, often architecturally load-bearing, empirically inert. ~150+ leaf lemmas
 | Λ_ref via α route | 2.19e-122 → 2.845e-122 | ~23% low | 60-fold lever; route choice; the scale at which α is read (≈6% between q² = 0 and the Z mass, a factor of about 33 in Λ_obs R²); Cycle 2. The Λ page's 5σ test is unscored until R carries an error budget of its own ([The R Problem](r-problem.md#the-coefficient-test)) | α, Ω_Λ, R |
 | Λ_ref via mass route | 8.1e-54 (e-μ, canonical) → 1.089e-52; 2.9e-53 (μ-t, best pair) | **~13.4× off (demote: a miss)**; 3.8× on the best-pair check | bar relaxed %→OoM; pair choice; Cycle 7 | m_e, Ω_Λ |
 | Λ_ref/Λ_top = 3/2 | 3/2 | exact (claim) vs a σ-statement | Gauss-vs-stabilizer 3/2 identity OPEN; and the 3/2 is a vacuum normalization, so the identification with the physical Λ is gated on the static stress tensor | Λ_top |
-| a₀/(cH₀) | 0.184 → 0.183 | <1% | well pair (13,34) selected; known 1983 MOND coincidence; both inputs | a₀, H₀ (web) |
+| a₀/(cH₀) | 0.184 → 0.183 | <1% | well pair (13,34) selected; known 1983 MOND coincidence; both inputs; the value rests on boundary-mode uniformity across the two edge blocks (OPEN) | a₀, H₀ (web) |
 | Fermion masses (24 entries) | **4 of 8 within ×3** (5 compatible; descriptive; p_A = 0.690) | comparison | null test `mass-null-v1.1`: random torsions reproduce the hit rate, so ×3 is not evidence for the specific torsions; ×3 window wide; assignment + 3-vacuum freedom; m_e anchor | m_e, Ω_Λ (web) |
 | ↳ muon | 1.03e-1 → 1.057e-1 GeV | 3% | rank shared w/ strange; vacuum choice | m_e |
 | ↳ up | 3.16e-2 → 2.16e-3 GeV | **14.6× (unassigned)** | former 6% at (R8,triv) was the coexact-only artifact; no compatible entry | m_e |
