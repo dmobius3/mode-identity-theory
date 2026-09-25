@@ -58,7 +58,7 @@ The MIT scaling law relates any observable $`A`$ to the Planck reference $`A_P`$
 \frac{A}{A_P} = C(\Theta) \cdot (\sqrt{\Omega})^{-n}
 ```
 
-where $`C(\Theta) = 2\sin^2(\pi\Theta)`$ is the phase operator (derived from the anti-periodic first positive mode on the Möbius surface, normalised to unit mean) and $`n`$ is the manifold depth: $`n = 1`$ for edge modes, $`n = 2`$ for surface modes.
+where $`C(\Theta) = 2\sin^2(\pi\Theta)`$ is the phase operator (the intensity of the anti-periodic first positive mode, normalised to unit mean over Θ) and $`n`$ is the manifold depth: $`n = 1`$ for edge modes, $`n = 2`$ for surface modes.
 
 Both $`a_0`$ and $`H`$ sit on the temporal edge ($`n = 1`$), referencing the same hierarchy number $`\Omega_H`$. In the ratio, the Planck scales and the $`\sqrt{\Omega_H}`$ factors cancel, leaving only the phase coefficients:
 
