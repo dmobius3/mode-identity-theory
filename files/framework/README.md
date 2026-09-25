@@ -164,6 +164,8 @@ The chronon and the standing-wave period operate in the phase parameter $`t \in 
 
 ### Why $`S^3/2I`$
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-ade.png?raw=true" width="90%" alt="The finite subgroups of SU(2) as their affine McKay graphs: the open families Z_n (affine A, n-1) and 2D_n (affine D, n+2), which need an external n, and the closed exceptional groups 2T of order 24 (affine E6), 2O of order 48 (affine E7) and 2I of order 120 (affine E8), boxed: terminal, largest in order and maximal under McKay, and perfect, with only the trivial one-dimensional character"></p>
+
 The observable domain is $`S^3/2I`$: the hypersphere modulo the binary icosahedral group $`2I`$, with $`\lvert 2I\rvert = 120`$. The discrete subgroups of SU(2) $`\cong S^3`$ are classified into open families (cyclic $`Z_n`$ and binary dihedral $`2D_n`$, parameterized by $`n`$) and three closed exceptional groups (binary tetrahedral $`\lvert 2T\rvert = 24`$, binary octahedral $`\lvert 2O\rvert = 48`$, binary icosahedral $`\lvert 2I\rvert = 120`$).
 
 Open families require an external choice of $`n`$ and fall to the framework's input-minimization. Among the closed exceptional cases $`2I`$ is terminal, largest in order and maximal under the McKay correspondence, where it identifies with $`E_8`$, the largest exceptional Lie algebra.
@@ -318,6 +320,8 @@ The boundary zeros are physical: in the black-hole reading the exterior stationa
 
 ### Fibonacci Wells
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-fibonacci-wells.png?raw=true" width="90%" alt="The Fibonacci recurrence of the stabilizer orders 2 + 3 = 5 run forward on the 120-grid: the divisors 1, 2, 3, 5 and 8 tile the grid (lcm 120); 13, the first term that does not divide 120, is the arithmetic seam; the wells 13, 21, 34 and 55, spaced 8, 13 and 21, fall between the seam and the antinode at 60, where C(Theta) = C(1 - Theta) allows no new well"></p>
+
 The first-positive wave shape is selected, but not every position on it is a place the framework samples. The candidate sampling positions continue a sequence the domain already carries. The icosahedral branch orders $`(2,3,5)`$, the stabilizer orders of the edges, faces, and vertices of the rotation group beneath $`2I`$ and what [One Identity](#one-identity) reads as the stabilizer primes, are already consecutive Fibonacci terms obeying $`2+3=5`$, and running that same recurrence forward on the fixed 120-grid gives the well sequence. The terms that resolve it are exactly the Fibonacci divisors of 120, namely $`\{1,2,3,5,8\}`$, whose least common multiple is 120; these tile the grid rather than mark new sampling positions. The first Fibonacci term that is not a divisor is $`F_7 = 13`$, the arithmetic seam between the divisor block that closes at the domain order and the Fibonacci structure that lives on it. The upper end is the wave's own reflection symmetry, $`C(\Theta) = C(1 - \Theta)`$, about the antinode, so no new intensity well appears beyond $`\Theta = 1/2`$. The wells therefore fall between the arithmetic seam and the antinode at $`13, 21, 34, 55`$, with spacings $`8, 13, 21`$, again consecutive Fibonacci. The golden ratio behind this recurrence is not imported from outside; it is already present in the binary icosahedral character field $`\mathbb{Q}(\sqrt5)`$, the same $`\sqrt5`$ that fixes the exact torsion ratio $`\varphi^{-4}`$ between the Galois-paired vacua.
 
 >**📒 [Fibonacci Wells](files/working/files/fibonacci-wells.md):** the forcing worksheet for why the sampling wells land at $`\{13, 21, 34, 55\}`$, with the variational route ruled out.
@@ -327,6 +331,8 @@ That the realized positions continue the recurrence is where this level stops be
 >**📗 [The Mirror](../spectrum/files/the-mirror.md):** the curvature duality of primes and matter, and where on the edge the well interference is located.
 
 ### The Hierarchy and the Observer
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-observer-midpoint.png?raw=true" width="90%" alt="One ruler with Omega from 1 to 10^122 above and length from the Planck length to R_Lambda below. The self-dual point x = Omega/x, sqrt(Omega) of about 10^61, falls at sqrt(l_P R_Lambda) of about 50 micrometres, the scale of a living cell, read by MIT as the observer scale; the neutrino floor at about 88 micrometres sits beside it; 61 orders of Omega and 30 of length lie on each side"></p>
 
 The hierarchy base is sector-specific, one ledger per sector:
 
