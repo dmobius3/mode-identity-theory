@@ -72,7 +72,7 @@ mode-identity-theory/
 
 🏟️ **One Shape**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with the Möbius band and its single edge S¹ inside it">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with the Möbius band and its single edge S¹ inside it"></p>
 
 >```math
 >\Large \boxed{S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
@@ -88,7 +88,7 @@ So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band s
 
 Ψ **One Wave**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1"></p>
 
 >```math
 >\Large \boxed{\Psi = \cos(t/2), \quad \text{period } 4\pi}
@@ -106,7 +106,7 @@ Matter appears when the wave is sampled. **Most modes cancel; the surviving patt
 
 ⚖️ **One Law**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-equation.png?raw=true" width="80%" alt="The wave C(Θ) = 2 sin²(πΘ) with a₀, α, H₀ and Λ at their positions, and the depth ladder of powers of √Ω">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-equation.png?raw=true" width="80%" alt="The wave C(Θ) = 2 sin²(πΘ) with a₀, α, H₀ and Λ at their positions, and the depth ladder of powers of √Ω"></p>
 
 >```math
 >\Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
@@ -128,7 +128,7 @@ The wave is not sampled everywhere. The golden field $`\mathbb{Q}(\sqrt5)`$ is a
 
 🔺 **One Identity**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-identity.png?raw=true" width="50%" alt="An icosahedron with a face, an edge and a vertex marked: faces sort color, edges sort the boson-fermion divide, vertices sort the electroweak address">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-identity.png?raw=true" width="50%" alt="An icosahedron with a face, an edge and a vertex marked: faces sort color, edges sort the boson-fermion divide, vertices sort the electroweak address"></p>
 
 >```math
 >\Large \boxed{|2I| = 120 = 2^3 \cdot 3 \cdot 5}
@@ -152,7 +152,7 @@ The representation theory supplies those decompositions, and in MIT they are the
 
 ⚛️ **One Formula**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-formula.png?raw=true" width="85%" alt="The mass formula's four pieces: the floor, the seats on the E8 McKay graph with their distances and the elevator step, and the three-vacuum dial">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-formula.png?raw=true" width="85%" alt="The mass formula's four pieces: the floor, the seats on the E8 McKay graph with their distances and the elevator step, and the three-vacuum dial"></p>
 
 >```math
 >\Large \boxed{m(\rho,\sigma) = \mu_\Lambda \cdot C_{\text{geom}}(\rho) \cdot (\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30} \cdot T^2(\rho \otimes \sigma)}
@@ -176,7 +176,7 @@ Across the eight nontrivial representation seats and three vacua, the formula pr
 
 🪡 **One Interface**
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The two seams: the Möbius band embedded in S³ on the vacuum side, and the quotient of S³ by 2I on the matter side">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The two seams: the Möbius band embedded in S³ on the vacuum side, and the quotient of S³ by 2I on the matter side"></p>
 
 >```math
 >\Large \boxed{\text{Möbius} \hookrightarrow S^3 \qquad\Big|\qquad S^3 \to S^3/2I}
