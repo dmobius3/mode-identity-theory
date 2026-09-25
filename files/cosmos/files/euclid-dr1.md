@@ -16,7 +16,7 @@ The Euclid Data Release 1 arrives in two stages. DR1-Foundation, in November 202
 | Field | Value |
 |---|---|
 | First deposited | 2026-06-05 |
-| Reference | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20563048.svg)](https://doi.org/10.5281/zenodo.20563048) |
+| Reference | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20563047.svg)](https://doi.org/10.5281/zenodo.20563047) |
 | Expected Euclid DR1 release | DR1-Foundation: November 2026. Full DR1: mid 2027. ESA states that data release dates are tentative and will have to be confirmed. *(Schedule field updated 2026-07-18 from ESA's published timeline; on 2026-06-05 it read October 2026.)* |
 | Data products in scope | Cosmology release: spectroscopic BAO (<i>z</i> = 0.9–1.8), photometric weak lensing, high-<i>z</i> stellar mass function. Quick-look products are not bound by this card. |
 
