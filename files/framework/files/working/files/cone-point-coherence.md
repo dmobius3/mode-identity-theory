@@ -9,11 +9,11 @@
 **State:** Active
 **Status (2026-09-16):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g.
 **Summary:** Asks whether galactic coherence is the W-independence of a nested cone-point eigenvalue problem, and what sources the galactic-scale curvature.
-**Inputs:** the Sector A cone-point analysis (`../../bedrock/files/first-eigenvalue.md`), the 120-grid scale-free projection, the phase-field coherence scale (L_f SPARC-falsified, L_g open)
+**Inputs:** the first-eigenvalue paper's cone-point analysis (`../../bedrock/files/first-eigenvalue.md`), the 120-grid scale-free projection, the phase-field coherence scale (L_f SPARC-falsified, L_g open)
 
 Working notes on the cone point as the mechanism of galactic coherence.
 
-The cosmic cone point analysis is DERIVED (Sector $`\mathcal{A}`$ paper). The proposal that cone point identification provides the mechanism of nested coherence is MOTIVATED. The Frobenius program at galactic scale is OPEN. The curvature sourcing question (Section V) is the critical open problem. The pre-registered SPARC test ([sparc-phase-field.md](sparc-phase-field.md), run 2026-05-19) found that $`L_f = v_c^2/a_0`$ does not behave like a single galactic coherence radius: the gravitational transition lands at $`\approx 0.38\,L_f`$ and the flat onset at $`\approx 1.26\,L_f`$, and the transition radius tracks baryonic mass more tightly than $`L_f`$. This removes the empirical anchor for Reading B (the nested galactic cone point at $`L_f`$); Reading A (the cosmic cone point) and the Frobenius chain (Section VII) are untouched.
+The cosmic cone point analysis is DERIVED (first-eigenvalue paper). The proposal that cone point identification provides the mechanism of nested coherence is MOTIVATED. The Frobenius program at galactic scale is OPEN. The curvature sourcing question (Section V) is the critical open problem. The pre-registered SPARC test ([sparc-phase-field.md](sparc-phase-field.md), run 2026-05-19) found that $`L_f = v_c^2/a_0`$ does not behave like a single galactic coherence radius: the gravitational transition lands at $`\approx 0.38\,L_f`$ and the flat onset at $`\approx 1.26\,L_f`$, and the transition radius tracks baryonic mass more tightly than $`L_f`$. This removes the empirical anchor for Reading B (the nested galactic cone point at $`L_f`$); Reading A (the cosmic cone point) and the Frobenius chain (Section VII) are untouched.
 
 **Related:** [First Eigenvalue](../../bedrock/files/first-eigenvalue.md), [Black Double Zero's](../../../../cosmos/files/black-hole.md), [Oort Cloud project](oort-cloud-project.md), [SPARC phase field notes](sparc-phase-field.md).
 
@@ -23,11 +23,11 @@ The cosmic cone point analysis is DERIVED (Sector $`\mathcal{A}`$ paper). The pr
 
 Within a galaxy, all observers measure the same $`\mathbb{R}^4`$: same $`\Lambda`$, same $`G`$, same particle masses, same coupling constants. The phase field mechanics proposed a coherence scale $`L_f = v_c^2/a_0 \approx 13`$ kpc within which the environmental phase shift $`\Theta_f`$ would be uniform. The SPARC test falsified $`L_f`$ as a single coherence radius: the gravitational transition lands at $`0.38\,L_f`$ and tracks baryonic mass ($`\rho \approx 0.68`$) more tightly than $`L_f`$ ($`\rho \approx 0.61`$). The geometric question survives: if galactic coherence has a topological origin, what sets the scale? But the target radius is no longer $`L_f`$.
 
-On the cosmic Möbius band, the cone point at $`y = \pi R/2`$ collapses all transverse positions to a single geometric point. In the zonal sector (Sector $`\mathcal{A}`$), the first positive eigenvalue $`\lambda_1 = 2/R^2`$ is $`W`$-independent: it does not depend on the transverse width of the band. The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) shows this $`W`$-independence holds for the full operator only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$); for wider bands an azimuthal mode undercuts the zonal level. At cosmic scale the physical band sits well within the narrow regime, so the coherence argument is unaffected.
+On the cosmic Möbius band, the cone point at $`y = \pi R/2`$ collapses all transverse positions to a single geometric point. In the zonal sector, the first positive eigenvalue $`\lambda_1 = 2/R^2`$ is $`W`$-independent: it does not depend on the transverse width of the band. The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) shows this $`W`$-independence holds for the full operator only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$); for wider bands an azimuthal mode undercuts the zonal level. At cosmic scale the physical band sits well within the narrow regime, so the coherence argument is unaffected.
 
 **The proposal:** galactic coherence is the $`W`$-independence of a nested eigenvalue problem, guaranteed by a cone point at galactic scale. Observers within the galaxy share the cone point of the wave, and the cone point identification is why they all measure equal $`\mathbb{R}^4`$ values.
 
-If this is right, it must be handled with the same care as the Sector $`\mathcal{A}`$ paper: Frobenius expansion, limit-circle classification, bridging extension (not Friedrichs; see §II), excision with vanishing boundary terms. No hand-waving about transverse collapse.
+If this is right, it must be handled with the same care as the first-eigenvalue paper: Frobenius expansion, limit-circle classification, bridging extension (not Friedrichs; see §II), excision with vanishing boundary terms. No hand-waving about transverse collapse.
 
 ---
 
@@ -60,13 +60,13 @@ The key structural feature: the $`W`$-cancellation (step 9) works because the ar
 
 ### Reading A: Shared Cosmic Cone Point
 
-The cosmic Möbius band has one cone point at $`y = \pi R/2`$. Every meridional line (every $`w`$-position) passes through it. In Sector $`\mathcal{A}`$ (the $`w`$-constant first-positive mode), the eigenfunction $`u_0 = \sin(y/R)`$ takes the same value at each $`y`$ regardless of $`w`$. The cone point ($`u_0 = 1`$) is the shared maximum of all meridional lines.
+The cosmic Möbius band has one cone point at $`y = \pi R/2`$. Every meridional line (every $`w`$-position) passes through it. In the zonal sector (the $`w`$-constant first-positive mode), the eigenfunction $`u_0 = \sin(y/R)`$ takes the same value at each $`y`$ regardless of $`w`$. The cone point ($`u_0 = 1`$) is the shared maximum of all meridional lines.
 
 Galactic observers are at different $`w`$-positions on the cosmic Möbius band but share this cone point. The first positive eigenvalue $`\lambda_1 = 2/R^2`$ is established through integration that passes through the cone point. All observers inherit the same eigenvalue because they sample the same first-positive mode on the same band.
 
 In this reading, galactic coherence is a consequence of:
 - One Möbius band (the cosmic one)
-- One first-positive mode (Sector $`\mathcal{A}`$)
+- One first-positive mode (the zonal mode)
 - One cone point (at $`y = \pi R/2`$)
 - $`W`$-independence (the transverse width of the galaxy doesn't matter)
 
@@ -190,7 +190,7 @@ If the galactic cone point exists ($`f_g`$ vanishes at some $`y_g^*`$), the foll
 
 Three scenarios, ordered by assumption strength:
 
-**Scenario A (constant curvature).** If $`K_g = 1/R_g^2`$ is constant, then $`f_g = \cos(y_g/R_g)`$. The entire Sector $`\mathcal{A}`$ analysis carries over with $`R \to R_g`$. The Frobenius expansion, limit-circle classification, bridging extension (in the constant sector; the higher sectors are limit-point in the narrow band and carry no choice), and excision are identical. The eigenvalue is $`\lambda_g = 2/R_g^2 = 2\pi^2/L_g^2`$ (the original identification $`L_g = L_f`$ is no longer empirically supported). The budget identity $`u_g^2 + J_g^2 = 1`$ holds. This is the cleanest case but the strongest assumption. The width constraint applies: the zonal level is the first positive eigenvalue only when $`W_g \leq \pi R_g/2`$.
+**Scenario A (constant curvature).** If $`K_g = 1/R_g^2`$ is constant, then $`f_g = \cos(y_g/R_g)`$. The entire first-eigenvalue analysis carries over with $`R \to R_g`$. The Frobenius expansion, limit-circle classification, bridging extension (in the constant sector; the higher sectors are limit-point in the narrow band and carry no choice), and excision are identical. The eigenvalue is $`\lambda_g = 2/R_g^2 = 2\pi^2/L_g^2`$ (the original identification $`L_g = L_f`$ is no longer empirically supported). The budget identity $`u_g^2 + J_g^2 = 1`$ holds. This is the cleanest case but the strongest assumption. The width constraint applies: the zonal level is the first positive eigenvalue only when $`W_g \leq \pi R_g/2`$.
 
 **Scenario B (variable curvature, linear zero).** If $`K_g`$ varies but $`f_g`$ still has a simple (linear) zero at $`y_g^*`$, then near the zero: $`f_g \sim |\delta_g|/R_{\text{eff}}`$ for some effective radius $`R_{\text{eff}}`$. The indicial equation is still $`s^2 = 0`$ (double root from the linear zero of the weight). Limit-circle classification still holds. The bridging extension fixes the constant sector; for $`n \geq 1`$ the endpoint is limit-point in the narrow band, so no extension choice arises. The excision terms still vanish as $`O(\epsilon^2)`$. The eigenvalue changes (no longer $`2/R_g^2`$) but the $`W_g`$-independence mechanism is preserved if the metric factors as $`ds^2 = dy_g^2 + f_g^2(y_g)\,dw_g^2`$, subject to the width constraint $`W_g \leq \pi R_{\text{eff}}/2`$.
 
@@ -273,7 +273,7 @@ This reframes Gap 1 of the Oort Cloud project: instead of asking "does $`L_f = v
 
 ### If Reading A holds (one cone point, perturbative):
 
-Galactic coherence follows from all observers sampling the cosmic first-positive mode (Sector $`\mathcal{A}`$), with the galactic potential introducing a small perturbation in the meridional direction. The Oort Cloud project's nested structure would need a different geometric explanation than cone point nesting.
+Galactic coherence follows from all observers sampling the cosmic first-positive mode (the zonal mode), with the galactic potential introducing a small perturbation in the meridional direction. The Oort Cloud project's nested structure would need a different geometric explanation than cone point nesting.
 
 ### The Oort Cloud radius
 

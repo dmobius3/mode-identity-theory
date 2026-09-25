@@ -9,7 +9,7 @@
 **State:** Active
 **Status (2026-09-16):** Working bench: Section II derived, Section III joints under load, Section IV pieces motivated, Section V gaps. The central question is whether the 120-grid nests at every gravitationally coherent scale.
 **Summary:** Asks whether MIT's structure projects into every gravitationally coherent scale, making the Oort Cloud the solar-scale coherence boundary.
-**Inputs:** the Sector A eigenvalue, the phase-field coherence scale (L_f SPARC-falsified, L_g open), the 120-grid scale-free projection, the 3/2 conversion
+**Inputs:** the first positive eigenvalue (first-eigenvalue paper), the phase-field coherence scale (L_f SPARC-falsified, L_g open), the 120-grid scale-free projection, the 3/2 conversion
 
 > The grid doesn't set a size; it sets a structure.
 
@@ -95,7 +95,7 @@ Phase field mechanics: $`\Theta = \Theta_0 + \Theta_f`$, where $`\Theta_f`$ depe
 
 Status: The principle (coherence required for sampling) is DERIVED and general. The specific galactic scale $`L_f = v_c^2/a_0`$ was derived, tested against SPARC, and falsified. The galactic coherence scale $`L_g`$ is open.
 
-The [cone point coherence notes](cone-point-coherence.md) explore the geometric mechanism: whether the $`W`$-independence of the Sector $`\mathcal{A}`$ eigenvalue (guaranteed by the Frobenius/Friedrichs/excision analysis at the cone point) is the structural reason coherence holds within $`L_g`$. Key findings from that analysis: GR tidal curvature in the flat-curve regime is Euler-type with power-law Jacobi solutions that structurally cannot zero, so the needed curvature lives at the topology-gravity interface; and SPARC falsified $`L_f = v_c^2/a_0`$ as the coherence radius, shifting the cone-point target from $`L_f`$ to whatever $`L_g`$ turns out to be.
+The [cone point coherence notes](cone-point-coherence.md) explore the geometric mechanism: whether the $`W`$-independence of the zonal first-positive eigenvalue (guaranteed by the Frobenius/Friedrichs/excision analysis at the cone point) is the structural reason coherence holds within $`L_g`$. Key findings from that analysis: GR tidal curvature in the flat-curve regime is Euler-type with power-law Jacobi solutions that structurally cannot zero, so the needed curvature lives at the topology-gravity interface; and SPARC falsified $`L_f = v_c^2/a_0`$ as the coherence radius, shifting the cone-point target from $`L_f`$ to whatever $`L_g`$ turns out to be.
 
 ### Joint 4: Black hole collapse and coherence-domain boundaries are NOT the same response law
 

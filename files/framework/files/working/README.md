@@ -151,7 +151,7 @@ Closing any one of these upgrades everything downstream.
 
 **Status (two rows forced, factorization argued):** $`A/A_P = C(\Theta) \cdot (\sqrt{\Omega})^{-n}`$ began as a declared measurement postulate. Two rows are forced: the anti-periodic BC forces $`C(\Theta)`$'s sinusoidal family and background symmetry (isotropy + orthogonality) selects the first-positive member; units fix the dimensional prefactor and exact homothety at definite weight fixes the power $`(\sqrt{\Omega})^{-n}`$ on the dilution sector. The factored form *separates* on a Schur + homothety + Lemma 8 argument within the spectral-boundary observable class, but is not yet closed: independent coordinates do not forbid a cross-term, and neither does a factored observable algebra. The open target, restated 2026-09-23, is boundary-mode uniformity: every contributing spectral block carries the first-positive profile $`C(\Theta)`$ times a fixed spectral weight, and for single-position observables a derived block-by-block lemma makes the factored form equivalent to it; the mass sector's geometric-mean seat is its own question. Whether the class exhausts the physical observables is a further premise. Off the form: the $`\alpha_W`$ twist, the extension *selection* (ground state only), and the $`\Omega_H = \Omega_\Lambda`$ coincidence.
 
-**Inputs:** Sector $`\mathcal{A}`$ eigenvalue, Lemma 8 (spectral inaccessibility), Möbius topology axioms.
+**Inputs:** first positive eigenvalue (first-eigenvalue paper), Lemma 8 (spectral inaccessibility), Möbius topology axioms.
 
 ---
 
@@ -171,7 +171,7 @@ Closing any one of these upgrades everything downstream.
 
 **Gated by:** `gate:clock-exponent-derivation`, `gate:amplitude-stress-tensor-dictionary`, `gate:three-halves-identity`
 
-**Inputs:** Möbius spatial budget $`u_0^2 + J^2 = 1`$, Sector $`\mathcal{A}`$ eigenvalue.
+**Inputs:** Möbius spatial budget $`u_0^2 + J^2 = 1`$, first positive eigenvalue (first-eigenvalue paper).
 
 ---
 
@@ -187,7 +187,7 @@ Closing any one of these upgrades everything downstream.
 
 **Problem:** Galactic coherence (all observers measuring the same $`\mathbb{R}^4`$) may be the $`W`$-independence of a nested eigenvalue problem, guaranteed by a cone point at galactic scale. The cone point analysis (Frobenius, Friedrichs, excision) that makes the cosmic eigenvalue well-defined must be re-established at galactic scale with equal rigor. Critical fork: GR tidal curvature in the flat-curve regime is Euler-type with power-law Jacobi solutions that structurally cannot zero, so the curvature has to come from the topology-gravity interface. SPARC has since falsified $`L_f = v_c^2/a_0`$ as the galactic coherence radius, which removes the empirical anchor for that reading and leaves the sourcing question open against an unknown $`L_g`$; Reading A and the Frobenius chain are untouched.
 
-**Inputs:** Sector $`\mathcal{A}`$ eigenvalue, phase field coherence scale $`L_f`$ (SPARC-falsified; the unknown galactic scale is $`L_g`$), 120-grid scale-free projection.
+**Inputs:** first positive eigenvalue (first-eigenvalue paper), phase field coherence scale $`L_f`$ (SPARC-falsified; the unknown galactic scale is $`L_g`$), 120-grid scale-free projection.
 
 ---
 
@@ -233,7 +233,7 @@ Technical gaps with specific paths forward.
 
 **Problem:** Does MIT's structure project into every gravitationally coherent scale, or only the cosmological one? If the 120-grid and 3/2 conversion nest, the Oort Cloud (~144,000 AU) is the solar-system-scale coherence boundary. Central open question: what sets the coherence scale at each level. $`L_f = v_c^2/a_0`$ was the candidate, and SPARC falsified it as the galactic radius, so the generalization now runs from an unknown $`L_g`$ rather than from $`L_f`$. Downstream predictions include CMB-ecliptic alignment as a local sampling fingerprint.
 
-**Inputs:** Sector $`\mathcal{A}`$ eigenvalue, phase field coherence scale $`L_f`$ (tested, falsified by SPARC; the unknown galactic coherence scale is $`L_g`$), 120-grid scale-free projection, 3/2 conversion (Gauss lift + de Sitter vacuum).
+**Inputs:** first positive eigenvalue (first-eigenvalue paper), phase field coherence scale $`L_f`$ (tested, falsified by SPARC; the unknown galactic coherence scale is $`L_g`$), 120-grid scale-free projection, 3/2 conversion (Gauss lift + de Sitter vacuum).
 
 ---
 
