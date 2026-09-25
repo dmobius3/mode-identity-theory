@@ -55,11 +55,11 @@ All verdicts are stable across the full 27-cell sensitivity grid (slope $`r_t`$ 
 - **Closure identity.** 53.7% of flat-curve galaxies fall below $`\mathcal{T}/\mathcal{T}_c = 1`$, against a registered tolerance of 5%. Universal threshold crossing fails.
 - **Trigger index as predictor.** Untestable on this sample: the quality cuts leave no rising-curve galaxies, so there is no negative class. At stricter onset criteria roughly 27 of the 123 would be classed rising; the registered primary-cell labels leave none.
 
-![Transition radius versus coherence scale, with null-model comparison](figures/sparc-fig2-rt-vs-Lf.png)
+<p align="center"><img src="figures/sparc-fig2-rt-vs-Lf.png" alt="Transition radius versus coherence scale, with null-model comparison"></p>
 
 Left: $`r_t`$ against $`L_f = v_c^2/a_0`$ for the 123 galaxies, with the OLS slope of 0.23 against the slope-1 expectation. Right: $`|\text{Spearman}\,\rho|`$ of $`r_t`$ with $`L_f`$ and with each registered null model. $`M_b^{1/3}`$ and $`M_b^{1/2}`$ both correlate with $`r_t`$ more tightly than $`L_f`$ does.
 
-![Flat-onset ratio histogram](figures/sparc-fig1-eta-flat-histogram.png)
+<p align="center"><img src="figures/sparc-fig1-eta-flat-histogram.png" alt="Flat-onset ratio histogram"></p>
 
 The flat-onset ratio $`\eta_\text{flat} = R_\text{flat}/L_f`$ over the 56 measurable galaxies. The median 1.26 sits just outside the registered precision window [0.75, 1.25] (yellow), though inside the coarse gate [0.5, 2.0] (grey).
 

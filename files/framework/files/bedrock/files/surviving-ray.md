@@ -518,7 +518,7 @@ Section 2.4 leave exactly two survivors, at levels 0 and 12 (Figure 1).
 >
 > a constant plus a level-12 component. No intermediate level occurs.
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/channel-filter.png?raw=true" width="75%" alt="The channel filter: the left factor is nonzero at every rank from 0 to 6, the right factor only at ranks 0 and 6, so the self-interaction lies in the span of M0 and M6 and, modulo the radial M0, is the single ray M6">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/channel-filter.png?raw=true" width="75%" alt="The channel filter: the left factor is nonzero at every rank from 0 to 6, the right factor only at ranks 0 and 6, so the self-interaction lies in the span of M0 and M6 and, modulo the radial M0, is the single ray M6"></p>
 
 **Figure 1.** The channel filter. At level 6 the left factor $`\rho_K(u)`$ of the density's level-$`2K`$ component is generically nonzero at every rank $`K = 0, \dots, 6`$, but the right factor $`R_K(P)`$ lies in $`(V_K)^{2I}`$, which is zero except at $`K = 0`$ and $`K = 6`$ (Lemma 4.1). Only those two channels survive: the self-interaction lies in $`\mathrm{span}\{M_0, M_6\}`$ with $`M_0`$ radial, and modulo the radial direction it spans the single projective ray $`[M_6]`$ (Theorem 5.1).
 
@@ -1226,7 +1226,7 @@ triangles are **staggered**, at $`h = 1/\sqrt 3`$ exactly, which is the **regula
 tabulated octahedron is exact the same way: its sextic is a constant times $`z(z^4+1)`$, with roots
 at both poles and at the fourth roots of $`-1`$ on the equator. Figure 2 draws the four shapes.
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/majorana-constellations.png?raw=true" width="90%" alt="Majorana constellations on the unit sphere: a hexagon on the equator, an octahedron, a pentagonal pyramid and a trigonal prism, each labelled with its value of the rank-6 multipole norm">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/majorana-constellations.png?raw=true" width="90%" alt="Majorana constellations on the unit sphere: a hexagon on the equator, an octahedron, a pentagonal pyramid and a trigonal prism, each labelled with its value of the rank-6 multipole norm"></p>
 
 **Figure 2.** Majorana constellations of the four six-vertex shapes among the critical rays of Section 7.1, each with its value of $`\lVert\rho_6\rVert^2`$: the hexagon, the octahedron, the pentagonal pyramid and the trigonal prism, whose two triangles are aligned. Filled points face the viewer, and dashed edges are hidden.
 

@@ -173,7 +173,7 @@ The two definitions are joined by the Cheeger-Müller theorem, which equates the
 
 ## III. The 24 Entries
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/ms-ladder.png?raw=true" width="95%" alt="The 24 entries on a logarithmic mass axis, one row per McKay distance from d = 1 (R1) to d = 7 (R2), each shell about two decades above the last; below them every measured charged fermion, the electron marked as the benchmark, and the solar and atmospheric neutrino scales dashed; a shaded band marks the dead zone of ranks 4 to 9, where no known fermion sits">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/ms-ladder.png?raw=true" width="95%" alt="The 24 entries on a logarithmic mass axis, one row per McKay distance from d = 1 (R1) to d = 7 (R2), each shell about two decades above the last; below them every measured charged fermion, the electron marked as the benchmark, and the solar and atmospheric neutrino scales dashed; a shaded band marks the dead zone of ranks 4 to 9, where no known fermion sits"></p>
 
 24 entries from the formula. The table below shows the comparison to Standard Model (SM) fermions and the entries with no SM match. Bold rows are the preferred SM assignments counted in the headline scorecard. Unbolded repeated labels show nearby candidate entries or mass-shell clusters; they are not counted as separate assignments.
 

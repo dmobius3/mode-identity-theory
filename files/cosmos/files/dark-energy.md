@@ -42,7 +42,7 @@ MIT sharpens this question. The Möbius spectral problem has first positive eige
 
 ### The Static Baseline
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/de-redshift-phase-ratio.png?raw=true" width="80%" alt="Redshift as a ratio of phase positions: on the wave S = sin(t/2) the observer sits at s0 and light from z = 1 and z = 3 was emitted at s0/2 and s0/4, so 1 + z = s0/S; shown at the 95% bound s0 = 0.19, with an inset of the whole first half-lap">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/de-redshift-phase-ratio.png?raw=true" width="80%" alt="Redshift as a ratio of phase positions: on the wave S = sin(t/2) the observer sits at s0 and light from z = 1 and z = 3 was emitted at s0/2 and s0/4, so 1 + z = s0/S; shown at the 95% bound s0 = 0.19, with an inset of the whole first half-lap"></p>
 
 The cosmos is a finite, static three-sphere; what the data sees is a flat-FLRW cosmology, the spatial curvature a static boundary condition rather than a Friedmann term, so the apparent $`\Omega_K`$ is zero. Its curvature radius enters as the de Sitter scale $`R_\Lambda = \sqrt{3/\Lambda} \approx 5.38`$ Gpc, read back from the observed $`\Lambda`$ and so circular as a derivation. Two routes reach $`R`$ independently of that circle: the coupling ($`\alpha`$) route lands near 6.1 Gpc, and the particle mass spectrum gives an order-of-magnitude reading near 20 Gpc, roughly three times the coupling-route radius. Closing that gap is the open [R problem](../../framework/files/working/files/r-problem.md). The Möbius surface forces the wave to flip sign halfway around, giving the standing wave $`\Psi = \cos(t/2)`$ with a full phase period of $`4\pi`$ (a duration in Gyr requires the still-open phase-to-clock map). The quantity $`S = \sin(t/2)`$ is the realization amplitude of the model, the bounded fraction of the wave expressed as resolvable modes at phase $`t`$; turning it into a matter density or $`T_{\mu\nu}`$ is an open step. It starts at 0 and grows to 1.
 
@@ -110,7 +110,7 @@ Its coefficient $`-\beta = -(1-\Omega_\Lambda)\,s_0^2/(1-s_0^2)`$ is strictly ne
 
 ## III. $`w_\text{eff}(z) > -1`$ at All Redshifts (Fiducial Split)
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/de-two-splits.png?raw=true" width="65%" alt="One H(z) read two ways at s0 = 0.19: subtracting the fiducial matter term leaves w_eff above -1 and rising, subtracting the dressed matter term leaves it below -1">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/de-two-splits.png?raw=true" width="65%" alt="One H(z) read two ways at s0 = 0.19: subtracting the fiducial matter term leaves w_eff above -1 and rising, subtracting the dressed matter term leaves it below -1"></p>
 
 To define a diagnostic effective dark energy equation of state, we adopt the fiducial-matter split: deviations from the fiducial matter scaling are assigned to the effective dark-energy sector, using $`\Omega_m = 1 - \Omega_\Lambda = 0.315`$ (the fiducial matter fraction, independent of $`s_0`$).
 

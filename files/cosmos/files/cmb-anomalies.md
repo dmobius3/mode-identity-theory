@@ -13,7 +13,7 @@ This page fixes what the Poincaré homology sphere $`S^3/2I`$ contributes. Two f
 
 ## I. The four anomalies
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cmb-anomalies-sorted.png?raw=true" width="80%" alt="The four anomalies sorted: the low-ℓ deficit and the low quadrupole are read as the shell gap; the parity asymmetry stays open through the eigenmode covariance; the quadrupole-octupole alignment is not this topology's, by its A5 isotropy">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cmb-anomalies-sorted.png?raw=true" width="80%" alt="The four anomalies sorted: the low-ℓ deficit and the low quadrupole are read as the shell gap; the parity asymmetry stays open through the eigenmode covariance; the quadrupole-octupole alignment is not this topology's, by its A5 isotropy"></p>
 
 At the largest angles ($`\ell < 30`$), Planck analyses continue to report four features first seen by COBE and WMAP:
 
@@ -40,7 +40,7 @@ What this closes is one route to parity. An even/odd-ℓ grading driven by an or
 
 ## IV. The Molien shell gap
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cmb-shells-to-sky.png?raw=true" width="90%" alt="The 2I-invariant shells by degree N, with the gap from N = 2 to 10 empty, carried to the sky by the radius R and a projection MIT does not yet derive: ℓ ≈ 24 at the coupling route's R, ℓ ≈ 28 read back from Λ, inside the observed deficit ℓ ≲ 30">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cmb-shells-to-sky.png?raw=true" width="90%" alt="The 2I-invariant shells by degree N, with the gap from N = 2 to 10 empty, carried to the sky by the radius R and a projection MIT does not yet derive: ℓ ≈ 24 at the coupling route's R, ℓ ≈ 28 read back from Λ, inside the observed deficit ℓ ≲ 30"></p>
 
 Scalar harmonics on $`S^3`$ are graded by polynomial degree $`N = 0, 1, 2, \ldots`$ with eigenvalue $`N(N+2)/R^2`$ and degeneracy $`(N+1)^2`$. On $`S^3/2I`$ only $`2I`$-invariant harmonics survive; the centre $`\{-1\}`$ acts on degree $`N`$ by $`(-1)^N`$, restricting invariants to even $`N`$. Among these the Molien series of the invariant ring is
 

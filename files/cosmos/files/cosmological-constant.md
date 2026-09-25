@@ -49,7 +49,7 @@ The same coefficient appears independently as the ambient Ricci term in the Weit
 
 ## IV. The conversion
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cc-conversion-chain.png?raw=true" width="90%" alt="The conversion chain: the surface seed 2/R², times 3 by the Gauss equation to spatial curvature 6/R², divided by 2 by the vacuum constraint to the vacuum reference 3/R²; identifying it with the observed Λ is open">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cc-conversion-chain.png?raw=true" width="90%" alt="The conversion chain: the surface seed 2/R², times 3 by the Gauss equation to spatial curvature 6/R², divided by 2 by the vacuum constraint to the vacuum reference 3/R²; identifying it with the observed Λ is open"></p>
 
 The surface seed carries no Λ; the standard general-relativistic chain converts it, in two stages with distinct totally-geodesic conditions.
 
@@ -77,7 +77,7 @@ For a static closed domain carrying a homogeneous isotropic perfect fluid, the u
 
 A closed static radius requires $`\rho + p > 0`$, since $`1/R^2 = 4\pi G(\rho + p)`$. The middle form above makes the rest exact: given that condition, $`\Lambda R^2 < 3`$ if and only if $`\rho > 0`$, with $`\rho = 0`$ attaining 3 and $`\rho < 0`$ exceeding it. For a positive-density fluid it returns 1 for dust and 3/2 for radiation and approaches 3 only as $`w \to \infty`$, never reaching it. Whether $`\Lambda_\text{ref} = 3/R^2`$ is the physical constant of the static domain therefore depends on the stress tensor its mode content actually carries, which the framework has not determined. The chain is spectrally seeded, geometrically lifted, GR-normalized, and then observationally identified; the last step is the one still open.
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cc-static-fluid.png?raw=true" width="60%" alt="ΛR² = 3 − 2/(1 + w) for a static closed domain filled with a perfect fluid: dust gives 1, radiation 3/2, and any positive density stays below the de Sitter value 3">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cc-static-fluid.png?raw=true" width="60%" alt="ΛR² = 3 − 2/(1 + w) for a static closed domain filled with a perfect fluid: dust gives 1, radiation 3/2, and any positive density stays below the de Sitter value 3"></p>
 
 | Step | Status |
 |---|---|

@@ -226,9 +226,9 @@ Both routes' tables follow, with the numbers the report prints: D_ℓ = ℓ(ℓ+
 
 The two figures, drawn from the result file by the script frozen with the packet, carry no data, no likelihood value and no cosmic-variance band.
 
-![P1's low-ℓ spectrum at routes A and B beside ΛCDM's, D_ℓ in μK² on a logarithmic scale, for ℓ = 2 to 29](scripts/molien-ratio-table-runs/run-2/ratio_table_spectra.svg)
+<p align="center"><img src="scripts/molien-ratio-table-runs/run-2/ratio_table_spectra.svg" alt="P1's low-ℓ spectrum at routes A and B beside ΛCDM's, D_ℓ in μK² on a logarithmic scale, for ℓ = 2 to 29"></p>
 
-![R_ℓ at routes A and B with the 10% band, beside the two estimates made before v1's freeze](scripts/molien-ratio-table-runs/run-2/ratio_table_ratios.svg)
+<p align="center"><img src="scripts/molien-ratio-table-runs/run-2/ratio_table_ratios.svg" alt="R_ℓ at routes A and B with the 10% band, beside the two estimates made before v1's freeze"></p>
 
 **What the table shows.** At A, R = 6130 Mpc, P1's spectrum lies far below ΛCDM's through ℓ = 13, at 7.6% to 46% of it, and then rises unevenly through unity to 1.6 at ℓ = 27 and 28. The first shell carries most of C_ℓ(P1) at 15 of the 28 multipoles, the quadrupole among them, and K_min = K_P1 = 109 in both computations, its largest terms at ℓ = 7, 11 and 13. At B, R = 19700 Mpc, the quadrupole is 29% of ΛCDM's and ℓ = 5 is 33%, ℓ = 7 to 9 stand 1.3 to 1.6 times above it, where the first shell carries most of C_ℓ(P1), and from ℓ = 12 up the ratios lie between 0.84 and 1.2; K_min = K_P1 = 9.6 in both computations, half of it from ℓ = 2, 5 and 8. Both routes are Departing, since both computations put d∞ above 0.1, and Separated, since both put K_min above 2. By §5 no Planck-era CAMB is built for either route, and the table stands as P1's predicted spectrum at each radius. It is not set against the sky here, and neither label is a Verdict on P1, on the Molien shells or on MIT.
 

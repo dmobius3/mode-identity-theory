@@ -154,7 +154,7 @@ The "dark" label assumes the unknown is a substance. MIT reads it as geometry in
 
 ## V. Masslessness as Topological Position
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/wz-edge-and-surface.png?raw=true" width="75%" alt="The Moebius band with two paths: a solid path running along its single edge, S1, marked massless (photon; gluon at Lagrangian level), and a dashed path leaving the edge and crossing into the surface, marked massive (W, Z, fermions). Caption: MIT's reading, mass is the cost of crossing from the temporal edge into the Moebius surface">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/wz-edge-and-surface.png?raw=true" width="75%" alt="The Moebius band with two paths: a solid path running along its single edge, S1, marked massless (photon; gluon at Lagrangian level), and a dashed path leaving the edge and crossing into the surface, marked massive (W, Z, fermions). Caption: MIT's reading, mass is the cost of crossing from the temporal edge into the Moebius surface"></p>
 
 ### What each structure does
 

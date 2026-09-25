@@ -246,7 +246,7 @@ For the connections $`\tau_{2j-1}`$ the displayed characters give $`\varepsilon_
 
 where $`\mathbf{4}^\prime`$ denotes the second $`4`$-dimensional irreducible. Thus $`\mathrm{Sym}^2 Q`$ first occurs at level two, and $`\mathrm{Sym}^2 Q^\prime`$ is absent from $`V_a\vert_{2I}`$ for $`a < 6`$ and first occurs in $`V_6\vert_{2I}`$.
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/e8-mckay-graph.png?raw=true" width="80%" alt="The affine E8 McKay graph of 2I: the trivial node, the defining representation Q with its Galois conjugate Q', their adjoints Sym^2 Q and Sym^2 Q', and the second 4-dimensional irreducible 4', labelled by name and McKay distance">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/e8-mckay-graph.png?raw=true" width="80%" alt="The affine E8 McKay graph of 2I: the trivial node, the defining representation Q with its Galois conjugate Q', their adjoints Sym^2 Q and Sym^2 Q', and the second 4-dimensional irreducible 4', labelled by name and McKay distance"></p>
 
 **Figure 1.** The affine $`E_8`$ McKay graph of $`2I`$: the trivial node $`\mathbf{1}`$, the defining representation $`Q`$ with its Galois conjugate $`Q^\prime`$, their adjoints $`\mathrm{Sym}^2 Q`$ and $`\mathrm{Sym}^2 Q^\prime`$, and the second $`4`$-dimensional irreducible $`\mathbf{4}^\prime`$, labelled by name and McKay distance. The three unlabelled nodes are the remaining irreducibles of $`2I`$, of dimensions $`4, 5, 6`$ from $`\mathbf{1}`$ to the branch node.
 

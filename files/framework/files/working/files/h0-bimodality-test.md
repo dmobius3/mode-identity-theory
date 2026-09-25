@@ -110,7 +110,7 @@ Each test is run on both sets and both TDCOSMO values.
 
 ### By method
 
-![H₀ by method](figures/h0-bimodality-fig1-by-method.png)
+<p align="center"><img src="figures/h0-bimodality-fig1-by-method.png" alt="H₀ by method"></p>
 
 Every measurement with its error bar, sorted by H₀ and coloured by class. The early-universe cluster (66.8 to 68.5) is tight. The local side is a smear from 71.5 to 74.9 with no obvious sub-peak. Two local-ladder methods sit inside or next to the predicted gap (grey band): JAGB at 67.8 and TRGB / CCHP at 69.8.
 
@@ -125,7 +125,7 @@ Every measurement with its error bar, sorted by H₀ and coloured by class. The 
 
 The null hypothesis is unimodal. It is not rejected anywhere.
 
-![Histogram with dip test](figures/h0-bimodality-fig2-histogram.png)
+<p align="center"><img src="figures/h0-bimodality-fig2-histogram.png" alt="Histogram with dip test"></p>
 
 The KDE shows a soft two-hump shape driven by the genuine class stratification, but the trough is too shallow for the dip test to flag.
 
@@ -133,7 +133,7 @@ The KDE shows a soft two-hump shape driven by the genuine class stratification, 
 
 BIC does not cleanly prefer two components. The de-duplicated subset weakly favours a 2-component fit (ΔBIC 0.47 with TDCOSMO = Shajib, 0.15 with Birrer); the full 18-row set weakly favours a single component (ΔBIC 0.73 and 0.30 the other way). Every margin is far below the ΔBIC ≈ 2 threshold for even weak evidence, so the 1- and 2-component models are statistically tied in all four configurations. Where a 2-component fit is the nominal pick (the de-duplicated subset), its means come out near 68.4 and 73.4 to 73.5: the low cluster is roughly one unit above the lattice value of 67.
 
-![GMM model selection](figures/h0-bimodality-fig3-gmm.png)
+<p align="center"><img src="figures/h0-bimodality-fig3-gmm.png" alt="GMM model selection"></p>
 
 ### Gap test
 

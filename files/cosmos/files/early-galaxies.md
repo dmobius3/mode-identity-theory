@@ -72,7 +72,7 @@ Two scope notes follow from this. The absolute scale is calibrated off the measu
 
 ### The Evolutionary Law
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-rising-a0.png?raw=true" width="70%" alt="a0(z)/a0(0) = H(z)/H0 on a log axis, rising to 20.5 times the local value at z = 10, where JWST finds its early galaxies, against the flat line of constant a0 in standard MOND">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-rising-a0.png?raw=true" width="70%" alt="a0(z)/a0(0) = H(z)/H0 on a log axis, rising to 20.5 times the local value at z = 10, where JWST finds its early galaxies, against the flat line of constant a0 in standard MOND"></p>
 
 Because the ratio is fixed at every epoch, the acceleration scale inherits the full redshift dependence of $`H(z)`$:
 
@@ -84,7 +84,7 @@ This is the paper's central prediction. $`a_0`$ is not a fundamental constant; i
 
 ## III. Early Structure Formation at z = 10
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-boost-cascade.png?raw=true" width="95%" alt="The boost step by step: a0 times 20.5 at z = 10 gives effective gravity times 4.5 in deep MOND, collapse about 2.1 times faster, and a star-formation efficiency down from about 1 or more to about 0.5; upper bounds, taken against constant-a0 MOND">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-boost-cascade.png?raw=true" width="95%" alt="The boost step by step: a0 times 20.5 at z = 10 gives effective gravity times 4.5 in deep MOND, collapse about 2.1 times faster, and a star-formation efficiency down from about 1 or more to about 0.5; upper bounds, taken against constant-a0 MOND"></p>
 
 ### The Boost
 

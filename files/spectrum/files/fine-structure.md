@@ -34,7 +34,7 @@ The well at 13/120 governs matter dynamics: it is the Fibonacci well ($`F_7 = 13
 
 ### The bosonic grid
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-two-grids.png?raw=true" width="85%" alt="The phase operator C(Theta) over the rising half of the domain, above two rulers: the spinor grid k/120 and the bosonic grid k/60. The same well label 13 lands at 13/120 on the first and 13/60 on the second, giving C = 0.22 for a0 and C = 0.79 for alpha">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-two-grids.png?raw=true" width="85%" alt="The phase operator C(Theta) over the rising half of the domain, above two rulers: the spinor grid k/120 and the bosonic grid k/60. The same well label 13 lands at 13/120 on the first and 13/60 on the second, giving C = 0.22 for a0 and C = 0.79 for alpha"></p>
 
 Photons are bosons, and the framework places the coupling $`\alpha = g^2/4\pi`$ on the 60-position bosonic grid ($`\lvert I \rvert = 60`$) rather than the 120-position spinor grid ($`\lvert 2I \rvert = 120`$). The grids differ in resolution, not in the readout: both are read through the intensity $`\lvert\psi\rvert^2`$, and $`a_0`$ at 13/120 is an intensity on the finer grid. Which grid a quantity takes is the framework's assignment by role (§V).
 
@@ -149,7 +149,7 @@ The same exponent 17 governs both the strong and weak couplings. What differs is
 
 ### Grid ladder selection rule
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-grid-ladder.png?raw=true" width="65%" alt="The grid matrix: columns are the carrier phase grid, rows the target exponent grid, 60R first. EM at 60R/60R, C(13/60) Omega^(-1/60), zero spinorial slots; strong at carrier 60R and target 120, C(17/60) Omega^(-1/120), one slot; weak at 120/120, C(17/120) Omega^(-1/120) cos(pi/10), two slots; the upper off-diagonal cell, a fermionic carrier with a bosonic target, is vacant">
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-grid-ladder.png?raw=true" width="65%" alt="The grid matrix: columns are the carrier phase grid, rows the target exponent grid, 60R first. EM at 60R/60R, C(13/60) Omega^(-1/60), zero spinorial slots; strong at carrier 60R and target 120, C(17/60) Omega^(-1/120), one slot; weak at 120/120, C(17/120) Omega^(-1/120) cos(pi/10), two slots; the upper off-diagonal cell, a fermionic carrier with a bosonic target, is vacant"></p>
 
 The domain sizes $`60 = |I|`$ and $`120 = |2I|`$ trace to the edge stabilizer $`Z_4 \subset 2I`$: integer-spin irreps carry only real $`Z_4`$ content (domain $`D = 60`$), half-integer carry only complex pairs ($`D = 120`$). That $`-I`$ spin sort fixes the $`60/120`$ split for the mass irreps. The gauge-carrier ladder below reuses those two domains under a distinct criterion, identity-preserving (60R) versus fermion-changing (120) action, not the mediator's own spin; the two uses of the split should not be conflated.
 
