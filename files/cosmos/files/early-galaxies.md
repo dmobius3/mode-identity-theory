@@ -15,7 +15,7 @@ Mode Identity Theory offers a reading that eases it. The MOND acceleration scale
 \frac{a_0}{cH} = \frac{C(13/120)}{C(34/120)} = 0.184
 ```
 
-Because the ratio holds at every epoch, $`a_0(z) = a_0(0) \times H(z)/H_0`$, where $`H(z)`$ is the phase-clock Hubble rate derived from the static $`S^3`$ baseline. At $`z = 10`$, this gives $`a_0 \approx 20.5 \times`$ the local value, enhancing effective gravitational acceleration and, on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III), reducing the implied star formation efficiency to $`\varepsilon_\text{SF} \sim 0.5`$, within the physically permitted range; clearing any individual candidate is a separate question.
+Because the ratio holds at every epoch, $`a_0(z) = a_0(0) \times H(z)/H_0`$, where $`H(z)`$ is the phase-clock Hubble rate derived from the static $`S^3`$ baseline. At $`z = 10`$, this gives $`a_0 \approx 20.5 \times`$ the local value. Translated through the deep-MOND relation, conditionally (§III), that enhances effective gravitational acceleration and, on an upper-bound estimate taken against constant-$`a_0`$ MOND, reduces the implied star formation efficiency to $`\varepsilon_\text{SF} \sim 0.5`$, within the physically permitted range; clearing any individual candidate is a separate question.
 
 MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse of standard assumptions. This is the companion to the dark energy cornerstone, where the same $`H(z)`$ introduces no independent phantom fluid. One static universe, two signatures.
 
@@ -26,7 +26,7 @@ MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse
 | Scaling law | $`a_0(z) = a_0(0) \times H(z)/H_0`$ |
 | $`a_0/(cH_0)`$ ratio | predicted: 0.184 / observed: 0.183 (SPARC $`a_0`$, Planck $`H_0`$; $`a_0`$ uncertain at tens of percent) |
 | At $`z = 10`$ | $`a_0 \approx 2.46 \times 10^{-9}`$ m/s² (20.5× local) |
-| Collapse speedup | ~2.1× faster (upper-bound estimate against constant-$`a_0`$ MOND: $`\varepsilon_\text{SF} \sim 0.5`$) |
+| Collapse speedup | ~2.1× faster through the deep-MOND relation, conditionally (upper-bound estimate against constant-$`a_0`$ MOND: $`\varepsilon_\text{SF} \sim 0.5`$) |
 
 ## I. The Observational Tension
 
@@ -34,7 +34,7 @@ JWST observations (Labbé et al.) reveal stellar masses $`M_\star \sim 10^{10}\,
 
 The tension is quantitative. Assembling $`10^{10}\,M_\odot`$ of stars in 500 Myr requires converting nearly every available baryon into stars. Under standard ΛCDM halo abundances, the implied star formation efficiency $`\varepsilon_\text{SF}`$ approaches or exceeds unity, the physical limit. Either the observations contain systematic errors, the mass estimates are wrong, or the gravitational physics governing early collapse is different from what we assume locally.
 
-MIT takes the third option. The acceleration scale governing collapse is not constant; it tracks the phase clock.
+MIT takes the third option, conditionally. The acceleration scale $`a_0`$ is not constant; it tracks the phase clock, and §III carries that into collapse through the deep-MOND relation.
 
 [Boylan-Kolchin (2023)](https://doi.org/10.1038/s41550-023-01937-7) finds that the stellar-mass densities of the two most massive Labbé et al. candidates imply conversion efficiencies of 0.99 at $`z \approx 9.1`$ and 0.84 at $`z \approx 7.5`$, at or below the full-efficiency ceiling, and the wider JWST measurements above $`z \approx 10`$ that the [Euclid card](euclid-dr1.md) examines lie inside that ceiling. Whether the population persists in Euclid's wide-area data is the card's Row IV (§V).
 
@@ -80,7 +80,7 @@ Because the ratio is fixed at every epoch, the acceleration scale inherits the f
 a_0(z) = a_0(0) \times \frac{H(z)}{H_0}
 ```
 
-This is the paper's central prediction. $`a_0`$ is not a fundamental constant; it is an edge mode that tracks the phase clock. At high redshift, $`H(z)/H_0`$ grows large, and the acceleration scale that governs gravitational collapse grows with it. The consequences for early structure formation follow in Section III.
+This is the paper's central prediction. $`a_0`$ is not a fundamental constant; it is an edge mode that tracks the phase clock. At high redshift, $`H(z)/H_0`$ grows large, and the acceleration scale grows with it. The consequences for early structure formation follow in Section III.
 
 ## III. Early Structure Formation at z = 10
 
@@ -106,9 +106,11 @@ Applying the evolutionary law:
 a_0(z{=}10) \approx 20.5 \times a_0(0) \approx 2.46 \times 10^{-9}\ \text{m/s}^2
 ```
 
-The acceleration scale governing gravitational collapse at $`z = 10`$ is twenty times the local value.
+At $`z = 10`$ the acceleration scale is twenty times the local value.
 
 ### Collapse Dynamics
+
+The framework predicts the evolution of $`a_0`$, not a galaxy force law. To estimate the consequence for collapse, this section translates the evolving scale through the standard deep-MOND relation, conditionally: the acceleration and collapse factors below are phenomenological consequences of that mapping, not outputs of an MIT-native gravitational dynamics. The relation is applied within forming galaxies, at the galactic scale where the [radial acceleration relation](https://doi.org/10.1103/PhysRevLett.117.201101) is observed, not as a force law between halos.
 
 In the deep-MOND regime ($`g \ll a_0`$), the effective gravitational acceleration scales as $`g_\text{eff} \propto \sqrt{g_N \times a_0}`$. Comparing an epoch-dependent $`a_0`$ to the standard constant assumption:
 
@@ -122,7 +124,7 @@ Since free-fall timescale scales as $`t_\text{ff} \propto 1/\sqrt{g}`$, structur
 
 ### Easing the Constraint
 
-For the Labbé et al. observations, whose implied $`\varepsilon_\text{SF}`$ approaches or exceeds 1 under standard ΛCDM assumptions, the 2.1× faster collapse brings the implied efficiency down to $`\varepsilon_\text{SF} \sim 0.5`$, inside the physically permitted range. That ratio is taken against constant-$`a_0`$ MOND, which is the baseline the 2.1$`\times`$ is computed from, rather than against the ΛCDM halos the original efficiency was derived in. That eases the "impossibly early galaxy" tension without invoking exotic physics, new particles, or any modification to general relativity. Clearing any individual candidate is a separate question, set by halo-mass assumptions the framework leaves untouched.
+For the Labbé et al. observations, whose implied $`\varepsilon_\text{SF}`$ approaches or exceeds 1 under standard ΛCDM assumptions, the 2.1× faster collapse brings the implied efficiency down to $`\varepsilon_\text{SF} \sim 0.5`$, inside the physically permitted range. That ratio is taken against constant-$`a_0`$ MOND, which is the baseline the 2.1$`\times`$ is computed from, rather than against the ΛCDM halos the original efficiency was derived in. That eases the "impossibly early galaxy" tension without new particles and without a modified local gravitational field equation; the source that carries $`a_0`$ into galaxy dynamics is open ([One Interface](../../framework/README.md#gravity-is-what-crosses)), and the mapping above is conditional. Clearing any individual candidate is a separate question, set by halo-mass assumptions the framework leaves untouched.
 
 *The acceleration scale was simply larger when those galaxies formed.*
 
@@ -137,7 +139,7 @@ MIT's dimensional hierarchy draws a sharp line between modes that live on the te
 
 This is an inversion of standard assumptions, where $`\Lambda`$ is often treated as potentially evolving (the DESI phantom-crossing signal) while $`a_0`$ is assumed constant (standard MOND). MIT predicts the opposite: $`\Lambda`$ is fixed by the static curvature radius, and $`a_0`$ rides the phase clock.
 
-The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$; on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III), the faster collapse roughly halves the implied star-formation efficiency of the JWST galaxies. Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
+The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$; carried into collapse through the deep-MOND relation, conditionally, the evolution roughly halves the implied star-formation efficiency of the JWST galaxies, on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III). Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
 
 Observations of both quantities at high redshift provide complementary tests. A universe where $`\Lambda`$ evolves and $`a_0`$ stays constant would falsify MIT. The converse does not confirm it: a rising $`a_0`$ also follows from other evolving-scale models and from ΛCDM simulations, so the discriminating content is the locked form and the exponent structure, not the direction of the climb.
 
