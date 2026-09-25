@@ -382,7 +382,7 @@ A fourth claim, that the H₀ shift is binary rather than continuous, is not tes
 
 If the three SPARC-testable claims hold across the sample, the phase field mechanism is supported independently of Euclid. If any fail, the specific failure mode tells you what to fix.
 
-The geometric mechanism behind $`L_f`$ as a coherence scale is explored in the [cone point coherence notes](cone-point-coherence.md), which ask whether the $`W`$-independence of the zonal first-positive eigenvalue (guaranteed by the cone point analysis on the Mobius band) nests to galactic scale. The SPARC test is empirical; the cone point analysis is structural. Both probe the same object ($`L_f`$) from different directions.
+The geometric mechanism behind $`L_f`$ as a coherence scale is explored in the [cone point coherence notes](cone-point-coherence.md), which ask whether the $`W`$-independence of the zonal first-positive eigenvalue nests to galactic scale. On the cosmic band that independence holds because the zonal equation contains no $`W`$ ([first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) §4.1), and the eigenvalue is first positive only for the narrow band, $`W \le \pi R/2`$ (Theorem 1.2). The SPARC test is empirical; the cone point analysis is structural. Both probe the same object ($`L_f`$) from different directions.
 
 ---
 
