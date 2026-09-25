@@ -136,6 +136,8 @@ The [engine](../../../README.md) records the intensity projection (the 120 label
 
 The test has been run and is [closed negative](sampler-first-test.md). No compact embedded surface in $`S^3`$ with a single boundary circle is invariant under the antipodal map: the quotient would be a compact surface in $`\mathbb{RP}^3`$ whose boundary is the nontrivial class of $`H_1(\mathbb{RP}^3;\mathbb F_2)`$, which a mod-$`2`$ fundamental class forbids. So the deck element $`-1`$ never stabilizes an admissible band, $`\lvert S\rvert`$ is forced odd, the target $`\lvert S\rvert = 2`$ is unreachable for every boundary, and no change of boundary curve rescues it. The sampler does not realize the $`120 \to 60`$ halving geometrically. This leaves the engine's projection exactly where it was, resting on $`\lvert\psi\rvert^2`$ alone, and it sharpens the architecture: Route 1 showed the two $`\mathbb Z_2`$'s cannot be identified algebraically, and this shows they cannot be identified through antipodal symmetry of the sampler either.
 
+*Added 2026-09-25: the engine no longer names the intensity projection as the 60R grid's mechanism. Both grids use the same readout, the intensity ([linear readout](scaling-law-uniqueness.md#linear-readout-two-routes-and-a-no-go)), blind to the central sign in every sector, so squaring cannot sort observables between them; the grids differ in resolution, and which observable takes which is a motivated assignment ([engine](../../../README.md#the-sampling-grids)).*
+
 What survives, independent of the test, is the reading's one structural result:
 
 ```math
@@ -220,7 +222,7 @@ The Möbius phase convention is fixed as follows. One lap has phase length $`2\p
 
 The closed edge traverses two laps, has phase length $`4\pi`$, and returns $`\Psi`$ to itself. Quadratic quantities such as $`\lvert\Psi\rvert^2`$ have period $`2\pi`$, so a quadratic functional on the closed edge descends to the single lap and forgets the Möbius orientation sign.
 
-That loss of sign is the Möbius orientation $`\mathbb{Z}_2`$. The $`120 \to 60`$ projection belongs instead to the central $`-I`$ of $`2I`$. Squaring performs the same algebraic operation in both cases, but the two $`\mathbb{Z}_2`$ structures remain distinct.
+That loss of sign is the Möbius orientation $`\mathbb{Z}_2`$. The $`120 \to 60`$ halving belongs instead to the central $`-I`$ of $`2I`$, whose parity on integer- and half-integer-spin representations separates the two resolutions. Squaring erases both signs by the same algebraic operation but does not choose the grid, and the two $`\mathbb{Z}_2`$ structures remain distinct.
 
 The promotion gate is the observer clock. The global functional should treat $`N(t)`$ as a variable and ask whether its own lapse equation,
 

@@ -36,7 +36,7 @@ The well at 13/120 governs matter dynamics: it is the Fibonacci well ($`F_7 = 13
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-two-grids.png?raw=true" width="85%" alt="The phase operator C(Theta) over the rising half of the domain, above two rulers: the spinor grid k/120 and the bosonic grid k/60. The same well label 13 lands at 13/120 on the first and 13/60 on the second, giving C = 0.22 for a0 and C = 0.79 for alpha">
 
-Photons are bosons, and the framework reads the coupling $`\alpha = g^2/4\pi`$ as an intensity-like quantity rather than a spinor amplitude. Observable intensities $`\lvert\psi\rvert^2`$ have period 1, placing them on the 60-position bosonic grid ($`\lvert I \rvert = 60`$) rather than the 120-position spinor grid ($`\lvert 2I \rvert = 120`$) where the wavefunction $`\psi`$ lives with anti-period 1.
+Photons are bosons, and the framework places the coupling $`\alpha = g^2/4\pi`$ on the 60-position bosonic grid ($`\lvert I \rvert = 60`$) rather than the 120-position spinor grid ($`\lvert 2I \rvert = 120`$). The grids differ in resolution, not in the readout: both are read through the intensity $`\lvert\psi\rvert^2`$, and $`a_0`$ at 13/120 is an intensity on the finer grid. Which grid a quantity takes is the framework's assignment by role (§V).
 
 The well label (13) stays the same. The grid denominator changes: $`120 \to 60`$. The phase operator evaluates differently at the two resolutions:
 
@@ -153,7 +153,7 @@ The same exponent 17 governs both the strong and weak couplings. What differs is
 
 The domain sizes $`60 = |I|`$ and $`120 = |2I|`$ trace to the edge stabilizer $`Z_4 \subset 2I`$: integer-spin irreps carry only real $`Z_4`$ content (domain $`D = 60`$), half-integer carry only complex pairs ($`D = 120`$). That $`-I`$ spin sort fixes the $`60/120`$ split for the mass irreps. The gauge-carrier ladder below reuses those two domains under a distinct criterion, identity-preserving (60R) versus fermion-changing (120) action, not the mediator's own spin; the two uses of the split should not be conflated.
 
-Each gauge force occupies a rung of the carrier/target grid ladder. Each coupling formula has two slots: one for the force carrier (photon, gluon, or W/Z) and one for what the force acts on or confines. Each slot is assigned to the 60R-grid when the role is bosonic (intensity-like) or to the 120-grid when the role is spinorial (wavefunction-like). The three observed gauge forces occupy three of the four possible pairings, with spinorial content increasing monotonically:
+Each gauge force occupies a rung of the carrier/target grid ladder. Each coupling formula has two slots: one for the force carrier (photon, gluon, or W/Z) and one for what the force acts on or confines. Each slot is assigned to the 60R-grid when the role is bosonic or to the 120-grid when the role is spinorial; both are read through the same intensity $`C(\Theta)`$, and the grid sets the phase resolution, not the readout. The three observed gauge forces occupy three of the four possible pairings, with spinorial content increasing monotonically:
 
 | Force | Carrier character | Phase grid | Confinement target | Exponent grid | Spinorial slots |
 |---|---|---|---|---|---|
@@ -264,7 +264,7 @@ This gives a geometric version of the usual unification intuition: when the hier
 
 *Beyond the v2 deposit: the deposited paper stops at the vacant fourth pairing and defers its interpretation until the grid rule is derived. This section and the extension tests in Section VIII are the live framework's stronger reading.*
 
-The grid ladder in Section V assigns two structural properties to each gauge force: the character of its carrier (phase grid) and the character of what it confines (exponent grid). Each slot resolves as bosonic (60R, intensity $`|\psi|^2`$, period 1) or spinorial (120, wavefunction $`\psi`$, anti-period 1). Two binary choices across two formula slots yield four possible rungs, three occupied.
+The grid ladder in Section V assigns two structural properties to each gauge force: the character of its carrier (phase grid) and the character of what it confines (exponent grid). Each slot resolves as bosonic (60R) or spinorial (120), both read through the intensity. Two binary choices across two formula slots yield four possible rungs, three occupied.
 
 | Phase grid (carrier) | Exponent grid (target) | Physical reading | Force |
 |---|---|---|---|
@@ -273,7 +273,7 @@ The grid ladder in Section V assigns two structural properties to each gauge for
 | 120 | 120 | Flavor-changing charged-current carrier, fermion transitions | Weak |
 | 120 | 60R | Fermionic carrier, bosonic target | — |
 
-Three rungs are occupied; the upper off-diagonal entry, 120/60, is empty, and structurally so: a gauge rung preserves the fermion or boson character of what it acts on, so the 120/60 rung, a fermionic carrier acting on a bosonic target, has no realization among gauge forces. The firing order (topology $`\to`$ wave $`\to`$ observable) runs one direction, and the mechanism is the obstruction below.
+Three rungs are occupied; the upper off-diagonal entry, 120/60, is empty, and structurally so: a gauge rung preserves the fermion or boson character of what it acts on, so the 120/60 rung, a fermionic carrier acting on a bosonic target, has no realization among gauge forces. That is the ladder's own rule, and the obstruction below states it.
 
 In the stabilizer framework, the three occupied rungs exhaust the monotone sequence in spinorial content:
 
@@ -296,13 +296,13 @@ This is the structure of supersymmetric gauge interaction. Gauginos (spin-1/2 su
 
 ### The obstruction
 
-The vacancy is a rule of the ladder, not a spin-statistics theorem. Every gauge rung here acts within a statistics class: it changes phase, charge, or representation but preserves the fermion-or-boson character of what it acts on, and the three occupied rungs climb monotonically in spinorial content. The weak rung is the test case: its charged-current action swaps one fermion for another, so the target stays a fermion and the carrier stays a spin-1 boson. The 120/60 cell reverses that climb, sending the full-domain action into a bosonic target, so it falls outside the pattern the three forces trace; the cell that would sit there needs a fermionic (gaugino) carrier binding bosonic matter, which no observed gauge force provides. Ordinary quantum field theory does permit fermionic mediators between fermions and bosons, so the obstruction here is the ladder's own rule, not a spin-statistics prohibition. Underneath, the anti-periodic boundary condition makes $`\psi`$ the fundamental object and $`|\psi|^2`$ its square: that projection is well-defined but non-invertible, which is the measurement-level reason the 120 and 60R grids stay distinct.
+The vacancy is a rule of the ladder, not a spin-statistics theorem. Every gauge rung here acts within a statistics class: it changes phase, charge, or representation but preserves the fermion-or-boson character of what it acts on, and the three occupied rungs climb monotonically in spinorial content. The weak rung is the test case: its charged-current action swaps one fermion for another, so the target stays a fermion and the carrier stays a spin-1 boson. The 120/60 cell reverses that climb, sending the full-domain action into a bosonic target, so it falls outside the pattern the three forces trace; the cell that would sit there needs a fermionic (gaugino) carrier binding bosonic matter, which no observed gauge force provides. Ordinary quantum field theory does permit fermionic mediators between fermions and bosons, so the obstruction here is the ladder's own rule, not a spin-statistics prohibition. Nothing underneath the rule closes the rung. Every slot is read through the same intensity, so the non-invertibility of $`\psi \to |\psi|^2`$ does not separate the 120 and 60R grids: roles are assigned to them by representation type, and the vacancy rests on the ladder rule alone.
 
 ### The prediction
 
 Within the grid-action reading, the three observed gauge forces exhaust the three realized rungs. A fourth fundamental force would require the 120/60 rung, which the ladder does not generate. The empty rung is therefore a conditional structural prediction of the ladder, not a theorem that no fourth force can exist.
 
-Supersymmetric partners, in their standard formulation as gaugino-mediated interactions between scalar matter, are the natural occupant of that ungenerated rung. The prediction is not that superpartners are heavy. It is that the gaugino-mediated SUSY force sector does not appear as a realized fundamental interaction, as intrinsic to the framework's picture as the Möbius strip having a single edge.
+Supersymmetric partners, in their standard formulation as gaugino-mediated interactions between scalar matter, are the natural occupant of that ungenerated rung. The prediction is not that superpartners are heavy. It is that the gaugino-mediated SUSY force sector does not appear as a realized fundamental interaction, as long as the selected ladder's rule holds.
 
 The grid ladder was constructed to derive coupling constants. It was not designed to count forces. That it produces exactly three occupied rungs matching exactly three observed gauge interactions, with the vacancy mapping onto exactly the sector that decades of collider searches have failed to populate, is a conditional structural output of the selected ladder rather than an input to it.
 

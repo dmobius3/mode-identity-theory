@@ -243,7 +243,7 @@ The [phase field](../../framework/README.md#the-phase-field) and the black hole 
 
 ### The bosonic domain has a wall
 
-The full 120-grid comes from $`|2I| = 120`$. Observation squares the wavefunction, projecting $`2I \to I`$, giving the 60R bosonic grid. This projection traces to the edge stabilizer $`Z_4 \subset 2I`$: integer-spin irreps carry only real $`Z_4`$ content ($`D = 60`$), half-integer carry only complex pairs ($`D = 120`$). For photon-mediated observables, the effective domain is $`[0, 60/120]`$. The antinode at 60/120 is the boundary of the bosonic domain. Bosonic sampling reaches $`\Lambda`$ and stops.
+The full 120-grid comes from $`|2I| = 120`$, and the 60R bosonic grid from the quotient $`2I \to I`$. The split traces to the edge stabilizer $`Z_4 \subset 2I`$: integer-spin irreps carry only real $`Z_4`$ content ($`D = 60`$), half-integer carry only complex pairs ($`D = 120`$). For photon-mediated observables, the effective domain is $`[0, 60/120]`$. The antinode at 60/120 is the boundary of the bosonic domain. Bosonic sampling reaches $`\Lambda`$ and stops.
 
 ### The two nodes are one point
 

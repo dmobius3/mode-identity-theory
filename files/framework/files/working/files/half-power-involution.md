@@ -38,6 +38,8 @@ This is not a new structure; it is the same canonical form as the hierarchy reci
 
 **What it cannot act on, and does not need to.** A state-level exchange would be a map inverting $`\psi \mapsto \lvert\psi\rvert^2`$. No such map exists: the bosonic projection is non-invertible ($`\psi`$ and $`-\psi`$ share an image), and that one-wayness is load-bearing elsewhere, closing the fourth gauge rung and grounding spin-statistics. The reciprocity above never un-squares a state; it exchanges the *weights* two levels assign to the same phase interval. Verdict scope: the exchange exists on measures, cannot exist on states, and nothing here requires it to. The SUSY-closure argument is untouched.
 
+*Added 2026-09-25: the verdict stands, and two readings in this record are superseded. The one-wayness of $`\psi \mapsto \lvert\psi\rvert^2`$ holds, but it neither closes the fourth gauge rung nor grounds spin-statistics: both grids use the same intensity readout ([linear readout](scaling-law-uniqueness.md#linear-readout-two-routes-and-a-no-go)), the boson-fermion divide and the grids rest on the central sign's parity on integer- and half-integer-spin representations ([engine](../../../README.md#edges-sort-spin)), and the vacant rung rests on the ladder rule alone ([fine structure](../../../../spectrum/files/fine-structure.md#the-obstruction)). The 120 domain is a resolution, not an amplitude grid, which retires §III's grid label for the amplitude level and removes the premise of §V's first MOTIVATED support, so the second, the intensity weight's holonomy blindness, carries §V's grade alone; §VI's "untouched" refers to the same arguments.*
+
 ---
 
 ## III. The Three Levels and the Clock Ladder

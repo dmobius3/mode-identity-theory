@@ -105,7 +105,7 @@ so a quadratic functional on the closed $`4\pi`$ edge descends to the single $`2
 
 This descent forgets the Möbius orientation sign.
 
-That $`\mathbb{Z}_2`$ is distinct from the central $`-I`$ of $`2I`$, which governs the separate $`120 \to 60`$ projection in the matter-side representation structure. Squaring is the same algebraic operation; the two $`\mathbb{Z}_2`$ structures are different objects.
+That $`\mathbb{Z}_2`$ is distinct from the central $`-I`$ of $`2I`$, whose parity on integer- and half-integer-spin representations separates the 120 and 60R resolutions in the matter-side representation structure. Squaring erases both signs by the same algebraic operation but does not choose the grid; the two $`\mathbb{Z}_2`$ structures are different objects.
 
 A term that must retain Möbius orientation information must therefore retain data erased by $`\Psi \to -\Psi`$.
 

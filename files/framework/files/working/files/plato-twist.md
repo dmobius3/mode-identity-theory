@@ -63,7 +63,7 @@ The residual is unchanged at 0.3%. What changed is the accounting: the factor is
 A derivation has to settle three things together.
 
 1. **Which loop.** Only the shortest geodesic class gives the factor; the next classes give $`\cos(\pi/6)`$, $`\cos(\pi/5)`$, and smaller values. Why the primitive shortest orbit is privileged has to come from the dynamics, not from the target.
-2. **Which power.** The framework reads couplings as intensity-like, which argues for squaring, and the square misses by 4.6%. The weak rung's all-spinorial assignment argues for the first power, but that assignment is itself a proposed rule.
+2. **Which power.** Every coupling is read as an intensity, $`Q(x) = \langle x, Bx\rangle`$ ([linear readout](scaling-law-uniqueness.md#linear-readout-two-routes-and-a-no-go)). A real factor carried by the amplitude enters squared, and the square misses by 4.6%; a holonomy acting on the amplitude as a unitary drops out of the intensity entirely. The first power needs the factor in the block weight $`B`$ itself. The weak rung's all-spinorial assignment sets its grid, not its readout, so it does not argue for the first power.
 3. **Which sector.** The spin connection transports every fermion, not only weak doublets. The factor is also even in the twist's orientation: the frame rotation is $`-\pi/5`$ on the quotient and $`+\pi/5`$ on its mirror image, and the half-trace is the same. So parity cannot be what the factor encodes; if chirality singles out the weak row, it enters elsewhere.
 
 ## VI. The test that would move the row
