@@ -417,20 +417,22 @@ The forward content that survives the null is the epoch relation $`a_0(z) \propt
 
 Evaluating the scaling law at each well and at the Coxeter slot 17 of the [gauge ladder](#the-gauge-ladder):
 
-| Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C(\Theta)`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
-|---|---|---|---|---|---|---|---|---|
-| [a₀](../cosmos/files/early-galaxies.md) | $`F_7`$ | 120 | 13/120 | 0.223 | 1 | $`a_P`$ | $`2.2 \times 10^{-62}`$ | edge-ratio comparison |
-| [α_W](../spectrum/files/fine-structure.md) | — | 120 | 17/120 | 0.371 | 1/60 | 1 | $`3.39 \times 10^{-2}`$ † | Λ-anchored comparison |
-| — | $`F_8`$ | 120 | 21/120 | 0.55 | — | — | — | unassigned |
-| [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | 1/30 | 1 | $`7.33 \times 10^{-3}`$ | Λ-anchored comparison / α-route anchor |
-| [α_s](../spectrum/files/fine-structure.md) | — | 60R | 17/60 | 1.208 | 1/60 | 1 | $`1.16 \times 10^{-1}`$ | Λ-anchored comparison |
-| [H₀](../cosmos/files/hubble-tension.md) | $`F_9`$ | 60R | 34/120 | 1.208 | 1 | $`t_P^{-1}`$ | $`1.2 \times 10^{-61}`$ | calibration anchor |
-| — | $`F_{10}`$ | 120 | 55/120 | 1.97 | — | — | — | unassigned |
-| [Λ_ref](../cosmos/files/cosmological-constant.md) | — | 60R | 60/120 | 2.00 | 2 | $`\ell_P^{-2}`$ | $`\approx 2.85 \times 10^{-122}`$ ‡ | surface anchor / α-route output |
+| Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C(\Theta)`$ | $`\Omega`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
+|---|---|---|---|---|---|---|---|---|---|
+| [a₀](../cosmos/files/early-galaxies.md) | $`F_7`$ | 120 | 13/120 | 0.223 | $`\Omega_H`$ § | 1 | $`a_P`$ | $`2.2 \times 10^{-62}`$ | edge-ratio comparison |
+| [α_W](../spectrum/files/fine-structure.md) | — | 120 | 17/120 | 0.371 | $`\Omega_\Lambda`$ | 1/60 | 1 | $`3.39 \times 10^{-2}`$ † | Λ-anchored comparison |
+| — | $`F_8`$ | 120 | 21/120 | 0.55 | — | — | — | — | unassigned |
+| [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | $`\Omega_\Lambda`$ | 1/30 | 1 | $`7.33 \times 10^{-3}`$ | Λ-anchored comparison / α-route anchor |
+| [α_s](../spectrum/files/fine-structure.md) | — | 60R | 17/60 | 1.208 | $`\Omega_\Lambda`$ | 1/60 | 1 | $`1.16 \times 10^{-1}`$ | Λ-anchored comparison |
+| [H₀](../cosmos/files/hubble-tension.md) | $`F_9`$ | 60R | 34/120 | 1.208 | $`\Omega_H`$ § | 1 | $`t_P^{-1}`$ | $`1.2 \times 10^{-61}`$ | calibration anchor |
+| — | $`F_{10}`$ | 120 | 55/120 | 1.97 | — | — | — | — | unassigned |
+| [Λ_ref](../cosmos/files/cosmological-constant.md) | — | 60R | 60/120 | 2.00 | $`\Omega_\Lambda`$ | 2 | $`\ell_P^{-2}`$ | $`\approx 2.85 \times 10^{-122}`$ ‡ | surface anchor / α-route output |
 
 > † Includes the Plato-twist factor $`\cos(\pi/10)`$, a computed holonomy whose entry into the weak coupling is motivated, not derived; see [The Gauge Ladder](#the-gauge-ladder).
 >
 > ‡ $`\Lambda_\text{ref} = (3/2)\,\Lambda_\text{top}`$: the surface seed $`\Lambda_\text{top} = 2/R_\Lambda^2 \approx 1.9 \times 10^{-122}\,\ell_P^{-2}`$ carried through the $`3/2`$ conversion, whose Gauss factor is derived and whose de Sitter normalization is imported. Whether $`\Lambda_\text{ref}`$ is the physical $`\Lambda`$ is open; see [The two seams](#the-two-seams).
+>
+> § Edge rows carry the sector normalization: $`A/A_P = C(\Theta)\,N`$ with $`N = H_0 t_P / C(34/120)`$, so the $`H_0`$ row fixes the ruler; see the calibration structure below.
 
 The Grid column is the resolution, the $`\Theta`$ column the coordinate. They differ because the well sequence is generated on the 120-step parent grid, whose even numerators are the 60R positions: $`34/120 = 17/60`$ and $`60/120 = 30/60`$ are 60R positions written in the parent coordinate. The odd-numerator wells, $`a_0`$ at 13/120 among them, have no 60R image and stay on the full resolution.
 
