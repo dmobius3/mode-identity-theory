@@ -413,20 +413,24 @@ The forward content that survives the null is the epoch relation $`a_0(z) \propt
 
 ### The Assembled Engine
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-assembled-engine.png?raw=true" width="85%" alt="The phase operator C(Θ) over the rising half of the domain, each assigned position marked on the bar of the denominator it is written with. On k/120: a₀ at 13/120, the weak coupling α_W at 17/120, H₀ at 34/120 and Λ_top at 60/120, the antinode where C = 2. On k/60: α at 13/60 and the strong coupling α_s at 17/60, the same point as H₀ at 34/120"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-assembled-engine.png?raw=true" width="85%" alt="The phase operator C(Θ) over the rising half of the domain, each assigned position marked on the bar of the denominator it is written with. On k/120: a₀ at 13/120, the weak coupling α_W at 17/120, H₀ at 34/120 and Λ_ref at 60/120, the antinode where C = 2. On k/60: α at 13/60 and the strong coupling α_s at 17/60, the same point as H₀ at 34/120"></p>
 
-Evaluating the scaling law at each well:
+Evaluating the scaling law at each well and at the Coxeter slot 17 of the [gauge ladder](#the-gauge-ladder):
 
 | Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C(\Theta)`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
 |---|---|---|---|---|---|---|---|---|
-| [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | 1/30 | 1 | $`7.33 \times 10^{-3}`$ | Λ-anchored comparison / α-route anchor |
 | [a₀](../cosmos/files/early-galaxies.md) | $`F_7`$ | 120 | 13/120 | 0.223 | 1 | $`a_P`$ | $`2.2 \times 10^{-62}`$ | edge-ratio comparison |
+| [α_W](../spectrum/files/fine-structure.md) | — | 120 | 17/120 | 0.371 | 1/60 | 1 | $`3.39 \times 10^{-2}`$ † | Λ-anchored comparison |
 | — | $`F_8`$ | 120 | 21/120 | 0.55 | — | — | — | unassigned |
+| [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | 1/30 | 1 | $`7.33 \times 10^{-3}`$ | Λ-anchored comparison / α-route anchor |
+| [α_s](../spectrum/files/fine-structure.md) | — | 60R | 17/60 | 1.208 | 1/60 | 1 | $`1.16 \times 10^{-1}`$ | Λ-anchored comparison |
 | [H₀](../cosmos/files/hubble-tension.md) | $`F_9`$ | 60R | 34/120 | 1.208 | 1 | $`t_P^{-1}`$ | $`1.2 \times 10^{-61}`$ | calibration anchor |
 | — | $`F_{10}`$ | 120 | 55/120 | 1.97 | — | — | — | unassigned |
-| [Λ_top](../cosmos/files/cosmological-constant.md) | — | 60R | 60/120 | 2.00 | 2 | $`\ell_P^{-2}`$ | $`\approx 1.9 \times 10^{-122}`$ * | surface spectral seed |
+| [Λ_ref](../cosmos/files/cosmological-constant.md) | — | 60R | 60/120 | 2.00 | 2 | $`\ell_P^{-2}`$ | $`\approx 2.85 \times 10^{-122}`$ ‡ | surface anchor / α-route output |
 
-> * The scaling law returns the surface spectral seed $`\Lambda_\text{top} = 2\,\Omega_\Lambda^{-1}\,\ell_P^{-2} = 2/R_\Lambda^2`$ ($`C = 2`$ at the antinode, $`n = 2`$), computed directly on the constant-curvature model metric $`ds^2 = dy^2 + \cos^2(y/R_\Lambda)\,dw^2`$. The Weitzenböck bound on coexact $`1`$-forms carries the same coefficient, but as a curvature floor of a different operator, not an attained eigenvalue, so the shared value is a curvature-scale coincidence rather than a spectral link ([cosmological constant](../cosmos/files/cosmological-constant.md) §III). The vacuum-reference value carries the lift $`\Lambda_\text{ref} = (3/2)\,\Lambda_\text{top} = 3/R_\Lambda^2 \approx 2.85 \times 10^{-122}\,\ell_P^{-2}`$, under three conditions: totally geodesic embedding of the underlying great-$`S^2`$ band ($`K_{ij} = 0`$), isotropy (CMB-verified to $`10^{-5}`$), and a de Sitter vacuum reference. That lift, and whether its coefficient is the physical constant of a static domain, is the stress-tensor question One Interface poses, so the number is a surface-sector calibration rather than an independent prediction. The first-eigenvalue paper establishes the geometric side, worked through on the cosmological constant page.
+> † Includes the Plato-twist factor $`\cos(\pi/10)`$, a computed holonomy whose entry into the weak coupling is motivated, not derived; see [The Gauge Ladder](#the-gauge-ladder).
+>
+> ‡ $`\Lambda_\text{ref} = (3/2)\,\Lambda_\text{top}`$: the surface seed $`\Lambda_\text{top} = 2/R_\Lambda^2 \approx 1.9 \times 10^{-122}\,\ell_P^{-2}`$ carried through the $`3/2`$ conversion, whose Gauss factor is derived and whose de Sitter normalization is imported. Whether $`\Lambda_\text{ref}`$ is the physical $`\Lambda`$ is open; see [The two seams](#the-two-seams).
 
 The Grid column is the resolution, the $`\Theta`$ column the coordinate. They differ because the well sequence is generated on the 120-step parent grid, whose even numerators are the 60R positions: $`34/120 = 17/60`$ and $`60/120 = 30/60`$ are 60R positions written in the parent coordinate. The odd-numerator wells, $`a_0`$ at 13/120 among them, have no 60R image and stay on the full resolution.
 
