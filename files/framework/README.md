@@ -413,11 +413,11 @@ The forward content that survives the null is the epoch relation $`a_0(z) \propt
 
 ### The Assembled Engine
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-two-grids.png?raw=true" width="85%" alt="The phase operator C(Theta) over the rising half of the domain, above two rulers: the spinor grid k/120 and the bosonic grid k/60. The same well label 13 lands at 13/120 on the first and 13/60 on the second, giving C = 0.22 for a0 and C = 0.79 for alpha"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-assembled-engine.png?raw=true" width="85%" alt="The phase operator C(Θ) over the rising half of the domain, each assigned position marked on the bar of the denominator it is written with. On k/120: a₀ at 13/120, the weak coupling α_W at 17/120, H₀ at 34/120 and Λ_top at 60/120, the antinode where C = 2. On k/60: α at 13/60 and the strong coupling α_s at 17/60, the same point as H₀ at 34/120"></p>
 
 Evaluating the scaling law at each well:
 
-| Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
+| Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C(\Theta)`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
 |---|---|---|---|---|---|---|---|---|
 | [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | 1/30 | 1 | $`7.33 \times 10^{-3}`$ | Λ-anchored comparison / α-route anchor |
 | [a₀](../cosmos/files/early-galaxies.md) | $`F_7`$ | 120 | 13/120 | 0.223 | 1 | $`a_P`$ | $`2.2 \times 10^{-62}`$ | edge-ratio comparison |
