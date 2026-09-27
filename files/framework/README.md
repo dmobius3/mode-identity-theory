@@ -160,9 +160,7 @@ The eigenvalue problem $`-\partial_y^2 \psi = \lambda \psi`$ under the anti-peri
 
 ### Temporal Edge
 
-$`S^1`$ is the boundary of the Möbius surface. The strip has longitudinal period $`L = \pi R_\Lambda`$ (one lap), and the boundary $`S^1`$ traverses the strip twice before closing, giving geometric circumference $`2L = 2\pi R_\Lambda`$. The anti-periodic flip acts per lap, $`\psi(y + \pi R_\Lambda) = -\psi(y)`$, on the one-lap lift of the orientation-twisting core loop, not on the closed edge itself; over two laps the field returns to $`+\psi`$, so the closed edge is globally periodic with trivial total orientation holonomy, while the $`4\pi`$ wave period lives on the lifted phase coordinate. This is where time advances and where the observer is anchored. The $`S^1`$ here is the phase cycle of the standing wave, not a closed timelike coordinate of the Lorentzian metric; proper time along an observer history is monotone over the epoch.
-
-The chronon and the standing-wave period operate in the phase parameter $`t \in [0, 4\pi]`$, not in geometric length. The factor $`4\pi`$ is the anti-periodic wave period, two sign-flip laps of the strip, dimensionless.
+$`S^1`$ is the boundary of the Möbius surface. The strip has longitudinal period $`L = \pi R_\Lambda`$ (one lap), and the boundary $`S^1`$ traverses the strip twice before closing, giving geometric circumference $`2L = 2\pi R_\Lambda`$. The anti-periodic flip acts per lap, $`\psi(y + \pi R_\Lambda) = -\psi(y)`$, on the one-lap lift of the orientation-twisting core loop, not on the closed edge itself; over two laps the field returns to $`+\psi`$, so the closed edge is globally periodic with trivial total orientation holonomy, while the $`4\pi`$ wave period lives on the lifted phase coordinate $`t \in [0, 4\pi]`$, a dimensionless parameter rather than a length. This is where time advances and where the observer is anchored. The $`S^1`$ here is the phase cycle of the standing wave, not a closed timelike coordinate of the Lorentzian metric; proper time along an observer history is monotone over the epoch.
 
 ### Why $`S^3/2I`$
 
@@ -209,7 +207,7 @@ MIT associates that phase increment with the action step $`\Delta\mathcal{S}_{\m
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1"></p>
 
-The domain is static; its temporal edge carries a standing wave, and cosmic time is the observer's phase along it. On the one-lap lift of that edge the Möbius identification is anti-periodic, the same sign flip that gives matter its fermionic character: one traversal flips the wave, the closed edge restores it after the second, and the fundamental phase period is $`4\pi`$ rather than $`2\pi`$. It opens at full amplitude, holds its selected fundamental mode, and where the observer samples it, matter appears.
+The domain is static; its temporal edge carries a standing wave, and cosmic time is the observer's phase along it. It opens at full amplitude, holds its selected fundamental mode, and where the observer samples it, matter appears.
 
 Anti-periodicity, the initial-maximum condition ($`\Psi(0) = +1`$), and selection of the fundamental temporal mode ($`m = 0`$) together fix:
 
@@ -248,7 +246,7 @@ The Waltz clock advances budget phase, the argument $`t`$ of $`\Psi = \cos(t/2)`
 
 >**📒 [Temporal Budget Identity](files/working/files/temporal-budget.md):** the $`\Psi^2 + S^2 = 1`$ budget and the Λcos clock fit to Pantheon+ and DESI DR2 BAO.
 
-Two things about the clock are not closed, and they are one problem rather than two. The $`-1/2`$ exponent enters through the GR correspondence rather than from the postulate layer, and the map from the static geometry to the effective metric the distance model runs on has no derived source. The stress-tensor bridge carries the arithmetic, including why the native machinery and the anchored vacuum term are demonstrably not both carried by one fixed metric under the original clock, which is why $`\Lambda`$ enters as its own object rather than falling out of the budget. [One Interface](#one-interface) poses the same gap as gravity's open construction, and the [Research Frontier](#research-frontier) states it as the Dynamics problem.
+Two things about the clock are not closed, and they are one problem rather than two: the $`-1/2`$ exponent comes through the GR correspondence, not the postulate layer, and the map from the static geometry to the effective metric the distance model runs on has no derived source. The stress-tensor bridge carries the arithmetic, including why the native machinery and the anchored vacuum term are demonstrably not both carried by one fixed metric under the original clock, which is why $`\Lambda`$ enters as its own object rather than falling out of the budget. [One Interface](#one-interface) poses the same gap as gravity's open construction, and the [Research Frontier](#research-frontier) states it as the Dynamics problem.
 
 >**📒 [Variational Score-to-Sample](files/working/files/variational-score-to-sample.md):** the variational route to the clock exponent, a global score-to-sample principle sought independently of the target power.
 
@@ -256,7 +254,7 @@ Two things about the clock are not closed, and they are one problem rather than 
 
 ### The Present Epoch
 
-Two phase parameterizations meet at the present epoch. The engine phase $`\Phi = 4\pi\, T/T_\text{cycle}`$ is linear in the Hubble-clock age $`T`$, with $`\Phi_\text{now}`$ under re-derivation; the budget phase $`t`$, the argument of $`\Psi = \cos(t/2)`$, is nonlinear in it through that same clock, and distance data pin $`s_0 = \sin(t_\text{now}/2) < 0.19`$ (95% CL). The mapping $`t(\Phi)`$ between them is still open, and until it closes the present age is read only after the clock is calibrated, so the familiar 13.8 Gyr is carried over from ΛCDM rather than recovered here. The distance-redshift relation is written in the budget phase $`t`$; the engine phase $`\Phi`$ refers to the same cycle, but with $`t(\Phi)`$ still to be derived $`\Phi_\text{now}`$ is bookkeeping, not an independent cosmological clock. The $`4\pi`$ anti-periodic period is topology-native; the 120-step chronon is the framework's sampling resolution on that period, independent of which parameterization labels it.
+Two phase parameterizations meet at the present epoch. The engine phase $`\Phi = 4\pi\, T/T_\text{cycle}`$ is linear in the Hubble-clock age $`T`$, with $`\Phi_\text{now}`$ under re-derivation; the budget phase $`t`$, the argument of $`\Psi = \cos(t/2)`$, is nonlinear in it through that same clock, and distance data pin $`s_0 = \sin(t_\text{now}/2) < 0.19`$ (95% CL). The mapping $`t(\Phi)`$ between them is still open. The present age is therefore read only after the clock is calibrated, so the familiar 13.8 Gyr is carried over from ΛCDM rather than recovered here; the distance-redshift relation is written in $`t`$, while $`\Phi_\text{now}`$ remains bookkeeping, not an independent cosmological clock. The $`4\pi`$ anti-periodic period is topology-native; the 120-step chronon is the framework's sampling resolution on that period, independent of which parameterization labels it.
 
 >[![Time](https://img.youtube.com/vi/9N6g-kDgUDc/mqdefault.jpg)](https://www.youtube.com/watch?v=9N6g-kDgUDc)
 >
@@ -316,8 +314,6 @@ The temporal anti-periodic tower and this positional profile are distinct eigenp
 | $`\Theta = 1/2`$ (antinode) | 2 | 0 | Maximum amplitude; stationary to first order |
 | $`\Theta = 1`$ (boundary) | 0 | $`\to -\infty`$ | No observable amplitude |
 
-$`\Lambda_\text{top}`$ sits at the antinode: slope exactly zero.
-
 The boundary zeros are physical: in the black-hole reading the exterior stationary horizon maps to this $`C \to 0`$ node, closing that sampling channel.
 
 >**📗 [Black Holes](../cosmos/files/black-hole.md):** black holes as topological nodes of the wave, where the exterior horizon maps to the $`C \to 0`$ boundary node.
@@ -330,7 +326,7 @@ The first-positive wave shape is selected, but not every position on it is a pla
 
 >**📒 [Fibonacci Wells](files/working/files/fibonacci-wells.md):** the forcing worksheet for why the sampling wells land at $`\{13, 21, 34, 55\}`$, with the variational route ruled out.
 
-That the realized positions continue the recurrence is where this level stops being a theorem. A variational origin was searched for with a signed anti-periodic sweep over eight boundary-mode functionals designed to make the observed set extremal; all eight returned uniform or clustered minimizers, never the wells. So $`\{13, 21, 34, 55\}`$ is a structural label the recurrence carries, not a derived extremum. The golden field is native either way, so the recurrence is the domain's own arithmetic rather than a sampling dynamics imported from outside. Why the realized positions continue it, on the edge where the mirror locates the interference, is open.
+That the realized positions continue the recurrence is where this level stops being a theorem. A variational origin was searched for with a signed anti-periodic sweep over eight boundary-mode functionals designed to make the observed set extremal; all eight returned uniform or clustered minimizers, never the wells. So $`\{13, 21, 34, 55\}`$ is a structural label the recurrence carries, not a derived extremum. Why the realized positions continue it, on the edge where the mirror locates the interference, is open.
 
 >**📗 [The Mirror](../spectrum/files/the-mirror.md):** the curvature duality of primes and matter, and where on the edge the well interference is located.
 
@@ -346,7 +342,7 @@ The hierarchy base is sector-specific, one ledger per sector:
 \Omega_H = \left(\frac{c}{H\ell_P}\right)^2 \quad \text{(temporal edge)}
 ```
 
-$`\Omega_\Lambda`$ is epoch-independent, since $`R_\Lambda`$ is fixed. Its absolute value is not a further output of the law: it is read from one surface anchor, and three candidate anchors exist whose readings do not yet agree, which [Inputs and Calibration](#inputs-and-calibration) states in full. What the law needs here is the ledger and its epoch behaviour, not the choice among those anchors. For the dimensionless couplings the same hierarchy enters as a fractional power that is itself the content: $`\alpha`$ is one grid step of it.
+$`\Omega_\Lambda`$ is epoch-independent, since $`R_\Lambda`$ is fixed. Its absolute value is read from one surface anchor rather than output by the law ([Inputs and Calibration](#inputs-and-calibration)); what the law needs here is the ledger and its epoch behaviour. For the dimensionless couplings the same hierarchy enters as a fractional power that is itself the content: $`\alpha`$ is one grid step of it.
 
 The phase-gradient scale changes with epoch:
 
@@ -362,7 +358,7 @@ $`\Omega_\Psi`$ is a second, local hierarchy and is **not** $`\Omega_H`$. It rea
 
 which is $`1`$ exactly at budget equipartition $`\Psi^2 = S^2 = 1/2`$ and nowhere else, an identity of the two definitions rather than a result. The present epoch sits far on the $`\Psi`$-dominated side of that crossing, so the two run about $`3 \times 10^4`$ apart at the posterior median. What is open is not the relation but what the second scale is for: which observables read the $`\Psi`$ gradient rather than the $`S`$ rate, and whether the horizon branch needs a length running as $`(\Psi/S)^2`$ against the Hubble radius. It is also observer-dependent, so no observer-independent $`\Omega_\Psi`$ exists until a preferred clock field is supplied; that is the frozen question on [Ω_H(Θ)](files/working/files/omega-h-derivation.md), whose historical $`\Omega_H`$ denotes what this page now calls $`\Omega_\Psi`$.
 
-Everything downstream of this section uses $`\Omega_H`$, the rate ledger. At the present epoch it and $`\Omega_\Lambda`$ are numerically close, both of order $`10^{122}`$. In the current calibration structure this coincidence is observed, not derived: $`\Omega_H`$ is anchored by the measured Hubble rate, $`\Omega_\Lambda`$ by measured $`\Lambda`$.
+Everything downstream that reads the edge uses $`\Omega_H`$, the rate ledger, not $`\Omega_\Psi`$. At the present epoch it and $`\Omega_\Lambda`$ are numerically close, both of order $`10^{122}`$. In the current calibration structure this coincidence is observed, not derived: $`\Omega_H`$ is anchored by the measured Hubble rate, $`\Omega_\Lambda`$ by measured $`\Lambda`$.
 
 The domain runs from the Planck floor ($`\Omega = 1`$) up to the cosmic ceiling ($`\Omega \approx 10^{122}`$). Ask where the observer sits, and the geometry answers with its own midpoint: the self-dual point $`x = \Omega/x`$, where the climb to the ceiling equals the drop to the floor.
 
@@ -380,7 +376,7 @@ In physical units the same center is a length, the geometric mean of the Planck 
 
 Because $`\Omega = (R_\Lambda/\ell_P)^2`$, distances in length are half those in $`\Omega`$: 50 μm sits about 30 orders of magnitude above the Planck length and 30 below the curvature radius. The geometric mean of these two reference lengths is bound to land somewhere macroscopic; the content here is the specific value, the scale of a living cell. Why observers should sit at the center rather than anywhere else is an open question, not something the framework derives.
 
-The neutrino floor sits at the same scale. With $`\mu_\Lambda`$ and $`R_\Lambda`$ read from the same $`\Lambda_\text{ref} = 3/R_\Lambda^2`$, $`\hbar c/\mu_\Lambda = (8\pi/3)^{1/4}\sqrt{\ell_P R_\Lambda} = 1.7013\,\sqrt{\ell_P R_\Lambda}`$, about 88 μm: the observer scale, where observation resolves, and the [neutrino floor](#the-mass-formula) $`\mu_\Lambda`$, the lowest energy the geometry can resolve, are one geometric mean, 1.7013 apart through general relativity's $`8\pi G`$ and the vacuum reference's 3. These are also the lengths at which torsion balances test gravity: [Kapner et al.](https://doi.org/10.1103/PhysRevLett.98.021101) tested the inverse-square law below the dark-energy length, about 85 μm, and [Lee et al.](https://doi.org/10.1103/PhysRevLett.124.101101) find it holding at separations down to 52 μm. The framework reads the scale as a limit on resolution, not a predicted breakdown of the gravitational force law.
+The neutrino floor sits at the same scale. With $`\mu_\Lambda`$ and $`R_\Lambda`$ read from the same $`\Lambda_\text{ref} = 3/R_\Lambda^2`$, $`\hbar c/\mu_\Lambda = (8\pi/3)^{1/4}\sqrt{\ell_P R_\Lambda} = 1.7013\,\sqrt{\ell_P R_\Lambda}`$, about 88 μm: the observer scale and the [neutrino floor](#the-mass-formula) $`\mu_\Lambda`$, the lowest energy the geometry can resolve, are one geometric mean, 1.7013 apart through general relativity's $`8\pi G`$ and the vacuum reference's 3. These are also the lengths at which torsion balances test gravity: [Kapner et al.](https://doi.org/10.1103/PhysRevLett.98.021101) tested the inverse-square law below the dark-energy length, about 85 μm, and [Lee et al.](https://doi.org/10.1103/PhysRevLett.124.101101) find it holding at separations down to 52 μm. The framework reads the scale as a limit on resolution, not a predicted breakdown of the gravitational force law.
 
 An independent gravitational bound selects the same length, up to order-one factors. [Cohen, Kaplan and Nelson](https://doi.org/10.1103/PhysRevLett.82.4971) require an effective field theory in a region of size $`L`$ to exclude states whose energy would put the region inside its own Schwarzschild radius, $`L^3\Lambda_\text{UV}^4 \lesssim L M_P^2`$, so at saturation $`\Lambda_\text{UV}^{-1} \sim \sqrt{\ell_P L}`$, and $`L = R_\Lambda`$ gives the observer scale. The bound fixes the form, not the coefficient one the observer scale carries. This is an external correspondence, not a derivation of the observer's seat: an MIT-native version needs the energy dictionary still open at [One Interface](#one-interface).
 
@@ -395,9 +391,9 @@ Mode intensity dilutes as $`(\sqrt{\Omega})^{-n}`$. The manifold index $`n`$ spe
 | 2 | Möbius surface | $`\Omega_\Lambda`$ | $`10^{-122}`$ | $`\Lambda_\text{top}`$ |
 | 3 | Space $`S^3`$ | $`\Omega_\Lambda`$ | $`10^{-183}`$ | space-sector density suppression; observable not yet assigned |
 
-**The scale selection rule.** The index $`n`$ is read from where the quantity lives and whether it evolves with epoch: edge rates take $`n = 1`$ on the evolving $`\Omega_H`$, surface and space quantities take $`n = 2`$ and $`n = 3`$ on the fixed $`\Omega_\Lambda`$. Dimensionless couplings sit outside that index and use the separate grid-ladder exponents $`1/60`$ and $`1/120`$.
+**The scale selection rule.** The index $`n`$ is read from where the quantity lives and whether it evolves with epoch: edge rates take $`n = 1`$ on the evolving $`\Omega_H`$, surface and space quantities take $`n = 2`$ and $`n = 3`$ on the fixed $`\Omega_\Lambda`$. Dimensionless couplings sit outside that index: they dilute at the grid-ladder exponents $`1/60`$ and $`1/120`$, not at a fractional manifold dimension.
 
-The index $`n`$ has two compatible readings in the dilution sector: the length-dimension of the observable, and the geometric layer on which the mode lives. They agree for the edge, surface, and space rows. Two things sit outside the table on purpose. The $`3/2`$ vacuum factor is not a manifold index at all; it is the separate Gauss/Ricci × de Sitter reference conversion described in One Interface. And the dimensionless couplings dilute at fractional powers that are grid-ladder exponents, not fractional manifold dimension.
+The index $`n`$ has two compatible readings in the dilution sector: the length-dimension of the observable, and the geometric layer on which the mode lives. They agree for the edge, surface, and space rows. The $`3/2`$ vacuum factor sits outside the table on purpose: it is not a manifold index at all but the separate Gauss/Ricci × de Sitter reference conversion described in [One Interface](#one-interface).
 
 Three constraints then narrow the observable assignments, though not all to a single answer. The manifold index separates edge modes ($`n = 1`$, epoch-dependent: $`H_0`$, $`a_0`$) from surface modes ($`n = 2`$, epoch-independent: $`\Lambda_\text{top}`$); the grid assignment sends photon-mediated observables to the 60R-grid, whose positions are the even numerators over 120, and dynamical ones to the full 120; and $`\Lambda_\text{top}`$ sits at the antinode $`60/120`$ by eigenvalue identity. Under these, $`H_0 \to 34`$ is forced, the unique even-numerator edge well. The forcing is within the dictionary, not above it: it is exact once the photon-mediated-to-60R assignment above is granted, and that assignment is motivated rather than derived. The matter index 13 is singled arithmetically, the unique coprime well, and $`\alpha`$ and $`a_0`$ take its 60R and full-120 images; but the step from "coprime well" to "the dynamical-acceleration seat" is a diagnostic the corpus carries, not a derived rule. Wells 21 and 55 carry no observable.
 
@@ -407,9 +403,9 @@ The phase position decomposes as $`\Theta = \Theta_0 + \Theta_f`$, where $`\Thet
 
 What the engine takes from this is the decomposition and those slopes. The rest is application and is owned where it is tested: the finite-step arithmetic at each well, the 8.4% displacement that would carry $`67.4`$ to $`73.04`$ km/s/Mpc, the sublattice and orientation conditions it rests on, and the two tests that closed it are all on the Hubble tension page. The trigger that would have realized the shift is withdrawn: the pre-registered SPARC coherence test falsified the binary mechanism, and a separate exploratory check found the $`H_0`$ distribution unimodal rather than two-clustered. So the correspondence has no active mechanism, and a large derivative at $`a_0`$ produces a sensitive continuous response rather than a threshold.
 
->**📗 [Hubble Tension](../cosmos/files/hubble-tension.md):** $`H_0`$ as an edge mode and the 8.4% lattice step, with the sublattice conditions and the two tests that closed the mechanism.
+>**📗 [Hubble Tension](../cosmos/files/hubble-tension.md):** $`H_0`$ as an edge mode and the 8.4% lattice step, worked in full.
 
-The forward content that survives the null is the epoch relation $`a_0(z) \propto H(z)`$ and the sign-fixed $`(1+z)^1`$ term it ties to, carried in the [Research Frontier](#research-frontier)'s forward tests and registered on the Euclid card.
+The surviving epoch relation $`a_0(z) \propto H(z)`$ is carried in the [Research Frontier](#research-frontier)'s forward tests and registered on the Euclid card.
 
 ### The Assembled Engine
 
@@ -436,11 +432,9 @@ The Grid column is the resolution, the $`\Theta`$ column the coordinate. They di
 
 >**📗 [Cosmological Constant](../cosmos/files/cosmological-constant.md):** the surface spectral seed behind $`\Lambda`$, the full working of $`\Lambda_\text{top} = 2/R_\Lambda^2`$ and its $`3/2`$ lift.
 
-**Calibration structure.** $`H_0`$ is the measured edge anchor: it defines the edge normalization $`N = H_0 t_P / C(34/120)`$, so the $`H_0`$ row fixes the ruler rather than testing the law against it, which is the calibration-versus-prediction split [Inputs and Calibration](#inputs-and-calibration) separates ledger by ledger. The other edge observables follow from $`N`$; the falsifiable content is any ratio of two edge-mode $`C`$ factors, in which $`N`$ cancels, the sharpest being $`a_0/(cH_0) = C(13/120)/C(34/120)`$. The $`\approx`$ in the scaling law marks the sector calibration, one anchor per sector.
+**Calibration structure.** $`H_0`$ is the measured edge anchor: it defines the edge normalization $`N = H_0 t_P / C(34/120)`$, so the $`H_0`$ row fixes the ruler rather than testing the law against it, which is the calibration-versus-prediction split [Inputs and Calibration](#inputs-and-calibration) separates ledger by ledger. The other edge observables follow from $`N`$; the falsifiable content is any ratio of two edge-mode $`C`$ factors, in which $`N`$ cancels, the sharpest being $`a_0/(cH_0) = C(13/120)/C(34/120) = 0.184`$. Both rows read the same evolving $`\Omega_H`$ with fixed weights, so the ratio holds at every epoch, $`a_0(z) \propto H(z)`$; its value also needs the two weights equal, the uniformity [the audit](files/working/files/scaling-law-uniqueness.md#audit-uniformity-by-observable) records as assumed. The $`\approx`$ in the scaling law marks the sector calibration, one anchor per sector.
 
-$`\alpha`$ and $`a_0`$ share the Fibonacci index 13 but live on different grids, reference different scales ($`\Omega_\Lambda`$ vs $`\Omega_H`$), and carry different exponents. The shared index reflects Fibonacci stability operating at the topological level for both.
-
-The $`a_0/(cH_0)`$ ratio is locked by well positions: $`C(13/120)/C(34/120) = 0.184`$. Because both are edge modes sharing the same calibrated normalization $`N`$, the ratio holds at every epoch: $`a_0(z) \propto H(z)`$.
+$`\alpha`$ and $`a_0`$ share the Fibonacci index 13 but differ in grid, ledger and exponent, as the table shows; the shared index reflects Fibonacci stability operating at the topological level for both.
 
 
 [↑ Table of Contents](#table-of-contents)
@@ -470,7 +464,7 @@ Restrict the propagating mode $`\rho \otimes \sigma`$ to the three-fold face sta
 
 ### Edges sort spin
 
-The four-fold edge stabilizer $`Z_4`$ contains the central element $`-I`$, which acts with opposite parity on integer- and half-integer-spin irreps. In the $`Z_4`$ restriction this becomes an exact binary: integer-spin irreps carry real $`Z_4`$ content and use the $`D = 60`$ grid, while half-integer irreps carry complex pairs and use $`D = 120`$. That representation split is the framework's boson-fermion, spin-statistics divide. This $`-I`$ is the central sign of $`2I`$, the same sign the scaling law's 60R and 120 grids are sorted by, and it is not the Möbius orientation sign of One Shape: two distinct $`Z_2`$'s, kept apart here as they are in the gauge ladder.
+The four-fold edge stabilizer $`Z_4`$ contains the central element $`-I`$, which acts with opposite parity on integer- and half-integer-spin irreps. In the $`Z_4`$ restriction this becomes an exact binary: integer-spin irreps carry real $`Z_4`$ content and use the $`D = 60`$ grid, while half-integer irreps carry complex pairs and use $`D = 120`$. That representation split is the framework's boson-fermion, spin-statistics divide. This $`-I`$ is the central sign of $`2I`$, the same sign that sorts ladder roles between the 60R and 120 grids, and not the Möbius orientation sign of One Shape ([The Sampling Grids](#the-sampling-grids)).
 
 ### Vertices set the electroweak address
 
@@ -483,9 +477,9 @@ The same stabilizers give two further entries that are not primes but correction
 | Face / base-edge stabilizer | 3/2 | gravity correspondence | ratio of the $`Z_3`$ face order to the base $`Z_2`$ edge order, matched to the vacuum-reference 3/2; the geometric conversion is derived separately in One Interface |
 | Vertex $`\times`$ twist | $`\cos(\pi/10)`$ | weak coupling correction | the $`\pi/5`$ gluing twist of the shortest closed geodesic, a five-fold axis, whose spin lift has half-trace $`\cos(\pi/10)`$; its entry into the coupling is open |
 
-The 3/2 entry is the conjectural one and is not this section's to adjudicate: it is the raw stabilizer ratio, and the fence separating it from the vacuum conversion and the clock exponent is kept in [One Interface](#one-interface), which owns the geometric derivation. The $`\cos(\pi/10)`$ entry is stated where it is used, in the gauge ladder: the number is a computed holonomy invariant, and its entry into the weak coupling is motivated, not derived. Its halving comes from the spin double cover, the same integer-versus-half-integer split the central $`-I`$ sorts, not from the Möbius orientation $`Z_2`$, which stays a distinct sign.
+The 3/2 entry is the conjectural one: it is the raw stabilizer ratio, and [One Interface](#one-interface) keeps the fence between it, the vacuum conversion and the clock exponent. The $`\cos(\pi/10)`$ entry is stated where it is used, in [the gauge ladder](#the-gauge-ladder); its halving comes from the spin double cover, whose integer-versus-half-integer split is sorted by the central $`-I`$.
 
-The stabilizers determine the decompositions and MIT's dictionary gives them their physical reading, all from the same topology. What leaves this section is what the rest of the page samples: the two grids, and the address $`(\rho, \sigma)`$ with its color, spin and electroweak content fixed. The observable law that reads them is already in hand; which entry lands on which measured fermion is decided later, by the masses rather than the topology.
+What leaves this section is what the rest of the page samples: the two grids, and the address $`(\rho, \sigma)`$ with its color, spin and electroweak content fixed. Which entry lands on which measured fermion is decided later, by the masses rather than the topology.
 
 [↑ Table of Contents](#table-of-contents)
 
@@ -518,7 +512,7 @@ One coincidence belongs on the record here rather than left for a reader to find
 
 **17 is where the short-range forces anchor.** Strong and weak both take 17 as their phase slot; the grid difference between them, identity-preserving versus fermion-changing action, is what separates confinement from flavor-changing transitions. Here the 120 grid labels the action on the full half-integer-spin (fermion) domain, not the spin of the mediator: the $`W`$ and $`Z`$ remain spin-1 bosons, their 120 assignment coming from that action, a motivated selection rule rather than a derived one.
 
-**Why the two resolutions are available.** The gauge ladder reuses the two grids defined in [The Sampling Grids](#the-sampling-grids) as a carrier/target dictionary: bosonic roles take 60R, and spinorial roles, those acting on the fermion domain, take 120. Every slot is read through the same intensity $`C(\Theta)`$; the grid sets the phase resolution, not whether a role reads an amplitude or an intensity. The Möbius orientation $`Z_2`$ is a separate structure, and the framework does not identify the two signs geometrically. So 13 connects to what propagates freely through the domain, and 17 to what binds or transforms within it.
+**Why the two resolutions are available.** The gauge ladder reuses the two grids defined in [The Sampling Grids](#the-sampling-grids) as a carrier/target dictionary: bosonic roles take 60R, and spinorial roles, those acting on the fermion domain, take 120, both read through the same intensity. So 13 connects to what propagates freely through the domain, and 17 to what binds or transforms within it.
 
 The couplings then follow one assignment rule: the phase slot inherits the grid of the carrier, the exponent slot the grid of the confinement target.
 
@@ -533,7 +527,7 @@ The $`\cos(\pi/10)`$ factor on the weak coupling is a motivated correction, not 
 
 **Reference scale.** The displayed values compare $`\alpha`$ at low energy with $`\alpha_s`$ and $`\alpha_W`$ in their conventional $`Z`$-mass normalizations; run to the $`Z`$ mass, $`\alpha`$ itself is about 6% from the grid value. The grid returns base assignments; reconciling the reference scales, or deriving the running from the topology, remains open.
 
-**Anchor discipline.** Under the $`\Lambda`$-anchored reading these percent-level agreements are conditional outputs of the selected ladder: with $`\Omega_\Lambda`$ fixed by a surface anchor, the three couplings are comparisons of the selected ladder, not independent forward predictions. When a coupling is instead the anchor that fixes $`\Omega_\Lambda`$ (the best-conditioned route, since $`\alpha`$ is the most precisely measured input), its own 0.4% becomes a consistency check rather than an independent prediction, and the genuine output of that route is $`\Lambda_\text{ref}`$ to 23% ($`\alpha \to \Omega_\Lambda \to \Lambda_\text{ref}`$). The alternative anchors are laid out under [Inputs and Calibration](#inputs-and-calibration).
+**Anchor discipline.** Under the $`\Lambda`$-anchored reading these percent-level agreements are conditional comparisons of the selected ladder, not independent forward predictions. With $`\alpha`$ as the anchor instead, its own 0.4% becomes a closure test and the route's genuine output is $`\Lambda_\text{ref}`$, to 23%; [Inputs and Calibration](#inputs-and-calibration) lays out the anchors.
 
 **The Coxeter pair** $`(13, 17)`$ under $`h(E_8) = 30`$ is exceptional but not forced. Within the restricted conjugate-pair comparison, $`(13, 17)`$ stands alone: the three alternatives miss the coupling targets by 15% to 156% across the nine comparisons. The broad control is consistent with its local-density baseline, so it does not establish uniqueness. The restriction is therefore where the selection content lives. The three forces exhaust the grid ladder, monotone in fermionic content: there are only four ways to pair a carrier grid with a target grid, and the table shows three of them filled.
 
@@ -574,7 +568,7 @@ Why three, and not two or seven? Because the space has exactly three ways to hol
 
 The count of three flat vacua is forced, and MIT identifies them with the three particle generations; which vacuum carries which is still open. Trivial and Standard sit together at the floor, while Galois clears it by a ninefold enhancement resting on two independent facts: $`2I`$'s perfectness, which keeps $`Q`$ and $`Q'`$ distinct under every twist so the Galois vacuum is a genuine third connection and not a decoration of the standard one, and the McKay distance, which sets the Galois adjoint at six against the standard adjoint's two, so the gap runs $`36/4 = (6/2)^2 = 9`$.
 
-The coexact gap paper establishes the spectral side: across the whole ADE classification of finite subgroups of $`\text{SU}(2)`$ the adjoint coexact gap is uniformly $`4/R_\Lambda^2`$, with a single break, the Galois connection on $`S^3/2I`$ at $`36/R_\Lambda^2`$. That exception supplies a second piece of selection evidence, converging with the input-minimization argument that independently terminates on $`2I`$, so the framework takes $`S^3/2I`$ as the physical quotient on two grounds rather than one. The galois-pair paper supplies the boundary side, carrying the standard-versus-Galois asymmetry through the tautological bundles on the $`E_8`$ ALE filling of $`S^3/2I`$; it establishes that filling structure without yet identifying the gauge decoration with the standing-wave sector, so the Möbius-to-ALE bridge stays open.
+The coexact gap paper establishes the spectral side: across the whole ADE classification of finite subgroups of $`\text{SU}(2)`$ the adjoint coexact gap is uniformly $`4/R_\Lambda^2`$, with a single break, the Galois connection on $`S^3/2I`$ at $`36/R_\Lambda^2`$. The galois-pair paper supplies the boundary side, carrying the standard-versus-Galois asymmetry through the tautological bundles on the $`E_8`$ ALE filling of $`S^3/2I`$; it establishes that filling structure without yet identifying the gauge decoration with the standing-wave sector, so the Möbius-to-ALE bridge stays open.
 
 >**📗 [Coexact Gap](files/bedrock/files/coexact-gap.md):** the adjoint coexact gap uniform at $`4/R_\Lambda^2`$ across the whole ADE classification, with the single Galois break to $`36/R_\Lambda^2`$ on $`S^3/2I`$.
 
@@ -622,9 +616,7 @@ The gauge gap above and this mass spectrum share the McKay structure and little 
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The two seams: the Möbius band embedded in S³ on the vacuum side, and the quotient of S³ by 2I on the matter side"></p>
 
-All of it, the wells, the spectrum, the stabilizer sorting, lives on a smooth space that knows none of it. The last question is how that discrete structure sits on the $`S^3`$ underneath, and what gravity is across the seam. The answer is not one operation but two.
-
-Underneath everything is $`S^3`$: smooth, continuous, every point equivalent, with uniform Ricci curvature. It knows nothing about 120. The discrete structure is built on top of it, in two distinct ways.
+All of it, the wells, the spectrum, the stabilizer sorting, lives on a smooth $`S^3`$ that knows none of it: continuous, every point equivalent, with uniform Ricci curvature and nothing about 120. The last question is how that discrete structure sits on it, and what gravity is across the seam. The answer is not one operation but two.
 
 ### The two seams
 
@@ -641,7 +633,7 @@ These are different operations doing different jobs. The same division runs thro
 
 The 3/2 belongs to the vacuum seam. It is the cost of converting the Möbius surface's curvature into the spatial curvature of $`S^3`$: the numerator 3 is the Gauss factor, derived geometry from the totally geodesic great-$`S^2`$ band, in an isotropic $`S^3`$; the denominator 2 is the de Sitter normalization, imported from general relativity. The cosmological constant page keeps that derived-versus-imported split explicit. The grid carries no such factor.
 
-**The three 3/2's are fenced apart.** [One Identity](#one-identity)'s face-over-base-edge stabilizer ratio is 3/2, the vacuum conversion just derived is 3/2, and the clock carries a third, the registered interface tick $`d\mu_{\text{tick}} = S^{3/2}\,dt`$ [One Wave](#one-wave) names, the arithmetic midpoint of the amplitude and intensity measures. The [Manifold Index](#manifold-index) keeps the same 3/2 out of its dilution column. The tempting move is to let one face-over-edge ratio be the vacuum conversion and then, by arithmetic, the clock's half-power; but numerical equality is not a mechanism, and the framework does not merge the three until an operator-level bridge from stabilizer order to clock exponent is derived. A fourth is arithmetic and joins none of them: counting observer-scale cells across the domain gives, up to an order-one factor, $`(R_\Lambda/\sqrt{\ell_P R_\Lambda})^3 = (\sqrt{\Omega_\Lambda})^{3/2}`$, the observer ratio cubed, not a depth.
+**The three 3/2's are fenced apart.** [One Identity](#one-identity)'s face-over-base-edge stabilizer ratio is 3/2, the vacuum conversion just derived is 3/2, and the clock carries a third, the registered interface tick $`d\mu_{\text{tick}} = S^{3/2}\,dt`$ [One Wave](#one-wave) names, the arithmetic midpoint of the amplitude and intensity measures. The tempting move is to let one face-over-edge ratio be the vacuum conversion and then, by arithmetic, the clock's half-power; but numerical equality is not a mechanism, and the framework does not merge the three until an operator-level bridge from stabilizer order to clock exponent is derived. A fourth is arithmetic and joins none of them: counting observer-scale cells across the domain gives, up to an order-one factor, $`(R_\Lambda/\sqrt{\ell_P R_\Lambda})^3 = (\sqrt{\Omega_\Lambda})^{3/2}`$, the observer ratio cubed, not a depth.
 
 ### Gravity is what crosses
 
@@ -676,7 +668,7 @@ The symbol $`\Omega`$ is a hierarchy ledger, not by itself a prediction: its sta
 | Couplings | powers $`\Omega_\Lambda^{-1/60}`$, $`\Omega_\Lambda^{-1/120}`$ | inherited from the surface hierarchy | grid relations and same-depth ratios |
 | Masses | powers $`(\sqrt{\Omega_\Lambda})^{\text{dist}/30}`$ | inherited from the surface hierarchy, plus one mass-sector normalization | McKay distances and ratios |
 
-At an anchor row, substituting that row's own definition of $`\Omega`$ back into the scaling law returns the anchor identity: calibration, not prediction. The content is in reading the same $`\Omega`$ ledger at different wells, depths, and sectors. In the edge sector $`\Omega_H = (H_0 t_P)^{-2}`$ is read from measured $`H_0`$, fixing the edge reference at the $`34/120`$ row, and the anchor-independent comparison is the acceleration ratio $`a_0/(cH_0) = C(13/120)/C(34/120) = 0.184`$.
+At an anchor row, substituting that row's own definition of $`\Omega`$ back into the scaling law returns the anchor identity: calibration, not prediction. The content is in reading the same $`\Omega`$ ledger at different wells, depths, and sectors.
 
 ### Unit constants
 
@@ -690,7 +682,7 @@ None is predicted by MIT. $`c`$ and $`\hbar`$ are exact in the SI definition; $`
 
 ### The dimensionless core
 
-In a ratio of two observables at the same depth, $`\Omega_\Lambda`$ cancels: no anchor enters and the number is parameter-free. These hold under every choice of anchor below; cross-depth or cross-grid comparisons are the levers that read the hierarchy.
+In a ratio of two observables carrying the same hierarchy exponent, the hierarchy factor cancels: no anchor enters, and once the well and grid assignments are granted the number is parameter-free. These hold under every choice of anchor below; comparisons with different hierarchy exponents, $`\alpha_s/\alpha`$ among them, retain a power of $`\Omega_\Lambda`$ and are the levers that read the hierarchy.
 
 | Quantity | Value | Status |
 |---|---|---|
@@ -716,7 +708,7 @@ To attach a scale you invert one observable for $`\Omega_\Lambda`$. Three are in
 
 >**📒 [Calibration Structure](files/working/files/calibration-structure.md):** the engine reframed as one measured anchor per sector, localizing the R problem to a single demotion.
 
-The $`\alpha`$ route is the cleanest non-circular inversion. From one measured coupling, with no $`R_\Lambda`$ and no further calibration, the non-circular chain is $`\alpha \to R_\Lambda \to \Lambda_\text{ref} = 3/R_\Lambda^2`$, landing the observed cosmological value to about 23%; whether that reference coefficient is the static domain's physical $`\Lambda`$ is the Interface question, not a calibration result. The 0.4% match on $`\alpha`$ itself is a closure test, not a prediction, because $`\alpha`$ is also what calibrates $`R_\Lambda`$ on this route: input and output on one line, the reading the gauge ladder's note already states. The 122 orders of magnitude are not predicted here; they enter through $`\Omega_\Lambda`$, read from $`\alpha`$.
+The $`\alpha`$ route is the cleanest non-circular inversion. From one measured coupling, with no $`R_\Lambda`$ and no further calibration, the non-circular chain is $`\alpha \to R_\Lambda \to \Lambda_\text{ref} = 3/R_\Lambda^2`$, landing the observed cosmological value to about 23%; whether that reference coefficient is the static domain's physical $`\Lambda`$ is the Interface question, not a calibration result. The 0.4% match on $`\alpha`$ itself is a closure test, not a prediction, because $`\alpha`$ is also what calibrates $`R_\Lambda`$ on this route: input and output on one line. The 122 orders of magnitude are not predicted here; they enter through $`\Omega_\Lambda`$, read from $`\alpha`$.
 
 The mass route misses, and the disagreement is the framework's largest internal tension. All three routes read $`\Omega_\Lambda`$ through the same steep 60-fold lever ($`\Lambda_\text{ref}\ell_P^2 \propto \alpha^{60}`$): against the measured $`R_\Lambda \approx 5.4`$ Gpc the mass-spectrum route puts the master length at $`\approx 20`$ Gpc, about a factor of 3.7, and the ~13.4× miss in $`\Lambda_\text{ref}`$ the table above records. Sharper still is the disagreement between the two non-circular readings themselves: the coupling route gives $`R_\Lambda \approx 6.1`$ Gpc against the mass route's $`\approx 20`$, a factor of 3.2 in $`R_\Lambda`$ and 10.5 in $`\Lambda_\text{ref}`$. The 60-fold inversion amplifies small input residuals, but that amplification does not by itself explain the disagreement; the present machinery does not distinguish conditioning from structural inconsistency. Until one route is established as the correct determination of $`R_\Lambda`$, every absolute prediction flowing through it inherits the ambiguity. Reconciling the two is open.
 
@@ -733,21 +725,20 @@ The mass route is an independent cross-check because the electron and muon sit a
 | Mass | normalization tied to $`m_e = 0.511`$ MeV | fixes the absolute mass scale once ratios are known |
 | Phase clock | $`s_0`$ from distance data | locates the current observer phase |
 
-Edge observables reference the evolving $`\Omega_H(z)`$; surface and space observables reference the fixed $`\Omega_\Lambda`$. The mass sector inherits $`\mu_\Lambda = \rho_\Lambda^{1/4}`$ from $`\Omega_\Lambda`$, with $`m_e`$ the benchmark rather than a second floor. Compute $`m_e`$ from $`\Lambda`$ instead, carrying both the $`\mu_\Lambda`$ scale and the hierarchy feedback ($`m_e \propto \Lambda^{11/60}`$), and it lands within 2%; inverting, that 2% is about 11% in $`\Lambda`$. The closure is one loop run from either end, the web holding whichever quantity you pick as the input.
+The mass sector inherits $`\mu_\Lambda = \rho_\Lambda^{1/4}`$ from $`\Omega_\Lambda`$, with $`m_e`$ the benchmark rather than a second floor. Compute $`m_e`$ from $`\Lambda`$ instead, carrying both the $`\mu_\Lambda`$ scale and the hierarchy feedback ($`m_e \propto \Lambda^{11/60}`$), and it lands within 2%; inverting, that 2% is about 11% in $`\Lambda`$. The closure is one loop run from either end, the web holding whichever quantity you pick as the input.
 
 One number the distance fit uses is not an input at all: the matter fraction $`\Omega_m = 0.315`$, a density fraction rather than one of the hierarchy ledgers above, is the flat-closure complement $`1 - f_\Lambda`$ of the vacuum fraction and is not read off the fit.
 
 ### Predicted and calibrated
 
+The dimensionless core above holds under any anchor; the rest stand as follows.
+
 | Quantity | Status |
 |---|---|
-| dimensionless ratios ($`a_0/cH_0`$, $`\alpha_s/\alpha_W`$) | anchor-independent once the well and grid assignments are granted, and only where the two share an exponent grid: $`\alpha_s/\alpha`$ keeps $`\Omega_\Lambda^{1/120}`$ because 13 and 17 sit at different depths |
-| counts and $`T_3`$ evaluations | exact given the group structure and the Coxeter-Galois gate |
 | $`\Omega_\Lambda`$ | over-determined by three readings that do not yet agree |
 | $`\Lambda_\text{ref}`$ (absolute) | conditional output of the $`\alpha`$ reading (23%) or the mass reading (~13.4× off); circular from the $`\Lambda`$ reading; its identification with the physical $`\Lambda`$ is the Interface question |
 | $`\alpha`$, $`\alpha_s`$, $`\alpha_W`$ (absolute) | $`\Lambda`$-anchored conditional comparisons (0.4% for $`\alpha`$); the anchor when $`\alpha`$ is the input |
 | first positive eigenvalue $`2/R_\Lambda^2`$ | surface spectral result |
-| torsion mass-ratio structure | exact torsion ratios; the map to measured fermion mass ratios is the mass comparison, read against data |
 | absolute fermion masses | set by the $`m_e`$ benchmark |
 | three flat vacua and the Yang-Mills gap | structural results on $`S^3/2I`$; the generation identification is the reading |
 
@@ -765,11 +756,11 @@ The body is the theory as it stands; this is the theory as a program. The larges
 
 ### The three problems
 
-**Dynamics: how does the wave content source geometry?** Not yet by any derived map. The gap is one object accounting for two symptoms that read as separate problems: gravity's open construction in [One Interface](#one-interface) and the clock exponent in [One Wave](#one-wave), and until it is built the two placements the coefficient constraint leaves open stay undecided. [One Interface](#one-interface) poses the problem; the stress-tensor bridge is the program that would close it. This is the framework's largest structural debt: several pages are waiting on one bridge.
+**Dynamics: how does the wave content source geometry?** Not yet by any derived map. One gap accounts for two symptoms that read as separate problems, gravity's open construction in [One Interface](#one-interface) and the clock exponent in [One Wave](#one-wave); the stress-tensor bridge is the program that would close it, and several pages wait on that one bridge, the framework's largest structural debt.
 
 **Selection: why these sectors and not others?** Topology fixes the family; Selection must fix the realized member. The scaling law's factored form still awaits the boundary-mode uniformity that One Equation names as its keystone; the Fibonacci wells continue a recurrence with no derived sampling rule, and the grid dictionary's photon-mediated-to-60R rule waits on a reason to choose the denominator for observables outside the ladder: representation data already reach phase positions through the Coxeter element's exponents over $`D`$, in the mass seats and the coupling seats, and whether that structure also sorts the cosmological observables is untried; the McKay elevator's $`\text{dist}/30`$ has no single-principle derivation, and the propagator route One Formula reopened is still to run; and the vacuum-to-generation assignment, the charm slot with no home, and the neutrino placements are the same question in the mass sector. The domain itself sits here too: terminality and perfectness both point at $`2I`$, but the single theorem folding them into one proof is One Shape's open problem.
 
-**Calibration closure: do the independent scale-fixings agree?** No, and this is the framework's largest internal tension. Three anchors fix the surface hierarchy and two of them are non-circular, so their disagreement is a real result rather than a bookkeeping check; until one is established as the correct determination of $`R_\Lambda`$, every absolute scale flowing through it inherits the ambiguity. [Inputs and Calibration](#inputs-and-calibration) carries the three readings, the numbers and the conditioning question.
+**Calibration closure: do the independent scale-fixings agree?** No, and this is the framework's largest internal tension: the two non-circular readings of the surface hierarchy disagree, and every absolute scale inherits the ambiguity until one reading is established as the determination of $`R_\Lambda`$. [Inputs and Calibration](#inputs-and-calibration) carries the readings, the numbers and the conditioning question.
 
 >**📒 [Energy as Resolution Amplitude](files/working/files/energy-as-resolution-amplitude.md):** energy read as the standing-wave resolution amplitude, a working note toward the stress-energy accounting.
 
@@ -785,9 +776,9 @@ The exams are thin by design. The phase-clock relation is read through correlate
 
 >**📗 [CMB Anomalies](../cosmos/files/cmb-anomalies.md):** the low-ℓ suppression as the Molien shell gap, with parity still open and the quadrupole-octupole alignment not supplied by this topology; where the gap lands depends on the curvature radius and on a sky projection still to be derived.
 
->**📗 [Early Galaxies](../cosmos/files/early-galaxies.md):** early massive galaxies in a static geometry, the high-redshift abundance test riding on the $`a_0(z)`$ enhancement.
+>**📗 [Early Galaxies](../cosmos/files/early-galaxies.md):** early massive galaxies in a static geometry, and the abundance test in full.
 
->**📗 [Euclid DR1 Showdown](../cosmos/files/euclid-dr1.md):** the pre-registration card, the next registered observational gate and the framework's falsification test.
+>**📗 [Euclid DR1 Showdown](../cosmos/files/euclid-dr1.md):** the pre-registration card and the framework's falsification test.
 
 [↑ Table of Contents](#table-of-contents)
 
