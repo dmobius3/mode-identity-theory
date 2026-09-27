@@ -130,6 +130,8 @@ A temporal edge bounds a non-orientable surface embedded in a closed space, and 
 
 ### Space
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-space.png?raw=true" width="71%" alt="Two views of S³, drawn one dimension down as a round sphere. Left, closed: finite and round, of curvature radius R_Λ, with no boundary. Right, simply connected: nested loops on the sphere shrink to a point"></p>
+
 $`S^3`$ is the only simply connected closed 3-manifold (Poincaré). It is diffeomorphic to SU(2) and admits a spin structure, and the framework equips it with the round metric of curvature radius $`R_\Lambda`$. The space has no boundary:
 
 ```math
@@ -159,6 +161,8 @@ The eigenvalue problem $`-\partial_y^2 \psi = \lambda \psi`$ under the anti-peri
 >**📒 [Cone Point Coherence](files/working/files/cone-point-coherence.md):** whether the cone-point coherence scale sources galactic curvature, the working program behind the galactic-curvature gate.
 
 ### Temporal Edge
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-temporal-edge.png?raw=true" width="83%" alt="Two views of the temporal edge S¹ as a circle. Left, as a length: a first lap and a second lap, each of length L = πR_Λ, close the edge at 2L = 2πR_Λ. Right, as a phase: t runs from 0 at the start through π, 2π and 3π back to 4π; the field is +ψ at the start and −ψ one lap later, and two laps restore it"></p>
 
 $`S^1`$ is the boundary of the Möbius surface. The strip has longitudinal period $`L = \pi R_\Lambda`$ (one lap), and the boundary $`S^1`$ traverses the strip twice before closing, giving geometric circumference $`2L = 2\pi R_\Lambda`$. The anti-periodic flip acts per lap, $`\psi(y + \pi R_\Lambda) = -\psi(y)`$, on the one-lap lift of the orientation-twisting core loop, not on the closed edge itself; over two laps the field returns to $`+\psi`$, so the closed edge is globally periodic with trivial total orientation holonomy, while the $`4\pi`$ wave period lives on the lifted phase coordinate $`t \in [0, 4\pi]`$, a dimensionless parameter rather than a length. This is where time advances and where the observer is anchored. The $`S^1`$ here is the phase cycle of the standing wave, not a closed timelike coordinate of the Lorentzian metric; proper time along an observer history is monotone over the epoch.
 
