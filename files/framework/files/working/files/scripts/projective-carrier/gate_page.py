@@ -4,7 +4,10 @@ parent green first.
 
 Run it from a checkout of this repository at origin/main, with network access and an authenticated gh CLI. P3 reads
 anchor ids from GitHub's rendering of each linked page at HEAD, P4 renders the page through `gh api markdown`, and a
-missing tool, a failed fetch or a checkout off origin/main stops the run with an error: nothing is skipped. The page
+missing tool, a failed fetch or a checkout off origin/main stops the run with an error: nothing is skipped. Every
+check reads the working tree, the state about to be committed. P3 takes an anchor from GitHub's ids only where a
+page's bytes match HEAD, and there the local heading rule must agree with it; a page with uncommitted edits is
+checked by the local rule alone. The page
 quotes other pages, so rerun this gate whenever one of them changes. A commit that changes a quoted sentence, such as a
 scope note, updates or dates the matching entry of the page's §X in the same commit."""
 import hashlib, html, os, re, subprocess, sys, unicodedata, urllib.parse, urllib.request
@@ -26,6 +29,14 @@ if HEAD != sh(["git", "rev-parse", "origin/main"], REPO).strip():
     sys.exit("gate: the checkout is not at origin/main")
 src = lambda rel: open(os.path.join(REPO, rel), encoding="utf-8").read()
 _LIVE = {}
+_HEAD = {}
+
+
+def at_head(rel):
+    if rel not in _HEAD:
+        r = subprocess.run(["git", "show", f"HEAD:{rel}"], cwd=REPO, capture_output=True)
+        _HEAD[rel] = r.stdout.decode("utf-8") if r.returncode == 0 else None
+    return _HEAD[rel]
 
 
 def live_ids(rel):
@@ -41,11 +52,16 @@ def live_ids(rel):
     return _LIVE[rel]
 
 
+KEEP = ("Lu", "Ll", "Lt", "Lm", "Lo", "Nd", "Mn")
+
+
 def slug(h):
-    """GitHub's heading id: math text kept, lowercased, spaces to hyphens, punctuation dropped."""
-    h = re.sub(r"\$`([^`]*)`\$", r"\1", h).strip().lower()
-    return "".join("-" if ch == " " else ch for ch in h
-                   if ch in " -_" or unicodedata.category(ch)[0] in "LN" or unicodedata.category(ch) == "Mn")
+    """GitHub's heading id: link and math text kept, lowercased, spaces to hyphens; only letters, decimal digits,
+    combining marks, hyphens and underscores survive, so superscript digits drop out."""
+    h = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", h)
+    h = re.sub(r"\$`([^`]*)`\$", r"\1", h)
+    h = re.sub(r"`([^`]*)`", r"\1", h).strip().lower()
+    return "".join("-" if ch == " " else ch for ch in h if ch in " -_" or unicodedata.category(ch) in KEEP)
 
 
 def sections(md):
@@ -122,7 +138,7 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("left translation by any non-central element moves the defining $`3`$-plane", f"{WF}/postulate-bridge.md"),
     ("the band does not descend (the deeper obstruction)", f"{WF}/postulate-bridge.md"),
     ("rules out descent of the band to $`X`$ as a $`2I`$-stable submanifold", f"{WF}/postulate-bridge.md"),
-    ("the deck element $`-1`$ never stabilizes the band", "files/framework/files/working/README.md"),
+    ("the deck element $`-1`$ never stabilizes an admissible band", "files/framework/files/working/README.md"),
     ("should not be rescued by modifying the band", f"{WF}/sampler-first-test.md"),
     ("The postulate embeds a non-orientable carrier in it", "files/cosmos/files/cosmological-constant.md"),
     ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md"),
@@ -188,6 +204,7 @@ def tracked(folder):
 def checks(t, ctx):
     r = {}
     outs, files, manifest, inbound = ctx["outs"], ctx["files"], ctx["manifest"], ctx["inbound"]
+    read = lambda rel: ctx["sources"][rel] if rel in ctx["sources"] else src(rel)
     bare = re.sub(r"```math\n.*?```", "", re.sub(r"\$`.*?`\$", "", t, flags=re.S), flags=re.S)
     bad = ["em-dash"] * ("\u2014" in t) + ["bare $"] * ("$" in bare) + re.findall(r"\[[^\]]*\$`[^\]]*\]\(", t) + re.findall(r"\b(?:F1|F2|F3|F4|redline)\b", t)
     r["P1 hygiene: no em-dash, bare dollar, math in link text or unit attribution"] = (not bad, bad)
@@ -209,19 +226,23 @@ def checks(t, ctx):
         rel = os.path.normpath(os.path.join(WF, p))
         if not os.path.exists(os.path.join(REPO, rel)):
             bad.append(tgt)
-        elif a and a not in live_ids(rel):
-            bad.append(tgt)
+        elif a:
+            text = read(rel)
+            local = a in sections(text)
+            ok = (local and a in live_ids(rel)) if text == at_head(rel) else local
+            if not ok:
+                bad.append(tgt)
     for tgt in re.findall(r"`((?:\.\./)*[\w./-]+\.md)`", t):
         if not os.path.exists(os.path.join(REPO, os.path.normpath(os.path.join(WF, tgt)))):
             bad.append(tgt)
-    r["P3 every relative link and Inputs path resolves; every anchor is a live GitHub id"] = (not bad, bad)
+    r["P3 every link resolves; each anchor is a heading id of the committed-to-be page, live on GitHub where unchanged"] = (not bad, bad)
     gh = subprocess.run(["gh", "api", "markdown", "-f", "mode=gfm", "-f", "context=dmobius3/mode-identity-theory", "-F", "text=@-"],
                         input=t, capture_output=True, text=True, check=True).stdout
     n = len(re.findall(r"<math-renderer", gh))
     r["P4 GitHub renders every math span"] = (n == len(spans(t)) and "$`" not in html.unescape(re.sub(r"<[^>]+>", " ", gh)), (n, len(spans(t))))
     budget = sum(1 + s.count("{") for s in spans(t))
     r["P5 math budget under 2000"] = (budget < 2000, budget)
-    miss = [q[:40] for q, rel in QUOTES if q not in t or q not in src(rel)]
+    miss = [q[:40] for q, rel in QUOTES if q not in t or q not in read(rel)]
     r["P6 every quoted phrase is verbatim on its source page"] = (not miss, miss)
     table = re.search(r"\| \$`\\lambda_0 R\^2`\$ \|(.*)\|", t).group(1).split("|")
     got = [x.strip() for x in table]
@@ -247,7 +268,7 @@ def checks(t, ctx):
             q = re.match(r'[^"\n]{0,60}?"([^"\n]{12,})"', para[m.end():nxt])
             if not q:
                 continue
-            md = src(os.path.normpath(os.path.join(WF, m.group(1))))
+            md = read(os.path.normpath(os.path.join(WF, m.group(1))))
             sp = sections(md).get(m.group(2))
             if sp is None or q.group(1) not in md[sp[0]:sp[1]]:
                 bad.append((m.group(2), q.group(1)[:40]))
@@ -279,7 +300,8 @@ def context():
     return {"outs": {f"{n}.out": open(os.path.join(SCRIPTS, f"{n}.out"), encoding="utf-8").read() for n in EXPECTED},
             "files": {nm: open(os.path.join(SCRIPTS, nm), "rb").read() for nm in tracked(SCRIPTS)},
             "manifest": open(os.path.join(SCRIPTS, "SHA256SUMS"), encoding="utf-8").read(),
-            "inbound": {rel: src(rel) for rel in INBOUND}}
+            "inbound": {rel: src(rel) for rel in INBOUND},
+            "sources": {}}
 
 
 def main():
@@ -302,6 +324,9 @@ def main():
             elif k == "file":
                 name, new = v
                 c["files"][name] = new
+            elif k == "source":
+                rel, new = v
+                c["sources"][rel] = new
             elif k == "inbound":
                 rel, new = v
                 c["inbound"][rel] = new
@@ -312,10 +337,12 @@ def main():
     bc = ctx["outs"]["bent_carrier.out"]
     first_pass = next(l for l in bc.split("\n") if l.startswith("PASS "))
     lam = "files/cosmos/files/cosmological-constant.md"
+    bridge = WF + "/postulate-bridge.md"
     arms = [
         ("P1", t.replace("The premise is adopted by ruling", "The premise is adopted \u2014 by ruling", 1), ctx),
         ("P2", t.replace("**State:** Active", "**State:** Running", 1), ctx),
         ("P3", t.replace("postulate-bridge.md#route-1", "postulate-bridge.md#route-one", 1), ctx),
+        ("P3", t, with_("P3", source=(bridge, src(bridge).replace('<a id="route-1"></a>', '<a id="route-one"></a>', 1)))),
         ("P4", t.replace("$`\\mathbb{RP}^3 = S^3/\\{\\pm I\\}`$, the one space form", "$`\\mathbb{RP}^3 = S^3/\\{\\pm I\\}$, the one space form", 1), ctx),
         ("P5", t + "\n" + "$`" + "{" * 2100 + "}" * 2100 + "`$\n", ctx),
         ("P6", t.replace("they must not be merged.", "they must never be merged.", 1), ctx),
