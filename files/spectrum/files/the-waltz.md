@@ -19,7 +19,7 @@ The dance runs on two distinct seams, easy to run together.
 | Möbius surface | Vacuum boundary geometry | $`\Lambda_{\text{top}}`$, the first positive eigenvalue; the Gauss/Ricci lift |
 | $`2I`$ quotient | Discrete representation structure | The 120-label representation domain, the McKay graph, the spectral sectors |
 
-$`S^3`$ space carries curvature as a continuous field. The Möbius surface carries the boundary condition and the spectral eigenvalue it selects. The $`S^1`$ temporal edge is where observation resolves position. Embedding the 2-surface in the 3-space and taking the $`S^3 \to S^3/2I`$ quotient are different operations doing different jobs: the first converts surface curvature into spatial curvature and sets the vacuum seed, the second identifies points and produces the discrete grid the matter sector reads. The Möbius sector supplies the vacuum-side geometry; the $`2I`$ quotient supplies the matter-side representation structure.
+$`S^3`$ space carries curvature as a continuous field. The Möbius surface carries the boundary condition and the spectral eigenvalue it selects. The $`S^1`$ temporal edge is where observation resolves position. Embedding the 2-surface unbent in the projective layer $`\mathbb{RP}^3 = S^3/\{\pm I\}`$ and taking the $`S^3 \to S^3/2I`$ quotient are different operations doing different jobs: the first converts surface curvature into spatial curvature and sets the vacuum seed, the second identifies points and produces the discrete grid the matter sector reads. The Möbius sector supplies the vacuum-side geometry; the $`2I`$ quotient supplies the matter-side representation structure. The two seams share one step without merging: the projective layer is the quotient by the central $`-I`$, the first stage of the $`2I`$ quotient, so the carrier's core carries the central sign ([The Projective Carrier](../../framework/files/working/files/projective-carrier.md#i-the-projective-layer)). The curvature conversion does not depend on the layer: the Gauss lift is a local computation on an unbent surface.
 
 Standard physics takes $`G`$ as a measured gravitational coupling, the constant that translates between the surface's language (curvature) and the space's language (energy) at the Planck floor ($`n = 0`$). MIT reads it here as an exchange rate between the two calibrated sides (§II), and inside a fixed calibration the relation can be inverted for $`G`$. That inversion is a closure, not a prediction: $`G`$ remains measured, and with $`c`$ and $`\hbar`$ it defines the Planck references the framework is built on.
 
@@ -39,7 +39,7 @@ Three conditions simplify it:
 
 | Condition | Justification | Consequence |
 |---|---|---|
-| Totally geodesic covering great-$`S^2`$ band ($`A_{ij} = 0`$) | Vacuum metric inherited from the cover; the Möbius is its edge-identified quotient, not a smooth totally geodesic submanifold | $`H^2 = A_{ij}A^{ij} = 0`$ |
+| Totally geodesic covering great-$`S^2`$ band ($`A_{ij} = 0`$) | Vacuum metric inherited from the cover; in the conic model the Möbius is its edge-identified quotient, not a smooth totally geodesic submanifold | $`H^2 = A_{ij}A^{ij} = 0`$ |
 | Isotropic space | CMB verified to $`10^{-5}`$ | $`\text{Ric}(n,n) = R_{\text{space}}/3`$ |
 | de Sitter vacuum | Algebraic definition of Λ in GR, imported | $`R_{\text{space}} = 2\,\Lambda_{\text{ref}}`$ |
 
@@ -158,7 +158,7 @@ The "dark" label assumes the unknown is a substance. MIT reads it as geometry in
 
 ### What each structure does
 
-The topological postulate $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset`$ assigns each structural element a distinct role:
+The topological postulate $`S^1 = \partial(\text{Möbius}), \quad \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}, \quad \partial S^3 = \emptyset`$ assigns each structural element a distinct role:
 
 | Structure | What it determines | Mechanism |
 |---|---|---|
@@ -190,7 +190,7 @@ The picture is a coordinate description of what observers sample, mistaken for t
 
 ### What is already written
 
-The standing wave $`\Psi(t) = \cos(t/2)`$ on $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ is the composed score. It is bounded (period $`4\pi`$), topologically forced as a family (the anti-periodic condition from the Möbius surface fixes the sinusoidal tower, and isotropy and orthogonality then select the fundamental), and pinned (amplitude maximum at $`t = 0`$). The wave is global, prior to observation, and independent of who looks. The wave is.
+The standing wave $`\Psi(t) = \cos(t/2)`$ on the temporal edge $`S^1 = \partial(\text{Möbius})`$ is the composed score. It is bounded (period $`4\pi`$), topologically forced as a family (the anti-periodic condition from the Möbius surface fixes the sinusoidal tower, and isotropy and orthogonality then select the fundamental), and pinned (amplitude maximum at $`t = 0`$). The wave is global, prior to observation, and independent of who looks. The wave is.
 
 The 120-domain is the score's resolution. $`|2I| = 120`$ is the order of the binary icosahedral group, the representation resolution of $`S^3/2I`$ rather than a feature of the smooth $`S^3`$ beneath it, and it sets the minimum phase advance, the chronon $`\Delta t_\text{min} = 4\pi/120 = \pi/30`$ rad. The Fibonacci wells $`\{13, 21, 34, 55\}/120`$ are the sampling positions at the observer scale, continuing a recurrence the icosahedral domain already carries; the antinode at $`60/120`$, where $`\Lambda_{\text{top}}`$ sits, is not a Fibonacci well. Why those positions are the realized ones is open: a variational origin was searched across eight boundary-mode functionals designed to make the observed set extremal, and all eight returned uniform or clustered minimizers instead, so the set is a structural label the recurrence carries rather than a derived extremum.
 
@@ -222,7 +222,7 @@ Relocating the venue does not still the dance. The field equations remain dynami
 
 The paper opened by naming $`\Lambda`$ as a note to Einstein's field equations. Followed through, that note exposes the vacuum-side dictionary and the sampler that reads it. The scale completes.
 
-The field equations describe the behavior of what observers sample. The note identifies what is being sampled, from where, and by whom. Seven pieces make up the Waltz dictionary, each tied to the same topological postulate $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$, and each carrying its own status:
+The field equations describe the behavior of what observers sample. The note identifies what is being sampled, from where, and by whom. Seven pieces make up the Waltz dictionary, each tied to the same topological postulate, $`S^1 = \partial(\text{Möbius}),\ \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}`$, and each carrying its own status:
 
 | Named | Identity |
 |---|---|

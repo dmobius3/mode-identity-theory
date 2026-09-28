@@ -25,15 +25,15 @@ Einstein's 1917 setting was a closed $`S^3`$ with Λ as geometry. This construct
 
 ## II. The geometry
 
-The domain is the minimal closed one. $`S^3`$ is the unique simply connected closed 3-manifold (Poincaré). The postulate embeds a non-orientable carrier in it:
+The domain is the minimal closed one. $`S^3`$ is the unique simply connected closed 3-manifold (Poincaré). The postulate embeds a non-orientable carrier, unbent, in its central quotient $`\mathbb{RP}^3 = S^3/\{\pm I\}`$:
 
 ```math
-S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \qquad \partial S^3 = \emptyset.
+S^1 = \partial(\text{Möbius}), \qquad \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}, \qquad \partial S^3 = \emptyset.
 ```
 
-The ambient space is closed and has no boundary. The Möbius band is an embedded spectral carrier, not a boundary of $`S^3`$; its own boundary is the circle $`S^1`$. It is built as the edge-identified quotient of a totally geodesic covering great-$`S^2`$ band in $`S^3`$, and inherits that band's constant-curvature metric. Among non-orientable surfaces with one boundary component (a disk removed from a connected sum of $`k`$ crosscaps) the framework adopts the minimal case, $`k = 1`$, the Möbius band. That minimality is an adopted, natural criterion, not a derived necessity.
+The ambient space is closed and has no boundary. The Möbius band is an embedded spectral carrier, not a boundary of $`S^3`$; its own boundary is the circle $`S^1`$. Its leading realization, the conic band this page uses throughout, is built as the edge-identified quotient of a totally geodesic covering great-$`S^2`$ band in $`S^3`$, and inherits that band's constant-curvature metric. Among non-orientable surfaces with one boundary component (a disk removed from a connected sum of $`k`$ crosscaps) the framework adopts the minimal case, $`k = 1`$, the Möbius band. That minimality is an adopted, natural criterion, not a derived necessity.
 
-The observable spatial quotient is $`S^3/2I`$, the hypersphere modulo the binary icosahedral group ($`\lvert 2I\rvert = 120`$), the largest exceptional finite subgroup of $`\mathrm{SU}(2) \cong S^3`$. The local curvature geometry of §§III-IV lives on the cover $`S^3(R)`$; the quotient enters later only as the large-scale harmonic selection rule.
+The observable spatial quotient is $`S^3/2I`$, the hypersphere modulo the binary icosahedral group ($`\lvert 2I\rvert = 120`$), the largest exceptional finite subgroup of $`\mathrm{SU}(2) \cong S^3`$. The local curvature geometry of §§III-IV lives on the cover $`S^3(R)`$. The quotient's first stage, by $`-I`$, is also the layer the carrier embeds in, and the whole quotient enters as the large-scale harmonic selection rule.
 
 ## III. The spectral seed
 

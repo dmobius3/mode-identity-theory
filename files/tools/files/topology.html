@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mode Identity Theory | The Topology</title>
-  <meta name="description" content="Interactive visualization of the topological postulate: S¹ = ∂(Möbius) ↪ S³, ∂S³ = ∅">
+  <meta name="description" content="Interactive visualization of the topological postulate: S¹ = ∂(Möbius), Möbius ↪ ℝP³ = S³/{±I}, ∂S³ = ∅">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -50,7 +50,7 @@
 <body>
 <div class="title-bar">
   <h1>THE TOPOLOGY</h1>
-  <div class="eq">S<sup>1</sup> = ∂(Möbius) ↪ S<sup>3</sup>, &nbsp; ∂S<sup>3</sup> = ∅</div>
+  <div class="eq">S<sup>1</sup> = ∂(Möbius), &nbsp; Möbius ↪ ℝP<sup>3</sup> = S<sup>3</sup>/{±I}, &nbsp; ∂S<sup>3</sup> = ∅</div>
 </div>
 <div class="controls">
   <button class="ctrl-btn active" data-layer="space"><div class="indicator ind-space"></div><span>S<sup>3</sup> Space</span></button>
@@ -70,7 +70,7 @@
 <div class="annotation" id="annotPanel">
   <div class="a-label" id="aLabel">Topology</div>
   <div class="a-name" id="aName">Geodesic Band, M&#246;bius Quotient</div>
-  <div class="a-body" id="aBody">The M&#246;bius arises as the edge-identified quotient of a band on the great S&#178; within S&#179;. That great S&#178; is totally geodesic, so the band's geodesics are geodesics of space; the M&#246;bius is that quotient, not a smooth totally geodesic submanifold. The metric pinches to a cone point at the pole, where the eigenfunction peaks.</div>
+  <div class="a-body" id="aBody">In the conic model, the M&#246;bius arises as the edge-identified quotient of a band on the great S&#178; within S&#179;. That great S&#178; is totally geodesic, so the band's geodesics are geodesics of space; the M&#246;bius is that quotient, not a smooth totally geodesic submanifold. Its end arcs, opposite each other on the great S&#178;, are matched by the antipodal map, so it embeds unbent in &#8477;P&#179; = S&#179;/{&#177;I}. The metric pinches to a cone point at the pole, where the eigenfunction peaks.</div>
   <div class="a-math" id="aMath">ds² = dy² + cos²(y/R) dw²</div>
 </div>
 <div class="bottom-bar"><div class="hint">drag to orbit · scroll to zoom · click layers to toggle</div></div>
@@ -275,8 +275,8 @@ document.addEventListener('touchend', function() { drag=false; });
 // ═══════════════════════════════════════════
 var layers = { space:true, surface:true, edge:true, cone:true, wave:true, sample:true };
 var ann = {
-  space: { label:"Space", name:"S\u00B3 Hypersphere", body:"Closed, simply connected, no boundary. The Poincar\u00E9 theorem guarantees S\u00B3 is unique. Contains everything. Holds everything.", math:"\u2202S\u00B3 = \u2205" },
-  surface: { label:"Surface", name:"Geodesic Band, M\u00F6bius Quotient", body:"A band on the great S\u00B2 within S\u00B3. That great S\u00B2 is totally geodesic, so the band's geodesics are geodesics of space; the M\u00F6bius is its edge-identified quotient, not a smooth totally geodesic submanifold of S\u00B3. The metric ds\u00B2 = dy\u00B2 + cos\u00B2(y/R) dw\u00B2 carries constant curvature K = 1/R\u00B2. Widest at the equator, pinching to a point at the pole. The twist is topological, not geometric: it lives in the boundary identification, not in the geometry of the band.", math:"ds\u00B2 = dy\u00B2 + cos\u00B2(y/R) dw\u00B2" },
+  space: { label:"Space", name:"S\u00B3 Hypersphere", body:"Closed, simply connected, no boundary. The Poincar\u00E9 theorem guarantees S\u00B3 is unique. Covers everything: each layer is a quotient of it.", math:"\u2202S\u00B3 = \u2205" },
+  surface: { label:"Surface", name:"Geodesic Band, M\u00F6bius Quotient", body:"A band on the great S\u00B2 within S\u00B3. That great S\u00B2 is totally geodesic, so the band's geodesics are geodesics of space; in the conic model the M\u00F6bius is its edge-identified quotient, not a smooth totally geodesic submanifold of S\u00B3. Its end arcs, opposite each other on the great S\u00B2, are matched by the antipodal map, so the M\u00F6bius band embeds unbent in \u211DP\u00B3 = S\u00B3/{\u00B1I}. The metric ds\u00B2 = dy\u00B2 + cos\u00B2(y/R) dw\u00B2 carries constant curvature K = 1/R\u00B2. Widest at the equator, pinching to a point at the pole. The twist is topological, not geometric: it lives in the boundary identification, not in the geometry of the band.", math:"ds\u00B2 = dy\u00B2 + cos\u00B2(y/R) dw\u00B2" },
   edge: { label:"Edge", name:"S\u00B9 Boundary", body:"A single closed loop traversing the strip twice. Two arcs from equator through the cone point and back, connected by the M\u00F6bius twist. Where time lives and where \u03A8 is sampled.", math:"S\u00B9 = \u2202(M\u00F6bius)" },
   cone: { label:"Cone Point", name:"The Antinode", body:"At y = \u03C0R/2, cos(y/R) \u2192 0. The strip pinches to a single point: the pole of S\u00B2. The geometry goes quiet. The eigenfunction peaks: u\u2081 = 1, u\u2081\u2032 = 0. Maximum amplitude at zero width.", math:"u\u2081(\u03C0R/2) = 1" },
   wave: { label:"Eigenfunction", name:"u\u2081 = sin(y/R)", body:"First positive eigenfunction of the twisted Laplacian, shared by the Friedrichs and bridging realizations (\u03B4\u2080 > 2R/e). Zero at equator, maximum at cone point. Anti-periodic: u\u2081(y + \u03C0R) = \u2212u\u2081(y).", math:"\u03BB\u2081 = R_{sm} = 2/R\u00B2" },

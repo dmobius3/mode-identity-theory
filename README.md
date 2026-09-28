@@ -21,7 +21,7 @@ In 300 BC, Euclid proved Plato's observation that only five regular solids close
 
 ***What shape is the universe?*** MIT starts with a three-sphere, $`S^3`$: a finite space that closes on itself, with no boundary and no outside. By the Poincaré theorem it is the only such space that is simply connected. The observable domain is the smooth quotient $`S^3/2I`$. The 120-element group $`2I`$ used to form that quotient supplies the discrete representation labels the framework uses to resolve physical states. The underlying space does not stretch; MIT models cosmic expansion as changing phase and realization of the wave. We see more of the wave realized, so distances appear to grow.
 
-***Why a Möbius band?*** The three-sphere supplies the space; the Möbius band supplies the boundary structure inside it. It is the simplest one-sided surface with a single edge. Go around it once and orientation reverses, giving the sign flip and anti-periodic behavior behind the wave's 4π period. Its single edge also gives the theory one continuous place to carry phase, which is where time enters.
+***Why a Möbius band?*** The three-sphere supplies the space; the Möbius band supplies the boundary structure, embedded unbent in the projective three-space, the three-sphere with opposite points identified. It is the simplest one-sided surface with a single edge. Go around it once and orientation reverses, giving the sign flip and anti-periodic behavior behind the wave's 4π period. Its single edge also gives the theory one continuous place to carry phase, which is where time enters.
 
 ***Why 120?*** The number is not chosen as a fit parameter. It is the order of $`2I`$, the binary icosahedral group used to form the observable quotient. Two independent arguments converge on $`2I`$: it is the terminal case among the exceptional finite subgroups of $`SU(2)`$, and the unique nontrivial perfect one. The second of those is what keeps the framework's standard and Galois vacua distinct. What is still missing is a single theorem proving that these requirements force $`2I`$ uniquely, and the framework lists that as an open problem.
 
@@ -72,17 +72,17 @@ mode-identity-theory/
 
 🏟️ **One Shape**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with the Möbius band and its single edge S¹ inside it"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with a lune laid unbent on it whose opposite tips are identified, closing it into the Möbius band with its single edge S¹"></p>
 
 ---
 
 ```math
-\Large \boxed{S^1 = \partial(\text{Möbius}) \hookrightarrow S^3, \quad \partial S^3 = \emptyset}
+\Large \boxed{S^1 = \partial(\text{Möbius}), \quad \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}, \quad \partial S^3 = \emptyset}
 ```
 
-MIT starts with a finite space that closes on itself, so there is no outer boundary. Inside it sits a Möbius surface with one continuous edge. The three-sphere supplies the space; the Möbius band supplies the twist and the boundary on which phase is carried.
+MIT starts with a finite space that closes on itself, so there is no outer boundary: the three-sphere. Identify each of its points with the opposite one, and a Möbius surface with one continuous edge embeds, unbent, in the space that results. The three-sphere supplies the space; the Möbius band supplies the twist and the boundary on which phase is carried.
 
-The observable domain is the smooth quotient $`S^3/2I`$. It remains a smooth manifold, while the 120-element symmetry group $`2I`$ supplies the representation structure the framework uses to distinguish physical states.
+The observable domain is the smooth quotient $`S^3/2I`$, whose first step is that same opposite-point identification. It remains a smooth manifold, while the 120-element symmetry group $`2I`$ supplies the representation structure the framework uses to distinguish physical states.
 
 So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band supplies the boundary condition, and $`2I`$ supplies the symmetry structure from which the physics is read.**
 
@@ -186,19 +186,19 @@ Across the eight nontrivial representation seats and three vacua, the formula pr
 
 🪡 **One Interface**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The two seams: the Möbius band embedded in S³ on the vacuum side, and the quotient of S³ by 2I on the matter side"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The tower of quotients: S³, the smooth substrate; its quotient by ±I, RP³, where the Möbius band lies unbent on the vacuum side; and the quotient by the icosahedron's 60 rotations, S³/2I, which completes the quotient by 2I on the matter side"></p>
 
 ---
 
 ```math
-\Large \boxed{\text{Möbius} \hookrightarrow S^3 \qquad\Big|\qquad S^3 \to S^3/2I}
+\Large \boxed{\text{Möbius} \hookrightarrow S^3/\{\pm I\} \qquad\Big|\qquad S^3 \to S^3/2I}
 ```
 
 The framework has two seams, and they do different jobs.
 
-The Möbius embedding supplies the vacuum-side surface geometry. The quotient $`S^3 \to S^3/2I`$ supplies the matter-side representation structure. One is an embedded surface inside the smooth space; the other is a quotient of that space by symmetry. They are not the same operation, and the framework does not collapse them into one.
+The Möbius embedding supplies the vacuum-side surface geometry. The quotient $`S^3 \to S^3/2I`$ supplies the matter-side representation structure. One is an unbent surface in the projective quotient $`S^3/\{\pm I\}`$; the other is the quotient by the whole symmetry group, whose first step is that same identification of opposite points. They are not the same operation, and the framework does not collapse them into one.
 
-The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its numerator comes from the derived geometry of the embedded surface in isotropic $`S^3`$, while its denominator is the de Sitter normalization imported from general relativity.
+The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its numerator comes from the derived geometry of the Möbius band's unbent covering surface in isotropic $`S^3`$, while its denominator is the de Sitter normalization imported from general relativity.
 
 >Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT puts gravity at the interface between the smooth substrate and the discrete structure built on it. Einstein's field equations remain the local gravitational law; what is still open is the dynamical bridge that tells them exactly how the realized wave content sources the geometry.
 

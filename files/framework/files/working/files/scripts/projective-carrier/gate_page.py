@@ -87,21 +87,10 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("transverse, not restrictive", f"{WF}/postulate-bridge.md"),
     ("time is the boundary of a non-orientable surface embedded in a closed three-space", "files/framework/README.md"),
     ("The twists and identifications live in that built structure", "files/framework/README.md"),
-    ("set the whole thing inside the three-sphere", "files/framework/README.md"),
-    ("Whether the two take part in one mechanism is open", "files/framework/README.md"),
     ("and not the Möbius orientation sign of One Shape", "files/framework/README.md"),
     ("The Möbius sign flip and the central $`-I`$ of $`2I`$ are two distinct $`Z_2`$'s", "files/framework/README.md"),
-    ("the natural sampler built from the Möbius geometry does not carry one onto the other", "files/framework/README.md"),
-    ("The two seams are separate", "files/framework/README.md"),
-    ("embeds in $`S^3`$, and the underlying spherical band lies in a great $`S^2`$", "files/framework/files/bedrock/README.md"),
-    ("Inside it sits a Möbius surface with one continuous edge", "README.md"),
-    ("One is an embedded surface inside the smooth space", "README.md"),
-    ("the derived geometry of the embedded surface in isotropic $`S^3`$", "README.md"),
     ("the framework does not collapse them into one", "README.md"),
-    ("A Möbius surface sits inside the sphere", "files/cosmos/README.md"),
-    ("The Möbius surface inside a three-sphere of radius $`R`$", "files/cosmos/README.md"),
     ("an embedded spectral carrier", "files/cosmos/files/cosmological-constant.md"),
-    ("the quotient enters later only as the large-scale harmonic selection rule", "files/cosmos/files/cosmological-constant.md"),
     ("the Möbius surface embedded in $`S^3`$", "files/cosmos/files/euclid-dr1.md"),
     ("The dance runs on two distinct seams", "files/spectrum/files/the-waltz.md"),
     ("the orientation $`\\mathbb{Z}_2`$ is not a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md"),
@@ -130,7 +119,6 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("assumed as an inclusion by hand", f"{WF}/postulate-bridge.md"),
     ("the Friedrichs realization is spectrally an orientable object, a Neumann lune", "files/framework/files/bedrock/files/first-eigenvalue.md"),
     ("a singular surface model, not a smooth totally geodesic submanifold of $`S^3/2I`$", "files/framework/files/bedrock/README.md"),
-    ("enter separately", "files/framework/files/bedrock/README.md"),
     ("not by seating the Möbius band inside $`S^3/2I`$", "files/framework/files/bedrock/README.md"),
     ("The deeper obstruction", f"{WF}/postulate-bridge.md"),
     ("The band lives upstairs on a great $`S^2 \\subset S^3`$", f"{WF}/postulate-bridge.md"),
@@ -142,7 +130,6 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("Tier 2's totally geodesic candidate has been removed: it is topologically unavailable to a smooth Möbius band", f"{WF}/postulate-bridge.md"),
     ("the transverse-not-restrictive result as the residue", f"{WF}/postulate-bridge.md"),
     ("should not be rescued by modifying the band", f"{WF}/sampler-first-test.md"),
-    ("The postulate embeds a non-orientable carrier in it", "files/cosmos/files/cosmological-constant.md"),
     ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md"),
     ("an exact same-mode identity", f"{WF}/scaling-law-uniqueness.md"),
     ("Excited modes ($`m > 0`$) on the Möbius surface bend the embedding", "files/spectrum/files/the-waltz.md"),
@@ -156,6 +143,16 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("The holonomy selects the twisted sector in which the first positive level is identified", "files/cosmos/files/cosmological-constant.md"),
     ("The anti-periodic flip acts per lap", "files/framework/README.md"),
     ("The paper's model is intrinsic, and the paper places it in no three-dimensional space", "files/cosmos/files/black-hole.md"),
+    ("These are different operations doing different jobs", "files/framework/README.md"),
+    ("The two seams share one step without merging", "files/framework/README.md"),
+    ("the orientation sign and the central $`-I`$ are carried by one loop", "files/framework/README.md"),
+    ("which of the two layers is the carrier's physical domain is open", "files/framework/README.md"),
+    ("enters separately", "files/framework/files/bedrock/README.md"),
+    ("The quotient's central stage reaches the band itself", "files/framework/files/bedrock/README.md"),
+    ("The carrier embeds unbent in the projective layer", "files/framework/files/bedrock/README.md"),
+    ("embeds, unbent, in the space that results", "README.md"),
+    ("first step is that same identification", "README.md"),
+    ("The postulate embeds a non-orientable carrier, unbent, in its central quotient", "files/cosmos/files/cosmological-constant.md"),
 ]
 
 EXPECTED = {  # each record's PASS and ARM FIRED lines, exactly
@@ -181,6 +178,12 @@ INBOUND = {  # page -> the link into projective-carrier.md it must carry
     WF.rsplit("/", 1)[0] + "/README.md": "files/projective-carrier.md",
     WF + "/postulate-bridge.md": "projective-carrier.md",
     "files/cosmos/files/cosmological-constant.md": "../../framework/files/working/files/projective-carrier.md",
+}
+PUBLIC = {  # canonical page -> {section anchor: links into this page that its reworded sign, seam or placement text carries}
+    "files/framework/README.md": {"one-shape": 2, "surface": 1, "the-two-seams": 1},
+    "files/spectrum/files/the-waltz.md": {"i-the-two-partners": 1},
+    "files/spectrum/files/mass-spectrum.md": {"5-the-vertex-and-the-twist": 1},
+    "files/framework/files/bedrock/README.md": {"postulate-bridge": 1},
 }
 
 
@@ -312,6 +315,16 @@ def checks(t, ctx):
                      and "](projective-carrier.md)" in p]
             if len(notes) < n:
                 bad.append((rel.split("/")[-1], a, len(notes)))
+    for rel, want in PUBLIC.items():
+        text = read(rel)
+        spans_ = sections(text)
+        for a, n in want.items():
+            sp = spans_.get(a)
+            body = text[sp[0]:sp[1]] if sp else ""
+            got = [m for m in re.finditer(r"\]\(([^)#\s]+)(?:#([^)\s]+))?\)", body)
+                   if os.path.normpath(os.path.join(os.path.dirname(rel), m.group(1))) == SELF_REL]
+            if len(got) < n or any(m.group(2) and m.group(2) not in sections(t) for m in got):
+                bad.append((rel.split("/")[-1], a, len(got)))
     row = next((l for l in read(WF + "/claim-ledger.md").split("\n") if l.startswith("| Boundary-mode uniformity")), "")
     if "](projective-carrier.md)" not in row:
         bad.append(("claim-ledger.md", "uniformity row"))
@@ -357,6 +370,7 @@ def main():
     first_pass = next(l for l in bc.split("\n") if l.startswith("PASS "))
     lam = "files/cosmos/files/cosmological-constant.md"
     bridge = WF + "/postulate-bridge.md"
+    waltz = "files/spectrum/files/the-waltz.md"
     arms = [
         ("P1", t.replace("The premise is adopted by ruling", "The premise is adopted \u2014 by ruling", 1), ctx),
         ("P2", t.replace("**State:** Active", "**State:** Running", 1), ctx),
@@ -375,6 +389,7 @@ def main():
         ("P12", t, with_("P12", manifest=ctx["manifest"] + "0" * 64 + "  stray.txt\n")),
         ("P13", t, with_("P13", source=(lam, src(lam).replace("projective-carrier.md#ii-lemma-1", "projective-carrier.md#ii-lemma-one", 1)))),
         ("P13", t, with_("P13", source=(bridge, re.sub(r"\n\n\*\*Scope under the ruling \([^)]*\)\.\*\* Both walls stand\.[^\n]*", "", src(bridge), count=1)))),
+        ("P13", t, with_("P13", source=(waltz, src(waltz).replace("working/files/projective-carrier.md", "working/files/plato-twist.md", 1)))),
     ]
     rc = 0
     for key, bt, bctx in arms:

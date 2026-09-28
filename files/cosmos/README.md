@@ -7,7 +7,7 @@
 
 The cosmos is the same finite space seen whole: a three-sphere, with no boundary and no outside. MIT is a speculative framework; this page lays out what it says about the universe at large, and each linked paper carries the details and caveats.
 
-Nothing stretches. A Möbius surface sits inside the sphere, its single edge carries a standing wave, and the observer's phase along that wave is what we read as cosmic time and as redshift. The sphere's curvature enters as a fixed boundary condition rather than a term in Friedmann's equation, so the cosmological data are fit as spatially flat.
+Nothing stretches. A Möbius surface lies unbent in the sphere's projective quotient, where each point is identified with its opposite; its single edge carries a standing wave, and the observer's phase along that wave is what we read as cosmic time and as redshift. The sphere's curvature enters as a fixed boundary condition rather than a term in Friedmann's equation, so the cosmological data are fit as spatially flat.
 
 What stays fixed is the vacuum. Its geometric seed is the first positive vibration level of the Möbius surface, set by the sphere's radius, which never changes. What moves is the observer's phase, and that one motion shows up three ways: as an apparent phantom crossing in standard dark-energy fits, as an acceleration scale $`a_0`$ that rises with the Hubble rate, and as a small extra term in the squared Hubble rate.
 
@@ -17,7 +17,7 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 
 ## [Cosmological Constant](files/cosmological-constant.md)
 
-**Geometry, Not Substance.** Einstein put $`\Lambda`$ on the geometric side of his equations in 1917, and MIT keeps it there. The Möbius surface inside a three-sphere of radius $`R`$ hums at $`\Lambda_\text{top} = 2/R^2`$, the first positive level of its vibration spectrum: the twist picks which family of vibrations that level belongs to, and the surface's curvature sets its value. Two standard steps carry that seed into space. The Gauss equation lifts the surface's curvature into the three-sphere, and general relativity's de Sitter relation turns that curvature into a vacuum value, $`\Lambda_\text{ref} = 3/R^2`$. Two things are still missing: the radius itself, and the energy and pressure of the static space's modes, which would show whether $`3/R^2`$ is the constant we measure.
+**Geometry, Not Substance.** Einstein put $`\Lambda`$ on the geometric side of his equations in 1917, and MIT keeps it there. The Möbius surface, lying unbent in the projective quotient of a three-sphere of radius $`R`$, where opposite points are identified, hums at $`\Lambda_\text{top} = 2/R^2`$, the first positive level of its vibration spectrum: the twist picks which family of vibrations that level belongs to, and the surface's curvature sets its value. Two standard steps carry that seed into space. The Gauss equation lifts the surface's curvature into the three-sphere, and general relativity's de Sitter relation turns that curvature into a vacuum value, $`\Lambda_\text{ref} = 3/R^2`$. Two things are still missing: the radius itself, and the energy and pressure of the static space's modes, which would show whether $`3/R^2`$ is the constant we measure.
 
 >[![Cosmological Constant](https://img.youtube.com/vi/eFzqU8KPfJ4/mqdefault.jpg)](https://www.youtube.com/watch?v=eFzqU8KPfJ4)
 >

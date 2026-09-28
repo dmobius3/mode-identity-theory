@@ -89,7 +89,7 @@ These three ingredients (matter well, bosonic grid, fractional exponent) map ont
 
 | # | Input | Output | Status |
 |---|---|---|---|
-| 1 | $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3,\ \partial S^3 = \emptyset`$ | Anti-periodic BC | Derived |
+| 1 | $`S^1 = \partial(\text{Möbius}),\ \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\},\ \partial S^3 = \emptyset`$ | Anti-periodic BC | Derived |
 | 2 | $`F_7 = 13`$, $`\gcd(13, 120) = 1`$; EM couples matter | Matter well 13 | Motivated |
 | 3 | $`\lvert\psi\rvert^2`$ (bosonic) | 60R-grid; $`\Theta = 13/60`$ | Motivated grid assignment |
 | 4 | $`\alpha`$ epoch-independent | Reference $`\Omega_\Lambda`$ | Framework selection rule |

@@ -157,7 +157,7 @@ u_0(y) = \sin(y/R), \qquad J(y) = \cos(y/R)
 
 $`u_0`$ is the $`\ell = 1`$ zonal Legendre mode. $`J`$ is the transverse scale factor, measuring the geometric width of the surface at each meridional position $`y`$; it is the Jacobi field of the meridian geodesics of $`S^2(R)`$. The phase coordinate is $`\Theta = y/(\pi R)`$, so the phase operator is $`C(\Theta) = 2\sin^2(\pi\Theta) = 2u_0^2`$.
 
-The paper's model is intrinsic, and the paper places it in no three-dimensional space. The framework places its covering sphere as a great $`S^2`$ of the spatial $`S^3`$ ([bedrock index](../../framework/files/bedrock/README.md)); the Möbius quotient itself is a singular surface model, not a totally geodesic surface in $`S^3`$, and no immersed Möbius band in $`S^3`$ is totally geodesic ([postulate bridge](../../framework/files/working/files/postulate-bridge.md)).
+The paper's model is intrinsic, and the paper places it in no three-dimensional space. The framework places its covering sphere as a great $`S^2`$ of the spatial $`S^3`$, and the quotient, unbent, in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$ ([bedrock index](../../framework/files/bedrock/README.md)); the Möbius quotient itself is a singular surface model, not a totally geodesic surface in $`S^3`$, and no immersed Möbius band in $`S^3`$ is totally geodesic ([postulate bridge](../../framework/files/working/files/postulate-bridge.md)).
 
 The two quantities satisfy:
 
