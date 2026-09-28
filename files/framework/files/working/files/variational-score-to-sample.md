@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Open
-**Status (2026-09-23):** WORKING / MOTIVATED, parked. The first clock arm has run, recorded at `variational-clock-arm.md`: in the class of §11 the lapse equation is solved and the variation selects no level, since the potential's level sets the lapse, so the independent route fails and the half power returns only as R-HALF's operator realization, below the promotion bar. The program is parked on what that leaves, why the potential carries amplitude weight (§16): no search is run, the §13 arms stay closed behind the clock gate, and a standing admission bar governs any later proposal. The pre-registered PASS/FAIL stands unchanged.
+**Status (2026-09-27):** WORKING / MOTIVATED, parked. The first clock arm has run, recorded at `variational-clock-arm.md`: in the class of §11 the lapse equation is solved and the variation selects no level, since the potential's level sets the lapse, so the independent route fails and the half power returns only as R-HALF's operator realization, below the promotion bar. The program is parked on what that leaves, why the potential carries amplitude weight (§16): no search is run, the §13 arms stay closed behind the clock gate, and a standing admission bar governs any later proposal. The pre-registered PASS/FAIL stands unchanged. A scope note in §3 records the ruling of 2026-09-27.
 **Summary:** Frames the dynamics problem as a variational principle for the global score-to-sample relation; the program page for the variational reading, which works the exponent derivation rather than waiting on it.
 **Inputs:** `postulate-bridge.md`, `temporal-budget.md`, `friedmann-as-output.md`, `stress-tensor-bridge.md`, the engine (chronon, sign flip, Hubble clock)
 
@@ -106,6 +106,8 @@ so a quadratic functional on the closed $`4\pi`$ edge descends to the single $`2
 This descent forgets the Möbius orientation sign.
 
 That $`\mathbb{Z}_2`$ is distinct from the central $`-I`$ of $`2I`$, whose parity on integer- and half-integer-spin representations separates the 120 and 60R resolutions in the matter-side representation structure. Squaring erases both signs by the same algebraic operation but does not choose the grid; the two $`\mathbb{Z}_2`$ structures are different objects.
+
+**Scope under the ruling (2026-09-27).** The two stay different objects, but for fields sampled on the ruled carrier one core loop carries both: the core represents $`-I`$, and on spinorial fields restricted to the carrier the central sign is the Möbius orientation holonomy ([The Projective Carrier](projective-carrier.md), Lemma 1). Squaring still erases both and still does not choose the grid.
 
 A term that must retain Möbius orientation information must therefore retain data erased by $`\Psi \to -\Psi`$.
 

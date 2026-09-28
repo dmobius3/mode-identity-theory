@@ -8,7 +8,7 @@
 **Type:** Test
 **State:** Closed
 **Verdict:** Negative
-**Status (2026-08-19):** Closed negative twice over: no antipodally-invariant one-boundary surface exists, and equivariance makes the scalar readout identical across all 120 deck translates. The transverse-not-restrictive structural result survives.
+**Status (2026-09-27):** Closed negative twice over: no antipodally-invariant one-boundary surface exists, and equivariance makes the scalar readout identical across all 120 deck translates. The transverse-not-restrictive structural result survives for this class; a scope note in §10 places the ruled carrier outside it.
 **Summary:** Tests whether the Möbius sampler realizes the 120→60 halving geometrically; the first test of the sampler reading.
 **Parent:** `postulate-bridge.md`
 
@@ -234,6 +234,8 @@ Two guards belong on that question before it is opened. First, it must not resur
 ## 10. Scope and non-claims
 
 The negative is route-specific and is not a universal independence claim: it excludes setwise antipodal symmetry of a one-boundary sampler as the mechanism, not every conceivable relation between the two $`\mathbb Z_2`$'s. Nothing here asserts that $`\mathcal O^{(1)}_M`$ is the right operator, only that it is canonical and has the correct target type; the negative concerns the geometry of the lift family and does not evaluate the operator, which was Step 3 and is not reached. Nothing here couples to the $`2I`$-decorated gauge sector: this is the sampling half of the postulate, and the Galois side is untouched, exactly as the Tier 2 ground floor is the surface half only. Nothing here is dynamical; which admissible band is realized is Tier 2's question, and this worksheet takes the band as given. The surface pillar is not in play: its twisted spectrum and its $`2/R^2`$ first positive level are an independent result about the band's own intrinsic geometry, and no eigenvalue of that problem enters any statement above. The bar of the [postulate bridge](postulate-bridge.md) is unchanged and unmet.
+
+**Scope under the ruling (2026-09-27).** This test's class is compact embedded surfaces in $`S^3`$ with one boundary circle, whose core maps trivially to $`2I`$ (§1). Under the ruling of 2026-09-27 the carrier is realized through the projective layer, outside that class: its preimage in $`S^3`$ lies in one great sphere, whose stabilizer in $`2I`$ is $`\{\pm 1\}`$, so $`\lvert S\rvert = 2`$ is reached there, while §8's equivariance still makes every scalar reading identical across the translates, so the verdict on the halving stands. §1's canonical trivialization, and with it the "not restrictive" of §2's box, hold for this class; on the ruled carrier the transverse derivative still carries $`\mathcal L`$, but each natural sampler twists one statistics class ([The Projective Carrier](projective-carrier.md), §II).
 
 ---
 

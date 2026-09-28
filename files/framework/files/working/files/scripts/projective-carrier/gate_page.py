@@ -139,6 +139,8 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("the band does not descend (the deeper obstruction)", f"{WF}/postulate-bridge.md"),
     ("rules out descent of the band to $`X`$ as a $`2I`$-stable submanifold", f"{WF}/postulate-bridge.md"),
     ("the deck element $`-1`$ never stabilizes an admissible band", "files/framework/files/working/README.md"),
+    ("Tier 2's totally geodesic candidate has been removed: it is topologically unavailable to a smooth Möbius band", f"{WF}/postulate-bridge.md"),
+    ("the transverse-not-restrictive result as the residue", f"{WF}/postulate-bridge.md"),
     ("should not be rescued by modifying the band", f"{WF}/sampler-first-test.md"),
     ("The postulate embeds a non-orientable carrier in it", "files/cosmos/files/cosmological-constant.md"),
     ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md"),
@@ -167,6 +169,14 @@ EXPECTED = {  # each record's PASS and ARM FIRED lines, exactly
 HEADER = [r"\*\*Type:\*\* ", r"\*\*State:\*\* ", r"\*\*Status \(\d{4}-\d{2}-\d{2}\):\*\* ", r"\*\*Summary:\*\* ",
           r"\*\*Inputs:\*\* ", r"\*\*Parent:\*\* ", r"\*\*Frozen:\*\* \d{4}-\d{2}-\d{2} "]
 FROZEN = re.compile(r"^\*Registered .*?^  - Unresolved:[^\n]*", re.M | re.S)
+SCOPE_NOTES = {  # page -> {section anchor: how many dated scope notes (or the ruling's pointer) linking this page it holds}
+    WF + "/postulate-bridge.md": {"top": 1, "what-was-tried-and-why-it-failed": 1, "route-1": 1, "a-sampler-reading": 1,
+                                  "dynamical-direction": 1, "variational-reading": 1},
+    WF + "/sampler-first-test.md": {"10-scope-and-non-claims": 1},
+    WF + "/variational-score-to-sample.md": {"3-phase-domain-and-möbius-sign": 1},
+    WF + "/plato-twist.md": {"iv-what-the-computed-route-changes": 1},
+    WF + "/scaling-law-uniqueness.md": {"proof-the-schur-separation": 2, "linear-readout-two-routes-and-a-no-go": 1},
+}
 INBOUND = {  # page -> the link into projective-carrier.md it must carry
     WF.rsplit("/", 1)[0] + "/README.md": "files/projective-carrier.md",
     WF + "/postulate-bridge.md": "projective-carrier.md",
@@ -203,7 +213,7 @@ def tracked(folder):
 
 def checks(t, ctx):
     r = {}
-    outs, files, manifest, inbound = ctx["outs"], ctx["files"], ctx["manifest"], ctx["inbound"]
+    outs, files, manifest = ctx["outs"], ctx["files"], ctx["manifest"]
     read = lambda rel: ctx["sources"][rel] if rel in ctx["sources"] else src(rel)
     bare = re.sub(r"```math\n.*?```", "", re.sub(r"\$`.*?`\$", "", t, flags=re.S), flags=re.S)
     bad = ["em-dash"] * ("\u2014" in t) + ["bare $"] * ("$" in bare) + re.findall(r"\[[^\]]*\$`[^\]]*\]\(", t) + re.findall(r"\b(?:F1|F2|F3|F4|redline)\b", t)
@@ -286,13 +296,26 @@ def checks(t, ctx):
     r["P12 SHA256SUMS lists exactly the folder's other files, each hash matching"] = (ok, sorted(set(listed) ^ set(files)))
     bad = []
     for rel, target in INBOUND.items():
-        links = re.findall(r"\]\(" + re.escape(target) + r"(?:#([^)\s]+))?\)", inbound[rel])
+        links = re.findall(r"\]\(" + re.escape(target) + r"(?:#([^)\s]+))?\)", read(rel))
         if not links or os.path.normpath(os.path.join(os.path.dirname(rel), target)) != SELF_REL:
             bad.append(rel)
         for a in links:
             if a and a not in sections(t):
                 bad.append((rel, a))
-    r["P13 the working index, the bridge and the Λ page link into this page, anchors resolving"] = (not bad, bad)
+    for rel, want in SCOPE_NOTES.items():
+        text = read(rel)
+        spans_ = sections(text)
+        for a, n in want.items():
+            sp = (0, text.index("\n## ")) if a == "top" else spans_.get(a)
+            body = text[sp[0]:sp[1]] if sp else ""
+            notes = [p for p in body.split("\n\n") if re.match(r"\*\*(Scope under the ruling|Where the carrier sits) \(", p.strip())
+                     and "](projective-carrier.md)" in p]
+            if len(notes) < n:
+                bad.append((rel.split("/")[-1], a, len(notes)))
+    row = next((l for l in read(WF + "/claim-ledger.md").split("\n") if l.startswith("| Boundary-mode uniformity")), "")
+    if "](projective-carrier.md)" not in row:
+        bad.append(("claim-ledger.md", "uniformity row"))
+    r["P13 the pages that point into this page carry their links and dated scope notes"] = (not bad, bad)
     return r
 
 
@@ -300,7 +323,6 @@ def context():
     return {"outs": {f"{n}.out": open(os.path.join(SCRIPTS, f"{n}.out"), encoding="utf-8").read() for n in EXPECTED},
             "files": {nm: open(os.path.join(SCRIPTS, nm), "rb").read() for nm in tracked(SCRIPTS)},
             "manifest": open(os.path.join(SCRIPTS, "SHA256SUMS"), encoding="utf-8").read(),
-            "inbound": {rel: src(rel) for rel in INBOUND},
             "sources": {}}
 
 
@@ -327,9 +349,6 @@ def main():
             elif k == "source":
                 rel, new = v
                 c["sources"][rel] = new
-            elif k == "inbound":
-                rel, new = v
-                c["inbound"][rel] = new
             else:
                 c[k] = v
         return c
@@ -354,7 +373,8 @@ def main():
         ("P11", t.replace("- **Tolerance.** The extrapolated bottom", "- **Tolerance.** The extrapolated  bottom", 1), ctx),
         ("P12", t, with_("P12", file=("lift_trace.py", ctx["files"]["lift_trace.py"] + b"\n"))),
         ("P12", t, with_("P12", manifest=ctx["manifest"] + "0" * 64 + "  stray.txt\n")),
-        ("P13", t, with_("P13", inbound=(lam, ctx["inbound"][lam].replace("projective-carrier.md#ii-lemma-1", "projective-carrier.md#ii-lemma-one", 1)))),
+        ("P13", t, with_("P13", source=(lam, src(lam).replace("projective-carrier.md#ii-lemma-1", "projective-carrier.md#ii-lemma-one", 1)))),
+        ("P13", t, with_("P13", source=(bridge, re.sub(r"\n\n\*\*Scope under the ruling \([^)]*\)\.\*\* Both walls stand\.[^\n]*", "", src(bridge), count=1)))),
     ]
     rc = 0
     for key, bt, bctx in arms:

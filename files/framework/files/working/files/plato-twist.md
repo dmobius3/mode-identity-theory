@@ -7,7 +7,7 @@
 
 **Type:** Note
 **State:** Open
-**Status (2026-09-10):** The value is accounted for geometrically: the spin lift of the Levi-Civita holonomy around the shortest closed geodesic of S³/2I has half-trace cos(π/10), where the flat 2I holonomy gives cos(π/5). Why the weak coupling carries the factor, at the first power, and alone, is underived and not being worked.
+**Status (2026-09-27):** The value is accounted for geometrically: the spin lift of the Levi-Civita holonomy around the shortest closed geodesic of S³/2I has half-trace cos(π/10), where the flat 2I holonomy gives cos(π/5). Why the weak coupling carries the factor, at the first power, and alone, is underived and not being worked. A scope note in §IV records the ruling of 2026-09-27.
 **Summary:** Where the weak coupling's cos(π/10) correction occurs in the geometry of S³/2I, which nearby constructions fail, and what a derivation of its insertion into the coupling would have to settle.
 **Inputs:** `../../../../spectrum/files/fine-structure.md` §V, `scripts/plato-twist.test.py`
 
@@ -55,6 +55,8 @@ The obstruction covers traces, not every construction from flat data. A matrix e
 ## IV. What the computed route changes
 
 Both ingredients of the first motivation are replaced. The $`\pi/5`$ is the twist of the shortest closed geodesic, which for these Clifford translations equals the geodesic's length, not the flat dodecahedron's vertex defect; the two angles coincide but are different objects. The halving is the spin double cover $`SU(2) \to SO(3)`$, the same integer-versus-half-integer split that sorts the 60 and 120 grids, not the Möbius orientation $`Z_2`$, which the framework keeps distinct from that split.
+
+**Scope under the ruling (2026-09-27).** The halving here is the spin double cover, as stated, and the computation above does not use the carrier. The two signs stay different objects; on the carrier ruled on 2026-09-27 one core loop carries both, since the core represents $`-I`$, and on spinorial fields restricted to the carrier the central sign is the Möbius orientation holonomy ([The Projective Carrier](projective-carrier.md), Lemma 1).
 
 The residual is unchanged at 0.3%. What changed is the accounting: the factor is no longer a number taken from the geometry for its value but a geometrically fixed invariant of the shortest geodesic class, and the open question has moved entirely to its insertion, which includes why that class.
 

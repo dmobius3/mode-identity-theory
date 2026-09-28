@@ -7,11 +7,13 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-27):** The staged route is resolved as a split (gauge dictionary proved, Möbius channel decoupled route-specifically). The sampler reading closed negative twice over; the variational reading is recorded open. The dynamical direction is the live front. Its Tier 2 has run a first computation: the specified band is unstable, and no smooth embedded band spanning the fixed great circle attains the infimum of area. The bar now asks for a stable critical point, not a global minimum. Where the carrier sits is ruled on the child page projective-carrier.md (2026-09-27): the vacuum carrier is unbent and realized through the projective layer, with its core the central $`-I`$. This page's sections written for bands in $`S^3`$ hold for that class; the scope notes the ruling calls for here are listed in that page's §X.
+**Status (2026-09-27):** The staged route is resolved as a split (gauge dictionary proved, Möbius channel decoupled route-specifically). The sampler reading closed negative twice over; the variational reading is recorded open. The dynamical direction is the live front. Its Tier 2 has run a first computation: the specified band is unstable, and no smooth embedded band spanning the fixed great circle attains the infimum of area. The bar now asks for a stable critical point, not a global minimum. Where the carrier sits is ruled on the child page projective-carrier.md (2026-09-27): the vacuum carrier is unbent and realized through the projective layer, with its core the central $`-I`$. This page's sections written for bands in $`S^3`$ hold for that class, and each now carries a dated scope note saying so.
 **Summary:** Asks whether a theorem connects the two bedrock results sitting on the two pieces of the postulate; owns the staged route and its sampler, variational, and dynamical readings.
 **Gated by:** `gate:variational-independence-bar`
 
 Resolved along the staged route, as a split. The two bedrock results sit on the two pieces of the postulate $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$, $`\partial S^3 = \emptyset`$. The gauge dictionary is proved: the $`E_8`$ filling carries the boundary's Galois asymmetry exactly, on $`\partial W = +\Sigma`$ ($`\Delta\rho = -8/5 = 4\,\Delta D`$, and $`k \equiv cs \bmod 1`$ in all four sectors). The Möbius coupling is refuted route-specifically: on the characteristic slot, every coefficient built on $`W`$ restricts rank-trivially, so the surface term cancels from the Galois difference in every restriction-route identity with the canonical pullback coefficient bundle. No universal independence claim is made. The naive bridge through the shared value $`2/R^2`$ remains dead (a forced curvature-scale coincidence, not a spectral link). Steps 1-4 complete ([Step 4, part two](step4-coupling.md)); the split verdict is paper-ized as the third bedrock pillar, [Galois pair](../../bedrock/files/galois-pair.md); this note is the record of the route. A dynamical direction, separating the holonomy tail, the selection reading, and a possible gravitational realization, is recorded open below and has not been run. Tier 2's totally geodesic candidate has been removed: it is topologically unavailable to a smooth Möbius band. The replacement equilibrium remains a variational problem to be defined and solved. A sampler reading of the split, naming the observation map $`f = \pi \circ i`$ that needs no descent and the sampling operator $`\mathcal O_M`$ as the open object, is recorded below (2026-08-19); its first test is closed negative, leaving the transverse-not-restrictive result as the residue. A variational reading is now recorded as program architecture over the existing Tier 2 and Tier 3 programs (2026-09-02). It consolidates the embedding, sampler, and clock-selection questions into one candidate global functional, with no ledger or engine change.
+
+**Scope under the ruling (2026-09-27).** The removal of Tier 2's totally geodesic candidate, the observation map $`f = \pi \circ i`$ and the transverse-not-restrictive residue concern bands in $`S^3`$. Under the ruling of 2026-09-27 the zero-bending carrier exists one level down, realized through the projective layer, and there each natural sampler twists one statistics class ([The Projective Carrier](projective-carrier.md), §§I-II).
 
 **Related:** [First eigenvalue](../../bedrock/files/first-eigenvalue.md), [Coexact gap](../../bedrock/files/coexact-gap.md), [Galois pair](../../bedrock/files/galois-pair.md), [bedrock README](../../bedrock/README.md).
 
@@ -35,6 +37,8 @@ The postulate nests three objects: the temporal edge $`S^1 = \partial(\text{Möb
 
 **The deeper obstruction.** The band lives upstairs on a great $`S^2 \subset S^3`$; the coexact gap lives downstairs on $`S^3/\Gamma`$. No great $`S^2`$ is $`2I`$-stable (left translation by any non-central element moves the defining $`3`$-plane in $`\mathbb{R}^4`$), so the surface does not descend to the quotient as a submanifold. "Restrict to a great $`S^2`$" and "take $`2I`$-invariants" are independent operations on the $`\mathrm{SU}(2)_L \times \mathrm{SU}(2)_R`$ content of $`S^3`$; they compose only if the surface is group-stable, and it is not.
 
+**Scope under the ruling (2026-09-27).** The obstruction stands for $`2I`$. The ruled carrier is realized through the projective layer: its preimage lies on a great $`S^2`$ and is stable under $`\{\pm I\}`$, so at that central stage restriction and the quotient compose, which is what Lemma 1 computes ([The Projective Carrier](projective-carrier.md), §X).
+
 ---
 
 ## Three routes
@@ -43,6 +47,8 @@ The postulate nests three objects: the temporal edge $`S^1 = \partial(\text{Möb
 ### Route 1, spectral restriction via $`\mathbb{Z}_2`$ holonomy: closed
 
 The idea was to link the band's orientation $`\mathbb{Z}_2`$ holonomy to a non-orientable or flat-bundle structure on the quotient. Two walls. First, $`S^3/2I`$ is orientable (an integral homology sphere), so there is no non-orientable structure downstairs to host the band's twist. Second, $`2I`$ is perfect ($`H^1(2I) = 0`$), so it has no $`\mathbb{Z}_2`$ quotient and no order-two character; the band's $`\mathbb{Z}_2`$ cannot be a $`2I`$-equivariant datum. The perfectness that makes $`2I`$ the unique gauge exception in the coexact paper is exactly what forbids the orientation bridge.
+
+**Scope under the ruling (2026-09-27).** Both walls stand. The closing clause concerns bands whose core maps trivially to $`2I`$, as every band in $`S^3`$ does. Under the ruling of 2026-09-27 the carrier's core represents $`-I`$, and in the spinorial sectors the band's $`\mathbb{Z}_2`$ is the central element's value ([The Projective Carrier](projective-carrier.md), §II); no character of $`2I`$ is constructed, since the relation runs through $`\{\pm I\} \subset 2I`$.
 
 <a id="route-2"></a>
 ### Route 2, heat kernel: set aside
@@ -152,6 +158,8 @@ The successor question is accordingly not what distinguishes the lifts but what 
 
 **Relation to the tiers.** This reading is an organizing interpretation over the existing programs, not a fourth tier. Tier 1 asks what such sampling detects in holonomy; Tier 2 asks whether the sampler configuration is dynamically selected ($`\delta\mathcal{S}/\delta i`$ choosing $`i`$ among admissible realizations); Tier 3 asks whether the ambient metric responds to the realized sampled state ($`\delta\mathcal{S}/\delta g`$). None of these is established by the reading, and the bar below is unchanged: the reading becomes structure only when a specified $`\mathcal O_M`$ clears it.
 
+**Scope under the ruling (2026-09-27).** This section's setting is a band in $`S^3`$, $`i : M \to S^3`$, whose core maps trivially to $`2I`$. Under the ruling of 2026-09-27 the carrier is realized through the projective layer: it has no global lift to $`S^3`$, its core represents $`-I`$, and $`f^*E_\tau`$ carries the Möbius holonomy in the spinorial sectors ([The Projective Carrier](projective-carrier.md), Lemma 1). So the canonical trivialization, and with it the box's "not restrictive", hold for bands in $`S^3`$; on the ruled carrier each natural sampler twists one statistics class (§II), the two $`\mathbb Z_2`$'s stay different objects while its core carries both, and the first test's verdict on the halving stands through its equivariance obstruction.
+
 ---
 
 <a id="dynamical-direction"></a>
@@ -179,7 +187,7 @@ The three routes above are index-theoretic and therefore topological on the inte
 - **In short:** criticality gives a solution, stability an equilibrium, and uniqueness modulo symmetry a selector. Global minimality is extra strength.
 - **Consequence.** Under this bar the fixed-boundary area branch fails outright, since every minimal Möbius band spanning a fixed great circle has Dirichlet index at least 2 ([The Tier 2 Fixed-Boundary Run](tier2-fixed-boundary.md)).
 
-**Where the carrier sits (ruled 2026-09-27).** [The Projective Carrier](projective-carrier.md) places the zero-bending configuration this section excludes in $`S^3`$ one level down: the carrier is realized through the projective layer $`\mathbb{RP}^3 = S^3/\{\pm I\}`$, where its core is the central $`-I`$. The framework adopts that placement by ruling: the vacuum carrier is unbent. What the ruling asks of this page's readings is listed in that page's §X.
+**Where the carrier sits (ruled 2026-09-27).** [The Projective Carrier](projective-carrier.md) places the zero-bending configuration this section excludes in $`S^3`$ one level down: the carrier is realized through the projective layer $`\mathbb{RP}^3 = S^3/\{\pm I\}`$, where its core is the central $`-I`$. The framework adopts that placement by ruling: the vacuum carrier is unbent. So the selection reading's admissible configuration becomes a carrier realized through the projective layer, and the bar's "postulate embedding" becomes that carrier's placement, whose physical layer, $`\mathbb{RP}^3`$ or $`S^3/2I`$, is not ruled; §IX of that page works with its embedded lift in $`\mathbb{RP}^3`$. The Tier 2 run's negative stays scoped to bands in $`S^3`$ spanning a fixed great circle, and what the ruling asks of this page's other readings is in their scope notes.
 
 ---
 
@@ -225,6 +233,8 @@ The Möbius phase convention is fixed as follows. One lap has phase length $`2\p
 The closed edge traverses two laps, has phase length $`4\pi`$, and returns $`\Psi`$ to itself. Quadratic quantities such as $`\lvert\Psi\rvert^2`$ have period $`2\pi`$, so a quadratic functional on the closed edge descends to the single lap and forgets the Möbius orientation sign.
 
 That loss of sign is the Möbius orientation $`\mathbb{Z}_2`$. The $`120 \to 60`$ halving belongs instead to the central $`-I`$ of $`2I`$, whose parity on integer- and half-integer-spin representations separates the two resolutions. Squaring erases both signs by the same algebraic operation but does not choose the grid, and the two $`\mathbb{Z}_2`$ structures remain distinct.
+
+**Scope under the ruling (2026-09-27).** The two stay different objects, but on the ruled carrier one core loop carries both: the core represents $`-I`$, and on spinorial fields restricted to the carrier the central sign is the Möbius orientation holonomy ([The Projective Carrier](projective-carrier.md), Lemma 1). Squaring still erases both signs and still does not choose the grid.
 
 The promotion gate is the observer clock. The global functional should treat $`N(t)`$ as a variable and ask whether its own lapse equation,
 
