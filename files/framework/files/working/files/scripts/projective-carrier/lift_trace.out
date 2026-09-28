@@ -1,0 +1,12 @@
+PASS L1 continuous and closes after one traversal
+PASS L2 passes N once and S once
+PASS L3 passes from L to −L and back, once at each pole
+PASS L4 the four stretches match §VII's table
+PASS L5 bounds the complementary lune; with −I, two great circles
+ARM FIRED L1 continuous and closes after one traversal [seam]
+ARM FIRED L4 the four stretches match §VII's table [seam]
+ARM FIRED L1 continuous and closes after one traversal [one-piece]
+ARM FIRED L2 passes N once and S once [one-piece]
+ARM FIRED L3 passes from L to −L and back, once at each pole [one-piece]
+ARM FIRED L4 the four stretches match §VII's table [shift]
+ARM FIRED L5 bounds the complementary lune; with −I, two great circles [shift]

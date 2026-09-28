@@ -117,6 +117,8 @@ A variational reading now sits over both, as program architecture rather than a 
 
 The dynamical direction's Tier 2 has run its first computation ([The Tier 2 Fixed-Boundary Run](files/tier2-fixed-boundary.md)). The specified band, Lawson's Möbius band, is unstable under the fixed-boundary area functional, with index 2 and nullity 1. The index was already stated in the literature, and the nullity follows from a published computation. Every minimal Möbius band spanning a great circle is unstable the same way, so in that regime no smooth embedded band attains the infimum of area.
 
+Where the carrier sits is ruled (2026-09-27) on [The Projective Carrier](files/projective-carrier.md): the vacuum carrier itself is unbent, so the carrier is realized through the projective layer, lifting to and embedding in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$ with its core the central $`-I`$, and in the spinorial sectors the central sign is its Möbius holonomy. Whether $`\mathbb{RP}^3`$ or $`S^3/2I`$ is its physical domain is left open. The conic band is the leading realization, not uniquely selected. Its stability is derived for the fixed-edge area problem, with an independent check registered: a fixed-edge theorem, not vacuum stability, which counts toward the Tier 2 bar only once the realization and the fixed edge are grounded. The alternatives the ruling set aside stay on that page as the decision's record, beside the scope notes the ruling calls for across the corpus.
+
 **Gated by:** `gate:variational-independence-bar`
 
 **Inputs:** [First eigenvalue](../bedrock/files/first-eigenvalue.md), [Coexact gap](../bedrock/files/coexact-gap.md).

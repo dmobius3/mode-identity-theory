@@ -1,0 +1,18 @@
+PASS I1 sum x² = R², sum |∇x|² = 2 on a generic surface in S³
+PASS I2 −Δ sin(y/R) = (2/R²) sin(y/R)
+PASS I3 the trivialization carries sin(y/R) to x_p/R
+PASS I4 rotation field: Killing, tangent to S³, equals x_p ν on x4 = 0
+PASS I5 great S² in Sⁿ, n = 3..8: tilt 2/R² = Jacobi term for every n; Ricci floor meets it only at n = 3
+PASS I6 3/R² on S³, and n/R² = n(n−1)/(2R²) only at n = 3
+PASS I7 the tube's edge curvature tan(W/R)/R balances its area (Gauss-Bonnet, χ = 0)
+PASS I8 φ₀u₀ is an untwisted 2/R² mode, odd about the cone, with u₀'s intensity
+PASS I9 second variation: exact area density, no first-order term, t² term (|∇φ|² − 2φ²/R²)/2
+ARM FIRED I1 sum x² = R², sum |∇x|² = 2 on a generic surface in S³
+ARM FIRED I2 −Δ sin(y/R) = (2/R²) sin(y/R)
+ARM FIRED I3 the trivialization carries sin(y/R) to x_p/R
+ARM FIRED I4 rotation field: Killing, tangent to S³, equals x_p ν on x4 = 0
+ARM FIRED I5 great S² in Sⁿ, n = 3..8: tilt 2/R² = Jacobi term for every n; Ricci floor meets it only at n = 3
+ARM FIRED I6 3/R² on S³, and n/R² = n(n−1)/(2R²) only at n = 3
+ARM FIRED I7 the tube's edge curvature tan(W/R)/R balances its area (Gauss-Bonnet, χ = 0)
+ARM FIRED I8 φ₀u₀ is an untwisted 2/R² mode, odd about the cone, with u₀'s intensity
+ARM FIRED I9 second variation: exact area density, no first-order term, t² term (|∇φ|² − 2φ²/R²)/2

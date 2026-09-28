@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-23):** The staged route is resolved as a split (gauge dictionary proved, Möbius channel decoupled route-specifically). The sampler reading closed negative twice over; the variational reading is recorded open. The dynamical direction is the live front. Its Tier 2 has run a first computation: the specified band is unstable, and no smooth embedded band spanning the fixed great circle attains the infimum of area. The bar now asks for a stable critical point, not a global minimum.
+**Status (2026-09-27):** The staged route is resolved as a split (gauge dictionary proved, Möbius channel decoupled route-specifically). The sampler reading closed negative twice over; the variational reading is recorded open. The dynamical direction is the live front. Its Tier 2 has run a first computation: the specified band is unstable, and no smooth embedded band spanning the fixed great circle attains the infimum of area. The bar now asks for a stable critical point, not a global minimum. Where the carrier sits is ruled on the child page projective-carrier.md (2026-09-27): the vacuum carrier is unbent and realized through the projective layer, with its core the central $`-I`$. This page's sections written for bands in $`S^3`$ hold for that class; the scope notes the ruling calls for here are listed in that page's §X.
 **Summary:** Asks whether a theorem connects the two bedrock results sitting on the two pieces of the postulate; owns the staged route and its sampler, variational, and dynamical readings.
 **Gated by:** `gate:variational-independence-bar`
 
@@ -178,6 +178,8 @@ The three routes above are index-theoretic and therefore topological on the inte
 - **Tier 3.** For a Lorentzian action, the analogue of stability is the absence of growing physical modes once constraints and gauge are removed, not a positive Hessian.
 - **In short:** criticality gives a solution, stability an equilibrium, and uniqueness modulo symmetry a selector. Global minimality is extra strength.
 - **Consequence.** Under this bar the fixed-boundary area branch fails outright, since every minimal Möbius band spanning a fixed great circle has Dirichlet index at least 2 ([The Tier 2 Fixed-Boundary Run](tier2-fixed-boundary.md)).
+
+**Where the carrier sits (ruled 2026-09-27).** [The Projective Carrier](projective-carrier.md) places the zero-bending configuration this section excludes in $`S^3`$ one level down: the carrier is realized through the projective layer $`\mathbb{RP}^3 = S^3/\{\pm I\}`$, where its core is the central $`-I`$. The framework adopts that placement by ruling: the vacuum carrier is unbent. What the ruling asks of this page's readings is listed in that page's §X.
 
 ---
 

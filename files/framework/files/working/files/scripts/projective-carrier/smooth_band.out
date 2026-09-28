@@ -1,0 +1,15 @@
+W/R    even u, k=1    odd u, k=0    first twisted level    edge length 2*pi*cos(W)
+0.25         1.0212       39.9846         1.0212            6.0879
+0.50         1.0891       10.3955         1.0891            5.5140
+1.00         1.4331        3.0916         1.4331            3.3948
+1.40         1.9155        2.0861         1.9155            1.0679
+1.50         1.9850        2.0149         1.9850            0.4445
+1.55         1.9987        2.0013         1.9987            0.1307
+PASS S1 RP² eigenfunctions at λ = 2 exactly
+PASS S2 first twisted level below 2 at each sampled width
+PASS S3 increasing across the sampled widths, within 2e-3 of 2 at W = 1.55
+PASS S4 at each sampled width the k = ±1 branch lies below the k = 0 branch
+ARM FIRED S2 first twisted level below 2 at each sampled width
+ARM FIRED S3 increasing across the sampled widths, within 2e-3 of 2 at W = 1.55
+ARM FIRED S4 at each sampled width the k = ±1 branch lies below the k = 0 branch
+ARM FIRED S1 RP² eigenfunctions at λ = 2 exactly

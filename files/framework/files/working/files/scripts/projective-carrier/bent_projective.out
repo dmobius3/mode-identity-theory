@@ -1,0 +1,20 @@
+PASS C1 f lies on S³
+PASS C2 isometric: the pullback metric is the lune's round metric
+PASS C3 the pinch: every meridian runs from x to −x
+PASS C4 embeds M(W) in RP³: bi-Lipschitz from M(W)'s own metric
+PASS C5 det A = 0 on the smooth locus
+PASS C6 bent: H = κ/sin θ with κ = cot ρ, so never minimal
+PASS C7 one-sided: every meridian loop returns the normal reversed through −I
+PASS C8 the pinch is not planar: its two sectors span T_x S³
+PASS C9 the edge's lift: embedded, closed, through x and −x once each
+RP³ bi-Lipschitz constant by width: W = 0.3: 0.861, W = 0.7: 0.699, W = 1.2: 0.550, W = 1.5: 0.402, W = 2.0: 0.191, W = 3.0: 0.135
+pinch's third singular value by width: W = 0.3: 0.070, W = 0.7: 0.383, W = 1.2: 1.084, W = 1.5: 1.571, W = 2.0: 2.107, W = 3.0: 0.838
+ARM FIRED C1 f lies on S³ [off-sphere]
+ARM FIRED C2 isometric: the pullback metric is the lune's round metric [speed]
+ARM FIRED C3 the pinch: every meridian runs from x to −x [moving-apex]
+ARM FIRED C4 embeds M(W) in RP³: bi-Lipschitz from M(W)'s own metric [twice]
+ARM FIRED C5 det A = 0 on the smooth locus [twist]
+ARM FIRED C6 bent: H = κ/sin θ with κ = cot ρ, so never minimal [great-arc]
+ARM FIRED C8 the pinch is not planar: its two sectors span T_x S³ [great-arc]
+ARM FIRED C7 one-sided: every meridian loop returns the normal reversed through −I [no-deck]
+ARM FIRED C9 the edge's lift: embedded, closed, through x and −x once each [one-piece]
