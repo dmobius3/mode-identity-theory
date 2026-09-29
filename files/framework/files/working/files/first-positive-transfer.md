@@ -82,6 +82,8 @@ The reading was fixed before the numbers. Neither registered sampler supplies th
 
 The run decides none of the carrier's open sub-decisions ([The Projective Carrier](projective-carrier.md) §XI): whether $`M(W)`$ is the carrier (1b), the sampler (1d), the extension and the untwisted rule (1e), or the layer (1f). It adds a consequence to one option of 1e: with the premise, uniformity fails for any contributing block read through the untwisted class under the same cone-trace matching (§III). And while the pose is open (1f), the first-positive weights of the blocks that are not full depend on it.
 
+*Added 2026-09-29: 1e and 1d have since been ruled: Friedrichs in both sectors, and the transverse sampler, normalized at unit radius, for every block ([The Projective Carrier](projective-carrier.md) §XI). The run selected neither. The value column stays the registered alternative, and the verdict holds for both samplers.*
+
 ## VI. Guards
 
 - Which blocks land in which class is fixed by $`\tau(-I)`$ and the sampler, known before the run, and gets no physical reading. In particular it is not read as the $`60R`$ projection.
