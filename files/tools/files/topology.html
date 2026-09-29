@@ -57,7 +57,7 @@
 <div class="controls">
   <button class="ctrl-btn active" data-layer="space"><div class="indicator ind-space"></div><span>S<sup>3</sup> Space</span></button>
   <button class="ctrl-btn active" data-layer="surface"><div class="indicator ind-surface"></div><span>Möbius Surface</span></button>
-  <button class="ctrl-btn" data-layer="fold"><div class="indicator ind-fold"></div><span>Antipodal −I</span></button>
+  <button class="ctrl-btn active" data-layer="fold"><div class="indicator ind-fold"></div><span>Antipodal −I</span></button>
   <button class="ctrl-btn active" data-layer="edge"><div class="indicator ind-edge"></div><span>S<sup>1</sup> Edge</span></button>
   <button class="ctrl-btn" data-layer="lift"><div class="indicator ind-lift"></div><span>Edge Lift</span></button>
   <button class="ctrl-btn active" data-layer="cone"><div class="indicator ind-cone"></div><span>Cone Point</span></button>
@@ -362,7 +362,7 @@ document.addEventListener('touchend', function() { drag=false; });
 // ═══════════════════════════════════════════
 //  LAYERS AND ANNOTATIONS
 // ═══════════════════════════════════════════
-var layers = { space:true, surface:true, fold:false, edge:true, lift:false, cone:true, wave:true, sample:true };
+var layers = { space:true, surface:true, fold:true, edge:true, lift:false, cone:true, wave:true, sample:true };
 var ann = {
   space: { label:"Space", name:"S³ and Its Quotients", body:"Closed, simply connected, no boundary: by the Poincaré theorem, the only such three-space. It covers every layer: S³ → ℝP³ = S³/{±I} → S³/2I, the spin cover SU(2), the rotation group SO(3), and the observable domain, the middle layer's quotient by the icosahedral group I. The grid shows that symmetry: 2I's 120 elements double-cover the icosahedron's 60 rotations. The carrier embeds in the middle layer; which layer is its physical domain is open. Drawn one dimension down.", math:"∂S³ = ∅" },
   surface: { label:"Surface", name:"Geodesic Lune, Möbius Quotient", body:"In the conic model, the leading realization, the carrier is a lune on the great S², unbent, whose opposite tips N and −N the antipodal map −I identifies. Joined at its tips, it is the Möbius band: one side, one edge, embedded in ℝP³ = S³/{±I}. The seam lands on its equator arc. The lune has constant curvature K = 1/R², widest at the equator and pinching to the tips. The twist is topological: the orientation reverses only through the joined tips, and the rest of the lune is orientable.", math:"ds² = dy² + cos²(y/R) dw²" },
