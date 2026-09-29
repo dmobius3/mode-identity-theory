@@ -109,7 +109,7 @@ The eight cycles, each named by kind:
 2. **α ↔ Λ ↔ R**: **genuine circularity** (see above). α is input and output.
 3. **R ↔ Λ**: definition (R = √(3/Λ), Λ = 3/R²). Exact, self-flagged "circular: a consistency radius, not an input."
 4. **Ω_Λ ↔ R ↔ ℓ_P**: definition. The 10⁶¹ / 10⁻¹²² / 10⁻¹⁸³ suppressions are one fact re-expressed.
-5. **a₀ ↔ H₀ ↔ a₀/(cH₀)**: presentation double-count: one derived ratio (0.184) listed across multiple pages and re-used as a₀/a_P.
+5. **a₀ ↔ H₀ ↔ a₀/(cH₀)**: presentation double-count: one ratio (0.184) listed across multiple pages and re-used as a₀/a_P.
 6. **n = −½ ↔ Ω_m**: benign once stated correctly. The exponent is fixed by S³ dimensionality plus GR and validated only against its own discrete family (integer alternatives at Δχ² > 60); Ω_m = 0.315 is inherited from the held vacuum anchor by flat closure (temporal-budget §IV), so any "recovers Ω_m" wording is the anchor echoed back, not a validation of the exponent.
 7. **R(coupling) ↔ R(mass)**: **the most important tension**, 3.2× disagreement in R on the canonical electron-muon pair (~10.5× in Λ_ref), 1.7× on the best assigned pair (muon-top, ~2.9× in Λ_ref); see above.
 8. **8.4% H₀**: output = input by construction; mechanism withdrawn on SPARC.
