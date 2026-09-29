@@ -25,7 +25,7 @@ Tracking file for the epoch-dependent $`a_0`$ prediction between deposit and the
 
 $`a_0(z) = a_0(0)\,E(z)`$, with $`E(z) = H(z)/H_0`$. The canonical paper adopts the flat ΛCDM Friedmann form ($`\Omega_m = 0.315`$, $`\Omega_\Lambda = 0.685`$, $`H_0 = 67.4`$) as a transparency choice, for direct comparison with published data.
 
-The ratio $`a_0/(cH) = C(13/120)/C(34/120) = 0.1845`$ is derived from the phase-operator values at the Fibonacci wells 13 and 34 on the 120-domain; $`a_0`$ and $`H`$ are both edge modes ($`n = 1`$), so the ratio holds at every epoch. At $`z = 0`$, $`a_0(0) = 1.20`$ × 10⁻¹⁰ m/s² (SPARC), giving observed $`a_0/(cH_0) = 1.20/6.548 = 0.1833`$, a 0.7% match to the derived ratio.
+The ratio $`a_0/(cH) = C(13/120)/C(34/120) = 0.1845`$ follows from the phase-operator values at the Fibonacci wells 13 and 34 on the 120-domain, given one shared edge normalization; $`a_0`$ and $`H`$ are both edge modes ($`n = 1`$), so the ratio holds at every epoch. At $`z = 0`$, $`a_0(0) = 1.20`$ × 10⁻¹⁰ m/s² (SPARC), giving observed $`a_0/(cH_0) = 1.20/6.548 = 0.1833`$, a 0.7% match to that ratio.
 
 The December deposit recorded the specific *form* ($`a_0 \propto H(z)`$) and named larger recovered $`a_0`$ values as the expected signature; the direction itself had already appeared weakly in the low-$`z`$ literature (§3), so what the timestamp establishes is the functional form, not the direction. The combinatorial fixing of the coefficient to 0.1845 above is the later canonical mechanism, not part of the timestamped prediction. Falsification (canonical paper, Table 5.1) sets two thresholds. A matched-systematics discrepancy at ≥2σ is a reportable tension. Formal falsification requires ≥3σ in one channel, or mutually consistent ≥2σ failures across independent bins or observables.
 
@@ -49,7 +49,7 @@ The *rate* of the climb depends on the decomposition. Under the dark-matter fit 
 
 The steeper dark-matter frame fits marginally better, for more than 60% of the galaxies, but that is the decades-old result that a flexible halo fits an individual rotation curve at least as well as MOND's stiffer form (Rodrigues 2018 against McGaugh 2018), and the positive slope appears in both frames. So "the better-fitting frame says steeper" is real but weak.
 
-The normalization stays open. The MUSE-to-SPARC scale is uncertain at tens of percent on both sides, and the larger lever is the omitted molecular gas the model carries as a flat profile: that term is z-dependent, climbing to a tens-of-percent baryon fraction by $`z \sim 1`$, and it is that z-dependence, not a uniform offset, that sits between the 1.20 and 1.59 slopes. On the framework side $`a_0(0) = 1.2`$ is fixed by SPARC (1.20 ± 0.26); the derived ratio 0.1845 reproduces it at $`H_0 = 67.4`$, a within-scheme echo at the weak weight the framework assigns that ratio elsewhere, not a second independent clamp.
+The normalization stays open. The MUSE-to-SPARC scale is uncertain at tens of percent on both sides, and the larger lever is the omitted molecular gas the model carries as a flat profile: that term is z-dependent, climbing to a tens-of-percent baryon fraction by $`z \sim 1`$, and it is that z-dependence, not a uniform offset, that sits between the 1.20 and 1.59 slopes. On the framework side $`a_0(0) = 1.2`$ is fixed by SPARC (1.20 ± 0.26); the ratio 0.1845 reproduces it at $`H_0 = 67.4`$, a within-scheme echo at the weak weight the framework assigns that ratio elsewhere, not a second independent clamp.
 
 ## 5. The constraints bracket from both sides
 

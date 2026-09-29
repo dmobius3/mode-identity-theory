@@ -23,7 +23,7 @@
 
 The framework is a calibration scheme, not an oracle that produces every absolute scale without input. One measured reference observable anchors each sector's normalization. What the framework supplies are the sector exponents, grid assignments, well locations, and dimensionless ratios. In other words, the measured anchor fixes the ruler; the topology fixes where the marks on the ruler fall.
 
-This is the same logic used throughout effective physical theory. The Standard Model does not derive the numerical values of the gauge couplings from first principles; it measures them at reference scales and predicts how they run and relate across processes. In the same way, $`H_0`$ is not a failed prediction when it is used as the edge-sector anchor. It plays the role of a measured reference input. The prediction is not the existence of a number called $`H_0`$; the prediction is that the same calibrated edge hierarchy also fixes $`a_0`$ through a parameter-free ratio.
+This is the same logic used throughout effective physical theory. The Standard Model does not derive the numerical values of the gauge couplings from first principles; it measures them at reference scales and predicts how they run and relate across processes. In the same way, $`H_0`$ is not a failed prediction when it is used as the edge-sector anchor. It plays the role of a measured reference input. The prediction is not the existence of a number called $`H_0`$; the prediction is that the same calibrated edge hierarchy also fixes $`a_0`$, through the ratio of the two wells.
 
 | Sector | Locus | Hierarchy | Anchor | Status |
 |---|---|---|---|---|
@@ -33,7 +33,7 @@ This is the same logic used throughout effective physical theory. The Standard M
 | Mass | 120-wells, McKay distance, torsion | $`\mu_\Lambda`$ and $`(\sqrt{\Omega_\Lambda})^{\mathrm{dist}/30}`$ | $`\Omega_\Lambda`$ from surface; one mass-sector normalization if needed | Live |
 | Couplings | Grid wells and fractional hierarchy steps | $`\Omega_\Lambda^{-1/60}`$, $`\Omega_\Lambda^{-1/120}`$ | $`\Omega_\Lambda`$ from surface | Live |
 
-The prediction/calibration split is sector-by-sector. In the edge sector, the measured value of $`H_0`$ calibrates the edge hierarchy. The acceleration scale then follows from the ratio of wells:
+The prediction/calibration split is sector-by-sector. In the edge sector, the measured value of $`H_0`$ calibrates the edge hierarchy. If the two rows carry one weight, which the [scaling law's audit](scaling-law-uniqueness.md#audit-uniformity-by-observable) records as assumed, the acceleration scale then follows from the ratio of wells:
 
 ```math
 \frac{a_0}{cH_0}=\frac{C(13/120)}{C(34/120)}.

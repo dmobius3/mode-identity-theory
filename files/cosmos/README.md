@@ -47,7 +47,7 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 
 ## [Early Galaxies](files/early-galaxies.md)
 
-**A Stronger Tide.** In 1983 Milgrom identified $`a_0`$, the acceleration where galaxy dynamics start to depart from Newton, as a fundamental scale, and its closeness to $`cH_0`$, the speed of light times the Hubble rate, has never had a settled explanation. In MIT both are edge modes on the same standing wave, so their ratio is set by where each sits, and it comes out at 0.184, in line with the measured ratio. That ratio holds at every epoch, so $`a_0`$ was larger in the past, rising with the Hubble rate, and the galaxies JWST found too early formed under that stronger tide. MUSE-DARK III has since measured $`a_0`$ rising at intermediate redshift, the predicted direction, though other evolving-scale models and ΛCDM simulations rise too.
+**A Stronger Tide.** In 1983 Milgrom identified $`a_0`$, the acceleration where galaxy dynamics start to depart from Newton, as a fundamental scale, and its closeness to $`cH_0`$, the speed of light times the Hubble rate, has never had a settled explanation. In MIT both are edge modes on the same standing wave, sharing one normalization, so their ratio is set by where each sits, and it comes out at 0.184, in line with the measured ratio. That ratio holds at every epoch, so $`a_0`$ was larger in the past, rising with the Hubble rate, and the galaxies JWST found too early formed under that stronger tide. MUSE-DARK III has since measured $`a_0`$ rising at intermediate redshift, the predicted direction, though other evolving-scale models and ΛCDM simulations rise too.
 
 >[![Early Galaxies](https://img.youtube.com/vi/BuxnEmMGMFE/mqdefault.jpg)](https://www.youtube.com/watch?v=BuxnEmMGMFE)
 >

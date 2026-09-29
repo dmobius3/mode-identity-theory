@@ -688,7 +688,7 @@ None is predicted by MIT. $`c`$ and $`\hbar`$ are exact in the SI definition; $`
 
 ### The dimensionless core
 
-In a ratio of two observables carrying the same hierarchy exponent, the hierarchy factor cancels: no anchor enters, and once the well and grid assignments are granted the number is parameter-free. These hold under every choice of anchor below; comparisons with different hierarchy exponents, $`\alpha_s/\alpha`$ among them, retain a power of $`\Omega_\Lambda`$ and are the levers that read the hierarchy.
+In a ratio of two observables carrying the same hierarchy exponent, the hierarchy factor cancels: no anchor enters, and once the well and grid assignments are granted, and the two observables carry one weight, the positions fix the number. These hold under every choice of anchor below; comparisons with different hierarchy exponents, $`\alpha_s/\alpha`$ among them, retain a power of $`\Omega_\Lambda`$ and are the levers that read the hierarchy.
 
 | Quantity | Value | Status |
 |---|---|---|

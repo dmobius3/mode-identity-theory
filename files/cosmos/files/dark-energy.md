@@ -269,7 +269,7 @@ All predictions are registered on Zenodo in advance of the data. Both criteria b
 
 ### Connection to $`a_0(z)`$
 
-The same $`H(z)`$ derived here determines the epoch-dependent acceleration scale. Because $`a_0`$ and $`H`$ are both edge modes on the 120-domain (the discrete phase grid native to $`S^3/2I`$, the quotient of the three-sphere by the binary icosahedral group $`2I`$ with $`|2I| = 120`$), their ratio is fixed by Fibonacci wells: $`a_0/cH = 0.184`$. This ratio holds at every epoch, giving $`a_0(z) = a_0(0) \times H(z)/H_0`$. The two cornerstone papers embody the static universe from opposite sides: $`\Lambda`$ stays constant while $`a_0`$ evolves, both measured from the same standing wave.
+The same $`H(z)`$ derived here determines the epoch-dependent acceleration scale. Because $`a_0`$ and $`H`$ are both edge modes on the 120-domain (the discrete phase grid native to $`S^3/2I`$, the quotient of the three-sphere by the binary icosahedral group $`2I`$ with $`|2I| = 120`$), their ratio, given one shared edge normalization, is fixed by Fibonacci wells: $`a_0/cH = 0.184`$. This ratio holds at every epoch, giving $`a_0(z) = a_0(0) \times H(z)/H_0`$. The two cornerstone papers embody the static universe from opposite sides: $`\Lambda`$ stays constant while $`a_0`$ evolves, both measured from the same standing wave.
 
 ---
 
