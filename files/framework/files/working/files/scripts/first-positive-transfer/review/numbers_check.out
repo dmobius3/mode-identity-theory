@@ -1,0 +1,51 @@
+PASS N1 closed-form norms, all rows: 304 rows, worst relative deviation 2.77e-04
+   arm N1 (n(n+1) for n(n+2)): worst 5.00e-01 -> trips
+PASS N2 arm labels: 304 rows, 0 mislabeled
+   arm N2 (one label flipped): 1 mislabeled -> trips
+   ('1', 12, 'generic', 0.25)   val   HS             run 6.587703e-01  review 6.585877e-01  |diff|/norm 2.8e-04
+   ('1', 12, 'generic', 0.25)   val   P1 Friedrichs  run 1.228813e-02  review 1.228813e-02  |diff|/norm 1.1e-14
+   ('1', 12, 'generic', 0.25)   val   P0 Friedrichs  run 2.239028e-02  review 2.238895e-02  |diff|/norm 2.0e-06
+   ('1', 12, 'generic', 0.25)   val   P1 same-trace  run 1.840262e-02  review 1.871581e-02  |diff|/norm 4.8e-04
+   ('1', 12, 'generic', 0.25)   trans HS             run 3.689114e+01  review 3.688091e+01  |diff|/norm 2.8e-04
+   ('1', 12, 'generic', 0.25)   trans P1 Friedrichs  run 1.928236e+00  review 1.939085e+00  |diff|/norm 2.9e-04
+   ('1', 12, 'generic', 0.25)   trans P0 Friedrichs  run 2.316684e+00  review 2.316684e+00  |diff|/norm 3.6e-14
+   ('4', 6, '3fold', 1.0)       val   HS             run 5.675560e+00  review 5.673986e+00  |diff|/norm 2.8e-04
+   ('4', 6, '3fold', 1.0)       val   P1 Friedrichs  run 2.169875e-01  review 2.169875e-01  |diff|/norm 4.6e-15
+   ('4', 6, '3fold', 1.0)       val   P0 Friedrichs  run 1.520498e-01  review 1.523035e-01  |diff|/norm 4.5e-05
+   ('4', 6, '3fold', 1.0)       val   P1 same-trace  run 1.748925e-01  review 1.748930e-01  |diff|/norm 8.7e-08
+   ('4', 6, '3fold', 1.0)       trans HS             run 9.080896e+01  review 9.078378e+01  |diff|/norm 2.8e-04
+   ('4', 6, '3fold', 1.0)       trans P1 Friedrichs  run 7.259273e+00  review 7.230908e+00  |diff|/norm 3.1e-04
+   ('4', 6, '3fold', 1.0)       trans P0 Friedrichs  run 7.652200e+00  review 7.652200e+00  |diff|/norm 9.5e-15
+   ('2p', 13, '5fold', 1.4)     val   HS             run 7.945784e+00  review 7.943581e+00  |diff|/norm 2.8e-04
+   ('2p', 13, '5fold', 1.4)     val   P1 Friedrichs  run 4.745845e-02  review 4.776906e-02  |diff|/norm 3.9e-05
+   ('2p', 13, '5fold', 1.4)     val   P0 Friedrichs  run 4.988831e-02  review 4.942959e-02  |diff|/norm 5.8e-05
+   ('2p', 13, '5fold', 1.4)     trans HS             run 5.164760e+02  review 5.163328e+02  |diff|/norm 2.8e-04
+   ('2p', 13, '5fold', 1.4)     trans P1 Friedrichs  run 8.047556e+00  review 8.046166e+00  |diff|/norm 2.7e-06
+   ('2p', 13, '5fold', 1.4)     trans P0 Friedrichs  run 9.244412e+00  review 9.283474e+00  |diff|/norm 7.6e-05
+   ('2p', 13, '5fold', 1.4)     trans P1 same-trace  run 9.101503e+00  review 9.065783e+00  |diff|/norm 6.9e-05
+   ('1', 20, '2fold', 0.5)      val   HS             run 2.128335e+00  review 2.127745e+00  |diff|/norm 2.8e-04
+   ('1', 20, '2fold', 0.5)      val   P1 Friedrichs  run 1.322762e-02  review 1.322762e-02  |diff|/norm 8.8e-12
+   ('1', 20, '2fold', 0.5)      val   P0 Friedrichs  run 1.708516e-02  review 1.690696e-02  |diff|/norm 8.4e-05
+   ('1', 20, '2fold', 0.5)      val   P1 same-trace  run 2.313966e-03  review 2.476310e-03  |diff|/norm 7.6e-05
+   ('1', 20, '2fold', 0.5)      trans HS             run 3.121558e+02  review 3.120692e+02  |diff|/norm 2.8e-04
+   ('1', 20, '2fold', 0.5)      trans P1 Friedrichs  run 6.917036e+00  review 6.849324e+00  |diff|/norm 2.2e-04
+   ('1', 20, '2fold', 0.5)      trans P0 Friedrichs  run 5.032064e+00  review 5.032064e+00  |diff|/norm 3.6e-11
+   ('6', 7, 'generic', 1.0)     val   HS             run 9.729531e+00  review 9.726834e+00  |diff|/norm 2.8e-04
+   ('6', 7, 'generic', 1.0)     val   P1 Friedrichs  run 2.295953e-01  review 2.289853e-01  |diff|/norm 6.3e-05
+   ('6', 7, 'generic', 1.0)     val   P0 Friedrichs  run 2.387582e-01  review 2.387582e-01  |diff|/norm 2.4e-13
+   ('6', 7, 'generic', 1.0)     trans HS             run 2.043202e+02  review 2.042635e+02  |diff|/norm 2.8e-04
+   ('6', 7, 'generic', 1.0)     trans P1 Friedrichs  run 1.272302e+01  review 1.272302e+01  |diff|/norm 3.7e-15
+   ('6', 7, 'generic', 1.0)     trans P0 Friedrichs  run 1.346235e+01  review 1.345038e+01  |diff|/norm 5.9e-05
+   ('6', 7, 'generic', 1.0)     trans P1 same-trace  run 1.241032e+01  review 1.241032e+01  |diff|/norm 1.8e-08
+   ('3p', 10, '5fold', 0.5)     val   HS             run 3.344526e+00  review 3.343599e+00  |diff|/norm 2.8e-04
+   ('3p', 10, '5fold', 0.5)     val   P1 Friedrichs  run 1.118788e-01  review 1.118788e-01  |diff|/norm 8.4e-15
+   ('3p', 10, '5fold', 0.5)     val   P0 Friedrichs  run 6.960435e-02  review 6.973467e-02  |diff|/norm 3.9e-05
+   ('3p', 10, '5fold', 0.5)     val   P1 same-trace  run 1.257326e-01  review 1.250397e-01  |diff|/norm 2.1e-04
+   ('3p', 10, '5fold', 0.5)     trans HS             run 1.337811e+02  review 1.337440e+02  |diff|/norm 2.8e-04
+   ('3p', 10, '5fold', 0.5)     trans P1 Friedrichs  run 9.516461e+00  review 9.462072e+00  |diff|/norm 4.1e-04
+   ('3p', 10, '5fold', 0.5)     trans P0 Friedrichs  run 8.851259e+00  review 8.851259e+00  |diff|/norm 1.4e-14
+PASS N3 six rows reproduced: 6 rows, worst |diff|/norm 4.8e-04
+   arm N3 (unflipped band map, second row): worst 3.7e-03 -> trips
+PASS N4 leakage margin: 864 graded values, smallest Lambda/norm 0.665
+   arm N4 (one planted zero): smallest 0.000 -> trips
+ALL PASS, every arm trips

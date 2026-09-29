@@ -1,0 +1,6 @@
+elements: 120
+closed (sampled 40x40): True | all unit: True
+distinct rotations: 60
+2-fold pole i: True | 3-fold pole (i+j+k)/sqrt3: True | 5-fold pole (phi^-1 i + j)/n: True
+azimuths orthogonal: [0, 0, 0, 0] | unit: [1, 1, 1, 1, 1, 1, 1, 1]
+generic pole: least angle to any symmetry axis = 15.62 degrees (over 59 axis directions)

@@ -1,0 +1,17 @@
+PASS S1 Friedrichs towers: seam N [0.0, 6.0], seam D [2.0, 12.0]
+   arm S1 (seams swapped): [2.0, 12.0] -> trips
+PASS S2 pillar threshold: delta0 = 2/e roots [-2.7707224, 2.0]
+   arm S2 (log coefficient read as for ln d^2): [-0.06320167, 5.69769575] -> trips
+PASS S3 run's positive root: delta0 = 1 roots [-1.34520728, 7.82314714]
+   arm S3 (seam N): first positive 2.50864033 -> trips
+FINDING 1: at delta0 = R the same-trace odd sector has the negative root -1.34520728/R^2 (lambda < -1/4, where nu = -1/2 + i kappa).
+FINDING 2: lambda = 2 is not a same-trace eigenvalue for any delta0: the seam-D solution there is a multiple of cos d, regular (uN = 6.3e-13), so uDt = uD = -1.000000000, nonzero for every delta0.
+delta0 scan, same-trace odd sector roots in [-8, 14]:
+   delta0 = 0.25  [4.753313]
+   delta0 = 0.5   [-5.353492, 6.275959]
+   delta0 = 1.0   [-1.345207, 7.823147]
+   delta0 = 1.5   [-0.416047, 8.503613]
+   delta0 = 3.0   [0.400577, 9.319767]
+   delta0 = 4.0   [0.603149, 9.566068]
+   delta0 = 8.0   [0.934013, 10.015914]
+ALL PASS, every arm trips

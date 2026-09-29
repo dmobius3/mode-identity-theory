@@ -1,0 +1,12 @@
+PASS T1 nine orthonormal characters; tau(-I) = -1 exactly for 2, 2', 4', 6
+PASS T2 first two occurring levels n >= 1 of each irreducible, as frozen
+PASS T3 value sampler twists exactly the spinorial blocks; transverse exactly the integer-spin ones
+PASS T4 core-preserving non-central elements: 2 at the 2-fold placement, 0 elsewhere; pole axes carry 0, 2, 4, 8
+PASS T5 the band map with d flipped beyond the pinch is continuous and -I pairs (0, w) with (piR, -w)
+levels {'1': [12, 20], '2': [1, 11], "2'": [7, 13], '3': [2, 10], "3'": [6, 10], '4': [6, 8], "4'": [3, 9], '5': [4, 8], '6': [5, 7]}
+placements (core-preserving, pole-axis) {'generic': (0, 0), '2-fold': (2, 2), '3-fold': (0, 4), '5-fold': (0, 8)}
+ARM FIRED T1 nine orthonormal characters; tau(-I) = -1 exactly for 2, 2', 4', 6
+ARM FIRED T2 first two occurring levels n >= 1 of each irreducible, as frozen
+ARM FIRED T3 value sampler twists exactly the spinorial blocks; transverse exactly the integer-spin ones
+ARM FIRED T4 core-preserving non-central elements: 2 at the 2-fold placement, 0 elsewhere; pole axes carry 0, 2, 4, 8
+ARM FIRED T5 the band map with d flipped beyond the pinch is continuous and -I pairs (0, w) with (piR, -w)
