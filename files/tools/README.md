@@ -11,7 +11,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 
 >**[The Calculator](https://dmobius3.github.io/mode-identity-theory/files/tools/files/calculator.html)**: run the framework end to end. Four factors, four sources, one operation: the couplings, the 24-entry mass spectrum, and the cosmological readings, computed by the topology on top of one measured hierarchy anchor, and you choose which one.
 
->**[The Topology](https://dmobius3.github.io/mode-identity-theory/files/tools/files/topology.html)**: turn the $`S^3/2I`$ domain in your hand, the Möbius edge and the icosahedral structure and the McKay graph the spectrum is read from.
+>**[The Topology](https://dmobius3.github.io/mode-identity-theory/files/tools/files/topology.html)**: turn the carrier in your hand: the band on a great sphere of $`S^3`$ and its image under the antipodal map $`-I`$, which together place it in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$; the edge and its lift to $`S^3`$; the cone point; and the first positive mode, read at the wells.
 
 >**[Euclid DR1 Countdown](https://dmobius3.github.io/mode-identity-theory/files/tools/files/euclid-dr1.html)**: the blind test. Every prediction and falsification threshold pre-registered on Zenodo before the data: DR1-Foundation in November 2026, then the cosmology products with the full DR1 in mid 2027.
 

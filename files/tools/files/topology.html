@@ -35,9 +35,11 @@
     .ind-cone { background: #ffffff; color: #ffffff; }
     .ind-sample { background: #ff80c0; color: #ff80c0; }
     .ind-rotate { background: #b0b8c4; color: #b0b8c4; }
+    .ind-fold { background: #a78bfa; color: #a78bfa; }
+    .ind-lift { background: #ffa94d; color: #ffa94d; }
     .well-select { margin-left: 18px; margin-top: 2px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 4px; padding: 6px 8px; color: var(--text); font-family: var(--mono); font-size: 13px; outline: none; display: none; }
     .well-select.visible { display: block; }
-    .annotation { position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 20; max-width: 240px; padding: 20px 22px; background: rgba(5,8,16,0.85); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; backdrop-filter: blur(12px); transition: opacity 0.4s; }
+    .annotation { position: fixed; right: 24px; top: 50%; transform: translateY(-50%); z-index: 20; max-width: 240px; padding: 20px 22px; background: rgba(5,8,16,0.85); border: 1px solid rgba(255,255,255,0.06); border-radius: 8px; backdrop-filter: blur(12px); transition: opacity 0.4s; max-height: calc(100vh - 150px); overflow-y: auto; }
     .annotation .a-label { font-family: var(--sans); font-size: 12px; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; opacity: 0.5; }
     .annotation .a-name { font-family: var(--sans); font-size: 24px; font-weight: 400; margin-bottom: 10px; letter-spacing: 0.3px; }
     .annotation .a-body { font-family: var(--sans); font-size: 15px; color: var(--dim); line-height: 1.65; }
@@ -55,7 +57,9 @@
 <div class="controls">
   <button class="ctrl-btn active" data-layer="space"><div class="indicator ind-space"></div><span>S<sup>3</sup> Space</span></button>
   <button class="ctrl-btn active" data-layer="surface"><div class="indicator ind-surface"></div><span>Möbius Surface</span></button>
+  <button class="ctrl-btn active" data-layer="fold"><div class="indicator ind-fold"></div><span>Antipodal −I</span></button>
   <button class="ctrl-btn active" data-layer="edge"><div class="indicator ind-edge"></div><span>S<sup>1</sup> Edge</span></button>
+  <button class="ctrl-btn" data-layer="lift"><div class="indicator ind-lift"></div><span>Edge Lift</span></button>
   <button class="ctrl-btn active" data-layer="cone"><div class="indicator ind-cone"></div><span>Cone Point</span></button>
   <button class="ctrl-btn active" data-layer="wave"><div class="indicator ind-wave"></div><span>u₁ = sin(y/R)</span></button>
   <button class="ctrl-btn active" data-layer="sample"><div class="indicator ind-sample"></div><span>Sample Ψ</span></button>
@@ -70,7 +74,7 @@
 <div class="annotation" id="annotPanel">
   <div class="a-label" id="aLabel">Topology</div>
   <div class="a-name" id="aName">Geodesic Band, M&#246;bius Quotient</div>
-  <div class="a-body" id="aBody">In the conic model, the M&#246;bius arises as the edge-identified quotient of a band on the great S&#178; within S&#179;. That great S&#178; is totally geodesic, so the band's geodesics are geodesics of space; the M&#246;bius is that quotient, not a smooth totally geodesic submanifold. Its end arcs, opposite each other on the great S&#178;, are matched by the antipodal map, so it embeds unbent in &#8477;P&#179; = S&#179;/{&#177;I}. The metric pinches to a cone point at the pole, where the eigenfunction peaks.</div>
+  <div class="a-body" id="aBody">In the conic model, the leading realization, the carrier is a double lune on the great S² modulo the antipodal map −I. The band drawn is half of it, a fundamental domain whose end arcs −I matches, so the carrier embeds unbent in ℝP³ = S³/{±I}. The band has constant curvature K = 1/R², widest at the end arcs and pinching to the cone point. The twist is topological: the orientation reverses only through the cone point, and the rest of the band is orientable.</div>
   <div class="a-math" id="aMath">ds² = dy² + cos²(y/R) dw²</div>
 </div>
 <div class="bottom-bar"><div class="hint">drag to orbit · scroll to zoom · click layers to toggle</div></div>
@@ -217,6 +221,73 @@ bLine.visible = false; scene.add(bLine);
 var waveGroup = [wLine, bLine];
 
 // ═══════════════════════════════════════════
+//  ANTIPODAL MAP −I: the projective layer ℝP³ = S³/{±I}
+//  The band is a fundamental domain. Its image under −I completes the
+//  double lune, the carrier's whole preimage in S³.
+// ═══════════════════════════════════════════
+var ghV = [], ghN = [];
+for (var k = 0; k < mV.length; k++) { ghV.push(-mV[k]); ghN.push(-mN[k]); }
+var ghGeo = new THREE.BufferGeometry();
+ghGeo.setAttribute('position', new THREE.Float32BufferAttribute(ghV, 3));
+ghGeo.setAttribute('normal', new THREE.Float32BufferAttribute(ghN, 3));
+ghGeo.setIndex(mI);
+var ghMat = new THREE.MeshPhongMaterial({ color: 0x8f78e8, side: THREE.DoubleSide, transparent: true, opacity: 0.2, shininess: 20, depthWrite: false });
+var ghMesh = new THREE.Mesh(ghGeo, ghMat);
+scene.add(ghMesh);
+
+// Chords x ↔ −x. The first pairs the cone point's two preimages, N and −N;
+// the second pairs the band's two end arcs, which −I matches.
+var chordYW = [[Math.PI/2, 0], [0, SW], [0.45, -0.55], [2.35, 0.6]];
+var chords = [], chordDots = [];
+chordYW.forEach(function(yw, idx) {
+  var q = sph(yw[0], yw[1]);
+  var a = new THREE.Vector3(q[0], q[1], q[2]).multiplyScalar(1.01), b = a.clone().negate();
+  var ln = new THREE.Line(new THREE.BufferGeometry().setFromPoints([a, b]), new THREE.LineDashedMaterial({ color: 0xa78bfa, dashSize: 0.06, gapSize: 0.05, transparent: true, opacity: 0.5 }));
+  ln.computeLineDistances(); scene.add(ln); chords.push(ln);
+  if (idx === 0) return;
+  [a, b].forEach(function(v) {
+    var d = new THREE.Mesh(new THREE.SphereGeometry(0.03, 10, 8), new THREE.MeshBasicMaterial({ color: 0xa78bfa, transparent: true, opacity: 0.9 }));
+    d.position.copy(v); scene.add(d); chordDots.push(d);
+  });
+});
+var foldGroup = [ghMesh].concat(chords, chordDots);
+
+// The edge's image under −I: with the edge, the two great circles through N and −N
+function negPts(pts) { return pts.map(function(v) { return v.clone().negate(); }); }
+var ghEA = new THREE.Line(new THREE.BufferGeometry().setFromPoints(negPts(eAPts)), new THREE.LineBasicMaterial({ color: 0xe85040, transparent: true, opacity: 0.3 }));
+var ghEB = new THREE.Line(new THREE.BufferGeometry().setFromPoints(negPts(eBPts)), new THREE.LineBasicMaterial({ color: 0xe85040, transparent: true, opacity: 0.3 }));
+scene.add(ghEA); scene.add(ghEB);
+var ghostEdgeGroup = [ghEA, ghEB];
+
+// The cone point's second preimage, −N. It pulses against N: a spinorial field
+// takes opposite signs at the two.
+var sPoleDot = new THREE.Mesh(new THREE.SphereGeometry(0.045, 16, 12), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.6 }));
+sPoleDot.position.set(0, -SR*1.01, 0); scene.add(sPoleDot);
+var sPoleGlow = new THREE.Mesh(new THREE.SphereGeometry(0.14, 16, 12), new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: 0.1 }));
+sPoleGlow.position.set(0, -SR*1.01, 0); scene.add(sPoleGlow);
+var southGroup = [sPoleDot, sPoleGlow];
+
+// u₁ is odd under −I, so on the antipodal half it points inward
+var gwPts = [];
+for (var i = 0; i <= WN; i++) { var y=(i/WN)*Math.PI, u1=Math.sin(y)*wAmp, q=sph(y,0); gwPts.push(new THREE.Vector3(-q[0]*(1-u1/SR), -q[1]*(1-u1/SR), -q[2]*(1-u1/SR))); }
+var gwLine = new THREE.Line(new THREE.BufferGeometry().setFromPoints(gwPts), new THREE.LineBasicMaterial({ color: 0xf0c040, transparent: true, opacity: 0.45 }));
+scene.add(gwLine);
+var ghostWaveGroup = [gwLine];
+
+// ═══════════════════════════════════════════
+//  EDGE LIFT (Proposition 5): the edge carried up to S³ closes after one
+//  traversal as an embedded circle, the boundary of the lune between
+//  longitudes W and π − W, with corners at N and −N
+// ═══════════════════════════════════════════
+function mer(phi, lat) { return new THREE.Vector3(SR*Math.cos(lat)*Math.cos(phi), SR*Math.sin(lat), SR*Math.cos(lat)*Math.sin(phi)); }
+var liftPts = [];
+for (var i = 0; i <= 200; i++) liftPts.push(mer(SW, Math.PI/2 - (i/200)*Math.PI).multiplyScalar(1.012));
+for (var i = 1; i <= 200; i++) liftPts.push(mer(Math.PI - SW, -Math.PI/2 + (i/200)*Math.PI).multiplyScalar(1.012));
+var liftLine = new THREE.Line(new THREE.BufferGeometry().setFromPoints(liftPts), new THREE.LineDashedMaterial({ color: 0xffa94d, dashSize: 0.07, gapSize: 0.04, transparent: true, opacity: 0.9 }));
+liftLine.computeLineDistances(); scene.add(liftLine);
+var liftGroup = [liftLine];
+
+// ═══════════════════════════════════════════
 //  SAMPLE — Fibonacci well on the strip
 // ═══════════════════════════════════════════
 var sDot = new THREE.Mesh(new THREE.SphereGeometry(0.055, 12, 8), new THREE.MeshBasicMaterial({ color: 0xff80c0, transparent: true, opacity: 0.9 }));
@@ -250,7 +321,7 @@ function updateSample(well) {
 // ═══════════════════════════════════════════
 //  ORBIT CONTROLS
 // ═══════════════════════════════════════════
-var oT = 1.0, oP = 0.35, oD = 4.5;
+var oT = 1.0, oP = 1.15, oD = 6.6;
 var tT = oT, tP = oP, tD = oD;
 var drag = false, pX = 0, pY = 0, autoR = true;
 
@@ -273,14 +344,16 @@ document.addEventListener('touchend', function() { drag=false; });
 // ═══════════════════════════════════════════
 //  LAYERS AND ANNOTATIONS
 // ═══════════════════════════════════════════
-var layers = { space:true, surface:true, edge:true, cone:true, wave:true, sample:true };
+var layers = { space:true, surface:true, fold:true, edge:true, lift:false, cone:true, wave:true, sample:true };
 var ann = {
-  space: { label:"Space", name:"S\u00B3 Hypersphere", body:"Closed, simply connected, no boundary. The Poincar\u00E9 theorem guarantees S\u00B3 is unique. Covers everything: each layer is a quotient of it.", math:"\u2202S\u00B3 = \u2205" },
-  surface: { label:"Surface", name:"Geodesic Band, M\u00F6bius Quotient", body:"A band on the great S\u00B2 within S\u00B3. That great S\u00B2 is totally geodesic, so the band's geodesics are geodesics of space; in the conic model the M\u00F6bius is its edge-identified quotient, not a smooth totally geodesic submanifold of S\u00B3. Its end arcs, opposite each other on the great S\u00B2, are matched by the antipodal map, so the M\u00F6bius band embeds unbent in \u211DP\u00B3 = S\u00B3/{\u00B1I}. The metric ds\u00B2 = dy\u00B2 + cos\u00B2(y/R) dw\u00B2 carries constant curvature K = 1/R\u00B2. Widest at the equator, pinching to a point at the pole. The twist is topological, not geometric: it lives in the boundary identification, not in the geometry of the band.", math:"ds\u00B2 = dy\u00B2 + cos\u00B2(y/R) dw\u00B2" },
-  edge: { label:"Edge", name:"S\u00B9 Boundary", body:"A single closed loop traversing the strip twice. Two arcs from equator through the cone point and back, connected by the M\u00F6bius twist. Where time lives and where \u03A8 is sampled.", math:"S\u00B9 = \u2202(M\u00F6bius)" },
-  cone: { label:"Cone Point", name:"The Antinode", body:"At y = \u03C0R/2, cos(y/R) \u2192 0. The strip pinches to a single point: the pole of S\u00B2. The geometry goes quiet. The eigenfunction peaks: u\u2081 = 1, u\u2081\u2032 = 0. Maximum amplitude at zero width.", math:"u\u2081(\u03C0R/2) = 1" },
-  wave: { label:"Eigenfunction", name:"u\u2081 = sin(y/R)", body:"First positive eigenfunction of the twisted Laplacian, shared by the Friedrichs and bridging realizations (\u03B4\u2080 > 2R/e). Zero at equator, maximum at cone point. Anti-periodic: u\u2081(y + \u03C0R) = \u2212u\u2081(y).", math:"\u03BB\u2081 = R_{sm} = 2/R\u00B2" },
-  sample: { label:"Sample", name:"The Observation", body:"C(\u0398) reads the wave amplitude at the well position. Fibonacci wells are where destructive interference is minimized. The sample IS the measurement. No value precedes the sample.", math:"A/A\u209A \u2248 C(\u0398) \u00B7 (\u221A\u03A9)\u207B\u207F" }
+  space: { label:"Space", name:"S³ and Its Quotients", body:"Closed, simply connected, no boundary: by the Poincaré theorem, the only such three-space. It covers every layer: S³ → ℝP³ = S³/{±I} → S³/2I, the spin cover SU(2), the rotation group SO(3), and the observable domain, the middle layer's quotient by the icosahedral group I. The carrier embeds in the middle layer; which layer is its physical domain is open. Drawn here: the great S² inside S³ that holds the band.", math:"∂S³ = ∅" },
+  surface: { label:"Surface", name:"Geodesic Band, Möbius Quotient", body:"In the conic model, the leading realization, the carrier is a double lune on the great S² modulo the antipodal map −I. The band drawn is half of it, a fundamental domain whose end arcs −I matches, so the carrier embeds unbent in ℝP³ = S³/{±I}. The band has constant curvature K = 1/R², widest at the end arcs and pinching to the cone point. The twist is topological: the orientation reverses only through the cone point, and the rest of the band is orientable.", math:"ds² = dy² + cos²(y/R) dw²" },
+  fold: { label:"Projective Layer", name:"The Antipodal Map −I", body:"Identify each point of S³ with its antipode, x ~ −x, and the result is ℝP³ = S³/{±I}. The ghosted half is the band's image under −I; with the band it completes the double lune, the carrier's whole preimage in S³. The chords pair points with their antipodes, the cone point's two preimages N and −N among them. The carrier's core is the loop that represents −I, and in the spinorial sectors −I is its Möbius holonomy: a geometric sign, not spin-statistics.", math:"ℝP³ = S³/{±I}" },
+  edge: { label:"Edge", name:"S¹ Boundary", body:"One circle that runs the strip twice, one lap per arc, each of length πR. Its image in the carrier is a figure-eight through the cone point, passing it once per lap. It is the framework's temporal edge, where time advances and the observer is anchored; whether time runs on the abstract circle or on its figure-eight image is open.", math:"S¹ = ∂(Möbius)" },
+  lift: { label:"Edge Lift", name:"The Lift to S³", body:"Carried up to S³, the edge closes after one traversal as an embedded circle with two corners, at N and −N, so it passes each of the cone point's two preimages once. It bounds one of the two lunes complementary to the double lune, a disk, not the carrier's lift. In ℝP³ the edge is the carrier's boundary, S¹ = ∂(Möbius); in S³ its lift is an embedded circle.", math:"S¹ ↪ S³" },
+  cone: { label:"Cone Point", name:"The Antinode", body:"At y = πR/2, cos(y/R) → 0, and the strip pinches to a single point: the geometry goes quiet and the eigenfunction peaks, u₁ = 1, u₁′ = 0. It is one point of the carrier with two spin-cover preimages, N and −N. The twist passes through it, and a spinorial field takes opposite signs at the two preimages, which the intensity cannot tell apart.", math:"u₁(πR/2) = 1" },
+  wave: { label:"Eigenfunction", name:"u₁ = sin(y/R)", body:"First positive eigenfunction of the twisted Laplacian, in the Friedrichs realization the framework adopts; bridging with δ₀ > 2R/e shares it. Zero at the end arcs, maximum at the cone point. It is the band's rigid tilt: the end arcs stay fixed and the cone point moves most. Odd under −I, it changes sign on the antipodal half. Anti-periodic: u₁(y + πR) = −u₁(y).", math:"λ₁ = Rₛₘ = 2/R²" },
+  sample: { label:"Sample", name:"The Observation", body:"C(Θ) reads the wave's intensity at a well's position along the band. Θ is a position, not a moment: the sampling position and the edge phase belong to different problems, and the wells stay fixed at every epoch. The sample is the measurement; no value precedes it.", math:"A/Aₚ ≈ C(Θ) · (√Ω)⁻ⁿ" }
 };
 
 function setAnn(k) {
@@ -294,9 +367,14 @@ function setAnn(k) {
 function applyLayers() {
   spaceGroup.forEach(function(m){m.visible=layers.space;});
   surfaceGroup.forEach(function(m){m.visible=layers.surface;});
+  foldGroup.forEach(function(m){m.visible=layers.fold;});
   edgeGroup.forEach(function(m){m.visible=layers.edge;});
+  ghostEdgeGroup.forEach(function(m){m.visible=layers.edge && layers.fold;});
+  liftGroup.forEach(function(m){m.visible=layers.lift;});
   coneGroup.forEach(function(m){m.visible=layers.cone;});
+  southGroup.forEach(function(m){m.visible=layers.cone && layers.fold;});
   waveGroup.forEach(function(m){m.visible=layers.wave;});
+  ghostWaveGroup.forEach(function(m){m.visible=layers.wave && layers.fold;});
   sampleGroup.forEach(function(m){m.visible=layers.sample;});
   document.getElementById('wellSelect').classList.toggle('visible', layers.sample);
 }
@@ -337,6 +415,9 @@ function animate() {
   if (layers.edge) { eACore.material.opacity = 0.85+0.1*Math.sin(t*1.5); eAGlow.material.opacity = 0.25+0.1*Math.sin(t*1.5+0.5); eBCore.material.opacity = 0.85+0.1*Math.sin(t*1.5); eBGlow.material.opacity = 0.25+0.1*Math.sin(t*1.5+0.5); }
   if (layers.space) shMat.opacity = 0.05+0.02*Math.sin(t*0.3);
   if (layers.cone) { cDot.material.opacity = 0.7+0.3*Math.sin(t*2); cGlow.material.opacity = 0.1+0.1*Math.sin(t*2); }
+  if (layers.fold) { var fo = 0.5+0.2*Math.sin(t*1.2); chords.forEach(function(c){ c.material.opacity = fo; }); ghMat.opacity = 0.18+0.04*Math.sin(t*0.5); }
+  if (layers.lift) liftLine.material.opacity = 0.75+0.2*Math.sin(t*1.6);
+  if (layers.cone && layers.fold) { sPoleDot.material.opacity = 0.7+0.3*Math.sin(t*2+Math.PI); sPoleGlow.material.opacity = 0.1+0.1*Math.sin(t*2+Math.PI); }
   if (layers.sample) { sDot.material.opacity = 0.7+0.3*Math.sin(t*1.8); sGlow.material.opacity = 0.1+0.1*Math.sin(t*1.8); }
   renderer.render(scene, camera);
 }
@@ -348,7 +429,7 @@ window.addEventListener('resize', function() {
   renderer.setSize(W,H);
 });
 
-var aKeys = ['space','surface','edge'], aIdx = 0;
+var aKeys = ['space','surface','fold','edge'], aIdx = 0;
 setInterval(function() { if (!autoR) return; aIdx=(aIdx+1)%aKeys.length; setAnn(aKeys[aIdx]); }, 18000);
 
 })();
