@@ -179,7 +179,7 @@ A dynamical answer would have been a functional with the wells at its minimum; t
 
 ## Adjacent thread (scaling-law, not wells)
 
-The same Lemma 8 that locates the well functional on the boundary also bears on the [scaling-law factorization](scaling-law-uniqueness.md), which is currently **open** (the FORCED flip was walked back at the Step C gap). Its open step was restated on 2026-09-23 as boundary-mode uniformity, every contributing spectral block carrying the first-positive profile times a fixed spectral weight; the commutant theorem `A_obs = A_Θ ⊗ A_spec` it replaces could not forbid a cross-term, and the character-ceiling candidate fell with it. Tracked separately; not part of the wells problem.
+The same Lemma 8 that locates the well functional on the boundary also bears on the [scaling-law factorization](scaling-law-uniqueness.md), which is a conditional theorem on adopted premises since 2026-09-29 (the FORCED flip was walked back at the Step C gap). Its step was restated on 2026-09-23 as boundary-mode uniformity, every contributing spectral block carrying the first-positive profile times a fixed spectral weight; the commutant theorem `A_obs = A_Θ ⊗ A_spec` it replaces could not forbid a cross-term, and the character-ceiling candidate fell with it. Tracked separately; not part of the wells problem.
 
 ---
 
