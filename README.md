@@ -264,15 +264,15 @@ The framework's quantitative claims, with their standing shown explicitly:
 
 ---
 
-## 🛠️ Tools
-
-[↗](/files/tools/) Every link between topology and observable is live. The code is the math. There are no hidden knobs. These are the working tools behind the framework: the interactive pages let you turn the shape and run the numbers yourself, and the registry collects the deposits.
-
----
-
 >[![Interactive NotebookLM](/files/assets/notebooklm-banner-aligned.svg)](https://notebook.google.com/notebook/510d4424-8462-44fe-9c96-25a0aedd71d1)
 >
 >**[Gemini Notebook](https://notebook.google.com/notebook/510d4424-8462-44fe-9c96-25a0aedd71d1)**: a NotebookLM grounded in the framework; ask it anything, or hear the audio overview.
+
+---
+
+## 🛠️ Tools
+
+[↗](/files/tools/) Every link between topology and observable is live. The code is the math. There are no hidden knobs. These are the working tools behind the framework: the interactive pages let you turn the shape and run the numbers yourself, and the registry collects the deposits.
 
 ---
 
