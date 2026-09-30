@@ -313,7 +313,7 @@ On the pre-correction mass table the path-product propagator search returned no 
 |-------|--------------------|--------------------|
 | First eigenvalue | First positive eigenvalue 2/R² on the intrinsic Möbius band M(W), narrow band W ≤ πR/2; the ground state is extension-dependent (Friedrichs: the discontinuous zero mode; bridging: a negative defect state) | That paper gives the eigenvalue. This paper argues the rule that reads it is unique within the observable class, with the factorization a conditional theorem on adopted premises. |
 | Lemma 8 | Θ decouples from the spectral parameter s | The same Schur mechanism feeds constraint 6: the homothety reduction connects the depth index to the spectral block (a conditional theorem here, through boundary-mode uniformity), extending Θ ⊥ s toward Θ ⊥ (Ω, n). |
-| Mass spectrum | Fermion masses via torsion × C_geom × McKay elevator | Supplies the only route to an independent R (electron and muon at different McKay distances), and hosts the R-determination open item. |
+| Mass spectrum | Fermion masses via torsion × C_geom × McKay elevator | Supplies an independent route to R (electron and muon at different McKay distances), the lower-resolution cross-check to the best-conditioned coupling (α) route, and hosts the R-determination open item. |
 | Gauge ladder | Coupling exponents from carrier and confinement character | Supplies the 1/60 and 1/120 exponents. This paper would lift that rule from established to forced. |
 | Scaling Law (this paper) | Separated form of the sampling rule (within the class; a conditional theorem through boundary-mode uniformity) | Completes the triad: eigenvalue, boundary, measurement. |
 

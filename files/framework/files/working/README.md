@@ -79,7 +79,7 @@ Orienting notes that index other work.
 
 ### [The R Problem](files/r-problem.md)
 
-**Tracker:** Maps every route to an independent spatial curvature radius $`R`$ and where each stands. $`\Lambda_\text{ref} = 3/R^2`$ becomes a conditional output only with an $`R`$ not read off $`\Lambda`$, and identifying that reference value with the physical $`\Lambda`$ stays gated by the Interface: de Sitter is circular, the Molien gap is not independent, the CMB L-ratio factor of 8 is dead (no topological derivation), and the particle mass spectrum is the one live route (executed, order of magnitude). Includes the shared E₈ / $`h = 30`$ engine tying the L ratio to the mass formula, and flags the Molien sparse-zone CMB result as the independent survivor of the L work.
+**Tracker:** Maps every route to an independent spatial curvature radius $`R`$ and where each stands. $`\Lambda_\text{ref} = 3/R^2`$ becomes a conditional output only with an $`R`$ not read off $`\Lambda`$, and identifying that reference value with the physical $`\Lambda`$ stays gated by the Interface: de Sitter is circular, the Molien gap is not independent, the CMB L-ratio factor of 8 is dead (no topological derivation), the coupling (α) route is the best-conditioned determination, and the particle mass spectrum is an independent, lower-resolution cross-check (executed, order of magnitude). Includes the shared E₈ / $`h = 30`$ engine tying the L ratio to the mass formula, and flags the Molien sparse-zone CMB result as the independent survivor of the L work.
 
 **Inputs:** [R from the mass spectrum](files/r-from-mass-spectrum.md), fermion mass formula, $`\Lambda_\text{ref} = 3/R^2`$ reference relation.
 
@@ -280,7 +280,7 @@ Technical gaps with specific paths forward.
 **Superseded and secondary routes.**
 
 - **240 Alternative for $`\alpha_s`$:** $`C(17/120) \times \Omega^{-1/240}`$ sits 1% behind the primary formula, with $`240 = 2 \times 120`$; requires independent justification or exclusion. *Deps:* grid ladder selection rule, scaling law.
-- **$`L_\text{strip}/L_\text{fund}`$ Ratio:** The factor of 8 has no topological derivation, so this is a dead route to $`R`$, superseded by the mass spectrum (see [The R Problem](files/r-problem.md)); the only open remnant is the residual ~3% spectral-vs-observational gap (8.17 ± 0.1 vs 7.93).
+- **$`L_\text{strip}/L_\text{fund}`$ Ratio:** The factor of 8 has no topological derivation, so this is a dead route to $`R`$, superseded by the coupling (α) route, the best-conditioned determination, with the mass spectrum an independent, lower-resolution cross-check (see [The R Problem](files/r-problem.md)); the only open remnant is the residual ~3% spectral-vs-observational gap (8.17 ± 0.1 vs 7.93).
 
 ---
 
@@ -302,7 +302,7 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ### [R from the Particle Mass Spectrum](files/r-from-mass-spectrum.md)
 
-**Result (2026-06-15):** Determines the spatial curvature radius $`R`$ from the fermion mass formula's dependence on the hierarchy factor $`\Omega_\Lambda`$, independently of $`\Lambda`$, the CMB, and the de Sitter relation, breaking the R-problem circularity. Electron + muon give $`R \sim 20`$ Gpc and $`\Lambda \sim 8.1 \times 10^{-54}\,\text{m}^{-2}`$, about 13.4× (one order of magnitude) below the observed value. Precision is capped at order of magnitude by the McKay-lever amplification (60× for $`\delta d = 1`$) acting on the mass formula's irreducible few-percent residual scatter; a pair scan shows no fermion pair beats electron-muon. The third and only non-excluded route to $`R`$.
+**Result (2026-06-15):** Determines the spatial curvature radius $`R`$ from the fermion mass formula's dependence on the hierarchy factor $`\Omega_\Lambda`$, independently of $`\Lambda`$, the CMB, and the de Sitter relation, breaking the R-problem circularity. Electron + muon give $`R \sim 20`$ Gpc and $`\Lambda \sim 8.1 \times 10^{-54}\,\text{m}^{-2}`$, about 13.4× (one order of magnitude) below the observed value. Precision is capped at order of magnitude by the McKay-lever amplification (60× for $`\delta d = 1`$) acting on the mass formula's current few-percent residual scatter. Since the 2026-07-28 torsion correction the muon-top pair is the best assigned pair ($`R \approx 10.5`$ Gpc, $`\Lambda`$ within 3.8×), and electron-muon remains the lepton-only cross-check. The route is an independent, lower-resolution cross-check on the coupling (α) route, the best-conditioned determination of $`R`$ ([The R Problem](files/r-problem.md)).
 
 **Inputs:** Fermion mass formula and torsion table, McKay residual scatter (sets the precision floor), $`\Omega_\Lambda`$ hierarchy, $`\Lambda_\text{ref} = 3/R^2`$ reference relation.
 

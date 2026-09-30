@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Closed
-**Status (2026-07-28):** Executed 2026-06-15, the assigned-pair scan tightened 2026-07-28: the mass route determines R independently of Λ, the CMB, and de Sitter, breaking the circularity at order-of-magnitude precision (R ~ 20 Gpc). The third and only non-excluded route.
+**Status (2026-09-30):** Executed 2026-06-15, the assigned-pair scan tightened 2026-07-28: the mass route determines R independently of Λ, the CMB, and de Sitter, breaking the circularity at order-of-magnitude precision (R ≈ 20 Gpc on electron-muon, ≈ 10.5 Gpc on muon-top). An independent, lower-resolution cross-check: the coupling (α) route is the best-conditioned determination ([the R problem](r-problem.md)).
 **Summary:** Determines the curvature radius R from the fermion mass formula's dependence on the hierarchy factor, the mass-sector route to R.
 **Inputs:** the fermion mass formula and torsion table, the McKay residual scatter (precision floor), the Ω_Λ hierarchy
 

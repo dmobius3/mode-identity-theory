@@ -46,7 +46,7 @@ An independent central value is therefore not enough for a 5σ falsifier. The te
 
 ## The shared engine
 
-The L-ratio and the mass spectrum are not two problems. The candidate value of the factor of 8 is rank(E₈) = φ(30) = 8 (the eight integers coprime to the Coxeter number h(E₈) = 30, which are the Kostant exponents), and those same exponents and that same 30 drive C_geom and the dist/30 lever in the mass formula. So the L ratio and the mass-spectrum R are one problem at two scales, both projections of the 2I / E₈ representation ring scaled by R. If the factor of 8 is ever derived, it comes from the same structure the live route already uses.
+The L-ratio and the mass spectrum are not two problems. The candidate value of the factor of 8 is rank(E₈) = φ(30) = 8 (the eight integers coprime to the Coxeter number h(E₈) = 30, which are the Kostant exponents), and those same exponents and that same 30 drive C_geom and the dist/30 lever in the mass formula. So the L ratio and the mass-spectrum R are one problem at two scales, both projections of the 2I / E₈ representation ring scaled by R. If the factor of 8 is ever derived, it comes from the same structure the mass route already uses.
 
 ## What survives from the L work, on its own
 
