@@ -280,7 +280,7 @@ Technical gaps with specific paths forward.
 **Superseded and secondary routes.**
 
 - **240 Alternative for $`\alpha_s`$:** $`C(17/120) \times \Omega^{-1/240}`$ sits 1% behind the primary formula, with $`240 = 2 \times 120`$; requires independent justification or exclusion. *Deps:* grid ladder selection rule, scaling law.
-- **$`L_\text{strip}/L_\text{fund}`$ Ratio:** The factor of 8 has no topological derivation, so this is a dead route to $`R`$, superseded by the coupling (α) route, the best-conditioned determination, with the mass spectrum an independent, lower-resolution cross-check (see [The R Problem](files/r-problem.md)); the only open remnant is the residual ~3% spectral-vs-observational gap (8.17 ± 0.1 vs 7.93).
+- **$`L_\text{strip}/L_\text{fund}`$ Ratio:** The factor of 8 has no topological derivation, so this is a dead route to $`R`$, superseded by the coupling (α) route, the best-conditioned determination, with the mass spectrum an independent, lower-resolution cross-check (see [The R Problem](files/r-problem.md)).
 
 ---
 
