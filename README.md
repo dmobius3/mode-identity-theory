@@ -42,28 +42,28 @@ In 300 BC, Euclid proved Plato's observation that only five regular solids close
 ```
 mode-identity-theory/
 ├─ main/                          ← you are here
-    ├─ framework/                  ← the postulate and derivations
+    ├─ framework/                  ← the postulate & derivations
     │   ├─ bedrock/                 ← standalone mathematics papers
     │   │   ├─ first-eigenvalue       ← twisted Möbius Laplacian operator
-    │   │   ├─ coexact-gap            ← coexact gap on S³/Γ and the 2I exception
-    │   │   ├─ galois-pair            ← E8 filling and the tautological charge
-    │   │   └─ surviving-ray          ← spin-3 channel filter and its surviving ray
-    │   └─ working/                 ← research in progress: maps and open problems
+    │   │   ├─ coexact-gap            ← coexact gap on S³/Γ & the 2I exception
+    │   │   ├─ galois-pair            ← E8 filling & the tautological charge
+    │   │   └─ surviving-ray          ← spin-3 channel filter & its surviving ray
+    │   └─ working/                 ← research in progress: maps & open problems
     ├─ cosmos/                     ← the static three-sphere seen whole
     │   ├─ cosmological-constant      ← the spectral seed behind Λ
     │   ├─ cmb-anomalies              ← low-ℓ suppression as the Molien gap
     │   ├─ dark-energy                ← what evolves is not Λ but perception
     │   ├─ early-galaxies             ← early massive galaxies in a static geometry
-    │   ├─ hubble-tension             ← H₀ as an edge mode and the 8.4% lattice step
+    │   ├─ hubble-tension             ← H₀ as an edge mode & the 8.4% lattice step
     │   ├─ black-holes                ← black holes as topological nodes of the wave
     │   └─ euclid-dr1                 ← the falsification gate
-    ├─ spectrum/                   ← the near boundary: matter and gauge on S³/2I
-    │   ├─ yang-mills                 ← the linearized gauge gap and three vacua
+    ├─ spectrum/                   ← the near boundary: matter & gauge on S³/2I
+    │   ├─ yang-mills                 ← the linearized gauge gap & three vacua
     │   ├─ mass-spectrum              ← fermion masses as position on the lattice
     │   ├─ fine-structure             ← α is the first realized step of Λ
-    │   ├─ the-waltz                  ← the gravity between surface and space
-    │   └─ the-mirror                 ← curvature duality: gauge gap and zero inaccessibility
-    └─ tools/                      ← interactive, publications, and references
+    │   ├─ the-waltz                  ← the gravity between surface & space
+    │   └─ the-mirror                 ← curvature duality: gauge gap & zero inaccessibility
+    └─ tools/                      ← interactive, publications, & references
 ```
 
 / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
