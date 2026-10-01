@@ -61,7 +61,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 ### Can the band's width be selected without a new scale?
 
-**Setting.** The band $`M(W)`$ is unbent, and its width $`W`$ is free in $`(0, \pi R/2)`$. With its edge held fixed it is a strictly stable critical point of area at every width, among variations that keep the cone point's shape: that is the check reproduced blind above.
+**Setting.** The band $`M(W)`$ is unbent, and its width $`W`$ is free in $`(0, \pi R/2)`$. With its edge held fixed it is a strictly stable critical point of area at every width, among variations that keep the cone point's shape: that is the check reproduced blind above. It also has the least area of any continuous finite-piecewise-smooth map of a Möbius band with the same boundary map whose core generates $`\pi_1(\mathbb{RP}^3)`$, and ties only with maps that cover it once ([Proposition 7](/files/framework/files/working/files/projective-carrier.md#ix-fixed-edge-stability)); since each width has its own edge, this selects no width either.
 
 **Already known.** With the edge free, the standard membrane energies without spontaneous curvature, surface tension, line tension, and bending of Willmore or Canham-Helfrich type, select neither the band nor its width. Line tension opens the cone point's pinch at first order. With the pinch held and zero sheet tension, the conic bands are the least-energy unbent bands and $`W`$ is a flat direction; neither of those two conditions is derived.
 
