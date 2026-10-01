@@ -1,0 +1,18 @@
+PASS K1 the two returns are the record's bytes
+PASS K2 each room's order, extrapolation and error estimate equal their recomputation from its levels
+PASS K3 the two rooms' bottoms agree at every width and refinement
+PASS K4 under the frozen rules, with a relative tolerance, all five frozen widths score Reproduced in both rooms
+PASS K5 a bottom raised by one percent at W/R = 1 scores Contradicted
+W/R    p        extrapolated    error est.   alpha0(alpha0+1)   rel. miss   rel. error   relative    absolute
+1/4    1.9967   45.761589282   5.60e-03     45.761602912       3.0e-07     1.2e-04      Reproduced  Unresolved
+1/2    1.9994   13.011196550   1.18e-03     13.011197055       3.9e-08     9.1e-05      Reproduced  Unresolved
+1      2.0002   4.038197481   3.19e-04     4.038197427       1.3e-08     7.9e-05      Reproduced  Reproduced
+7/5    2.0004   2.380875543   1.84e-04     2.380875489       2.3e-08     7.7e-05      Reproduced  Reproduced
+3/2    2.0003   2.143820313   1.66e-04     2.143820262       2.4e-08     7.7e-05      Reproduced  Reproduced
+pi/2   2.0002   2.000000050   1.55e-04     2.000000000       2.5e-08     7.7e-05      control     
+17/10  1.9997   1.777769908   1.38e-04     1.777769846       3.4e-08     7.8e-05      control     
+ARM FIRED K1 the two returns are the record's bytes
+ARM FIRED K2 each room's order, extrapolation and error estimate equal their recomputation from its levels
+ARM FIRED K3 the two rooms' bottoms agree at every width and refinement
+ARM FIRED K4 under the frozen rules, with a relative tolerance, all five frozen widths score Reproduced in both rooms
+ARM FIRED K5 a bottom raised by one percent at W/R = 1 scores Contradicted

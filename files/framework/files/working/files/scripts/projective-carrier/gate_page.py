@@ -271,7 +271,8 @@ def checks(t, ctx):
             bad.append(name)
     r["P8 each named script's record carries exactly its expected checks and arms"] = (not bad, bad)
     known = {q for q, _ in QUOTES}
-    loose = [q[:40] for q in re.findall(r'"([^"\n]{12,})"', t) if q not in known]
+    prose = re.sub(r'<a id="[^"]*"></a>', "", t)  # an anchor's id is not a quotation
+    loose = [q[:40] for q in re.findall(r'"([^"\n]{12,})"', prose) if q not in known]
     r["P9 every quotation on the page is on the verified list"] = (not loose, loose)
     bad = []
     link_re = re.compile(r"\]\(([^)#\s]+\.md)#([^)\s]+)\)")
