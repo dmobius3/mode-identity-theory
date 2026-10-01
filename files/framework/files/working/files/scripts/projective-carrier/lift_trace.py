@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Proposition 5 of projective-carrier.md: the lift of the conic band's edge to the great S² ⊂ S³; R = 1.
 
-The band is the rectangle [0, π] × [−W, W] with the seam (0, w) ~ (π, −w). Proposition 4.2's trivialization maps it
+The band is the rectangle [0, π] × [−W, W] with the seam (0, w) ~ (π, −w). First eigenvalue Proposition 4.2's trivialization maps it
 onto the lune L: (y, w) ↦ (latitude y, longitude w) for y ≤ π/2, and (latitude −(π − y), longitude −w) for y ≥ π/2.
 The preimages of a band point in S³ are ±Φ(y, w), in the pieces L and −L. Over the smooth locus, which is simply
 connected, these are the cover's two sheets; their closures meet only at N and −N, over the cone point. The oriented

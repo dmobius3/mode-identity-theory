@@ -300,6 +300,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ---
 
+### [The Carrier's Edge Regimes](files/carrier-edge-regimes.md)
+
+**Result (2026-10-01):** Whether a variational regime with a movable edge selects the conic carrier. With the edge free, the free-edged membrane energies the Tier 2 ground floor names do not. On unbent bands each reduces to an effective sheet tension times area plus a line tension times edge length. With line tension, the tension opens the cone point's pinch at first order at every width; with the pinch held and zero effective sheet tension, the conic bands are the least-energy unbent bands, with the width a flat direction. Without line tension every unbent band ties at zero effective sheet tension, and none is critical otherwise. For the supported boundary, the totally geodesic support fitted to the carrier's edge lines leaves it unstable under nonzero effective sheet tension and flat in its width at zero; the framework supplies no support, and other supports stay open. The fixed edge stays the one regime here shown to hold the carrier stable with no null direction, for its declared class of variations, and there the edge is input.
+
+**Inputs:** [The Projective Carrier](files/projective-carrier.md) Propositions 3.1 and 4.2, §XI 1b and 1c, [The Postulate Bridge](files/postulate-bridge.md) Tier 2, [scripts](files/scripts/carrier-edge-regimes/).
+
+**Parent:** [The Projective Carrier](files/projective-carrier.md)
+
+---
+
 ### [R from the Particle Mass Spectrum](files/r-from-mass-spectrum.md)
 
 **Result (2026-06-15):** Determines the spatial curvature radius $`R`$ from the fermion mass formula's dependence on the hierarchy factor $`\Omega_\Lambda`$, independently of $`\Lambda`$, the CMB, and the de Sitter relation, breaking the R-problem circularity. Electron + muon give $`R \sim 20`$ Gpc and $`\Lambda \sim 8.1 \times 10^{-54}\,\text{m}^{-2}`$, about 13.4× (one order of magnitude) below the observed value. Precision is capped at order of magnitude by the McKay-lever amplification (60× for $`\delta d = 1`$) acting on the mass formula's current few-percent residual scatter. Since the 2026-07-28 torsion correction the muon-top pair is the best assigned pair ($`R \approx 10.5`$ Gpc, $`\Lambda`$ within 3.8×), and electron-muon remains the lepton-only cross-check. The route is an independent, lower-resolution cross-check on the coupling (α) route, the best-conditioned determination of $`R`$ ([The R Problem](files/r-problem.md)).

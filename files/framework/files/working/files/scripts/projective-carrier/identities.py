@@ -5,7 +5,7 @@ balance) and §§VI, VIII (Lemma 4 and its comparison with the arch, the 3/R² f
 Checks (exit 1 on any failure):
   I1  on a generic surface in S³(R), sum_i x_i² = R² and sum_i |∇x_i|² = 2 (Theorem 2, step 3), at random points
   I2  in band coordinates ds² = dy² + cos²(y/R) dw², −Δ sin(y/R) = (2/R²) sin(y/R), so J sin(y/R) = 0
-  I3  Proposition 4.2's trivialization carries sin(y/R) to x_p/R on the lune: +sin on y < πR/2, −sin on y > πR/2
+  I3  first eigenvalue Proposition 4.2's trivialization carries sin(y/R) to x_p/R on the lune: +sin on y < πR/2, −sin on y > πR/2
   I4  the rotation field in the (p, ν) plane is tangent to S³, antisymmetric (Killing), and equals x_p ν on the great S²
   I5  a great S² in Sⁿ(R), n = 3..8: the tilt's eigenvalue 2/R² equals the Jacobi curvature term (the sum over the two
       tangent directions, from the curvature tensor in a random frame) for every n; the ambient Ricci floor (n − 1)/R²

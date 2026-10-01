@@ -1,0 +1,29 @@
+PASS V1 on M(W) the bottom is 0 and 2/R² is the first positive level, simple, carried by the tilt x_p
+PASS V2 the first variation along each profile matches (3/(4WR³)) ∫ (sin² − 2cos²)(s/R) V ds
+PASS V3 turning the lap rigidly leaves the level at 2/R²
+PASS V4 for each t a bracket in τ changes the sign of λ₁ − 2/R², each end at least 10 times its error
+PASS V5 at each root 2/R² is the first positive level and simple
+PASS V6 at each root the moved lap is curved, the fixed lap geodesic
+PASS V7 at each root the 2/R² mode is not a rigid tilt
+PASS V8 every band computed is embedded in RP²
+W/R  t      τ(t)       τ/t     bracket ends: λ₁ − 2 (error)          λ₂ − 2   max|k_g|R  sup|V|/R  tilt distance
+0.3  0.025  0.029041  1.1617  +1.1e-04 (8e-08), -1.1e-04 (9e-08)  3.939    4.96      0.029     7.59e-03
+0.3  0.05   0.054564  1.0913  +1.1e-04 (6e-07), -1.1e-04 (6e-07)  3.866    9.19      0.055     1.45e-02
+0.3  0.1    0.096297  0.9630  +1.1e-04 (2e-06), -1.1e-04 (2e-06)  3.706    15.63      0.100     2.75e-02
+0.6  0.025  0.028833  1.1533  +5.6e-05 (3e-08), -5.6e-05 (3e-08)  3.968    4.93      0.029     4.93e-03
+0.6  0.05   0.053886  1.0777  +5.8e-05 (3e-07), -5.8e-05 (3e-07)  3.929    9.08      0.054     9.62e-03
+0.6  0.1    0.094489  0.9449  +6.1e-05 (9e-07), -6.1e-05 (9e-07)  3.832    15.36      0.100     1.86e-02
+1.0  0.025  0.028619  1.1448  +3.4e-05 (8e-09), -3.4e-05 (9e-09)  1.990    4.89      0.029     3.73e-03
+1.0  0.05   0.053194  1.0639  +3.6e-05 (1e-07), -3.6e-05 (1e-07)  1.942    8.97      0.053     7.36e-03
+1.0  0.1    0.092599  0.9260  +3.9e-05 (4e-07), -3.9e-05 (4e-07)  1.843    15.09      0.100     1.44e-02
+W/R = 0.3: P[b_mid] = 1.3346485, P[b_tip] = -1.0800809; computed slopes 1.3346479, -1.0800817
+W/R = 0.6: P[b_mid] = 0.6673242, P[b_tip] = -0.5400404; computed slopes 0.6673240, -0.5400406
+W/R = 1.0: P[b_mid] = 0.4003945, P[b_tip] = -0.3240243; computed slopes 0.4003944, -0.3240244
+ARM FIRED V1 on M(W) the bottom is 0 and 2/R² is the first positive level, simple, carried by the tilt x_p
+ARM FIRED V2 the first variation along each profile matches (3/(4WR³)) ∫ (sin² − 2cos²)(s/R) V ds
+ARM FIRED V3 turning the lap rigidly leaves the level at 2/R²
+ARM FIRED V4 for each t a bracket in τ changes the sign of λ₁ − 2/R², each end at least 10 times its error
+ARM FIRED V5 at each root 2/R² is the first positive level and simple
+ARM FIRED V6 at each root the moved lap is curved, the fixed lap geodesic
+ARM FIRED V7 at each root the 2/R² mode is not a rigid tilt
+ARM FIRED V8 every band computed is embedded in RP²

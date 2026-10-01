@@ -1,0 +1,20 @@
+PASS E1 the named energies are points of the family, with the stated Γ = γ + κ̄/R²
+PASS E2 every named density is flat at A = 0: bending acts only at second order
+PASS E3 the edge law's sign: d(Γ·Area + σL) = ∫(Γ + σk_g)V ds, k_g positive toward the band
+PASS E4 a corner cut with geodesic legs saves 2ε(1 − sin(θ/2)) + O(ε³) and costs ½ε² sin θ + O(ε⁴)
+PASS E5 each pass through the pinch turns by 2W/R around a band-free sector of opening π − 2W/R
+PASS E6 cutting one pass leaves a Möbius band whose complement's closure is a closed disc
+PASS E7 a circle that is not a great circle holds no antipodal pair
+PASS E8 (κ/2)H² + κ̄ det A ≥ 0 exactly for −2κ ≤ κ̄ ≤ 0, positive definite strictly inside
+PASS E9 on the two-sheet support, turning the plane toward ν narrows the band from c, tan(W_t/R) = cos t tan(W/R), and widens it from d, tan(W'_t/R) = tan(W/R)/cos t
+PASS E10 the critical tube's half-width R arctan(ΓR/σ), and the tube edge 2πR cos(W/R)
+ARM FIRED E1 the named energies are points of the family, with the stated Γ = γ + κ̄/R²
+ARM FIRED E2 every named density is flat at A = 0: bending acts only at second order
+ARM FIRED E3 the edge law's sign: d(Γ·Area + σL) = ∫(Γ + σk_g)V ds, k_g positive toward the band
+ARM FIRED E4 a corner cut with geodesic legs saves 2ε(1 − sin(θ/2)) + O(ε³) and costs ½ε² sin θ + O(ε⁴)
+ARM FIRED E5 each pass through the pinch turns by 2W/R around a band-free sector of opening π − 2W/R
+ARM FIRED E6 cutting one pass leaves a Möbius band whose complement's closure is a closed disc
+ARM FIRED E7 a circle that is not a great circle holds no antipodal pair
+ARM FIRED E8 (κ/2)H² + κ̄ det A ≥ 0 exactly for −2κ ≤ κ̄ ≤ 0, positive definite strictly inside
+ARM FIRED E9 on the two-sheet support, turning the plane toward ν narrows the band from c, tan(W_t/R) = cos t tan(W/R), and widens it from d, tan(W'_t/R) = tan(W/R)/cos t
+ARM FIRED E10 the critical tube's half-width R arctan(ΓR/σ), and the tube edge 2πR cos(W/R)
