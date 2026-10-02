@@ -312,7 +312,7 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ### [The Smoothed-Cone Limit](files/smoothed-cone-limit.md)
 
-**Program (2026-10-02):** Declared before any computation: whether smoothing the conic band's pinch selects the Friedrichs realization the carrier adopts (1e) or a transmitting one. The class is the metric $`dy^2 + (\cos^2(y/R) + \varepsilon^2)\,dw^2`$, the pinch opened into a neck; what counts, the cross-check curves and the nonclaims are fixed; nothing is computed yet.
+**Program (2026-10-02):** Declared before any computation: whether smoothing the conic band's pinch selects the Friedrichs realization the carrier adopts (1e) or a transmitting one. The class is the metric $`dy^2 + (\cos^2(y/R) + \varepsilon^2)\,dw^2`$, the pinch opened into a neck; what counts, the cross-check curves and the nonclaims are fixed. Proposition 1 then derives the limit for the class: Friedrichs, eigenvalue by eigenvalue, with the twisted bottom of order $`1/\ln(1/\varepsilon)`$. The cross-check is next; no eigenvalue has been computed.
 
 **Inputs:** [First eigenvalue](../bedrock/files/first-eigenvalue.md) §7, [The Projective Carrier](files/projective-carrier.md) §XI 1e, [Scaling Law Uniqueness](files/scaling-law-uniqueness.md).
 
