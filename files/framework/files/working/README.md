@@ -310,6 +310,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ---
 
+### [The Smoothed-Cone Limit](files/smoothed-cone-limit.md)
+
+**Program (2026-10-02):** Declared before any computation: whether smoothing the conic band's pinch selects the Friedrichs realization the carrier adopts (1e) or a transmitting one. The class is the metric $`dy^2 + (\cos^2(y/R) + \varepsilon^2)\,dw^2`$, the pinch opened into a neck; what counts, the cross-check curves and the nonclaims are fixed; nothing is computed yet.
+
+**Inputs:** [First eigenvalue](../bedrock/files/first-eigenvalue.md) §7, [The Projective Carrier](files/projective-carrier.md) §XI 1e, [Scaling Law Uniqueness](files/scaling-law-uniqueness.md).
+
+**Parent:** [The Projective Carrier](files/projective-carrier.md)
+
+---
+
 ### [The Fixed-Edge Stability Check](files/fixed-edge-check.md)
 
 **Result (2026-10-01):** The independent check registered with the projective carrier's §IX, run blind on OpenWave as M8.14 and scored against the frozen terms: Reproduced. Two blind rooms derived the reduction to the lune, each by its own route, and its Dirichlet spectrum, and the frozen cross-check matched the lune's bottom at all five widths, with a largest miss of three parts in ten million. The check cannot see the seam's twist, and the result is a fixed-edge theorem, not vacuum stability.
