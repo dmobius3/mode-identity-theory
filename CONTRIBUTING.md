@@ -25,7 +25,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **What counts.** The function, or rigorous two-sided bounds on it, with code anyone can rerun. Exact values at special poses count too.
 
-**Why it matters.** It limits the band's width only if the band must embed in the quotient $`S^3/2I`$, a question the framework leaves open.
+**Why it matters.** The quotient $`S^3/2I`$ is where the band's image is observed, and $`W_*`$ is the width at which that image first meets itself. It would limit the width only if the carrier were this band and had to embed there; the framework rules the carrier's physical domain to be $`\mathbb{RP}^3`$, where this band embeds.
 
 **Skills:** quaternions, finite groups, numerical geometry. **Difficulty:** starter. **Source:** [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#i-the-projective-layer), Proposition 0.4, and §XI, 1f.
 

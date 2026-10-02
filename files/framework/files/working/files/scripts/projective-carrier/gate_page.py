@@ -146,7 +146,7 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("These are different operations doing different jobs", "files/framework/README.md"),
     ("The two seams share one step without merging", "files/framework/README.md"),
     ("the orientation sign and the central $`-I`$ are carried by one loop", "files/framework/README.md"),
-    ("which of the two layers is the carrier's physical domain is open", "files/framework/README.md"),
+    ("the carrier's physical domain is $`\\mathbb{RP}^3`$, the layer where it embeds", "files/framework/README.md"),
     ("enters separately", "files/framework/files/bedrock/README.md"),
     ("The quotient's central stage reaches the band itself", "files/framework/files/bedrock/README.md"),
     ("The carrier embeds unbent in the projective layer", "files/framework/files/bedrock/README.md"),
