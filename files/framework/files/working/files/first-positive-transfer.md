@@ -84,6 +84,8 @@ The run decides none of the carrier's open sub-decisions ([The Projective Carrie
 
 *Added 2026-09-29: 1e and 1d have since been ruled: Friedrichs in both sectors, and the transverse sampler, normalized at unit radius, for every block ([The Projective Carrier](projective-carrier.md) §XI). The run selected neither. The value column stays the registered alternative, and the verdict holds for both samplers.*
 
+*Added 2026-10-02: 1f has since been ruled: the carrier's physical layer is $`\mathbb{RP}^3`$ and its pose is free ([The Projective Carrier](projective-carrier.md) §XI). The run selected neither, and with the pose free the first-positive weights of the blocks that are not full stay pose-dependent.*
+
 ## VI. Guards
 
 - Which blocks land in which class is fixed by $`\tau(-I)`$ and the sampler, known before the run, and gets no physical reading. In particular it is not read as the $`60R`$ projection.

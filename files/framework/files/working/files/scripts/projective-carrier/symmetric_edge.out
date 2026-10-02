@@ -1,0 +1,11 @@
+PASS E1 2I: 120 elements, closed, 31 axes
+PASS E2 Σ ∩ gΣ is the great circle G_a
+PASS E3 axis elements keep G_a, moving a point through 2, 3 or 5 points
+PASS E4 G_a and G_b cross at ±a×b at the angle between a and b
+PASS E5 no non-central element keeps the two-loop edge
+ARM FIRED E1 2I: 120 elements, closed, 31 axes [drop]
+ARM FIRED E1 2I: 120 elements, closed, 31 axes [nudge]
+ARM FIRED E2 Σ ∩ gΣ is the great circle G_a [wrong-circle]
+ARM FIRED E3 axis elements keep G_a, moving a point through 2, 3 or 5 points [other-axis]
+ARM FIRED E4 G_a and G_b cross at ±a×b at the angle between a and b [wrong-crossing]
+ARM FIRED E5 no non-central element keeps the two-loop edge [same-axis]
