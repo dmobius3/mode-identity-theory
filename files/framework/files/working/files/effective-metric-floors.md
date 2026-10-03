@@ -85,7 +85,7 @@ Across the classified family, normalization fixes each shell's angle-averaged po
 
 ## VI. A pattern
 
-Three findings now share one shape: the corpus names an object, states requirements on it, and supplies nothing that determines it. They concern two objects, not three: the variational route's functional, whose page records "no functional fixed", and the spatial projection twice, once when the construction attempt found no map among the existing objects and once here, where no source gives an independent handle on a new one.
+Three findings now share one shape: the corpus names an object, states requirements on it, and supplies nothing that determines it. They concern two objects, not three: the variational route's functional, whose page records that "No functional outside that class is fixed", and the spatial projection twice, once when the construction attempt found no map among the existing objects and once here, where no source gives an independent handle on a new one.
 
 ## VII. What this leaves
 

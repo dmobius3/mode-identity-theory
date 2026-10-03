@@ -9,7 +9,7 @@
 **State:** Active
 **Status (2026-09-02):** MOTIVATED, not derived. The reading is permitted by the framework; five promotion steps are named and unwalked.
 **Summary:** A candidate reading of E²=(mc²)²+(pc)² as the Pythagorean theorem on the mode decomposition of the sampling operation.
-**Inputs:** the standing wave $`\Psi = \cos(t/2)`$, the fermion mass formula (engine §5), The Waltz §§V-VI
+**Inputs:** the standing wave $`\Psi = \cos(t/2)`$, the fermion mass formula ([engine](../../../README.md#the-mass-formula)), The Waltz §§V-VI
 
 A candidate MIT reading of $`E^2 = (mc^2)^2 + (pc)^2`$. The framework appears to permit it; the derivation steps are specific and unwalked.
 
@@ -61,7 +61,7 @@ A photon propagates edge-only on $`S^1`$ (§V of the Waltz, masslessness as topo
 
 In the mode decomposition picture: the photon's null geodesic through $`S^3`$ has geodesic distance equal to phase advance times $`c`$. The temporal and spatial modes contribute the same amplitude, which collapses the decomposition to a single term. The photon has $`E = pc`$ with no rest mass term because it has no sampling operation that extracts temporal-mode amplitude independently.
 
-This is consistent with the edge-only character derived in the Waltz. The two statements say the same thing in different languages:
+This is consistent with the Waltz's reading of masslessness as edge-only propagation. The two statements say the same thing in different languages:
 - Waltz language: the photon stays on $`S^1`$, never crosses to the Möbius surface, pays no mass cost
 - Mode-decomposition language: the photon samples along null paths only, has no fixed-position temporal contribution
 
@@ -85,7 +85,7 @@ The reframe does not need new postulates. It uses elements already derived or ax
 |---|---|---|
 | $`c`$ as propagation rate on $`S^1`$ | Primitive input | Conversion factor between temporal and spatial contributions |
 | Standing wave $`\Psi(t) = \cos(t/2)`$ | Axiom | The wave being resolved |
-| Mass formula $`m(\rho,\sigma) = \mu_\Lambda \cdot C_\text{geom}(\rho) \cdot \ldots`$ | Engine §5 | Specifies which irreps give which temporal-mode amplitudes at fixed positions |
+| Mass formula $`m(\rho,\sigma) = \mu_\Lambda \cdot C_\text{geom}(\rho) \cdot \ldots`$ | Engine, [mass formula](../../../README.md#the-mass-formula) | Specifies which irreps give which temporal-mode amplitudes at fixed positions |
 | Masslessness as edge-only propagation | Waltz §V | Photons have no fixed-position sampling, hence no rest term |
 | $`\mathbb{R}^4`$ as emergent from sampling | Waltz §VI | Removes the "moving through spacetime" framing that makes velocity primary |
 | Observer coordinates: depth, position, phase | Waltz §VI | The sampling operation has structure; trajectory is a pattern in that structure |
@@ -98,13 +98,13 @@ Promotion from MOTIVATED to DERIVED requires walking the following steps.
 
 **Step 1: The spatial-mode coupling.** The path tangent at each point of a trajectory couples to the spatial harmonics of $`\Psi`$ on $`S^3`$. The amplitude extracted depends on which spatial modes the tangent direction projects onto. The structural derivation of this coupling is the core open question. It needs to yield $`(pc)^2`$ with the correct $`c^2`$ factor from first principles.
 
-**Step 2: Orthogonality of temporal and spatial modes.** The Pythagorean sum requires the two contributions to be orthogonal. For standing waves on bounded domains this is generically true: temporal and spatial harmonics are independent eigenmodes. But the specific wave $`\Psi`$ on $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ needs to be shown to have this decomposition cleanly. Partial derivation exists in the Bochner bounds on Möbius; full derivation open.
+**Step 2: Orthogonality of temporal and spatial modes.** The Pythagorean sum requires the two contributions to be orthogonal. For standing waves on bounded domains this is generically true: temporal and spatial harmonics are independent eigenmodes. But the specific wave $`\Psi`$ on $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ needs to be shown to have this decomposition cleanly. No derivation of it is on record; it is open.
 
 **Step 3: The $`c^2`$ factor on both terms.** $`c`$ appears in both $`mc^2`$ and $`pc`$. In MIT, $`c`$ is the propagation rate on $`S^1`$. The spatial-mode contribution $`(pc)^2`$ having $`c^2`$ factor needs to come from $`c`$ governing both the temporal advance and the null-geodesic constraint in $`S^3`$. This should fall out of the sampling operation being parameterized by phase on $`S^1`$ with $`c`$ as the universal rate.
 
 **Step 4: Lorentz invariance as sampling symmetry.** The transformations between observers at different trajectories should form a symmetry group. That group should be (or contain) the Lorentz group. Structural plausibility: phase advance on $`S^1`$ and geodesic motion in $`S^3`$ together have a natural symmetry that includes boosts. Explicit derivation open.
 
-**Step 5: Connection to the mass formula.** The fermion masses derived in Engine §5 should correspond to specific temporal-mode amplitudes of $`R_7`$, $`R_8`$, and other irreps sampled at fixed geodesic positions. The mass formula already gives the right shape. What needs to be shown: the temporal-mode interpretation of $`\mu_\Lambda`$, $`C_\text{geom}`$, and the torsion factor as components of the amplitude extraction.
+**Step 5: Connection to the mass formula.** The fermion masses of the engine's [mass formula](../../../README.md#the-mass-formula) should correspond to specific temporal-mode amplitudes of $`R_7`$, $`R_8`$, and other irreps sampled at fixed geodesic positions. The mass formula already gives the right shape. What needs to be shown: the temporal-mode interpretation of $`\mu_\Lambda`$, $`C_\text{geom}`$, and the torsion factor as components of the amplitude extraction.
 
 ## VII. Status Summary
 
