@@ -7,9 +7,9 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-10-02):** Declared before any computation (§§II-IV), then derived (§V): for the declared class the limit is the Friedrichs realization, eigenvalue by eigenvalue and in norm-resolvent sense under a fixed unitary identification, with the twisted bottom $`(1 + o(1))/(R^2\ln(4/\varepsilon))`$ (Proposition 1). The cross-check of §III is next; no eigenvalue has been computed.
+**Status (2026-10-02):** Declared before any computation (§§II-IV), then derived (§V): for the declared class the limit is the Friedrichs realization, eigenvalue by eigenvalue and in norm-resolvent sense under a fixed unitary identification, with the twisted bottom $`(1 + o(1))/(R^2\ln(4/\varepsilon))`$ (Proposition 1). Cross-checked (§VI) in the $`n = 0`$ sector: the twisted bottom approaches the declared curve and meets it to the integration's floor at $`\varepsilon \le 10^{-6}`$, and the twisted and untwisted levels merge. The extension of §II stays declared, and the rate $`O(1/\ln(1/\varepsilon))`$ for the other levels and for the merging stays a target.
 **Summary:** Whether smoothing the conic band's pinch selects the Friedrichs realization the carrier adopts or a transmitting one: the class it will be checked in, the curves the numbers will be compared with, and the claims it will not make.
-**Inputs:** `../../bedrock/files/first-eigenvalue.md` (§7, Propositions 3.7 and 4.4, the conic trace coordinates), `projective-carrier.md` (§XI, 1e), `scaling-law-uniqueness.md`
+**Inputs:** `../../bedrock/files/first-eigenvalue.md` (§7, Propositions 3.7 and 4.4, the conic trace coordinates), `projective-carrier.md` (§XI, 1e), `scaling-law-uniqueness.md`, `scripts/smoothed-cone-limit/`
 **Parent:** `projective-carrier.md`
 
 ---
@@ -64,6 +64,44 @@ So the limit is Friedrichs, the outcome §II declares as confirming: it is not a
 - **Rates.** Item 3 gives the twisted bottom's rate, two-sided at leading order. For the other levels, and for the merging of the two classes, the rate $`O(1/\ln(1/\varepsilon))`$ stays a target; step 3 gives upper bounds of that order for levels whose limit eigenfunctions jump at the pinch.
 - **The cross-check.** Step 6's two bounds hold at every $`\varepsilon`$, not only in the limit, so each computed twisted bottom must lie between them. With $`L = \ln(4/\varepsilon)`$ they are $`(1 + O(\varepsilon^2 L))/(R^2 L)`$ and, the test function's norm falling short of $`2R`$ by $`4R\ln 2/L`$ at leading order, $`(1 + 2\ln 2/L)/(R^2 L)`$; the declared curve $`1/(R^2(L - 1)) = (1 + 1/L)/(R^2 L) + O(L^{-3})`$ lies between them, and the cross-check of §III tests it.
 - **Literature.** Smooth families converging to a conical singularity are treated by D. A. Sher, *Conic degeneration and the determinant of the Laplacian*, [J. Anal. Math. 126, 175–226 (2015)](https://doi.org/10.1007/s11854-015-0015-3). Here separation of variables reduces the two-ended neck, the twisted bundle and the Neumann edges to one-dimensional problems, so the proof stands on its own.
+
+## VI. The cross-check
+
+With $`R = 1`$, `scripts/smoothed-cone-limit/cross_check.py` computes the four lowest twisted levels $`t_k`$ and untwisted levels $`u_k`$ of the $`n = 0`$ sector, $`k = 0, \dots, 3`$, at eight values of $`\varepsilon`$ from $`10^{-1}`$ to $`10^{-12}`$; that sector carries §III's curves and does not depend on $`W`$, and $`u_0 = 0`$ is the constant. It integrates from the pinch to the seam in the variable $`F(\delta)`$ of §V, in which the sector reads $`-d^2Y/dF^2 = \lambda a_\varepsilon^2 Y`$; a second integration, in $`\delta`$, agrees with it on every computed level to relative $`10^{-8}`$ at $`\varepsilon = 10^{-1}, 10^{-2}, 10^{-3}`$. It was run after the declaration and the proof landed, and each of its six checks carries a planted defect that fires. The checks and their thresholds were set before its first run and not changed after it. After that run its machinery was corrected in five places: the root finder's tolerance, raised to the floor it accepts; the first integration's absolute tolerance on $`\delta`$, put on the neck's scale; the half-length $`F(\pi R/2)`$, now computed by the arithmetic-geometric mean after its elliptic integral lost digits to cancellation at small $`\varepsilon`$, a loss the seam check caught; the level scan's ceiling, raised from 14 to 22 to reach the fourth untwisted level at $`\varepsilon = 10^{-1}`$; and the agreement check's planted defect, replaced because a constant factor on $`a_\varepsilon`$ cancels from the equation and so planted nothing. Its record is `cross_check.out`.
+
+| $`\varepsilon`$ | twisted bottom $`t_0`$ | declared curve | relative gap | lower bound | upper bound | $`t_1 - 2`$ |
+| --- | --- | --- | --- | --- | --- | --- |
+| $`10^{-1}`$ | 0.359014232362 | 0.362751787720 | $`1.03 \times 10^{-2}`$ | 0.266011 | 0.392079 | $`-7.83 \times 10^{-2}`$ |
+| $`10^{-2}`$ | 0.198867539859 | 0.198895058070 | $`1.38 \times 10^{-4}`$ | 0.166853 | 0.210834 | $`-1.50 \times 10^{-3}`$ |
+| $`10^{-3}`$ | 0.136634650202 | 0.136634889444 | $`1.75 \times 10^{-6}`$ | 0.120568 | 0.142716 | $`-2.19 \times 10^{-5}`$ |
+| $`10^{-4}`$ | 0.104000178247 | 0.104000180458 | $`2.13 \times 10^{-8}`$ | 0.094370 | 0.107666 | $`-2.88 \times 10^{-7}`$ |
+| $`10^{-6}`$ | 0.070351107453 | 0.070351107453 | $`2.33 \times 10^{-12}`$ | 0.065782 | 0.072100 | $`-4.06 \times 10^{-11}`$ |
+| $`10^{-8}`$ | 0.053144902948 | 0.053144902947 | $`1.38 \times 10^{-12}`$ | 0.050487 | 0.054165 | $`4.50 \times 10^{-12}`$ |
+| $`10^{-10}`$ | 0.042698966151 | 0.042698966151 | $`2.14 \times 10^{-12}`$ | 0.040963 | 0.043366 | $`7.07 \times 10^{-12}`$ |
+| $`10^{-12}`$ | 0.035684104623 | 0.035684104623 | $`3.09 \times 10^{-12}`$ | 0.034462 | 0.036154 | $`9.70 \times 10^{-12}`$ |
+
+- **The declared curve holds.** The twisted bottom approaches the root of $`G(\lambda) = \ln(\varepsilon/4)`$, the bridging condition at $`\delta_0 = \varepsilon R/2`$: the relative gap falls from $`1.03 \times 10^{-2}`$ at $`\varepsilon = 10^{-1}`$ to $`2.13 \times 10^{-8}`$ at $`10^{-4}`$, and at $`\varepsilon \le 10^{-6}`$ it is at the level of the integration's relative tolerance, $`10^{-12}`$.
+- **Proposition 1's bounds hold** at every $`\varepsilon`$.
+- **The next twisted level tends to 2**, from below and much faster than the bottom tends to 0: its distance from 2 falls from $`7.83 \times 10^{-2}`$ at $`\varepsilon = 10^{-1}`$ to $`4.06 \times 10^{-11}`$ at $`10^{-6}`$, and at $`\varepsilon \le 10^{-8}`$ it is at the integration's floor, about $`10^{-11}`$. Its limit eigenfunction, the tilt, takes the same value on both sides of the pinch, while $`\phi_0`$ changes sign there, and the cost of order $`1/\ln(1/\varepsilon)`$ in step 3 comes from such a jump (§V, Rates).
+- **The two classes merge.** For each $`k`$ the difference $`\lvert t_k - u_k\rvert`$ shrinks at every step as $`\varepsilon`$ goes to 0, and so, slowly, does $`\ln(4/\varepsilon)\lvert t_k - u_k\rvert`$: for $`k = 1`$ from 4.54 at $`\varepsilon = 10^{-1}`$ to 3.14 at $`10^{-12}`$. That is consistent with merging at the rate $`O(1/\ln(1/\varepsilon))`$, which stays a target (§V, Rates). The differences $`\lvert t_k - u_k\rvert`$:
+
+| $`\varepsilon`$ | $`k = 0`$ | $`k = 1`$ | $`k = 2`$ | $`k = 3`$ |
+| --- | --- | --- | --- | --- |
+| $`10^{-1}`$ | 0.3590 | 1.2306 | 2.3984 | 3.8396 |
+| $`10^{-2}`$ | 0.1989 | 0.6360 | 1.1407 | 1.6973 |
+| $`10^{-3}`$ | 0.1366 | 0.4284 | 0.7504 | 1.0931 |
+| $`10^{-4}`$ | 0.1040 | 0.3227 | 0.5587 | 0.8060 |
+| $`10^{-6}`$ | 0.0704 | 0.2160 | 0.3694 | 0.5276 |
+| $`10^{-8}`$ | 0.0531 | 0.1623 | 0.2757 | 0.3919 |
+| $`10^{-10}`$ | 0.0427 | 0.1299 | 0.2199 | 0.3117 |
+| $`10^{-12}`$ | 0.0357 | 0.1083 | 0.1829 | 0.2587 |
+
+- **What it does not do.** The numbers check the analysis and do not decide it (§III), and they cover only the $`n = 0`$ sector.
+
+## Files
+
+In [`scripts/smoothed-cone-limit/`](scripts/smoothed-cone-limit/), with the SHA-256 of every other file in `SHA256SUMS`:
+- `cross_check.py`: §VI's levels by two integrations of the $`n = 0`$ sector, with six checks: the two integrations agree, the first lands on the seam, the twisted bottom lies between Proposition 1's bounds and meets the declared curve, the next twisted level meets 2, and the two classes merge, each with a planted defect that must fire. Its record is `cross_check.out`, from Python 3.13, NumPy 2.5.0, SciPy 1.18.0 and mpmath 1.3.0; elsewhere the digits at the integration's floor may differ.
 
 ---
 
