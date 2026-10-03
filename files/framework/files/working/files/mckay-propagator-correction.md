@@ -6,13 +6,14 @@
 # McKay Propagator Correction to the Fermion Mass Formula
 
 **Type:** Test
-**State:** Reopened
-**Status (2026-10-03):** Registered (below): the literal $`\Pi_T`$ path product, both directions declared, one run against the corrected table next. Resolved as a negative result on the pre-correction mass table (2026-06-06): no parameter-free propagator or branch-point correction tracked the high-distance residuals. Reopened 2026-07-28 by the half-integer torsion correction, which revised twelve of the twenty-four products; the propagator question is open again against the corrected residuals. Charm remains unplaced.
+**State:** Closed
+**Verdict:** Negative
+**Status (2026-10-03):** Negative. The registered re-test of the literal $`\Pi_T`$ path product failed in both directions on the corrected table ([result](#retest-result)); the page's other complete parameter-free forms fail the same grade, adjudicated after the run, and its remaining forms need a coefficient or undefined weights, so no parameter-free propagator form defined on this page survives. d and τ stand as two overshoots, with no common mechanism claimed, and a new mechanism would reopen the question. Resolved as a negative result on the pre-correction mass table (2026-06-06); reopened 2026-07-28 by the half-integer torsion correction, which revised twelve of the twenty-four products. Charm remains unplaced.
 **Summary:** Tests whether a parameter-free McKay-propagator or branch-point correction accounts for the high-McKay-distance mass residuals.
 **Inputs:** the fermion mass formula, C_geom and torsion tables, the Coxeter-Galois gate, the McKay graph for 2I, the maintained scorecard (`../../../../spectrum/files/mass-spectrum.md`), `scripts/mass-null-inputs.json` (the frozen v1.1 inputs), `scripts/mckay-propagator-retest/`
-**Frozen:** 2026-06-06 the original negative result and its residual/correlation tables; 2026-10-03 the literal $`\Pi_T`$ registration, before its run
+**Frozen:** 2026-06-06 the original negative result and its residual/correlation tables; 2026-10-03 the literal $`\Pi_T`$ registration, before its run, that run's record and the record of the forms adjudicated after it
 
-RESOLVED as a negative result on the pre-correction mass table (2026-06-06); **REOPENED 2026-07-28** by the half-integer torsion correction (see the update below). The 2026-06 finding was that the propagator/branch-point correction is eliminated by the signed-residual test, the high-distance residual being scatter rather than a correctable distance trend, with down and tau as two separate standing anomalies missing in opposite directions. That residual landscape no longer obtains: on the corrected table both are overshoots. Everything from the Result section down is preserved unedited as the 2026-06 record. **Registered 2026-10-03:** the literal $`\Pi_T`$ re-test, [below](#registration), runs once against the corrected table.
+RESOLVED as a negative result on the pre-correction mass table (2026-06-06); **REOPENED 2026-07-28** by the half-integer torsion correction (see the update below). The 2026-06 finding was that the propagator/branch-point correction is eliminated by the signed-residual test, the high-distance residual being scatter rather than a correctable distance trend, with down and tau as two separate standing anomalies missing in opposite directions. That residual landscape no longer obtains: on the corrected table both are overshoots. Everything from the Result section down is preserved unedited as the 2026-06 record. **Closed 2026-10-03:** the literal $`\Pi_T`$ re-test, [registered below](#registration), ran once against the corrected table and failed in both directions ([result](#retest-result)).
 
 **Update (2026-06-19).** The honesty pass reframed the mass spectrum from prediction to comparison, and this negative result is its empirical backbone: the high-distance residual is irreducible symmetric scatter (~×1.8), not a recoverable distance or branch trend, so the ladder is read as a comparison against the measured fermions, not a fully-determined prediction. The propagator/branch route explored in §1–§11 was the attempt to make the masses fully determined; eliminating it is what the comparison framing now states plainly. Three reconciling facts for the counts below: $`m_e`$ is the benchmark that sets the absolute scale (its 1.02 is the $`m_e \leftrightarrow \Lambda`$ loop closing, not a hit), so the charged within-×3 count is 6 of 8 (down outside, charm unassigned; the maintained scorecard is in [the mass spectrum](../../../../spectrum/files/mass-spectrum.md)), and the within-6% comparisons are the up and muon. The §1–§11 body is kept as the 2026-06-06 record.
 
@@ -41,9 +42,42 @@ Registered before the run: one run of `scripts/mckay-propagator-retest/retest.py
 
 ---
 
+<a id="retest-result"></a>
+## Re-test result (2026-10-03): negative
+
+Run once on 2026-10-03, on main at 269bf32, the registration commit, after a fetch. All six input gates, the four self-tests and the four guard conditions passed before the computation. The record is `scripts/mckay-propagator-retest/retest.out`, SHA-256 `30e3fe97b6fdb78cf9dd39ade4c69f2ab0aa7608b4e3afb228bcd01e41dd3aff`, also in that folder's `SHA256SUMS`.
+
+| fermion | address | $`r`$ before | correction, $`\log_{10}`$ | $`r`$, arm M | $`r`$, arm D |
+| --- | --- | --- | --- | --- | --- |
+| d | $`(R_8,\text{gal})`$ | +0.509 | +4.274 | +4.783 | −3.765 |
+| μ | $`(R_8,\text{std})`$ | −0.010 | +0.439 | +0.429 | −0.449 |
+| s | $`(R_8,\text{std})`$ | +0.044 | +0.439 | +0.483 | −0.396 |
+| τ | $`(R_4,\text{gal})`$ | +0.439 | +4.555 | +4.994 | −4.115 |
+| t | $`(R_2,\text{triv})`$ | −0.029 | +1.398 | +1.369 | −1.427 |
+
+The correction is $`\log_{10}(\Pi_T(\rho, \sigma)/\Pi_T(R_7,\text{triv}))`$, added in arm M and subtracted in arm D. The uncentered RMS of $`r`$ is 0.302 before, 3.166 in arm M and 2.589 in arm D.
+
+- **The verdict.** Both arms fail all three registered criteria: the RMS rises, scored fermions leave the ×3 window, and $`\lvert r\rvert`$ rises for d and for τ. The test is negative.
+- **The size of the miss.** The product, relative to the electron's, supplies +4.274 at d's address, +4.555 at τ's, +0.439 at the muon and strange's and +1.398 at t's, against residuals within ±0.51. Arm M leaves d and τ about five orders too heavy and t at +1.369, with the muon inside ×3 and the strange just outside it. Arm D overcorrects d and τ by about four orders and takes t out of the window at −1.427, while the muon and strange stay inside it, both worse. The miss is in the product's amplitude across the addresses, by orders of magnitude, not at a threshold.
+- **The diagnostic.** The observed arrangement ranks 9th of 24 in arm M and 2nd in arm D, with no ties. As registered, the ranks are descriptive, not a p-value.
+- **The script that ran.** `retest.py`, SHA-256 `c5bc9dd03c7b0e80edca5a487056de77caff23e1ec824848f3f2186f38497b4e`, the hash the registration carries. The reviewers read the version hashing to `d28f53004e9edc998e2a74401ff3dc10f60f02ac798e2ac3b175a372e79a80f5`, which differs only in the docstring's re-benchmark sentence, now stating the ratio $`\Pi_T(\rho, \sigma)/\Pi_T(R_7,\text{triv})`$ that `deltas` already computed; the code is identical. The record's run lines label criterion 3 "d and tau shrink"; the code tests that $`\lvert r\rvert`$ falls for d and for τ, the registered criterion, so the label does not touch the verdict.
+- **The page's other forms, adjudicated after the run.** Not part of the registered test. The registration left the vacuum-independent forms out because they move d and the muon and strange together at $`R_8`$; that holds against removing d's overshoot, not against the registered grade, which a common shift at $`R_8`$ between about −0.47 and −0.03 would meet there, bringing d inside ×3 with the muon and strange. So `scripts/mckay-propagator-retest/other_forms.py` applies the same grade, deterministically, to the page's other complete parameter-free forms, each read multiplicatively at power 1 in both directions and re-benchmarked to the electron; its record is `other_forms.out`. Both fail in both directions:
+
+| form | arm | RMS after | all within ×3 | $`\lvert r\rvert`$ falls for d and τ | grade |
+| --- | --- | --- | --- | --- | --- |
+| $`C_\text{geom}`$ path product (§4.1; $`\delta`$ of §4.3, exponentiated) | multiply | 0.452 | no | yes | fail |
+|  | divide | 0.706 | no | no | fail |
+| $`\kappa`$ (§4.4) | multiply | 0.486 | no | yes | fail |
+|  | divide | 0.691 | no | no | fail |
+
+  Distance alone needs a coefficient, and branch splitting, the combined form and the Galois form of §4.7 need weights the page does not define, so those four are outside the parameter-free class.
+- **What it closes, and what it does not.** With $`\Pi_T`$ failing its registered test, the $`C_\text{geom}`$ path product and $`\kappa`$ failing the same grade after it, and the remaining forms outside the parameter-free class, no parameter-free propagator form defined on this page survives the corrected table. That does not show that no McKay correction can exist; a new mechanism would reopen the question. The d and τ overshoots stand as two anomalies, and no common mechanism for them is claimed.
+
+---
+
 ## Result: hypothesis eliminated (negative)
 
-*Everything from here down is the 2026-06 pre-correction record, preserved unedited; its verdicts are scoped to the table analysed then. The route is formally REOPENED against the corrected residuals per the 2026-07-28 banner above.*
+*Everything from here down is the 2026-06 pre-correction record, preserved unedited; its verdicts are scoped to the table analysed then. The route was formally REOPENED against the corrected residuals per the 2026-07-28 banner above, and the re-test above has closed it negative.*
 
 The protocol (§6, §11) was run against the full §II data. The formula places the 10 SM-assigned masses within ×3.3 (most within ×1.5; the down quark, the worst, at ×3.2), then the signed residual $`r = \log_{10}(m_\text{pred}/m_\text{obs})`$ was computed and correlated against every parameter-free candidate. Reproducible script: [`mckay-propagator-correction.test.py`](scripts/mckay-propagator-correction.test.py).
 

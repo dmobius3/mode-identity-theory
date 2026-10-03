@@ -19,7 +19,7 @@ v1.0 EXECUTED (2026-07-11, Results below); **v1.1 EXECUTED (2026-07-28: register
 
 **The claim under audit** ([mass-spectrum.md](../../../../spectrum/files/mass-spectrum.md), §III): the ×3 proximity comparison. Under the compatible-coverage reading (§I), $`S_1 = 6`$ of the 8 scored charged fermions have a quantum-number-compatible entry within a factor of 3 (down outside at 3.22, charm without a compatible entry). The page's assignment headline is 5 of 8; §I explains the one-fermion difference. The page states the caveat this test quantifies: "at this entry density a measured mass sits near some entry largely by counting."
 
-**Related:** [Claim Ledger](claim-ledger.md), [McKay Propagator Correction](mckay-propagator-correction.md) (negative on the pre-correction table, reopened on the corrected one; its residual scatter is context for this test), [R from the Mass Spectrum](r-from-mass-spectrum.md).
+**Related:** [Claim Ledger](claim-ledger.md), [McKay Propagator Correction](mckay-propagator-correction.md) (negative on the pre-correction table, and again on the corrected one, its primary form in a registered re-test; its residual scatter is context for this test), [R from the Mass Spectrum](r-from-mass-spectrum.md).
 
 ---
 

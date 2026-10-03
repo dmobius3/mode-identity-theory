@@ -1,0 +1,24 @@
+PASS G1 the inputs file carries the pinned SHA-256
+PASS G2 the graph's distances match the inputs and every shortest path is unique
+PASS G3 every path and its intermediate nodes match §2.5's table
+PASS G4 the 24 torsion values reproduce mass-spectrum §4's table
+PASS G5 the predicted masses at the scored addresses and the benchmark reproduce §III
+PASS G6 the observed masses match the inputs and §III
+PASS S1 the path product takes the intermediate nodes only
+PASS S2 a factor common to every address and the benchmark cancels
+PASS S3 the grade passes an exact cancellation in its own arm only and fails a uniform shift
+PASS S4 the diagnostic ranks the exact cancellation first among 24
+PASS guard: the script is unmodified at HEAD
+PASS guard: HEAD is origin/main
+PASS guard: the page at HEAD carries this script's SHA-256
+PASS guard: no recorded run is at HEAD
+f    address       r before  log10 Pi_T rel. e  r, arm M  r, arm D
+d    (R8, gal)       +0.509             +4.274    +4.783    -3.765
+mu   (R8, std)       -0.010             +0.439    +0.429    -0.449
+s    (R8, std)       +0.044             +0.439    +0.483    -0.396
+tau  (R4, gal)       +0.439             +4.555    +4.994    -4.115
+t    (R2, triv)      -0.029             +1.398    +1.369    -1.427
+uncentered RMS before: 0.302
+arm M (multiply by Pi_T): RMS after 3.166; (1) RMS falls False; (2) all within x3 False; (3) d and tau shrink False: FAIL; diagnostic rank 9 of 24, 0 tied
+arm D (divide by Pi_T): RMS after 2.589; (1) RMS falls False; (2) all within x3 False; (3) d and tau shrink False: FAIL; diagnostic rank 2 of 24, 0 tied
+VERDICT: NEGATIVE, both arms fail

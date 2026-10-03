@@ -1,0 +1,23 @@
+PASS G1 the inputs file carries the pinned SHA-256
+PASS G2 the graph's distances match the inputs and every shortest path is unique
+PASS G3 every path and its intermediate nodes match §2.5's table
+PASS G4 the 24 torsion values reproduce mass-spectrum §4's table
+PASS G5 the predicted masses at the scored addresses and the benchmark reproduce §III
+PASS G6 the observed masses match the inputs and §III
+PASS S1 the path product takes the intermediate nodes only
+PASS S2 a factor common to every address and the benchmark cancels
+PASS S3 the grade passes an exact cancellation in its own arm only and fails a uniform shift
+PASS S4 the diagnostic ranks the exact cancellation first among 24
+PASS T1 the C_geom path product and kappa match their definitions on a toy path
+ARM FIRED T1 [pi-includes-target]
+ARM FIRED T1 [kappa-dist]
+uncentered RMS before: 0.302
+Pi (C_geom path product): log10 correction rel. e at (R8, gal) -0.121, (R8, std) -0.121, (R4, gal) -0.744, (R2, triv) -0.840
+  multiply: r d +0.388 mu -0.131 s -0.077 tau -0.305 t -0.870; RMS after 0.452; (1) RMS falls False; (2) all within x3 False; (3) |r| falls for d and tau True: FAIL
+  divide: r d +0.630 mu +0.111 s +0.165 tau +1.184 t +0.811; RMS after 0.706; (1) RMS falls False; (2) all within x3 False; (3) |r| falls for d and tau False: FAIL
+  Pi (C_geom path product): both arms fail
+kappa: log10 correction rel. e at (R8, gal) -0.575, (R8, std) -0.575, (R4, gal) -0.015, (R2, triv) -0.580
+  multiply: r d -0.066 mu -0.584 s -0.531 tau +0.425 t -0.609; RMS after 0.486; (1) RMS falls False; (2) all within x3 False; (3) |r| falls for d and tau True: FAIL
+  divide: r d +1.083 mu +0.565 s +0.618 tau +0.454 t +0.550; RMS after 0.691; (1) RMS falls False; (2) all within x3 False; (3) |r| falls for d and tau False: FAIL
+  kappa: both arms fail
+ADJUDICATION: NEGATIVE, every computed form fails in both directions
