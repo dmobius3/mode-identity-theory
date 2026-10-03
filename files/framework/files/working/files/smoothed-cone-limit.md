@@ -16,7 +16,7 @@
 
 ## I. The question
 
-The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) leaves open whether a geometric regularization of the conic band's pinch selects a canonical defect length $`\delta_0`$, for instance as a norm-resolvent limit of smoothed-cone Laplacians (its §7). It expects a transmitting limit only under tuning to a zero-energy resonance, which the [projective carrier](projective-carrier.md)'s 1e grades MOTIVATED, not computed. 1e names a geometric regularization that selects a transmitting limit as the route that would overturn its Friedrichs realization, and the [scaling law](scaling-law-uniqueness.md) calls the smoothed-cone limit the check that could overturn it. This page fixes the class the check runs in before anything is computed.
+The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) leaves open whether a geometric regularization of the conic band's pinch selects a canonical defect length $`\delta_0`$, for instance as a norm-resolvent limit of smoothed-cone Laplacians (its §7). It expects a transmitting limit only under tuning to a zero-energy resonance, which the [projective carrier](projective-carrier.md)'s 1e grades MOTIVATED. 1e names a geometric regularization that selects a transmitting limit as the route that would overturn its Friedrichs realization, and the [scaling law](scaling-law-uniqueness.md) calls the smoothed-cone limit the check that could overturn it. This page fixes the class the check runs in before anything is computed.
 
 ## II. Declared (2026-10-02)
 

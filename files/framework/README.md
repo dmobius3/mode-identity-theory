@@ -594,7 +594,7 @@ It reads as one line, but like the scaling law its four factors do not stand at 
 
 **The Kostant sunflower** $`C_\text{geom}(\rho)`$ is the same phase weight $`C(\Theta)`$ the scaling law uses, read now as the geometric mean of $`C(e/D)`$ over the Kostant exponents of the irrep $`\rho`$: derived once and reused, not reintroduced. Each irrep takes its own seat on that discrete sunflower.
 
-**The McKay elevator** $`(\sqrt{\Omega_\Lambda})^{\,\text{dist}(\rho)/30}`$ raises the seat through orders of magnitude, one fixed factor per step along the McKay graph, with the denominator the Coxeter number $`h(E_8) = 30`$ of the same McKay geometry attached to $`2I`$. That exponent is reached by more than one convergent route but not yet from a single principle, so it is a structural rule the geometry carries rather than a closed derivation.
+**The McKay elevator** $`(\sqrt{\Omega_\Lambda})^{\,\text{dist}(\rho)/30}`$ raises the seat through orders of magnitude, one fixed factor per step along the McKay graph, with the denominator the Coxeter number $`h(E_8) = 30`$ of the same McKay geometry attached to $`2I`$. That exponent is not yet derived, so it is a structural rule the geometry carries rather than a closed derivation.
 
 **The torsion dial** $`T^2(\rho \otimes \sigma)`$ is the fine adjustment within a shell, the one factor that changes across the three vacua, and the most exactly known of the four. Every irrep carries a closed form in $`\mathbb{Q}(\varphi)`$: the Galois-paired vacua satisfy $`T^2(R_3)/T^2(R_4) = \varphi^{-4}`$ and $`T^2(R_1)/T^2(R_2) = \varphi^{-8}`$, and the two spin-parity sector products, $`4`$ and $`1/4`$, are exact inverses.
 
