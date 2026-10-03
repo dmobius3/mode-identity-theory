@@ -72,9 +72,9 @@ In this reading, galactic coherence is a consequence of:
 - One cone point (at $`y = \pi R/2`$)
 - $`W`$-independence (the transverse width of the galaxy doesn't matter)
 
-The galactic gravitational field enters through the $`\Phi \to \Theta`$ mapping, which shifts the observer's phase position by $`\Theta_f \approx 2/120`$. This is a perturbation of the phase coordinate, not the transverse coordinate. The cone point structure is unaffected because the perturbation is in $`y`$ (meridional), not in $`w`$ (transverse).
+The galactic gravitational field enters through the $`\Phi \to \Theta`$ mapping, which shifts the observer's phase position by $`\Theta_f`$. The size $`2/120`$ once assigned to that shift came from the environmental grid rule, which is withdrawn with the trigger that would have realized it ([Hubble Tension](../../../../cosmos/files/hubble-tension.md)), so no active mechanism fixes it. This is a perturbation of the phase coordinate, not the transverse coordinate. The cone point structure is unaffected because the perturbation is in $`y`$ (meridional), not in $`w`$ (transverse).
 
-**What needs to be checked:** does the $`\Theta_f`$ perturbation spoil the cone point analysis? Specifically: does the perturbed eigenfunction still belong to the bridging domain (regular branch, finite Dirichlet integral, regularized-value continuity across the apex) at the cone point? The input is the galactic potential, $`\Phi/c^2 \sim 10^{-6}`$; the environmental grid rule floors the response at the minimum bosonic step, so the displacement actually applied to the phase coordinate is $`\Theta_f \approx 2/120`$. That is small in absolute terms, and the check is owed there rather than at the potential that feeds it. But "small" is not "zero," and the cone point is a singular endpoint where small perturbations could change the qualitative character.
+**What needs to be checked:** does the $`\Theta_f`$ perturbation spoil the cone point analysis? Specifically: does the perturbed eigenfunction still belong to the bridging domain (regular branch, finite Dirichlet integral, regularized-value continuity across the apex) at the cone point? The input is the galactic potential, $`\Phi/c^2 \sim 10^{-6}`$. The environmental grid rule floored the response at the minimum bosonic step, $`\Theta_f \approx 2/120`$, and the check was owed there; that rule is withdrawn, and without it the response is continuous in the potential, so the check is owed at whatever displacement that response produces. But "small" is not "zero," and the cone point is a singular endpoint where small perturbations could change the qualitative character.
 
 ### Reading B: Nested Galactic Cone Point
 
@@ -294,7 +294,7 @@ To derive the Oort Cloud radius, one would need: the stellar analog of $`L_g`$, 
 | 3 | Reading A or B? One cone point or many? | Questions 1 and 2 | HIGH |
 | 4 | Variable-curvature budget identity: what replaces $`u^2 + J^2 = 1`$ when $`K`$ is not constant? | Frobenius program, Step 7 | MEDIUM |
 | 5 | What sets $`W_g`$? The meridional length is $`L_g`$ (originally identified with $`L_f = v_c^2/a_0`$, now falsified). What sets the transverse width? | Reading B | MEDIUM |
-| 6 | Perturbative stability of the cosmic cone point: does the $`\Theta_f \approx 2/120`$ phase displacement spoil any step in the chain? | Reading A | Unsettled. The earlier LOW was assessed against the $`\Phi/c^2 \sim 10^{-6}`$ potential rather than the displacement the grid rule produces from it, and has not been re-derived |
+| 6 | Perturbative stability of the cosmic cone point: does a phase displacement $`\Theta_f`$ spoil any step in the chain? | Reading A | Unsettled. It was posed at the grid rule's $`2/120`$ displacement, and that rule is withdrawn ([Hubble Tension](../../../../cosmos/files/hubble-tension.md)); without it the displacement is the continuous response to the $`\Phi/c^2 \sim 10^{-6}`$ potential, the scale the earlier LOW was assessed at, and the check has not been re-derived at either |
 | 7 | Width regime constraint: nested galactic bands (Reading B) require $`W_g \leq \pi R_g/2`$ for the zonal mode to be the first positive level. If $`W_g > \pi R_g/2`$, the first positive level is azimuthal and $`W_g`$-dependent, breaking the coherence mechanism. What constrains $`W_g`$ at galactic scale? | Width transition (first-eigenvalue paper), Reading B | HIGH |
 
 ---
@@ -321,7 +321,7 @@ The curvature sourcing question (§V) is the fork. Everything else sits on one s
 
 **After the fork:** run the Frobenius program at galactic scale (§VII), establish or exclude $`W_g`$-independence, and connect to the Oort Cloud project's nested coherence picture.
 
-The fork question is coupled to Gap 1 of the Oort Cloud project (nested $`L_g`$ derivation) and to the discrete snap mechanism (working file). All three ask the same thing at different levels: how does the topological structure interface with the gravitational field at sub-cosmic scales?
+The fork question is coupled to Gap 1 of the Oort Cloud project (nested $`L_g`$ derivation); the discrete snap mechanism it was also coupled to is withdrawn ([Hubble Tension](../../../../cosmos/files/hubble-tension.md)). Both ask the same thing at different levels: how does the topological structure interface with the gravitational field at sub-cosmic scales?
 
 ---
 

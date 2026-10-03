@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-16):** Working bench: Section II derived, Section III joints under load, Section IV pieces motivated, Section V gaps. The central question is whether the 120-grid nests at every gravitationally coherent scale.
+**Status (2026-10-03):** Working bench: Section II derived apart from its annotated rows, Section III joints under load, Section IV pieces motivated, Section V gaps. The central question is whether the 120-grid nests at every gravitationally coherent scale.
 **Summary:** Asks whether MIT's structure projects into every gravitationally coherent scale, making the Oort Cloud the solar-scale coherence boundary.
 **Inputs:** the first positive eigenvalue (first-eigenvalue paper), the phase-field coherence scale (L_f SPARC-falsified, L_g open), the 120-grid scale-free projection, the 3/2 conversion
 
@@ -35,18 +35,18 @@ Derived, tested, load-bearing. Pick up and use.
 
 | Part | What it is | Derived from | Reference |
 |------|-----------|--------------|-----------|
-| $`\Psi(t) = \cos(t/2)`$ | Cosmic wave, period $`4\pi`$ | Anti-periodic BC on $`S^1`$ | MIT II.B |
-| $`C(\Theta) = 2\sin^2(\pi\Theta)`$ | Phase operator | Anti-periodic BC, unit normalization | MIT II.D |
-| 120-grid | Phase resolution native to $`S^3`$ | Binary icosahedral group ($`\|2I\| = 120`$) | MIT II.D |
-| $`\sqrt{\Omega} = 10^{61}`$ | Observer midpoint | UV-IR fixed point on bounded domain | MIT II.C |
-| $`(\sqrt{\Omega})^{-n}`$ | Hierarchy factor | Volume dilution in $`n`$-manifold | MIT II.C |
-| 3/2 conversion | Perception geometry: surface-to-venue | Gauss/Ricci lift (the 3), de Sitter vacuum normalization (the 1/2), minimal embedding, isotropy | [The Waltz](../../../../spectrum/files/the-waltz.md) |
+| $`\Psi(t) = \cos(t/2)`$ | Cosmic wave, period $`4\pi`$ | Anti-periodic BC on $`S^1`$ | Engine, [One Wave](../../../README.md#one-wave) |
+| $`C(\Theta) = 2\sin^2(\pi\Theta)`$ | Phase operator | Anti-periodic BC, unit normalization | Engine, [The Phase Operator](../../../README.md#the-phase-operator) |
+| 120-grid | Phase resolution native to $`S^3`$ | Binary icosahedral group ($`\|2I\| = 120`$) | Engine, [The Sampling Grids](../../../README.md#the-sampling-grids) |
+| $`\sqrt{\Omega} = 10^{61}`$ | Observer midpoint | UV-IR fixed point on bounded domain | Engine, [The Hierarchy and the Observer](../../../README.md#the-hierarchy-and-the-observer) |
+| $`(\sqrt{\Omega})^{-n}`$ | Hierarchy factor | Volume dilution in $`n`$-manifold | Engine, [The Hierarchy and the Observer](../../../README.md#the-hierarchy-and-the-observer) |
+| 3/2 conversion | Perception geometry: surface-to-venue | Gauss/Ricci lift (the 3), de Sitter vacuum normalization (the 1/2, imported from general relativity), totally geodesic covering band ($`A = 0`$), isotropy | [The Waltz](../../../../spectrum/files/the-waltz.md) |
 | $`\Lambda_\text{ref} = 3/R_\Lambda^2`$ | Vacuum-reference value, not a prediction | Scaling law gives the seed $`\Lambda_\text{top} = 2/R_\Lambda^2`$; the 3/2 lift gives the reference. On the $`\Lambda`$-anchored default it reproduces the measured $`2.845 \times 10^{-122}`$ by construction, since $`R_\Lambda`$ is back-read from $`\Lambda`$; the non-circular $`\alpha`$ route lands ~23% low | [The Waltz](../../../../spectrum/files/the-waltz.md) |
-| $`\tau = T/120`$ | Chronon at any scale | 120-grid applied to mode period $`T`$ | Chronon note |
-| $`\tau_c/\tau_P = \sqrt{\Omega}`$ | Chronon ratio spans $`10^{61}`$ | Same midpoint, temporal channel | Chronon note |
-| $`L_f = v_c^2/a_0`$ | Coherence scale (galactic, ~13 kpc). SPARC-falsified as single coherence radius; retained as the tested candidate | Phase field mechanics | MIT II.G |
-| $`\Delta\Theta_{\min} = 2/120`$ | Minimum bosonic step | 60R resolution, $`\lvert I\rvert = 60`$ | MIT II.D |
-| $`\Theta_f^{\text{env}} \approx 2/120`$ (MW) | Environmental phase shift | Minimum step at Milky Way potential | MIT II.G |
+| $`\tau = T/120`$ | Chronon at any scale | 120-grid applied to mode period $`T`$ | Engine, [The Chronon](../../../README.md#the-chronon) |
+| $`\tau_c/\tau_P = \sqrt{\Omega}`$ | Chronon ratio spans $`10^{61}`$, on the cosmic period's provisional 33 Gyr (Joint 2) | Same midpoint, temporal channel | Engine, [The Chronon](../../../README.md#the-chronon) |
+| $`L_f = v_c^2/a_0`$ | Coherence scale (galactic, ~13 kpc). SPARC-falsified as single coherence radius; retained as the tested candidate | Phase field mechanics | Engine, [The Phase Field](../../../README.md#the-phase-field) |
+| $`\Delta\Theta_{\min} = 2/120`$ | Minimum bosonic step | 60R resolution, $`\lvert I\rvert = 60`$ | Engine, [The Sampling Grids](../../../README.md#the-sampling-grids) |
+| $`\Theta_f^{\text{env}} \approx 2/120`$ (MW) | Environmental phase shift. Withdrawn with the trigger that would have realized it (SPARC-falsified); retained as the record of the mechanism | Minimum step at Milky Way potential | Engine, [The Phase Field](../../../README.md#the-phase-field) |
 
 ---
 
@@ -54,7 +54,7 @@ Derived, tested, load-bearing. Pick up and use.
 
 ### Joint 1: The 3/2 is the geometry of perception
 
-The topology produces $`\Lambda_{\text{top}}`$ on a 2D surface. The observer infers $`\Lambda_{\text{obs}}`$ in 3D. The Gauss equation for minimal embedding in an isotropic venue:
+The topology produces $`\Lambda_{\text{top}}`$ on a 2D surface. The observer infers $`\Lambda_{\text{obs}}`$ in 3D. The Gauss equation for a totally geodesic surface ($`A = 0`$) in an isotropic venue, as for the carrier's covering great-$`S^2`$ band (the relation needs $`\det A = 0`$, which minimality alone does not give: [Lemma 0.1](projective-carrier.md#i-the-projective-layer)):
 
 ```math
 R_\Sigma = R_{\text{spatial}} - 2\,\text{Ric}(n,n) = R_{\text{spatial}} - \frac{2}{3}R_{\text{spatial}} = \frac{1}{3}R_{\text{spatial}}
@@ -69,10 +69,10 @@ Invert: $`R_{\text{spatial}} = 3\,R_\Sigma`$. With de Sitter relation $`R_{\text
 | Factor | Source |
 |--------|--------|
 | 3 | Ricci trace (isotropy distributes curvature equally across 3 spatial directions; normal gets 1/3) |
-| 2 | Friedmann dynamics ($`R_{\text{spatial}} = 2\Lambda`$ in de Sitter) |
+| 2 | de Sitter vacuum normalization ($`R_{\text{spatial}} = 2\Lambda`$ on the time-symmetric slice), imported from general relativity |
 | 3/2 | Perception geometry: how observers see the 3D venue through a 2D reception surface |
 
-Status: DERIVED. Solid.
+Status: DERIVED as a conditional relation. From the spectral seed, the Gauss lift on the totally geodesic covering band and the de Sitter normalization imported from general relativity, the relation gives the reference value $`\Lambda_\text{ref} = 3/R^2`$. Its value is not independently predicted while $`R`$ is calibration-dependent, and reading it as $`\Lambda_{\text{obs}}`$, as the equations above do, is an identification that stays an assumption until the stress tensor is determined ([Cosmological Constant](../../../../cosmos/files/cosmological-constant.md#vi-test-and-scope) §VI).
 
 ### Joint 2: The 120-grid is scale-free
 
@@ -85,7 +85,7 @@ The grid is group-theoretic, not dimensional. It doesn't know meters or seconds.
 
 Ratio: $`\tau_c/\tau_P \approx 10^{61} = \sqrt{\Omega}`$. The observer's structural midpoint appears in temporal scaling, not just spatial.
 
-Status: DERIVED. The 120-grid projects identically at every scale.
+Status: DERIVED that the grid applies to any period, since it is group-theoretic. The cosmic row is provisional: its 33 Gyr converts the $`4\pi`$ period to a duration, which waits on the open phase-to-clock map ([temporal budget](temporal-budget.md#viii-two-phase-parameters) §VIII), and the ratio's $`10^{61}`$ rides on that number. Whether the grid nests at every gravitationally coherent scale is this page's open question (Piece B).
 
 A second setting: the Molien series on $`S^3/2I`$ shows $`2I`$ filtering scalar harmonics on the full 3D $`S^3`$, producing a gap in the invariant spectrum that MIT reads as the counterpart of the CMB low-<i>ℓ</i> deficit. The gap is a spectral fact about the quotient and holds independent of cosmology; where it lands on the sky rides on the independently read curvature radius, and reaching a multipole at all takes a spatial projection the framework does not yet derive ([CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §IV). The same algebra that sets the 120 domain on the surface operates on the 3D harmonics of the venue, so the filtering is genuinely volumetric rather than confined to the 2D Möbius surface. That much supports the claim that the 120-grid projects into every gravitationally coherent scale, at both the 2D surface eigenvalue and the 3D cavity spectrum; whether it projects onto the sky is a separate question, and open.
 
@@ -93,7 +93,7 @@ A second setting: the Molien series on $`S^3/2I`$ shows $`2I`$ filtering scalar 
 
 Phase field mechanics: $`\Theta = \Theta_0 + \Theta_f`$, where $`\Theta_f`$ depends on environment (gravitational potential). Sampling requires a domain where potential is coherent. At galactic scale, the proposed coherence radius was $`L_f \approx 13`$ kpc (SPARC-falsified).
 
-Status: The principle (coherence required for sampling) is DERIVED and general. The specific galactic scale $`L_f = v_c^2/a_0`$ was derived, tested against SPARC, and falsified. The galactic coherence scale $`L_g`$ is open.
+Status: The principle (coherence required for sampling) was posed with the phase-field mechanism, whose trigger is withdrawn ([Hubble Tension](../../../../cosmos/files/hubble-tension.md)); no derivation of it is on record apart from that mechanism, so it stands as MOTIVATED. The specific galactic scale $`L_f = v_c^2/a_0`$ was derived, tested against SPARC, and falsified. The galactic coherence scale $`L_g`$ is open.
 
 The [cone point coherence notes](cone-point-coherence.md) explore the geometric mechanism: whether the $`W`$-independence of the zonal first-positive eigenvalue is the structural reason coherence holds within $`L_g`$. The zonal eigenvalue $`2/R^2`$ does not depend on $`W`$ because the zonal equation contains no $`W`$: the constant transverse mode has $`\mu = 0`$ ([first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) §4.1). It is the first positive eigenvalue only for the narrow band, $`W \le \pi R/2`$ (Theorem 1.2). Key findings from the coherence notes: GR tidal curvature in the flat-curve regime is Euler-type with power-law Jacobi solutions that structurally cannot zero, so the needed curvature lives at the topology-gravity interface; and SPARC falsified $`L_f = v_c^2/a_0`$ as the coherence radius, shifting the cone-point target from $`L_f`$ to whatever $`L_g`$ turns out to be.
 
@@ -101,7 +101,7 @@ The [cone point coherence notes](cone-point-coherence.md) explore the geometric 
 
 Tempting unification: both are gravitationally-driven boundaries on the same phase operator $`C(\Theta)`$, so is a coherence-domain boundary (Oort Cloud, $`L_g`$, $`R_\Lambda`$) just a small instance of the same mechanism that drives $`\Theta \to 0`$ at a horizon?
 
-Tested directly. [Black Double Zero's](../../../../cosmos/files/black-hole.md) §VIII.1 forces the leading behavior $`C/C_0\sim1-r_s/r`$ at the horizon; taking that as the global form (the minimal extension, not a further derivation) gives $`\delta\Theta \approx [\tan(\pi\Theta_0)/\pi]\cdot|\Phi|/c^2`$ near a well $`\Theta_0`$. Run at galactic potential ($`v_c = 220`$ km/s): predicted shift $`\sim 2\times10^{-7}`$, five orders of magnitude short of the established bosonic step (2/120) needed for the Hubble-tension mechanism. Run at the Sun's potential at 144,000 AU ($`GM_\odot/rc^2 \sim 7\times10^{-14}`$): predicted shift $`\sim 3\times10^{-14}`$, utterly negligible, no boundary of any kind. (A different global extension could in principle change the weak-field number, but only via an ad hoc, undemonstrated rescaling with no independent motivation, itself an additional mechanism, not a rescue of this one.)
+Tested directly. [Black Double Zero's](../../../../cosmos/files/black-hole.md) §VIII.1 forces the leading behavior $`C/C_0\sim1-r_s/r`$ at the horizon; taking that as the global form (the minimal extension, not a further derivation) gives $`\delta\Theta \approx [\tan(\pi\Theta_0)/\pi]\cdot|\Phi|/c^2`$ near a well $`\Theta_0`$. Run at galactic potential ($`v_c = 220`$ km/s): predicted shift $`\sim 2\times10^{-7}`$, five orders of magnitude short of the bosonic step (2/120) that the withdrawn Hubble-tension mechanism needed. Run at the Sun's potential at 144,000 AU ($`GM_\odot/rc^2 \sim 7\times10^{-14}`$): predicted shift $`\sim 3\times10^{-14}`$, utterly negligible, no boundary of any kind. (A different global extension could in principle change the weak-field number, but only via an ad hoc, undemonstrated rescaling with no independent motivation, itself an additional mechanism, not a rescue of this one.)
 
 Diagnosis: a category mismatch, not a missing generalization. The horizon mechanism is a single-well, absolute-potential-depth response, with a natural zero from asymptotic flatness. Coherence-domain nesting (Piece B) is a tidal *dominance crossover* between two competing, comparably shallow potentials, a different physical quantity, and (for an extended mass distribution like a galaxy) absolute $`\Phi`$ isn't even uniquely defined the way it is for Schwarzschild.
 
@@ -227,7 +227,7 @@ These are close. If the cosmic chronon is the minimum resolvable phase advance a
 
 If the 120-grid nests (Piece B), the galactic orbital period is the galactic-scale instance of $`\tau = T/120`$ for some appropriate $`T`$. But which $`T`$? And why should $`T_{\text{galactic}}/120 \approx T_{\text{cosmic}}/120`$? That would require $`T_{\text{galactic}} \approx T_{\text{cosmic}}`$, which is not obvious.
 
-Status: OBSERVATION. Intriguing. Possibly coincidence. Requires nested chronon derivation.
+Status: OBSERVATION. Intriguing. Possibly coincidence. Requires nested chronon derivation, and rides on the cosmic period's provisional 33 Gyr (Joint 2).
 
 ---
 

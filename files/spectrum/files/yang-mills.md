@@ -141,7 +141,7 @@ The same McKay filtering, applied to the trivial representation $`R_0`$ rather t
 P(t) = \frac{1 - t^{60}}{(1 - t^{12})(1 - t^{20})(1 - t^{30})}
 ```
 
-shows the first nontrivial invariant at $`N = 12`$. Five even-degree shells ($`N = 2, 4, 6, 8, 10`$) are empty. The mechanism parallels the gauge sector: the McKay recursion walks along the $`E_8`$ graph, and the trivial representation does not reappear until the walk returns after twelve steps. This shell gap is a spectral fact about the scalar sector. The same gap underlies the Molien account of the CMB low-ℓ deficit, which survives under the flat-FLRW cosmology; it does not by itself fix the curvature radius (see [CMB Anomalies](../../cosmos/files/cmb-anomalies.md) and [the R problem](../../framework/files/working/files/r-problem.md)).
+shows the first nontrivial invariant at $`N = 12`$. Five even-degree shells ($`N = 2, 4, 6, 8, 10`$) are empty. The mechanism parallels the gauge sector: the McKay recursion walks along the $`E_8`$ graph, and the trivial representation does not reappear until the walk returns after twelve steps. This shell gap is a spectral fact about the scalar sector. The same gap underlies the Molien account of the CMB low-ℓ deficit, which survives under the flat effective cosmology the framework adopts (adopted rather than derived from the static three-sphere); it does not by itself fix the curvature radius (see [CMB Anomalies](../../cosmos/files/cmb-anomalies.md) and [the R problem](../../framework/files/working/files/r-problem.md)).
 
 ## V. Falsification
 

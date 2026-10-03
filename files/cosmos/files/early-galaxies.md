@@ -30,7 +30,7 @@ MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse
 
 ## I. The Observational Tension
 
-JWST observations (Labbé et al.) reveal stellar masses $`M_\star \sim 10^{10}\,M_\odot`$ already assembled at $`z \approx 10`$, roughly 500 Myr after the standing wave began its cycle. These masses approach or exceed the maximal baryon abundance permitted in standard dark matter halos under ΛCDM, creating the "impossibly early galaxy" problem.
+JWST observations (Labbé et al.) reveal stellar masses $`M_\star \sim 10^{10}\,M_\odot`$ already assembled at $`z \approx 10`$, about 500 Myr after the Big Bang on ΛCDM's timeline. These masses approach or exceed the maximal baryon abundance permitted in standard dark matter halos under ΛCDM, creating the "impossibly early galaxy" problem.
 
 The tension is quantitative. Assembling $`10^{10}\,M_\odot`$ of stars in 500 Myr requires converting nearly every available baryon into stars. Under standard ΛCDM halo abundances, the implied star formation efficiency $`\varepsilon_\text{SF}`$ approaches or exceeds unity, the physical limit. Either the observations contain systematic errors, the mass estimates are wrong, or the gravitational physics governing early collapse is different from what we assume locally.
 

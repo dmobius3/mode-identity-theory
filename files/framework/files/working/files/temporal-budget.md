@@ -58,7 +58,7 @@ The present epoch sits partway around the first quadrant ($`0 < t_\text{now} < \
 
 Bounded realization ($`S \leq 1`$) is the key feature. Nothing in a standard FLRW decomposition has this constraint. Its fingerprint will appear as a forbidden term (§V).
 
-**What the budget produces alone.** With $`H`$ defined as $`(1/S)(dS/dt)`$ (phase-time derivative), the budget gives $`H^2 = (1-S^2)/(4S^2)`$, which scales as $`(1+z)^2 - \text{const}`$. This is curvature-like, not matter-like. The $`(1+z)^3`$ matter scaling requires the Waltz clock (§II), which converts phase time to proper time and contributes the additional $`S^{-1}`$ factor that turns $`S^{-2}`$ into $`S^{-3}`$. The budget identity sets the bounded structure; the clock sets the dimensional content.
+**What the budget produces alone.** With $`H`$ defined as $`(1/S)(dS/dt)`$ (phase-time derivative), the budget gives $`H^2 = (1-S^2)/(4S^2)`$, which scales as $`(1+z)^2 - \text{const}`$. This is curvature-like, not matter-like. The $`(1+z)^3`$ matter scaling requires the Waltz clock (§II), which converts phase time to the Hubble-clock time $`\tau_H`$ and contributes the additional $`S^{-1}`$ factor that turns $`S^{-2}`$ into $`S^{-3}`$; whether $`\tau_H`$ is observers' proper time is the open placement seam of [Friedmann as Output](friedmann-as-output.md). The budget identity sets the bounded structure; the clock sets the dimensional content.
 
 ### I.A Cooling, in budget terms
 
@@ -121,7 +121,7 @@ Two free parameters: $`s_0 = \sin(t_\text{now}/2)`$ and $`H_0`$. Same count as �
 
 The joint fit is driven by BAO data at $`z > 1`$ which constrain the differential Hubble rate, breaking the Pantheon+ distance-integral degeneracy. The Pantheon+-only value $`s_0 = 0.389`$ remains within the SN posterior alone but is pulled toward zero by the BAO sector. The 95% CL is prior-sensitive (ranging from 0.12 to 0.21 across flat, $`s_0^2`$-flat, and log-flat priors) but data-driven in character: all priors yield $`s_0 \ll 1`$.
 
-Pure budget without $`\Lambda`$ gives $`q_0 = +0.5`$ (deceleration). Data requires $`q_0 \approx -0.55`$ (acceleration). $`\Lambda`$ from topology is necessary; it is also already derived elsewhere in the framework (not a parameter introduced here).
+Pure budget without $`\Lambda`$ gives $`q_0 = +0.5`$ (deceleration). Data requires $`q_0 \approx -0.55`$ (acceleration). A $`\Lambda`$ term is necessary, and $`\Omega_\Lambda`$ is not fitted here: the fit holds $`\Omega_\Lambda = 0.685`$ fixed as its calibration anchor, while the framework supplies the conditional reference relation $`\Lambda_\text{ref} = 3/R^2`$ (§IX). Its value is not independently predicted while $`R`$ is calibration-dependent, and its identification with the observed $`\Lambda`$ is gated on the stress tensor ([Cosmological Constant](../../../../cosmos/files/cosmological-constant.md#vi-test-and-scope) §VI).
 
 **$`\Omega_\Lambda`$ sensitivity (Λcos paper).** With $`\Omega_\Lambda`$ fixed at 0.685, the SN+BAO fit gives $`\Delta\chi^2 = +0.11`$. The constraint varies smoothly across $`\Omega_\Lambda = 0.68-0.715`$, with the best $`\Delta\chi^2`$ near 0.69; at the CMB-preferred $`\Omega_\Lambda = 0.715`$ held fixed, the preferred deformation shifts to $`s_0 \approx 0.288`$ and the model is mildly disfavored ($`\Delta\chi^2 = +2.38`$). Separately, adding compressed Planck distance priors and freeing $`\Omega_\Lambda`$ shifts the preferred $`\Omega_\Lambda`$ to $`\sim 0.714`$ (in both Λcos and non-flat ΛCDM); with $`\Omega_\Lambda`$ freed, Λcos and non-flat ΛCDM are indistinguishable ($`\Delta\chi^2 = +0.28`$). The shift is a background-distance consistency issue in the compressed-prior setup, driven by the BAO sector, and applies to both models. The fiducial value $`\Omega_\Lambda = 0.685`$ is stable for SN+BAO; the CMB tension merits further study with the full Planck likelihood.
 
@@ -147,7 +147,7 @@ At best-fit $`s_0 = 0.389`$, the effective reading is 0.372; the underlying valu
 
 ## V. The $`(1+z)^1`$ Signature
 
-A negative $`(1+z)^1`$ term at $`\sim 4\%`$ of $`H^2`$ appears in the expansion. The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
+A negative $`(1+z)^1`$ term at $`\sim 3\%`$ of $`H^2`$ appears in the expansion. The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
 
 | Component | Redshift scaling |
 |---|---|
@@ -162,7 +162,7 @@ A positive-energy $`w = -2/3`$ fluid would contribute this term with the opposit
 
 Currently below Pantheon+ detection threshold. Future surveys (Euclid, Roman, LSST) are expected to reach percent-level $`H(z)`$ precision. The sign and approximate magnitude of the term are prediction.
 
-**Updated magnitude.** At $`s_0 = 0.389`$ (Pantheon+-only), $`|\beta| = 0.056`$, contributing $`\sim 4\%`$ of $`H^2`$ at $`z = 1`$. At $`s_0 < 0.19`$ (joint SN+BAO 95% CL), $`|\beta| < 0.012`$, contributing $`< 0.8\%`$ of $`H^2`$ at $`z = 1`$. The Λcos paper notes this is below DESI DR2 per-bin precision ($`\sim 2-3\%`$) but potentially within reach of next-generation surveys projected to reach sub-percent per-bin precision (Euclid DR2, DESI full-survey, MegaMapper-class), where the $`(1+z)^1`$ signature approaches per-bin detectability for $`s_0`$ in the upper portion of the data-allowed range with correlated bins improving aggregate sensitivity.
+**Updated magnitude.** At $`s_0 = 0.389`$ (Pantheon+-only), $`|\beta| = 0.056`$, contributing $`\sim 3\%`$ of $`H^2`$ at $`z = 1`$. At $`s_0 < 0.19`$ (joint SN+BAO 95% CL), $`|\beta| < 0.012`$, contributing $`< 0.8\%`$ of $`H^2`$ at $`z = 1`$. The Λcos paper notes this is below DESI DR2 per-bin precision ($`\sim 2-3\%`$) but potentially within reach of next-generation surveys projected to reach sub-percent per-bin precision (Euclid DR2, DESI full-survey, MegaMapper-class), where the $`(1+z)^1`$ signature approaches per-bin detectability for $`s_0`$ in the upper portion of the data-allowed range with correlated bins improving aggregate sensitivity.
 
 ---
 
@@ -246,9 +246,9 @@ This carries a specific quantified discrepancy, and $`\Phi_\text{now} = 5.22`$ i
 
 | Connection | Content |
 |---|---|
-| [Spatial budget $`u_0^2 + J^2 = 1`$](../../../../cosmos/files/black-hole.md#iva-the-geometric-complement) | The temporal budget is its structural analog (both are $`\sin^2 + \cos^2 = 1`$ budgets). Spatial budget sets $`\Lambda_\text{ref} = (3/2)\Lambda_\text{top}`$; temporal budget sets the Waltz clock. The same numerical 3/2 sits in both; whether it is the same geometric ratio is open. |
+| [Spatial budget](../../../../cosmos/files/black-hole.md#iva-the-geometric-complement) $`u_0^2 + J^2 = 1`$ | The temporal budget is its structural analog (both are $`\sin^2 + \cos^2 = 1`$ budgets). Spatial budget sets $`\Lambda_\text{ref} = (3/2)\Lambda_\text{top}`$; temporal budget sets the Waltz clock. The same numerical 3/2 sits in both; whether it is the same geometric ratio is open. |
 | [First positive eigenvalue](../../bedrock/files/first-eigenvalue.md) | Supplies $`\Lambda_\text{top} = 2/R^2`$, read via the Gauss lift and the imported de Sitter normalization as the reference $`\Lambda_\text{ref} = 3/R^2`$. The dimensionless present-day fraction $`\Omega_\Lambda = 0.685`$ remains a fiducial fit anchor, not derived by the eigenvalue (it also needs the cosmological normalization). |
-| [Hubble tension](../../../../cosmos/files/hubble-tension.md) | The Waltz clock $`H \propto S^{-3/2}`$ is the mechanism underlying the early/late discrete snap. |
+| [Hubble tension](../../../../cosmos/files/hubble-tension.md) | The Waltz-clock fit prefers the low, Planck-side $`H_0`$, entering as the fitted edge anchor; the early/late discrete snap that would have carried it to the local value is withdrawn with its trigger. |
 | [Energy as Resolution Amplitude](energy-as-resolution-amplitude.md) | Same sampling-operation picture. Redshift as phase ratio + energy as resolution amplitude should unify into a single account. Open. |
 | [Λcos paper](https://github.com/dmobius3/lambda-cos) | Presents Model D+Λ as a standalone phenomenological model ("Λcos") without framework language. Joint SN+BAO constraint: $`s_0 < 0.19`$ (95% CL). Template bias demonstrated: CPL/BA/JBP produce phantom crossings from non-phantom input. Clock exponent empirically validated. Linear-growth consistency check against DESI DR1 ShapeFit+BAO at six tracer effective redshifts gives $`\Delta\chi^2_\text{RSD} < 0.3`$ relative to flat ΛCDM. First quantitative constraint on the budget phase parameter from joint background and growth data. |
 
@@ -305,7 +305,7 @@ At $`s_0 = 0.19`$: $`\quad H^2/H_0^2 = 0.327(1+z)^3 - 0.012(1+z) + 0.685`$
 | coefficient of $`(1+z)`$ in $`H^2/H_0^2`$ | −0.056 | −0.012 | 0 |
 | fractional contribution at $`z=1`$ | −3.2% | −0.7% | 0 |
 
-No standard FLRW component produces a $`(1+z)^1`$ term (§V). At the joint 95% CL, the signature is below current per-bin precision. Detection requires $`\sim 0.5\%`$ per-bin BAO measurements (Euclid DR2 / DESI full-survey) or aggregate multi-bin analysis.
+No independent FLRW component produces a negative $`(1+z)^1`$ term tied to the $`(1+z)^3`$ deformation by one parameter (§V); a positive-energy $`w = -2/3`$ component gives the exponent with a positive coefficient. At the joint 95% CL, the signature is below current per-bin precision. Detection requires $`\sim 0.5\%`$ per-bin BAO measurements (Euclid DR2 / DESI full-survey) or aggregate multi-bin analysis.
 
 ### C. Growth of structure $`f(z)\sigma_8(z)`$ from RSD
 
@@ -357,10 +357,9 @@ The apparent phantom crossing is demonstrated for CPL, BA, and JBP fitted to the
 
 | Quantity | MIT | ΛCDM |
 |---|---|---|
-| CMB $`\ell_\text{cut}`$ | ~28 (Molien gap) | no cutoff |
-| $`C_2/C_3`$ | 0.13 | ~0.3 |
+| CMB $`\ell_\text{cut}`$ | $`\approx 24`$ on the coupling route's $`R`$ (Molien gap; the $`\approx 28`$ of the measured-$`\Lambda`$ back-read is circular) | no cutoff |
 
-*Parity ($`R_{TT}`$) and the $`\ell = 2/3`$ alignment are dropped here, for different reasons. Chirality shuts only the orientation-reversing grading route to parity; parity itself stays open to this topology through the eigenmode covariance, and is not forecast here. The alignment is severed from this topology, by the quotient's $`A_5`$ isotropy rather than by its chirality (see [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §III).*
+*$`C_2/C_3`$ is not forecast: its value waits on the full projection (transfer functions, primordial weighting, observer position; [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §IV). Parity ($`R_{TT}`$) and the $`\ell = 2/3`$ alignment are dropped here, for different reasons. Chirality shuts only the orientation-reversing grading route to parity; parity itself stays open to this topology through the eigenmode covariance, and is not forecast here. The alignment is severed from this topology, by the quotient's $`A_5`$ isotropy rather than by its chirality (see [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §III).*
 
 ### H. Clock-setting logic
 

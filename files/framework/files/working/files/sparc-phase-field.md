@@ -356,6 +356,8 @@ This is external context, not evidence for MIT. It provides independent motivati
 
 ΛCDM fits rotation curves by adding a dark matter halo. MIT fits them through the 3/2 curvature conversion from the embedded Möbius surface (3 the Gauss/Ricci lift, 1/2 the de Sitter vacuum). Both reproduce the data. The discriminant is direct detection: MIT predicts permanent null. Every null result from LUX, XENON, PandaX, SuperCDMS, and future experiments is consistent with MIT and increasingly difficult for particle dark matter.
 
+*Added 2026-10-03: the remaining phase-field statements in this section fall with the trigger, which [Hubble Tension](../../../../cosmos/files/hubble-tension.md) §III records as retiring the derivations built on $`L_f`$. The RAR reproduction, and the H₀ bimodality said to separate MIT from the RAR, were consequences of the mechanism and are not live. No fit of rotation curves through the 3/2 conversion is on record, and no derivation attributes galactic missing mass to it: the framework reads dark matter as gravitational geometry of $`S^3`$, with its assignment open ([The Waltz](../../../../spectrum/files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) §IV). On that reading the present construction has no particle dark-matter sector, so direct-detection nulls are expected, and the framework's score table carries that row as open rather than as a prediction of a permanent null.*
+
 ---
 
 ## VIII. Forward-Looking: H₀ Bimodality
@@ -365,6 +367,8 @@ H₀ measurements at the per-galaxy level should cluster in two populations (CMB
 SPARC does not provide per-galaxy H₀ measurements. SH0ES gives one aggregate H₀ across multiple Cepheid hosts, not a per-galaxy distribution. Verifying this prediction requires per-host H₀ estimates from forthcoming JWST Cepheid programs, TRGB calibrators, or megamaser distances. Registered here as a prediction; the exact verification awaits future data.
 
 *Post-registration status note added 2026-09-02.* **An exploratory test of this prediction has since been run and did not support it.** The [H0 bimodality compilation](h0-bimodality-test.md) assembled published determinations by method class and found no statistical signal of two clusters. Three caveats belong with that result and are the reason it does not close this row. It is exploratory and not pre-registered, so it carries less weight than the SPARC run above. It is a compilation by method class rather than the per-host, per-galaxy measurement registered here, so it is a close relative of this forward test and not this test. Its two-cluster specification was also under review, because the lattice admits a 1/120 step whose displaced value falls inside the gap that test treats as empty; that respecification has since been run and returned no lattice-specific evidence, with zero maximum-likelihood weight on the 1/120 value. The exact forward test registered in this section remains unrun.
+
+*Added 2026-10-03: the prediction in this section followed from the binary trigger of §I, which the 2026-05-19 result falsified and the framework has withdrawn ([Hubble Tension](../../../../cosmos/files/hubble-tension.md) §V). The registered forward test stays on record as written, but no live mechanism of the framework predicts two populations; what survives is the lattice arithmetic of the step, an unexplained correspondence.*
 
 ---
 
