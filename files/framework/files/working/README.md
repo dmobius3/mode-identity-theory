@@ -259,14 +259,14 @@ Technical gaps with specific paths forward.
 
 - **dist/30 Hierarchy Exponent:** Three convergent paths connect McKay graph distance to the Coxeter number of $`E_8`$ as the scaling exponent; single-principle derivation open. *Deps:* McKay correspondence, $`E_8`$ Coxeter number.
 - **Scale Consistency:** Three gauge couplings evaluated at different energy scales; $`\alpha`$ hits 0.4% at low energy but 6.2% at $`M_Z`$, so the framework must commit to one evaluation scale or derive running from MIT structure. *Deps:* gauge coupling derivation (engine §15), scaling law.
-- **$`\alpha`$ Exponent:** The $`\alpha`$ exponent equals the minimum grid step; two convergent paths remain and the uniqueness scan confirms, but single-principle derivation is open. *Deps:* grid structure, scaling law.
+- **$`\alpha`$ Exponent:** The $`\alpha`$ exponent equals the minimum grid step; two convergent paths motivate it and the uniqueness scan checks it, its two possible grids are derived from the central sign, and the Casimir route to forcing the exponent is closed ([Scaling Law](files/scaling-law-uniqueness.md#ladder-rule-grids)); a single-principle derivation is open. *Deps:* grid structure, scaling law.
 - **Plato Twist Derivation:** the value $`\cos(\pi/10)`$ has a computed geometric realization, the spin lift of the Levi-Civita holonomy around the shortest closed geodesic of $`S^3/2I`$, where the flat $`2I`$ holonomy gives $`\cos(\pi/5)`$ instead; the open link is its insertion into the weak coupling: which loop, which power, and why the weak row alone. See [The Plato Twist](files/plato-twist.md). *Deps:* spin structure of $`S^3/2I`$, stabilizer decomposition.
 
 ---
 
 **Selection rules.** Why one structure is picked over its alternative, not yet derived.
 
-- **Grid Ladder Selection Rule:** Three convergent paths connect interaction character to grid resolution ($`D = 60`$ vs $`D = 120`$); formal derivation open. *Deps:* stabilizer decomposition, boson/fermion domain split.
+- **Grid Ladder Selection Rule:** The two nontrivial image orders, $`D = 60`$ and $`D = 120`$, are fixed by the central sign ([Scaling Law](files/scaling-law-uniqueness.md#ladder-rule-grids)); which carrier or target roles are assigned to the integer-spin or spinorial class stays the motivated ladder assignment. *Deps:* stabilizer decomposition, boson/fermion domain split.
 - **Anti-periodic BC Selection:** 4 of 8 charged fermion masses within ×3 after sector-first adjudication, 5 with a compatible entry (descriptive; the ×3 count is density, per the [torsion null test](files/mass-null-test.md)); first-principles derivation of why anti-periodic boundary conditions are selected over periodic remains open. *Deps:* Möbius non-orientability, mass formula.
 
 ---
@@ -279,7 +279,7 @@ Technical gaps with specific paths forward.
 
 **Superseded and secondary routes.**
 
-- **240 Alternative for $`\alpha_s`$:** $`C(17/120) \times \Omega^{-1/240}`$ sits 1% behind the primary formula, with $`240 = 2 \times 120`$; requires independent justification or exclusion. *Deps:* grid ladder selection rule, scaling law.
+- **240 Alternative for $`\alpha_s`$:** $`C(17/120) \times \Omega^{-1/240}`$ sits 1% behind the primary formula, with $`240 = 2 \times 120`$; excluded under the image reading of the grid, since no quotient of $`2I`$ has order 240 ([Scaling Law](files/scaling-law-uniqueness.md#ladder-rule-grids)), and it survives only under another reading of 240. *Deps:* grid ladder selection rule, scaling law.
 - **$`L_\text{strip}/L_\text{fund}`$ Ratio:** The factor of 8 has no topological derivation, so this is a dead route to $`R`$, superseded by the coupling (α) route, the best-conditioned determination, with the mass spectrum an independent, lower-resolution cross-check (see [The R Problem](files/r-problem.md)).
 
 ---
