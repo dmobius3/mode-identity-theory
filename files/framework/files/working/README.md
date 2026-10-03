@@ -340,9 +340,9 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ### [McKay Propagator Correction](files/mckay-propagator-correction.md)
 
-**Reopened by the torsion correction (2026-07-28):** The 2026-06 verdict (no parameter-free propagator or branch-point correction tracks the high-distance mass residuals; the route was closed, the residuals read as irreducible scatter) was computed on the pre-correction torsion table. The [half-integer torsion correction](files/torsion-correction.md) revised twelve of the twenty-four products and the whole mass comparison, so the propagator question is reopened; the frozen 2026-06 record, with its overshoot figures and vacuum-dependent hits, is preserved on the [linked page](files/mckay-propagator-correction.md) under its 2026-07-28 banner. Separately, the Coxeter-Galois gate still locks all $`R_4`$ entries to $`T_3 = -1/2`$, and charm remains unplaced.
+**Registered (2026-10-03):** the literal $`\Pi_T`$ re-test against the corrected table, both directions declared, one run next ([registration](files/mckay-propagator-correction.md#registration)). It was reopened by the torsion correction (2026-07-28): the 2026-06 verdict (no parameter-free propagator or branch-point correction tracks the high-distance mass residuals; the route was closed, the residuals read as irreducible scatter) was computed on the pre-correction torsion table. The [half-integer torsion correction](files/torsion-correction.md) revised twelve of the twenty-four products and the whole mass comparison, so the propagator question is reopened; the frozen 2026-06 record, with its overshoot figures and vacuum-dependent hits, is preserved on the [linked page](files/mckay-propagator-correction.md) under its 2026-07-28 banner. Separately, the Coxeter-Galois gate still locks all $`R_4`$ entries to $`T_3 = -1/2`$, and charm remains unplaced.
 
-**Inputs:** McKay graph for $`2I`$, $`C_\text{geom}`$ values for all irreps, torsion table $`T^2(\rho \otimes \sigma)`$ across vacua, Coxeter-Galois gate.
+**Inputs:** McKay graph for $`2I`$, $`C_\text{geom}`$ values for all irreps, torsion table $`T^2(\rho \otimes \sigma)`$ across vacua, Coxeter-Galois gate, [scripts](files/scripts/mckay-propagator-retest/).
 
 ---
 
