@@ -75,7 +75,7 @@ The edge sector is untouched by this correction. It references $`\Omega_H`$, not
 
 This also clarifies the role of measured inputs. The framework predicts structural relations: the integer floors $`n=1,2,3`$, the McKay exponents, the grid fractions, the well assignments, and the dimensionless ratios between observables at the same depth, where the hierarchy factor cancels. It does not claim that every absolute normalization is derived without empirical reference. A measured anchor per sector is part of the calibration architecture. $`\mu_\Lambda = \rho_\Lambda^{1/4}`$ is the vacuum floor inherited from the calibrated surface sector; $`m_e`$ is a mass-sector normalization/benchmark, not a second vacuum floor.
 
-The status is therefore honest. The selection rules and well assignments were fixed before this calibration reinterpretation, so the downstream agreements are not produced by retuning them after the fact. But the selection rule itself remains a postulate of the framework, not yet a theorem derived from the topology alone. A first-principles derivation from the Hurwitz/Fibonacci structure of the 120-domain remains open.
+The status is therefore honest. The selection rules and well assignments were fixed before this calibration reinterpretation, so the downstream agreements are not produced by retuning them after the fact. But the selection rule itself remains a postulate of the framework, not yet a theorem derived from the topology alone. A first-principles derivation remains open: the external golden-ratio/Hurwitz route is abandoned, and the residual is why the post-lcm continuation of the icosahedral branch recurrence defines the wells, which a sweep of eight boundary-mode functionals suggests is structural rather than variational ([Fibonacci Wells](fibonacci-wells.md)).
 
 ---
 
@@ -111,7 +111,7 @@ The mass-and-gravity sector is one closed system. The topology fixes the dimensi
 |---|---|---|
 | $`\Lambda`$ and $`G`$ | Absolute fermion masses | Mass-spectrum reading |
 | $`\Lambda`$ and one measured mass | $`G`$ and the remaining masses | Gravity-constant reading |
-| Two masses at different McKay distances | $`R`$, hence $`\Lambda_\text{ref}`$ as a prediction, and $`G`$ | R-from-spectrum reading (open; needs the $`(\rho,\sigma)\to(T_3,Y)`$ rule) |
+| Two masses at different McKay distances | $`R`$, hence $`\Lambda_\text{ref}`$ as a prediction, and $`G`$ | R-from-spectrum reading (executed 2026-06-15, at order-of-magnitude precision: $`R \approx 20`$ Gpc on the canonical electron-muon pair, $`\approx 10.5`$ Gpc on muon-top; the $`(\rho,\sigma)\to(T_3,Y)`$ rule it needed is the gate of the mass spectrum's §IV.4: [R from the mass spectrum](r-from-mass-spectrum.md)) |
 | Measured $`\alpha`$ (dimensionless) | $`\Omega_\Lambda`$, hence $`\Lambda_\text{ref}\ell_P^2`$ as a prediction | $`\alpha`$ route; $`\Lambda_\text{ref}\ell_P^2 \propto \alpha^{60}`$, within 23% (the 60-fold lever) |
 | Same-distance or same-exponent ratios | $`m_i/m_j`$ at fixed distance; $`\alpha_s/\alpha_W`$ | Anchor-free structural core |
 

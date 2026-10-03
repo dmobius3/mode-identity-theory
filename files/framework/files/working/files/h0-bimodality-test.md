@@ -224,6 +224,8 @@ The two registered tests separate cleanly. SPARC ([sparc-phase-field.md](sparc-p
 
 Both outcomes are negative for the testable phase-field predictions, and both leave the lattice arithmetic untouched. The 8.4% well sensitivity at $`\Theta_0 = 34/120`$ (hubble-tension.md Sections III and IV) is geometry, not a claim either test probes. What fails here is the empirical signature the discrete picture would produce: current H₀ data is consistent with a continuous distribution, sorted by calibration class but not quantized.
 
+**Pointer (2026-10-03).** The 8.4% well sensitivity cited above to Hubble Tension Sections III and IV is computed in that page's [§II, the lattice calculation](../../../../cosmos/files/hubble-tension.md#ii-the-lattice-calculation); its §III and §IV are the trigger and the conditional propagation.
+
 ---
 
 ## References

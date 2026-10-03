@@ -178,7 +178,7 @@ Open families require an external choice of $`n`$ and fall to the framework's in
 
 $`2I`$ is the unique nontrivial perfect finite subgroup of SU(2), equal to its own commutator subgroup, so its only one-dimensional character is the trivial one. With no nontrivial character to twist by, the standard connection $`Q`$ and its Galois conjugate $`Q'`$ stay distinct under every twist, two genuinely different flat vacua rather than one dressed up as another. That split has a spectral consequence which selects the domain a second time: the Galois vacuum's gap is the unique exception across the whole ADE classification of finite subgroups of SU(2), proved in the coexact-gap paper and derived where it is used, in [One Formula](#one-formula). Counting the flat connections on the quotient closes the list at three: the trivial one, the standard $`Q`$, and the Galois conjugate $`Q'`$. That count is what later sections range a vacuum label over; its isolation and its reading as the three generations are [One Formula](#one-formula). Terminality and perfectness are two independent grounds converging on one domain; the theorem folding them into one proof, framework requirement $`\Rightarrow 2I`$, is open.
 
->**📒 [The Postulate Bridge](files/working/files/postulate-bridge.md):** the staged route from the postulate to the derivations, and the terminality-and-perfectness theorem the domain selection still needs.
+>**📒 [The Postulate Bridge](files/working/files/postulate-bridge.md):** whether a theorem connects the bedrock results on the postulate's two pieces: the staged route, resolved as a split, and its sampler, variational and dynamical readings.
 
 ### The Sampling Grids
 
@@ -770,7 +770,7 @@ The body is the theory as it stands; this is the theory as a program. The larges
 
 >**📒 [Energy as Resolution Amplitude](files/working/files/energy-as-resolution-amplitude.md):** energy read as the standing-wave resolution amplitude, a working note toward the stress-energy accounting.
 
->**📒 [Entropy as Realization Budget](files/working/files/entropy-as-realization-budget.md):** entropy as the count of realized modes, tied to the Molien shell-unlock map that sets the accessible mode count.
+>**📒 [Entropy as Realization Budget](files/working/files/entropy-as-realization-budget.md):** entropy as the logarithm of the number of ways the budget's quanta occupy the accessible modes, with those modes set by the Molien shell-unlock map.
 
 ### Recorded nulls
 
