@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-09-16):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g.
+**Status (2026-10-03):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g. The framework adopts Friedrichs at the cone (ruling 1e, 2026-09-29), so the program's bridging requirements describe an alternative transmitting model rather than framework requirements (§II's scope note).
 **Summary:** Asks whether galactic coherence is the W-independence of a nested cone-point eigenvalue problem, and what sources the galactic-scale curvature.
 **Inputs:** the first-eigenvalue paper's cone-point analysis (`../../bedrock/files/first-eigenvalue.md`), the 120-grid scale-free projection, the phase-field coherence scale (L_f SPARC-falsified, L_g open)
 
@@ -23,7 +23,7 @@ The cosmic cone point analysis is DERIVED (first-eigenvalue paper). The proposal
 
 Within a galaxy, all observers measure the same $`\mathbb{R}^4`$: same $`\Lambda`$, same $`G`$, same particle masses, same coupling constants. The phase field mechanics proposed a coherence scale $`L_f = v_c^2/a_0 \approx 13`$ kpc within which the environmental phase shift $`\Theta_f`$ would be uniform. The SPARC test falsified $`L_f`$ as a single coherence radius: the gravitational transition lands at $`0.38\,L_f`$ and tracks baryonic mass ($`\rho \approx 0.68`$) more tightly than $`L_f`$ ($`\rho \approx 0.61`$). The geometric question survives: if galactic coherence has a topological origin, what sets the scale? But the target radius is no longer $`L_f`$.
 
-On the cosmic Möbius band, the cone point at $`y = \pi R/2`$ collapses all transverse positions to a single geometric point. In the zonal sector, the first positive eigenvalue $`\lambda_1 = 2/R^2`$ is $`W`$-independent: it does not depend on the transverse width of the band. The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) shows this $`W`$-independence holds for the full operator only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$); for wider bands an azimuthal mode undercuts the zonal level. At cosmic scale the physical band sits well within the narrow regime, so the coherence argument is unaffected.
+On the cosmic Möbius band, the cone point at $`y = \pi R/2`$ collapses all transverse positions to a single geometric point. In the zonal sector, the first positive eigenvalue $`\lambda_1 = 2/R^2`$ is $`W`$-independent: it does not depend on the transverse width of the band. The [first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) shows this $`W`$-independence holds for the full operator only when $`W \leq \pi R/2`$ (cone angle $`\leq \pi`$); for wider bands an azimuthal mode undercuts the zonal level. At cosmic scale the framework takes the narrow band as a physical input on the carrier rather than a derived fact ([Cosmological Constant](../../../../cosmos/files/cosmological-constant.md#iii-the-spectral-seed) §III), so the coherence argument holds under that input.
 
 **The proposal:** galactic coherence is the $`W`$-independence of a nested eigenvalue problem, guaranteed by a cone point at galactic scale. Observers within the galaxy share the cone point of the wave, and the cone point identification is why they all measure equal $`\mathbb{R}^4`$ values.
 
@@ -151,7 +151,7 @@ This is $`10^7`$ times larger than $`K_{\text{GR}}`$. It is NOT sourced by the g
 
 ### Where the curvature comes from
 
-The candidate scale $`L_f = v_c^2/a_0`$ sits at the interface between gravity ($`v_c`$) and topology ($`a_0`$, derived from $`C(13/120)`$). The curvature $`K_g = \pi^2 a_0^2/v_c^4`$ lives at this interface. It is neither purely gravitational nor purely topological.
+The candidate scale $`L_f = v_c^2/a_0`$ sits at the interface between gravity ($`v_c`$) and topology ($`a_0`$, which follows from the ratio of wells $`C(13/120)/C(34/120)`$ and the measured $`H_0`$ only under the assumed premise that the two edge readings carry one weight: [calibration structure](calibration-structure.md)). The curvature $`K_g = \pi^2 a_0^2/v_c^4`$ lives at this interface. It is neither purely gravitational nor purely topological.
 
 | Scale | Curvature | Source | Character |
 |-------|-----------|--------|-----------|
@@ -265,7 +265,7 @@ The coherence boundary at each scale is $`2W`$ (the transverse width of that sca
 
 | Scale | $`2W`$ | Coherence domain |
 |-------|------|------------------|
-| Cosmic | $`2\pi R`$ (full $`\mathbb{RP}^2`$; no boundary, no deficit) | All of $`S^3`$ |
+| Cosmic | $`2W`$, with $`W < \pi R/2`$ a physical input: the carrier $`M(W)`$ has an edge, and only at $`W = \pi R/2`$ would the band close up into the edgeless $`\mathbb{RP}^2`$ | All of $`S^3`$ |
 | Galactic | $`2W_g`$ | $`L_g`$ (unknown) |
 | Stellar | $`2W_\odot`$ | Oort Cloud $`\approx 144{,}000`$ AU? |
 
