@@ -1,0 +1,10 @@
+1. 2I closes. Rigid n: (first, second occurrence), R^2 (lambda_1 - lambda_0) = [(0, (0, 12), 168), (1, (1, 11), 140), (2, (2, 10), 112), (3, (3, 9), 84), (4, (4, 8), 56), (5, (5, 7), 28)] ; Sym^6 restricted to 2I has norm 2 (reducible)
+   arm: with level 12's character replaced by level 14's, the occurrence and gap checks fail
+2. lowest level, n = 0..5, 4 random members each: the spectrum is as stated (worst relative deviation 1.5e-15); 0 has algebraic multiplicity 2n + 2 and geometric 2n + 1
+   arm: with the coupling at 3g, the spectrum check fails
+   arm: with the gyroscopic term dropped, the spectrum check fails
+3. finite models, n = 0..5, 3 each: the coupling preserves E_0 and its complement; H_2 is conserved and positive definite on the complement; every eigenvalue is imaginary; 0 has algebraic multiplicity 2n + 2 and geometric 2n + 1
+   arm: with a profile of non-constant norm, the split check fails
+   arm: with H_2 built with the coupling at 2g, the conserved check fails
+   arm: with an operator below -omega^2/c^2 on the complement, the axis check fails
+ALL CHECKS PASS

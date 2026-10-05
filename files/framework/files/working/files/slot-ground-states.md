@@ -7,14 +7,14 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-04):** Derived. Under the frozen slot action, every slot has energy minimizers at each fixed nonzero charge; each is a standing wave, and the set of them is orbitally stable (Theorem A). Whether the sets in the soft slots, R2, R4 and R5, form branches remains open. In the five rigid slots and the control the minimizers are the exact lowest-level family, which the slot action's §VI item 6 records for the five slots and which in the control is the constant sections. It is orbitally stable as a set at every nonzero charge (Theorem B), supplying §VII's orbital-stability alternative for those branches under M8.4's persistence label; on OpenWave, the rung is a filing's to adjudicate. In R4 and R5 no ground state lies entirely in the lowest free eigenspace; in R2 the same question is whether a spin-6 multipole can vanish, and it stays open. The soft blocks' reduced quartic is derived in closed form, which gives OpenWave's D7 weights and R2's coefficients. The stability mechanism is generic; what is specific to 2I is which slots are rigid, the coherent orbit that minimizes the reduced quartic in R4 and R5, and the closed form.
+**Status (2026-10-05):** Derived. Under the frozen slot action, every slot has energy minimizers at each fixed nonzero charge; each is a standing wave, and the set of them is orbitally stable (Theorem A). Whether the sets in the soft slots, R2, R4 and R5, form branches remains open. In the five rigid slots and the control the minimizers are the exact lowest-level family, which the slot action's §VI item 6 records for the five slots and which in the control is the constant sections. It is orbitally stable as a set at every nonzero charge (Theorem B), and about every member the linearization's whole spectrum lies on the imaginary axis, with kernel exactly the family's tangent at fixed charge (Theorem D). Together these supply both parts of §VII's stability protocol for those branches, under M8.4's persistence label; on OpenWave, the rung is a filing's to adjudicate. In R4 and R5 no ground state lies entirely in the lowest free eigenspace; in R2 the same question is whether a spin-6 multipole can vanish, and it stays open. The soft blocks' reduced quartic is derived in closed form, which gives OpenWave's D7 weights and R2's coefficients. The stability mechanism is generic; what is specific to 2I is which slots are rigid, the coherent orbit that minimizes the reduced quartic in R4 and R5, and the closed form.
 **Summary:** Whether the frozen slot action carries orbitally stable nonlinear states without a run: energy minimizers at fixed charge in every slot, the rigid slots' exact branches, and the soft blocks' reduced quartic in closed form.
 **Inputs:** `slot-action.md` (§V, §VI item 6, §VII, §IX), OpenWave's M8.12 record (the bridge from the block quartic to r̂₆, and G1) at `344f416`, `scripts/slot-ground-states/`
 **Parent:** `slot-action.md`
 
 ---
 
-RESULT, a derivation with no pre-committed pass condition. [The slot action](slot-action.md) froze one law for the eight slot fields and recorded what it decides without a run (§VI); the stability of its nonlinear branches it left to a pre-registered persistence test or an orbital-stability theorem (§VII). This page proves that theorem by minimizing the energy at fixed charge, both for the rigid slots' exact branches, at every nonzero charge, and for the ground-state sets of every slot, and it derives the soft blocks' reduced quartic in closed form. Nothing here is a run, and nothing here bears on the slot relation, which stays OPEN.
+RESULT, a derivation with no pre-committed pass condition. [The slot action](slot-action.md) froze one law for the eight slot fields and recorded what it decides without a run (§VI); the stability of its nonlinear branches it left to a linear record together with a pre-registered persistence test or an orbital-stability theorem (§VII). This page proves that theorem by minimizing the energy at fixed charge, both for the rigid slots' exact branches, at every nonzero charge, and for the ground-state sets of every slot. It records the linear spectrum about every rigid branch, and it derives the soft blocks' reduced quartic in closed form. Nothing here is a run, and nothing here bears on the slot relation, which stays OPEN.
 
 **Related:** [The Slot Action](slot-action.md), [The Slot Relation](slot-relation.md), [The Surviving Ray](../../bedrock/files/surviving-ray.md).
 
@@ -75,7 +75,7 @@ the exact lowest-level family at that frequency: the family of the slot action's
 
 *Proof.* In these sectors every lowest-level section is $`\pi_n(x)v`$, and $`\lvert\pi_n(x)v\rvert = \lvert v\rvert`$ is constant. So all three equalities of Lemma 1 hold for $`(\pi_n(x)v, i\alpha\,\pi_n(x)v)`$, and $`E = F(m; N)`$. $`F`$ is strictly convex in $`m`$, so it has one minimizing $`m`$, the stated root, which depends continuously on $`N_0`$; equality in $`E \ge F(m) \ge F(m^*)`$ picks out exactly the stated set, and stationarity of $`F`$ there gives $`\omega^2 = c^2(\lambda_0 + g\lvert v\rvert^2)`$. Orbital stability is Theorem A.3.
 
-The family contains every fibre-symmetry and right-SU(2) orbit through it, so the claim is about the family as a set, as the slot action's §IX asks. No spectral or nondegeneracy analysis enters.
+With each member $`\pi_n(x)v`$ the family contains every $`\pi_n(x)v'`$ with $`\lvert v'\rvert = \lvert v\rvert`$, among them the profiles that the phase, right translations and the fibre symmetry produce from it, so the claim is about the family as a set, as the slot action's §IX asks. No spectral or nondegeneracy analysis enters; the linear spectrum is Theorem D.
 
 ## IV. The Soft Slots
 
@@ -108,25 +108,70 @@ which for $`R_2`$ gives $`(q_7, q_5, q_3, q_1) = (144/143,\ 196/143,\ 28/11,\ 0)
 2. *In $`R_2`$ the same holds if and only if no unit vector of the block has $`(ww^{\dagger})_6 = 0`$.* Whether one does is OPEN; the smallest $`Q`$ found numerically is 144/143.
 3. *At small charge in $`R_4`$ and $`R_5`$, the ground states should concentrate on the lowest level with their direction tending to the coherent orbit.* That the coherent orbit is the unique minimizer of $`Q`$ is derived: $`q_6`$ is the strictly smallest coefficient, and $`f_6 = 1`$ exactly on coherent states. The limit itself is INFERRED, from a rescaling argument not written here.
 
-## V. What It Earns, and What It Does Not
+## V. The Linear Spectrum
 
-**What it earns.** Theorem B gives the rigid slots' exact branches an orbital-stability theorem at every nonzero charge. That supplies the orbital-stability alternative of the slot action's §VII for those branches, under M8.4's label "nonlinear persistence of the installed free structure", since their shape never changes; on OpenWave, the rung is a filing's to adjudicate. Theorem A gives every slot, at every nonzero charge, an orbitally stable set of standing-wave ground states. In the soft slots that is a stable set at each charge, not a branch shown continuous in the charge, and M8.2's literal rung asks for "stable nonlinear branches / defects", so there a filing must also adjudicate whether sets suffice, unless that continuity is proved.
+The slot action's §VII asks first for a linear record: in the frame rotating with a branch's phase, its linearization has no eigenvalue with positive real part. About the rigid families this holds at every member, with the whole spectrum on the imaginary axis.
 
-**The stability mechanism is generic.** Theorem A holds for a defocusing quartic on any compact manifold of dimension at most three. Theorem B applies wherever the whole lowest eigenspace consists of constant-norm sections, and 2I's representation theory decides that this happens here exactly in the control and in $`R_1, R_3, R_6, R_7`$ and $`R_8`$, the slots §VI item 6 of the slot action names. What is specific to 2I is which slots are rigid, the coherent orbit that minimizes the reduced quartic in $`R_4`$ and $`R_5`$ (its role as the small-charge limit is INFERRED, Proposition C3), and the closed form of §IV. The common structure across the eight slots meets the letter of M8.4's "common finite-amplitude branch or stability structure across the eight under one action", not its intent, and must not be presented as earning more than persistence.
+**Theorem D (the linear spectrum, rigid sectors).** Take $`R_0, R_1, R_3, R_6, R_7`$ or $`R_8`$, with $`n = \mathrm{dist}(\rho)`$, and a member $`e^{i\omega T}\varphi`$ of the family of Theorem B, $`\varphi = \pi_n(x)\,v`$ with $`v \ne 0`$. Write $`\psi = e^{i\omega T}(\varphi + \zeta)`$, linearize the field equation in $`\zeta`$, and let $`E_0`$ be the lowest eigenspace of $`-\Delta`$ on $`E_\rho`$. Then the whole spectrum of the linearization lies on the imaginary axis:
+1. The linearization preserves the splitting $`\zeta = \zeta_0 + \zeta_\perp`$, with $`\zeta_0 \in E_0`$ and $`\zeta_\perp`$ orthogonal to $`E_0`$.
+2. On $`E_0`$ the eigenvalues are 0, with algebraic multiplicity $`2n+2`$ and geometric multiplicity $`2n+1`$; $`\pm 2i\omega`$, each $`n`$ times, from the complex directions orthogonal to $`v`$; and $`\pm i\left(4\omega^2 + 2gc^2\lvert v\rvert^2\right)^{1/2}`$, from the direction of $`v`$.
+3. Off $`E_0`$ the conserved quadratic form is positive definite, so the spectrum there consists of imaginary eigenvalues, none of them 0.
+
+The kernel is exactly the tangent space at $`v`$ to the sphere $`\lvert v'\rvert = \lvert v\rvert`$, whose points are the members of the family at the same charge; it contains the directions of the phase, of right translations and of the fibre symmetry acting on the profile. The zero eigenvalue has one more direction, a generalized eigenvector: the family's derivative in the charge. So no kernel is left unexplained, as the slot action's §IX asks. In the quaternionic slots the fibre symmetry's generators beyond the phase anticommute with $`i`$, so their action on phase space moves the standing wave along a $`\pm 2i\omega`$ mode, not along the kernel. The zero eigenvalue is not semisimple: in a fixed rotating frame the charge direction drifts linearly. The claim is spectral stability, not bounded linearized evolution about one member at a fixed frequency; the nonlinear stability of the family is Theorem B's.
+
+*Proof.* With $`\lvert\varphi\rvert = \lvert v\rvert`$ constant and $`\omega^2/c^2 = \lambda_0 + g\lvert v\rvert^2`$, the linearized equation is
+
+```math
+\frac{1}{c^2}\left(\partial_T^2\zeta + 2i\omega\,\partial_T\zeta\right) + (-\Delta - \lambda_0)\,\zeta + 2g\,\mathrm{Re}\left(\varphi^{\dagger}\zeta\right)\varphi = 0,
+```
+
+with $`\varphi^{\dagger}\zeta`$ the pointwise fibre product. It is real-linear, so its spectrum is taken on its complexification. It conserves the second variation of $`E - \omega N`$ at the standing wave,
+
+```math
+H_2 = \int_X dV \left[ \frac{1}{2c^2}\lvert\partial_T\zeta\rvert^2 + \frac{1}{2}\left(\lvert\nabla\zeta\rvert^2 - \lambda_0\lvert\zeta\rvert^2\right) + g\left(\mathrm{Re}\,\varphi^{\dagger}\zeta\right)^2 \right]:
+```
+
+once the equation is used in $`dH_2/dT`$, the gyroscopic term contributes a multiple of $`\mathrm{Re}\left(i\lvert\partial_T\zeta\rvert^2\right) = 0`$, and the other terms cancel in pairs.
+
+*The splitting.* $`E_0`$ is the set of sections $`\pi_n(x)u`$ with $`u \in \mathrm{Sym}^n\mathbb{C}^2`$, and $`\pi_n(x)`$ is unitary. For $`\zeta_0 = \pi_n(x)u`$ the product $`\varphi^{\dagger}\zeta_0 = v^{\dagger}u`$ is constant, so the coupling term lies in $`E_0`$. For $`\zeta_\perp`$ orthogonal to $`E_0`$, the coupling term's $`L^2`$ product with $`\pi_n(x)u`$ is $`(u^{\dagger}v)\,\mathrm{Re}\langle\varphi, \zeta_\perp\rangle = 0`$, since $`\varphi \in E_0`$. The Laplacian and the time derivatives preserve both parts, and the cross terms of $`H_2`$ vanish for the same reasons.
+
+*Above the lowest level.* On the complement of $`E_0`$, $`-\Delta \ge \lambda_1`$, the next eigenvalue of $`-\Delta`$ on $`E_\rho`$. The slot occurs at level $`K`$ as often as 2I has invariants in $`\mathrm{Sym}^n\mathbb{C}^2 \otimes \mathrm{Sym}^K\mathbb{C}^2`$, the sum of the levels $`\lvert K-n\rvert`$ to $`K+n`$ in steps of 2. Below level 12 the only invariants are the constants, at level 0, which needs $`K = n`$; level 12 first enters at $`K = 12 - n`$. So
+
+```math
+\lambda_1 - \lambda_0 = \frac{(12-n)(14-n) - n(n+2)}{R^2} = \frac{28\,(6-n)}{R^2} > 0 .
+```
+
+With $`g > 0`$ the coupling term is nonnegative, so on the complement $`H_2`$ is at least $`\lVert\partial_T\zeta_\perp\rVert^2/2c^2 + (1 - \lambda_0/\lambda_1)\lVert\nabla\zeta_\perp\rVert^2/2`$, and at least $`(\lambda_1 - \lambda_0)\lVert\zeta_\perp\rVert^2/2`$: it is the square of a norm equivalent to that of $`H^1 \times L^2`$. The linearized flow preserves it, so, complexified, the flow is a unitary group for the Hermitian extension of $`H_2`$ and its generator is skew-adjoint; the spectrum there lies on the imaginary axis. The generator has compact resolvent, since its domain $`H^2 \times H^1`$ embeds compactly in $`H^1 \times L^2`$, so that spectrum consists of eigenvalues. Pairing a static solution with itself shows that twice the potential part of $`H_2`$ vanishes, which forces $`\zeta_\perp = 0`$, so none of the eigenvalues is 0.
+
+*On the lowest level.* With $`\zeta_0 = \pi_n(x)u`$ the equation is $`\partial_T^2 u + 2i\omega\,\partial_T u + 2gc^2\,\mathrm{Re}(v^{\dagger}u)\,v = 0`$. For $`u`$ orthogonal to $`v`$ the coupling vanishes and $`u = u_1 + u_2\,e^{-2i\omega T}`$, so each of the $`n`$ complex directions orthogonal to $`v`$ gives the eigenvalues 0, 0 and $`\pm 2i\omega`$. Along $`v`$, with $`u = (a + ib)\,v/\lvert v\rvert`$,
+
+```math
+\partial_T^2 a - 2\omega\,\partial_T b + 2gc^2\lvert v\rvert^2 a = 0, \qquad \partial_T^2 b + 2\omega\,\partial_T a = 0,
+```
+
+with characteristic polynomial $`\mu^2\left(\mu^2 + 4\omega^2 + 2gc^2\lvert v\rvert^2\right)`$. The static solutions are exactly the $`u`$ with $`\mathrm{Re}(v^{\dagger}u) = 0`$, of real dimension $`2n+1`$. The remaining zero belongs to $`a`$ constant with $`b = (gc^2\lvert v\rvert^2/\omega)\,aT`$: the change of $`\lvert v\rvert`$, and so of $`\omega`$, along the family.
+
+## VI. What It Earns, and What It Does Not
+
+**What it earns.** Theorem B gives the rigid slots' exact branches an orbital-stability theorem at every nonzero charge, and Theorem D gives every member of them the linear record. Together they supply both parts of the slot action's §VII stability protocol for those branches, the linear record and an orbital-stability theorem in place of a persistence test, under M8.4's label "nonlinear persistence of the installed free structure", since their shape never changes; on OpenWave, the rung is a filing's to adjudicate. Theorem A gives every slot, at every nonzero charge, an orbitally stable set of standing-wave ground states. In the soft slots that is a stable set at each charge, not a branch shown continuous in the charge, and M8.2's literal rung asks for "stable nonlinear branches / defects", so there a filing must also adjudicate whether sets suffice, unless that continuity is proved.
+
+**The stability mechanism is generic.** Theorem A holds for a defocusing quartic on any compact manifold of dimension at most three. Theorem B applies wherever the whole lowest eigenspace consists of constant-norm sections, and 2I's representation theory decides that this happens here exactly in the control and in $`R_1, R_3, R_6, R_7`$ and $`R_8`$, the slots §VI item 6 of the slot action names. Theorem D needs that property and nothing more: by polarization, constant norms on all of $`E_0`$ make every pointwise product of two of its sections constant, which is all the splitting uses, and on a compact manifold the next eigenvalue lies above the lowest. 2I sets the size of that gap, $`28(6-n)/R^2`$. What is specific to 2I is which slots are rigid, the coherent orbit that minimizes the reduced quartic in $`R_4`$ and $`R_5`$ (its role as the small-charge limit is INFERRED, Proposition C3), and the closed form of §IV. The common structure across the eight slots meets the letter of M8.4's "common finite-amplitude branch or stability structure across the eight under one action", not its intent, and must not be presented as earning more than persistence.
 
 **What it does not give.** It does not give:
 - the stability of non-minimizing branches;
+- the linear spectrum about the soft slots' ground states;
 - whether a ground-state set is a single orbit;
 - smooth dependence on the charge in the soft slots;
 - $`R_2`$'s constant-norm question;
 - any relation among slot energies (the slot relation is OPEN);
 - any physical particle state.
 
-## VI. What Stays Open
+## VII. What Stays Open
 
 - The soft-slot ground states at finite charge: their shape, whether each set is one orbit, and whether they form branches.
 - Proposition C2 and C3's limit.
 - Non-minimizing branches: the maximum and the saddles of the reduced quartic.
+- The linear spectrum about the soft slots' ground states.
 
 ## References
 
@@ -139,6 +184,8 @@ which for $`R_2`$ gives $`(q_7, q_5, q_3, q_1) = (144/143,\ 196/143,\ 28/11,\ 0)
 In [`scripts/slot-ground-states/`](scripts/slot-ground-states/), with the SHA-256 of every other file in `SHA256SUMS`:
 - `soft_quartic.py`: the group, its characters and McKay distances; each soft slot's projector and its spin content; the closed form of §IV against the group-sum quartic on random states, with a 1% error in $`\beta_\rho`$ as the control; the exact coefficients, with a spin-4 control; and Proposition C1's inequalities. Self-contained, a few seconds.
 - `soft_quartic.out`: its output.
+- `linear_spectrum.py`: Theorem D's checks. The occurrences of each rigid slot at levels $`n`$ and $`12-n`$, from the characters, with the reducible level 6 as the control; the lowest-level spectrum and its multiplicities on random members, with the coupling and the gyroscopic term each mutated as controls; and, on finite models built from the frames $`\pi_n(x)`$, the splitting, the conservation and positivity of $`H_2`$, an imaginary spectrum and the kernel's dimensions, with a profile of non-constant norm, a wrong coupling weight in $`H_2`$ and an operator below $`-\omega^2/c^2`$ as controls. Self-contained, about a second.
+- `linear_spectrum.out`: its output.
 
 ---
 
