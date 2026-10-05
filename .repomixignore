@@ -1,3 +1,10 @@
 # Ignore all Python and JSON files
 *.py
 *.json
+
+# Run records, certificate logs and checksums: everything in a scripts/ folder
+**/scripts/**
+
+# Markup and tool source, not prose
+*.svg
+*.html
