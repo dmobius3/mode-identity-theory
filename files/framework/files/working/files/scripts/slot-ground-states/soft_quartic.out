@@ -1,0 +1,8 @@
+1. 2I closes; nine characters orthonormal; McKay distances R1..R8 = [1, 7, 2, 6, 6, 3, 4, 5]
+2-3. R2: P has spin content [0, 6]; closed form with beta = 24/13 holds to 5.3e-13 on 20 random states; with beta off by 1% the deviation is 5.0e-03
+2-3. R4: P has spin content [0, 6]; closed form with beta = 28/39 holds to 1.3e-13 on 20 random states; with beta off by 1% the deviation is 2.3e-03
+2-3. R5: P has spin content [0, 6]; closed form with beta = 21/52 holds to 2.6e-14 on 20 random states; with beta off by 1% the deviation is 1.4e-03
+4. R2 exactly: beta = 24/13, q_J = {7: '144/143', 5: '196/143', 3: '28/11', 1: '0'} ; a spin-4 control does not fit
+4-5. R4 exactly: beta = 28/39 (D7), q_F = ['1288/1287', '35/33', '14/9', '7/3'], all > 1
+4-5. R5 exactly: beta = 21/52 (D7), q_F = ['2289/2288', '91/88', '21/16', '7/4'], all > 1
+ALL CHECKS PASS

@@ -306,6 +306,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ---
 
+### [The Slot Ground States](files/slot-ground-states.md)
+
+**Result (2026-10-04):** Whether the frozen slot action carries orbitally stable nonlinear states without a run. At every nonzero charge, every slot has energy minimizers at fixed charge, each a standing wave, and the set of them is orbitally stable; whether the sets in $`R_2`$, $`R_4`$ and $`R_5`$ form branches remains open. In the five rigid slots and the control they are the exact lowest-level family, orbitally stable as a set at every nonzero charge, which supplies the slot action's §VII orbital-stability alternative for those branches under M8.4's persistence label; on OpenWave, the rung is a filing's to adjudicate. In $`R_4`$ and $`R_5`$ no ground state lies entirely in the lowest free eigenspace; in $`R_2`$ that question stays open. The soft blocks' reduced quartic comes out in closed form, giving OpenWave's D7 weights and $`R_2`$'s coefficients. The stability mechanism is generic.
+
+**Inputs:** [The Slot Action](files/slot-action.md) §V, §VI item 6, §VII and §IX, OpenWave's M8.12 record, [scripts](files/scripts/slot-ground-states/).
+
+**Parent:** [The Slot Action](files/slot-action.md)
+
+---
+
 ### [The First-Positive Transfer Run](files/first-positive-transfer.md)
 
 **Result (2026-09-29):** Condition 1's first transfer computation, run blind against terms frozen before it: how much of the sampled output of eighteen ambient harmonic blocks, two for every irreducible of $`2I`$, reaches the conic band's first positive mode. None stays there. Under the value and the transverse sampler, in the twisted and the untwisted class, under every registered cone condition and at every registered placement and width, at least two thirds of each block's sampled norm lies outside the first-positive eigenspace, and under Friedrichs most of it lies at higher levels. The lowest blocks settle this at every pose and width without numerics. So neither registered sampler supplies the first-positive projection, and the scaling law carries it as an adopted premise; nothing is falsified. From the run's spectral step, corrected in review for a missed negative level, the review adds that under the same cone-trace matching the untwisted problem has no level at $`2/R^2`$ below the critical width, for any $`\delta_0`$; with the premise, uniformity then fails for untwisted contributing blocks.
