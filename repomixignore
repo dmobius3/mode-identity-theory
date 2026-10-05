@@ -1,0 +1,3 @@
+# Ignore all Python and JSON files
+*.py
+*.json
