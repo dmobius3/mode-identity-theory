@@ -106,7 +106,7 @@ which for $`R_2`$ gives $`(q_7, q_5, q_3, q_1) = (144/143,\ 196/143,\ 28/11,\ 0)
 **Proposition C.**
 1. *In $`R_4`$ and $`R_5`$, no ground state lies entirely in the lowest free eigenspace, at any nonzero charge.* Every symmetric-channel coefficient exceeds 1: $`(1288/1287, 35/33, 14/9, 7/3)`$ in $`R_4`$ and $`(2289/2288, 91/88, 21/16, 7/4)`$ in $`R_5`$, at $`F = (6, 4, 2, 0)`$. So $`Q > 1`$, no lowest-level section has constant norm, and Lemma 3 excludes a lowest-level ground state. This does not exclude a ground state lying in one higher free eigenspace with constant norm; whether such sections exist is not examined, and at large charge the quartic term, which grows as $`m^2`$, can outweigh the level term, which grows as $`m`$.
 2. *In $`R_2`$ the same holds if and only if no unit vector of the block has $`(ww^{\dagger})_6 = 0`$.* Whether one does is OPEN; the smallest $`Q`$ found numerically is 144/143.
-3. *At small charge in $`R_4`$ and $`R_5`$*, the ground states should concentrate on the lowest level with their direction tending to the coherent orbit. That the coherent orbit is the unique minimizer of $`Q`$ is derived: $`q_6`$ is the strictly smallest coefficient, and $`f_6 = 1`$ exactly on coherent states. The limit itself is INFERRED, from a rescaling argument not written here.
+3. *At small charge in $`R_4`$ and $`R_5`$, the ground states should concentrate on the lowest level with their direction tending to the coherent orbit.* That the coherent orbit is the unique minimizer of $`Q`$ is derived: $`q_6`$ is the strictly smallest coefficient, and $`f_6 = 1`$ exactly on coherent states. The limit itself is INFERRED, from a rescaling argument not written here.
 
 ## V. What It Earns, and What It Does Not
 
