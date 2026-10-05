@@ -172,6 +172,29 @@ Each of these would be a new selection, frozen afresh on its own page; nothing a
 - a coupling to Ψ(t) or to the clock, which would also make the time convention physical;
 - a claim that makes g₄ physical, such as an absolute energy, the normalization of $`T_{\mu\nu}`$, a scattering strength or quantization, which would need a separately motivated value (§IV item 8).
 
+## IX. Notes
+
+**Note (2026-10-04), on the fibre symmetry.** Sections I to VIII stand as frozen. The frozen action has more internal symmetry than §V records, and §VII's stability protocol has to account for it.
+
+- **Charge conjugation, in every slot.** Every irreducible representation of 2I has a real character, so $`\bar\rho \cong \rho`$: a unitary $`C`$ satisfies $`C\,\bar\rho(\gamma) = \rho(\gamma)\,C`$ for every $`\gamma \in 2I`$. The map $`\psi \mapsto C\bar\psi`$ is antilinear, commutes with $`\rho(2I)`$ and with the flat connection, and preserves $`\lvert\psi\rvert`$ pointwise, so it is a symmetry of the frozen action. It reverses the sign of $`N_\rho`$.
+- **The real slots and the control,** $`R_0, R_3, R_4, R_5`$ and $`R_7`$. Here $`C\bar C = 1`$. Charge conjugation is a discrete $`\mathbb{Z}_2`$, and with the phase the fibre symmetry is $`O(2) = U(1) \rtimes \mathbb{Z}_2`$. It adds no conserved charge.
+- **The quaternionic slots,** $`R_1, R_2, R_6`$ and $`R_8`$. Here $`C\bar C = -1`$, so $`J\psi = C\bar\psi`$ is a quaternionic structure, $`J^2 = -1`$. Then $`C`$ is antisymmetric, so $`\psi^{\dagger}J\psi = 0`$. With the phase, $`J`$ generates the group of maps $`a + bJ`$ with $`\lvert a\rvert^2 + \lvert b\rvert^2 = 1`$, which is $`Sp(1)`$ and preserves $`\lvert\psi\rvert`$ pointwise. It is continuous, and it adds two conserved charges to §V's.
+
+In a quaternionic slot, with $`\mathrm{Re}\langle a, b\rangle = \mathrm{Re}(a^{\dagger}b)`$, the charge of a generator $`\xi`$ is
+
+```math
+N_\xi = \frac{1}{c^2}\int dV\; \mathrm{Re}\langle \partial_T\psi,\, \xi\psi\rangle, \qquad \xi \in \lbrace i,\ J,\ iJ \rbrace,
+```
+
+and $`\xi = i`$ gives §V's $`N_\rho`$. Each is conserved because $`\xi`$ is orthogonal with $`\xi^2 = -1`$, commutes with the covariant derivative, and preserves $`\lvert\psi\rvert`$ pointwise.
+
+**What it changes for §VII.** The protocol removes "the exact phase and right-translation symmetry modes". That phrase is not an exhaustive prescription.
+- **In every slot,** a stability claim must state the orbit or branch family relative to which it is made. It must account for every exact neutral direction, whether a symmetry or a family of exact branches generates it, and declare any remaining kernel separately. One such family follows from §VI item 6: every $`v'`$ with $`\lvert v'\rvert = \lvert v\rvert`$ gives an exact lowest-level branch of the same frequency, so in $`R_3, R_6, R_7`$ and $`R_8`$ that family is larger than any symmetry orbit.
+- **In the real slots,** charge conjugation is discrete: it maps critical orbits to critical orbits and adds no continuous direction.
+- **In the quaternionic slots,** the full $`Sp(1)`$-generated stationary family must be included in that accounting. Its directions are tangent to the stationary critical family, because the stationary equation is $`Sp(1)`$-equivariant. But a fixed standing wave selects one phase generator, and the other generators do not commute with it. So one $`Sp(1)`$ family holds distinct standing waves, and their spectral stability need not agree: it must be assessed point by point along the family, not inferred from the symmetry of the stationary equation.
+
+**What it does not change.** The selection, the action, the field equation, §VI's results and §VII's ceilings stand. The symmetry was in §V's action from the start; §V did not record it.
+
 ## References
 
 - J. D. Barrow, J. Levin, "Twin paradox in compact spaces," Phys. Rev. A 63, 044104 (2001). [doi:10.1103/PhysRevA.63.044104](https://doi.org/10.1103/PhysRevA.63.044104)
