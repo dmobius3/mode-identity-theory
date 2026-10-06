@@ -1,0 +1,22 @@
+A  H-ISO: the Raychaudhuri equation about the static solution
+   e''/e * R^2 = 3*c_s2 + 1: PASS
+B  I-S: longitudinal gauge, zonal harmonics, Einstein tensor at a point
+   n = 0, k^2 =  0: Psi''/Psi * R^2 = 1 - c_s^2 (k^2 - 3) to 1e-12
+   n = 2, k^2 =  8: Psi''/Psi * R^2 = 1 - c_s^2 (k^2 - 3) to 1e-12
+   n = 3, k^2 = 15: Psi''/Psi * R^2 = 1 - c_s^2 (k^2 - 3) to 1e-12
+   n = 4, k^2 = 24: Psi''/Psi * R^2 = 1 - c_s^2 (k^2 - 3) to 1e-12
+   PASS
+C  H-ANISO: diagonal Bianchi IX, Einstein tensor in Euler angles, projected on the dual frame
+   background -3/R^2 and -1/R^2: yes; traceless q''/q * R^2 = -8.00000000000; trace e''/e * R^2 = 3*c_s2 + 1; 00 constraint zero: yes
+   PASS
+D  left-invariant traceless symmetric tensors on the round S^3
+   trace and divergence zero, rough Laplacian -6/R^2: PASS
+E  the radius held fixed
+   e = 0 forces delta rho = delta p = 0 in the homogeneous sector: PASS
+arms
+   arm: delta p = 0 in place of c_s^2 delta rho (A)                RED
+   arm: Phi = 2 Psi in place of Phi = Psi (B)                      RED
+   arm: the coefficient 6/R^2 in place of 8/R^2 (C)                RED
+   arm: sigma_1^2 + sigma_2^2 in place of a traceless tensor (D)   RED
+   arm: a homogeneous delta rho kept while e = 0 (E)               RED
+0 claims failed; 5/5 arms red
