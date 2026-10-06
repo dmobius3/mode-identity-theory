@@ -306,6 +306,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ---
 
+### [The Lipschitz Comparison](files/lipschitz-comparison.md)
+
+**Result (2026-10-05):** Whether the conic carrier's least area with its edge fixed, proved for finite-piecewise-smooth competitors, holds for Lipschitz ones. It does, with the same equality case: with the edge fixed as parametrized and the core generating, $`M(W)`$ has the least area among Lipschitz carrier-class competitors, and a competitor ties it only by covering it once (the projective carrier's Proposition 8). Crofton's formula with multiplicity comes from the area formula applied to the map that sends a point and a direction to a line, the parity of the line count from local degrees, and the tie from a measure-theoretic form of Proposition 7's step 6. It grounds neither the conic realization nor the fixed edge, and it selects no width.
+
+**Inputs:** [The Projective Carrier](files/projective-carrier.md) §IX, Propositions 5, 6 and 7.
+
+**Parent:** [The Projective Carrier](files/projective-carrier.md)
+
+---
+
 ### [The Slot Ground States](files/slot-ground-states.md)
 
 **Result (2026-10-05):** Whether the frozen slot action carries orbitally stable nonlinear states without a run. At every nonzero charge, every slot has energy minimizers at fixed charge, each a standing wave, and the set of them is orbitally stable; whether the sets in $`R_2`$, $`R_4`$ and $`R_5`$ form branches remains open. In the five rigid slots and the control they are the exact lowest-level family, orbitally stable as a set at every nonzero charge, with the linearization's whole spectrum on the imaginary axis at every member; that supplies both parts of the slot action's §VII stability protocol for those branches under M8.4's persistence label, and on OpenWave the rung is a filing's to adjudicate. In $`R_4`$ and $`R_5`$ no ground state lies entirely in the lowest free eigenspace; in $`R_2`$ that question stays open. The soft blocks' reduced quartic comes out in closed form, giving OpenWave's D7 weights and $`R_2`$'s coefficients. The stability mechanism is generic.
