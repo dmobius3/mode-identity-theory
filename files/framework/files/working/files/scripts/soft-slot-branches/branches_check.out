@@ -1,0 +1,82 @@
+A  the channel quartic against the closed form, R2, R4, R5, two random rational points each
+   PASS
+B  R4: M8.12's ten census orbits, exact
+   coherent v3  924 r6 = 1        (n-,n0,n+) = (0, 0, 10)  k, r = 3, 1  zero mult  4  elliptic, simple
+                P(nu), unit u: (1521*nu + 12544)*(9801*nu + 19600)*(20449*nu + 784)*(184041*nu + 3136)*(1656369*nu + 802816)/92927308010445919222641
+   v2           924 r6 = 36       (n-,n0,n+) = (2, 0, 8)   k, r = 3, 1  zero mult  4  elliptic, simple
+                P(nu), unit u: (13689*nu + 12544)*(20449*nu + 12544)*(20449*nu + 50176)*(184041*nu + 313600)*(1656369*nu + 3136)/1744968339307262260958481
+   prism        924 r6 = 8800/43  (n-,n0,n+) = (3, 0, 6)   k, r = 4, 4  zero mult  8  elliptic, repeated
+                P(nu), unit u: (7913763*nu + 5770240)*(278420571*nu + 19066880)**2/613459193843712884522283
+   v1           924 r6 = 225      (n-,n0,n+) = (4, 2, 4)   k, r = 3, 1  zero mult  6  elliptic, simple
+                P(nu), unit u: (20449*nu + 784)*(20449*nu + 12544)*(1656369*nu + 19600)*(1656369*nu + 1960000)/1147250716178344681761
+   D2 ray       924 r6 = 225      (n-,n0,n+) = (5, 0, 4)   k, r = 4, 4  zero mult  8  hyperbolic, real pairs
+                P(nu), unit u: (16731*nu - 980)**2*(552123*nu + 501760)/154553782214403
+   C3 ray       924 r6 = 1188/5   (n-,n0,n+) = (5, 0, 4)   k, r = 4, 2  zero mult  6  hyperbolic, complex quartets
+                P(nu), unit u: (161332131962579720872640625*nu**4 + 194767005105025648855560000*nu**3 + 32893021579212071243366400*nu**2 - 77511964173743503179776*nu + 61899079407370240000)/161332131962579720872640625
+   pyramid      924 r6 = 1188/5   (n-,n0,n+) = (5, 0, 4)   k, r = 4, 2  zero mult  6  hyperbolic, complex quartets
+                P(nu), unit u: (846777242025*nu**2 + 1018930808896*nu + 3933798400)*(21169431050625*nu**2 + 83366483200*nu + 629407744)/17925792440286635652515625
+   octahedron   924 r6 = 288      (n-,n0,n+) = (6, 0, 3)   k, r = 4, 4  zero mult  8  hyperbolic, real pairs
+                P(nu), unit u: (552123*nu - 250880)**3/168309068831484867
+   zonal v0     924 r6 = 400      (n-,n0,n+) = (8, 0, 2)   k, r = 3, 3  zero mult  6  hyperbolic, real pairs
+                P(nu), unit u: (61347*nu + 62720)**2*(552123*nu - 250880)**2/1147250716178344681761
+   hexagon      924 r6 = 463      (n-,n0,n+) = (9, 0, 0)   k, r = 4, 4  zero mult  8  elliptic, repeated
+                P(nu), unit u: (61347*nu + 90160)*(552123*nu + 501760)**2/18701007647942763
+   PASS
+C  R5: the same rows, every slow eigenvalue scaled by 9/16
+   PASS
+D  R2: the weight states and the line points, exact
+   weight 7/2        Q = 144/143  (n-,n0,n+) = (0, 0, 10)  k, r = 5, 1  zero mult  6  elliptic, simple
+                     P(nu), unit u: (20449*nu + 12544)*(20449*nu + 28224)*(20449*nu + 112896)*(20449*nu + 254016)*(20449*nu + 313600)/3575694237941010577249
+   weight 5/2        Q = 168/143  (n-,n0,n+) = (4, 0, 6)   k, r = 5, 1  zero mult  6  elliptic, repeated
+                     P(nu), unit u: (20449*nu + 1600)*(20449*nu + 12544)*(20449*nu + 112896)**2*(20449*nu + 166464)/3575694237941010577249
+   weight 3/2        Q = 224/143  (n-,n0,n+) = (8, 0, 2)   k, r = 5, 1  zero mult  6  elliptic, simple
+                     P(nu), unit u: (20449*nu + 3136)*(20449*nu + 57600)*(20449*nu + 112896)*(418161601*nu**2 + 3660534592*nu + 5267275776)/3575694237941010577249
+   weight 1/2        Q = 168/143  (n-,n0,n+) = (4, 0, 6)   k, r = 5, 1  zero mult  6  hyperbolic, complex quartets
+                     P(nu), unit u: (20449*nu + 57600)*(418161601*nu**2 - 223793856*nu + 1625702400)*(418161601*nu**2 + 1346689344*nu + 8851046400)/3575694237941010577249
+   line {7/2, -5/2}  Q = 369/247  (n-,n0,n+) = (6, 0, 3)   k, r = 6, 2  zero mult  8  hyperbolic, complex quartets
+                     P(nu), unit u: (43681*nu + 529984)*(7382089*nu - 22579200)*(322457029609*nu**2 - 229584540416*nu + 3540418560000)/103978535944259502692881
+   line {7/2, -3/2}  Q = 22/13    (n-,n0,n+) = (9, 0, 0)   k, r = 6, 4  zero mult 10  elliptic, simple
+                     P(nu), unit u: (20449*nu + 153664)*(418161601*nu**2 + 6989958976*nu + 28677390336)/8550986578849
+   line {7/2, -1/2}  Q = 193/143  (n-,n0,n+) = (5, 0, 4)   k, r = 6, 2  zero mult  8  hyperbolic, complex quartets
+                     P(nu), unit u: (1254484803*nu**2 + 9490953472*nu + 31470387200)*(3763454409*nu**2 + 3142275136*nu + 15735193600)/4721196362873846427
+   line {5/2, -3/2}  Q = 161/143  (n-,n0,n+) = (0, 3, 6)   k, r = 6, 2  zero mult 12  elliptic, simple
+                     P(nu), unit u: (20449*nu + 87616)*(20449*nu + 204544)/418161601
+   PASS
+E  R2: the weight-7/2 orbit with the Sp(1) directions in its tangent is (0, 0, 10)
+   PASS
+F  R2: the slow type at the family members
+   weight 7/2        j: elliptic, k: elliptic, (i+j)/sqrt2: elliptic, (i+k)/sqrt2: elliptic
+   line {7/2, -3/2}  j: elliptic, k: elliptic, (i+j)/sqrt2: elliptic, (i+k)/sqrt2: elliptic
+   weight 5/2        j: hyperbolic, k: hyperbolic, (i+j)/sqrt2: hyperbolic, (i+k)/sqrt2: hyperbolic
+   weight 3/2        j: hyperbolic, k: hyperbolic, (i+j)/sqrt2: hyperbolic, (i+k)/sqrt2: hyperbolic
+   PASS
+G  Krein: M on the prism's clusters, relative to the metric, unit u
+   tau^2 = 19066880/278420571: dim 4, eigenvalues [8895040/79001793, 8895040/79001793, 1216/5031, 1216/5031]
+   tau^2 = 5770240/7913763: dim 2, eigenvalues [224/429, 25760/18447]
+   PASS
+H  the prism's isotropy: the 3-fold about z fixes it; the half-turn about x maps it to -u
+   PASS
+I  the third outside orbit: Krawczyk, radius 1e-60, then interval characteristic polynomials
+   924 r6 in [238.356854743095270345532123383755488502, 238.356854743095270345532123383755488502]
+   (n-,n0,n+) = (7, 0, 2); zero multiplicity of S_u 6; negative simple roots in nu: 4
+   nu roots, unit u: -1.0243294167, -0.0965299801561, -0.0193910729839, -3.29115537456e-5
+   |J|^2 in [0.07594891356889028628143831, 0.07594891356889028628143831]
+   PASS
+J  R2's lines {5/2, -5/2}, {7/2, -7/2}, {3/2, -3/2}: Q constant
+   PASS
+K  R2: the lifts of Q - 144/143 with |w|^2 and |w|^4 are not positive semidefinite
+   smallest eigenvalues: -0.419580 (|w|^2), -0.419580 (|w|^4)
+   PASS
+arms
+   arm: beta off by 1% (A)                                         RED
+   arm: the prism with sqrt 47 (B)                                 RED
+   arm: the scaling 3/4 in place of 9/16 (C)                       RED
+   arm: the line point t = 6 (D)                                   RED
+   arm: the Sp(1) directions dropped (E)                           RED
+   arm: weight 5/2 at the physical structure only (F)              RED
+   arm: a Krein-negative plus a Krein-positive cluster of v2 (G)   RED
+   arm: the 6-fold rotation about z (H)                            RED
+   arm: the Krawczyk box centered 1e-40 away (I)                   RED
+   arm: the line {7/2, -3/2} (J)                                   RED
+   arm: the lift of Q - 144/143 + 1/2 (K)                          RED
+0 claims failed; 11/11 arms red

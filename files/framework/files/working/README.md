@@ -159,7 +159,7 @@ Closing any one of these upgrades everything downstream.
 
 ### [The Slot Action](files/slot-action.md)
 
-**Status (selected and frozen, 2026-10-04):** One common action for the eight slot fields on $`\mathbb{R} \times S^3/2I`$, selected without using any target behaviour and frozen: the wave operator of the slot bundles' Laplacian with the density quartic, the only common quartic built from the fibre metric alone and the Surviving Ray's density-type interaction, the restoring sign, no mass and no curvature coupling ($`\xi = 0`$, the minimal-coupling side of a published disagreement, with $`\xi = 1/6`$ the named alternative). It is the effective slot-amplitude theory an OpenWave M8 run would use, not MIT's physical matter action, and it is MOTIVATED, not derived. The frozen action decides M8.2's rows 2 and 3 for the zero background, and the lowest-level branches of five slots, without a run. Those lowest-level families have since received an orbital-stability theorem, as sets at every nonzero charge, and linear spectral stability at every member; every slot has an orbitally stable fixed-charge ground-state set ([The Slot Ground States](files/slot-ground-states.md)). Whether the sets in $`R_2`$, $`R_4`$ and $`R_5`$ form branches, and the stability of non-minimizing branches, remain open; there a run can still add continuation and stability. The Lorentz row has a frozen ceiling of local covariance.
+**Status (selected and frozen, 2026-10-04):** One common action for the eight slot fields on $`\mathbb{R} \times S^3/2I`$, selected without using any target behaviour and frozen: the wave operator of the slot bundles' Laplacian with the density quartic, the only common quartic built from the fibre metric alone and the Surviving Ray's density-type interaction, the restoring sign, no mass and no curvature coupling ($`\xi = 0`$, the minimal-coupling side of a published disagreement, with $`\xi = 1/6`$ the named alternative). It is the effective slot-amplitude theory an OpenWave M8 run would use, not MIT's physical matter action, and it is MOTIVATED, not derived. The frozen action decides M8.2's rows 2 and 3 for the zero background, and the lowest-level branches of five slots, without a run. Those lowest-level families have since received an orbital-stability theorem, as sets at every nonzero charge, and linear spectral stability at every member; every slot has an orbitally stable fixed-charge ground-state set ([The Slot Ground States](files/slot-ground-states.md)). Each soft slot also carries a branch at small amplitude through a nondegenerate minimum of its reduced quartic, spectrally and orbitally stable relative to its stationary family, and the small-amplitude spectral type at the other nondegenerate critical orbits is decided ([The Soft-Slot Branches](files/soft-slot-branches.md)). Whether the soft slots' ground-state sets form branches, and everything at finite amplitude, remain open; there a run can still add continuation and stability. The Lorentz row has a frozen ceiling of local covariance.
 
 **Inputs:** The Slot Relation, the Coexact Gap and Surviving Ray papers, the postulate bridge's bar, the variational program's freeze rule, the stress-tensor bridge's C11, The Projective Carrier's ruling, OpenWave's M8.2, M8.4 and MODELS.md.
 
@@ -303,6 +303,16 @@ Technical gaps with specific paths forward.
 ## :white_check_mark: Results
 
 Closed: executed computations and derivations with their outcomes in hand.
+
+---
+
+### [The Soft-Slot Branches](files/soft-slot-branches.md)
+
+**Result (2026-10-06):** Whether the soft slots' critical orbits carry branches, and what their small-amplitude spectrum is, without a run. Every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude, and the reduced quartic decides the branch's small-amplitude linear spectrum: unstable where the slow flow is hyperbolic; spectrally and orbitally stable at a nondegenerate minimum; spectrally stable at a nondegenerate maximum, and at an elliptic saddle with Krein-definite frequencies once its zero modes are counted exactly. So each soft slot has an orbitally stable branch at small amplitude, and with the Slot Ground States every slot has one. Exact arithmetic, and interval arithmetic for one orbit, classifies M8.12's census in $`R_4`$ and $`R_5`$, one further orbit there, and $`R_2`$'s fixed-line points. Finite amplitude, and the globality of $`R_2`$'s minimum, stay open.
+
+**Inputs:** [The Slot Action](files/slot-action.md) §V, §VII and §IX, [The Slot Ground States](files/slot-ground-states.md) §I, §IV and Theorem D, OpenWave's M8.12 census record, [branches_check.py](files/scripts/soft-slot-branches/branches_check.py).
+
+**Parent:** [The Slot Ground States](files/slot-ground-states.md)
 
 ---
 

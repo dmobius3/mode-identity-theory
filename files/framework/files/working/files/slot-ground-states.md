@@ -173,6 +173,8 @@ with characteristic polynomial $`\mu^2\left(\mu^2 + 4\omega^2 + 2gc^2\lvert v\rv
 - Non-minimizing branches: the maximum and the saddles of the reduced quartic.
 - The linear spectrum about the soft slots' ground states.
 
+**Note (2026-10-06), on the soft branches.** [The Soft-Slot Branches](soft-slot-branches.md) proves that every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group carries a branch of standing waves at small amplitude, and decides that branch's small-amplitude linear spectrum. Through a nondegenerate minimum of $`Q`$, the coherent orbit in $`R_4`$ and $`R_5`$ and the weight-7/2 orbit in $`R_2`$, a strict local minimum, the branch is spectrally and orbitally stable relative to its stationary family; at the definite maxima and the elliptic saddles listed there it is spectrally stable. Whether those branches are the ground-state sets is Proposition C3's limit, INFERRED, and Proposition C2 and everything at finite amplitude stay open.
+
 ## References
 
 - T. Cazenave and P.-L. Lions, "Orbital stability of standing waves for some nonlinear Schrödinger equations", *Commun. Math. Phys.* **85** (1982) 549–561, doi:[10.1007/BF01403504](https://doi.org/10.1007/BF01403504).
