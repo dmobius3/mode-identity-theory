@@ -1,0 +1,48 @@
+      t =    98.9: d 1.082e-07, d_perp 1.082e-07, d_rot 3.632e-11, reference 2.5e-13
+      t =   198.8: d 2.450e-07, d_perp 2.450e-07, d_rot 6.336e-11, reference 8.1e-13
+      t =   298.6: d 6.339e-07, d_perp 6.339e-07, d_rot 1.263e-10, reference 2.1e-12
+      t =   398.5: d 1.672e-06, d_perp 1.672e-06, d_rot 2.918e-10, reference 5.5e-12
+      t =   498.4: d 4.421e-06, d_perp 4.421e-06, d_rot 7.567e-10, reference 1.4e-11
+      t =   598.3: d 1.170e-05, d_perp 1.170e-05, d_rot 1.956e-09, reference 3.8e-11
+      t =   698.1: d 3.094e-05, d_perp 3.094e-05, d_rot 5.132e-09, reference 1.0e-10
+      t =   798.0: d 8.187e-05, d_perp 8.187e-05, d_rot 1.357e-08, reference 2.6e-10
+      t =   897.9: d 2.166e-04, d_perp 2.166e-04, d_rot 3.587e-08, reference 7.0e-10
+      t =   997.8: d 5.731e-04, d_perp 5.731e-04, d_rot 9.505e-08, reference 1.8e-09
+{
+ "verdict": "Invalid (Fails on an invalid run)",
+ "valid": false,
+ "valid_under_v6_energy_rule": true,
+ "read_until": 582.2852793963689,
+ "max_d": 0.0005843114268729833,
+ "max_dperp": 0.0005843114018652499,
+ "max_drot": 9.689983659387186e-08,
+ "max_dref": 3.233314014121794e-11,
+ "charge_drift": 1.225995618762318e-14,
+ "energy_drift": 4.5487715690061843e-14,
+ "energy_pert": 2.4788097448959297e-13,
+ "energy_dev_vs_pert": 0.18350628072091754,
+ "energy_secular_drift": 0.042599672310213,
+ "t_fail": 582.2852793963689,
+ "drot_at_fail": 1.6672133117351302e-09,
+ "r": 1.8995222061946038e-16,
+ "dt": 0.008186672656923894,
+ "direction": "split",
+ "initial_energy_norm": 1.0000356346424039e-07,
+ "seconds": 9577.078976869583,
+ "level2_rates": [
+  [
+   0.009737451477599475,
+   0.0
+  ],
+  [
+   0.009737451477599766,
+   0.0
+  ],
+  [
+   0.009737451477600101,
+   0.0
+  ]
+ ],
+ "cluster_dim": 8,
+ "eps": 1.0
+}

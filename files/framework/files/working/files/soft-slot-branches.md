@@ -180,7 +180,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
 ## VI. What Stays Open
 
-- Finite amplitude, for every branch above.
+- Finite amplitude, for every branch above. M8.15, a continuation and persistence run on these branches filed with OpenWave, froze its terms on 2026-10-07, before any target was run: SHA-256 `c079f2a06da86c73f5cbd79e732da725539bc91e6f517ff32a9603c0c3febc17`. Its solver and control records are pinned in `scripts/soft-slot-dynamics/`.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -194,6 +194,11 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 In `scripts/soft-slot-branches/`:
 - `branches_check.py`: the exact quartic in weighted coordinates, checked against the closed form; M8.12's ten census orbits in $`R_4`$ and $`R_5`$, and $`R_2`$'s weight states and line points; the $`Sp(1)`$ family test; the Krein certificate at the prism; the prism's isotropy; the interval certification of the third outside orbit; $`R_2`$'s constant lines; and the two lifts of $`Q - 144/143`$. Each claim has a mutation arm that turns it red. A few minutes.
 - `branches_check.out`: its record.
+
+In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records:
+- `m8_15_solver/`: the finite-element solver, the branch driver and the control runs; `out/MANIFEST.json` holds the SHA-256 of every file the run executes, with the environment the controls ran in.
+- `m8_15_math/`: the check that prints the third outside orbit's frozen frequencies and Krein signs from the certified point in `branches_check.py`, with its record.
+- `REPRODUCE.md`: the reproduction route. `SHA256SUMS` pins every file.
 
 ---
 

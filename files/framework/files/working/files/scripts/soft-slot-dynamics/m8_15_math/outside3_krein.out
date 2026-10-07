@@ -1,0 +1,6 @@
+pinned point equals the bench copy: True
+Q(u) = 1.185203461338846   nrm before = 1.0
+nu = -1.02432941669733: tau = 1.01209160489; smallest singular values ['2.56e-61', '6.03e-61', '0.892']; M on the pair: ['51.333', '78.4332']
+nu = -0.0965299801561095: tau = 0.310692742362; smallest singular values ['1.44e-62', '3.6e-62', '0.0296']; M on the pair: ['-29.0265', '-21.2184']
+nu = -0.019391072983931: tau = 0.139251832964; smallest singular values ['1.09e-62', '8.3e-62', '0.0102']; M on the pair: ['-1.35013', '-7.29987']
+nu = -3.29115537456027e-5: tau = 0.00573685922309; smallest singular values ['4.72e-63', '2.44e-62', '1.84e-5']; M on the pair: ['-0.00862601', '-0.0415785']

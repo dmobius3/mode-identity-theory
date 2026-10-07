@@ -1,0 +1,57 @@
+  L3 eps 0.25: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 1.58e-04; peak resident 6.0 GB
+  L3 eps 0.3536: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 1.91e-04; peak resident 6.0 GB
+  L3 eps 0.5: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 2.32e-04; peak resident 6.0 GB
+  L3 eps 0.7071: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 2.84e-04; peak resident 6.0 GB
+  L3 eps 1: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 3.50e-04; peak resident 6.0 GB
+  L3 eps 1.414: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 4.36e-04; peak resident 6.0 GB
+  L3 eps 2: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 5.51e-04; peak resident 6.0 GB
+  L3 eps 2.828: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 7.06e-04; peak resident 6.0 GB
+  L3 eps 4: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 9.18e-04; peak resident 6.0 GB
+  L3 eps 5.657: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 1.21e-03; peak resident 6.0 GB
+  L3 eps 8: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 1.62e-03; peak resident 6.0 GB
+  L3 eps 11.31: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 2.19e-03; peak resident 6.0 GB
+  L3 eps 16: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 2.99e-03; peak resident 6.0 GB
+  L3 eps 22.63: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 4.11e-03; peak resident 6.0 GB
+  L3 eps 32: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 5.68e-03; peak resident 6.0 GB
+  L3 eps 45.25: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 7.84e-03; peak resident 6.0 GB
+  L3 eps 64: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 1.07e-02; peak resident 6.0 GB
+  L3 eps 72: cluster 8/8 ok=True; Krein 3,0,0 vs 3 balanced; zero-crossing False; lifted max 1.19e-02; peak resident 6.0 GB
+  validity at eps_min: pass (worst 0.514%)
+  L2 eps 0.25: cluster 8/8 ok=True; S dim 14, gap 1.63e+03; peak resident 6.0 GB
+  L2 eps 0.3536: cluster 8/8 ok=True; S dim 14, gap 1.15e+03; peak resident 6.0 GB
+  L2 eps 0.5: cluster 8/8 ok=True; S dim 14, gap 818; peak resident 6.0 GB
+  L2 eps 0.7071: cluster 8/8 ok=True; S dim 14, gap 580; peak resident 6.0 GB
+  L2 eps 1: cluster 8/8 ok=True; S dim 14, gap 411; peak resident 6.0 GB
+  L2 eps 1.414: cluster 8/8 ok=True; S dim 14, gap 292; peak resident 6.0 GB
+  L2 eps 2: cluster 8/8 ok=True; S dim 14, gap 208; peak resident 6.0 GB
+  L2 eps 2.828: cluster 8/8 ok=True; S dim 14, gap 148; peak resident 6.0 GB
+  L2 eps 4: cluster 8/8 ok=True; S dim 14, gap 106; peak resident 6.0 GB
+  L2 eps 5.657: cluster 8/8 ok=True; S dim 14, gap 76.2; peak resident 6.0 GB
+  L2 eps 8: cluster 8/8 ok=True; S dim 14, gap 55; peak resident 6.0 GB
+  L2 eps 11.31: cluster 8/8 ok=True; S dim 14, gap 40; peak resident 6.0 GB
+  L2 eps 16: cluster 8/8 ok=True; S dim 14, gap 29.2; peak resident 6.0 GB
+  L2 eps 22.63: cluster 8/8 ok=True; S dim 14, gap 21.4; peak resident 6.0 GB
+  L2 eps 32: cluster 8/8 ok=True; S dim 14, gap 15.7; peak resident 6.0 GB
+  L2 eps 45.25: cluster 8/8 ok=True; S dim 14, gap 11.5; peak resident 6.0 GB
+  L2 eps 64: cluster 8/8 ok=True; S dim 14, gap 8.24; peak resident 6.0 GB
+  L2 eps 72: cluster 8/8 ok=True; S dim 14, gap 7.33; peak resident 6.0 GB
+  eps 0.25: Hyperbolic
+  eps 0.3536: Hyperbolic
+  eps 0.5: Hyperbolic
+  eps 0.7071: Hyperbolic
+  eps 1: Hyperbolic
+  eps 1.414: Hyperbolic
+  eps 2: Hyperbolic
+  eps 2.828: Hyperbolic
+  eps 4: Hyperbolic
+  eps 5.657: Hyperbolic
+  eps 8: Hyperbolic
+  eps 11.31: Hyperbolic
+  eps 16: Hyperbolic
+  eps 22.63: Hyperbolic
+  eps 32: Hyperbolic
+  eps 45.25: Hyperbolic
+  eps 64: Hyperbolic
+  eps 72: Hyperbolic
+  persistence scheduled 8: Not reached
+  persistence scheduled 32: Not reached
