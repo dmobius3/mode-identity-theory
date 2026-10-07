@@ -180,7 +180,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
 ## VI. What Stays Open
 
-- Finite amplitude, for every branch above. M8.15, a continuation and persistence run on these branches filed with OpenWave, froze its terms on 2026-10-07, before any target was run: SHA-256 `c079f2a06da86c73f5cbd79e732da725539bc91e6f517ff32a9603c0c3febc17`. Its solver and control records are pinned in `scripts/soft-slot-dynamics/`.
+- Finite amplitude, for every branch above. M8.15, a continuation and persistence run on these branches filed with OpenWave, froze its terms on 2026-10-07, before any target was run: SHA-256 `b21eed1a487dea27431ecc3336417fa558df3b9b848fcce6ba3def7dafcbe5e4`. They were first hashed the same day as `c079f2a06da86c73f5cbd79e732da725539bc91e6f517ff32a9603c0c3febc17`; the second hash escapes four pipes in one table row so that it renders, and changes no term. Its solver and control records are pinned in `scripts/soft-slot-dynamics/`.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
