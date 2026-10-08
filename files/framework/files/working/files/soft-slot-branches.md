@@ -161,7 +161,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
 - **The weight-7/2 orbit is a strict local minimum** modulo its symmetry family, and $`\tau = 112/143,\ 168/143,\ 336/143,\ 504/143,\ 560/143`$.
 - **At the {7/2, −3/2} point,** $`J(u) = 0`$; one squared frequency is $`\tau^2 = 153664/20449`$, and the other two are the roots of $`418161601\,\nu^2 + 6989958976\,\nu + 28677390336`$, all Krein-negative.
-- **The minimizer, on its own line.** In $`R_4`$ and $`R_5`$ the coherent orbit is the unique minimizer of $`Q`$, derived in the Slot Ground States, §IV, Proposition C3: $`q_6`$ is the strictly smallest coefficient, and $`f_6 = 1`$ exactly on coherent states. That proposition's small-charge limit, which identifies this branch with the ground states, stays INFERRED, and nothing above uses it.
+- **The minimizer, on its own line.** In $`R_4`$ and $`R_5`$ the coherent orbit is the unique minimizer of $`Q`$, derived in the Slot Ground States, §IV, Proposition C3: $`q_6`$ is the strictly smallest coefficient, and $`f_6 = 1`$ exactly on coherent states. That proposition's small-charge limit identifies this branch with the ground states at small charge; nothing above uses it.
 
 ## V. What It Earns, and What It Does Not
 
@@ -173,7 +173,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 **What it does not give.**
 - Anything at finite amplitude: where a branch goes, whether ellipticity is lost, the spectrum along it, or its nonlinear persistence.
 - The orbital stability of the maxima and saddles, for which (d) and (e) give spectral stability only.
-- That the minimizing branches are the ground-state sets, which is Proposition C3's INFERRED limit.
+- That the minimizing branches are the ground-state sets, which the Slot Ground States derives in $`R_4`$ and $`R_5`$ at small charge (Proposition C3) and which stays open in $`R_2`$.
 - The degenerate orbits $`v_1`$ and $`R_2`$'s level 161/143.
 - Completeness of either critical set.
 - Any slot relation or physical particle state.
