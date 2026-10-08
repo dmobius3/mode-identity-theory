@@ -181,6 +181,18 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 ## VI. What Stays Open
 
 - Finite amplitude, for every branch above. M8.15, a continuation and persistence run on these branches filed with OpenWave, froze its terms on 2026-10-07, before any target was run: SHA-256 `b21eed1a487dea27431ecc3336417fa558df3b9b848fcce6ba3def7dafcbe5e4`. They were first hashed the same day as `c079f2a06da86c73f5cbd79e732da725539bc91e6f517ff32a9603c0c3febc17`; the second hash escapes four pipes in one table row so that it renders, and changes no term. At the maintainer's request on OpenWave #618, the filed terms were revised on 2026-10-07, before the go and before any target was run, and re-hashed as `e0c32d01ba374a2efd758ab33466fcdc89836f17989baa8b401ef70f1012cca8`, which governs. Its solver and control records are pinned in `scripts/soft-slot-dynamics/`.
+- **Note (2026-10-08), on M8.15's verdict.** The run was adjudicated on OpenWave [#620](https://github.com/openwave-labs/openwave/pull/620), per branch, with no aggregate verdict. Its record is [`RECORD.md`](https://github.com/dmobius3/mode-identity-theory/blob/28c8a7648a88c9234d32be753cbbe3563ea2eec3/files/framework/files/working/files/scripts/soft-slot-dynamics/RECORD.md) at MIT `28c8a76`. On the pinned finite-element mesh, under the frozen slot action:
+  - **Elliptic:**
+    - the prism in $`R_5`$ (T2/R5) at all 15 ladder points to $`\varepsilon = 32`$;
+    - the hexagon in $`R_4`$ (T3/R4) at 17 of 18 to $`\varepsilon = 72`$;
+    - the member of $`R_2`$'s orbit named in the terms (T5/R2), for that member only, at 17 of 20 to $`\varepsilon = 132`$.
+  - **Hyperbolic:** the prism in $`R_4`$ (T2/R4) from $`\varepsilon = 32`$, and the hexagon in $`R_5`$ (T3/R5) from $`\varepsilon = 22.63`$. Each change lies in a bracket that passes through Unresolved points, between 11.31 and 32 and between 11.31 and 22.63, and is not located.
+  - **Persistence:** all eight tests that ran Persist, each for its one registered direction.
+  - **Instrument outcomes, with no finite-amplitude verdict:**
+    - $`v_2`$ (T1) is INVALID at $`\varepsilon_{\min}`$ in both slots; in $`R_4`$ this rests on the instrument's 0.9 overlap classification alone;
+    - the third outside orbit (T4) reached no ladder point in either slot.
+
+  The record keeps the label "nonlinear persistence of the installed free structure", at the row 6 ceiling. These are the instrument's verdicts on one pinned mesh, so the first bullet's finite-amplitude question stays open as mathematics for every branch. M8.15 gives no verdict for $`v_2`$ or the third outside orbit, and the two changes of type stay unlocated.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -195,10 +207,11 @@ In `scripts/soft-slot-branches/`:
 - `branches_check.py`: the exact quartic in weighted coordinates, checked against the closed form; M8.12's ten census orbits in $`R_4`$ and $`R_5`$, and $`R_2`$'s weight states and line points; the $`Sp(1)`$ family test; the Krein certificate at the prism; the prism's isotropy; the interval certification of the third outside orbit; $`R_2`$'s constant lines; and the two lifts of $`Q - 144/143`$. Each claim has a mutation arm that turns it red. A few minutes.
 - `branches_check.out`: its record.
 
-In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records:
+In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records and the run's record:
 - `m8_15_solver/`: the finite-element solver, the branch driver and the control runs; `out/MANIFEST.json` holds the SHA-256 of every file the run executes, with the environment the controls ran in.
 - `m8_15_math/`: the check that prints the third outside orbit's frozen frequencies and Krein signs from the certified point in `branches_check.py`, with its record.
 - `REPRODUCE.md`: the reproduction route. `SHA256SUMS` pins every file.
+- `RECORD.md`: M8.15's per-branch record, adjudicated on OpenWave #620. The branch records, run logs, persistence records and post-run diagnostics are in `m8_15_solver/out/`.
 
 ---
 
