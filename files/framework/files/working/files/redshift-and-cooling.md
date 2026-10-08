@@ -7,7 +7,7 @@
 
 **Type:** Note
 **State:** Active
-**Status (2026-07-07):** Cooling is established as a kinematic equivalence with the FLRW thermal law; the redshift mechanism is in outline, and the distance side rides on the Waltz clock.
+**Status (2026-10-08):** Cooling is established as a kinematic equivalence with the FLRW thermal law; the redshift mechanism is in outline, and the distance side rides on the Waltz clock. The Killing ledger is derived (§VI): read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share, and the exchange waits on the amplitude-to-stress-tensor dictionary.
 **Summary:** How a static universe reddens light and cools a thermal bath, both readings of the temporal budget's state S.
 **Inputs:** `temporal-budget.md`, the standing wave $`\Psi = \cos(t/2)`$, the Waltz clock
 
@@ -65,10 +65,23 @@ The phase ratio gives $`1 + z`$; turning it into observed distances and $`H(z)`$
 | Blackbody preserved, $`T \propto 1/S`$ | ESTABLISHED as kinematic equivalence (FLRW thermal law) |
 | Distance-redshift and $`H(z)`$ | ESTABLISHED at model level via the clock; the SN+BAO fit is in [temporal budget](temporal-budget.md) |
 | Cooling from the postulate (photon phase-space density) | OPEN |
+| The Killing ledger: read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share | DERIVED (§VI); the exchange OPEN behind the dictionary |
 
 ## VI. Open questions
 
-**Where the redshifted energy goes.** In the effective FLRW reading, radiation carries the usual conformal conserved charge: for a traceless radiation stress tensor, the conformal Killing field inherited from the static $`S^3`$ frame gives $`\rho\, a_\text{eff}^4 = \text{const}`$. The comoving photon-energy reading $`\rho\, a_\text{eff}^3 \propto 1/S`$ therefore measures the frame's cooling bookkeeping, not by itself a missing spacetime-energy sink.
+**Where the redshifted energy goes.** In the effective FLRW reading, radiation carries the usual conformal conserved charge: for a traceless radiation stress tensor, the effective metric's conformal Killing field gives $`\rho\, a_\text{eff}^4 = \text{const}`$. The comoving photon-energy reading $`\rho\, a_\text{eff}^3 \propto 1/S`$ therefore measures the frame's cooling bookkeeping, not by itself a missing spacetime-energy sink.
+
+**The Killing ledger.** In each frame separately, suppose a sector's stress tensor is conserved, with no exchange with other sectors. How the two frames relate, the map $`g_\text{static} \to g_\text{eff}`$, is open ([The Stress-Tensor Bridge](stress-tensor-bridge.md) §VI and §VII), so neither frame's time is identified with the other's.
+- *The static frame.* On $`-c^2dT^2 + R^2d\Omega_3^2`$, $`\partial_T`$ is a Killing field, so the sector's energy is conserved. A homogeneous fluid at rest there has zero expansion, and its continuity equation leaves its density constant. So that homogeneous bath has no expansion-driven dilution or cooling: a sector left to itself on the static metric cannot supply the cooling of §II, which §II reads on the effective metric.
+- *The effective frame.* Write the effective metric as $`a_\text{eff}(\eta)^2(-d\eta^2 + h)`$, with $`\eta`$ its conformal time and $`h`$ flat, as the framework adopts, or the unit round $`S^3`$ of the closed diagnostic branch ([The Stress-Tensor Bridge](stress-tensor-bridge.md) §VI). Then $`\xi = \partial_\eta`$ is a conformal Killing field, $`\mathcal{L}_\xi g = 2\psi g`$ with $`\psi = \partial_\eta\ln a_\text{eff}`$, and for a conserved $`T^{\mu\nu}`$ the current $`J^\mu = T^{\mu\nu}\xi_\nu`$ obeys $`\nabla_\mu J^\mu = T^{\mu\nu}\nabla_{(\mu}\xi_{\nu)} = \psi\,T^\mu{}_\mu`$. For a homogeneous fluid with $`p = w\rho`$, the charge per unit coordinate volume is $`\rho\,a_\text{eff}^4`$, and
+
+```math
+\frac{d\ln\left(\rho\,a_\text{eff}^4\right)}{d\ln a_\text{eff}} = 1 - 3w .
+```
+
+It is conserved exactly when the fluid is traceless, $`w = 1/3`$, and then it is constant. For $`\rho > 0`$ it rises with $`a_\text{eff} \propto S`$ exactly when $`w < 1/3`$, and then the trace term drives it; a charge growing as $`S^2`$ needs $`w = -1/3`$.
+
+So a sector conserved on its own has a constant energy in the static frame. In the effective frame its charge is conserved only for $`w = 1/3`$, where it is constant, and for $`\rho > 0`$ it rises with $`S`$ only when $`w < 1/3`$, where it is not conserved. Read as one of these charges, an energy on the realized side that rises with $`S`$ is then either a non-conformal sector's effective-frame charge, which is not conserved, or the share of a sector fed by an exchange current, $`\nabla_\mu T^{\mu\nu}_\text{realized} = -\nabla_\mu T^{\mu\nu}_\text{rest} \ne 0`$. In the static frame the total charge stays conserved through such an exchange, so the partner sector is the counterparty. The exchange current is what the amplitude-to-$`T_{\mu\nu}`$ dictionary would have to supply. DERIVED, from the continuity equation and the conformal Killing identity, in each frame separately. It constrains the dictionary and supplies none of it.
 
 The budget still suggests a transfer $`\Psi^2 \to S^2`$, but turning that amplitude transfer into stress-energy requires an amplitude-to-$`T_{\mu\nu}`$ dictionary. Writing that dictionary is the open problem: it would decide whether the realization sector carries a genuine energy counterparty, and the same dictionary feeds the entropy reading ([Entropy as Realization Budget](entropy-as-realization-budget.md) §VIII). Highest-leverage open question for the budget.
 

@@ -219,7 +219,7 @@ Closing any one of these upgrades everything downstream.
 
 ### [Redshift and Cooling](files/redshift-and-cooling.md)
 
-**Note:** How a static universe reddens light and cools a bath, both readings of the budget's state $`S`$. Redshift is the phase ratio $`1 + z = S(t_\text{obs})/S(t_\text{emit})`$ on the standing wave; cooling is that same ratio on a blackbody, which stays a blackbody at $`T \propto 1/S`$ (ESTABLISHED as a kinematic equivalence with the FLRW thermal law). Not tired light, not expansion; the distance side rides on the Waltz clock.
+**Note:** How a static universe reddens light and cools a bath, both readings of the budget's state $`S`$. Redshift is the phase ratio $`1 + z = S(t_\text{obs})/S(t_\text{emit})`$ on the standing wave; cooling is that same ratio on a blackbody, which stays a blackbody at $`T \propto 1/S`$ (ESTABLISHED as a kinematic equivalence with the FLRW thermal law). Not tired light, not expansion; the distance side rides on the Waltz clock. The Killing ledger (§VI) is derived: read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share, and the exchange waits on the amplitude-to-stress-tensor dictionary.
 
 **Inputs:** Temporal budget identity, standing wave $`\Psi = \cos(t/2)`$, Waltz clock.
 
