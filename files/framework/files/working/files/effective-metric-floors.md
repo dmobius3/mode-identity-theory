@@ -11,6 +11,7 @@
 **Summary:** What MIT supplies, independently of wanting flat space, toward the object that would produce the spatial projection; the four floors any such object inherits; and what the missing rotation identification does to the two transfer classifications and to the ratio table.
 **Inputs:** `missing-spatial-projection.md` §II, §IV, `stress-tensor-bridge.md` C3, C7-C9, §III and §VI, `directional-transfers.md` §II, §V, `radial-transfers.md` §II-III, `molien-p1-bridge.md` §II, §IV, §V, `molien-ratio-table.md`, `../../../README.md`, `../../../../spectrum/files/the-waltz.md` §VI, `redshift-and-cooling.md` §I, `temporal-budget.md` §II, `friedmann-as-output.md` §I, `postulate-bridge.md`, `sampler-first-test.md` §1-2, `variational-score-to-sample.md` §4-6, `scripts/effective-metric-floors/a5_family_check.py`
 **Parent:** `stress-tensor-bridge.md`
+**Frozen:** 2026-09-15 §I, the work order, fixed before the question was put and not amended
 
 ---
 
