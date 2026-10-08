@@ -93,6 +93,8 @@ MIT constrains a future effective-metric object in four ways, and does not say w
 
 Not computed: the classification of the $`A_5`$-covariant family, which would have opened only on a generative handle; and anything from $`N = 60`$, where a shell's invariant space has more than one dimension. **(Pointer added 2026-09-15.)** [The Spatial Carriers](spatial-carriers.md) takes up the field-level question this page leaves open, and classifies which $`A_5`$ spectra a shell can carry.
 
+**Note (2026-10-08), on the closed-destination control.** §I quotes the bridge, "The closed alternative is not excluded" (§VI), as the reason the control keeps a closed destination. That sentence left [The Stress-Tensor Bridge](stress-tensor-bridge.md) on 2026-10-03 (`ef77919`), which now adopts flat effective slices, "a commitment, not a derivation", and keeps the closed placement "as a diagnostic branch, not an equal alternative" (§VI). The control stands as frozen, testing each handle against that closed branch, and nothing above changes.
+
 ## VIII. Checks
 
 [`a5_family_check.py`](scripts/effective-metric-floors/a5_family_check.py) needs numpy and scipy, and its record [`a5_family_check.out`](scripts/effective-metric-floors/a5_family_check.out) reproduces byte for byte from it. At $`N = 12`$ it checks:
