@@ -1,0 +1,43 @@
+2026-10-08T09:38:01Z post-hoc Newton T4/R4: start (POST-RUN DIAGNOSTIC ONLY; warnings shown)
+    it 0: residual 1.65e+00, sigma 48.251502990185
+    it 1: residual 9.52e-06, sigma 48.251295689324
+    it 2: residual 1.09e-06, sigma 48.251296077538
+    it 3: residual 1.08e-06, sigma 48.251296077506
+    it 4: residual 1.08e-06, sigma 48.251296077506
+    it 5: residual 1.08e-06, sigma 48.251296077506
+    it 6: residual 1.08e-06, sigma 48.251296077506
+    it 7: residual 1.08e-06, sigma 48.251296077506
+    it 8: residual 1.08e-06, sigma 48.251296077506
+    it 9: residual 1.08e-06, sigma 48.251296077506
+    it 10: residual 1.08e-06, sigma 48.251296077506
+    it 11: residual 1.08e-06, sigma 48.251296077506
+    it 12: residual 1.08e-06, sigma 48.251296077506
+    it 13: residual 1.08e-06, sigma 48.251296077506
+    it 14: residual 1.08e-06, sigma 48.251296077506
+    it 15: residual 1.08e-06, sigma 48.251296077506
+    it 16: residual 1.08e-06, sigma 48.251296077506
+    it 17: residual 1.08e-06, sigma 48.251296077506
+    it 18: residual 1.08e-06, sigma 48.251296077506
+    it 19: residual 1.08e-06, sigma 48.251296077506
+    it 20: residual 1.08e-06, sigma 48.251296077506
+    it 21: residual 1.08e-06, sigma 48.251296077506
+    it 22: residual 1.08e-06, sigma 48.251296077506
+    it 23: residual 1.08e-06, sigma 48.251296077506
+    it 24: residual 1.08e-06, sigma 48.251296077506
+    it 25: residual 1.08e-06, sigma 48.251296077506
+    it 26: residual 1.08e-06, sigma 48.251296077506
+    it 27: residual 1.08e-06, sigma 48.251296077506
+    it 28: residual 1.08e-06, sigma 48.251296077506
+    it 29: residual 1.08e-06, sigma 48.251296077506
+    it 30: residual 1.08e-06, sigma 48.251296077506
+    it 31: residual 1.08e-06, sigma 48.251296077506
+    it 32: residual 1.08e-06, sigma 48.251296077506
+    it 33: residual 1.08e-06, sigma 48.251296077506
+    it 34: residual 1.08e-06, sigma 48.251296077506
+    it 35: residual 1.08e-06, sigma 48.251296077506
+    it 36: residual 1.08e-06, sigma 48.251296077506
+    it 37: residual 1.08e-06, sigma 48.251296077506
+    it 38: residual 1.08e-06, sigma 48.251296077506
+    it 39: residual 1.08e-06, sigma 48.251296077506
+no convergence: RuntimeError: pinned Newton did not converge: residual 1.08e-06; 2043 s
+2026-10-08T10:13:35Z post-hoc Newton T4/R4: exit 0

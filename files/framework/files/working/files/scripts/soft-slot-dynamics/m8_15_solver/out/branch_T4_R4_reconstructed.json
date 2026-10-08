@@ -1,0 +1,49 @@
+{
+ "case": "T4",
+ "slot": 4,
+ "reconstructed": true,
+ "sources": [
+  "out/run_log.txt",
+  "out/run_T4_R4.log",
+  "out/post_run/replay_T4_R4.log"
+ ],
+ "targets": [
+  0.25,
+  0.3535533905932738,
+  0.5,
+  0.7071067811865476,
+  1.0,
+  1.4142135623730951,
+  2.0,
+  2.8284271247461903,
+  4.0,
+  5.656854249492381,
+  8.0,
+  11.313708498984761,
+  16.0,
+  22.627416997969522,
+  32.0,
+  45.254833995939045,
+  64.0,
+  72.0
+ ],
+ "frozen": {
+  "r_f3": 1.0397370289375376e-06,
+  "r_f2": 3.970232009242573e-05,
+  "delta_lev": 0.01,
+  "s2": 0.0006739134989217632,
+  "eta": 0.001,
+  "T": 1000.0
+ },
+ "end": [
+  "Newton failure at the seed",
+  null
+ ],
+ "points": [],
+ "level2": [],
+ "cross": [],
+ "types": [],
+ "changes": [],
+ "persistence": [],
+ "note": "Original run: no branch record was written. The level-3 ladder stayed empty, and the driver then raised IndexError before writing a branch record. An exact replay with the frozen bytes reproduced no accepted Newton solution and recovered Branch.first's end reason, Newton failure at the seed. No linear verdict or persistence test exists, and there is no finite-amplitude verdict for this branch."
+}

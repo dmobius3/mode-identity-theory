@@ -1,0 +1,57 @@
+  L3 eps 0.25: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.81e-04; peak resident 3.7 GB
+  L3 eps 0.3536: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 2.59e-04; peak resident 3.9 GB
+  L3 eps 0.5: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 3.68e-04; peak resident 3.9 GB
+  L3 eps 0.7071: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 5.20e-04; peak resident 4.1 GB
+  L3 eps 1: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 7.33e-04; peak resident 4.3 GB
+  L3 eps 1.414: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.03e-03; peak resident 4.3 GB
+  L3 eps 2: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.43e-03; peak resident 4.3 GB
+  L3 eps 2.828: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.98e-03; peak resident 4.3 GB
+  L3 eps 4: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 2.70e-03; peak resident 4.3 GB
+  L3 eps 5.657: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 3.65e-03; peak resident 4.3 GB
+  L3 eps 8: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 4.85e-03; peak resident 4.3 GB
+  L3 eps 11.31: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 6.31e-03; peak resident 4.6 GB
+  L3 eps 16: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 7.97e-03; peak resident 4.6 GB
+  L3 eps 22.63: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.74e-03; peak resident 5.0 GB
+  L3 eps 32: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.14e-02; peak resident 5.0 GB
+  L3 eps 45.25: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.29e-02; peak resident 5.0 GB
+  L3 eps 64: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.39e-02; peak resident 5.0 GB
+  L3 eps 72: cluster 6/4 ok=False; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.41e-02; peak resident 5.0 GB
+  validity at eps_min: INVALID BRANCH (worst 0.797%)
+  L2 eps 0.25: cluster 6/4 ok=False; S dim 14, gap 589; peak resident 5.0 GB
+  L2 eps 0.3536: cluster 6/4 ok=False; S dim 14, gap 417; peak resident 5.0 GB
+  L2 eps 0.5: cluster 6/4 ok=False; S dim 14, gap 295; peak resident 5.0 GB
+  L2 eps 0.7071: cluster 6/4 ok=False; S dim 14, gap 209; peak resident 5.0 GB
+  L2 eps 1: cluster 6/4 ok=False; S dim 14, gap 148; peak resident 5.0 GB
+  L2 eps 1.414: cluster 6/4 ok=False; S dim 14, gap 105; peak resident 5.0 GB
+  L2 eps 2: cluster 6/4 ok=False; S dim 14, gap 74.9; peak resident 5.0 GB
+  L2 eps 2.828: cluster 6/4 ok=False; S dim 14, gap 53.4; peak resident 5.0 GB
+  L2 eps 4: cluster 6/4 ok=False; S dim 14, gap 38.2; peak resident 5.0 GB
+  L2 eps 5.657: cluster 6/4 ok=False; S dim 14, gap 27.4; peak resident 5.0 GB
+  L2 eps 8: cluster 6/4 ok=False; S dim 14, gap 19.8; peak resident 5.0 GB
+  L2 eps 11.31: cluster 6/4 ok=False; S dim 14, gap 14.4; peak resident 5.0 GB
+  L2 eps 16: cluster 6/4 ok=False; S dim 14, gap 10.6; peak resident 5.0 GB
+  L2 eps 22.63: cluster 6/4 ok=False; S dim 14, gap 7.88; peak resident 5.0 GB
+  L2 eps 32: cluster 6/4 ok=False; S dim 14, gap 5.98; peak resident 5.0 GB
+  L2 eps 45.25: cluster 6/4 ok=False; S dim 14, gap 4.63; peak resident 5.0 GB
+  L2 eps 64: cluster 6/4 ok=False; S dim 14, gap 3.68; peak resident 5.0 GB
+  L2 eps 72: cluster 6/4 ok=False; S dim 14, gap 3.43; peak resident 5.0 GB
+  eps 0.25: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 0.3536: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 0.5: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 0.7071: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 1: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 1.414: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 2: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 2.828: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 4: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 5.657: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 8: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 11.31: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 16: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 22.63: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 32: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 45.25: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 64: Unresolved (cluster check, paired lifted mode above tau0)
+  eps 72: Unresolved (cluster check, paired lifted mode above tau0)
+  persistence scheduled 8: Not reached
+  persistence scheduled 32: Not reached

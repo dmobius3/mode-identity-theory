@@ -1,0 +1,68 @@
+  L3 eps 0.25: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.04e-04; peak resident 6.3 GB
+  L3 eps 0.3536: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.23e-04; peak resident 6.3 GB
+  L3 eps 0.5: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.44e-04; peak resident 6.3 GB
+  L3 eps 0.7071: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.69e-04; peak resident 6.9 GB
+  L3 eps 1: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.95e-04; peak resident 6.9 GB
+  L3 eps 1.414: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 2.24e-04; peak resident 6.9 GB
+  L3 eps 2: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 2.52e-04; peak resident 7.5 GB
+  L3 eps 2.828: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 2.76e-04; peak resident 8.5 GB
+  L3 eps 4: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 2.89e-04; peak resident 8.5 GB
+  L3 eps 5.657: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 3.28e-04; peak resident 8.5 GB
+  L3 eps 8: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 3.93e-04; peak resident 8.5 GB
+  L3 eps 11.31: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 4.68e-04; peak resident 8.5 GB
+  L3 eps 16: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 5.50e-04; peak resident 8.5 GB
+  L3 eps 22.63: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 6.28e-04; peak resident 8.5 GB
+  L3 eps 32: cluster 8/8 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 6.88e-04; peak resident 8.5 GB
+  validity at eps_min: pass (worst 0.290%)
+  L2 eps 0.25: cluster 8/8 ok=True; S dim 14, gap 1.02e+03; peak resident 8.5 GB
+  L2 eps 0.3536: cluster 8/8 ok=True; S dim 14, gap 720; peak resident 8.5 GB
+  L2 eps 0.5: cluster 8/8 ok=True; S dim 14, gap 509; peak resident 8.5 GB
+  L2 eps 0.7071: cluster 8/8 ok=True; S dim 14, gap 360; peak resident 8.5 GB
+  L2 eps 1: cluster 8/8 ok=True; S dim 14, gap 255; peak resident 8.5 GB
+  L2 eps 1.414: cluster 8/8 ok=True; S dim 14, gap 180; peak resident 8.5 GB
+  L2 eps 2: cluster 8/8 ok=True; S dim 14, gap 128; peak resident 8.5 GB
+  L2 eps 2.828: cluster 8/8 ok=True; S dim 14, gap 90.3; peak resident 8.5 GB
+  L2 eps 4: cluster 8/8 ok=True; S dim 14, gap 64; peak resident 8.5 GB
+  L2 eps 5.657: cluster 8/8 ok=True; S dim 14, gap 45.4; peak resident 8.5 GB
+  L2 eps 8: cluster 8/8 ok=True; S dim 14, gap 32.3; peak resident 8.5 GB
+  L2 eps 11.31: cluster 8/8 ok=True; S dim 14, gap 23.1; peak resident 8.5 GB
+  L2 eps 16: cluster 8/8 ok=True; S dim 14, gap 16.6; peak resident 8.5 GB
+  L2 eps 22.63: cluster 8/8 ok=True; S dim 14, gap 12; peak resident 8.5 GB
+  L2 eps 32: cluster 8/8 ok=True; S dim 14, gap 8.84; peak resident 8.5 GB
+  eps 0.25: Elliptic
+  eps 0.3536: Elliptic
+  eps 0.5: Elliptic
+  eps 0.7071: Elliptic
+  eps 1: Elliptic
+  eps 1.414: Elliptic
+  eps 2: Elliptic
+  eps 2.828: Elliptic
+  eps 4: Elliptic
+  eps 5.657: Elliptic
+  eps 8: Elliptic
+  eps 11.31: Elliptic
+  eps 16: Elliptic
+  eps 22.63: Elliptic
+  eps 32: Elliptic
+      t =    98.9: d 8.208e-04, d_perp 8.210e-04, d_rot 8.961e-05, reference 6.9e-14
+      t =   198.8: d 8.559e-04, d_perp 8.567e-04, d_rot 3.844e-04, reference 2.0e-13
+      t =   298.6: d 8.892e-04, d_perp 8.905e-04, d_rot 5.035e-04, reference 4.3e-13
+      t =   398.5: d 8.286e-04, d_perp 8.291e-04, d_rot 2.031e-04, reference 7.9e-13
+      t =   498.4: d 8.424e-04, d_perp 8.409e-04, d_rot 2.864e-04, reference 1.3e-12
+      t =   598.3: d 8.926e-04, d_perp 8.897e-04, d_rot 5.226e-04, reference 1.9e-12
+      t =   698.1: d 8.536e-04, d_perp 8.517e-04, d_rot 3.268e-04, reference 2.7e-12
+      t =   798.0: d 8.235e-04, d_perp 8.252e-04, d_rot 1.556e-04, reference 3.6e-12
+      t =   897.9: d 8.750e-04, d_perp 8.796e-04, d_rot 4.842e-04, reference 4.5e-12
+      t =   997.8: d 8.573e-04, d_perp 8.615e-04, d_rot 4.058e-04, reference 5.6e-12
+  persistence at eps 4 (scheduled 4): Persists
+      t =    98.9: d 9.066e-04, d_perp 9.075e-04, d_rot 3.413e-04, reference 1.3e-13
+      t =   198.8: d 1.010e-03, d_perp 1.010e-03, d_rot 2.391e-04, reference 5.3e-13
+      t =   298.6: d 1.039e-03, d_perp 1.040e-03, d_rot 9.875e-05, reference 1.2e-12
+      t =   398.5: d 1.051e-03, d_perp 1.052e-03, d_rot 8.155e-05, reference 2.3e-12
+      t =   498.4: d 1.013e-03, d_perp 1.009e-03, d_rot 2.347e-04, reference 3.8e-12
+      t =   598.3: d 9.080e-04, d_perp 9.155e-04, d_rot 3.164e-04, reference 5.9e-12
+      t =   698.1: d 8.865e-04, d_perp 8.744e-04, d_rot 4.246e-04, reference 8.6e-12
+      t =   798.0: d 8.332e-04, d_perp 8.472e-04, d_rot 3.786e-04, reference 1.2e-11
+      t =   897.9: d 9.280e-04, d_perp 9.122e-04, d_rot 3.969e-04, reference 1.7e-11
+      t =   997.8: d 9.730e-04, d_perp 9.814e-04, d_rot 2.176e-04, reference 2.3e-11
+  persistence at eps 16 (scheduled 16): Persists

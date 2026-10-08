@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/Users/blake/mode-identity-theory/.claude/worktrees/confident-varahamihira-0572e1/files/framework/files/working/files/scripts/soft-slot-dynamics/m8_15_solver/m815_branch.py", line 361, in <module>
+    run_branch(a.case, a.slot, a.eps_max, log=lambda s: print(s, flush=True), levels=levels, T_override=a.T)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/blake/mode-identity-theory/.claude/worktrees/confident-varahamihira-0572e1/files/framework/files/working/files/scripts/soft-slot-dynamics/m8_15_solver/m815_branch.py", line 240, in run_branch
+    br2 = lc2.branch(reached, on2)
+  File "/Users/blake/mode-identity-theory/.claude/worktrees/confident-varahamihira-0572e1/files/framework/files/working/files/scripts/soft-slot-dynamics/m8_15_solver/m815_common.py", line 135, in branch
+    return Branch(self.st, self.case, self.lam0, self.Q, self.vol, slices=self.slices, log=log).run(targets, on_point=on_point)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/blake/mode-identity-theory/.claude/worktrees/confident-varahamihira-0572e1/files/framework/files/working/files/scripts/soft-slot-dynamics/m8_15_solver/continuation.py", line 137, in run
+    if not self.first(targets[0]):
+                      ~~~~~~~^^^
+IndexError: list index out of range

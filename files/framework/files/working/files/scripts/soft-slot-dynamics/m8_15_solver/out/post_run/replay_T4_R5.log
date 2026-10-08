@@ -1,0 +1,4 @@
+2026-10-08T08:29:04Z replay T4/R5: start
+replay T4/R5 level 3: ladder 15 points from 0.25 to 32.0
+end: ('Newton failure at the seed', None); ladder points reached: 0; accepted Newton solutions: 0; 4113 s
+2026-10-08T09:37:38Z replay T4/R5: exit 0

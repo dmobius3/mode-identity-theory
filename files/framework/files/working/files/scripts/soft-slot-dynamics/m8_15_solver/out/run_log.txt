@@ -1,0 +1,71 @@
+2026-10-07T17:50:20Z run start: M8.15 under the governing terms e0c32d01ba374a2efd758ab33466fcdc89836f17989baa8b401ef70f1012cca8 (go: openwave-labs/openwave#618, issuecomment-6043396662)
+2026-10-07T17:50:20Z solver: MIT 6058f95c3a893652d8fb1db19e7d2d14060ba881; repo at cdab1c249701dabac8f9854d16c6e2cc458bf831
+2026-10-07T17:50:20Z bytes: manifest 23 of 23 and SHA256SUMS 52 of 52 match
+2026-10-07T17:50:20Z controls: start
+2026-10-07T17:50:23Z controls: spreads exit 0
+2026-10-07T17:51:20Z controls: linear 2 exit 0
+2026-10-07T18:41:20Z controls: linear 3 exit 0
+2026-10-07T18:51:19Z controls: theoremD 3 exit 0
+2026-10-07T20:01:12Z controls: persistence gate pid 71111 exit 0
+2026-10-07T20:01:12Z controls: persistence gate pid 71112 exit 0
+2026-10-07T20:01:12Z controls: persistence gate pid 71113 exit 0
+2026-10-07T20:01:12Z controls: persistence gate pid 71114 exit 0
+2026-10-07T20:01:12Z controls: persistence gate pid 71115 exit 0
+2026-10-07T20:01:13Z controls: summarize exit 0
+2026-10-07T20:01:13Z controls: gates {'cluster': True, 'linear': True, 'dynamic': True}
+2026-10-07T20:01:13Z STOP: a control gate failed or the frozen numbers moved; the committed freeze_numbers.json is restored. No target runs.
+2026-10-07T20:03:08Z diagnosis of the stop (no target has run; FROZEN.json not written): every control gate passes, and every regenerated control record (linear 2 and 3, Theorem D, the five persistence gates) is identical to the committed record apart from timing fields. The one difference is s2, the level-2 spreads: regenerated 2.1361587053334574e-03 (R2), 6.739134989928175e-04 (R4), 9.547197384947026e-04 (R5), against the committed 2.136158705290825e-03, 6.739134989217632e-04, 9.547197384733863e-04, relative 2.0e-11, 1.05e-10 and 2.2e-11. The committed spreads were computed in the 2026-10-06 closing run, before the one-thread pin was part of the bytes. The frozen environment reproduces them to four significant figures, as the terms state them. The committed freeze_numbers.json is restored; the regenerated spreads_L2.json is kept as this run's record. The run stops as planned, pending the author's go to resume with the frozen values governing.
+2026-10-07T20:09:27Z determination, made before any target result existed: the controls passed every gate. The run's byte guard halted because the regenerated level-2 spreads s2 differ from the committed frozen values by at most 1.05e-10 relative; the committed spreads were computed in the 2026-10-06 closing run, before the one-thread pin was part of the code. The committed frozen values remain governing, and the solver, the terms, the targets, the gates, the tolerances and the frozen values are unchanged.
+2026-10-07T20:10:02Z resume: the author's go to run the targets with the frozen values governing
+2026-10-07T20:10:02Z resume: manifest 23 of 23 and the committed freeze_numbers.json match; SHA256SUMS differs only in the regenerated control records
+2026-10-07T20:10:02Z FROZEN.json written: the committed frozen numbers with terms_sha256 e0c32d01ba374a2efd758ab33466fcdc89836f17989baa8b401ef70f1012cca8
+2026-10-07T20:10:02Z target T4/R4: launched, pid 77443
+2026-10-07T20:10:02Z target T5/R2: launched, pid 77445
+2026-10-07T20:10:02Z wave 1 has left level 3
+2026-10-07T20:10:02Z target T4/R5: launched, pid 77450
+2026-10-07T20:10:02Z wave 2 has left level 3
+2026-10-07T20:10:02Z target T1/R4: launched, pid 77454
+2026-10-07T20:10:02Z target T1/R5: launched, pid 77456
+2026-10-07T20:10:02Z wave 3 has left level 3
+2026-10-07T20:10:02Z target T2/R4: launched, pid 77461
+2026-10-07T20:10:02Z target T2/R5: launched, pid 77463
+2026-10-07T20:10:03Z wave 4 has left level 3
+2026-10-07T20:10:03Z target T3/R4: launched, pid 77468
+2026-10-07T20:10:03Z target T3/R5: launched, pid 77470
+2026-10-07T20:10:03Z target T1/R4: exit 127
+2026-10-07T20:10:03Z target T2/R4: exit 127
+2026-10-07T20:10:03Z target T1/R5: exit 127
+2026-10-07T20:10:03Z target T3/R4: exit 127
+2026-10-07T20:10:03Z target T2/R5: exit 127
+2026-10-07T20:10:03Z target T5/R2: exit 127
+2026-10-07T20:10:03Z target T3/R5: exit 127
+2026-10-07T20:10:03Z target T4/R4: exit 127
+2026-10-07T20:10:03Z target T4/R5: exit 127
+2026-10-07T20:10:03Z run done
+2026-10-07T20:11:22Z deviation, orchestration only: the resume script stored the literal text $! in place of each target's pid (a zsh quirk in an associative-array assignment), so every wave check passed at once and all nine targets launched at 20:10:02-03. The 'exit 127' lines above are the shell's 'job not found' from wait, not the targets' exits. The seven later-wave processes (T4/R5, T1/R4, T1/R5, T2/R4, T2/R5, T3/R4, T3/R5) were stopped at about 50 s, while building their level cases, before any ladder point was computed: their logs are empty, and nothing from them is used. Wave 1 (T4/R4, T5/R2) runs on as launched. The stopped branches run from the start in their planned waves, from the same bytes.
+2026-10-07T20:12:16Z waves: continuing; wave 1 is T4/R4 (pid 77443) and T5/R2 (pid 77445), launched by the resume
+2026-10-07T20:15:52Z audit summary of the resume: there was one resume attempt, and one orchestration fault in it, the pid capture described above. Every target process it started did start; the 'exit 127' lines are wait's 'job not found', from the same fault. Seven processes started out of wave were terminated during mesh construction, before any ladder point was computed or any target result produced. Their output is discarded in full, and those branches restart from the beginning in their planned waves. The two wave-1 processes continue unchanged. The fault and its fix are in the orchestration scripts only, which stand outside the frozen set: they start the frozen driver m815_branch.py with a case and a slot, and write this log and FROZEN.json. The manifest rechecks 23 of 23 at this time. No frozen script, term, target, seed, tolerance, continuation rule or verdict rule has changed, and every restarted branch begins from its frozen initial state.
+2026-10-07T20:56:16Z wave 1 has left level 3
+2026-10-07T20:56:16Z target T4/R5: launched, pid 79984
+2026-10-07T20:56:52Z target T4/R4 (pid 77443, launched 20:10:02): the process ended at about 20:55 with an uncaught IndexError. The level-3 ladder reached no point: no 'L3 eps' line, and the level-2 phase was handed an empty ladder, on which continuation.run raised IndexError at targets[0]. The frozen driver writes the branch record, including the level-3 end reason, only at its end, and its level-3 continuation does not log, so the end reason was not recorded. The 45 minutes the process ran fit a Newton solve from the germ seed that does not converge within the frozen 40 iterations (about a minute per iteration here), which is the continuation's 'Newton failure at the seed'; that reading is unconfirmed. Recorded under the run's crash policy: the branch ends there, by an instrument failure, with no code change. No ladder point, linear verdict or persistence test exists for T4/R4.
+2026-10-07T21:15:44Z post-run plan for T4/R4, adopted on review: (1) the main run continues untouched; (2) after it ends, an exact replay of T4/R4's level-3 continuation through the frozen modules, with the same inputs and only the continuation's existing log switched on, to recover the end reason; if the replay reaches any ladder point it does not reproduce the run, nothing from it stands in for the run, and the discrepancy is investigated; (3) optionally, a separate post-hoc diagnosis of the first Newton solve with solve_pinned's existing verbose switch, labelled as added after observing the failure. Neither changes a frozen file or any verdict. Until the replay, the reading is: continuation not established by the frozen solver at level 3 for T4/R4. That is no physical verdict.
+2026-10-07T22:47:18Z wave 2 has left level 3
+2026-10-07T22:47:18Z target T1/R4: launched, pid 85203
+2026-10-07T22:47:18Z target T1/R5: launched, pid 85205
+2026-10-07T22:47:56Z target T4/R5 (pid 79984, launched 20:56:16): ended at about 22:46 with the same uncaught IndexError on an empty level-3 ladder; no 'L3 eps' line, so no ladder point was reached and the end reason was not recorded. The roughly 110 minutes fit, as for R4, a Newton solve from the germ seed that does not converge within the frozen 40 iterations on R5's larger system; unconfirmed. Recorded under the crash policy: the branch ends there, by an instrument failure, with no code change. No ladder point, linear verdict or persistence test exists for T4/R5. The post-run exact replay and the optional post-hoc diagnosis apply to T4/R5 as to T4/R4. Reading until then, for both T4 slots: continuation not established by the frozen solver at level 3, which is no physical verdict.
+2026-10-08T00:51:20Z wave 3 has left level 3
+2026-10-08T00:51:20Z target T2/R4: launched, pid 89897
+2026-10-08T00:51:20Z target T2/R5: launched, pid 89899
+2026-10-08T02:31:22Z wave 4 has left level 3
+2026-10-08T02:31:22Z target T3/R4: launched, pid 94537
+2026-10-08T02:31:22Z target T3/R5: launched, pid 94539
+2026-10-08T02:31:22Z target T4/R5: exit 1
+2026-10-08T02:31:22Z target T1/R4: exit 0
+2026-10-08T02:31:22Z target T1/R5: exit 0
+2026-10-08T03:51:50Z target T2/R4: exit 0
+2026-10-08T06:46:08Z target T2/R5: exit 0
+2026-10-08T06:46:08Z target T3/R4: exit 0
+2026-10-08T07:51:34Z target T3/R5: exit 0
+2026-10-08T07:51:34Z target T4/R4: ended WITHOUT a branch record
+2026-10-08T07:51:34Z target T5/R2: ended, branch record written
+2026-10-08T07:51:34Z run done

@@ -1,0 +1,14 @@
+2026-10-08T14:06:17Z gauge check L2 T4/R4: start (POST-RUN DIAGNOSTIC; t4_gauge.py unchanged)
+L2 T4/R4: fixed dim 3040, slices 1, setup 10s
+  slice 0: M-cosine with the phase direction i*Phi = 0.125601
+  it 0: frozen test 2.481e+00 | with gauge term 2.481e+00 | off fixed space 2.584e-13 | |mu T|/|Mx| 0.000e+00 | mu [0.] | nu [0.] | sigma 48.275301510185
+  it 1: frozen test 5.927e-05 | with gauge term 5.860e-05 | off fixed space 2.628e-13 | |mu T|/|Mx| 7.808e-06 | mu [7.80523769e-06] | nu [-3.94496358e-05] | sigma 48.275113917239
+  it 2: frozen test 8.925e-06 | with gauge term 3.533e-08 | off fixed space 2.603e-13 | |mu T|/|Mx| 8.925e-06 | mu [8.92029117e-06] | nu [-3.96682825e-05] | sigma 48.275111734387
+  it 3: frozen test 8.925e-06 | with gauge term 3.828e-13 | off fixed space 2.611e-13 | |mu T|/|Mx| 8.925e-06 | mu [8.92032728e-06] | nu [-3.96688859e-05] | sigma 48.275111738094
+  it 4: frozen test 8.925e-06 | with gauge term 3.515e-13 | off fixed space 2.625e-13 | |mu T|/|Mx| 8.925e-06 | mu [8.92032728e-06] | nu [-3.96688859e-05] | sigma 48.275111738094
+  it 5: frozen test 8.925e-06 | with gauge term 3.504e-13 | off fixed space 2.561e-13 | |mu T|/|Mx| 8.925e-06 | mu [8.92032727e-06] | nu [-3.96688859e-05] | sigma 48.275111738094
+  it 6: frozen test 8.925e-06 | with gauge term 3.555e-13 | off fixed space 2.587e-13 | |mu T|/|Mx| 8.925e-06 | mu [8.92032728e-06] | nu [-3.96688859e-05] | sigma 48.275111738094
+  it 7: frozen test 8.925e-06 | with gauge term 3.538e-13 | off fixed space 2.628e-13 | |mu T|/|Mx| 8.925e-06 | mu [8.92032728e-06] | nu [-3.96688859e-05] | sigma 48.275111738094
+  predicted mu from phase invariance 8.920327e-06, actual 8.920327e-06
+done 16s
+2026-10-08T14:06:33Z exit 0
