@@ -43,7 +43,7 @@ A scheduled test moves down to the last Elliptic point inside the slow lineage w
 | T5/R2 | 16 | 0.98e-3 | 1.5e-4 | 1.2e-12 | 45.8 | Persists |
 | T5/R2 | 64 | 0.94e-3 | 3.1e-4 | 6.6e-14 | 64.2 | Persists |
 
-Every test that ran spans at least 1.53 periods, so line 263's caveat about tests shorter than one period applies to none of them.
+Every test that ran spans more than 1.5 periods (the least is 1.526, T2/R5 at 4), so line 263's caveat about tests shorter than one period applies to none of them.
 
 **Details.**
 - **T1, both slots, INVALID.**
