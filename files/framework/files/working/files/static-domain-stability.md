@@ -106,7 +106,7 @@ On branches (a) and (c), where Einstein's equations hold on the static metric. B
 **The open cells.** No response law for the coefficient-3 source or for the $`\rho < 0`$ sources is on the record.
 - A barotropic law would fall under the disjointness. For the $`\rho < 0`$ sources under the linear law, $`w < -1`$ and $`c_s^2 = w`$, so H-ISO is NEUTRALLY STABLE and I-S is UNSTABLE.
 - Non-barotropic sources are not covered. One example: with a ghost scalar field, whose energy density is negative, and radiation, Barrow and Tsagas find the static universe free of linear growth. Its radius oscillates, its density perturbations stay constant, its vortical distortions vanish, and its gravitational waves oscillate at constant amplitude.
-- Outside the perfect-fluid class, C2 leaves the static balance open, and every sector there stays OPEN, SOURCE DYNAMICS MISSING.
+- Sources whose constituents lie outside the perfect-fluid class still sum to a perfect fluid on the exact static metric, so C2's balance holds for their total, and their perturbation sectors stay OPEN, SOURCE DYNAMICS MISSING.
 
 ## IV. Holding the radius fixed
 

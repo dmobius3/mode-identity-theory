@@ -56,6 +56,8 @@ Structural milestones read as positions on the unit circle:
 
 The present epoch sits partway around the first quadrant ($`0 < t_\text{now} < \pi`$), between pure wave and full realization.
 
+**(Pointer added 2026-10-09.)** The D+Λ dictionary of §III does not run around this whole cycle. With $`a_\text{eff} \propto S`$, an exactly constant Λ ends its proper-time history at $`t = \pi`$, after a finite proper time, and a Λ that varied instead would run against the topology-fixed null channel of §XI.F, unless the variation lay wholly in the future ([Stress-Tensor Bridge](stress-tensor-bridge.md) §VI).
+
 Bounded realization ($`S \leq 1`$) is the key feature. Nothing in a standard FLRW decomposition has this constraint. Its fingerprint will appear as a forbidden term (§V).
 
 **What the budget produces alone.** With $`H`$ defined as $`(1/S)(dS/dt)`$ (phase-time derivative), the budget gives $`H^2 = (1-S^2)/(4S^2)`$, which scales as $`(1+z)^2 - \text{const}`$. This is curvature-like, not matter-like. The $`(1+z)^3`$ matter scaling requires the Waltz clock (§II), which converts phase time to the Hubble-clock time $`\tau_H`$ and contributes the additional $`S^{-1}`$ factor that turns $`S^{-2}`$ into $`S^{-3}`$; whether $`\tau_H`$ is observers' proper time is the open placement seam of [Friedmann as Output](friedmann-as-output.md). The budget identity sets the bounded structure; the clock sets the dimensional content.
