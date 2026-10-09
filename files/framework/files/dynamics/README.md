@@ -39,6 +39,8 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 ---
 
+## 🏄‍♂️ Independent numerical certification
+
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
 
 The runs these pages cite are filed with [OpenWave](https://github.com/openwave-labs/openwave), an open-source physics simulator, in M8, MIT's column there. They follow the project's rules: each run is pre-registered and frozen before it goes, nothing is written up until it has run, and the maintainer reproduces or adjudicates the result in public review. The column's open question is whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight McKay slots; placing fields on the slots is kinematic, and the framework files no relation among their energies. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start, and [CONTRIBUTING](/CONTRIBUTING.md#dynamics-on-openwave) says how to propose a route.
