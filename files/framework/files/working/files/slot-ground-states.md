@@ -3,7 +3,7 @@
 
 ---
 
-# The Slot Ground States
+# ⏚ The Slot Ground States
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Dynamics_of_Slot_Ground_States.png?raw=true" width="100%" alt="Bedrock">
 
