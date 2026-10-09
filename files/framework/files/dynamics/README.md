@@ -5,6 +5,8 @@
 
 # 🌊 Dynamics
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Unified_Slot_Action.png?raw=true" width="100%" alt="Bedrock">
+
 Dynamics is one problem with two halves: how the wave content moves, and how that motion sources geometry. The first half now stands on a fixed geometry, as an effective theory rather than the framework's matter action: on $`\mathbb{R} \times S^3/2I`$, fields carrying the eight nontrivial representations of $`2I`$, its McKay slots, move under one common action whose self-interaction is the Surviving Ray's density interaction. The pages below follow those fields from that interaction to their lowest-energy states, and to the branches of standing waves that grow out of the interaction's critical orbits. The second half is the [Research Frontier](../../README.md#research-frontier)'s Dynamics question, and it has no derived map yet; it is the framework's largest structural debt, and the last entry below is its program. The equilibrium of the Möbius carrier itself is a separate question, and it stays with the embedding on the [Postulate Bridge](../working/files/postulate-bridge.md).
 
 ---
