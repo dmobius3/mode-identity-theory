@@ -3,7 +3,7 @@
 
 ---
 
-# The Stress-Tensor Bridge
+# 🌉 The Stress-Tensor Bridge
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The_Stress-Tensor_Bridge_Mapping.png?raw=true" width="100%" alt="Bedrock">
 
