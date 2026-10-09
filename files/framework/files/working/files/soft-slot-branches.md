@@ -5,6 +5,8 @@
 
 # The Soft-Slot Branches
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Soft-Slot_Wave_Branch_Stability.png?raw=true" width="100%" alt="Bedrock">
+
 **Type:** Result
 **State:** Closed
 **Status (2026-10-06):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for one orbit, classifies M8.12's census in R4 and R5, one further orbit there, and R2's fixed-line points. Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
