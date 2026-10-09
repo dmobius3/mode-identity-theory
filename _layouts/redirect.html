@@ -1,0 +1,19 @@
+{%- if page.path == "README.md" -%}
+  {%- assign target = "https://github.com/dmobius3/mode-identity-theory" -%}
+{%- else -%}
+  {%- assign target = page.path | uri_escape | prepend: "https://github.com/dmobius3/mode-identity-theory/blob/main/" -%}
+{%- endif -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mode Identity Theory</title>
+<link rel="canonical" href="{{ target }}">
+<meta name="robots" content="noindex">
+<meta http-equiv="refresh" content="0; url={{ target }}">
+<script>location.replace("{{ target }}" + location.hash);</script>
+</head>
+<body>
+<p>This page lives on GitHub: <a href="{{ target }}">{{ target }}</a></p>
+</body>
+</html>

@@ -1,0 +1,8 @@
+# GitHub Pages serves this repository at dmobius3.github.io/mode-identity-theory. Its markdown pages would render
+# there without their math or working links, so each one forwards to the same page on GitHub. The interactive tools
+# in files/tools/files/ carry no front matter, so Jekyll serves them untouched and they run from that site.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: redirect
