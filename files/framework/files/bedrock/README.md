@@ -7,7 +7,7 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/postulate_bridge.png?raw=true" width="100%" alt="Bedrock">
 
-The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}`$, with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal edge $`S^1`$, the Möbius surface it bounds, which embeds unbent in the central quotient $`\mathbb{RP}^3`$ of $`S^3`$, and the space $`S^3`$ that covers it. The standalone mathematics papers below put operators on two of those objects, the surface and the space, and a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds. The temporal edge $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum. A fourth paper below asks a different question of the same quotient space: which self-interaction channels a mode of definite spin keeps under that finite symmetry, and the geometry of the one that survives. It shares the arena with the Space and the Filling but not the postulate's own argument, and is catalogued here rather than folded into the three objects above.
+The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}`$, with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal edge $`S^1`$, the Möbius surface it bounds, which embeds unbent in the central quotient $`\mathbb{RP}^3`$ of $`S^3`$, and the space $`S^3`$ that covers it. The standalone mathematics papers below put operators on two of those objects, the surface and the space, and a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds. The temporal edge $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum.
 
 ---
 
@@ -38,12 +38,6 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 >[![Galois Pair](https://img.youtube.com/vi/Jb1nDkJevxs/mqdefault.jpg)](https://www.youtube.com/watch?v=Jb1nDkJevxs)
 >
 >*Video: [The Galois Pair on S³/2I: How E₈ Remembers Boundary Asymmetry](https://www.youtube.com/watch?v=Jb1nDkJevxs)*
-
----
-
-## [Surviving Ray](files/surviving-ray.md)
-
-**The Selection:** The spin-3 representation carries a four-channel family of scattering self-interactions. On the Poincaré homology sphere, for a block state at level 6 with the density interaction, binary-icosahedral symmetry restricts that family to two channels, one of them radial; modulo the radial part, the surviving self-interaction is forced onto a single projective ray. In the coordinates of the spin-3 condensate literature that ray is one coupling point, and the paper maps the critical geometry of the governing quartic there: ten critical orbits within a stated symmetry class, three more certified outside it, and the extremes of the top multipole, $`1/924`$ on the coherent states and $`463/924`$ on the hexagon. Back on the quotient, the first correction at the four symmetry-pinned rays is exact and was reproduced blind on OpenWave, and local branch germs exist at eight critical rays for sufficiently small amplitude, an argument audited there. The result is representation-theoretic rather than postulate-facing: it asks a different question of the same quotient $`S^3/2I`$ that the Coexact Gap and the Galois Pair already use, and it does not feed the embedding argument above.
 
 ---
 
