@@ -1,5 +1,5 @@
 <a id="top"></a>
-/ **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
+/ **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
 
 ---
 
@@ -75,7 +75,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
 
-OpenWave's M8 column has independently reproduced or audited the results the framework's four bedrock papers name in their certification sections, within the scopes stated there, and has reproduced the conic band's fixed-edge stability blind. Its open question is whether any reasonable field dynamics on $`S^3/2I`$ realizes the McKay ladder, the representation-theoretic spectrum the framework reads its masses from. The earlier numerical route closed unresolved, on its instrument rather than on the physics. A new route starts as a proposed dynamical family and meets OpenWave's rules before any computation: pre-registration, run-before-write, and reproduction by the maintainer. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
+OpenWave's M8 column has independently reproduced or audited the results the framework's three bedrock papers and the Surviving Ray name in their certification sections, within the scopes stated there, and has reproduced the conic band's fixed-edge stability blind. Its open question is whether any reasonable field dynamics on $`S^3/2I`$ realizes the McKay ladder, the representation-theoretic spectrum the framework reads its masses from. The earlier numerical route closed unresolved, on its instrument rather than on the physics. A new route starts as a proposed dynamical family and meets OpenWave's rules before any computation: pre-registration, run-before-write, and reproduction by the maintainer. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
 
 ## :telescope: Data: Not Open Yet
 
@@ -97,4 +97,4 @@ A yes would give an alternative the framework set aside a smooth realization, on
 
 ---
 
-/ **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
+/ **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
