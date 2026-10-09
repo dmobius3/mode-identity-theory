@@ -271,12 +271,6 @@ The framework's quantitative claims, with their standing shown explicitly:
 
 ---
 
-## 🛠️ Tools
-
-[↗](/files/tools/) Every link between topology and observable is live. The code is the math. There are no hidden knobs. These are the working tools behind the framework: the interactive pages let you turn the shape and run the numbers yourself, and the registry collects the deposits.
-
----
-
 *What you hold in your hand is not matter. It is where the wave resolved when you sampled it.*
 
 *The thing is the sample. The identity is the wave Ψ*
