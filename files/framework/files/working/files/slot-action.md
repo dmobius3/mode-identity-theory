@@ -3,7 +3,7 @@
 
 ---
 
-# The Slot Action
+# 🎬 The Slot Action
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The_Slot_Action_Theoretical_Bounds.png?raw=true" width="100%" alt="Bedrock">
 
