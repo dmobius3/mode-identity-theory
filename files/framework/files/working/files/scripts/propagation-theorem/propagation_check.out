@@ -1,0 +1,14 @@
+PASS groups: |2I| = 120, |2O| = 48, |2T| = 24, each closed
+PASS 1 isotropy of S^3/2I: |A5| = 60, invariant covectors 0, invariant quadratic forms 1
+PASS 1 the second-order statement holds on S^3/2O and S^3/2T too: (0, 1), (0, 1)
+PASS arm: lens L(5,1) (1, 2), prism (order 20) (0, 2), trivial isotropy (3, 6): more than one invariant quadratic form, so non-round symbols exist
+PASS 2 A5 invariants by degree 0-16 (characters): [1, 0, 1, 0, 1, 0, 2, 0, 2, 0, 3, 0, 4, 0, 4, 1, 5]; degrees 0-6 by Reynolds rank: [1, 0, 1, 0, 1, 0, 2]
+PASS 2 below degree 6 the invariants are the powers of |xi|^2 alone, as for SO(3)
+PASS arm: 2O invariants by degree [1, 0, 1, 0, 2, 0, 3] (a second quartic), 2T [1, 0, 1, 1, 2, 1, 4] (a cubic): the order-five extension is specific to 2I
+PASS 3 on the two-dimensional slot, phi(x) = x v satisfies phi(gamma x) = rho(gamma) phi(x), and the right action of -1 acts on it by -1
+PASS arm: on the adjoint bundle -1 acts by +1, so the spinorial statement fails there
+PASS 4 the embedded round S^3 has Ric = 2K g with K = R**(-2), and its transverse Jacobi factor is R*sin(chi/R), the metric's own
+PASS arm: the embedded flat R^3 has K = 0 and Jacobi factor chi, not R sin(chi/R)
+PASS 5 2I's shortest translation 0.628318530718 = pi/5, so the injectivity radius of S^3/2I is pi R/10
+PASS arm: 2O's shortest translation 0.785398163397 = pi/4, not pi/5
+8 checks and 5 arms; 0 FAIL
