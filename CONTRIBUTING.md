@@ -71,11 +71,12 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **Skills:** geometric analysis, calculus of variations. **Difficulty:** advanced; post the proposal before computing. **Source:** [Carrier Edge Regimes](/files/framework/files/working/files/carrier-edge-regimes.md); [the bar for a variational principle](/files/framework/files/working/files/postulate-bridge.md#dynamical-direction); [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#xi-the-ruling), §XI, 1b and 1c.
 
+<a id="dynamics-on-openwave"></a>
 ## :ocean: Dynamics on OpenWave
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
 
-OpenWave's M8 column has independently reproduced or audited the results the framework's three bedrock papers and the Surviving Ray name in their certification sections, within the scopes stated there, and has reproduced the conic band's fixed-edge stability blind. Its open question is whether any reasonable field dynamics on $`S^3/2I`$ realizes the McKay ladder, the representation-theoretic spectrum the framework reads its masses from. The earlier numerical route closed unresolved, on its instrument rather than on the physics. A new route starts as a proposed dynamical family and meets OpenWave's rules before any computation: pre-registration, run-before-write, and reproduction by the maintainer. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
+OpenWave's M8 column has independently reproduced or audited the results the framework's three bedrock papers and the Surviving Ray name in their certification sections, within the scopes stated there, and has reproduced the conic band's fixed-edge stability blind. Its open question is whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight McKay slots; placing fields on the slots is kinematic, and the framework files no relation among their energies. The earlier numerical route closed unresolved, on its instrument rather than on the physics. A new route starts as a proposed dynamical family and meets OpenWave's rules before any computation: pre-registration, run-before-write, and reproduction or adjudication by the maintainer. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
 
 ## :telescope: Data: Not Open Yet
 
