@@ -39,7 +39,7 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 ---
 
-## 🏄‍♂️ Independent numerical certification
+## 🏄‍♂️ Collaboration on OpenWave
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
 
