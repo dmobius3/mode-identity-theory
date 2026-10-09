@@ -3,7 +3,7 @@
 
 ---
 
-# The Soft-Slot Branches
+# 🎋 The Soft-Slot Branches
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Soft-Slot_Wave_Branch_Stability.png?raw=true" width="100%" alt="Bedrock">
 
