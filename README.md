@@ -1,5 +1,5 @@
 <a id="top"></a>
-/ **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
+/ **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
 
 ---
 
@@ -46,7 +46,8 @@ mode-identity-theory/
     │   ├─ bedrock/                 ← standalone mathematics papers
     │   │   ├─ first-eigenvalue       ← twisted Möbius Laplacian operator
     │   │   ├─ coexact-gap            ← coexact gap on S³/Γ & the 2I exception
-    │   │   ├─ galois-pair            ← E8 filling & the tautological charge
+    │   │   └─ galois-pair            ← E8 filling & the tautological charge
+    │   ├─ dynamics/                ← how the wave content moves & sources geometry
     │   │   └─ surviving-ray          ← spin-3 channel filter & its surviving ray
     │   └─ working/                 ← research in progress: maps & open problems
     ├─ cosmos/                     ← the static three-sphere seen whole
@@ -66,7 +67,7 @@ mode-identity-theory/
     └─ tools/                      ← interactive, publications, & references
 ```
 
-/ **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
+/ **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
 
 ---
 
@@ -282,4 +283,4 @@ The framework's quantitative claims, with their standing shown explicitly:
 
 ---
 
-/ **[`↑top`](#top)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
+/ **[`↑top`](#top)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
