@@ -5,6 +5,8 @@
 
 # 🌁 Postulate Bridge
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The_Postulate_Bridge_Visual_Diagram.png?raw=true" width="100%" alt="Bedrock">
+
 **Type:** Program
 **State:** Active
 **Status (2026-10-03):** The staged route is resolved as a split (gauge dictionary proved, Möbius channel decoupled route-specifically). The sampler reading closed negative twice over; the variational reading is recorded open. The dynamical direction is the live front. Its Tier 2 has run a first computation: the specified band is unstable, and no smooth embedded band spanning the fixed great circle attains the infimum of area. The bar now asks for a stable critical point, not a global minimum; on the ruled placement the fixed-edge stability of the conic band (the carrier's leading realization), derived and then reproduced blind (2026-10-01), meets its stability clause and counts toward the bar only once that realization and the fixed edge are grounded. Where the carrier sits is ruled on the child page projective-carrier.md (2026-09-27): the vacuum carrier is unbent and realized through the projective layer, with its core the central $`-I`$ and its physical layer $`\mathbb{RP}^3`$ (2026-10-02). This page's sections written for bands in $`S^3`$ hold for that class, and each now carries a dated scope note saying so.
