@@ -1,0 +1,17 @@
+[PASS] caps: 0.3399 R on S^3/2I, 1.6765 R on S^3
+[PASS] I(2.33): quadrature 1.295431, pipeline 1.295431, relative difference 7.7e-09
+       flat comoving radius to z = 2.33 at H0 = 67.36: 5.765 Gpc
+       flat comoving radius to z = 2.33 at H0 = 73.04: 5.317 Gpc
+[PASS] ball volume / domain volume (A and C exceed S^3/2I in both rows, B does not; all fit S^3):
+       A R =  6.13 Gpc, anchor: cap on S^3/2I  2.08 Gpc, ratio  21.19; on S^3 0.177
+       A R =  6.13 Gpc, SH0ES : cap on S^3/2I  2.08 Gpc, ratio  16.62; on S^3 0.138
+       C R = 10.50 Gpc, anchor: cap on S^3/2I  3.57 Gpc, ratio   4.22; on S^3 0.035
+       C R = 10.50 Gpc, SH0ES : cap on S^3/2I  3.57 Gpc, ratio   3.31; on S^3 0.028
+       B R = 19.70 Gpc, anchor: cap on S^3/2I  6.70 Gpc, ratio   0.64; on S^3 0.005
+       B R = 19.70 Gpc, SH0ES : cap on S^3/2I  6.70 Gpc, ratio   0.50; on S^3 0.004
+[PASS] the bound on the domain's radius in today's units: 16.96 Gpc (anchor), 15.64 Gpc (SH0ES)
+[PASS] arm turns its check red: caps with |G| = 60
+[PASS] arm turns its check red: pipeline grid cut to 40 points
+[PASS] arm turns its check red: readings A and B swapped
+[PASS] arm turns its check red: the bound with the S^3 factor
+ALL PASS
