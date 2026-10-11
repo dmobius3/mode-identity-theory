@@ -1,0 +1,176 @@
+{
+ "environment": {
+  "python": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "processor": "arm",
+  "threads": {
+   "OMP_NUM_THREADS": "1",
+   "OPENBLAS_NUM_THREADS": "1",
+   "VECLIB_MAXIMUM_THREADS": "1",
+   "MKL_NUM_THREADS": "1"
+  },
+  "numpy_config": {
+   "Compilers": {
+    "c": {
+     "name": "clang",
+     "linker": "ld64",
+     "version": "15.0.0",
+     "commands": "cc"
+    },
+    "cython": {
+     "name": "cython",
+     "linker": "cython",
+     "version": "3.2.5",
+     "commands": "cython"
+    },
+    "c++": {
+     "name": "clang",
+     "linker": "ld64",
+     "version": "15.0.0",
+     "commands": "c++"
+    }
+   },
+   "Machine Information": {
+    "host": {
+     "cpu": "aarch64",
+     "family": "aarch64",
+     "endian": "little",
+     "system": "darwin"
+    },
+    "build": {
+     "cpu": "aarch64",
+     "family": "aarch64",
+     "endian": "little",
+     "system": "darwin"
+    }
+   },
+   "Build Dependencies": {
+    "blas": {
+     "name": "accelerate",
+     "found": true,
+     "version": "unknown",
+     "detection method": "system",
+     "include directory": "unknown",
+     "lib directory": "unknown",
+     "openblas configuration": "unknown",
+     "pc file directory": "unknown"
+    },
+    "lapack": {
+     "name": "accelerate",
+     "found": true,
+     "version": "unknown",
+     "detection method": "system",
+     "include directory": "unknown",
+     "lib directory": "unknown",
+     "openblas configuration": "unknown",
+     "pc file directory": "unknown"
+    }
+   },
+   "Python Information": {
+    "path": "/private/var/folders/dq/2t71w9pd3jx50vh3kp15_dt40000gn/T/build-env-8k741041/bin/python",
+    "version": "3.13"
+   },
+   "SIMD Extensions": {
+    "baseline": [
+     "NEON",
+     "NEON_FP16",
+     "NEON_VFPV4",
+     "ASIMD"
+    ],
+    "found": [
+     "ASIMDHP",
+     "ASIMDDP"
+    ],
+    "not found": [
+     "ASIMDFHM"
+    ]
+   }
+  },
+  "scipy_config": {
+   "Compilers": {
+    "c": {
+     "name": "clang",
+     "linker": "ld64",
+     "version": "15.0.0",
+     "commands": "cc"
+    },
+    "cython": {
+     "name": "cython",
+     "linker": "cython",
+     "version": "3.2.5",
+     "commands": "cython"
+    },
+    "c++": {
+     "name": "clang",
+     "linker": "ld64",
+     "version": "15.0.0",
+     "commands": "c++"
+    },
+    "fortran": {
+     "name": "gcc",
+     "linker": "ld64",
+     "version": "13.4.0",
+     "commands": "gfortran"
+    },
+    "pythran": {
+     "version": "0.18.1",
+     "include directory": "../../../../../../../private/var/folders/dq/2t71w9pd3jx50vh3kp15_dt40000gn/T/build-env-o545vwkx/lib/python3.13/site-packages/pythran"
+    }
+   },
+   "Machine Information": {
+    "host": {
+     "cpu": "aarch64",
+     "family": "aarch64",
+     "endian": "little",
+     "system": "darwin"
+    },
+    "build": {
+     "cpu": "aarch64",
+     "family": "aarch64",
+     "endian": "little",
+     "system": "darwin"
+    },
+    "cross-compiled": false
+   },
+   "Build Dependencies": {
+    "blas": {
+     "name": "Accelerate",
+     "found": true,
+     "version": "unknown",
+     "detection method": "extraframeworks",
+     "include directory": "unknown",
+     "lib directory": "unknown",
+     "openblas configuration": "unknown",
+     "pc file directory": "unknown",
+     "has ilp64": false,
+     "cython blas ilp64": false
+    },
+    "lapack": {
+     "name": "Accelerate",
+     "found": true,
+     "version": "unknown",
+     "detection method": "extraframeworks",
+     "include directory": "unknown",
+     "lib directory": "unknown",
+     "openblas configuration": "unknown",
+     "pc file directory": "unknown",
+     "has ilp64": false
+    },
+    "pybind11": {
+     "name": "pybind11",
+     "version": "3.0.4",
+     "detection method": "config-tool",
+     "include directory": "unknown"
+    }
+   },
+   "Python Information": {
+    "path": "/private/var/folders/dq/2t71w9pd3jx50vh3kp15_dt40000gn/T/build-env-o545vwkx/bin/python",
+    "version": "3.13"
+   }
+  }
+ },
+ "differences": []
+}

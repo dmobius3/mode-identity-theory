@@ -1,0 +1,12 @@
+green parent: 0 {'1. hashes': 'PASS', '2. imports': 'PASS', '3. names': 'PASS', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'PASS', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  hash: a byte appended to angle.py: target 1. hashes: FAIL; all: {'1. hashes': 'FAIL', '2. imports': 'PASS', '3. names': 'PASS', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  hash: the left-out module added: target 1. hashes: FAIL; all: {'1. hashes': 'FAIL', '2. imports': 'PASS', '3. names': 'PASS', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  imports: verdict.py imports the left-out module: target 2. imports: FAIL; all: {'1. hashes': 'FAIL', '2. imports': 'FAIL', '3. names': 'FAIL', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  imports: a module loads from M8.15's folder: target 2. imports: FAIL; all: {'1. hashes': 'FAIL', '2. imports': 'FAIL', '3. names': 'PASS', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  names: a file in the solver folder names it: target 3. names: FAIL; all: {'1. hashes': 'PASS', '2. imports': 'PASS', '3. names': 'FAIL', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  static: a byte of dt_L2.json flipped: target 4. static inputs and Theorem D: FAIL; all: {'1. hashes': 'PASS', '2. imports': 'PASS', '3. names': 'PASS', '4. static inputs and Theorem D': 'FAIL', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  sums: an unpinned file added: target 5a. SHA256SUMS here: FAIL; all: {'1. hashes': 'PASS', '2. imports': 'PASS', '3. names': 'PASS', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'FAIL', "5b. M8.15's SHA256SUMS": 'PASS'}
+  caught  M8.15 sums: a byte appended to its REPRODUCE.md: target 5b. M8.15's SHA256SUMS: FAIL; all: {'1. hashes': 'PASS', '2. imports': 'PASS', '3. names': 'PASS', '4. static inputs and Theorem D': 'PASS', '5a. SHA256SUMS here': 'PASS', "5b. M8.15's SHA256SUMS": 'FAIL'}
+  caught  manifest: refused on an environment difference: refused: the environment differs from M8.15's in ['numpy']
+  caught  manifest: refused on a hash the qualification did not record: refused: angle.py: not the hash the qualification recorded
+mutation arms: ALL CAUGHT (10 of 10)

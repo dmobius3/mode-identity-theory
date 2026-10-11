@@ -1,0 +1,3628 @@
+{
+ "level": 2,
+ "targets": [
+  0.25,
+  0.3535533905932738,
+  0.5,
+  0.7071067811865476,
+  1.0,
+  1.4142135623730951,
+  2.0,
+  2.8284271247461903,
+  4.0,
+  5.656854249492381,
+  8.0,
+  11.313708498984761,
+  16.0,
+  22.627416997969522,
+  32.0,
+  45.254833995939045,
+  64.0,
+  72.0
+ ],
+ "first_resolved": {
+  "inspan": 5.656854249492381,
+  "quartet": 4.0,
+  "imagplus": 0.25
+ },
+ "end": [
+  "eps_max",
+  null
+ ],
+ "rows": [
+  {
+   "level": 2,
+   "eps": 0.25,
+   "eps_reached": 0.25000000000083134,
+   "theta": 0.628318530715922,
+   "phys": 0.628318530715922,
+   "nu": 2.6953839476281442e-15,
+   "mu": -7.969651706869864e-17,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8597448598651813,
+    "counts": [
+     0,
+     0,
+     0,
+     2
+    ],
+    "balanced": false,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8597448598141505,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -5.984795992119984e-17,
+      -0.00417889582957156,
+      8.666109677589542e-06
+     ],
+     [
+      -5.984795992119984e-17,
+      0.00417889582957156,
+      8.666109677589542e-06
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.00022800916117120696,
+      -0.00019290258707485483
+     ],
+     "mod": 0.00029866299683450805,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      -0.00022800916117162156,
+      0.0001929025870754737
+     ],
+     "mod": 0.00029866299683522433,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 2,
+     "lam": [
+      -0.0003940614837557501,
+      0.00011320311082908435
+     ],
+     "mod": 0.000409999264976372,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0003940614837556291,
+      -0.00011320311082950618
+     ],
+     "mod": 0.00040999926497637215,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 4,
+     "lam": [
+      0.0005067684640384712,
+      0.0
+     ],
+     "mod": 0.0005067684640384712,
+     "kind": "radical",
+     "cls": "real"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -5.984795992119984e-17,
+      0.00417889582957156
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.002124846907600494,
+     "err_level3": 0.003621988146407529,
+     "anchor": {
+      "ok": true,
+      "why": null,
+      "errors": [
+       0.003621988146407529
+      ],
+      "margin": null,
+      "nearest": 0.003621988146407529
+     }
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      0.00022800916117120696,
+      -0.00019290258707485483
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -0.00022800916117162156,
+      0.0001929025870754737
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -0.0003940614837557501,
+      0.00011320311082908435
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      0.0003940614837556291,
+      -0.00011320311082950618
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0005067684640384712,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -5.984795992119984e-17,
+      0.00417889582957156
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.00040999926497637215,
+   "paired_over_tau0": 1.0326833898419714,
+   "seconds": 3.4
+  },
+  {
+   "level": 2,
+   "eps": 0.3535533905932738,
+   "eps_reached": 0.3535534039707784,
+   "theta": 0.6283185307151599,
+   "phys": 0.6283185307151599,
+   "nu": -1.5818503303038452e-15,
+   "mu": 4.4097536296221866e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8573309983272303,
+    "counts": [
+     0,
+     0,
+     0,
+     2
+    ],
+    "balanced": false,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8573309983745024,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -1.1622647289044608e-16,
+      -0.005896138385626144,
+      1.2212347744837882e-05
+     ],
+     [
+      -1.1622647289044608e-16,
+      0.005896138385626144,
+      1.2212347744837882e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.0003031695106957516,
+      -0.0002743891786642144
+     ],
+     "mod": 0.00040890240104886105,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      -0.00030316951069669397,
+      0.0002743891786647088
+     ],
+     "mod": 0.00040890240104989153,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0004641656455171982,
+      -0.0001626358583410493
+     ],
+     "mod": 0.0004918334767954771,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0004641656455171982,
+      0.0001626358583410493
+     ],
+     "mod": 0.0004918334767954771,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 4,
+     "lam": [
+      0.0006092511079078869,
+      0.0
+     ],
+     "mod": 0.0006092511079078869,
+     "kind": "radical",
+     "cls": "real"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -1.1622647289044608e-16,
+      0.005896138385626144
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.00020040790388631524,
+     "err_level3": 0.002289864158544787,
+     "step_ok": true,
+     "overlap": [
+      0.9999962520149466
+     ],
+     "runner_up": 0.3741665768350044,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      0.0003031695106957516,
+      -0.0002743891786642144
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -0.00030316951069669397,
+      0.0002743891786647088
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0004641656455171982,
+      -0.0001626358583410493
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0004641656455171982,
+      0.0001626358583410493
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0006092511079078869,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.1622647289044608e-16,
+      0.005896138385626144
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0004918334767954771,
+   "paired_over_tau0": 1.2388028600104593,
+   "seconds": 3.4
+  },
+  {
+   "level": 2,
+   "eps": 0.5,
+   "eps_reached": 0.4999999692166739,
+   "theta": 0.6283185307164553,
+   "phys": 0.6283185307164553,
+   "nu": 2.676310894257896e-16,
+   "mu": -6.827478868977226e-17,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8556507753496781,
+    "counts": [
+     2,
+     0,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8556507755000227,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -1.3617579286417936e-16,
+      -0.008319793424754588,
+      1.7231766886055613e-05
+     ],
+     [
+      -1.3617579286417936e-16,
+      0.008319793424754588,
+      1.7231766886055613e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.00041093594915495935,
+      -0.0003813431921843166
+     ],
+     "mod": 0.0005606166110036448,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.00041093594915495935,
+      0.0003813431921843166
+     ],
+     "mod": 0.0005606166110036448,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0005435158894200277,
+      -0.00023231530110772448
+     ],
+     "mod": 0.0005910836837376046,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0005435158894200277,
+      0.00023231530110772448
+     ],
+     "mod": 0.0005910836837376046,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 4,
+     "lam": [
+      0.0007348947436109938,
+      0.0
+     ],
+     "mod": 0.0007348947436109938,
+     "kind": "radical",
+     "cls": "real"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -1.3617579286417936e-16,
+      0.008319793424754588
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.002431257907205434,
+     "err_level3": 0.0013498348136150023,
+     "step_ok": true,
+     "overlap": [
+      0.9999956660644571
+     ],
+     "runner_up": 0.3762212014820015,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "real",
+     "lam": [
+      0.00041093594915495935,
+      -0.0003813431921843166
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.00041093594915495935,
+      0.0003813431921843166
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0005435158894200277,
+      -0.00023231530110772448
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0005435158894200277,
+      0.00023231530110772448
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0007348947436109938,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.3617579286417936e-16,
+      0.008319793424754588
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0005910836837376046,
+   "paired_over_tau0": 1.4887887719447646,
+   "seconds": 3.5
+  },
+  {
+   "level": 2,
+   "eps": 0.7071067811865476,
+   "eps_reached": 0.7071066962229722,
+   "theta": 0.6283185307154037,
+   "phys": 0.6283185307154037,
+   "nu": 1.1550971866477177e-15,
+   "mu": -2.8566846450351885e-16,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8549214837839102,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8549214838129305,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      2.229119666630197e-16,
+      -0.011737532230653453,
+      2.4339066227373553e-05
+     ],
+     [
+      2.229119666630197e-16,
+      0.011737532230653453,
+      2.4339066227373553e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.0006311821512766953,
+      -0.00033039083553452396
+     ],
+     "mod": 0.0007124247414958845,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.0006311821512766953,
+      0.00033039083553452396
+     ],
+     "mod": 0.0007124247414958845,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0005676610673975716,
+      0.0005162445470821681
+     ],
+     "mod": 0.0007672988464940001,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0008905277236898376,
+      0.0
+     ],
+     "mod": 0.0008905277236898376,
+     "kind": "radical",
+     "cls": "real"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      2.229119666630197e-16,
+      0.011737532230653453
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.004841883881929558,
+     "err_level3": 0.0006891570017977269,
+     "step_ok": true,
+     "overlap": [
+      0.9999929810902477
+     ],
+     "runner_up": 0.3776519550403691,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "real",
+     "lam": [
+      0.0006311821512766953,
+      -0.00033039083553452396
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0006311821512766953,
+      0.00033039083553452396
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0005676610673975716,
+      0.0005162445470821681
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0008905277236898376,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      2.229119666630197e-16,
+      0.011737532230653453
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0007672988464940001,
+   "paired_over_tau0": 1.9326297423116658,
+   "seconds": 3.5
+  },
+  {
+   "level": 2,
+   "eps": 1.0,
+   "eps_reached": 0.9999997679817696,
+   "theta": 0.628318530716573,
+   "phys": 0.628318530716573,
+   "nu": 1.21896100495015e-15,
+   "mu": 9.922036146497388e-16,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8558370091161379,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8558370090471318,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -4.336808689942018e-18,
+      -0.016551143884319535,
+      3.4407291521977115e-05
+     ],
+     [
+      -4.336808689942018e-18,
+      0.016551143884319535,
+      3.4407291521977115e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.000724069794032587,
+      0.00046815410864072454
+     ],
+     "mod": 0.0008622327621168105,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.0007977562192091258,
+      0.0006749161313473675
+     ],
+     "mod": 0.0010449529987706316,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0010856706671569867,
+      0.0
+     ],
+     "mod": 0.0010856706671569867,
+     "kind": "radical",
+     "cls": "real"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -4.336808689942018e-18,
+      0.016551143884319535
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.007733549263903967,
+     "err_level3": 0.0002285182873990199,
+     "step_ok": true,
+     "overlap": [
+      0.999986895015791
+     ],
+     "runner_up": 0.5155736062405927,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.000724069794032587,
+      0.00046815410864072454
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0007977562192091258,
+      0.0006749161313473675
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0010856706671569867,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -4.336808689942018e-18,
+      0.016551143884319535
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0010449529987706316,
+   "paired_over_tau0": 2.631969608672779,
+   "seconds": 3.3
+  },
+  {
+   "level": 2,
+   "eps": 1.4142135623730951,
+   "eps_reached": 1.4142129376788972,
+   "theta": 0.6283185307175337,
+   "phys": 0.6283185307175337,
+   "nu": -8.888728065956338e-15,
+   "mu": -7.650342328531757e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.856279888124316,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8554906118049198,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      1.4137996329210978e-16,
+      -0.023318611467637237,
+      4.86775675281265e-05
+     ],
+     [
+      1.4137996329210978e-16,
+      0.023318611467637237,
+      4.86775675281265e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.0008149062453068358,
+      0.0006611100710745614
+     ],
+     "mod": 0.0010493515686919692,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.0013337352554710943,
+      0.0
+     ],
+     "mod": 0.0013337352554710943,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0011365409207223214,
+      0.0008367580610157267
+     ],
+     "mod": 0.001411343089808832,
+     "kind": "paired",
+     "cls": "quartet"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      1.4137996329210978e-16,
+      0.023318611467637237
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.011474260406303628,
+     "err_level3": 8.714591131178136e-05,
+     "step_ok": true,
+     "overlap": [
+      0.9999745247150528
+     ],
+     "runner_up": 0.5164459318475614,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0008149062453068358,
+      0.0006611100710745614
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0013337352554710943,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0011365409207223214,
+      0.0008367580610157267
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      1.4137996329210978e-16,
+      0.023318611467637237
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.001411343089808832,
+   "paired_over_tau0": 3.5548126319148867,
+   "seconds": 3.1
+  },
+  {
+   "level": 2,
+   "eps": 2.0,
+   "eps_reached": 1.999998350720368,
+   "theta": 0.6283185307168506,
+   "phys": 0.6283185307168506,
+   "nu": -6.690525451564314e-15,
+   "mu": 1.007460076565326e-16,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8561526001064182,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8550200037604899,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -7.24247051220317e-16,
+      -0.03280818744663309,
+      6.891517309399413e-05
+     ],
+     [
+      -7.24247051220317e-16,
+      0.03280818744663309,
+      6.891517309399413e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.0008881910079022097,
+      0.0009302679042611079
+     ],
+     "mod": 0.0012861888042650258,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.0016536874485390102,
+      0.0
+     ],
+     "mod": 0.0016536874485390102,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0016318248664172709,
+      0.0009450820394982905
+     ],
+     "mod": 0.0018857445362614714,
+     "kind": "paired",
+     "cls": "quartet"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -7.24247051220317e-16,
+      0.03280818744663309
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.016549431861411137,
+     "err_level3": 0.0002951368771909419,
+     "step_ok": true,
+     "overlap": [
+      0.999950160753781
+     ],
+     "runner_up": 0.5169335888988359,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0008881910079022097,
+      0.0009302679042611079
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0016536874485390102,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0016318248664172709,
+      0.0009450820394982905
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -7.24247051220317e-16,
+      0.03280818744663309
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0018857445362614714,
+   "paired_over_tau0": 4.749708661537961,
+   "seconds": 3.2
+  },
+  {
+   "level": 2,
+   "eps": 2.8284271247461903,
+   "eps_reached": 2.8284271247248753,
+   "theta": 0.6283185307155714,
+   "phys": 0.6283185307155714,
+   "nu": -4.5277003430041856e-15,
+   "mu": -6.5065135059635875e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.856237720230684,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8546142326073712,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      2.723515857283587e-16,
+      -0.046063822306066454,
+      9.762925267270035e-05
+     ],
+     [
+      2.723515857283587e-16,
+      0.046063822306066454,
+      9.762925267270035e-05
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.0009108439400251781,
+      0.001303536222965438
+     ],
+     "mod": 0.0015902337462346818,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.002072302876289181,
+      0.0
+     ],
+     "mod": 0.002072302876289181,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.002339232364458547,
+      0.0008694695716189448
+     ],
+     "mod": 0.0024955931941928267,
+     "kind": "paired",
+     "cls": "quartet"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": null
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      2.723515857283587e-16,
+      0.046063822306066454
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.023628099022681218,
+     "err_level3": 0.0004192065638638165,
+     "step_ok": true,
+     "overlap": [
+      0.999902994397081
+     ],
+     "runner_up": 0.5170892634840848,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0009108439400251781,
+      0.001303536222965438
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.002072302876289181,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.002339232364458547,
+      0.0008694695716189448
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      2.723515857283587e-16,
+      0.046063822306066454
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0024955931941928267,
+   "paired_over_tau0": 6.285761608850983,
+   "seconds": 2.9
+  },
+  {
+   "level": 2,
+   "eps": 4.0,
+   "eps_reached": 3.9999999999083613,
+   "theta": 0.6283185307157505,
+   "phys": 0.6283185307157505,
+   "nu": -5.702083684248931e-15,
+   "mu": -2.564214432294978e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8565473824451632,
+    "counts": [
+     2,
+     0,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8542331996132851,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      3.3480163086352377e-16,
+      -0.0644748678750788,
+      0.00013837327192001673
+     ],
+     [
+      3.3480163086352377e-16,
+      0.0644748678750788,
+      0.00013837327192001673
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.0008021165506283882,
+      0.001816871836855713
+     ],
+     "mod": 0.001986054941926692,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.0026272088335450483,
+      0.0
+     ],
+     "mod": 0.0026272088335450483,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.0032975576996027555,
+      -0.00033757542752005035
+     ],
+     "mod": 0.003314791690510093,
+     "kind": "paired",
+     "cls": "real"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0032975576996027555,
+      0.00033757542752005035
+     ],
+     "mod": 0.003314791690510093,
+     "kind": "paired",
+     "cls": "real"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": null
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window",
+     "anchor": {
+      "ok": false,
+      "why": "no assignment inside the window",
+      "errors": null,
+      "margin": null,
+      "nearest": 0.8727636465793422
+     }
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      3.3480163086352377e-16,
+      0.0644748678750788
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.03365820581298403,
+     "err_level3": 0.0004719904164337502,
+     "step_ok": true,
+     "overlap": [
+      0.9998133873618714
+     ],
+     "runner_up": 0.5169207707053065,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0008021165506283882,
+      0.001816871836855713
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0026272088335450483,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0032975576996027555,
+      -0.00033757542752005035
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.0032975576996027555,
+      0.00033757542752005035
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      3.3480163086352377e-16,
+      0.0644748678750788
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.003314791690510093,
+   "paired_over_tau0": 8.349113308223208,
+   "seconds": 2.9
+  },
+  {
+   "level": 2,
+   "eps": 5.656854249492381,
+   "eps_reached": 5.65685424913525,
+   "theta": 0.6283185307162553,
+   "phys": 0.6283185307162553,
+   "nu": -2.3225650915918708e-14,
+   "mu": -4.593460761510992e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.8418779957738657,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.8384780579192737,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -8.333611578592581e-15,
+      -0.08983039639760228,
+      0.0001961343928428023
+     ],
+     [
+      -8.333611578592581e-15,
+      0.08983039639760228,
+      0.0001961343928428023
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      -3.57448445842401e-14,
+      0.002331304213247458
+     ],
+     "mod": 0.002331304213247458,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      3.689496624881272e-14,
+      0.0026975649545815834
+     ],
+     "mod": 0.0026975649545815834,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.003371200343903134,
+      0.0
+     ],
+     "mod": 0.003371200343903134,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0044464731204222575,
+      0.0011801618194714736
+     ],
+     "mod": 0.0046004244511540305,
+     "kind": "paired",
+     "cls": "quartet"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here",
+     "anchor": {
+      "ok": false,
+      "why": "level 3's block is not tracked here",
+      "errors": null,
+      "margin": null,
+      "nearest": null
+     }
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -8.333611578592581e-15,
+      0.08983039639760228
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.04797441348324469,
+     "err_level3": 0.0004563518173353868,
+     "step_ok": true,
+     "overlap": [
+      0.999647722077685
+     ],
+     "runner_up": 0.379888409276964,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      -3.57448445842401e-14,
+      0.002331304213247458
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      3.689496624881272e-14,
+      0.0026975649545815834
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.003371200343903134,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0044464731204222575,
+      0.0011801618194714736
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -8.333611578592581e-15,
+      0.08983039639760228
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0046004244511540305,
+   "paired_over_tau0": 11.587293741132482,
+   "seconds": 2.8
+  },
+  {
+   "level": 2,
+   "eps": 8.0,
+   "eps_reached": 7.999999998778598,
+   "theta": 0.6283185307153122,
+   "phys": 0.6283185307153122,
+   "nu": -2.0483427810136632e-14,
+   "mu": 2.803322907343649e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.7446374678890519,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.7398900983460018,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -2.214981670300986e-14,
+      -0.12431105293571712,
+      0.0002777741776582981
+     ],
+     [
+      -2.214981670300986e-14,
+      0.12431105293571712,
+      0.0002777741776582981
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      -6.417609499376198e-15,
+      0.0021707528797335254
+     ],
+     "mod": 0.0021707528797335254,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.004378972582496092,
+      0.0
+     ],
+     "mod": 0.004378972582496092,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      1.028517548906649e-14,
+      0.0047218082950658425
+     ],
+     "mod": 0.0047218082950658425,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.005358719515371858,
+      0.0046472597152630545
+     ],
+     "mod": 0.0070931585140566284,
+     "kind": "paired",
+     "cls": "quartet"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -2.214981670300986e-14,
+      0.12431105293571712
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.06842022411022139,
+     "err_level3": 0.00036583541087612946,
+     "step_ok": true,
+     "overlap": [
+      0.9993541126761681
+     ],
+     "runner_up": 0.38344487049834924,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      -6.417609499376198e-15,
+      0.0021707528797335254
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.004378972582496092,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      1.028517548906649e-14,
+      0.0047218082950658425
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.005358719515371858,
+      0.0046472597152630545
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -2.214981670300986e-14,
+      0.12431105293571712
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.0070931585140566284,
+   "paired_over_tau0": 17.86585392879807,
+   "seconds": 2.8
+  },
+  {
+   "level": 2,
+   "eps": 11.313708498984761,
+   "eps_reached": 11.3137084954393,
+   "theta": 0.6283185307164613,
+   "phys": 0.6283185307164613,
+   "nu": -4.7155176130596165e-14,
+   "mu": -2.5416353898358275e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.6330150821114539,
+    "counts": [
+     0,
+     1,
+     0,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.6267937874348454,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -2.618738559334588e-14,
+      -0.17033186130247643,
+      0.00039237411640048015
+     ],
+     [
+      -2.618738559334588e-14,
+      0.17033186130247643,
+      0.00039237411640048015
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      -9.185360805297194e-16,
+      0.002495001509777132
+     ],
+     "mod": 0.002495001509777132,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.005759097962020126,
+      0.0
+     ],
+     "mod": 0.005759097962020126,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      3.5908775952719907e-16,
+      0.006827701226622416
+     ],
+     "mod": 0.006827701226622416,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 3,
+     "lam": [
+      0.0038073709273066646,
+      0.01169330991145969
+     ],
+     "mod": 0.012297543253168147,
+     "kind": "paired",
+     "cls": "quartet"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -2.618738559334588e-14,
+      0.17033186130247643
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.09740857960129701,
+     "err_level3": 0.00018539150412928682,
+     "step_ok": true,
+     "overlap": [
+      0.9988671963039678
+     ],
+     "runner_up": 0.3833601310562142,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      -9.185360805297194e-16,
+      0.002495001509777132
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.005759097962020126,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      3.5908775952719907e-16,
+      0.006827701226622416
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "quartet",
+     "lam": [
+      0.0038073709273066646,
+      0.01169330991145969
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -2.618738559334588e-14,
+      0.17033186130247643
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.012297543253168147,
+   "paired_over_tau0": 30.974369317812812,
+   "seconds": 2.7
+  },
+  {
+   "level": 2,
+   "eps": 16.0,
+   "eps_reached": 15.999999991545174,
+   "theta": 0.628318530716184,
+   "phys": 0.628318530716184,
+   "nu": -1.333876000218584e-13,
+   "mu": 1.783997808100411e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.5226498818899679,
+    "counts": [
+     0,
+     0,
+     1,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.5150788271199497,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -7.147060721024445e-16,
+      -0.2301076774331956,
+      0.0005511174218581771
+     ],
+     [
+      -7.147060721024445e-16,
+      0.2301076774331956,
+      0.0005511174218581771
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      -2.0573820425084932e-15,
+      0.0030864131193478824
+     ],
+     "mod": 0.0030864131193478824,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.00767774056945501,
+      0.0
+     ],
+     "mod": 0.00767774056945501,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      2.7356589216154248e-15,
+      0.00930009064058965
+     ],
+     "mod": 0.00930009064058965,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 3,
+     "lam": [
+      4.339410775155983e-15,
+      0.014254359966477666
+     ],
+     "mod": 0.014254359966477666,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 4,
+     "lam": [
+      -3.7964423271752423e-14,
+      0.03542622363929239
+     ],
+     "mod": 0.03542622363929239,
+     "kind": "paired",
+     "cls": "imag-"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -7.147060721024445e-16,
+      0.2301076774331956
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.1377932472159813,
+     "err_level3": 0.00010631974427397922,
+     "step_ok": true,
+     "overlap": [
+      0.9981397557656122
+     ],
+     "runner_up": 0.3813373583665313,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      -2.0573820425084932e-15,
+      0.0030864131193478824
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.00767774056945501,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      2.7356589216154248e-15,
+      0.00930009064058965
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      4.339410775155983e-15,
+      0.014254359966477666
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      -3.7964423271752423e-14,
+      0.03542622363929239
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -7.147060721024445e-16,
+      0.2301076774331956
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.03542622363929239,
+   "paired_over_tau0": 89.22960561705531,
+   "seconds": 2.7
+  },
+  {
+   "level": 2,
+   "eps": 22.627416997969522,
+   "eps_reached": 22.62741698176516,
+   "theta": 0.628318530717822,
+   "phys": 0.628318530717822,
+   "nu": -3.374137737432866e-13,
+   "mu": 9.03361026398876e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.42507303973298616,
+    "counts": [
+     0,
+     0,
+     1,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.4165974109919224,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -1.5053062962788744e-13,
+      -0.30482656276712194,
+      0.0007660449415945723
+     ],
+     [
+      -1.5053062962788744e-13,
+      0.30482656276712194,
+      0.0007660449415945723
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      4.4955358879938956e-15,
+      0.004036244930792714
+     ],
+     "mod": 0.004036244930792714,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.010407626776820774,
+      0.0
+     ],
+     "mod": 0.010407626776820774,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      -2.0291060498500713e-14,
+      0.012040417426521385
+     ],
+     "mod": 0.012040417426521385,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 3,
+     "lam": [
+      -1.842363067661168e-14,
+      0.02258643341342794
+     ],
+     "mod": 0.02258643341342794,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 4,
+     "lam": [
+      1.9670549911143809e-13,
+      0.07255260676524568
+     ],
+     "mod": 0.07255260676524568,
+     "kind": "paired",
+     "cls": "imag-"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -1.5053062962788744e-13,
+      0.30482656276712194
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.19235943833594787,
+     "err_level3": 0.0005317697317854933,
+     "step_ok": true,
+     "overlap": [
+      0.997217244519811
+     ],
+     "runner_up": 0.37695299346662403,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      4.4955358879938956e-15,
+      0.004036244930792714
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.010407626776820774,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      -2.0291060498500713e-14,
+      0.012040417426521385
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.842363067661168e-14,
+      0.02258643341342794
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      1.9670549911143809e-13,
+      0.07255260676524568
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.5053062962788744e-13,
+      0.30482656276712194
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.07255260676524568,
+   "paired_over_tau0": 182.74147857441463,
+   "seconds": 2.7
+  },
+  {
+   "level": 2,
+   "eps": 32.0,
+   "eps_reached": 31.999999975170574,
+   "theta": 0.6283185307067811,
+   "phys": 0.6283185307067811,
+   "nu": 7.419223050309389e-13,
+   "mu": -2.3469588081023833e-14,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.34467198559397366,
+    "counts": [
+     0,
+     0,
+     1,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.3360294403259632,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      1.5193749036690463e-13,
+      -0.3934809041683746,
+      0.001046946518402071
+     ],
+     [
+      1.5193749036690463e-13,
+      0.3934809041683746,
+      0.001046946518402071
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      -1.240327285323417e-16,
+      0.005573487792775364
+     ],
+     "mod": 0.005573487792775364,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.014421852625125875,
+      0.0
+     ],
+     "mod": 0.014421852625125875,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      5.720077189685924e-14,
+      0.01469075418337262
+     ],
+     "mod": 0.01469075418337262,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 3,
+     "lam": [
+      2.3325959219722137e-14,
+      0.03657750793976964
+     ],
+     "mod": 0.03657750793976964,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 4,
+     "lam": [
+      -1.2572234919794312e-13,
+      0.13141158616461737
+     ],
+     "mod": 0.13141158616461737,
+     "kind": "paired",
+     "cls": "imag-"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      1.5193749036690463e-13,
+      0.3934809041683746
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.26281926694073965,
+     "err_level3": 0.0011070946196640357,
+     "step_ok": true,
+     "overlap": [
+      0.9963197061098154
+     ],
+     "runner_up": 0.3692950482793275,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.240327285323417e-16,
+      0.005573487792775364
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.014421852625125875,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      5.720077189685924e-14,
+      0.01469075418337262
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      2.3325959219722137e-14,
+      0.03657750793976964
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      -1.2572234919794312e-13,
+      0.13141158616461737
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      1.5193749036690463e-13,
+      0.3934809041683746
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.13141158616461737,
+   "paired_over_tau0": 330.9922086636131,
+   "seconds": 2.5
+  },
+  {
+   "level": 2,
+   "eps": 45.254833995939045,
+   "eps_reached": 45.254833965049805,
+   "theta": 0.628318530714188,
+   "phys": 0.628318530714188,
+   "nu": -4.1569352106785073e-13,
+   "mu": 1.1826230154517509e-14,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.2808324047197587,
+    "counts": [
+     0,
+     0,
+     1,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.2728378520036495,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -6.826978218854585e-13,
+      -0.49176018118463694,
+      0.001396424902538129
+     ],
+     [
+      -6.826978218854585e-13,
+      0.49176018118463694,
+      0.001396424902538129
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      -1.1423067353133476e-13,
+      0.008392815744884754
+     ],
+     "mod": 0.008392815744884754,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 1,
+     "lam": [
+      1.7421654396887476e-13,
+      0.016289830853580052
+     ],
+     "mod": 0.016289830853580052,
+     "kind": "paired",
+     "cls": "imag-"
+    },
+    {
+     "block": 2,
+     "lam": [
+      0.02053364174868964,
+      0.0
+     ],
+     "mod": 0.02053364174868964,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 3,
+     "lam": [
+      1.059482362952835e-14,
+      0.0559906501333382
+     ],
+     "mod": 0.0559906501333382,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 4,
+     "lam": [
+      1.0234868508263162e-14,
+      0.2199057376782173
+     ],
+     "mod": 0.2199057376782173,
+     "kind": "paired",
+     "cls": "imag-"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -6.826978218854585e-13,
+      0.49176018118463694
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.3485386159745561,
+     "err_level3": 0.0018365388718195321,
+     "step_ok": true,
+     "overlap": [
+      0.9958001451936568
+     ],
+     "runner_up": 0.3568598339802376,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.1423067353133476e-13,
+      0.008392815744884754
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      1.7421654396887476e-13,
+      0.016289830853580052
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.02053364174868964,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      1.059482362952835e-14,
+      0.0559906501333382
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      1.0234868508263162e-14,
+      0.2199057376782173
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -6.826978218854585e-13,
+      0.49176018118463694
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.2199057376782173,
+   "paired_over_tau0": 553.8863652458692,
+   "seconds": 2.5
+  },
+  {
+   "level": 2,
+   "eps": 64.0,
+   "eps_reached": 63.999999968100745,
+   "theta": 0.6283185307131702,
+   "phys": 0.6283185307131702,
+   "nu": -4.3476171540785715e-13,
+   "mu": 7.286134282046222e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.23090133793181844,
+    "counts": [
+     0,
+     0,
+     1,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.22406364989803756,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      -1.4625015608282776e-11,
+      -0.5917363396400918,
+      0.001805151340854429
+     ],
+     [
+      -1.4625015608282776e-11,
+      0.5917363396400918,
+      0.001805151340854429
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.004289581012265009,
+      0.014497947360534169
+     ],
+     "mod": 0.015119225606148094,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.03001307266490804,
+      0.0
+     ],
+     "mod": 0.03001307266490804,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      -1.6627324517237696e-15,
+      0.07862168410381026
+     ],
+     "mod": 0.07862168410381026,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 3,
+     "lam": [
+      -1.500093452233564e-13,
+      0.34448180110980847
+     ],
+     "mod": 0.34448180110980847,
+     "kind": "paired",
+     "cls": "imag-"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      -1.4625015608282776e-11,
+      0.5917363396400918
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.4456953005691165,
+     "err_level3": 0.0027168426220552677,
+     "step_ok": true,
+     "overlap": [
+      0.9958986832506583
+     ],
+     "runner_up": 0.4740229798666677,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.004289581012265009,
+      0.014497947360534169
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.03001307266490804,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.6627324517237696e-15,
+      0.07862168410381026
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      -1.500093452233564e-13,
+      0.34448180110980847
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -1.4625015608282776e-11,
+      0.5917363396400918
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.34448180110980847,
+   "paired_over_tau0": 867.6616386847567,
+   "seconds": 2.4
+  },
+  {
+   "level": 2,
+   "eps": 72.0,
+   "eps_reached": 71.99996430200511,
+   "theta": 0.6283185307124878,
+   "phys": 0.6283185307124878,
+   "nu": -7.285308088212797e-14,
+   "mu": -2.7047482928633682e-15,
+   "old": {
+    "cls": [
+     "fibre",
+     "fibre",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "lifted",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine",
+     "genuine"
+    ],
+    "dim": 8,
+    "closed": true,
+    "omega_gram": 0.21657021576632088,
+    "counts": [
+     0,
+     0,
+     1,
+     2
+    ],
+    "balanced": true,
+    "nL": 5,
+    "nB": 3,
+    "cluster_ok": false
+   },
+   "cand": {
+    "dim": 12,
+    "closed": true,
+    "omega_gram": 0.2101331920685249,
+    "counts": [
+     0,
+     0,
+     0,
+     0
+    ],
+    "balanced": true,
+    "nB": 5,
+    "genuine_all": [
+     [
+      3.2584056980367038e-12,
+      -0.6242727915130333,
+      0.001953932614719329
+     ],
+     [
+      3.2584056980367038e-12,
+      0.6242727915130333,
+      0.001953932614719329
+     ]
+    ],
+    "cluster_ok": false
+   },
+   "lifts": [
+    {
+     "block": 0,
+     "lam": [
+      0.006523417882890204,
+      0.015195526986542056
+     ],
+     "mod": 0.016536596423494757,
+     "kind": "paired",
+     "cls": "quartet"
+    },
+    {
+     "block": 1,
+     "lam": [
+      0.03429337623038321,
+      0.0
+     ],
+     "mod": 0.03429337623038321,
+     "kind": "radical",
+     "cls": "real"
+    },
+    {
+     "block": 2,
+     "lam": [
+      -3.41740524767431e-16,
+      0.08632943771965688
+     ],
+     "mod": 0.08632943771965688,
+     "kind": "paired",
+     "cls": "imag+"
+    },
+    {
+     "block": 3,
+     "lam": [
+      -4.502821726592998e-13,
+      0.3956046636257739
+     ],
+     "mod": 0.3956046636257739,
+     "kind": "paired",
+     "cls": "imag-"
+    }
+   ],
+   "diag": {
+    "inspan": {
+     "tracked": false,
+     "why": "level 3's block is not tracked here"
+    },
+    "quartet": {
+     "tracked": false,
+     "why": "no assignment inside the window"
+    },
+    "imagplus": {
+     "tracked": true,
+     "why": null,
+     "lam": [
+      3.2584056980367038e-12,
+      0.6242727915130333
+     ],
+     "cls": "imag+",
+     "err_theorem": 0.4801929036721115,
+     "err_level3": 0.0030514355959738036,
+     "step_ok": true,
+     "overlap": [
+      0.9995669574628402
+     ],
+     "runner_up": 0.4578205377162922,
+     "change": false,
+     "step_why": null
+    }
+   },
+   "loose": 0,
+   "blocks": [
+    {
+     "cls": "quartet",
+     "lam": [
+      0.006523417882890204,
+      0.015195526986542056
+     ],
+     "complete": true,
+     "n": 4
+    },
+    {
+     "cls": "real",
+     "lam": [
+      0.03429337623038321,
+      0.0
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      -3.41740524767431e-16,
+      0.08632943771965688
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag-",
+     "lam": [
+      -4.502821726592998e-13,
+      0.3956046636257739
+     ],
+     "complete": true,
+     "n": 2
+    },
+    {
+     "cls": "imag+",
+     "lam": [
+      3.2584056980367038e-12,
+      0.6242727915130333
+     ],
+     "complete": true,
+     "n": 2
+    }
+   ],
+   "paired_lift": 0.3956046636257739,
+   "paired_over_tau0": 996.4270669946212,
+   "seconds": 2.4
+  }
+ ],
+ "errors": [],
+ "first_grid": {
+  "selected": 0.6283185307179586,
+  "roots": [
+   [
+    0.0,
+    "max"
+   ],
+   [
+    0.6283185307179586,
+    "min"
+   ]
+  ]
+ },
+ "events": [],
+ "others": [
+  {
+   "label": "other 0",
+   "kind": "max",
+   "alive": true,
+   "n": 18
+  }
+ ],
+ "sel_rows": [
+  {
+   "at": 0.25,
+   "theta": 0.628318530715922,
+   "phys": 0.628318530715922,
+   "H": 0.8377511749425308
+  },
+  {
+   "at": 0.3535533905932738,
+   "theta": 0.6283185307151599,
+   "phys": 0.6283185307151599,
+   "H": 1.1858966044869526
+  },
+  {
+   "at": 0.5,
+   "theta": 0.6283185307164553,
+   "phys": 0.6283185307164553,
+   "H": 1.679910265782252
+  },
+  {
+   "at": 0.7071067811865476,
+   "theta": 0.6283185307154037,
+   "phys": 0.6283185307154037,
+   "H": 2.381872229968935
+  },
+  {
+   "at": 1.0,
+   "theta": 0.628318530716573,
+   "phys": 0.628318530716573,
+   "H": 3.3812309360981807
+  },
+  {
+   "at": 1.4142135623730951,
+   "theta": 0.6283185307175337,
+   "phys": 0.6283185307175337,
+   "H": 4.807785934571993
+  },
+  {
+   "at": 2.0,
+   "theta": 0.6283185307168506,
+   "phys": 0.6283185307168506,
+   "H": 6.851678725166046
+  },
+  {
+   "at": 2.8284271247461903,
+   "theta": 0.6283185307155714,
+   "phys": 0.6283185307155714,
+   "H": 9.794916948201505
+  },
+  {
+   "at": 4.0,
+   "theta": 0.6283185307157505,
+   "phys": 0.6283185307157505,
+   "H": 14.062309259370897
+  },
+  {
+   "at": 5.656854249492381,
+   "theta": 0.6283185307162553,
+   "phys": 0.6283185307162553,
+   "H": 20.306272144461985
+  },
+  {
+   "at": 8.0,
+   "theta": 0.6283185307153122,
+   "phys": 0.6283185307153122,
+   "H": 29.551650510132315
+  },
+  {
+   "at": 11.313708498984761,
+   "theta": 0.6283185307164613,
+   "phys": 0.6283185307164613,
+   "H": 43.44978920210852
+  },
+  {
+   "at": 16.0,
+   "theta": 0.628318530716184,
+   "phys": 0.628318530716184,
+   "H": 64.73500346449227
+  },
+  {
+   "at": 22.627416997969522,
+   "theta": 0.628318530717822,
+   "phys": 0.628318530717822,
+   "H": 98.06293809786506
+  },
+  {
+   "at": 32.0,
+   "theta": 0.6283185307067811,
+   "phys": 0.6283185307067811,
+   "H": 151.58155569314587
+  },
+  {
+   "at": 45.254833995939045,
+   "theta": 0.628318530714188,
+   "phys": 0.628318530714188,
+   "H": 239.9273947934023
+  },
+  {
+   "at": 64.0,
+   "theta": 0.6283185307131702,
+   "phys": 0.6283185307131702,
+   "H": 390.0199624015394
+  },
+  {
+   "at": 72.0,
+   "theta": 0.6283185307124878,
+   "phys": 0.6283185307124878,
+   "H": 463.01660366400625
+  }
+ ],
+ "n_solves": 280,
+ "seconds": 304.4,
+ "tracks": [
+  {
+   "label": "imagplus",
+   "alive": true,
+   "why": null,
+   "cls": "imag+"
+  },
+  {
+   "label": "quartet",
+   "alive": false,
+   "why": "no assignment inside the window",
+   "cls": null
+  },
+  {
+   "label": "inspan",
+   "alive": false,
+   "why": "level 3's block is not tracked here",
+   "cls": null
+  }
+ ]
+}

@@ -1,0 +1,326 @@
+{
+ "control": "2a",
+ "register": "REGISTER_2.md, registered 2026-10-09T01:21:48Z",
+ "written": "2026-10-09T04:54:15Z",
+ "checks": [
+  {
+   "check": "1. the 0.9 rule puts the in-span block in G_tol at eps_min, level 3: dimension 8 against 6",
+   "passed": false
+  },
+  {
+   "check": "2. the selected track reaches eps = 72 at both levels",
+   "passed": true
+  },
+  {
+   "check": "3. the three blocks anchored within 0.10, uniquely, at eps_min, level 3",
+   "passed": false
+  },
+  {
+   "check": "4. the in-span block tracked and genuine at every resolved point, level 3 from 0.25 and level 2 from 5.66",
+   "passed": false
+  },
+  {
+   "check": "5. identity at eps_min: overlap >= 0.9 with span(X_x, X_y), <= 0.1 with X_z, |lambda| >= 10 x the paired lift",
+   "passed": false
+  },
+  {
+   "check": "6. the candidate rule's cluster dimension: 6 at level 3; 12, 8, then 6 at level 2",
+   "passed": false
+  },
+  {
+   "check": "7. the Krein count balances at eps_min, level 3, with k_c = 1, k_i- = 1, k_r = 0",
+   "passed": false
+  },
+  {
+   "check": "8. the veto passes wherever it applies",
+   "passed": true
+  },
+  {
+   "check": "9. the cross-level points below 5.66 read Unresolved, from unequal class counts",
+   "passed": true
+  }
+ ],
+ "all_passed": false,
+ "readings": {
+  "inspan_error": null,
+  "outcome": null,
+  "validity_eps_min": false,
+  "errors_eps_min": [
+   null,
+   0.08116128035401032,
+   0.0014917381807986385
+  ],
+  "old_rule_fails_at": [
+   0.25,
+   0.3535533905932738,
+   0.5,
+   0.7071067811865476,
+   1.0,
+   1.4142135623730951,
+   2.0,
+   2.8284271247461903,
+   4.0,
+   5.656854249492381,
+   8.0,
+   11.313708498984761,
+   16.0,
+   22.627416997969522,
+   32.0,
+   45.254833995939045,
+   64.0,
+   72.0
+  ]
+ },
+ "mutations": [
+  {
+   "check": 1,
+   "mutation": "the 0.9 rule keeping the in-span mode genuine",
+   "caught": false,
+   "parent_passed": false
+  },
+  {
+   "check": 2,
+   "mutation": "level 2 ending early",
+   "caught": true,
+   "parent_passed": true
+  },
+  {
+   "check": 3,
+   "mutation": "the quartet unanchored",
+   "caught": false,
+   "parent_passed": false
+  },
+  {
+   "check": 4,
+   "mutation": "the in-span track lost at level 3",
+   "caught": false,
+   "parent_passed": false
+  },
+  {
+   "check": 5,
+   "mutation": "the in-span block on the radical lift",
+   "caught": false,
+   "parent_passed": false
+  },
+  {
+   "check": 6,
+   "mutation": "a level-3 cluster dimension of 8",
+   "caught": false,
+   "parent_passed": false
+  },
+  {
+   "check": 7,
+   "mutation": "the Krein count unbalanced",
+   "caught": false,
+   "parent_passed": false
+  },
+  {
+   "check": 8,
+   "mutation": "a veto failure",
+   "caught": false,
+   "parent_passed": true
+  },
+  {
+   "check": 9,
+   "mutation": "a cross-level point below 5.66 passing",
+   "caught": true,
+   "parent_passed": true
+  }
+ ],
+ "cross": [
+  {
+   "eps": 0.25,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 0.3535533905932738,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 0.5,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 0.7071067811865476,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 1.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 1.4142135623730951,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 2.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 2.8284271247461903,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 4.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 5.656854249492381,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 8.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 11.313708498984761,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 16.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 22.627416997969522,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 32.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 45.254833995939045,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 64.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  },
+  {
+   "eps": 72.0,
+   "cross": {
+    "ok": false,
+    "why": "class counts differ"
+   },
+   "veto": {
+    "applies": false
+   }
+  }
+ ],
+ "summary": {
+  "L3_end": [
+   "eps_max",
+   null
+  ],
+  "L2_end": [
+   "eps_max",
+   null
+  ],
+  "L3_seconds": 10317.4,
+  "L2_seconds": 304.4,
+  "L3_errors": [],
+  "L2_errors": []
+ }
+}

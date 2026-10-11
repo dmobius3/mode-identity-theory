@@ -1,0 +1,39 @@
+level 2 setup 5 s
+    eps_k 0.25: eps 0.250000000, m 3.479745e-02, Newton 1 it, residual 4.3e-13, slice force [2.6953839476281442e-15]
+  L2 eps 0.25: old dim 8 ok=False counts [0, 0, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0021; paired lift / tau0 1.03; 3.4 s
+    eps_k 0.353553: eps 0.353553404, m 4.920533e-02, Newton 1 it, residual 4.8e-13, slice force [-1.5818503303038452e-15]
+  L2 eps 0.3536: old dim 8 ok=False counts [0, 0, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0002; paired lift / tau0 1.24; 3.4 s
+    eps_k 0.5: eps 0.499999969, m 6.959717e-02, Newton 1 it, residual 5.4e-13, slice force [2.676310894257896e-16]
+  L2 eps 0.5: old dim 8 ok=False counts [2, 0, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0024; paired lift / tau0 1.49; 3.5 s
+    eps_k 0.707107: eps 0.707106696, m 9.846734e-02, Newton 1 it, residual 9.3e-13, slice force [1.1550971866477177e-15]
+  L2 eps 0.7071: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0048; paired lift / tau0 1.93; 3.5 s
+    eps_k 1: eps 0.999999768, m 1.393586e-01, Newton 1 it, residual 4.0e-12, slice force [1.21896100495015e-15]
+  L2 eps 1: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0077; paired lift / tau0 2.63; 3.3 s
+    eps_k 1.41421: eps 1.414212938, m 1.973103e-01, Newton 2 it, residual 6.5e-13, slice force [-8.888728065956338e-15]
+  L2 eps 1.414: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0115; paired lift / tau0 3.55; 3.1 s
+    eps_k 2: eps 1.999998351, m 2.795057e-01, Newton 2 it, residual 6.9e-13, slice force [-6.690525451564314e-15]
+  L2 eps 2: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0165; paired lift / tau0 4.75; 3.2 s
+    eps_k 2.82843: eps 2.828427125, m 3.962086e-01, Newton 1 it, residual 7.5e-13, slice force [-4.5277003430041856e-15]
+  L2 eps 2.828: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0236; paired lift / tau0 6.29; 2.9 s
+    eps_k 4: eps 4.000000000, m 5.621256e-01, Newton 1 it, residual 8.1e-13, slice force [-5.702083684248931e-15]
+  L2 eps 4: old dim 8 ok=False counts [2, 0, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0337; paired lift / tau0 8.35; 2.9 s
+    eps_k 5.65685: eps 5.656854249, m 7.983941e-01, Newton 1 it, residual 8.7e-13, slice force [-2.3225650915918708e-14]
+  L2 eps 5.657: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0480; paired lift / tau0 11.59; 2.8 s
+    eps_k 8: eps 7.999999999, m 1.135475e+00, Newton 1 it, residual 1.2e-12, slice force [-2.0483427810136632e-14]
+  L2 eps 8: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0684; paired lift / tau0 17.87; 2.8 s
+    eps_k 11.3137: eps 11.313708495, m 1.617335e+00, Newton 1 it, residual 4.2e-12, slice force [-4.7155176130596165e-14]
+  L2 eps 11.31: old dim 8 ok=False counts [0, 1, 0, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.0974; paired lift / tau0 30.97; 2.7 s
+    eps_k 16: eps 15.999999992, m 2.307434e+00, Newton 2 it, residual 9.5e-13, slice force [-1.333876000218584e-13]
+  L2 eps 16: old dim 8 ok=False counts [0, 0, 1, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.1378; paired lift / tau0 89.23; 2.7 s
+    eps_k 22.6274: eps 22.627416982, m 3.297172e+00, Newton 2 it, residual 1.0e-12, slice force [-3.374137737432866e-13]
+  L2 eps 22.63: old dim 8 ok=False counts [0, 0, 1, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.1924; paired lift / tau0 182.74; 2.7 s
+    eps_k 32: eps 31.999999975, m 4.717695e+00, Newton 2 it, residual 1.0e-12, slice force [7.419223050309389e-13]
+  L2 eps 32: old dim 8 ok=False counts [0, 0, 1, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.2628; paired lift / tau0 330.99; 2.5 s
+    eps_k 45.2548: eps 45.254833965, m 6.756399e+00, Newton 2 it, residual 1.1e-12, slice force [-4.1569352106785073e-13]
+  L2 eps 45.25: old dim 8 ok=False counts [0, 0, 1, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.3485; paired lift / tau0 553.89; 2.5 s
+    eps_k 64: eps 63.999999968, m 9.680083e+00, Newton 2 it, residual 1.1e-12, slice force [-4.3476171540785715e-13]
+  L2 eps 64: old dim 8 ok=False counts [0, 0, 1, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.4457; paired lift / tau0 867.66; 2.4 s
+    eps_k 72: eps 71.999964302, m 1.093834e+01, Newton 2 it, residual 1.2e-12, slice force [-7.285308088212797e-14]
+  L2 eps 72: old dim 8 ok=False counts [0, 0, 1, 2]; candidate dim 12 ok=False counts [0, 0, 0, 0] balanced=True; inspan -; quartet -; imagplus tracked err 0.4802; paired lift / tau0 996.43; 2.4 s
+level 2 done: end ['eps_max', None], 18 ladder points, 0 errors, 304.4 s
+exit 0

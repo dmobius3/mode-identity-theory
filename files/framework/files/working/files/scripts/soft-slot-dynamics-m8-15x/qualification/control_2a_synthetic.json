@@ -1,0 +1,142 @@
+{
+ "test": "control 2a, the synthetic classifier tests (REGISTER_2.md \u00a7 5)",
+ "written": "2026-10-09T01:53:12Z",
+ "checks": [
+  {
+   "check": "1. a doubled mode is matched uniquely as one multiplet, and tracked as one subspace",
+   "passed": true
+  },
+  {
+   "check": "2. with an external block inside the window and the margin, Unresolved",
+   "passed": true
+  },
+  {
+   "check": "3. one predicted block, two candidates: Unresolved within 0.05, unique beyond it",
+   "passed": true
+  },
+  {
+   "check": "4. a sole candidate outside 0.10: unanchored, and Unresolved later",
+   "passed": true
+  },
+  {
+   "check": "5. a class change in band and overlap: tracked, the change recorded",
+   "passed": true
+  },
+  {
+   "check": "6. two tracks qualifying for one block: Unresolved",
+   "passed": true
+  },
+  {
+   "check": "7. overlap but modulus outside the band: not taken, Unresolved",
+   "passed": true
+  }
+ ],
+ "all_passed": true,
+ "mutations": [
+  {
+   "check": 1,
+   "mutation": "the multiplet split into two anchors",
+   "caught": true
+  },
+  {
+   "check": 1,
+   "mutation": "the multiplet lost in tracking",
+   "caught": true
+  },
+  {
+   "check": 2,
+   "mutation": "the competitor taken as unique",
+   "caught": true
+  },
+  {
+   "check": 3,
+   "mutation": "the close pair resolved",
+   "caught": true
+  },
+  {
+   "check": 3,
+   "mutation": "the apart pair picking the wrong block",
+   "caught": true
+  },
+  {
+   "check": 4,
+   "mutation": "the outside candidate anchored",
+   "caught": true
+  },
+  {
+   "check": 5,
+   "mutation": "the class change not recorded",
+   "caught": true
+  },
+  {
+   "check": 6,
+   "mutation": "one of the colliding tracks kept",
+   "caught": true
+  },
+  {
+   "check": 7,
+   "mutation": "the out-of-band block taken",
+   "caught": true
+  }
+ ],
+ "all_mutations_caught": true,
+ "results": {
+  "t1": {
+   "anchor_ok": true,
+   "anchored": [
+    0,
+    1
+   ],
+   "tracked_ok": true,
+   "tracked": [
+    0,
+    1
+   ]
+  },
+  "t2": {
+   "ok": false,
+   "why": "not unique: the next-best mean cost lies 0.0050 above",
+   "margin": 0.0050000000000000044
+  },
+  "t3": {
+   "close": {
+    "ok": false,
+    "blocks": null,
+    "margin": 0.040000000000000036
+   },
+   "apart": {
+    "ok": true,
+    "blocks": [
+     0
+    ],
+    "margin": 0.07000000000000006
+   }
+  },
+  "t4": {
+   "anchor_ok": false,
+   "nearest": 0.1341640786499873,
+   "alive": false,
+   "tracked_later": false
+  },
+  "t5": {
+   "ok": true,
+   "change": true,
+   "cls_now": "real"
+  },
+  "t6": {
+   "A": {
+    "ok": false,
+    "why": "two tracks take the same block"
+   },
+   "B": {
+    "ok": false,
+    "why": "two tracks take the same block"
+   }
+  },
+  "t7": {
+   "ok": false,
+   "why": "no candidate",
+   "overlap_of_the_only_block": 1.0
+  }
+ }
+}

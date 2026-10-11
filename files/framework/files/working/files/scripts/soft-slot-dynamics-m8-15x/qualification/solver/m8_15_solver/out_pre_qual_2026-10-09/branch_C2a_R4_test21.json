@@ -1,0 +1,60 @@
+{
+ "case": "C2a",
+ "slot": 4,
+ "targets": [
+  0.25,
+  0.3535533905932738,
+  0.5
+ ],
+ "schedule": [
+  {
+   "type": "i",
+   "tau": 0.1958041958041958,
+   "krein": 1,
+   "first_resolved": 0.25
+  },
+  {
+   "type": "i",
+   "tau": 0.13053613053613053,
+   "krein": 1,
+   "first_resolved": 0.25
+  },
+  {
+   "type": "i",
+   "tau": 1.4141414141414141,
+   "krein": 1,
+   "first_resolved": 0.25
+  },
+  {
+   "type": "i",
+   "tau": 2.871794871794872,
+   "krein": 1,
+   "first_resolved": 0.25
+  },
+  {
+   "type": "i",
+   "tau": 0.6961926961926962,
+   "krein": 1,
+   "first_resolved": 0.25
+  }
+ ],
+ "frozen": {
+  "r_f3": 1.0397370289375376e-06,
+  "r_f2": 3.970232009242573e-05,
+  "delta_lev": 0.01,
+  "s2": 0.0006739134989217632,
+  "eta": 0.001,
+  "T": 1000.0
+ },
+ "points": [],
+ "level2": [],
+ "cross": [],
+ "types": [],
+ "changes": [],
+ "persistence": [],
+ "end": [
+  "Newton failure at the seed",
+  null
+ ],
+ "seconds_L3": 9.944113969802856
+}

@@ -1,0 +1,488 @@
+{
+ "started": "2026-10-09T14:39:23Z",
+ "steps": {
+  "environment": {
+   "differences": [],
+   "ok": true
+  },
+  "frozen_bytes_arm": {
+   "files_checked": 19,
+   "exit": 0,
+   "spreads_bit_identical": true,
+   "ok": true
+  },
+  "static_inputs": {
+   "checked": {
+    "freeze_numbers.json": true,
+    "dt_L2.json": true,
+    "orientations.json": true
+   },
+   "ok": true,
+   "archived": "out_pre_qual_2026-10-09"
+  },
+  "controls": {
+   "instrument_sha256": {
+    "angle.py": "ca557b0d81f403c20b04675e3fb9b24be754f4cbe8b181498121dbd254e212b3",
+    "cluster_rule.py": "3716f1c58f22c3ae46d63d1dda0052726e5bf1d6ae77c23b316ef8a9fae99dea",
+    "continuation.py": "70c4c0354bbd33dfe627a4fbfc8b187bc0073513e56cb674670d27fb837260dd",
+    "fem.py": "209fba67eecf8c2b6ecaa432aafda3c6a161024d83d14a060809b81ca2e1061d",
+    "geometry.py": "788e10eb6973668e84370c13a8bd7b16dc9e712f6fa681c7386e15e9b1d1abff",
+    "integrate.py": "3c137e773f7890478b2495d6b466dc167c2aeffc4a8d179a0b7775b9b6b58096",
+    "irreps.py": "cbc7f4481706a08d7ca0229914980e773125c642da616e867580fe1620b5a149",
+    "linearize.py": "7cca177bf0c8efc344cc76d2cbcee94f0a96987ae9f3c0895ae64f2f705eed58",
+    "m815_branch.py": "7db54e748dfe238bbc21b252ec959748f9354ba681837d0fa4cbf2f0145f56db",
+    "m815_common.py": "a66fdf091021098497a08f645c54b4cc60340203dcc8f53013c550df88dfafc6",
+    "m815_controls.py": "dfc7a3c17fa061221d1ea74291047a01cf402d348653397a0b58cabd61b6801c",
+    "m815_freeze.py": "6a47bf4376aadd589243408b6d925c1910c649080dd1df85075fa5135320a866",
+    "nonlinear.py": "f00ca41c1406d123dac4384cd2f7336410be49e851426db15cad79da3102a060",
+    "persistence.py": "3d9906d8ea9ace471aec33566a5329e6d68dbf1122677f21b3690d8b9f3fb103",
+    "pinned.py": "f6e03566b15063529ac65df7b96dddb0c1726f60f418bedac9a0e5f78b936b8f",
+    "standing.py": "455cfc94f4bb10b97eaf0c426c86cb933e32fd7b199b00fc153bcad88fde5efb",
+    "symmetry.py": "c6bbb178dd9103ab5b2f168c6df8cd923b4c57bd8432215b1b9d4a5bef5aae19",
+    "verdict.py": "0dac34197abbf61edd8ede76a0c23d9c0691328ed606c032a9744397b6e29f05"
+   },
+   "control4_a": {
+    "exit": 0,
+    "end": [
+     "Newton failure at the seed",
+     null
+    ],
+    "ok": true
+   },
+   "control4_b": {
+    "exit": 1,
+    "stage": "level 2",
+    "frozen": true,
+    "traceback": 3,
+    "ok": true
+   },
+   "control_1a": {
+    "checks_1a": true,
+    "mutations_1a": true,
+    "checks_amendment": true,
+    "mutations_amendment": true,
+    "ok": true
+   },
+   "control_1b": {
+    "checks": [
+     {
+      "check": "1. every root within 1e-7 of 0 or pi/5, modulo 2 pi/5",
+      "passed": true
+     },
+     {
+      "check": "2. at the selected minimum, |nu| <= 1e-12 and |mu| <= 1e-12",
+      "passed": true
+     },
+     {
+      "check": "3. the frozen solver passes its own test there, and the bench passes the new one",
+      "passed": true
+     },
+     {
+      "check": "4. the selection is the lower-energy of the two symmetric angles",
+      "passed": true
+     },
+     {
+      "check": "5. over two periods the selected minimum is found twice and counted once",
+      "passed": true
+     },
+     {
+      "check": "6. the reference run at the selected point holds d_ref <= 1e-3 over T = 1000",
+      "passed": true
+     }
+    ],
+    "selection_bit_identical": true,
+    "check6_carried": true,
+    "ok": true
+   },
+   "control_carry": {
+    "ok": true,
+    "checks": true,
+    "mutations": true
+   },
+   "control_kind": {
+    "ok": true,
+    "checks": true,
+    "mutations": true
+   },
+   "all_ok": true
+  },
+  "streams": {
+   "A": [
+    {
+     "job": "linear_3",
+     "started": "2026-10-09T14:49:24Z",
+     "exit": 0,
+     "seconds": 1923.0
+    },
+    {
+     "job": "theoremD_3",
+     "started": "2026-10-09T15:21:27Z",
+     "exit": 0,
+     "seconds": 414.3
+    },
+    {
+     "job": "branch_C3",
+     "started": "2026-10-09T15:28:21Z",
+     "exit": 0,
+     "seconds": 2799.9
+    },
+    {
+     "job": "branch_C2a",
+     "started": "2026-10-09T16:15:01Z",
+     "exit": 0,
+     "seconds": 12541.6
+    }
+   ],
+   "B": [
+    {
+     "job": "dynamics_C1",
+     "started": "2026-10-09T14:49:24Z",
+     "exit": 0,
+     "seconds": 5766.7
+    },
+    {
+     "job": "dynamics_C2a",
+     "started": "2026-10-09T16:25:30Z",
+     "exit": 0,
+     "seconds": 5650.9
+    },
+    {
+     "job": "rate",
+     "started": "2026-10-09T17:59:41Z",
+     "exit": 0,
+     "seconds": 4795.5
+    }
+   ],
+   "C": [
+    {
+     "job": "dynamics_C2b",
+     "started": "2026-10-09T14:49:24Z",
+     "exit": 0,
+     "seconds": 3331.1
+    },
+    {
+     "job": "dynamics_C3",
+     "started": "2026-10-09T15:44:55Z",
+     "exit": 0,
+     "seconds": 6345.4
+    },
+    {
+     "job": "linear_2",
+     "started": "2026-10-09T17:30:40Z",
+     "exit": 0,
+     "seconds": 72.7
+    },
+    {
+     "job": "spreads",
+     "started": "2026-10-09T17:31:53Z",
+     "exit": 0,
+     "seconds": 3.5
+    }
+   ]
+  },
+  "summarize": {
+   "exit": 0,
+   "governing_restored": true
+  },
+  "comparisons": {
+   "linear_L3": {
+    "outcome": "within tolerance",
+    "n": 932,
+    "fail": [],
+    "diff": [
+     [
+      "/C1/points[0]/residual",
+      "residual moved by 5.68e-14 (bound 1.06e-13)"
+     ],
+     [
+      "/C2a/points[0]/residual",
+      "residual moved by 5.40e-14 (bound 1.05e-13)"
+     ],
+     [
+      "/C2a/points[1]/residual",
+      "residual moved by 3.75e-14 (bound 1.08e-13)"
+     ],
+     [
+      "/C2a/points[2]/residual",
+      "residual moved by 3.77e-14 (bound 1.06e-13)"
+     ],
+     [
+      "/C2b/points[0]/residual",
+      "residual moved by 5.32e-14 (bound 1.01e-13)"
+     ],
+     [
+      "/C2b/points[1]/residual",
+      "residual moved by 5.75e-14 (bound 1.07e-13)"
+     ],
+     [
+      "/C2b/points[2]/residual",
+      "residual moved by 3.38e-14 (bound 1.09e-13)"
+     ],
+     [
+      "/C3/points[0]/residual",
+      "residual moved by 3.51e-14 (bound 1.00e-13)"
+     ],
+     [
+      "/C3/points[1]/residual",
+      "residual moved by 3.46e-14 (bound 1.06e-13)"
+     ],
+     [
+      "/C3/points[2]/residual",
+      "residual moved by 4.16e-14 (bound 1.07e-13)"
+     ]
+    ],
+    "iter_moved": []
+   },
+   "linear_L2": {
+    "outcome": "within tolerance",
+    "n": 932,
+    "fail": [],
+    "diff": [
+     [
+      "/C1/points[0]/residual",
+      "residual moved by 1.43e-14 (bound 1.03e-13)"
+     ],
+     [
+      "/C2a/points[0]/residual",
+      "residual moved by 9.15e-15 (bound 1.01e-13)"
+     ],
+     [
+      "/C2a/points[1]/residual",
+      "residual moved by 7.25e-15 (bound 1.04e-13)"
+     ],
+     [
+      "/C2a/points[2]/residual",
+      "residual moved by 9.15e-15 (bound 1.06e-13)"
+     ],
+     [
+      "/C2b/points[0]/residual",
+      "residual moved by 8.20e-15 (bound 1.01e-13)"
+     ],
+     [
+      "/C2b/points[1]/residual",
+      "residual moved by 1.42e-14 (bound 1.02e-13)"
+     ],
+     [
+      "/C2b/points[2]/residual",
+      "residual moved by 5.40e-15 (bound 1.03e-13)"
+     ],
+     [
+      "/C3/points[0]/residual",
+      "residual moved by 1.08e-14 (bound 1.01e-13)"
+     ],
+     [
+      "/C3/points[1]/residual",
+      "residual moved by 1.49e-15 (bound 1.03e-13)"
+     ],
+     [
+      "/C3/points[2]/residual",
+      "residual moved by 1.85e-15 (bound 1.03e-13)"
+     ]
+    ],
+    "iter_moved": []
+   },
+   "spreads_L2": {
+    "outcome": "bit-identical",
+    "n": 9,
+    "fail": [],
+    "diff": [],
+    "iter_moved": []
+   },
+   "dynamics_C1": {
+    "outcome": "bit-identical",
+    "n": 21,
+    "fail": [],
+    "diff": [],
+    "iter_moved": [],
+    "npy_bit_identical": true,
+    "s5": {
+     "fields": true,
+     "times": true,
+     "ok": true
+    }
+   },
+   "dynamics_C2a": {
+    "outcome": "bit-identical",
+    "n": 31,
+    "fail": [],
+    "diff": [],
+    "iter_moved": [],
+    "npy_bit_identical": true,
+    "s5": {
+     "fields": true,
+     "times": true,
+     "ok": true
+    }
+   },
+   "dynamics_C2b": {
+    "outcome": "bit-identical",
+    "n": 31,
+    "fail": [],
+    "diff": [],
+    "iter_moved": [],
+    "npy_bit_identical": true,
+    "s5": {
+     "fields": true,
+     "times": true,
+     "ok": true
+    }
+   },
+   "dynamics_C3": {
+    "outcome": "bit-identical",
+    "n": 27,
+    "fail": [],
+    "diff": [],
+    "iter_moved": [],
+    "npy_bit_identical": true,
+    "s5": {
+     "fields": true,
+     "times": true,
+     "ok": true
+    }
+   },
+   "dynamics_C3_rate": {
+    "outcome": "bit-identical",
+    "n": 27,
+    "fail": [],
+    "diff": [],
+    "iter_moved": [],
+    "npy_bit_identical": true,
+    "s5": {
+     "fields": true,
+     "times": true,
+     "ok": true
+    }
+   },
+   "theoremD_L3": {
+    "present": true,
+    "record": {
+     "level": 3,
+     "sigma": 14.000007021716163,
+     "lam0": 8.00000702171433,
+     "v2": 5.999999999993557,
+     "frequency_law_rel": 5.911458831362261e-13,
+     "checks": [
+      {
+       "mu": 7.48331665018023,
+       "multiplicity": 2,
+       "found": 2,
+       "nearest": [
+        {
+         "lam": [
+          2.828870523535464e-15,
+          7.483316650180221
+         ],
+         "rel": 1.2456248817788898e-15,
+         "lowest_level_overlap": 0.9999999999515516
+        },
+        {
+         "lam": [
+          -5.625169681385568e-16,
+          7.48331665018047
+         ],
+         "rel": 3.2045795236946016e-14,
+         "lowest_level_overlap": 0.9999999999515393
+        },
+        {
+         "lam": [
+          -2.7639336525555145e-14,
+          7.48742097672158
+         ],
+         "rel": 0.0005484635667864516,
+         "lowest_level_overlap": 5.07038833444229e-08
+        },
+        {
+         "lam": [
+          2.1865558151729096e-13,
+          7.493539346921349
+         ],
+         "rel": 0.001366064970787057,
+         "lowest_level_overlap": 1.1601671354912033e-07
+        }
+       ],
+       "ok": true
+      },
+      {
+       "mu": 8.246212954250682,
+       "multiplicity": 1,
+       "found": 1,
+       "nearest": [
+        {
+         "lam": [
+          2.6205446441487763e-16,
+          8.246212954251686
+         ],
+         "rel": 1.2170940212688522e-13,
+         "lowest_level_overlap": 0.9999999999515544
+        },
+        {
+         "lam": [
+          -6.701497574953787e-11,
+          7.698000639565313
+         ],
+         "rel": 0.06648049446780069,
+         "lowest_level_overlap": 5.5921740425888714e-08
+        },
+        {
+         "lam": [
+          2.4871196607182968e-11,
+          7.659634041989154
+         ],
+         "rel": 0.07113312686876024,
+         "lowest_level_overlap": 1.200442776587498e-07
+        },
+        {
+         "lam": [
+          1.063905547453166e-11,
+          7.625887434493177
+         ],
+         "rel": 0.07522550329454505,
+         "lowest_level_overlap": 1.1713765711446422e-07
+        }
+       ],
+       "ok": true
+      }
+     ],
+     "theoremD_rel": 1.2170940212688522e-13,
+     "ok": true
+    }
+   },
+   "freeze_numbers": {
+    "s2_relative": {
+     "R4": 1.0543530243821239e-10,
+     "R5": 2.232726654095171e-11,
+     "R2": 1.995758275825384e-11
+    },
+    "s2_as_recorded": {
+     "R4": true,
+     "R5": true,
+     "R2": true
+    },
+    "rest": {
+     "outcome": "bit-identical",
+     "fail": [],
+     "diff": []
+    }
+   },
+   "branch_C3_R4": {
+    "outcome": "within tolerance",
+    "n": 1956,
+    "fail": [],
+    "n_diff": 36,
+    "floor_used": [],
+    "n_floor": 0,
+    "iter_moved": []
+   },
+   "branch_C2a_R4": {
+    "outcome": "within tolerance",
+    "n": 2108,
+    "fail": [],
+    "n_diff": 36,
+    "floor_used": [],
+    "n_floor": 0,
+    "iter_moved": []
+   }
+  }
+ },
+ "finished": "2026-10-09T19:44:03Z"
+}

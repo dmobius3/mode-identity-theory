@@ -1,0 +1,28 @@
+[2026-10-09T14:39:23Z] qualification starts
+[2026-10-09T14:39:23Z] environment: identical to MANIFEST.json
+[2026-10-09T14:39:29Z] frozen_spreads: exit 0 in 5.3 s
+[2026-10-09T14:39:29Z] frozen-bytes arm: 19 files checked; spreads reproduces controls_first bit for bit
+[2026-10-09T14:39:29Z] static inputs copied and checked against the repo
+[2026-10-09T14:39:40Z] control4_a: exit 0 in 10.6 s
+[2026-10-09T14:40:08Z] control4_b: exit 1 in 28.5 s
+[2026-10-09T14:40:48Z] control_1a: exit 0 in 40.2 s
+[2026-10-09T14:40:49Z] control_1a_mutations: exit 0 in 0.1 s
+[2026-10-09T14:41:38Z] control_1a_amended: exit 0 in 49.5 s
+[2026-10-09T14:42:56Z] control_1b_solve: exit 0 in 78.1 s
+[2026-10-09T14:43:03Z] control_1b_frozen: exit 0 in 6.6 s
+[2026-10-09T14:45:29Z] control_carry: exit 0 in 146.3 s
+[2026-10-09T14:49:24Z] control_kind: exit 0 in 234.7 s
+[2026-10-09T14:49:24Z] § 6 controls: all pass
+[2026-10-09T15:21:27Z] linear_3: exit 0 in 1923.0 s
+[2026-10-09T15:28:21Z] theoremD_3: exit 0 in 414.3 s
+[2026-10-09T15:44:55Z] dynamics_C2b: exit 0 in 3331.1 s
+[2026-10-09T16:15:01Z] branch_C3: exit 0 in 2799.9 s
+[2026-10-09T16:25:30Z] dynamics_C1: exit 0 in 5766.7 s
+[2026-10-09T17:30:40Z] dynamics_C3: exit 0 in 6345.4 s
+[2026-10-09T17:31:53Z] linear_2: exit 0 in 72.7 s
+[2026-10-09T17:31:57Z] spreads: exit 0 in 3.5 s
+[2026-10-09T17:59:41Z] dynamics_C2a: exit 0 in 5650.9 s
+[2026-10-09T19:19:37Z] rate: exit 0 in 4795.5 s
+[2026-10-09T19:20:37Z] summarize: exit 0 in 0.5 s
+[2026-10-09T19:44:03Z] branch_C2a: exit 0 in 12541.6 s
+[2026-10-09T19:44:03Z] qualification finished

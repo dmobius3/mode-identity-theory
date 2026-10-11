@@ -1,0 +1,21 @@
+diag_residual.py: Python 3.13.13, numpy 2.5.0, scipy 1.18.0
+1. the records
+   linear_L3: 10 residuals, 10 moved; old 2.54e-12 to 5.51e-12, new 2.48e-12 to 5.47e-12; |new - old| up to 5.75e-14, relative 7.6e-03 to 2.2e-02; sum |mu| up to 8.80e-15; |new - old| > sum |mu| at 10
+   linear_L2: 10 residuals, 10 moved; old 4.30e-13 to 3.30e-12, new 4.16e-13 to 3.29e-12; |new - old| up to 1.43e-14, relative 5.6e-04 to 3.3e-02; sum |mu| up to 5.70e-15; |new - old| > sum |mu| at 8
+   branch_C3_R4: 36 residuals, 36 moved; old 5.70e-13 to 6.11e-12, new 5.76e-13 to 6.08e-12; |new - old| up to 6.10e-14, relative 5.6e-04 to 3.3e-02; sum |mu| up to 9.36e-15; |new - old| > sum |mu| at 32
+   branch_C2a_R4: 36 residuals, 36 moved; old 4.61e-13 to 4.94e-12, new 4.49e-13 to 4.91e-12; |new - old| up to 6.07e-14, relative 3.1e-03 to 2.6e-02; sum |mu| up to 1.18e-14; |new - old| > sum |mu| at 36
+   all: 92 residuals; largest |new - old| 6.10e-14; largest sum |mu| 1.18e-14; largest excess of |new - old| over sum |mu| 5.96e-14; largest |new - old| / (sum |mu| + 1e-13) 0.60; |new - old| > sum |mu| at 86 of 92
+2. the two codings, on a random vector at level 2 (C3)
+   K, M: complex128 (3024, 3024); Kr, Mr: float64 (6048, 6048)
+   |to_real(K Phi) - Kr x| / |Kr x| = 2.65e-16; bit-identical: False
+   |to_real(M Phi) - Mr x| / |Mr x| = 2.29e-16; bit-identical: False
+3. C3 in R4, level 2, the seed solve at eps_min = 0.25: converged True after 3 stopping tests
+   at the final iterate, all relative to |M x|: frozen form 5.9095e-13; bench F without the mu terms 5.9770e-13; bench F 5.9770e-13; sum |mu| 6.83e-16
+   |frozen form - bench F without mu| = 6.75e-15 (the coding); |bench F - bench F without mu| = 1.83e-18 (the mu terms)
+   the two residual vectors differ by 3.03e-13, 0.51 of the frozen form's own norm
+   each gauge vector T, built at the solve's starting point, against |M x| at the final iterate: 0.999988
+3. C2a in R4, level 2, the seed solve at eps_min = 0.25: converged True after 4 stopping tests
+   at the final iterate, all relative to |M x|: frozen form 4.4296e-13; bench F without the mu terms 4.4253e-13; bench F 4.4247e-13; sum |mu| 8.09e-15
+   |frozen form - bench F without mu| = 4.39e-16 (the coding); |bench F - bench F without mu| = 5.65e-17 (the mu terms)
+   the two residual vectors differ by 2.59e-13, 0.59 of the frozen form's own norm
+   each gauge vector T, built at the solve's starting point, against |M x| at the final iterate: 0.999724

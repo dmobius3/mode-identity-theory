@@ -1,0 +1,14 @@
+M8.15.x freeze, 2026-10-09T20:58:11Z
+MIT main: 97a8c0884c5e3a0ed25afb345f3d668340c5b537, folder files/framework/files/working/files/scripts/soft-slot-dynamics-m8-15x/
+the checks, rerun on a clean export of main (git archive), against qual_2026-10-09/QUALIFICATION.json:
+  PASS  1. hashes
+  PASS  2. imports
+  PASS  3. names
+  PASS  4. static inputs and Theorem D
+  PASS  5a. SHA256SUMS here (24 of 24)
+  PASS  5b. M8.15's SHA256SUMS (52 of 52)
+freeze checks: ALL PASS
+shasum -a 256 -c SHA256SUMS: 24 OK of       24
+M8.15's SHA256SUMS: 52 OK of       52
+mutation arms: freeze_arms.py, freeze_arms.out (mutation arms: ALL CAUGHT (10 of 10))
+no out/FROZEN.json: every target is refused until the first target's terms are frozen on main

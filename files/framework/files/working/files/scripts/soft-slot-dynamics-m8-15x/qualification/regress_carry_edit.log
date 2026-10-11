@@ -1,0 +1,4 @@
+1a bench arm, iterations and accepted point identical to the amended run: True
+1b angle solve, one_period: identical to the record except the new field: True
+1b angle solve, two_periods: identical to the record except the new field: True
+gate passes: True

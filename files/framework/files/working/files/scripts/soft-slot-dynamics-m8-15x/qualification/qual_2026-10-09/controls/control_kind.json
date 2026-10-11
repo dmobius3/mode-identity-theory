@@ -1,0 +1,511 @@
+{
+ "test": "the kind rule and the carry record (REGISTER_1.md, amendment of 2026-10-09T00:42:42Z)",
+ "written": "2026-10-09T14:49:24Z",
+ "seconds": 234.4,
+ "checks": [
+  {
+   "check": "(a) the pyramid at theta_start = 0: 0 a maximum and pi/5 a minimum, each once; pi/5 selected, matching 1b",
+   "passed": true
+  },
+  {
+   "check": "(b) synthetic -cos from 0: a minimum at 0 and a maximum at pi, each once",
+   "passed": true
+  },
+  {
+   "check": "(c) a flipped convention on 1b's grid leaves both roots unresolved",
+   "passed": true
+  },
+  {
+   "check": "(d) 1b's angle solve reproduces its roots, kinds and selection",
+   "passed": true
+  },
+  {
+   "check": "(d) the carry's ten checks pass again, with the same ends and angles within 1e-7",
+   "passed": true
+  },
+  {
+   "check": "(e) an end inside goto returns no point, is recorded, and leaves the accepted points",
+   "passed": true
+  },
+  {
+   "check": "(f) arm 1's end records a trial norm above the last accepted one",
+   "passed": true
+  }
+ ],
+ "all_passed": true,
+ "mutations": [
+  {
+   "check": 1,
+   "mutation": "(a) the H-only rule, which classifies neither grid-point root",
+   "verdicts": [
+    false,
+    true,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 2,
+   "mutation": "(b) a grid-point root entered twice",
+   "verdicts": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 2,
+   "mutation": "(b) reversed neighbour signs",
+   "verdicts": [
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 3,
+   "mutation": "(c) no H cross-check, so the flipped convention classifies",
+   "verdicts": [
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 4,
+   "mutation": "(d) a kind changed in the 1b regression",
+   "verdicts": [
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 5,
+   "mutation": "(d) one of the carry's checks failing",
+   "verdicts": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 5,
+   "mutation": "(d) an end reason changed",
+   "verdicts": [
+    true,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 6,
+   "mutation": "(e) the bisection step returning a point",
+   "verdicts": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 6,
+   "mutation": "(e) the accepted points changed",
+   "verdicts": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    false,
+    true
+   ],
+   "caught": true
+  },
+  {
+   "check": 7,
+   "mutation": "(f) no trial norm",
+   "verdicts": [
+    true,
+    true,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "caught": true
+  }
+ ],
+ "all_mutations_caught": true,
+ "a": {
+  "roots": [
+   {
+    "theta": 0.0,
+    "kind": "max",
+    "kind_H": "max",
+    "source": "grid point",
+    "H": 0.835761302001254,
+    "nu": -3.73542341038099e-15
+   },
+   {
+    "theta": 0.6283185307179586,
+    "kind": "min",
+    "kind_H": "min",
+    "source": "grid point",
+    "H": 0.8357497334820765,
+    "nu": -3.1863259250985183e-15
+   }
+  ],
+  "selected": {
+   "theta": 0.6283185307179586,
+   "H": 0.8357497334820765,
+   "sigma": 48.27470535685818
+  },
+  "ref_selected": {
+   "H": 0.8357497334820766,
+   "sigma": 48.27470535685818
+  },
+  "grid": [
+   {
+    "theta": 0.0,
+    "nu": -3.73542341038099e-15,
+    "H": 0.835761302001254
+   },
+   {
+    "theta": 0.12566370614359174,
+    "nu": 9.176271255270093e-05,
+    "H": 0.8357602445062238
+   },
+   {
+    "theta": 0.25132741228718347,
+    "nu": 0.00015210333718879298,
+    "H": 0.8357574291051184
+   },
+   {
+    "theta": 0.37699111843077515,
+    "nu": 0.00015663255249014475,
+    "H": 0.8357538546923192
+   },
+   {
+    "theta": 0.5026548245743669,
+    "nu": 9.909177108621329e-05,
+    "H": 0.8357508858310746
+   },
+   {
+    "theta": 0.6283185307179586,
+    "nu": -3.1863259250985183e-15,
+    "H": 0.8357497334820765
+   },
+   {
+    "theta": 0.7539822368615503,
+    "nu": -9.9091771084127e-05,
+    "H": 0.8357508858310746
+   },
+   {
+    "theta": 0.8796459430051421,
+    "nu": -0.00015663255248746986,
+    "H": 0.835753854692319
+   },
+   {
+    "theta": 1.0053096491487339,
+    "nu": -0.00015210333718923197,
+    "H": 0.8357574291051181
+   },
+   {
+    "theta": 1.1309733552923256,
+    "nu": -9.176271256452127e-05,
+    "H": 0.8357602445062234
+   },
+   {
+    "theta": 1.2566370614359172,
+    "nu": -3.4060874490410143e-15,
+    "H": 0.8357613020012541
+   }
+  ]
+ },
+ "b": {
+  "roots": [
+   {
+    "theta": 0.0,
+    "kind": "min",
+    "kind_H": "min",
+    "source": "grid point",
+    "H": -1.0,
+    "nu": -0.0
+   },
+   {
+    "theta": 3.141592653589793,
+    "kind": "max",
+    "kind_H": "max",
+    "source": "grid point",
+    "H": 1.0,
+    "nu": -1.2246467991473532e-16
+   }
+  ]
+ },
+ "c": {
+  "roots": [
+   {
+    "theta": 0.6283185307155977,
+    "H": 0.8357497334820766,
+    "ends": [
+     0.8357500297663567,
+     0.8357500297663567
+    ],
+    "plain": "min",
+    "flipped": "unresolved",
+    "flipped_no_H": "max"
+   },
+   {
+    "theta": 1.2566370614413362,
+    "H": 0.8357613020012542,
+    "ends": [
+     0.8357610319342209,
+     0.8357610319342214
+    ],
+    "plain": "max",
+    "flipped": "unresolved",
+    "flipped_no_H": "min"
+   }
+  ]
+ },
+ "d1b": {
+  "one_period": {
+   "identical_but_new_fields": true,
+   "kinds_old": [
+    "min",
+    "max"
+   ],
+   "kinds_new": [
+    "min",
+    "max"
+   ],
+   "selected_same": true
+  },
+  "two_periods": {
+   "identical_but_new_fields": true,
+   "kinds_old": [
+    "min",
+    "max",
+    "min",
+    "max"
+   ],
+   "kinds_new": [
+    "min",
+    "max",
+    "min",
+    "max"
+   ],
+   "selected_same": true
+  }
+ },
+ "e": {
+  "returned": null,
+  "events": [
+   {
+    "at": 0.5,
+    "track": "selected",
+    "event": "the carried root is not a minimum",
+    "theta": 4.446743973388413e-12,
+    "m": 0.06958684676125614
+   }
+  ],
+  "accepted_unchanged": true,
+  "end": [
+   "eps_max",
+   null
+  ],
+  "n_accepted": 6
+ },
+ "d_carry": {
+  "checks": [
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  "ends_old": {
+   "1a": null,
+   "1b": "the carried root is lost: no minimum within two grid spacings",
+   "2": "the carried root is lost: no minimum within two grid spacings",
+   "3": null,
+   "4": "the carried root is not a minimum",
+   "arm1": "the carried root is not a minimum",
+   "arm2": "eps_max",
+   "arm3": "eps_max"
+  },
+  "ends_new": {
+   "1a": null,
+   "1b": "the carried root is lost: no minimum within two grid spacings",
+   "2": "the carried root is lost: no minimum within two grid spacings",
+   "3": null,
+   "4": "the carried root is not a minimum",
+   "arm1": "the carried root is not a minimum",
+   "arm2": "eps_max",
+   "arm3": "eps_max"
+  },
+  "sel_old": {
+   "arm1": [
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319
+   ],
+   "arm2": [
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319
+   ],
+   "arm3": [
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319
+   ]
+  },
+  "sel_new": {
+   "arm1": [
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319
+   ],
+   "arm2": [
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319
+   ],
+   "arm3": [
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319,
+    0.628319
+   ]
+  },
+  "max_dtheta": {
+   "arm1": 0.0,
+   "arm2": 0.0,
+   "arm3": 0.0
+  },
+  "solves_old": {
+   "arm1": 41,
+   "arm2": 82,
+   "arm3": 86
+  },
+  "solves_new": {
+   "arm1": 41,
+   "arm2": 82,
+   "arm3": 86
+  },
+  "others_kinds_new": [
+   [
+    "max",
+    true
+   ]
+  ]
+ },
+ "f": {
+  "end": [
+   "the carried root is not a minimum",
+   {
+    "m": 0.04920533278082584,
+    "eps": 0.3535534039707855,
+    "theta_tried": 6.9054839264473415e-12,
+    "m_tried": 0.06958781172483543
+   }
+  ]
+ }
+}

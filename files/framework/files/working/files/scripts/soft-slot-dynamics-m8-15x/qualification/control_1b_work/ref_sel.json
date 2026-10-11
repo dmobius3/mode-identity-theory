@@ -1,0 +1,13 @@
+{
+ "dt": 0.008186672656923894,
+ "every": 122,
+ "nsteps": 122150,
+ "steps_done": 122150,
+ "T_int": 1000.0020650432538,
+ "last_t": 999.7728382088599,
+ "max_dref": 1.5717527858117155e-12,
+ "seconds": 4468.3,
+ "charge_drift": 7.459845023631333e-14,
+ "t_first_above_eta": null,
+ "stopped_early": false
+}

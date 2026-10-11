@@ -1,0 +1,75 @@
+M8.15.x, the carry: 2026-10-09T14:45:29Z, 146.0 s
+
+synthetic 1a: 0:6.2831853072, 1:7.2256631033*, 2:8.1681408993*, 3:9.1106186954*, 4:10.0530964915*, 5:10.9955742876*; end None; events []
+synthetic 1b: 0:6.2831853072; end {'reason': 'the carried root is lost: no minimum within two grid spacings', 'eps': 1, 'theta': 6.283185307179586}; events []
+synthetic 2: 0:6.2831853072, 0.15:6.1326170344, 0.3:5.9784926532, 0.45:5.8164199681, 0.6:5.6396841984, 0.75:5.4351232282, 0.9:5.1634157922; end {'reason': 'the carried root is lost: no minimum within two grid spacings', 'eps': 1.05, 'theta': 5.163415792181402}; events []
+synthetic 3: -0.5:3.1415926536, -0.3:3.1415926536, -0.1:3.1415926536, 0.1:3.1415926536, 0.3:3.1415926536, 0.5:3.1415926536; end None; events [(0.1, 'selected', 'no longer the lowest minimum')]
+synthetic 4: 0:6.2831853072, 0.4:6.2831853072, 0.8:6.2831853072; end {'reason': 'the carried root is not a minimum', 'eps': 1.2, 'theta': 6.283185307179586}; events []
+pyramid 1: end ['the carried root is not a minimum', {'m': np.float64(0.04920533278082584), 'eps': np.float64(0.3535534039707855), 'theta_tried': 6.9054839264473415e-12, 'm_tried': 0.06958781172483543}], 5 accepted points, 41 Newton solves, 29.0 s; first selected 0.628318530716
+    eps 0.249404  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -4.94e-16  mu +8.53e-15  H 0.8357497334821  fallback False  solves None
+    eps 0.250000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +7.30e-18  mu +1.13e-15  H 0.8377526298552  fallback False  solves 3
+    eps 0.250000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +3.05e-16  mu -4.70e-15  H 0.8377511749425  fallback False  solves 3
+    eps 0.353594  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -2.52e-16  mu -4.99e-15  H 1.1860343846287  fallback False  solves 3
+    eps 0.353553  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +2.86e-15  mu -5.66e-15  H 1.1858966044870  fallback False  solves 3
+pyramid 2: end ['eps_max', None], 15 accepted points, 82 Newton solves, 54.7 s; first selected 0.628318530716
+    eps 0.249404  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -4.94e-16  mu +8.53e-15  H 0.8357497334821  fallback False  solves None
+    eps 0.250000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +7.30e-18  mu +1.13e-15  H 0.8377526298552  fallback False  solves 3
+    eps 0.250000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +3.05e-16  mu -4.70e-15  H 0.8377511749425  fallback False  solves 3
+    eps 0.353594  coord 0.5654866776  phys 0.6283185307  offset +0.062832  nu +1.14e-15  mu +8.76e-16  H 1.1860343846286  fallback False  solves 6
+    eps 0.353553  coord 0.5654866776  phys 0.6283185307  offset +0.062832  nu -1.32e-15  mu -1.50e-16  H 1.1858966044870  fallback False  solves 3
+    eps 0.499933  coord 0.6660176426  phys 0.6283185307  offset -0.037699  nu -4.44e-15  mu -6.71e-16  H 1.6796831079391  fallback False  solves 6
+    eps 0.500000  coord 0.6660176426  phys 0.6283185307  offset -0.037699  nu +4.04e-15  mu -4.76e-15  H 1.6799102657824  fallback False  solves 3
+    eps 0.706974  coord 0.5529203073  phys 0.6283185310  offset +0.075398  nu -4.74e-13  mu +8.94e-14  H 2.3814206035134  fallback False  solves 5
+    eps 0.707107  coord 0.5529203071  phys 0.6283185308  offset +0.075398  nu -8.87e-14  mu +1.52e-14  H 2.3818722299688  fallback False  solves 3
+    eps 0.999738  coord 0.6534512719  phys 0.6283185307  offset -0.025133  nu +3.25e-15  mu -3.75e-15  H 3.3803358502190  fallback False  solves 6
+    eps 1.000000  coord 0.6534512719  phys 0.6283185307  offset -0.025133  nu -1.98e-15  mu +3.47e-15  H 3.3812309360983  fallback False  solves 3
+    eps 1.413703  coord 0.5780530483  phys 0.6283185307  offset +0.050265  nu -8.34e-15  mu -1.65e-15  H 4.8060184756695  fallback False  solves 6
+    eps 1.414213  coord 0.5780530483  phys 0.6283185307  offset +0.050265  nu -9.02e-15  mu +1.34e-15  H 4.8077859345720  fallback False  solves 3
+    eps 1.999011  coord 0.6408849013  phys 0.6283185307  offset -0.012566  nu +6.78e-15  mu +2.96e-15  H 6.8482065389589  fallback False  solves 6
+    eps 1.999998  coord 0.6408849013  phys 0.6283185307  offset -0.012566  nu -4.18e-15  mu -5.30e-15  H 6.8516787251660  fallback False  solves 3
+pyramid 3: end ['eps_max', None], 15 accepted points, 86 Newton solves, 56.7 s; first selected 0.628318530716
+    eps 0.249404  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -4.94e-16  mu +8.53e-15  H 0.8357497334821  fallback False  solves None
+    eps 0.250000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +7.30e-18  mu +1.13e-15  H 0.8377526298552  fallback False  solves 3
+    eps 0.250000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +3.05e-16  mu -4.70e-15  H 0.8377511749425  fallback False  solves 3
+    eps 0.353594  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -2.52e-16  mu -4.99e-15  H 1.1860343846287  fallback False  solves 3
+    eps 0.353553  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +2.86e-15  mu -5.66e-15  H 1.1858966044870  fallback False  solves 3
+    eps 0.499933  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -3.52e-15  mu +3.81e-15  H 1.6796831078535  fallback False  solves 3
+    eps 0.500000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +5.26e-16  mu +4.12e-15  H 1.6799102657823  fallback False  solves 3
+    eps 0.706974  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -2.10e-15  mu +4.05e-16  H 2.3814206036887  fallback False  solves 3
+    eps 0.707107  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +1.42e-15  mu -1.01e-15  H 2.3818722299690  fallback False  solves 3
+    eps 0.999738  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -2.03e-15  mu -1.87e-15  H 3.3803358500925  fallback False  solves 3
+    eps 1.000000  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu +1.99e-15  mu +5.36e-16  H 3.3812309360981  fallback False  solves 3
+    eps 1.413703  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -1.16e-14  mu -4.31e-16  H 4.8060184757240  fallback False  solves 3
+    eps 1.414213  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -5.24e-15  mu -3.76e-15  H 4.8077859345720  fallback False  solves 3
+    eps 1.999011  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -2.55e-15  mu +1.55e-15  H 6.8482065389506  fallback False  solves 3
+    eps 1.999998  coord 0.6283185307  phys 0.6283185307  offset +0.000000  nu -7.89e-15  mu +1.66e-15  H 6.8516787251661  fallback False  solves 3
+    tracked other 0 (max), alive True: 0.25: 1.2566370614 H 0.8377627713686, 0.3536: 1.2566370614 H 1.1859130712768, 0.5: 1.2566370614 H 1.6799336968642, 0.7071: 1.2566370614 H 2.3819056668665, 1: 1.2566370614 H 3.3812788472823, 1.414: 1.2566370614 H 4.8078549919683, 2: 1.2566370614 H 6.8517791197973
+
+  PASS  synthetic 1a: carried to 1.5 w eps within 1e-9, by the fallback after the first step, no end
+  PASS  synthetic 1b: ends "lost" at eps = 1
+  PASS  synthetic 2: carried to -arcsin(eps) within 1e-9 through 0.9, then ends "lost" at 1.05
+  PASS  synthetic 3: carried at pi within 1e-9 throughout, "no longer the lowest minimum" first at 0.1
+  PASS  synthetic 4: carried at 0 through 0.8, then ends "not a minimum" at 1.2
+  PASS  pyramid 1: ends "not a minimum" at the kicked third ladder step, every accepted point at pi/5
+  PASS  pyramid 2: the coordinate follows pi/5 - delta_k and the physical angle stays at pi/5, within 1e-7
+  PASS  pyramid 2: |nu|, |mu| <= 1e-12 and no fallback at every accepted point
+  PASS  pyramid 3: minimum at pi/5 and maximum at 0 at every ladder point, within 1e-7
+  PASS  pyramid 3: the minimum stays below the maximum, or the swap is caught as registered
+all registered checks passed: True
+  caught  check 1: synthetic 1a: a point moved by 2e-9
+  caught  check 1: synthetic 1a: a step without the fallback
+  caught  check 2: synthetic 1b: the end one step later
+  caught  check 3: synthetic 2: the end reason changed
+  caught  check 3: synthetic 2: a point moved by 2e-9
+  caught  check 4: synthetic 3: the event one step later
+  caught  check 4: synthetic 3: a re-selection onto 0
+  caught  check 5: synthetic 4: ended "lost" instead
+  caught  check 6: pyramid 1: reaches eps_max instead
+  caught  check 6: pyramid 1: an accepted point at the maximum
+  caught  check 7: pyramid 2: a coordinate off by 2e-7
+  caught  check 7: pyramid 2: the coordinate never moved
+  caught  check 8: pyramid 2: nu at 2e-12
+  caught  check 8: pyramid 2: a fallback used
+  caught  check 9: pyramid 3: the maximum off by 2e-7
+  caught  check 10: pyramid 3: a swap that was not caught
+every mutation caught by its own check alone: True

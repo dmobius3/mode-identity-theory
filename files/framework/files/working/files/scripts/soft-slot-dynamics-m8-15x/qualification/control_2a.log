@@ -1,0 +1,41 @@
+M8.15.x control 2a: 2026-10-09T04:54:15Z
+readings: {'inspan_error': None, 'outcome': None, 'validity_eps_min': False, 'errors_eps_min': [None, 0.08116128035401032, 0.0014917381807986385], 'old_rule_fails_at': [0.25, 0.3535533905932738, 0.5, 0.7071067811865476, 1.0, 1.4142135623730951, 2.0, 2.8284271247461903, 4.0, 5.656854249492381, 8.0, 11.313708498984761, 16.0, 22.627416997969522, 32.0, 45.254833995939045, 64.0, 72.0]}
+
+  cross eps 0.25: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 0.3536: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 0.5: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 0.7071: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 1: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 1.414: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 2: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 2.828: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 4: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 5.657: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 8: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 11.31: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 16: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 22.63: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 32: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 45.25: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 64: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+  cross eps 72: {'ok': False, 'why': 'class counts differ'}; veto {'applies': False}
+
+  FAIL  1. the 0.9 rule puts the in-span block in G_tol at eps_min, level 3: dimension 8 against 6
+  PASS  2. the selected track reaches eps = 72 at both levels
+  FAIL  3. the three blocks anchored within 0.10, uniquely, at eps_min, level 3
+  FAIL  4. the in-span block tracked and genuine at every resolved point, level 3 from 0.25 and level 2 from 5.66
+  FAIL  5. identity at eps_min: overlap >= 0.9 with span(X_x, X_y), <= 0.1 with X_z, |lambda| >= 10 x the paired lift
+  FAIL  6. the candidate rule's cluster dimension: 6 at level 3; 12, 8, then 6 at level 2
+  FAIL  7. the Krein count balances at eps_min, level 3, with k_c = 1, k_i- = 1, k_r = 0
+  PASS  8. the veto passes wherever it applies
+  PASS  9. the cross-level points below 5.66 read Unresolved, from unequal class counts
+all registered checks passed: False
+  MISSED  check 1: the 0.9 rule keeping the in-span mode genuine
+  caught  check 2: level 2 ending early
+  MISSED  check 3: the quartet unanchored
+  MISSED  check 4: the in-span track lost at level 3
+  MISSED  check 5: the in-span block on the radical lift
+  MISSED  check 6: a level-3 cluster dimension of 8
+  MISSED  check 7: the Krein count unbalanced
+  MISSED  check 8: a veto failure
+  caught  check 9: a cross-level point below 5.66 passing

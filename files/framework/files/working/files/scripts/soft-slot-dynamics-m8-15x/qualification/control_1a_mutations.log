@@ -1,0 +1,12 @@
+parent: [True, True, True, True, True, True, True]
+  caught  check 1: a middle frozen iteration falls below 1e-11  (verdicts [False, True, True, True, True, True, True])
+  caught  check 1: the frozen solve stops at 39 iterations  (verdicts [False, True, True, True, True, True, True])
+  caught  check 1: the frozen seed solve converges  (verdicts [False, True, True, True, True, True, True])
+  caught  check 2: the plateau misses its prediction by 2e-3  (verdicts [True, False, True, True, True, True, True])
+  caught  check 3: the plateau is 0.9e-8  (verdicts [True, True, False, True, True, True, True])
+  caught  check 4: the bench test ends at 2e-11  (verdicts [True, True, True, False, True, True, True])
+  caught  check 4: the bench seed solve fails  (verdicts [True, True, True, False, True, True, True])
+  caught  check 5: sigma differs by 2e-12 relative  (verdicts [True, True, True, True, False, True, True])
+  caught  check 6: |nu| is 0.9e-8  (verdicts [True, True, True, True, True, False, True])
+  caught  check 7: mu misses its relation by 2e-6  (verdicts [True, True, True, True, True, True, False])
+every mutation caught by its own check alone: True

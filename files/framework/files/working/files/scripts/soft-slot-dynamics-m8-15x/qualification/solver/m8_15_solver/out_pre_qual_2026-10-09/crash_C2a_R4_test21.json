@@ -1,0 +1,37 @@
+{
+ "case": "C2a",
+ "slot": 4,
+ "crash": true,
+ "stage": "level 2",
+ "exception": "RuntimeError",
+ "message": "forced exception at stage level 2 (armed control, controls only)",
+ "traceback": [
+  {
+   "file": "m815_branch.py",
+   "line": 406,
+   "function": "<module>",
+   "code": "run_branch(a.case, a.slot, a.eps_max, log=lambda s: print(s, flush=True), levels=levels, T_override=a.T)"
+  },
+  {
+   "file": "m815_branch.py",
+   "line": 266,
+   "function": "run_branch",
+   "code": "stage('level 2')"
+  },
+  {
+   "file": "m815_branch.py",
+   "line": 30,
+   "function": "stage",
+   "code": "raise RuntimeError(f'forced exception at stage {name} (armed control, controls only)')"
+  }
+ ],
+ "frozen": {
+  "r_f3": 1.0397370289375376e-06,
+  "r_f2": 3.970232009242573e-05,
+  "delta_lev": 0.01,
+  "s2": 0.0006739134989217632,
+  "eta": 0.001,
+  "T": 1000.0
+ },
+ "written": "2026-10-08T21:03:53Z"
+}

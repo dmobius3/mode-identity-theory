@@ -15,7 +15,9 @@ The checks:
      freeze is never loaded, and nothing loads from outside the solver folder and Python's own installation;
   3. names: no file in the solver folder names the module left out of the freeze;
   4. the static inputs and Theorem D's record are byte-identical to M8.15's;
-  5. SHA256SUMS pins every file of the freeze and passes, and M8.15's SHA256SUMS still passes."""
+  5. SHA256SUMS pins every file of the freeze and passes, and M8.15's SHA256SUMS still passes. The guard file,
+     out/FROZEN.json, is not part of the freeze: it is written once a target's terms are frozen (REPRODUCE.md, note of
+     2026-10-11), and neither the sums nor check 5a count it."""
 import os
 for _k in ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS', 'MKL_NUM_THREADS'):
     os.environ[_k] = '1'          # the frozen environment, as m815_freeze.py records it
@@ -137,8 +139,11 @@ def walk(root):
                 yield os.path.relpath(os.path.join(d, n), root)
 
 
+GUARD = 'm8_15x_solver/out/FROZEN.json'          # written once a target's terms are frozen; not a file of the freeze
+
+
 def sums():
-    lines = [f'{sha(os.path.join(HERE, p))}  {p}\n' for p in sorted(walk(HERE)) if p != 'SHA256SUMS']
+    lines = [f'{sha(os.path.join(HERE, p))}  {p}\n' for p in sorted(walk(HERE)) if p not in ('SHA256SUMS', GUARD)]
     with open(os.path.join(HERE, 'SHA256SUMS'), 'w') as f:
         f.writelines(lines)
     print(f'SHA256SUMS: {len(lines)} files')
@@ -194,7 +199,7 @@ def check(qual_path=None):
     results.append(('4. static inputs and Theorem D', [f for f in STATIC if open(os.path.join(OUT, f), 'rb').read()
                                                       != open(os.path.join(M815_OUT, f), 'rb').read()]))
     ok_n, n, bad, pinned = check_sums(HERE)
-    unpinned = sorted(set(walk(HERE)) - set(pinned) - {'SHA256SUMS'})
+    unpinned = sorted(set(walk(HERE)) - set(pinned) - {'SHA256SUMS', GUARD})
     results.append((f'5a. SHA256SUMS here ({ok_n} of {n})', bad + [f'unpinned: {p}' for p in unpinned]))
     ok_m, m, bad_m, _ = check_sums(M815)
     results.append((f'5b. M8.15\'s SHA256SUMS ({ok_m} of {m})', bad_m))

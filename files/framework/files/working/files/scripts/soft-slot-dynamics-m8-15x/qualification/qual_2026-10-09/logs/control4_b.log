@@ -1,0 +1,5 @@
+  L3 eps 0.25: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.45e-06; peak resident 0.9 GB
+  L3 eps 0.3536: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.36e-06; peak resident 1.0 GB
+  L3 eps 0.5: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.23e-06; peak resident 1.0 GB
+  validity at eps_min: pass (worst 3.922%)
+INSTRUMENT EXCEPTION at stage level 2: RuntimeError: forced exception at stage level 2 (armed control, controls only); crash record written

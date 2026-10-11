@@ -51,3 +51,16 @@ From `m8_15x_solver/`:
 - **The targets** (`python3 m815_branch.py T2 4` and the rest) refuse to run until `out/FROZEN.json` exists. It is written once the first target's terms are frozen on `main`, before any target runs.
 
 **Resources:** as M8.15's. A level-3 phase peaks near 6.4 GB resident.
+
+## Note (2026-10-11T05:13:14Z): the qualification's record, the guard file, and a defect in the fast-spectrum search
+
+**The qualification's record** is now in `qualification/`, with a README. `SHA256SUMS` pins it with the rest of the folder. The instrument's files and `MANIFEST.json` are unchanged.
+
+**The guard file.** `m8_15x_solver/out/FROZEN.json` is written once the first target's terms are frozen on `main`. Check 5a flags any file `SHA256SUMS` does not pin, so `freeze_manifest.py` now leaves that one file out of the sums and out of the check. Nothing else in the check changes.
+
+**A defect in the fast-spectrum search** (`verdict.py`, `fast_search`), recorded and not repaired. M8.15's solver carries the same code.
+- **What it is.** The search tries 82 shifts. At its two real ones, `1e-3` and `ω/40`, `shift_invert` builds a real factorization, and the search hands it to complex ARPACK. The operator is then exact on real vectors and wrong on complex ones: the solve casts its right-hand side to real, while the second block, `y1 + s z`, keeps `y1`'s imaginary part. So those two steps are not valid shift-invert steps. Python reports a `ComplexWarning` from `linearize.py` when they run.
+- **What it does not touch:** the other 80 shifts; the slow spectrum, in real arithmetic; `n(L)`, a real symmetric solve; the closing controls' frequency check, which uses imaginary shifts.
+- **What it can do.** Every eigenvalue the search keeps passes a backward-error test against the true matrices. That test does not prove the kept eigenvalues distinct and correctly classified, so the defect is not shown to act only by missing modes.
+- **Where it has run.** No point of M8.15's run or of this instrument's qualification ran the search.
+- **Why it is not repaired.** A repair would change the verdict both instruments share, and the repaired instrument would not be the one the qualification qualified. Target 1's locator records what the search did at every point.

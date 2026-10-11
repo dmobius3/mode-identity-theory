@@ -1,0 +1,162 @@
+
+R4 coherent v3 [C2a]: zero cluster 4 (largest zero-cluster |λ|/max 0.0e+00, smallest genuine 0.0455)
+   |λ|/max   0.0455  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.0682  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.2424  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.4924  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 v2 [T1]: zero cluster 4 (largest zero-cluster |λ|/max 2.3e-16, smallest genuine 0.0278)
+   |λ|/max   0.0278  imag    Krein -1  mult 1  overlap: full 0.968, rotations 0.968, fibre+partner 0.000
+   |λ|/max   0.5000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.6111  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.8333  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 prism [T2]: zero cluster 8 (largest zero-cluster |λ|/max 2.8e-08, smallest genuine 0.3065)
+   |λ|/max   0.3065  imag    Krein +1  mult 2  overlap: full 0.641, rotations 0.641, fibre+partner 0.000
+   |λ|/max   0.3065  imag    Krein +1  mult 2  overlap: full 0.641, rotations 0.641, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 v1: zero cluster 6 (largest zero-cluster |λ|/max 2.1e-15, smallest genuine 0.1000)
+   |λ|/max   0.1000  imag    Krein -1  mult 1  overlap: full 0.996, rotations 0.996, fibre+partner 0.000
+   |λ|/max   0.1800  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.7200  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 D2 ray: zero cluster 8 (largest zero-cluster |λ|/max 6.5e-08, smallest genuine 0.2539)
+   |λ|/max   0.2539  real    Krein +1  mult 2  overlap: full 0.581, rotations 0.581, fibre+partner 0.000
+   |λ|/max   0.2539  real    Krein +1  mult 2  overlap: full 0.475, rotations 0.475, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 C3 ray: zero cluster 6 (largest zero-cluster |λ|/max 1.4e-07, smallest genuine 0.0368)
+   |λ|/max   0.0368  quartet Krein +1  mult 1  overlap: full 0.981, rotations 0.981, fibre+partner 0.000
+   |λ|/max   0.4530  imag    Krein -1  mult 1  overlap: full 0.084, rotations 0.084, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.135, rotations 0.135, fibre+partner 0.000
+
+R4 pyramid: zero cluster 6 (largest zero-cluster |λ|/max 4.8e-08, smallest genuine 0.0568)
+   |λ|/max   0.0568  imag    Krein -1  mult 1  overlap: full 0.997, rotations 0.997, fibre+partner 0.000
+   |λ|/max   0.0674  quartet Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.368, rotations 0.368, fibre+partner 0.000
+
+R4 octahedron: zero cluster 8 (largest zero-cluster |λ|/max 3.0e-08, smallest genuine 1.0000)
+   |λ|/max   1.0000  real    Krein -1  mult 3  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  real    Krein -1  mult 3  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  real    Krein +1  mult 3  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 zonal v0: zero cluster 6 (largest zero-cluster |λ|/max 4.6e-08, smallest genuine 0.6667)
+   |λ|/max   0.6667  real    Krein +1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.6667  real    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 hexagon [T3]: zero cluster 8 (largest zero-cluster |λ|/max 2.9e-09, smallest genuine 0.7864)
+   |λ|/max   0.7864  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.7864  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 coherent v3 [C2a]: zero cluster 4 (largest zero-cluster |λ|/max 4.2e-16, smallest genuine 0.0455)
+   |λ|/max   0.0455  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.0682  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.2424  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.4924  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 v2 [T1]: zero cluster 4 (largest zero-cluster |λ|/max 5.3e-16, smallest genuine 0.0278)
+   |λ|/max   0.0278  imag    Krein -1  mult 1  overlap: full 0.968, rotations 0.968, fibre+partner 0.000
+   |λ|/max   0.5000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.6111  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.8333  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 prism [T2]: zero cluster 8 (largest zero-cluster |λ|/max 7.2e-08, smallest genuine 0.3065)
+   |λ|/max   0.3065  imag    Krein +1  mult 2  overlap: full 0.641, rotations 0.641, fibre+partner 0.000
+   |λ|/max   0.3065  imag    Krein +1  mult 2  overlap: full 0.641, rotations 0.641, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 v1: zero cluster 6 (largest zero-cluster |λ|/max 1.3e-14, smallest genuine 0.1000)
+   |λ|/max   0.1000  imag    Krein -1  mult 1  overlap: full 0.996, rotations 0.996, fibre+partner 0.000
+   |λ|/max   0.1800  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.7200  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 D2 ray: zero cluster 8 (largest zero-cluster |λ|/max 5.1e-08, smallest genuine 0.2539)
+   |λ|/max   0.2539  real    Krein -1  mult 2  overlap: full 0.546, rotations 0.546, fibre+partner 0.000
+   |λ|/max   0.2539  real    Krein +1  mult 2  overlap: full 0.581, rotations 0.581, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 C3 ray: zero cluster 6 (largest zero-cluster |λ|/max 1.5e-07, smallest genuine 0.0368)
+   |λ|/max   0.0368  quartet Krein -1  mult 1  overlap: full 0.981, rotations 0.981, fibre+partner 0.000
+   |λ|/max   0.4530  imag    Krein -1  mult 1  overlap: full 0.084, rotations 0.084, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.135, rotations 0.135, fibre+partner 0.000
+
+R5 pyramid: zero cluster 6 (largest zero-cluster |λ|/max 1.1e-14, smallest genuine 0.0568)
+   |λ|/max   0.0568  imag    Krein -1  mult 1  overlap: full 0.997, rotations 0.997, fibre+partner 0.000
+   |λ|/max   0.0674  quartet Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.368, rotations 0.368, fibre+partner 0.000
+
+R5 octahedron: zero cluster 8 (largest zero-cluster |λ|/max 5.8e-08, smallest genuine 1.0000)
+   |λ|/max   1.0000  real    Krein -1  mult 3  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  real    Krein -1  mult 3  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  real    Krein +1  mult 3  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 zonal v0: zero cluster 6 (largest zero-cluster |λ|/max 3.4e-08, smallest genuine 0.6667)
+   |λ|/max   0.6667  real    Krein +1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.6667  real    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R5 hexagon [T3]: zero cluster 8 (largest zero-cluster |λ|/max 1.1e-08, smallest genuine 0.7864)
+   |λ|/max   0.7864  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.7864  imag    Krein -1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 weight 7/2 [C2b]: zero cluster 6 (largest zero-cluster |λ|/max 1.3e-16, smallest genuine 0.2000)
+   |λ|/max   0.2000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.3000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.6000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.9000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 weight 5/2: zero cluster 6 (largest zero-cluster |λ|/max 1.0e-15, smallest genuine 0.0980)
+   |λ|/max   0.0980  imag    Krein -1  mult 1  overlap: full 0.965, rotations 0.965, fibre+partner 0.000
+   |λ|/max   0.2745  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.8235  imag    Krein +1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.8235  imag    Krein +1  mult 2  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 weight 3/2: zero cluster 6 (largest zero-cluster |λ|/max 8.1e-16, smallest genuine 0.1487)
+   |λ|/max   0.1487  imag    Krein -1  mult 1  overlap: full 0.994, rotations 0.994, fibre+partner 0.000
+   |λ|/max   0.5115  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.6372  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.8920  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 weight 1/2: zero cluster 6 (largest zero-cluster |λ|/max 0.0e+00, smallest genuine 0.6547)
+   |λ|/max   0.6547  quartet Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.7825  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  quartet Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 line {7/2, -5/2}: zero cluster 8 (largest zero-cluster |λ|/max 2.0e-08, smallest genuine 0.5021)
+   |λ|/max   0.5021  real    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.5226  quartet Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 1  overlap: full 0.214, rotations 0.150, fibre+partner 0.000
+
+R2 line {7/2, -3/2} [T5]: zero cluster 10 (largest zero-cluster |λ|/max 1.2e-08, smallest genuine 0.8729)
+   |λ|/max   0.8729  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+   |λ|/max   0.8900  imag    Krein -1  mult 1  overlap: full 0.198, rotations 0.198, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein -1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 line {7/2, -1/2}: zero cluster 8 (largest zero-cluster |λ|/max 2.6e-08, smallest genuine 0.6389)
+   |λ|/max   0.6389  quartet Krein -1  mult 1  overlap: full 0.707, rotations 0.609, fibre+partner 0.000
+   |λ|/max   1.0000  quartet Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R2 line {5/2, -3/2}: zero cluster 12 (largest zero-cluster |λ|/max 2.4e-08, smallest genuine 0.6545)
+   |λ|/max   0.6545  imag    Krein +1  mult 1  overlap: full 0.370, rotations 0.280, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.000, rotations 0.000, fibre+partner 0.000
+
+R4 third outside orbit [T4, validation only]: zero cluster 6 (largest zero-cluster |λ|/max 1.1e-07, smallest genuine 0.0057)
+   |λ|/max   0.0057  imag    Krein -1  mult 1  overlap: full 0.996, rotations 0.996, fibre+partner 0.000
+   |λ|/max   0.1376  imag    Krein -1  mult 1  overlap: full 0.870, rotations 0.870, fibre+partner 0.000
+   |λ|/max   0.3070  imag    Krein -1  mult 1  overlap: full 0.195, rotations 0.193, fibre+partner 0.000
+   |λ|/max   1.0000  imag    Krein +1  mult 1  overlap: full 0.170, rotations 0.169, fibre+partner 0.000

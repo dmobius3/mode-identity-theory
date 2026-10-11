@@ -1,0 +1,47 @@
+M8.15.x control 1a rerun under the amendment, 2026-10-09T14:41:38Z: P5a, R4, level 2, seed solve at eps_min = 0.25; frozen arm 6058f95, 19 files checked
+
+bench: ok=True, 4 iterations (unprojected run: 4)
+  it   res(test)   old form    new form    projected   sigma               mu          nu
+   0   2.4643e+00  2.4643e+00  2.4643e+00  2.4643e+00  48.27530151018451  +0.0000e+00  +0.0000e+00
+   1   4.7359e-06  5.3830e-05  1.3672e-06  1.3672e-06  48.27504806359118  +5.3838e-05  -1.6227e-04
+   2   4.7729e-11  5.3836e-05  1.0840e-11  1.0832e-11  48.27504835508788  +5.3830e-05  -1.6230e-04
+   3   4.3457e-13  5.3836e-05  4.3437e-13  1.3195e-13  48.27504835508736  +5.3830e-05  -1.6230e-04
+
+floor 4.3457e-13 (unprojected 9.6062e-13); at the converged point: inside 1.3195e-13, outside 4.1384e-13; nu term outside 1.6e-19 (unprojected 8.5e-13)
+B_r^T(S_hat - M s) 4.3e-16 relative; S_hat outside 4.6e-16 (M s: 2.5e-09)
+not registered: frozen arm identical to 21:01Z: True; bench iterates vs 21:01Z, sigma, mu, nu within 1.9e-10 relative; Newton iterations 3 (unprojected 3)
+
+  PASS  1a check 1: old form never below 1e-11 in 40 iterations; frozen seed solve ends in a Newton failure
+  PASS  1a check 2: old form plateaus at |mu| |M p0| / |M x| within 1e-3 relative
+  PASS  1a check 3: the plateau is at least 1e-8
+  PASS  1a check 4: new form falls below 1e-11
+  PASS  1a check 5: same fixed point: sigma equal to 12 digits
+  PASS  1a check 6: |nu| >= 1e-8
+  PASS  1a check 7: mu = -nu <p, s>_M / <p, p0>_M within 1e-6 relative
+  PASS  1. B_r^T S_hat = B_r^T M s to 1e-12 relative
+  PASS  2. S_hat outside the fixed space at most 1e-12
+  PASS  4a. the floor is at most 6e-13
+  PASS  4b. the nu term outside the fixed space is at most 1e-15
+  PASS  5a. sigma unchanged to 12 digits
+  PASS  5b. mu unchanged to 1e-9 relative
+  PASS  5c. nu unchanged to 1e-9 relative
+all registered checks passed: True
+
+  caught  1. B_r^T S_hat = B_r^T M s to 1e-12 relative: a projection missing one basis column
+  caught  2. S_hat outside the fixed space at most 1e-12: the unprojected covector M s
+  caught  4a. the floor is at most 6e-13: the unprojected run's floor
+  caught  4b. the nu term outside the fixed space is at most 1e-15: the unprojected covector's nu term
+  caught  5a. sigma unchanged to 12 digits: sigma moved by 2e-12 relative
+  caught  5b. mu unchanged to 1e-9 relative: mu moved by 2e-9 relative
+  caught  5c. nu unchanged to 1e-9 relative: nu moved by 2e-9 relative
+  caught  3. (1a check 1): a middle frozen iteration falls below 1e-11
+  caught  3. (1a check 1): the frozen solve stops at 39 iterations
+  caught  3. (1a check 1): the frozen seed solve converges
+  caught  3. (1a check 2): the plateau misses its prediction by 2e-3
+  caught  3. (1a check 3): the plateau is 0.9e-8
+  caught  3. (1a check 4): the bench test ends at 2e-11
+  caught  3. (1a check 4): the bench seed solve fails
+  caught  3. (1a check 5): sigma differs by 2e-12 relative
+  caught  3. (1a check 6): |nu| is 0.9e-8
+  caught  3. (1a check 7): mu misses its relation by 2e-6
+every mutation caught by its own check alone: True

@@ -1,0 +1,16 @@
+floors: r_f(3) 1.0397370289375376e-06, r_f(2) 3.970232009242573e-05; tau0 = tau_Re = 10 r_f
+cluster gate (C1 to C3, levels 2 and 3): pass
+  C2a: ratios at 0.5 [0.9838, 0.9876, 0.9888, 0.9889, 0.9892], at 1 [0.9705, 0.9751, 0.9754, 0.978, 0.9786], at 2 [0.9437, 0.9506, 0.951, 0.9569, 0.9581]; within 5% at 0.5: True; monotone: True
+  C2b: ratios at 0.5 [0.9909, 0.991, 0.9921, 0.9928, 0.9934], at 1 [0.9819, 0.982, 0.9844, 0.9859, 0.9869], at 2 [0.9644, 0.9648, 0.9693, 0.9721, 0.9743]; within 5% at 0.5: True; monotone: True
+  C3: ratios at 0.5 [0.9898, 0.9898, 0.9898], at 1 [0.9798, 0.9798, 0.9798], at 2 [0.9605, 0.9605, 0.9605]; within 5% at 0.5: True; monotone: True
+  C1: frequency law 5.9e-13, Theorem D 1.2e-13: pass
+linear gates (level 3): pass
+level stability: d3 1.25e-04, delta_lev 1.00e-02 (freezes)
+  dynamics C1: Persists (wanted Persists): pass; max d_perp 9.997e-04, d_rot max 1.58e-06, reference 2.4e-12, charge 7.2e-13, energy oscillation 0.096 and drift 1.3e-03 of E_eta (read until t = 999); t_fail None, d_rot at fail None
+  dynamics C2a: Persists (wanted Persists): pass; max d_perp 9.999e-04, d_rot max 1.06e-06, reference 6.6e-13, charge 1.0e-13, energy oscillation 0.096 and drift 8.4e-04 of E_eta (read until t = 1000); t_fail None, d_rot at fail None
+  dynamics C2b: Persists (wanted Persists): pass; max d_perp 9.998e-04, d_rot max 1.79e-06, reference 4.7e-13, charge 1.1e-13, energy oscillation 0.099 and drift 1.2e-03 of E_eta (read until t = 999); t_fail None, d_rot at fail None
+  dynamics C3: Fails (wanted Fails): pass; max d_perp 9.040e-01, d_rot max 2.44e-01, reference 3.3e-11, charge 1.1e-14, energy oscillation 0.098 and drift 9.2e-04 of E_eta (read until t = 583); t_fail 583.2840534605136, d_rot at fail 4.008264062558979e-05
+  C3 rate: fitted 0.009741 on t in [347, 1000] (655 points) against the level-2 linear 0.009737: ratio 1.00032: pass
+dynamic gates (level 2): pass
+  schedule T4/R4: modes resolved after 0.25: [(0.005737, 1.4142135623730951)]
+  schedule T4/R5: modes resolved after 0.25: [(0.005737, 2.0)]

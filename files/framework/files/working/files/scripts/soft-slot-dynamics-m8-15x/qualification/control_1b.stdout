@@ -1,0 +1,42 @@
+M8.15.x control 1b, 2026-10-08T23:30:14Z: P5 (the pyramid), R4, level 2, at the seed norm of eps_min; theta_start = pi/10; frozen arm 6058f95, 19 files checked
+
+one period: 23 Newton solves in 28.4 s; grid energy range 1.1002e-05
+  grid:  theta        nu           mu           H                     sigma
+        0.3141592654  +1.6231e-04  -5.3830e-05  0.8357556550055069  48.275057700634
+        0.4398229715  +1.3499e-04  -4.4723e-05  0.8357522079955668  48.274854469195
+        0.5654866776  +5.2439e-05  -1.7361e-05  0.8357500297663567  48.274723347955
+        0.6911503838  -5.2439e-05  +1.7361e-05  0.8357500297663567  48.274723347955
+        0.8168140899  -1.3499e-04  +4.4723e-05  0.8357522079955667  48.274854469195
+        0.9424777961  -1.6231e-04  +5.3830e-05  0.8357556550055066  48.275057700634
+        1.0681415022  -1.2766e-04  +4.2384e-05  0.8357590071720229  48.275250049551
+        1.1938052084  -4.7909e-05  +1.5916e-05  0.8357610319342209  48.275363560026
+        1.3194689145  +4.7909e-05  -1.5916e-05  0.8357610319342214  48.275363560026
+        1.4451326207  +1.2766e-04  -4.2384e-05  0.8357590071720229  48.275250049551
+        1.5707963268  +1.6231e-04  -5.3830e-05  0.8357556550055069  48.275057700634
+  roots: theta              off-symmetric   nu           mu           H                     min  res
+        0.628318530715598  2.4e-12       -4.9392e-16  +8.5342e-15  0.8357497334820766  yes  3.9e-13
+        1.256637061441336  5.4e-12       +1.0199e-16  +8.4682e-15  0.8357613020012542  no   8.0e-12
+  selected: theta 0.628318530715598 (nearest symmetric angle 0.628319), H 0.8357497334820766; near-degenerate []
+two periods: minima [(0.628318530716, 0), (1.884955592151, 0)], classes 1, pair overlaps {'0,1': 1.0000000000000004}
+frozen at the selected angle: ok=True, iterations 2.38e+00, 3.95e-06, 9.80e-11, 3.94e-13
+reference run, selected point: dt 0.008186672656924, every 122 steps, to t = 999.773 (T_int 1000.002065); max d_ref 1.572e-12; first above eta at None; charge drift 7.5e-14; 4468.3 s
+reference run, 1a off-critical point (diagnostic): dt 0.008186672656924, every 122 steps, to t = 999.773 (T_int 1000.002065); max d_ref 6.602e-02; first above eta at 41.94851069407804; charge drift 4.5e-13; 4479.4 s
+off-critical point: nu -1.6231e-04, mu +5.3830e-05
+
+  PASS  1. every root within 1e-7 of 0 or pi/5, modulo 2 pi/5
+  PASS  2. at the selected minimum, |nu| <= 1e-12 and |mu| <= 1e-12
+  PASS  3. the frozen solver passes its own test there, and the bench passes the new one
+  PASS  4. the selection is the lower-energy of the two symmetric angles
+  PASS  5. over two periods the selected minimum is found twice and counted once
+  PASS  6. the reference run at the selected point holds d_ref <= 1e-3 over T = 1000
+all registered checks passed: True
+  caught  check 1: a root moved by 2e-7
+  caught  check 2: nu at 2e-12
+  caught  check 2: mu at -2e-12
+  caught  check 3: the frozen solve fails
+  caught  check 3: the bench test ends at 2e-11
+  caught  check 4: the energies of the two symmetric points swapped
+  caught  check 5: the two copies counted as two classes
+  caught  check 6: d_ref reaches 1.1e-3
+  caught  check 6: the reference run stops one step short
+every mutation caught by its own check alone: True

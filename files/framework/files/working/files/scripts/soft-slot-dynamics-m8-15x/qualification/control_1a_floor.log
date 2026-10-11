@@ -1,0 +1,9 @@
+control 1a, the new test's floor at the bench arm's converged point (not registered)
+  9.6042e-13  full bordered residual |F| / |Mx| (the recorded test value)  [recorded 9.6042e-13]
+  1.3105e-13  its part inside the fixed space, |Br^T F| / |Mx|
+  9.5144e-13  its part outside the fixed space
+  8.5166e-13  nu times the slice force vector outside the fixed space, |nu out(M s)| / |Mx|
+  4.1732e-13  the remainder outside, |out(F) - nu out(M s)| / |Mx|
+  3.3591e-04  the slice term, |nu M s| / |Mx|
+  5.3836e-05  the phase term, |mu M p0| / |Mx|
+  2.5354e-09  the fraction of M s outside the fixed space

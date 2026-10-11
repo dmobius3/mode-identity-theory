@@ -1,0 +1,7 @@
+  mu 7.4833166502 (x2): 2 within 1e-6 on the lowest level; nearest {'lam': [2.828870523535464e-15, 7.483316650180221], 'rel': 1.2456248817788898e-15, 'lowest_level_overlap': 0.9999999999515516}
+  mu 8.2462129543 (x1): 1 within 1e-6 on the lowest level; nearest {'lam': [2.6205446441487763e-16, 8.246212954251686], 'rel': 1.2170940212688522e-13, 'lowest_level_overlap': 0.9999999999515544}
+{
+ "law": 5.911458831362261e-13,
+ "theoremD_rel": 1.2170940212688522e-13,
+ "ok": true
+}

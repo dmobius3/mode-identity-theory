@@ -1,0 +1,29 @@
+M8.15.x, the kind rule and the carry record: 2026-10-09T14:49:24Z, 234.4 s
+
+(a) pyramid, theta_start = 0: 0.000000000000 max (H test max, grid point); 0.628318530718 min (H test min, grid point); selected {'theta': 0.6283185307179586, 'H': 0.8357497334820765, 'sigma': 48.27470535685818}
+(b) synthetic -cos, grid from 0: 0.000000000000 min (grid point); 3.141592653590 max (grid point)
+(c) 1b grid: 0.628318531 plain min, flipped unresolved, flipped without H max; 1.256637061 plain max, flipped unresolved, flipped without H min
+(d) 1b angle solve: {'one_period': {'identical_but_new_fields': True, 'kinds_old': ['min', 'max'], 'kinds_new': ['min', 'max'], 'selected_same': True}, 'two_periods': {'identical_but_new_fields': True, 'kinds_old': ['min', 'max', 'min', 'max'], 'kinds_new': ['min', 'max', 'min', 'max'], 'selected_same': True}}
+(d) carry rerun: checks [True, True, True, True, True, True, True, True, True, True]; ends {'1a': None, '1b': 'the carried root is lost: no minimum within two grid spacings', '2': 'the carried root is lost: no minimum within two grid spacings', '3': None, '4': 'the carried root is not a minimum', 'arm1': 'the carried root is not a minimum', 'arm2': 'eps_max', 'arm3': 'eps_max'}; max change in the physical angle {'arm1': 0.0, 'arm2': 0.0, 'arm3': 0.0}; Newton solves {'arm1': 41, 'arm2': 82, 'arm3': 86} -> {'arm1': 41, 'arm2': 82, 'arm3': 86}
+(e) goto with a kick: returned None; events [{'at': 0.5, 'track': 'selected', 'event': 'the carried root is not a minimum', 'theta': 4.446743973388413e-12, 'm': 0.06958684676125614}]; accepted unchanged True
+(f) arm 1 end: ['the carried root is not a minimum', {'m': 0.04920533278082584, 'eps': 0.3535534039707855, 'theta_tried': 6.9054839264473415e-12, 'm_tried': 0.06958781172483543}]
+
+  PASS  (a) the pyramid at theta_start = 0: 0 a maximum and pi/5 a minimum, each once; pi/5 selected, matching 1b
+  PASS  (b) synthetic -cos from 0: a minimum at 0 and a maximum at pi, each once
+  PASS  (c) a flipped convention on 1b's grid leaves both roots unresolved
+  PASS  (d) 1b's angle solve reproduces its roots, kinds and selection
+  PASS  (d) the carry's ten checks pass again, with the same ends and angles within 1e-7
+  PASS  (e) an end inside goto returns no point, is recorded, and leaves the accepted points
+  PASS  (f) arm 1's end records a trial norm above the last accepted one
+all registered checks passed: True
+  caught  check 1: (a) the H-only rule, which classifies neither grid-point root
+  caught  check 2: (b) a grid-point root entered twice
+  caught  check 2: (b) reversed neighbour signs
+  caught  check 3: (c) no H cross-check, so the flipped convention classifies
+  caught  check 4: (d) a kind changed in the 1b regression
+  caught  check 5: (d) one of the carry's checks failing
+  caught  check 5: (d) an end reason changed
+  caught  check 6: (e) the bisection step returning a point
+  caught  check 6: (e) the accepted points changed
+  caught  check 7: (f) no trial norm
+every mutation caught by its own check alone: True
