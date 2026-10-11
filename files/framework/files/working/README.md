@@ -542,7 +542,7 @@ Registered and exploratory tests run against public datasets, with verdicts.
 
 **Test:** Do Pantheon+ and DESI DR2 BAO allow the closed effective metric that the propagation theorem gives a light carrier in its class: the fitted D+Λ rate unchanged, and the closed transverse distance $`D_M = R\sin(\chi/R)`$, at the radius readings on record? Frozen before any run: the model and its declarations; three readings, of which A, the coupling radius of 6.13 Gpc, sets the Verdict, while B (19.7 Gpc) and C (10.5 Gpc) are reported beside it; two scale rows, $`H_0 = 67.36`$ and $`73.04`$ km/s/Mpc; the data and the Λcos instrument, pinned by hash; seven gates with their mutation arms; and bars on $`\Delta\chi^2`$ of 25 (EXCLUDED) and 9 (DISFAVORED). The expectation recorded before the freeze: A excluded decisively, C between the bars, B out of reach, and the data's own bound near $`\Omega_0 R \ge 16.6`$ Gpc.
 
-**Registered (2026-10-11):** Frozen before any run. The instrument qualified on Λcos candidate `32d9d1a`, and the run follows once, from the tag `closed-distance-v1.0`.
+**Result (2026-10-11):** Negative. A (6.13 Gpc) is EXCLUDED, at $`\Delta\chi^2`$ = 135.6 and 97.3 in the two scale rows; C (10.5 Gpc) is DISFAVORED, at 14.2 and 9.93; B (19.7 Gpc) is NOT EXCLUDED, at 0.62 and 0.36. The data's own region is $`\Omega_0 R \ge 15.2`$ Gpc at the anchor's $`H_0`$ (14.0 at SH0ES's), with flat inside it, and closure is not preferred. All three grades fell as registered.
 
 ---
 

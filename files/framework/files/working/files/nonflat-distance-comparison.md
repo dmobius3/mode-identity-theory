@@ -6,8 +6,9 @@
 # The Nonflat Distance Comparison
 
 **Type:** Test
-**State:** Active
-**Status (2026-10-11):** Frozen before any run, with the instrument qualified on its candidate commit. Not yet run: the closed model has not been evaluated on the measured data.
+**State:** Closed
+**Verdict:** Negative
+**Status (2026-10-11):** Run once from the tag. Verdict Negative: A (6.13 Gpc) EXCLUDED, C (10.5 Gpc) DISFAVORED and B (19.7 Gpc) NOT EXCLUDED, each the same in both scale rows. The data's own region is $`\Omega_0 R \ge 15.2`$ Gpc at the anchor's $`H_0`$ (14.0 at SH0ES's), and closure is not preferred.
 **Summary:** The SN+BAO comparison the stress-tensor bridge owes a closed effective metric: the fitted D+Λ rate with the closed transverse distance $`D_M = R\sin(\chi/R)`$, scored against Pantheon+ and DESI DR2 BAO at the radius readings on record.
 **Inputs:** `propagation-theorem.md`, `r-problem.md`, `claim-ledger.md`, `r-from-mass-spectrum.md`, `molien-step-two.md`, `temporal-budget.md`, `redshift-and-cooling.md`, the Λcos Model D+Λ pipeline
 **Parent:** `stress-tensor-bridge.md`
@@ -265,6 +266,42 @@ What remains, in order:
 3. Both units' final green, and Blake's go (2026-10-11).
 4. The freeze (2026-10-11). This page is committed to MIT main, with the tolerances, pinning the Λcos candidate commit and the script's SHA-256. Then the tag `closed-distance-v1.0` is cut on that commit.
 5. The run, once, from the tag (§3). Its one results commit records this page's SHA-256 at the freeze, so the candidate commit never changes. Then Λcos main is brought up to it by a merge that keeps its own history, and the record is entered here.
+
+## Results
+
+**Executed 2026-10-11, once,** from the Λcos tag `closed-distance-v1.0` (commit `32d9d1a`), in a clean checkout. The single results commit is `51f7144`, merged into Λcos main as `00ff986`, and the run's whole record is `results/closed_distance/run.json` there.
+- The environment check passed.
+- G6b passed against this registration: MIT `a9a97c9`, page SHA-256 `7afde5e5dca55f2be6fa55b4ea0c6e14eab5106021fab5b8d0f6a9f5035d91bb`.
+- G1 to G5 passed again at the frozen tolerances, with floors identical to qualification.
+
+| reading | $`\Delta\chi^2`$ at 67.36 | grade | $`\Delta\chi^2`$ at 73.04 | grade | the reading's grade |
+|---|---|---|---|---|---|
+| A, 6.13 Gpc | 135.6 | EXCLUDED | 97.3 | EXCLUDED | EXCLUDED |
+| C, 10.5 Gpc | 14.2 | DISFAVORED | 9.93 | DISFAVORED | DISFAVORED |
+| B, 19.7 Gpc | 0.62 | NOT EXCLUDED | 0.36 | NOT EXCLUDED | NOT EXCLUDED |
+
+**Verdict: Negative.** A is EXCLUDED in both rows (§4).
+
+**What each grade means, as §6 fixed it:**
+- **A, EXCLUDED.** At 6.13 Gpc, with $`\Omega_0 = 1`$, SN+BAO exclude the closed effective metric the theorem gives. A metric effective description at that radius then needs one of four routes: a carrier outside the class; a representative that gives up the domain's symmetry on an open patch; giving up the metricization; or a scale standard other than $`\Omega_0 = 1`$, which the region below limits. The flat dictionary is untouched, and the reading itself was an input, not tested.
+- **C, DISFAVORED.** A tension at 10.5 Gpc, recorded; no route is forced. At 73.04 it cleared the bar by 0.93.
+- **B, NOT EXCLUDED.** At 19.7 Gpc the closed effective metric meets the bridge's §VI condition. That is necessary, not sufficient: branch (b) still owes the derived map $`g_\text{static} \to g_\text{eff}`$ and an independently derived effective source.
+
+**The data's own region.**
+- **The minimum.** The profile's refined minimum lies at $`u = 0.0137`$ ($`\zeta = 8.53`$), 0.098 below the flat value. That is interior by the $`10^{-6}`$ cut, so the region reads as nominally two-sided, and only its smallest-$`\zeta`$ end as the bound.
+- **The region.** It is one interval, $`u \le 0.0860`$, with flat inside it: $`\zeta \ge 3.410`$. So $`\Omega_0 R \ge 15.2`$ Gpc at the anchor's $`H_0`$, and $`\ge 14.0`$ Gpc at SH0ES's.
+- **Closure is not preferred.** $`\chi^2_\text{flat} - \min_\zeta \chi^2 = 0.098`$, against the bar of 9.
+
+**Against the registered expectation.** All three grades fell as expected.
+- **The Δχ² values.** Each sits below its expectation by about a third of the forecast's indicative standard deviation:
+
+  | reading | at 67.36 | at 73.04 |
+  |---|---|---|
+  | A | 135.6 against 143.6 (spread 24.0) | 97.3 against 104.1 (spread 20.4) |
+  | C | 14.2 against 16.8 (spread 8.2) | 9.9 against 12.2 (spread 7.0) |
+  | B | 0.62 against 1.36 (spread 2.33) | 0.36 against 0.98 (spread 1.98) |
+
+- **The bound.** It came out at 3.41, looser than the expected 3.72. This is the same small lean toward closure that puts the minimum inside.
 
 ## Sources
 
