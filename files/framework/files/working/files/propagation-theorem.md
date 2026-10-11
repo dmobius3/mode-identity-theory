@@ -121,12 +121,12 @@ The theorem establishes two things for a carrier in the class:
 
 [The stress-tensor bridge](stress-tensor-bridge.md) adopts flat effective slices (§VI), and types branch (b) as needing an effective propagation that admits a metric (§III). It also records that the closed domain carries no flat metric at all.
 
-Suppose branch (b)'s $`g_\text{eff}`$ is required to metricize the cone of a declared carrier in this class, and to share the domain's symmetry. Then its slices are closed and round, and in comoving terms its distance relation is $`D_M = R\sin(\chi/R)`$ at $`\Omega_0 = 1`$. So a flat $`g_\text{eff}`$ needs one of three things:
+Suppose branch (b)'s $`g_\text{eff}`$ is required to metricize the cone of a declared carrier in this class, and to share the domain's symmetry. Then its slices are closed and round, and in comoving terms its distance relation is $`D_M = R\sin(\chi/R)`$ at $`\Omega_0 = 1`$. So a flat $`g_\text{eff}`$ needs one of three things (DERIVED, given the declarations of §I):
 - a carrier outside the class;
 - a representative that gives up the domain's symmetry on an open patch;
 - or giving up that metricization.
 
-A closed $`g_\text{eff}`$ owes the comparison with the nonflat distance relation, which §VI says accepting it would require. (DERIVED, given the declarations of §I.)
+**Distance comparison (2026-10-11).** The registered SN+BAO test of this closed effective branch is recorded in [The Nonflat Distance Comparison](nonflat-distance-comparison.md). Its outcome applies to the declared metric and radius identification, not to the propagation theorem itself or the framework's adopted flat dictionary.
 
 ## VI. Checks
 
