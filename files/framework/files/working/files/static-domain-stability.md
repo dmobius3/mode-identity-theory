@@ -116,6 +116,8 @@ The framework fixes the radius of the static $`S^3`$ ([the engine](../../../READ
 
 For a barotropic perfect-fluid source, after the removal the admitted sectors are free of linear growth exactly when $`c_s^2 > 1/5`$, since H-ANISO and I-V/T are neutral. Such a candidate on (a) or (c) owes two things: a frozen homogeneous source sector, stated as a cost, and a response law with $`c_s^2 > 1/5`$. A non-barotropic source carries degrees of freedom the scalar equation does not classify, and its cells stay OPEN.
 
+**Note (2026-10-10).** The radius is now ruled a kinematic parameter of the model ([the postulate bridge](postulate-bridge.md#dynamical-direction)). Holding it fixed is therefore the framework's standing case, the table's last row, and the H-ISO entries of the rows above it describe a sector outside the admissible phase space. The derivations above are unchanged.
+
 ## V. Branch (b)
 
 By the branch's own definition, the static metric is substrate and solves no Einstein equation with matter. So all four sectors are NOT APPLICABLE to the Einstein-static test, and a substrate dynamics supplied later is analyzed under its own equations. Two things are left elsewhere.
