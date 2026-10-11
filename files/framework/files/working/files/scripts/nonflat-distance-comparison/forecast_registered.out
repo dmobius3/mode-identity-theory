@@ -1,0 +1,9 @@
+A R= 6.13 Gpc  H0=67.36  zeta=1.3773  dchi2= 143.615  s0_hat=0.0010  sd= 23.97  P(EXCL)=1.000  P(DISF)=0.000  P(NOT)=0.000
+C R=10.50 Gpc  H0=67.36  zeta=2.3592  dchi2=  16.795  s0_hat=0.0010  sd=  8.20  P(EXCL)=0.158  P(DISF)=0.671  P(NOT)=0.171
+B R=19.70 Gpc  H0=67.36  zeta=4.4264  dchi2=   1.359  s0_hat=0.0010  sd=  2.33  P(EXCL)=0.000  P(DISF)=0.001  P(NOT)=0.999
+A R= 6.13 Gpc  H0=73.04  zeta=1.4935  dchi2= 104.050  s0_hat=0.0010  sd= 20.40  P(EXCL)=1.000  P(DISF)=0.000  P(NOT)=0.000
+C R=10.50 Gpc  H0=73.04  zeta=2.5582  dchi2=  12.155  s0_hat=0.0010  sd=  6.97  P(EXCL)=0.033  P(DISF)=0.642  P(NOT)=0.325
+B R=19.70 Gpc  H0=73.04  zeta=4.7996  dchi2=   0.983  s0_hat=0.0010  sd=  1.98  P(EXCL)=0.000  P(DISF)=0.000  P(NOT)=1.000
+expected one-sided 95% bound: zeta >= 3.7242  ->  Omega0 R >= 16.58 Gpc at 67.36, 15.29 Gpc at 73.04
+flat self-check chi2 = 9.52e-25
+synthetic sets written: 12 closed + 1 flat
