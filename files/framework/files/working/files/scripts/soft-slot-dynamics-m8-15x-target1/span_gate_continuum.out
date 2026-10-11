@@ -1,0 +1,14 @@
+In each frozen frame (g0 from orientations.json):
+  C2a/R4 L2: singular values / largest = 1.0000, 0.6134, 0.3587, 0.0000; gate statistic sigma_3/sigma_1 = 0.3587, sigma_4/sigma_1 = 0.0000; generator norms 1.000, 1.225, 2.632, 1.890
+  C2a/R4 L3: singular values / largest = 1.0000, 0.6134, 0.3587, 0.0000; gate statistic sigma_3/sigma_1 = 0.3587, sigma_4/sigma_1 = 0.0000; generator norms 1.000, 1.225, 2.632, 1.890
+  C3/R4 L2: singular values / largest = 1.0000, 1.0000, 1.0000, 1.0000; gate statistic sigma_4/sigma_1 = 1.0000; generator norms 1.000, 2.000, 2.000, 2.000
+  C3/R4 L3: singular values / largest = 1.0000, 1.0000, 1.0000, 1.0000; gate statistic sigma_4/sigma_1 = 1.0000; generator norms 1.000, 2.000, 2.000, 2.000
+  T2/R4 L2: singular values / largest = 1.0000, 0.9775, 0.9661, 0.9661; gate statistic sigma_4/sigma_1 = 0.9661; generator norms 1.000, 2.000, 2.000, 2.000
+  T2/R4 L3: singular values / largest = 1.0000, 0.9775, 0.9661, 0.9661; gate statistic sigma_4/sigma_1 = 0.9661; generator norms 1.000, 2.000, 2.000, 2.000
+  T3/R5 L2: singular values / largest = 1.0000, 0.6667, 0.4082, 0.4082; gate statistic sigma_4/sigma_1 = 0.4082; generator norms 1.000, 2.000, 2.000, 2.000
+  T3/R5 L3: singular values / largest = 1.0000, 0.6667, 0.4082, 0.4082; gate statistic sigma_4/sigma_1 = 0.4082; generator norms 1.000, 2.000, 2.000, 2.000
+Smallest sigma_d/sigma_1 over 20000 random frames (numpy default_rng(20261009)):
+  C2a: min 0.3154, max 0.7071
+  C3: min 1.0000, max 1.0000
+  T2: min 0.9643, max 0.9998
+  T3: min 0.3820, max 0.9944

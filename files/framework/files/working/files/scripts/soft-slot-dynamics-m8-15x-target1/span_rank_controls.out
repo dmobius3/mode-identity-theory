@@ -1,0 +1,6 @@
+C2a L2 eps 0.25: 1 fibre + 3 rotation vectors; singular values / largest: 1.000e+00, 6.134e-01, 3.588e-01, 7.554e-03
+C2a L2 eps 2.0: 1 fibre + 3 rotation vectors; singular values / largest: 1.000e+00, 6.134e-01, 3.588e-01, 6.907e-03
+C2a L2 eps 16.0: 1 fibre + 3 rotation vectors; singular values / largest: 1.000e+00, 6.134e-01, 3.588e-01, 6.890e-03
+C3 L2 eps 0.25: 1 fibre + 3 rotation vectors; singular values / largest: 1.000e+00, 1.000e+00, 1.000e+00, 1.000e+00
+C3 L2 eps 2.0: 1 fibre + 3 rotation vectors; singular values / largest: 1.000e+00, 1.000e+00, 1.000e+00, 1.000e+00
+C3 L2 eps 16.0: 1 fibre + 3 rotation vectors; singular values / largest: 1.000e+00, 1.000e+00, 1.000e+00, 1.000e+00

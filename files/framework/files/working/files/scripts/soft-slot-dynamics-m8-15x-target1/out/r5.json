@@ -1,0 +1,47 @@
+{
+ "stamp": "2026-10-11T00:33:59Z",
+ "cases": [
+  {
+   "case": "no FROZEN.json",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, no FROZEN.json.",
+   "expected": "refused",
+   "ok": true
+  },
+  {
+   "case": "one value differing",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, FROZEN.json differs from freeze_numbers.json in ['T'].",
+   "expected": "refused",
+   "ok": true
+  },
+  {
+   "case": "a terms hash that differs",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the terms' SHA-256 does not match FROZEN.json.",
+   "expected": "refused",
+   "ok": true
+  },
+  {
+   "case": "an empty go",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, no go.",
+   "expected": "refused",
+   "ok": true
+  },
+  {
+   "case": "complete and matching",
+   "outcome": "passed the guard",
+   "message": null,
+   "expected": "passed the guard",
+   "ok": true
+  }
+ ],
+ "arm": {
+  "case": "one value differing, equality check disabled",
+  "outcome": "passed the guard",
+  "caught": true
+ },
+ "passed": true,
+ "scratch": "a temporary copy, removed afterwards"
+}

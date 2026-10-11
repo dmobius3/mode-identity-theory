@@ -1,0 +1,248 @@
+{
+ "stamp": "2026-10-11T05:00:47Z",
+ "results": {
+  "R1": {
+   "passed": true,
+   "checks": [
+    [
+     "one step at level 3",
+     true
+    ],
+    [
+     "structural, dnL = dnS = -2 at level 3",
+     true
+    ],
+    [
+     "crossing eigenvectors structural at both ends, level 3",
+     true
+    ],
+    [
+     "every point passes the gate (d = 3), coverage and the subspace, level 3",
+     true
+    ],
+    [
+     "named \"no genuine crossing detected at level 3\"",
+     true
+    ],
+    [
+     "one step at level 2",
+     true
+    ],
+    [
+     "structural, dnL = dnS = -2 at level 2",
+     true
+    ],
+    [
+     "crossing eigenvectors structural at both ends, level 2",
+     true
+    ],
+    [
+     "every point passes the gate (d = 3), coverage and the subspace, level 2",
+     true
+    ],
+    [
+     "named \"no genuine crossing detected at level 2\"",
+     true
+    ]
+   ],
+   "arm": {
+    "caught": true,
+    "checks": [
+     [
+      "one step at level 2",
+      true
+     ],
+     [
+      "structural, dnL = dnS = -2 at level 2",
+      false
+     ],
+     [
+      "crossing eigenvectors structural at both ends, level 2",
+      false
+     ],
+     [
+      "every point passes the gate (d = 3), coverage and the subspace, level 2",
+      false
+     ],
+     [
+      "named \"no genuine crossing detected at level 2\"",
+      true
+     ]
+    ]
+   }
+  },
+  "R2": {
+   "passed": true,
+   "checks": [
+    [
+     "no step at level 3",
+     true
+    ],
+    [
+     "n(L) = 9 at every point, level 3",
+     true
+    ],
+    [
+     "every point passes the gate (d = 4), coverage and the subspace, level 3",
+     true
+    ],
+    [
+     "named \"no genuine crossing detected at level 3\"",
+     true
+    ],
+    [
+     "no step at level 2",
+     true
+    ],
+    [
+     "n(L) = 9 at every point, level 2",
+     true
+    ],
+    [
+     "every point passes the gate (d = 4), coverage and the subspace, level 2",
+     true
+    ],
+    [
+     "named \"no genuine crossing detected at level 2\"",
+     true
+    ]
+   ],
+   "arm": {
+    "caught": true,
+    "checks": [
+     [
+      "no step at level 3",
+      false
+     ],
+     [
+      "n(L) = 9 at every point, level 3",
+      false
+     ],
+     [
+      "every point passes the gate (d = 4), coverage and the subspace, level 3",
+      false
+     ],
+     [
+      "named \"no genuine crossing detected at level 3\"",
+      true
+     ],
+     [
+      "no step at level 2",
+      false
+     ],
+     [
+      "n(L) = 9 at every point, level 2",
+      false
+     ],
+     [
+      "every point passes the gate (d = 4), coverage and the subspace, level 2",
+      false
+     ],
+     [
+      "named \"no genuine crossing detected at level 2\"",
+      true
+     ]
+    ]
+   }
+  },
+  "R3": {
+   "passed": true,
+   "checks": [
+    [
+     "a step Unresolved (Newton failure) at the first bisection midpoint",
+     true
+    ],
+    [
+     "its residual history recorded, every attempt",
+     true
+    ],
+    [
+     "a record written, finished",
+     true
+    ]
+   ],
+   "arm": {
+    "caught": true,
+    "checks": [
+     [
+      "a step Unresolved (Newton failure) at the first bisection midpoint",
+      false
+     ],
+     [
+      "its residual history recorded, every attempt",
+      false
+     ],
+     [
+      "a record written, finished",
+      true
+     ]
+    ]
+   }
+  },
+  "R4 (C3)": {
+   "passed": true,
+   "checks": [
+    [
+     "types and reasons equal",
+     true
+    ],
+    [
+     "cross-level records equal",
+     true
+    ],
+    [
+     "points: every frozen field bit for bit",
+     true
+    ],
+    [
+     "level2: every frozen field bit for bit",
+     true
+    ]
+   ],
+   "arm": {
+    "caught": true,
+    "checks": [
+     [
+      "the arm: every C3 point Unresolved (level stability)",
+      true
+     ]
+    ]
+   }
+  },
+  "R4 (C2a)": {
+   "passed": true,
+   "checks": [
+    [
+     "types and reasons equal",
+     true
+    ],
+    [
+     "cross-level records equal",
+     true
+    ],
+    [
+     "points: every frozen field bit for bit",
+     true
+    ],
+    [
+     "level2: every frozen field bit for bit",
+     true
+    ]
+   ],
+   "arm": null
+  },
+  "R4b": {
+   "passed": true,
+   "arms": {
+    "tau0_3": true,
+    "s2": true,
+    "omega0": true,
+    "dlev": true,
+    "sch": true
+   }
+  },
+  "R5": {
+   "passed": true
+  }
+ }
+}

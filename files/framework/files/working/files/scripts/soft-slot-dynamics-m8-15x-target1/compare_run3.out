@@ -1,0 +1,10 @@
+  PASS  the same driver records: ['t1_C2a_R4_R1R4.json', 't1_C2a_R4_R1arm.json', 't1_C2a_R4_R3.json', 't1_C2a_R4_R3arm.json', 't1_C3_R4_R2R4.json']
+  PASS  t1_C2a_R4_R1R4.json equals run 3's
+  PASS  t1_C2a_R4_R1arm.json equals run 3's
+  PASS  t1_C2a_R4_R3.json equals run 3's
+  PASS  t1_C2a_R4_R3arm.json equals run 3's
+  PASS  t1_C3_R4_R2R4.json equals run 3's
+  PASS  synthetic.log equals run 3's, line for line after its time stamp
+  PASS  arm caught: one number in a point record of t1_C2a_R4_R1R4.json perturbed
+  PASS  arm caught: the top-level frozen r_f3 of t1_C2a_R4_R1R4.json changed to 99.0
+comparison with run 3: ALL PASS

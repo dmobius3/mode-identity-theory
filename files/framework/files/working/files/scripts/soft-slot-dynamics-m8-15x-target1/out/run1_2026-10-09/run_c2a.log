@@ -1,0 +1,41 @@
+  L3 eps 0.25: nL 2, nB 2
+  L3 eps 0.3536: nL 2, nB 2
+  L3 eps 0.5: nL 2, nB 2
+  L3 eps 0.7071: nL 2, nB 2
+  L3 eps 1: nL 2, nB 2
+  L3 eps 1.414: nL 2, nB 2
+  L3 eps 2: nL 2, nB 2
+  L3 eps 2.828: nL 2, nB 2
+  L3 eps 4: nL 2, nB 2
+  L3 eps 5.657: nL 2, nB 2
+  L3 eps 8: nL 2, nB 2
+  L3 eps 11.31: nL 2, nB 2
+  L3 eps 16: nL 2, nB 2
+  L3 eps 22.63: nL 2, nB 2
+  L3 eps 32: nL 2, nB 2
+  L3 eps 45.25: nL 0, nB 0
+  L3 eps 64: nL 0, nB 0
+  L3 eps 72: nL 0, nB 0
+  eps 0.25: Elliptic
+  eps 0.3536: Elliptic
+  eps 0.5: Elliptic
+  eps 0.7071: Elliptic
+  eps 1: Elliptic
+  eps 1.414: Elliptic
+  eps 2: Elliptic
+  eps 2.828: Elliptic
+  eps 4: Elliptic
+  eps 5.657: Elliptic
+  eps 8: Elliptic
+  eps 11.31: Elliptic
+  eps 16: Elliptic
+  eps 22.63: Elliptic
+  eps 32: Elliptic
+  eps 45.25: Elliptic
+  eps 64: Elliptic
+  eps 72: Elliptic
+/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_15x/t1_bench/scripts/soft-slot-dynamics-m8-15x/m8_15x_solver/linearize.py:50: ComplexWarning: Casting complex values to real discards the imaginary part
+  z = -lu.solve(np.asarray(y2 + G @ y1, dtype=dt))
+/opt/homebrew/Caskroom/miniforge/base/lib/python3.13/site-packages/scipy/sparse/_data.py:73: ComplexWarning: Casting complex values to real discards the imaginary part
+  self.data.astype(dtype, casting=casting, copy=True),
+  bracket control: no genuine crossing detected at level 3; an Unresolved step (index bookkeeping); no genuine crossing detected at level 2; a structural step

@@ -1,0 +1,96 @@
+{
+ "folder": "soft-slot-dynamics-m8-15x-target1",
+ "sha256": {
+  "locate.py": "4407dae35237828fd35e59db80f1ea3a8895239c2219054a93627d3b5d5e7376",
+  "t1_branch.py": "f803adebc1df96d745c2577a68870b1e026d4da260777898b82dcd36a709f949",
+  "tests/mock.py": "74b654f676eeee7849422c9c67c2f46083009ee662c333cd8978bc2cd02abb20",
+  "tests/real.py": "1c4e815a0397ea25742f83592af77cfec29cbf5f314729dc1aa75af4012b9982",
+  "tests/synthetic.py": "3c40771f56f1bbb099ed58632aab80df918d84f42ef4e5b524fe273654edcb1e",
+  "record_frozen_check.py": "a909f5885b5b25a2178a6270a411e11c24d2b956dd0edfce659ba50f2cfa9e76",
+  "compare_run3.py": "1806ca4ec201058e70641122ed6c9f9c625b5575a1255edc18ea9ffec200f592",
+  "span_gate_continuum.py": "d49783f8ef69fc5974c6d5bb028fbca219a5359d85195ede618c33f5abf99c81",
+  "span_rank_controls.py": "8f589f76726455bf664550913a0a786d698c6b9e9b65d787ef82e0d6c332b90d"
+ },
+ "decide_sha256": "6c48f12a8f58ad16eddd074601fbedc8f2345fb36be4a97da4001972c872bec9",
+ "instrument": {
+  "folder": "../soft-slot-dynamics-m8-15x/m8_15x_solver",
+  "commit": "97a8c08",
+  "manifest_sha256": "2b9864ab185e47f98c8572500fb2468c24de9e8346aec4e1f0fb4d077fd3e70c",
+  "files": {
+   "geometry.py": "788e10eb6973668e84370c13a8bd7b16dc9e712f6fa681c7386e15e9b1d1abff",
+   "irreps.py": "cbc7f4481706a08d7ca0229914980e773125c642da616e867580fe1620b5a149",
+   "fem.py": "209fba67eecf8c2b6ecaa432aafda3c6a161024d83d14a060809b81ca2e1061d",
+   "nonlinear.py": "f00ca41c1406d123dac4384cd2f7336410be49e851426db15cad79da3102a060",
+   "standing.py": "455cfc94f4bb10b97eaf0c426c86cb933e32fd7b199b00fc153bcad88fde5efb",
+   "linearize.py": "7cca177bf0c8efc344cc76d2cbcee94f0a96987ae9f3c0895ae64f2f705eed58",
+   "integrate.py": "3c137e773f7890478b2495d6b466dc167c2aeffc4a8d179a0b7775b9b6b58096",
+   "symmetry.py": "c6bbb178dd9103ab5b2f168c6df8cd923b4c57bd8432215b1b9d4a5bef5aae19",
+   "pinned.py": "f6e03566b15063529ac65df7b96dddb0c1726f60f418bedac9a0e5f78b936b8f",
+   "continuation.py": "70c4c0354bbd33dfe627a4fbfc8b187bc0073513e56cb674670d27fb837260dd",
+   "verdict.py": "0dac34197abbf61edd8ede76a0c23d9c0691328ed606c032a9744397b6e29f05",
+   "persistence.py": "3d9906d8ea9ace471aec33566a5329e6d68dbf1122677f21b3690d8b9f3fb103",
+   "m815_common.py": "a66fdf091021098497a08f645c54b4cc60340203dcc8f53013c550df88dfafc6",
+   "m815_controls.py": "dfc7a3c17fa061221d1ea74291047a01cf402d348653397a0b58cabd61b6801c",
+   "m815_branch.py": "7db54e748dfe238bbc21b252ec959748f9354ba681837d0fa4cbf2f0145f56db",
+   "m815_freeze.py": "6a47bf4376aadd589243408b6d925c1910c649080dd1df85075fa5135320a866",
+   "angle.py": "ca557b0d81f403c20b04675e3fb9b24be754f4cbe8b181498121dbd254e212b3",
+   "../soft-slot-dynamics/m8_15_math/outside3_krein.py": "94ba627cfc455d20cae34ef761f191bcfbf89e170748545d30f72d3a8b7d89e5",
+   "../soft-slot-dynamics/m8_15_math/outside3_krein.out": "ad01a27c993793eac968ec7ccba25499f15eaf42b10ff58234ea7079313a42b1",
+   "../soft-slot-dynamics/m8_15_math/analyse.py": "971f1a755cc9b3b329552e299f2e6f09a8851121b3e975e30015ffac9242c5a0",
+   "../soft-slot-dynamics/m8_15_math/core.py": "3507004f47d3bcc248012335e4e20e70c47cae118e9aa2a87cf85f9cc62f86b3",
+   "../soft-slot-dynamics/m8_15_math/outside3_p.npy": "027a797c805be453c8ea0cc1ca8c9eeb4d276d7e765a7979e1daf09954e82f0d",
+   "out/freeze_numbers.json": "c46b102c5ded4a78667dfb0e87e1311d729b006cb1362c6aeb91cbe1b9fe369f",
+   "out/orientations.json": "21b1f19161058da22a074acdc12150c8650ce60c7cdc9a86bc6622fc452290a1"
+  },
+  "files_note": "every file the instrument's manifest lists, recomputed here and equal to that manifest's hash; keys as the manifest writes them, '../' from the instrument's folder, the rest from its solver folder"
+ },
+ "registration": {
+  "file": "REGISTER_4.md",
+  "sha256": "d5f497ac65127bb4769038b750dfe9cb108f986f766ae4136ed7f197dd55b16a",
+  "registered": "2026-10-09T21:58:26Z"
+ },
+ "results": {
+  "file": "RESULT_4.md",
+  "sha256": "fe416a0ea20531545b884bc7c23ce3517c9a9bd2d3f0bfadcddc15e3817decd7"
+ },
+ "outcomes": {
+  "synthetic": "synthetic tests: 20 of 20 pass, each arm caught",
+  "real-solver controls": "real-solver controls: 7 of 7 pass, each arm caught",
+  "record check": "record check: ALL PASS",
+  "comparison with run 3": "comparison with run 3: ALL PASS"
+ },
+ "records": {
+  "t1_C2a_R4_R1R4.json": {
+   "finished": "2026-10-11T05:00:47Z",
+   "code_matches": true,
+   "instrument_manifest_matches": true,
+   "decide_matches": true
+  },
+  "t1_C2a_R4_R1arm.json": {
+   "finished": "2026-10-11T00:24:47Z",
+   "code_matches": true,
+   "instrument_manifest_matches": true,
+   "decide_matches": true
+  },
+  "t1_C2a_R4_R3.json": {
+   "finished": "2026-10-11T00:18:51Z",
+   "code_matches": true,
+   "instrument_manifest_matches": true,
+   "decide_matches": true
+  },
+  "t1_C2a_R4_R3arm.json": {
+   "finished": "2026-10-11T00:21:53Z",
+   "code_matches": true,
+   "instrument_manifest_matches": true,
+   "decide_matches": true
+  },
+  "t1_C3_R4_R2R4.json": {
+   "finished": "2026-10-11T02:14:51Z",
+   "code_matches": true,
+   "instrument_manifest_matches": true,
+   "decide_matches": true
+  }
+ },
+ "written": "2026-10-11T12:54:48Z",
+ "guard": "a target is refused until the instrument's out/FROZEN.json holds every value of its out/freeze_numbers.json, the terms' SHA-256 and the go"
+}

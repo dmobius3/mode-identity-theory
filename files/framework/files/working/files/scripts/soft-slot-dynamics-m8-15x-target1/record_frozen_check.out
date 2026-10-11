@@ -1,0 +1,9 @@
+records: 5 (t1_C2a_R4_R1R4.json, t1_C2a_R4_R1arm.json, t1_C2a_R4_R3.json, t1_C2a_R4_R3arm.json, t1_C3_R4_R2R4.json)
+points: 93; by fast-spectrum state: {'not needed': 91, 'skipped': 2}
+  PASS  every point carries its own frozen record
+  PASS  arm caught: a point without its frozen record
+  PASS  arm caught: a search result at a point recorded not needed
+  PASS  arm caught: a frozen n(L) off by one
+  PASS  the code path on stub points, all three states
+  PASS  arm caught: locate.py without the line that drops the stand-in's output
+record check: ALL PASS

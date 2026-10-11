@@ -1,0 +1,273 @@
+{
+ "stamp": "2026-10-11T00:33:47Z",
+ "decide_sha256": "6c48f12a8f58ad16eddd074601fbedc8f2345fb36be4a97da4001972c872bec9",
+ "omega0": {
+  "C2a": 6.930028968928234,
+  "C3": 6.930028968928234
+ },
+ "parent": [
+  {
+   "case": "C2a",
+   "label": "Elliptic pass",
+   "eps": 1.0,
+   "type": "Elliptic",
+   "why": [],
+   "expected": []
+  },
+  {
+   "case": "C2a",
+   "label": "Hyperbolic pass",
+   "eps": 1.0,
+   "type": "Hyperbolic",
+   "why": [],
+   "expected": []
+  },
+  {
+   "case": "C2a",
+   "label": "a mode before its first-resolved point",
+   "eps": 0.2,
+   "type": "Unresolved",
+   "why": [
+    "a mode before its first-resolved point"
+   ],
+   "expected": [
+    "a mode before its first-resolved point"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "cluster check",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "cluster check"
+   ],
+   "expected": [
+    "cluster check"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "zero crossing",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "zero crossing"
+   ],
+   "expected": [
+    "zero crossing"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "Krein count unbalanced",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "Krein count unbalanced"
+   ],
+   "expected": [
+    "Krein count unbalanced"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "eigenpair residual",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "eigenpair residual"
+   ],
+   "expected": [
+    "eigenpair residual"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "cross-level disagreement",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "cross-level disagreement"
+   ],
+   "expected": [
+    "cross-level disagreement"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "level stability",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "level stability"
+   ],
+   "expected": [
+    "level stability"
+   ]
+  },
+  {
+   "case": "C2a",
+   "label": "paired lifted mode above tau0",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "paired lifted mode above tau0"
+   ],
+   "expected": [
+    "paired lifted mode above tau0"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "Elliptic pass",
+   "eps": 1.0,
+   "type": "Elliptic",
+   "why": [],
+   "expected": []
+  },
+  {
+   "case": "C3",
+   "label": "Hyperbolic pass",
+   "eps": 1.0,
+   "type": "Hyperbolic",
+   "why": [],
+   "expected": []
+  },
+  {
+   "case": "C3",
+   "label": "a mode before its first-resolved point",
+   "eps": 0.2,
+   "type": "Unresolved",
+   "why": [
+    "a mode before its first-resolved point"
+   ],
+   "expected": [
+    "a mode before its first-resolved point"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "cluster check",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "cluster check"
+   ],
+   "expected": [
+    "cluster check"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "zero crossing",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "zero crossing"
+   ],
+   "expected": [
+    "zero crossing"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "Krein count unbalanced",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "Krein count unbalanced"
+   ],
+   "expected": [
+    "Krein count unbalanced"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "eigenpair residual",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "eigenpair residual"
+   ],
+   "expected": [
+    "eigenpair residual"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "cross-level disagreement",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "cross-level disagreement"
+   ],
+   "expected": [
+    "cross-level disagreement"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "level stability",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "level stability"
+   ],
+   "expected": [
+    "level stability"
+   ]
+  },
+  {
+   "case": "C3",
+   "label": "radical bound",
+   "eps": 1.0,
+   "type": "Unresolved",
+   "why": [
+    "radical bound"
+   ],
+   "expected": [
+    "radical bound"
+   ]
+  }
+ ],
+ "parent_ok": true,
+ "failed": [],
+ "arms": {
+  "tau0_3": {
+   "changed": [
+    "paired lifted mode above tau0/C2a"
+   ],
+   "caught": true
+  },
+  "s2": {
+   "changed": [
+    "cross-level disagreement/C2a",
+    "cross-level disagreement/C3"
+   ],
+   "caught": true
+  },
+  "omega0": {
+   "changed": [
+    "cross-level disagreement/C2a",
+    "cross-level disagreement/C3"
+   ],
+   "caught": true
+  },
+  "dlev": {
+   "changed": [
+    "level stability/C2a",
+    "level stability/C3"
+   ],
+   "caught": true
+  },
+  "sch": {
+   "changed": [
+    "a mode before its first-resolved point/C2a",
+    "a mode before its first-resolved point/C3"
+   ],
+   "caught": true
+  }
+ },
+ "passed": true
+}

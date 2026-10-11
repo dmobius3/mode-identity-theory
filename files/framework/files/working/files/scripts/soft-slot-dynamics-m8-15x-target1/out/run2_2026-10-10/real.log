@@ -1,0 +1,9 @@
+REGISTER_4.md § 3, the real-solver controls, evaluated 2026-10-10T14:02:15Z
+  PASS  R1: all checks hold; arm caught
+  PASS  R2: all checks hold; arm caught
+  PASS  R3: all checks hold; arm caught
+  PASS  R4 (C3): all checks hold; arm caught
+  PASS  R4 (C2a): all checks hold
+  PASS  R4b: the nine reasons and two passes as expected; arms tau0_3 caught, s2 caught, omega0 caught, dlev caught, sch caught
+  PASS  R5: no FROZEN.json: refused; one value differing: refused; a terms hash that differs: refused; an empty go: refused; complete and matching: passed the guard; arm caught
+real-solver controls: 7 of 7 pass, each arm caught

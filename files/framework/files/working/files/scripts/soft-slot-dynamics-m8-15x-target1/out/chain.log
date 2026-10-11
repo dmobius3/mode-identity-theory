@@ -1,0 +1,23 @@
+chain start 2026-10-11T00:16:30Z
+r3 start 2026-10-11T00:16:30Z
+r3: exit 0
+r3 end 2026-10-11T00:18:51Z
+r3arm start 2026-10-11T00:18:51Z
+r3arm: exit 0
+r3arm end 2026-10-11T00:21:53Z
+r1arm start 2026-10-11T00:21:53Z
+r1arm: exit 0
+r1arm end 2026-10-11T00:24:48Z
+c3 start 2026-10-11T00:24:48Z
+c3 stopped when the session ended, no record written; resumed 2026-10-11T00:38:45Z
+c3 start 2026-10-11T00:38:45Z
+c3: exit 0
+c3 end 2026-10-11T02:14:51Z
+c2a start 2026-10-11T02:14:51Z
+c2a: exit 0
+c2a end 2026-10-11T05:00:47Z
+evaluate start 2026-10-11T05:00:47Z
+evaluate: exit 0
+record check: exit 0
+comparison: exit 0
+chain done 2026-10-11T05:00:48Z
