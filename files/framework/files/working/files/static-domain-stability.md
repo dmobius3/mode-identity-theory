@@ -124,6 +124,8 @@ By the branch's own definition, the static metric is substrate and solves no Ein
 - **The substrate's stability** belongs to whatever substrate dynamics or $`g_\text{static} \to g_\text{eff}`$ construction arrives, and C12 requires such a candidate to state that dynamics. A radius fixed by stipulation, with no substrate dynamics, removes degrees of freedom; it is not a stability result.
 - **The effective metric** is an evolving metric rather than a static equilibrium, and its perturbations pass through the missing map. C7, C8 and C10 already require a candidate to declare the fluctuation map it induces. The record touches that sector through the linear-growth check against DESI DR1 ([Temporal Budget](temporal-budget.md) §IX). No verdict is stated there.
 
+**Note (2026-10-10).** The stress-tensor bridge now reads its placements as two questions ([§III](stress-tensor-bridge.md#iii-the-placement-fork)). The verdict above is for (b) taken alone. A candidate that also claims a static placement, (a) or (c), meets this page's test on that placement.
+
 ## VI. What it settles, and what it does not
 
 - **What it settles.** On (a) and (c):
