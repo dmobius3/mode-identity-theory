@@ -3,7 +3,7 @@
 
 ---
 
-# :jigsaw: Contribute
+# 🧩 Contribute
 
 Mode Identity Theory has open problems you can work on without accepting its physical interpretation. Most are ordinary problems in spectral geometry, geometric analysis or computation; one is a data analysis waiting on Euclid. Each entry states what is already proved, what is open, what would count as closing it, and where the source lives.
 
@@ -13,7 +13,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **How to take part.** Post in [Discussions](https://github.com/dmobius3/mode-identity-theory/discussions) or open an issue, with a write-up or a script. The text here is licensed CC BY 4.0 and the code MIT, so you can build on any of it with attribution.
 
-## :seedling: A Good First Problem
+## 🌱 A Good First Problem
 
 ### The first self-intersection width
 
@@ -29,7 +29,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **Skills:** quaternions, finite groups, numerical geometry. **Difficulty:** starter. **Source:** [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#i-the-projective-layer), Proposition 0.4, and §XI, 1f.
 
-## :triangular_ruler: Analysis and Geometry
+## 📐 Analysis and Geometry
 
 ### Does smoothing the cone point transmit?
 
@@ -72,13 +72,13 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 **Skills:** geometric analysis, calculus of variations. **Difficulty:** advanced; post the proposal before computing. **Source:** [Carrier Edge Regimes](/files/framework/files/working/files/carrier-edge-regimes.md); [the bar for a variational principle](/files/framework/files/working/files/postulate-bridge.md#dynamical-direction); [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#xi-the-ruling), §XI, 1b and 1c.
 
 <a id="dynamics-on-openwave"></a>
-## :ocean: Dynamics on OpenWave
+## 🌊 Dynamics on OpenWave
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
 
 OpenWave's M8 column has independently reproduced or audited the results the framework's three bedrock papers and the Surviving Ray name in their certification sections, within the scopes stated there, and has reproduced the conic band's fixed-edge stability blind. Its open question is whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight McKay slots; placing fields on the slots is kinematic, and the framework files no relation among their energies. The earlier numerical route closed unresolved, on its instrument rather than on the physics. A new route starts as a proposed dynamical family and meets OpenWave's rules before any computation: pre-registration, run-before-write, and reproduction or adjudication by the maintainer. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
 
-## :telescope: Data: Not Open Yet
+## 🔭 Data: Not Open Yet
 
 ### Score the Euclid predictions when the data arrive
 
@@ -86,7 +86,7 @@ Five predictions were deposited on Zenodo before Euclid's first data release, ea
 
 **Skills:** galaxy surveys, cosmological data analysis. **Opens:** when qualifying data are released. **Source:** [the Euclid DR1 card](/files/cosmos/files/euclid-dr1.md).
 
-## :infinity: A Side Problem in Pure Geometry
+## ♾️ A Side Problem in Pure Geometry
 
 ### The spherical paper Möbius band
 
@@ -95,6 +95,14 @@ Take the band of points within distance $`w`$ of a geodesic segment of length $`
 A yes would give an alternative the framework set aside a smooth realization, one that keeps the framework's original formula literally; a no would leave that alternative only conic realizations. It is here because it is a good problem.
 
 **Source:** [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#xi-the-ruling), §XI, reading (B′).
+
+## 🍻 Special Thanks To
+
+>**Gregory A. Beckman** | Unified Electromagnetic Toroidal Cosmology (UETC): [github.com/Kneedeep2005/UETC](https://github.com/Kneedeep2005/UETC)
+
+>**Von Christian Berrang** | 🐙 [github.com/Christianfwb/frequenzprojekt](https://github.com/Christianfwb/frequenzprojekt) | 📚 [10.5281/zenodo.16727005](https://doi.org/10.5281/zenodo.16727005)
+
+>**Paul Watford** | The Standard Model from One Polynomial: [10.5281/zenodo.19455028](https://doi.org/10.5281/zenodo.19455028)
 
 ---
 
