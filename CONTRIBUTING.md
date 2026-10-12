@@ -72,7 +72,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 **Skills:** geometric analysis, calculus of variations. **Difficulty:** advanced; post the proposal before computing. **Source:** [Carrier Edge Regimes](/files/framework/files/working/files/carrier-edge-regimes.md); [the bar for a variational principle](/files/framework/files/working/files/postulate-bridge.md#dynamical-direction); [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#xi-the-ruling), §XI, 1b and 1c.
 
 <a id="dynamics-on-openwave"></a>
-## 🌊 Dynamics on OpenWave
+## 🏄‍♂️ Collaboration on OpenWave
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
 
