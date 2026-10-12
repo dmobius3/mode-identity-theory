@@ -64,3 +64,11 @@ From `m8_15x_solver/`:
 - **What it can do.** Every eigenvalue the search keeps passes a backward-error test against the true matrices. That test does not prove the kept eigenvalues distinct and correctly classified, so the defect is not shown to act only by missing modes.
 - **Where it has run.** No point of M8.15's run or of this instrument's qualification ran the search.
 - **Why it is not repaired.** A repair would change the verdict both instruments share, and the repaired instrument would not be the one the qualification qualified. Target 1's locator records what the search did at every point.
+
+## Note (2026-10-12T11:24:24Z): a correction, after the M8.15.1 run
+
+**What the earlier note got wrong.** The note of 2026-10-11 above says that no point of M8.15's run or of this instrument's qualification ran the fast-spectrum search. One qualification point did: P5 in `qualification/regress_verdict_before.json`, at level 2 and `ε = 0.25`. It does not balance, and the search found 83 eigenvalues there with counts `[0, 0, 0]`, which left it unbalanced.
+
+**Its standing.** The maintainer's approval of OpenWave #624 records the correction, and calls P5 "the refactor's regression gate, not a target or a control". No rule, threshold or verdict rests on the earlier statement. M8.15.1's target run did not run the search; its record is `../soft-slot-dynamics-m8-15x-target1/RECORD.md`.
+
+**What this note changes.** It is a post-run documentation change. It rewrites this page and `SHA256SUMS`. The instrument's files, `MANIFEST.json` and the guard file are unchanged. The `SHA256SUMS` in force during the M8.15.1 run is the one at `ae3ad04`, and the run record gives its SHA-256.
