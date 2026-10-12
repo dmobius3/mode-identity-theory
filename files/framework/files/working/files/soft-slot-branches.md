@@ -196,6 +196,11 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
   The record keeps the label "nonlinear persistence of the installed free structure", at the row 6 ceiling. These are the instrument's verdicts on one pinned mesh, so the first bullet's finite-amplitude question stays open as mathematics for every branch. M8.15 gives no verdict for $`v_2`$ or the third outside orbit, and the two changes of type stay unlocated.
 - **Note (2026-10-11), on M8.15.1's terms.** M8.15.1, filed with OpenWave, locates the index changes on T2/R4 and T3/R5 inside M8.15's brackets and asks whether each is a change of type. It froze its terms on 2026-10-11, before any target was run: SHA-256 `fc566c0406fef33d0f2a4ef2540fc6ce841191d292e5767de28d13b617156dbf`. They are the locator's `TARGET1_TERMS.md` v7, as reshaped for filing. Its instrument, the M8.15.x solver, is frozen in `scripts/soft-slot-dynamics-m8-15x/`, and its locator in `scripts/soft-slot-dynamics-m8-15x-target1/`.
+- **Note (2026-10-12), on M8.15.1's verdict.** The run was adjudicated on OpenWave [#625](https://github.com/openwave-labs/openwave/pull/625#pullrequestreview-5492753760). Its record is [`RECORD.md`](scripts/soft-slot-dynamics-m8-15x-target1/RECORD.md), committed at MIT `c4e2f7f`, with a post-adjudication note at its foot. No change of type is located.
+  - **The prism in $`R_4`$ (T2/R4) and the hexagon in $`R_5`$ (T3/R5).** Each primary bracket holds a change of the genuine index by two inside its final interval at both levels: 16.2589 to 16.3107 and 16 to 16.8284 for the prism, 15.7803 to 15.7986 and 15.7071 to 16 for the hexagon. Neither is classified. The bisection's last midpoint fails the structural subspace check, so each reads "no genuine crossing detected", the frozen name for a bracket with no classified genuine step, which does not exclude a genuine crossing. The hexagon's level 3 also holds a structural step, at 13.1609.
+  - **The hexagon's secondary bracket, 22.63 to 32.** Not located: the run's steps there join two solution paths, so it locates no index change along the branch.
+
+  So the two changes of type M8.15 bracketed stay unlocated, and the first bullet's finite-amplitude question stays open.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -213,15 +218,17 @@ In `scripts/soft-slot-branches/`:
 In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records and the run's record:
 - `m8_15_solver/`: the finite-element solver, the branch driver and the control runs; `out/MANIFEST.json` holds the SHA-256 of every file the run executes, with the environment the controls ran in.
 - `m8_15_math/`: the check that prints the third outside orbit's frozen frequencies and Krein signs from the certified point in `branches_check.py`, with its record.
-- `REPRODUCE.md`: the reproduction route. `SHA256SUMS` pins every file.
+- `REPRODUCE.md`: the reproduction route. `SHA256SUMS` pins every file of the freeze; the guard file and the run's records, added with the record, are not in it.
 - `RECORD.md`: M8.15's per-branch record, adjudicated on OpenWave #620. The branch records, run logs, persistence records and post-run diagnostics are in `m8_15_solver/out/`.
 
 In `scripts/soft-slot-dynamics-m8-15x/`, the M8.15.x solver: M8.15's solver revised, and qualified before any of its targets ran.
 - `m8_15x_solver/`: the solver; `out/MANIFEST.json` holds the SHA-256 of every file it runs.
 - `qualification/`: the qualification's record, with its README.
-- `REPRODUCE.md`: the reproduction route. `SHA256SUMS` pins every file.
+- `REPRODUCE.md`: the reproduction route. `SHA256SUMS` pins every file of the freeze. The guard file `m8_15x_solver/out/FROZEN.json`, written before M8.15.1's run, is outside it, and M8.15.1's `RECORD.md` gives its SHA-256.
 
-In `scripts/soft-slot-dynamics-m8-15x-target1/`, M8.15.1's locator, frozen after its tests and before any target was run: its code and tests, its registration `REGISTER_4.md`, its results `RESULT_4.md` and their records. `REPRODUCE.md` is the reproduction route, and `SHA256SUMS` pins every file.
+In `scripts/soft-slot-dynamics-m8-15x-target1/`, M8.15.1's locator, frozen after its tests and before any target was run: its code and tests, its registration `REGISTER_4.md`, its results `RESULT_4.md` and their records. `REPRODUCE.md` is the reproduction route, and `SHA256SUMS` pins every file frozen before the run. The run's files came after:
+- `RECORD.md`: M8.15.1's record, adjudicated on OpenWave #625, with a post-adjudication note at its foot. It lists the target records, run logs and pre-run record in `out/` with their SHA-256.
+- `record_frozen_check_postrun_2026-10-12.out` and `environment_postrun_2026-10-12.txt`: the two dated post-run verifications the note describes.
 
 ---
 

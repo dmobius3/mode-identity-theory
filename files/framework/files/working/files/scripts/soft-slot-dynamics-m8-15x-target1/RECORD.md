@@ -156,3 +156,41 @@ None in the target run. The orchestration, `out/run_m8_15_1.py`, lies outside th
 Any scored rerun needs a new pre-registration under the then-current M8 rules.
 - **Classifying the primary index changes** needs a rule that separates the crossing mode from the structural directions through their near-degeneracy. Any such rule stands on controls, with these records disclosed under the memo's rule 4, since they motivated it.
 - **The secondary's levels place its change far apart:** near 28.0 to 28.5 at level 3, and at 31.98 at level 2. A cross-level comparison there needs the memo's § 3.
+
+## Post-adjudication note (2026-10-12)
+
+Everything above this heading is the record as committed at MIT `c4e2f7f`, unchanged. This note supersedes four of its interpretations, and keeps every entry, number and hash as the locator returned them.
+
+**The adjudication.** The maintainer adjudicated the run on OpenWave [#625](https://github.com/openwave-labs/openwave/pull/625#pullrequestreview-5492753760) and merged the corrected method note at OpenWave [`99b2ca07`](https://github.com/openwave-labs/openwave/blob/99b2ca07ff6a19e16761a292f3b5190c3c592947/openwave/xperiments/m8_mit/research/findings/m8_15_1_method_note.md). No change of type is located on either branch, and the ceiling has nothing to restrict.
+
+| Bracket | Level 3 | Level 2 |
+|---|---|---|
+| T2/R4, primary | "no genuine crossing detected at level 3", with an Unresolved step (structural subspace), 16.2589 to 16.3107 | "no genuine crossing detected at level 2", with an Unresolved step (structural subspace), 16 to 16.8284 |
+| T3/R5, primary | "no genuine crossing detected at level 3", with a structural step, 13.1534 to 13.1626, root 13.1609, and an Unresolved step (structural subspace), 15.7803 to 15.7986 | "no genuine crossing detected at level 2", with an Unresolved step (structural subspace), 15.7071 to 16 |
+| T3/R5, secondary | "no genuine crossing detected at level 3", with two Unresolved steps (no balanced reading end) | not located: the step's two ends lie on different solutions |
+
+**The secondary's steps join two solutions.**
+- **Two paths.** Above 27.31 the run evaluated points on two solution paths. Along one path, each step of 0.018 lands within `6×10⁻⁷` of a linear prediction of the solution's `m` from the two points before it.
+- **Level 2.** The recorded genuine step, 31.9817 to 32, joins the bisection chain on one path with the ladder's point at 32 on the other. `m` lands within `8×10⁻⁸` of its prediction at 31.9817, and misses it by `1.9×10⁻²` at 32. Across the same step, `n(L)`, `k_r` and `k_i⁻` go from 9, 2 and 1 to 8, 3 and 0.
+- **Level 3.** The second step, 28.467 to 28.4853, spans the same switch, with a miss of `2.8×10⁻³`. The first, 28.0276 to 28.0459, lies on the second path.
+- **Why the checks passed.** No registered check compares the solutions at a step's two ends, so every check of level 2's step passed.
+- **Not located.** The secondary's index change on the ladder's branch lies between 27.31 and 28.485 at level 3, and between 27.31 and 32 at level 2. No evaluated point of that branch falls inside either interval, so this run does not locate it.
+
+**Superseded interpretations, with their entries kept:**
+- § 3's reading of the secondary's level-2 row, 31.9817 to 32 with root 31.9934, as a step along one solution;
+- the same reading of level 3's second step, 28.467 to 28.4853;
+- § 3's closing bullet, "Each registered bracket detected an index change within the final intervals reported above", as it applies to the secondary;
+- § 7's second bullet, that the secondary's levels place one change far apart.
+
+**The primaries stand.** Their points lie on one solution path, failing midpoints included: at every primary step of 0.026 or less, `m` lands within `4×10⁻⁷` of the same prediction. Each final interval holds an index change with `Δh = ±2`, unclassified.
+
+**Two dated post-run verifications,** made on 2026-10-12, are committed beside the record with this note. They were made after the run and are not records from it.
+- **`record_frozen_check_postrun_2026-10-12.out`:** `record_frozen_check.py` over the seven driver records in `out/`, 189 points, ALL PASS. § 1 reports this pass with no committed output: the pinned `record_frozen_check.out` is the five-record run from before the targets.
+- **`environment_postrun_2026-10-12.txt`:** the run machine's Python, numpy, scipy and platform, read on 2026-10-12, beside the instrument manifest's. § 1's environment check after the run was not recorded.
+
+**A reading, not established (INFERRED).**
+- On the ladder's path the critical eigenvalue rises at about +0.09 to +0.10 and crosses zero near 27.82.
+- On the second path it falls as `−0.183(ε − 27.78)`, with residuals at most `1.3×10⁻³` over 10 points.
+- The slope ratio, about −1.8 to −2.0, is consistent with the −2 of a pitchfork's normal form rather than the −1 of a transcritical one, and the two zeros nearly coincide.
+
+This does not establish a bifurcation or identify a broken symmetry. Whether the second path bifurcates from the ladder's branch, and which symmetry it breaks, is open.

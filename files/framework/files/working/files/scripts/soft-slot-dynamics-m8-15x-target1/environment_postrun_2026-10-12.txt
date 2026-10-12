@@ -1,0 +1,9 @@
+# Dated post-run verification, made at 2026-10-12T21:27:19Z, after M8.15.1's run. It is not a record from the run: the run recorded no environment.
+# Read on the run machine with python3 on its PATH, /opt/homebrew/Caskroom/miniforge/base/bin/python3.
+# Each line gives the field, the value read now, the instrument manifest's value (its environment block, m8_15x_solver/out/MANIFEST.json at MIT 97a8c08), and whether they are equal.
+
+python: 3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ] | manifest: 3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ] | equal
+numpy: 2.5.0 | manifest: 2.5.0 | equal
+scipy: 1.18.0 | manifest: 1.18.0 | equal
+platform: macOS-15.8-arm64-arm-64bit-Mach-O | manifest: macOS-15.8-arm64-arm-64bit-Mach-O | equal
+machine: arm64 | manifest: arm64 | equal
