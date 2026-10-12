@@ -45,7 +45,7 @@ The observable domain is not that smooth covering space itself but its quotient 
   - The Waltz Clock
   - The Present Epoch
 
-**[One Equation](#one-equation)**
+**[One Law](#one-law)**
   - What the ratio means
   - The Phase Operator
   - Fibonacci Wells
@@ -191,7 +191,7 @@ The sampling dictionary uses those two resolutions as follows:
 | Full $`2I`$ resolution | 120 | 1/120 | $`a_0`$ (dynamical) |
 | 60R resolution | 60 | 2/120 | $`H_0`$, $`\Lambda`$, $`\alpha`$ (photon-mediated) |
 
-The 120 is the order of $`2I`$, not a feature of the smooth $`S^3`$ beneath it. Two questions about these grids are answered elsewhere and are not repeated here: what the order's prime factorization means, and why the central sign sorts the two representation classes, are [One Identity](#one-identity); which positions on the grids the framework samples is [One Equation](#one-equation).
+The 120 is the order of $`2I`$, not a feature of the smooth $`S^3`$ beneath it. Two questions about these grids are answered elsewhere and are not repeated here: what the order's prime factorization means, and why the central sign sorts the two representation classes, are [One Identity](#one-identity); which positions on the grids the framework samples is [One Law](#one-law).
 
 ### The Chronon
 
@@ -269,8 +269,9 @@ Two phase parameterizations meet at the present epoch. The engine phase $`\Phi =
 [↑ Table of Contents](#table-of-contents)
 
 ---
+<a id="one-law"></a>
 <a id="one-equation"></a>
-## ⚖️ One Equation
+## ⚖️ One Law
 
 *Why does a constant have the size it has?*
 
@@ -495,7 +496,7 @@ What leaves this section is what the rest of the page samples: the two grids, an
 
 *Where do the forces sit, and why is one rung empty?*
 
-The same sampling engine resolves the coupling sector as a discrete ladder of phase positions and representation channels. Every ingredient it uses is already in hand: the two grids from [One Shape](#one-shape) and [One Identity](#one-identity), and the phase weight, the wells and the hierarchy from [One Equation](#one-equation).
+The same sampling engine resolves the coupling sector as a discrete ladder of phase positions and representation channels. Every ingredient it uses is already in hand: the two grids from [One Shape](#one-shape) and [One Identity](#one-identity), and the phase weight, the wells and the hierarchy from [One Law](#one-law).
 
 ### The Gauge Ladder
 
@@ -764,7 +765,7 @@ The body is the theory as it stands; this is the theory as a program. The larges
 
 **Dynamics: how does the wave content source geometry?** Not yet by any derived map. One gap accounts for two symptoms that read as separate problems, gravity's open construction in [One Interface](#one-interface) and the clock exponent in [One Wave](#one-wave); the stress-tensor bridge is the program that would close it, and several pages wait on that one bridge, the framework's largest structural debt.
 
-**Selection: why these sectors and not others?** Topology fixes the family; Selection must fix the realized member. On the conic band that models the carrier, below its critical width, the scaling law's factored form follows for single-position observables from adopted premises, and the keystone One Equation names sits on one of them, that the observer reads the band's first positive mode; the Fibonacci wells continue a recurrence with no derived sampling rule, and the grid dictionary's photon-mediated-to-60R rule waits on a reason to choose the denominator for observables outside the ladder: representation data already reach phase positions through the Coxeter element's exponents over $`D`$, in the mass seats and the coupling seats, and whether that structure also sorts the cosmological observables is untried; the McKay elevator's $`\text{dist}/30`$ has no single-principle derivation; and the vacuum-to-generation assignment, the charm slot with no home, and the neutrino placements are the same question in the mass sector. The domain itself sits here too: terminality and perfectness both point at $`2I`$, but the single theorem folding them into one proof is One Shape's open problem.
+**Selection: why these sectors and not others?** Topology fixes the family; Selection must fix the realized member. On the conic band that models the carrier, below its critical width, the scaling law's factored form follows for single-position observables from adopted premises, and the keystone One Law names sits on one of them, that the observer reads the band's first positive mode; the Fibonacci wells continue a recurrence with no derived sampling rule, and the grid dictionary's photon-mediated-to-60R rule waits on a reason to choose the denominator for observables outside the ladder: representation data already reach phase positions through the Coxeter element's exponents over $`D`$, in the mass seats and the coupling seats, and whether that structure also sorts the cosmological observables is untried; the McKay elevator's $`\text{dist}/30`$ has no single-principle derivation; and the vacuum-to-generation assignment, the charm slot with no home, and the neutrino placements are the same question in the mass sector. The domain itself sits here too: terminality and perfectness both point at $`2I`$, but the single theorem folding them into one proof is One Shape's open problem.
 
 **Calibration closure: do the independent scale-fixings agree?** No, and this is the framework's largest internal tension: the two non-circular readings of the surface hierarchy disagree, and every absolute scale inherits the ambiguity until one reading is established as the determination of $`R_\Lambda`$. [Inputs and Calibration](#inputs-and-calibration) carries the readings, the numbers and the conditioning question.
 

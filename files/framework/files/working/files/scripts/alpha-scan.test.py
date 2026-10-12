@@ -28,7 +28,7 @@ hit = lambda v: abs(v / ALPHA - 1) < TOL
 # --- the broad control -------------------------------------------------------------
 # Positions run over the NON-REDUNDANT HALF-DOMAIN k = 1..60 only. C(Theta) = C(1-Theta),
 # so every position above the antinode is a mirror of one below it and contributes no new
-# value (framework, One Equation: "no new intensity well appears beyond Theta = 1/2").
+# value (framework, One Law: "no new intensity well appears beyond Theta = 1/2").
 # Denominators run to the domain order, d = 1..120.
 BROAD = [(k, d) for k in range(1, 61) for d in range(1, 121)]
 
