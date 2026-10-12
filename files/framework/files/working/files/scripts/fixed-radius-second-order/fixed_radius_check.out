@@ -1,0 +1,157 @@
+[PASS] H-ANISO frequency, from the trace-free Ricci: omega^2 = 8/R^2
+[PASS] the curvature at fixed volume, to second order: delta 3R = -(8/R^2) Tr beta^2
+[PASS] H-ANISO standing, charge held: NOT ABSORBED
+[PASS] H-ANISO quadrature, charge held: NOT ABSORBED
+[PASS] H-ANISO general, charge held: NOT ABSORBED
+[PASS] H-ANISO standing, charge left free: NOT ABSORBED
+[PASS] H-ANISO quadrature, charge left free: CONDITIONAL, at c_s^2 = [1/3]
+[PASS] H-ANISO general, charge left free: NOT ABSORBED
+[PASS] the quadrature control: with the charge left free it holds only at c_s^2 = 1/3
+[PASS] the time-averaged diagnostic, constant control: the H-ANISO quadrature cell reads on average as its grade (charge held: fails; charge left free: only at c_s^2 = 1/3)
+[PASS] the time-averaged diagnostic, time-dependent control: the H-ANISO standing and general configurations, averaged over one period, read as the quadrature cell
+[PASS] positive control: an exact FLRW solution (c_s^2 = 1/3, p'' = 0), radius free, satisfies (13a) and (13b) through second order; lambda^2 = 2/R^2
+[PASS] positive control: an exact FLRW solution (c_s^2 = 1/5, p'' = 1/7), radius free, satisfies (13a) and (13b) through second order; lambda^2 = 8/5/R^2
+[PASS] the I-T reduction, structurally: no first-order density, expansion, momentum or lapse; Q = -2 <sigma^2>, P = 0
+[PASS] I-S mode, n = 2: the direct solve gives omega^2 = (5*c_s2 - 1)/R^2 and psi : E : nu : d eps as is_mode states
+[PASS] I-S mode, n = 3: the direct solve gives omega^2 = (12*c_s2 - 1)/R^2 and psi : E : nu : d eps as is_mode states
+[PASS] I-S mode, n = 4: the direct solve gives omega^2 = (21*c_s2 - 1)/R^2 and psi : E : nu : d eps as is_mode states
+[PASS] harmonics: <Q_n Q_m> = delta_nm, <Q_n> = 0, <|dQ|^2> = lambda, cross-gradients vanish, Bochner <|DDQ|^2> = lambda^2 - 2 lambda
+[PASS] the curvature routine against the exact conformal formula, through second order
+[PASS] pure gauge, n = 2: a spatial relabeling leaves <R> unchanged through second order, with R_V fixed
+[PASS] pure gauge, n = 3: a spatial relabeling leaves <R> unchanged through second order, with R_V fixed
+[PASS] the positive control through the I-S code path: the exact FLRW solution, c_s^2 and p'' symbolic, the charge held, radius free
+[PASS] I-V first order, on two transverse n = 2 fields: div F = 0, so tr h = 0 and tr K = 0, and a relabeling leaves the curvature unchanged
+[PASS] I-V first order: a non-Killing transverse shift has <K_ij K^ij> = 5/24 > 0 and tilt through the momentum constraint, <|D.K|^2> = 25/48 (unit S^3)
+[PASS] I-V averaged curvature: a first-order relabeling leaves <R> unchanged through second order, with V_h fixed (unit S^3)
+[PASS] I-V first variation at the round metric: <R> changes by -(2/R^2) <tr h>, on dX1 dX1 and on the metric itself, so a second-order term at fixed V_h adds nothing
+[PASS] I-V slicings: the second-order lapse multiplies only the static background's constraint and Raychaudhuri combinations, so the reduction is the same on both slicings
+[PASS] I-V under C1: BMR's (3.33) and (3.32) agree with the plain ADM forms, and (3.33) reads K2/2 + V2/R**2 = 0 (V2 = <v^2>, K2 = <K_ij K^ij>): a sum of non-negative terms
+[PASS] I-V with the charge left free (comparison): (3.32) then holds only at c_s^2 = (a + 3b)/(3(a + b)), strictly between 1/3 and 1
+[PASS] the symbolic form: interpolation through n = 2 to 8 reproduces <Q^2> = 1, <|dQ|^2> = lambda and Bochner's lambda^2 - 2 lambda exactly, and agrees at n = 9, 10 and 12
+[PASS] the reading over levels on 14 synthetic forms, under both charge readings: identically zero; one admissible condition, free of lambda; a condition depending on lambda; an inadmissible condition; absorbed except at n = 2; radiation at every level, (3 c_s^2 - 1)(lambda - 3) + p'' lambda; c_s^2 = 1/10, inside the floor on S^3/2I only; c_s^2 = 2, above the ceiling; an impossible law, c_s^2 = p''^2 + 2; UA's shift: (13a) = kappa - c_s^2 + p'', (13b) = (lambda - 8)(kappa - p''); c_s^2 = 1/4 + lambda/400; a shift coefficient that depends on the law, 3 c_s^2 - 1; UA's free shift: (13a) = kappa - c_s^2 + p'', (13b) = 0; UB's free shift: (13a) = kappa - c_s^2, (13b) = p'': each reads as expected on each domain
+[PASS] the computed-levels fallback intersects the law sets of the computed levels: c_s^2 = 1/4 + lambda/400 reads NOT ABSORBED on S^3 and RP^3 and CONDITIONAL on S^3/2I, whose only computed level is 12; the law-dependent shift, withdrawn over levels, reads CONDITIONAL there
+[PASS] the per-level reading: c_s^2 = p''^2 + 2 has no admissible law (NOT ABSORBED); where (13b) does not fix the shift, another residual does, and UA's form holds at n = 2 (ABSORBED)
+[PASS] the degree bound, 5: a coefficient of degree 5 establishes the symbolic form, one of degree 6 does not
+[PASS] the explicit checks fail closed: a disagreement at n = 2 or 12 withholds every verdict of the per-level path, keeping it under a key that says it is not certified
+[PASS] the multiplicities: 13, 21, 25 and 31 invariant harmonics at n = 12, 20, 24 and 30 on S^3/2I (molien-shells.test.py), none at odd n on RP^3; pairs exist at n = 12 on S^3/2I
+[PASS] integrability, H-ANISO: the standing and quadrature configurations and the general superposition's diagonal members carry no charge; a rotating non-diagonal member carries 8*sqrt(2) (eps^2/R^2, unit left-invariant axis), all of it gravitational, as the class-A frame formula gives
+[PASS] the exact fast average over S^3 (Beta functions, monomial by monomial) agrees with direct integration on 6 integrands
+[PASS] the spatial conditions do not see the radius: a homogeneous second-order trace, a change of radius, leaves the H-ANISO rotating member's second-order momentum constraint unchanged at every point
+[PASS] integrability, I-V: no charge against the six rotation generators and both chiral triples, on both n = 2 fields, in the relabeled gauge and the shift-free gauge; the first-order constraint holds in both
+[PASS] integrability, I-S: the density mode satisfies the first-order momentum constraint in the comoving-orthogonal gauge (zonal and rotating pair); its second-order charges are computed in the run
+[PASS] arm turns its check red: the frequency with the round radius taken as A instead of 2A
+[PASS] arm turns its check red: the curvature at fixed volume with the round radius taken as A instead of 2A
+[PASS] arm turns its check red: each H-ANISO cell with its quadratic source removed, all six read otherwise
+[PASS] arm turns its check red: the second positive control (c_s^2 = 1/5, p'' = 1/7) with its second-order response doubled
+[PASS] arm turns its check red: each I-S mode against a frequency without its -1, c_s^2 (lambda - 3)/R^2
+[PASS] arm turns its check red: Bochner's identity without its -2 lambda
+[PASS] arm turns its check red: a second-order trace that is not homogeneous
+[PASS] arm turns its check red: the fast average with its Beta exponent shifted by two
+[PASS] arm turns its check red: the quadrature cell at omega^2 = 6/R^2
+[PASS] arm turns its check red: the C1 standing cell with its quadratic source removed
+[PASS] arm turns its check red: the positive control with its second-order response doubled
+[PASS] arm turns its check red: the I-T reduction with a trace kept
+[PASS] arm turns its check red: the I-S mode with the lapse taken as zero
+[PASS] arm turns its check red: pure gauge without the volume condition, n = 2 and 3
+[PASS] arm turns its check red: the I-S-path positive control with its second-order response doubled
+[PASS] arm turns its check red: the conformal check with the second-order term dropped
+[PASS] arm turns its check red: the time-averaged standing control with the average replaced by its value at t = 0
+[PASS] arm turns its check red: the time-averaged standing control over a third of a period
+[PASS] arm turns its check red: the time-averaged quadrature control with the free density held at zero
+[PASS] arm turns its check red: interpolation through the first two nodes only
+[PASS] arm turns its check red: the domain layer without its exceptional levels
+[PASS] arm turns its check red: the superseded rule over levels, a condition that changes with the level read as NOT ABSORBED
+[PASS] arm turns its check red: one global floor, c_s^2 > 1/5 on every domain
+[PASS] arm turns its check red: no upper end on c_s^2
+[PASS] arm turns its check red: the reading over levels with the shift set to zero where (13b) does not fix it
+[PASS] arm turns its check red: the superseded weakest-grade rule for the computed levels
+[PASS] arm turns its check red: the per-level reading keeping every law not proved inadmissible
+[PASS] arm turns its check red: the per-level reading with the shift set to zero where (13b) does not fix it
+[PASS] arm turns its check red: the degree bound at 6
+[PASS] arm turns its check red: certification that ignores a disagreement
+[PASS] arm turns its check red: the Molien count without its factor n + 1
+[PASS] arm turns its check red: the H-ANISO charge with the sign of the second connection term flipped
+[PASS] arm turns its check red: the I-V shift-free charge against a field that is not Killing, sin chi cos chi d_chi
+[PASS] arm turns its check red: the I-S first-order constraint with E = +psi
+[PASS] arm turns its check red: I-V first order with a non-transverse field, sin chi d_chi
+[PASS] arm turns its check red: I-V first order with a Killing shift, d_phi
+[PASS] arm turns its check red: I-V averaged curvature without the volume condition
+[PASS] arm turns its check red: I-V first variation with its trace term dropped
+[PASS] arm turns its check red: I-V slicings with Lambda off its static value
+[PASS] arm turns its check red: I-V under C1 with T's sign flipped in the transcription of BMR
+[PASS] arm turns its check red: I-V under C1 with the tilt factor dropped from the charge
+[PASS] arm turns its check red: I-V comparison with T dropped from (3.32)
+every check and the arms that cover it:
+       the H-ANISO frequency: the frequency with the round radius taken as A instead of 2A
+       the curvature at fixed volume: the curvature at fixed volume with the round radius taken as A instead of 2A
+       the six H-ANISO cells: each H-ANISO cell with its quadratic source removed, all six read otherwise; the C1 standing cell with its quadratic source removed; the quadrature cell at omega^2 = 6/R^2
+       the quadrature control: the quadrature cell at omega^2 = 6/R^2
+       the diagnostic, constant control: the time-averaged quadrature control with the free density held at zero
+       the diagnostic, time-dependent control: the time-averaged standing control with the average replaced by its value at t = 0; the time-averaged standing control over a third of a period
+       the positive control at c_s^2 = 1/3: the positive control with its second-order response doubled
+       the positive control at c_s^2 = 1/5: the second positive control (c_s^2 = 1/5, p'' = 1/7) with its second-order response doubled
+       the I-T reduction: the I-T reduction with a trace kept
+       the I-S modes, n = 2, 3, 4: each I-S mode against a frequency without its -1, c_s^2 (lambda - 3)/R^2; the I-S mode with the lapse taken as zero
+       the harmonic identities: Bochner's identity without its -2 lambda
+       the conformal check: the conformal check with the second-order term dropped
+       pure gauge, n = 2 and 3: pure gauge without the volume condition, n = 2 and 3
+       the positive control through the I-S path: the I-S-path positive control with its second-order response doubled
+       I-V first order, transverse: I-V first order with a non-transverse field, sin chi d_chi
+       I-V first order, the shift: I-V first order with a Killing shift, d_phi
+       I-V averaged curvature: I-V averaged curvature without the volume condition
+       I-V first variation: I-V first variation with its trace term dropped
+       I-V slicings: I-V slicings with Lambda off its static value
+       I-V under C1: I-V under C1 with T's sign flipped in the transcription of BMR; I-V under C1 with the tilt factor dropped from the charge
+       I-V comparison: I-V comparison with T dropped from (3.32)
+       the symbolic form: interpolation through the first two nodes only
+       the reading over levels: the domain layer without its exceptional levels; the superseded rule over levels, a condition that changes with the level read as NOT ABSORBED; one global floor, c_s^2 > 1/5 on every domain; no upper end on c_s^2; the reading over levels with the shift set to zero where (13b) does not fix it
+       the computed-levels fallback: the superseded weakest-grade rule for the computed levels
+       the per-level reading: the per-level reading keeping every law not proved inadmissible; the per-level reading with the shift set to zero where (13b) does not fix it
+       the degree bound: the degree bound at 6
+       the fail-closed certification: certification that ignores a disagreement
+       the multiplicities: the Molien count without its factor n + 1
+       integrability, H-ANISO: the H-ANISO charge with the sign of the second connection term flipped
+       the homogeneous trace: a second-order trace that is not homogeneous
+       the fast average: the fast average with its Beta exponent shifted by two
+       integrability, I-V: the I-V shift-free charge against a field that is not Killing, sin chi cos chi d_chi
+       integrability, I-S first order: the I-S first-order constraint with E = +psi
+terms-to-instrument map:
+       §0 T4, the volume radius fixed: buchert_residuals with aD constant (hanio_cell)
+       §0 T6, every instant: vanishes_identically: each residual required at every t
+       §0 T7(a), the induced homogeneous source: hanio_cell: delta_eps solved from (13b), never chosen
+       §0 T7(b), C1, the charge held: eps_of_charge; hanio_cell(charge="C1"): delta_eps = 0 at fixed volume
+       §1 T2, the response law to second order: pressure
+       §1 T3, standing, quadrature and general configurations: hanio_config
+       §2 Buchert 2001, (13a) to (13d): buchert_residuals; it_reduction for (13c), (13d)
+       §2 BMR 2020, fluid-extrinsic, for I-V: iv_constraint: (3.32) and (3.33) with (3.34) and (3.36), transcribed, on the whole slice as (3.54) and (3.56) give them; (3.35) and (3.55) beyond second order
+       §2 the I-V slicings, both: iv_constraint: the second-order lapse drops out; the mean curvature shifts by the same background combination and a Laplacian
+       §3 H-ANISO, exactly: bianchi_ix_ricci, hanio_frequency, hanio_quadratics, hanio_cell
+       §3 I-T, the reduction P = 0, Q = -2 <sigma^2>: it_reduction (structural)
+       §3 I-V, the reduction: iv_first_order on two n = 2 fields; averaged_curvature_vector and first_variation_avg; iv_constraint under C1, BMR against ADM
+       §3 I-V, the charge left free, for comparison: iv_constraint: c_s^2 = (a + 3b)/(3(a + b)) and its range
+       §3 the charge left free, for comparison: hanio_cell(charge="C2")
+       §5 the positive control: flrw_second_order
+       §5 the negative control: hanio_cell("standing", ...)
+       §5 the quadrature control: hanio_cell("quadrature", ...), both charge readings
+       §5 the run gate: run_gate; probed before the freeze in a throwaway clone: its parent passes and four arms fail
+       §0 T6 and §5 step 6, the time-averaged diagnostic: period_average over one period of the first-order mode; time_averaged_reading with the grade's own variables; hanio_diagnostic
+       §1 T1, harmonics mode by mode; quotients by restriction: zonal_Q; S3avg; Schur: grade_IS sums orthogonal modes
+       §2 Buchert 2001, the I-S averages: is_residuals: tc, avg_ser, ricci_scalar_warped, the charge, the response law
+       §2 R_V fixed for I-S: is_residuals: c2 solved from <J> = 1 at second order
+       §3 the I-S first-order mode: is_mode, checked by is_mode_direct
+       §4 the I-S grades, every instant, both charge readings: the run: read_symbolic per level and domain, common_laws per domain; grade_IS at n = 2 and 12 as the explicit check
+       §1 T1 and §4, I-S at every level, the eigenvalue symbolic: is_coefficients (the run) at n = 2 to 10 and 12; interpolate_levels through n = 2 to 8, checked at 9, 10 and 12, within IS_DEGREE_BOUND
+       §1 the quotients and their levels: multiplicity and admits: (n+1)^2; even n on RP^3; the Molien count times (n+1) on S^3/2I
+       §4 the verdict over levels, per domain: common_laws: C_D, the intersection over admitted levels; the polynomial-in-lambda coefficients, the shift coefficient, exceptional levels, admissible_part
+       §4 and §5, the computed levels where the every-level reading is withdrawn: computed_levels: the intersection of the computed levels' law sets, then admissible_part
+       §5 the degree bound and its certificate: interpolation_record with IS_DEGREE_BOUND = 5; ten levels certify up to degree 9
+       §5 the explicit checks at n = 2 and 12, failing closed: certify: a disagreement withholds every per-level-path verdict
+       §1 T2, read per domain (ruled 2026-10-11): cs2_floor, admissible: 1/(lambda_min - 3) below, 1 above
+       §4 the shared reading, for every grade and the diagnostic: read, fourier_parts, project_shift, solve_laws, admissible_part (T2 per domain: 1/(lambda_min - 3) < c_s^2 <= 1)
+       §5 the I-S controls: is_mode_direct, S3avg identities, the conformal check, averaged_curvature (pure gauge), the FLRW control via is_residuals
+       §5 and §6, Losic and Unruh, the comparison: not computed by the instrument: a record written after the run from run.json and their paper, and reviewed before the result closes
+       §4 and §5, the remaining integrability conditions: momentum_constraint, gravitational and matter parts apart; charges against killing_hyper or the left-invariant frame; hanio_integrability, checked by hanio_frame_charge; iv_integrability in two gauges; is_integrability (the run); the timelike condition is the graded (13b)
+       §5 the run and its record: run: run_decided, run_IS; run.json, with the identities the gate computes
+       §5 the dry run: mock_mode: a non-physical configuration through the same code path, its record discarded
+ALL PASS
+qualification only: no I-S grade is computed (python 3.13.13, sympy 1.14.0, hash seed 0)

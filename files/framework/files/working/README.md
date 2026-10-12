@@ -271,6 +271,16 @@ Technical gaps with specific paths forward.
 
 ---
 
+### [The Fixed Radius at Second Order](files/fixed-radius-second-order.md)
+
+**Problem:** Whether the fixed-radius ruling's "every order" survives second order on the stress-tensor bridge's static branches (a) and (c), for a barotropic perfect fluid. Under the readings ruled 2026-10-11, the homogeneous shape, tensor and vorticity sectors are decided before the run: none continues with the volume radius fixed at every instant and the fluid's charge held, so the overall grade is NOT ABSORBED. The registered computation will map the density sector at every admitted level, and a record written after the run will compare its results with Losic and Unruh's integrability result. Frozen 2026-10-11; not yet run.
+
+**Inputs:** [The Postulate Bridge](files/postulate-bridge.md), [The Static Domain's Stability](files/static-domain-stability.md), [The Stress-Tensor Bridge](files/stress-tensor-bridge.md).
+
+**Parent:** [The Stress-Tensor Bridge](files/stress-tensor-bridge.md)
+
+---
+
 **Coupling and scaling exponents.** Each is a distinct single-principle-derivation gap on a gauge or scaling exponent; the load-bearing number stays in place.
 
 - **dist/30 Hierarchy Exponent:** The McKay elevator's denominator is the Coxeter number $`h(E_8) = 30`$, stated on [the mass spectrum](../../../spectrum/files/mass-spectrum.md) page and not derived; a single-principle derivation is open. *Deps:* McKay correspondence, $`E_8`$ Coxeter number.
