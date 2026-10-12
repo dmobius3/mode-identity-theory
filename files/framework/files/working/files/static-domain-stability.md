@@ -140,6 +140,8 @@ By the branch's own definition, the static metric is substrate and solves no Ein
   - the response law of the coefficient-3 source and of the sources the record's readings of R require;
   - anything nonlinear.
 
+**Note (2026-10-12).** At second order, [The Fixed Radius at Second Order](fixed-radius-second-order.md#results) answers part of "anything nonlinear" for (a) and (c). Take a barotropic perfect fluid, with the volume radius fixed at every instant and the fluid's charge held. Then no admitted first-order perturbation continues to second order: every admitted sector is NOT ABSORBED. The overall NOT ABSORBED verdict also holds with the charge left free, because the standing-mode obstructions remain. By that page's §4, this is FATAL-class for pairing the fixed radius with (a) or (c) for that source class. §IV's linear classification stands; what fails is the continuation of its first-order perturbations to second order. Other sources, exact solutions and third order lie outside that result.
+
 ## VII. Checks
 
 [`stability_check.py`](scripts/static-domain-stability/stability_check.py) needs sympy, and its record [`stability_check.out`](scripts/static-domain-stability/stability_check.out) reproduces byte for byte from it. It computes each sector from the Einstein tensor of the perturbed metric:

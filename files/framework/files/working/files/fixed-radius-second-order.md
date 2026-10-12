@@ -6,8 +6,8 @@
 # The Fixed Radius at Second Order
 
 **Type:** Result
-**State:** Open
-**Status (2026-10-11):** Registered and frozen 2026-10-11; not yet run. On the stress-tensor bridge's branches (a) and (c), with Einstein's equations on the static metric and a barotropic perfect fluid, can the averaged second-order equations hold with the radius fixed? Under the four readings ruled on 2026-10-11, three sectors are decided before the run. No homogeneous shape mode continues to second order with the volume radius fixed at every instant and the fluid's charge held, for any barotropic response law. Given reductions of the averaged equations that the instrument checks, no tensor mode and no vorticity mode does either. So the overall grade is NOT ABSORBED. It does not rest on the charge reading: with the charge left free, the standing modes still fail. The registered computation will map the density sector at every admitted level, with the eigenvalue kept symbolic, report the remaining integrability conditions as values, and confirm the tensor and vorticity sectors' reductions; a record written after the run will compare its results with Losic and Unruh's integrability result.
+**State:** Closed
+**Status (2026-10-12):** Run once on 2026-10-11 from the frozen registration, and closed. On the stress-tensor bridge's branches (a) and (c), with Einstein's equations on the static metric and a barotropic perfect fluid, no admitted first-order perturbation continues to second order with the volume radius fixed at every instant and the fluid's charge held. Under the four readings ruled on 2026-10-11, every admitted sector is NOT ABSORBED. The shape, tensor and vorticity sectors were decided before the run. The run decided the density sector at every admitted level, on $`S^3`$, $`\mathbb{RP}^3`$ and $`S^3/2I`$, with the eigenvalue kept symbolic, and reported the decided sectors again unchanged. The verdict does not rest on the charge reading: with the charge left free, the standing modes of the shape, tensor and density sectors still fail. By §4 this is an internal inconsistency in pairing the fixed radius with (a) or (c) for that source class, FATAL-class for that pairing, and not a result about MIT as a whole. Which way the framework takes is a ruling made after this record. The comparison with Losic and Unruh's integrability result is recorded beside the Results.
 **Summary:** Whether the fixed-radius ruling, which holds "at every order", survives second order on the stress-tensor bridge's static branches, sector by sector.
 **Inputs:** `postulate-bridge.md` (the fixed radius, ruled 2026-10-10), `static-domain-stability.md`, `stress-tensor-bridge.md` (C12, §IX), `first-positive-transfer.md` (the precedent for a grade decided before its run)
 **Parent:** `stress-tensor-bridge.md`
@@ -275,6 +275,116 @@ Nothing from step 4 on changes the terms. A change after that is an erratum, wit
   - a condition found under CONDITIONAL goes to C12 on [the stress-tensor bridge](stress-tensor-bridge.md).
 - **The ways out:** which way the framework takes (§4) is a ruling made after the results are recorded.
 
+## Results
+
+**Executed 2026-10-11, once,** from the frozen registration `09559d3`, by the instrument pinned in §5, on macOS 15.8, Python 3.13.13, SymPy 1.14.0, under hash seed 0, in 661.3 s. The run's whole record is [`run.json`](scripts/fixed-radius-second-order/run.json), committed unedited in `fd4dff0`, with SHA-256 `a1f32b486cd6aeb719f8e4901df674ed777ffb47627196043ac92221b40ad972`.
+- **The gate** passed against this registration:
+  - the commit is on main;
+  - the page's SHA-256 is `bf2c0dd1ce3c2df44bd9bb9c1630b87564cf8ce109ea9f0d848e7f3ef8d15237`;
+  - the page pins the instrument;
+  - the instrument on disk is the file at that commit, with SHA-256 `71f705b686baa075b2a233040bbd3454b186ded620544dbdf6f27c51574430f9`.
+- **The decided sectors** came out as §3 records them, value for value:
+  - the H-ANISO cells under both charge readings, with their time-averaged diagnostics and integrability values;
+  - the I-T reduction, $`P_D = 0`$ and $`Q_D = -2\langle\sigma^2\rangle`$;
+  - the I-V reduction, with no integrability charge.
+- **Reproduced:** a review unit reran the frozen instrument twice, on Linux with Python 3.13.16 and SymPy 1.14.0, and every computed field came out the same.
+  - **The comparison:** remove `environment` and `seconds`, and write the rest as `json.dumps(r, indent=1, sort_keys=True)`. This record then hashes to `d192dc9845c6546072e1a57a57610c8875e90b4ddcf296aeac3bb35e90b11572`, and so does one rerun.
+  - **The other rerun** hashes to `a3af910b22bd99dd20b8faf496743bf4e3fa56efb10f654529d3e6f52ac53df3`. That is this record's content with the gate's commit given as the full hash of `09559d3`, since the record keeps that argument as typed (Record and errata).
+  - **What is not identical:** the full records. Their environment and run time differ by construction, and in one rerun so does the commit string.
+
+**The verdict: NOT ABSORBED in every admitted sector,** under the readings of §0. No admitted first-order perturbation of a barotropic perfect fluid continues to second order on (a) or (c) with the volume radius fixed at every instant and the fluid's charge held, for any response law in T2's class. Superpositions do not escape it: under C1 every sector's residual in the averaged constraint has one sign, the same in all four sectors, and quadratic terms from different sectors fall in inequivalent representations of the round $`S^3`$'s symmetry, so they do not mix in the averages, on $`S^3`$ or its quotients. A superposition with a vortical part is read on slices that agree with each sector's own to first order, as Buchert, Mourier and Roy's scheme allows (§2). No nonzero admitted perturbation continues (DERIVED from the recorded residuals).
+- **What it means (§4):** the ruling's "every order" fails for that source class. That is an internal inconsistency in pairing the fixed radius with (a) or (c), FATAL-class for that pairing: a barotropic perfect fluid, with the readings of §0.
+- **What it does not reach:**
+  - a non-barotropic source, or one whose homogeneous sector has degrees of freedom of its own;
+  - branch (b);
+  - an exact solution, or third order;
+  - MIT as a whole, its topology or its quotient construction.
+- **The ways out** (§4): which way the framework takes is a ruling made after this record.
+
+**The density sector (I-S): the every-level reading held.**
+- **The coefficients:** each is a polynomial in $`\lambda`$ of degree at most 3, within the bound of 5. The levels $`n = 2`$ to 8 fix it, and 9, 10 and 12 confirm it.
+- **The charge shift:** under C2 its coefficient is the constant $`-4/R^2`$, so no level is exceptional.
+- **The explicit checks:** at $`n = 2`$ and 12 the explicit grades agree with the reading in every configuration, under both charge readings, so every verdict is certified.
+
+**With the charge held (C1, the graded reading): NOT ABSORBED.** That holds for standing modes, quadrature pairs and the general superposition, at every admitted level, on $`S^3`$, $`\mathbb{RP}^3`$ and $`S^3/2I`$, for every response law in T2's class. The time-averaged diagnostic reads NOT ABSORBED too.
+- **Why:** with the radius and the fluid's charge fixed, the quadratic density-wave contribution leaves a nonzero averaged Hamiltonian-constraint residual, with no admissible homogeneous response available to cancel it.
+- **Its form:** with $`\omega^2 = \big((\lambda - 3)c_s^2 - 1\big)/R^2`$, and per $`\epsilon^2`$ in the record's normalization of the modes, the constraint's residual is:
+  - $`-2(\lambda - 3)\,\omega^2`$ for a standing mode of unit amplitude;
+  - $`-4(\lambda - 3)\,\omega^2`$ for a quadrature pair of unit amplitudes;
+  - $`-\tfrac52(\lambda - 3)\,\omega^2`$ for the general superposition, with amplitudes 1 and 1/2.
+
+  It is constant in time.
+- **Its sign:** one sign throughout, and nonzero at every admitted level for every law in T2's class. It vanishes only where $`\omega = 0`$, which T2's floor excludes.
+
+**With the charge left free (C2, for comparison, not graded).** The charge shift is solved from the constraint, and the Raychaudhuri equation carries the obstruction.
+- **Quadrature pairs: CONDITIONAL** on every domain. Every admitted level holds at once only at $`c_s^2 = 1/3`$ with $`p'' = 8\pi G R^2/9`$, which is $`2/\big(9(\rho_0 + p_0)\big)`$.
+  - **Its scope:** that is a conditional solution of the averaged equations, not a general physical rescue. The rotating pair at $`n = 2`$ carries a nonzero charge of its own (below). That example lives on $`S^3`$ and $`\mathbb{RP}^3`$, so it establishes nothing for $`S^3/2I`$.
+  - **Radiation's linear law,** $`p'' = 0`$, leaves the constant part of the pair's Raychaudhuri residual at $`-(\lambda - 3)^2/(3R^2)`$.
+- **Standing modes and the general superposition: NOT ABSORBED** on every domain.
+  - **Single levels:** some hold them, each at a law of its own: $`c_s^2 = 3/13`$ at $`n = 2`$, on $`S^3`$ and $`\mathbb{RP}^3`$, and $`c_s^2 = 1/111`$ at $`n = 12`$, on $`S^3/2I`$. No law holds every admitted level.
+  - **At the pair's law,** the $`\cos 2\omega t`$ part of the Raychaudhuri equation is nonzero at every admitted level:
+    - $`(\lambda - 6)^2(\lambda - 3)/(9R^2)`$ for a standing mode;
+    - $`(\lambda - 6)^2(\lambda - 3)/(12R^2)`$ for the general superposition.
+- **On time average:** all three configurations read CONDITIONAL on every domain, at the pair's law.
+- **The parallel with the shape sector:** there too, with the charge left free, the pair and the time averages select $`c_s^2 = 1/3`$ (§3). The density sector adds the condition on $`p''`$.
+- **So the density sector's NOT ABSORBED also holds with the charge left free,** because its standing-mode obstructions remain, as in the shape and tensor sectors. It does not rest on C1, which T7(b) declares as a restriction.
+
+**Nothing goes to C12** (§6). No graded reading is CONDITIONAL, and the C2 law is a comparison value only.
+
+**The remaining integrability conditions** (§4), reported beside the grades and not graded:
+- **H-ANISO, I-T and I-V:** as §3 and §5 record them.
+- **I-S, the zonal standing mode at $`n = 2`$:** zero against the six rotation generators. The two chiral triples are combinations of those six, so these are six independent conditions, all met.
+- **I-S, a rotating pair at $`n = 2`$** (the harmonics $`X_1X_3`$ and $`X_1X_4`$), an example rather than an exhaustive test:
+  - **The charge:** $`-10\sqrt{5c_s^2 - 1}`$ per $`\epsilon^2`$ at unit radius, in the record's normalization of the harmonics, against $`X_3\partial_4 - X_4\partial_3`$. That is $`-10\,\omega`$, with $`\omega`$ the pair's frequency.
+  - **Its parts:** all of it is gravitational, as the comoving-orthogonal gauge places it (§4).
+  - **On the chiral triples:** it shows as $`+10\,\omega`$ on the right action's generator $`q \mapsto q\,i`$, whose triple survives on $`S^3/2I`$, and as $`-10\,\omega`$ on the left action's $`q \mapsto i\,q`$. Every other generator gives zero.
+  - **What it means:** within T7's variables the condition fails, so the pair is not second-order compatible, apart from its grade. A second-order rigid rotation of the fluid, which T7 does not list, could carry the charge. That is recorded as an observation and not used (§4).
+  - **The radius:** the charge is the same whether $`R_V`$ is fixed or free (§4).
+  - **The domains:** the pair lives on $`S^3`$ and $`\mathbb{RP}^3`$. On $`S^3/2I`$ the spatial charges are not computed: its first admitted level is $`n = 12`$, and no pair is computed there (§5).
+- **The timelike condition** is the averaged constraint itself, graded above.
+
+## The Losic and Unruh comparison
+
+This record was written after the run, by the page's author, from `run.json` and their paper, as §5 requires. It is interpretive: the instrument computes no comparison.
+- **Read from:** the arXiv version, [gr-qc/0408011](https://arxiv.org/abs/gr-qc/0408011), the preprint of the paper in Sources. Equation numbers here are the preprint's.
+- **Their equation of state:** an irrotational perfect fluid given by a velocity potential, with $`p`$ proportional to $`\rho`$. So $`c_s^2 = 1/(2\alpha - 1)`$, with $`1 \le \alpha \le 3`$, and $`1/5 \le c_s^2 \le 1`$.
+- **Their domain:** the Einstein static universe on $`S^3`$, with $`\Lambda`$.
+- **Their gauge:** a linear change of coordinates, their (37) to (39), removes:
+  - the metric perturbation's vector part;
+  - the scalar part $`\delta\pi^{(Tr)}`$ of its momentum;
+  - the homogeneous part of the second-order matter momentum $`\delta^2\pi_\phi`$.
+
+  A remaining freedom in the scalar sector removes the homogeneous metric mode.
+- **Their condition:** the integrability condition of the timelike Killing field. It is the second-order Hamiltonian constraint integrated over $`S^3`$, their (41) to (43).
+  - **Its parts:** its inhomogeneous part $`A`$, which includes the tensor modes, is positive definite for $`\alpha \ge 1`$ and $`L \ge 2`$. The homogeneous mode's rate enters with the opposite sign.
+  - **Their result:** without the homogeneous linear mode, the condition has no nontrivial solution.
+  - **Its scope:** they work with this condition alone, and leave the conditions of the spatial Killing fields aside.
+- **Here:** the timelike condition is the averaged constraint (13b) itself, on fluid-orthogonal slices, over the whole slice (§4). The fixed radius removes the homogeneous linear mode. Under C1 the conserved charge fixes the second-order homogeneous density.
+- **The correspondence, of structure and sign:** in both, the inhomogeneous modes leave a contribution of one sign. What could cancel it is a homogeneous rate, which enters with the opposite sign.
+  - **There:** their (42) sets the homogeneous mode's $`\tfrac32\,\tilde{\mathcal{A}}_{\delta\pi}^{2}\,V`$ against $`\int A`$.
+  - **Here:** (13b) carries $`6(\dot a_D/a_D)^2`$ against the waves' residual, and the fixed radius sets it to zero.
+- **Where the settings overlap,** the verdicts agree. The overlap is a linear law with $`1/5 < c_s^2 \le 1`$, on $`S^3`$, with no homogeneous mode.
+  - **Here:** the density sector is NOT ABSORBED for every linear law, under both charge readings, since C2's every-level condition needs $`p'' \ne 0`$.
+  - **There:** the condition has no nontrivial solution.
+- **The differences:**
+  - **The law:** theirs is linear. Here any barotropic law in T2's class is admitted, and the C1 residual carries no $`p''`$.
+  - **The second-order homogeneous matter:**
+    - **There:** their gauge choice removes it.
+    - **Here:** the charge fixes it (C1), or it is left free (C2). Under C2 the constraint is met, and the Raychaudhuri equation carries the obstruction.
+    - **Not checked:** whether their gauge-fixed term corresponds to C1's fixed charge. The agreement above does not depend on it.
+  - **The tensor modes:** their integral includes them. Here the tensor sector is decided on its own, through the Raychaudhuri equation (§3).
+  - **The domain:**
+    - **There:** $`S^3`$.
+    - **Here:** $`\mathbb{RP}^3`$ and $`S^3/2I`$ too, by restriction to their invariant modes. On $`S^3/2I`$, T2's class reaches down to $`c_s^2 > 1/165`$, below their range.
+    - **The difference §5 names in advance,** a condition from the left generators, does not arise: their condition comes from the timelike Killing field, which survives on $`S^3/2I`$.
+  - **The spatial conditions:** they leave them aside. Here they are reported beside the grades, with those on $`S^3/2I`$ not computed. The $`n = 2`$ pair's charge sits on both triples, so it says nothing about the right triple at $`n = 12`$.
+- **What it does not establish:** an independent reproduction of their (43), or an equivalence of the two formulations. Their gauge, variables and equations differ from these.
+- **An energy reading, offered and not used:**
+  - **The sign convention:** the instrument writes (13b) as $`6(\dot a_D/a_D)^2 - 16\pi G\langle N^2\rho\rangle - 2\Lambda\langle N^2\rangle + Q_D + \langle N^2\,{}^3R\rangle = 0`$. So a positive energy density on the source side enters with a minus sign.
+  - **The waves' part:** at fixed radius, under C1, it has that sign. It is $`-2(\lambda - 3)\,\omega^2`$ per $`\epsilon^2`$ for a unit standing mode, twice that for the pair, and 5/4 of it for amplitudes 1 and 1/2.
+  - **Why read it as energy:** it scales as a quadratic wave energy does, with $`\omega^2`$ and with the summed squared amplitudes.
+  - **Its standing:** they caution that, in their gauge, their integral is not the integral of the second-order Hamiltonian. So the reading is not a computed energy, and nothing above rests on it.
+
 ## Sources
 
 - T. Buchert, "On Average Properties of Inhomogeneous Fluids in General Relativity: Perfect Fluid Cosmologies", [Gen. Relativ. Gravit. 33, 1381–1405 (2001)](https://doi.org/10.1023/A:1012061725841): irrotational perfect fluids, on the foliation orthogonal to the flow.
@@ -289,6 +399,12 @@ Nothing from step 4 on changes the terms. A change after that is an erratum, wit
 - **The run gate's probe:** in a throwaway clone, the gate passed a registration that pins the instrument and refused four mutations: a commit off main, a wrong page hash, a page that does not pin the instrument, and an instrument changed on disk.
 
 No erratum.
+
+**Erratum (2026-10-12), after the run: the record's commit field.** A review unit, comparing reruns, found one description too strong.
+- **The words:** the gate's docstring says the record keeps the values the gate computes, not its arguments. §5 says the record's identities are the gate's computations from the bytes, never a caller's label.
+- **The fact:** `gate.commit` is the commit argument as typed. The gate checks it against main, the page's hash, the pin and the instrument at that commit, but does not resolve it to its full hash. The record's SHA-256s are computed from the bytes.
+- **The consequence:** a rerun given the full hash of `09559d3` records the full hash, and that field alone differs (Results).
+- **What changes:** neither the frozen instrument nor any term, grade or value. This note carries the correction.
 
 ---
 

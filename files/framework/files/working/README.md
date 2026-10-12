@@ -271,16 +271,6 @@ Technical gaps with specific paths forward.
 
 ---
 
-### [The Fixed Radius at Second Order](files/fixed-radius-second-order.md)
-
-**Problem:** Whether the fixed-radius ruling's "every order" survives second order on the stress-tensor bridge's static branches (a) and (c), for a barotropic perfect fluid. Under the readings ruled 2026-10-11, the homogeneous shape, tensor and vorticity sectors are decided before the run: none continues with the volume radius fixed at every instant and the fluid's charge held, so the overall grade is NOT ABSORBED. The registered computation will map the density sector at every admitted level, and a record written after the run will compare its results with Losic and Unruh's integrability result. Frozen 2026-10-11; not yet run.
-
-**Inputs:** [The Postulate Bridge](files/postulate-bridge.md), [The Static Domain's Stability](files/static-domain-stability.md), [The Stress-Tensor Bridge](files/stress-tensor-bridge.md).
-
-**Parent:** [The Stress-Tensor Bridge](files/stress-tensor-bridge.md)
-
----
-
 **Coupling and scaling exponents.** Each is a distinct single-principle-derivation gap on a gauge or scaling exponent; the load-bearing number stays in place.
 
 - **dist/30 Hierarchy Exponent:** The McKay elevator's denominator is the Coxeter number $`h(E_8) = 30`$, stated on [the mass spectrum](../../../spectrum/files/mass-spectrum.md) page and not derived; a single-principle derivation is open. *Deps:* McKay correspondence, $`E_8`$ Coxeter number.
@@ -331,6 +321,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 **Result (2026-10-05):** What classical general relativity says about the static closed domain's linear stability on each branch of the stress-tensor bridge's placement fork. On the branches where Einstein's equations hold on the static metric, every perfect-fluid source with $`\rho + p > 0`$ leaves the homogeneous shape modes and the vector and tensor modes oscillating without growth. The radius mode and the density modes turn on the source's response law, and with both admitted no barotropic law keeps both quiet: the radius grows unless $`c_s^2 < -1/3`$, the density modes unless $`c_s^2 > 1/5`$. Holding the radius fixed removes the radius mode only together with the source's homogeneous perturbation, a cost rather than stability. The coefficient-3 source and the sources the record's readings of R require have no response law on the record and stay open; on the effective-metric branch the test does not apply. The result adds C12 to the bridge's entry test.
 
 **Inputs:** [The Stress-Tensor Bridge](files/stress-tensor-bridge.md), [cosmological constant](../../../cosmos/files/cosmological-constant.md) §IV, §VI, [stability_check.py](files/scripts/static-domain-stability/stability_check.py).
+
+**Parent:** [The Stress-Tensor Bridge](files/stress-tensor-bridge.md)
+
+---
+
+### [The Fixed Radius at Second Order](files/fixed-radius-second-order.md)
+
+**Result (2026-10-11):** Whether the fixed-radius ruling's "every order" survives second order on the stress-tensor bridge's static branches (a) and (c), for a barotropic perfect fluid. Under the readings ruled 2026-10-11 it does not. With the volume radius fixed at every instant and the fluid's charge held, no admitted first-order perturbation continues to second order, and every admitted sector is NOT ABSORBED. The shape, tensor and vorticity sectors were decided before the run. The registered run decided the density sector at every admitted level on $`S^3`$, $`\mathbb{RP}^3`$ and $`S^3/2I`$: the quadratic density-wave contribution leaves an averaged Hamiltonian-constraint residual that no admissible homogeneous response can cancel. The overall NOT ABSORBED verdict also holds with the charge left free, because the standing-mode obstructions remain. That is an internal inconsistency in pairing the fixed radius with (a) or (c) for that source class, FATAL-class for that pairing, and not a result about MIT as a whole. The way out is a ruling after the record. The comparison with Losic and Unruh's integrability result is recorded beside it.
+
+**Inputs:** [The Postulate Bridge](files/postulate-bridge.md), [The Static Domain's Stability](files/static-domain-stability.md), [The Stress-Tensor Bridge](files/stress-tensor-bridge.md), [fixed_radius_check.py](files/scripts/fixed-radius-second-order/fixed_radius_check.py).
 
 **Parent:** [The Stress-Tensor Bridge](files/stress-tensor-bridge.md)
 
