@@ -7,7 +7,7 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-12):** Run once on 2026-10-11 from the frozen registration, and closed. On the stress-tensor bridge's branches (a) and (c), with Einstein's equations on the static metric and a barotropic perfect fluid, no admitted first-order perturbation continues to second order with the volume radius fixed at every instant and the fluid's charge held. Under the four readings ruled on 2026-10-11, every admitted sector is NOT ABSORBED. The shape, tensor and vorticity sectors were decided before the run. The run decided the density sector at every admitted level, on $`S^3`$, $`\mathbb{RP}^3`$ and $`S^3/2I`$, with the eigenvalue kept symbolic, and reported the decided sectors again unchanged. The verdict does not rest on the charge reading: with the charge left free, the standing modes of the shape, tensor and density sectors still fail. By §4 this is an internal inconsistency in pairing the fixed radius with (a) or (c) for that source class, FATAL-class for that pairing, and not a result about MIT as a whole. Which way the framework takes is a ruling made after this record. The comparison with Losic and Unruh's integrability result is recorded beside the Results.
+**Status (2026-10-12):** Run once on 2026-10-11 from the frozen registration, and closed. On the stress-tensor bridge's branches (a) and (c), with Einstein's equations on the static metric and a barotropic perfect fluid, no admitted first-order perturbation continues to second order with the volume radius fixed at every instant and the fluid's charge held. Under the four readings ruled on 2026-10-11, every admitted sector is NOT ABSORBED. The shape, tensor and vorticity sectors were decided before the run. The run decided the density sector at every admitted level, on $`S^3`$, $`\mathbb{RP}^3`$ and $`S^3/2I`$, with the eigenvalue kept symbolic, and reported the decided sectors again unchanged. The verdict does not rest on the charge reading: with the charge left free, the standing modes of the shape, tensor and density sectors still fail. By §4 this is an internal inconsistency in pairing the fixed radius with (a) or (c) for that source class, FATAL-class for that pairing, and not a result about MIT as a whole. Ruled 2026-10-12 (The way out): the fixed radius stands, and a candidate on (a) or (c) owes a source outside the barotropic class whose perturbations continue to second order. The comparison with Losic and Unruh's integrability result is recorded beside the Results.
 **Summary:** Whether the fixed-radius ruling, which holds "at every order", survives second order on the stress-tensor bridge's static branches, sector by sector.
 **Inputs:** `postulate-bridge.md` (the fixed radius, ruled 2026-10-10), `static-domain-stability.md`, `stress-tensor-bridge.md` (C12, §IX), `first-positive-transfer.md` (the precedent for a grade decided before its run)
 **Parent:** `stress-tensor-bridge.md`
@@ -384,6 +384,19 @@ This record was written after the run, by the page's author, from `run.json` and
   - **The waves' part:** at fixed radius, under C1, it has that sign. It is $`-2(\lambda - 3)\,\omega^2`$ per $`\epsilon^2`$ for a unit standing mode, twice that for the pair, and 5/4 of it for amplitudes 1 and 1/2.
   - **Why read it as energy:** it scales as a quadratic wave energy does, with $`\omega^2`$ and with the summed squared amplitudes.
   - **Its standing:** they caution that, in their gauge, their integral is not the integral of the second-order Hamiltonian. So the reading is not a computed energy, and nothing above rests on it.
+
+## The way out
+
+**Ruled 2026-10-12** (§4), after the record above.
+- **The finding** (DERIVED from [the stability page](static-domain-stability.md) §III and the Results): on (a) and (c), no barotropic perfect fluid gives a static state that is both free of linear growth and, under the readings of §0, consistent with the averaged equations through second order.
+  - With the radius free it has an UNSTABLE sector. With it fixed it grows at linear order at or below T2's floor, and does not continue to second order above it.
+  - The analysis requires only $`\rho_0 + p_0 > 0`$ as a background sign condition. Thus a barotropic response law for the coefficient-3 or $`\rho_0 < 0`$ sources falls under the same obstruction.
+  - It is a perturbative obstruction, not a proof that no exact static background exists.
+- **The ruling:**
+  - the fixed radius stands ([the postulate bridge](postulate-bridge.md#dynamical-direction)), and a responsive radius is not adopted;
+  - C12's test gains a second-order duty ([the stress-tensor bridge](stress-tensor-bridge.md#ii-the-constraint-set-already-in-hand)): a candidate on (a) or (c) derives, independently, a source outside the barotropic class with its response law, and shows its admissible perturbations free of linear growth and continuing through second order with the radius fixed, under the readings of §0, with its own conserved charges held as T7(b) holds the fluid's;
+  - a candidate whose homogeneous field equations are its own is not on (a) or (c), which assert Einstein's equations unmodified; it is a static placement of its own, declared and tested on its own terms;
+  - no restriction of the tested class is adopted to evade the result. The static placement stays open, and if candidates outside the class also fail, a new ruling chooses between none and a responsive radius.
 
 ## Sources
 

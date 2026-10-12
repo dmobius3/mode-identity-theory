@@ -118,6 +118,8 @@ For a barotropic perfect-fluid source, after the removal the admitted sectors ar
 
 **Note (2026-10-10).** The radius is now ruled a kinematic parameter of the model ([the postulate bridge](postulate-bridge.md#dynamical-direction)). Holding it fixed is therefore the framework's standing case, the table's last row, and the H-ISO entries of the rows above it describe a sector outside the admissible phase space. The derivations above are unchanged.
 
+**Note (2026-10-12).** The two things a barotropic candidate owes above are not the whole cost at second order. With the radius fixed, a barotropic source that meets both does not continue past first order under the readings of [The Fixed Radius at Second Order](fixed-radius-second-order.md#results), so a candidate on (a) or (c) owes a source outside the barotropic class whose perturbations continue to second order ([the stress-tensor bridge](stress-tensor-bridge.md#ii-the-constraint-set-already-in-hand)'s C12 at second order).
+
 ## V. Branch (b)
 
 By the branch's own definition, the static metric is substrate and solves no Einstein equation with matter. So all four sectors are NOT APPLICABLE to the Einstein-static test, and a substrate dynamics supplied later is analyzed under its own equations. Two things are left elsewhere.
