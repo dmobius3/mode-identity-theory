@@ -423,10 +423,10 @@ Evaluating the scaling law at each well and at the Coxeter slot 17 of the [gauge
 | Observable | $`F_n`$ | Grid | $`\Theta`$ | $`C(\Theta)`$ | $`\Omega`$ | $`n`$ | $`A_P`$ | $`A/A_P`$ | Role |
 |---|---|---|---|---|---|---|---|---|---|
 | [a₀](../cosmos/files/early-galaxies.md) | $`F_7`$ | 120 | 13/120 | 0.223 | $`\Omega_H`$ | 1 | $`a_P`$ | $`2.2 \times 10^{-62}`$ | edge-ratio comparison |
-| [α_W](../spectrum/files/fine-structure.md) | — | 120 | 17/120 | 0.371 | $`\Omega_\Lambda`$ | 1/60 | 1 | $`3.39 \times 10^{-2}`$ † | Λ-anchored comparison |
+| [α_W](../spectrum/files/fine-structure.md) | — | 120 | 17/120 | 0.371 | $`\Omega_\Lambda`$ | 1/60 | 1 | 0.0339 † | Λ-anchored comparison |
 | — | $`F_8`$ | 120 | 21/120 | 0.55 | — | — | — | — | unassigned |
-| [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | $`\Omega_\Lambda`$ | 1/30 | 1 | $`7.33 \times 10^{-3}`$ | Λ-anchored comparison / α-route anchor |
-| [α_s](../spectrum/files/fine-structure.md) | — | 60R | 17/60 | 1.208 | $`\Omega_\Lambda`$ | 1/60 | 1 | $`1.16 \times 10^{-1}`$ | Λ-anchored comparison |
+| [α](../spectrum/files/fine-structure.md) | $`F_7`$ | 60R | 13/60 | 0.792 | $`\Omega_\Lambda`$ | 1/30 | 1 | 0.00733 | Λ-anchored comparison / α-route anchor |
+| [α_s](../spectrum/files/fine-structure.md) | — | 60R | 17/60 | 1.208 | $`\Omega_\Lambda`$ | 1/60 | 1 | 0.116 | Λ-anchored comparison |
 | [H₀](../cosmos/files/hubble-tension.md) | $`F_9`$ | 60R | 34/120 | 1.208 | $`\Omega_H`$ | 1 | $`t_P^{-1}`$ | $`1.2 \times 10^{-61}`$ | calibration anchor |
 | — | $`F_{10}`$ | 120 | 55/120 | 1.97 | — | — | — | — | unassigned |
 | [Λ_ref](../cosmos/files/cosmological-constant.md) | — | 60R | 60/120 | 2.00 | $`\Omega_\Lambda`$ | 2 | $`\ell_P^{-2}`$ | $`\approx 2.85 \times 10^{-122}`$ ‡ | surface anchor / α-route output |
