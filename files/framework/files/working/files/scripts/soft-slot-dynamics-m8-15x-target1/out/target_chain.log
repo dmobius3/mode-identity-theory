@@ -1,0 +1,18 @@
+2026-10-12T02:53:19Z M8.15.1 go run: pre-run checks
+2026-10-12T02:53:20Z   PASS  instrument: 17 of 17 .py files equal the manifest
+2026-10-12T02:53:20Z   PASS  instrument: out/freeze_numbers.json equals the manifest
+2026-10-12T02:53:20Z   PASS  instrument manifest SHA-256 is the one the locator records
+2026-10-12T02:53:20Z   PASS  locator: SHA256SUMS passes 83 of 83
+2026-10-12T02:53:20Z   PASS  instrument folder: SHA256SUMS passes 196 of 196
+2026-10-12T02:53:20Z   PASS  MIT: the locator commit 324fde3 and the instrument commit 97a8c08 are on origin/main
+2026-10-12T02:53:20Z   PASS  terms: the file passed equals the merged task document, SHA-256 fc566c04...
+2026-10-12T02:53:20Z   PASS  no FROZEN.json before this run
+2026-10-12T02:53:20Z   PASS  the guard, on the real instrument: passed
+2026-10-12T02:53:20Z   PASS  the instrument freeze check with FROZEN.json present: freeze checks: ALL PASS
+2026-10-12T02:53:20Z pre-run checks ALL PASS
+2026-10-12T02:53:20Z T2/R4 start
+2026-10-12T04:13:52Z T2/R4 end: exit 0
+2026-10-12T04:13:52Z T3/R5 start
+2026-10-12T09:21:13Z T3/R5 end: exit 0
+2026-10-12T09:21:13Z post-run: instrument SHA256SUMS passes (196 OK); FROZEN.json unchanged: True
+2026-10-12T09:21:13Z target chain done

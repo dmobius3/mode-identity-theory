@@ -1,0 +1,31 @@
+  L3 eps 0.25: nL 5, nB 5
+  L3 eps 0.3536: nL 5, nB 5
+  L3 eps 0.5: nL 5, nB 5
+  L3 eps 0.7071: nL 5, nB 5
+  L3 eps 1: nL 5, nB 5
+  L3 eps 1.414: nL 5, nB 5
+  L3 eps 2: nL 5, nB 5
+  L3 eps 2.828: nL 5, nB 5
+  L3 eps 4: nL 5, nB 5
+  L3 eps 5.657: nL 5, nB 5
+  L3 eps 8: nL 5, nB 5
+  L3 eps 11.31: nL 5, nB 5
+  L3 eps 16: nL 5, nB 5
+  L3 eps 22.63: nL 7, nB 5
+  L3 eps 32: nL 7, nB 5
+  eps 0.25: Elliptic
+  eps 0.3536: Elliptic
+  eps 0.5: Elliptic
+  eps 0.7071: Elliptic
+  eps 1: Elliptic
+  eps 1.414: Elliptic
+  eps 2: Elliptic
+  eps 2.828: Elliptic
+  eps 4: Elliptic
+  eps 5.657: Elliptic
+  eps 8: Elliptic
+  eps 11.31: Elliptic
+  eps 16: Unresolved (cross-level disagreement)
+  eps 22.63: Unresolved (cross-level disagreement, level stability)
+  eps 32: Hyperbolic
+  bracket primary: no genuine crossing detected at level 3; an Unresolved step (structural subspace); no genuine crossing detected at level 2; an Unresolved step (structural subspace)
