@@ -138,7 +138,7 @@ $`\Omega_m = 0.315`$ is not fitted by the SN+BAO likelihood in this construction
 ```
 
 ```math
-\Omega_m^\text{effective} = \frac{1-\Omega_\Lambda}{1-s_0^2} \quad \text{(what the $(1+z)^3$ coefficient reads)}
+\Omega_m^\text{effective} = \frac{1-\Omega_\Lambda}{1-s_0^2} \quad \text{(what the } (1+z)^3 \text{ coefficient reads)}
 ```
 
 At best-fit $`s_0 = 0.389`$, the effective reading is 0.372; the underlying value is 0.315. The Planck value is recovered after removing the budget-identity dressing, consistent with the fixed vacuum anchor; $`\Omega_m = 1 - \Omega_\Lambda`$ is the complement of that anchor, not an independent derivation.
