@@ -201,6 +201,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
   - **The hexagon's secondary bracket, 22.63 to 32.** Not located: the run's steps there join two solution paths, so it locates no index change along the branch.
 
   So the two changes of type M8.15 bracketed stay unlocated, and the first bullet's finite-amplitude question stays open.
+- **Note (2026-10-13), on M8.15.2's terms.** M8.15.2, filed with OpenWave, asks whether the two primary index changes M8.15.1 left unclassified can be located through the structural-subspace failure that stopped their bisections: bracketed by `n(L)`, classified between clean ends, checked for solution continuity, and confirmed at the guard offsets. Its terms, a delta on M8.15.1's, froze on 2026-10-13, before any target was run: SHA-256 `c6da782b43bc13d256f445d822d6c1456d71b42a4b5771b054d0c6b344dd4e4d`. Its locator v2 is frozen in `scripts/soft-slot-dynamics-m8-15-2/`, at MIT `851b2ad`.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -229,6 +230,8 @@ In `scripts/soft-slot-dynamics-m8-15x/`, the M8.15.x solver: M8.15's solver revi
 In `scripts/soft-slot-dynamics-m8-15x-target1/`, M8.15.1's locator, frozen after its tests and before any target was run: its code and tests, its registration `REGISTER_4.md`, its results `RESULT_4.md` and their records. `REPRODUCE.md` is the reproduction route, and `SHA256SUMS` pins every file frozen before the run. The run's files came after:
 - `RECORD.md`: M8.15.1's record, adjudicated on OpenWave #625, with a post-adjudication note at its foot. It lists the target records, run logs and pre-run record in `out/` with their SHA-256.
 - `record_frozen_check_postrun_2026-10-12.out` and `environment_postrun_2026-10-12.txt`: the two dated post-run verifications the note describes.
+
+In `scripts/soft-slot-dynamics-m8-15-2/`, M8.15.2's locator v2, frozen after its tests and before any target was run: its code and tests, its registration `REGISTER_5.md`, its results `RESULT_5.md` and their records, the adjudication reading `adjudicate.py`, and in `scope/` the scope memo with its numbers. `REPRODUCE.md` is the reproduction route, and `SHA256SUMS` pins every file.
 
 ---
 
