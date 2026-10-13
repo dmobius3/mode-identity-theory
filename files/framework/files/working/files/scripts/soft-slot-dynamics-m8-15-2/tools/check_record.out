@@ -1,0 +1,93 @@
+check_record.py: RECORD.md against the files
+  PASS  T2/R4 start and finish: 2026-10-13T14:28:09Z to 2026-10-13T15:52:36Z
+  PASS  T2/R4 ladder types: Elliptic from 0.25 to 11.31 (12 points); Unresolved at 16 (cross-level disagreement); Unre
+  PASS  T2/R4 bracket heading: ### T2/R4, primary (16 to 22.6274)
+  PASS  T2/R4 L3 genuine row: | 3 | genuine | 16.2589 to 16.2977 | 16.2848 to 16.2977 | (5, 2, 5, 0) to (7, 2, 5, 2) | 1
+  PASS  T2/R4 L3 genuine continuity count: 8 comparisons (7 along the span and 1 across the step)
+  PASS  T2/R4 L3 genuine continuity largest: 3.75×10⁻⁴
+  PASS  T2/R4 L3 identity cosine, in full: 0.9314
+  PASS  T2/R4 L3 identity cosine, outside P: 0.999999
+  PASS  T2/R4 L3 passed point 16.2848: 16.2848
+  PASS  T2/R4 L3 passed point counts: (5, 0, 5, 0)
+  PASS  T2/R4 L2 Unresolved (index bookkeeping) row: | 2 | Unresolved (index bookkeeping) | 16 to 16.5307 | 16.5178 to 16.5307 | (5, 2, 5, 0) t
+  PASS  T2/R4 L2 Unresolved (index bookkeeping) continuity count: 8 comparisons (7 along the span and 1 across the step)
+  PASS  T2/R4 L2 Unresolved (index bookkeeping) continuity largest: 3.72×10⁻⁴
+  PASS  T2/R4 L2 identity cosine, in full: 0.8924
+  PASS  T2/R4 L2 identity cosine, outside P: 0.999963
+  PASS  T2/R4 L2 passed point 16.4142: 16.4142
+  PASS  T2/R4 L2 passed point counts: (5, 0, 5, 0)
+  PASS  T2/R4 L2 passed point 16.5178: 16.5178
+  PASS  T2/R4 L2 passed point counts: (5, 0, 5, 0)
+  PASS  T2/R4 L2 root field midpoint: midpoint, 16.2654
+  PASS  T2/R4 name: "no genuine crossing detected at level 2"
+  PASS  T2/R4 name: "an Unresolved step (index bookkeeping)"
+  PASS  T2/R4 name: "an index crossing located; the change of type remains unresolved"
+  PASS  T2/R4 the zero against the n(L) ends: Their interpolated zero, 16.2807, lies below the `n(L)` ends, 16.2848 to 16.2977, which br
+  PASS  T3/R5 start and finish: 2026-10-13T15:52:37Z to 2026-10-13T20:10:52Z
+  PASS  T3/R5 ladder types: Elliptic from 0.25 to 11.31 (12 points); Unresolved at 16 (cross-level disagreement, level
+  PASS  T3/R5 bracket heading: ### T3/R5, primary (11.3137 to 16)
+  PASS  T3/R5 L3 structural row: | 3 | structural | 13.1534 to 13.1626 | 13.1534 to 13.1626 | (12, 3, 5, 7) to (11, 2, 4, 7
+  PASS  T3/R5 L3 structural continuity count: 8 comparisons (7 along the span and 1 across the step)
+  PASS  T3/R5 L3 structural continuity largest: 7.55×10⁻⁴
+  PASS  T3/R5 L3 genuine row: | 3 | genuine | 15.7803 to 15.7986 | 15.7803 to 15.7895 | (11, 2, 5, 6) to (9, 2, 5, 4) | 
+  PASS  T3/R5 L3 genuine continuity count: 8 comparisons (7 along the span and 1 across the step)
+  PASS  T3/R5 L3 genuine continuity largest: 6.79×10⁻⁴
+  PASS  T3/R5 L3 identity cosine, in full: 0.8042
+  PASS  T3/R5 L3 identity cosine, outside P: 0.999992
+  PASS  T3/R5 L3 passed point 15.7895: 15.7895
+  PASS  T3/R5 L3 passed point counts: (9, 0, 1, 8)
+  PASS  T3/R5 L3 unbalanced: 5 points, from `ε = 13.1443` to `13.2175`
+  PASS  T3/R5 L2 genuine row: | 2 | genuine | 15.7437 to 16 | 15.7437 to 15.7529 | (11, 2, 5, 6) to (9, 2, 5, 4) | 15.74
+  PASS  T3/R5 L2 genuine continuity count: 8 comparisons (7 along the span and 1 across the step)
+  PASS  T3/R5 L2 genuine continuity largest: 6.79×10⁻⁴
+  PASS  T3/R5 L2 identity cosine, in full: 0.8242
+  PASS  T3/R5 L2 identity cosine, outside P: 0.999898
+  PASS  T3/R5 L2 passed point 15.8536: 15.8536
+  PASS  T3/R5 L2 passed point counts: (9, 0, 1, 8)
+  PASS  T3/R5 L2 passed point 15.7803: 15.7803
+  PASS  T3/R5 L2 passed point counts: (9, 0, 1, 8)
+  PASS  T3/R5 L2 passed point 15.762: 15.762
+  PASS  T3/R5 L2 passed point counts: (9, 0, 1, 8)
+  PASS  T3/R5 L2 passed point 15.7529: 15.7529
+  PASS  T3/R5 L2 passed point counts: (9, 0, 1, 8)
+  PASS  T3/R5 guard lower `d = 0.01`:   | lower | `d = 0.01` | 15.6356 | 15.6752 | Elliptic | yes | Unresolved (cross-level disa
+  PASS  T3/R5 guard lower `d = 0.02`:   | lower | `d = 0.02` | 15.4777 | 15.5168 | Elliptic | yes | Unresolved (cross-level disa
+  PASS  T3/R5 guard lower `d = 0.05`:   | lower | `d = 0.05` | 15.0039 | 15.0418 | Elliptic | yes | Unresolved (cross-level disa
+  PASS  T3/R5 guard lower `d = 0.10`:   | lower | `d = 0.10` | 14.2142 | 14.2502 | Elliptic | yes | Elliptic |
+  PASS  T3/R5 guard lower `d = 0.20`:   | lower | `d = 0.20` | 12.6348 | 12.6668 | Elliptic | yes | Elliptic |
+  PASS  T3/R5 guard lower region end:   | lower | region end | 11.3137 | 11.3137 | Elliptic | yes | not read |
+  PASS  T3/R5 guard upper `d = 0.01`:   | upper | `d = 0.01` | 15.9515 | 15.9918 | Unresolved (cross-level disagreement, level s
+  PASS  T3/R5 guard upper `d = 0.02`:   | upper | `d = 0.02` | 16.1094 | 16.1502 | Unresolved (cross-level disagreement, level s
+  PASS  T3/R5 guard upper `d = 0.05`:   | upper | `d = 0.05` | 16.5832 | 16.6252 | Hyperbolic | yes | Unresolved (cross-level di
+  PASS  T3/R5 guard upper `d = 0.10`:   | upper | `d = 0.10` | 17.3729 | 17.4169 | Hyperbolic | yes | Hyperbolic |
+  PASS  T3/R5 guard upper `d = 0.20`:   | upper | `d = 0.20` | 18.9522 | 19.0002 | Hyperbolic | yes | Hyperbolic |
+  PASS  T3/R5 guard upper region end:   | upper | region end | 22.6274 | 22.6274 | Hyperbolic | yes | not read |
+  PASS  T3/R5 readings: Elliptic at 15.6356 at level 3 and 15.6752 at level 2, and Hyperbolic at 16.5832 and 16.62
+  PASS  T3/R5 reading offsets: Elliptic at `d = 0.01` below, and Hyperbolic at `d = 0.05` above
+  PASS  T3/R5 location: 15.7935 at level 3, between the clean ends 15.7803 and 15.7986, and 15.8335 at level 2, be
+  PASS  T3/R5 the n(L) ends against the zeros: `n(L)` changes within 15.7803 to 15.7895 at level 3 and 15.7437 to 15.7529 at level 2, and
+  PASS  T3/R5 name: "a structural step"
+  PASS  T3/R5 name: "a located change of type"
+  PASS  T3/R5 the zeros against the n(L) ends: Their interpolated zeros, 15.7935 at level 3 and 15.8335 at level 2, lie above the `n(L)` 
+  PASS  the adjudicated name, as adjudicate.py prints it: "A change of type is located between the registered guard readings. Its identification wit
+  PASS  the continuity check's limit, in the terms' words: "The solution-continuity check does not certify which solution branch the step lies on, le
+  PASS  the pre-run checks: The 13 checks in `out/prerun_check.json` passed at 2026-10-13T14:28:09Z
+  PASS  post-run locator v2 SHA256SUMS: 53 of 53
+  PASS  post-run instrument folder SHA256SUMS: 196 of 196
+  PASS  the frozen-record check: It reads 215 points, 208 "not needed" and 7 "skipped"
+  PASS  the regression arms: with seven mutation arms, each caught
+  PASS  the ladder regression counts: 15, 15, 15 and 7 entries on T2/R4, and 14, 14, 14 and 6 on T3/R5, all equal
+  PASS  the bracket regression counts: on T2/R4, 16 of 16 at level 3 and 12 of 12 at level 2; on T3/R5, 22 of 22 and 12 of 12
+  PASS  the file tables: 15 of 15 hashes are their files'
+  PASS  no em-dash
+81 checks; the parent: ALL PASS
+  arm: a root off in its last digit: caught
+  arm: a guard verdict changed: caught
+  arm: a continuity statistic transposed: caught
+  arm: a hash changed: caught
+  arm: the point count changed: caught
+  arm: the continuity check's limit dropped: caught
+  arm: a count at a clean end changed: caught
+  arm: an identity cosine changed: caught
+  arm: an interpolated zero put inside its n(L) ends: caught
+ALL PASS

@@ -1,0 +1,9 @@
+# Dated post-run reading, made at 2026-10-13T20:20:29Z, after M8.15.2's run. It is not a record from the run.
+# Command: python3 -B adjudicate.py out/t1_T2_R4.json, then out/t1_T3_R5.json, run on a copy of this folder. It prints one line per
+# genuine step matched across levels; a bracket with none prints nothing. The adjudication is the maintainer's. SHA256SUMS does not list this file.
+
+$ python3 -B adjudicate.py out/t1_T2_R4.json
+(exit 0)
+$ python3 -B adjudicate.py out/t1_T3_R5.json
+primary: A change of type is located between the registered guard readings. Its identification with the genuine index crossing at this step is not established: the crossing subspaces agree after removal of the structural directions, and the full spectral crossing identity remains unresolved. The step's classification crossed a structural-subspace or slowest-pair failure, or a point whose structural count fell below its side's, by a rule whose changed branch has synthetic controls only.  [the record: a located change of type]
+(exit 0)

@@ -1,0 +1,14 @@
+# Dated post-run verification, made at 2026-10-13T20:20:29Z, after M8.15.2's run. It is not a record from the run.
+# Command: python3 -B record_frozen_check.py, M8.15.1's script (../soft-slot-dynamics-m8-15x-target1/, MIT 324fde3), placed beside locate.py
+# in a copy of this folder; it reads the seven driver records in out/: the five control records of the qualification and the two target records.
+# SHA256SUMS does not list this file.
+
+records: 7 (t1_C2a_R4_R1R4.json, t1_C2a_R4_R1arm.json, t1_C2a_R4_R3.json, t1_C2a_R4_R3arm.json, t1_C3_R4_R2R4.json, t1_T2_R4.json, t1_T3_R5.json)
+points: 215; by fast-spectrum state: {'not needed': 208, 'skipped': 7}
+  PASS  every point carries its own frozen record
+  PASS  arm caught: a point without its frozen record
+  PASS  arm caught: a search result at a point recorded not needed
+  PASS  arm caught: a frozen n(L) off by one
+  PASS  the code path on stub points, all three states
+  PASS  arm caught: locate.py without the line that drops the stand-in's output
+record check: ALL PASS

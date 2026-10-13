@@ -1,0 +1,70 @@
+{
+ "stamp": "2026-10-13T14:28:09Z",
+ "checks": [
+  {
+   "check": "instrument: 17 of 17 .py files equal the manifest",
+   "ok": true,
+   "detail": "[]"
+  },
+  {
+   "check": "instrument: out/freeze_numbers.json equals the manifest",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "instrument manifest SHA-256 is the driver's pin and the locator v2's record",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "locator v2: SHA256SUMS passes 53 of 53",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "instrument folder: SHA256SUMS passes 196 of 196",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "MIT: 851b2ad, 9eab674, 97a8c08 and 324fde3 are on origin/main",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "MIT: the locator v2 folder here is the folder frozen at 851b2ad, with no change and no untracked file",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "terms: the file passed equals the task document merged in 1e8a6e2b, SHA-256 c6da782b...",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "the instrument's FROZEN.json, which a target run reads: its SHA-256 is the pin in M8.15.1's RECORD.md",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "the instrument's FROZEN.json: every value of freeze_numbers.json unchanged, frozen true, a terms hash",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "environment: Python, numpy, scipy and platform equal the instrument manifest's",
+   "ok": true,
+   "detail": "{'python': '3.13.13', 'numpy': '2.5.0', 'scipy': '1.18.0', 'platform': 'macOS-15.8-arm64-arm-64bit-Mach-O'}"
+  },
+  {
+   "check": "no M8.15.2 guard yet (this folder's out/FROZEN.json)",
+   "ok": true,
+   "detail": ""
+  },
+  {
+   "check": "the guard, written by write_guard.py on a scratch copy, passes the driver's check before any solve",
+   "ok": true,
+   "detail": "{\"guard\": \"passed\"}"
+  }
+ ]
+}

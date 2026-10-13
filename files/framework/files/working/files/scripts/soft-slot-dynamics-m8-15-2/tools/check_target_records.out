@@ -1,0 +1,41 @@
+check_target_records.py: M8.15.2's target records, after the run
+  PASS  the guard: every value of freeze_numbers.json unchanged, frozen true, the go on #630
+  PASS  the instrument's FROZEN.json, which a target run reads: the file pinned in M8.15.1's RECORD.md
+  PASS  out/ holds no crash record
+  PASS  T2/R4: the terms' SHA-256 is the guard's and stands in MIT soft-slot-branches.md
+  PASS  T2/R4: the locator's SHA-256s are the manifest's, the files' and the guard's
+  PASS  T2/R4: the instrument manifest's SHA-256 is the file's, the manifest's and the guard's
+  PASS  T2/R4: the extracted decide's SHA-256 is the manifest's
+  PASS  T2/R4: the frozen block is freeze_numbers.json's values, with s2 for R4
+  PASS  T2/R4: the ladder against M8.15: the comparison ran and found no difference
+  PASS  T2/R4: M8.15.1's record here is its file at b13e0f4
+  PASS  T2/R4: this run's ladder targets are M8.15.1's first 15
+  PASS  T2/R4: the ladder's level 3: 15 of M8.15.1's 15 entries to 32, equal value for value
+  PASS  T2/R4: the ladder's level 2: 15 of M8.15.1's 15 entries to 32, equal value for value
+  PASS  T2/R4: the ladder's types: 15 of M8.15.1's 15 entries to 32, equal value for value
+  PASS  T2/R4: the ladder's cross-level checks: 7 of M8.15.1's 7 entries to 32, equal value for value
+  PASS  T2/R4: the primary bracket, level 3: 16 of M8.15.1's 16 points evaluated here, equal value for value (this run evaluated 17)
+  PASS  T2/R4: the primary bracket, level 2: 12 of M8.15.1's 12 points evaluated here, equal value for value (this run evaluated 17)
+  PASS  T3/R5: the terms' SHA-256 is the guard's and stands in MIT soft-slot-branches.md
+  PASS  T3/R5: the locator's SHA-256s are the manifest's, the files' and the guard's
+  PASS  T3/R5: the instrument manifest's SHA-256 is the file's, the manifest's and the guard's
+  PASS  T3/R5: the extracted decide's SHA-256 is the manifest's
+  PASS  T3/R5: the frozen block is freeze_numbers.json's values, with s2 for R5
+  PASS  T3/R5: the ladder against M8.15: the comparison ran and found no difference
+  PASS  T3/R5: M8.15.1's record here is its file at b13e0f4
+  PASS  T3/R5: this run's ladder targets are M8.15.1's first 14
+  PASS  T3/R5: the ladder's level 3: 14 of M8.15.1's 14 entries to 22.63, equal value for value
+  PASS  T3/R5: the ladder's level 2: 14 of M8.15.1's 14 entries to 22.63, equal value for value
+  PASS  T3/R5: the ladder's types: 14 of M8.15.1's 14 entries to 22.63, equal value for value
+  PASS  T3/R5: the ladder's cross-level checks: 6 of M8.15.1's 6 entries to 22.63, equal value for value
+  PASS  T3/R5: the primary bracket, level 3: 22 of M8.15.1's 22 points evaluated here, equal value for value (this run evaluated 32)
+  PASS  T3/R5: the primary bracket, level 2: 12 of M8.15.1's 12 points evaluated here, equal value for value (this run evaluated 36)
+the parent: ALL PASS
+  arm: a value in one of M8.15.1's primary points, as this run gives it, off by 1e-12: caught by "T3/R5: the primary bracket, level 3"
+  arm: one of M8.15.1's primary points not evaluated in this run: caught by "T2/R4: the primary bracket, level 2"
+  arm: a ladder point's m off by 1e-12: caught by "T2/R4: the ladder's level 3"
+  arm: the ladder comparison against M8.15 recorded as not run: caught by "T2/R4: the ladder against M8.15"
+  arm: T3/R5's frozen block with R4's s2: caught by "T3/R5: the frozen block"
+  arm: T2/R4's terms hash reversed: caught by "T2/R4: the terms' SHA-256"
+  arm: the guard's go on another pull request: caught by "the guard:"
+ALL PASS

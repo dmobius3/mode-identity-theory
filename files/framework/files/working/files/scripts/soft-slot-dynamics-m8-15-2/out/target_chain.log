@@ -1,0 +1,24 @@
+2026-10-13T14:28:08Z M8.15.2 go run: pre-run checks
+2026-10-13T14:28:09Z   PASS  instrument: 17 of 17 .py files equal the manifest
+2026-10-13T14:28:09Z   PASS  instrument: out/freeze_numbers.json equals the manifest
+2026-10-13T14:28:09Z   PASS  instrument manifest SHA-256 is the driver's pin and the locator v2's record
+2026-10-13T14:28:09Z   PASS  locator v2: SHA256SUMS passes 53 of 53
+2026-10-13T14:28:09Z   PASS  instrument folder: SHA256SUMS passes 196 of 196
+2026-10-13T14:28:09Z   PASS  MIT: 851b2ad, 9eab674, 97a8c08 and 324fde3 are on origin/main
+2026-10-13T14:28:09Z   PASS  MIT: the locator v2 folder here is the folder frozen at 851b2ad, with no change and no untracked file
+2026-10-13T14:28:09Z   PASS  terms: the file passed equals the task document merged in 1e8a6e2b, SHA-256 c6da782b...
+2026-10-13T14:28:09Z   PASS  the instrument's FROZEN.json, which a target run reads: its SHA-256 is the pin in M8.15.1's RECORD.md
+2026-10-13T14:28:09Z   PASS  the instrument's FROZEN.json: every value of freeze_numbers.json unchanged, frozen true, a terms hash
+2026-10-13T14:28:09Z   PASS  environment: Python, numpy, scipy and platform equal the instrument manifest's
+2026-10-13T14:28:09Z   PASS  no M8.15.2 guard yet (this folder's out/FROZEN.json)
+2026-10-13T14:28:09Z   PASS  the guard, written by write_guard.py on a scratch copy, passes the driver's check before any solve
+2026-10-13T14:28:09Z pre-run checks ALL PASS
+2026-10-13T14:28:09Z the guard, written once in this folder's out/FROZEN.json, SHA-256 cb3a021f0bc02271cc39f26b61d10841e45405f71ba212423271f7af5d6eff92: passed
+2026-10-13T14:28:09Z T2/R4 start
+2026-10-13T15:52:36Z T2/R4 end: exit 0
+2026-10-13T15:52:36Z T3/R5 start
+2026-10-13T20:10:52Z T3/R5 end: exit 0
+2026-10-13T20:10:52Z post-run: locator v2 SHA256SUMS passes (53 of 53)
+2026-10-13T20:10:52Z post-run: instrument folder SHA256SUMS passes (196 of 196)
+2026-10-13T20:10:52Z post-run: M8.15.2's guard unchanged: True; the instrument's FROZEN.json unchanged: True
+2026-10-13T20:10:52Z target chain done
