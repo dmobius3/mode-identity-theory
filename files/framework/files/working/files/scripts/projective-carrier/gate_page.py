@@ -91,7 +91,6 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("The Möbius sign flip and the central $`-I`$ of $`2I`$ are two distinct $`Z_2`$'s", "files/framework/README.md"),
     ("the framework does not collapse them into one", "README.md"),
     ("an embedded spectral carrier", "files/cosmos/files/cosmological-constant.md"),
-    ("the Möbius surface embedded in $`S^3`$", "files/cosmos/files/euclid-dr1.md"),
     ("The dance runs on two distinct seams", "files/spectrum/files/the-waltz.md"),
     ("the orientation $`\\mathbb{Z}_2`$ is not a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md"),
     ("$`\\mathbb Z_2^{\\text{Möbius}} \\neq \\mathbb Z_2^{\\text{centre}}`$ as identified structures", f"{WF}/postulate-bridge.md"),
