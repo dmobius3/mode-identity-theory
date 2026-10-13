@@ -1,0 +1,139 @@
+{
+ "stamp": "2026-10-13T03:08:50Z",
+ "register": "REGISTER_5.md v3 \u00a7 3",
+ "terms": {
+  "path": "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_15_2/REGISTER_5.md",
+  "sha256": "e50827eb3cdafccb69ec428257e8e2860948d65031ae762b277b178094cac72a"
+ },
+ "old_terms": {
+  "path": "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_15x/m8_15_1_task_details.md",
+  "sha256": "fc566c0406fef33d0f2a4ef2540fc6ce841191d292e5767de28d13b617156dbf"
+ },
+ "preconditions": {
+  "instrument_guard_present": true,
+  "instrument_guard_carries_old_terms": true
+ },
+ "writer": {
+  "first": true,
+  "second_refused": true
+ },
+ "cases": [
+  {
+   "case": "no M8.15.2 guard, the instrument's FROZEN.json present, M8.15.1's terms",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, no M8.15.2 guard (this folder's out/FROZEN.json).",
+   "expected": "refused",
+   "words": [],
+   "ok": true
+  },
+  {
+   "case": "one freeze value differing",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the guard differs from freeze_numbers.json in ['T'].",
+   "expected": "refused",
+   "words": [
+    "freeze_numbers.json"
+   ],
+   "ok": true
+  },
+  {
+   "case": "a terms hash that differs",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the terms' SHA-256 does not match the guard.",
+   "expected": "refused",
+   "words": [
+    "terms' SHA-256"
+   ],
+   "ok": true
+  },
+  {
+   "case": "an empty go",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, no go.",
+   "expected": "refused",
+   "words": [
+    "no go"
+   ],
+   "ok": true
+  },
+  {
+   "case": "an instrument manifest hash that differs from the guard's",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the instrument manifest's SHA-256 does not match the guard.",
+   "expected": "refused",
+   "words": [
+    "manifest's SHA-256 does not match the guard"
+   ],
+   "ok": true
+  },
+  {
+   "case": "a locate.py hash that differs",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the running locate.py's SHA-256 does not match the guard.",
+   "expected": "refused",
+   "words": [
+    "locate.py's SHA-256"
+   ],
+   "ok": true
+  },
+  {
+   "case": "a t1_branch.py hash that differs",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the running t1_branch.py's SHA-256 does not match the guard.",
+   "expected": "refused",
+   "words": [
+    "t1_branch.py's SHA-256"
+   ],
+   "ok": true
+  },
+  {
+   "case": "M8.15.1's FROZEN.json copied to the guard's path",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the terms' SHA-256 does not match the guard; the instrument manifest's SHA-256 does not match the guard; the running locate.py's SHA-256 does not match the guard; the running t1_branch.py's SHA-256 does not match the guard.",
+   "expected": "refused",
+   "words": [
+    "terms' SHA-256",
+    "manifest's SHA-256 does not match the guard",
+    "locate.py's SHA-256",
+    "t1_branch.py's SHA-256"
+   ],
+   "ok": true
+  },
+  {
+   "case": "complete and matching",
+   "outcome": "passed the guard",
+   "message": null,
+   "expected": "passed the guard",
+   "words": [],
+   "ok": true
+  },
+  {
+   "case": "the instrument's manifest not the pinned one",
+   "outcome": "refused",
+   "message": "T2 is a target: refused, the instrument manifest's SHA-256 is not the pinned one.",
+   "expected": "refused",
+   "words": [
+    "manifest's SHA-256 is not the pinned one"
+   ],
+   "ok": true
+  }
+ ],
+ "arms": [
+  {
+   "arm": "the terms-hash check disabled, on the third case",
+   "parent_refused": true,
+   "outcome": "passed the guard",
+   "message": null,
+   "caught": true
+  },
+  {
+   "arm": "the inherited guard restored: M8.15.1's entire validate_guard, its file path and four checks alone, with M8.15.1's terms and the instrument's FROZEN.json",
+   "parent_refused": true,
+   "outcome": "passed the guard",
+   "message": null,
+   "caught": true
+  }
+ ],
+ "passed": true,
+ "scratch": "a temporary copy of this folder and of the instrument, removed afterwards"
+}

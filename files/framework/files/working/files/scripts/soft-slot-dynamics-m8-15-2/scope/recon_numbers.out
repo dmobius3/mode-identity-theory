@@ -1,0 +1,76 @@
+== T2_R4 level 3: ends 16.258883, 16.310660; fails at 16.284772; width at the failure 3.18e-03 of the lower end
+   lo  16.258883: n(L) 5, n(B|G_tol) 5, h 0, n_S 2, balanced True, checks none
+       near zero (overlap with P): -8.453e-05 (0.99), -8.453e-05 (0.99), +3.905e-14 (1.00), +4.356e-04 (1.00), +8.855e-04 (0.15), +8.855e-04 (0.15)
+   mid 16.284772: n(L) 5, n(B|G_tol) 5, h 0, n_S 0, balanced True, checks ['structural subspace']
+       near zero (overlap with P): -2.556e-04 (0.60), -2.556e-04 (0.60), -5.381e-14 (1.00), +4.225e-05 (0.80), +4.225e-05 (0.80), +4.363e-04 (1.00)
+   hi  16.310660: n(L) 7, n(B|G_tol) 5, h 2, n_S 2, balanced True, checks none
+       near zero (overlap with P): -1.184e-03 (0.13), -1.184e-03 (0.13), -4.528e-05 (0.99), -4.528e-05 (0.99), -6.765e-14 (1.00), +4.369e-04 (1.00)
+   slowest pair overlap: 16.258883 0.684, 16.284772 6.17e-12, 16.310660 0.822
+   n(L) at the midpoint equals the lower end: n(L) changes in (16.284772, 16.310660]
+   the eigenvalue that changes n(L): +4.225e-05 (0.80) at 16.284772 -> -4.528e-05 (0.99) at 16.310660
+   two-level model: the crossing pair at the clean ends, overlaps 0.1484 and 0.1262: angle 15.8 deg, cosine 0.962, against 0.9 (25.8 deg)
+   the genuine pair +8.855e-04 -> -1.184e-03: interpolated zero 16.281034; outside the n(L) interval, gap 2.30e-04 to 1.82e-03
+== T2_R4 level 2: ends 16.000000, 16.828427; fails at 16.414214; width at the failure 5.18e-02 of the lower end
+   lo  16.000000: n(L) 5, n(B|G_tol) 5, h 0, n_S 2, balanced True, checks none
+       near zero (overlap with P): -1.068e-03 (0.99), -1.068e-03 (0.99), +4.722e-12 (1.00), +7.698e-03 (1.00), +1.393e-02 (0.15), +1.393e-02 (0.15)
+   mid 16.414214: n(L) 5, n(B|G_tol) 5, h 0, n_S 0, balanced True, checks ['structural subspace']
+       near zero (overlap with P): -4.132e-03 (0.57), -4.132e-03 (0.57), -4.955e-14 (1.00), +8.384e-04 (0.82), +8.384e-04 (0.82), +7.901e-03 (1.00)
+   hi  16.828427: n(L) 7, n(B|G_tol) 5, h 2, n_S 2, balanced True, checks none
+       near zero (overlap with P): -1.944e-02 (0.13), -1.944e-02 (0.13), -4.911e-04 (0.99), -4.911e-04 (0.99), +1.020e-13 (1.00), +8.105e-03 (1.00)
+   slowest pair overlap: 16.000000 0.655, 16.414214 5.21e-12, 16.828427 0.832
+   n(L) at the midpoint equals the lower end: n(L) changes in (16.414214, 16.828427]
+   the eigenvalue that changes n(L): +8.384e-04 (0.82) at 16.414214 -> -4.911e-04 (0.99) at 16.828427
+   two-level model: the crossing pair at the clean ends, overlaps 0.1534 and 0.1257: angle 16.0 deg, cosine 0.961, against 0.9 (25.8 deg)
+   the genuine pair +1.393e-02 -> -1.944e-02: interpolated zero 16.345786; outside the n(L) interval, gap 4.19e-03 to 2.95e-02
+== T3_R5 level 3: ends 15.780330, 15.798636; fails at 15.789483; width at the failure 1.16e-03 of the lower end
+   lo  15.780330: n(L) 11, n(B|G_tol) 5, h 6, n_S 2, balanced True, checks none
+       near zero (overlap with P): -9.813e-04 (0.22), -9.813e-04 (0.22), -4.177e-05 (0.97), -4.177e-05 (0.97), -2.938e-15 (1.00), +9.244e-06 (1.00)
+   mid 15.789483: n(L) 9, n(B|G_tol) 1, h 8, n_S 0, balanced True, checks ['structural subspace']
+       near zero (overlap with P): -4.408e-04 (0.50), -4.408e-04 (0.50), +1.803e-13 (1.00), +9.275e-06 (1.00), +3.003e-05 (0.86), +3.003e-05 (0.86)
+   hi  15.798636: n(L) 9, n(B|G_tol) 5, h 4, n_S 2, balanced True, checks none
+       near zero (overlap with P): -1.778e-04 (0.92), -1.778e-04 (0.92), +3.529e-14 (1.00), +9.306e-06 (1.00), +3.798e-04 (0.40), +3.798e-04 (0.40)
+   slowest pair overlap: 15.780330 0.282, 15.789483 0.868, 15.798636 0.455
+   n(L) at the midpoint equals the upper end: n(L) changes in (15.780330, 15.789483]
+   the eigenvalue that changes n(L): -4.177e-05 (0.97) at 15.780330 -> +3.003e-05 (0.86) at 15.789483
+   two-level model: the crossing pair at the clean ends, overlaps 0.2231 and 0.4000: angle 36.5 deg, cosine 0.804, against 0.9 (25.8 deg)
+   the genuine pair -9.813e-04 -> +3.798e-04: interpolated zero 15.793527; outside the n(L) interval, gap 2.56e-04 to 8.36e-04
+== T3_R5 level 2: ends 15.707107, 16.000000; fails at 15.853553; width at the failure 1.86e-02 of the lower end
+   lo  15.707107: n(L) 11, n(B|G_tol) 5, h 6, n_S 2, balanced True, checks none
+       near zero (overlap with P): -8.715e-03 (0.31), -8.715e-03 (0.31), -3.504e-04 (0.95), -3.504e-04 (0.95), +4.573e-14 (1.00), +1.857e-03 (1.00)
+   mid 15.853553: n(L) 9, n(B|G_tol) 1, h 8, n_S 0, balanced True, checks ['structural subspace']
+       near zero (overlap with P): -2.512e-03 (0.87), -2.512e-03 (0.87), +8.260e-14 (1.00), +1.880e-03 (1.00), +3.219e-03 (0.49), +3.219e-03 (0.49)
+   hi  16.000000: n(L) 9, n(B|G_tol) 5, h 4, n_S 2, balanced True, checks none
+       near zero (overlap with P): -1.596e-03 (0.98), -1.596e-03 (0.98), +1.326e-14 (1.00), +1.904e-03 (1.00), +1.222e-02 (0.18), +1.222e-02 (0.18)
+   slowest pair overlap: 15.707107 0.38, 15.853553 0.892, 16.000000 0.22
+   n(L) at the midpoint equals the upper end: n(L) changes in (15.707107, 15.853553]
+   the eigenvalue that changes n(L): -3.504e-04 (0.95) at 15.707107 -> +3.219e-03 (0.49) at 15.853553
+   two-level model: the crossing pair at the clean ends, overlaps 0.3051 and 0.1813: angle 28.2 deg, cosine 0.881, against 0.9 (25.8 deg)
+   the genuine pair -8.715e-03 -> +1.222e-02: interpolated zero 15.829021; inside the n(L) interval, gap 0.00e+00 to 7.70e-03
+== T2_R4: level 2's n(L) change minus level 3's, relative to level 3: +0.63% to +3.34%
+== T2_R4: level 2's interpolated zero minus level 3's, relative to level 3: +0.40%; the genuine pair's slope, level 3 -3.9977e-02, level 2 -4.0271e-02 per unit eps
+== T2_R4: the rotation doublet at the clean ends, level 2 over level 3: lower 12.6, upper 10.8
+== T2_R4: the genuine pair's slopes differ between the levels by 0.74% of level 3's
+== T3_R5: level 2's n(L) change minus level 3's, relative to level 3: -0.52% to +0.46%
+== T3_R5: level 2's interpolated zero minus level 3's, relative to level 3: +0.22%; the genuine pair's slope, level 3 +7.4356e-02, level 2 +7.1484e-02 per unit eps
+== T3_R5: the rotation doublet at the clean ends, level 2 over level 3: lower 8.4, upper 9.0
+== T3_R5: the genuine pair's slopes differ between the levels by 3.86% of level 3's
+== T2_R4: the rotation doublet, level 2 over level 3, at every common eps with both levels clean: 11.3137 9.4, 16 16.8, 16.8284 7.5, 17.6569 10.8, 18.4853 11.8, 19.3137 12.4, 20.1421 12.9, 20.9706 13.4, 21.799 13.8, 22.6274 14.1, 32 17.1
+== T3_R5: the rotation doublet, level 2 over level 3, at every common eps with both levels clean: 11.3137 12.2, 11.8995 12.2, 12.4853 12.3, 13.0711 12.2, 13.6569 12.2, 14.2426 12.1, 14.8284 11.8, 15.4142 10.4, 15.7071 4.3, 16 17.3, 22.6274 13.6
+== decision 7, the comparison outside P at a clean end: overlap with P at most 0.436; the projection keeps at least 0.9 of the norm; Gram eigenvalues at least 0.81; two M-orthogonal genuine vectors agree outside P to at most 0.235; the worst full cosine it passes is 0.539 (57.4 deg)
+== Unit A's counterexample at g = -4.5: structural overlap 0.961; the genuine-like vector is on the lower branch, overlap with P 0.277
+== Unit A's counterexample at g = +3.0: structural overlap 0.969; the genuine-like vector is on the upper branch, overlap with P 0.249
+== Unit A's counterexample: full cosine 0.862; outside P 1.000; n(L) changes at g = -1.21; its eigenvector's lift fraction 0.548
+== v4, #625's continuity reading (the target eps): the primaries' largest miss at steps of 0.026 or less 3.68e-07; across the switches, level 3 at 28.485281 2.80e-03, level 2 at 32.000000 1.87e-02
+== v4, the continuity statistic on the controls' ladders (the reached eps): C2a at most 2.9e-06, C3 at most 3.5e-04; C2a at level 3 against the target eps instead 5.1e-03
+== v4, the continuity statistic on the targets (the reached eps), disclosure: the primaries at most 3.8e-04 (T2/R4) and 7.9e-04 (T3/R5), 2.3 times the controls' largest; across the switches 8.4 (level 3) and 55.8 (level 2), 2.4e+04 and 1.6e+05 times it
+== v4, the secondary's two paths at level 3: on the ladder's path the critical eigenvalue's local slopes from 26.142136 to 29.656854 are +0.091, +0.097, +0.102, and it crosses zero near 27.82; on the second path, over the 10 points the bisection evaluated between 27.313708 and 28.485281, it fits -0.183(eps - 27.78), residuals at most 1.3e-03; the slope ratio -1.8 to -2.0
+== v5, rule 11 on M8.15.1's steps (the reached eps, the completed pool, forward extrapolation): the primaries at most 3.8e-04 (T2/R4) and 7.5e-04 (T3/R5), 2.2 times the controls' largest; the controls' steps at most 2.6e-06; 0 comparisons lack their two points, and 0 pairs of targets coincide
+== v5, rule 11 on #625's secondary: level 3's starting interval 27.313708 to 28.485281, at 27.899495 4.8e-04, at 27.972718 8.7e-03, at 28.485281 8.4; level 2's, 30.828427 to 32.000000, at 32.000000 55.8; the first step's split sub-interval alone, 27.899495 to 28.192388, at most 2.4e-03; level 2's grid switch at 28.485281 1.7e-03
+== v5, the multiples of the controls' largest that give M8.15.1's records one outcome (the primaries pass, both switches stop): 2.2 to 2.4e+04
+== v5, decision 7 from no record: Unit A's family with the ends at g = -20 and 20, full cosine 0.994; at -60 and 60, 0.999; the genuine-like vector on the lower branch at the first end and the upper at the second, at both; (b)'s 0.436 holds in the two-level model for kappa/delta at most 0.484
+== v6, distinct genuine directions outside P: the projected Gram eigenvalues lie in [0.81, 1], so by Wielandt's inequality two M-orthogonal genuine vectors agree outside P to at most 0.105
+== v6, the first cell: T3/R5's guard region and primary bracket both start at 11.313708, the pool's lowest point at both levels, so a step in its first cell, to 11.899495, would have a compared point with one predecessor; M8.15.1 has 0 steps there. T2/R4's guard region starts at 11.313708, below its bracket's 16. A lone failing grid point's first midpoint lies within 2.0e-16 of it, relative, on the targets' brackets, and M8.15.1's primaries have 0 failing grid points
+== v7, the exchanged-lift points (two-level model): the structural subspace check fails where |g + delta| < 1.580 kappa, so above kappa/delta = 2.06 a clean interval separates that window from the n(L) change, where the coupled lifts sit above zero; on the coupled mock (a = 0.05, delta = 1e-5, r = 1.0130), counts only, v6's rule 4 classifies genuine-looking at kappa/delta 0.3, 1, 2, 3 and leaves Unresolved 2.5, 4, 6, 8; with the fix, genuine-looking at 0.3, 1, 2, 2.5, 3, 4, 6, Unresolved 8
+== v7, disclosure: a rough two-level fit at each failing midpoint gives kappa/delta T2/R4 level 3 2.25; T2/R4 level 2 3.08; T3/R5 level 3 2.31; T3/R5 level 2 2.16; T2/R4 level 2's next midpoints meet the clean interval 16.4608 to 16.5286 at 16.5178; no other step meets one
+== v8, the continuity tolerance: the controls' largest statistic is 3.4601e-04 (C3, level 3, at 12.485281); ten times it is 3.4601e-03
+== v9, disclosure: over the controls' full ladders, 0.25 to 72, the statistic reaches 4.1580e-04 (C3, level 3, at 0.5); the registered basis is the control brackets' pools, 3.4601e-04

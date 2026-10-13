@@ -1,0 +1,3 @@
+adjudicate.py --check: 70 synthetic results; the round trip gives the in-memory names at each: yes
+the arm, the key conversion dropped: fails on each of the 25 results that locate a change of type: yes
+PASS

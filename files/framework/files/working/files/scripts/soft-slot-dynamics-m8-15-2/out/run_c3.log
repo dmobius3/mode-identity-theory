@@ -1,0 +1,37 @@
+  L3 eps 0.25: nL 9, nB 6
+  L3 eps 0.3536: nL 9, nB 6
+  L3 eps 0.5: nL 9, nB 6
+  L3 eps 0.7071: nL 9, nB 6
+  L3 eps 1: nL 9, nB 6
+  L3 eps 1.414: nL 9, nB 6
+  L3 eps 2: nL 9, nB 6
+  L3 eps 2.828: nL 9, nB 6
+  L3 eps 4: nL 9, nB 6
+  L3 eps 5.657: nL 9, nB 6
+  L3 eps 8: nL 9, nB 6
+  L3 eps 11.31: nL 9, nB 6
+  L3 eps 16: nL 9, nB 6
+  L3 eps 22.63: nL 9, nB 6
+  L3 eps 32: nL 9, nB 6
+  L3 eps 45.25: nL 9, nB 6
+  L3 eps 64: nL 9, nB 6
+  L3 eps 72: nL 9, nB 6
+  eps 0.25: Hyperbolic
+  eps 0.3536: Hyperbolic
+  eps 0.5: Hyperbolic
+  eps 0.7071: Hyperbolic
+  eps 1: Hyperbolic
+  eps 1.414: Hyperbolic
+  eps 2: Hyperbolic
+  eps 2.828: Hyperbolic
+  eps 4: Hyperbolic
+  eps 5.657: Hyperbolic
+  eps 8: Hyperbolic
+  eps 11.31: Hyperbolic
+  eps 16: Hyperbolic
+  eps 22.63: Hyperbolic
+  eps 32: Hyperbolic
+  eps 45.25: Hyperbolic
+  eps 64: Hyperbolic
+  eps 72: Hyperbolic
+  bracket control: no genuine crossing detected at level 3; no genuine crossing detected at level 2

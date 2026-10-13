@@ -1,0 +1,54 @@
+REGISTER_5.md § 2, the synthetic tests, 2026-10-13T03:08:19Z
+  PASS  S1: parent ok; arms: patch arm: caught
+  PASS  S2: parent ok; arms: plant arm: caught
+  PASS  S3: parent ok; arms: plant arm: caught
+  PASS  S4: parent ok; arms: plant arm: caught
+  PASS  S5: parent ok; arms: plant arm: caught
+  PASS  S6: parent ok; arms: plant arm: caught
+  PASS  S7: parent ok; arms: plant arm: caught
+  PASS  S8: parent ok; arms: plant arm: caught
+  PASS  S9: parent ok; arms: plant arm: caught
+  PASS  S10: parent ok; arms: plant arm: caught
+  PASS  S11: parent ok; arms: plant arm: caught
+  PASS  S12: parent ok; arms: plant arm: caught
+  PASS  S13: parent ok; arms: plant arm: caught
+  PASS  S14: parent ok; arms: patch arm: caught
+  PASS  S15: parent ok; arms: patch arm: caught
+  PASS  S16: parent ok; arms: plant arm: caught
+  PASS  S17: parent ok; arms: patch arm: caught
+  PASS  S18: parent ok; arms: patch arm: caught
+  PASS  S18b: parent ok; arms: patch arm: caught
+  PASS  S18c: parent ok; arms: patch arm: caught
+  PASS  A1: parent ok; arms: M8.15.1's terminal branch restored: caught; v4's tiered names restored: caught; an exchanged-lift point a contradiction, as in v6: caught
+  PASS  A2: parent ok; arms: every crossing classed genuine: caught
+  PASS  A3: parent ok; arms: the rule against genuine and structural crossings in one step removed: caught
+  PASS  A4: parent ok; arms: no glitch: caught
+  PASS  A5: parent ok; arms: a turn of 20 degrees: caught
+  PASS  A6: parent ok; arms: the terminal branch removed for ends that share n(L): caught
+  PASS  A7(a): parent ok; arms: the span's gate passable: caught
+  PASS  A7(b): parent ok; arms: coverage passable: caught
+  PASS  A7(c): parent ok; arms: the span's gate passable: caught
+  PASS  A8: parent ok; arms: a slowest-pair failure made terminal: caught
+  PASS  A9: parent ok; arms: a point whose n_S is above its side's also passed: caught
+  PASS  A10: parent ok; arms: the latest evaluation kept at a duplicate target: caught
+  PASS  A11(a): parent ok; arms: no quartet: caught
+  PASS  A11(b): parent ok; arms: clause 2 applied to the failing midpoint, in the ceiling function: caught
+  PASS  A12: parent ok; arms: the step classified between its n(L) ends: caught
+  PASS  A13: parent ok; arms: the qualifier only when both levels trigger, in the ceiling function: caught
+  PASS  A14: parent ok; arms: every decided guard counting: caught
+  PASS  A15: parent ok; arms: the comparison outside P dropped: caught
+  PASS  A16: parent ok; arms: rule 10 off: caught
+  PASS  A17: parent ok; arms: the comparison outside P dropped: caught
+  PASS  A18: parent ok; arms: the comparison outside P dropped: caught
+  PASS  A19: parent ok; arms: a midpoint failing both passable checks made terminal: caught
+  PASS  A20: parent ok; arms: the bare miss, against a tolerance that clears a grid cell (8.65e-6): caught
+  PASS  A21: parent ok; arms: the continuity check dropped: caught
+  PASS  A22: parent ok; arms: the target eps as abscissa: caught
+  PASS  A23: parent ok; arms: each point's predictors taken in evaluation order: caught
+  PASS  A24: parent ok; arms: the continuity check dropped: caught; the comparisons restricted to the step's final sub-interval: caught
+  PASS  A25: parent ok; arms: the latest evaluation kept: caught
+  PASS  A26: parent ok; arms: a degenerate comparison skipped: caught
+  PASS  A27: parent ok; arms: the bookkeeping check removed: caught
+  PASS  A28: parent ok; arms: every crossing classed genuine: caught
+  PASS  A29: parent ok; arms: an exchanged-lift point taken as a clean end: caught
+synthetic tests: 52 of 52 pass, each arm caught

@@ -1,0 +1,5928 @@
+{
+ "stamp": "2026-10-13T03:08:19Z",
+ "register": "REGISTER_5.md v3",
+ "decide_sha256": "6c48f12a8f58ad16eddd074601fbedc8f2345fb36be4a97da4001972c872bec9",
+ "results": [
+  {
+   "test": "S1",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "upper reading at d = 0.01, Hyperbolic"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0128906249999998,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0183593749999997,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.0053991515618973295
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0027617187499998,
+         "eps2": 1.0081757812499996,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.05,
+         "eps3": 1.06353515625,
+         "eps2": 1.0692773437499998,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S2",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "a structural step",
+      "root": 0.9137
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 0.9137
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "one structural step at level 3",
+      "one structural step at level 2"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S3",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "a structural step",
+      "root": 0.9137
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 0.9137
+     },
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "two steps at level 3, one structural and one genuine",
+      "genuine step at level 3 as in S1",
+      "two steps at level 2, one structural and one genuine",
+      "genuine step at level 2 as in S1",
+      "named a located change of type"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S4",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "no reading above"
+      ],
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "no reading above",
+      "named unresolved, no reading above"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S5",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "mixed upper side"
+      ],
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      }
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "the upper side is mixed",
+      "named unresolved, mixed upper side"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S6",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "collision"
+      ],
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      }
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "a collision is recorded",
+      "named unresolved, collision"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S7",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (Newton failure)",
+      "lo": 1.0,
+      "hi": 1.05
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "a level-3 step Unresolved (Newton failure)",
+      "with the planted residual history",
+      "over the bracket reached",
+      "the result unresolved"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S8",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (crossing identity)",
+      "lo": 1.0125,
+      "hi": 1.01328125
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "the level-3 step Unresolved by the crossing identity check",
+      "the result unresolved"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S9",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (index bookkeeping)",
+      "lo": 1.0125,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (index bookkeeping)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "steps Unresolved by index bookkeeping",
+      "no located change of type"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S10",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "the failing midpoint at 1.025 recorded and passed, its checks structural subspace"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S11",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.02,
+        "eps3": 1.0332599999999998,
+        "eps2": 1.038462,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "the upper d = 0.01 guard is Unresolved by the slowest pair overlap",
+      "the reading above is at d = 0.02"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S12",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "none at level 2",
+      "a cross-level disagreement, unresolved"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S13",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "no reading above"
+      ],
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0333,
+       "interval2": [
+        1.0328125,
+        1.03359375
+       ],
+       "shift": 0.020039486673247984
+      },
+      "readings": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "every offset guard undecided",
+      "the lower reading is the region end, Elliptic",
+      "no reading above",
+      "named unresolved, no reading above"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S14",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.0,
+       "interval3": [
+        1.0,
+        1.00078125
+       ],
+       "root2": 1.0,
+       "interval2": [
+        1.0,
+        1.00078125
+       ],
+       "shift": 0.0
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 0.99,
+        "eps2": 0.99,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.01,
+        "eps2": 1.01,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "level 3 root within 1e-3 of 1.0",
+      "level 2 root within 1e-3 of 1.0"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (spectral coverage)",
+       "lo": 1.0,
+       "hi": 1.00078125
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (spectral coverage)",
+       "lo": 1.0,
+       "hi": 1.00078125
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S15",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "one genuine step at level 3, root within 1e-3",
+      "one genuine step at level 2, root within 1e-3",
+      "shift within 0.002 of +0.50%",
+      "lower reading at d = 0.01, Elliptic",
+      "upper reading at d = 0.01, Hyperbolic",
+      "named a located change of type",
+      "k_L = 32 recorded"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S16",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "no reading above"
+      ],
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "plant arm",
+     "caught": true,
+     "failed_checks": [
+      "the region end does not count",
+      "no reading above",
+      "named unresolved, no reading above"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "region end",
+         "d": null,
+         "eps3": 1.4,
+         "eps2": 1.4,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [
+        "upper"
+       ],
+       "qualification": "confirmed no finer than the ladder"
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S17",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "one genuine step at level 3, root within 1e-3",
+      "one genuine step at level 2, root within 1e-3",
+      "shift within 0.002 of +0.50%",
+      "lower reading at d = 0.01, Elliptic",
+      "upper reading at d = 0.01, Hyperbolic",
+      "named a located change of type"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0125,
+       "hi": 1.01328125
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0179687499999999,
+       "hi": 1.0187499999999998
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S18",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "a structural step",
+      "root": 0.9137
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 0.9137
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "one structural step at level 3, read across the window",
+      "one structural step at level 2, read across the window"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (index bookkeeping)",
+       "lo": 0.91328125,
+       "hi": 0.9140625000000001
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (index bookkeeping)",
+       "lo": 0.91328125,
+       "hi": 0.9140625000000001
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S18b",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (no balanced reading end)",
+      "lo": 0.9234374999999999,
+      "hi": 0.9240234374999999
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (no balanced reading end)",
+      "lo": 0.9234374999999999,
+      "hi": 0.9240234374999999
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "the level-3 step Unresolved (no balanced reading end)",
+      "the level-2 step Unresolved (no balanced reading end)",
+      "no structural or genuine step"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 0.9237
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 0.9237
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "S18c",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (no balanced reading end)",
+      "lo": 0.91328125,
+      "hi": 0.9140625000000001
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (no balanced reading end)",
+      "lo": 0.91328125,
+      "hi": 0.9140625000000001
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "patch arm",
+     "caught": true,
+     "failed_checks": [
+      "the level-3 step Unresolved (no balanced reading end)",
+      "the level-2 step Unresolved (no balanced reading end)",
+      "no structural or genuine step"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 0.9137
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 0.9137
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A1",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": {
+     "(1, 0.3)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0130021299476881,
+        "interval3": [
+         1.0125,
+         1.0140625
+        ],
+        "root2": 1.01810727132157,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.005039615636489808
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0028721086482113,
+         "eps2": 1.0079261986083543,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.023132151247165,
+         "eps2": 1.0282883440347856,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(1, 1)": [
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0179687499999999,
+       "hi": 1.0187499999999998
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ],
+     "(1, 2)": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (mixed overlap)",
+       "lo": 1.0125,
+       "hi": 1.0140625
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ],
+     "(1, 2.5)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0128808896979546,
+        "interval3": [
+         1.0,
+         1.01484375
+        ],
+        "root2": 1.017971396005866,
+        "interval2": [
+         1.0125,
+         1.0195312499999998
+        ],
+        "shift": 0.0050257699199255535
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.002752080800975,
+         "eps2": 1.0077916820458075,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0230096985949342,
+         "eps2": 1.0281511099659246,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(1, 3)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0128344661586544,
+        "interval3": [
+         1.0,
+         1.01484375
+        ],
+        "root2": 1.018001754869767,
+        "interval2": [
+         1.0125,
+         1.0203124999999997
+        ],
+        "shift": 0.005101809707079312
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0027061214970678,
+         "eps2": 1.0078217373210694,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0229628108202409,
+         "eps2": 1.0281817724184648,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(1, 4)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0128626290673817,
+        "interval3": [
+         1.0,
+         1.01640625
+        ],
+        "root2": 1.018043249849162,
+        "interval2": [
+         1.0125,
+         1.0218749999999999
+        ],
+        "shift": 0.005114830612864621
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0027340027767078,
+         "eps2": 1.0078628173506705,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0229912553580556,
+         "eps2": 1.0282236823476536,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(1, 6)": [
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (structural subspace)",
+       "lo": 1.0125,
+       "hi": 1.025
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (index bookkeeping)",
+       "lo": 1.025,
+       "hi": 1.0257812499999999
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ],
+     "(-1, 0.3)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0129994575753192,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0180996281850434,
+        "interval2": [
+         1.0171875,
+         1.0187499999999998
+        ],
+        "shift": 0.005034721955263258
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.002869462999566,
+         "eps2": 1.007918631903193,
+         "verdict": "Hyperbolic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231294521510723,
+         "eps2": 1.0282806244668938,
+         "verdict": "Elliptic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(-1, 1)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.012929729985224,
+        "interval3": [
+         1.0,
+         1.01328125
+        ],
+        "root2": 1.0180959025830378,
+        "interval2": [
+         1.0171875,
+         1.0187499999999998
+        ],
+        "shift": 0.005100228026567236
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0028004326853717,
+         "eps2": 1.0079149435572075,
+         "verdict": "Hyperbolic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0230590272850764,
+         "eps2": 1.0282768616088682,
+         "verdict": "Elliptic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(-1, 2)": [
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (mixed overlap)",
+       "lo": 1.0171875,
+       "hi": 1.0187499999999998
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ],
+     "(-1, 2.5)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0131721070561346,
+        "interval3": [
+         1.01171875,
+         1.025
+        ],
+        "root2": 1.017992593561296,
+        "interval2": [
+         1.01640625,
+         1.0187499999999998
+        ],
+        "shift": 0.00475781604289096
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.02,
+         "eps3": 0.9929086649150118,
+         "eps2": 0.99763274169007,
+         "verdict": "Hyperbolic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.023303828126696,
+         "eps2": 1.028172519496909,
+         "verdict": "Elliptic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(-1, 3)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013144228076701,
+        "interval3": [
+         1.0109374999999998,
+         1.025
+        ],
+        "root2": 1.018194040815873,
+        "interval2": [
+         1.015625,
+         1.025
+        ],
+        "shift": 0.004984297989594571
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.003012785795934,
+         "eps2": 1.0080121004077143,
+         "verdict": "Hyperbolic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.023275670357468,
+         "eps2": 1.0283759812240316,
+         "verdict": "Elliptic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(-1, 4)": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013122511951767,
+        "interval3": [
+         1.009375,
+         1.025
+        ],
+        "root2": 1.0182022439635643,
+        "interval2": [
+         1.01484375,
+         1.025
+        ],
+        "shift": 0.005013936569241954
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0029912868322495,
+         "eps2": 1.0080202215239287,
+         "verdict": "Hyperbolic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0232537370712846,
+         "eps2": 1.0283842664032,
+         "verdict": "Elliptic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ],
+     "(-1, 6)": [
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (index bookkeeping)",
+       "lo": 1.0101562499999999,
+       "hi": 1.0109374999999998
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (structural subspace)",
+       "lo": 1.0125,
+       "hi": 1.025
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   },
+   "arms": [
+    {
+     "label": "M8.15.1's terminal branch restored",
+     "caught": true,
+     "failed_checks": [
+      "+1, 0.3: level 3 steps as tabled",
+      "+1, 0.3: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 0.3: level 3, root within 3e-4 of r",
+      "+1, 0.3: the shift within 0.2% of +0.50%",
+      "+1, 0.3: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 0.3: named with the qualifier, the record keeping its name",
+      "+1, 1: level 3 steps as tabled",
+      "+1, 1: cross-level disagreement",
+      "+1, 2: level 3 steps as tabled",
+      "+1, 2: level 2 steps as tabled",
+      "+1, 2: cross-level disagreement",
+      "+1, 2.5: level 3 steps as tabled",
+      "+1, 2.5: level 2 steps as tabled",
+      "+1, 2.5: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 2.5: level 3, root within 3e-4 of r",
+      "+1, 2.5: level 2, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 2.5: level 2, root within 3e-4 of r",
+      "+1, 2.5: the shift within 0.2% of +0.50%",
+      "+1, 2.5: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 2.5: named with the qualifier, the record keeping its name",
+      "+1, 3: level 3 steps as tabled",
+      "+1, 3: level 2 steps as tabled",
+      "+1, 3: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 3: level 3, root within 3e-4 of r",
+      "+1, 3: level 2, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 3: level 2, root within 3e-4 of r",
+      "+1, 3: the shift within 0.2% of +0.50%",
+      "+1, 3: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 3: named with the qualifier, the record keeping its name",
+      "+1, 4: level 3 steps as tabled",
+      "+1, 4: level 2 steps as tabled",
+      "+1, 4: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 4: level 3, root within 3e-4 of r",
+      "+1, 4: level 2, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 4: level 2, root within 3e-4 of r",
+      "+1, 4: the shift within 0.2% of +0.50%",
+      "+1, 4: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 4: named with the qualifier, the record keeping its name",
+      "+1, 6: level 3 steps as tabled",
+      "+1, 6: cross-level disagreement",
+      "-1, 0.3: level 2 steps as tabled",
+      "-1, 0.3: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 0.3: level 2, root within 3e-4 of r",
+      "-1, 0.3: the shift within 0.2% of +0.50%",
+      "-1, 0.3: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 0.3: named with the qualifier, the record keeping its name",
+      "-1, 1: level 3 steps as tabled",
+      "-1, 1: level 2 steps as tabled",
+      "-1, 1: level 3, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 1: level 3, root within 3e-4 of r",
+      "-1, 1: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 1: level 2, root within 3e-4 of r",
+      "-1, 1: the shift within 0.2% of +0.50%",
+      "-1, 1: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 1: named with the qualifier, the record keeping its name",
+      "-1, 2: level 3 steps as tabled",
+      "-1, 2: level 2 steps as tabled",
+      "-1, 2: cross-level disagreement",
+      "-1, 2.5: level 3 steps as tabled",
+      "-1, 2.5: level 2 steps as tabled",
+      "-1, 2.5: level 3, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 2.5: level 3, root within 3e-4 of r",
+      "-1, 2.5: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 2.5: level 2, root within 3e-4 of r",
+      "-1, 2.5: the shift within 0.2% of +0.50%",
+      "-1, 2.5: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 2.5: named with the qualifier, the record keeping its name",
+      "-1, 3: level 3 steps as tabled",
+      "-1, 3: level 2 steps as tabled",
+      "-1, 3: level 3, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 3: level 3, root within 3e-4 of r",
+      "-1, 3: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 3: level 2, root within 3e-4 of r",
+      "-1, 3: the shift within 0.2% of +0.50%",
+      "-1, 3: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 3: named with the qualifier, the record keeping its name",
+      "-1, 4: level 3 steps as tabled",
+      "-1, 4: level 2 steps as tabled",
+      "-1, 4: level 3, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 4: level 3, root within 3e-4 of r",
+      "-1, 4: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 4: level 2, root within 3e-4 of r",
+      "-1, 4: the shift within 0.2% of +0.50%",
+      "-1, 4: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 4: named with the qualifier, the record keeping its name",
+      "-1, 6: level 3 steps as tabled",
+      "-1, 6: cross-level disagreement"
+     ],
+     "must_fail": [],
+     "names": {
+      "(1, 0.3)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 1)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (crossing identity)",
+        "lo": 1.0179687499999999,
+        "hi": 1.0187499999999998
+       }
+      ],
+      "(1, 2)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ],
+      "(1, 2.5)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ],
+      "(1, 3)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ],
+      "(1, 4)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ],
+      "(1, 6)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.025,
+        "hi": 1.0257812499999999
+       }
+      ],
+      "(-1, 0.3)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0171875,
+        "hi": 1.0187499999999998
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(-1, 1)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0171875,
+        "hi": 1.0187499999999998
+       }
+      ],
+      "(-1, 2)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0171875,
+        "hi": 1.0187499999999998
+       }
+      ],
+      "(-1, 2.5)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.015625,
+        "hi": 1.0187499999999998
+       }
+      ],
+      "(-1, 3)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ],
+      "(-1, 4)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ],
+      "(-1, 6)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0101562499999999,
+        "hi": 1.0109374999999998
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ]
+     }
+    },
+    {
+     "label": "v4's tiered names restored",
+     "caught": true,
+     "failed_checks": [
+      "+1, 0.3: named with the qualifier, the record keeping its name",
+      "+1, 2.5: named with the qualifier, the record keeping its name",
+      "+1, 3: named with the qualifier, the record keeping its name",
+      "+1, 4: named with the qualifier, the record keeping its name",
+      "-1, 0.3: named with the qualifier, the record keeping its name",
+      "-1, 3: named with the qualifier, the record keeping its name",
+      "-1, 4: named with the qualifier, the record keeping its name"
+     ],
+     "must_fail": [
+      "+1, 0.3"
+     ],
+     "names": {
+      "(1, 0.3)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0130021299476881,
+         "interval3": [
+          1.0125,
+          1.0140625
+         ],
+         "root2": 1.01810727132157,
+         "interval2": [
+          1.0179687499999999,
+          1.0187499999999998
+         ],
+         "shift": 0.005039615636489808
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0028721086482113,
+          "eps2": 1.0079261986083543,
+          "verdict": "Elliptic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.023132151247165,
+          "eps2": 1.0282883440347856,
+          "verdict": "Hyperbolic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(1, 1)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (crossing identity)",
+        "lo": 1.0179687499999999,
+        "hi": 1.0187499999999998
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 2)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (mixed overlap)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 2.5)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0128808896979546,
+         "interval3": [
+          1.0,
+          1.01484375
+         ],
+         "root2": 1.017971396005866,
+         "interval2": [
+          1.0125,
+          1.0195312499999998
+         ],
+         "shift": 0.0050257699199255535
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.002752080800975,
+          "eps2": 1.0077916820458075,
+          "verdict": "Elliptic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0230096985949342,
+          "eps2": 1.0281511099659246,
+          "verdict": "Hyperbolic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(1, 3)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0128344661586544,
+         "interval3": [
+          1.0,
+          1.01484375
+         ],
+         "root2": 1.018001754869767,
+         "interval2": [
+          1.0125,
+          1.0203124999999997
+         ],
+         "shift": 0.005101809707079312
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0027061214970678,
+          "eps2": 1.0078217373210694,
+          "verdict": "Elliptic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0229628108202409,
+          "eps2": 1.0281817724184648,
+          "verdict": "Hyperbolic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(1, 4)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0128626290673817,
+         "interval3": [
+          1.0,
+          1.01640625
+         ],
+         "root2": 1.018043249849162,
+         "interval2": [
+          1.0125,
+          1.0218749999999999
+         ],
+         "shift": 0.005114830612864621
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0027340027767078,
+          "eps2": 1.0078628173506705,
+          "verdict": "Elliptic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0229912553580556,
+          "eps2": 1.0282236823476536,
+          "verdict": "Hyperbolic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(1, 6)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.025,
+        "hi": 1.0257812499999999
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(-1, 0.3)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0129994575753192,
+         "interval3": [
+          1.0125,
+          1.01328125
+         ],
+         "root2": 1.0180996281850434,
+         "interval2": [
+          1.0171875,
+          1.0187499999999998
+         ],
+         "shift": 0.005034721955263258
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.002869462999566,
+          "eps2": 1.007918631903193,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0231294521510723,
+          "eps2": 1.0282806244668938,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 1)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.012929729985224,
+         "interval3": [
+          1.0,
+          1.01328125
+         ],
+         "root2": 1.0180959025830378,
+         "interval2": [
+          1.0171875,
+          1.0187499999999998
+         ],
+         "shift": 0.005100228026567236
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0028004326853717,
+          "eps2": 1.0079149435572075,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0230590272850764,
+          "eps2": 1.0282768616088682,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 2)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (mixed overlap)",
+        "lo": 1.0171875,
+        "hi": 1.0187499999999998
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(-1, 2.5)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0131721070561346,
+         "interval3": [
+          1.01171875,
+          1.025
+         ],
+         "root2": 1.017992593561296,
+         "interval2": [
+          1.01640625,
+          1.0187499999999998
+         ],
+         "shift": 0.00475781604289096
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.02,
+          "eps3": 0.9929086649150118,
+          "eps2": 0.99763274169007,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.023303828126696,
+          "eps2": 1.028172519496909,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 3)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.013144228076701,
+         "interval3": [
+          1.0109374999999998,
+          1.025
+         ],
+         "root2": 1.018194040815873,
+         "interval2": [
+          1.015625,
+          1.025
+         ],
+         "shift": 0.004984297989594571
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.003012785795934,
+          "eps2": 1.0080121004077143,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.023275670357468,
+          "eps2": 1.0283759812240316,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 4)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.013122511951767,
+         "interval3": [
+          1.009375,
+          1.025
+         ],
+         "root2": 1.0182022439635643,
+         "interval2": [
+          1.01484375,
+          1.025
+         ],
+         "shift": 0.005013936569241954
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0029912868322495,
+          "eps2": 1.0080202215239287,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0232537370712846,
+          "eps2": 1.0283842664032,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 6)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0101562499999999,
+        "hi": 1.0109374999999998
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "label": "an exchanged-lift point a contradiction, as in v6",
+     "caught": true,
+     "failed_checks": [
+      "+1, 2.5: level 3 steps as tabled",
+      "+1, 2.5: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 2.5: level 3, root within 3e-4 of r",
+      "+1, 2.5: the shift within 0.2% of +0.50%",
+      "+1, 2.5: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 2.5: named with the qualifier, the record keeping its name",
+      "+1, 3: level 2 steps as tabled",
+      "+1, 3: level 2, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 3: level 2, root within 3e-4 of r",
+      "+1, 3: the shift within 0.2% of +0.50%",
+      "+1, 3: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 3: named with the qualifier, the record keeping its name",
+      "+1, 4: level 3 steps as tabled",
+      "+1, 4: level 2 steps as tabled",
+      "+1, 4: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 4: level 3, root within 3e-4 of r",
+      "+1, 4: level 2, one genuine step, dn(L) +2, dn_S 0",
+      "+1, 4: level 2, root within 3e-4 of r",
+      "+1, 4: the shift within 0.2% of +0.50%",
+      "+1, 4: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "+1, 4: named with the qualifier, the record keeping its name",
+      "+1, 6: level 3 steps as tabled",
+      "+1, 6: cross-level disagreement",
+      "-1, 3: level 3 steps as tabled",
+      "-1, 3: level 2 steps as tabled",
+      "-1, 3: level 3, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 3: level 3, root within 3e-4 of r",
+      "-1, 3: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 3: level 2, root within 3e-4 of r",
+      "-1, 3: the shift within 0.2% of +0.50%",
+      "-1, 3: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 3: named with the qualifier, the record keeping its name",
+      "-1, 4: level 3 steps as tabled",
+      "-1, 4: level 2 steps as tabled",
+      "-1, 4: level 3, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 4: level 3, root within 3e-4 of r",
+      "-1, 4: level 2, one genuine step, dn(L) -2, dn_S 0",
+      "-1, 4: level 2, root within 3e-4 of r",
+      "-1, 4: the shift within 0.2% of +0.50%",
+      "-1, 4: a decided, counting reading on each side, Hyperbolic below and Elliptic above",
+      "-1, 4: named with the qualifier, the record keeping its name",
+      "-1, 6: level 3 steps as tabled",
+      "-1, 6: cross-level disagreement"
+     ],
+     "must_fail": [
+      "+1, 4:",
+      "-1, 4:"
+     ],
+     "names": {
+      "(1, 0.3)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0130021299476881,
+         "interval3": [
+          1.0125,
+          1.0140625
+         ],
+         "root2": 1.01810727132157,
+         "interval2": [
+          1.0179687499999999,
+          1.0187499999999998
+         ],
+         "shift": 0.005039615636489808
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0028721086482113,
+          "eps2": 1.0079261986083543,
+          "verdict": "Elliptic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.023132151247165,
+          "eps2": 1.0282883440347856,
+          "verdict": "Hyperbolic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(1, 1)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (crossing identity)",
+        "lo": 1.0179687499999999,
+        "hi": 1.0187499999999998
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 2)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (mixed overlap)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 2.5)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0125,
+        "hi": 1.015625
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 3)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0187499999999998,
+        "hi": 1.0203124999999997
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(1, 4)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0125,
+        "hi": 1.0187499999999998
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0187499999999998,
+        "hi": 1.0218749999999999
+       }
+      ],
+      "(1, 6)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0125,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.025,
+        "hi": 1.0257812499999999
+       }
+      ],
+      "(-1, 0.3)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0129994575753192,
+         "interval3": [
+          1.0125,
+          1.01328125
+         ],
+         "root2": 1.0180996281850434,
+         "interval2": [
+          1.0171875,
+          1.0187499999999998
+         ],
+         "shift": 0.005034721955263258
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.002869462999566,
+          "eps2": 1.007918631903193,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0231294521510723,
+          "eps2": 1.0282806244668938,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 1)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.012929729985224,
+         "interval3": [
+          1.0,
+          1.01328125
+         ],
+         "root2": 1.0180959025830378,
+         "interval2": [
+          1.0171875,
+          1.0187499999999998
+         ],
+         "shift": 0.005100228026567236
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0028004326853717,
+          "eps2": 1.0079149435572075,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.0230590272850764,
+          "eps2": 1.0282768616088682,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 2)": [
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (mixed overlap)",
+        "lo": 1.0171875,
+        "hi": 1.0187499999999998
+       },
+       {
+        "name": "an index crossing located; the change of type remains unresolved",
+        "reasons": [
+         "cross-level disagreement"
+        ]
+       }
+      ],
+      "(-1, 2.5)": [
+       {
+        "name": "a located change of type",
+        "location": {
+         "root3": 1.0131721070561346,
+         "interval3": [
+          1.01171875,
+          1.025
+         ],
+         "root2": 1.017992593561296,
+         "interval2": [
+          1.01640625,
+          1.0187499999999998
+         ],
+         "shift": 0.00475781604289096
+        },
+        "readings": {
+         "lower": {
+          "kind": "offset",
+          "d": 0.02,
+          "eps3": 0.9929086649150118,
+          "eps2": 0.99763274169007,
+          "verdict": "Hyperbolic"
+         },
+         "upper": {
+          "kind": "offset",
+          "d": 0.01,
+          "eps3": 1.023303828126696,
+          "eps2": 1.028172519496909,
+          "verdict": "Elliptic"
+         }
+        },
+        "region_end_readings": [],
+        "qualification": null
+       }
+      ],
+      "(-1, 3)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0109374999999998,
+        "hi": 1.0125
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.015625,
+        "hi": 1.0171875
+       }
+      ],
+      "(-1, 4)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.009375,
+        "hi": 1.0125
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0125,
+        "hi": 1.0187499999999998
+       }
+      ],
+      "(-1, 6)": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (neither side's counts after a failure)",
+        "lo": 1.0,
+        "hi": 1.0125
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0101562499999999,
+        "hi": 1.0109374999999998
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (structural subspace)",
+        "lo": 1.0125,
+        "hi": 1.025
+       }
+      ]
+     }
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A2",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": {
+     "0.3": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.0130021299476881
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.0130021299476881
+      }
+     ],
+     "1": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0125,
+       "hi": 1.0140625
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0125,
+       "hi": 1.0140625
+      }
+     ],
+     "2": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (mixed overlap)",
+       "lo": 1.0125,
+       "hi": 1.0140625
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (mixed overlap)",
+       "lo": 1.0125,
+       "hi": 1.0140625
+      }
+     ]
+    }
+   },
+   "arms": [
+    {
+     "label": "every crossing classed genuine",
+     "caught": true,
+     "failed_checks": [
+      "kappa 0.3 delta, level 3: structural",
+      "kappa 0.3 delta, level 2: structural",
+      "kappa 1 delta, level 3: Unresolved (crossing identity)",
+      "kappa 1 delta, level 2: Unresolved (crossing identity)",
+      "kappa 2 delta, level 3: Unresolved (mixed overlap)",
+      "kappa 2 delta, level 2: Unresolved (mixed overlap)"
+     ],
+     "must_fail": [],
+     "names": {
+      "0.3": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       }
+      ],
+      "1": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       }
+      ],
+      "2": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0125,
+        "hi": 1.0140625
+       }
+      ]
+     }
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A3",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (genuine and structural crossings in one step)",
+      "lo": 1.0125,
+      "hi": 1.015625
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 1.0127
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the rule against genuine and structural crossings in one step removed",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (genuine and structural crossings in one step), a branch step",
+      "the bracket: cross-level disagreement"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.0127
+      },
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.0129,
+        "interval3": [
+         1.0125,
+         1.015625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00513377431138325
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0027709999999999,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.023029,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A4",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (passed midpoint matches neither end)",
+      "lo": 1.0,
+      "hi": 1.05
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "no glitch",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (passed midpoint matches neither end)",
+      "the passed midpoint at 1.025, its n(L) 6"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A5",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (crossing identity)",
+      "lo": 1.0,
+      "hi": 1.0140625
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (crossing identity)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "a turn of 20 degrees",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (crossing identity)",
+      "outside P and in full, cos 30 degrees = 0.866"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0,
+         1.0140625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A6",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (structural subspace)",
+      "lo": 1.0,
+      "hi": 1.025
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (index bookkeeping)",
+      "lo": 1.0257812499999999,
+      "hi": 1.0265624999999998
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (structural subspace)",
+      "lo": 1.0125,
+      "hi": 1.025
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (index bookkeeping)",
+      "lo": 1.03046875,
+      "hi": 1.03125
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the terminal branch removed for ends that share n(L)",
+     "caught": true,
+     "failed_checks": [
+      "M8.15.1's terminal branch: that sub-interval Unresolved (structural subspace) at its failing midpoint 1.0125"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0,
+       "hi": 1.01640625
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (index bookkeeping)",
+       "lo": 1.0257812499999999,
+       "hi": 1.0265624999999998
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.0125,
+       "hi": 1.02109375
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (index bookkeeping)",
+       "lo": 1.03046875,
+       "hi": 1.03125
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A7(a)",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (structural span)",
+      "lo": 1.0,
+      "hi": 1.05
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the span's gate passable",
+     "caught": true,
+     "failed_checks": [
+      "level 3: terminal at 1.025, Unresolved with structural span among the reasons"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A7(b)",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (spectral coverage, structural subspace)",
+      "lo": 1.0,
+      "hi": 1.05
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "coverage passable",
+     "caught": true,
+     "failed_checks": [
+      "level 3: terminal at 1.025, Unresolved with spectral coverage among the reasons"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A7(c)",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (structural span, structural subspace)",
+      "lo": 1.0,
+      "hi": 1.05
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the span's gate passable",
+     "caught": true,
+     "failed_checks": [
+      "level 3: terminal at 1.025, Unresolved with structural span among the reasons"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A8",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "a slowest-pair failure made terminal",
+     "caught": true,
+     "failed_checks": [
+      "one genuine step at level 3, root within 1e-3",
+      "shift within 0.002 of +0.50%",
+      "lower reading at d = 0.01, Elliptic",
+      "upper reading at d = 0.01, Hyperbolic",
+      "named a located change of type",
+      "the failing midpoint at 1.025 recorded and passed, its checks slowest pair overlap",
+      "outside the clean window",
+      "not a branch step",
+      "clause 3 does not apply: adjudicated a located change of type"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (slowest pair overlap)",
+       "lo": 1.0,
+       "hi": 1.05
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A9",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (neither side's counts after a failure)",
+      "lo": 1.0,
+      "hi": 1.025
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 1.004
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "a point whose n_S is above its side's also passed",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (neither side's counts after a failure)",
+      "the clean midpoint 1.0125 carries (4, 4): the lower side's n(L), with n_S above its (4, 3)"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (genuine and structural crossings in one step)",
+       "lo": 1.0,
+       "hi": 1.01328125
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.004
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A10",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity, duplicate target)",
+      "lo": 1.0125,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity, duplicate target)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the latest evaluation kept at a duplicate target",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (solution continuity, duplicate target)",
+      "level 3: its records at 1.0 agreeing value for value",
+      "level 2: Unresolved (solution continuity, duplicate target)",
+      "level 2: its records at 1.0 agreeing value for value"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A11(a)",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "collision"
+      ],
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0,
+        1.0140625
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      }
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "no quartet",
+     "caught": true,
+     "failed_checks": [
+      "a collision: an index crossing located; the change of type remains unresolved"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0,
+         1.0140625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A11(b)",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0,
+        1.0140625
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "clause 2 applied to the failing midpoint, in the ceiling function",
+     "caught": true,
+     "failed_checks": [
+      "located with the qualifier, without clause 2's words"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0,
+         1.0140625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A12",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0,
+        1.0140625
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the step classified between its n(L) ends",
+     "caught": true,
+     "failed_checks": [
+      "level 3: genuine, a branch step",
+      "located, with the qualifier"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (structural subspace)",
+       "lo": 1.0125,
+       "hi": 1.01328125
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A13",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0,
+        1.0140625
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the qualifier only when both levels trigger, in the ceiling function",
+     "caught": true,
+     "failed_checks": [
+      "the qualifier applies"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0,
+         1.0140625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A14",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.0120165759767792,
+       "interval3": [
+        1.0,
+        1.025
+       ],
+       "root2": 1.0130118787512197,
+       "interval2": [
+        1.0015625,
+        1.025
+       ],
+       "shift": 0.000983484656345515
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.02,
+        "eps3": 0.9917762444572435,
+        "eps2": 0.9927516411761953,
+        "verdict": "Hyperbolic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.022136741736547,
+        "eps2": 1.023141997538732,
+        "verdict": "Elliptic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "every decided guard counting",
+     "caught": true,
+     "failed_checks": [
+      "the lower reading from d = 0.02, Hyperbolic",
+      "located, with the qualifier"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "mixed lower side"
+       ],
+       "location": {
+        "root3": 1.0120165759767792,
+        "interval3": [
+         1.0,
+         1.025
+        ],
+        "root2": 1.0130118787512197,
+        "interval2": [
+         1.0015625,
+         1.025
+        ],
+        "shift": 0.000983484656345515
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0018964102170114,
+         "eps2": 1.0028817599637074,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.022136741736547,
+         "eps2": 1.023141997538732,
+         "verdict": "Elliptic"
+        }
+       }
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A15",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.0131721070561346,
+       "interval3": [
+        1.01171875,
+        1.025
+       ],
+       "root2": 1.017992593561296,
+       "interval2": [
+        1.01640625,
+        1.0187499999999998
+       ],
+       "shift": 0.00475781604289096
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.02,
+        "eps3": 0.9929086649150118,
+        "eps2": 0.99763274169007,
+        "verdict": "Hyperbolic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.023303828126696,
+        "eps2": 1.028172519496909,
+        "verdict": "Elliptic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the comparison outside P dropped",
+     "caught": true,
+     "failed_checks": [
+      "level 2: genuine, a branch step",
+      "the full cosine at 0.746",
+      "the cosine outside P at 1.000",
+      "named with the qualifier, never with a positive identification"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (crossing identity)",
+       "lo": 1.01640625,
+       "hi": 1.0187499999999998
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A16",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (clean window over one grid cell)",
+      "lo": 0.9,
+      "hi": 1.0130859375
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "rule 10 off",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (clean window over one grid cell)",
+      "the bracket: cross-level disagreement"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         0.9,
+         1.0130859375
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0177734375000003,
+         1.0183593750000002
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A17",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (crossing identity)",
+      "lo": 1.0,
+      "hi": 1.0140625
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the comparison outside P dropped",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (crossing identity), a branch step"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0,
+         1.0140625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A18",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (crossing identity)",
+      "lo": 1.0,
+      "hi": 1.0140625
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the comparison outside P dropped",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (crossing identity), a branch step"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "no reading below",
+        "no reading above"
+       ],
+       "location": {
+        "root3": 1.011876838235294,
+        "interval3": [
+         1.0,
+         1.0140625
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00615011781034448
+       },
+       "readings": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A19",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "a midpoint failing both passable checks made terminal",
+     "caught": true,
+     "failed_checks": [
+      "one genuine step at level 3, root within 1e-3",
+      "shift within 0.002 of +0.50%",
+      "lower reading at d = 0.01, Elliptic",
+      "upper reading at d = 0.01, Hyperbolic",
+      "named a located change of type",
+      "the failing midpoint at 1.025 recorded and passed, its checks structural subspace, slowest pair overlap",
+      "outside the clean window",
+      "not a branch step",
+      "clause 3 does not apply: adjudicated a located change of type"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (structural subspace, slowest pair overlap)",
+       "lo": 1.0,
+       "hi": 1.05
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A20",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0125,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the bare miss, against a tolerance that clears a grid cell (8.65e-6)",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (solution continuity)"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A21",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the continuity check dropped",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (solution continuity)",
+      "along the span at 1.0125: 0.0259",
+      "along the span at 1.013281: 0.120",
+      "across the step: 0.0241"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A22",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.0128808896979546,
+       "interval3": [
+        1.0,
+        1.01484375
+       ],
+       "root2": 1.017971396005866,
+       "interval2": [
+        1.0125,
+        1.0195312499999998
+       ],
+       "shift": 0.0050257699199255535
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.002752080800975,
+        "eps2": 1.0077916820458075,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0230096985949342,
+        "eps2": 1.0281511099659246,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the target eps as abscissa",
+     "caught": true,
+     "failed_checks": [
+      "as A1: +1, 2.5: level 3 steps as tabled",
+      "as A1: +1, 2.5: level 2 steps as tabled",
+      "as A1: +1, 2.5: level 3, one genuine step, dn(L) +2, dn_S 0",
+      "as A1: +1, 2.5: level 3, root within 3e-4 of r",
+      "as A1: +1, 2.5: level 2, one genuine step, dn(L) +2, dn_S 0",
+      "as A1: +1, 2.5: level 2, root within 3e-4 of r",
+      "as A1: +1, 2.5: the shift within 0.2% of +0.50%",
+      "as A1: +1, 2.5: a decided, counting reading on each side, Elliptic below and Hyperbolic above",
+      "as A1: +1, 2.5: named with the qualifier, the record keeping its name",
+      "rule 11 passes",
+      "at most 3.46e-4"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0,
+       "hi": 1.01484375
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0125,
+       "hi": 1.0195312499999998
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A23",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "a structural step",
+      "root": 1.005
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 1.005
+     },
+     {
+      "name": "a located change of type",
+      "location": {
+       "root3": 1.013,
+       "interval3": [
+        1.0125,
+        1.01328125
+       ],
+       "root2": 1.0181,
+       "interval2": [
+        1.0179687499999999,
+        1.0187499999999998
+       ],
+       "shift": 0.00503455083909191
+      },
+      "readings": {
+       "lower": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.00287,
+        "eps2": 1.007919,
+        "verdict": "Elliptic"
+       },
+       "upper": {
+        "kind": "offset",
+        "d": 0.01,
+        "eps3": 1.0231299999999999,
+        "eps2": 1.028281,
+        "verdict": "Hyperbolic"
+       }
+      },
+      "region_end_readings": [],
+      "qualification": null
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "each point's predictors taken in evaluation order",
+     "caught": true,
+     "failed_checks": [
+      "level 3: two steps, structural and genuine",
+      "level 3: the genuine step as in S1",
+      "level 2: two steps, structural and genuine",
+      "level 2: the genuine step as in S1",
+      "located as S3",
+      "rule 11 passes through the registered comparisons"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0046875000000002,
+       "hi": 1.0054687500000001
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0125,
+       "hi": 1.01328125
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0046875000000002,
+       "hi": 1.0054687500000001
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0179687499999999,
+       "hi": 1.0187499999999998
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A24",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0046875000000002,
+      "hi": 1.0054687500000001
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0125,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0046875000000002,
+      "hi": 1.0054687500000001
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the continuity check dropped",
+     "caught": true,
+     "failed_checks": [
+      "level 3: both steps Unresolved (solution continuity)",
+      "level 3, the step at 1.004688: failing at the switch's entry and exit",
+      "level 3, the step at 1.012500: failing at the switch's entry and exit",
+      "level 2: both steps Unresolved (solution continuity)",
+      "level 2, the step at 1.004688: failing at the switch's entry and exit",
+      "level 2, the step at 1.017969: failing at the switch's entry and exit"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.005
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.005
+      },
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    },
+    {
+     "label": "the comparisons restricted to the step's final sub-interval",
+     "caught": true,
+     "failed_checks": [
+      "level 3: both steps Unresolved (solution continuity)",
+      "level 3, the step at 1.004688: failing at the switch's entry and exit",
+      "level 3, the step at 1.012500: failing at the switch's entry and exit",
+      "level 2: both steps Unresolved (solution continuity)",
+      "level 2, the step at 1.004688: failing at the switch's entry and exit",
+      "level 2, the step at 1.017969: failing at the switch's entry and exit"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.005
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.005
+      },
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 1.013,
+        "interval3": [
+         1.0125,
+         1.01328125
+        ],
+        "root2": 1.0181,
+        "interval2": [
+         1.0179687499999999,
+         1.0187499999999998
+        ],
+        "shift": 0.00503455083909191
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.00287,
+         "eps2": 1.007919,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 1.0231299999999999,
+         "eps2": 1.028281,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A25",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity, duplicate target)",
+      "lo": 1.0125,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity, duplicate target)",
+      "lo": 1.0179687499999999,
+      "hi": 1.0187499999999998
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the latest evaluation kept",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (solution continuity, duplicate target)",
+      "level 3: its records at 1.0 differing by 1e-5",
+      "level 2: Unresolved (solution continuity, duplicate target)",
+      "level 2: its records at 1.0 differing by 1e-5"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0125,
+       "hi": 1.01328125
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (solution continuity)",
+       "lo": 1.0179687499999999,
+       "hi": 1.0187499999999998
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A26",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 0.81953125,
+      "hi": 0.8203125000000001
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (solution continuity)",
+      "lo": 0.8234375,
+      "hi": 0.82421875
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "a degenerate comparison skipped",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (solution continuity)",
+      "level 2: Unresolved (solution continuity)"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "name": "a located change of type",
+       "location": {
+        "root3": 0.82,
+        "interval3": [
+         0.81953125,
+         0.8203125000000001
+        ],
+        "root2": 0.8241,
+        "interval2": [
+         0.8234375,
+         0.82421875
+        ],
+        "shift": 0.005000000000000127
+       },
+       "readings": {
+        "lower": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 0.8118,
+         "eps2": 0.815859,
+         "verdict": "Elliptic"
+        },
+        "upper": {
+         "kind": "offset",
+         "d": 0.01,
+         "eps3": 0.8281999999999999,
+         "eps2": 0.8323410000000001,
+         "verdict": "Hyperbolic"
+        }
+       },
+       "region_end_readings": [],
+       "qualification": null
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A27",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (structural subspace)",
+      "lo": 1.0,
+      "hi": 1.025
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (index bookkeeping)",
+      "lo": 1.0257812499999999,
+      "hi": 1.0265624999999998
+     },
+     {
+      "level": 2,
+      "name": "no genuine crossing detected at level 2"
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (structural subspace)",
+      "lo": 1.0125,
+      "hi": 1.025
+     },
+     {
+      "level": 2,
+      "name": "an Unresolved step (index bookkeeping)",
+      "lo": 1.03046875,
+      "hi": 1.03125
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "the bookkeeping check removed",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (index bookkeeping) on 1.025781 to 1.026562, classes structural, dn(L) = dn_S = +2, dh = +2",
+      "level 2: Unresolved (index bookkeeping) on 1.030469 to 1.03125, classes structural"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "an Unresolved step (structural subspace)",
+       "lo": 1.0,
+       "hi": 1.025
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.0258010837406706
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "an Unresolved step (structural subspace)",
+       "lo": 1.0125,
+       "hi": 1.025
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.030911430536823
+      }
+     ]
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A28",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": {
+     "2.5": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.0128808896979546
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.0128808896979546
+      }
+     ],
+     "3": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.0128344661586544
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.0128344661586544
+      }
+     ],
+     "4": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.0128626290673817
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.0128626290673817
+      }
+     ],
+     "6": [
+      {
+       "level": 3,
+       "name": "no genuine crossing detected at level 3"
+      },
+      {
+       "level": 3,
+       "name": "a structural step",
+       "root": 1.0129141607726695
+      },
+      {
+       "level": 2,
+       "name": "no genuine crossing detected at level 2"
+      },
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.0129141607726695
+      }
+     ]
+    }
+   },
+   "arms": [
+    {
+     "label": "every crossing classed genuine",
+     "caught": true,
+     "failed_checks": [
+      "kappa 2.5 delta, level 3: structural, a branch step",
+      "kappa 2.5 delta, level 2: structural, a branch step",
+      "kappa 3 delta, level 3: structural, a branch step",
+      "kappa 3 delta, level 2: structural, a branch step",
+      "kappa 4 delta, level 3: structural, a branch step",
+      "kappa 4 delta, level 2: structural, a branch step",
+      "kappa 6 delta, level 3: structural, a branch step",
+      "kappa 6 delta, level 2: structural, a branch step"
+     ],
+     "must_fail": [],
+     "names": {
+      "2.5": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.01484375
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.01484375
+       }
+      ],
+      "3": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.01484375
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.01484375
+       }
+      ],
+      "4": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.01640625
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.01640625
+       }
+      ],
+      "6": [
+       {
+        "level": 3,
+        "name": "no genuine crossing detected at level 3"
+       },
+       {
+        "level": 3,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.0203124999999997
+       },
+       {
+        "level": 2,
+        "name": "no genuine crossing detected at level 2"
+       },
+       {
+        "level": 2,
+        "name": "an Unresolved step (index bookkeeping)",
+        "lo": 1.0,
+        "hi": 1.0203124999999997
+       }
+      ]
+     }
+    }
+   ],
+   "passed": true
+  },
+  {
+   "test": "A29",
+   "parent": {
+    "passed": true,
+    "failed": [],
+    "names": [
+     {
+      "level": 3,
+      "name": "no genuine crossing detected at level 3"
+     },
+     {
+      "level": 3,
+      "name": "an Unresolved step (genuine and structural crossings in one step)",
+      "lo": 1.0,
+      "hi": 1.01328125
+     },
+     {
+      "level": 2,
+      "name": "a structural step",
+      "root": 1.004
+     },
+     {
+      "name": "an index crossing located; the change of type remains unresolved",
+      "reasons": [
+       "cross-level disagreement"
+      ]
+     }
+    ]
+   },
+   "arms": [
+    {
+     "label": "an exchanged-lift point taken as a clean end",
+     "caught": true,
+     "failed_checks": [
+      "level 3: Unresolved (genuine and structural crossings in one step), a branch step",
+      "the classification between 1.0 and 1.013281",
+      "meets both crossings"
+     ],
+     "must_fail": [],
+     "names": [
+      {
+       "level": 2,
+       "name": "a structural step",
+       "root": 1.004
+      },
+      {
+       "name": "an index crossing located; the change of type remains unresolved",
+       "reasons": [
+        "cross-level disagreement"
+       ]
+      }
+     ]
+    }
+   ],
+   "passed": true
+  }
+ ]
+}

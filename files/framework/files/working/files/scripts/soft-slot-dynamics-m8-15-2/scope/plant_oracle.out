@@ -1,0 +1,270 @@
+== A1, slope sign +1, kappa/delta 0.3, level 3: n(L) change 1.013018; 1 step(s)
+   genuine: n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.014063, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.988 outside P 1.000, branch step, root 1.013002
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, upper (5, 3); 1.014063 clean, upper (5, 3); 1.013281 failing (5, 1)
+== A1, slope sign +1, kappa/delta 0.3, level 2: n(L) change 1.018118; 1 step(s)
+   genuine: n(L) ends 1.017969 to 1.018750, clean ends 1.017969 to 1.018750, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.954 outside P 1.000, not a branch step, root 1.018107
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, lower (3, 3); 1.017187 clean, lower (3, 3); 1.017969 clean, lower (3, 3)
+== A1, slope sign +1, kappa/delta 1, level 3: n(L) change 1.013200; 1 step(s)
+   genuine: n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.014063, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.889 outside P 1.000, branch step, root 1.013021
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, upper (5, 3); 1.014063 clean, upper (5, 3); 1.013281 failing (5, 1)
+== A1, slope sign +1, kappa/delta 1, level 2: n(L) change 1.018300; 1 step(s)
+   Unresolved (crossing identity): n(L) ends 1.017969 to 1.018750, clean ends 1.017969 to 1.018750, classes ['mixed', 'mixed'], dn(L) +2, dn_S +0, dh +2, not a branch step
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, lower (3, 3); 1.017187 clean, lower (3, 3); 1.017969 clean, lower (3, 3)
+== A1, slope sign +1, kappa/delta 2, level 3: n(L) change 1.013800; 1 step(s)
+   Unresolved (mixed overlap): n(L) ends 1.013281 to 1.014063, clean ends 1.012500 to 1.014063, classes ['mixed', 'mixed'], dn(L) +2, dn_S +0, dh +2, branch step
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, upper (5, 3); 1.014063 clean, upper (5, 3); 1.013281 failing (3, 1)
+== A1, slope sign +1, kappa/delta 2, level 2: n(L) change 1.018900; 1 step(s)
+   genuine: n(L) ends 1.018750 to 1.019531, clean ends 1.012500 to 1.019531, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.937 outside P 1.000, branch step, root 1.018013
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 failing (3, 1); 1.021875 clean, upper (5, 3); 1.020312 clean, upper (5, 3); 1.019531 clean, upper (5, 3)
+== A1, slope sign +1, kappa/delta 2.5, level 3: n(L) change 1.014250; 1 step(s)
+   genuine: n(L) ends 1.014063 to 1.014844, clean ends 1.000000 to 1.014844, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.952 outside P 1.000, branch step, root 1.012881
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 failing (3, 1); 1.018750 clean, upper (5, 3); 1.015625 clean, upper (5, 3); 1.014063 exchanged-lift, passed (3, 1); 1.014844 clean, upper (5, 3)
+== A1, slope sign +1, kappa/delta 2.5, level 2: n(L) change 1.019350; 1 step(s)
+   genuine: n(L) ends 1.018750 to 1.019531, clean ends 1.012500 to 1.019531, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.910 outside P 1.000, branch step, root 1.017971
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 failing (3, 1); 1.021875 clean, upper (5, 3); 1.020312 clean, upper (5, 3); 1.019531 clean, upper (5, 3)
+== A1, slope sign +1, kappa/delta 3, level 3: n(L) change 1.014800; 1 step(s)
+   genuine: n(L) ends 1.014063 to 1.014844, clean ends 1.000000 to 1.014844, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.936 outside P 1.000, branch step, root 1.012834
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 failing (3, 1); 1.018750 clean, upper (5, 3); 1.015625 clean, upper (5, 3); 1.014063 failing (3, 1); 1.014844 clean, upper (5, 3)
+== A1, slope sign +1, kappa/delta 3, level 2: n(L) change 1.019900; 1 step(s)
+   genuine: n(L) ends 1.019531 to 1.020312, clean ends 1.012500 to 1.020312, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.932 outside P 1.000, branch step, root 1.018002
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 failing (3, 1); 1.021875 clean, upper (5, 3); 1.020312 clean, upper (5, 3); 1.019531 exchanged-lift, passed (3, 1)
+== A1, slope sign +1, kappa/delta 4, level 3: n(L) change 1.016200; 1 step(s)
+   genuine: n(L) ends 1.015625 to 1.016406, clean ends 1.000000 to 1.016406, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.958 outside P 1.000, branch step, root 1.012863
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 failing (3, 1); 1.018750 clean, upper (5, 3); 1.015625 exchanged-lift, passed (3, 1); 1.017187 clean, upper (5, 3); 1.016406 clean, upper (5, 3)
+== A1, slope sign +1, kappa/delta 4, level 2: n(L) change 1.021300; 1 step(s)
+   genuine: n(L) ends 1.021094 to 1.021875, clean ends 1.012500 to 1.021875, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.941 outside P 1.000, branch step, root 1.018043
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 failing (3, 1); 1.021875 clean, upper (5, 3); 1.020312 exchanged-lift, passed (3, 1); 1.021094 exchanged-lift, passed (3, 1)
+== A1, slope sign +1, kappa/delta 6, level 3: n(L) change 1.020200; 1 step(s)
+   genuine: n(L) ends 1.019531 to 1.020312, clean ends 1.000000 to 1.020312, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 0.968 outside P 1.000, branch step, root 1.012914
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 failing (3, 1); 1.018750 exchanged-lift, passed (3, 1); 1.021875 clean, upper (5, 3); 1.020312 clean, upper (5, 3); 1.019531 exchanged-lift, passed (3, 1)
+== A1, slope sign +1, kappa/delta 6, level 2: n(L) change 1.025300; 2 step(s)
+   Unresolved (structural subspace): n(L) ends 1.012500 to 1.025000
+      midpoints in order: 1.012500 clean, lower (3, 3); 1.018750 failing (3, 1)
+   Unresolved (index bookkeeping): n(L) ends 1.025000 to 1.025781, clean ends 1.025000 to 1.025781, classes ['structural', 'structural'], dn(L) +2, dn_S +2, dh +2, not a branch step
+      midpoints in order: 1.037500 clean, upper (5, 3); 1.031250 clean, upper (5, 3); 1.028125 clean, upper (5, 3); 1.026562 clean, upper (5, 3); 1.025781 clean, upper (5, 3)
+== A1, slope sign -1, kappa/delta 0.3, level 3: n(L) change 1.012982; 1 step(s)
+   genuine: n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.013281, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.952 outside P 1.000, not a branch step, root 1.012999
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 clean, upper (3, 3); 1.015625 clean, upper (3, 3); 1.014063 clean, upper (3, 3); 1.013281 clean, upper (3, 3)
+== A1, slope sign -1, kappa/delta 0.3, level 2: n(L) change 1.018082; 1 step(s)
+   genuine: n(L) ends 1.017969 to 1.018750, clean ends 1.017187 to 1.018750, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.988 outside P 1.000, branch step, root 1.018100
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 clean, upper (3, 3); 1.015625 clean, lower (5, 3); 1.017187 clean, lower (5, 3); 1.017969 failing (5, 1)
+== A1, slope sign -1, kappa/delta 1, level 3: n(L) change 1.012800; 1 step(s)
+   genuine: n(L) ends 1.012500 to 1.013281, clean ends 1.000000 to 1.013281, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.935 outside P 1.000, branch step, root 1.012930
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (5, 1); 1.018750 clean, upper (3, 3); 1.015625 clean, upper (3, 3); 1.014063 clean, upper (3, 3); 1.013281 clean, upper (3, 3)
+== A1, slope sign -1, kappa/delta 1, level 2: n(L) change 1.017900; 1 step(s)
+   genuine: n(L) ends 1.017187 to 1.017969, clean ends 1.017187 to 1.018750, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.889 outside P 1.000, branch step, root 1.018096
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 clean, upper (3, 3); 1.015625 clean, lower (5, 3); 1.017187 clean, lower (5, 3); 1.017969 failing (3, 1)
+== A1, slope sign -1, kappa/delta 2, level 3: n(L) change 1.012200; 1 step(s)
+   genuine: n(L) ends 1.011719 to 1.012500, clean ends 1.011719 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.939 outside P 1.000, branch step, root 1.013117
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 clean, lower (5, 3); 1.009375 clean, lower (5, 3); 1.010937 clean, lower (5, 3); 1.011719 clean, lower (5, 3)
+== A1, slope sign -1, kappa/delta 2, level 2: n(L) change 1.017300; 1 step(s)
+   Unresolved (mixed overlap): n(L) ends 1.017187 to 1.017969, clean ends 1.017187 to 1.018750, classes ['mixed', 'mixed'], dn(L) -2, dn_S +0, dh -2, branch step
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 clean, upper (3, 3); 1.015625 clean, lower (5, 3); 1.017187 clean, lower (5, 3); 1.017969 failing (3, 1)
+== A1, slope sign -1, kappa/delta 2.5, level 3: n(L) change 1.011750; 1 step(s)
+   genuine: n(L) ends 1.011719 to 1.012500, clean ends 1.011719 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.915 outside P 1.000, branch step, root 1.013172
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 clean, lower (5, 3); 1.009375 clean, lower (5, 3); 1.010937 clean, lower (5, 3); 1.011719 clean, lower (5, 3)
+== A1, slope sign -1, kappa/delta 2.5, level 2: n(L) change 1.016850; 1 step(s)
+   genuine: n(L) ends 1.016406 to 1.017187, clean ends 1.016406 to 1.018750, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.746 outside P 1.000, branch step, root 1.017993
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 clean, upper (3, 3); 1.015625 clean, lower (5, 3); 1.017187 failing (3, 1); 1.016406 clean, lower (5, 3)
+== A1, slope sign -1, kappa/delta 3, level 3: n(L) change 1.011200; 1 step(s)
+   genuine: n(L) ends 1.010937 to 1.011719, clean ends 1.010937 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.944 outside P 1.000, branch step, root 1.013144
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 clean, lower (5, 3); 1.009375 clean, lower (5, 3); 1.010937 clean, lower (5, 3); 1.011719 exchanged-lift, passed (3, 1)
+== A1, slope sign -1, kappa/delta 3, level 2: n(L) change 1.016300; 1 step(s)
+   genuine: n(L) ends 1.015625 to 1.016406, clean ends 1.015625 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.947 outside P 1.000, branch step, root 1.018194
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 failing (3, 1); 1.015625 clean, lower (5, 3); 1.017187 failing (3, 1); 1.016406 exchanged-lift, passed (3, 1)
+== A1, slope sign -1, kappa/delta 4, level 3: n(L) change 1.009800; 1 step(s)
+   genuine: n(L) ends 1.009375 to 1.010156, clean ends 1.009375 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.960 outside P 1.000, branch step, root 1.013123
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 clean, lower (5, 3); 1.009375 clean, lower (5, 3); 1.010937 exchanged-lift, passed (3, 1); 1.010156 exchanged-lift, passed (3, 1)
+== A1, slope sign -1, kappa/delta 4, level 2: n(L) change 1.014900; 1 step(s)
+   genuine: n(L) ends 1.014844 to 1.015625, clean ends 1.014844 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.939 outside P 1.000, branch step, root 1.018202
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 clean, lower (5, 3); 1.018750 failing (3, 1); 1.015625 exchanged-lift, passed (3, 1); 1.014063 clean, lower (5, 3); 1.014844 clean, lower (5, 3)
+== A1, slope sign -1, kappa/delta 6, level 3: n(L) change 1.005800; 1 step(s)
+   genuine: n(L) ends 1.005469 to 1.006250, clean ends 1.005469 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.968 outside P 1.000, branch step, root 1.013071
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 exchanged-lift, passed (3, 1); 1.003125 clean, lower (5, 3); 1.004688 clean, lower (5, 3); 1.005469 clean, lower (5, 3)
+== A1, slope sign -1, kappa/delta 6, level 2: n(L) change 1.010900; 2 step(s)
+   Unresolved (index bookkeeping): n(L) ends 1.010156 to 1.010937, clean ends 1.010156 to 1.010937, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh -2, not a branch step
+      midpoints in order: 1.006250 clean, lower (5, 3); 1.009375 clean, lower (5, 3); 1.010937 clean, upper (3, 1); 1.010156 clean, lower (5, 3)
+   Unresolved (structural subspace): n(L) ends 1.012500 to 1.025000
+      midpoints in order: 1.018750 failing (3, 1)
+== A27, kappa/delta 8, level 3: n(L) change 1.025800; 2 step(s)
+   Unresolved (structural subspace): n(L) ends 1.000000 to 1.025000
+      midpoints in order: 1.012500 failing (3, 1)
+   Unresolved (index bookkeeping): n(L) ends 1.025781 to 1.026562, clean ends 1.025781 to 1.026562, classes ['structural', 'structural'], dn(L) +2, dn_S +2, dh +2, not a branch step
+      midpoints in order: 1.037500 clean, upper (5, 3); 1.031250 clean, upper (5, 3); 1.028125 clean, upper (5, 3); 1.026562 clean, upper (5, 3); 1.025781 clean, lower (3, 1)
+== A27, kappa/delta 8, level 2: n(L) change 1.030900; 2 step(s)
+   Unresolved (structural subspace): n(L) ends 1.012500 to 1.025000
+      midpoints in order: 1.012500 clean, lower (3, 3); 1.018750 failing (3, 1)
+   Unresolved (index bookkeeping): n(L) ends 1.030469 to 1.031250, clean ends 1.030469 to 1.031250, classes ['structural', 'structural'], dn(L) +2, dn_S +2, dh +2, not a branch step
+      midpoints in order: 1.037500 clean, upper (5, 3); 1.031250 clean, upper (5, 3); 1.028125 clean, lower (3, 1); 1.029688 clean, lower (3, 1); 1.030469 clean, lower (3, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 0.3: n(L) change none; 1 step(s)
+   structural: n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.014063, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh +0, branch step, root 1.013002
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (1, 1); 1.015625 clean, upper (1, 1); 1.014063 clean, upper (1, 1); 1.013281 failing (1, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 1: n(L) change none; 1 step(s)
+   Unresolved (crossing identity): n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.014063, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh +0, branch step
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (1, 1); 1.015625 clean, upper (1, 1); 1.014063 clean, upper (1, 1); 1.013281 failing (1, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 2: n(L) change none; 1 step(s)
+   Unresolved (mixed overlap): n(L) ends 1.013281 to 1.014063, clean ends 1.012500 to 1.014063, classes ['mixed', 'mixed'], dn(L) -2, dn_S -2, dh +0, branch step
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (1, 1); 1.015625 clean, upper (1, 1); 1.014063 clean, upper (1, 1); 1.013281 failing (3, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 2.5: n(L) change none; 1 step(s)
+   structural: n(L) ends 1.014063 to 1.014844, clean ends 1.000000 to 1.014844, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh +0, branch step, root 1.012881
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 failing (3, 1); 1.018750 clean, upper (1, 1); 1.015625 clean, upper (1, 1); 1.014063 exchanged-lift, passed (3, 1); 1.014844 clean, upper (1, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 3: n(L) change none; 1 step(s)
+   structural: n(L) ends 1.014063 to 1.014844, clean ends 1.000000 to 1.014844, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh +0, branch step, root 1.012834
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 failing (3, 1); 1.018750 clean, upper (1, 1); 1.015625 clean, upper (1, 1); 1.014063 failing (3, 1); 1.014844 clean, upper (1, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 4: n(L) change none; 1 step(s)
+   structural: n(L) ends 1.015625 to 1.016406, clean ends 1.000000 to 1.016406, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh +0, branch step, root 1.012863
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 failing (3, 1); 1.018750 clean, upper (1, 1); 1.015625 exchanged-lift, passed (3, 1); 1.017187 clean, upper (1, 1); 1.016406 clean, upper (1, 1)
+== A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 6: n(L) change none; 1 step(s)
+   structural: n(L) ends 1.019531 to 1.020312, clean ends 1.000000 to 1.020312, classes ['structural', 'structural'], dn(L) -2, dn_S -2, dh +0, branch step, root 1.012914
+      midpoints in order: 1.025000 clean, upper (1, 1); 1.012500 failing (3, 1); 1.018750 exchanged-lift, passed (3, 1); 1.021875 clean, upper (1, 1); 1.020312 clean, upper (1, 1); 1.019531 exchanged-lift, passed (3, 1)
+== A29, S1 with the S10 tilt at 1.025 (0.85), e1 rising through zero at 1.004, an extra genuine falling at 1.006: n(L) change 1.013000; 1 step(s)
+   Unresolved (genuine and structural crossings in one step): n(L) ends 1.012500 to 1.013281, clean ends 1.000000 to 1.013281, classes ['structural', 'genuine', 'genuine', 'genuine'], dn(L) +2, dn_S -1, dh +3, cosines full 1.000 outside P 1.000, branch step
+      midpoints in order: 1.025000 failing (5, 2); 1.012500 exchanged-lift, passed (3, 2); 1.018750 clean, upper (5, 2); 1.015625 clean, upper (5, 2); 1.014063 clean, upper (5, 2); 1.013281 clean, upper (5, 2)
+== A9, S1 with the S10 tilt at 1.025 (0.85), e0 falling through zero at 1.004, an extra genuine rising at 1.006: n(L) change 1.013000; 1 step(s)
+   Unresolved (neither side's counts after a failure): n(L) ends 1.000000 to 1.025000
+      midpoints in order: 1.025000 failing (6, 3); 1.012500 clean, neither side (4, 4)
+== A3, S1 at level 3 with e1 rising through zero at 1.0127 and e0 tilted to 0.85 at 1.0140625 and 1.01328125: n(L) change 1.013000; 1 step(s)
+   Unresolved (genuine and structural crossings in one step): n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.015625, classes ['structural', 'genuine', 'genuine'], dn(L) +1, dn_S -1, dh +2, cosines full 1.000 outside P 1.000, branch step
+      midpoints in order: 1.025000 clean, upper (4, 2); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (4, 2); 1.015625 clean, upper (4, 2); 1.014063 failing (4, 2); 1.013281 failing (4, 2)
+== A3, S1 at level 2 with e1 rising through zero at 1.0127: n(L) change 1.018100; 2 step(s)
+   structural: n(L) ends 1.012500 to 1.013281, clean ends 1.012500 to 1.013281, classes ['structural'], dn(L) -1, dn_S -1, dh +0, not a branch step, root 1.012700
+      midpoints in order: 1.014063 clean, upper (2, 2); 1.013281 clean, upper (2, 2)
+   genuine: n(L) ends 1.017969 to 1.018750, clean ends 1.017969 to 1.018750, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 1.000 outside P 1.000, not a branch step, root 1.018100
+      midpoints in order: 1.017187 clean, lower (2, 2); 1.017969 clean, lower (2, 2)
+== A12, S1 at level 3 with e0 tilted to 0.85 at 1.0125 and 1.01328125: n(L) change 1.013000; 1 step(s)
+   genuine: n(L) ends 1.012500 to 1.013281, clean ends 1.000000 to 1.014063, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 1.000 outside P 1.000, branch step, root 1.013000
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 failing (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, upper (5, 3); 1.014063 clean, upper (5, 3); 1.013281 failing (5, 3)
+== A12, S1 at level 2, untilted: n(L) change 1.018100; 1 step(s)
+   genuine: n(L) ends 1.017969 to 1.018750, clean ends 1.017969 to 1.018750, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 1.000 outside P 1.000, not a branch step, root 1.018100
+      midpoints in order: 1.025000 clean, upper (5, 3); 1.012500 clean, lower (3, 3); 1.018750 clean, upper (5, 3); 1.015625 clean, lower (3, 3); 1.017187 clean, lower (3, 3); 1.017969 clean, lower (3, 3)
+== A16, S1 at level 3 with e0 tilted to 0.85 at the grid points 0.95 and 1.0 and at the midpoints 0.975 and 1.0125: n(L) change 1.013000; 1 step(s)
+   Unresolved (clean window over one grid cell): n(L) ends 1.012500 to 1.013086, clean ends 0.900000 to 1.013086
+      midpoints in order: 0.975000 failing (3, 3); 1.012500 failing (3, 3); 1.031250 clean, upper (5, 3); 1.021875 clean, upper (5, 3); 1.017188 clean, upper (5, 3); 1.014844 clean, upper (5, 3); 1.013672 clean, upper (5, 3); 1.013086 clean, upper (5, 3)
+== A16, S1 at level 2 with e0 tilted to 0.85 at the grid points 0.95 and 1.0 and at the midpoints 0.975 and 1.0125: n(L) change 1.018100; 1 step(s)
+   genuine: n(L) ends 1.017773 to 1.018359, clean ends 1.017773 to 1.018359, classes ['genuine', 'genuine'], dn(L) +2, dn_S +0, dh +2, cosines full 1.000 outside P 1.000, not a branch step, root 1.018100
+      midpoints in order: 0.975000 failing (3, 3); 1.012500 failing (3, 3); 1.031250 clean, upper (5, 3); 1.021875 clean, upper (5, 3); 1.017188 clean, lower (3, 3); 1.019531 clean, upper (5, 3); 1.018359 clean, upper (5, 3); 1.017773 clean, lower (3, 3)
+== A14, slope sign -1, kappa/delta 7.5, roots 1.0120 and 1.0130, level 3: n(L) change 1.000750; 1 step(s)
+   genuine: n(L) ends 1.000000 to 1.000781, clean ends 1.000000 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.972 outside P 1.000, branch step, root 1.012017
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 exchanged-lift, passed (3, 1); 1.003125 exchanged-lift, passed (3, 1); 1.001562 exchanged-lift, passed (3, 1); 1.000781 exchanged-lift, passed (3, 1)
+== A14, slope sign -1, kappa/delta 7.5, roots 1.0120 and 1.0130, level 2: n(L) change 1.001750; 1 step(s)
+   genuine: n(L) ends 1.001562 to 1.002344, clean ends 1.001562 to 1.025000, classes ['genuine', 'genuine'], dn(L) -2, dn_S +0, dh -2, cosines full 0.969 outside P 1.000, branch step, root 1.013012
+      midpoints in order: 1.025000 clean, upper (3, 3); 1.012500 failing (3, 1); 1.006250 exchanged-lift, passed (3, 1); 1.003125 exchanged-lift, passed (3, 1); 1.001562 clean, lower (5, 3); 1.002344 exchanged-lift, passed (3, 1)
+== summary, one line per plant and level: every step's status (reason), branch step or not, and its classes
+   A1, slope sign +1, kappa/delta 0.3, level 3: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 0.3, level 2: genuine, classes genuine
+   A1, slope sign +1, kappa/delta 1, level 3: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 1, level 2: Unresolved (crossing identity), classes mixed
+   A1, slope sign +1, kappa/delta 2, level 3: Unresolved (mixed overlap), branch step, classes mixed
+   A1, slope sign +1, kappa/delta 2, level 2: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 2.5, level 3: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 2.5, level 2: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 3, level 3: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 3, level 2: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 4, level 3: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 4, level 2: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 6, level 3: genuine, branch step, classes genuine
+   A1, slope sign +1, kappa/delta 6, level 2: Unresolved (structural subspace); Unresolved (index bookkeeping), classes structural
+   A1, slope sign -1, kappa/delta 0.3, level 3: genuine, classes genuine
+   A1, slope sign -1, kappa/delta 0.3, level 2: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 1, level 3: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 1, level 2: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 2, level 3: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 2, level 2: Unresolved (mixed overlap), branch step, classes mixed
+   A1, slope sign -1, kappa/delta 2.5, level 3: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 2.5, level 2: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 3, level 3: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 3, level 2: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 4, level 3: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 4, level 2: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 6, level 3: genuine, branch step, classes genuine
+   A1, slope sign -1, kappa/delta 6, level 2: Unresolved (index bookkeeping), classes structural; Unresolved (structural subspace)
+   A27, kappa/delta 8, level 3: Unresolved (structural subspace); Unresolved (index bookkeeping), classes structural
+   A27, kappa/delta 8, level 2: Unresolved (structural subspace); Unresolved (index bookkeeping), classes structural
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 0.3: structural, branch step, classes structural
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 1: Unresolved (crossing identity), branch step, classes structural
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 2: Unresolved (mixed overlap), branch step, classes mixed
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 2.5: structural, branch step, classes structural
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 3: structural, branch step, classes structural
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 4: structural, branch step, classes structural
+   A2/A28, lifts rising through zero at 1.0130 by 0.05 (eps - 1.0130), pair at +1e-5, kappa/delta 6: structural, branch step, classes structural
+   A29, S1 with the S10 tilt at 1.025 (0.85), e1 rising through zero at 1.004, an extra genuine falling at 1.006: Unresolved (genuine and structural crossings in one step), branch step, classes genuine/structural
+   A9, S1 with the S10 tilt at 1.025 (0.85), e0 falling through zero at 1.004, an extra genuine rising at 1.006: Unresolved (neither side's counts after a failure)
+   A3, S1 at level 3 with e1 rising through zero at 1.0127 and e0 tilted to 0.85 at 1.0140625 and 1.01328125: Unresolved (genuine and structural crossings in one step), branch step, classes genuine/structural
+   A3, S1 at level 2 with e1 rising through zero at 1.0127: structural, classes structural; genuine, classes genuine
+   A12, S1 at level 3 with e0 tilted to 0.85 at 1.0125 and 1.01328125: genuine, branch step, classes genuine
+   A12, S1 at level 2, untilted: genuine, classes genuine
+   A16, S1 at level 3 with e0 tilted to 0.85 at the grid points 0.95 and 1.0 and at the midpoints 0.975 and 1.0125: Unresolved (clean window over one grid cell)
+   A16, S1 at level 2 with e0 tilted to 0.85 at the grid points 0.95 and 1.0 and at the midpoints 0.975 and 1.0125: genuine, classes genuine
+   A14, slope sign -1, kappa/delta 7.5, roots 1.0120 and 1.0130, level 3: genuine, branch step, classes genuine
+   A14, slope sign -1, kappa/delta 7.5, roots 1.0120 and 1.0130, level 2: genuine, branch step, classes genuine
+== rule 11 plants: tolerance 3.4601e-03; the default path m = 1 + 0.15 (e - 1) + 0.5 3.4601e-04 (e - 1)^2, against the reached eps
+== S1, level 3, the default path: 1 step(s)
+   genuine: start 1.000000 to 1.050000, clean ends 1.012500 to 1.013281
+      rule 11 (registered): passes; worst 3.46e-04 at 1.014063
+== A20, S1 level 3, targets above 1.0150 on a second path, m + 1e-6: 1 step(s)
+   genuine: start 1.000000 to 1.050000, clean ends 1.012500 to 1.013281
+      rule 11 (registered): Unresolved (solution continuity); worst 5.46e-01 at 1.015625; over the tolerance: 1.015625 5.46e-01; 1.018750 2.73e-01
+      rule 11 (bare): passes; worst 5.46e-01 at 1.015625
+== A21, S1 level 3 with e0 tilted to 0.85 at 1.0125, targets above 1.0050 on a second path, m + 1e-5: 1 step(s)
+   genuine: start 1.000000 to 1.050000, clean ends 1.000000 to 1.013281
+      rule 11 (registered): Unresolved (solution continuity); worst 1.20e-01 at 1.013281; over the tolerance: 1.012500 2.59e-02; 1.013281 1.20e-01; 1.013281 2.41e-02
+== A22, A1 slope +1, kappa/delta 2.5, level 3, reached eps alternating by 1e-6: 1 step(s)
+   genuine: start 1.000000 to 1.050000, clean ends 1.000000 to 1.014844
+      rule 11 (registered): passes; worst 3.46e-04 at 1.015625
+      rule 11 (target): Unresolved (solution continuity); worst 4.99e-01 at 1.014844; over the tolerance: 1.014063 3.08e-02; 1.014844 4.99e-01; 1.015625 4.98e-01
+== A22, level 2: 1 step(s)
+   genuine: start 1.000000 to 1.050000, clean ends 1.012500 to 1.019531
+      rule 11 (registered): passes; worst 3.46e-04 at 1.020312
+      rule 11 (target): Unresolved (solution continuity); worst 1.00e+00 at 1.020312; over the tolerance: 1.018750 7.43e-03; 1.019531 1.26e-01; 1.020312 1.00e+00
+== A23, S3 with its structural crossing at 1.005, level 3: 2 step(s)
+   structural: start 1.000000 to 1.050000, clean ends 1.004688 to 1.005469
+      rule 11 (registered): passes; worst 3.46e-04 at 1.014063
+      rule 11 (evaluation): Unresolved (solution continuity); worst 3.46e-04 at 1.018750; over the tolerance: 1.025000 degenerate; 1.012500 degenerate; 1.006250 degenerate
+   genuine: start 1.000000 to 1.050000, clean ends 1.012500 to 1.013281
+      rule 11 (registered): passes; worst 3.46e-04 at 1.014063
+      rule 11 (evaluation): Unresolved (solution continuity); worst 3.46e-04 at 1.018750; over the tolerance: 1.025000 degenerate; 1.012500 degenerate; 1.006250 degenerate
+== A23, level 2: 2 step(s)
+   structural: start 1.000000 to 1.050000, clean ends 1.004688 to 1.005469
+      rule 11 (registered): passes; worst 3.46e-04 at 1.017969
+      rule 11 (evaluation): Unresolved (solution continuity); worst 3.46e-04 at 1.017969; over the tolerance: 1.025000 degenerate; 1.012500 degenerate; 1.006250 degenerate
+   genuine: start 1.000000 to 1.050000, clean ends 1.017969 to 1.018750
+      rule 11 (registered): passes; worst 3.46e-04 at 1.017969
+      rule 11 (evaluation): Unresolved (solution continuity); worst 3.46e-04 at 1.017969; over the tolerance: 1.025000 degenerate; 1.012500 degenerate; 1.006250 degenerate
+== A24, A23 level 3 with targets in (1.0025, 1.0058) on a second path, m + 1e-5: 2 step(s)
+   structural: start 1.000000 to 1.050000, clean ends 1.004688 to 1.005469
+      rule 11 (registered): Unresolved (solution continuity); worst 1.64e+01 at 1.006250; over the tolerance: 1.003125 1.21e-01; 1.004688 1.36e+00; 1.006250 1.64e+01
+      rule 11 (subinterval): passes; worst 3.46e-04 at 1.005469
+   genuine: start 1.000000 to 1.050000, clean ends 1.012500 to 1.013281
+      rule 11 (registered): Unresolved (solution continuity); worst 1.64e+01 at 1.006250; over the tolerance: 1.003125 1.21e-01; 1.004688 1.36e+00; 1.006250 1.64e+01
+      rule 11 (subinterval): passes; worst 3.46e-04 at 1.013281
+== A24, level 2: 2 step(s)
+   structural: start 1.000000 to 1.050000, clean ends 1.004688 to 1.005469
+      rule 11 (registered): Unresolved (solution continuity); worst 1.64e+01 at 1.006250; over the tolerance: 1.003125 1.21e-01; 1.004688 1.36e+00; 1.006250 1.64e+01
+      rule 11 (subinterval): passes; worst 3.46e-04 at 1.005469
+   genuine: start 1.000000 to 1.050000, clean ends 1.017969 to 1.018750
+      rule 11 (registered): Unresolved (solution continuity); worst 1.64e+01 at 1.006250; over the tolerance: 1.003125 1.21e-01; 1.004688 1.36e+00; 1.006250 1.64e+01
+      rule 11 (subinterval): passes; worst 3.46e-04 at 1.018750
+== A25, A10 at level 3 with the re-evaluation on a second path, m + 1e-5: 1 step(s)
+   genuine: start 0.950000 to 1.050000, clean ends 1.012500 to 1.013281
+      rule 11 (registered): Unresolved (solution continuity, duplicate target); worst 1.21e-01 at 1.013281; over the tolerance: 1.000000 degenerate; 1.012500 degenerate; 1.013281 1.21e-01; duplicate 1.000000, records differ by 1.0e-05
+      rule 11 (latest): Unresolved (solution continuity); worst 1.21e-01 at 1.013281; over the tolerance: 1.000000 4.35e-03; 1.012500 3.17e-02; 1.013281 1.21e-01
+== A25, level 2: 1 step(s)
+   genuine: start 0.950000 to 1.050000, clean ends 1.017969 to 1.018750
+      rule 11 (registered): Unresolved (solution continuity, duplicate target); worst 1.03e-01 at 1.015625; over the tolerance: 1.000000 degenerate; 1.012500 degenerate; 1.015625 1.03e-01; duplicate 1.000000, records differ by 1.0e-05
+      rule 11 (latest): Unresolved (solution continuity); worst 1.03e-01 at 1.015625; over the tolerance: 1.000000 4.35e-03; 1.012500 3.17e-02; 1.015625 1.03e-01
+== A26, guard region 0.8 to 1.4, root 0.82, level 3: 1 step(s)
+   genuine: start 0.800000 to 0.850000, clean ends 0.819531 to 0.820313
+      rule 11 (registered): Unresolved (solution continuity); worst 3.46e-04 at 0.819531; over the tolerance: 0.812500 degenerate
+      rule 11 (skip): passes; worst 3.46e-04 at 0.819531
+== A26, level 2, root 0.8241: 1 step(s)
+   genuine: start 0.800000 to 0.850000, clean ends 0.823438 to 0.824219
+      rule 11 (registered): Unresolved (solution continuity); worst 3.46e-04 at 0.825000; over the tolerance: 0.812500 degenerate
+      rule 11 (skip): passes; worst 3.46e-04 at 0.825000
+== A10, S1 level 3 with e0 tilted to 0.85 at the grid point 1.0: 1 step(s)
+   genuine: start 0.950000 to 1.050000, clean ends 1.012500 to 1.013281
+      rule 11 (registered): Unresolved (solution continuity, duplicate target); worst 3.46e-04 at 1.014063; over the tolerance: 1.000000 degenerate; 1.012500 degenerate; duplicate 1.000000, records agree
+      rule 11 (latest): passes; worst 3.46e-04 at 1.014063
+== A10, level 2: 1 step(s)
+   genuine: start 0.950000 to 1.050000, clean ends 1.017969 to 1.018750
+      rule 11 (registered): Unresolved (solution continuity, duplicate target); worst 3.46e-04 at 1.017969; over the tolerance: 1.000000 degenerate; 1.012500 degenerate; duplicate 1.000000, records agree
+      rule 11 (latest): passes; worst 3.46e-04 at 1.017969
