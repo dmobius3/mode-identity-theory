@@ -149,7 +149,7 @@ At best-fit $`s_0 = 0.389`$, the effective reading is 0.372; the underlying valu
 
 ## V. The $`(1+z)^1`$ Signature
 
-A negative $`(1+z)^1`$ term at $`\sim 3\%`$ of $`H^2`$ appears in the expansion. The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
+A negative $`(1+z)^1`$ term appears in the expansion, below $`0.8\%`$ of $`H^2`$ at $`z = 1`$ under the joint SN+BAO bound ($`\sim 3\%`$ at the earlier Pantheon+-only reading). The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
 
 | Component | Redshift scaling |
 |---|---|
