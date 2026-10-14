@@ -202,6 +202,11 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
   So the two changes of type M8.15 bracketed stay unlocated, and the first bullet's finite-amplitude question stays open.
 - **Note (2026-10-13), on M8.15.2's terms.** M8.15.2, filed with OpenWave, asks whether the two primary index changes M8.15.1 left unclassified can be located through the structural-subspace failure that stopped their bisections: bracketed by `n(L)`, classified between clean ends, checked for solution continuity, and confirmed at the guard offsets. Its terms, a delta on M8.15.1's, froze on 2026-10-13, before any target was run: SHA-256 `c6da782b43bc13d256f445d822d6c1456d71b42a4b5771b054d0c6b344dd4e4d`. Its locator v2 is frozen in `scripts/soft-slot-dynamics-m8-15-2/`, at MIT `851b2ad`.
+- **Note (2026-10-14), on M8.15.2's verdict.** The run was adjudicated on OpenWave [#632](https://github.com/openwave-labs/openwave/pull/632#pullrequestreview-5511519208). Its record is [`RECORD.md`](scripts/soft-slot-dynamics-m8-15-2/RECORD.md), committed at MIT `f1ebda7`, with a post-adjudication note at its foot. On the pinned finite-element mesh, at both levels:
+  - **The hexagon in $`R_5`$ (T3/R5).** A change of type is located, between Elliptic at the 1% guard offset, 15.6356 at level 3 and 15.6752 at level 2, and Hyperbolic at the 5% offset, 16.5832 and 16.6252. The adjudicated name, in the terms' words: "A change of type is located between the registered guard readings. Its identification with the genuine index crossing at this step is not established: the crossing subspaces agree after removal of the structural directions, and the full spectral crossing identity remains unresolved. The step's classification crossed a structural-subspace or slowest-pair failure, or a point whose structural count fell below its side's, by a rule whose changed branch has synthetic controls only." Beside it: "The solution-continuity check does not certify which solution branch the step lies on, least of all where two branches share `m`."
+  - **The prism in $`R_4`$ (T2/R4).** No change of type is located. Level 3 classifies a genuine step, 16.2589 to 16.2977, and level 2's step is Unresolved (index bookkeeping), so the levels disagree.
+
+  So the hexagon's change of type, which M8.15 bracketed, is located on the pinned mesh, and its identification with the genuine crossing stays open; the prism's stays unlocated. The first bullet's finite-amplitude question stays open as mathematics.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -231,7 +236,9 @@ In `scripts/soft-slot-dynamics-m8-15x-target1/`, M8.15.1's locator, frozen after
 - `RECORD.md`: M8.15.1's record, adjudicated on OpenWave #625, with a post-adjudication note at its foot. It lists the target records, run logs and pre-run record in `out/` with their SHA-256.
 - `record_frozen_check_postrun_2026-10-12.out` and `environment_postrun_2026-10-12.txt`: the two dated post-run verifications the note describes.
 
-In `scripts/soft-slot-dynamics-m8-15-2/`, M8.15.2's locator v2, frozen after its tests and before any target was run: its code and tests, its registration `REGISTER_5.md`, its results `RESULT_5.md` and their records, the adjudication reading `adjudicate.py`, and in `scope/` the scope memo with its numbers. `REPRODUCE.md` is the reproduction route, and `SHA256SUMS` pins every file.
+In `scripts/soft-slot-dynamics-m8-15-2/`, M8.15.2's locator v2, frozen after its tests and before any target was run: its code and tests, its registration `REGISTER_5.md`, its results `RESULT_5.md` and their records, the adjudication reading `adjudicate.py`, and in `scope/` the scope memo with its numbers. `REPRODUCE.md` is the reproduction route, and `SHA256SUMS` pins every file frozen before the run. The run's files came after:
+- `RECORD.md`: M8.15.2's record, adjudicated on OpenWave #632, with a post-adjudication note at its foot. It lists the target records, run logs, pre-run record and guard file in `out/` with their SHA-256.
+- `tools/check_target_records.py` and `tools/check_record.py`, with their outputs, and three dated post-run files: the checks the record describes.
 
 ---
 

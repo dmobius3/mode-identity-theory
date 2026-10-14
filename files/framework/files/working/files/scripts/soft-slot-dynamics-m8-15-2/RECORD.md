@@ -175,3 +175,25 @@ Any scored rerun needs a new pre-registration under the then-current M8 rules.
   - `python3 -B adjudicate.py out/t1_T2_R4.json`, and the same for T3/R5;
   - `python3 -B tools/check_target_records.py`;
   - `python3 -B tools/check_record.py TERMS --mutations`, which recomputes this record's rows, numbers and hashes from the files.
+
+## Post-adjudication note (2026-10-14)
+
+Everything above this heading is the record as committed at MIT `f1ebda7`, unchanged. This note records the adjudication, and one comparison that the record's own does not make, and keeps every entry, number and hash as the locator returned them.
+
+**The adjudication.** The maintainer adjudicated the run on OpenWave [#632](https://github.com/openwave-labs/openwave/pull/632#pullrequestreview-5511519208) and merged the method note unedited, at OpenWave `2a2d16ba`.
+
+| Bracket | Adjudicated | The record's names, beside it |
+|---|---|---|
+| T2/R4, primary | No change of type is located. Level 3's genuine step, 16.2589 to 16.2977, has no genuine match at level 2, so no guard is read and the ceiling has nothing to restrict | "no genuine crossing detected at level 2"; "an Unresolved step (index bookkeeping)", at level 2, 16 to 16.5307; "an index crossing located; the change of type remains unresolved" (cross-level disagreement) |
+| T3/R5, primary | A structural step at level 3, interpolated root 13.1609, never a change of type; and a change of type located, under clause 3's qualifier, with the name below | "a structural step"; "a located change of type" |
+
+The name on T3/R5, in the terms' words: "A change of type is located between the registered guard readings. Its identification with the genuine index crossing at this step is not established: the crossing subspaces agree after removal of the structural directions, and the full spectral crossing identity remains unresolved. The step's classification crossed a structural-subspace or slowest-pair failure, or a point whose structural count fell below its side's, by a rule whose changed branch has synthetic controls only."
+
+Beside it: "The solution-continuity check does not certify which solution branch the step lies on, least of all where two branches share `m`."
+
+**The ladder against M8.15, at both levels.** The record's own comparison, `compare_m815` in `t1_branch.py`, reads the type at every ladder point both runs reached, and `n(L)` and `n(B|G_tol)` at level 3's points only. § 2 and § 4 report that comparison. The adjudication compared both levels with M8.15's branch records, as at MIT `28c8a76`, and a recomputation from the records agrees:
+- at the 15 shared points on T2/R4 and the 14 on T3/R5, every type, `n(L)`, `n(B|G_tol)`, Krein count and balance flag is equal at both levels;
+- only the Newton residual differs, by at most 2.7% of the smaller value, on residuals between `5×10⁻¹³` and `8×10⁻¹²`;
+- M8.15.1's ladder, which this run's equals value for value (§ 4), differs from M8.15's in the same way.
+
+Under the approval of #630, a difference is reported and changes no name.

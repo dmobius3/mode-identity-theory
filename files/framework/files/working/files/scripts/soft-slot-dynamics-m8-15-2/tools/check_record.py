@@ -138,6 +138,32 @@ def expected(terms_path):
     assert sha(terms_path) == json.load(open(os.path.join(OUT, 'FROZEN.json')))['terms_sha256'], 'the terms file is not the guard\'s'
     cs = re.search(r'this sentence stands wherever the name is reported: "([^"]+)"', terms).group(1)
     add("the continuity check's limit, in the terms' words", f'"{cs}"')
+    # the limit stands beside every quotation of the located name: as many of one as of the other
+    E.append(("the continuity check's limit beside each quotation of the adjudicated name", (f'"{q}"', f'"{cs}"'), 'pair'))
+    # the post-adjudication note's comparison of both ladders with M8.15's records, recomputed
+    if '## Post-adjudication note (2026-10-14)' in open(os.path.join(LOC, 'RECORD.md')).read():
+        shared, worst, lo, hi = {}, 0.0, None, None
+        for t_ in ('T2_R4', 'T3_R5'):
+            old = json.load(open(os.path.join(LOC, '..', 'soft-slot-dynamics', 'm8_15_solver', 'out', f'branch_{t_}.json')))
+            r = recs[t_]
+            ot = {d['eps']: d['type'] for d in old['types']}
+            assert all(ot[d['eps']] == d['type'] for d in r['types'] if d['eps'] in ot)
+            for key in ('points', 'level2'):
+                op = {p['eps']: p for p in old[key] if not p.get('bisection')}
+                pts = [p for p in r[key] if p['eps'] in op]
+                shared.setdefault(t_, set()).add(len(pts))
+                for p in pts:
+                    q_ = op[p['eps']]
+                    assert all(q_[f] == p[f] for f in ('nL', 'nB_cluster', 'kr', 'kc', 'ki_minus', 'balanced'))
+                    a, b_ = abs(q_['residual']), abs(p['residual'])
+                    worst = max(worst, abs(a - b_) / min(a, b_))
+                    lo = min(a, b_) if lo is None else min(lo, a, b_)
+                    hi = max(a, b_) if hi is None else max(hi, a, b_)
+        assert all(len(v) == 1 for v in shared.values())
+        n2, n3 = shared['T2_R4'].pop(), shared['T3_R5'].pop()
+        add('the note: the shared ladder points', f'at the {n2} shared points on T2/R4 and the {n3} on T3/R5')
+        add('the note: the residual difference', f'by at most {100 * worst:.1f}% of the smaller value, on residuals between '
+            f'`{sci(lo, 0)}` and `{sci(hi, 0)}`')
     # custody numbers
     pre = json.load(open(os.path.join(OUT, 'prerun_check.json')))
     assert all(c['ok'] for c in pre['checks'])
@@ -181,6 +207,10 @@ def check(text, terms_path):
     res = []
     lines = set(text.splitlines())
     for what, t, kind in expected(terms_path):
+        if kind == 'pair':
+            ok = text.count(t[0]) == text.count(t[1]) >= 1
+            res.append((f'{what}: {text.count(t[0])} and {text.count(t[1])}', ok))
+            continue
         ok = (t in lines) if kind == 'line' else (t in text)
         res.append((f'{what}: {t[:90]}', ok))
     hr = hash_rows(text)
@@ -200,6 +230,7 @@ def arms():
         ('a count at a clean end changed', lambda t: t.replace('(5, 2, 5, 0) to (7, 2, 7, 0)', '(5, 2, 5, 0) to (7, 2, 5, 0)', 1)),
         ('an identity cosine changed', lambda t: t.replace('0.8042 in full', '0.8024 in full', 1)),
         ('an interpolated zero put inside its n(L) ends', lambda t: t.replace('lies below the `n(L)` ends, 16.2848', 'lies inside the `n(L)` ends, 16.2848', 1)),
+        ("the note's residual difference changed", lambda t: t.replace('by at most 2.7% of the smaller value', 'by at most 2.6% of the smaller value', 1)),
     ]
 
 

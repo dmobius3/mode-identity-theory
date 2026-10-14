@@ -71,6 +71,9 @@ check_record.py: RECORD.md against the files
   PASS  T3/R5 the zeros against the n(L) ends: Their interpolated zeros, 15.7935 at level 3 and 15.8335 at level 2, lie above the `n(L)` 
   PASS  the adjudicated name, as adjudicate.py prints it: "A change of type is located between the registered guard readings. Its identification wit
   PASS  the continuity check's limit, in the terms' words: "The solution-continuity check does not certify which solution branch the step lies on, le
+  PASS  the continuity check's limit beside each quotation of the adjudicated name: 2 and 2
+  PASS  the note: the shared ladder points: at the 15 shared points on T2/R4 and the 14 on T3/R5
+  PASS  the note: the residual difference: by at most 2.7% of the smaller value, on residuals between `5×10⁻¹³` and `8×10⁻¹²`
   PASS  the pre-run checks: The 13 checks in `out/prerun_check.json` passed at 2026-10-13T14:28:09Z
   PASS  post-run locator v2 SHA256SUMS: 53 of 53
   PASS  post-run instrument folder SHA256SUMS: 196 of 196
@@ -80,7 +83,7 @@ check_record.py: RECORD.md against the files
   PASS  the bracket regression counts: on T2/R4, 16 of 16 at level 3 and 12 of 12 at level 2; on T3/R5, 22 of 22 and 12 of 12
   PASS  the file tables: 15 of 15 hashes are their files'
   PASS  no em-dash
-81 checks; the parent: ALL PASS
+84 checks; the parent: ALL PASS
   arm: a root off in its last digit: caught
   arm: a guard verdict changed: caught
   arm: a continuity statistic transposed: caught
@@ -90,4 +93,5 @@ check_record.py: RECORD.md against the files
   arm: a count at a clean end changed: caught
   arm: an identity cosine changed: caught
   arm: an interpolated zero put inside its n(L) ends: caught
+  arm: the note's residual difference changed: caught
 ALL PASS
