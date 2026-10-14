@@ -74,7 +74,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 <a id="dynamics-on-openwave"></a>
 ## 🏄‍♂️ Collaboration on OpenWave
 
-[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md)
+[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave)
 
 OpenWave's M8 column has independently reproduced or audited the results the framework's three bedrock papers and the Surviving Ray name in their certification sections, within the scopes stated there, and has reproduced the conic band's fixed-edge stability blind. Its open question is whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight McKay slots; placing fields on the slots is kinematic, and the framework files no relation among their energies. The earlier numerical route closed unresolved, on its instrument rather than on the physics. A new route starts as a proposed dynamical family and meets OpenWave's rules before any computation: pre-registration, run-before-write, and reproduction or adjudication by the maintainer. The [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
 
