@@ -1,0 +1,175 @@
+<a id="top"></a>
+/ **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
+
+---
+
+# 🗂️ The Slot Dynamics Census
+
+**Type:** Program
+**State:** Active
+**Status (2026-10-14):** Opened, with its scope, its catalog and its definition of done fixed before any further run. The rigid families and the orbits born hyperbolic are closed at small amplitude. The coherent and weight-7/2 minima are closed enough for the census. The prism in R5 and the hexagon in R4 are Elliptic wherever the run decided, across their windows, on one mesh, and the hexagon's change of type in R5 is located under the frozen ceiling's clause 3 (OpenWave #632). Open: two certified orbits with no small-amplitude type (O₁ and O₂), two degenerate orbits, and four rows born elliptic that the finite-element instrument could not settle (T1, T4, the prism in R4 and T5's upper window). The leading diagnosis for T1, T4 and the prism in R4 is the mesh's breaking of the continuous symmetry; T5's is a question of convergence. Next: the small-amplitude mathematics, then a maintainer ruling on a symmetry-exact instrument.
+**Summary:** A census of the slot fields' standing-wave branches under the frozen slot action: the small-amplitude stability of every certified critical orbit, and the finite-amplitude fate of the branches born elliptic, up to each slot's spectral-gap window.
+**Inputs:** `slot-action.md` (§VI, §VII, §IX), `slot-ground-states.md` (Theorems A, B and D, Propositions C3 and C4), `soft-slot-branches.md` (Lemma G, Theorem R, §IV, §VI), the Surviving Ray (§7.2, §8.3), OpenWave's M8.15, M8.15.1 and M8.15.2 records, `scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md`
+**Parent:** `soft-slot-branches.md`
+
+---
+
+PROGRAM, with a definition of done fixed before any further run. [The slot action](slot-action.md) left one thing for a run to add: finite-amplitude branches and their stability (§VII). [The Slot Ground States](slot-ground-states.md) and [The Soft-Slot Branches](soft-slot-branches.md) settled what can be settled without a run, and three OpenWave runs, M8.15, M8.15.1 and M8.15.2, followed five orbits to finite amplitude. This page gathers those results into one catalog, says which rows are closed and why, and fixes the program for the rest: the mathematics first, then at most one new instrument, then one census run. It is the home of the census's statuses. The theorems and the run records stay on their own pages, and this page links to them. Nothing here is a run, and nothing here bears on the slot relation, which stays OPEN.
+
+**Related:** [The Slot Action](slot-action.md), [The Slot Ground States](slot-ground-states.md), [The Soft-Slot Branches](soft-slot-branches.md), [The Surviving Ray](../../bedrock/files/surviving-ray.md).
+
+## I. The Question
+
+Under the frozen slot action, what is the dynamical status of every certified critical orbit of the soft slots' reduced quartic, beside the rigid slots' exact families? For each row the census asks:
+- whether a branch of standing waves exists;
+- whether it is born elliptic, hyperbolic or degenerate, and what is proved near zero amplitude;
+- for a branch born elliptic, what happens up to its slot's spectral gap, and whether a change of type can be located there;
+- what persistence result exists;
+- if the row stays unresolved, whether the obstruction is the instrument's, a question of convergence, or mathematical.
+
+## II. The Scope
+
+- **The rows.** Every certified orbit is accounted for in each slot. A catalog row may group orbits or slots that share their classification and status.
+  - $`R_4`$ and $`R_5`$ at level 6: the ten orbits of the census class, and the three certified outside it, $`O_1`$, $`O_2`$ and $`O_3`$ ([the Surviving Ray](../../bedrock/files/surviving-ray.md), §7.2). $`R_5`$ is $`R_4`$ with $`q_J - 1`$ scaled by 9/16, so the two share their small-amplitude types ([The Soft-Slot Branches](soft-slot-branches.md), §IV) but not their finite-amplitude fate.
+  - $`R_2`$ at level 7: the weight states, and the interior critical points of the cyclic fixed lines (§IV there). Where the members of an orbit's $`Sp(1)`$ family can differ at finite amplitude, the row names the member tested.
+  - The rigid slots $`R_1, R_3, R_6, R_7`$ and $`R_8`$: one row for their exact lowest-level families.
+- **Completeness is OPEN.** Neither critical set is known to be complete. In $`R_4`$ and $`R_5`$ the set is complete within the census class, and three orbits outside it are certified. In $`R_2`$ only the weight states and the cyclic fixed lines have been examined. The census covers the certified orbits, and an orbit certified later gets a row.
+- **The window.** A branch born elliptic is followed from its registered smallest amplitude up to its slot's spectral gap, $`\varepsilon_{\max} = \lambda_1 - \lambda_0`$: 72 in $`R_4`$, 32 in $`R_5`$ and 132 in $`R_2`$, in units of $`1/R^2`$ ([The Slot Ground States](slot-ground-states.md), Proposition C4). These are M8.15's registered ladder ends. Beyond the gap the lowest level no longer organizes the branch, and the critical-orbit structure stops describing it.
+- **Outside the census.** Whether a branch born hyperbolic re-stabilizes at finite amplitude; amplitudes beyond the gap; branches that start at higher levels; the slot relation. The census states these as outside its scope, not as answered.
+
+## III. The Catalog
+
+Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theorem R, items (b) to (e); signatures are $`(n_-, n_0, n_+)`$. Finite-amplitude verdicts are OpenWave's adjudications: M8.15 on [#620](https://github.com/openwave-labs/openwave/pull/620), M8.15.1 on [#625](https://github.com/openwave-labs/openwave/pull/625#pullrequestreview-5492753760) and M8.15.2 on [#632](https://github.com/openwave-labs/openwave/pull/632#pullrequestreview-5511519208). Their records are M8.15's [`RECORD.md`](scripts/soft-slot-dynamics/RECORD.md), M8.15.1's [`RECORD.md`](scripts/soft-slot-dynamics-m8-15x-target1/RECORD.md) and M8.15.2's [`RECORD.md`](scripts/soft-slot-dynamics-m8-15-2/RECORD.md).
+
+| Row | Born, at small amplitude | Finite amplitude so far | Status |
+|---|---|---|---|
+| rigid families, $`R_1, R_3, R_6, R_7, R_8`$ | exact branch at every amplitude; orbitally stable at every charge (Theorem B); whole spectrum imaginary (Theorem D) | not needed | closed analytically |
+| coherent $`v_3`$, $`R_4`$ | minimum (0, 0, 10); spectrally and orbitally stable, (c); the ground states at small charge (Proposition C3) | control C2a, unscored: Elliptic at all 18 ladder points to 72; both persistence tests Persist | closed enough |
+| coherent $`v_3`$, $`R_5`$ | as in $`R_4`$ | no record | closed enough; its ladder comes with the census run's controls |
+| $`v_2`$ (T1), $`R_4`$ and $`R_5`$ | (2, 0, 8); elliptic, Krein-mixed; spectrally stable, (e) | M8.15: INVALID in both slots | open: the instrument |
+| prism (T2), $`R_4`$ | (3, 0, 6); elliptic, Krein-positive; spectrally stable, (e) | M8.15: Elliptic to 11.31, Hyperbolic from 32. M8.15.2: `n(L)` changes within 16.2848 to 16.2977 at level 3 and 16.5178 to 16.5307 at level 2, and the levels disagree | open: the instrument and convergence |
+| prism (T2), $`R_5`$ | as in $`R_4`$ | M8.15: Elliptic at all 15 points to 32; both persistence tests Persist | closed enough, on one mesh |
+| $`v_1`$, $`R_4`$ and $`R_5`$ | degenerate, (4, 2, 4); the germ exists (the Surviving Ray, §8.3); type not decided | none | open: mathematics |
+| D2 ray, C3 ray, pyramid, octahedron, zonal $`v_0`$; $`R_4`$ and $`R_5`$ | hyperbolic; spectrally unstable, (b) | control C3 (the octahedron in $`R_4`$), unscored: Hyperbolic at all 18 points to 72 | closed analytically, unstable |
+| hexagon (T3), $`R_4`$ | maximum (9, 0, 0); elliptic, Krein-negative; spectrally stable, (d) | M8.15: Elliptic at 17 of 18 points to 72, Invalid at 32 (eigenpair residual); Persists | closed enough, on one mesh; ε = 32 to be decided |
+| hexagon (T3), $`R_5`$ | as in $`R_4`$ | M8.15.2: a change of type located under the frozen ceiling's clause 3 | closed under the frozen ceiling |
+| $`O_3`$ (T4), $`R_4`$ and $`R_5`$ | (7, 0, 2); elliptic, simple pairs; spectrally stable, (e) | M8.15: no ladder point | open: the instrument |
+| $`O_1`$ and $`O_2`$, $`R_4`$ and $`R_5`$ | certified critical, (4, 0, 5) and (6, 0, 3) (the Surviving Ray, §7.2); slow flow not computed | none | open: mathematics |
+| weight 7/2, $`R_2`$ | strict local minimum (0, 0, 10); spectrally and orbitally stable along its family, (c) | control C2b (the member with complex structure $`i`$), unscored: Elliptic at all 20 points to 132; both persistence tests Persist | closed enough; its globality is OPEN (Proposition C2) |
+| weights 5/2 and 3/2, $`R_2`$ | elliptic at the point, hyperbolic along the family; unstable members, (b) | none | closed analytically, unstable members |
+| weight 1/2 and the lines {7/2, −5/2} and {7/2, −1/2}, $`R_2`$ | hyperbolic; spectrally unstable, (b) | none | closed analytically, unstable |
+| line {7/2, −3/2} (T5), $`R_2`$ | maximum (9, 0, 0); elliptic, Krein-negative, definite along the family; spectrally stable, (d) | M8.15, the member with complex structure $`i`$: Elliptic at 17 of 20 points to 132, Unresolved at 45.25, 128 and 132; both persistence tests Persist | open: convergence; the other members untested |
+| line {5/2, −3/2}, $`R_2`$ | degenerate, (0, 3, 6) | none | open: mathematics |
+
+- **"Closed enough"** marks a row the census can rest on as it stands: what remains is mathematics, or a gap the census run fills, which the status names. For the coherent rows, Theorem A already makes the ground-state set orbitally stable at every charge, and whether the coherent branch stays that set beyond small charge is mathematics.
+- **"On one mesh":** M8.15's verdicts are the finite-element instrument's, on one pinned pair of mesh levels.
+- **The hexagon in $`R_5`$.** Its adjudicated name and the continuity check's limit, in the words of M8.15.2's terms, are in [The Soft-Slot Branches, §VI](soft-slot-branches.md#vi-what-stays-open). The readings are Elliptic at the guard offset 0.01 and Hyperbolic at 0.05, and `n(L)` changes within 15.7803 to 15.7895 at level 3.
+- **The controls** C2a, C2b and C3 are full ladders run under M8.15's frozen rules before any target, and committed with its solver at MIT `6058f95`. They are unscored. The census reads them as evidence for its closed rows, and uses them as controls for any new instrument.
+- **Persistence.** M8.15 ran eight persistence tests on its targets, on T2 in both slots, T3 in both slots and T5, and all eight Persist. The control ladders C2a and C2b carry two tests each, and all four Persist.
+
+## IV. What Blocks the Open Rows
+
+**The mathematics.** $`O_1`$ and $`O_2`$ are certified, with their signatures, but the type of their slow flow has not been computed: both signatures are indefinite, so they do not decide it. At the two degenerate orbits Theorem R does not apply. $`v_1`$'s germ exists, because its kernel lies outside its fixed space (the Surviving Ray, §8.3, an audited argument [M8.11]), and its type needs the next order. The germ at $`R_2`$'s degenerate point has not been checked.
+
+**The instrument: the leading diagnosis.** It is a diagnosis, not an established cause, and §V is built to test it.
+- **The effect.** The finite-element mesh breaks the continuous right-SU(2) symmetry, so the structural zero modes, the rotations of the branch, are lifted off zero. On the pyramid control the M8.15.x qualification measured the lifted pair at 7 to 11 times the frozen floor at level 3, roughly independent of $`\varepsilon`$, and about 30 times larger at level 2 ([`RESULT_2.md`](scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md)). With the structural modes off zero, the instrument cannot tell structural from genuine near-zero modes by eigenvalue. It tells them apart by a static overlap rule and a floor instead.
+- **T1, where the support is strongest.**
+  - **What failed.** The record shows the overlap rule taking T1's own Krein-negative mode into the structural cluster. That mode, predicted at $`\lvert\lambda\rvert = 1.909\times10^{-4}`$ in $`R_4`$, lies nearly in the structural plane, and the cluster's extra pair sits at $`1.814\times10^{-4}`$. The rotation pair itself runs from 0.98 to 2.70 times the floor in $`R_4`$, and from 0.47 to 0.86 in $`R_5`$. In $`R_5`$ the extra pair would miss its prediction by 5.3% even counted as genuine, outside the 5% bar, so T1's verdict there does not rest on the classification alone. #620 found these facts in the shipped records, and left the claim itself unratified, since its overlap values have no shipped script.
+  - **Why the repair failed.** The M8.15.x qualification tried a replacement rule on the pyramid control, and it failed because at the smallest amplitude the control's in-span mode and its lifted pair merge into a quartet (`RESULT_2.md`). The instrument memo records the same merger at level 2 on T1 in $`R_4`$ itself, at the smallest amplitude (`M8_15x_instrument_memo_v4.md`, Target 3).
+  - **Why the lift is the cause.** In the continuum the structural slow eigenvalues are exactly zero, and below Theorem R's $`\varepsilon_1`$ every other slow eigenvalue is an imaginary, Krein-definite pair at a distance of order $`\varepsilon`$ from zero (Theorem R(a) and (e)), so no such merger can occur there (DERIVED). The theorem does not give $`\varepsilon_1`$. That M8.15's smallest amplitude lies below it is INFERRED from T1's four other modes, which agree with the prediction within 0.80% in $`R_4`$ and 1.22% in $`R_5`$ (M8.15's record). The lift is then what makes the merger possible.
+- **The others (INFERRED).**
+  - **T4.** Its smallest mode lies 8.2° from its lifted pair's plane, at a predicted size near the lift measured on the pyramid control, so the same merger is expected; T4's own lift is unmeasured (`RESULT_2.md`). Its M8.15 failure was a different defect, in Newton's stopping test, and the M8.15.x instrument repairs that one.
+  - **The prism in $`R_4`$.** Near its crossing, level 2's `n(B|G_tol)` reads 7 at 16.5307, against 5 at level 3's upper clean end. Whether level 2's cluster takes in the crossing pair is open (M8.15.2's record, §7).
+  - **M8.15.1's and M8.15.2's structural-subspace failures** are the genuine doublet and the lifted rotation doublet mixing near zero, the mechanism M8.15.2's terms named.
+
+**Convergence.** The finite-element instrument confirms a result by agreement between its levels 2 and 3.
+- **The prism in $`R_4`$.** The two levels place the change of `n(L)` 1.4% apart, and level 2's `n(B|G_tol)` reads 7 at 16.5307 where level 3's upper clean end reads 5, so the levels cannot confirm each other there. Whether level 2's cluster takes in the crossing pair is open (M8.15.2's record, §7).
+- **T5.** Its Unresolved points are disagreements between the levels: at 45.25, and at 128 and 132, where level 3 shows one complex quartet near the top of the window. Whether the lift or the levels' resolution at high amplitude is behind them is not known.
+- **A finer level.** A level 4 would be needed for a level-3-and-4 pair. Level 3 already peaks near 6.4 GB resident, so level 4 is likely beyond the machine that ran M8.15 to M8.15.2 (INFERRED).
+
+**What the diagnosis predicts.** In a discretization that keeps the symmetry exactly, the structural modes stay at zero, and the genuine near-zero modes are separated from them by eigenvalue. The structural-subspace check then cannot fail away from the crossing itself: the stationary operator is symmetric, and its eigenvectors for nonzero eigenvalues are orthogonal to its exact kernel (DERIVED). Whether the open rows then resolve, and how, is what the census run would find.
+
+## V. The Program
+
+One step at a time, each gated on the last. If the maintainer admits no instrument at step 3, steps 4 and 5 fall away, and S6 closes the rows such an instrument would settle. The sequel, step 6, waits for the census to close (§VI).
+
+1. **Small-amplitude completion, by mathematics.**
+   - Theorem R at $`O_1`$ and $`O_2`$, by interval arithmetic at the certified points, as for $`O_3`$.
+   - The germ at $`R_2`$'s degenerate point, under the hypothesis of the Surviving Ray's §8.3 theorem: a one-dimensional fixed block, or an invertible slice Hessian in its fixed line.
+   - The slow spectrum at order $`\varepsilon^2`$ at $`v_1`$ and at that point. At $`v_1`$ the kernel, $`\mathrm{span}\lbrace v_{-3}, iv_{-3}\rbrace`$, lies in the line $`\mathrm{span}\lbrace v_1, v_{-3}\rbrace`$ that the rotations of order four fix, a sector that decouples.
+
+   Each is a candidate for a blind reproduction on OpenWave, as M8.12 to M8.14 were.
+2. **The identification argument, by mathematics.**
+   - With the symmetry exact, Hamiltonian–Krein index counting ties the number of unstable and Krein-negative slow eigenvalues to the genuine index h, and that number can move only when eigenvalues of the linearization pass through zero. So a change of type that comes with a change of h by ±2 sits at the genuine zero crossing of the stationary operator (MOTIVATED; to be proved here, with the radical and its Jordan blocks).
+   - The catalog does not need it, since a located change of type is confirmed by its guard readings. A theorem in the sequel does.
+3. **The instrument ruling.**
+   - **The candidate:** an author-side harmonic Galerkin instrument. The sections of $`E_\rho`$ are expanded in the twisted harmonics, complete SU(2) levels up to a cutoff, with the quartic computed exactly.
+   - **Its kernel claim holds under three conditions,** each to be shown in its qualification:
+     - (a) the truncated space is invariant under right SU(2) and the fibre group, which complete levels give by construction;
+     - (b) the scheme is variational Galerkin, with the quartic evaluated exactly, by SU(2) recoupling or by an invariant quadrature exact to its degree, and not by collocation;
+     - (c) the solver's slices and gauges act only in the Newton solve, never in the operator whose spectrum is read.
+   - **Under (a) to (c),** differentiating the energy's invariance twice at a critical point puts the orbit tangent in the Hessian's kernel exactly (DERIVED). Its size is INFERRED: a few hundred complex dimensions at a cutoff near level 40.
+   - **The maintainer rules first.** OpenWave's [discussion #512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-18415036) asks a pre-registration to settle "which side of the closed spectral route its solver is on". It says that "Following the branches numerically by continuation in a truncated harmonic basis is what the closed chassis's gate 7 was built to do", so "a program that goes there says what separates its solver from that chassis". It also asks such a program to derive and pin the pointwise law itself, starting from nothing in M8.5-C's design inputs. M8.5-C's spectral route is closed ([#506](https://github.com/openwave-labs/openwave/issues/506)). The request for a ruling states that separation, and the maintainer rules on admissibility before anything is built.
+   - **The alternatives:** the finite-element instrument at a finer level, on a large-memory machine, which shrinks the lift without removing it; or no new instrument, with the rows that only such an instrument could settle closed as instrument-limited under S6 (§VI).
+4. **One qualification, if admitted, in one registration.**
+   - **Before any target:**
+     - the structural kernel at round-off on every control;
+     - no lifted pair where the finite-element instrument measured one: the pyramid control, C2a and C2b;
+     - the pyramid control's in-span mode resolved at the smallest amplitude, where the finite-element instrument merged it.
+
+     If the last of these fails, the diagnosis is wrong, and the program says so.
+   - **Then:**
+     - Theorem D reproduced exactly at a rigid slot;
+     - Theorem R's slow frequencies at small amplitude on every row;
+     - agreement with M8.15's adjudicated ladders, where they decided.
+5. **One census run, under one pre-registration.**
+   - **The rows:** every row born elliptic, through its window: T1, T4, $`O_1`$ and $`O_2`$ if born elliptic, T2 in both slots, T3 in both slots, and T5's window.
+   - **The controls:** the coherent and weight-7/2 rows.
+   - **Persistence:** a test on every Elliptic stretch.
+6. **The sequel** to the Surviving Ray.
+
+## VI. When It Is Done
+
+The census is complete when all of these hold:
+- **S1, scope.** Every certified critical orbit is accounted for in each slot: in $`R_4`$ and $`R_5`$ the ten census orbits and $`O_1`$ to $`O_3`$; in $`R_2`$ the weight states and the cyclic-line points. Completeness of the critical sets is stated OPEN unless it is proved.
+- **S2, small amplitude.** Every row has its germ and its spectral type, or is a degenerate row with its mathematical problem stated.
+- **S3.** Rows born hyperbolic are closed at small amplitude.
+- **S4, finite amplitude.** Every nondegenerate row born elliptic is accounted for at every registered point from its smallest amplitude to its slot's gap. Where a point is classified, the method must be demonstrated adequate for the feature being classified: a proof, a certified computation, or a numerical instrument whose adequacy for that feature is shown by a registered test, such as convergence under refinement or an exact kernel measured on controls. Each row ends in one of four ways:
+  - Elliptic throughout;
+  - each change of type located, by its `n(L)` interval and its guard readings;
+  - an Unresolved point, documented after it survives a test of that kind, which then moves to the mathematics.
+  - instrument-limited under S6, with its unresolved or untested points identified and no type claimed.
+- **S5.** Every Elliptic stretch has at least one pre-registered persistence test.
+- **S6, the anti-loop rule.** A second instrument-limited outcome with the same root cause closes the row as instrument-limited, with the cause named, unless a new instrument that removes that cause is admitted. At most one new instrument per root cause. If the maintainer admits no instrument that removes a root cause, the rows it blocks close as instrument-limited, with the cause named.
+
+Two levels follow from these.
+- **The census closes** when S1 to S6 hold, an Unresolved point counting once it is documented after surviving an adequate test. The sequel to the Surviving Ray follows the close: after the census run, or after S6 closes the rows no admitted instrument can settle.
+- **The classification of type is complete** only when no Unresolved point and no instrument-limited row remains.
+
+## VII. What It Earns, and What It Does Not
+
+**What it earns.** For the certified orbits, under one frozen action: their small-amplitude stability, and the finite-amplitude fate of the branches born elliptic, up to each slot's gap.
+
+**What it does not give.**
+- Any result for another action. The slot action is MOTIVATED, not derived, with its curvature coupling ξ = 0 on one side of a published disagreement ([The Slot Action](slot-action.md), §IV). A matter action derived for [the stress-tensor bridge](stress-tensor-bridge.md) would need its own census.
+- A MODELS.md cell or a change to M8.7's gate. The label stays M8.4's "nonlinear persistence of the installed free structure", at the row 6 ceiling ([The Slot Action](slot-action.md), §VII). The common structure across the eight slots meets M8.4's letter, not its intent ([The Slot Ground States](slot-ground-states.md), §VI).
+- Whether branches born hyperbolic re-stabilize.
+- Completeness of the critical sets.
+- Any slot relation, any physical particle state, or any step of the stress-tensor bridge.
+
+## VIII. What Stays Open
+
+- Completeness of both critical sets.
+- The globality of $`R_2`$'s minimum, Proposition C2.
+- Whether the coherent branch is the ground-state set beyond small charge in $`R_4`$ and $`R_5`$.
+- Orbital stability at the maxima and saddles, beyond the spectral stability Theorem R gives.
+- The open rows of §III, until §V lands.
+
+## References
+
+- The Surviving Ray, §7.2 (the census and the three certified orbits outside it) and §8.3 (the germs): [`surviving-ray.md`](../../bedrock/files/surviving-ray.md).
+- OpenWave M8.11, the germs' audited argument; M8.12, the census reproduced blind; M8.15, M8.15.1 and M8.15.2, the finite-amplitude runs: [the M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md).
+
+---
+
+/ **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /

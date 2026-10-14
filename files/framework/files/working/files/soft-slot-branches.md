@@ -207,6 +207,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
   - **The prism in $`R_4`$ (T2/R4).** No change of type is located. Level 3 classifies a genuine step, 16.2589 to 16.2977, and level 2's step is Unresolved (index bookkeeping), so the levels disagree.
 
   So the hexagon's change of type, which M8.15 bracketed, is located on the pinned mesh, and its identification with the genuine crossing stays open; the prism's stays unlocated. The first bullet's finite-amplitude question stays open as mathematics.
+- **Note (2026-10-14), on the outside orbits.** §IV says that the other two outside orbits of the census probe are not certified, and this section's last bullet lists the outside orbits not certified here. The Surviving Ray had certified all three on 2026-09-23 ([§7.2](../../bedrock/files/surviving-ray.md)): its $`\mathcal O_1`$ and $`\mathcal O_2`$, with signatures (4, 0, 5) and (6, 0, 3), and its $`\mathcal O_3`$, the third outside orbit of §IV. The small-amplitude type of $`\mathcal O_1`$ and $`\mathcal O_2`$, Theorem R at their certified points, is not computed here. [The Slot Dynamics Census](slot-dynamics-census.md) carries them as open rows.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 

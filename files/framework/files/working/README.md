@@ -165,6 +165,16 @@ Closing any one of these upgrades everything downstream.
 
 ---
 
+### [The Slot Dynamics Census](files/slot-dynamics-census.md)
+
+**Status (opened, 2026-10-14):** A census of the slot fields' standing-wave branches under the frozen slot action: the small-amplitude stability of every certified critical orbit, and the finite-amplitude fate of the branches born elliptic, up to each slot's spectral-gap window, with its definition of done fixed before any further run. The rigid families and the orbits born hyperbolic are closed at small amplitude, and the hexagon's change of type in $`R_5`$ is located under the frozen ceiling's clause 3 (OpenWave #632). Open: two certified orbits with no small-amplitude type, two degenerate orbits, and four rows born elliptic that the finite-element instrument could not settle. Next: the small-amplitude mathematics, then a maintainer ruling on a symmetry-exact instrument.
+
+**Inputs:** [The Slot Action](files/slot-action.md) §VI, §VII and §IX, [The Slot Ground States](files/slot-ground-states.md), [The Soft-Slot Branches](files/soft-slot-branches.md), the Surviving Ray §7.2 and §8.3, OpenWave's M8.15, M8.15.1 and M8.15.2 records.
+
+**Parent:** [The Soft-Slot Branches](files/soft-slot-branches.md)
+
+---
+
 ### [Scaling Law Uniqueness](files/scaling-law-uniqueness.md)
 
 **Status (phase family and hierarchy forced, factorization a conditional theorem):** $`A/A_P = C(\Theta) \cdot (\sqrt{\Omega})^{-n}`$ began as a declared measurement postulate. The phase family and the hierarchy are forced: the anti-periodic BC forces $`C(\Theta)`$'s sinusoidal family for the twisted class, which the untwisted class reads through $`\phi_0`$ under Friedrichs, and background symmetry (isotropy + orthogonality) selects the first-positive member, whose reading as an intensity at a fixed weight is a conditional theorem on adopted measurement premises; units fix the dimensional prefactor and exact homothety at definite weight fixes the power $`(\sqrt{\Omega})^{-n}`$ on the dilution sector. The factored form *separates* on a Schur + homothety + Lemma 8 argument within the spectral-boundary observable class: independent coordinates do not forbid a cross-term, and neither does a factored observable algebra, so the step, restated 2026-09-23, is boundary-mode uniformity: every contributing spectral block carries the first-positive profile $`C(\Theta)`$ times a fixed spectral weight, and for single-position observables a derived block-by-block lemma makes the factored form equivalent to it; the mass sector's geometric-mean seat is its own question. Since 2026-09-29 uniformity is a conditional theorem, for the pillar's operator on M(W) under the adopted Friedrichs extension (1e) and W < πR/2: its linear-readout half rests on adopted measurement premises, a quadratic readout among them, and its shared-boundary-mode half on the first-positive projection, an adopted premise that carries the keystone and that no registered sampler supplies ([The First-Positive Transfer Run](files/first-positive-transfer.md)). Whether the class exhausts the physical observables is a further premise. Off the form: the $`\alpha_W`$ twist, the extension *selection*, adopted as Friedrichs in both sectors (1e), and the $`\Omega_H = \Omega_\Lambda`$ coincidence.
