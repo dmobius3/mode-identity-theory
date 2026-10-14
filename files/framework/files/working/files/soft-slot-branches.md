@@ -9,9 +9,9 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-06):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for one orbit, classifies M8.12's census in R4 and R5, one further orbit there, and R2's fixed-line points. Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
+**Status (2026-10-14):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for three orbits, classifies M8.12's census in R4 and R5, the three orbits certified outside its class there, and R2's fixed-line points; two of the outside orbits, added on 2026-10-14, are born hyperbolic. Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
 **Summary:** Branch existence and the small-amplitude linear spectrum at the soft slots' critical orbits, with the orbits computed exactly.
-**Inputs:** `slot-action.md` (§V, §VII, §IX), `slot-ground-states.md` (§I, §IV, Theorem D), OpenWave's M8.12 census record (the orbit list and representatives) at `344f416`, `scripts/soft-slot-branches/`
+**Inputs:** `slot-action.md` (§V, §VII, §IX), `slot-ground-states.md` (§I, §IV, Theorem D), OpenWave's M8.12 census record (the orbit list and representatives) at `344f416`, `scripts/soft-slot-branches/`, and since 2026-10-14 the Surviving Ray's §7.2 certificates
 **Parent:** `slot-ground-states.md`
 
 ---
@@ -148,6 +148,21 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
   - four simple negative roots in $`\nu`$, from certified sign changes.
 - **The other two outside orbits** of the census probe are not certified, and nothing here uses them.
 
+**The other two outside orbits, added 2026-10-14.** The Surviving Ray certified both on 2026-09-23 ([§7.2](../../bedrock/files/surviving-ray.md)), each at one point inside the fixed set of its full isotropy: its $`\mathcal O_1`$ and $`\mathcal O_2`$. [`outside_orbits_check.py`](scripts/soft-slot-branches/outside_orbits_check.py) recertifies each on the full system, as the bullet above does for the third:
+- the certificate's box centre in weighted coordinates, through $`w_k = \sqrt{720}\,p_{k-3}`$ for the certificate's binary-sextic coefficients $`w_k`$, two Newton steps on the slice system, and a Krawczyk box of radius $`10^{-60}`$;
+- the value inside the certificate's enclosure, and the signature equal to §7.2's;
+- the slow polynomial in $`\nu`$, with all four roots certified real and simple by sign changes.
+
+| orbit | representative | $`924\hat r_6`$ | $`(n_-, n_0, n_+)`$ | $`k, r_u`$ | slow flow | Theorem R |
+| --- | --- | --- | --- | --- | --- | --- |
+| $`\mathcal O_1`$ | interval-certified | 215.77579250166841349523233893587… | (4, 0, 5) | 4, 2 | hyperbolic, one real pair | (b): spectrally unstable |
+| $`\mathcal O_2`$ | interval-certified | 238.01652892561983471074380165289… | (6, 0, 3) | 4, 2 | hyperbolic, one real pair | (b): spectrally unstable |
+
+- *What (b) rests on.* At each orbit, $`n_0 = 0`$, from the signature step's four zero eigenvalues of $`\widehat M_u`$ together with $`k = 4`$ from the Gram determinant, and a sign change of $`\det(\mu - \widehat S_u)`$ across the real pair, at $`\mu = \pm 0.2419314538\ldots`$ for $`\mathcal O_1`$ and $`\pm 0.03074313532\ldots`$ for $`\mathcal O_2`$, for unit $`u`$ in the $`h`$ normalization. It uses neither the zero multiplicity, 6, nor $`r_u = 2`$, which follows from $`J(u) \ne 0`$; those enter only (e).
+- *The slow frequencies,* as in the list above: at $`\mathcal O_1`$, $`\nu = +0.05853082836\ldots`$ and $`\tau^2 = 0.9108404275\ldots,\ 0.05525518896\ldots,\ 0.001662568255\ldots`$; at $`\mathcal O_2`$, $`\nu = +0.0009451403698\ldots`$ and $`\tau^2 = 1.072108997\ldots,\ 0.09874229398\ldots,\ 0.001181574087\ldots`$.
+- *The other slot.* In $`R_5`$ the types are the same, and each root in $`\nu`$ is $`R_4`$'s times 81/256.
+- *The control.* The third outside orbit, rerun from its own certificate, reproduces claim I's row: its value, its signature, $`\lVert J(u)\rVert^2`$ and its four roots.
+
 **$`R_2`$, level 7.** The points are the weight states and the interior critical points of the cyclic fixed lines, each line spanned by two weights alone. Three of the seven lines, $`\lbrace 5/2, -5/2\rbrace`$, $`\lbrace 7/2, -7/2\rbrace`$ and $`\lbrace 3/2, -3/2\rbrace`$, are $`Sp(1)`$ orbits of weight states, on which $`Q`$ is constant. The column "along the family" uses the members whose complex structure is $`j`$, $`k`$, $`(i + j)/\sqrt 2`$ or $`(i + k)/\sqrt 2`$.
 
 | orbit | representative | $`Q`$ | $`(n_-, n_0, n_+)`$ | $`k, r_u`$ | slow flow at the point | along the family | Theorem R |
@@ -208,6 +223,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
   So the hexagon's change of type, which M8.15 bracketed, is located on the pinned mesh, and its identification with the genuine crossing stays open; the prism's stays unlocated. The first bullet's finite-amplitude question stays open as mathematics.
 - **Note (2026-10-14), on the outside orbits.** §IV says that the other two outside orbits of the census probe are not certified, and this section's last bullet lists the outside orbits not certified here. The Surviving Ray had certified all three on 2026-09-23 ([§7.2](../../bedrock/files/surviving-ray.md)): its $`\mathcal O_1`$ and $`\mathcal O_2`$, with signatures (4, 0, 5) and (6, 0, 3), and its $`\mathcal O_3`$, the third outside orbit of §IV. The small-amplitude type of $`\mathcal O_1`$ and $`\mathcal O_2`$, Theorem R at their certified points, is not computed here. [The Slot Dynamics Census](slot-dynamics-census.md) carries them as open rows.
+- **Note (2026-10-14), on $`\mathcal O_1`$ and $`\mathcal O_2`$.** §IV's addition of the same day computes the type the note above leaves open: both are born hyperbolic in $`R_4`$ and $`R_5`$, Theorem R(b). Every outside orbit the Surviving Ray certified now has its type here, so the last bullet's second clause names none, and [The Slot Dynamics Census](slot-dynamics-census.md) closes their row.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -221,6 +237,8 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 In `scripts/soft-slot-branches/`:
 - `branches_check.py`: the exact quartic in weighted coordinates, checked against the closed form; M8.12's ten census orbits in $`R_4`$ and $`R_5`$, and $`R_2`$'s weight states and line points; the $`Sp(1)`$ family test; the Krein certificate at the prism; the prism's isotropy; the interval certification of the third outside orbit; $`R_2`$'s constant lines; and the two lifts of $`Q - 144/143`$. Each claim has a mutation arm that turns it red. A few minutes.
 - `branches_check.out`: its record.
+- `outside_orbits_check.py` (added 2026-10-14): the other two outside orbits, and the third as the control, from the Surviving Ray's §7.2 certificates, with the certificate file checked against its folder's `SHA256SUMS`; Krawczyk on the slice system, then Theorem R by interval characteristic polynomials in $`R_4`$ and $`R_5`$. Each claim has a mutation arm that turns it red, and the exit status is 1 if a claim fails or an arm stays green. Under a minute.
+- `outside_orbits_check.out`: its record.
 
 In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records and the run's record:
 - `m8_15_solver/`: the finite-element solver, the branch driver and the control runs; `out/MANIFEST.json` holds the SHA-256 of every file the run executes, with the environment the controls ran in.

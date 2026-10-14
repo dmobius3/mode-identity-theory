@@ -1,0 +1,73 @@
+P  provenance: sr_v2_certificates.json, SHA-256 eb174fa1b15f0ad9b309b7c45fa43814381188a37ef86afeebf7543b77ebe7ff
+   matches its line in SHA256SUMS: PASS
+O1 R4: Krawczyk, radius 1e-60, on the slice system; then interval characteristic polynomials
+   924 r6 in [215.775792501668413495232338935878268247683235575953591162244, 215.775792501668413495232338935878268247683235575953591162244]
+   inside the certificate's enclosure [215.775792501668413495232338935878268247683235575953591, 215.7757925016684134952323389358782682476832355759535913]: True
+   signature (4, 0, 5) (expected (4, 0, 5)); orbit dimension 4: True
+   |J|^2 in [0.09519172704080834107058, 0.09519172704080834107058], so r_u = 2
+   zero multiplicity of S_u: 6 (k + r_u = 6)
+   slow polynomial in nu: 4 roots, all certified real and simple: True
+     positive: ['0.058530828363685964143']
+     negative: ['-0.91084042759146767068', '-0.055255188961110328822', '-0.0016625682550668705076']
+   det(mu - S_u) changes sign at mu = +-0.241931453853537: True; with n0 = 0 (four zeros of M_u, k = 4), that is all (b) uses
+   hyperbolic: 1 real pair(s), 3 imaginary pair(s); Theorem R (b): spectrally unstable: PASS
+O2 R4: Krawczyk, radius 1e-60, on the slice system; then interval characteristic polynomials
+   924 r6 in [238.016528925619834710743801652892561983471074380165289256198, 238.016528925619834710743801652892561983471074380165289256198]
+   inside the certificate's enclosure [238.0165289256198347107438016528925619834710743801652891, 238.0165289256198347107438016528925619834710743801652894]: True
+   signature (6, 0, 3) (expected (6, 0, 3)); orbit dimension 4: True
+   |J|^2 in [0.114746260501331876238, 0.114746260501331876238], so r_u = 2
+   zero multiplicity of S_u: 6 (k + r_u = 6)
+   slow polynomial in nu: 4 roots, all certified real and simple: True
+     positive: ['0.00094514036983932503052']
+     negative: ['-1.0721089978157267391', '-0.098742293980773455646', '-0.0011815740874455853882']
+   det(mu - S_u) changes sign at mu = +-0.0307431353287092: True; with n0 = 0 (four zeros of M_u, k = 4), that is all (b) uses
+   hyperbolic: 1 real pair(s), 3 imaginary pair(s); Theorem R (b): spectrally unstable: PASS
+O3 R4 (control): Krawczyk, radius 1e-60, on the slice system; then interval characteristic polynomials
+   924 r6 in [238.356854743095270345532123383755488501994475833471334187919, 238.356854743095270345532123383755488501994475833471334187919]
+   inside the certificate's enclosure [238.3568547430952703455321233837554885019944758334713339, 238.3568547430952703455321233837554885019944758334713345]: True
+   signature (7, 0, 2) (expected (7, 0, 2)); orbit dimension 4: True
+   |J|^2 in [0.07594891356889028628144, 0.07594891356889028628144], so r_u = 2
+   zero multiplicity of S_u: 6 (k + r_u = 6)
+   slow polynomial in nu: 4 roots, all certified real and simple: True
+     positive: []
+     negative: ['-1.024329416697329505', '-0.096529980156109493017', '-0.019391072983931020954', '-0.000032911553745602728634']
+   elliptic, simple; Theorem R (e): spectrally stable: PASS
+O1 R5: Krawczyk, radius 1e-60, on the slice system; then interval characteristic polynomials
+   924 r6 in [215.775792501668413495232338935878268247683235575953591162244, 215.775792501668413495232338935878268247683235575953591162244]
+   inside the certificate's enclosure [215.775792501668413495232338935878268247683235575953591, 215.7757925016684134952323389358782682476832355759535913]: True
+   signature (4, 0, 5) (expected (4, 0, 5)); orbit dimension 4: True
+   |J|^2 in [0.09519172704080834107058, 0.09519172704080834107058], so r_u = 2
+   zero multiplicity of S_u: 6 (k + r_u = 6)
+   slow polynomial in nu: 4 roots, all certified real and simple: True
+     positive: ['0.018519519911947512092']
+     negative: ['-0.28819560404261281768', '-0.017483087132226314979', '-0.00052604698695475199654']
+   det(mu - S_u) changes sign at mu = +-0.136086442792614: True; with n0 = 0 (four zeros of M_u, k = 4), that is all (b) uses
+   hyperbolic: 1 real pair(s), 3 imaginary pair(s); Theorem R (b): spectrally unstable: PASS
+O2 R5: Krawczyk, radius 1e-60, on the slice system; then interval characteristic polynomials
+   924 r6 in [238.016528925619834710743801652892561983471074380165289256198, 238.016528925619834710743801652892561983471074380165289256198]
+   inside the certificate's enclosure [238.0165289256198347107438016528925619834710743801652891, 238.0165289256198347107438016528925619834710743801652894]: True
+   signature (6, 0, 3) (expected (6, 0, 3)); orbit dimension 4: True
+   |J|^2 in [0.114746260501331876238, 0.114746260501331876238], so r_u = 2
+   zero multiplicity of S_u: 6 (k + r_u = 6)
+   slow polynomial in nu: 4 roots, all certified real and simple: True
+     positive: ['0.00029904832014447393544']
+     negative: ['-0.33922198759013228853', '-0.031242678954854101201', '-0.00037385742610582975175']
+   det(mu - S_u) changes sign at mu = +-0.0172930136223989: True; with n0 = 0 (four zeros of M_u, k = 4), that is all (b) uses
+   hyperbolic: 1 real pair(s), 3 imaginary pair(s); Theorem R (b): spectrally unstable: PASS
+O3 R5 (control): Krawczyk, radius 1e-60, on the slice system; then interval characteristic polynomials
+   924 r6 in [238.356854743095270345532123383755488501994475833471334187919, 238.356854743095270345532123383755488501994475833471334187919]
+   inside the certificate's enclosure [238.3568547430952703455321233837554885019944758334713339, 238.3568547430952703455321233837554885019944758334713345]: True
+   signature (7, 0, 2) (expected (7, 0, 2)); orbit dimension 4: True
+   |J|^2 in [0.07594891356889028628144, 0.07594891356889028628144], so r_u = 2
+   zero multiplicity of S_u: 6 (k + r_u = 6)
+   slow polynomial in nu: 4 roots, all certified real and simple: True
+     positive: []
+     negative: ['-0.32410422950188941368', '-0.030542689033769019275', '-0.0061354566863219245987', '-0.000010413421302319613357']
+   elliptic, simple; Theorem R (e): spectrally stable: PASS
+   the arms' parents, O1, O2 and O3 in R4, pass: True
+   arm: O1's refined centre moved 1e-40, no further Newton step: Krawczyk fails        RED
+   arm: the signature (5, 0, 4) expected at O2: no match                               RED
+   arm: q_6 raised by 1%, Newton converged (O1): certified at 924 r6 = [220.306331197, 220.306331197], off O1's RED
+   arm: O3 required to be hyperbolic: its clause is (e)                                RED
+   arm: O1's positive root claimed at 3/2 of its place: no sign change                 RED
+0 claims failed; 5/5 arms red
