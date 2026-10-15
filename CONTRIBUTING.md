@@ -100,7 +100,7 @@ A yes would give an alternative the framework set aside a smooth realization, on
 
 >**Gregory A. Beckman** | Unified Electromagnetic Toroidal Cosmology: [github.com/Kneedeep2005/UETC](https://github.com/Kneedeep2005/UETC)
 
->**Von Christian Berrang** | 🐙 [github.com/Christianfwb/frequenzprojekt](https://github.com/Christianfwb/frequenzprojekt) | 📚 [10.5281/zenodo.16727005](https://doi.org/10.5281/zenodo.16727005)
+>**Von Christian Berrang** | [github.com/Christianfwb/frequenzprojekt](https://github.com/Christianfwb/frequenzprojekt) | [10.5281/zenodo.16727005](https://doi.org/10.5281/zenodo.16727005)
 
 >**Paul Watford** | The Standard Model from One Polynomial: [10.5281/zenodo.19455028](https://doi.org/10.5281/zenodo.19455028)
 
