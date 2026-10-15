@@ -1,0 +1,44 @@
+A  two-dimensional models of the three cases; the count K = n(L) - n(D) at every point
+   t = 1e-4   case 1: n(L) 0 n(D) 0 K 0 ['0.0001 imag+']
+             case 2, b = +1: n(L) 0 n(D) 0 K 0 ['0.01 imag+'];  b = -1: n(L) 1 n(D) 0 K 1 ['0.01 real']
+             case 3: n(L) 0 n(D) 0 K 0 []; dim of the generalized kernel 2
+   t = 1e-6   case 1: n(L) 0 n(D) 0 K 0 ['1.0e-6 imag+']
+             case 2, b = +1: n(L) 0 n(D) 0 K 0 ['0.001 imag+'];  b = -1: n(L) 1 n(D) 0 K 1 ['0.001 real']
+             case 3: n(L) 0 n(D) 0 K 0 []; dim of the generalized kernel 2
+   t = -1e-6  case 1: n(L) 2 n(D) 0 K 2 ['1.0e-6 imag-']
+             case 2, b = +1: n(L) 1 n(D) 0 K 1 ['0.001 real'];  b = -1: n(L) 2 n(D) 0 K 2 ['0.001 imag-']
+             case 3: n(L) 1 n(D) 1 K 0 []; dim of the generalized kernel 2
+   t = -1e-4  case 1: n(L) 2 n(D) 0 K 2 ['0.0001 imag-']
+             case 2, b = +1: n(L) 1 n(D) 0 K 1 ['0.01 real'];  b = -1: n(L) 2 n(D) 0 K 2 ['0.01 imag-']
+             case 3: n(L) 1 n(D) 1 K 0 []; dim of the generalized kernel 2
+   PASS
+B  R2's degenerate point: K_u 6, ker 9, K3 3; B_t = Hess f(y0) + t P_K3 at four members
+   complex structure i: (d1, d2, d3) = (2, 1, 0)
+      t = 1e-6   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['6.892e-7 imag+', '0.0007742 imag+']
+      t = 1e-8   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['6.892e-9 imag+', '7.742e-5 imag+']
+      t = -1e-8  n(L) 3 n(D) 0 K 3 (k_r 1, k_i- 1); small pairs ['6.892e-9 imag-', '7.742e-5 real']
+      t = -1e-6  n(L) 3 n(D) 0 K 3 (k_r 1, k_i- 1); small pairs ['6.892e-7 imag-', '0.0007742 real']
+   complex structure (i + 2j + 3k)/sqrt14: (d1, d2, d3) = (2, 0, 1)
+      t = 1e-6   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['1.194e-5 imag+']
+      t = 1e-8   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['1.196e-7 imag+']
+      t = -1e-8  n(L) 3 n(D) 1 K 2 (k_r 0, k_i- 1); small pairs ['1.196e-7 imag-']
+      t = -1e-6  n(L) 3 n(D) 1 K 2 (k_r 0, k_i- 1); small pairs ['1.198e-5 imag-']
+   complex structure j: (d1, d2, d3) = (0, 2, 1)
+      t = 1e-6   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['0.0003963 imag+', '0.0007406 imag+']
+      t = 1e-8   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['3.963e-5 imag+', '7.406e-5 imag+']
+      t = -1e-8  n(L) 3 n(D) 1 K 2 (k_r 2, k_i- 0); small pairs ['3.963e-5 real', '7.406e-5 real']
+      t = -1e-6  n(L) 3 n(D) 1 K 2 (k_r 2, k_i- 0); small pairs ['0.0003963 real', '0.0007406 real']
+   complex structure (i + j + k)/sqrt3: (d1, d2, d3) = (0, 2, 1)
+      t = 1e-6   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['0.0003723 imag+', '0.0007455 imag+']
+      t = 1e-8   n(L) 0 n(D) 0 K 0 (k_r 0, k_i- 0); small pairs ['3.723e-5 imag+', '7.455e-5 imag+']
+      t = -1e-8  n(L) 3 n(D) 1 K 2 (k_r 2, k_i- 0); small pairs ['3.723e-5 real', '7.455e-5 real']
+      t = -1e-6  n(L) 3 n(D) 1 K 2 (k_r 2, k_i- 0); small pairs ['0.0003723 real', '0.0007455 real']
+   PASS
+arms
+   arm: the crossing classified by Omega on K3 alone (B)             RED
+        at the generic member it gives (d1, d2, d3) = (2, 1, 0), a real pair for t < 0 that the spectrum does not have
+   arm: n(D) subtracted twice, as the instrument's h minus n(D) (B)  RED
+        at members with d3 = 1 and t < 0, n(L) - 2 n(D) = 1 against K = 2
+   arm: Krein signs read from -B (A)                                 RED
+        case 1 at t = 1e-4 then counts its pair as Krein-negative, K = 2 against n(L) - n(D) = 0
+0 claims failed; 3/3 arms red

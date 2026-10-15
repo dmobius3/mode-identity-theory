@@ -167,9 +167,9 @@ Closing any one of these upgrades everything downstream.
 
 ### [The Slot Dynamics Census](files/slot-dynamics-census.md)
 
-**Status (opened, 2026-10-14):** A census of the slot fields' standing-wave branches under the frozen slot action: the small-amplitude stability of every certified critical orbit, and the finite-amplitude fate of the nondegenerate branches born elliptic, up to each slot's spectral-gap window, with its definition of done fixed before any further run. The rigid families and the orbits born hyperbolic, $`O_1`$ and $`O_2`$ among them since 2026-10-14, are closed at small amplitude, and so, since the same day, are the two degenerate orbits; the hexagon's change of type in $`R_5`$ is located under the frozen ceiling's clause 3 (OpenWave #632). Open: four rows born elliptic that the finite-element instrument could not settle. Next: the identification argument, then a maintainer ruling on a symmetry-exact instrument.
+**Status (opened, 2026-10-14):** A census of the slot fields' standing-wave branches under the frozen slot action: the small-amplitude stability of every certified critical orbit, and the finite-amplitude fate of the nondegenerate branches born elliptic, up to each slot's spectral-gap window, with its definition of done fixed before any further run. The rigid families and the orbits born hyperbolic, $`O_1`$ and $`O_2`$ among them since 2026-10-14, are closed at small amplitude, and so, since the same day, are the two degenerate orbits; the hexagon's change of type in $`R_5`$ is located under the frozen ceiling's clause 3 (OpenWave #632). Open: four rows born elliptic that the finite-element instrument could not settle. The identification argument (step 2) is done: its registered first sentence is proved, with the instrument's $`h`$ read where its structural cluster is verified to span the generalized kernel, and its second holds only with the qualifier of The Hamiltonian–Krein Identification's Corollary I. Next: a maintainer ruling on a symmetry-exact instrument.
 
-**Inputs:** [The Slot Action](files/slot-action.md) §VI, §VII and §IX, [The Slot Ground States](files/slot-ground-states.md), [The Soft-Slot Branches](files/soft-slot-branches.md), the Surviving Ray §7.2 and §8.3, OpenWave's M8.15, M8.15.1 and M8.15.2 records.
+**Inputs:** [The Slot Action](files/slot-action.md) §VI, §VII and §IX, [The Slot Ground States](files/slot-ground-states.md), [The Soft-Slot Branches](files/soft-slot-branches.md), [The Hamiltonian–Krein Identification](files/hamiltonian-krein-identification.md), the Surviving Ray §7.2 and §8.3, OpenWave's M8.15, M8.15.1 and M8.15.2 records.
 
 **Parent:** [The Soft-Slot Branches](files/soft-slot-branches.md)
 
@@ -323,6 +323,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 **Inputs:** [The Slot Action](files/slot-action.md) §V, §VII and §IX, [The Slot Ground States](files/slot-ground-states.md) §I, §IV and Theorem D, OpenWave's M8.12 census record, [branches_check.py](files/scripts/soft-slot-branches/branches_check.py).
 
 **Parent:** [The Slot Ground States](files/slot-ground-states.md)
+
+---
+
+### [The Hamiltonian–Krein Identification](files/hamiltonian-krein-identification.md)
+
+**Result (2026-10-15):** The census's step 2: whether a change of type sits at a genuine zero crossing of the stationary operator, with the symmetry exact. On a branch of standing waves of the slot action, the number of unstable and Krein-negative eigenvalues equals $`n(L) - n(D)`$, the stationary operator's negative index less the energy's on the generalized kernel; M8.15's instrument reads that number as its genuine index $`h`$ wherever its structural cluster spans the generalized kernel, and the number changes only where eigenvalues of the linearization pass through zero. At a transversal genuine crossing, where the family's own Jordan structure stays regular, the symplectic form on the whole kernel sorts the crossing directions three ways: a Krein flip with no change of type, a pair moving between real and imaginary at the crossing, or a direction absorbed by the family's own Jordan blocks. So such a crossing changes the type only through the second case, and the census's step 2 sentence takes a qualifier. Checked on two-dimensional models and on a perturbed model at $`R_2`$'s degenerate point, where all three cases occur. The pitchfork at a crossing, and T3/R5's identification, stay open.
+
+**Inputs:** [The Soft-Slot Branches](files/soft-slot-branches.md) §III and Theorem R′, [The Slot Dynamics Census](files/slot-dynamics-census.md) §V, M8.15's verdict module and M8.15.1's REGISTER_4, [identification_check.py](files/scripts/hamiltonian-krein-identification/identification_check.py).
+
+**Parent:** [The Slot Dynamics Census](files/slot-dynamics-census.md)
 
 ---
 
