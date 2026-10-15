@@ -7,9 +7,9 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-10-14):** Opened, with its scope, its catalog and its definition of done fixed before any further run. The rigid families and the orbits born hyperbolic, O₁ and O₂ among them since 2026-10-14, are closed at small amplitude. The coherent and weight-7/2 minima are closed enough for the census. The prism in R5 and the hexagon in R4 are Elliptic wherever the run decided, across their windows, under one pinned finite-element discretization, and the hexagon's change of type in R5 is located under the frozen ceiling's clause 3 (OpenWave #632). Open: two degenerate orbits, and four rows born elliptic that the finite-element instrument could not settle (T1, T4, the prism in R4 and T5's upper window). The leading diagnosis for T1, T4 and the prism in R4 is the mesh's breaking of the continuous symmetry; T5's is a question of convergence. Next: the rest of the small-amplitude mathematics, then a maintainer ruling on a symmetry-exact instrument.
-**Summary:** A census of the slot fields' standing-wave branches under the frozen slot action: the small-amplitude stability of every certified critical orbit, and the finite-amplitude fate of the branches born elliptic, up to each slot's spectral-gap window.
-**Inputs:** `slot-action.md` (§VI, §VII, §IX), `slot-ground-states.md` (Theorems A, B and D, Propositions C3 and C4), `soft-slot-branches.md` (Lemma G, Theorem R, §IV, §VI), the Surviving Ray (§7.2, §8.3), OpenWave's M8.15, M8.15.1 and M8.15.2 records, `scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md`
+**Status (2026-10-14):** Opened, with its scope, its catalog and its definition of done fixed before any further run. The rigid families and the orbits born hyperbolic, O₁ and O₂ among them since 2026-10-14, are closed at small amplitude, and so, since the same day, are the two degenerate orbits: v₁ is spectrally stable, and R₂'s degenerate point spectrally and orbitally stable along its family. The coherent and weight-7/2 minima are closed enough for the census. The prism in R5 and the hexagon in R4 are Elliptic wherever the run decided, across their windows, under one pinned finite-element discretization, and the hexagon's change of type in R5 is located under the frozen ceiling's clause 3 (OpenWave #632). Open: four rows born elliptic that the finite-element instrument could not settle (T1, T4, the prism in R4 and T5's upper window). The leading diagnosis for T1, T4 and the prism in R4 is the mesh's breaking of the continuous symmetry; T5's is a question of convergence. Next: the identification argument, then a maintainer ruling on a symmetry-exact instrument.
+**Summary:** A census of the slot fields' standing-wave branches under the frozen slot action: the small-amplitude stability of every certified critical orbit, and the finite-amplitude fate of the nondegenerate branches born elliptic, up to each slot's spectral-gap window.
+**Inputs:** `slot-action.md` (§VI, §VII, §IX), `slot-ground-states.md` (Theorems A, B and D, Propositions C3 and C4), `soft-slot-branches.md` (Lemmas G, G′ and F, Theorems R and R′, §IV, §VI), the Surviving Ray (§7.2, §8.3), OpenWave's M8.15, M8.15.1 and M8.15.2 records, `scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md`
 **Parent:** `soft-slot-branches.md`
 
 ---
@@ -35,11 +35,12 @@ Under the frozen slot action, what is the dynamical status of every certified cr
   - The rigid slots $`R_1, R_3, R_6, R_7`$ and $`R_8`$: one row for their exact lowest-level families.
 - **Completeness is OPEN.** Neither critical set is known to be complete. In $`R_4`$ and $`R_5`$ the set is complete within the census class, and three orbits outside it are certified. In $`R_2`$ only the weight states and the cyclic fixed lines have been examined. The census covers the certified orbits, and an orbit certified later gets a row.
 - **The window.** A branch born elliptic is followed from its registered smallest amplitude up to its slot's spectral gap, $`\varepsilon_{\max} = \lambda_1 - \lambda_0`$: 72 in $`R_4`$, 32 in $`R_5`$ and 132 in $`R_2`$, in units of $`1/R^2`$ ([The Slot Ground States](slot-ground-states.md), Proposition C4). These are M8.15's registered ladder ends. The gap is the census's registered cutoff: beyond it, the spectral separation that motivates the lowest-level description is no longer guaranteed by the results used here, and the census makes no claim there.
+  - **Note (2026-10-14).** Step 1 typed the two degenerate rows at second order (§III). The window, like S4's finite-amplitude obligation, applies to the nondegenerate branches born elliptic; the degenerate rows stay outside S4 and step 5 (§V).
 - **Outside the census.** Whether a branch born hyperbolic re-stabilizes at finite amplitude; amplitudes beyond the gap; branches that start at higher levels; the slot relation. The census states these as outside its scope, not as answered.
 
 ## III. The Catalog
 
-Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theorem R, items (b) to (e); signatures are $`(n_-, n_0, n_+)`$. Finite-amplitude verdicts are OpenWave's adjudications: M8.15 on [#620](https://github.com/openwave-labs/openwave/pull/620), M8.15.1 on [#625](https://github.com/openwave-labs/openwave/pull/625#pullrequestreview-5492753760) and M8.15.2 on [#632](https://github.com/openwave-labs/openwave/pull/632#pullrequestreview-5511519208). Their records are M8.15's [`RECORD.md`](scripts/soft-slot-dynamics/RECORD.md), M8.15.1's [`RECORD.md`](scripts/soft-slot-dynamics-m8-15x-target1/RECORD.md) and M8.15.2's [`RECORD.md`](scripts/soft-slot-dynamics-m8-15-2/RECORD.md).
+Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theorem R, items (b) to (e), and at the two degenerate orbits its Theorem R′; signatures are $`(n_-, n_0, n_+)`$. Finite-amplitude verdicts are OpenWave's adjudications: M8.15 on [#620](https://github.com/openwave-labs/openwave/pull/620), M8.15.1 on [#625](https://github.com/openwave-labs/openwave/pull/625#pullrequestreview-5492753760) and M8.15.2 on [#632](https://github.com/openwave-labs/openwave/pull/632#pullrequestreview-5511519208). Their records are M8.15's [`RECORD.md`](scripts/soft-slot-dynamics/RECORD.md), M8.15.1's [`RECORD.md`](scripts/soft-slot-dynamics-m8-15x-target1/RECORD.md) and M8.15.2's [`RECORD.md`](scripts/soft-slot-dynamics-m8-15-2/RECORD.md).
 
 | Row | Born, at small amplitude | Finite amplitude so far | Status |
 |---|---|---|---|
@@ -49,7 +50,7 @@ Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theor
 | $`v_2`$ (T1), $`R_4`$ and $`R_5`$ | (2, 0, 8); elliptic, Krein-mixed; spectrally stable, (e) | M8.15: INVALID in both slots | open: the instrument |
 | prism (T2), $`R_4`$ | (3, 0, 6); elliptic, Krein-positive; spectrally stable, (e) | M8.15: Elliptic to 11.31, Hyperbolic from 32. M8.15.2: `n(L)` changes within 16.2848 to 16.2977 at level 3 and 16.5178 to 16.5307 at level 2, and the levels disagree | open: the instrument and convergence |
 | prism (T2), $`R_5`$ | as in $`R_4`$ | M8.15: Elliptic at all 15 points to 32; both persistence tests Persist | closed enough, on one discretization |
-| $`v_1`$, $`R_4`$ and $`R_5`$ | degenerate, (4, 2, 4); the germ exists (the Surviving Ray, §8.3); type not decided | none | open: mathematics |
+| $`v_1`$, $`R_4`$ and $`R_5`$ | degenerate, (4, 2, 4); the germ exists (the Surviving Ray, §8.3, and Lemma G′, [The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs)); spectrally stable at second order, Theorem R′(c), with (e) off the sector of weight 4 ([The Soft-Slot Branches, §III](soft-slot-branches.md#iii-the-small-amplitude-spectrum), 2026-10-14) | none | closed analytically at small amplitude; outside S4 and step 5 |
 | D2 ray, C3 ray, pyramid, octahedron, zonal $`v_0`$; $`R_4`$ and $`R_5`$ | hyperbolic; spectrally unstable, (b) | control C3 (the octahedron in $`R_4`$), unscored: Hyperbolic at all 18 points to 72 | closed analytically, unstable |
 | hexagon (T3), $`R_4`$ | maximum (9, 0, 0); elliptic, Krein-negative; spectrally stable, (d) | M8.15: Elliptic at 17 of 18 points to 72, Invalid at 32 (eigenpair residual); Persists | closed enough, on one discretization; ε = 32 to be decided |
 | hexagon (T3), $`R_5`$ | as in $`R_4`$ | M8.15.2: a change of type located under the frozen ceiling's clause 3 | closed under the frozen ceiling |
@@ -59,7 +60,7 @@ Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theor
 | weights 5/2 and 3/2, $`R_2`$ | elliptic at the point, hyperbolic along the family; unstable members, (b) | none | closed analytically, unstable members |
 | weight 1/2 and the lines {7/2, −5/2} and {7/2, −1/2}, $`R_2`$ | hyperbolic; spectrally unstable, (b) | none | closed analytically, unstable |
 | line {7/2, −3/2} (T5), $`R_2`$ | maximum (9, 0, 0); elliptic, Krein-negative, definite along the family; spectrally stable, (d) | M8.15, the member with complex structure $`i`$: Elliptic at 17 of 20 points to 132, Unresolved at 45.25, 128 and 132; both persistence tests Persist | open: convergence; the other members untested |
-| line {5/2, −3/2}, $`R_2`$ | degenerate, (0, 3, 6); the germ exists, pinned by its octahedral isotropy ([The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs), Lemma G′, 2026-10-14); type not decided | none | open: mathematics |
+| line {5/2, −3/2}, $`R_2`$ | degenerate, (0, 3, 6); the germ exists, pinned by its octahedral isotropy ([The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs), Lemma G′, 2026-10-14); spectrally and orbitally stable along its family at second order, Theorem R′(b) ([The Soft-Slot Branches, §III](soft-slot-branches.md#iii-the-small-amplitude-spectrum), 2026-10-14) | none | closed analytically at small amplitude; outside S4 and step 5 |
 
 - **"Closed enough"** marks a row the census can rest on as it stands: what remains is mathematics, or a gap the census run fills, which the status names. For the coherent rows, Theorem A already makes the ground-state set orbitally stable at every charge, and whether the coherent branch stays that set beyond small charge is mathematics.
 - **"On one discretization":** M8.15's verdicts are the finite-element instrument's, under one pinned finite-element discretization with its registered two-level check, levels 2 and 3.
@@ -69,7 +70,7 @@ Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theor
 
 ## IV. What Blocks the Open Rows
 
-**The mathematics.** $`O_1`$ and $`O_2`$ were classified on 2026-10-14: both are born hyperbolic, Theorem R(b) ([The Soft-Slot Branches, §IV](soft-slot-branches.md#iv-the-orbits)). At the two degenerate orbits Theorem R does not apply. $`v_1`$'s germ exists, because its kernel lies outside its fixed space (the Surviving Ray, §8.3, an audited argument [M8.11]), and its type needs the next order. The germ at $`R_2`$'s degenerate point exists too, pinned by its octahedral isotropy (Lemma G′, [The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs), 2026-10-14), and its type needs the next order as well.
+**The mathematics.** $`O_1`$ and $`O_2`$ were classified on 2026-10-14: both are born hyperbolic, Theorem R(b) ([The Soft-Slot Branches, §IV](soft-slot-branches.md#iv-the-orbits)). At the two degenerate orbits Theorem R does not apply. $`v_1`$'s germ exists, because its kernel lies outside its fixed space (the Surviving Ray, §8.3, an audited argument [M8.11]), and the germ at $`R_2`$'s degenerate point exists too, pinned by its octahedral isotropy (Lemma G′, [The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs), 2026-10-14). Theorem R′ reads both types at the next order ([The Soft-Slot Branches, §III](soft-slot-branches.md#iii-the-small-amplitude-spectrum), 2026-10-14): $`v_1`$ is spectrally stable in $`R_4`$ and $`R_5`$, and $`R_2`$'s degenerate point is spectrally and orbitally stable along its family. So the small-amplitude mathematics blocks no row.
 
 **The instrument: the leading diagnosis.** It is a diagnosis, not an established cause, and §V is built to test it.
 - **The effect.** The finite-element mesh breaks the continuous right-SU(2) symmetry, so the structural zero modes, the rotations of the branch, are lifted off zero. On the pyramid control the M8.15.x qualification measured the lifted pair at 7 to 11 times the frozen floor at level 3, roughly independent of $`\varepsilon`$, and about 30 times larger at level 2 ([`RESULT_2.md`](scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md)). With the structural modes off zero, the instrument cannot tell structural from genuine near-zero modes by eigenvalue. It tells them apart by a static overlap rule and a floor instead.
@@ -96,7 +97,7 @@ One step at a time, each gated on the last. If the maintainer admits no instrume
 1. **Small-amplitude completion, by mathematics.**
    - Theorem R at $`O_1`$ and $`O_2`$, by interval arithmetic at the certified points, as for $`O_3`$. Done 2026-10-14: both are born hyperbolic, (b) ([The Soft-Slot Branches, §IV](soft-slot-branches.md#iv-the-orbits)).
    - The germ at $`R_2`$'s degenerate point, under $`R_2`$'s analogue of the Surviving Ray's §8.3 theorem: a one-dimensional fixed block, or an invertible slice Hessian in its fixed line. Done 2026-10-14: the isotropy is octahedral, its fixed block is one-dimensional, and the symmetry pins the germ (Lemma G′, [The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs)).
-   - The slow spectrum at order $`\varepsilon^2`$ at $`v_1`$ and at that point. At $`v_1`$ the kernel, $`\mathrm{span}\lbrace v_{-3}, iv_{-3}\rbrace`$, lies in the line $`\mathrm{span}\lbrace v_1, v_{-3}\rbrace`$ that the rotations of order four fix, a sector that decouples.
+   - The slow spectrum at order $`\varepsilon^2`$ at $`v_1`$ and at that point. At $`v_1`$ the kernel, $`\mathrm{span}\lbrace v_{-3}, iv_{-3}\rbrace`$, lies in the line $`\mathrm{span}\lbrace v_1, v_{-3}\rbrace`$ that the rotations of order four fix, a sector that decouples. Done 2026-10-14: a circle in $`v_1`$'s isotropy decouples its kernel exactly, and $`v_1`$ is spectrally stable; at $`R_2`$'s point the second-order form is positive, and the branch is spectrally and orbitally stable along its family (Theorem R′, [The Soft-Slot Branches, §III](soft-slot-branches.md#iii-the-small-amplitude-spectrum)).
 
    Each is a candidate for a blind reproduction on OpenWave, as M8.12 to M8.14 were.
 2. **The identification argument, by mathematics.**
@@ -123,7 +124,7 @@ One step at a time, each gated on the last. If the maintainer admits no instrume
      - Theorem R's slow frequencies at small amplitude on every row;
      - agreement with M8.15's adjudicated ladders, where they decided.
 5. **One census run, under one pre-registration.**
-   - **The rows:** every row born elliptic, through its window: T1, T4, T2 in both slots, T3 in both slots, and T5's window. $`O_1`$ and $`O_2`$ are born hyperbolic, so neither is a row.
+   - **The rows:** every row born elliptic, through its window: T1, T4, T2 in both slots, T3 in both slots, and T5's window. $`O_1`$ and $`O_2`$ are born hyperbolic, so neither is a row. The two degenerate rows, born stable at second order, fall outside S4, which covers nondegenerate rows, so neither is a row either. An optional finite-amplitude study of either degenerate row would need a pre-registration of its own, with adequacy tests that resolve the rows' new slow pairs, far smaller than Theorem R(a)'s, and would decide both rows together; it is not a condition for the census's close.
    - **The controls:** the coherent and weight-7/2 rows.
    - **Persistence:** a test on every Elliptic stretch.
 6. **The sequel** to the Surviving Ray.
@@ -148,7 +149,7 @@ Two levels follow from these.
 
 ## VII. What It Earns, and What It Does Not
 
-**What it earns.** For the certified orbits, under one frozen action: their small-amplitude stability, and the finite-amplitude fate of the branches born elliptic, up to each slot's gap.
+**What it earns.** For the certified orbits, under one frozen action: their small-amplitude stability, and the finite-amplitude fate of the nondegenerate branches born elliptic, up to each slot's gap.
 
 **What it does not give.**
 - Any result for another action. The slot action is MOTIVATED, not derived, with its curvature coupling ξ = 0 on one side of a published disagreement ([The Slot Action](slot-action.md), §IV). A matter action derived for [the stress-tensor bridge](stress-tensor-bridge.md) would need its own census.
@@ -162,8 +163,9 @@ Two levels follow from these.
 - Completeness of both critical sets.
 - The globality of $`R_2`$'s minimum, Proposition C2.
 - Whether the coherent branch is the ground-state set beyond small charge in $`R_4`$ and $`R_5`$.
-- Orbital stability at the maxima and saddles, beyond the spectral stability Theorem R gives.
+- Orbital stability at the maxima and saddles, beyond the spectral stability Theorems R and R′ give.
 - The open rows of §III, until §V lands.
+- The finite-amplitude fate of the two degenerate rows, outside S4 (§V).
 
 ## References
 

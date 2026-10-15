@@ -9,9 +9,9 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-14):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for three orbits, classifies M8.12's census in R4 and R5, the three orbits certified outside its class there, and R2's fixed-line points; two of the outside orbits, added on 2026-10-14, are born hyperbolic. At R2's degenerate line point, Lemma G in the fixed space of its octahedral isotropy gives a germ, pinned by the symmetry, whose type stays open. Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
+**Status (2026-10-14):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for three orbits, classifies M8.12's census in R4 and R5, the three orbits certified outside its class there, and R2's fixed-line points; two of the outside orbits, added on 2026-10-14, are born hyperbolic. At R2's degenerate line point, Lemma G in the fixed space of its octahedral isotropy gives a germ, pinned by the symmetry. At second order, a closed form for the reduced function's first correction decides both degenerate orbits: R2's point is spectrally and orbitally stable along its family, and v1 is spectrally stable in R4 and R5. Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
 **Summary:** Branch existence and the small-amplitude linear spectrum at the soft slots' critical orbits, with the orbits computed exactly.
-**Inputs:** `slot-action.md` (§V, §VII, §IX), `slot-ground-states.md` (§I, §IV, Theorem D), OpenWave's M8.12 census record (the orbit list and representatives) at `344f416`, `scripts/soft-slot-branches/`, and since 2026-10-14 the Surviving Ray's §7.2 certificates
+**Inputs:** `slot-action.md` (§V, §VII, §IX), `slot-ground-states.md` (§I, §IV, Theorem D), OpenWave's M8.12 census record (the orbit list and representatives) at `344f416`, `scripts/soft-slot-branches/`, and since 2026-10-14 the Surviving Ray's §7.2 certificates and, as a check of Lemma F, OpenWave M8.10's frozen values
 **Parent:** `slot-ground-states.md`
 
 ---
@@ -119,6 +119,67 @@ In (c) to (e) the claim is spectral stability at small amplitude; only (c) also 
 
 **Families in $`R_2`$.** An orbit in $`R_2`$ contains its $`Sp(1)`$ family $`\lbrace u\,p\rbrace`$ of distinct standing waves. Theorem R applies at each member: $`M_{up}`$ is $`M_u`$ conjugated by right multiplication by $`p`$, so $`S_{up}`$ is similar to $`R_{pip^{-1}}M_u`$, the slow matrix of $`u`$ for the complex structure $`pip^{-1}`$. Definiteness, and with it (c) and (d), holds along the whole family, uniformly by compactness. The type of an indefinite orbit can change along it, which the slot action's §IX note requires to be assessed point by point.
 
+**Second order at the degenerate orbits (added 2026-10-14).** At a degenerate orbit Theorem R leaves the kernel of $`M_u`$ on $`N_u`$ undecided at order $`\varepsilon`$. Lemma F carries the reduced function one order further, in closed form for the soft slots, and Theorem R′ reads the type from it where the germ comes from Lemma G′. Both are graded as new derivations. [`second_order_check.py`](scripts/soft-slot-branches/second_order_check.py) checks them in exact arithmetic, apart from a floating-point cross-check of one projector and a floating-point model of the slow problem.
+
+**Lemma F (the first correction).** In Lemma G's scaling, $`\tilde R(y, 0) = \tilde R_0(y)`$, with
+
+```math
+\tilde R_0(y) = -\big\langle L_0^{-1}P_\perp N(\psi_y),\ P_\perp N(\psi_y)\big\rangle, \qquad N(\psi) = \lvert\psi\rvert^2\psi,
+```
+
+where $`L_0 = -\Delta - \lambda_0`$ is inverted on the complement of $`E_0`$. In the soft slots, at level $`K`$ and spin $`j = K/2`$,
+
+```math
+\tilde R_0(y) = -\frac{R^2}{s^3V^2}\sum_{J \ne j}\frac{t_J}{(2J+1)\,\mu_J}\,\big\lVert[Y_6(y)\otimes y]_J\big\rVert^2,
+```
+
+with:
+- $`s = \dim\rho/(2j+1)`$: 3/7 in $`R_4`$, 4/7 in $`R_5`$ and 1/4 in $`R_2`$;
+- $`Y_6(y)`$ the spin-6 part of $`yy^\dagger`$, in the orthonormal basis of `branches_check.py`'s claim A, where $`h = \lVert w\rVert^4 + \beta\lVert Y_6(w)\rVert^2`$, and $`[\,\cdot\,]_J`$ the spin-$`J`$ part of $`V_6\otimes V_j`$, for $`\lvert 6 - j\rvert \le J \le 6 + j`$;
+- $`\mu_J = 2J(2J+2) - K(K+2)`$, the gap of level $`2J`$ over level $`K`$;
+- $`t_J = (2j+1)\,s(1-s)\big(s(2J+1)/13 + \kappa_J(1-2s)\big)`$, with $`\kappa_J = \sum_m \langle 6\,0;\, j\,m\,\vert\, J\,m\rangle^2\,(T_0)_{mm}\big/\sum_m (T_0)_{mm}^3`$ for $`T_0`$ the spin-6 operator of weight 0 on $`V_j`$, of unit Hilbert–Schmidt norm.
+
+The nonzero $`t_J`$ fall at levels 10, 14, 16 and 18 in $`R_4`$, at 8, 12, 14, 16 and 18 in $`R_5`$, and at 13, 17 and 19 in $`R_2`$.
+
+*Proof.*
+- *The correction.* In Lemma G's proof, $`v(w, \sigma) = -gL_\sigma^{-1}P_\perp N(w) + O(\lVert w\rVert^5)`$, with $`L_\sigma`$ the restriction of $`-\Delta - \sigma`$ to the complement, $`L_0 + O(\varepsilon)`$. Substituting into $`E_\sigma(w + v)`$ gives the sixth-order part $`-\frac{g^2}{2}\langle L_0^{-1}P_\perp N(w), P_\perp N(w)\rangle`$, and the scaling gives $`\tilde R_0`$.
+- *The density.* Write $`\psi_y(x) = AD^j(x)\,y`$, with $`A`$ intertwining $`2I`$ and $`A^\dagger A = P_\rho/(sV)`$, where $`P_\rho`$ projects $`V_j`$ onto its $`\rho`$-part. For $`1 \le L \le 7`$, $`V_L`$ has $`2I`$-invariants only at $`L = 6`$, so $`P_\rho = s + P_6`$ with $`P_6`$ of spin 6, and $`\lvert\psi_y\rvert^2 = \lVert y\rVert^2/V + \langle P_6, D^6(x)Y_6(y)\rangle/(sV)`$. The constant part keeps $`N`$ in $`E_0`$. The spin-6 part puts the level-$`2J`$ part of $`N`$ at $`A_JD^J(x)[Y_6(y)\otimes y]_J`$, with $`A_J`$ the coupling of $`P_6`$ and $`A`$ to spin $`J`$, and Schur orthogonality gives its squared norm, $`t_J\lVert[Y_6(y)\otimes y]_J\rVert^2/\big((2J+1)s^3V^2\big)`$.
+- *The constants.* $`t_J`$ is the trace of $`\lvert P_6\rangle\langle P_6\rvert\otimes P_\rho`$ on the spin-$`J`$ part of $`V_6\otimes V_j`$, with $`P_6`$ read as a vector of $`V_6`$. From $`P_\rho^2 = P_\rho`$, $`\lVert P_6\rVert^2 = (2j+1)s(1-s)`$ and $`\mathrm{tr}\,P_6^3 = (1-2s)\lVert P_6\rVert^2`$. The part $`s`$ of $`P_\rho`$ contributes $`s(2J+1)\lVert P_6\rVert^2/13`$, by Schur. The part $`P_6`$ contributes a cubic rotation invariant of a real spin-6 vector; those form a line, so it is $`\kappa_J\,\mathrm{tr}\,P_6^3`$, with $`\kappa_J`$ read off at $`T_0`$.
+- *Checks.* In $`R_4`$ and $`R_5`$ the closed form reproduces OpenWave M8.10's frozen values exactly [M8.10]: its 36 level norms, its eight values of $`\lambda_4/g^2`$, and its level sets. In $`R_2`$, binary-icosahedral characters put $`2'`$ at levels 13, 17 and 19 above the bottom, and the projector onto $`2'`$, summed over the 120 elements of $`2I`$, has spin parts 0 and 6 only and returns the same $`t_J`$.
+
+**Theorem R′ (second order).** Let $`u`$ be a degenerate critical point whose germ $`\varphi_\varepsilon`$ comes from Lemma G′, with $`E_0^u \subset \mathbb{C}u`$, and let $`K' = \ker M_u \cap N_u`$. Write
+
+```math
+\gamma_u = \kappa_u^{-2}\big(\mathrm{Hess}\,\tilde R_0(u) - 6\tilde R_0(u)\big)\big|_{K'},
+```
+
+a symmetric form on $`K'`$, taken relative to the metric.
+- **(a) The Hessian at the germ.** $`\mathrm{Hess}_y\tilde f(y_\varepsilon, \varepsilon) = \kappa_u^{-1}M_u + \varepsilon D + O(\varepsilon^2)`$, where $`D`$ annihilates $`K_u`$ and is $`\gamma_u`$ on $`K'`$.
+- **(b) A definite second order.** If $`n_- = 0`$ and $`\gamma_u`$ is positive definite, then for small $`\varepsilon > 0`$, $`L_\varepsilon \ge 0`$ with kernel exactly the tangent space of $`\Gamma\varphi_\varepsilon`$. Theorem R(c)'s conclusions follow: the spectrum of $`A_\varepsilon`$ is imaginary, and the family is orbitally stable, in $`R_2`$ along the family.
+- **(c) A decoupled sector.** Suppose $`\Gamma_u`$ contains a circle acting complex-linearly, and $`K'`$ is a whole isotypic component of it in $`E_0`$, of dimension 2 and nonzero weight. Then $`\gamma_u`$ is a multiple of the metric, and the part of the slow space of that weight is invariant, $`\Omega`$-nondegenerate and two-dimensional. Its pair is imaginary for every small $`\varepsilon`$, at $`\pm i\varepsilon^2(c^2/4\omega_0)\,\gamma_u(1 + O(\varepsilon))`$ when $`\gamma_u \ne 0`$. If Theorem R(e)'s hypotheses hold for $`\widehat S_u`$ on the other components, the spectrum of $`A_\varepsilon`$ is imaginary.
+
+As in Theorem R, the claims are at small amplitude, and only (b) gives orbital stability.
+
+*Proof.*
+- **(a)** By Lemma G′ and the phase symmetry, $`y_\varepsilon = \rho_\varepsilon u`$. The critical equation on $`\mathbb{R}u`$ is $`\kappa_u\rho^2 - 1 + 3\varepsilon\tilde R_0(u)\rho^4 = 0`$, so $`\kappa_u\rho_\varepsilon^2 = 1 - 3\varepsilon\kappa_u^{-2}\tilde R_0(u) + O(\varepsilon^2)`$. On $`\ker M_u`$, $`\mathrm{Hess}\,H(u) = 2\kappa_u`$, so there $`\mathrm{Hess}\,H(y_\varepsilon) - 2 = 2(\kappa_u\rho_\varepsilon^2 - 1)`$, and the correction adds $`\varepsilon\rho_\varepsilon^4\,\mathrm{Hess}\,\tilde R_0(u)`$: together $`\varepsilon\kappa_u^{-2}(\mathrm{Hess}\,\tilde R_0(u) - 6\tilde R_0(u)) + O(\varepsilon^2)`$. Since $`y_\varepsilon`$ is a multiple of $`u`$, the orbit tangent there is $`K_u`$ itself, which the Hessian annihilates at every $`\varepsilon`$, so $`D`$ annihilates $`K_u`$.
+- **(b)** By (a), the Hessian is positive on the normal space at $`y_\varepsilon`$: on the range of $`M_u`$ at order 1, and on $`K'`$ at order $`\varepsilon`$, since the cross terms are $`O(\varepsilon)`$ and change the block of $`K'`$ at order $`\varepsilon^2`$. By the kernel step of Lemma G's proof, $`L_\varepsilon`$ is positive on the complement of $`E_0`$ for small $`\varepsilon`$, and its Schur complement on $`E_0`$ is $`\mathrm{Hess}_wf = \frac{\varepsilon}{2}\mathrm{Hess}_y\tilde f`$. So $`L_\varepsilon \ge 0`$ with kernel the orbit tangent, and $`H_2 \ge 0`$ with kernel exactly the stationary family's tangent space. From there Theorem R(c)'s proof applies as written, with coercivity of order $`\varepsilon^2`$ on $`K'`$, and in $`R_2`$ through the similarity under "Families in $`R_2`$".
+- **(c)** By Lemma G′ the circle lies in the germ's isotropy, and it commutes with $`i`$, so it commutes with $`A_\varepsilon`$ and preserves $`\Omega`$. Its isotypic parts of the slow space are invariant and $`\Omega`$-orthogonal, so each is $`\Omega`$-nondegenerate (Lemma S), and since the Riesz projection commutes with the circle, the part of the weight of $`K'`$ has dimension 2. On it $`A_\varepsilon`$ commutes with the circle's rotations, so it is $`a + bX`$, with $`X`$ the generator, and $`\Omega`$-skewness gives $`a = 0`$: its eigenvalues are $`\pm ib`$. Reducing $`(L_\varepsilon + \lambda^2/c^2 + 2\omega_\varepsilon\lambda i/c^2)\zeta = 0`$ to $`E_0`$, as in Lemma G's proof, gives $`[\mathrm{Hess}_wf + 2\omega_\varepsilon\lambda i/c^2 + O(\lambda^2 + \varepsilon^2\lvert\lambda\rvert)]\zeta_0 = 0`$, and with (a) on $`K'`$ this gives $`b = \varepsilon^2(c^2/4\omega_0)\,\gamma_u(1 + O(\varepsilon))`$. Off that component $`M_u`$ has no kernel on $`N_u`$, since its kernel there is $`K'`$; so by (a) and the kernel step of Lemma G's proof, the kernel of $`L_\varepsilon`$ off the component is exactly the orbit tangent, and Theorem R(e)'s proof applies as written.
+
+**At $`R_2`$'s degenerate point** (§II), the interior critical point of the line {5/2, −3/2}:
+- *The kernel and its group.* $`K'`$ has dimension 3, and $`\Gamma_u`$, of order 24, acts on it absolutely irreducibly, so $`\gamma_u`$ is a multiple of the metric, by Schur, and the same along the family. Only 8 of the 24 elements respect $`i`$, 4 commuting with it and 4 reversing it, and under those 8 $`K'`$ is reducible. The slow matrix sees that dihedral subgroup, the energy sees the whole group, and the type is read from the energy.
+- *The value.* Lemma F's sum runs over levels 13, 17 and 19, with $`t_J = 147/136,\ 1323/1976,\ 180/323`$. At each level the gradient of $`\lVert[Y_6(y)\otimes y]_J\rVert^2`$ vanishes on $`K'`$, and its spherical Hessian there is a multiple of the metric: $`-17955/82654`$, $`10125/120802`$ and $`2205/60401`$. So $`\gamma_u = (115020/20333173)\,R^2`$, positive.
+- *The type.* $`n_- = 0`$ (§IV), so Theorem R′(b) applies: the branch is spectrally and orbitally stable at small amplitude, along its family.
+- *The leading orders.* By (b), the full linearization's slow spectrum is imaginary at small amplitude. $`\widehat S_u`$ has its zero of multiplicity 12, and the stationary family supplies $`k + r_u = 8`$ of it, which stay zero for $`A_\varepsilon`$. $`\sigma`$ on $`\ker M_u`$ has rank 6 and a radical of dimension 3: two directions in $`K_u`$, and one reaching into $`K'`$, whose partner has positive energy. In the script's finite-dimensional model of the slow problem, the other four eigenvalues leave zero at two orders:
+  - a pair at $`\pm i\varepsilon^2(c^2/4\omega_0)\,a_2`$, from the plane of $`K'`$ orthogonal to the radical direction;
+  - a pair at $`\pm i\varepsilon^{3/2}(c^2/4\omega_0)\,a_{3/2}`$, from the radical direction and its partner, a Jordan pair at order $`\varepsilon`$.
+
+  Both are imaginary and Krein-positive there, with $`a_2 = 0.0038986\,R^2`$ and $`a_{3/2} = 0.05823\,R`$ in floating point. These rates and coefficients are diagnostics of the model, not derived here as asymptotics of the full linearization, and the type does not rest on them.
+
+**At $`v_1`$**, in $`R_4`$ and $`R_5`$:
+- *The germ.* $`\Gamma_u`$ contains the circle $`R_z(\theta)e^{i\theta}`$, which fixes $`v_1`$ and acts on $`v_m`$ with weight $`1 - m`$, and the half-turn about $`y`$ with charge conjugation, which fixes $`v_1`$ too. So $`E_0^u = \mathbb{R}v_1`$ and $`N_u^u = 0`$, and Lemma G′ gives the germ, with the circle in its isotropy; the Surviving Ray's §8.3 gives the same germ.
+- *The decoupled sector.* The component of weight 4 is $`\mathbb{C}v_{-3}`$, which is $`K'`$, and the circle commutes with $`M_u`$ and $`i`$. So Theorem R′(c) applies, and that pair is imaginary for every small $`\varepsilon`$. Its $`\gamma_u`$ is $`-(19919/6697728)\,R^2`$ in $`R_4`$, Krein-negative, and $`(224487/41628563)\,R^2`$ in $`R_5`$, Krein-positive.
+- *The other components.* There $`\widehat S_u`$ has its zero of multiplicity exactly $`4 = k + r_u`$ and the four simple negative roots of $`v_1`$'s slow polynomial in §IV, and $`J(v_1) \ne 0`$ keeps $`r_u = 1`$ along the branch. So Theorem R(e)'s hypotheses hold there, and the branch is spectrally stable at small amplitude in $`R_4`$ and $`R_5`$.
+
 ## IV. The Orbits
 
 **Method.** The computations run in exact arithmetic, in weighted coordinates $`p_m = w_m/\sqrt{(j+m)!\,(j-m)!}`$, where the quartic, the metric, the generators and $`\Theta`$ are rational. For each orbit:
@@ -165,6 +226,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
   - a zero of $`\widehat S_u`$ of multiplicity exactly 6;
   - four simple negative roots in $`\nu`$, from certified sign changes.
 - **The other two outside orbits** of the census probe are not certified, and nothing here uses them.
+- **At $`v_1`$** (added 2026-10-14), the degenerate row is decided at second order: spectrally stable at small amplitude in $`R_4`$ and $`R_5`$, by Theorem R′(c) with Theorem R(e) off the component of weight 4 (§III). The pair of that component is imaginary for every small $`\varepsilon`$, Krein-negative in $`R_4`$ and Krein-positive in $`R_5`$.
 
 **The other two outside orbits, added 2026-10-14.** The Surviving Ray certified both on 2026-09-23 ([§7.2](../../bedrock/files/surviving-ray.md)), each at one point inside the fixed set of its full isotropy: its $`\mathcal O_1`$ and $`\mathcal O_2`$. [`outside_orbits_check.py`](scripts/soft-slot-branches/outside_orbits_check.py) recertifies each on the full system, as the bullet above does for the third:
 - the certificate's box centre in weighted coordinates, through $`w_k = \sqrt{720}\,p_{k-3}`$ for the certificate's binary-sextic coefficients $`w_k`$, two Newton steps on the slice system, and a Krawczyk box of radius $`10^{-60}`$;
@@ -196,6 +258,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
 - **The weight-7/2 orbit is a strict local minimum** modulo its symmetry family, and $`\tau = 112/143,\ 168/143,\ 336/143,\ 504/143,\ 560/143`$.
 - **At the {5/2, −3/2} point** (added 2026-10-14), the germ exists, pinned by its octahedral isotropy (Lemma G′, §II); its type is not decided.
+- **Its type, at second order** (added 2026-10-14): $`\gamma_u = (115020/20333173)\,R^2 > 0`$ on its kernel, so the branch is spectrally and orbitally stable at small amplitude, along its family, by Theorem R′(b) (§III).
 - **At the {7/2, −3/2} point,** $`J(u) = 0`$; one squared frequency is $`\tau^2 = 153664/20449`$, and the other two are the roots of $`418161601\,\nu^2 + 6989958976\,\nu + 28677390336`$, all Krein-negative.
 - **The minimizer, on its own line.** In $`R_4`$ and $`R_5`$ the coherent orbit is the unique minimizer of $`Q`$, derived in the Slot Ground States, §IV, Proposition C3: $`q_6`$ is the strictly smallest coefficient, and $`f_6 = 1`$ exactly on coherent states. That proposition's small-charge limit identifies this branch with the ground states at small charge; nothing above uses it.
 
@@ -244,6 +307,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 - **Note (2026-10-14), on the outside orbits.** §IV says that the other two outside orbits of the census probe are not certified, and this section's last bullet lists the outside orbits not certified here. The Surviving Ray had certified all three on 2026-09-23 ([§7.2](../../bedrock/files/surviving-ray.md)): its $`\mathcal O_1`$ and $`\mathcal O_2`$, with signatures (4, 0, 5) and (6, 0, 3), and its $`\mathcal O_3`$, the third outside orbit of §IV. The small-amplitude type of $`\mathcal O_1`$ and $`\mathcal O_2`$, Theorem R at their certified points, is not computed here. [The Slot Dynamics Census](slot-dynamics-census.md) carries them as open rows.
 - **Note (2026-10-14), on $`\mathcal O_1`$ and $`\mathcal O_2`$.** §IV's addition of the same day computes the type the note above leaves open: both are born hyperbolic in $`R_4`$ and $`R_5`$, Theorem R(b). Every outside orbit the Surviving Ray certified now has its type here, so the last bullet's second clause names none, and [The Slot Dynamics Census](slot-dynamics-census.md) closes their row.
 - **Note (2026-10-14), on $`R_2`$'s level 161/143.** §II's Lemma G′, added the same day, gives that degenerate orbit a germ, pinned by its octahedral isotropy. §V's list and the last bullet still hold for its small-amplitude type, which needs the slow spectrum at order $`\varepsilon^2`$.
+- **Note (2026-10-14), on the degenerate orbits at second order.** §III's Theorem R′, added the same day, decides both at small amplitude: $`v_1`$ is spectrally stable in $`R_4`$ and $`R_5`$, and $`R_2`$'s level 161/143 is spectrally and orbitally stable along its family, a second orbitally stable branch of $`R_2`$ at small amplitude, beside the weight-7/2 minimum. For both, §V's list and this section's last bullet now concern finite amplitude only.
 - Proposition C2, the globality of $`R_2`$'s minimum 144/143. The first two Hermitian lifts of $`Q - 144/143`$, with multipliers $`\lVert w\rVert^2`$ and $`\lVert w\rVert^4`$, are not positive semidefinite, so that route certifies nothing.
 - The degenerate orbits, and the outside orbits not certified here.
 
@@ -251,6 +315,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 
 - T. Kato, *Perturbation Theory for Linear Operators*, Classics in Mathematics, Springer (1995), [doi:10.1007/978-3-642-66282-9](https://doi.org/10.1007/978-3-642-66282-9). Riesz projections, and the reduction of an isolated eigenvalue group.
 - R. Krawczyk, Newton-Algorithmen zur Bestimmung von Nullstellen mit Fehlerschranken, *Computing* **4**, 187–201 (1969), [doi:10.1007/BF02234767](https://doi.org/10.1007/BF02234767).
+- **[M8.10]** OpenWave M8 track, M8.10: first correction at the level-6 critical rays. The [task record](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_10_task_details.md), with its frozen claims B1, B2 and C1, 2026.
 
 ## Files
 
@@ -261,6 +326,8 @@ In `scripts/soft-slot-branches/`:
 - `outside_orbits_check.out`: its record.
 - `germ_check.py` (added 2026-10-14): $`R_2`$'s degenerate line point in exact arithmetic over $`\mathbb{Q}(\sqrt 2, i)`$: its degeneracy, its octahedral isotropy, its one-dimensional fixed space, and the dihedral cross-check with its slice value 168/143. Each claim has a mutation arm that turns it red, and the exit status is 1 if a claim fails or an arm stays green. About ten seconds.
 - `germ_check.out`: its record.
+- `second_order_check.py` (added 2026-10-14): Lemma F's constants and levels, against binary-icosahedral characters, the projector onto $`2'`$ and OpenWave M8.10's frozen values; $`R_2`$'s degenerate point, its kernel, its isotropy group and $`\gamma_u`$; $`v_1`$'s circle and its $`\gamma_u`$ in $`R_4`$ and $`R_5`$; and a floating-point model of the slow problem, with its effective problem on the generalized kernel. Each claim has a mutation arm that turns it red, and the exit status is 1 if a claim fails or an arm stays green. Under a minute.
+- `second_order_check.out`: its record.
 
 In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records and the run's record:
 - `m8_15_solver/`: the finite-element solver, the branch driver and the control runs; `out/MANIFEST.json` holds the SHA-256 of every file the run executes, with the environment the controls ran in.

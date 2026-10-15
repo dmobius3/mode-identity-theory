@@ -1,0 +1,53 @@
+A  the first correction's slot constants, kappa_J and t_J, and their levels
+   kappa_J, j = 3: 3: 7/13, 4: -27/13, 5: 44/13, 6: -3, 7: 675/442, 8: -11/26, 9: 11/221
+   kappa_J, j = 7/2: 5/2: -3/13, 7/2: 8/13, 9/2: -5/13, 11/2: -6/13, 13/2: 399/442, 15/2: -8/13, 17/2: 99/494, 19/2: -110/4199
+   R4: t_J 3: 48/91, 4: 0, 5: 132/91, 6: 0, 7: 270/221, 8: 6/7, 9: 240/221; levels above the bottom [10, 14, 16, 18]
+   R5: t_J 3: 36/91, 4: 108/91, 5: 0, 6: 12/7, 7: 90/119, 8: 18/13, 9: 2196/1547; levels above the bottom [8, 12, 14, 16, 18]
+   R2: t_J 5/2: 0, 7/2: 9/13, 9/2: 0, 11/2: 0, 13/2: 147/136, 15/2: 0, 17/2: 1323/1976, 19/2: 180/323; levels above the bottom [13, 17, 19]
+   PASS
+B  binary-icosahedral characters: invariants in V_L for L <= 7 at L = 0, 6 only; the slots' levels; the
+   explicit projector onto 2' (floating point, 40 digits)
+   R4 = 3' occurs at levels [10, 14, 16, 18] above the bottom
+   R5 = 4 occurs at levels [8, 12, 14, 16, 18] above the bottom
+   R2 = 2' occurs at levels [13, 17, 19] above the bottom
+   120 elements; spin parts of P: 0.5, 2.03e-87, 2.03e-81, 2.62e-85, 1.2e-81, 4.84e-84, 1.5, 2.68e-84; worst |t_J - universal| = 3.44e-41
+   PASS
+C  OpenWave M8.10's frozen level norms and lambda_4 / g^2, sectors 3' (R4) and 4 (R5)
+   36 level norms and 8 values of lambda_4 / g^2 compared exactly
+   PASS
+D  R2's point: K3, its isotropy group, the complex structure, sigma on ker M_u, the partner
+   24 elements; dim K3 = 3; <chi, chi> = 1; commuting with i: 4, reversing i: 4; sigma on ker M_u: rank 6, radical 3, 1 direction outside K_u; partner energy positive: True
+   PASS
+E  the second variation of the first correction on K3, V = R = 1
+   level 13: t_J = 147/136, F_J(u) = 14217/855712, Hess_S F_J on K3 = -17955/82654 x metric (proportional: True)
+   level 17: t_J = 1323/1976, F_J(u) = 189/134368, Hess_S F_J on K3 = 10125/120802 x metric (proportional: True)
+   level 19: t_J = 180/323, F_J(u) = 2205/134368, Hess_S F_J on K3 = 2205/60401 x metric (proportional: True)
+   R~(u) = -27273813/37780754440; Hess_S R~(u) on K3 = 805140/112285459 x metric; gamma = 115020/20333173 = 0.00565676591647
+   PASS
+F  the model slow problem at R2's point (floating point, 50 digits): mu of J0 Hess f(y_eps)
+   eps = 1e-3: 8 zeros; pairs |mu| (Re, Krein) 3.89858656e-6 (2.6e-93, +); 0.00184145579 (1.1e-82, +); 0.919249898 (-7.2e-55, +); 1.40453782 (-2.1e-82, +)
+   eps = 1e-5: 8 zeros; pairs |mu| (Re, Krein) 3.89858196e-8 (2.5e-89, +); 0.000184144514 (-3.5e-84, +); 0.919254611 (7.7e-55, +); 1.40455083 (6.8e-84, +)
+   dim Z = 12, dim Z' = 4; the 4 x 4 problem at eps = 1e-5: 3.89858205e-8, 3.89858205e-8, 0.000184144514, 0.000184144514
+   PASS
+G  v1: the circle, its weight-4 sector, the slow spectrum off it, gamma' in R4 and R5, the model
+   the circle fixes v1: True; so does the half-turn about y with charge conjugation, which reverses i: True
+   weights 1 - m: [-2, -1, 0, 1, 2, 3, 4]; the kernel on N_u is the weight-4 sector: True; the circle commutes with M_u and i: True
+   off the sector: zero multiplicity 4, P(nu), unit u: (20449*nu + 784)*(20449*nu + 12544)*(1656369*nu + 19600)*(1656369*nu + 1960000)/1147250716178344681761; equal to branches_check's v1 row: True
+   gamma': R4 -19919/6697728 = -0.002973993569, R5 224487/41628563 = 0.005392619486; model weight-4 pair imaginary under either sign, Krein sign = sign of gamma': True
+   PASS
+arms
+   arm: R4 with s = 2/7 (A)                                            RED
+        R4's levels become [8, 10, 12, 14, 16, 18]
+   arm: the defining 2 in place of 2' (B)                              RED
+        2 occurs in V_7/2 0 times, and at levels [11, 13, 19]
+   arm: the cubic recoupling dropped (C)                               RED
+        26 of 36 level norms and 8 of 8 values of lambda_4 differ
+   arm: the character on the 8 elements that keep i up to sign (D)     RED
+        <chi, chi> = 2 there: K3 is reducible under that subgroup
+   arm: the branch shift dropped, Hess in place of Hess_S (E)          RED
+        gamma becomes 130247991/58152874780
+   arm: the correction's sign reversed (F)                             RED
+        at eps = 1e-5: |mu| 3.89858e-8, Re 1.32e-52, Krein -; |mu| 0.000184144, Re 0.000184, Krein -
+   arm: the circle with the phase e^{2 i theta} (G)                    RED
+        its weight on v1 is 1, so it does not fix v1
+0 claims failed; 7/7 arms red
