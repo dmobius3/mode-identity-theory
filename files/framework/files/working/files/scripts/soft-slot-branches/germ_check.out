@@ -1,0 +1,17 @@
+A  the point sqrt(3/4) v_{5/2} + sqrt(1/4) v_{-3/2}: critical True, Q = 161/143, k = 6, (n-, n0, n+) = (0, 3, 6)
+   degenerate (n0 > 0), so Lemma G does not apply; k = dim Gamma = 6, so Gamma_u is finite: PASS
+B  the quarter-turn about z with fibre e^{5 pi i/4}, and the half-turn about y with fibre -j, fix u: PASS
+C  turned by pi/4 about z, u becomes u'' = sqrt(3/4) v_{5/2} - sqrt(1/4) v_{-3/2} up to a phase (the two phases differ by -1); u'' is critical with the same Q: True
+   the quarter-turn about x with fibre (-1 + k)/sqrt 2 fixes u'', and so does the one about z: True
+   the two quarter-turns generate the octahedral group O, so the rotation part of Gamma_u is O: PASS
+D  the fixed space of Gamma_u in E0 has dimension 1, the real line through the point: PASS
+   so the slice of Lemma G′ is a point and the germ is pinned by the symmetry
+E  the dihedral subgroup of B: fixed space of dimension 2; no infinitesimal symmetry preserves it: True
+   its slice direction tau = [(1, -1/3), (5, 1)], in N_u: True; tau^T M tau / tau^T G tau = 168/143 for unit u
+   ker M_u has dimension 9 and meets the fixed space only in 0: True; PASS
+   arm: the quarter-turn about x in u's own frame: it moves u's quaternionic line      RED
+   arm: C's fibre element with k replaced by -k: it does not fix u''                   RED
+   arm: D from the quarter-turn about z alone: dimension 4, not 1                      RED
+   arm: E without the half-turn: a rotation with a phase preserves the plane           RED
+   arm: the line point with p_{-3/2} = 2 p_{5/2}: not critical                         RED
+0 claims failed; 5/5 arms red

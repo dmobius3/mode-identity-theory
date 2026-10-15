@@ -59,7 +59,7 @@ Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theor
 | weights 5/2 and 3/2, $`R_2`$ | elliptic at the point, hyperbolic along the family; unstable members, (b) | none | closed analytically, unstable members |
 | weight 1/2 and the lines {7/2, −5/2} and {7/2, −1/2}, $`R_2`$ | hyperbolic; spectrally unstable, (b) | none | closed analytically, unstable |
 | line {7/2, −3/2} (T5), $`R_2`$ | maximum (9, 0, 0); elliptic, Krein-negative, definite along the family; spectrally stable, (d) | M8.15, the member with complex structure $`i`$: Elliptic at 17 of 20 points to 132, Unresolved at 45.25, 128 and 132; both persistence tests Persist | open: convergence; the other members untested |
-| line {5/2, −3/2}, $`R_2`$ | degenerate, (0, 3, 6) | none | open: mathematics |
+| line {5/2, −3/2}, $`R_2`$ | degenerate, (0, 3, 6); the germ exists, pinned by its octahedral isotropy ([The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs), Lemma G′, 2026-10-14); type not decided | none | open: mathematics |
 
 - **"Closed enough"** marks a row the census can rest on as it stands: what remains is mathematics, or a gap the census run fills, which the status names. For the coherent rows, Theorem A already makes the ground-state set orbitally stable at every charge, and whether the coherent branch stays that set beyond small charge is mathematics.
 - **"On one discretization":** M8.15's verdicts are the finite-element instrument's, under one pinned finite-element discretization with its registered two-level check, levels 2 and 3.
@@ -69,7 +69,7 @@ Small-amplitude types are [The Soft-Slot Branches](soft-slot-branches.md)' Theor
 
 ## IV. What Blocks the Open Rows
 
-**The mathematics.** $`O_1`$ and $`O_2`$ were classified on 2026-10-14: both are born hyperbolic, Theorem R(b) ([The Soft-Slot Branches, §IV](soft-slot-branches.md#iv-the-orbits)). At the two degenerate orbits Theorem R does not apply. $`v_1`$'s germ exists, because its kernel lies outside its fixed space (the Surviving Ray, §8.3, an audited argument [M8.11]), and its type needs the next order. The germ at $`R_2`$'s degenerate point has not been checked.
+**The mathematics.** $`O_1`$ and $`O_2`$ were classified on 2026-10-14: both are born hyperbolic, Theorem R(b) ([The Soft-Slot Branches, §IV](soft-slot-branches.md#iv-the-orbits)). At the two degenerate orbits Theorem R does not apply. $`v_1`$'s germ exists, because its kernel lies outside its fixed space (the Surviving Ray, §8.3, an audited argument [M8.11]), and its type needs the next order. The germ at $`R_2`$'s degenerate point exists too, pinned by its octahedral isotropy (Lemma G′, [The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs), 2026-10-14), and its type needs the next order as well.
 
 **The instrument: the leading diagnosis.** It is a diagnosis, not an established cause, and §V is built to test it.
 - **The effect.** The finite-element mesh breaks the continuous right-SU(2) symmetry, so the structural zero modes, the rotations of the branch, are lifted off zero. On the pyramid control the M8.15.x qualification measured the lifted pair at 7 to 11 times the frozen floor at level 3, roughly independent of $`\varepsilon`$, and about 30 times larger at level 2 ([`RESULT_2.md`](scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md)). With the structural modes off zero, the instrument cannot tell structural from genuine near-zero modes by eigenvalue. It tells them apart by a static overlap rule and a floor instead.
@@ -95,7 +95,7 @@ One step at a time, each gated on the last. If the maintainer admits no instrume
 
 1. **Small-amplitude completion, by mathematics.**
    - Theorem R at $`O_1`$ and $`O_2`$, by interval arithmetic at the certified points, as for $`O_3`$. Done 2026-10-14: both are born hyperbolic, (b) ([The Soft-Slot Branches, §IV](soft-slot-branches.md#iv-the-orbits)).
-   - The germ at $`R_2`$'s degenerate point, under the hypothesis of the Surviving Ray's §8.3 theorem: a one-dimensional fixed block, or an invertible slice Hessian in its fixed line.
+   - The germ at $`R_2`$'s degenerate point, under $`R_2`$'s analogue of the Surviving Ray's §8.3 theorem: a one-dimensional fixed block, or an invertible slice Hessian in its fixed line. Done 2026-10-14: the isotropy is octahedral, its fixed block is one-dimensional, and the symmetry pins the germ (Lemma G′, [The Soft-Slot Branches, §II](soft-slot-branches.md#ii-the-germs)).
    - The slow spectrum at order $`\varepsilon^2`$ at $`v_1`$ and at that point. At $`v_1`$ the kernel, $`\mathrm{span}\lbrace v_{-3}, iv_{-3}\rbrace`$, lies in the line $`\mathrm{span}\lbrace v_1, v_{-3}\rbrace`$ that the rotations of order four fix, a sector that decouples.
 
    Each is a candidate for a blind reproduction on OpenWave, as M8.12 to M8.14 were.
