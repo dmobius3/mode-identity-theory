@@ -7,7 +7,9 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Unified_Slot_Action.png?raw=true" width="100%" alt="Bedrock">
 
-Dynamics is one problem with two halves: how the wave content moves, and how that motion sources geometry. The first half now stands on a fixed geometry, as an effective theory rather than the framework's matter action: on $`\mathbb{R} \times S^3/2I`$, fields carrying the eight nontrivial representations of $`2I`$, its McKay slots, move under one common action whose self-interaction is the Surviving Ray's density interaction. The pages below follow those fields from that interaction to their lowest-energy states, and to the branches of standing waves that grow out of the interaction's critical orbits. The [Slot Dynamics Census](../working/files/slot-dynamics-census.md) gathers the status of the branches at every certified critical orbit in one place, and sets the program for the rest.
+Dynamics is one problem with two halves: how the wave content moves, and how that motion sources geometry. The first half now stands on a fixed geometry, as an effective theory rather than the framework's matter action: on $`\mathbb{R} \times S^3/2I`$, fields carrying the eight nontrivial representations of $`2I`$, its McKay slots, move under one common action whose self-interaction is the Surviving Ray's density interaction. The pages below follow those fields from that interaction to their lowest-energy states, and to the branches of standing waves that grow out of the interaction's critical orbits. 
+
+The [Slot Dynamics Census](../working/files/slot-dynamics-census.md) gathers the status of the branches at every certified critical orbit in one place, and sets the program for the rest.
 
 ---
 
