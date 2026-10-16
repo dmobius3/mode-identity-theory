@@ -21,9 +21,9 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 
 ## 🎙️ Podcast
 
->[![Fulcrum of the Universe](https://img.youtube.com/vi/C6HqfObjGkw/mqdefault.jpg)](https://www.youtube.com/watch?v=C6HqfObjGkw)
+>[![Fulcrum of Reality](https://img.youtube.com/vi/C6HqfObjGkw/mqdefault.jpg)](https://www.youtube.com/watch?v=C6HqfObjGkw)
 >
->*Audio Podcast: [Fulcrum of the Universe](https://www.youtube.com/watch?v=C6HqfObjGkw)*
+>*Audio Podcast: [Fulcrum of Reality](https://www.youtube.com/watch?v=C6HqfObjGkw)*
 
 ## 🔬 Reference
 
