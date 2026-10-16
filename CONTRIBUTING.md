@@ -102,6 +102,8 @@ A yes would give an alternative the framework set aside a smooth realization, on
 
 >**Von Christian Berrang** | [github.com/Christianfwb/frequenzprojekt](https://github.com/Christianfwb/frequenzprojekt) | [10.5281/zenodo.16727005](https://doi.org/10.5281/zenodo.16727005)
 
+>**Adam Murphy** | [impactme.ai](https://impactme.ai/)
+
 >**Paul Watford** | The Standard Model from One Polynomial: [10.5281/zenodo.19455028](https://doi.org/10.5281/zenodo.19455028)
 
 ---
