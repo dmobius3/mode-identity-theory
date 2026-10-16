@@ -15,7 +15,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 ## 🌱 A Good First Problem
 
-### The first self-intersection width
+### ❓ The first self-intersection width
 
 **Setting.** Write $`S^3`$ as the unit quaternions, with the binary icosahedral group $`2I`$ (order 120) acting by left multiplication, and let $`\Sigma`$ be the great 2-sphere of purely imaginary quaternions. Pick orthonormal $`N, e \in \Sigma`$. For $`0 < W < \pi/2`$ let $`D(W) \subset \Sigma`$ be the double lune of points within longitude $`W`$, about the poles $`\pm N`$, of the great circle through $`N`$ and $`e`$. Its quotient by $`\pm 1`$ is a Möbius band embedded in $`\mathbb{RP}^3 = S^3/\{\pm 1\}`$, pinched to a point at the image of $`\pm N`$.
 
@@ -31,7 +31,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 ## 📐 Analysis and Geometry
 
-### Does smoothing the cone point transmit?
+### ❓ Does smoothing the cone point transmit
 
 **Setting.** Take the band $`M(W) = D(W)/\{\pm 1\}`$ above on a sphere of radius $`R`$, with $`W < \pi R/2`$. Its one singular point $`p_c`$, the image of $`\pm N`$, is where two sectors meet at a point. Take the Laplacian on sections of its orientation line bundle, equivalently functions on $`D(W)`$ that are odd under $`x \mapsto -x`$, with the Neumann condition on the edge. At $`p_c`$ it has more than one self-adjoint realization: the Friedrichs realization, which decouples the two sectors there, and transmitting ones that couple them.
 
@@ -43,7 +43,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **Skills:** spectral theory, self-adjoint extensions, singular perturbation. **Difficulty:** research. **Source:** [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#xi-the-ruling), §XI, 1e; [the first-eigenvalue paper](/files/framework/files/bedrock/files/first-eigenvalue.md), whose Proposition 7.1 is the metric smoothing; [The Smoothed-Cone Limit](/files/framework/files/working/files/smoothed-cone-limit.md), its declaration and cross-check.
 
-### Can a natural sampling operator produce the first positive mode?
+### ❓ Can a natural sampling operator produce the first positive mode
 
 **Setting.** A field on $`S^3/2I`$ in an irreducible representation $`\tau`$ of $`2I`$ is a section of the flat bundle $`E_\tau`$, and the band maps into $`S^3/2I`$ by a map $`f`$. A sampling operator takes such fields to sections of $`f^*E_\tau \otimes \mathcal{L}`$ on the band, where $`\mathcal{L}`$ is its orientation line bundle. In the Friedrichs realization the band's Laplacian on these sections has $`2/R^2`$ as its first positive eigenvalue, and its eigenspace carries the single profile $`\sin(y/R)`$, up to a sign that flips at the cone point, times the fiber; $`y`$ is arclength along the band's core, measured from its equator arc.
 
@@ -59,7 +59,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **Skills:** representation theory of finite groups, spectral geometry. **Difficulty:** research. **Source:** [the scaling law](/files/framework/files/working/files/scaling-law-uniqueness.md#whats-closed); [the transfer run](/files/framework/files/working/files/first-positive-transfer.md); [The Projective Carrier](/files/framework/files/working/files/projective-carrier.md#ii-lemma-1-the-central-sign-restricts-to-the-möbius-holonomy), §II and §XI, 1d.
 
-### Can the band's width be selected without a new scale?
+### ❓ Can the band's width be selected without a new scale
 
 **Setting.** The band $`M(W)`$ is unbent, and its width $`W`$ is free in $`(0, \pi R/2)`$. With its edge held fixed it is a strictly stable critical point of area at every width, among variations that keep the cone point's shape: that is the check reproduced blind above. It also has the least area of any Lipschitz map of a Möbius band with the same boundary map whose core generates $`\pi_1(\mathbb{RP}^3)`$, and ties only with maps that cover it once ([Propositions 7 and 8](/files/framework/files/working/files/projective-carrier.md#ix-fixed-edge-stability)); since each width has its own edge, this selects no width either.
 
@@ -73,7 +73,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 ## ♾️ A Side Problem in Pure Geometry
 
-### The spherical paper Möbius band
+### ❓ The spherical paper Möbius band
 
 Take the band of points within distance $`w`$ of a geodesic segment of length $`L`$ on the unit 2-sphere, $`0 < w < \pi/2`$, and glue its two ends with a flip. A spherical paper Möbius band is a smooth isometric embedding of it in the unit 3-sphere; by the Gauss equation, its second fundamental form has zero determinant. Which $`(L, w)`$ embed? In Euclidean space the paper Möbius band embeds smoothly only when its aspect ratio exceeds $`\sqrt{3}`$ (R. E. Schwartz, *The optimal paper Moebius band*, Annals of Mathematics 201, no. 1, 2025, 291–305).
 
@@ -83,7 +83,7 @@ A yes would give an alternative the framework set aside a smooth realization, on
 
 ## 🔭 Data Reconciliation
 
-### Score the Euclid predictions when the data arrive
+### ❓ Score the Euclid predictions when the data arrive
 
 Five predictions were deposited on Zenodo before Euclid's first data release, each with its scoring rule. Row IV, a ceiling on the stellar mass function at $`z \gtrsim 10`$, is the one row expected at DR1-Foundation, in November 2026; the other four read cosmology-derived products in the full DR1, in mid 2027. Both dates are tentative. DR1 can falsify the $`a_0(z)`$ evolution row and score Row IV's ceiling; Row IV's translation to galaxies runs through the standard deep-MOND relation, conditionally. Each row is scored against the latest version of the card deposited on Zenodo before the first data capable of scoring it appear. An independent scoring, including a null or a falsification, counts.
 
