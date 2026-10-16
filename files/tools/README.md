@@ -23,7 +23,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 
 >[![Fulcrum of the Universe](https://img.youtube.com/vi/C6HqfObjGkw/mqdefault.jpg)](https://www.youtube.com/watch?v=C6HqfObjGkw)
 >
->*Audio Podcast: [Resonant Universe](https://www.youtube.com/watch?v=I3AOKh-RRTA)*
+>*Audio Podcast: [Fulcrum of the Universe](https://www.youtube.com/watch?v=I3AOKh-RRTA)*
 
 ## 🔬 Reference
 
