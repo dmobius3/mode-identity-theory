@@ -226,7 +226,7 @@ def record(A, B, W, L, margin, symmetry=(), expected=None, zero_rel=L_CUT, krein
     out['v0_matches'] = v0_ok
     # n(L) and n(D)
     nL, zL, okL = inertia(L, zero_rel, gray=l_gray)
-    out['nL'], out['dimkerL'] = nL, zL
+    out['nL'], out['dimkerL'], out['l_resolved'] = nL, zL, bool(okL)
     if not okL:
         out['unresolved'].append('n(L): an eigenvalue of L lies in its gray zone')
     Dm = V0.T @ B @ V0

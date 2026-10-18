@@ -131,7 +131,8 @@ def summarize(rec, A, W):
                         why='no partner group at -conj(lambda)')
         else:
             sens = projector(A, W, lam, V, g['idx'], pidx, nA)
-        groups.append(dict(c=[c.real, c.imag], cls=g['cls'], size=len(g['idx']), neg=g['neg'], status=g['status'], **sens))
+        groups.append(dict(c=[c.real, c.imag], cls=g['cls'], size=len(g['idx']), neg=g['neg'], status=g['status'],
+                           idx=[int(i) for i in g['idx']], **sens))
     return dict(type=rec['type'], nL=int(rec['nL']), nD=int(rec['nD']), K=int(rec['K']), sdim=int(rec['sdim']),
                 ranks=list(rec['jordan_ranks']), v0=bool(rec['v0_matches']), unresolved=list(rec['unresolved']),
                 margin=float(rec['margin']), gray=float(rec['gray']), normA=float(nA),
@@ -328,7 +329,8 @@ def separation(sums, band=None, arms=()):
                 read.add((role, tuple(ref or ()), i))
                 c = _c(G[i])
                 rows.append(dict(c=[c.real, c.imag], cls=G[i]['cls'], neg=G[i]['neg'], role=role, kind='group', ok=False,
-                                 why='no candidate of its class and Krein sign at a lower cutoff'))
+                                 why='no candidate of its class and Krein sign at a lower cutoff',
+                                 top=sorted(G[i].get('idx') or [])))
                 reasons.append(f"{role} group at {c:.6g}: no candidate of its class and Krein sign at a lower cutoff")
                 continue
             members = [[(j, levels[a][j]) for j in sorted(S[a])] for a in range(len(levels))]
@@ -342,7 +344,8 @@ def separation(sums, band=None, arms=()):
         cls, neg = hi_members[0]['cls'], hi_members[0]['neg']
         pts = [[_c(g) for _, g in lev for _ in range(g['size'])] for lev in members]
         row = dict(c=[[z.real, z.imag] for z in pts[0]] if kind == 'set' else [pts[0][0].real, pts[0][0].imag],
-                   cls=cls, neg=neg, role=role, kind=kind, count=len(pts[0]))
+                   cls=cls, neg=neg, role=role, kind=kind, count=len(pts[0]),
+                   top=sorted(j for _, g in members[0] for j in (g.get('idx') or [])))   # the eigenvalues it reads
         name = f"{role} {'set' if kind == 'set' else 'group'} at {pts[0][0]:.6g}" + (f" (+{len(pts[0]) - 1})" if kind == 'set' else '')
         if len({len(p) for p in pts}) > 1:
             row.update(ok=False, why="the set's count differs between cutoffs")
@@ -355,6 +358,7 @@ def separation(sums, band=None, arms=()):
         else:
             steps = [bottleneck(pts[a], pts[a + 1]) for a in range(len(pts) - 1)]
         d2 = steps[0]
+        row['rel_change'] = d2 / max(min(abs(z) for z in pts[0]), 1e-300)   # reported beside the rule, unscored
         rem, why = d2, None
         if len(pts) == 3 and 'last_change' not in arms:
             d1 = steps[1]

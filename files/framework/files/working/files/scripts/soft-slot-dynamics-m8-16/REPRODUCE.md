@@ -3,7 +3,7 @@
 This is the instrument for M8.16, the qualification that [the Slot Dynamics Census](../../slot-dynamics-census.md)'s step 4 asks for.
 - **What it does.** It expands the sections of `E_ρ` in the twisted harmonics, keeping every level up to a cutoff, and computes the quartic exactly. It follows named branches by stationary continuation and records the linear spectrum where the terms read it.
 - **Its admission.** OpenWave's [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-18955679) admitted it for that use only.
-- **Before the freeze.** It was built and tested on the GO list. Its dry run failed twice before it closed, and `DEVLOG.md` records each step. It was frozen here before any sealed case ran.
+- **Before the freeze.** It was built and tested on the GO list. Its dry run failed twice before it closed; the maintainer's review on [#637](https://github.com/openwave-labs/openwave/pull/637) then found three departures in the driver, since repaired, and the final dry run passed on the repaired tree. `DEVLOG.md` records each step. It was frozen here before any sealed case ran.
 
 The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 and the manifest pin.
 
@@ -40,7 +40,7 @@ The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 a
   - `EXPECTED_V0.md` and `EXPECTED_R5.md`: the controls' expected values, stated before they ran;
   - `dev/`: the development scripts and their outputs;
   - `registration/`: the terms' source and its builder, `fill_terms.py`.
-- **Left out:** `run/dry/`, the dry run's output folder. It is byte-identical to its kept copies, `dev/runs/245_dry_*`.
+- **Left out:** `run/dry/`, the dry run's output folder. It is byte-identical to its kept copies, `dev/runs/312_*`, the final dry run's.
 
 ## Before running
 
@@ -61,17 +61,17 @@ The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 a
 
 From a copy of this folder:
 
-- **The guard's tests:** `python3 -I -B run/test_guard.py`. These are 66 tests on temporary trees, with nothing solved.
+- **The guard's tests:** `python3 -I -B run/test_guard.py`. These are 84 tests on temporary trees, with nothing solved.
 - **K3's tests:** `python3 -I -B run/test_k3.py MIT_REPO`, then again with `--synthetic-only`. `MIT_REPO` is a clone of this repository, from which the test reads three of M8.15's functions at `2c27cea`.
 - **The dry run's claims:**
   - `python3 -I -B run/test_claims.py`, on entry 218's kept outputs;
   - `python3 -I -B run/score_dry.py`, on entry 245's.
 
   Each test writes its output under `run/` and logs itself in `DEVLOG.md`, keeping a copy in `dev/runs/`. On the recorded machine, in a copy of this folder, each output equals the one here, byte for byte. On another machine `test_k3.out`'s near-zero overlaps can differ in their last digits, with the same verdicts.
-- **The dry run:** `python3 -I -B run/driver.py --dry`. It runs the GO cases of `run/DRY.json` and writes `run/dry/`. The recorded rerun took 98 minutes.
+- **The dry run:** `python3 -I -B run/driver.py --dry`. It runs the GO cases of `run/DRY.json` and writes `run/dry/`. The final dry run, entry 312, took 124 minutes.
 - **The registered run:** `python3 -I -B run/driver.py`, with its outputs in `run/out/`.
   - It refuses every sealed case until `run/FROZEN.json` and its pin, `run/FROZEN_PIN`, exist.
   - `write_guard.py MIT_REPO GO_LINK` writes them once, after the maintainer's go.
 - **The development runs:** each DEVLOG entry names its script and its case.
 
-**Resources:** the terms estimate about 13.6 to 15.2 hours of compute for the registered run on the recorded machine.
+**Resources:** the terms estimate about 13.6 to 17.3 hours of compute for the registered run on the recorded machine.

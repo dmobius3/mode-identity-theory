@@ -1,0 +1,89 @@
+The guard's tests (DRIVER_PLAN.md v4), on temporary trees; nothing solved, no sealed seed built.
+1. off the allowlist, R0, and a sealed name in DRY.json:
+   PASS  green parent: C2a, a GO case: proceeded
+   PASS  P5, off the allowlist: refused
+   PASS  R0, listed in the test FROZEN.json: refused
+   PASS  R0 as a slot-qualified name: refused
+   PASS  green parent: the real DRY.json: proceeded
+   PASS  a sealed name placed in DRY.json: refused
+2. sealed admission without a valid freeze, on the frozen path (UB):
+   PASS  green parent: C2a, sealed for the test, listed in a valid test FROZEN.json (admission only; nothing is built): proceeded
+   PASS  C2a without FROZEN.json: refused
+   PASS  C2a with a FREEZE file alone present: refused
+   PASS  a FROZEN.json whose manifest SHA-256 is wrong: refused
+   PASS  a FROZEN.json whose terms SHA-256 is wrong: refused
+   PASS  a FROZEN.json with a case entry edited, its embedded hashes intact (UA): refused
+3. the row gate:
+   PASS  a row before any gate record: refused
+   PASS  green parent: a complete gate record with K1 to K4 passed: proceeded
+   PASS  a gate record whose SHA-256 differs from the logged one: refused
+   PASS  the dry gate record, incomplete: refused
+4. write_guard.py:
+   PASS  green parent: a valid tree, the named blob: proceeded
+   PASS  FROZEN.json already present: refused
+   PASS  without a go: refused
+   PASS  a manifest that differs from run/MANIFEST_PIN: refused
+   PASS  a target record whose blob id differs from the named one: refused
+5. frozen() and the target records:
+   PASS  green parent: a target record matching FROZEN.json: proceeded
+   PASS  a target record whose SHA-256 differs from FROZEN.json's: refused
+6. the band-edge guard:
+   PASS  green parent: the saved C2a sample at eps 0.5 reads converged
+   PASS  a band edge forced into the gray zone reads Unresolved: ['the band edge lies within the gray zone (UA)']
+7. the withheld point:
+   PASS  first_order inside the withheld context: refused
+   PASS  record inside the withheld context: refused
+   PASS  summarize inside the withheld context: refused
+   PASS  inertia inside the withheld context: refused
+   PASS  spectrum_of_L inside the withheld context: refused
+   PASS  Newton's hess_dense inside the withheld context stays open: proceeded
+   PASS  green parent: first_order outside it: proceeded
+   PASS  green parent: inertia outside it: proceeded
+   PASS  green parent: spectrum_of_L outside it: proceeded
+8. the frozen path's own green parent (UB):
+   PASS  C2a admitted by require through a valid test FROZEN.json: proceeded
+   PASS  C2a's seed built through the frozen path equals its GO-path seed
+   PASS  require refuses C2a once FROZEN.json is removed: refused
+   PASS  seed_state refuses C2a once FROZEN.json is removed: refused
+9. the resume (UA, UB):
+   PASS  a fresh run records its tree's manifest in its log, then goes on to C1: ('proceeded', 'C1')
+   PASS  green parent: a clean interruption, on the same tree, resumes and goes on to C2b: ('proceeded', 'C2b')
+   PASS  a resume on a changed manifest: ('refused', "the run does not resume: its log records another tree's manifest")
+   PASS  a resume on a log that records no manifest: ('refused', 'the run does not resume: its log records no manifest')
+   PASS  a resume whose gate record names a stop: ('refused', 'the run stopped (C2a failed K4): a stopped run does not resume')
+   PASS  a resume whose completed control failed a check, with no gate record, stops at it, solving nothing: (('stopped', None), 'C2a failed K4', 'incomplete', ['C2a: K4'])
+   PASS  a resume after that stop: ('refused', 'the run stopped (C2a failed K4): a stopped run does not resume')
+10. the stop's record (UB):
+   PASS  a control failed in a real run: NOT QUALIFIED, naming the check: ('NOT QUALIFIED', ['K4'], ['C2a: K4'])
+   PASS  the same in a dry run: incomplete: ('incomplete', ['C2a: K4'])
+   PASS  an interruption with nothing failed: incomplete: ('incomplete', [])
+   PASS  the R5 rows' reason names the R5 control's failed check: ['K4']
+   PASS  or that it did not run: ['not run']
+   PASS  under python -O, a real run given other cutoffs is refused: (1, ['refused: other cutoffs are for a dry plumbing pass only'])
+   PASS  the arm: under python -O, an assert of the same form does not fire: proceeded
+11. python -O (UA, UB):
+   PASS  require refuses under python -O: PermissionError: refused under python -O, which removes asserts
+   PASS  the arm: an assert under python -O does not fire: proceeded
+   PASS  green parent: basis.Basis('R4', 8) builds under -O: built
+   PASS  basis.Basis('R0', 8) under -O: PermissionError: slot 'R0' is refused: R0 never runs
+   PASS  green parent: expected_v0 on copies of the logged files, under -O: read
+   PASS  expected_v0 on an EXPECTED_V0.md that differs from its logged version, under -O: PermissionError: EXPECTED_V0.md differs from the version logged before the controls ran
+   PASS  expected_v0 on a log that never logged it, under -O: PermissionError: EXPECTED_V0.md was never logged
+   PASS  green parent: the N = 8 basis embeds in the N = 12 one, under -O: embeds
+   PASS  a higher basis whose leading part is reordered, under -O: RuntimeError: the N = 8 basis does not embed in the N = 12 basis
+   PASS  green parent: log_run in a temporary root writes its entry and keeps the output: proceeded
+   PASS     its entry and its kept copy are there: ['002_probe.out']
+   PASS  log_run where the kept copy exists: refused
+   PASS     nothing written: the log and the kept copy as they were: True
+   PASS  log_run under -O, writing nothing: PermissionError: refused under python -O, which removes asserts
+12. the seeds on the pyramid and in K6, and the reported readings (xrodz on #637):
+   PASS  green parent: the pyramid's K1 with every seed passed: True
+   PASS  a seed that failed its check fails the pyramid's K1 and K4: (False, False, False)
+   PASS  and the stop names K1 and K4: ['K1', 'K4']
+   PASS  green parent: K6 on the kept ladder with every seed passed: (True, True)
+   PASS  a seed that failed its check: every read point invalid, and K6 fails: (False, ['invalid'])
+   PASS  K5's readings at 0.5, 1 and 2 reported at every cutoff, with each mode's deviation: ['0.5', '1', '2']
+   PASS  K6's slow comparison beside each read point, with M8.15's level-2 to level-3 change: ['3.6e-03/2.9e-02', '2.5e-03/2.0e-02', '1.8e-03/1.4e-02', '9.0e-04/7.2e-03', '6.4e-04/5.1e-03', '4.6e-04/3.6e-03']
+   PASS  the rule's relative change between the two highest cutoffs, beside it, against 1e-6: (1.369595059484245e-11, True)
+   PASS  the new records serialize as the driver writes them: serialized
+0 failed of 75

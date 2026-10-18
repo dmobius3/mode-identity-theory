@@ -56,7 +56,7 @@ def main():
     try:
         with tempfile.TemporaryDirectory() as tmp:
             shutil.copy(kept('GATE.json'), os.path.join(tmp, 'GATE.json'))
-            driver.dry_claims(tmp, results, log, None)
+            driver.dry_claims(tmp, results, log, None, e7_claim=False)     # E1 to E6, the claims registered for it
     except Exception as e:                 # noqa: BLE001, the claim is that none is raised
         crashed = repr(e)
     finally:

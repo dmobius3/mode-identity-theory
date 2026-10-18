@@ -1,0 +1,8 @@
+The separation rule read in any order of the groups, on C2a/R5's saved summaries: 4 readings, 24 shuffles each.
+   201_r5_control.json eps 0.25: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   201_r5_control.json eps 0.5: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   201_r5_control.json eps 1: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   201_r5_control.json eps 2: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+1. PASS: under the rule, 4 of 4 readings keep their verdict under every shuffle
+Reported, unscored: the shuffles turn 0 of 4 readings under the arm; the largest set the rule forms counts 0 at the highest cutoff.
+0 failed

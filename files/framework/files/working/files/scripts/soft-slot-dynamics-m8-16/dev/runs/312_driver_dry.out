@@ -1,0 +1,43 @@
+M8.16 dry run: 6 cases; outputs in run/dry
+C1 (control, R3):
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 24: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 32: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 40: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   checks: {'K1': True, 'K4': True}; 710 s
+C2a (control, R4):
+   C2a N = 16, m = 50: seed ok; 4 of 4 points accepted; 6 s
+   C2a N = 24, m = 138: seed ok; 4 of 4 points accepted; 56 s
+   C2a N = 32, m = 316: seed ok; 4 of 4 points accepted; 751 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True, 'K5_code_path': True}; 813 s
+C2b (control, R2):
+   C2b N = 16, m = 22: seed ok; 4 of 4 points accepted; 2 s
+   C2b N = 24, m = 84: seed ok; 4 of 4 points accepted; 27 s
+   C2b N = 32, m = 200: seed ok; 4 of 4 points accepted; 361 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True, 'K5_code_path': True}; 391 s
+C3 (control, R4):
+   C3 N = 16, m = 50: seed ok; 4 of 4 points accepted; 10 s
+   C3 N = 24, m = 138: seed ok; 4 of 4 points accepted; 113 s
+   C3 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1077 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K5_code_path': True}; 1201 s
+C2a/R5 (R5gate, R5):
+   C2a/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 9 s
+   C2a/R5 N = 24, m = 193: seed ok; 4 of 4 points accepted; 198 s
+   C2a/R5 N = 32, m = 433: seed ok; 4 of 4 points accepted; 1893 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True}; 2099 s
+C2a:ladder (dryladder, R4):
+   C2a:ladder N = 16, m = 50: seed ok; 7 of 7 points accepted; 16 s
+   C2a:ladder N = 24, m = 138: seed ok; 7 of 7 points accepted; 166 s
+   C2a:ladder N = 32, m = 316: seed ok; 7 of 7 points accepted; 2023 s
+   checks: {'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 0}; 2205 s
+verdict: {'verdict': 'incomplete', 'instrument': None, 'r5_gate': True, 'rows': {}, 'failed': []}; 7421 s
+The dry run's claims, derived before it ran (the module docstring):
+E1. the controls and the R5 control pass, and the row gate refuses the dry gate record: True
+E2. K5 passes on C2a, C2b and C3 at 0.25; K3 on C2a reads 'not resolved, kernel exact: the diagnosis is wrong' at (b): True; (c) on C2a's smallest pair, reported: {'16': {'xy': None, 'z': None, 'axis': 6.9494110494880295e-25, 'why': 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.9e-25)', 'group': [4.641219104692081e-16, 0.0005846218033234975], 'krein_negative': False}, '24': {'xy': None, 'z': None, 'axis': 6.4794683147397955e-25, 'why': 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.5e-25)', 'group': [2.7281742162008195e-16, 0.0005845249226663051], 'krein_negative': False}, '32': {'xy': None, 'z': None, 'axis': 2.2814221042018734e-25, 'why': 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 2.3e-25)', 'group': [1.7202194259938398e-16, 0.0005845249226583001], 'krein_negative': False}}
+    (d) on that pair, reported: {'d': True, 'why': None, 'group': [1.7202194259938398e-16, 0.0005845249226583001], 'row': {'c': [1.7202194259938398e-16, 0.0005845249226583001], 'cls': 'imag', 'neg': 0, 'role': 'tested', 'kind': 'group', 'count': 1, 'top': [82], 'rel_change': 1.369595059484245e-11, 'd1': 9.688065719234626e-08, 'd2': 8.005624462182183e-15, 'rem': 6.615358543476168e-22, 'floor': 4.804225453401063e-07, 'num': 2.3157210209956624e-13, 'U': 4.804225453401063e-07, 'd': 0.0005830836550222798, 'event': "A's gray zone", 'ratio': 1213.6892006379435, 'ok': True, 'why': None}}
+E3. K6 on C2a's ladder segment: 6 of 6 read points agree with M8.15: True
+E4. the withheld point is accepted at every cutoff and has no record: True
+E5. C2a's ladder segment and sample read the same at 0.25, 0.5, 1 and 2: True
+E6. the readings equal development's at 39 overlapping points: the type and the indices at 39, every slow eigenvalue within the larger margin of the two records at 39: True; the largest difference 4.8e-09. Reported beside it, against D7: within the dry run record's own margin at 18 of 18
+E7. K3(a)'s certificate at every read point of every control: True; the largest tangent residual 4.2 u, against the cut's 1000 u
+0 of the dry run's claims failed or were not evaluated

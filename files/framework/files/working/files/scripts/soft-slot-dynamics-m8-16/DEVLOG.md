@@ -5753,3 +5753,958 @@ A first scratch run passed the same way, but the arm was then made on its own co
 5. the commit.
 
 The commit's hash and the sums' check are logged after it. The push waits for Blake's go.
+
+## 283. 2026-10-18T04:33:24Z: step 1: the local commit `30d8991a7aea`, kept on Blake's go and verified from its own tree; the units' short look before the push
+
+**The commit.**
+- `30d8991a7aea943b63ddb03c1939fa61968ed844`, on `origin/main` at `2c27cea2d543`, which a fetch just before this entry found unmoved.
+- It is 1 ahead and 0 behind, so the push would be a fast-forward. It is not pushed.
+- It changes 452 files: the 451 of the new folder, and the census page's note.
+
+**Verified from the committed tree,** extracted by `git archive`, not from the working copy:
+- `shasum -a 256 -c SHA256SUMS` passes, with 450 OK and 0 other lines;
+- the manifest, recomputed, equals the pin;
+- the census note names the terms' SHA-256 and the pin, once each.
+
+**Kept on Blake's go.** The commit was made on the units' GO as Blake relayed it (entry 280). Blake then confirmed it himself: "go on 1 and 2 in preparation for 3".
+- **What the go covers.** Item 1 keeps the commit and logs this entry. Item 2 sends the units a short look before the push, which is item 3.
+- **A review Blake relayed,** without the unit's name, agreed:
+  - keep the commit;
+  - log this entry on the bench only, and never amend it into the commit, which cannot contain its own hash;
+  - have both units look at the four new pieces before the push makes the commit public.
+- **The 36 manifest files.** The review counted 33 in its own copy, plus the three that step 1 added. They were checked against the units' last copy, the terms v4 packet's:
+  - its 33 manifest files are byte-identical in the pin, with none changed or missing;
+  - the 3 new ones are `run/ENVIRONMENT.json`, `run/m8_16_task_details.md`, `run/record_environment.py`;
+  - with those added to that copy, its manifest equals the pin.
+
+**What the commit carries.** The committed log ends at entry 282. This entry and any later ones stay on the bench until the next filing, the run's record.
+
+**Next.**
+1. **The units' short look** at the recorder, `ENVIRONMENT.json`, `REPRODUCE.md`, the census note and the commit's file list. A change to the recorder or the record means a new pin and a rebuilt commit, both still local.
+2. **The push,** on Blake's go.
+3. **Step 2,** the OpenWave branch, under UB's item 9.
+
+## 284. 2026-10-18T04:43:51Z: the units on the step-1 packet: UA CONFIRM and GO to push on Blake's go; UB CONFIRM on three pieces, with two lines for `REPRODUCE.md` and one for the commit message, applied; the rebuilt commit waits for Blake's go
+
+**UA (F1): CONFIRM, and GO to push, subject to Blake's explicit go.**
+- **Checked from the zip:**
+  - the terms' and the manifest's SHA-256;
+  - the three new manifest files against their listed hashes;
+  - 36 entries, 33 unchanged and 3 new;
+  - the commit's 451 additions and 1 modification;
+  - `SHA256SUMS`'s 450 entries;
+  - both hashes in the census note.
+- **CONFIRM** on the recorder, the record, `REPRODUCE.md` and the census note. The note records a freeze of the terms, not a qualification.
+- **What UA could not check.** The zip does not hold all 450 summed files, so for the committed tree UA relies on the reported `git archive` check and the scratch tests.
+- **Optional:** the commit's author email names this Mac's local hostname. If that is not the intended public identity, it is amended before the push, which changes the commit and not the files. Brought to Blake.
+
+**UB: CONFIRM on the recorder, the record and the census note; two lines for `REPRODUCE.md` and one for the commit message.**
+- **The pin, independently.** UB took its own v4 copy, added the terms it rebuilt and the two other new files, and recomputed the manifest. Its text equals `manifest.txt` line for line, over 36 files, and its SHA-256 is the pin.
+- **`SHA256SUMS` against UB's copies.**
+  - UB holds 448 of the 450 files. Each equals its reviewed copy except `DEVLOG.md`, which differs by its new entries.
+  - The other two, `REPRODUCE.md` and `MANIFEST_PIN`, match the zip.
+  - So nothing outside the new files has changed since the units' last review.
+  - The new files' hashes equal those entry 281 logs.
+- **The recorder:**
+  - it reads only what its docstring lists;
+  - it calls `sysctl` and `sw_vers` by fixed absolute paths, and writes once;
+  - its `--check` also compares the interpreter's `-I`, `-B` and `-O` flags.
+- **On UB's machine** (Linux, NumPy 2.5.3):
+  - `test_guard`, `test_claims` and `score_dry` matched byte for byte;
+  - `test_k3.out` differed only in the last digits of its near-zero overlaps, with the same verdicts;
+  - `--check` stopped at `sw_vers`, which exists only on macOS.
+- **After the rebuild** UB needs no further look. The new hash goes in a new entry; entry 283 stands as written.
+
+**Verified at source.** `test_k3.out` prints its overlaps and differences at round-off. The recorder calls `/usr/bin/sw_vers` and `/usr/sbin/sysctl` on every reading.
+
+**Applied, in UB's words:**
+- **`REPRODUCE.md`:**
+  - the byte-for-byte sentence now holds "on the recorded machine", and says that elsewhere `test_k3.out`'s near-zero overlaps can differ in their last digits, with the same verdicts;
+  - the environment bullet adds "It runs on macOS only, since it reads `sw_vers` and `sysctl`." The sentence is joined to its bullet's line, as the file writes each bullet on one line, and renders as UB's text.
+- **The commit message** now reads "On this machine, from a copy of this folder, the five filed tests reproduce their outputs byte for byte".
+
+**The result.**
+- `REPRODUCE.md` is now `01bd44690aa88a18656fb7feb3d9382245a0140904916d96cf9bc3276e2a96ee`.
+- `SHA256SUMS`, regenerated fresh, changes in `REPRODUCE.md`'s line alone, and `shasum -c` passes. The bench's copy is updated with it.
+- The pin is unchanged, since `REPRODUCE.md` lies outside the manifest.
+- Against `30d8991a7aea`, the working tree differs in those two files only. The folder's `DEVLOG.md` stays as committed.
+
+**Next, on Blake's go:**
+1. the commit rebuilt from `30d8991a7aea`, with Blake's choice of its author identity (UA's point);
+2. its hash logged in a new entry;
+3. the push, a fast-forward.
+
+## 285. 2026-10-18T04:47:32Z: step 1 landed: the rebuilt commit `805ddbcd240e`, verified from its own tree and pushed to MIT `main`
+
+**The rebuild, on Blake's go.** Blake chose to keep the session identity, then to rebuild and push.
+- **The commit:** `805ddbcd240ec80f988561a4d8c6718013e4048d`, rebuilt from `30d8991a7aea` with UB's lines (entry 284). Entry 283 stands as written.
+- **Its base:** `origin/main` at `2c27cea2d543`, which a fetch just before the rebuild found unmoved.
+- **What changed:** against `30d8991a7aea`, only `REPRODUCE.md` and `SHA256SUMS`, plus the message's one line.
+- **Author and committer:** `Blake Shatto <blake@Blakes-MacBook-Air.local>`, as on the earlier session commits (UA's point; Blake's choice).
+- **Size:** it changes 452 files, as before.
+
+**Verified from the committed tree,** extracted by `git archive`:
+- `shasum -c` passes, 450 OK of 450;
+- the manifest equals the pin;
+- the census note names the terms' SHA-256 and the pin, once each;
+- `REPRODUCE.md` equals the bench's.
+
+**The push.** `git push origin HEAD:main` was a fast-forward from `2c27cea2d543`. `ls-remote` shows `main` at the rebuilt commit.
+
+**Live, read back through the GitHub API:**
+- the census page renders 109 math elements for its 109 math spans, with the note and its link to `REPRODUCE.md`;
+- `REPRODUCE.md`'s blob on `main` equals the bench's file.
+
+**What is current.**
+- MIT `main` and the worktree are at the rebuilt commit.
+- Blake's main checkout is one commit behind until it pulls.
+- The bench's log holds entries 283 to 285. They reach the MIT folder with the run's record.
+
+**Next, on Blake's go: step 2, the OpenWave branch.**
+- **What it holds:** the task file, byte for byte `run/m8_16_task_details.md`; its BACKLOG row; and the roadmap's two M8 status rows.
+- **Who does what:** I push the branch; Blake opens the PR.
+- **If review changes a word** (UB's item 9), the terms and the pin are redone and republished on MIT `main` before the maintainer's go.
+
+## 286. 2026-10-18T04:56:01Z: step 2: the OpenWave branch pushed to the fork; Blake opens the pull request
+
+On Blake's go ("go on step 2").
+
+**The branch.** `m8-16-qualifying-the-harmonic-galerkin-instrument-2026-10-18`, on the fork, at `2610d727f7bf83c85e88051de23341f34d21e02e`. It sits on `upstream/main` at `50c359e9c44f` and is signed off for the DCO. It changes 2 files:
+- **`tasks/m8_16_task_details.md`, new.** It is byte for byte `run/m8_16_task_details.md`. Read back raw from the fork through the API, its SHA-256 equals the pinned terms'.
+- **`m8_roadmap.md`:**
+  - **the BACKLOG row allocating M8.16** (`ROADMAP_STANDARDS.md` § 6). Its Description has 63 words against the cap of 65, and its Title 6 against 15, by the checker's own count;
+  - **the two status rows #512's roadmap condition names.** "Where is M8?" gains M8.16 and keeps "Field dynamics has no live route", as the ruling says it stays true. "What decides the program?" no longer says nothing is pending;
+  - **the snapshot's date.**
+
+**Checks:**
+- **Before branching:**
+  - every link in the terms resolves, 14 distinct;
+  - no upstream M8 file and no open pull request carries M8.16;
+  - no M8 commit has landed since #635, so the terms' run-before-write sentence holds;
+  - the recent task docs open as this one does, so no convention asks for a change to the terms' bytes.
+- **On the branch:**
+  - `check_roadmaps.py` is clean, and fails on an arm that adds three words to the row's Description;
+  - `check_models_md.py` is clean;
+  - `check_no_local.py --require-files` is clean on both files.
+
+**The pull request's text** is `m8_16_pr_body_v1.md` in the dynamics folder, and it is on Blake's clipboard.
+- **Its form:** 513 words, one line per paragraph, in the form of M8.15.2's.
+- **Its links:** all resolve, MIT's at `805ddbc`.
+- **Its title:** "M8.16: pre-registration for qualifying the stationary harmonic Galerkin instrument".
+
+**Next.**
+1. Blake opens the pull request against `openwave-labs/openwave` `main`.
+2. The review. UB's item 9 applies to any word of the terms. Words of the roadmap rows or the pull request's text do not touch the pin.
+3. The maintainer's go.
+4. `write_guard.py`.
+5. The freeze block, with `record_environment.py --check`'s two readings; any difference goes to the units first.
+6. The run.
+
+## 287. 2026-10-18T05:09:17Z: step 2: Blake opened the pull request, OpenWave #637
+
+Blake opened [#637](https://github.com/openwave-labs/openwave/pull/637) at 2026-10-18T05:04:02Z. Its head is the branch entry 286 records, at `2610d727f7bf`, and its state is open.
+
+**Next.**
+1. The maintainer's review. UB's item 9 applies to any word of the terms.
+2. The merge.
+3. The maintainer's go.
+4. `write_guard.py`.
+5. The freeze block.
+6. The run, on mains with sleep off.
+
+## 288. 2026-10-18T13:56:45Z: xrodz's review of #637: changes requested, three blocking items in the frozen instrument; each verified at source
+
+**The review** (review 5563134169, submitted 2026-10-18T13:14:04Z on `2610d727`). It is kept verbatim as `../m8_16_pr637/xrodz_review_5563134169.md`, body SHA-256 `2899414da2ccfaa8160facf81905d6a142ee2e202578c220c622592c6592ca17`.
+- **What passed:** the provenance, the boundary quote, every frozen number, K6's 79 decided points, the driver's guards and the roadmap.
+- **What it asks:** three blocking items, a design question that is ours to decide, and four comment-tier items.
+
+**Verified at source:**
+- **B1. K3(d) applies a location tolerance the terms do not register.** `run/checks.py`, in `k3`, requires `|row_centre(own) - c0| <= 1e-3 |c0|`. The terms' K3(d) asks only that the separation, read under THE CONVERGENCE RULE, pass, and no `10⁻³` stands there or in FROZEN VALUES.
+  - The dry rerun's kept outputs give the largest relative shift of a group between `N = 16` and 32: at `ε = 0.25`, C2a 8.1e-4, C2b 8.9e-4, C3 6.4e-4 and C2a/R5 7.9e-4; at 0.5, 1.6e-3, 1.8e-3, 1.3e-3 and 1.6e-3. These equal the review's figures.
+  - (d) is computed only when (b) holds, which no GO case gives, so it never ran on instrument data. `DRIVER_PLAN.md` expected it computed on C2a's smallest pair in the dry run.
+- **B2. A failed seed check is not enforced on the pyramid or in K6.** The pyramid's K1 calls `k1` per point, which reads no seed, and so do its K2, `k3` and `check_pyramid_k4`. `check_row_k6` reads only acceptance. Yet the terms say a failed check ends the case as an instrument failure (Seeds), and a seed that fails its check is never scored as agreeing (the verdict rule).
+- **B3. A registered failure can become a crash.** In `read_point`, K3's group is picked by `min` over the groups inside the slow band. When groups exist but none lies in the band, `min` raises `ValueError`, and no gate record or verdict is written.
+- **The question on K3's outcome partition.**
+  - `k1` requires `v0_matches` and `separated`. An in-span mode that stays merged at `ε = 0.25` enlarges `V₀` or lies in the gray zone, so it fails K1 and (a).
+  - The record then reads "instrument failure", never "not resolved, kernel exact". So the case #512 § 1 names, and the census page's step 4, can never reach "the diagnosis is wrong".
+  - The record carries the Hessian's kernel at every point (`lkernel`: the lift and the smallest genuine `|μ|` against `‖L‖`).
+- **The comment tier:**
+  - **The frozen driver has not run end to end.** The dry rerun (entry 245) ran driver `20d497db5ecef6dc…`, as entry 244 logged it. Entries 257 and 273 then changed it, and today's is `09abcaa558a4076f…`. The dry run reads the driver, and I did not rerun it after those edits.
+  - **Three quantities the terms call "reported" are not computed:**
+    - the convergence rule's change between the two highest cutoffs, against `10⁻⁶`;
+    - K6's tracked slow eigenvalues beside M8.15's level-2 to level-3 change;
+    - K5's per-mode deviations at 0.5, 1 and 2.
+  - **The verdict's outcome string** does not carry the terms' "the diagnosis is wrong".
+  - **"Every development point met it"** overstates. Entry 068's D6 run failed the residual bound, so "every accepted development point" is exact.
+
+**What a fix moves.** Fixing B1 to B3 changes the instrument, and with it the manifest pin. A change to the terms' text also moves their hash. Both are redone and republished on MIT `main`, with a new dated note on the census page, and then pushed to #637. The go waits for that commit.
+
+**Next.** Blake's calls: B1's form, the question on K3, and which comment-tier items to fold in. Then the fixes and their tests, the units' review, a dry rerun on the final tree, and the republication, each publishing step on Blake's go.
+
+## 289. 2026-10-18T14:16:03Z: the revision for #637 built: B1 to B3, K3's certificate from L, the three reported readings and the outcome's sentence; tested unrecorded
+
+On Blake's calls for entry 288's review:
+- B1 by the convergence rule's own row;
+- K3's kernel certificate adopted;
+- all four comment-tier items taken.
+
+B2 and B3 needed no choice.
+
+**The changes,** against the published folder at `805ddbc`.
+- **`instrument/linear.py`.** The record keeps the flag it already computed, `l_resolved`: nothing lies in `L`'s gray zone.
+- **`instrument/convergence.py`:**
+  - each summary group carries its eigenvalue indices;
+  - each row records the eigenvalues it reads at the highest cutoff, `top`, and its relative change between the two highest cutoffs, `rel_change`;
+  - no verdict reads them.
+- **`run/checks.py`:**
+  - **B1.** `k3_d` and `reading_row` find (d)'s row by the rule's own matching: the one tested row whose `top` holds the eigenvalues of the group (b) finds at the highest cutoff. (d) is that row's verdict. The `10⁻³` test is gone, and the unused `RATIO` with it.
+  - **B2.** `seeds_ok` gates:
+    - the pyramid's K1, through `check_pyramid_k1`;
+    - K3(a);
+    - the pyramid's K4;
+    - K6, where a failed seed makes every read point invalid.
+  - **B3.** `k3_pick` returns none where no group lies in the slow band, rather than raising.
+  - **K3's certificate.** `kernel_exact` reads `L` alone: the point accepted, every orbit tangent with `‖L t‖ ≤ L_CUT ‖L‖ ‖t‖`, and `L`'s zero count at its cut equal to the chains, with nothing in its gray zone.
+    - (a) is now the point accepted, its seed checked and the certificate.
+    - (b) now carries K1 and K2.
+    - The outcomes read "not resolved, kernel exact: the diagnosis is wrong" and "instrument failure: the diagnosis is untested".
+  - **The reported readings, unscored:**
+    - each reading's largest relative change of a tested row against `FRACTION = 10⁻⁶`;
+    - K5's readings at 0.5, 1 and 2, with each mode's deviation;
+    - K6's `slow_compare` at each read point, D7's reading of M8.15's tracked slow eigenvalues beside its level-2 to level-3 change.
+  - **`k3_probe`** gives the dry run's (d) on C2a's smallest slow imaginary group.
+- **`run/driver.py`:**
+  - each read point records the certificate;
+  - K3's pick goes through `k3_pick`, and a point with no group in the band records that reason;
+  - the pyramid's K1 comes from `check_pyramid_k1`;
+  - the dry run's C2a also records `K3_d_probe`;
+  - **E2.** It compares the outcome's category, the text before its sentence, so the archived run scores as it did. Its printed line is unchanged, and the probe prints on a line of its own.
+- **`run/test_k3.py`.** Claim 5 is re-pointed: the archived points predate the certificate. Claims 6 to 8 are new, each with its arm.
+- **`run/test_guard.py`.** Test 12 is new: B2 on the pyramid's checks and in K6, the reported readings, and their serialization.
+
+**The files:**
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `run/checks.py` `1bb79ccc39111924dc90c42f224b01e59df4dcfa6211ed5cb247ad82ce600b82`
+- `run/driver.py` `305c22bb4ef424529e945c898463a93f3db1e68f972c92bf51df69837007162a`
+- `run/test_k3.py` `ccac8085af493732bf0117fde8fcf5f94ac95bc83d0b613c811f7bd21a61ed37`
+- `run/test_guard.py` `8b28fe3b6b15f26688b680df64f92998e04b65986c89c8ceedd7a140ac462def`
+
+**Unrecorded passes,** in a scratch copy of the bench.
+- **The five filed tests.**
+  - The first pass found `score_dry.py`'s claim 3 failing. E2's printed line had gained the probe, so it no longer equalled the archived run's line character for character.
+  - The probe moved to its own line, and the second pass gave all five green: `test_guard` 75 of 75, `test_k3` 0 failed in both modes, `test_claims` and `score_dry` clean.
+- **The regression's development runs that read the edited files:** `dl_linear`, `dl_recal`, `sep_claims`, `sep_reread` for C2a and C2b, and `set_order` for C2a, C2b and C2a/R5.
+  - Each exits 0, and its output is byte-identical to its kept copy.
+  - A first comparison loop did not run five of them: zsh kept each command one word. Run one by one, all eight ran.
+  - `seed_check` reads none of the edited paths, since its sentinels keep `record` from running. It was not rerun, so no sealed seed was built.
+
+**The pin.** Entry 281's pin no longer matches the tree: this revision retires it. A new pin follows the units' review and the dry rerun.
+
+**Next:**
+1. the five tests and the eight regression runs, logged on the bench;
+2. the terms' delta;
+3. the units' packet.
+
+## 290. 2026-10-18T14:16:24Z: run `run/test_guard.py` (case: synthetic)
+
+Script SHA-256 `8b28fe3b6b15f26688b680df64f92998e04b65986c89c8ceedd7a140ac462def`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_guard.out` `325f9bed9eb794a6f4ee89056b35f813c80196c3814bf498a7b802c1ca927ecc`, kept as `dev/runs/290_test_guard.out`
+
+The guard's tests: PASS, 75 of 75.
+Each outcome derived before the run (the script's docstring); temporary trees only, nothing solved, no sealed seed built, no sealed record opened.
+
+## 291. 2026-10-18T14:16:25Z: run `run/test_k3.py` (case: synthetic)
+
+Script SHA-256 `ccac8085af493732bf0117fde8fcf5f94ac95bc83d0b613c811f7bd21a61ed37`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_k3.out` `8e3388395270dfc98a9e64aa2e6543b84d3dead18c55c99451bf9ca22dad8594`, kept as `dev/runs/291_test_k3.out`
+
+K3's overlap: PASS (0 failed).
+Each outcome derived before the run (the script's docstring).
+
+## 292. 2026-10-18T14:16:25Z: run `run/test_k3.py` (case: synthetic)
+
+Script SHA-256 `ccac8085af493732bf0117fde8fcf5f94ac95bc83d0b613c811f7bd21a61ed37`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_k3_synthetic.out` `b26e7e2a2a1f819083bfd5bf6bc004a74a5751395e697c06355c85fa07f773f9`, kept as `dev/runs/292_test_k3_synthetic.out`
+
+K3's overlap (synthetic only): PASS (0 failed).
+Each outcome derived before the run (the script's docstring).
+
+## 293. 2026-10-18T14:16:26Z: run `run/test_claims.py` (case: dryrun)
+
+Script SHA-256 `77106a40d50b5f80136b996c4f09bdcf82e9764e2881de4cba7f23d88ccec49e`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_claims.out` `13785a763e5f17102129ed7fd08a2c11e1d991a84ff404848d1b4f9eca0c132d`, kept as `dev/runs/293_test_claims.out`
+
+The dry run's claims on a stopped run: PASS (0 failed). No solve; the claims' own entry captured, not written.
+Each claim derived before the run (the script's docstring).
+
+## 294. 2026-10-18T14:16:26Z: run `run/score_dry.py` (case: dryrun)
+
+Script SHA-256 `aac99e2702f2fdfde020732f0b8959b69fc0a860a15cba09e43d3bcd179b815d`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/score_dry.out` `dd66aaa4edc5725844cc9d93c1e239549605ad68e0af6b582d2d5eef25587462`, kept as `dev/runs/294_score_dry.out`
+
+The dry run's claims scored from entry 245's kept outputs, no solve: the scoring's checks PASS (0 failed); the dry run's claims {'E1': True, 'E2': True, 'E3': True, 'E4': True, 'E5': True, 'E6': True}: PASS.
+Each claim derived before the run (the script's docstring).
+
+## 295. 2026-10-18T14:16:27Z: run `dev/dl_linear.py` (case: synthetic)
+
+Script SHA-256 `c68c848ace1529db0e8776361e186fd96c66849ae0607099cf79ecf1e89c2160`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/dl_linear.out` `de252b4afa6fddd4f283225b85b191f8df9eb31a74b1618eee2a71fad1d7d931`, kept as `dev/runs/295_dl_linear.out`
+
+DL, the linear record: PASS, 10 claims, 9 arms red.
+Tolerances: fixed before the run (1e-14 for the identities; 1e-10 and 1e-12 relative to ||A|| for the pairing and the free spectrum, 1e-8 ||A|| to match a group to its frequency; 1e-8 for the angle to the exact V0 and the kernel leak; the margin 30 (u ||A||)^(1/j), j = 2 with chains and 1 without, its gray zone a decade on each side, and the same margin for linking groups and typing their centres; Hyperbolic only from a group off the axis by more than the margin and outside the cluster gray zone; inertia gray zones 1e-10 to 1e-7 for L against ||L|| and 1e-8 to 1e-5 for D against ||B||; the nullity of D against the number of chains; V0 against its expected dimension and ranks, with the symmetry leak at most 1e-8; the rank floor 1e2 u ||A||; the eigenvector rank cut 1e-6; Krein nondegeneracy above 1e-8 |lambda| ||W|| in both routes; the round-off cut 1e-12 ||A|| for exact eigenvectors and 1e-10 for the annihilator null space). The run informed none.
+
+## 296. 2026-10-18T14:16:29Z: run `dev/dl_recal.py` (case: synthetic)
+
+Script SHA-256 `20d9295785d8025ac66a91b6680289926573ce2d1e77afa3e6048aea45f2a99e`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/dl_recal.out` `0d0f9ebc3b278f63ed4dc715c845c1846d51421c5b16a46ed417ccc9651cf1bc`, kept as `dev/runs/296_dl_recal.out`
+
+DL's recalibration claims: PASS, 10 scored claims and 8 arms (0 failed); claim 1' as first written is reported, unscored, and its FAIL in entries 125 and 126 stands.
+The calibration as in RECAL_PLAN.md (provisional); each outcome derived before the run, the synthetic m chosen so the synthetic cluster sits ten times below the gray zone.
+
+## 297. 2026-10-18T14:16:33Z: run `dev/sep_claims.py` (case: synthetic)
+
+Script SHA-256 `1570f759a62b84724892262b9f1bf289bdadd8da3a8bbae70a31502971868eb1`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/sep_claims.out` `e9900f2cecf9f519d4b85a2d530a0c80bc1727ad0768734b665d7192598bf85d`, kept as `dev/runs/297_sep_claims.out`
+
+The separation rule's claims: PASS (0 failed): the analytic projector, the converged controls, seven counterexamples Unresolved, and nine arms.
+Each outcome derived before the run from exact roots (SEPARATION_PLAN.md; printed first).
+
+## 298. 2026-10-18T14:16:34Z: run `dev/sep_reread.py` (case: C2a)
+
+Script SHA-256 `99b00923dfb9fe058fcf4fb56a8bb643a4a4269bc95ac0e0aaea3b9ea173d8cc`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/sep_reread_C2a.out` `bcd171e4c06b5e3ae8c5dfa846c52e179962bdd832c0c55207d42cf21d7603dc`, kept as `dev/runs/298_sep_reread_C2a.out`
+
+The separation rule re-read on C2a's saved summaries: PASS, 20 of 20 verdicts as shipped and 1 of 1 changed as named; under the arm, 21 of 21 as shipped; under the instrument as hashed above. No solve.
+Derived before the run (the script's docstring): the rule changed only in how it forms and reads sets.
+
+## 299. 2026-10-18T14:16:34Z: run `dev/sep_reread.py` (case: C2b)
+
+Script SHA-256 `99b00923dfb9fe058fcf4fb56a8bb643a4a4269bc95ac0e0aaea3b9ea173d8cc`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/sep_reread_C2b.out` `43aa6f49cb647fa88732d6b7756baa1fe1dd91099165b127d5e9ad33c2986a40`, kept as `dev/runs/299_sep_reread_C2b.out`
+
+The separation rule re-read on C2b's saved summaries: PASS, 20 of 20 verdicts as shipped and 0 of 0 changed as named; under the arm, 20 of 20 as shipped; under the instrument as hashed above. No solve.
+Derived before the run (the script's docstring): the rule changed only in how it forms and reads sets.
+
+## 300. 2026-10-18T14:16:42Z: run `dev/set_order.py` (case: C2a)
+
+Script SHA-256 `da24033c0599ad5001a44abc956075bc1b0e2c208223a185a2f371a0d7f7b7a3`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/set_order_C2a.out` `825eb531bfd181be20eb740eb298551cb4c608b602d7b0ed028adf3e9ad263c4`, kept as `dev/runs/300_set_order_C2a.out`
+
+The separation rule read in any order of the groups, on C2a's saved summaries: PASS (0 failed), 25 readings, 24 shuffles each. Under the arm, the shuffles turn 3. No solve.
+Each claim derived before the run (the script's docstring).
+
+## 301. 2026-10-18T14:16:44Z: run `dev/set_order.py` (case: C2b)
+
+Script SHA-256 `da24033c0599ad5001a44abc956075bc1b0e2c208223a185a2f371a0d7f7b7a3`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/set_order_C2b.out` `fd5024c50ba4e98bb406419b8a3dee3f24171a422f3bf733348c114e5307c133`, kept as `dev/runs/301_set_order_C2b.out`
+
+The separation rule read in any order of the groups, on C2b's saved summaries: PASS (0 failed), 20 readings, 24 shuffles each. Under the arm, the shuffles turn 0. No solve.
+Each claim derived before the run (the script's docstring).
+
+## 302. 2026-10-18T14:16:46Z: run `dev/set_order.py` (case: C2a/R5)
+
+Script SHA-256 `da24033c0599ad5001a44abc956075bc1b0e2c208223a185a2f371a0d7f7b7a3`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `dev/set_order_C2a_R5.out` `69c6c5b950bacacc3d9f4809907ee0d0fd782f6d2d74392c27d740566d45002b`, kept as `dev/runs/302_set_order_C2a_R5.out`
+
+The separation rule read in any order of the groups, on C2a/R5's saved summaries: PASS (0 failed), 4 readings, 24 shuffles each. Under the arm, the shuffles turn 0. No solve.
+Each claim derived before the run (the script's docstring).
+
+## 303. 2026-10-18T14:19:34Z: the revision's logged runs, entries 290 to 302, all passing; and the terms' delta
+
+**The logged runs.** All thirteen exit 0.
+- **The five filed tests,** entries 290 to 294:
+  - `test_guard` reads 75 of 75. Against entry 259's output only test 12's lines are new, and the count moves from 66.
+  - `test_k3` reads 0 failed in both modes. Against entries 260 and 261 only claim 5, re-pointed, and claims 6 to 8 change.
+  - `test_claims` and `score_dry` are byte-identical to entries 262 and 263, so the archived dry runs score as they did.
+- **The eight regression runs,** entries 295 to 302. `dl_linear`, `dl_recal`, `sep_claims`, `sep_reread` for C2a and C2b, and `set_order` for C2a, C2b and C2a/R5 are each byte-identical to the output entries 264 to 272 kept.
+
+**The terms' delta,** applied alike to the built text and its source. The built text is the artifact: a rebuild would read moving heads, the census now at `805ddbc` where the terms cite `787aef1`, so the build is not rerun.
+- **K3:**
+  - **(a)** is the point accepted, its seed checked, and the kernel certified exact by `L` alone: `‖L t‖ ≤ 1000 u ‖L‖ ‖t‖` for each exact symmetry direction, and `L`'s zero count at that cut equal to the expected `V₀`'s number of Jordan chains, with its gray zone empty. It never reads `A`'s zero cluster.
+  - **(b)** carries K1 and K2.
+  - **(d)** is the group (b) finds at the highest cutoff passing THE CONVERGENCE RULE, read by the rule's own matching.
+  - **Not resolved, with the kernel exact,** now names a merged in-span mode.
+  - **Instrument failure** names an unaccepted point, a failed seed or an inexact kernel.
+- **The floor's line** now reads "Every accepted development point met it", since entry 068's D6 run failed the bound.
+- **The built text** is `registration/m8_16_task_details.md` `20a2db246893122f0e16aebc2c1943446ac5c8cb7ec9df83ce58e1721fc15eff`, at 8085 words.
+- **The source** is `registration/m8_16_task_details.src.md` `017d7f7b60da184b86142200cd9558836e74a710f727363d16b13ace9b7a1e32`.
+- **The count** is 81 words above entry 278's 8,004. It is still about 8,000, as `PR_REVIEW_STANDARDS.md` § 12.2 caps it, and it is reported to the units.
+- **Still to come:** the lines on the dry run's history follow the dry rerun.
+
+**Next:**
+1. the units' packet: the code and its tests, the regression and the terms' delta;
+2. after their review, the dry rerun on the final tree;
+3. the history lines;
+4. the final text and its confirmation;
+5. a new pin, the MIT commit with a new dated census note, and the pull request updated, each on Blake's go.
+
+## 304. 2026-10-18T14:42:58Z: the units on the revision packet: UA's one blocker, the seed's preflight; UB's three changes; adjudicated
+
+**UA (F1): CONDITIONAL GO.**
+- **Confirmed:**
+  - B1, B2's propagation and B3;
+  - K3's certificate, and K2 in (b);
+  - the reported readings;
+  - the terms' delta, and 8,085 words as acceptable, not to be trimmed merely for a round number.
+- **Reproduced** from the archive: `test_guard` 75 of 75; `test_k3`; the certificate's arms; the failed-run claims; the saved-output scoring.
+- **HOLD, B2's execution path.** In `run_case` a failed seed was scored as failing but did not stop the solver: `continue_to` ran after `seed_ok` was false. The terms check the seed before any solve and end the case on a failure.
+  - UA reproduced it with a failing seed and a sentinel in place of `continue_to`, on stand-ins, with no sealed case built.
+  - Required: the preflight before continuation, a recorded instrument failure in the output's shape, no call to the solver, and K1 to K6 and the stop reporting it without an exception. Also one negative test with a solver sentinel that must never fire.
+- **Then:** GO to the dry rerun, once that test passes.
+
+**UB:**
+- **KEEP** B1 to B3, the reported readings, the certificate and (d).
+  - UB's short solves on three GO controls at `ε = 0.25`, `N = 16` and 24, read every tangent residual between 0.02 u and 3.3 u, against the cut's 1000 u. `L`'s zero count equals the chains, and its gray zone is empty.
+  - UB rebuilt the terms from the source at MIT `2c27cea`, through a local mirror. The result equals the hand-applied delta except the word-budget line.
+  - UB names two misses of its own: it judged the `10⁻³` line fail-safe at step 3, and it said at item 7 of its v2 review that the dry run need not rerun.
+- **CHANGE, K2 in (b).** Moving all of K2 into (b) would read a Theorem R failure outside the in-span mode, a missing quartet or Krein-positive pair or an unpredicted group, as "the diagnosis is wrong". The terms assign that case to the instrument: "A disagreement with them at the smallest amplitudes indicts the instrument."
+  - The fix: (a) also requires the slow band outside the in-span pair's class to be Theorem R's, within 5%.
+  - Two texts, a code test and two arms.
+- **CHANGE, the word count.**
+  - The builder states "about 8,100" at 8,085 words, where the hand-applied text keeps "about 8,000".
+  - The final count is to be at most 8,049, with the trim in the history lines the rerun rewrites anyway.
+  - The final text is to be built by the builder at the base the terms were built from, through a `--base` option, so each unit can rebuild it byte for byte.
+- **ADD, E7.** Every read point of every control carries K3(a)'s certificate, with its largest tangent residual reported against the cut. Expected at most about 10 u.
+- **GO** to the dry rerun once these are built, with their tests rerun in a scratch copy.
+
+**Adjudicated.**
+- **K2:** UB's form. It keeps what UA confirmed, since a merged in-span mode still passes (a), its class being excluded. It also routes a Theorem R miss elsewhere to the instrument, as the terms already say. UA sees the change in the next note.
+- **The word count:** UB's form. UA objected to trimming merely for a round number. Here the reason is that the builder, the units' rebuild, must state the count the text states, and the trim lands in lines that change anyway.
+- **UA's blocker** is adopted; UB had not raised it. **UB's E7** is adopted; UA had not objected.
+- **Found while building UA's fix:** `check_c1` read no seed, and over an empty cutoff it passed C1's K1 vacuously. It now requires every cutoff's seed and every registered point; on a full run it reads as before.
+
+## 305. 2026-10-18T14:42:58Z: round 2 built: the seed's preflight, C1's K1, K3(a)'s slow band, E7, the builder's base; tested unrecorded
+
+**The code:**
+- **`run/driver.py`:**
+  - **The preflight.** In `run_case` and `run_c1` a failed seed now ends the case before any solve, or in C1 before any record. Its cutoff records the seed and no point; each later cutoff is recorded as not checked, with no point, by `not_checked`. So every check reads the output's full shape. C1's closing comparison along the cutoffs is false when the case ended.
+  - **E7** is in `dry_claims` and its docstring. The reader is `e7`, which reads none where a read point lacks the certificate.
+  - `dry_claims` takes `e7_claim`, which the archived runs' scorers set false.
+- **`run/checks.py`:**
+  - `check_c1` requires every cutoff's seed and every registered point.
+  - `theorem_r_outside` matches the slow band outside the class `('imag', -1)` against Theorem R: equal counts, each within `BAR`. K3's (a) includes it.
+- **`run/score_dry.py`** and **`run/test_claims.py`** call `dry_claims` with `e7_claim=False`, reading E1 to E6, the claims registered for their runs.
+- **`registration/fill_terms.py`** takes `--base COMMIT` and reads MIT's pages there, without a fetch. `registration/` lies outside the manifest.
+
+**The terms:** UB's two sentences, in the built text and its source.
+- (a) adds: "And outside the in-span pair's class, imaginary of negative Krein signature, the slow band is Theorem R's: the quartet and the Krein-positive pair matched as in K2, each within 5% of leading order, and no other group".
+- The instrument failure adds "or the slow band departs from Theorem R outside the in-span pair".
+- The built text is at 8133 words.
+- Built by the builder at the base, the parent of the commit that first added the folder, read from git, the result cites the census at `787aef1`. It equals the built text except the word-budget line: "about 8,100" against "about 8,000". The trim to at most 8,049 follows the rerun.
+
+**The tests:**
+- **`test_k3` claim 7** gains UB's two arms:
+  - a Krein-positive pair removed reads "instrument failure";
+  - an extra Krein-negative group reads "the diagnosis is wrong".
+- **`test_guard` test 13,** for C2a and C1:
+  - **The green parent:** with the seed passing, a sentinel in place of the solver, or for C1 the record, fires, so the sentinel is live.
+  - **The negative test:** with the seed check made to fail, the sentinel never fires, and every cutoff is recorded with no point.
+  - **The report:** the checks report the failure without an exception, and the stop names it.
+  - **E7's reader** reads none on the kept outputs, which predate the certificate. It holds with every certificate set, and fails with one tangent ten times the cut.
+
+**Unrecorded, in a scratch copy:**
+- `test_guard` reads 84 of 84, and `test_k3` reads 0 failed in both modes.
+- `test_claims` and `score_dry` are byte-identical to their last outputs.
+- No development run reads a file this round edits, so the regression stands.
+
+**The files:**
+- `run/driver.py` `315df5646de2cc4332e9d2d3fbeef810f528d953e807bf368477475e1ba0727a`
+- `run/checks.py` `31dc884bea7d9274949c00cc795073bb10519e8188e8a718c8c3f31ce31b8c83`
+- `run/score_dry.py` `54831523820626dc847e2ba9246a031b4efeb9270227579a2cd140e649130420`
+- `run/test_claims.py` `0a43d5bbc75a17d479add2bb34764b935117b0951abc2fafbe2423e5526f508e`
+- `run/test_k3.py` `b769c6bb0c6a396b30e77382e90186b42632c3e6f1d1f0109415f6502ca5be7c`
+- `run/test_guard.py` `b700f100d48006680930d5882e0a99c4cab179d1ff99d2982f55637da62f7720`
+- `registration/fill_terms.py` `0f40225c35992b29dd06b4b81be5e03a9a8839685f4c2531b1d6a4c60fbfde7b`
+- `registration/m8_16_task_details.md` `d49ebd92eb978a68b0a5c18cda9253012effbf5dc25c12ab830e123999ddc842`
+- `registration/m8_16_task_details.src.md` `72fc607e14cb2e04dde82ea274e3a8d6afee865127d92d2a3cafa0202ddbfa5a`
+
+**Next:**
+1. the five tests, logged;
+2. `run/dry` moved aside, its contents kept as entry 245's outputs;
+3. the dry rerun on the final tree, with E7;
+4. the history lines, at most 8,049 words in all, and the final text built at the base;
+5. the units' confirmation;
+6. the new pin, the MIT commit and its census note, and #637 updated, each on Blake's go.
+
+## 306. 2026-10-18T14:43:19Z: run `run/test_guard.py` (case: synthetic)
+
+Script SHA-256 `b700f100d48006680930d5882e0a99c4cab179d1ff99d2982f55637da62f7720`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_guard.out` `e1d49f0aa6a739d1c7724cab57531c7ba9735a28553a77b744b2dedc32c61bd7`, kept as `dev/runs/306_test_guard.out`
+
+The guard's tests: PASS, 84 of 84.
+Each outcome derived before the run (the script's docstring); temporary trees only, nothing solved, no sealed seed built, no sealed record opened.
+
+## 307. 2026-10-18T14:43:19Z: run `run/test_k3.py` (case: synthetic)
+
+Script SHA-256 `b769c6bb0c6a396b30e77382e90186b42632c3e6f1d1f0109415f6502ca5be7c`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_k3.out` `6ef7b89eee740037fc9ed1e6c638477ddc67f135a4f95968df4ff927b90b7fde`, kept as `dev/runs/307_test_k3.out`
+
+K3's overlap: PASS (0 failed).
+Each outcome derived before the run (the script's docstring).
+
+## 308. 2026-10-18T14:43:20Z: run `run/test_k3.py` (case: synthetic)
+
+Script SHA-256 `b769c6bb0c6a396b30e77382e90186b42632c3e6f1d1f0109415f6502ca5be7c`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_k3_synthetic.out` `b26e7e2a2a1f819083bfd5bf6bc004a74a5751395e697c06355c85fa07f773f9`, kept as `dev/runs/308_test_k3_synthetic.out`
+
+K3's overlap (synthetic only): PASS (0 failed).
+Each outcome derived before the run (the script's docstring).
+
+## 309. 2026-10-18T14:43:20Z: run `run/test_claims.py` (case: dryrun)
+
+Script SHA-256 `0a43d5bbc75a17d479add2bb34764b935117b0951abc2fafbe2423e5526f508e`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/test_claims.out` `13785a763e5f17102129ed7fd08a2c11e1d991a84ff404848d1b4f9eca0c132d`, kept as `dev/runs/309_test_claims.out`
+
+The dry run's claims on a stopped run: PASS (0 failed). No solve; the claims' own entry captured, not written.
+Each claim derived before the run (the script's docstring).
+
+## 310. 2026-10-18T14:43:21Z: run `run/score_dry.py` (case: dryrun)
+
+Script SHA-256 `54831523820626dc847e2ba9246a031b4efeb9270227579a2cd140e649130420`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/score_dry.out` `dd66aaa4edc5725844cc9d93c1e239549605ad68e0af6b582d2d5eef25587462`, kept as `dev/runs/310_score_dry.out`
+
+The dry run's claims scored from entry 245's kept outputs, no solve: the scoring's checks PASS (0 failed); the dry run's claims {'E1': True, 'E2': True, 'E3': True, 'E4': True, 'E5': True, 'E6': True}: PASS.
+Each claim derived before the run (the script's docstring).
+
+## 311. 2026-10-18T14:44:17Z: the dry rerun on the final tree, launched; `run/dry` moved aside first
+
+**`run/dry` moved aside.** Its 13 files are each byte-identical to entry 245's kept copies, `dev/runs/245_dry_*`. The folder is moved out of the bench, to `../m8_16_run_dry_245_moved`; it is moved, not deleted, and `run/dry` is empty. A run log from another tree would refuse the resume anyway.
+
+**The launch:**
+- **The command:** `python3 -I -B -u run/driver.py --dry`, from the bench, its output to `run/dry/driver.log`, under `caffeinate -i`, as a background task.
+- **The tree:** the one entry 305 built, after the logged tests of entries 306 to 310.
+- **The power:** "Now drawing from 'Battery Power'"; "-InternalBattery-0 (id=6881379)	98%; discharging; 16:27 remaining present: true". The dry run's timing feeds the terms' cost line, so the power source is recorded.
+- **The claims:** E1 to E7 are scored at its end, and the run writes its own entry.
+
+## 312. 2026-10-18T16:48:05Z: run `run/driver.py` (case: dryrun)
+
+Script SHA-256 `315df5646de2cc4332e9d2d3fbeef810f528d953e807bf368477475e1ba0727a`; the instrument package as hashed below.
+- `instrument/__init__.py` `ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc`
+- `instrument/basis.py` `5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b`
+- `instrument/branches.py` `4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f`
+- `instrument/certified.py` `1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1`
+- `instrument/convergence.py` `02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51`
+- `instrument/devtools.py` `3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f`
+- `instrument/functional.py` `f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79`
+- `instrument/group2i.py` `0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0`
+- `instrument/linear.py` `e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2`
+- `instrument/newton.py` `36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f`
+- `instrument/quadrature.py` `6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71`
+- `instrument/su2.py` `60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6`
+- output `run/dry/driver_dry.out` `a193d59e1d7f78d1aefb07b688c91a589af401f94ced3452f147a61ca2a004ae`, kept as `dev/runs/312_driver_dry.out`
+- output `run/dry/driver.out` `9d09262376a2e997fedb416dca057524c0765eef75d2451823f6a5f65d9dec96`, kept as `dev/runs/312_driver.out`
+- output `run/dry/GATE.json` `f7f86453f7246cc6fd7c4f870ec30153cd1950dea5b93d013055732127949792`, kept as `dev/runs/312_GATE.json`
+- output `run/dry/VERDICT.json` `0282e786f26e1004dcef66c46a7afa386db978436cf763400149f25c5e976d69`, kept as `dev/runs/312_VERDICT.json`
+- output `run/dry/RUNLOG.json` `0de77e37efa9d1f6ca36d7643985427f52fb21359c2053cff0d84d5569a87301`, kept as `dev/runs/312_RUNLOG.json`
+
+Step 3's dry run: PASS (0 of 7 claims failed or not evaluated): {'E1': True, 'E2': True, 'E3': True, 'E4': True, 'E5': True, 'E6': True, 'E7': True}.
+The claims were derived before the run (the driver's docstring; DRIVER_PLAN.md v2). The run's per-case outputs and their SHA-256 are in its RUNLOG.json.
+
+## 313. 2026-10-18T16:49:25Z: the dry rerun on the final tree: every case and check passes, and all seven claims hold; its outputs kept
+
+**The run** (launched in entry 311; it logged itself as entry 312).
+- **Every case ran,** and every check passed: C1, C2a, C2b, C3, the `R5` control and C2a's ladder segment. The gate record has no stop. The verdict reads `incomplete`, as a dry run's does, with the `R5` gate passing and nothing failed.
+- **The claims, E1 to E7,** all hold. The run's own entry reads "Step 3's dry run: PASS (0 of 7 claims failed or not evaluated)".
+  - **E2.** K3 on C2a reads "not resolved, kernel exact: the diagnosis is wrong" at (b), and the probe's (d) on C2a's smallest pair passes the rule.
+  - **E7** reads: "E7. K3(a)'s certificate at every read point of every control: True; the largest tangent residual 4.2 u, against the cut's 1000 u".
+- **The times:**
+  - by case: C1 710 s, C2a 813 s, C2b 391 s, C3 1201 s, C2a/R5 2099 s, C2a:ladder 2205 s;
+  - in all, 7421 s, or 2.06 h;
+  - the controls' phase, C1 to C3 and the `R5` control, 5214 s, or 1.45 h.
+- **The power,** as observed: on battery at the launch; on AC at 11:18 local; on battery again at 12:42 local. The phase's time is therefore not a mains figure.
+- **The tree** is the final one: entry 311's, with no edit since. This dry run closes the comment-tier finding that the frozen driver had not run end to end.
+
+**The outputs kept.** The run's own entry kept five. The case outputs and the transcript are kept here by exclusive create, each case output equal to the SHA-256 in the run log:
+- `run/dry/C1.json` `7b0ef443aca74fda0b69b2fce0d94e743ad84a7ac90a45091ada4a24047d77b6`, kept as `dev/runs/312_dry_C1.json`, as the run log records it
+- `run/dry/C2a.json` `4095c043882bdbb58fe8e237d98d01681ad3fb477523cdc556a877004af7c09f`, kept as `dev/runs/312_dry_C2a.json`, as the run log records it
+- `run/dry/C2a.npz` `ec646f784f5ed227b058aa43a479df043b3ffe1794bcf146c30c595dedffa954`, kept as `dev/runs/312_dry_C2a.npz`, as the run log records it
+- `run/dry/C2a_R5.json` `62f5f886e60fea0c58663b4d271297fad84c7a82aeca4985f0763360c738a9f2`, kept as `dev/runs/312_dry_C2a_R5.json`, as the run log records it
+- `run/dry/C2a_ladder.json` `71d7a91490de5f252507ea4644342f292ca3548a92d65439ccb360aa13293510`, kept as `dev/runs/312_dry_C2a_ladder.json`, as the run log records it
+- `run/dry/C2b.json` `fb015cdf9f01688ef578f1e38c0b451a05a7b8c33cbe417a56a3106cf43c9c4e`, kept as `dev/runs/312_dry_C2b.json`, as the run log records it
+- `run/dry/C3.json` `487ebfe65b33389bf5dd95a4b8306714956e7eb402fa38ece7cd4b47fb7aad54`, kept as `dev/runs/312_dry_C3.json`, as the run log records it
+- `run/dry/C3.npz` `366681b4958ed2c6e3c88881f442b1a085ba8a783d63c867eccc1a37a836e488`, kept as `dev/runs/312_dry_C3.npz`, as the run log records it
+- `run/dry/driver.log` `a193d59e1d7f78d1aefb07b688c91a589af401f94ced3452f147a61ca2a004ae`, kept as `dev/runs/312_dry_driver.log`
+
+So `run/dry` is again byte-identical to its kept copies, now this entry's and entry 312's rather than entry 245's.
+
+**Next:**
+1. the history lines and the cost line in the terms, at most 8,049 words in all;
+2. the final text, built by the builder at the base;
+3. the units' confirmation of its hash.
+
+## 314. 2026-10-18T16:54:21Z: round 3: the terms' history and cost from the final dry run; the final text built by the builder at the base
+
+**The cost, from the final dry run.** The builder reads the latest dry run's files, now entry 312's.
+- **The figures:** `R5` costs 1.3 to 2.1 times `R4`, against 1.3 to 1.6; the total is 13.6 to 17.3 h, against 13.6 to 15.2; and the controls' phase took 1.4 h, against 1.2.
+- **The cause, from the times at the highest cutoff,** entry 245's run against entry 312's, on the same code but for the cheap certificate: C1 538 s against 538 s; C2a 731 s against 744 s; C2b 302 s against 352 s; C3 992 s against 1068 s; C2a/R5 1323 s against 1880 s; C2a ladder 1274 s against 2011 s.
+  - The early cases ran at the same speed.
+  - The `R5` control's first point took the same time, 223 s against 222 s, and its later points were slower.
+  - The ladder segment ran about 1.5 times slower throughout.
+- **Read as:** the machine's state slowed the run's second half, not the instrument. The machine is fanless and the load sustained, and the power changed during the run (entry 313).
+- **The figures are kept as the builder gives them,** since the registered run meets the same machine for longer. They stay INFERRED.
+
+**The source's edits:**
+- **BEFORE THE FREEZE's driver lines** keep the two failures and the six claims. They add that the maintainer's review of these terms (#637) found three departures from them in the driver, since repaired, and that it had changed after that run. They add that on the final tree its dry run passed every check and all seven claims. Two details of the first failure move to the log, entry 219: its location and the rejected repair's mechanism.
+- **The failures on record** now point to "the dry run's two failures and the review's three findings".
+- **The word budget** reads "near" § 12.2's cap of about 8,000, not "inside" it.
+
+**The word count: a change from entry 304's ruling, proposed to the units.**
+- The history adds the review and the final dry run, so it frees no words.
+- Reaching UB's 8,049 would need about 100 words cut from paragraphs both units have reviewed, which UA advised against.
+- UB's substantive point, that the built text is the builder's output and each unit can rebuild it byte for byte, is met. So the text states the builder's own count, about 8,100, near the cap.
+- The trim stays available if UB holds to 8,049.
+
+**The final text,** built by `fill_terms.py --base` at `2c27cea2d543`, the parent of the commit that first added the folder, read from git.
+- The census is cited at `787aef1`.
+- 8,149 words, stated as about 8,100.
+- A build in a scratch mirror and the build on the bench are byte-identical, and their reports differ only in the path written.
+- `registration/m8_16_task_details.md` `86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf`
+- `registration/m8_16_task_details.src.md` `ffa461d1c48e8de565f0e946f54f35ec3a38a179e4091d7de639fb90a05fead1`
+- `registration/fill_terms.py` `0f40225c35992b29dd06b4b81be5e03a9a8839685f4c2531b1d6a4c60fbfde7b`
+
+**Next:**
+1. the units' packet: round 2's code and tests, the dry run, and the final text;
+2. their confirmation of its hash;
+3. then, each on Blake's go:
+   - the new pin, with `805ddbc`'s retired;
+   - the MIT commit with a new dated census note;
+   - the revised task file pushed to #637;
+   - a reply to xrodz, which Blake posts.
+
+## 315. 2026-10-18T17:10:32Z: both units confirm round 2, the final dry run and the final text at entry 314's hash; UB releases its word ceiling
+
+**UA (F1): CONFIRM.** The repinning sequence has UA's GO, once UB concurs and Blake authorizes it.
+- **Closed:**
+  - the seed's preflight, for C1 and C2a, tested both ways;
+  - `check_c1`'s vacuous pass.
+- **Confirmed:**
+  - UB's K3(a) split: a missing predicted mode reads "instrument failure", and an extra Krein-negative group, with the certificate holding, reads "the diagnosis is wrong";
+  - (d)'s matched group.
+- **Replayed:** `test_guard` 84 of 84, and `test_k3`.
+- **The final dry run,** checked from its kept outputs: 7 of 7 claims, no stop, 124 minutes. E7 was recalculated directly: 60 of 60 read points carry a passing certificate, the largest tangent residual 4.2406 u.
+- **The final text's SHA-256** is verified.
+- **The word count.** 8,149 words is accepted under "about 8,000", while UB's ceiling remained UB's to hold.
+- **What stands:** the old pin is superseded and never reused, and no scored qualification or sealed run is authorized.
+
+**UB: CONFIRM,** on the code and tests, the final dry run, and the final text.
+- **The diffs:** all 12 incremental diffs apply exactly to the v1 bundle, and the final-against-filed diff applies to the terms filed at `805ddbc`.
+- **The final text,** rebuilt by `fill_terms.py --base` from UB's own clones, is byte-identical: 8,149 words, the census at `787aef1`.
+- **The tests:** `test_guard` 84 of 84, `test_k3` passing with round-off digits only, and `test_claims` and `score_dry` byte-identical.
+- **The final dry run,** re-scored from its kept outputs:
+  - every case output and the gate record match the run log;
+  - 0 of 7 claims failed, and E2's probe passes;
+  - E7 holds at all 60 read points, the largest tangent residuals by case C2b 4.24 u, C1 1.97 u, C2a/R5 0.18 u, C2a 0.17 u and C3 0.10 u. That leaves at least 236 times headroom, and 0.18 u or less in the pyramid's slots.
+- **KEEP:** the preflight and `check_c1`; the K2 split, with `theorem_r_outside` counting any other group, one of unresolved sign included; and the dry run and the cost, the wider range being the honest one.
+- **The word count.** UB releases its 8,049 condition: reproducibility is met, "about 8,100 words, near the cap" is true, and cutting reviewed paragraphs would risk their meaning to save 1.9%.
+- **FIXABLE, `REPRODUCE.md`,** outside the pin, for the next MIT commit. Five lines:
+  - the dry run's history, now with #637 and the final dry run;
+  - `run/dry`'s kept copies, now `dev/runs/312_*`;
+  - 84 tests;
+  - "The final dry run, entry 312, took 124 minutes";
+  - 13.6 to 17.3 hours.
+
+  All five match the file as UB quotes them.
+- **The steps:**
+  1. retire the old `run/m8_16_task_details.md` and `run/MANIFEST_PIN`, both written by exclusive create, in an entry of their own; they stay in history at `805ddbc`;
+  2. copy in the final text;
+  3. write the new pin;
+  4. update `REPRODUCE.md` and regenerate `SHA256SUMS`;
+  5. add a new dated census note naming both new hashes, beside the first;
+  6. commit;
+  7. on #637, replace the task doc, check its hash at the head, and update the body's provenance.
+
+**Next,** on Blake's go: the repin and the local commits, stopping before any push.
+
+## 316. 2026-10-18T17:12:03Z: the repin, step 1: the old terms copy and the old pin retired from `run/`
+
+On Blake's go ("go on 1 through 5"), in the order of entry 315.
+
+**Retired.** Both files were written by exclusive create, so they had to leave before the new ones could be written. Each was byte-identical to the copy published at MIT `805ddbc`:
+- `run/m8_16_task_details.md` `d497359eb988ffedf80e866a121cb06734684ed8b5ee670a127d5267af5e8096`, the terms entry 281 copied in;
+- `run/MANIFEST_PIN` `00b41c591b6d2bf398783438bc565cf3ac7ad36253f1f868c7545c20c057aba2`, entry 281's pin.
+
+Both are moved out of the bench, to `../m8_16_retired_805ddbc/`; they are moved, not deleted. Their published copies stay in MIT's history at `805ddbc`. The old pin is superseded and is never reused (UA).
+
+**Next:**
+1. the final text into `run/`;
+2. the new pin, after a scan.
+
+## 317. 2026-10-18T17:13:03Z: the repin, step 2: the final text in `run/`, the scan, and the new pin
+
+**The final text.** `registration/m8_16_task_details.md` hashes to the SHA-256 entry 314 records, the one both units confirmed. It is copied by exclusive create to `run/m8_16_task_details.md` `86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf`, which equals it.
+
+**The scan, before the pin.** The bench was scanned without `run/dry` and caches: every file, text and binary, for:
+- OpenWave's local-path patterns;
+- the bench's path;
+- emails and personal identifiers;
+- credentials;
+- session internals.
+
+The hits:
+- the three kept driver logs already disclosed;
+- one line of `DEVLOG.md`, entry 285's "Author and committer", which names the session commits' identity. That identity is already public as the author of the session commits on MIT `main`, and the log is append-only, so the line stays.
+
+OpenWave's `check_no_local.py` passes the final text.
+
+**The new pin.** `run/pin_manifest.py` wrote `run/MANIFEST_PIN` by exclusive create: `a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a`, the manifest's SHA-256 over 36 files. The recomputed manifest equals it. Against entry 281's pin, the files are the same 36 paths. The contents differ in:
+- the final text;
+- `instrument/linear.py` and `instrument/convergence.py`;
+- `run/checks.py`, `run/driver.py`, `run/score_dry.py` and `run/test_claims.py`;
+- the two tests and their outputs.
+
+From here no manifest-covered file changes (UA). Entry 316's retired pin is superseded.
+
+**Next:**
+1. the MIT folder rebuilt from the bench, with `REPRODUCE.md`'s five lines (UB);
+2. `SHA256SUMS` fresh;
+3. the checks and the scratch tests;
+4. the census note;
+5. the local commits.
+
+## 318. 2026-10-18T17:15:01Z: the repin, steps 3 and 4: the MIT folder rebuilt and checked; `REPRODUCE.md`; the census note
+
+**`REPRODUCE.md`,** outside the pin, carries UB's five lines (entry 315):
+- the dry run's history, now with the review on #637, linked as OpenWave's, and the final dry run;
+- `run/dry`'s kept copies, now `dev/runs/312_*`;
+- 84 tests;
+- "The final dry run, entry 312, took 124 minutes";
+- 13.6 to 17.3 hours.
+
+It is now `362a34432047c80655eee7e31bb1d4e671f673761abb2f252bcb600a3980b667`, on the bench and in the folder alike.
+
+**The folder,** rebuilt from the bench without `run/dry` and caches:
+- each file equals the bench's, `SHA256SUMS` apart, which is written fresh after this entry;
+- its manifest, recomputed, equals entry 317's pin, `a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a`.
+
+**The scratch tests,** from a copy of the folder: all five filed tests exit 0, and each output equals the folder's, byte for byte. Afterwards the copy's manifest still equals the pin.
+
+**The scan of the folder** finds the hits entry 317 disclosed and no other.
+
+**The census note,** § V, step 4, below the first note, which stands as written. It names the revised terms' SHA-256 and the new pin, both read from the folder's files, and says the first note's hashes are superseded.
+- The page's math count is unchanged.
+- `metadata-lint.py` reports 0 FAIL and 0 WARN.
+- The Status stands: M8.16 is still the next step.
+
+**Next:**
+1. this log copied into the folder;
+2. `SHA256SUMS` fresh, and `shasum -c`;
+3. the MIT commit, verified from its own tree;
+4. #637's task file replaced on its branch, in a local commit;
+5. a stop before any push.

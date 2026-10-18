@@ -1,0 +1,204 @@
+{
+ "written": "2026-10-18T16:11:19Z",
+ "stop": null,
+ "cases": {
+  "C1": {
+   "K1": true,
+   "K4": true
+  },
+  "C2a": {
+   "K1": true,
+   "K4": true,
+   "converged": true,
+   "bar": true,
+   "trend": true,
+   "deviations": {
+    "16": [
+     0.0070294818257076695,
+     0.0540162190560619
+    ],
+    "24": [
+     0.00728402907867244,
+     0.05590061621621733
+    ],
+    "32": [
+     0.007284029078266278,
+     0.05590061694777119
+    ]
+   },
+   "K2": true,
+   "K5_code_path": true,
+   "K3_code_path": {
+    "outcome": "not resolved, kernel exact: the diagnosis is wrong",
+    "per_N": {
+     "16": {
+      "a": true,
+      "k1k2": true,
+      "b": false,
+      "c": false,
+      "overlaps": {
+       "xy": null,
+       "z": null,
+       "axis": 6.9494110494880295e-25,
+       "why": "Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.9e-25)",
+       "group": [
+        4.641219104692081e-16,
+        0.0005846218033234975
+       ],
+       "krein_negative": false
+      },
+      "c_why": "Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.9e-25)",
+      "d": false
+     },
+     "24": {
+      "a": true,
+      "k1k2": true,
+      "b": false,
+      "c": false,
+      "overlaps": {
+       "xy": null,
+       "z": null,
+       "axis": 6.4794683147397955e-25,
+       "why": "Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.5e-25)",
+       "group": [
+        2.7281742162008195e-16,
+        0.0005845249226663051
+       ],
+       "krein_negative": false
+      },
+      "c_why": "Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.5e-25)",
+      "d": false
+     },
+     "32": {
+      "a": true,
+      "k1k2": true,
+      "b": false,
+      "c": false,
+      "overlaps": {
+       "xy": null,
+       "z": null,
+       "axis": 2.2814221042018734e-25,
+       "why": "Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 2.3e-25)",
+       "group": [
+        1.7202194259938398e-16,
+        0.0005845249226583001
+       ],
+       "krein_negative": false
+      },
+      "c_why": "Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 2.3e-25)",
+      "d": false
+     }
+    },
+    "d": false,
+    "d_why": "(b) fails at the highest cutoff, so no group is read",
+    "d_row": null
+   },
+   "K3_d_probe": {
+    "d": true,
+    "why": null,
+    "group": [
+     1.7202194259938398e-16,
+     0.0005845249226583001
+    ],
+    "row": {
+     "c": [
+      1.7202194259938398e-16,
+      0.0005845249226583001
+     ],
+     "cls": "imag",
+     "neg": 0,
+     "role": "tested",
+     "kind": "group",
+     "count": 1,
+     "top": [
+      82
+     ],
+     "rel_change": 1.369595059484245e-11,
+     "d1": 9.688065719234626e-08,
+     "d2": 8.005624462182183e-15,
+     "rem": 6.615358543476168e-22,
+     "floor": 4.804225453401063e-07,
+     "num": 2.3157210209956624e-13,
+     "U": 4.804225453401063e-07,
+     "d": 0.0005830836550222798,
+     "event": "A's gray zone",
+     "ratio": 1213.6892006379435,
+     "ok": true,
+     "why": null
+    }
+   }
+  },
+  "C2b": {
+   "K1": true,
+   "K4": true,
+   "converged": true,
+   "bar": true,
+   "trend": true,
+   "deviations": {
+    "16": [
+     0.003926589528510244,
+     0.03066281755736862
+    ],
+    "24": [
+     0.004577548839584844,
+     0.03564041704958065
+    ],
+    "32": [
+     0.004577548883299736,
+     0.035640435547497865
+    ]
+   },
+   "K2": true,
+   "K5_code_path": true
+  },
+  "C3": {
+   "K1": true,
+   "K4": true,
+   "converged": true,
+   "bar": true,
+   "trend": true,
+   "deviations": {
+    "16": [
+     0.004512134062082838,
+     0.03468675059544219
+    ],
+    "24": [
+     0.005145766473923998,
+     0.03955661837958828
+    ],
+    "32": [
+     0.005145767074025446,
+     0.03955690443990732
+    ]
+   },
+   "K5_code_path": true
+  },
+  "C2a/R5": {
+   "K1": true,
+   "K4": true,
+   "converged": true,
+   "bar": true,
+   "trend": true,
+   "deviations": {
+    "16": [
+     0.0087887199282332,
+     0.06716593468964323
+    ],
+    "24": [
+     0.00931692690969784,
+     0.07096460241293455
+    ],
+    "32": [
+     0.009316926913850275,
+     0.07096460303308551
+    ]
+   }
+  }
+ },
+ "complete": false,
+ "instrument_ok": null,
+ "r5_gate": true,
+ "absent": [
+  "P5"
+ ]
+}

@@ -30,7 +30,7 @@ If the in-span mode is not resolved while the kernel is exact, the diagnosis is 
 - **The ruling it files under** is #512's answer of 2026-10-15. This task meets its conditions:
   - **identity:** M8.16 for the qualification, which is this task; the census run takes the next free ID;
   - **order:** the census run's pre-registration waits for M8.16's adjudication;
-  - **word budget:** about {{WORDS}} words, inside `PR_REVIEW_STANDARDS.md` § 12.2's cap of about 8,000;
+  - **word budget:** about {{WORDS}} words, near `PR_REVIEW_STANDARDS.md` § 12.2's cap of about 8,000;
   - **maintainer reproduction,** for any claim that frozen text is defective (§ Ownership);
   - **the roadmap:** both M8 status rows record M8.16 in the pull request that files it.
 - **Run-before-write** (§ 12.2) is met. M8.15.2 ran and was adjudicated on 2026-10-14 ([#632](https://github.com/openwave-labs/openwave/pull/632)). Since then the column has landed only that run's after-verdict records ([#633](https://github.com/openwave-labs/openwave/pull/633)) and housekeeping ([#635](https://github.com/openwave-labs/openwave/pull/635)).
@@ -60,7 +60,7 @@ Every case below runs inside it.
 - **D6:** Theorem D at `R3`. As first run it failed at `N = 24` and 32, from accumulation error in the cubic; with GEMM accumulation it passes at every `N` to 40.
 - **D7:** C2a, C2b and C3 at `ε ∈ {0.5, 1, 2}`, and their full ladders at `N = 24` and 32, with `N = 40` at each ladder's top three points. All 121 ladder points are accepted, with the expected kernel, and the type, `K` and `k_i⁻` equal M8.15's control ladders at each.
 - **Fitted or tested on these controls and on synthetic families, with mutation arms:** the calibration (§ FROZEN VALUES); the slow-pair demonstration, whose synthetic pairs down to `5×10⁻⁶`, at the controls' largest measured anisotropy, resolve at every mixing; and the convergence rule's factor and set rule (§ THE CONVERGENCE RULE).
-- **Failures on record,** each standing as logged: the calibration's ten-fold headroom, missed at 2 of 40 synthetic mixings; a mutation arm first coded with two roles, corrected with the rule unchanged; C2a's sample, which failed on one-to-one matching and led to the set rule; and the dry run's two failures (§ BEFORE THE FREEZE).
+- **Failures on record,** each standing as logged: the calibration's ten-fold headroom, missed at 2 of 40 synthetic mixings; a mutation arm first coded with two roles, corrected with the rule unchanged; C2a's sample, which failed on one-to-one matching and led to the set rule; and the dry run's two failures and the review's three findings (§ BEFORE THE FREEZE).
 
 ### Ownership and run format
 
@@ -120,7 +120,7 @@ Every case below runs inside it.
 **The solve, and the acceptance bound, settled here.**
 - **Newton** runs on `(φ, λ)` at fixed `m = ‖φ‖²`, bordered by an orthonormal basis of the orbit tangents' span at the previous accepted point, its rank read by a pivoted QR. The multipliers vanish at a solution. The borders act only in the solve, and the spectrum is read on the unbordered `L`, the census's condition (c).
 - **Acceptance.** Newton runs to its own round-off floor: once the residual is below `10⁻⁸` of the size before cancellation, `‖(−Δ)φ‖ + λ‖φ‖ + ‖|φ|²φ‖`, it steps until the residual stops halving, and keeps the smallest. A point is accepted only if that floor, the unbordered residual and the multipliers are each below `10⁻¹⁵` of that size.
-- **Why `10⁻¹⁵`.** Every development point met it, the 121 ladder points of C2a, C2b and C3 included. A looser floor breaks each symmetry chain more, splitting it as the square root of the breaking: at `10⁻¹³` the split can reach the cluster's gray zone at the upper `ε`.
+- **Why `10⁻¹⁵`.** Every accepted development point met it, the 121 ladder points of C2a, C2b and C3 included. A looser floor breaks each symmetry chain more, splitting it as the square root of the breaking: at `10⁻¹³` the split can reach the cluster's gray zone at the upper `ε`.
 
 **Continuation,** in `m` with `ε` an output, as in M8.15. From the accepted point at `ε_{k−1}`, the seed is that point scaled to the predicted `m`, and a secant in `m` is iterated until `|ε − ε_k| ≤ 10⁻⁶`, at most 8 times. A secant slope that is not positive is a fold, which ends the branch at its last accepted point. A Newton failure, or a secant that does not reach `ε_k`, ends the branch there, with no retries.
 
@@ -193,15 +193,15 @@ The controls' points are `ε ∈ {0.25, 0.5, 1, 2}` at `N = 16, 24` and 32, and 
 - Nothing outside the zero cluster lies within its gray zone.
 
 **K3. The pyramid's in-span mode, resolved at the smallest amplitude.** This is the decisive check. At `ε = 0.25`, at every cutoff:
-- **(a)** the point is accepted, and K1 and K2 hold there;
-- **(b)** exactly one imaginary group of negative Krein signature lies in the slow band, definite, outside the gray zone, and within 5% of `0.25 κ τ_in`, where `τ_in` is the in-span mode's frozen value (§ FROZEN VALUES);
+- **(a)** the point is accepted, its seed checked, and the kernel certified exact by `L` alone: each exact symmetry direction `t` has `‖L t‖ ≤ 1000 u ‖L‖ ‖t‖`, `L`'s cut, and `L`'s zero count at that cut equals the expected `V₀`'s number of Jordan chains, with its gray zone empty. It never reads `A`'s zero cluster, so an in-span mode merged there does not fail (a). And outside the in-span pair's class, imaginary of negative Krein signature, the slow band is Theorem R's: the quartet and the Krein-positive pair matched as in K2, each within 5% of leading order, and no other group;
+- **(b)** K1 and K2 hold there, and exactly one imaginary group of negative Krein signature lies in the slow band, definite, outside the gray zone, and within 5% of `0.25 κ τ_in`, where `τ_in` is the in-span mode's frozen value (§ FROZEN VALUES);
 - **(c)** its static overlap is at least 0.9 with `span{T_xφ, T_yφ}` and at most 0.1 with `T_zφ`, both taken inside the rotation span with `iφ` and the phase partner's static part projected out, as M8.15.x's `control_2a.py` forms them: `T_zφ`'s projection there, and its complement. The overlap is the `L²` norm of the static part of the group's eigenvector projected onto the `L²`-orthonormalized span, over that part's norm: M8.15.x's registered `verdict.static_overlap`, by which its continuum survey predicts 0.997 and 0.000. Below `10⁻⁶` of `‖T_zφ‖` that projection is undefined and (c) fails; the fraction is reported at every cutoff, and a review unit, from the Result's coefficients alone, puts it near 0.987 at the sealed seed;
-- **(d)** its separation, read from the three cutoffs (§ THE CONVERGENCE RULE), passes.
+- **(d)** the group (b) finds at the highest cutoff passes § THE CONVERGENCE RULE, read from the three cutoffs by the rule's own matching.
 
 Its outcome is one of three:
 - **Resolved:** (a) to (d) pass.
-- **Not resolved, with the kernel exact:** (a) passes and (b), (c) or (d) fails. The diagnosis is wrong, and the program says so.
-- **Instrument failure:** (a) fails. The point is not accepted, the kernel is not exact, or a lifted pair appears, and the diagnosis is untested.
+- **Not resolved, with the kernel exact:** (a) passes and (b), (c) or (d) fails, an in-span mode that stays merged included. The diagnosis is wrong, and the program says so.
+- **Instrument failure:** (a) fails: a point is not accepted, a seed fails its check, the kernel is not exact, or the slow band departs from Theorem R outside the in-span pair. The diagnosis is untested.
 
 Both failures stand as registered.
 
@@ -411,7 +411,7 @@ The `R5` rows carry the most doubt: no `R5` ladder has run. On the registered dr
 Done, on the GO list, each logged and disclosed in `DEVLOG.md`. None solved a sealed case or read a sealed spectrum.
 - **The seeds.** The instrument's `e_k` is the Condon–Shortley `|n/2, (n − 2k)/2⟩`, with no phase. All 15 seeds, 10 sealed, equal the Result's representatives. On the lowest level only (BOUNDARY.md's amendment 2), `Q(u)` is within 3.2×10⁻¹⁵ of the Result's, criticality within 1.1×10⁻¹⁵, and `(k, r_u)` is the Result's.
 - **`R5`'s coherent branch** (amendment 3): every point accepted, with `V₀` and the type as derived; every slow mode within 0.93% of leading order at `ε = 0.25`; every `ε` converged; and the calibration's conditions held, with no refit.
-- **The registered driver** passed its guard's tests, none constructing or solving a sealed case. Its dry run failed twice before it closed. The first stopped at C2a, at `ε = 2`: the set rule's closure turned on the eigensolver's output order. A symmetric repair, previewed first, joined sets to the whole spectrum and was rejected; the closure took its present form (§ THE CONVERGENCE RULE). The rerun passed every check, but its claims code crashed on development records without eigenvalues. Scored from its kept outputs, against records saved before it ran, all six claims held.
+- **The registered driver** passed its guard's tests, none constructing or solving a sealed case. Its dry run failed twice before it closed: the set rule's closure turned on the eigensolver's output order, and a symmetric repair was rejected for the present closure (§ THE CONVERGENCE RULE); then the claims code crashed on development records without eigenvalues, and all six claims held when scored from the kept outputs. The maintainer's review of these terms ([#637](https://github.com/openwave-labs/openwave/pull/637)) found three departures from them in the driver, since repaired, and that it had changed after that run. On the final tree its dry run passed every check and all seven claims.
 - **The expected values** of § THE CASES go into `FROZEN.json` at the freeze.
 
 ## FIXED AT THE FREEZE

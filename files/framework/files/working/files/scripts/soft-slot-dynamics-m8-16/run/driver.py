@@ -27,8 +27,8 @@ the run's entry is written either way (DEVLOG 218, 245).
   E1. K1, K2 (C2a, C2b) and K4 pass on C1 to C3, and the R5 control passes. The dry gate record shows each as passed
       on the GO controls, with the pyramid's parts and K3 marked absent, and the row gate refuses it.
   E2. Unscored code paths on the controls: K5 passes on C2a, C2b and C3 at eps = 0.25 with their frozen spectra; K3 on
-      C2a at 0.25 reads 'not resolved, kernel exact', at (b), since C2a's slow pairs are all Krein-positive, with (c)
-      and (d) computed on its smallest pair and reported.
+      C2a at 0.25 reads 'not resolved, kernel exact', with its sentence, at (b), since C2a's slow pairs are all
+      Krein-positive, with (c) and (d) computed on its smallest pair and reported (checks.k3_probe for (d)).
   E3. K6 reads C2a's six read points as agreeing with M8.15.
   E4. The withheld point, eps = 0.707, is accepted and has no record.
   E5. At 0.25, 0.5, 1 and 2, C2a's ladder segment and C2a's sample read the same type and indices, with every slow
@@ -39,6 +39,10 @@ the run's entry is written either way (DEVLOG 218, 245).
       (entries 70 and 71), each value read in its case's class; each within the larger margin of the two records.
       Against D7, whose margins predate section 7's calibration, the dry run record's own margin is reported beside
       it, and does not replace it (UB, UA; DEVLOG 248 and 249).
+  E7. Every read point of every control, at every cutoff, carries K3(a)'s certificate, and it holds: each exact
+      symmetry direction within L's cut, L's zero count equal to the chains, L's gray zone empty. Its largest tangent
+      residual is reported against the cut; expected at most about 10 u, C2b's R2 tangents the largest (UB on #637).
+      The scorers of the runs before it (score_dry.py, test_claims.py) read E1 to E6, the claims registered for them.
 """
 import datetime
 import glob
@@ -140,7 +144,8 @@ def read_point(Fn, K, c, lam, case, eps, want_k3):
     nA = np.linalg.norm(A, 2)
     m_amp = float(np.vdot(c, c).real)
     margin = ln.margin(nA, m_amp)
-    sym = [np.concatenate([t, np.zeros(2 * Fn.B.m)]) for t in br.tangent_vectors(Fn, c, K)]
+    T = br.tangent_vectors(Fn, c, K)
+    sym = [np.concatenate([t, np.zeros(2 * Fn.B.m)]) for t in T]
     r = ln.record(A, Bm, W, L, margin, symmetry=sym, expected=dict(dim=case['dim'], ranks=case['ranks']))
     summ = cv.summarize(r, A, W)
     mu = ck.spectrum_of_L(L)
@@ -151,16 +156,19 @@ def read_point(Fn, K, c, lam, case, eps, want_k3):
                  lkernel=dict(lift=float(np.abs(mu[order[:kdim]]).max() / nL), genuine=float(np.abs(mu[order[kdim]]) / nL),
                               normL=nL),
                  coefficient=float(r['cluster_max'] / np.sqrt(U * nA * max(m_amp, ln.M0))))
+    # K3(a)'s certificate, from L alone: each orbit tangent's ||L t|| / (||L|| ||t||), and L's zero count and gray zone
+    point['kernel'] = dict(tangent=float(max((np.linalg.norm(L @ t) / (nL * np.linalg.norm(t)) for t in T),
+                                             default=np.inf)),
+                           dimkerL=int(r['dimkerL']), l_resolved=bool(r['l_resolved']), chains=int(case['chains']))
     arrays = None
     if want_k3:
-        band = ck.slow_band(case, eps)
-        neg = [g for g in point['groups'] if g['cls'] == 'imag' and g['status'] == 'definite' and g['neg'] == g['size']
-               and np.hypot(*g['c']) <= band]
-        pick = neg[0] if len(neg) == 1 else (min((g for g in point['groups'] if np.hypot(*g['c']) <= band),
-                                                key=lambda g: np.hypot(*g['c'])) if point['groups'] else None)
+        pick, krein_negative = ck.k3_pick(point['groups'], ck.slow_band(case, eps))
         if pick is not None:
             arrays = k3_arrays(Fn, K, c, L, r, pick)
-            point['k3_overlaps'] = dict(ck.k3_overlaps(arrays), group=pick['c'], krein_negative=len(neg) == 1)
+            point['k3_overlaps'] = dict(ck.k3_overlaps(arrays), group=pick['c'], krein_negative=krein_negative)
+        else:
+            point['k3_overlaps'] = dict(xy=None, z=None, axis=None, why='no group lies in the slow band', group=None,
+                                        krein_negative=False)
     point['seconds_record'] = time.perf_counter() - t0
     return point, arrays, r
 
@@ -168,13 +176,22 @@ def read_point(Fn, K, c, lam, case, eps, want_k3):
 # --- C1, Theorem D's exact branch (D6) ------------------------------------------------------------------------------
 def run_c1(case):
     out = dict(cutoffs={}, readings={}, identity={})
-    lad = {}
+    lad, ended = {}, None
     for N in case['cutoffs']:
+        if ended is not None:
+            out['cutoffs'][str(N)] = not_checked(ended)
+            continue
         B = basis.Basis('R3', N)
         Fn = fn.Functional(B)
         v = br.seed_state('C1', B)
         chk = br.orbit_checks(Fn, v)
         seed_ok = abs(chk['Q'] - 1) < 1e-12 and chk['crit'] <= 1e-12 and (chk['k'], chk['r']) == (case['k'], case['r'])
+        if not seed_ok:
+            ended = N
+            out['cutoffs'][str(N)] = dict(seed=dict(Q=chk['Q'], crit=chk['crit'], k=chk['k'], r=chk['r'], ok=False),
+                                          points={})
+            say(f"   C1 N = {N}: seed FAIL; the case ends here as an instrument failure, no point computed (Seeds)")
+            continue
         low = np.array([n == 2 for n, _, _ in B.index])
         pts = {}
         for p in case['points']:
@@ -210,8 +227,8 @@ def run_c1(case):
                                       points=pts)
         say(f"   C1 N = {N}: seed {'ok' if seed_ok else 'FAIL'}; " + ', '.join(
             f"eps {p['eps']:g} {'ok' if pts[ck.key(p['eps'])]['d6_ok'] else 'FAIL'}" for p in case['points']))
-    along = True
-    for p in case['points']:
+    along = ended is None
+    for p in (case['points'] if along else []):
         rows = [lad[(N, p['eps'])] for N in case['cutoffs']]
         same = all(x[:3] == rows[0][:3] for x in rows)
         spread = max(max(abs(a - b) / b for a, b in zip(x[3], rows[0][3])) for x in rows)
@@ -228,12 +245,22 @@ def embeds(Ba, Bb):
         raise RuntimeError(f'the N = {Ba.N} basis does not embed in the N = {Bb.N} basis')
 
 
+def not_checked(ended):
+    """A cutoff after the one whose seed failed: not checked, nothing solved, as the case ended there (UA)."""
+    return dict(seed=dict(Q=None, crit=None, k=None, r=None, ok=False,
+                          why=f'not checked: the case ended at N = {ended}, whose seed failed its check'), points={})
+
+
 def run_case(name, case, dry):
     base = 'C2a' if name == 'C2a:ladder' else name
     out = dict(cutoffs={}, readings={}, identity={})
     arrays, vec, bases, fns = {}, {}, {}, {}
     k3_here = case['role'] == 'pyramid' or (dry and name in ('C2a', 'C3'))
+    ended = None                  # a failed seed ends the case before any solve (the terms, Seeds; UA on #637)
     for N in case['cutoffs']:
+        if ended is not None:
+            out['cutoffs'][str(N)] = not_checked(ended)
+            continue
         t0 = time.perf_counter()
         B = basis.Basis(case['slot'], N)
         Fn = fn.Functional(B)
@@ -243,6 +270,12 @@ def run_case(name, case, dry):
         chk = br.orbit_checks(Fn, u, K)
         Qx = ck.num(case['Q'])
         seed_ok = abs(chk['Q'] - Qx) / Qx < 1e-12 and chk['crit'] <= 1e-12 and (chk['k'], chk['r']) == (case['k'], case['r'])
+        if not seed_ok:
+            ended = N
+            out['cutoffs'][str(N)] = dict(seed=dict(Q=chk['Q'], crit=chk['crit'], k=chk['k'], r=chk['r'], ok=False),
+                                          points={}, setup_seconds=time.perf_counter() - t0)
+            say(f"   {name} N = {N}: seed FAIL; the case ends here as an instrument failure, nothing solved (Seeds)")
+            continue
         pts = {}
         c_prev, lam_prev, slope, acc = np.sqrt(case['points'][0]['eps'] / chk['Q']) * u, \
             case['lam0'] + case['points'][0]['eps'], 1 / chk['Q'], False
@@ -316,10 +349,10 @@ def checks_of(name, case, out, m815, dry):
             res['K5_code_path'] = ck.check_row_k5(out, case)['K5']
             if name == 'C2a':
                 res['K3_code_path'] = ck.k3(out, case)
+                res['K3_d_probe'] = ck.k3_probe(out, case)
         return res
     if role == 'pyramid':
-        res = dict(K1=all(q is not None and ck.k1(q, case) for e in [p['eps'] for p in case['points']]
-                          for _, q in ck.points_at(out, e)))
+        res = dict(K1=ck.check_pyramid_k1(out, case))
         res['K2'] = ck.check_k2(out, case)
         res['K3'] = ck.k3(out, case)
         res.update(ck.check_pyramid_k4(out, case))
@@ -611,7 +644,25 @@ def e6(results):
     return all(x['same'] and x['count'][0] == x['count'][1] and x['d'] <= x['tol'] for x in rows), rows, missing
 
 
-def dry_claims(outdir, results, log, cut):
+def e7(results):
+    """E7 (the module docstring): (verdict, largest tangent residual over u, missing). The verdict is None where a read
+    point lacks the certificate: not evaluated, never an exception."""
+    worst, missing, held = 0.0, [], True
+    for n in CONTROLS + ('C2a/R5',):
+        R = results[n]
+        for N, c in R['cutoffs'].items():
+            for e, p in c['points'].items():
+                if 'record' not in p:
+                    continue
+                if 'kernel' not in p:
+                    missing.append(f'{n} at N = {N}, eps = {e}')
+                    continue
+                held &= ck.kernel_exact(p, R['case'])
+                worst = max(worst, p['kernel']['tangent'] / ck.ln.U)
+    return (None if missing else bool(held)), worst, missing
+
+
+def dry_claims(outdir, results, log, cut, e7_claim=True):
     say('The dry run\'s claims, derived before it ran (the module docstring):')
     ok = {}
     gate_path = os.path.join(outdir, 'GATE.json')
@@ -641,11 +692,13 @@ def dry_claims(outdir, results, log, cut):
     if ran('E2', ('C2a', 'C2b', 'C3')):
         k3c = c['C2a'].get('K3_code_path', {})
         ok['E2'] = (all(c[n].get('K5_code_path') for n in ('C2a', 'C2b', 'C3'))
-                    and k3c.get('outcome') == 'not resolved, kernel exact'
+                    and str(k3c.get('outcome')).split(':')[0] == 'not resolved, kernel exact'
                     and not any(v['b'] for v in k3c.get('per_N', {}).values()))
         ov = {N: v.get('overlaps') for N, v in k3c.get('per_N', {}).items()}
         say(f"E2. K5 passes on C2a, C2b and C3 at 0.25; K3 on C2a reads {k3c.get('outcome')!r} at (b): {ok['E2']};"
             f" (c) on C2a's smallest pair, reported: {ov}")
+        if 'K3_d_probe' in c['C2a']:
+            say(f"    (d) on that pair, reported: {c['C2a']['K3_d_probe']}")
     if ran('E3', ('C2a:ladder',)):
         lad = c['C2a:ladder']
         agree = [r['eps'] for r in lad.get('rows', []) if r['status'] == 'agrees']
@@ -685,6 +738,14 @@ def dry_claims(outdir, results, log, cut):
                     f" records at {sum(held(x, x['tol']) for x in rows)}: {v6}; the largest difference"
                     f" {max(x['d'] for x in rows):.1e}. Reported beside it, against D7: within the dry run record's own"
                     f" margin at {sum(held(x, x['own']) for x in d7)} of {len(d7)}")
+    if e7_claim and ran('E7', CONTROLS + ('C2a/R5',)):
+        v7, worst, miss7 = e7(results)
+        ok['E7'] = v7
+        if v7 is None:
+            say(f"E7. not evaluated: a read point lacks K3(a)'s certificate: {'; '.join(miss7[:4])}")
+        else:
+            say(f"E7. K3(a)'s certificate at every read point of every control: {v7}; the largest tangent residual"
+                f" {worst:.2g} u, against the cut's {ck.ln.L_CUT / ck.ln.U:.0f} u")
     failed = sum(v is not True for v in ok.values())
     say(f"{failed} of the dry run's claims failed or were not evaluated" +
         (' (plumbing pass, unscored)' if cut is not None else ''))

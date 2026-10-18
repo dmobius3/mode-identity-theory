@@ -1,0 +1,33 @@
+M8.16 dry run: 6 cases; outputs in run/dry
+C1 (control, R3):
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 24: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 32: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 40: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   checks: {'K1': True, 'K4': True}; 710 s
+C2a (control, R4):
+   C2a N = 16, m = 50: seed ok; 4 of 4 points accepted; 6 s
+   C2a N = 24, m = 138: seed ok; 4 of 4 points accepted; 56 s
+   C2a N = 32, m = 316: seed ok; 4 of 4 points accepted; 751 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True, 'K5_code_path': True}; 813 s
+C2b (control, R2):
+   C2b N = 16, m = 22: seed ok; 4 of 4 points accepted; 2 s
+   C2b N = 24, m = 84: seed ok; 4 of 4 points accepted; 27 s
+   C2b N = 32, m = 200: seed ok; 4 of 4 points accepted; 361 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True, 'K5_code_path': True}; 391 s
+C3 (control, R4):
+   C3 N = 16, m = 50: seed ok; 4 of 4 points accepted; 10 s
+   C3 N = 24, m = 138: seed ok; 4 of 4 points accepted; 113 s
+   C3 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1077 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K5_code_path': True}; 1201 s
+C2a/R5 (R5gate, R5):
+   C2a/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 9 s
+   C2a/R5 N = 24, m = 193: seed ok; 4 of 4 points accepted; 198 s
+   C2a/R5 N = 32, m = 433: seed ok; 4 of 4 points accepted; 1893 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True}; 2099 s
+C2a:ladder (dryladder, R4):
+   C2a:ladder N = 16, m = 50: seed ok; 7 of 7 points accepted; 16 s
+   C2a:ladder N = 24, m = 138: seed ok; 7 of 7 points accepted; 166 s
+   C2a:ladder N = 32, m = 316: seed ok; 7 of 7 points accepted; 2023 s
+   checks: {'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 0}; 2205 s
+verdict: {'verdict': 'incomplete', 'instrument': None, 'r5_gate': True, 'rows': {}, 'failed': []}; 7421 s

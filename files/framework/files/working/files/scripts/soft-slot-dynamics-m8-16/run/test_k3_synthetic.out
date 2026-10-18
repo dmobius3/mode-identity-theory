@@ -1,3 +1,9 @@
 K3's overlap, tested (the synthetic claim only, before the dry run).
 1. the synthetic vector: XY 0.800000000000000 against 0.8, Z 0.500000000000000 against 0.5: PASS; the arm, Z unprojected, reads 0.493873, not 0.5: PASS
+6. K3(d) by the rule's own row: at D = 10.5 delta (d) True (ratio 10.50); at 9.5 delta (d) False (its separation fails the rule); the filed 1e-3 test on the point the rule passes: False; no row False, two rows False, none found by (b) False: PASS
+8. K3's pick never crashes: PASS; arm, the filed expression on groups none in the band: ValueError: min() iterable argument is empty
+     PASS  one definite Krein-negative group in the band: (0.5, True)
+     PASS  none Krein-negative: the smallest in the band: (0.3, False)
+     PASS  groups, none in the band: (None, False)
+     PASS  no groups: (None, False)
 0 failed

@@ -12,6 +12,8 @@ Usage: fill_terms.py MIT_REPO OPENWAVE_REPO [--write]
   OPENWAVE_REPO: a checkout of openwave with the upstream remote; M8.15's filed terms are read at upstream/main, for
   the slot action's two commits as M8.15 cites them.
   --write: write m8_16_task_details.md; without it, report the values only.
+  --base COMMIT: read MIT's pages at COMMIT, a commit in MIT_REPO, instead of origin/main, without a fetch, so a
+  rebuild reads the base the terms were built from (UB on #637).
 """
 import json
 import math
@@ -31,12 +33,15 @@ U = 2.220446049250313e-16
 G = 3.0
 
 
+REF = 'origin/main'           # MIT's pages are read here; --base moves it to a fixed commit
+
+
 def git(repo, *args):
     return subprocess.run(['git', '-C', repo, *args], check=True, capture_output=True, text=True).stdout
 
 
 def last_commit(repo, path):
-    sha = git(repo, 'log', '-1', '--format=%H', 'origin/main', '--', path).strip()
+    sha = git(repo, 'log', '-1', '--format=%H', REF, '--', path).strip()
     assert re.fullmatch(r'[0-9a-f]{40}', sha), path
     return sha
 
@@ -49,7 +54,7 @@ def boundary():
 
 def m815_terms_commit(repo):
     """M8.15's governing terms commit on OpenWave, as M8.15's RECORD.md cites it."""
-    rec = git(repo, 'show', f'origin/main:{W}/scripts/soft-slot-dynamics/RECORD.md')
+    rec = git(repo, 'show', f'{REF}:{W}/scripts/soft-slot-dynamics/RECORD.md')
     return re.search(r'governing terms \(OpenWave `([0-9a-f]{8})`', rec).group(1)
 
 
@@ -246,8 +251,13 @@ def costs():
 
 
 def main():
+    global REF
     repo, ow = sys.argv[1], sys.argv[2]
-    git(repo, 'fetch', '-q', 'origin')
+    if '--base' in sys.argv:
+        REF = git(repo, 'rev-parse', '--verify', sys.argv[sys.argv.index('--base') + 1] + '^{commit}').strip()
+        print('MIT read at', REF)
+    else:
+        git(repo, 'fetch', '-q', 'origin')
     git(ow, 'fetch', '-q', 'upstream')
     src = open(os.path.join(HERE, 'm8_16_task_details.src.md'), encoding='utf-8').read()
     pages = {'CEN': f'{W}/slot-dynamics-census.md', 'SSB': f'{W}/soft-slot-branches.md',
@@ -258,7 +268,7 @@ def main():
         sha = last_commit(repo, path)
         sub[key], sub[f'{key}_URL'] = sha[:7], f'{GH}/{sha}/{path}'
     qx = f'{W}/scripts/soft-slot-dynamics-m8-15x/qualification'
-    sha = git(repo, 'log', '-1', '--format=%H', 'origin/main', '--', qx + '/RESULT_2.md', qx + '/REGISTER_2.md').strip()
+    sha = git(repo, 'log', '-1', '--format=%H', REF, '--', qx + '/RESULT_2.md', qx + '/REGISTER_2.md').strip()
     assert re.fullmatch(r'[0-9a-f]{40}', sha)
     sub['QX'], sub['QX_URL'] = sha[:7], f'{GH}/{sha}/{qx}'
     sa, sa9 = slot_action_commits(ow)

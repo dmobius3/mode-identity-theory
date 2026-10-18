@@ -8,7 +8,8 @@ Every test runs on a temporary tree, a copy of instrument/ and reference/m815/ w
 devtools.RUN_ROOT; the target-record tests use a synthetic git repository. No test solves anything, and no test
 constructs a sealed seed: the sealed refusals are read on the name alone.
 
-Claims, derived before the run: each case below is refused, and each green parent proceeds.
+Claims, derived before the run: each case below is refused, and each green parent proceeds. Test 12 also reads entry
+245's kept outputs, each checked against the SHA-256 that entry records, and M8.15's C2a record in reference/m815/.
   1. A case off the allowlist; R0, also when the test FROZEN.json lists it; a sealed name placed in DRY.json.
   2. On the frozen path, as in claim 8 (UB): with devtools.GO emptied and C2a entered in branches.SEALED, C2a without
      FROZEN.json, with a FREEZE file alone present, and with a FROZEN.json whose manifest SHA-256 or terms SHA-256 is
@@ -554,11 +555,148 @@ def test11():
         shutil.rmtree(tmp, ignore_errors=True)
 
 
+def kept245(name):
+    """Entry 245's kept output, checked against the SHA-256 that entry records for it."""
+    import re
+    path = os.path.join(ROOT, 'dev', 'runs', f'245_dry_{name}')
+    with open(os.path.join(ROOT, 'DEVLOG.md'), encoding='utf-8') as f:
+        line = next(x for x in f if f'kept as `dev/runs/245_dry_{name}`' in x)
+    with open(path, 'rb') as f:
+        raw = f.read()
+    if hashlib.sha256(raw).hexdigest() != re.search(r'`([0-9a-f]{64})`', line).group(1):
+        raise RuntimeError(f'{path} differs from the output entry 245 kept')
+    return json.loads(raw.decode('utf-8'))
+
+
+def test12():
+    """xrodz on #637: B2, a failed seed on the pyramid's K1 and K4 and in K6; and the comment tier's reported readings.
+    The pyramid's checks are read on C2a's kept output standing in, so no sealed seed or record is touched."""
+    import copy
+    say("12. the seeds on the pyramid and in K6, and the reported readings (xrodz on #637):")
+    C2a, C2b, lad = kept245('C2a.json'), kept245('C2b.json'), kept245('C2a_ladder.json')
+    with open(os.path.join(ROOT, 'reference', 'm815', 'branch_C2a_R4.json'), encoding='utf-8') as f:
+        m815 = json.load(f)
+    case = C2a['case']
+    N0 = sorted(C2a['cutoffs'], key=int)[0]
+    record("green parent: the pyramid's K1 with every seed passed", ck.check_pyramid_k1(C2a, case) is True,
+           ck.check_pyramid_k1(C2a, case))
+    bad = copy.deepcopy(C2a)
+    bad['cutoffs'][N0]['seed']['ok'] = False
+    k1b, k4b = ck.check_pyramid_k1(bad, case), ck.check_pyramid_k4(bad, case)
+    record("a seed that failed its check fails the pyramid's K1 and K4", not k1b and not k4b['K4'] and not k4b['seeds'],
+           (k1b, k4b['K4'], k4b['seeds']))
+    st = ck.stop_checks('P5', dict(K1=k1b, K2=True, K3=dict(outcome='resolved'), K4=k4b['K4']))
+    record('and the stop names K1 and K4', st == ['K1', 'K4'], st)
+    k6 = ck.check_row_k6(lad, lad['case'], m815)
+    record("green parent: K6 on the kept ladder with every seed passed", k6['K6'] and k6['seeds'], (k6['K6'], k6['seeds']))
+    badl = copy.deepcopy(lad)
+    badl['cutoffs'][sorted(badl['cutoffs'], key=int)[0]]['seed']['ok'] = False
+    k6b = ck.check_row_k6(badl, badl['case'], m815)
+    record('a seed that failed its check: every read point invalid, and K6 fails',
+           not k6b['K6'] and k6b['rows'] and all(r['status'] == 'invalid' for r in k6b['rows']),
+           (k6b['K6'], sorted({r['status'] for r in k6b['rows']})))
+    rep = ck.check_row_k5(C2b, C2b['case'])['reported']
+    want = [ck.key(e) for e in (0.5, 1.0, 2.0)]
+    record("K5's readings at 0.5, 1 and 2 reported at every cutoff, with each mode's deviation",
+           all(k in rep and all(N in rep[k] and 'modes' in rep[k][N] for N in C2b['cutoffs']) for k in want),
+           sorted(rep))
+    slow = [r['slow'] for r in k6['rows']]
+    record("K6's slow comparison beside each read point, with M8.15's level-2 to level-3 change",
+           bool(slow) and all(s.get('imag', {}).get('dev') is not None and s['imag'].get('m815_l2_vs_l3') is not None
+                              for s in slow),
+           [f"{s['imag']['dev']:.1e}/{s['imag']['m815_l2_vs_l3']:.1e}" for s in slow if 'imag' in s])
+    Ns = sorted(C2a['cutoffs'], key=int)
+    pts = [C2a['cutoffs'][N]['points'][ck.key(0.25)] for N in Ns]
+    rd = ck.reading([q['summary'] for q in pts], pts[-1]['eig'], pts[-1]['lam'], pts[-1]['record']['margin'],
+                    int(Ns[0]))
+    tested = [r for r in rd['rows'] if r['role'] == 'tested' and 'd2' in r]
+    record("the rule's relative change between the two highest cutoffs, beside it, against 1e-6",
+           rd['rel_change_max'] is not None and isinstance(rd['rel_change_ok'], bool) and tested
+           and all('rel_change' in r for r in tested), (rd['rel_change_max'], rd['rel_change_ok']))
+    try:
+        json.dumps(dr.jsonable(dict(k5=ck.check_row_k5(C2b, C2b['case']), k6=k6, k6b=k6b, reading=rd)))
+        js = 'serialized'
+    except (TypeError, ValueError) as e:
+        js = f'{type(e).__name__}: {e}'
+    record('the new records serialize as the driver writes them', js == 'serialized', js)
+
+
+def test13():
+    """UA on #637: a failed seed ends the case before any solve. With the seed check made to fail and a sentinel in
+    place of the solver, the sentinel never fires and the failure is recorded; with the seed passing, the sentinel
+    fires, so it is live. C1 the same, its sentinel on the record. And E7's reader (UB)."""
+    import copy
+    say("13. a failed seed ends the case before any solve (UA on #637); E7's reader (UB):")
+    real_checks, real_continue, real_read = br.orbit_checks, br.continue_to, dr.read_point
+
+    def failing(*a, **k):
+        chk = dict(real_checks(*a, **k))
+        chk['crit'] = 1.0
+        return chk
+
+    def sentinel(*a, **k):
+        raise Solved('the solver')
+
+    C2a, C1 = kept245('C2a.json'), kept245('C1.json')
+    for name, case, run, attr in (('C2a', C2a['case'], lambda c: dr.run_case('C2a', c, True), 'continue_to'),
+                                  ('C1', C1['case'], lambda c: dr.run_c1(c), 'read_point')):
+        mod = br if attr == 'continue_to' else dr
+        try:
+            setattr(mod, attr, sentinel)
+            try:
+                run(case)
+                live = False
+            except Solved:
+                live = True
+            record(f"{name}, green parent: with the seed passing, the sentinel in place of {attr} fires", live, live)
+            br.orbit_checks = failing
+            try:
+                out, _ = run(case)
+                fired = False
+            except Solved:
+                out, fired = None, True
+        finally:
+            br.orbit_checks, br.continue_to, dr.read_point = real_checks, real_continue, real_read
+        Ns = [str(N) for N in case['cutoffs']]
+        shape = (out is not None and sorted(out['cutoffs'], key=int) == Ns
+                 and out['cutoffs'][Ns[0]]['seed']['ok'] is False and out['cutoffs'][Ns[0]]['seed']['Q'] is not None
+                 and all(out['cutoffs'][N]['seed'].get('why', '').startswith('not checked') for N in Ns[1:])
+                 and all(not out['cutoffs'][N]['points'] for N in Ns))
+        record(f"{name}: with the seed failing, the sentinel never fires, and every cutoff is recorded with no point",
+               not fired and shape, (fired, shape))
+        try:
+            chk = dr.checks_of(name, case, out, None, True) if out is not None else {}
+            st = ck.stop_checks(name, chk)
+            ok_ = chk.get('K1') is False and chk.get('K4') is False and 'K1' in st and 'K4' in st
+            got = (chk.get('K1'), chk.get('K4'), st)
+        except Exception as e:                                   # the checks must report it, never raise
+            ok_, got = False, f'{type(e).__name__}: {e}'
+        record(f"{name}: its checks report the failure without an exception, and the stop names it", ok_, got)
+    R = {n: kept245(f"{n.replace('/', '_')}.json") for n in ('C1', 'C2a', 'C2b', 'C3', 'C2a/R5')}
+    v0 = dr.e7(R)
+    record("E7 on the kept outputs, which predate the certificate: not evaluated, never an exception",
+           v0[0] is None and v0[2], (v0[0], len(v0[2])))
+    Rc = copy.deepcopy(R)
+    for n, out_ in Rc.items():
+        for c in out_['cutoffs'].values():
+            for p in c['points'].values():
+                if 'record' in p:
+                    ch = out_['case']['chains']
+                    p['kernel'] = dict(tangent=3 * ln.U, dimkerL=ch, l_resolved=True, chains=ch)
+    v1 = dr.e7(Rc)
+    record('E7 with every certificate set exact: holds, its largest tangent residual reported in u',
+           v1[0] is True and abs(v1[1] - 3) < 1e-9, (v1[0], v1[1]))
+    p = next(p for p in Rc['C2b']['cutoffs']['32']['points'].values() if 'record' in p)
+    p['kernel']['tangent'] = 10 * ln.L_CUT
+    v2 = dr.e7(Rc)
+    record('E7 with one tangent ten times the cut: fails', v2[0] is False, (v2[0], round(v2[1])))
+
+
 def main():
     devtools.require('synthetic')
     assert not os.path.exists(os.path.join(ROOT, 'run', 'FROZEN.json')), 'a freeze exists'
     say("The guard's tests (DRIVER_PLAN.md v4), on temporary trees; nothing solved, no sealed seed built.")
-    for t in (test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11):
+    for t in (test1, test2, test3, test4, test5, test6, test7, test8, test9, test10, test11, test12, test13):
         t()
     failed = sum(not ok for _, ok in results)
     say(f'{failed} failed of {len(results)}')

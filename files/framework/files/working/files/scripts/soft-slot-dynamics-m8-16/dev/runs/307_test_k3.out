@@ -1,0 +1,34 @@
+K3's overlap, tested.
+1. the synthetic vector: XY 0.800000000000000 against 0.8, Z 0.500000000000000 against 0.5: PASS; the arm, Z unprojected, reads 0.493873, not 0.5: PASS
+6. K3(d) by the rule's own row: at D = 10.5 delta (d) True (ratio 10.50); at 9.5 delta (d) False (its separation fails the rule); the filed 1e-3 test on the point the rule passes: False; no row False, two rows False, none found by (b) False: PASS
+8. K3's pick never crashes: PASS; arm, the filed expression on groups none in the band: ValueError: min() iterable argument is empty
+     PASS  one definite Krein-negative group in the band: (0.5, True)
+     PASS  none Krein-negative: the smallest in the band: (0.3, False)
+     PASS  groups, none in the band: (None, False)
+     PASS  no groups: (None, False)
+   C3 N = 16: mine (XY 0.000000000000, Z 0.000000000002), M8.15.x's (XY 0.000000000000, Z 0.000000000002): 2.6e-17
+   C3 N = 24: mine (XY 0.000000000001, Z 0.000000000001), M8.15.x's (XY 0.000000000001, Z 0.000000000001): 2.5e-17
+   C3 N = 32: mine (XY 0.000000000000, Z 0.000000000000), M8.15.x's (XY 0.000000000000, Z 0.000000000000): 4.7e-17
+2. against M8.15.x's functions at C3's 3 points: largest difference 4.7e-17: PASS
+   C3 N = 16: ||P_R z||/||z|| = 1.000; T_x, T_y, T_z read as wanted in both implementations to 5.3e-16
+   C3 N = 24: ||P_R z||/||z|| = 1.000; T_x, T_y, T_z read as wanted in both implementations to 6.7e-16
+   C3 N = 32: ||P_R z||/||z|| = 1.000; T_x, T_y, T_z read as wanted in both implementations to 6.7e-16
+3. order one at C3's points: (XY 1, Z 0), (XY 1, Z 0), (XY 0, Z 1), largest departure 6.7e-16: PASS
+   C2a N = 16: ||P_R z||/||z|| = 6.9e-25; the record: (c) 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.9e-25)'
+   C2a N = 24: ||P_R z||/||z|| = 6.5e-25; the record: (c) 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.5e-25)'
+   C2a N = 32: ||P_R z||/||z|| = 2.3e-25; the record: (c) 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 2.3e-25)'
+4. the arm at C2a's points: Q_Z undefined at every cutoff, with the reason: PASS. Reported: M8.15.x's functions, with no guard, read T_x's XY as 0.27, 0.42, 0.78
+5. E2 from the kept outputs under the revised K3: as kept, 'instrument failure: the diagnosis is untested'; with the certificate set, 'not resolved, kernel exact: the diagnosis is wrong'; (b) at []; (c) failed with its reason at 3 of 3 cutoffs; (d) False ((b) fails at the highest cutoff, so no group is read); the kept K5 code paths {'C2a': True, 'C2b': True, 'C3': True}: E2 True: PASS
+7. K3's certificate, on the kept C2a readings: PASS
+     PASS  green parent: the certificate exact: 'not resolved, kernel exact: the diagnosis is wrong'; (a) as filed at N = 16: True
+     PASS  A's zero cluster not separated at one cutoff: 'not resolved, kernel exact: the diagnosis is wrong'; (a) as filed at N = 16: False
+     PASS  V0 not as expected at one cutoff: 'not resolved, kernel exact: the diagnosis is wrong'; (a) as filed at N = 16: False
+     PASS  an orbit tangent with ||L t|| ten times the cut: 'instrument failure: the diagnosis is untested'
+     PASS  L's zero count one above the chains: 'instrument failure: the diagnosis is untested'
+     PASS  an eigenvalue of L in its gray zone: 'instrument failure: the diagnosis is untested'
+     PASS  a seed that failed its check: 'instrument failure: the diagnosis is untested'
+     PASS  a point not accepted: 'instrument failure: the diagnosis is untested'
+     PASS  no certificate: 'instrument failure: the diagnosis is untested'
+     PASS  one Krein-positive pair removed from the slow band: 'instrument failure: the diagnosis is untested'
+     PASS  an extra Krein-negative group in the slow band: 'not resolved, kernel exact: the diagnosis is wrong'; (a) as filed at N = 16: False
+0 failed
