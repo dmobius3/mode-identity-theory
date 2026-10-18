@@ -1,0 +1,69 @@
+The separation rule on C2b (ladders): N = [16, 24], eps from 0.25 to 132 (20 points); EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row {'dim': 6, 'ranks': [1, 0]}; factor 0.1
+C2b N = 16, m = 22: the seed PASS; setup 0.1 s
+   eps   0.2500: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 40 typed groups; 1 s
+   eps   0.3536: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 40 typed groups; 1 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 40 typed groups; 1 s
+   eps   0.7071: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   1.4142: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   2.8284: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   4.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   5.6569: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   8.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  11.3137: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  16.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  22.6274: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  32.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  45.2548: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  64.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps  90.5097: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps 128.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps 132.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+C2b N = 24, m = 84: the seed PASS; setup 1.6 s
+   eps   0.2500: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 152 typed groups; 9 s
+   eps   0.3536: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 154 typed groups; 9 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 154 typed groups; 9 s
+   eps   0.7071: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 156 typed groups; 11 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 160 typed groups; 9 s
+   eps   1.4142: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 163 typed groups; 9 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 163 typed groups; 12 s
+   eps   2.8284: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 163 typed groups; 12 s
+   eps   4.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 162 typed groups; 12 s
+   eps   5.6569: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 164 typed groups; 15 s
+   eps   8.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 13 s
+   eps  11.3137: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 13 s
+   eps  16.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 14 s
+   eps  22.6274: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 164 typed groups; 18 s
+   eps  32.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 20 s
+   eps  45.2548: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 22 s
+   eps  64.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 164 typed groups; 20 s
+   eps  90.5097: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 17 s
+   eps 128.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 14 s
+   eps 132.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 165 typed groups; 15 s
+   eps   0.2500: converged Elliptic; band edge 10; 5 groups read; the smallest ratio 1.12e+03 at -7.96554e-16+0.0152412j (tested, A's gray zone): U 1.36e-05 (remaining 1.4e-05, floor 3.4e-07, numerical 1.1e-13), d 1.52e-02; numerical estimates 1.1e-13 to 1.1e-13
+   eps   0.3536: converged Elliptic; band edge 10; 5 groups read; the smallest ratio 793 at -2.75073e-15+0.0215137j (tested, A's gray zone): U 2.71e-05 (remaining 2.7e-05, floor 4.0e-07, numerical 1.1e-13), d 2.15e-02; numerical estimates 1.1e-13 to 1.1e-13
+   eps   0.5000: converged Elliptic; band edge 10; 5 groups read; the smallest ratio 562 at -5.73173e-16+0.0303441j (tested, A's gray zone): U 5.40e-05 (remaining 5.4e-05, floor 4.8e-07, numerical 1.1e-13), d 3.03e-02; numerical estimates 1.1e-13 to 1.1e-13
+   eps   0.7071: converged Elliptic; band edge 9.99; 5 groups read; the smallest ratio 398 at 7.88984e-16+0.0427525j (tested, A's gray zone): U 1.07e-04 (remaining 1.1e-04, floor 5.7e-07, numerical 1.1e-13), d 4.28e-02; numerical estimates 1.1e-13 to 1.1e-13
+   eps   1.0000: converged Elliptic; band edge 9.97; 5 groups read; the smallest ratio 282 at 1.33224e-15+0.0601433j (tested, A's gray zone): U 2.13e-04 (remaining 2.1e-04, floor 6.7e-07, numerical 1.1e-13), d 6.01e-02; numerical estimates 1.1e-13 to 1.1e-13
+   eps   1.4142: converged Elliptic; band edge 9.95; 5 groups read; the smallest ratio 201 at -8.00034e-16+0.084429j (tested, A's gray zone): U 4.21e-04 (remaining 4.2e-04, floor 8.0e-07, numerical 1.1e-13), d 8.44e-02; numerical estimates 1.1e-13 to 1.1e-13
+   eps   2.0000: converged Elliptic; band edge 9.91; 5 groups read; the smallest ratio 143 at 8.76724e-16+0.118172j (tested, A's gray zone): U 8.28e-04 (remaining 8.3e-04, floor 9.5e-07, numerical 1.1e-13), d 1.18e-01; numerical estimates 1.1e-13 to 1.4e-13
+   eps   2.8284: converged Elliptic; band edge 9.86; 5 groups read; the smallest ratio 102 at 4.57537e-16+0.164731j (tested, A's gray zone): U 1.62e-03 (remaining 1.6e-03, floor 1.1e-06, numerical 1.2e-13), d 1.65e-01; numerical estimates 1.1e-13 to 1.2e-13
+   eps   4.0000: converged Elliptic; band edge 9.79; 5 groups read; the smallest ratio 72.8 at 6.68133e-16+0.228367j (tested, A's gray zone): U 3.14e-03 (remaining 3.1e-03, floor 1.4e-06, numerical 1.2e-13), d 2.28e-01; numerical estimates 1.1e-13 to 1.2e-13
+   eps   5.6569: converged Elliptic; band edge 9.69; 5 groups read; the smallest ratio 52.2 at 6.04362e-16+0.314231j (tested, A's gray zone): U 6.01e-03 (remaining 6.0e-03, floor 1.6e-06, numerical 2.0e-13), d 3.14e-01; numerical estimates 1.2e-13 to 2.0e-13
+   eps   8.0000: Unresolved; band edge 9.55; 5 groups read; the smallest ratio 38.6 at -1.22671e-15+0.131617j (tested, A's gray zone): U 3.41e-03 (remaining 3.4e-03, floor 1.9e-06, numerical 1.2e-13), d 1.32e-01; numerical estimates 1.2e-13 to 1.9e-13; ['tested group at 2.29848e-15+0.428132j: no unique, bidirectional match']
+   eps  11.3137: Unresolved; band edge 9.35; 5 groups read; the smallest ratio 27.7 at -2.37133e-17+0.178174j (tested, A's gray zone): U 6.43e-03 (remaining 6.4e-03, floor 2.3e-06, numerical 1.9e-13), d 1.78e-01; numerical estimates 1.2e-13 to 1.9e-13; ['tested group at 1.5104e-15+0.544409j: no unique, bidirectional match', 'tested group at -9.56884e-17+0.575891j: no unique, bidirectional match']
+   eps  16.0000: Unresolved; band edge 9.08; 5 groups read; the smallest ratio 20.1 at 1.43267e-15+0.237322j (tested, A's gray zone): U 1.18e-02 (remaining 1.2e-02, floor 2.7e-06, numerical 1.9e-13), d 2.37e-01; numerical estimates 1.8e-13 to 2.1e-13; ['tested group at 5.00816e-16+0.732738j: no unique, bidirectional match']
+   eps  22.6274: Unresolved; band edge 8.72; 5 groups read; the smallest ratio 14.7 at -7.39129e-16+0.309447j (tested, A's gray zone): U 2.11e-02 (remaining 2.1e-02, floor 3.3e-06, numerical 2.3e-13), d 3.09e-01; numerical estimates 1.8e-13 to 2.4e-13; ['tested group at -5.46138e-16+0.971158j: no unique, bidirectional match', 'tested group at 8.84308e-16+0.98872j: no unique, bidirectional match']
+   eps  32.0000: Unresolved; band edge 8.23; 5 groups read; the smallest ratio 10.9 at -3.69166e-16+0.392668j (tested, A's gray zone): U 3.60e-02 (remaining 3.6e-02, floor 4.0e-06, numerical 2.3e-13), d 3.93e-01; numerical estimates 2.1e-13 to 4.4e-13; ['tested group at -9.92422e-16+1.26342j: no unique, bidirectional match', 'tested group at -1.77584e-15+1.25207j: no unique, bidirectional match']
+   eps  45.2548: Unresolved; band edge 7.57; 5 groups read; the smallest ratio 8.26 at -5.41824e-16+0.481824j (tested, A's gray zone): U 5.83e-02 (remaining 5.8e-02, floor 4.8e-06, numerical 5.0e-13), d 4.82e-01; numerical estimates 2.4e-13 to 5.5e-13; ['tested group at 4.62812e-16+1.60802j: no unique, bidirectional match', 'tested group at -1.08987e-15+1.5411j: no unique, bidirectional match']
+   eps  64.0000: Unresolved; band edge 6.7; 5 groups read; the smallest ratio 6.42 at -1.39575e-15+0.568243j (tested, A's gray zone): U 8.85e-02 (remaining 8.9e-02, floor 5.9e-06, numerical 5.6e-13), d 5.68e-01; numerical estimates 4.6e-13 to 5.7e-13; ['tested group at 1.863e-15+1.83458j: no unique, bidirectional match', "tested group at -2.97774e-16+1.12494j: U 1.74e-01 above a tenth of its distance to A's gray zone, 1.12e+00"]
+   eps  90.5097: Unresolved; band edge 5.58; 5 groups read; the smallest ratio 5.26 at -1.08034e-16+1.27528j (tested, A's gray zone): U 2.42e-01 (remaining 2.4e-01, floor 7.2e-06, numerical 5.4e-13), d 1.28e+00; numerical estimates 4.6e-13 to 5.8e-13; ['tested group at 1.12176e-15+2.09953j: no unique, bidirectional match', "tested group at -1.08034e-16+1.27528j: U 2.42e-01 above a tenth of its distance to A's gray zone, 1.28e+00"]
+      the tested group nearest zero: 9.51265e-16+0.365904j (imag, Krein 0): U 5.10e-02, d 3.66e-01 (A's gray zone), ratio 7.17
+   eps 128.0000: Unresolved; band edge 4.15; 3 groups read; the smallest ratio 5.91 at -5.87118e-16+0.38626j (tested, A's gray zone): U 6.54e-02 (remaining 6.5e-02, floor 9.0e-06, numerical 5.6e-13), d 3.86e-01; numerical estimates 5.6e-13 to 5.6e-13; ['tested group at -3.18884e-16+1.37929j: no unique, bidirectional match', 'tested group at 1.83547e-15+0.690135j: no unique, bidirectional match']
+      the tested group nearest zero: -5.87118e-16+0.38626j (imag, Krein 0): U 6.54e-02, d 3.86e-01 (A's gray zone), ratio 5.91
+   eps 132.0000: Unresolved; band edge 4.01; 3 groups read; the smallest ratio 5.81 at 2.2227e-15+0.387305j (tested, A's gray zone): U 6.66e-02 (remaining 6.7e-02, floor 9.2e-06, numerical 5.3e-13), d 3.87e-01; numerical estimates 5.3e-13 to 5.3e-13; ['tested group at -1.35388e-15+1.38569j: no unique, bidirectional match', 'tested group at 1.14766e-15+0.693101j: no unique, bidirectional match']
+      the tested group nearest zero: 2.2227e-15+0.387305j (imag, Krein 0): U 6.66e-02, d 3.87e-01 (A's gray zone), ratio 5.81
+1. every point accepted: PASS
+2. no eps converged with a type other than Elliptic: PASS  (0 wrong; reported: 10 converged and 10 Unresolved of 20)
+0 failed; 295 s

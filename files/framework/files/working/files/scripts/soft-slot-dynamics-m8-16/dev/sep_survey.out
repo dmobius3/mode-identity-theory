@@ -1,0 +1,71 @@
+The separation survey (an analysis of records): section 10.2's record-only terms at section 7's calibration.
+Krein-negative imaginary groups in C2a's and C2b's records, and among the sample's slow groups: 0.
+sample  C2a eps      0.5 N [16, 24, 32, 40]: slowest-ratio eigenvalue 1.1615e-03; remaining 1.08e-16, floor 8.51e-07 (the floor); ratio 1.36e+03
+sample  C2a eps        1 N [16, 24, 32, 40]: slowest-ratio eigenvalue 2.2934e-03; remaining 6.37e-17, floor 1.20e-06 (the floor); ratio 1.9e+03
+sample  C2a eps        2 N [16, 24, 32, 40]: slowest-ratio eigenvalue 4.4720e-03; remaining 1.28e-19, floor 1.70e-06 (the floor); ratio 2.62e+03
+ladders C2a eps     0.25 N [24, 32]: slowest-ratio eigenvalue 5.8452e-04; remaining 8.00e-15, floor 4.80e-07 (the floor); ratio 1.21e+03
+ladders C2a eps   0.3536 N [24, 32]: slowest-ratio eigenvalue 8.2443e-04; remaining 7.87e-15, floor 5.71e-07 (the floor); ratio 1.44e+03
+ladders C2a eps      0.5 N [24, 32]: slowest-ratio eigenvalue 1.1615e-03; remaining 2.60e-14, floor 6.79e-07 (the floor); ratio 1.71e+03
+ladders C2a eps   0.7071 N [24, 32]: slowest-ratio eigenvalue 1.6339e-03; remaining 1.04e-13, floor 8.08e-07 (the floor); ratio 2.02e+03
+ladders C2a eps        1 N [24, 32]: slowest-ratio eigenvalue 2.2934e-03; remaining 4.21e-13, floor 9.61e-07 (the floor); ratio 2.38e+03
+ladders C2a eps    1.414 N [24, 32]: slowest-ratio eigenvalue 3.2093e-03; remaining 1.61e-12, floor 1.14e-06 (the floor); ratio 2.8e+03
+ladders C2a eps        2 N [24, 32]: slowest-ratio eigenvalue 4.4720e-03; remaining 6.19e-12, floor 1.36e-06 (the floor); ratio 3.29e+03
+ladders C2a eps    2.828 N [24, 32]: slowest-ratio eigenvalue 6.1949e-03; remaining 2.34e-11, floor 1.62e-06 (the floor); ratio 3.83e+03
+ladders C2a eps        4 N [24, 32]: slowest-ratio eigenvalue 8.5127e-03; remaining 8.69e-11, floor 1.92e-06 (the floor); ratio 4.42e+03
+ladders C2a eps    5.657 N [24, 32]: slowest-ratio eigenvalue 1.1570e-02; remaining 3.13e-10, floor 2.29e-06 (the floor); ratio 5.05e+03
+ladders C2a eps        8 N [24, 32]: slowest-ratio eigenvalue 1.5497e-02; remaining 1.08e-09, floor 2.72e-06 (the floor); ratio 5.68e+03
+ladders C2a eps    11.31 N [24, 32]: slowest-ratio eigenvalue 2.0360e-02; remaining 3.55e-09, floor 3.24e-06 (the floor); ratio 6.27e+03
+ladders C2a eps       16 N [24, 32]: slowest-ratio eigenvalue 2.6101e-02; remaining 1.09e-08, floor 3.86e-06 (the floor); ratio 6.75e+03
+ladders C2a eps    22.63 N [24, 32]: slowest-ratio eigenvalue 3.2459e-02; remaining 3.08e-08, floor 4.61e-06 (the floor); ratio 7.04e+03
+ladders C2a eps       32 N [24, 32]: slowest-ratio eigenvalue 3.8936e-02; remaining 7.86e-08, floor 5.50e-06 (the floor); ratio 7.08e+03
+ladders C2a eps    45.25 N [24, 32, 40]: slowest-ratio eigenvalue 4.4838e-02; remaining 4.46e-16, floor 8.23e-06 (the floor); ratio 5.44e+03
+ladders C2a eps       64 N [24, 32, 40]: slowest-ratio eigenvalue 4.9420e-02; remaining 9.99e-17, floor 9.86e-06 (the floor); ratio 5.01e+03
+ladders C2a eps       72 N [24, 32, 40]: slowest-ratio eigenvalue 5.0565e-02; remaining 6.32e-16, floor 1.05e-05 (the floor); ratio 4.82e+03
+sample  C2b eps      0.5 N [16, 24, 32, 40]: slowest-ratio eigenvalue 6.0686e-03; remaining 4.07e-17, floor 8.23e-07 (the floor); ratio 7.37e+03
+sample  C2b eps        1 N [16, 24, 32, 40]: slowest-ratio eigenvalue 1.2027e-02; remaining 1.96e-18, floor 1.16e-06 (the floor); ratio 1.03e+04
+sample  C2b eps        2 N [16, 24, 32, 40]: slowest-ratio eigenvalue 2.3625e-02; remaining 1.17e-20, floor 1.65e-06 (the floor); ratio 1.43e+04
+ladders C2b eps     0.25 N [24, 32]: slowest-ratio eigenvalue 3.0482e-03; remaining 1.34e-13, floor 4.60e-07 (the floor); ratio 6.62e+03
+ladders C2b eps   0.3536 N [24, 32]: slowest-ratio eigenvalue 4.3026e-03; remaining 4.79e-13, floor 5.47e-07 (the floor); ratio 7.86e+03
+ladders C2b eps      0.5 N [24, 32]: slowest-ratio eigenvalue 6.0686e-03; remaining 1.90e-12, floor 6.51e-07 (the floor); ratio 9.32e+03
+ladders C2b eps   0.7071 N [24, 32]: slowest-ratio eigenvalue 8.5499e-03; remaining 7.56e-12, floor 7.74e-07 (the floor); ratio 1.1e+04
+ladders C2b eps        1 N [24, 32]: slowest-ratio eigenvalue 1.2027e-02; remaining 2.98e-11, floor 9.21e-07 (the floor); ratio 1.31e+04
+ladders C2b eps    1.414 N [24, 32]: slowest-ratio eigenvalue 1.6882e-02; remaining 1.17e-10, floor 1.10e-06 (the floor); ratio 1.54e+04
+ladders C2b eps        2 N [24, 32]: slowest-ratio eigenvalue 2.3625e-02; remaining 4.53e-10, floor 1.30e-06 (the floor); ratio 1.81e+04
+ladders C2b eps    2.828 N [24, 32]: slowest-ratio eigenvalue 3.2921e-02; remaining 1.74e-09, floor 1.55e-06 (the floor); ratio 2.12e+04
+ladders C2b eps        4 N [24, 32]: slowest-ratio eigenvalue 4.5607e-02; remaining 6.57e-09, floor 1.84e-06 (the floor); ratio 2.47e+04
+ladders C2b eps    5.657 N [24, 32]: slowest-ratio eigenvalue 6.2676e-02; remaining 2.43e-08, floor 2.20e-06 (the floor); ratio 2.85e+04
+ladders C2b eps        8 N [24, 32]: slowest-ratio eigenvalue 8.5199e-02; remaining 8.69e-08, floor 2.61e-06 (the floor); ratio 3.26e+04
+ladders C2b eps    11.31 N [24, 32]: slowest-ratio eigenvalue 1.1414e-01; remaining 2.99e-07, floor 3.11e-06 (the floor); ratio 3.66e+04
+ladders C2b eps       16 N [24, 32]: slowest-ratio eigenvalue 1.5002e-01; remaining 9.74e-07, floor 3.71e-06 (the floor); ratio 4.04e+04
+ladders C2b eps    22.63 N [24, 32]: slowest-ratio eigenvalue 6.0960e-01; remaining 1.84e-05, floor 4.43e-06 (the change); ratio 3.32e+04
+ladders C2b eps       32 N [24, 32]: slowest-ratio eigenvalue 7.7328e-01; remaining 5.36e-05, floor 5.30e-06 (the change); ratio 1.44e+04
+ladders C2b eps    45.25 N [24, 32]: slowest-ratio eigenvalue 9.5029e-01; remaining 1.43e-04, floor 6.35e-06 (the change); ratio 6.63e+03
+ladders C2b eps       64 N [24, 32]: slowest-ratio eigenvalue 1.1246e+00; remaining 3.46e-04, floor 7.63e-06 (the change); ratio 3.25e+03
+ladders C2b eps    90.51 N [24, 32, 40]: slowest-ratio eigenvalue 3.6581e-01; remaining 9.70e-12, floor 1.15e-05 (the floor); ratio 3.19e+04
+ladders C2b eps      128 N [24, 32, 40]: slowest-ratio eigenvalue 3.8609e-01; remaining 2.39e-11, floor 1.38e-05 (the floor); ratio 2.79e+04
+ladders C2b eps      132 N [24, 32, 40]: slowest-ratio eigenvalue 3.8712e-01; remaining 2.58e-11, floor 1.41e-05 (the floor); ratio 2.75e+04
+sample  C3  eps      0.5 N [16, 24, 32, 40]: slowest-ratio eigenvalue 4.9182e-03; remaining 6.27e-20, floor 7.70e-07 (the floor); ratio 6.38e+03
+sample  C3  eps        1 N [16, 24, 32, 40]: slowest-ratio eigenvalue 9.7370e-03; remaining 1.68e-20, floor 1.09e-06 (the floor); ratio 8.93e+03
+sample  C3  eps        2 N [16, 24, 32, 40]: slowest-ratio eigenvalue 1.9090e-02; remaining 6.29e-18, floor 1.54e-06 (the floor); ratio 1.24e+04
+ladders C3  eps     0.25 N [24, 32]: slowest-ratio eigenvalue 2.4717e-03; remaining 1.49e-12, floor 4.35e-07 (the floor); ratio 5.69e+03
+ladders C3  eps   0.3536 N [24, 32]: slowest-ratio eigenvalue 3.4881e-03; remaining 5.95e-12, floor 5.17e-07 (the floor); ratio 6.75e+03
+ladders C3  eps      0.5 N [24, 32]: slowest-ratio eigenvalue 4.9182e-03; remaining 2.37e-11, floor 6.15e-07 (the floor); ratio 8e+03
+ladders C3  eps   0.7071 N [24, 32]: slowest-ratio eigenvalue 6.9261e-03; remaining 9.38e-11, floor 7.31e-07 (the floor); ratio 9.47e+03
+ladders C3  eps        1 N [24, 32]: slowest-ratio eigenvalue 9.7370e-03; remaining 3.71e-10, floor 8.70e-07 (the floor); ratio 1.12e+04
+ladders C3  eps    1.414 N [24, 32]: slowest-ratio eigenvalue 1.3656e-02; remaining 1.46e-09, floor 1.03e-06 (the floor); ratio 1.32e+04
+ladders C3  eps        2 N [24, 32]: slowest-ratio eigenvalue 1.9090e-02; remaining 5.69e-09, floor 1.23e-06 (the floor); ratio 1.55e+04
+ladders C3  eps    2.828 N [24, 32]: slowest-ratio eigenvalue 2.6565e-02; remaining 2.20e-08, floor 1.47e-06 (the floor); ratio 1.81e+04
+ladders C3  eps        4 N [24, 32]: slowest-ratio eigenvalue 3.6743e-02; remaining 8.39e-08, floor 1.74e-06 (the floor); ratio 2.11e+04
+ladders C3  eps    5.657 N [24, 32]: slowest-ratio eigenvalue 5.0408e-02; remaining 3.15e-07, floor 2.08e-06 (the floor); ratio 2.43e+04
+ladders C3  eps        8 N [24, 32]: slowest-ratio eigenvalue 6.8431e-02; remaining 1.15e-06, floor 2.48e-06 (the floor); ratio 2.76e+04
+ladders C3  eps    11.31 N [24, 32]: slowest-ratio eigenvalue 9.1686e-02; remaining 4.10e-06, floor 2.95e-06 (the change); ratio 2.24e+04
+ladders C3  eps       16 N [24, 32]: slowest-ratio eigenvalue 1.2096e-01; remaining 1.40e-05, floor 3.53e-06 (the change); ratio 8.62e+03
+ladders C3  eps    22.63 N [24, 32]: slowest-ratio eigenvalue 1.5691e-01; remaining 4.59e-05, floor 4.22e-06 (the change); ratio 3.42e+03
+ladders C3  eps       32 N [24, 32]: slowest-ratio eigenvalue 2.0031e-01; remaining 1.43e-04, floor 5.06e-06 (the change); ratio 1.4e+03
+ladders C3  eps    45.25 N [24, 32, 40]: slowest-ratio eigenvalue 2.5258e-01; remaining 8.12e-08, floor 7.67e-06 (the floor); ratio 3.29e+04
+ladders C3  eps       64 N [24, 32, 40]: slowest-ratio eigenvalue 3.1629e-01; remaining 8.52e-07, floor 9.26e-06 (the floor); ratio 3.41e+04
+ladders C3  eps       72 N [24, 32, 40]: slowest-ratio eigenvalue 3.4116e-01; remaining 1.86e-06, floor 9.89e-06 (the floor); ratio 3.45e+04
+
+sample: 9 points; the smallest ratio 1.36e+03 (C2a, eps 0.5, N [16, 24, 32, 40], the floor); the floor binds at all
+ladders: 56 points; the smallest ratio 1.21e+03 (C2a, eps 0.25, N [24, 32], the floor); the change binds at 8, smallest 1.4e+03 (C3, eps 32)
+All 65 points: below 10, 0; non-contracting, 0; the smallest ratio 1.21e+03.

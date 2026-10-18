@@ -1,0 +1,4 @@
+The separation rule re-read on C2a's saved summaries, under convergence.py as it now is: ['ladders', 'sample']
+ladders (171_sep_controls_C2a_ladders.json): 18 of 18 verdicts as shipped, at N = [16, 24]
+sample (170_sep_controls_C2a_sample.json): 3 of 3 verdicts as shipped, at N = [16, 24, 32]
+PASS: 21 of 21 re-read verdicts equal the shipped ones

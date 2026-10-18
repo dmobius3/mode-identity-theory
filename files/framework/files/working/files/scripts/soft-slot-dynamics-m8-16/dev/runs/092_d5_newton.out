@@ -1,0 +1,34 @@
+R4, N = 12: PASS
+   unbordered: converged True in 6 evaluations, |c - c*|/|c*| 1.8e-16, |lam - lam*| 0.0e+00, floor 7.4e-15 (1.8e-17 relative), quadratic True (largest r(k+1)/r(k)^2 9.17e-02 over 1 steps)
+   bordered (rank 4): converged True in 6 evaluations, |c - c*|/|c*| 2.7e-16, |lam - lam*| 0.0e+00, floor 4.5e-15 (1.1e-17 relative; unbordered 1.1e-17, multipliers 3.3e-18 relative), quadratic True (largest 7.94e-02 over 1 steps), multipliers 8.7e-16
+   the tangents' rank: 4 at a random state, 3 at a weight vector of level 6
+R5, N = 12: PASS
+   unbordered: converged True in 7 evaluations, |c - c*|/|c*| 1.7e-16, |lam - lam*| 0.0e+00, floor 1.5e-15 (3.0e-18 relative), quadratic True (largest r(k+1)/r(k)^2 8.72e-02 over 1 steps)
+   bordered (rank 4): converged True in 7 evaluations, |c - c*|/|c*| 1.9e-16, |lam - lam*| 0.0e+00, floor 4.7e-15 (9.6e-18 relative; unbordered 9.8e-18, multipliers 2.2e-18 relative), quadratic True (largest 7.15e-02 over 1 steps), multipliers 7.5e-16
+   the tangents' rank: 4 at a random state, 3 at a weight vector of level 6
+R2, N = 12: PASS
+   unbordered: converged True in 6 evaluations, |c - c*|/|c*| 8.1e-16, |lam - lam*| 0.0e+00, floor 1.9e-15 (6.8e-18 relative), quadratic True (largest r(k+1)/r(k)^2 2.80e-01 over 2 steps)
+   bordered (rank 6): converged True in 6 evaluations, |c - c*|/|c*| 4.2e-16, |lam - lam*| 0.0e+00, floor 2.3e-15 (8.2e-18 relative; unbordered 8.2e-18, multipliers 3.1e-18 relative), quadratic True (largest 3.23e-01 over 2 steps), multipliers 6.7e-16
+   the tangents' rank: 6 at a random state, 5 at a weight vector of level 7
+arms
+   arm: Newton with its step halved (R4)                         RED  (22 evaluations, last residual 1.3e-06)
+   arm: the halved step's false floor, no fixed stop (R4)        RED  (stopped at 23 of 40 evaluations, floor 6.0e-07, 1.5e-09 relative; accepted False)
+   arm: the Jacobian's quartic part scaled by 1 + 1e-3 (R4)      RED  (residuals 2.2e+00, 4.8e-03, 8.3e-06, 6.2e-09, 9.8e-12, 2.0e-14)
+   arm: a perturbation with a tangent component, bordered (R4)   RED  (accepted False, |c - c*|/|c*| 4.0e-02, multipliers 4.0e-01; relative: floor 2.3e-17, unbordered 9.7e-04, multipliers 9.7e-04)
+4. R4, N = 24, m = 138, ||c*|| = 2: PASS  accepted True in 7 evaluations; floor 2.3e-14 (1.3e-17 relative), unbordered 1.3e-17; |c - c*|/|c*| 1.3e-16, |lam - lam*| 0.0e+00; 2.0 s per evaluation (setup 1.0 s)
+4. R4, N = 24, m = 138, ||c*|| = 20: PASS  accepted True in 6 evaluations; floor 2.7e-12 (7.2e-17 relative), unbordered 7.2e-17; |c - c*|/|c*| 1.9e-16, |lam - lam*| 3.6e-14; 1.9 s per evaluation (setup 1.0 s)
+5. R2, level 7, eps 0.5, off the float grid (seed 1e-04 off): PASS  accepted True in 4 evaluations; floor 5.35e-16, 6.8e-18 against the size before cancelling, 8.0e-16 against the cancelled size
+5. R2, level 7, eps 2.0, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 7.83e-15, 4.7e-17 against the size before cancelling, 1.4e-15 against the cancelled size
+5. R2, level 7, eps 6.0, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 7.77e-15, 2.6e-17 against the size before cancelling, 2.8e-16 against the cancelled size
+5. R2, level 7, eps 72.0, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 1.00e-13, 4.7e-17 against the size before cancelling, 8.5e-17 against the cancelled size
+5. R2, level 7, eps 0.01, off the float grid (seed 1e-05 off): PASS  accepted True in 4 evaluations; floor 1.28e-17, 1.2e-18 against the size before cancelling, 7.0e-15 against the cancelled size
+5. R2, level 7, eps 0.1, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 3.21e-16, 9.2e-18 against the size before cancelling, 5.3e-15 against the cancelled size
+5. R4, level 6, eps 0.5, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 4.36e-16, 6.9e-18 against the size before cancelling, 6.3e-16 against the cancelled size
+5. R4, level 6, eps 2.0, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 3.41e-15, 2.6e-17 against the size before cancelling, 6.0e-16 against the cancelled size
+5. R4, level 6, eps 6.0, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 3.93e-15, 1.6e-17 against the size before cancelling, 1.4e-16 against the cancelled size
+5. R4, level 6, eps 72.0, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 1.37e-13, 7.1e-17 against the size before cancelling, 1.1e-16 against the cancelled size
+5. R4, level 6, eps 0.01, off the float grid (seed 1e-05 off): PASS  accepted True in 4 evaluations; floor 2.19e-16, 2.5e-17 against the size before cancelling, 1.1e-13 against the cancelled size
+5. R4, level 6, eps 0.1, off the float grid (seed 1e-04 off): PASS  accepted True in 5 evaluations; floor 9.81e-16, 3.5e-17 against the size before cancelling, 1.5e-14 against the cancelled size
+   arm: claim 5 at eps = 0.01 against the cancelled size        RED  (over the bound in ['R2', 'R4'])
+   unscored, eps = 0.1 against the cancelled size (UA's proposal): ['R2 5.3e-15', 'R4 1.5e-14']
+0 failed (claims and arms)

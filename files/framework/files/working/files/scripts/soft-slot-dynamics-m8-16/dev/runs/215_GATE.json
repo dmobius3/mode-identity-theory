@@ -1,0 +1,92 @@
+{
+ "written": "2026-10-17T22:10:49Z",
+ "stop": "C2a failed a check",
+ "cases": {
+  "C1": {
+   "K1": true,
+   "K4": true
+  },
+  "C2a": {
+   "K1": true,
+   "K4": false,
+   "converged": false,
+   "bar": true,
+   "trend": true,
+   "deviations": {
+    "12": [
+     0.0060484851042058195,
+     0.04677611928948177
+    ],
+    "16": [
+     0.0070294818257076695,
+     0.0540162190560619
+    ],
+    "20": [
+     0.007284029074047282,
+     0.055900611175210196
+    ]
+   },
+   "K2": true,
+   "K5_code_path": false,
+   "K3_code_path": {
+    "outcome": "not resolved, kernel exact",
+    "per_N": {
+     "12": {
+      "a": true,
+      "b": false,
+      "c": false,
+      "d": false,
+      "overlaps": {
+       "xy": 2.814936788235691e-13,
+       "z": 6.267118034046967e-13,
+       "group": [
+        -3.9048729085935426e-16,
+        0.0005854620455406376
+       ],
+       "krein_negative": false
+      }
+     },
+     "16": {
+      "a": true,
+      "b": false,
+      "c": false,
+      "d": false,
+      "overlaps": {
+       "xy": 1.917285620597207e-12,
+       "z": 3.559948655213113e-12,
+       "group": [
+        4.641219104692081e-16,
+        0.0005846218033234975
+       ],
+       "krein_negative": false
+      }
+     },
+     "20": {
+      "a": true,
+      "b": false,
+      "c": false,
+      "d": false,
+      "overlaps": {
+       "xy": 4.793378293671568e-13,
+       "z": 6.864568644371186e-12,
+       "group": [
+        3.040625102861384e-16,
+        0.000584524922659103
+       ],
+       "krein_negative": false
+      }
+     }
+    }
+   }
+  }
+ },
+ "complete": false,
+ "instrument_ok": null,
+ "r5_gate": false,
+ "absent": [
+  "C2b",
+  "C3",
+  "C2a/R5",
+  "P5"
+ ]
+}

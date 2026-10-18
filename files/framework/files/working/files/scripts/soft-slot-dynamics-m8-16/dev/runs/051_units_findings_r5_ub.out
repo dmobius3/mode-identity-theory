@@ -1,0 +1,9 @@
+UB's float grid: R2, level 7, eps 0.5: 5 evaluations, floor 1.21e-15; against the cancelled size 1.8e-15 (accepted by the package as it stands: False); against the size before cancelling 1.5e-17
+UB's float grid: R2, level 7, eps 2.0: 5 evaluations, floor 5.01e-15; against the cancelled size 9.8e-16 (accepted by the package as it stands: True); against the size before cancelling 3.2e-17
+UB's float grid: R2, level 7, eps 6.0: 6 evaluations, floor 6.53e-15; against the cancelled size 2.3e-16 (accepted by the package as it stands: True); against the size before cancelling 2.1e-17
+UB's float grid: R2, level 7, eps 72.0: 6 evaluations, floor 1.46e-13; against the cancelled size 1.3e-16 (accepted by the package as it stands: True); against the size before cancelling 7.3e-17
+UB's float grid: R4, level 6, eps 0.5: 5 evaluations, floor 7.24e-16; against the cancelled size 1.0e-15 (accepted by the package as it stands: False); against the size before cancelling 1.2e-17
+UB's float grid: R4, level 6, eps 2.0: 5 evaluations, floor 3.72e-15; against the cancelled size 6.7e-16 (accepted by the package as it stands: True); against the size before cancelling 2.9e-17
+UB's float grid: R4, level 6, eps 6.0: 5 evaluations, floor 5.45e-15; against the cancelled size 1.9e-16 (accepted by the package as it stands: True); against the size before cancelling 2.3e-17
+UB's float grid: R4, level 6, eps 72.0: 6 evaluations, floor 1.56e-13; against the cancelled size 1.3e-16 (accepted by the package as it stands: True); against the size before cancelling 8.0e-17
+UB's float grid: refused at low eps against the cancelled size: ['R2 at 0.5', 'R4 at 0.5']; the largest floor against the size before cancelling 8.0e-17: reproduced

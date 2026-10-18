@@ -1,0 +1,50 @@
+DL recalibration claims, under RECAL_PLAN.md: margin = 2 sqrt(u ||A|| max(m, 0.2)), G = 3, kappa_d = 10, kappa_L = 200
+1. claim 3's system, m = 72: PASS  margin 1.0e-05, cluster max 1.0e-07; V0 4 [2, 0]; (n(L), n(D), K) = (4, 1, 3), k_r 1, k_c 1; Hyperbolic; unresolved []
+1'. claim 1 at m = 21, 40 mixings: FAIL  as derived at 38 of 40; the cluster 9.6 to 34 times below the gray zone
+2. the gray zone below the margin: PASS  (a) s 8e-6 in (3.5e-06, 1.0e-05): Unresolved, ['the zero cluster is not separated', 'V0 does not match its expectation', 'n(D)']; (b) s 1e-7: Hyperbolic (4, 1, 3), unresolved []
+3. the gray zone above the margin: PASS  s = 0.8 G margins (2.5e-05), L's eigenvalue 2.1e-07 ||L||: Unresolved ['the zero cluster is not separated']; s = 2 G margins (6.3e-05), L's eigenvalue 5.2e-07 ||L||: Elliptic
+4. the leak bound: PASS  (a) refusals True; (b) bound 4.2e-10: ten times it Unresolved, a tenth Hyperbolic; (c) a factor of 1e12: Unresolved, ['V0 cannot be checked: the leak bound 2.1e+00 is above 1e-04, too large to discriminate']
+5. UB's collision near 35.7i: PASS  exact separation 1.5e-24, |Re| 0.0e+00; ||A|| 1804, margin 5.7e-07; 40 mixings: Unresolved 40
+6. near the collision: PASS  (a) separation 1.0e-05: Unresolved 10; (b) separation 1.0e-03: Elliptic 10; (c) real part 1.0e-05: Unresolved 10; (d) real part 1.0e-03: Hyperbolic 10
+7. the second limit, L's inertia: PASS  s 3e-05, L's eigenvalue 4.6e-08 ||L||, margin 3.5e-06: Unresolved ['n(L)']; s 1e-04, L's eigenvalue 1.5e-07 ||L||, margin 3.5e-06: Elliptic []
+8. missing tangents: PASS  (a) with the tangents: Elliptic (1, 1, 0); (b) an empty list, undeclared: Unresolved, ['V0 cannot be checked: no symmetry directions were given, and none were declared absent']
+   (claim 5 under kappa_d = 0: Hyperbolic at 2 of 40 mixings)
+   arm, the empty tangent list read as declared (an implicit skip): claim 8: red, as it must be
+   arm, no gray zone (G = 1.0001): claim 2: red, as it must be
+   arm, no gray zone (G = 1.0001): claim 3: red, as it must be
+   arm, a fixed leak bound of 1: claim 4: red, as it must be
+   arm, one margin for every role (kappa_d = 0): claim 5: red, as it must be
+   arm, one margin for every role (kappa_d = 0): claim 6: red, as it must be
+Unscored (UA): DL's original constructions under both calibrations, 31 readings; 1 change:
+   claim 2, the free operator in R2: original Elliptic (16, 0, 16); recalibrated Elliptic (16, 0, 16)
+   claim 2, the free operator in R4: original Elliptic (14, 0, 14); recalibrated Elliptic (14, 0, 14)
+   claim 2, the free operator in R5: original Elliptic (14, 0, 14); recalibrated Elliptic (14, 0, 14)
+   claim 3: original Hyperbolic (4, 1, 3); recalibrated Hyperbolic (4, 1, 3)
+   claim 4: original Hyperbolic (6, 1, 5); recalibrated Hyperbolic (6, 1, 5)
+   claim 5, case 1, t = +0.5: original Elliptic (0, 0, 0); recalibrated Elliptic (0, 0, 0)
+   claim 5, case 2, B = diag(t, +1), t = +0.5: original Elliptic (0, 0, 0); recalibrated Elliptic (0, 0, 0)
+   claim 5, case 2, B = diag(t, -1), t = +0.5: original Hyperbolic (1, 0, 1); recalibrated Hyperbolic (1, 0, 1)
+   claim 5, case 3, t = +0.5: original Elliptic (0, 0, 0); recalibrated Elliptic (0, 0, 0)
+   claim 5, case 1, t = -0.5: original Elliptic (2, 0, 2); recalibrated Elliptic (2, 0, 2)
+   claim 5, case 2, B = diag(t, +1), t = -0.5: original Hyperbolic (1, 0, 1); recalibrated Hyperbolic (1, 0, 1)
+   claim 5, case 2, B = diag(t, -1), t = -0.5: original Elliptic (2, 0, 2); recalibrated Elliptic (2, 0, 2)
+   claim 5, case 3, t = -0.5: original Elliptic (1, 1, 0); recalibrated Elliptic (1, 1, 0)
+   claim 5, the degenerate family, t = -0.1: original Hyperbolic (2, 0, 2); recalibrated Hyperbolic (2, 0, 2)
+   claim 5, a regular control, t = -0.1: original Hyperbolic (2, 1, 1); recalibrated Hyperbolic (2, 1, 1)
+   claim 5, the degenerate family, t = +0.1: original Elliptic (1, 1, 0); recalibrated Elliptic (1, 1, 0)
+   claim 5, a regular control, t = +0.1: original Elliptic (1, 1, 0); recalibrated Elliptic (1, 1, 0)
+   claim 6(a): original Unresolved (4, 1, 4); recalibrated Unresolved (4, 1, 4)
+   claim 6(b): original Hyperbolic (4, 1, 3); recalibrated Hyperbolic (4, 1, 3)
+   claim 7, stable, separation 2e-4: original Elliptic (3, 1, 2); recalibrated Elliptic (3, 1, 2)
+   claim 7, stable, separation 4e-5: original Elliptic (3, 1, 2); recalibrated Elliptic (3, 1, 2)
+   claim 7, stable, separation 2e-6: original Unresolved (3, 1, 2); recalibrated Unresolved (3, 1, 2)
+   claim 7, the collision: original Unresolved (3, 1, 2); recalibrated Unresolved (3, 1, 2)
+   claim 7, unstable, real part 3.16e-7 (UA): original Unresolved (3, 1, 2); recalibrated Unresolved (3, 1, 2)
+   claim 7, unstable, real part 6e-6 (UB): original Unresolved (3, 1, 2); recalibrated Unresolved (3, 1, 2)
+   claim 7, unstable, real part 1.2e-5 (UB): original Unresolved (3, 1, 2); recalibrated Hyperbolic (3, 1, 2)   <- changed
+   claim 7, unstable, real part 3e-5: original Hyperbolic (3, 1, 2); recalibrated Hyperbolic (3, 1, 2)
+   claim 7, unstable, real part 1e-3: original Hyperbolic (3, 1, 2); recalibrated Hyperbolic (3, 1, 2)
+   claim 8: original Elliptic (0, 0, 0); recalibrated Elliptic (0, 0, 0)
+   claim 9: original Unresolved (1, 0, 0); recalibrated Unresolved (1, 0, 0)
+   claim 10: original Unresolved (1, 1, 1); recalibrated Unresolved (1, 1, 1)
+1 failed

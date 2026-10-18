@@ -1,0 +1,18 @@
+The dry run's claims scored from entry 245's kept outputs; nothing solved.
+1. PASS: 13 kept outputs against entry 245, and the run's log's hashes
+2. PASS: 6 references equal the outputs their entries logged: ['dev/runs/070_d7_C2b_N16_24_32.json', 'dev/runs/071_d7_C3_N16_24_32.json', 'dev/runs/160_sep_controls_C2b_sample.json', 'dev/runs/161_sep_controls_C3_sample.json', 'dev/runs/170_sep_controls_C2a_sample.json', 'dev/runs/201_r5_control.json']
+3. PASS: no exception; E1 to E5 as the run scored them: {'E1': True, 'E2': True, 'E3': True, 'E4': True, 'E5': True}
+4. PASS: E6 evaluated: True. E6. the readings equal development's at 39 overlapping points: the type and the indices at 39, every slow eigenvalue within the larger margin of the two records at 39: True; the largest difference 4.8e-09. Reported beside it, against D7: within the dry run record's own margin at 18 of 18
+   The dry run's claims: {'E1': True, 'E2': True, 'E3': True, 'E4': True, 'E5': True, 'E6': True}: PASS
+5. PASS: the arm, C2b's D7 slow eigenvalues removed at N = 32, eps = 2: E6. not evaluated: a development record lacks a field the claim compares: C2b at N = 32, eps = 2: 'slow'; the entry reads FAIL; no exception
+0 failed
+
+The claims' lines, as dry_claims wrote them on the kept outputs:
+   The dry run's claims, derived before it ran (the module docstring):
+   E1. the controls and the R5 control pass, and the row gate refuses the dry gate record: True
+   E2. K5 passes on C2a, C2b and C3 at 0.25; K3 on C2a reads 'not resolved, kernel exact' at (b): True; (c) on C2a's smallest pair, reported: {'16': {'xy': 1.917285620597207e-12, 'z': 3.559948655213113e-12, 'group': [4.641219104692081e-16, 0.0005846218033234975], 'krein_negative': False}, '24': {'xy': 1.5089012614830962e-12, 'z': 5.132849400669092e-13, 'group': [2.7281742162008195e-16, 0.0005845249226663051], 'krein_negative': False}, '32': {'xy': 2.3329936879951167e-12, 'z': 2.067114698233281e-12, 'group': [1.7202194259938398e-16, 0.0005845249226583001], 'krein_negative': False}}
+   E3. K6 on C2a's ladder segment: 6 of 6 read points agree with M8.15: True
+   E4. the withheld point is accepted at every cutoff and has no record: True
+   E5. C2a's ladder segment and sample read the same at 0.25, 0.5, 1 and 2: True
+   E6. the readings equal development's at 39 overlapping points: the type and the indices at 39, every slow eigenvalue within the larger margin of the two records at 39: True; the largest difference 4.8e-09. Reported beside it, against D7: within the dry run record's own margin at 18 of 18
+   0 of the dry run's claims failed or were not evaluated

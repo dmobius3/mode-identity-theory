@@ -1,0 +1,17 @@
+D6, Theorem D at R3; N = [16, 24, 32]; EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row C1 {'dim': 6, 'ranks': [1, 0]}
+N = 16, m = 42: seed Q(v) 1.000000000000004, criticality 1.4e-15, symmetry rank 4, sigma-radical 2 (setup 0.2 s)
+   eps 0.5: PASS  residual 7.2e-17 of the size, off level 2 3.0e-16; lowest level against Theorem D 7.0e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 6.5e-14; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 6.6e-06, cluster max 7.0e-09, nearest outside 5.8e+00; 0.3 s
+   eps 1.0: PASS  residual 2.3e-16 of the size, off level 2 3.2e-16; lowest level against Theorem D 7.3e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 6.1e-14; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 6.6e-06, cluster max 1.2e-08, nearest outside 6.0e+00; 0.3 s
+   eps 2.0: PASS  residual 2.5e-16 of the size, off level 2 3.0e-16; lowest level against Theorem D 2.7e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 7.7e-14; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 6.6e-06, cluster max 7.3e-09, nearest outside 6.3e+00; 0.3 s
+N = 24, m = 153: seed Q(v) 0.999999999999907, criticality 5.7e-14, symmetry rank 4, sigma-radical 2 (setup 2.7 s)
+   eps 0.5: FAIL  residual 4.3e-15 of the size, off level 2 1.8e-15; lowest level against Theorem D 7.4e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 1.4e-13; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 1.1e-05, cluster max 7.7e-09, nearest outside 5.8e+00; 6.3 s
+   eps 1.0: FAIL  residual 6.1e-15 of the size, off level 2 1.8e-15; lowest level against Theorem D 8.2e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 1.6e-13; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 1.1e-05, cluster max 1.4e-08, nearest outside 6.0e+00; 5.9 s
+   eps 2.0: FAIL  residual 1.5e-14 of the size, off level 2 1.8e-15; lowest level against Theorem D 8.0e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 2.3e-13; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 1.1e-05, cluster max 2.6e-08, nearest outside 6.3e+00; 5.8 s
+N = 32, m = 337: seed Q(v) 1.000000000000002, criticality 5.2e-14, symmetry rank 4, sigma-radical 2 (setup 13.2 s)
+   eps 0.5: FAIL  residual 1.4e-15 of the size, off level 2 1.7e-15; lowest level against Theorem D 2.7e-14; V0 dim 6, ranks [1, 0], 5 chains, leak 4.3e-13; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 1.5e-05, cluster max 4.3e-09, nearest outside 5.8e+00; 56.2 s
+   eps 1.0: FAIL  residual 2.9e-15 of the size, off level 2 1.7e-15; lowest level against Theorem D 2.6e-14; V0 dim 6, ranks [1, 0], 5 chains, leak 5.4e-13; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 1.5e-05, cluster max 1.0e-08, nearest outside 6.0e+00; 56.8 s
+   eps 2.0: FAIL  residual 4.7e-15 of the size, off level 2 1.7e-15; lowest level against Theorem D 1.2e-14; V0 dim 6, ranks [1, 0], 5 chains, leak 7.3e-13; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 1.5e-05, cluster max 1.0e-08, nearest outside 6.3e+00; 56.4 s
+4. eps 0.5, along N = [16, 24, 32]: type, n(L), K unchanged: True; the lowest level's eigenvalues move by at most 2.0e-14
+4. eps 1.0, along N = [16, 24, 32]: type, n(L), K unchanged: True; the lowest level's eigenvalues move by at most 1.9e-14
+4. eps 2.0, along N = [16, 24, 32]: type, n(L), K unchanged: True; the lowest level's eigenvalues move by at most 9.3e-15
+6 failed

@@ -1,0 +1,19 @@
+1. 2I and the Galois map: PASS  {'norms': np.float64(2.886579864025407e-15), 'galois_mult': np.float64(5.828670879282072e-15), 'generators': (104, 1), 'image_is_a_group': np.True_}
+2. the eight representations: PASS  character Gram error 1.4e-14
+   R1: unitarity 5.8e-15, homomorphism 5.8e-15, character vs soft_quartic 2.2e-16, rho(-1) 0.0e+00
+   R2: unitarity 1.3e-17, homomorphism 1.1e-16, character vs soft_quartic 5.8e-14, rho(-1) 0.0e+00
+   R3: unitarity 5.6e-16, homomorphism 2.4e-14, character vs soft_quartic 1.6e-15, rho(-1) 2.7e-16
+   R4: unitarity 6.7e-16, homomorphism 1.7e-15, character vs soft_quartic 1.4e-15, rho(-1) 2.7e-16
+   R5: unitarity 6.0e-15, homomorphism 6.0e-15, character vs soft_quartic 2.4e-14, rho(-1) 0.0e+00
+   R6: unitarity 8.9e-16, homomorphism 3.0e-14, character vs soft_quartic 2.2e-15, rho(-1) 4.3e-16
+   R7: unitarity 1.9e-15, homomorphism 3.7e-14, character vs soft_quartic 5.0e-15, rho(-1) 9.2e-16
+   R8: unitarity 1.6e-15, homomorphism 4.5e-14, character vs soft_quartic 3.8e-15, rho(-1) 7.6e-16
+3. intertwiners, n = 0..48: FAIL  lowest levels {'R1': 1, 'R2': 7, 'R3': 2, 'R4': 6, 'R5': 6, 'R6': 3, 'R7': 4, 'R8': 5}
+   canonical basis: residual over all 120 elements 7.4e-11; Frobenius orthonormality 6.7e-16; Gram-Schmidt kept >= 2.83e-04, dropped <= 3.9e-11; the group sum reversed changes it by 2.6e-13
+   the nullspace count at the generators: null <= 1.3e-13, live >= 0.618
+arms
+   arm: the identity in place of the Galois map (R2 = R1)       RED
+   arm: a non-generating pair (one generator twice)             RED
+   arm: pi_2 transposed for R3                                  RED
+   arm: elementary matrices in reversed order (a different basis) RED
+1 failed (claims and arms)

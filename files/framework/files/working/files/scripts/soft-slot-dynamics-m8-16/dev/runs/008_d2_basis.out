@@ -1,0 +1,18 @@
+1. generators, n <= 48: PASS  bracket 4.0e-13, Casimir (relative) 2.2e-16, exp 6.0e-14
+2. pi_n a unitary representation, n <= 48: PASS  homomorphism 4.5e-14, unitarity 3.3e-15
+3-5. R1, N = 16, m = 28: PASS  left 3.3e-13, right 1.3e-14, orthonormality 4.2e-15; fibre C conj(C) = -1 (residual 9.0e-17), level leak 9.1e-15, cross-level 4.6e-16
+3-5. R2, N = 16, m = 22: PASS  left 6.0e-13, right 8.6e-15, orthonormality 2.7e-15; fibre C conj(C) = -1 (residual 5.0e-16), level leak 8.4e-15, cross-level 3.3e-16
+3-5. R3, N = 16, m = 42: PASS  left 5.2e-13, right 7.1e-15, orthonormality 4.4e-15; fibre C conj(C) = +1 (residual 4.1e-16), level leak 3.7e-14, cross-level 1.3e-15
+3-5. R4, N = 16, m = 50: PASS  left 3.8e-13, right 1.2e-14, orthonormality 1.2e-14; fibre C conj(C) = +1 (residual 4.6e-16), level leak 2.8e-14, cross-level 1.9e-15
+3-5. R5, N = 16, m = 61: PASS  left 6.1e-13, right 1.4e-14, orthonormality 1.3e-14; fibre C conj(C) = +1 (residual 3.7e-16), level leak 1.8e-14, cross-level 2.8e-15
+3-5. R6, N = 16, m = 56: PASS  left 4.9e-13, right 7.0e-15, orthonormality 7.9e-15; fibre C conj(C) = -1 (residual 4.8e-16), level leak 2.8e-14, cross-level 6.3e-16
+3-5. R7, N = 16, m = 87: PASS  left 6.6e-13, right 1.0e-14, orthonormality 1.2e-14; fibre C conj(C) = +1 (residual 7.1e-16), level leak 1.0e-13, cross-level 1.4e-15
+3-5. R8, N = 16, m = 82: PASS  left 3.5e-13, right 6.9e-15, orthonormality 1.5e-14; fibre C conj(C) = -1 (residual 1.0e-15), level leak 6.2e-14, cross-level 5.2e-16
+4. R2, N = 24, m = 84: PASS  orthonormality through the rule 4.4e-15
+4. R4, N = 24, m = 138: PASS  orthonormality through the rule 2.6e-14
+4. R5, N = 24, m = 193: PASS  orthonormality through the rule 2.2e-14
+arms
+   arm: no sqrt(n + 1) normalization (R4, N = 16)               RED
+   arm: intertwiners perturbed by 1e-3 (R5, N = 16)             RED
+   arm: pi_n transposed in the right covariance (R2, N = 16)    RED
+0 failed (claims and arms)

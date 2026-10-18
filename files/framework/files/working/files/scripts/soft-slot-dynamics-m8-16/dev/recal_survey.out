@@ -1,0 +1,35 @@
+169 control points: D6 12, D7 sample 36, D7 ladders 121
+||A|| 133.8 to 1733.6; sqrt(u ||A||) 1.72e-07 to 6.20e-07; m = ||phi||^2 0.204 to 132
+
+1. The record today: margin = 30 sqrt(u ||A||), gray zone (margin/10, 10 margin), leak at most 1e-8.
+   margin 5.17e-06 to 1.86e-05; the cluster's largest eigenvalue 1.25e-09 to 2.51e-07, 48 to 10864 times below the margin
+   gap (the smallest |lambda| outside the cluster) 5.85e-04 to 6.32e+00, at least 40.5 margins; leak 6.1e-14 to 1.3e-10
+   the smallest resolvable slow pair, 10 margins: 5.2e-05 to 1.9e-04; at N = 40, 1.8e-04 to 1.9e-04. A pair below 1.04e-05 lies in the gray zone at every point, so it is Unresolved.
+
+2. What sets the cluster: its largest eigenvalue against two scales.
+   cluster / sqrt(u ||A||)   : 0.0028 to 0.6253, a spread of 226x
+   cluster / sqrt(u ||A|| m) : 0.0020 to 0.0568, a spread of 29x
+   The amplitude-scaled scale holds the cluster within a spread about eight times narrower. Along each ladder the
+   cluster grows about as eps^0.5 to eps^0.7, while sqrt(u ||A||) stays flat:
+     C2a N = 24: m 0.25 to 72, cluster 4.1e-09 to 1.1e-07, log-log slope in m 0.62
+     C2a N = 32: m 0.25 to 72, cluster 2.9e-09 to 7.3e-08, log-log slope in m 0.71
+     C2b N = 24: m 0.248 to 132, cluster 2.5e-09 to 2.5e-07, log-log slope in m 0.66
+     C2b N = 32: m 0.248 to 132, cluster 9.8e-09 to 1.5e-07, log-log slope in m 0.59
+     C3 N = 24: m 0.204 to 63.4, cluster 3.9e-09 to 1.5e-07, log-log slope in m 0.51
+     C3 N = 32: m 0.204 to 63.5, cluster 4.2e-09 to 1.0e-07, log-log slope in m 0.60
+   the largest coefficient, cluster / sqrt(u ||A|| max(m, 0.2)): 0.0568
+
+3. The proposal: margin = 2 sqrt(u ||A|| max(m, 0.2)), gray zone (margin/3, 3 margin), leak at most 200 u ||A|| / gap.
+   KAPPA = 2 is the smallest round value with the cluster at least ten times below the gray zone's lower edge at every point: KAPPA / G >= 10 x 0.0568 needs KAPPA >= 1.70.
+   (a) the cluster sits 11.7 to 341 times below the gray zone, at least ten at 169 of 169 points;
+   (b) every control's spectrum outside the cluster stays outside the gray zone: the gap is 406 to 6e+06 times its upper edge, at least one at 169 of 169 points;
+   (c) the leak is 0.08 to 19.2 times u ||A|| / gap, so the bound 200 holds with at least 10x to spare; KAPPA_L is ten times the largest ratio, rounded up. The fixed 1e-8 would fail a gap below 7.4e-04 at the controls' largest ratio.
+
+4. What it buys: the smallest resolvable slow pair, 3 margins, against 1.04e-05 (M8.15's level-3 cluster tolerance; DESIGN.md section 7).
+   N = 24, the smallest ||A|| (513): 9.1e-07 at m <= 0.2, 1.04e-05 up to m = 26.4, 1.7e-05 at m = 72, 2.3e-05 at m = 132
+   N = 24, the largest ||A|| (724): 1.1e-06 at m <= 0.2, 1.04e-05 up to m = 18.7, 2.0e-05 at m = 72, 2.8e-05 at m = 132
+   N = 32, the smallest ||A|| (960): 1.2e-06 at m <= 0.2, 1.04e-05 up to m = 14.1, 2.4e-05 at m = 72, 3.2e-05 at m = 132
+   N = 32, the largest ||A|| (1112): 1.3e-06 at m <= 0.2, 1.04e-05 up to m = 12.2, 2.5e-05 at m = 72, 3.4e-05 at m = 132
+   N = 40, the smallest ||A|| (1537): 1.6e-06 at m <= 0.2, 1.04e-05 up to m = 8.8, 3.0e-05 at m = 72, 4.0e-05 at m = 132
+   N = 40, the largest ||A|| (1734): 1.7e-06 at m <= 0.2, 1.04e-05 up to m = 7.8, 3.2e-05 at m = 72, 4.3e-05 at m = 132
+   With G = 10 the same cluster condition needs KAPPA >= 5.7, so the floor is 10 KAPPA sqrt(u ||A|| m), and at N = 40 a pair at 1.04e-05 is resolvable only up to m = 0.087, below the ladders' first point.

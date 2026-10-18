@@ -1,0 +1,4 @@
+The separation rule re-read on C2b's saved summaries, under convergence.py as it now is: ['ladders']
+ladders (172_sep_controls_C2b_ladders.json): 20 of 20 verdicts as shipped and 0 of 0 as changed, at N = [16, 24]; under the arm, 20 of 20 as shipped
+1. PASS: 20 of 20 re-read verdicts equal the shipped ones, and 0 of 0 changed as named
+2. PASS: under the arm, 20 of 20 equal the shipped ones

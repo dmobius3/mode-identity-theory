@@ -1,0 +1,96 @@
+{
+ "completed": {
+  "C1": {
+   "files": {
+    "C1.json": "25d849d6cd9be6afb902b4db36788695f8d23342b7f9655ec5a850dd7055e481"
+   },
+   "t": "2026-10-18T00:15:14Z"
+  },
+  "C2a": {
+   "files": {
+    "C2a.json": "4a045372a34a4b969f95c42754fa0610cc5faf37f00f55d9f92d27b076c0abe3",
+    "C2a.npz": "ec646f784f5ed227b058aa43a479df043b3ffe1794bcf146c30c595dedffa954"
+   },
+   "t": "2026-10-18T00:28:34Z"
+  },
+  "C2b": {
+   "files": {
+    "C2b.json": "01887c84a2ee63556b9e63950d39b05ed96d00ecb05891da18c36dbf98878809"
+   },
+   "t": "2026-10-18T00:34:13Z"
+  },
+  "C3": {
+   "files": {
+    "C3.json": "f3c2e2e41ad64e167261dfe965c01e62457832dd75edffff941fc43df5520144",
+    "C3.npz": "366681b4958ed2c6e3c88881f442b1a085ba8a783d63c867eccc1a37a836e488"
+   },
+   "t": "2026-10-18T00:52:20Z"
+  },
+  "C2a/R5": {
+   "files": {
+    "C2a_R5.json": "85e367c717b9c5b4413db618dfa2161270abb6eaffa3fc26f2e2b1b9ddd3df3c"
+   },
+   "t": "2026-10-18T01:18:01Z"
+  },
+  "C2a:ladder": {
+   "files": {
+    "C2a_ladder.json": "f9824f1703cefee304f61e1bd6d73e268ba06a7245883a562138684df66cc1b2"
+   },
+   "t": "2026-10-18T01:41:15Z"
+  }
+ },
+ "gate": {
+  "file": "GATE.json",
+  "sha256": "ce898d6e28797afed0d4970f1799ffed858485580401b3ae1b5f43ff03f6a458",
+  "written": "2026-10-18T01:18:01Z"
+ },
+ "events": [
+  {
+   "t": "2026-10-18T00:03:24Z",
+   "event": "dry run started; cases ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'C2a:ladder']"
+  },
+  {
+   "t": "2026-10-18T00:15:14Z",
+   "event": "C1 completed"
+  },
+  {
+   "t": "2026-10-18T00:28:34Z",
+   "event": "C2a completed"
+  },
+  {
+   "t": "2026-10-18T00:34:13Z",
+   "event": "C2b completed"
+  },
+  {
+   "t": "2026-10-18T00:52:20Z",
+   "event": "C3 completed"
+  },
+  {
+   "t": "2026-10-18T01:18:01Z",
+   "event": "C2a/R5 completed"
+  },
+  {
+   "t": "2026-10-18T01:18:01Z",
+   "event": "gate record written, SHA-256 ce898d6e28797afed0d4970f1799ffed858485580401b3ae1b5f43ff03f6a458"
+  },
+  {
+   "t": "2026-10-18T01:41:15Z",
+   "event": "C2a:ladder completed"
+  },
+  {
+   "t": "2026-10-18T01:41:15Z",
+   "event": "verdict (incomplete) and transcript written"
+  }
+ ],
+ "manifest_sha256": "4d6f424a3e25fa60f30c134092dff687d8077808bb9dfcdef1f2224cb0bba2e9",
+ "verdict": {
+  "file": "VERDICT.json",
+  "sha256": "0282e786f26e1004dcef66c46a7afa386db978436cf763400149f25c5e976d69",
+  "written": "2026-10-18T01:41:15Z"
+ },
+ "transcript": {
+  "file": "driver.out",
+  "sha256": "28fb8f565e74b5783534636ca886b967fb7879c08e8a09d0eb6c6495f63d45a6",
+  "written": "2026-10-18T01:41:15Z"
+ }
+}

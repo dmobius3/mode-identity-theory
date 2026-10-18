@@ -125,6 +125,7 @@ One step at a time, each gated on the last. If the maintainer admits no instrume
      - Theorem D reproduced exactly at a rigid slot;
      - Theorem R's slow frequencies at small amplitude on every row;
      - agreement with M8.15's adjudicated ladders, where they decided.
+   - **Note (2026-10-18), on M8.16's terms.** M8.16's terms were fixed on 2026-10-18, before any sealed case was run, as the text to be filed with OpenWave: SHA-256 `d497359eb988ffedf80e866a121cb06734684ed8b5ee670a127d5267af5e8096`. Its instrument is frozen in [`scripts/soft-slot-dynamics-m8-16/`](scripts/soft-slot-dynamics-m8-16/REPRODUCE.md), with the terms in its `run/` and its manifest pinned at SHA-256 `00b41c591b6d2bf398783438bc565cf3ac7ad36253f1f868c7545c20c057aba2`. No sealed case runs before OpenWave's merge of the task and the maintainer's go.
 5. **One census run, under one pre-registration.**
    - **The rows:** every row born elliptic, through its window: T1, T4, T2 in both slots, T3 in both slots, and T5's window. $`O_1`$ and $`O_2`$ are born hyperbolic, so neither is a row. The two degenerate rows, born stable at second order, fall outside S4, which covers nondegenerate rows, so neither is a row either. An optional finite-amplitude study of either degenerate row would need a pre-registration of its own, with adequacy tests that resolve the rows' new slow pairs, far smaller than Theorem R(a)'s, and would decide both rows together; it is not a condition for the census's close.
    - **The controls:** the coherent and weight-7/2 rows.

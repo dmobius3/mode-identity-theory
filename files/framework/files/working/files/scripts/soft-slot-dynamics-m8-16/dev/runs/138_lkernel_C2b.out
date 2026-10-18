@@ -1,0 +1,48 @@
+lkernel, C2b: L's kernel at the control's points (SLOWPAIR_PLAN.md, Step 1); EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, chains 5
+C2b N = 16, m = 22: 20 points from the germ; Q(u) 1.006993006993, (k, r_u) = (5, 1)
+   N 16 eps   0.2500: lift 6.3e-16 ||L|| (tangents 3.0e-16); genuine 3.7e-04; zeros 5 of 5 chains; D4's ||T F'|| 8.0e-18; floor 5.3e-16; s_min 3.05e-03, rho 1.000, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   0.3536: lift 8.9e-16 ||L|| (tangents 3.0e-16); genuine 5.2e-04; zeros 5 of 5 chains; D4's ||T F'|| 1.4e-17; floor 1.1e-15; s_min 4.31e-03, rho 1.000, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   0.5000: lift 1.1e-15 ||L|| (tangents 3.0e-16); genuine 7.3e-04; zeros 5 of 5 chains; D4's ||T F'|| 1.1e-17; floor 1.1e-15; s_min 6.08e-03, rho 1.000, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   0.7071: lift 6.7e-16 ||L|| (tangents 2.9e-16); genuine 1.0e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.7e-17; floor 1.9e-15; s_min 8.57e-03, rho 1.001, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   1.0000: lift 3.2e-16 ||L|| (tangents 2.9e-16); genuine 1.4e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.0e-17; floor 1.3e-15; s_min 1.21e-02, rho 1.001, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   1.4142: lift 4.5e-16 ||L|| (tangents 3.0e-16); genuine 2.0e-03; zeros 5 of 5 chains; D4's ||T F'|| 4.0e-17; floor 6.4e-15; s_min 1.69e-02, rho 1.001, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   2.0000: lift 6.6e-16 ||L|| (tangents 2.9e-16); genuine 2.8e-03; zeros 5 of 5 chains; D4's ||T F'|| 3.5e-17; floor 6.7e-15; s_min 2.37e-02, rho 1.001, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   2.8284: lift 4.7e-16 ||L|| (tangents 2.9e-16); genuine 3.9e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.3e-17; floor 2.7e-15; s_min 3.32e-02, rho 1.002, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   4.0000: lift 5.8e-16 ||L|| (tangents 3.0e-16); genuine 5.5e-03; zeros 5 of 5 chains; D4's ||T F'|| 3.0e-17; floor 8.0e-15; s_min 4.61e-02, rho 1.003, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   5.6569: lift 5.2e-16 ||L|| (tangents 2.8e-16); genuine 7.5e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.3e-17; floor 3.6e-15; s_min 6.36e-02, rho 1.004, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps   8.0000: lift 2.7e-16 ||L|| (tangents 2.8e-16); genuine 1.0e-02; zeros 5 of 5 chains; D4's ||T F'|| 4.5e-17; floor 1.8e-14; s_min 8.69e-02, rho 1.005, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps  11.3137: lift 1.6e-16 ||L|| (tangents 2.8e-16); genuine 1.4e-02; zeros 5 of 5 chains; D4's ||T F'|| 1.0e-17; floor 2.2e-15; s_min 1.17e-01, rho 1.006, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps  16.0000: lift 4.5e-16 ||L|| (tangents 4.5e-16); genuine 1.8e-02; zeros 5 of 5 chains; D4's ||T F'|| 2.7e-17; floor 1.5e-14; s_min 1.56e-01, rho 1.007, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps  22.6274: lift 6.3e-16 ||L|| (tangents 4.7e-16); genuine 2.2e-02; zeros 5 of 5 chains; D4's ||T F'|| 2.2e-17; floor 1.5e-14; s_min 2.02e-01, rho 1.009, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps  32.0000: lift 5.5e-16 ||L|| (tangents 3.5e-16); genuine 2.7e-02; zeros 5 of 5 chains; D4's ||T F'|| 5.0e-17; floor 3.1e-14; s_min 2.56e-01, rho 1.009, r 1.00, 1.00, 1.00; 1 s
+   N 16 eps  45.2548: lift 4.7e-16 ||L|| (tangents 5.3e-16); genuine 3.2e-02; zeros 5 of 5 chains; D4's ||T F'|| 2.9e-17; floor 1.6e-14; s_min 3.13e-01, rho 1.008, r 1.00, 1.00; 1 s
+   N 16 eps  64.0000: lift 7.7e-16 ||L|| (tangents 8.6e-16); genuine 3.5e-02; zeros 5 of 5 chains; D4's ||T F'|| 7.4e-17; floor 5.0e-14; s_min 3.69e-01, rho 1.005, r 1.00, 1.00; 2 s
+   N 16 eps  90.5097: lift 4.8e-16 ||L|| (tangents 6.4e-16); genuine 3.7e-02; zeros 5 of 5 chains; D4's ||T F'|| 6.2e-17; floor 1.2e-13; s_min 4.17e-01, rho 0.999, r 1.00, 1.00; 1 s
+   N 16 eps 128.0000: lift 1.0e-15 ||L|| (tangents 9.1e-16); genuine 3.7e-02; zeros 5 of 5 chains; D4's ||T F'|| 6.2e-17; floor 2.3e-13; s_min 4.52e-01, rho 0.991, r 1.00, 1.00; 1 s
+   N 16 eps 132.0000: lift 9.0e-16 ||L|| (tangents 1.3e-15); genuine 3.7e-02; zeros 5 of 5 chains; D4's ||T F'|| 1.9e-16; floor 2.3e-13; s_min 4.54e-01, rho 0.991, r 1.00, 1.00; 1 s
+C2b N = 24, m = 84: 20 points from the germ; Q(u) 1.006993006993, (k, r_u) = (5, 1)
+   N 24 eps   0.2500: lift 6.2e-16 ||L|| (tangents 8.0e-16); genuine 9.5e-05; zeros 5 of 5 chains; D4's ||T F'|| 5.8e-18; floor 1.5e-15; s_min 3.05e-03, rho 1.000, r 1.00, 1.00, 1.00; 9 s
+   N 24 eps   0.3536: lift 3.4e-16 ||L|| (tangents 7.9e-16); genuine 1.3e-04; zeros 5 of 5 chains; D4's ||T F'|| 5.9e-18; floor 1.8e-15; s_min 4.30e-03, rho 1.000, r 1.00, 1.00, 1.00; 9 s
+   N 24 eps   0.5000: lift 4.5e-16 ||L|| (tangents 7.9e-16); genuine 1.9e-04; zeros 5 of 5 chains; D4's ||T F'|| 6.6e-18; floor 2.4e-15; s_min 6.07e-03, rho 1.000, r 1.00, 1.00, 1.00; 9 s
+   N 24 eps   0.7071: lift 3.8e-16 ||L|| (tangents 7.9e-16); genuine 2.7e-04; zeros 5 of 5 chains; D4's ||T F'|| 4.7e-18; floor 2.0e-15; s_min 8.55e-03, rho 1.001, r 1.00, 1.00, 1.00; 11 s
+   N 24 eps   1.0000: lift 3.9e-16 ||L|| (tangents 7.9e-16); genuine 3.8e-04; zeros 5 of 5 chains; D4's ||T F'|| 1.5e-18; floor 6.8e-16; s_min 1.20e-02, rho 1.001, r 1.00, 1.00, 1.00; 9 s
+   N 24 eps   1.4142: lift 2.0e-16 ||L|| (tangents 8.0e-16); genuine 5.3e-04; zeros 5 of 5 chains; D4's ||T F'|| 2.1e-17; floor 6.3e-15; s_min 1.69e-02, rho 1.001, r 1.00, 1.00, 1.00; 9 s
+   N 24 eps   2.0000: lift 4.5e-16 ||L|| (tangents 7.9e-16); genuine 7.4e-04; zeros 5 of 5 chains; D4's ||T F'|| 9.2e-18; floor 6.7e-15; s_min 2.36e-02, rho 1.001, r 1.00, 1.00, 1.00; 12 s
+   N 24 eps   2.8284: lift 8.1e-16 ||L|| (tangents 7.9e-16); genuine 1.0e-03; zeros 5 of 5 chains; D4's ||T F'|| 8.5e-18; floor 7.1e-15; s_min 3.29e-02, rho 1.002, r 1.00, 1.00, 1.00; 12 s
+   N 24 eps   4.0000: lift 2.9e-16 ||L|| (tangents 7.9e-16); genuine 1.4e-03; zeros 5 of 5 chains; D4's ||T F'|| 3.3e-18; floor 2.7e-15; s_min 4.56e-02, rho 1.003, r 1.00, 1.00, 1.00; 12 s
+   N 24 eps   5.6569: lift 6.0e-16 ||L|| (tangents 7.9e-16); genuine 2.0e-03; zeros 5 of 5 chains; D4's ||T F'|| 2.3e-18; floor 2.2e-15; s_min 6.27e-02, rho 1.004, r 1.00, 1.00, 1.00; 15 s
+   N 24 eps   8.0000: lift 2.8e-16 ||L|| (tangents 7.9e-16); genuine 2.8e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.3e-17; floor 1.8e-14; s_min 8.52e-02, rho 1.005, r 1.00, 1.00, 1.00; 14 s
+   N 24 eps  11.3137: lift 2.7e-16 ||L|| (tangents 7.9e-16); genuine 3.7e-03; zeros 5 of 5 chains; D4's ||T F'|| 2.3e-17; floor 3.6e-14; s_min 1.14e-01, rho 1.006, r 1.00, 1.00, 1.00; 14 s
+   N 24 eps  16.0000: lift 4.9e-16 ||L|| (tangents 7.8e-16); genuine 5.0e-03; zeros 5 of 5 chains; D4's ||T F'|| 4.0e-17; floor 2.1e-14; s_min 1.50e-01, rho 1.007, r 1.00, 1.00, 1.00; 14 s
+   N 24 eps  22.6274: lift 2.5e-16 ||L|| (tangents 7.8e-16); genuine 6.6e-03; zeros 5 of 5 chains; D4's ||T F'|| 2.0e-17; floor 4.4e-14; s_min 1.92e-01, rho 1.008, r 1.00, 1.00, 1.00; 19 s
+   N 24 eps  32.0000: lift 3.1e-16 ||L|| (tangents 7.5e-16); genuine 8.4e-03; zeros 5 of 5 chains; D4's ||T F'|| 2.0e-17; floor 3.2e-14; s_min 2.39e-01, rho 1.007, r 1.00, 1.00, 1.00; 20 s
+   N 24 eps  45.2548: lift 3.8e-16 ||L|| (tangents 7.7e-16); genuine 1.0e-02; zeros 5 of 5 chains; D4's ||T F'|| 2.5e-17; floor 2.8e-14; s_min 2.88e-01, rho 1.006, r 1.00, 1.00, 1.00; 23 s
+   N 24 eps  64.0000: lift 3.8e-16 ||L|| (tangents 7.2e-16); genuine 1.2e-02; zeros 5 of 5 chains; D4's ||T F'|| 3.6e-17; floor 8.0e-14; s_min 3.32e-01, rho 1.002, r 1.00, 1.00; 20 s
+   N 24 eps  90.5097: lift 5.6e-16 ||L|| (tangents 8.2e-16); genuine 1.4e-02; zeros 5 of 5 chains; D4's ||T F'|| 6.7e-17; floor 3.5e-13; s_min 3.66e-01, rho 0.996, r 1.00, 1.00; 18 s
+   N 24 eps 128.0000: lift 4.5e-16 ||L|| (tangents 9.7e-16); genuine 1.5e-02; zeros 5 of 5 chains; D4's ||T F'|| 7.4e-17; floor 4.7e-13; s_min 3.86e-01, rho 0.989, r 1.00, 1.00; 15 s
+   N 24 eps 132.0000: lift 6.8e-16 ||L|| (tangents 1.4e-15); genuine 1.5e-02; zeros 5 of 5 chains; D4's ||T F'|| 4.7e-17; floor 8.8e-14; s_min 3.87e-01, rho 0.988, r 1.00, 1.00; 16 s
+C2b N = 32, m = 200: 3 points from the germ; Q(u) 1.006993006993, (k, r_u) = (5, 1)
+   N 32 eps   0.5000: lift 3.8e-16 ||L|| (tangents 9.4e-16); genuine 1.0e-04; zeros 5 of 5 chains; D4's ||T F'|| 2.0e-18; floor 1.3e-15; s_min 6.07e-03, rho 1.000, r 1.00, 1.00, 1.00; 143 s
+   N 32 eps   1.0000: lift 4.3e-16 ||L|| (tangents 9.4e-16); genuine 2.0e-04; zeros 5 of 5 chains; D4's ||T F'|| 2.2e-18; floor 2.0e-15; s_min 1.20e-02, rho 1.001, r 1.00, 1.00, 1.00; 150 s
+   N 32 eps   2.0000: lift 2.7e-16 ||L|| (tangents 9.4e-16); genuine 4.0e-04; zeros 5 of 5 chains; D4's ||T F'|| 5.9e-18; floor 7.1e-15; s_min 2.36e-02, rho 1.001, r 1.00, 1.00, 1.00; 141 s
+C2b: 43 points; the kernel's largest lift 1.1e-15 ||L|| (its tangents' 1.4e-15); the smallest genuine |mu| 9.5e-05 ||L||; L's zero count differs from the chains at 0 points []; the generators' ||L T c|| up to 1.4e-15 against D4's ||T F'(c)|| up to 1.9e-16 and u = 2.2e-16; rho 0.988 to 1.009; r up to 1.00; 0 ladders ended early; compute 12.6 min

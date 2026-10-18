@@ -1,0 +1,1 @@
+UA's model: eigenvalues [-0.-2.j -0.+2.j -0.+0.j  0.+0.j]; margin 1.4e-04; V0 dim 2, ranks [1, 0], blocks 1; D's eigenvalues ['-4.000e-05', '+0.000e+00'] against ||B|| = 1.000e+05; n(L) 1, n(D) 0 with 2 zeros, K 0, balance False; Elliptic, unresolved []: reproduced

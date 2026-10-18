@@ -1,0 +1,14 @@
+1. the factors, N in 4..48: PASS  angular 1.1e-14, t moments (relative) 1.3e-13
+2. monomials end to end: PASS  worst relative error 3.7e-14 over 17210 monomials
+3. sharpness at degree 4N + 1: PASS  N=4: a^(4N+1) 1.1e-01, nodal^2 1.00; N=8: a^(4N+1) 5.7e-02, nodal^2 1.00; N=16: a^(4N+1) 3.0e-02, nodal^2 1.00; N=24: a^(4N+1) 2.0e-02, nodal^2 1.00
+4. the quartic of random sections, rule at N, N + 3, 2N: PASS
+   R2, N = 8, m = 8: integral of |psi|^4 = 1.316406704022726, relative spread 3.4e-16
+   R2, N = 12, m = 8: integral of |psi|^4 = 1.319906493135131, relative spread 6.7e-16
+   R4, N = 8, m = 7: integral of |psi|^4 = 1.206745442672492, relative spread 5.5e-16
+   R4, N = 12, m = 18: integral of |psi|^4 = 1.287494143399336, relative spread 3.4e-16
+   R5, N = 8, m = 16: integral of |psi|^4 = 1.246066452849348, relative spread 3.6e-16
+   R5, N = 12, m = 29: integral of |psi|^4 = 1.161303249445082, relative spread 3.8e-16
+arms
+   arm: M = 4N angular nodes                                    RED
+   arm: N Gauss nodes in t                                      RED
+0 failed (claims and arms)

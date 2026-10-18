@@ -1,0 +1,24 @@
+The separation rule read in any order of the groups, on C2b's saved summaries: 20 readings, 24 shuffles each.
+   172_sep_controls_C2b_ladders.json eps 0.25: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 0.353553: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 0.5: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 0.707107: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 1: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 1.41421: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 2: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 2.82843: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 4: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 5.65685: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 8: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 11.3137: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 16: the rule Unresolved , turned by 0 of 24; the arm Unresolved , turned by 0
+   172_sep_controls_C2b_ladders.json eps 22.6274: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 32: the rule converged Elliptic, turned by 0 of 24; the arm converged Elliptic, turned by 0
+   172_sep_controls_C2b_ladders.json eps 45.2548: the rule Unresolved , turned by 0 of 24; the arm Unresolved , turned by 0
+   172_sep_controls_C2b_ladders.json eps 64: the rule Unresolved , turned by 0 of 24; the arm Unresolved , turned by 0
+   172_sep_controls_C2b_ladders.json eps 90.5097: the rule Unresolved , turned by 0 of 24; the arm Unresolved , turned by 0
+   172_sep_controls_C2b_ladders.json eps 128: the rule Unresolved , turned by 0 of 24; the arm Unresolved , turned by 0
+   172_sep_controls_C2b_ladders.json eps 132: the rule Unresolved , turned by 0 of 24; the arm Unresolved , turned by 0
+1. PASS: under the rule, 20 of 20 readings keep their verdict under every shuffle
+Reported, unscored: the shuffles turn 0 of 20 readings under the arm; the largest set the rule forms counts 5 at the highest cutoff.
+0 failed

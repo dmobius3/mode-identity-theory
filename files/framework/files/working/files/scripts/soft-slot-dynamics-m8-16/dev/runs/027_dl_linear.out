@@ -1,0 +1,29 @@
+1. the first-order form: PASS  identities 0.0e+00, spectral pairing 1.1e-15
+2. the free operator at c = 0 (UB): PASS
+   R2, N = 16, m = 22, lam between 63 and 195: eigenvalues against +-i(sqrt e -+ omega) 2.0e-16; 4 imaginary groups, each Krein sign as predicted: True; Krein-negative 8 = the dofs below lam (8); n(L) 16, K 16, V0 = 0
+   R4, N = 16, m = 50, lam between 48 and 120: eigenvalues against +-i(sqrt e -+ omega) 5.2e-17; 8 imaginary groups, each Krein sign as predicted: True; Krein-negative 7 = the dofs below lam (7); n(L) 14, K 14, V0 = 0
+   R5, N = 16, m = 61, lam between 48 and 80: eigenvalues against +-i(sqrt e -+ omega) 3.3e-16; 10 imaginary groups, each Krein sign as predicted: True; Krein-negative 7 = the dofs below lam (7); n(L) 14, K 14, V0 = 0
+3. zero chains at ||A|| = 1700: PASS  margin 1.8e-05 (root scale 6.1e-07); cluster max 1.4e-07, nearest outside 1.8e-01; V0 dim 4, angle to the exact V0 0.0e+00; Schur ranks [2, 0], 2 chains, longest 2; (n(L), n(D), K) = (4, 1, 3), (k_r, k_c, k_i) = (1, 1, 0); the blocks one by one (4, 1, 3)
+4. a defective nonzero eigenvalue (a Krein collision): FAIL  the pair at i 2^(1/4) split by 3.5e-07, typed imaginary as one group of 2 with 1 negative direction (Schur route; the Schur route alone (1, True)); V0 dim 4, angle to the exact V0 2.1e-08; (n(L), n(D), K) = (6, 1, 5), (k_r, k_c, k_i) = (1, 1, 1); the blocks one by one (6, 1, 5)
+5. Theorem K on the page's models: PASS
+   case 1, B = tI, t = +0.5: (n(L), n(D), K) = (0, 0, 0), derived (0, 0, 0)  ok
+   case 2, B = diag(t, +1), t = +0.5: (n(L), n(D), K) = (0, 0, 0), derived (0, 0, 0)  ok
+   case 2, B = diag(t, -1), t = +0.5: (n(L), n(D), K) = (1, 0, 1), derived (1, 0, 1)  ok
+   case 3, B = diag(0, t), t = +0.5: (n(L), n(D), K) = (0, 0, 0), derived (0, 0, 0)  ok
+   case 1, B = tI, t = -0.5: (n(L), n(D), K) = (2, 0, 2), derived (2, 0, 2)  ok
+   case 2, B = diag(t, +1), t = -0.5: (n(L), n(D), K) = (1, 0, 1), derived (1, 0, 1)  ok
+   case 2, B = diag(t, -1), t = -0.5: (n(L), n(D), K) = (2, 0, 2), derived (2, 0, 2)  ok
+   case 3, B = diag(0, t), t = -0.5: (n(L), n(D), K) = (1, 1, 0), derived (1, 1, 0)  ok
+   the degenerate family, L = diag(0, t - 4, t), t = -0.1: (n(L), n(D), K) = (2, 0, 2), derived (2, 0, 2)  ok
+   a regular control, L = diag(0, t - 3, t), t = -0.1: (n(L), n(D), K) = (2, 1, 1), derived (2, 1, 1)  ok
+   the degenerate family, L = diag(0, t - 4, t), t = +0.1: (n(L), n(D), K) = (1, 1, 0), derived (1, 1, 0)  ok
+   a regular control, L = diag(0, t - 3, t), t = +0.1: (n(L), n(D), K) = (1, 1, 0), derived (1, 1, 0)  ok
+6. unresolved, not forced: PASS  (a) a pair at 3.0e-05 against the margin 1.8e-05: ['the zero cluster is not separated: an eigenvalue lies in (margin/10, 10 margin)']; (b) ['n(L): an eigenvalue of L lies in its gray zone']
+arms
+   arm: W's gyroscopic block with its sign flipped: the identity       green (FAIL)
+   arm: Krein signs from -B: claim 3                                   RED
+   arm: the margin at 1e-9, below the root scale: claim 3              RED
+   arm: the replaced construction at claim 4's defect: larger than V0  RED
+   the exact-eigenvector annihilator: dimension 4 in claim 3, 6 at claim 4's defect (V0: 4)
+   unscored, from the computed eigenvectors (identification_check.py's way): dimension 4 in claim 3, angle to V0 0.0e+00; 4 at the defect, angle to V0 1.5e-08
+2 failed (claims and arms)

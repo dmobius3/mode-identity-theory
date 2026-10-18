@@ -1,0 +1,15 @@
+R4, N = 12: FAIL
+   unbordered: converged True in 4 evaluations, |c - c*|/|c*| 6.3e-14, |lam - lam*| 6.4e-14, residual 4.7e-13, order 1.24
+   bordered (rank 4): converged True in 4 evaluations, |c - c*|/|c*| 1.2e-14, |lam - lam*| 2.1e-14, residual 1.5e-13, order 1.28, multipliers 4.9e-15
+   the tangents' rank: 4 at a random state, 3 at a weight vector of level 6
+R5, N = 12: FAIL
+   unbordered: converged True in 4 evaluations, |c - c*|/|c*| 1.9e-14, |lam - lam*| 1.8e-13, residual 2.4e-13, order 1.19
+   bordered (rank 4): converged True in 4 evaluations, |c - c*|/|c*| 5.2e-14, |lam - lam*| 1.3e-13, residual 6.1e-13, order 1.22, multipliers 7.4e-14
+   the tangents' rank: 4 at a random state, 3 at a weight vector of level 6
+R2, N = 12: PASS
+   unbordered: converged True in 5 evaluations, |c - c*|/|c*| 1.8e-15, |lam - lam*| 0.0e+00, residual 1.2e-14, order 1.99
+   bordered (rank 6): converged True in 5 evaluations, |c - c*|/|c*| 5.5e-16, |lam - lam*| 0.0e+00, residual 6.6e-15, order 2.03, multipliers 4.3e-15
+   the tangents' rank: 6 at a random state, 5 at a weight vector of level 7
+arms
+   arm: a perturbation with a tangent component, bordered (R4)   RED  (converged True, |c - c*|/|c*| 2.8e-02, multipliers 2.8e-01)
+2 failed (claims and arms)

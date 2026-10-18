@@ -1,0 +1,19 @@
+The separation rule on C2b (sample): N = [16, 24, 32], eps from 0.5 to 2 (3 points); EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row {'dim': 6, 'ranks': [1, 0]}; factor 0.1
+C2b N = 16, m = 22: the seed PASS; setup 0.1 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 40 typed groups; 1 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 41 typed groups; 1 s
+C2b N = 24, m = 84: the seed PASS; setup 1.8 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 154 typed groups; 11 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 160 typed groups; 12 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 163 typed groups; 12 s
+C2b N = 32, m = 200: the seed PASS; setup 16.5 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 353 typed groups; 128 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 374 typed groups; 145 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 378 typed groups; 145 s
+   eps   0.5000: converged Elliptic; band edge 10; 5 groups read; the smallest ratio 9.32e+03 at -1.07885e-15+0.00606857j (tested, A's gray zone): U 6.51e-07 (remaining 4.6e-19, floor 6.5e-07, numerical 2.1e-13), d 6.07e-03; numerical estimates 2.1e-13 to 2.1e-13
+   eps   1.0000: converged Elliptic; band edge 9.97; 5 groups read; the smallest ratio 1.31e+04 at 5.5422e-16+0.0120272j (tested, A's gray zone): U 9.21e-07 (remaining 2.8e-17, floor 9.2e-07, numerical 2.1e-13), d 1.20e-02; numerical estimates 2.1e-13 to 2.1e-13
+   eps   2.0000: converged Elliptic; band edge 9.91; 5 groups read; the smallest ratio 1.81e+04 at 2.17899e-16+0.0236246j (tested, A's gray zone): U 1.30e-06 (remaining 1.7e-15, floor 1.3e-06, numerical 2.1e-13), d 2.36e-02; numerical estimates 2.1e-13 to 2.1e-13
+1. every point accepted, its record as D7 read it: PASS
+2. the rule converged at every eps, with the type Elliptic: PASS (3 of 3)
+0 failed; 475 s

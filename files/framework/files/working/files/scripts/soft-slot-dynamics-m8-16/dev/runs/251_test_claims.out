@@ -1,0 +1,5 @@
+The dry run's claims on the stopped run's kept outputs: ['C1', 'C2a'] ran (245_dry_C2a.json).
+1. PASS: no exception
+2. PASS: 'E1. not evaluated: C2b, C3, C2a/R5 did not run'; 'E2. not evaluated: C2b, C3 did not run'; 'E3. not evaluated: C2a:ladder did not run'; 'E4. not evaluated: C2a:ladder did not run'; 'E5. not evaluated: C2a:ladder did not run'; 'E6. not evaluated: C2b, C3, C2a/R5 did not run'
+3. PASS: the captured entry reads "Step 3's dry run: FAIL (6 of 6 claims failed or not evaluated): {'E1': None, 'E2': None, 'E3': None, 'E4': None, 'E5': None, 'E6': None}."
+0 failed

@@ -1,0 +1,26 @@
+The slow-pair scout under today's record (reported, unscored). Derived, for a resolved reading: S1 and S2 Elliptic (1, 1, 0); S3 Elliptic (3, 1, 2) with k_i^- = 1; S4 Hyperbolic (2, 1, 1) with k_r = 1.
+omega    7 S1 s 1e-05: L eigenvalue 1.40e-04 = 8.2e-08 ||L||; leak / bound 1.1e-04 to 6.4e-04; {"Unresolved ['n(L)']": 5}
+omega    7 S1 s 5e-06: L eigenvalue 7.00e-05 = 4.1e-08 ||L||; leak / bound 1.1e-04 to 6.0e-04; {"Unresolved ['n(L)']": 5}
+omega    7 S1 s 3e-05: L eigenvalue 4.20e-04 = 2.5e-07 ||L||; leak / bound 1.7e-04 to 5.7e-04; {'RESOLVED': 5}
+omega    7 S2 s 1e-05: L eigenvalue 1.97e-08 = 1.2e-11 ||L||; leak / bound 4.8e-01 to 4.2e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)']": 4, "Unresolved ['n(L)']": 1}
+omega    7 S2 s 5e-06: L eigenvalue 4.93e-09 = 2.9e-12 ||L||; leak / bound 5.3e-01 to 5.2e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)']": 3, "Unresolved ['n(L)']": 2}
+omega    7 S2 s 3e-05: L eigenvalue 1.77e-07 = 1.0e-10 ||L||; leak / bound 1.9e-01 to 8.6e-01; {"Unresolved ['n(L)']": 5}
+omega    7 S3 s 1e-05: L eigenvalue 1.95e-08 = 1.1e-11 ||L||; leak / bound 2.1e-01 to 2.0e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)', 'the index does not balance']": 4, "Unresolved ['n(L)', 'the index does not balance']": 1}
+omega    7 S3 s 5e-06: L eigenvalue 4.87e-09 = 2.9e-12 ||L||; leak / bound 9.8e-01 to 3.0e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)', 'the index does not balance']": 4, "Unresolved ['n(L)', 'the index does not balance']": 1}
+omega    7 S3 s 3e-05: L eigenvalue 1.75e-07 = 1.0e-10 ||L||; leak / bound 4.4e-01 to 9.0e-01; {"Unresolved ['n(L)']": 5}
+omega    7 S4 s 1e-05: L eigenvalue 1.97e-08 = 1.2e-11 ||L||; leak / bound 1.1e+00 to 2.7e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)', 'the index does not balance']": 5}
+omega    7 S4 s 5e-06: L eigenvalue 4.92e-09 = 2.9e-12 ||L||; leak / bound 1.7e+00 to 6.1e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)', 'the index does not balance']": 5}
+omega    7 S4 s 3e-05: L eigenvalue 1.77e-07 = 1.0e-10 ||L||; leak / bound 2.3e-01 to 7.4e-01; {"Hyperbolic ['n(L)']": 5}
+omega   14 S1 s 1e-05: L eigenvalue 2.80e-04 = 1.6e-07 ||L||; leak / bound 1.3e-04 to 4.3e-04; {'RESOLVED': 5}
+omega   14 S1 s 5e-06: L eigenvalue 1.40e-04 = 8.2e-08 ||L||; leak / bound 8.0e-05 to 2.1e-04; {"Unresolved ['n(L)']": 5}
+omega   14 S1 s 3e-05: L eigenvalue 8.40e-04 = 4.9e-07 ||L||; leak / bound 1.7e-04 to 4.1e-04; {'RESOLVED': 5}
+omega   14 S2 s 1e-05: L eigenvalue 7.85e-08 = 4.6e-11 ||L||; leak / bound 2.7e-01 to 1.5e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)']": 1, "Unresolved ['n(L)']": 4}
+omega   14 S2 s 5e-06: L eigenvalue 1.96e-08 = 1.2e-11 ||L||; leak / bound 1.0e-01 to 1.8e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)']": 1, "Unresolved ['n(L)']": 4}
+omega   14 S2 s 3e-05: L eigenvalue 7.07e-07 = 4.2e-10 ||L||; leak / bound 6.7e-02 to 4.1e-01; {"Unresolved ['n(L)']": 5}
+omega   14 S3 s 1e-05: L eigenvalue 7.83e-08 = 4.6e-11 ||L||; leak / bound 1.8e-01 to 7.4e-01; {"Unresolved ['n(L)', 'the index does not balance']": 5}
+omega   14 S3 s 5e-06: L eigenvalue 1.96e-08 = 1.2e-11 ||L||; leak / bound 3.3e-01 to 2.4e+00; {"Unresolved ['V0 does not match its expectation', 'n(L)', 'the index does not balance']": 2, "Unresolved ['n(L)', 'the index does not balance']": 3}
+omega   14 S3 s 3e-05: L eigenvalue 7.05e-07 = 4.1e-10 ||L||; leak / bound 8.0e-02 to 2.1e-01; {"Unresolved ['n(L)']": 5}
+omega   14 S4 s 1e-05: L eigenvalue 7.85e-08 = 4.6e-11 ||L||; leak / bound 2.3e-01 to 8.6e-01; {"Hyperbolic ['n(L)', 'the index does not balance']": 5}
+omega   14 S4 s 5e-06: L eigenvalue 1.96e-08 = 1.2e-11 ||L||; leak / bound 1.0e-01 to 3.7e+00; {"Hyperbolic ['n(L)', 'the index does not balance']": 2, "Unresolved ['V0 does not match its expectation', 'n(L)', 'the index does not balance']": 3}
+omega   14 S4 s 3e-05: L eigenvalue 7.06e-07 = 4.2e-10 ||L||; leak / bound 5.3e-02 to 2.7e-01; {"Hyperbolic ['n(L)']": 5}
+Lines with a wrong type: 0. Resolved, of 5 mixings, at s below 1.04e-5: S1 5 of 20; S2 0 of 20; S3 0 of 20; S4 0 of 20

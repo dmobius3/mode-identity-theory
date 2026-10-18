@@ -1,0 +1,19 @@
+The separation rule on C2a (sample): N = [16, 24, 32], eps from 0.5 to 2 (3 points); EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row {'dim': 4, 'ranks': [1, 0]}; factor 0.1
+C2a N = 16, m = 50: the seed PASS; setup 0.2 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 98 typed groups; 2 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 98 typed groups; 2 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 98 typed groups; 2 s
+C2a N = 24, m = 138: the seed PASS; setup 2.5 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 268 typed groups; 24 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 270 typed groups; 23 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 274 typed groups; 23 s
+C2a N = 32, m = 316: the seed PASS; setup 12.9 s
+   eps   0.5000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 554 typed groups; 307 s
+   eps   1.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 582 typed groups; 355 s
+   eps   2.0000: accepted; Elliptic (0, 0, 0), V0 as expected, unresolved []; 608 typed groups; 354 s
+   eps   0.5000: converged Elliptic; band edge 12; 16 groups read; the smallest ratio 1.71e+03 at 1.08431e-15+0.00116152j (tested, A's gray zone): U 6.79e-07 (remaining 2.2e-21, floor 6.8e-07, numerical 2.3e-13), d 1.16e-03; numerical estimates 2.3e-13 to 1.0e-12
+   eps   1.0000: converged Elliptic; band edge 12; 16 groups read; the smallest ratio 2.38e+03 at -6.44691e-16+0.00229339j (tested, A's gray zone): U 9.61e-07 (remaining 1.2e-19, floor 9.6e-07, numerical 2.3e-13), d 2.29e-03; numerical estimates 2.3e-13 to 9.3e-13
+   eps   2.0000: Unresolved; band edge 11.9; 16 groups read; the smallest ratio 3.29e+03 at -2.03729e-15+0.00447197j (tested, A's gray zone): U 1.36e-06 (remaining 6.6e-18, floor 1.4e-06, numerical 2.3e-13), d 4.47e-03; numerical estimates 2.3e-13 to 9.4e-13; ['tested group at -3.11733e-16+4.03894j: no unique, bidirectional match', 'tested group at -8.79173e-16+4.03918j: no unique, bidirectional match']
+1. every point accepted, its record as D7 read it: PASS
+2. the rule converged at every eps, with the type Elliptic: FAIL (2 of 3)
+1 failed; 1108 s

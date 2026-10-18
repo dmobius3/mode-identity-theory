@@ -1,0 +1,4 @@
+D7, C2a (R4, level 6); N = [40], eps = [0.5]; EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row {'dim': 4, 'ranks': [1, 0]}
+N = 40, m = 620: 1. the seed PASS  Q(u) 1.000777000776999 against 1.000777000777001, criticality 1.2e-16, (k, r_u) = (3, 1); setup 37.2 s, cached False
+   eps 0.5: 2. PASS, 3. slow PASS  reached 0.500000000 in 2 solves, 7 evaluations, floor 2.8e-17 relative; V0 dim 4, ranks [1, 0], 3 chains, leak 1.3e-10; (n(L), n(D), K) = (0, 0, 0), k_r 0; Elliptic, unresolved []; margin 1.8e-05, cluster max 4.8e-09; slow 5 of 5 expected, Krein definite +, largest deviation from Theorem R 1.45e-02; 114.0 s per evaluation, Hessian 107.2 s, record 20.5 s, point 927.3 s
+0 failed

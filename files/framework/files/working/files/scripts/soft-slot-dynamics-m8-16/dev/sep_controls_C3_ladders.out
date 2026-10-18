@@ -1,0 +1,63 @@
+The separation rule on C3 (ladders): N = [16, 24], eps from 0.25 to 72 (18 points); EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row {'dim': 8, 'ranks': [4, 0]}; factor 0.1
+C3 N = 16, m = 50: the seed PASS; setup 0.2 s
+   eps   0.2500: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 36 typed groups; 3 s
+   eps   0.3536: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 37 typed groups; 2 s
+   eps   0.5000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 37 typed groups; 2 s
+   eps   0.7071: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 3 s
+   eps   1.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 3 s
+   eps   1.4142: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 3 s
+   eps   2.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 3 s
+   eps   2.8284: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps   4.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps   5.6569: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps   8.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps  11.3137: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps  16.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 5 s
+   eps  22.6274: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps  32.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps  45.2548: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+   eps  64.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 5 s
+   eps  72.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 38 typed groups; 4 s
+C3 N = 24, m = 138: the seed PASS; setup 2.3 s
+   eps   0.2500: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 106 typed groups; 29 s
+   eps   0.3536: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 107 typed groups; 26 s
+   eps   0.5000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 108 typed groups; 29 s
+   eps   0.7071: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 109 typed groups; 29 s
+   eps   1.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 111 typed groups; 29 s
+   eps   1.4142: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 29 s
+   eps   2.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 36 s
+   eps   2.8284: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 40 s
+   eps   4.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 47 s
+   eps   5.6569: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 47 s
+   eps   8.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  11.3137: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  16.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  22.6274: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  32.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  45.2548: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  64.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps  72.0000: accepted; Hyperbolic (6, 3, 3), V0 as expected, unresolved []; 112 typed groups; 51 s
+   eps   0.2500: converged Hyperbolic; band edge 12; 5 groups read; the smallest ratio 1.57e+03 at 0.00247174+0j (tested, A's gray zone): U 1.57e-06 (remaining 1.6e-06, floor 3.2e-07, numerical 1.3e-13), d 2.47e-03; numerical estimates 1.3e-13 to 6.6e-13
+   eps   0.3536: converged Hyperbolic; band edge 12; 5 groups read; the smallest ratio 1.11e+03 at 0.00348813+0j (tested, A's gray zone): U 3.14e-06 (remaining 3.1e-06, floor 3.8e-07, numerical 1.3e-13), d 3.49e-03; numerical estimates 1.3e-13 to 5.6e-13
+   eps   0.5000: converged Hyperbolic; band edge 12; 5 groups read; the smallest ratio 786 at 0.0049182+0j (tested, A's gray zone): U 6.26e-06 (remaining 6.3e-06, floor 4.6e-07, numerical 1.3e-13), d 4.92e-03; numerical estimates 1.3e-13 to 9.8e-13
+   eps   0.7071: converged Hyperbolic; band edge 12; 5 groups read; the smallest ratio 556 at 0.00692608+0j (tested, A's gray zone): U 1.25e-05 (remaining 1.2e-05, floor 5.4e-07, numerical 1.3e-13), d 6.92e-03; numerical estimates 1.3e-13 to 7.5e-13
+   eps   1.0000: converged Hyperbolic; band edge 12; 5 groups read; the smallest ratio 393 at 0.00973703+0j (tested, A's gray zone): U 2.47e-05 (remaining 2.5e-05, floor 6.5e-07, numerical 1.3e-13), d 9.74e-03; numerical estimates 1.3e-13 to 1.2e-12
+   eps   1.4142: converged Hyperbolic; band edge 11.9; 5 groups read; the smallest ratio 278 at 0.0136562+0j (tested, A's gray zone): U 4.90e-05 (remaining 4.9e-05, floor 7.7e-07, numerical 1.3e-13), d 1.37e-02; numerical estimates 1.3e-13 to 7.5e-13
+   eps   2.0000: converged Hyperbolic; band edge 11.9; 5 groups read; the smallest ratio 197 at 0.0190899+0j (tested, A's gray zone): U 9.68e-05 (remaining 9.7e-05, floor 9.2e-07, numerical 1.3e-13), d 1.91e-02; numerical estimates 1.3e-13 to 8.2e-13
+   eps   2.8284: converged Hyperbolic; band edge 11.8; 5 groups read; the smallest ratio 140 at 0.0265654+0j (tested, A's gray zone): U 1.90e-04 (remaining 1.9e-04, floor 1.1e-06, numerical 1.3e-13), d 2.66e-02; numerical estimates 1.3e-13 to 5.9e-13
+   eps   4.0000: converged Hyperbolic; band edge 11.8; 5 groups read; the smallest ratio 99 at 0.0367428+0j (tested, A's gray zone): U 3.71e-04 (remaining 3.7e-04, floor 1.3e-06, numerical 1.3e-13), d 3.67e-02; numerical estimates 1.3e-13 to 7.5e-13
+   eps   5.6569: converged Hyperbolic; band edge 11.6; 5 groups read; the smallest ratio 70.2 at 0.050408+0j (tested, A's gray zone): U 7.18e-04 (remaining 7.2e-04, floor 1.6e-06, numerical 1.3e-13), d 5.04e-02; numerical estimates 1.3e-13 to 6.4e-13
+   eps   8.0000: converged Hyperbolic; band edge 11.5; 5 groups read; the smallest ratio 49.8 at 0.0684319+0j (tested, A's gray zone): U 1.37e-03 (remaining 1.4e-03, floor 1.9e-06, numerical 1.3e-13), d 6.84e-02; numerical estimates 1.3e-13 to 5.6e-13
+   eps  11.3137: converged Hyperbolic; band edge 11.3; 5 groups read; the smallest ratio 35.3 at 0.0916905+0j (tested, A's gray zone): U 2.60e-03 (remaining 2.6e-03, floor 2.2e-06, numerical 1.9e-13), d 9.17e-02; numerical estimates 1.9e-13 to 8.0e-13
+   eps  16.0000: converged Hyperbolic; band edge 11; 5 groups read; the smallest ratio 25 at 0.120971+0j (tested, A's gray zone): U 4.84e-03 (remaining 4.8e-03, floor 2.6e-06, numerical 3.4e-13), d 1.21e-01; numerical estimates 3.4e-13 to 6.5e-13
+   eps  22.6274: converged Hyperbolic; band edge 10.6; 5 groups read; the smallest ratio 17.6 at 0.156955+0j (tested, A's gray zone): U 8.90e-03 (remaining 8.9e-03, floor 3.2e-06, numerical 2.4e-13), d 1.57e-01; numerical estimates 2.4e-13 to 5.5e-13
+   eps  32.0000: converged Hyperbolic; band edge 10; 5 groups read; the smallest ratio 12.4 at 0.200456+0j (tested, A's gray zone): U 1.61e-02 (remaining 1.6e-02, floor 3.8e-06, numerical 2.8e-13), d 2.00e-01; numerical estimates 2.8e-13 to 6.2e-13
+   eps  45.2548: Unresolved; band edge 9.32; 5 groups read; the smallest ratio 8.77 at 0.253005+0j (tested, A's gray zone): U 2.89e-02 (remaining 2.9e-02, floor 4.6e-06, numerical 3.5e-13), d 2.53e-01; numerical estimates 3.5e-13 to 6.3e-13; ["tested group at 0.253005+0j: U 2.89e-02 above a tenth of its distance to A's gray zone, 2.53e-01"]
+      the tested group nearest zero: 0.253005+0j (real, Krein None): U 2.89e-02, d 2.53e-01 (A's gray zone), ratio 8.77
+   eps  64.0000: Unresolved; band edge 8.39; 5 groups read; the smallest ratio 6.26 at 0.317502+0j (tested, A's gray zone): U 5.07e-02 (remaining 5.1e-02, floor 5.7e-06, numerical 6.8e-13), d 3.17e-01; numerical estimates 5.1e-13 to 6.8e-13; ["tested group at 0.317502+0j: U 5.07e-02 above a tenth of its distance to A's gray zone, 3.17e-01"]
+      the tested group nearest zero: 0.317502+0j (real, Krein None): U 5.07e-02, d 3.17e-01 (A's gray zone), ratio 6.26
+   eps  72.0000: Unresolved; band edge 8.02; 5 groups read; the smallest ratio 5.61 at 0.342862+0j (tested, A's gray zone): U 6.11e-02 (remaining 6.1e-02, floor 6.1e-06, numerical 6.2e-13), d 3.43e-01; numerical estimates 4.7e-13 to 6.6e-13; ["tested group at 0.342862+0j: U 6.11e-02 above a tenth of its distance to A's gray zone, 3.43e-01"]
+      the tested group nearest zero: 0.342862+0j (real, Krein None): U 6.11e-02, d 3.43e-01 (A's gray zone), ratio 5.61
+1. every point accepted: PASS
+2. no eps converged with a type other than Hyperbolic: PASS  (0 wrong; reported: 15 converged and 3 Unresolved of 18)
+0 failed; 815 s

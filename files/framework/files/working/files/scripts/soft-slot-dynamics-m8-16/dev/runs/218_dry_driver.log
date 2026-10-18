@@ -1,0 +1,30 @@
+M8.16 dry run: 6 cases; outputs in run/dry
+C1 (control, R3):
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 24: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 32: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 40: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   checks: {'K1': True, 'K4': True}; 732 s
+C2a (control, R4):
+   C2a N = 16, m = 50: seed ok; 4 of 4 points accepted; 6 s
+   C2a N = 24, m = 138: seed ok; 4 of 4 points accepted; 57 s
+   C2a N = 32, m = 316: seed ok; 4 of 4 points accepted; 787 s
+   checks: {'K1': True, 'K4': False, 'converged': False, 'bar': True, 'trend': True, 'K2': True, 'K5_code_path': True}; 850 s
+STOP: C2a failed a check; the gate record is written
+verdict: {'verdict': 'incomplete', 'instrument': None, 'r5_gate': False, 'rows': {}}; 1583 s
+The dry run's claims, derived before it ran (the module docstring):
+E1. the controls and the R5 control pass, and the row gate refuses the dry gate record: False
+Traceback (most recent call last):
+  File "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_16/run/driver.py", line 605, in <module>
+    main()
+    ~~~~^^
+  File "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_16/run/driver.py", line 489, in main
+    dry_claims(outdir, results, log, cut)
+    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_16/run/driver.py", line 546, in dry_claims
+    ok['E2'] = (all(c[n].get('K5_code_path') for n in ('C2a', 'C2b', 'C3'))
+                ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_16/run/driver.py", line 546, in <genexpr>
+    ok['E2'] = (all(c[n].get('K5_code_path') for n in ('C2a', 'C2b', 'C3'))
+                    ~^^^
+KeyError: 'C2b'

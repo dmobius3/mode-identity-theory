@@ -1,0 +1,636 @@
+{
+ "order": [
+  "C1",
+  "C2a",
+  "C2b",
+  "C3",
+  "C2a/R5",
+  "C2a:ladder"
+ ],
+ "cases": {
+  "C1": {
+   "role": "control",
+   "slot": "R3",
+   "level": 2,
+   "lam0": 8.0,
+   "orbit": "theoremD",
+   "sig": null,
+   "k": 4,
+   "r": 2,
+   "points": [
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32,
+    40
+   ],
+   "m815": null,
+   "dim": 6,
+   "ranks": [
+    1,
+    0
+   ],
+   "chains": 5,
+   "type": "Elliptic",
+   "idx": [
+    0,
+    0,
+    0
+   ],
+   "kr": 0,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "1/1",
+    "value": 1.0
+   },
+   "s": {
+    "frac": "1/1",
+    "value": 1.0
+   },
+   "spectrum": [],
+   "representative": {
+    "1": [
+     1.0,
+     0.0
+    ],
+    "0": [
+     0.6,
+     0.3
+    ],
+    "-1": [
+     0.0,
+     -0.4
+    ]
+   },
+   "admission": "theoremD:R3"
+  },
+  "C2a": {
+   "role": "control",
+   "slot": "R4",
+   "level": 6,
+   "lam0": 48.0,
+   "orbit": "coherent",
+   "sig": [
+    0,
+    0,
+    10
+   ],
+   "k": 3,
+   "r": 1,
+   "points": [
+    {
+     "eps": 0.25,
+     "read": true
+    },
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32
+   ],
+   "m815": null,
+   "dim": 4,
+   "ranks": [
+    1,
+    0
+   ],
+   "chains": 3,
+   "type": "Elliptic",
+   "idx": [
+    0,
+    0,
+    0
+   ],
+   "kr": 0,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "1288/1287",
+    "value": 1.0007770007770007
+   },
+   "s": {
+    "frac": "1/1",
+    "value": 1.0
+   },
+   "spectrum": [
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "28/143",
+      "value": 0.1958041958041958
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "56/429",
+      "value": 0.13053613053613053
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "140/99",
+      "value": 1.4141414141414141
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "112/39",
+      "value": 2.871794871794872
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "896/1287",
+      "value": 0.6961926961926962
+     },
+     "mult": 1
+    }
+   ],
+   "representative": {
+    "3": [
+     1.0,
+     0.0
+    ]
+   },
+   "admission": "C2a"
+  },
+  "C2b": {
+   "role": "control",
+   "slot": "R2",
+   "level": 7,
+   "lam0": 63.0,
+   "orbit": "weight72",
+   "sig": [
+    0,
+    0,
+    10
+   ],
+   "k": 5,
+   "r": 1,
+   "points": [
+    {
+     "eps": 0.25,
+     "read": true
+    },
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32
+   ],
+   "m815": null,
+   "dim": 6,
+   "ranks": [
+    1,
+    0
+   ],
+   "chains": 5,
+   "type": "Elliptic",
+   "idx": [
+    0,
+    0,
+    0
+   ],
+   "kr": 0,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "144/143",
+    "value": 1.006993006993007
+   },
+   "s": {
+    "frac": "1/1",
+    "value": 1.0
+   },
+   "spectrum": [
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "112/143",
+      "value": 0.7832167832167832
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "168/143",
+      "value": 1.1748251748251748
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "336/143",
+      "value": 2.3496503496503496
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "504/143",
+      "value": 3.5244755244755246
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "560/143",
+      "value": 3.9160839160839163
+     },
+     "mult": 1
+    }
+   ],
+   "representative": {
+    "3.5": [
+     1.0,
+     0.0
+    ]
+   },
+   "admission": "C2b"
+  },
+  "C3": {
+   "role": "control",
+   "slot": "R4",
+   "level": 6,
+   "lam0": 48.0,
+   "orbit": "octahedron",
+   "sig": [
+    6,
+    0,
+    3
+   ],
+   "k": 4,
+   "r": 4,
+   "points": [
+    {
+     "eps": 0.25,
+     "read": true
+    },
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32
+   ],
+   "m815": null,
+   "dim": 8,
+   "ranks": [
+    4,
+    0
+   ],
+   "chains": 4,
+   "type": "Hyperbolic",
+   "idx": [
+    6,
+    3,
+    3
+   ],
+   "kr": 3,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "175/143",
+    "value": 1.2237762237762237
+   },
+   "s": {
+    "frac": "1/1",
+    "value": 1.0
+   },
+   "spectrum": [
+    {
+     "cls": "real",
+     "sign": null,
+     "tau": {
+      "value": 0.674085679526388
+     },
+     "mult": 3
+    }
+   ],
+   "representative": {
+    "2": [
+     1.0,
+     0.0
+    ],
+    "-2": [
+     1.0,
+     0.0
+    ]
+   },
+   "admission": "C3"
+  },
+  "C2a/R5": {
+   "role": "R5gate",
+   "slot": "R5",
+   "level": 6,
+   "lam0": 48.0,
+   "orbit": "coherent",
+   "sig": [
+    0,
+    0,
+    10
+   ],
+   "k": 3,
+   "r": 1,
+   "points": [
+    {
+     "eps": 0.25,
+     "read": true
+    },
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32
+   ],
+   "m815": null,
+   "dim": 4,
+   "ranks": [
+    1,
+    0
+   ],
+   "chains": 3,
+   "type": "Elliptic",
+   "idx": [
+    0,
+    0,
+    0
+   ],
+   "kr": 0,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "2289/2288",
+    "value": 1.000437062937063
+   },
+   "s": {
+    "frac": "9/16",
+    "value": 0.5625
+   },
+   "spectrum": [
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "28/143",
+      "value": 0.1958041958041958
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "56/429",
+      "value": 0.13053613053613053
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "140/99",
+      "value": 1.4141414141414141
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "112/39",
+      "value": 2.871794871794872
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "896/1287",
+      "value": 0.6961926961926962
+     },
+     "mult": 1
+    }
+   ],
+   "representative": {
+    "3": [
+     1.0,
+     0.0
+    ]
+   },
+   "admission": "C2a/R5"
+  },
+  "C2a:ladder": {
+   "role": "dryladder",
+   "slot": "R4",
+   "level": 6,
+   "lam0": 48.0,
+   "orbit": "coherent",
+   "sig": [
+    0,
+    0,
+    10
+   ],
+   "k": 3,
+   "r": 1,
+   "points": [
+    {
+     "eps": 0.25,
+     "read": true
+    },
+    {
+     "eps": 0.3535533905932738,
+     "read": true
+    },
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 0.7071067811865476,
+     "read": false
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 1.4142135623730951,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32
+   ],
+   "m815": "C2a_R4",
+   "dim": 4,
+   "ranks": [
+    1,
+    0
+   ],
+   "chains": 3,
+   "type": "Elliptic",
+   "idx": [
+    0,
+    0,
+    0
+   ],
+   "kr": 0,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "1288/1287",
+    "value": 1.0007770007770007
+   },
+   "s": {
+    "frac": "1/1",
+    "value": 1.0
+   },
+   "spectrum": [
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "28/143",
+      "value": 0.1958041958041958
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "56/429",
+      "value": 0.13053613053613053
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "140/99",
+      "value": 1.4141414141414141
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "112/39",
+      "value": 2.871794871794872
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "896/1287",
+      "value": 0.6961926961926962
+     },
+     "mult": 1
+    }
+   ],
+   "representative": {
+    "3": [
+     1.0,
+     0.0
+    ]
+   },
+   "admission": "C2a"
+  }
+ }
+}

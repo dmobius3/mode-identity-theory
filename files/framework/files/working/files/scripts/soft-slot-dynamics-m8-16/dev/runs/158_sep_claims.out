@@ -1,0 +1,39 @@
+The separation rule's claims (instrument/convergence.py), factor 0.1, m = 0.2, 10 mixings a family. Derived before the run, from exact roots:
+  P    at the cutoffs Elliptic, in the limit Elliptic: the binding group U 5.495369893853282e-07, distance 0.000998 (gray); under the rule converged; arms converging it: ['factor_one', 'last_change', 'no_floor', 'no_gray', 'no_axis', 'no_krein', 'no_partner', 'contract_ignored']
+  P'   at the cutoffs Hyperbolic, in the limit Hyperbolic: the binding group U 5.495369893853282e-07, distance 0.000998 (gray); under the rule converged; arms converging it: ['factor_one', 'last_change', 'no_floor', 'no_gray', 'no_axis', 'no_krein', 'no_partner', 'contract_ignored']
+  PK   at the cutoffs Elliptic, in the limit Elliptic: the binding group U 7.03e-6, distance 0.00901 (krein); under the rule converged; arms converging it: ['factor_one', 'last_change', 'no_floor', 'no_gray', 'no_axis', 'no_krein', 'no_partner', 'contract_ignored']
+  Z    at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 1.1e-5, distance 8.35e-6 (gray); under the rule Unresolved; arms converging it: ['no_gray']
+  K    at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 0.00262, distance 0.001 (krein); under the rule Unresolved; arms converging it: ['no_krein']
+  X    at the cutoffs Hyperbolic, in the limit Elliptic: the binding group U 0.00128, distance 0.001 (axis); under the rule Unresolved; arms converging it: ['no_axis']
+  R    at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 0.00075, distance 0.001 (krein); under the rule Unresolved; arms converging it: ['factor_one', 'last_change', 'no_krein']
+  F    at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 5.495369893853282e-07, distance 1.1e-6 (gray); under the rule Unresolved; arms converging it: ['factor_one', 'no_floor', 'no_gray']
+  N    at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U +inf, distance 0.001 (krein); under the rule Unresolved; arms converging it: ['last_change', 'contract_ignored']
+  K'   at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 5.495369893853282e-07, distance 0.001 (krein); under the rule Unresolved; arms converging it: ['no_partner']
+  F15  at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 5.495369893853282e-07, distance 6.59e-6 (gray); under the rule converged; arms converging it: ['factor_one', 'last_change', 'no_floor', 'no_gray', 'no_axis', 'no_krein', 'no_partner', 'contract_ignored']
+  R2   at the cutoffs Elliptic, in the limit Hyperbolic: the binding group U 3.95e-5, distance 0.001 (krein); under the rule converged; arms converging it: ['factor_one', 'last_change', 'no_floor', 'no_gray', 'no_axis', 'no_krein', 'no_partner', 'contract_ignored']
+
+1. The analytic projector: PASS  oscillator, k = 4: 1.25 against 1.25 (3.6e-16), usable True (left 2.2e-16, condition 1, P X - X 0.0e+00); real pair, k = 4: 1.25 against 1.25 (0.0e+00), usable True (left 1.5e-16, condition 1, P X - X 0.0e+00); oscillator under diag(1, 10), k = 4: 10.025 against 10.025 (0.0e+00), usable True (left 0.0e+00, condition 1, P X - X 0.0e+00); the doubled oscillator's group of two: 1.25 against 1.25 (3.6e-16), usable True (left 2.2e-16, condition 1, P X - X 0.0e+00)
+   at UB's exact collision, the group of 2: usable False (the group's eigenvectors do not span it (a defective group)); a converged point with its tested group marked not usable: Unresolved, ['tested group at -5.94633e-16+0.00100002j: the numerical estimate is not usable: marked not usable (claim 1)']
+2. P  : PASS  10 converged, 0 Unresolved of 10 (derived: converged); at mixing 1 the binding group -2.21033e-15+0.00100002j (tested): U 5.50e-07, d 9.98e-04 (A's gray zone)
+2. P' : PASS  10 converged, 0 Unresolved of 10 (derived: converged); at mixing 1 the binding group 0.00100002+0j (tested): U 5.50e-07, d 9.98e-04 (A's gray zone)
+2. PK : PASS  10 converged, 0 Unresolved of 10 (derived: converged); at mixing 1 the binding group 2.34999e-12+35.7045j (tested): U 7.03e-06, d 9.01e-03 (the opposite Krein sign)
+3. Z  : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group -2.41165e-15+1e-05j (tested): U 1.10e-05, d 8.35e-06 (A's gray zone)
+3. K  : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group 1.20329e-10+35.7005j (tested): U 2.62e-03, d 1.00e-03 (the opposite Krein sign)
+3. X  : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group 0.001+35.7j (tested): U 1.28e-03, d 1.00e-03 (the imaginary axis)
+3. R  : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group 1.21031e-10+35.7005j (tested): U 7.51e-04, d 1.00e-03 (the opposite Krein sign)
+3. F  : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group -2.60727e-15+2.74768e-06j (tested): U 5.50e-07, d 1.10e-06 (A's gray zone)
+3. N  : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group 8.34803e-11+35.7005j (tested): U inf, d 1.00e-03 (the opposite Krein sign); non-contracting above the floor
+3. K' : PASS  0 converged, 10 Unresolved of 10 (derived: Unresolved); at mixing 1 the binding group 2.4692e-15+0.0109999j (partner): U 1.00e-03, d 1.00e-03 (the opposite Krein sign)
+4. The arms, each red where a designated counterexample reads converged with its finite-N type:
+   (a) factor_one: red, as it must be  converged with the wrong type: R 10 of 10, F 10 of 10 (derived: R, F)
+   (b) last_change: red, as it must be  converged with the wrong type: R 10 of 10 (derived: R)
+   (c) no_floor: red, as it must be  converged with the wrong type: F 10 of 10 (derived: F)
+   (d) no_gray: red, as it must be  converged with the wrong type: Z 10 of 10, F 10 of 10 (derived: Z, F)
+   (e) no_axis: red, as it must be  converged with the wrong type: X 10 of 10 (derived: X)
+   (f) no_krein: red, as it must be  converged with the wrong type: K 10 of 10, R 10 of 10 (derived: K, R)
+   (h) no_partner: red, as it must be  converged with the wrong type: K' 10 of 10 (derived: K')
+   (i) contract_ignored: red, as it must be  converged with the wrong type: N 10 of 10 (derived: N)
+   (g) no_numerical, at the module: red, as it must be  ||P_g|| u ||A|| set to 2.00e-04, a fifth of the distance 9.98e-04: with the estimate Unresolved, without it converged
+Reported, unscored: F15 (the pair at 15 margins): 10 of 10 converged with its finite-N type (Elliptic; in the limit Hyperbolic; derived: converged). R2 (R from its two highest cutoffs): 10 of 10 converged (derived: converged).
+Reported: 1610 tested groups read; the numerical estimate 3.8e-13 to 5.6e-07, against floors near 5.5e-07.
+0 failed

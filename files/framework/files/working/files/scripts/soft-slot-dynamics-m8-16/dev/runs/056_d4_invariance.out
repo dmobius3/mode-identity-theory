@@ -1,0 +1,13 @@
+R1, N = 12, m = 14: PASS  derivatives 3.3e-11 1.6e-11, dense vs product 2.4e-16, symmetry 0.0e+00; invariance 1.9e-15, J^2 = -1 9.6e-15; identity over 6 generators 3.7e-16
+R2, N = 12, m = 8: PASS  derivatives 4.3e-11 2.8e-11, dense vs product 4.7e-16, symmetry 0.0e+00; invariance 2.4e-15, J^2 = -1 4.1e-15; identity over 6 generators 2.1e-15
+R3, N = 12, m = 27: PASS  derivatives 8.2e-11 1.1e-11, dense vs product 2.3e-16, symmetry 0.0e+00; invariance 4.8e-15, J^2 involution 9.0e-15; identity over 4 generators 2.7e-16
+R4, N = 12, m = 18: PASS  derivatives 3.1e-11 1.8e-11, dense vs product 2.5e-16, symmetry 0.0e+00; invariance 6.3e-16, J^2 involution 4.6e-15; identity over 4 generators 3.6e-16
+R5, N = 12, m = 29: PASS  derivatives 1.4e-10 1.6e-11, dense vs product 2.0e-16, symmetry 0.0e+00; invariance 1.8e-15, J^2 involution 1.1e-14; identity over 4 generators 3.3e-16
+R6, N = 12, m = 26: PASS  derivatives 6.2e-12 1.6e-11, dense vs product 2.7e-16, symmetry 0.0e+00; invariance 1.6e-15, J^2 = -1 1.6e-14; identity over 6 generators 4.8e-16
+R7, N = 12, m = 38: PASS  derivatives 4.2e-11 1.5e-11, dense vs product 2.9e-16, symmetry 0.0e+00; invariance 2.8e-15, J^2 involution 1.6e-14; identity over 4 generators 2.6e-16
+R8, N = 12, m = 36: PASS  derivatives 5.9e-11 1.8e-11, dense vs product 2.7e-16, symmetry 0.0e+00; invariance 1.4e-15, J^2 = -1 1.8e-14; identity over 6 generators 5.9e-16
+4. the chunked path, one alpha row at a time, against the cached whole nodes (R2, R4, R5): PASS  worst relative difference 2.1e-15
+arms
+   arm: part of the top level dropped (R5)                      RED
+   arm: the Hessian's rank-one term with its sign flipped (R2)  RED
+0 failed (claims and arms)

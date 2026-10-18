@@ -1,0 +1,141 @@
+Step 3, the slow-pair demonstration: L's cut 2.22e-13 ||L|| (1000 u), its gray zone to 2.22e-12 ||L|| (G_L = 10); A's margin = 2 sqrt(u ||A|| max(m, 0.2)), G = 3, the leak at most 200 u ||A|| / gap. 10 mixings per row.
+Derived before the run (A: s against the top of A's gray zone; L: mu against the top of L's):
+  S1+        omega    7: 5e-06 m 0.2: A 3.03, L 1.9e+04 -> resolved; 1e-05 m 0.2: A 6.07, L 3.7e+04 -> resolved; 3e-05 m 0.2: A 18.20, L 1.1e+05 -> resolved; 5e-06 m 72: A 0.16, L 1.9e+04 -> A; 1e-05 m 72: A 0.32, L 3.7e+04 -> A; 1e-04 m 72: A 3.20, L 3.7e+05 -> resolved
+  S1+        omega   14: 5e-06 m 0.2: A 3.03, L 3.7e+04 -> resolved; 1e-05 m 0.2: A 6.07, L 7.4e+04 -> resolved; 3e-05 m 0.2: A 18.20, L 2.2e+05 -> resolved; 5e-06 m 72: A 0.16, L 3.7e+04 -> A; 1e-05 m 72: A 0.32, L 7.4e+04 -> A; 1e-04 m 72: A 3.20, L 7.4e+05 -> resolved
+  S1-        omega    7: 5e-06 m 0.2: A 3.03, L 1.9e+04 -> resolved; 1e-05 m 0.2: A 6.07, L 3.7e+04 -> resolved; 3e-05 m 0.2: A 18.20, L 1.1e+05 -> resolved; 5e-06 m 72: A 0.16, L 1.9e+04 -> A; 1e-05 m 72: A 0.32, L 3.7e+04 -> A; 1e-04 m 72: A 3.20, L 3.7e+05 -> resolved
+  S1-        omega   14: 5e-06 m 0.2: A 3.03, L 3.7e+04 -> resolved; 1e-05 m 0.2: A 6.07, L 7.4e+04 -> resolved; 3e-05 m 0.2: A 18.20, L 2.2e+05 -> resolved; 5e-06 m 72: A 0.16, L 3.7e+04 -> A; 1e-05 m 72: A 0.32, L 7.4e+04 -> A; 1e-04 m 72: A 3.20, L 7.4e+05 -> resolved
+  S1r r=1.66 omega    7: 5e-06 m 0.2: A 3.03, L 1.4e+04 -> resolved; 1e-05 m 0.2: A 6.07, L 2.9e+04 -> resolved; 3e-05 m 0.2: A 18.20, L 8.6e+04 -> resolved; 5e-06 m 72: A 0.16, L 1.4e+04 -> A; 1e-05 m 72: A 0.32, L 2.9e+04 -> A; 1e-04 m 72: A 3.20, L 2.9e+05 -> resolved
+  S1r r=1.66 omega   14: 5e-06 m 0.2: A 3.03, L 2.9e+04 -> resolved; 1e-05 m 0.2: A 6.07, L 5.8e+04 -> resolved; 3e-05 m 0.2: A 18.20, L 1.7e+05 -> resolved; 5e-06 m 72: A 0.16, L 2.9e+04 -> A; 1e-05 m 72: A 0.32, L 5.8e+04 -> A; 1e-04 m 72: A 3.20, L 5.8e+05 -> resolved
+  S1r r=10   omega    7: 5e-06 m 0.2: A 3.03, L 5.9e+03 -> leak; 1e-05 m 0.2: A 6.07, L 1.2e+04 -> leak; 3e-05 m 0.2: A 18.20, L 3.5e+04 -> leak; 5e-06 m 72: A 0.16, L 5.9e+03 -> A; 1e-05 m 72: A 0.32, L 1.2e+04 -> A; 1e-04 m 72: A 3.20, L 1.2e+05 -> leak
+  S1r r=10   omega   14: 5e-06 m 0.2: A 3.03, L 1.2e+04 -> leak; 1e-05 m 0.2: A 6.07, L 2.3e+04 -> leak; 3e-05 m 0.2: A 18.20, L 7.0e+04 -> leak; 5e-06 m 72: A 0.16, L 1.2e+04 -> A; 1e-05 m 72: A 0.32, L 2.3e+04 -> A; 1e-04 m 72: A 3.20, L 2.3e+05 -> leak
+  S1r r=100  omega    7: 5e-06 m 0.2: A 3.03, L 1.9e+03 -> leak; 1e-05 m 0.2: A 6.07, L 3.7e+03 -> leak; 3e-05 m 0.2: A 18.20, L 1.1e+04 -> leak; 5e-06 m 72: A 0.16, L 1.9e+03 -> A; 1e-05 m 72: A 0.32, L 3.7e+03 -> A; 1e-04 m 72: A 3.20, L 3.7e+04 -> leak
+  S1r r=100  omega   14: 5e-06 m 0.2: A 3.03, L 3.7e+03 -> leak; 1e-05 m 0.2: A 6.07, L 7.4e+03 -> leak; 3e-05 m 0.2: A 18.20, L 2.2e+04 -> leak; 5e-06 m 72: A 0.16, L 3.7e+03 -> A; 1e-05 m 72: A 0.32, L 7.4e+03 -> A; 1e-04 m 72: A 3.20, L 7.4e+04 -> leak
+  S2         omega    7: 5e-06 m 0.2: A 3.03, L 1.3e+00 -> leak; 1e-05 m 0.2: A 6.07, L 5.2e+00 -> leak; 3e-05 m 0.2: A 18.20, L 4.7e+01 -> leak; 5e-06 m 72: A 0.16, L 1.3e+00 -> A; 1e-05 m 72: A 0.32, L 5.2e+00 -> A; 1e-04 m 72: A 3.20, L 5.2e+02 -> leak
+  S2         omega   14: 5e-06 m 0.2: A 3.03, L 5.2e+00 -> leak; 1e-05 m 0.2: A 6.07, L 2.1e+01 -> leak; 3e-05 m 0.2: A 18.20, L 1.9e+02 -> leak; 5e-06 m 72: A 0.16, L 5.2e+00 -> A; 1e-05 m 72: A 0.32, L 2.1e+01 -> A; 1e-04 m 72: A 3.20, L 2.1e+03 -> leak
+  S3         omega    7: 5e-06 m 0.2: A 3.03, L 1.3e+00 -> leak; 1e-05 m 0.2: A 6.07, L 5.2e+00 -> leak; 3e-05 m 0.2: A 18.20, L 4.6e+01 -> leak; 5e-06 m 72: A 0.16, L 1.3e+00 -> A; 1e-05 m 72: A 0.32, L 5.2e+00 -> A; 1e-04 m 72: A 3.20, L 5.2e+02 -> leak
+  S3         omega   14: 5e-06 m 0.2: A 3.03, L 5.2e+00 -> leak; 1e-05 m 0.2: A 6.07, L 2.1e+01 -> leak; 3e-05 m 0.2: A 18.20, L 1.9e+02 -> leak; 5e-06 m 72: A 0.16, L 5.2e+00 -> A; 1e-05 m 72: A 0.32, L 2.1e+01 -> A; 1e-04 m 72: A 3.20, L 2.1e+03 -> leak
+  S4         omega    7: 5e-06 m 0.2: A 3.03, L 1.3e+00 -> leak; 1e-05 m 0.2: A 6.07, L 5.2e+00 -> leak; 3e-05 m 0.2: A 18.20, L 4.7e+01 -> leak; 5e-06 m 72: A 0.16, L 1.3e+00 -> A; 1e-05 m 72: A 0.32, L 5.2e+00 -> A; 1e-04 m 72: A 3.20, L 5.2e+02 -> leak
+  S4         omega   14: 5e-06 m 0.2: A 3.03, L 5.2e+00 -> leak; 1e-05 m 0.2: A 6.07, L 2.1e+01 -> leak; 3e-05 m 0.2: A 18.20, L 1.9e+02 -> leak; 5e-06 m 72: A 0.16, L 5.2e+00 -> A; 1e-05 m 72: A 0.32, L 2.1e+01 -> A; 1e-04 m 72: A 3.20, L 2.1e+03 -> leak
+
+GATE S1+        omega    7 s 5e-06 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 2.8e-05 to 3.7e-04; gap 5.00e-06, sigma_min(T22) 4.99e-06; pair off by 1.1e-09 s
+GATE S1+        omega    7 s 1e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 7.2e-05 to 4.9e-04; gap 1.00e-05, sigma_min(T22) 9.97e-06; pair off by 7.5e-10 s
+     S1+        omega    7 s 3e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.6e-04 to 4.0e-04; gap 3.00e-05, sigma_min(T22) 2.99e-05; pair off by 3.1e-10 s
+     S1+        omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.6e-04 to 4.4e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 1.8e-09 s
+     S1+        omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 2.1e-04 to 5.7e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 4.5e-10 s
+     S1+        omega    7 s 1e-04 m   72: as derived (resolved); {'RESOLVED': 10}; leak/bound 8.1e-05 to 6.0e-04; gap 1.00e-04, sigma_min(T22) 9.97e-05; pair off by 5.5e-11 s
+GATE S1+        omega   14 s 5e-06 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.2e-04 to 5.5e-04; gap 5.00e-06, sigma_min(T22) 5.00e-06; pair off by 1.6e-09 s
+GATE S1+        omega   14 s 1e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.1e-04 to 3.7e-04; gap 1.00e-05, sigma_min(T22) 9.99e-06; pair off by 4.2e-10 s
+     S1+        omega   14 s 3e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.4e-04 to 4.4e-04; gap 3.00e-05, sigma_min(T22) 3.00e-05; pair off by 1.2e-10 s
+     S1+        omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.0e-04 to 5.0e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 9.1e-10 s
+     S1+        omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.2e-04 to 3.9e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 5.6e-10 s
+     S1+        omega   14 s 1e-04 m   72: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.6e-04 to 5.0e-04; gap 1.00e-04, sigma_min(T22) 9.99e-05; pair off by 3.0e-11 s
+GATE S1-        omega    7 s 5e-06 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 4.4e-05 to 8.2e-04; gap 5.00e-06, sigma_min(T22) 4.99e-06; pair off by 7.3e-10 s
+GATE S1-        omega    7 s 1e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.2e-04 to 3.4e-04; gap 1.00e-05, sigma_min(T22) 9.97e-06; pair off by 5.6e-10 s
+     S1-        omega    7 s 3e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 8.8e-05 to 5.4e-04; gap 3.00e-05, sigma_min(T22) 2.99e-05; pair off by 2.1e-10 s
+     S1-        omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.6e-04 to 5.2e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 1.2e-09 s
+     S1-        omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 9.0e-05 to 4.1e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 5.7e-10 s
+     S1-        omega    7 s 1e-04 m   72: as derived (resolved); {'RESOLVED': 10}; leak/bound 7.7e-05 to 4.8e-04; gap 1.00e-04, sigma_min(T22) 9.97e-05; pair off by 6.3e-11 s
+GATE S1-        omega   14 s 5e-06 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 4.6e-05 to 3.9e-04; gap 5.00e-06, sigma_min(T22) 5.00e-06; pair off by 1.2e-09 s
+GATE S1-        omega   14 s 1e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 4.9e-05 to 4.2e-04; gap 1.00e-05, sigma_min(T22) 9.99e-06; pair off by 7.7e-10 s
+     S1-        omega   14 s 3e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.5e-04 to 3.5e-04; gap 3.00e-05, sigma_min(T22) 3.00e-05; pair off by 1.5e-10 s
+     S1-        omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.3e-04 to 3.4e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 9.5e-10 s
+     S1-        omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 9.6e-05 to 5.6e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 1.2e-09 s
+     S1-        omega   14 s 1e-04 m   72: as derived (resolved); {'RESOLVED': 10}; leak/bound 3.9e-05 to 6.0e-04; gap 1.00e-04, sigma_min(T22) 9.99e-05; pair off by 5.6e-11 s
+GATE S1r r=1.66 omega    7 s 5e-06 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.3e-04 to 6.2e-04; gap 5.00e-06, sigma_min(T22) 3.87e-06; pair off by 1.5e-09 s
+GATE S1r r=1.66 omega    7 s 1e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 7.2e-05 to 4.7e-04; gap 1.00e-05, sigma_min(T22) 7.74e-06; pair off by 5.4e-10 s
+     S1r r=1.66 omega    7 s 3e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.5e-04 to 6.3e-04; gap 3.00e-05, sigma_min(T22) 2.32e-05; pair off by 1.8e-10 s
+     S1r r=1.66 omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.4e-04 to 4.9e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 1.5e-09 s
+     S1r r=1.66 omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.6e-04 to 5.1e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 7.0e-10 s
+     S1r r=1.66 omega    7 s 1e-04 m   72: as derived (resolved); {'RESOLVED': 10}; leak/bound 6.4e-05 to 6.6e-04; gap 1.00e-04, sigma_min(T22) 7.74e-05; pair off by 1.1e-10 s
+GATE S1r r=1.66 omega   14 s 5e-06 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 7.6e-05 to 5.7e-04; gap 5.00e-06, sigma_min(T22) 3.88e-06; pair off by 1.4e-09 s
+GATE S1r r=1.66 omega   14 s 1e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 9.1e-05 to 5.2e-04; gap 1.00e-05, sigma_min(T22) 7.76e-06; pair off by 1.0e-09 s
+     S1r r=1.66 omega   14 s 3e-05 m  0.2: as derived (resolved); {'RESOLVED': 10}; leak/bound 7.5e-05 to 3.8e-04; gap 3.00e-05, sigma_min(T22) 2.33e-05; pair off by 2.2e-10 s
+     S1r r=1.66 omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.0e-04 to 3.7e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 1.7e-09 s
+     S1r r=1.66 omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.5e-04 to 1.1e-03; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 5.4e-10 s
+     S1r r=1.66 omega   14 s 1e-04 m   72: as derived (resolved); {'RESOLVED': 10}; leak/bound 1.1e-04 to 4.5e-04; gap 1.00e-04, sigma_min(T22) 7.76e-05; pair off by 9.6e-11 s
+     S1r r=10   omega    7 s 5e-06 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 1.4e-04 to 1.5e-03; gap 5.00e-06, sigma_min(T22) 1.58e-06; pair off by 2.6e-09 s
+     S1r r=10   omega    7 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 8.4e-05 to 1.1e-03; gap 1.00e-05, sigma_min(T22) 3.15e-06; pair off by 1.9e-09 s
+     S1r r=10   omega    7 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 5.7e-05 to 8.1e-04; gap 3.00e-05, sigma_min(T22) 9.46e-06; pair off by 5.0e-10 s
+     S1r r=10   omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.0e-04 to 6.8e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 2.3e-09 s
+     S1r r=10   omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 7.7e-05 to 4.5e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 1.2e-09 s
+     S1r r=10   omega    7 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 1.4e-04 to 9.2e-04; gap 1.00e-04, sigma_min(T22) 3.15e-05; pair off by 1.7e-10 s
+     S1r r=10   omega   14 s 5e-06 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 5.4e-05 to 1.4e-03; gap 5.00e-06, sigma_min(T22) 1.58e-06; pair off by 1.8e-09 s
+     S1r r=10   omega   14 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 2.0e-04 to 1.1e-03; gap 1.00e-05, sigma_min(T22) 3.16e-06; pair off by 1.2e-09 s
+     S1r r=10   omega   14 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 1.9e-04 to 1.9e-03; gap 3.00e-05, sigma_min(T22) 9.48e-06; pair off by 4.2e-10 s
+     S1r r=10   omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.2e-04 to 5.4e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 2.0e-09 s
+     S1r r=10   omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.5e-04 to 4.6e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 1.2e-09 s
+     S1r r=10   omega   14 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 7.7e-05 to 6.1e-04; gap 1.00e-04, sigma_min(T22) 3.16e-05; pair off by 8.1e-11 s
+     S1r r=100  omega    7 s 5e-06 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 8.8e-04 to 5.4e-03; gap 5.00e-06, sigma_min(T22) 4.99e-07; pair off by 7.0e-09 s
+     S1r r=100  omega    7 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 4.2e-04 to 2.6e-03; gap 1.00e-05, sigma_min(T22) 9.97e-07; pair off by 4.7e-09 s
+     S1r r=100  omega    7 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 1.1e-03 to 2.7e-03; gap 3.00e-05, sigma_min(T22) 2.99e-06; pair off by 1.1e-09 s
+     S1r r=100  omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 8.6e-05 to 5.3e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 4.7e-09 s
+     S1r r=100  omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.8e-04 to 1.0e-03; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 4.5e-09 s
+     S1r r=100  omega    7 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 6.6e-04 to 7.4e-03; gap 1.00e-04, sigma_min(T22) 9.97e-06; pair off by 6.1e-10 s
+     S1r r=100  omega   14 s 5e-06 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 2.1e-04 to 4.1e-03; gap 5.00e-06, sigma_min(T22) 5.00e-07; pair off by 1.0e-08 s
+     S1r r=100  omega   14 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 6.1e-04 to 3.2e-03; gap 1.00e-05, sigma_min(T22) 9.99e-07; pair off by 2.1e-09 s
+     S1r r=100  omega   14 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 4.2e-05 to 3.3e-03; gap 3.00e-05, sigma_min(T22) 3.00e-06; pair off by 1.4e-09 s
+     S1r r=100  omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.1e-04 to 4.0e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 6.8e-09 s
+     S1r r=100  omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.4e-04 to 5.1e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 4.7e-09 s
+     S1r r=100  omega   14 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 2.0e-04 to 3.8e-03; gap 1.00e-04, sigma_min(T22) 9.99e-06; pair off by 3.2e-10 s
+     S2         omega    7 s 5e-06 m  0.2: as derived (leak); {"Unresolved ['leak']": 8, 'RESOLVED': 2}; leak/bound 2.6e-01 to 3.3e+00; gap 5.00e-06, sigma_min(T22) 3.51e-10; pair off by 1.4e-05 s
+     S2         omega    7 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 4, "Unresolved ['leak']": 6}; leak/bound 7.8e-01 to 2.4e+00; gap 1.00e-05, sigma_min(T22) 1.40e-09; pair off by 2.6e-06 s
+     S2         omega    7 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 1.7e-02 to 8.0e-01; gap 3.00e-05, sigma_min(T22) 1.26e-08; pair off by 1.8e-07 s
+     S2         omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.4e-04 to 5.9e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 1.1e-05 s
+     S2         omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 9.8e-05 to 4.3e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 3.1e-06 s
+     S2         omega    7 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 3.5e-02 to 2.2e-01; gap 1.00e-04, sigma_min(T22) 1.40e-07; pair off by 1.6e-08 s
+     S2         omega   14 s 5e-06 m  0.2: as derived (leak); {"Unresolved ['leak']": 6, 'RESOLVED': 4}; leak/bound 4.5e-01 to 1.6e+00; gap 5.00e-06, sigma_min(T22) 7.00e-10; pair off by 3.8e-06 s
+     S2         omega   14 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 9, "Unresolved ['leak']": 1}; leak/bound 1.7e-01 to 1.4e+00; gap 1.00e-05, sigma_min(T22) 2.80e-09; pair off by 7.1e-07 s
+     S2         omega   14 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 4.9e-02 to 2.6e-01; gap 3.00e-05, sigma_min(T22) 2.52e-08; pair off by 1.1e-07 s
+     S2         omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.7e-04 to 5.0e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 4.2e-06 s
+     S2         omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)']": 10}; leak/bound 1.4e-04 to 4.5e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 1.4e-06 s
+     S2         omega   14 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 1.7e-02 to 1.0e-01; gap 1.00e-04, sigma_min(T22) 2.80e-07; pair off by 6.1e-09 s
+     S3         omega    7 s 5e-06 m  0.2: as derived (leak); {"Unresolved ['leak']": 10}; leak/bound 1.1e+00 to 4.1e+00; gap 5.00e-06, sigma_min(T22) 3.47e-10; pair off by 1.4e-05 s
+     S3         omega    7 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 2, "Unresolved ['leak']": 8}; leak/bound 7.9e-01 to 4.1e+00; gap 1.00e-05, sigma_min(T22) 1.39e-09; pair off by 2.6e-06 s
+     S3         omega    7 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 1.6e-01 to 9.5e-01; gap 3.00e-05, sigma_min(T22) 1.25e-08; pair off by 2.5e-07 s
+     S3         omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 2.3e-04 to 6.9e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 8.9e-06 s
+     S3         omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.3e-04 to 5.7e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 2.1e-06 s
+     S3         omega    7 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 7.6e-02 to 4.4e-01; gap 1.00e-04, sigma_min(T22) 1.39e-07; pair off by 2.2e-08 s
+     S3         omega   14 s 5e-06 m  0.2: as derived (leak); {'RESOLVED': 3, "Unresolved ['leak']": 7}; leak/bound 7.6e-02 to 3.0e+00; gap 5.00e-06, sigma_min(T22) 6.99e-10; pair off by 4.3e-06 s
+     S3         omega   14 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 8, "Unresolved ['leak']": 2}; leak/bound 2.8e-01 to 1.2e+00; gap 1.00e-05, sigma_min(T22) 2.79e-09; pair off by 5.7e-07 s
+     S3         omega   14 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 6.9e-02 to 7.0e-01; gap 3.00e-05, sigma_min(T22) 2.52e-08; pair off by 1.0e-07 s
+     S3         omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.3e-04 to 4.2e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 3.5e-06 s
+     S3         omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.4e-04 to 3.8e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 8.3e-07 s
+     S3         omega   14 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 2.0e-02 to 1.3e-01; gap 1.00e-04, sigma_min(T22) 2.79e-07; pair off by 1.8e-08 s
+     S4         omega    7 s 5e-06 m  0.2: as derived (leak); {"Unresolved ['leak']": 9, 'RESOLVED': 1}; leak/bound 6.0e-01 to 6.3e+00; gap 5.00e-06, sigma_min(T22) 3.51e-10; pair off by 6.6e-06 s
+     S4         omega    7 s 1e-05 m  0.2: as derived (leak); {"Unresolved ['leak']": 6, 'RESOLVED': 4}; leak/bound 5.0e-01 to 2.7e+00; gap 1.00e-05, sigma_min(T22) 1.40e-09; pair off by 3.0e-06 s
+     S4         omega    7 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 9, "Unresolved ['leak']": 1}; leak/bound 4.1e-02 to 1.1e+00; gap 3.00e-05, sigma_min(T22) 1.26e-08; pair off by 2.5e-07 s
+     S4         omega    7 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 9.2e-05 to 5.6e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 9.4e-06 s
+     S4         omega    7 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.9e-04 to 4.4e-04; gap 3.56e-02, sigma_min(T22) 3.56e-02; pair off by 2.1e-06 s
+     S4         omega    7 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 9.8e-03 to 2.5e-01; gap 1.00e-04, sigma_min(T22) 1.40e-07; pair off by 2.4e-08 s
+     S4         omega   14 s 5e-06 m  0.2: as derived (leak); {'RESOLVED': 4, "Unresolved ['leak']": 6}; leak/bound 2.2e-01 to 2.3e+00; gap 5.00e-06, sigma_min(T22) 7.00e-10; pair off by 2.0e-06 s
+     S4         omega   14 s 1e-05 m  0.2: as derived (leak); {'RESOLVED': 9, "Unresolved ['leak']": 1}; leak/bound 1.1e-01 to 1.2e+00; gap 1.00e-05, sigma_min(T22) 2.80e-09; pair off by 1.5e-06 s
+     S4         omega   14 s 3e-05 m  0.2: as derived (leak); {'RESOLVED': 10}; leak/bound 2.3e-02 to 4.0e-01; gap 3.00e-05, sigma_min(T22) 2.52e-08; pair off by 1.5e-07 s
+     S4         omega   14 s 5e-06 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 8.0e-05 to 3.6e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 4.3e-06 s
+     S4         omega   14 s 1e-05 m   72: as derived (A); {"Unresolved ['A', 'V0 dim/ranks', 'other: n(D)', 'other: the index does not balance']": 10}; leak/bound 1.3e-04 to 4.3e-04; gap 1.78e-02, sigma_min(T22) 1.78e-02; pair off by 9.1e-07 s
+     S4         omega   14 s 1e-04 m   72: as derived (leak); {'RESOLVED': 10}; leak/bound 2.4e-02 to 1.2e-01; gap 1.00e-04, sigma_min(T22) 2.80e-07; pair off by 8.9e-09 s
+
+1. The gate (S1+, S1- and S1r at r = 1.66; s = 1e-5 and 5e-6; m = 0.2; omega 7 and 14): PASS, 12 of 12 rows resolved at every mixing
+2. Every other row as derived: PASS, 84 of 84
+3. No wrong type: PASS, 0 wrong of 960 readings
+Floors near a crossing, and S1r at r = 10 and 100 (reported): resolved of 10 at m = 0.2 by s, and at m = 72, s = 1e-4; A's floor (G margins at m = 0.2) and L's floor (mu at the top of L's gray zone); sigma_min(T22) / gap, medians
+  S1r r=10   omega    7: 5e-06 10; 1e-05 10; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 8.53e-10; sigma_min(T22)/gap 3.2e-01, 3.2e-01, 3.2e-01, 3.2e-01
+  S1r r=10   omega   14: 5e-06 10; 1e-05 10; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 4.26e-10; sigma_min(T22)/gap 3.2e-01, 3.2e-01, 3.2e-01, 3.2e-01
+  S1r r=100  omega    7: 5e-06 10; 1e-05 10; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 2.70e-09; sigma_min(T22)/gap 1.0e-01, 1.0e-01, 1.0e-01, 1.0e-01
+  S1r r=100  omega   14: 5e-06 10; 1e-05 10; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 1.35e-09; sigma_min(T22)/gap 1.0e-01, 1.0e-01, 1.0e-01, 1.0e-01
+  S2         omega    7: 5e-06 2; 1e-05 4; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 4.38e-06; sigma_min(T22)/gap 7.0e-05, 1.4e-04, 4.2e-04, 1.4e-03
+  S2         omega   14: 5e-06 4; 1e-05 9; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 2.19e-06; sigma_min(T22)/gap 1.4e-04, 2.8e-04, 8.4e-04, 2.8e-03
+  S3         omega    7: 5e-06 0; 1e-05 2; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 4.40e-06; sigma_min(T22)/gap 6.9e-05, 1.4e-04, 4.2e-04, 1.4e-03
+  S3         omega   14: 5e-06 3; 1e-05 8; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 2.20e-06; sigma_min(T22)/gap 1.4e-04, 2.8e-04, 8.4e-04, 2.8e-03
+  S4         omega    7: 5e-06 1; 1e-05 4; 3e-05 9; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 4.38e-06; sigma_min(T22)/gap 7.0e-05, 1.4e-04, 4.2e-04, 1.4e-03
+  S4         omega   14: 5e-06 4; 1e-05 9; 3e-05 10; 1e-04 m 72 10; A's floor 1.65e-06, L's floor 2.19e-06; sigma_min(T22)/gap 1.4e-04, 2.8e-04, 8.4e-04, 2.8e-03
+
+4. The claims behind the arms, and the arms:
+   (a) the cut before Step 2, on the gate's systems: the gate resolved at 30 of 120 readings; S1+ omega 7 s 5e-06 {"Unresolved ['L gray']": 10}; S1+ omega 7 s 1e-05 {"Unresolved ['L gray']": 10}; S1+ omega 14 s 5e-06 {"Unresolved ['L gray']": 10}; S1+ omega 14 s 1e-05 {'RESOLVED': 10}; S1- omega 7 s 5e-06 {"Unresolved ['L gray']": 10}; S1- omega 7 s 1e-05 {"Unresolved ['L gray']": 10}; S1- omega 14 s 5e-06 {"Unresolved ['L gray']": 10}; S1- omega 14 s 1e-05 {'RESOLVED': 10}; S1r r=1.66 omega 7 s 5e-06 {"Hyperbolic ['L gray']": 10}; S1r r=1.66 omega 7 s 1e-05 {"Hyperbolic ['L gray']": 10}; S1r r=1.66 omega 14 s 5e-06 {"Hyperbolic ['L gray']": 10}; S1r r=1.66 omega 14 s 1e-05 {'RESOLVED': 10}
+   (b) L's gray zone: mu = 3.162 L_CUT (7.02e-13 ||L||), s = 2.587e-05, 15.7 G margins out. Claim, under G_L = 10: PASS, the gray-zone item at 10 of 10; under G_L = 1, clean Elliptic at 10 of 10
+   (c) the lifted kernel, 1.37e-15 ||L||: computed at 5.80 to 6.64 u ||L||. Claim, under L_CUT: PASS, resolved at 20 of 20; under a cut of 1 u ||L||, resolved at 0 of 20: {"Unresolved ['n(L)', 'n(L)']": 20}
+   (d) the zero count: k1 = 42.5 u ||L||. Claim, with the check: PASS, its item at 10 of 10 (zero count against chains [(3, 2)]); without it, clean Elliptic at 10 of 10
+   arm (a) the cut before Step 2: the gate: red, as it must be
+   arm (b) G_L = 1: the gray-zone claim: red, as it must be
+   arm (c) a cut of 1 u ||L||: the lifted-kernel claim: red, as it must be
+   arm (d) the zero-count check dropped: its claim: red, as it must be
+0 failed

@@ -1,0 +1,15 @@
+N = 16 (M = 65, 17 t nodes, m = 42):
+   all levels, whole nodes        max||psi|^2 - 1| 1.8e-15; sum w - 1 +0.0e+00; Q - 1: direct -2.2e-16, through the cubic +3.8e-15; cubic on level 2 4.1e-15, off it 3.2e-16; level-2 Gram 4.2e-14
+   all levels, one-row chunks     max||psi|^2 - 1| 1.8e-15; sum w - 1 -9.5e-15; Q - 1: direct -9.4e-15, through the cubic -8.9e-15; cubic on level 2 9.3e-15, off it 2.6e-16; level-2 Gram 8.5e-15
+   level 2 alone, whole nodes     max||psi|^2 - 1| 1.8e-15; sum w - 1 +0.0e+00; Q - 1: direct -2.2e-16, through the cubic +3.8e-15; cubic on level 2 4.1e-15, off it 0.0e+00; level-2 Gram 4.2e-14
+   level 2 alone, one-row chunks  max||psi|^2 - 1| 1.8e-15; sum w - 1 -9.5e-15; Q - 1: direct -9.4e-15, through the cubic -8.9e-15; cubic on level 2 9.3e-15, off it 0.0e+00; level-2 Gram 8.5e-15
+N = 24 (M = 97, 25 t nodes, m = 153):
+   all levels, whole nodes        max||psi|^2 - 1| 1.7e-15; sum w - 1 -1.1e-16; Q - 1: direct +0.0e+00, through the cubic -2.2e-16; cubic on level 2 4.8e-15, off it 2.0e-15; level-2 Gram 8.7e-14
+   all levels, one-row chunks     max||psi|^2 - 1| 1.8e-15; sum w - 1 -2.8e-15; Q - 1: direct -2.7e-15, through the cubic -2.9e-15; cubic on level 2 6.0e-15, off it 1.7e-15; level-2 Gram 3.6e-15
+   level 2 alone, whole nodes     max||psi|^2 - 1| 1.7e-15; sum w - 1 -1.1e-16; Q - 1: direct +0.0e+00, through the cubic -1.1e-16; cubic on level 2 4.8e-15, off it 0.0e+00; level-2 Gram 8.7e-14
+   level 2 alone, one-row chunks  max||psi|^2 - 1| 1.8e-15; sum w - 1 -2.8e-15; Q - 1: direct -2.7e-15, through the cubic -2.9e-15; cubic on level 2 6.0e-15, off it 0.0e+00; level-2 Gram 3.6e-15
+N = 32 (M = 129, 33 t nodes, m = 337):
+   all levels, whole nodes        max||psi|^2 - 1| 1.8e-15; sum w - 1 -1.1e-16; Q - 1: direct -4.4e-16, through the cubic -4.1e-15; cubic on level 2 7.8e-15, off it 1.7e-15; level-2 Gram 5.2e-14
+   all levels, one-row chunks     max||psi|^2 - 1| 2.0e-15; sum w - 1 +9.3e-15; Q - 1: direct -3.3e-15, through the cubic +6.7e-16; cubic on level 2 2.2e-14, off it 1.7e-15; level-2 Gram 1.1e-14
+   level 2 alone, whole nodes     max||psi|^2 - 1| 1.8e-15; sum w - 1 -1.1e-16; Q - 1: direct -4.4e-16, through the cubic -4.1e-15; cubic on level 2 7.8e-15, off it 0.0e+00; level-2 Gram 5.2e-14
+   level 2 alone, one-row chunks  max||psi|^2 - 1| 2.0e-15; sum w - 1 +9.3e-15; Q - 1: direct -3.3e-15, through the cubic +6.7e-16; cubic on level 2 2.2e-14, off it 0.0e+00; level-2 Gram 1.1e-14

@@ -1,0 +1,6 @@
+The separation rule re-read on C2a's saved summaries, under convergence.py as it now is: ['ladders', 'sample']
+   ladders eps 32: changed as named, shipped Unresolved None, re-read converged Elliptic
+ladders (171_sep_controls_C2a_ladders.json): 17 of 17 verdicts as shipped and 1 of 1 as changed, at N = [16, 24]; under the arm, 18 of 18 as shipped
+sample (170_sep_controls_C2a_sample.json): 3 of 3 verdicts as shipped and 0 of 0 as changed, at N = [16, 24, 32]; under the arm, 3 of 3 as shipped
+1. PASS: 20 of 20 re-read verdicts equal the shipped ones, and 1 of 1 changed as named
+2. PASS: under the arm, 21 of 21 equal the shipped ones

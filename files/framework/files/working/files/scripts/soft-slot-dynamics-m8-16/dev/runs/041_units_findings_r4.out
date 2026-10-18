@@ -1,0 +1,5 @@
+UA, the block alone at omega^2 = omega*^2 - 1e-13: exact |Re s| 3.162e-07; margin 8.0e-07; groups at i 2^(1/4): [(1.189207115, 2, 1, 'Schur')]; (k_r, k_c, k_i) = (0, 0, 1), K 2, unresolved []: reproduced
+UB c1, claim 4's system with the quartet's real part 3e-06 (exact 3.000e-06): margin 1.8e-05; computed |Re| 3.00e-06; groups at i 2^(1/4): [(2, 1, 'eigenvectors')]; K 5, unresolved []: reproduced
+UB c1, claim 4's system with the quartet's real part 6e-06 (exact 6.000e-06): margin 1.8e-05; computed |Re| 6.00e-06; groups at i 2^(1/4): [(2, 1, 'eigenvectors')]; K 5, unresolved []: reproduced
+UB c2, real part 1.2e-05 (exact 1.200e-05): computed [-1.2e-05+1.18920712j  1.2e-05+1.18920712j]; groups typed imaginary: [(1, 0, 'eigenvectors'), (1, 1, 'eigenvectors')]; their Krein forms on unit eigenvectors ['+2.2e-10', '-2.2e-10']; K 5, unresolved []: reproduced
+4 of 4 findings reproduced

@@ -1,0 +1,16 @@
+K3's overlap, tested.
+1. the synthetic vector: XY 0.800000000000000 against 0.8, Z 0.500000000000000 against 0.5: PASS; the arm, Z unprojected, reads 0.493873, not 0.5: PASS
+   C3 N = 16: mine (XY 0.000000000000, Z 0.000000000002), M8.15.x's (XY 0.000000000000, Z 0.000000000002): 2.6e-17
+   C3 N = 24: mine (XY 0.000000000001, Z 0.000000000001), M8.15.x's (XY 0.000000000001, Z 0.000000000001): 2.5e-17
+   C3 N = 32: mine (XY 0.000000000000, Z 0.000000000000), M8.15.x's (XY 0.000000000000, Z 0.000000000000): 4.7e-17
+2. against M8.15.x's functions at C3's 3 points: largest difference 4.7e-17: PASS
+   C3 N = 16: ||P_R z||/||z|| = 1.000; T_x, T_y, T_z read as wanted in both implementations to 5.3e-16
+   C3 N = 24: ||P_R z||/||z|| = 1.000; T_x, T_y, T_z read as wanted in both implementations to 6.7e-16
+   C3 N = 32: ||P_R z||/||z|| = 1.000; T_x, T_y, T_z read as wanted in both implementations to 6.7e-16
+3. order one at C3's points: (XY 1, Z 0), (XY 1, Z 0), (XY 0, Z 1), largest departure 6.7e-16: PASS
+   C2a N = 16: ||P_R z||/||z|| = 6.9e-25; the record: (c) 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.9e-25)'
+   C2a N = 24: ||P_R z||/||z|| = 6.5e-25; the record: (c) 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 6.5e-25)'
+   C2a N = 32: ||P_R z||/||z|| = 2.3e-25; the record: (c) 'Q_Z is undefined: the axis rotation lies in the fibre span (||P_R z||/||z|| = 2.3e-25)'
+4. the arm at C2a's points: Q_Z undefined at every cutoff, with the reason: PASS. Reported: M8.15.x's functions, with no guard, read T_x's XY as 0.27, 0.42, 0.78
+5. E2 from the kept outputs, K3's overlaps recomputed under the guard: 'not resolved, kernel exact'; (b) at []; (c) failed with its reason at 3 of 3 cutoffs; the kept K5 code paths {'C2a': True, 'C2b': True, 'C3': True}: E2 True: PASS
+0 failed

@@ -1,0 +1,9 @@
+D6, Theorem D at R3; N = [16]; EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, row C1 {'dim': 6, 'ranks': [1, 0]}
+N = 16, m = 42: seed Q(v) 1.000000000000004, criticality 1.4e-15, symmetry rank 4, sigma-radical 2 (setup 0.2 s)
+   eps 0.5: PASS  residual 7.2e-17 of the size, off level 2 3.0e-16; lowest level against Theorem D 7.0e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 6.5e-14; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 6.6e-06, cluster max 7.0e-09, nearest outside 5.8e+00; 0.3 s
+   eps 1.0: PASS  residual 2.3e-16 of the size, off level 2 3.2e-16; lowest level against Theorem D 7.3e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 6.1e-14; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 6.6e-06, cluster max 1.2e-08, nearest outside 6.0e+00; 0.3 s
+   eps 2.0: PASS  residual 2.5e-16 of the size, off level 2 3.0e-16; lowest level against Theorem D 2.7e-15; V0 dim 6, ranks [1, 0], 5 chains, leak 7.7e-14; (n(L), n(D), K) = (0, 0, 0); Elliptic, unresolved []; margin 6.6e-06, cluster max 7.3e-09, nearest outside 6.3e+00; 0.3 s
+4. eps 0.5, along N = [16]: type, n(L), K unchanged: True; the lowest level's eigenvalues move by at most 0.0e+00
+4. eps 1.0, along N = [16]: type, n(L), K unchanged: True; the lowest level's eigenvalues move by at most 0.0e+00
+4. eps 2.0, along N = [16]: type, n(L), K unchanged: True; the lowest level's eigenvalues move by at most 0.0e+00
+0 failed

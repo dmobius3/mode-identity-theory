@@ -1,0 +1,81 @@
+{
+ "completed": {
+  "C1": {
+   "files": {
+    "C1.json": "ea5b0684aa6681d73d770ef1ec8ffc6fba9b0a2edb8e34b269415da0547ef493"
+   },
+   "t": "2026-10-17T22:11:23Z"
+  },
+  "C2a": {
+   "files": {
+    "C2a.json": "2cd7315271a9277e5d9cdf03fcd74f2b654f783fd1eddf31070eb9aae34cf689",
+    "C2a.npz": "d2890ab3f540d41eccab391f9315aa78b924b847cd78f242e204463909ab69df"
+   },
+   "t": "2026-10-17T22:11:51Z"
+  },
+  "C2b": {
+   "files": {
+    "C2b.json": "f88484b4a7b5b90d1389436f4b6f125823fee3658e54f22457451061d8cc598e"
+   },
+   "t": "2026-10-17T22:12:04Z"
+  },
+  "C3": {
+   "files": {
+    "C3.json": "84b33fddc1b1e7a07bd0e0077d45b5b83685a4af59a54a67bcc4ed9010c6bfde",
+    "C3.npz": "2f53dfe020c894d6ccec6517ba5312be6f10f3b4bdef2d5583f8cd1e49836bb3"
+   },
+   "t": "2026-10-17T22:12:42Z"
+  },
+  "C2a/R5": {
+   "files": {
+    "C2a_R5.json": "d55e6b130070ca4542263325164606c738d6a462e7834eeb64bf921bb0dbfb73"
+   },
+   "t": "2026-10-17T22:13:25Z"
+  },
+  "C2a:ladder": {
+   "files": {
+    "C2a_ladder.json": "7ca931248364a62e584dfcc2d747c73fdcbad9149c428cd9032064b004e15e4d"
+   },
+   "t": "2026-10-17T22:14:15Z"
+  }
+ },
+ "gate": {
+  "file": "GATE.json",
+  "sha256": "c61c1f255f75bedd8e976d9ecd2b29d5f15c40052c4f75a31775307599cfc6ec",
+  "written": "2026-10-17T22:13:25Z"
+ },
+ "events": [
+  {
+   "t": "2026-10-17T22:11:19Z",
+   "event": "dry run started; cases ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'C2a:ladder']"
+  },
+  {
+   "t": "2026-10-17T22:11:23Z",
+   "event": "C1 completed"
+  },
+  {
+   "t": "2026-10-17T22:11:51Z",
+   "event": "C2a completed"
+  },
+  {
+   "t": "2026-10-17T22:12:04Z",
+   "event": "C2b completed"
+  },
+  {
+   "t": "2026-10-17T22:12:42Z",
+   "event": "C3 completed"
+  },
+  {
+   "t": "2026-10-17T22:13:25Z",
+   "event": "C2a/R5 completed"
+  },
+  {
+   "t": "2026-10-17T22:13:25Z",
+   "event": "gate record written, SHA-256 c61c1f255f75bedd8e976d9ecd2b29d5f15c40052c4f75a31775307599cfc6ec"
+  },
+  {
+   "t": "2026-10-17T22:14:15Z",
+   "event": "C2a:ladder completed"
+  }
+ ]
+}

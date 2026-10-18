@@ -1,0 +1,17 @@
+R4, N = 12: PASS
+   unbordered: converged True in 7 evaluations, |c - c*|/|c*| 2.2e-16, |lam - lam*| 0.0e+00, floor 7.5e-15 (3.4e-17 relative), quadratic True (largest r(k+1)/r(k)^2 9.17e-02 over 1 steps)
+   bordered (rank 4): converged True in 6 evaluations, |c - c*|/|c*| 2.9e-16, |lam - lam*| 0.0e+00, floor 8.1e-15 (3.7e-17 relative), quadratic True (largest 7.94e-02 over 1 steps), multipliers 6.9e-16
+   the tangents' rank: 4 at a random state, 3 at a weight vector of level 6
+R5, N = 12: PASS
+   unbordered: converged True in 7 evaluations, |c - c*|/|c*| 1.9e-16, |lam - lam*| 0.0e+00, floor 6.0e-15 (2.0e-17 relative), quadratic True (largest r(k+1)/r(k)^2 8.72e-02 over 1 steps)
+   bordered (rank 4): converged True in 7 evaluations, |c - c*|/|c*| 1.5e-16, |lam - lam*| 0.0e+00, floor 3.6e-15 (1.2e-17 relative), quadratic True (largest 7.15e-02 over 1 steps), multipliers 1.4e-15
+   the tangents' rank: 4 at a random state, 3 at a weight vector of level 6
+R2, N = 12: PASS
+   unbordered: converged True in 7 evaluations, |c - c*|/|c*| 4.2e-16, |lam - lam*| 0.0e+00, floor 1.4e-15 (5.9e-17 relative), quadratic True (largest r(k+1)/r(k)^2 2.80e-01 over 2 steps)
+   bordered (rank 6): converged True in 7 evaluations, |c - c*|/|c*| 3.6e-16, |lam - lam*| 0.0e+00, floor 1.2e-15 (5.3e-17 relative), quadratic True (largest 3.23e-01 over 2 steps), multipliers 2.0e-15
+   the tangents' rank: 6 at a random state, 5 at a weight vector of level 7
+arms
+   arm: Newton with its step halved (R4)                         RED  (24 evaluations, last residual 3.2e-07)
+   arm: the Jacobian's quartic part scaled by 1 + 1e-3 (R4)      RED  (residuals 2.5e+00, 4.3e-03, 7.3e-06, 4.2e-09, 7.2e-12, 1.8e-14)
+   arm: a perturbation with a tangent component, bordered (R4)   RED  (converged True, |c - c*|/|c*| 3.4e-02, multipliers 3.4e-01)
+0 failed (claims and arms)

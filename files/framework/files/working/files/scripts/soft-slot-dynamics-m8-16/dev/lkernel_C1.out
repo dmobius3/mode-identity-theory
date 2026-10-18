@@ -1,0 +1,18 @@
+lkernel, C1: L's kernel at the control's points (SLOWPAIR_PLAN.md, Step 1); EXPECTED_V0.md SHA-256 7fceba14d248dc967d8480da1b425e3f53b8f8f3d35a8a351b60fdeb33aac5c1, chains 5
+C1 N = 16, m = 42
+   N 16 eps   0.5000: lift 6.3e-16 ||L|| (tangents 1.3e-16); genuine 4.6e-03; zeros 5 of 5 chains; D4's ||T F'|| 4.1e-18; 0 s
+   N 16 eps   1.0000: lift 6.9e-16 ||L|| (tangents 2.6e-16); genuine 9.2e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.1e-17; 0 s
+   N 16 eps   2.0000: lift 5.0e-16 ||L|| (tangents 5.2e-16); genuine 1.8e-02; zeros 5 of 5 chains; D4's ||T F'|| 1.6e-17; 0 s
+C1 N = 24, m = 153
+   N 24 eps   0.5000: lift 4.3e-16 ||L|| (tangents 2.8e-17); genuine 1.6e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.3e-17; 6 s
+   N 24 eps   1.0000: lift 3.8e-16 ||L|| (tangents 7.1e-17); genuine 3.2e-03; zeros 5 of 5 chains; D4's ||T F'|| 2.3e-17; 5 s
+   N 24 eps   2.0000: lift 2.3e-16 ||L|| (tangents 6.9e-17); genuine 6.5e-03; zeros 5 of 5 chains; D4's ||T F'|| 5.3e-17; 5 s
+C1 N = 32, m = 337
+   N 32 eps   0.5000: lift 5.6e-16 ||L|| (tangents 1.3e-17); genuine 9.3e-04; zeros 5 of 5 chains; D4's ||T F'|| 7.0e-18; 52 s
+   N 32 eps   1.0000: lift 3.3e-16 ||L|| (tangents 1.2e-17); genuine 1.8e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.3e-17; 51 s
+   N 32 eps   2.0000: lift 3.3e-16 ||L|| (tangents 2.3e-17); genuine 3.7e-03; zeros 5 of 5 chains; D4's ||T F'|| 2.8e-17; 51 s
+C1 N = 40, m = 604
+   N 40 eps   0.5000: lift 5.1e-16 ||L|| (tangents 8.5e-18); genuine 6.0e-04; zeros 5 of 5 chains; D4's ||T F'|| 4.5e-18; 233 s
+   N 40 eps   1.0000: lift 5.3e-16 ||L|| (tangents 8.0e-18); genuine 1.2e-03; zeros 5 of 5 chains; D4's ||T F'|| 8.5e-18; 228 s
+   N 40 eps   2.0000: lift 1.8e-16 ||L|| (tangents 9.8e-18); genuine 2.4e-03; zeros 5 of 5 chains; D4's ||T F'|| 1.8e-17; 222 s
+C1: 12 points; the kernel's largest lift 6.9e-16 ||L|| (its tangents' 5.2e-16); the smallest genuine |mu| 6.0e-04 ||L||; L's zero count differs from the chains at 0 points []; the generators' ||L T c|| up to 4.4e-16 against D4's ||T F'(c)|| up to 5.3e-17 and u = 2.2e-16; 0 ladders ended early; compute 14.3 min

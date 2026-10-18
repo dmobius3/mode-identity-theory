@@ -1,0 +1,48 @@
+The guard's tests (DRIVER_PLAN.md v2), on temporary trees; nothing solved, no sealed seed built.
+1. off the allowlist, R0, and a sealed name in DRY.json:
+   PASS  green parent: C2a, a GO case: proceeded
+   PASS  P5, off the allowlist: refused
+   PASS  R0, listed in the test FROZEN.json: refused
+   PASS  R0 as a slot-qualified name: refused
+   PASS  green parent: the real DRY.json: proceeded
+   PASS  a sealed name placed in DRY.json: refused
+2. sealed admission without a valid freeze:
+   PASS  green parent: P5 listed in a valid test FROZEN.json (admission only; nothing is built): proceeded
+   PASS  P5 without FROZEN.json: refused
+   PASS  P5 with a FREEZE file alone present: refused
+   PASS  a FROZEN.json whose manifest SHA-256 is wrong: refused
+   PASS  a FROZEN.json whose terms SHA-256 is wrong: refused
+   PASS  a FROZEN.json with a case entry edited, its embedded hashes intact (UA): refused
+3. the row gate:
+   PASS  a row before any gate record: refused
+   PASS  green parent: a complete gate record with K1 to K4 passed: proceeded
+   PASS  a gate record whose SHA-256 differs from the logged one: refused
+   PASS  the dry gate record, incomplete: refused
+4. write_guard.py:
+   PASS  green parent: a valid tree, the named blob: proceeded
+   PASS  FROZEN.json already present: refused
+   PASS  without a go: refused
+   PASS  a manifest that differs from run/MANIFEST_PIN: refused
+   PASS  a target record whose blob id differs from the named one: refused
+5. frozen() and the target records:
+   PASS  green parent: a target record matching FROZEN.json: proceeded
+   PASS  a target record whose SHA-256 differs from FROZEN.json's: refused
+6. the band-edge guard:
+   PASS  green parent: the saved C2a sample at eps 0.5 reads converged
+   PASS  a band edge forced into the gray zone reads Unresolved: ['the band edge lies within the gray zone (UA)']
+7. the withheld point:
+   PASS  first_order inside the withheld context: refused
+   PASS  record inside the withheld context: refused
+   PASS  summarize inside the withheld context: refused
+   PASS  inertia inside the withheld context: refused
+   PASS  spectrum_of_L inside the withheld context: refused
+   PASS  Newton's hess_dense inside the withheld context stays open: proceeded
+   PASS  green parent: first_order outside it: proceeded
+   PASS  green parent: inertia outside it: proceeded
+   PASS  green parent: spectrum_of_L outside it: proceeded
+8. the frozen path's own green parent (UB):
+   PASS  C2a admitted by require through a valid test FROZEN.json: proceeded
+   PASS  C2a's seed built through the frozen path equals its GO-path seed
+   PASS  require refuses C2a once FROZEN.json is removed: refused
+   PASS  seed_state refuses C2a once FROZEN.json is removed: refused
+0 failed of 38

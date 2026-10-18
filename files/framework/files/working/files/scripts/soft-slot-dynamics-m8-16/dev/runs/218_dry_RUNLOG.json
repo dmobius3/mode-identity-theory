@@ -1,0 +1,40 @@
+{
+ "completed": {
+  "C1": {
+   "files": {
+    "C1.json": "c1ebb02e1457aa65bf08cb3236564253ee6f7f379dbbf1d9574fb3065243c0b6"
+   },
+   "t": "2026-10-17T22:31:35Z"
+  },
+  "C2a": {
+   "files": {
+    "C2a.json": "8d26691571f2459b1fbab6c05f0add84ef3eb2ded8dab2a5ee49760292023a90",
+    "C2a.npz": "ec646f784f5ed227b058aa43a479df043b3ffe1794bcf146c30c595dedffa954"
+   },
+   "t": "2026-10-17T22:45:45Z"
+  }
+ },
+ "gate": {
+  "file": "GATE.json",
+  "sha256": "52b474819ac581cb01cd3d49b8a9f7b9904ba1ed69eac1009b93640c067473e0",
+  "written": "2026-10-17T22:45:45Z"
+ },
+ "events": [
+  {
+   "t": "2026-10-17T22:19:23Z",
+   "event": "dry run started; cases ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'C2a:ladder']"
+  },
+  {
+   "t": "2026-10-17T22:31:35Z",
+   "event": "C1 completed"
+  },
+  {
+   "t": "2026-10-17T22:45:45Z",
+   "event": "C2a completed"
+  },
+  {
+   "t": "2026-10-17T22:45:45Z",
+   "event": "gate record written, SHA-256 52b474819ac581cb01cd3d49b8a9f7b9904ba1ed69eac1009b93640c067473e0"
+  }
+ ]
+}
