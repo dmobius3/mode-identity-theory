@@ -7123,3 +7123,142 @@ On Blake's word ("go, file it").
 **`SHA256SUMS`** is written fresh after this entry, over the folder's files, itself excluded. The folder is then checked there: `shasum -c`; the manifest against its pin; the freeze; and the record's `--check`.
 
 **Next:** the commit, verified from its own tree; then the push.
+
+## 337. 2026-10-19T01:01:51Z: the record published: MIT `main` at `87fc6439d8eb`, verified from its own tree
+
+**The commit:** `87fc6439d8ebea228901b06323259c82327c18d7`, on `3d7742c`, by `Blake Shatto <blake@Blakes-MacBook-Air.local>`, the session identity of the earlier MIT commits. Subject: "soft-slot dynamics: M8.16's run record: NOT QUALIFIED, stopped at the pyramid; the record, the run's outputs and the post-run files". It changes 27 files, 24 added and 3 modified, all in this folder, and holds the folder as entry 336 built it, with `DEVLOG.md` through that entry.
+
+**Verified from its own tree,** a `git archive` of the folder at the commit, extracted fresh:
+- `shasum -a 256 -c SHA256SUMS` reads every entry OK, with no file unlisted and none absent;
+- the manifest equals `run/MANIFEST_PIN`, and `devtools.frozen()` validates;
+- `tools/build_record.py --check` reproduces `RECORD.md`;
+- `tools/p5_extrapolation.py` reproduces its output byte for byte.
+
+**Pushed:** MIT `main` moved from `3d7742c` to `87fc643` by fast-forward. Read back through GitHub's API, the commit carries its 27 files and the same author, and `RECORD.md`'s blob equals the local one.
+
+**Next:** the method note, built with this commit for the record's links, on an OpenWave branch with the BACKLOG row's gate updated, pushed to the fork; Blake opens the pull request.
+
+## 338. 2026-10-19T01:03:55Z: the method note's branch pushed to the fork; Blake opens the pull request
+
+**The note,** built with the record commit of entry 337 for the record's links, and with its audit record from the units' two reviews (`../m8_16_note/audit.md`, `a3ac4fec4ba6810afc3d9994662b0e30ea5b444d663f113ca4374077ae2fd838`). Its builder checks every MIT link at its pinned commit, each line anchor against the function it names, and the relative links in OpenWave, and finds no placeholder. Its SHA-256 at the commit is `4c8cec7e453bef999f7ba286f6b06eece059424941462c5c9111229c1694fbbb`.
+
+**The branch** `m8-16-run-record-2026-10-18`, from upstream `main` at `0a75cac8`, #639's merge. One commit, `5b81e72f8b81b384bfaedefff523157ce3cf0c8d`, by Blake's DCO identity, signed off, adds the note at `research/findings/m8_16_method_note.md` and moves the M8.16 BACKLOG row's gate to "the maintainer's adjudication of the run", as M8.15.2's record filing did. OpenWave's `check_no_local.py --staged --require-files`, `check_roadmaps.py` and `check_models_md.py` are clean.
+
+**Pushed to the fork:** the branch head equals the commit, and both files read back through GitHub's API equal the local ones. Against `openwave-labs/openwave` `main`, the compare is ahead by 1 and behind by 0, with those two files.
+
+**The pull request's text:** `../m8_16_record_pr_body_v1.md`, 426 words, with no attribution line, `50c90b3edbb0b66a4a5650adfb619559963a9baba2a05c6a1fdd11b20a6ef3ed`, on Blake's clipboard. Its title is "M8.16: the run record's method note".
+
+**Next:**
+1. Blake opens the pull request;
+2. the maintainer adjudicates;
+3. then the roadmap's Done row and the census page's dated note.
+
+## 339. 2026-10-19T01:07:34Z: Blake opened the pull request, OpenWave #640
+
+[#640](https://github.com/openwave-labs/openwave/pull/640), "M8.16: the run record's method note", opened by Blake at 2026-10-19T01:05:46Z, from `dmobius3:m8-16-run-record-2026-10-18` into `main`. Read back through GitHub's API, its title and body equal the drafts, and its head is the pushed commit `5b81e72f8b`: one commit, 2 files. It waits on the maintainer's review and adjudication.
+
+## 340. 2026-10-19T17:45:09Z: #640 approved and merged: M8.16 adjudicated NOT QUALIFIED, failing K4 on the pyramid, with K3's outcome standing as the driver wrote it; each point verified at source
+
+**The adjudication** (review 5575251218, on `5b81e72f8b`). It is kept verbatim as `../m8_16_pr640/xrodz_review_5575251218.md`, body SHA-256 `cd46d3696078486442195b8cbdb4982a837b412f6795365204eed9413edf76e1`. The maintainer merged #640 at 2026-10-19T17:27:11Z, as `661def2659` on upstream `main`.
+
+**What the maintainer checked,** with his own scripts on a clean export of the record commit:
+- **custody:** the record commit descends from the instrument's, with no instrument file changed; the manifest pin and `FROZEN.json`'s pin, recomputed; the run log's ten outputs; and `SHA256SUMS`'s 506 files;
+- **the order:** the go at 18:07:09Z; `FROZEN.json` written at 19:15:37Z, its bytes public before the run only through #639, opened at 20:22:43Z; and the run from 21:44:54Z to 23:22:34Z;
+- **the readings:** the 19 seeds; C1 within 2.9×10⁻¹⁴; and the leading-order bar, recomputed independently and armed by his own mutations, with the quartet at 5.76%, 5.78% and 5.78% and the five controls passing;
+- **the rest:** K3(a)'s certificate; the two values `FROZEN.json` omits, read at the instrument commit; the note's 62 anchors and its links; M8.15.x's figures; and hygiene.
+
+**The ruling:**
+- **The instrument: NOT QUALIFIED.** The failing check is K4 on the pyramid. The same reading fails K3(a)'s slow-band clause.
+- **K3: instrument failure, the diagnosis untested.** (b), (c) and (d) are on the record, unscored.
+- **The verdict rule's K3 sentence** names K3's second outcome, which the list defines as (a) passing. Here (a) fails, and the list places this case under the instrument failure by name. The list governs, as registered: the pinned `run/test_k3.py`, claim 7, arms this case. NOT QUALIFIED holds through K4 under either reading, and the K3 outcome text stands on this ruling.
+- **The rows** did not run, so K5 and K6 have no outcome, and the `R5` gate's pass qualifies nothing on its own.
+- **The failure stands** as registered, with no repair or rerun under M8.16.
+
+**After the run:** § 5.1's extrapolation reproduces, the quartet at 0.355% and 0.0603%. The maintainer divides by the `ε` each point reached; the note divides by the nominal `ε`, and gives 0.0602%. It stays INFERRED, and § 5.2 matches #639's approval.
+
+**The maintainer's note on his review of #637:** the terms set the bar with `RESULT_2.md` among their sources, and he approved them without comparing the bar to its reading. That comparison would have shown the only earlier reading of the quartet at `ε = 0.25` over the bar. It changes nothing here.
+
+**Not checked, as the review states:** a rerun of the instrument, or any of the author's code; anything past the record's grouping, on which his matching relies; (c)'s overlaps, read from the record; that no sealed case ran before the published order; and other machines.
+
+**Commitments:** none new. The Done row and the census page's dated note are the author's.
+
+**Verified at source:**
+- `run/test_k3.py`, claim 7, has the arm "one Krein-positive pair removed from the slow band". On the kept C2a readings, with the certificate exact, it expects "instrument failure: the diagnosis is untested", and its recorded output passes.
+- The extrapolation, dividing by the `ε` reached, gives 0.3550% and 0.0603%, as the review says; dividing by the nominal `ε`, 0.3549% and 0.0602%.
+- The merge has parents upstream `main` and the branch head. The note and the roadmap there equal the branch commit's, so nothing was edited at the merge.
+
+**Next: the after-verdict records,** each on Blake's word (the terms' § DEFINITION OF DONE, with M8.15.2's after-verdict filing as the sibling):
+1. OpenWave: the roadmap's Done row stating the adjudicated verdict, and the rows that name M8.16 as pending;
+2. MIT: the census page's dated note; a post-adjudication note on the record, as M8.15.2's `RECORD.md` carries one; and any page that names M8.16 as pending.
+
+## 341. 2026-10-19T17:56:32Z: the after-verdict records drafted, on Blake's word; the packet for the units
+
+On Blake's word ("start drafting the after-verdict records"), the records that the terms' § DEFINITION OF DONE and M8.15.2's after-verdict filing call for are drafted, from entry 340's adjudication. Nothing is committed.
+
+**MIT, in the worktree on `main` at `87fc643`,** by `../m8_16_note/build_mit_after_verdict.py`, which reads every number and link from the files:
+- the census page's Status line, dated 2026-10-19, ending with the verdict and "Next: not decided";
+- a third dated note in § V, step 4, with the verdict. Step 4 registered "If the last of these fails, the diagnosis is wrong", so the note says the decisive check failed as an instrument failure, and the diagnosis is untested, not wrong;
+- the working index's census row;
+- this folder's `REPRODUCE.md`, on the bench, whose run line names the adjudication.
+
+The worktree changes 2 files. The folder is rebuilt from the bench at the commit. `RECORD.md` is unchanged, and takes no foot note: its builder's `--check` compares it byte for byte, and it lists the builder's own SHA-256.
+
+**OpenWave, on branch `m8-16-after-verdict-2026-10-19` from `661def26`,** by `../m8_16_note/build_after_verdict.py`, uncommitted, 4 files:
+- the task file's dated note after the terms, which stay a byte prefix;
+- the freeze block's prefix line, and its dated correction to the seeds line;
+- the roadmap's Done row, marked ❌ NOT QUALIFIED; the two status rows; the snapshot's date; and a change-log entry;
+- the briefing's M8.16 row.
+
+The MIT links carry a marker until the MIT commit exists. OpenWave's three checkers are clean.
+
+**The packet:** the cover note `../m8_16_after_verdict_packet_v1.md`, on Blake's clipboard, and `../m8_16_after_verdict_review_v1.zip`, revealed in Finder. It holds the diffs of both sides, the edited files in full, the adjudication verbatim, and both builders. The choices put to the units:
+- no foot note on `RECORD.md`;
+- the ❌ icon;
+- "Next: not decided";
+- the task note's scope;
+- the post-run reading kept in the census note.
+
+**Hashes:**
+- `../m8_16_note/build_mit_after_verdict.py` `a5941f34ea12a798dbeb5fa344b55fc19e4af19f8dc03c159f47f266dec04608`
+- `../m8_16_note/build_after_verdict.py` `725275b88e6bbbf58a88769362281ece95653b124504721f9f1a5a25581df2c4`
+- `REPRODUCE.md` `c475148027a726e5a04c856b82f6dce0330f2a318dd5c9d622d510b53f05f5a9`
+- `../m8_16_after_verdict_packet_v1.md` `0d5d227534f0a72613840d9723dd49dc5febb1e1c742a2216b4c0bb6eccfd69b`
+- `../m8_16_after_verdict_review_v1.zip` `b95c88714c4b54ea2d2cac1ec14d27290be53a9d60e379afbec4519bb5c6c620`
+
+**Next:** the units' review; then, on Blake's word, the MIT commit and the OpenWave branch, with Blake opening the pull request.
+
+## 342. 2026-10-19T18:22:30Z: UB on the after-verdict packet: five wording changes, all adopted; UA lost to chat length; both sides rebuilt through their builders
+
+Blake relayed UB's review of entry 341's packet, with no words of his own, so this entry covers local work only; UA was lost before reviewing it. Nothing is committed.
+
+**UB: the records state #640's verdict faithfully; five changes; the five choices and the rows stand.**
+- **UB's checks:** each diff applies at its base and gives the packet's files; the task file's first 48,450 bytes hash to the governing terms; the record folder reads 506 OK, and with the new `REPRODUCE.md` swapped in, `build_record.py --check` still passes; OpenWave's three checkers are clean; and `run/test_k3.py`'s claim 7 checks out at the instrument commit.
+- **a1, the Done row:** the K3 outcome read as following from K4. It now says one reading fails both, at 57 words, and the checker stays clean.
+- **a2, the task note:** the reading of the K3 sentence is stated as #640 states it, with what makes it the registered reading, and with the verdict the same under either reading.
+- **a3, the working index:** "the diagnosis" now names which: the leading diagnosis for three of the rows, the mesh's breaking of the continuous symmetry.
+- **b1, the census note:** instead of stating "untested, not wrong", it says why "wrong" does not apply. M8.16's terms split K3's failure in two, (a) failed on the quartet alone, and #640 ruled that K3's list governs.
+- **b2, the census note:** the post-run reading carries #640's INFERRED, and the 8.1% stands in its own sentence.
+- **For later, no change now:** § V, step 4, registered "One qualification, if admitted, in one registration", and S6 allows at most one new instrument per root cause. A second qualification of this instrument will need a dated note in § V saying how it fits both.
+
+**Adjudicated:** all five are adopted, in UB's strings, through the builders that write them. One word differs: a2 says "claim 7", the pinned test's own word for its numbered entries ("Claims, derived before the run:"), where UB, following #640, wrote "item 7". The OpenWave builder now also refuses unless the pinned test arms that case.
+
+**Rebuilt:** both sides were restored to their bases, each differing from the base only by its builder's earlier edits, and built again. Each of UB's strings appears once, and none of the replaced wording remains. OpenWave's three checkers are clean, with the Done row at 57 words.
+
+**As built:**
+- ../m8_16_note/build_mit_after_verdict.py: `afb33fa405baac09a7cb93c350b00fa0f95ddeea21d4d1019c6e13bdfafe8db6`
+- ../m8_16_note/build_after_verdict.py: `dec1f4cab9f57df276f87f99331515838508e3c62b32017b419a0e33d5206cf6`
+- MIT census page, as built: `1269943382f00a94921dbe80c6ca951082f61db1e5905b06943261da296ed169`
+- MIT working index, as built: `6d68c03e8483bbfc7e8975315dd05e3e1e3caca1d933c273b643895e68d509d1`
+- REPRODUCE.md, as built: `c475148027a726e5a04c856b82f6dce0330f2a318dd5c9d622d510b53f05f5a9`
+- OpenWave task file, as built: `062d04e25b02da9d8c2bb9f0b5e16e8e4f177b61badc99f044f1a02810f0dfe1`
+- OpenWave freeze block, as built: `0fddf5e80fbc626247f1b2ab366b1f86921bb75181d3b278f558793f5c79035f`
+- OpenWave roadmap, as built: `5b768218479578445d6ad9477ef459dd5189a3cae1b94c07d34dd63b0c13950b`
+- OpenWave briefing, as built: `87e24e9a75f6f38092b634054c3a30ccdeee74d466abeb5e6c7cdf4cf3db8acd`
+
+**Next:** on Blake's word, the MIT commit and the OpenWave branch, with Blake opening the pull request; or UB's short confirmation first.
+
+## 343. 2026-10-19T18:23:34Z: the after-verdict records filed, on Blake's word: the MIT notes, with this folder rebuilt from the bench
+
+On Blake's word ("go, file it"), the MIT side of entry 342's records is committed: the census page's status line and its dated note in § V, step 4; the working index's census row; and this folder, rebuilt from the bench without `run/dry/` and caches. The folder changes `REPRODUCE.md`, whose run line names the adjudication, and `DEVLOG.md`, through this entry; `SHA256SUMS` is written fresh after this entry. `RECORD.md` is unchanged.
+
+**Next:** the commit, verified from its own tree; the push; then the OpenWave branch, built with that commit for its MIT links.

@@ -4,7 +4,7 @@ This is the instrument for M8.16, the qualification that [the Slot Dynamics Cens
 - **What it does.** It expands the sections of `E_ρ` in the twisted harmonics, keeping every level up to a cutoff, and computes the quartic exactly. It follows named branches by stationary continuation and records the linear spectrum where the terms read it.
 - **Its admission.** OpenWave's [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-18955679) admitted it for that use only.
 - **Before the freeze.** It was built and tested on the GO list. Its dry run failed twice before it closed; the maintainer's review on [#637](https://github.com/openwave-labs/openwave/pull/637) then found three departures in the driver, since repaired, and the final dry run passed on the repaired tree. `DEVLOG.md` records each step. It was frozen here before any sealed case ran.
-- **The run.** The registered run ran on 2026-10-18, after the maintainer's go and the freeze block ([#639](https://github.com/openwave-labs/openwave/pull/639)). It stopped at the pyramid, NOT QUALIFIED. `RECORD.md` is its record.
+- **The run.** The registered run ran on 2026-10-18, after the maintainer's go and the freeze block ([#639](https://github.com/openwave-labs/openwave/pull/639)). It stopped at the pyramid, and the maintainer adjudicated it NOT QUALIFIED on [#640](https://github.com/openwave-labs/openwave/pull/640#pullrequestreview-5575251218) (2026-10-19). `RECORD.md` is its record.
 
 The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 and the manifest pin.
 
