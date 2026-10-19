@@ -1,0 +1,15 @@
+{
+ "verdict": "NOT QUALIFIED",
+ "instrument": false,
+ "r5_gate": true,
+ "rows": {},
+ "failing": [
+  "K3",
+  "K4"
+ ],
+ "failed": [
+  "P5: K3",
+  "P5: K4"
+ ],
+ "k3": "instrument failure: the diagnosis is untested"
+}

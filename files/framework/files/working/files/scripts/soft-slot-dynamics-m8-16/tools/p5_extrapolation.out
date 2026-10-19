@@ -1,0 +1,27 @@
+Post-run, unscored: made after M8.16's registered run, from run/out/P5.json alone, with no solve. Not a record from the run.
+run/out/P5.json: SHA-256 dceba2fd5fbacf950d49abfe6b5f21fb3c2f8c8aa5d0defe64d2f12aa4ceddb2, equal to the run log's record of it.
+Each slow group as the pinned checks.leading matches it; lambda/eps against Theorem R's kappa s tau, as a relative distance.
+
+N = 16
+  the in-span pair, imaginary and Krein-negative: at eps = 0.25: 0.28%, 0.5: 0.56%, 1: 1.12%, 2: 2.24%
+      extrapolated to eps -> 0: first order removed 0.000%; second order removed 0.0001%
+  the quartet: at eps = 0.25: 5.76%, 0.5: 11.33%, 1: 21.95%, 2: 41.66%
+      extrapolated to eps -> 0: first order removed 0.343%; second order removed 0.0562%
+  the Krein-positive pair: at eps = 0.25: 0.12%, 0.5: 0.23%, 1: 0.48%, 2: 0.98%
+      extrapolated to eps -> 0: first order removed 0.002%; second order removed 0.0000%
+
+N = 24
+  the in-span pair, imaginary and Krein-negative: at eps = 0.25: 0.35%, 0.5: 0.69%, 1: 1.38%, 2: 2.75%
+      extrapolated to eps -> 0: first order removed 0.001%; second order removed 0.0001%
+  the quartet: at eps = 0.25: 5.78%, 0.5: 11.35%, 1: 21.95%, 2: 41.50%
+      extrapolated to eps -> 0: first order removed 0.355%; second order removed 0.0602%
+  the Krein-positive pair: at eps = 0.25: 0.20%, 0.5: 0.40%, 1: 0.80%, 2: 1.63%
+      extrapolated to eps -> 0: first order removed 0.001%; second order removed 0.0001%
+
+N = 32
+  the in-span pair, imaginary and Krein-negative: at eps = 0.25: 0.35%, 0.5: 0.69%, 1: 1.38%, 2: 2.75%
+      extrapolated to eps -> 0: first order removed 0.001%; second order removed 0.0001%
+  the quartet: at eps = 0.25: 5.78%, 0.5: 11.35%, 1: 21.95%, 2: 41.50%
+      extrapolated to eps -> 0: first order removed 0.355%; second order removed 0.0602%
+  the Krein-positive pair: at eps = 0.25: 0.20%, 0.5: 0.40%, 1: 0.80%, 2: 1.63%
+      extrapolated to eps -> 0: first order removed 0.001%; second order removed 0.0001%

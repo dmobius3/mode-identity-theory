@@ -4,6 +4,7 @@ This is the instrument for M8.16, the qualification that [the Slot Dynamics Cens
 - **What it does.** It expands the sections of `E_ρ` in the twisted harmonics, keeping every level up to a cutoff, and computes the quartic exactly. It follows named branches by stationary continuation and records the linear spectrum where the terms read it.
 - **Its admission.** OpenWave's [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-18955679) admitted it for that use only.
 - **Before the freeze.** It was built and tested on the GO list. Its dry run failed twice before it closed; the maintainer's review on [#637](https://github.com/openwave-labs/openwave/pull/637) then found three departures in the driver, since repaired, and the final dry run passed on the repaired tree. `DEVLOG.md` records each step. It was frozen here before any sealed case ran.
+- **The run.** The registered run ran on 2026-10-18, after the maintainer's go and the freeze block ([#639](https://github.com/openwave-labs/openwave/pull/639)). It stopped at the pyramid, NOT QUALIFIED. `RECORD.md` is its record.
 
 The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 and the manifest pin.
 
@@ -15,6 +16,12 @@ The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 a
 
 ## What is here
 
+- **The record,** `RECORD.md`: the registered run's custody, readings, checks, gate record and verdict, built from the run's files by `tools/build_record.py`.
+- **The run's files:**
+  - `run/out/`: each case's outputs, the gate record `GATE.json`, the verdict `VERDICT.json`, the transcript `driver.out`, the run's standard output `driver.log`, and its log `RUNLOG.json`, which records every other file's SHA-256;
+  - `run/FROZEN.json` and its pin, `run/FROZEN_PIN`, written once by `run/write_guard.py` after the go;
+  - `reference/m815_targets/`: M8.15's five target records, copied at the freeze after each blob id matched.
+- **Post-run files,** made after the run and not records from it: `environment_postrun_2026-10-18.txt`, the environment read again; and `tools/`, with `p5_extrapolation.py` and its output, an unscored reading of the pyramid's slow eigenvalues, and `build_record.py`.
 - **The terms,** `run/m8_16_task_details.md`: the registration's text, built in `registration/` and confirmed by both review units.
 - **The instrument,** `instrument/`:
   - `su2.py` and `group2i.py`: SU(2) with its spin representations, and 2I with its eight nontrivial slot representations;
@@ -69,9 +76,12 @@ From a copy of this folder:
 
   Each test writes its output under `run/` and logs itself in `DEVLOG.md`, keeping a copy in `dev/runs/`. On the recorded machine, in a copy of this folder, each output equals the one here, byte for byte. On another machine `test_k3.out`'s near-zero overlaps can differ in their last digits, with the same verdicts.
 - **The dry run:** `python3 -I -B run/driver.py --dry`. It runs the GO cases of `run/DRY.json` and writes `run/dry/`. The final dry run, entry 312, took 124 minutes.
-- **The registered run:** `python3 -I -B run/driver.py`, with its outputs in `run/out/`.
-  - It refuses every sealed case until `run/FROZEN.json` and its pin, `run/FROZEN_PIN`, exist.
-  - `write_guard.py MIT_REPO GO_LINK` writes them once, after the maintainer's go.
+- **The registered run:** `python3 -I -B -u run/driver.py`, with its outputs in `run/out/`.
+  - It refuses every sealed case unless `run/FROZEN.json` matches its pin, `run/FROZEN_PIN`, and the tree matches the manifest pin `FROZEN.json` carries. `write_guard.py MIT_REPO GO_LINK` wrote them once, after the maintainer's go, and refuses now that they exist.
+  - To run it again, use a copy without `run/out/`. In a copy that keeps `run/out/`, it reads the run's log and refuses to resume, since the gate record names a stop.
+- **The record's tools,** from a copy of this folder:
+  - `python3 -I -B tools/p5_extrapolation.py`: re-reads `run/out/P5.json`, after checking it against the run's log, and writes `tools/p5_extrapolation.out`;
+  - `python3 -I -B tools/build_record.py MIT_REPO --check`: rebuilds `RECORD.md` from the run's files and reports any difference. `MIT_REPO` is a clone of this repository.
 - **The development runs:** each DEVLOG entry names its script and its case.
 
-**Resources:** the terms estimate about 13.6 to 17.3 hours of compute for the registered run on the recorded machine.
+**Resources:** the registered run took 5,860 s to its stop at the pyramid. The terms estimated about 13.6 to 17.3 hours of compute for the whole run, the rows included, on the recorded machine.

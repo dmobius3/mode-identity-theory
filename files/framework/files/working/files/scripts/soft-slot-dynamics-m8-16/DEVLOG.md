@@ -6708,3 +6708,418 @@ It is now `362a34432047c80655eee7e31bb1d4e671f673761abb2f252bcb600a3980b667`, on
 3. the MIT commit, verified from its own tree;
 4. #637's task file replaced on its branch, in a local commit;
 5. a stop before any push.
+
+## 319. 2026-10-18T17:16:40Z: the repin, step 5: the local MIT commit `c1ea8f2e4ce3`, verified from its own tree; not pushed
+
+**The commit.**
+- `c1ea8f2e4ce3f8e61592d859b31d7fc641a6100d`, on `origin/main` at `805ddbcd240e`, which a fetch just before it found unmoved. It is not pushed.
+- It changes 52 files: the folder's revised files, its new kept runs, `REPRODUCE.md`, `SHA256SUMS`, and the census page's second note.
+- The committed log ends at entry 318. This entry and later ones stay on the bench until the next filing.
+
+**Verified from the committed tree,** extracted by `git archive`:
+- `shasum -a 256 -c SHA256SUMS` passes, with 482 OK of 482;
+- the manifest, recomputed, equals the new pin;
+- the census page names the revised terms' SHA-256 and the new pin, once each.
+
+**Next:**
+1. #637's task file replaced on its branch, in a local signed-off commit, its hash checked;
+2. a stop before any push, which waits for Blake's go: MIT first, so the branch's reference to this commit resolves.
+
+## 320. 2026-10-18T17:17:28Z: #637's task file replaced on its branch, in a local signed-off commit `490c4a050d`; not pushed
+
+**The commit:**
+- **Where:** `490c4a050d4fc0ae0ebdb15c3cf42a4b2ca35a06`, on `m8-16-qualifying-the-harmonic-galerkin-instrument-2026-10-18` at `2610d727f7`, which is the fork branch and #637's head, unmoved.
+- **What:** it changes the task doc alone, to the final text. Its SHA-256 at the commit is `86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf`, equal to the `run/` copy in MIT's local commit `c1ea8f2e4ce3` (entry 319).
+- **Checks:** `check_no_local.py` and `check_roadmaps.py` are clean. The roadmap rows are unchanged; the BACKLOG row's description still reads true of the revised terms.
+- **The message** names MIT's commit by its short hash. MIT is pushed first, so the reference resolves.
+
+**Waiting on Blake's go:**
+1. the MIT push, a fast-forward from `805ddbc`;
+2. then the branch push, which updates #637.
+
+Drafted for Blake to post after them: the body's provenance and a reply to the review.
+
+## 321. 2026-10-18T17:21:27Z: the repin published: MIT `main` at `c1ea8f2e4ce3`, and #637's head at `490c4a050d`
+
+On Blake's go ("go on the pushes"), MIT first.
+
+**MIT.** `git push origin HEAD:main` was a fast-forward from `805ddbcd240e`, which a fetch just before found unmoved. `ls-remote` shows `main` at entry 319's commit.
+
+**#637.** The branch push was a fast-forward from `2610d727f7`, which a fetch just before found unmoved, so no one else had pushed to it.
+- The pull request's head is `490c4a050d4fc0ae0ebdb15c3cf42a4b2ca35a06`, entry 320's commit, and its state is open.
+- The task doc, read back raw from the fork at the branch, has the SHA-256 of the pinned `run/` copy.
+
+**Live, read back through the GitHub API:**
+- the census page renders all its math spans, with both notes;
+- `REPRODUCE.md` on `main` equals the bench's;
+- every link in the reply and the body drafts resolves.
+
+**Next, Blake's:**
+1. replace the pull request's body with `../m8_16_pr_body_v2.md`, which updates the provenance;
+2. post the reply, `../m8_16_pr637_reply_v1.md`.
+
+Then xrodz re-reviews the deltas. After the merge and his go: `write_guard.py`, the freeze block with `record_environment.py --check`'s two readings, and the run, on mains with sleep off.
+
+## 322. 2026-10-18T17:30:53Z: #637's description updated and the reply posted, from Blake's account, at his request
+
+Blake asked that the two steps of entry 321 be done for him, with him kept as the author. `gh` is signed in as `dmobius3`, the pull request's author.
+- **The description** is replaced with `../m8_16_pr_body_v2.md`, whose provenance paragraph now names MIT `c1ea8f2` and the revised hashes. Read back, the live body equals the file.
+- **The reply** is posted as a comment, [6252940428](https://github.com/openwave-labs/openwave/pull/637#issuecomment-6252940428), at 2026-10-18T17:30:38Z, as `dmobius3`, text exactly as drafted in `../m8_16_pr637_reply_v1.md`. Read back, the live comment equals the file. No attribution line was added.
+
+**Next:** xrodz's re-review of the deltas. A review request was not re-sent; Blake may use GitHub's re-request button if he wants one.
+
+## 323. 2026-10-18T17:44:03Z: Blake re-requested the review on #637
+
+Blake re-requested the review himself, after entry 322. GitHub lists the requested reviewers as: xrodz.
+
+Waiting on the maintainer's re-review of the deltas: the instrument commit, the manifest pin, the terms hash and the changed words. Nothing sealed runs before the merge and the maintainer's go.
+
+## 324. 2026-10-18T17:57:00Z: #637 approved and merged: M8.16's terms are registered; the maintainer's go is to follow as its own post
+
+**The approval** (review 5564121853, on `490c4a050d`). It is kept verbatim as `../m8_16_pr637/xrodz_review_5564121853.md`, body SHA-256 `b07cdb29b9eb84f4cd974154f8f6b852fbfbe0e7d137488eb9de286212943a54`.
+- **Fixed:** B1, B2 and B3, each with a test armed both ways.
+- **Answered:** the section 4 question, in the terms.
+- **The provenance, recomputed by the maintainer:** the task doc equals `run/m8_16_task_details.md` at MIT `c1ea8f2`, and the pin is entry 317's, over 36 files. Both match the census page's second note and the revised description.
+- **The final dry run** ran the pinned code. Its recorded manifest is reproduced exactly by the pinned tree with the superseded terms copy put back in `run/`, the copy that stood there at entry 312's run.
+- **The instrument's own changes** add output fields only, and no numerical path changed.
+
+**Three reading notes for the adjudication.** None is a defect, and none asks for a change.
+1. **An in-span group that leaves its class.** One of mixed or degenerate Krein sign, or one pushed off the axis into a quartet with the Krein-positive pair, fails (a)'s slow-band test and reads as an instrument failure. The code matches (a)'s text.
+2. **Class, not pair.** The outcome list says "outside the in-span pair", while (a) excludes the pair's whole class. They differ on an extra definite Krein-negative group, which reads "the diagnosis is wrong", as claim 7 registers. (a)'s wording governs.
+3. **The merged case's failed checks.** When the in-span mode merges, the pyramid's K1 and K2 fail with it, and the stop names them beside K3's "the diagnosis is wrong". That reads as the merge, not as an inexact kernel, which the certificate has already excluded.
+
+**The merge.** Merged at 2026-10-18T17:46:31Z, as `9f1b5d7bdf` on upstream `main`. The task doc there has the SHA-256 of the pinned `run/` copy, so nothing was edited at the merge. The merge registers these terms: after the go, any change is a new pre-registration.
+
+**What the approval commits to:**
+- the maintainer's go, covering the instrument pinned at `c1ea8f2`, and following the merge as its own post;
+- adjudication against K1 to K6 and the verdict rule;
+- the maintainer's reproduction, limited to claims that frozen text is defective;
+- reproduction of the run, optional.
+
+**Next,** after the go:
+1. `write_guard.py MIT_REPO GO_LINK`, which copies the five target records by blob id and writes `run/FROZEN.json` and `run/FROZEN_PIN`;
+2. the freeze block, with `record_environment.py --check`'s two readings, any difference going to the units first;
+3. the registered run, on mains, with sleep off.
+
+Nothing sealed runs before the go.
+
+## 325. 2026-10-18T19:16:01Z: the maintainer's go, and the freeze written: `run/FROZEN.json` and `run/FROZEN_PIN`, the target records copied
+
+**The go** ([#637, comment 6253316435](https://github.com/openwave-labs/openwave/pull/637#issuecomment-6253316435)) was posted 2026-10-18T18:07:09Z and is not edited. It is kept verbatim as `../m8_16_pr637/xrodz_go_6253316435.md`, body SHA-256 `a58a8dce183c8d823904f5a27a52ca6d593b42ce83c13e7d40497bce6072dae2`.
+- **What it names:**
+  - the governing terms, by their full SHA-256, merged in `9f1b5d7b` (entry 324);
+  - the instrument at MIT `c1ea8f2`;
+  - its manifest pin, in full, over 36 files.
+- **What it covers:** that pinned tree.
+- **The order it sets:** `write_guard.py`, then the freeze block carrying `FROZEN.json` in full, then any sealed case.
+- **The adjudication** applies K1 to K6, the verdict rule, and the approval's three reading notes.
+
+**Checked before the write:**
+- the go names our terms SHA-256 and our pin in full, and MIT `c1ea8f2` and the merge `9f1b5d7b`;
+- the bench's manifest equals the pin;
+- no freeze existed, and no target record had been copied;
+- `record_environment.py --check` found no difference from `run/ENVIRONMENT.json`.
+
+**The write.** `run/write_guard.py MIT_REPO GO_LINK` ran with the worktree as `MIT_REPO` and the go's link.
+- **It wrote by exclusive create:**
+  - `run/FROZEN.json` `ce685c8336b43fad28f279ce3198be654c712c60c9b38fac0e3bc357af56c852`, with 15 cases on the allowlist, the frozen values, the terms' SHA-256 `86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf`, the manifest's `a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a` and the go;
+  - `run/FROZEN_PIN`, `ce685c8336b43fad28f279ce3198be654c712c60c9b38fac0e3bc357af56c852`, its SHA-256.
+- **`devtools.frozen()`** validates the freeze: the pin, then the manifest against the tree and `run/MANIFEST_PIN`, then the terms against `run/`.
+- **The target records,** each copied from MIT at its named commit only after its blob id equalled the named one, into `reference/m815_targets/`, outside the manifest:
+  - T2_R4: blob `22bb03321404960b76ad568e1091f9629b4bdcb2`, SHA-256 `5b1758c9ec1c6566091fe9028a542f67fd6bd0ad51c927f7147d54c07d876b49`
+  - T2_R5: blob `2a5e77315c8c323e0c9ec8b15629fa26b6b64d98`, SHA-256 `a064683298ebc922ecbba06316a3af11b68a7b6193e7e04c63eaa9fc1ad931ba`
+  - T3_R4: blob `497301e4186b8e45d9efcb4207255d7b257f47e7`, SHA-256 `fe3497a3a4de45a5f3a6d2ce2a6c322feb5399610ad20d9da530acd8abdf3bc2`
+  - T3_R5: blob `a719df9db2b04edc06c1ec82f2d8467fc5b77c41`, SHA-256 `660d0322d1921bb7b6c9e7e1b71bf3c54bea63a6c17a754e22582601b49aaee4`
+  - T5_R2: blob `76501d58c96bec7db585dd525a09994a35f23251`, SHA-256 `6bcdb5cfd58980bf228b4c84271e51d1e6efa5b6052b0fd6cf98cce143a5884f`
+
+**Next:**
+1. the freeze block, `research/m8_16/freeze_block.md`, drafted from these files, committed on an OpenWave branch, pushed on Blake's go, with Blake opening the pull request;
+2. Blake's confirmation to launch the registered run overnight, on mains with the lid open.
+
+## 326. 2026-10-18T19:18:22Z: the freeze block drafted and committed locally on an OpenWave branch; not pushed
+
+**The block,** `research/m8_16/freeze_block.md`, 2229 lines, SHA-256 `25bd3f46bfe16ac4472b7f74135b92011b1b549557fb9fb4a1fcd7ea3606d18d`, in the form of M8.15.2's. Every value is read from the files entry 325 names:
+- **the terms:** the SHA-256, the merge `9f1b5d7b`, the census note and the go;
+- **the instrument:**
+  - the commit, MIT `c1ea8f2`;
+  - the 36 manifest hashes and the manifest pin;
+  - the freeze pin;
+  - the environment, recorded and read again at the freeze, both readings in full and no difference;
+  - M8.15's five target records with their blob ids and SHA-256;
+- **the seeds:** the 15 seeds against the Result's values, from entry 269's seed check. The instrument files it reads are unchanged in the pinned tree.
+- **`FROZEN.json`,** in full and intact;
+- **the order.**
+
+OpenWave's `check_no_local.py` passes it.
+
+**The commit:** `91a4177a0b349f66455a88e1b3c4f1a944db58f6`, on `m8-16-freeze-block-2026-10-18`, from upstream `main` at `c3d9adb942`. Upstream had moved past #637's merge only by #638, which touches no M8 file; the task doc there is unchanged. It is signed off for the DCO and is not pushed.
+
+**Waiting on Blake:**
+1. the push, and the pull request's opening, which is Blake's unless he names the base and head for it to be opened for him;
+2. when to launch: once the pull request is open, which puts `FROZEN.json` publicly on record before any sealed case, or after its merge.
+
+## 327. 2026-10-18T19:26:42Z: the freeze block's branch pushed to the fork; Blake opens the pull request
+
+On Blake's word ("push on my fork, I'll open the PR"), `m8-16-freeze-block-2026-10-18` was pushed to the fork at entry 326's commit, `91a4177a0b`. Read back raw from the fork, the freeze block has the local file's SHA-256.
+
+The pull request's text is drafted as `../m8_16_freeze_pr_body_v1.md` and is on Blake's clipboard. It runs from `dmobius3:m8-16-freeze-block-2026-10-18` into `openwave-labs/openwave` `main`, as the compare page sets it.
+
+**Next:**
+1. Blake opens the pull request;
+2. the launch, on Blake's word, once it is open or after its merge;
+3. the run overnight, on the adapter, with the lid open and Low Power Mode off.
+
+## 328. 2026-10-18T21:25:51Z: #639 approved and merged: the freeze block is on OpenWave `main`; the maintainer's two notes verified at source, neither needing a change; the launch waits for Blake's word
+
+**The approval** (review 5564975110, on `91a4177a0b`). It is kept verbatim as `../m8_16_pr639/xrodz_review_5564975110.md`, body SHA-256 `f28a5c5d0fb182f1297418ae2cf6d64c679b31e1c890265c7cb41f440257a388`. The maintainer recomputed every hash and value in the block that can be recomputed:
+- the terms' SHA-256, equal to the pinned `run/` copy;
+- the 36 manifest hashes and the pin, over a clean `git archive` export of MIT `c1ea8f2`;
+- `FROZEN.json`: the block's copy hashes to the freeze pin, and a rebuild from the pinned `cases.serialize`, `write_guard.frozen_values()` and `devtools.manifest` is byte-identical;
+- the go's comment id, which bounds `written` from below;
+- the five target records' blob ids and SHA-256, at M8.15's run record, an ancestor of `c1ea8f2`;
+- the 15 seed rows, against `dev/runs/269_seed_check.out` and `FROZEN.json`;
+- the order: MIT `c1ea8f2`, the go, `written`, the pull request's opening;
+- the DCO, UTF-8, and `check_no_local.py --require-files`.
+
+**Not checked, as the review states:**
+1. that no sealed case has run, since publication fixes when files appeared, not when anything was computed;
+2. `written` and the live environment reading, beyond the bounds above;
+3. `seed_check.py` and `write_guard.write()` themselves, which it did not rerun.
+
+**Commitments:** none new. At adjudication the run log's manifest and freeze pins are read against `a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a` and `ce685c8336b43fad28f279ce3198be654c712c60c9b38fac0e3bc357af56c852`.
+
+**The merge.** Opened by Blake at 2026-10-18T20:22:43Z and merged at 2026-10-18T21:13:22Z as `0a75cac8c5` on upstream `main`, with parents upstream `c3d9adb942` and the branch head. It adds one file, the freeze block, whose SHA-256 there is `25bd3f46bfe16ac4472b7f74135b92011b1b549557fb9fb4a1fcd7ea3606d18d`, the local file's. The task doc beside it has `86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf`, the pinned `run/` copy's. Nothing was edited at the merge.
+
+**The two notes, each verified at source.**
+1. **The seeds' currency line names seven instrument files; `dev/seed_check.py` imports eleven.** An AST trace of its imports at MIT `c1ea8f2` gives the seven plus `__init__`, `devtools`, `linear` and `newton`.
+   - Against entry 269's hashes, ten of the twelve instrument files are unchanged at `c1ea8f2`. `convergence.py`, outside the closure, and `linear.py` changed.
+   - `linear.py` changed by one line from `805ddbc` to `c1ea8f2`, at line 229 in `record()`: `l_resolved` joins its output.
+   - The seed values never reach `record()`. Claim 5's sentinels make it raise throughout claim 4, and none fired. Claim 6 calls it only to test the guard, `refuse_in_seedcheck` at line 168, `record()`'s first statement.
+   - Entry 269's script and output hashes equal the files at `c1ea8f2`.
+   So the seed values stand on the pinned code. The block's line is true of the seven it names, and should have named all eleven.
+2. **`FROZEN.json`'s `values` omit two items of § FROZEN VALUES:** `D`'s cut `10⁻⁸ ‖B‖`, the literal at `instrument/linear.py:233`, and K3's axis guard `10⁻⁶`, `AXIS_MIN` at `run/checks.py:23`.
+   - The terms list both, under the calibration and the checks. `write_guard.frozen_values()` reads neither: `D`'s cut is an unnamed literal, and `AXIS_MIN` is named but was not listed.
+   - Neither can move. The run reads its constants from the pinned code and never reads `values`, and `devtools.frozen()` refuses unless the running tree equals the manifest pin `FROZEN.json` carries.
+   - The values `frozen_values()` types as literals rather than reading them from the code, the solve's five, the two overlaps and the identity guard, equal the code's in `newton.py`, `branches.py`, `driver.py` and `checks.py`.
+   - `FROZEN.json` is written once and stays as it is. At adjudication the two are read from the pinned code, as the note says.
+
+**The bench, read-only, after the merge:** `devtools.frozen()` validates; both pins equal their files; `run/out` is absent; no file in this folder is newer than `run/FROZEN_PIN` but this log.
+
+**Next:**
+1. the launch, on Blake's word, which he has not given ("NO GO yet");
+2. the run overnight, on the adapter, with the lid open and Low Power Mode off;
+3. both notes carried into the run record's `REPRODUCE.md` at its publication, beside the freeze block.
+
+## 329. 2026-10-18T21:35:44Z: the two notes on #639 go into the run record, not `REPRODUCE.md`; entry 328's third next step corrected
+
+On Blake's word ("we should probably put the notes in the run record, no?"), the maintainer's two notes on #639 go into the run record. Entry 328 put them in `REPRODUCE.md`, which says how to rerun; the notes say what the freeze records.
+
+**The form follows M8.15.2's record of the approval note on #630:** its `RECORD.md`, § 6 (Corrections), and its method note, § 5.3 (Corrections on the record). Neither edited the freeze block.
+- **MIT `RECORD.md`:**
+  - under Corrections, the freeze block's seeds line: it names seven of the eleven instrument files `dev/seed_check.py` imports. Only `linear.py` changed, by one line in `record()`, which the seed values never reach.
+  - under Deviations (§ 5 in M8.15.2's), `FROZEN.json`'s `values`. § FIXED AT THE FREEZE says the file holds "the cutoffs and every frozen value above", and it omits `D`'s cut and K3's axis guard. So the file falls short of the terms' description of it, and the record says so in those words. Nothing moved: the manifest pin fixes both values, and at adjudication they are read from the pinned code, as the approval says.
+- **The OpenWave method note:** both, in brief, linking the freeze block.
+- **Unchanged:** the freeze block, as merged; `FROZEN.json`, written once; the terms, which state both values correctly and take no note.
+
+Written at the record's publication, after the run. Both notes are already public on #639, from before the run.
+
+## 330. 2026-10-18T21:45:25Z: the registered run, launched on Blake's go
+
+**The go:** Blake's own words, "go, let's run it", after the pre-flight he asked for.
+
+**Pre-flight,** read-only, before the launch:
+- `devtools.frozen()` validates: `FROZEN.json` against its pin, the tree against the manifest pin, the terms and the five target records; 15 cases on the allowlist;
+- `record_environment.py --check`: no difference from `run/ENVIRONMENT.json`;
+- the driver with no flag is the registered run, writing under `run/out/`, which did not exist, so it starts with no run log;
+- no file in this folder newer than `run/FROZEN_PIN` but this log;
+- the machine: no thermal warning, 313 GiB free, 24 GB of memory with 69% free, and no other run.
+
+**The launch:**
+- **The command:** `python3 -I -B -u run/driver.py`, from the bench, its output to `run/out/driver.log`, under `caffeinate -i -m -s -w` on its shell, as a background task. Blake's Caffeine app also holds the display awake.
+- **The power,** read at 2026-10-18T21:44:50Z: "Now drawing from 'AC Power'"; "-InternalBattery-0 (id=6881379)	47%; charging; 2:39 remaining present: true"; `lowpowermode 0`.
+- **The tree:** the run's log records the manifest's SHA-256 at the start, `a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a`, equal to `run/MANIFEST_PIN`. The freeze pin is `ce685c8336b43fad28f279ce3198be654c712c60c9b38fac0e3bc357af56c852`.
+- **Started** at 2026-10-18T21:44:54Z. The first case, C1, passed its seed and its three points at `N = 16` within the first minute.
+- **The terms' estimate:** about 13.6 to 17.3 h of compute.
+
+The run writes its own entry at its end, or at a stop. Lid open and on mains through the night.
+
+## 331. 2026-10-18T23:27:28Z: the registered run: NOT QUALIFIED, stopped at the pyramid on K3 and K4, the quartet 5.78% from leading order against the 5% bar; no row ran; a correction to entry 330
+
+**The run** launched in entry 330 ended at 2026-10-18T23:22:34Z, 5860 s after its start (5860 s by its own clock), with exit code 0.
+
+**The verdict,** `run/out/VERDICT.json`, as the driver wrote it: NOT QUALIFIED, failing K3 and K4, both on P5. K3's outcome is "instrument failure: the diagnosis is untested". The `R5` gate passed. No row ran.
+
+**The order as run.** C1, C2a, C2b, C3, C2a/R5 passed every check. P5, the pyramid and the first sealed case in the order, failed K3 and K4. The run stopped there and wrote the gate record, and the row gate refused every row: T1/R4, T1/R5, T4/R4, T4/R5, T2/R4, T2/R5, T3/R4, T3/R5, T5/R2 did not run.
+
+| case | role | slot | passed | failed | largest deviation at 0.25, `N = 32` | s |
+| --- | --- | --- | --- | --- | --- | --- |
+| C1 | control | R3 | K1, K4 | none | no point at 0.25 | 726 |
+| C2a | control | R4 | K1, K4, converged, bar, trend, K2 | none | 0.73% | 846 |
+| C2b | control | R2 | K1, K4, converged, bar, trend, K2 | none | 0.46% | 353 |
+| C3 | control | R4 | K1, K4, converged, bar, trend | none | 0.51% | 1124 |
+| C2a/R5 | R5gate | R5 | K1, K4, converged, bar, trend | none | 0.93% | 1584 |
+| P5 | pyramid | R4 | K1, K2, converged, seeds | K3, K4, bar | 5.78%, the quartet | 1227 |
+
+**P5 at `ε = 0.25`, at `N = 16, 24` and 32:**
+- every point accepted and every seed checked; `L`'s certificate holds at every cutoff, the largest tangent residual 0.03 u against the cut's 1000 u, `L`'s zero count 4, the chains', and its gray zone empty;
+- Hyperbolic, `(5, 1, 4)`, converged; K1 and K2 pass;
+- the slow band holds exactly the three predicted groups. Against leading order: the in-span pair 0.28%, 0.35%, 0.35%; the Krein-positive pair 0.12%, 0.20%, 0.20%; the quartet 5.76%, 5.78%, 5.78%, over the 5% bar at every cutoff.
+- So K4's bar fails on the quartet, and so does K3(a)'s slow-band test. That is "the slow band departs from Theorem R outside the in-span pair", which the terms list under the instrument failure: the diagnosis is untested.
+- K3's (b), (c) and (d), recorded at every cutoff, all pass: the in-span pair definite and Krein-negative, within 0.35% of `0.25 κ τ_in`; its overlap 0.9970 with XY and at most 2.7e-10 with Z; the axis fraction 0.987; and its separation passing the convergence rule. With (a) failed, they decide nothing.
+
+**Reported, unscored,** as K4 asks of the pyramid's readings at 0.5, 1 and 2. Deviation from leading order at `N = 32`, at `ε = 0.25, 0.5, 1` and 2: the quartet 5.78%, 11.35%, 21.95%, 41.50%; the in-span pair 0.35%, 0.69%, 1.38%, 2.75%; the Krein-positive pair 0.20%, 0.40%, 0.80%, 1.63%. Every point is Hyperbolic, `(5, 1, 4)`, at every cutoff, and `N = 24` agrees with 32 to within 0.2 points. The controls' largest deviations at `ε = 0.25` were 0.46% to 0.93%.
+- INFERRED: each deviation grows in proportion to `ε`, as a next-order term in `ε` would; the quartet's ratio to `ε` is 0.21 to 0.23. A deviation that did not fall with `ε` would point to a defect instead. This reading changes nothing in the verdict.
+
+**After the run:** every output equals the SHA-256 the run's log recorded, seven case files and the gate record, the verdict and the transcript; the log records the manifest pin at its start; `devtools.frozen()` validates. The run's files, as `run/out/RUNLOG.json` records them:
+- `run/out/C1.json` `8a91e9aa3abcec24512e983b65ce413130dd633180ba2f282b7a5987e2cbe4bc`
+- `run/out/C2a.json` `f7441cf3d3d826dc4734f7490d2eb5dd426e3693ef950b8aeca3fdb69df71c34`
+- `run/out/C2b.json` `d5a2e872cae8cbff8232772291b4d9103973bc5c1fb9c3f967c4dbcd9d7252f0`
+- `run/out/C3.json` `f599204030edddc2a8e2020042b9fb37700cbb14fd2929d0c4b98dda4d83b733`
+- `run/out/C2a_R5.json` `db83da0ca3f042ad0178cf679b26df53f16e6daf75eef23355b4fb96295c5082`
+- `run/out/P5.json` `dceba2fd5fbacf950d49abfe6b5f21fb3c2f8c8aa5d0defe64d2f12aa4ceddb2`
+- `run/out/P5.npz` `64ea832e06882ba39f2a649977edb3496c900a8c79b9e20d46b2506f782e8aab`
+- `run/out/GATE.json` `88d1fdffb65e2497ac41c124c239e6233b3b470a7867de42c8d717736773081c`
+- `run/out/VERDICT.json` `796cf7f098b2defc48966f9fddbfe26a724d8b71b47bfca11157e77f07311f84`
+- `run/out/driver.out` `81422ed69d72e1f3e13e3b52c862e58b89345b9f8326ec2f417db3b69147652c`, equal to `run/out/driver.log`
+
+**A correction to entry 330.** It says: "The run writes its own entry at its end, or at a stop." The run does not. The driver writes a DEVLOG entry only for a dry run, through `devtools.log_run` in `dry_claims`. The registered run's record of itself is `run/out/RUNLOG.json`. The terms ask for no DEVLOG entry from it, and this entry records it here.
+
+**What stands,** under § THE VERDICT RULE, AND STOP CONDITIONS: the failure stands as registered. There is no repair-and-rerun under M8.16. A defect claim in frozen text goes to maintainer reproduction, and a revised instrument is a new pre-registration under a new ID. The rows did not run and do not run under M8.16.
+
+**Next,** each on Blake's word: the run record, `RECORD.md`, with the two notes on #639; the method note; the units' review; then publication, and the maintainer's adjudication.
+
+## 332. 2026-10-18T23:55:05Z: post-run, unscored: P5's slow eigenvalues, extrapolated to zero amplitude, approach Theorem R's leading order; the quartet's miss is its next-order term
+
+**Why:** Blake asked whether Theorem R is wrong. Theorem R(a), in the Soft-Slot Branches, gives the slow eigenvalues as `ε(κs + o(1))` for small `ε`, and says nothing of the `o(1)` term's size at any finite `ε`. So the test of it is the limit `ε → 0`. The 5% bar at `ε = 0.25` is the M8.16 terms' own expectation, not the theorem's.
+
+**The reading,** from `run/out/P5.json` alone, with no solve. Each slow eigenvalue, matched by the pinned `checks.leading`, divided by `ε` at `ε = 0.25, 0.5, 1` and 2, and extrapolated to `ε → 0` by Richardson's rule; its distance from Theorem R's `κs`, at `N = 32`, equal at 24 to within 0.001 points:
+- the in-span pair: 0.35% at 0.25; 0.001% removing the first order; 0.0001% removing the second
+- the Krein-positive pair: 0.20% at 0.25; 0.001% removing the first order; 0.0001% removing the second
+- the quartet: 5.78% at 0.25; 0.355% removing the first order; 0.0602% removing the second
+
+INFERRED: every slow eigenvalue tends to Theorem R's leading-order value as `ε → 0`. The quartet carries a next-order correction about 17 times the in-span pair's, so at `ε = 0.25` it lies 5.78% off. Nothing here contradicts Theorem R; the frozen bar was tighter than the quartet's own correction. What would change this: an extrapolated limit that stays away from `κs`.
+
+Entry 331's verdict stands unchanged. This reading is unscored. It belongs with the method note's findings after the run, kept apart from the verdict.
+
+## 333. 2026-10-19T00:15:45Z: the run record and the method note drafted, on Blake's word; the packet for the units
+
+On Blake's word ("start drafting the run record and method note"), both are drafted, self-checked and packed for the units. Nothing is committed.
+
+**The record,** `RECORD.md`, 2645 words, in M8.15.2's form: custody, the controls, the pyramid, the gate record and the verdict, deviations, corrections, follow-ups and reproduction. `tools/build_record.py` builds it from the run's files, refusing if an output differs from the run log or the freeze does not validate, and `--check` reproduces it. The two notes on #639 are filed as entry 329 set out: the `FROZEN.json` omission under Deviations, the seeds line under Corrections.
+
+**Post-run files,** each headed as made after the run and not a record from it:
+- `environment_postrun_2026-10-18.txt`: `run/record_environment.py --check`, read after the run, with no difference;
+- `tools/p5_extrapolation.py` and its output: entry 332's reading, filed as a script that checks `run/out/P5.json` against the run log first.
+
+**`REPRODUCE.md`** gains the run: its record, its files, the post-run files and tools, how to run again in a copy without `run/out/`, and the refused resume.
+
+**The method note,** for OpenWave's `research/findings/`, 3569 words, in M8.15's form: equations first, the equation-to-code map, the run, results against the frozen terms, findings after the run, provenance, what the run does not verify, and the audit record, left for the units. It is built from a source with placeholders by `../m8_16_note/build_method_note.py`, which reads every hash, commit and number from the files and checks the 65 MIT links at the frozen commit, each line anchor against the function it names, and the relative links in OpenWave. The record's links carry a marker until the MIT commit exists.
+
+**Verified at source while drafting:** the 5% bar is the bar M8.15's terms set for validity at `ε_min`, carried into these terms; it was not set on the controls, whose deviations at `ε = 0.25` only show it met. The note's § 5.1 says so. Beside the convergence rule, unscored, P5's relative change at `ε = 2` is above the retired fraction `10⁻⁶`; the record reports it.
+
+**The packet:** the cover note `../m8_16_record_packet_v1.md`, 632 words, on Blake's clipboard, and `../m8_16_record_review_v1.zip`, revealed in Finder: the note, the terms, the freeze block as merged, the maintainer's review of #639, and the instrument's folder without `run/dry/`. From the packet's copy both tools reproduce: the extrapolation byte for byte, and the record by `--check`.
+
+**Hashes:**
+- `RECORD.md` `adf259c87c99fa835a86b4b07373eee27d8bf23873ef5732803f1e541352d71d`
+- `REPRODUCE.md` `23e20bb2db57358a99288b6205c422693eaf6f8e189a3eed90173642c6c1c8b8`
+- `environment_postrun_2026-10-18.txt` `5e12e201d9fa970e9ccc7db1ad32778c5f50d4a6014ba45bf6e42a0be7554390`
+- `tools/p5_extrapolation.py` `f3771710254ad6bfcfb6ca7b798399cb3107aac1c9445d2ff0ca821c45729f54`
+- `tools/p5_extrapolation.out` `50ac607444fcde336f5a7c69fad82786e9cb0f94ca9ae7ead6a9f4dd868befea`
+- `tools/build_record.py` `1fa445d2550efddae4da9c53919a103dda8f7189cc34431b611a0141cee7e58d`
+- `../m8_16_note/m8_16_method_note_src.md` `e15ee18eb10fdbbafa3d59c1fc3bf0a105b57c4ed02b3079f57bf9014703041d`
+- `../m8_16_note/build_method_note.py` `09ccf351ea979bc7aa536fd3b88f1f9da66dccc285093292098376baac70b3c6`
+- `../m8_16_note/m8_16_method_note.md` `93a340118436ddc7a6e4bbdce0b862139ba7a335e25921e89c28ad564c3d936b`
+- `../m8_16_record_packet_v1.md` `97422d6fbccfd747f831eea9d143230673d96030bfbf34b2157776b350439195`
+- `../m8_16_record_review_v1.zip` `5953e2dba4b626e78edbabedecc411ac1eb571ed5a2fa93a7c6c25547ab41cb8`
+
+**Next:** the units' review; then, on Blake's word, the MIT commit of the record, the note's OpenWave branch, and the maintainer's adjudication.
+
+## 334. 2026-10-19T00:48:37Z: the units on the record's v1 packet: UA CONDITIONAL CONFIRM with one blocker, UB four changes; all adopted after checks at source; the v2 packet
+
+Blake relayed both reviews of entry 333's packet, with no words of his own, so this entry covers local work only. Nothing is committed.
+
+**UA: CONDITIONAL CONFIRM.** UA confirms the registered negative result, the K3 and K4 reading, custody, the #639 notes, the equations and the map (62 line anchors), and the unscored extrapolation. UA rebuilt `RECORD.md` byte for byte, and reran the extrapolation byte for byte.
+1. **The blocker: `SHA256SUMS`** was the pre-run inventory: 482 entries, with `DEVLOG.md` and `REPRODUCE.md` mismatched and 24 post-run files unlisted.
+2. **The verdict rule's K3 sentence,** "If K3 fails with the kernel exact, the record says that the diagnosis is wrong", read alone, fits P5, whose kernel certificate holds. UA favours K3's own outcome list and the driver's reading, and asks that the sentence be disclosed, not resolved silently.
+3. **§ 5.1's wording:** the extrapolation uses three of the four points; and the INFERRED reading should say "consistent with" Theorem R's asymptotic limit, not that the eigenvalues tend to it.
+
+**UB: a, d and § 7 changed; b, c and e kept.** UB rebuilt the record with `--check`, reran the extrapolation byte for byte, and recomputed P5's checks, the seeds, C1's bounds, the basis sizes, the environment, entry 269's hashes, the seed check's closure and the 62 anchors.
+- **a1:** the terms flag a margin outside the calibration's range "in the record wherever it applies", and `R5` lies outside its slots, so C2a/R5 needs the flag.
+- **a2:** the power was read only at the launch, so either cite `pmset -g log` or say "at its launch".
+- **b, kept, with a statement:** K3(a)'s slow-band clause is UB's proposal on #637. Under the terms before that revision, the same data would read "resolved", with NOT QUALIFIED standing on K4 alone.
+- **d1 to d3:** M8.15.x's `RESULT_2.md`, a source of record, anchored the quartet 8.1% from leading order before the terms set the 5% bar; add its level-3 track beside this run's; and say that Richardson's rule uses three points. UB adds that it checked the bar on the controls only when proposing the clause.
+- **d4:** the note's § 7 credits the next-order term to Theorem R, which gives the leading order alone.
+
+**Checked at source:**
+- `SHA256SUMS`: 482 entries, 2 mismatched, 24 unlisted, 506 files without `run/dry/`, exactly as UA reports.
+- Every point's `m`, read from its margin, lies from 0.2043 to 2.0000, inside 0.204 to 132; only `R5`'s slot lies outside the fitted ones.
+- `pmset -g log` returns "no messages found in PM ASL data store" on this machine.
+- `RESULT_2.md`, at the commit the terms cite, reads "The quartet anchored at 8.1%". Its `control_2a_L3.log` tracks the quartet at 8.12%, 12.37%, 22.39% and 41.69% and the Krein-positive pair at 0.15%, 0.38%, 0.80% and 1.63%, at `ε = 0.25, 0.5, 1` and 2.
+- UB's statement under b: in the retired terms, `../m8_16_retired_805ddbc/m8_16_task_details.md`, K3(a) reads "the point is accepted, and K1 and K2 hold there". P5's readings meet it, so under that text the outcome would be "resolved", and K4 would still fail.
+
+**Adjudicated:** every point is adopted. The two units differ on one sentence: UB's d3 keeps "each slow eigenvalue tends to Theorem R's leading order as `ε → 0`", and UA asks for "consistent with". UA's wording is adopted, as the narrower claim. UB's statement under b changes no text. Both units keep the reading, so the counterfactual stays in this log and goes to Blake.
+
+**Applied:**
+- `tools/build_record.py` emits C2a/R5's flag, computed from each point's margin and the terms' fitted range; the power at the launch, read from entry 330; the wall time against the run's own clock; and the verdict rule's sentence beside K3's list. `RECORD.md` was rebuilt, and `--check` passes.
+- The note's source carries UA's disclosure in § 4; UB's d1, d2 and d4; the INFERRED bullet in UA's wording, with UB's content; "three points" in both places; and the power at the launch. Its builder reads M8.15.x's commit from the terms' own link to `RESULT_2.md`, and the finite-element numbers from the files, and checks that the two instruments agree within 0.5 points from `ε = 1`. It checks 67 MIT links.
+- `SHA256SUMS` was written fresh over the folder's 506 files, itself excluded, and `shasum -c` reads 506 OK. `run/MANIFEST_PIN`, `run/FROZEN_PIN` and `run/FROZEN.json` are untouched, and the freeze validates. This entry changes `DEVLOG.md`, so the bench's `SHA256SUMS` no longer matches that one line. It is written fresh again when the MIT folder is built, after the last entry the folder holds.
+
+**The finite-element reading,** logged here at UB's request, unscored: M8.15.x's level-3 track agrees with this run within 0.5 points from `ε = 1`, for the quartet and the Krein-positive pair. At 0.25 and 0.5 its quartet lies further from leading order.
+
+**The v2 packet:** the cover note `../m8_16_record_packet_v2.md`, on Blake's clipboard, and `../m8_16_record_review_v2.zip`, revealed in Finder, with diffs against v1. From the packet's copy: `shasum -c` reads 506 OK with no file unlisted; `--check` reproduces `RECORD.md`; and the extrapolation reproduces byte for byte.
+
+**Hashes:**
+- `RECORD.md` `5ddcfd17805287719601a9ccf915a13e997fd3dd3920e08e8b40d928fb414b2f`
+- `tools/build_record.py` `2fa312b11144ec68f3ded3e541ba0f1faa93f60cbdea578d0f4ca5af90a4bcb3`
+- `SHA256SUMS` `bc6ba3a406b8ba4cae916250e869a50e3c0c95bf7582d5f0674b58bf57093ee4`
+- `../m8_16_note/m8_16_method_note_src.md` `67e24b49b6c373ce88d988c5795c586a6f83ce7501ab52f2272bc068da176580`
+- `../m8_16_note/build_method_note.py` `625b3422722f28b0aea2c79e5073b53a306fe173c09402e5d6d3f90f41598038`
+- `../m8_16_note/m8_16_method_note.md` `b361ae0d27acc4a88846918b09b1b687bf9f1f1172b8baf2e53a9d9cec89f582`
+- `../m8_16_record_packet_v2.md` `eabcb9c12ab2fb2ed35d8169576e6b1c032e0c0c5410dc016313715629a6c71f`
+- `../m8_16_record_review_v2.zip` `b0b2c2b1774e4df254942ce7b446e0fce2d74f0d92b3d7462382ab3a53411f76`
+
+**Next:** the units' short confirmation; then, on Blake's word, the MIT commit, the note's OpenWave branch, and the adjudication.
+
+## 335. 2026-10-19T00:55:35Z: both units confirm the record's v2: UA CONFIRM, GO to filing subject to Blake; UB CONFIRM, with one step, `SHA256SUMS` last
+
+Blake relayed both reviews, with no words of his own, so this entry covers local work only. Nothing is committed.
+
+**UA: CONFIRM v2, no changes.** UA checked:
+- `SHA256SUMS`: 506 of 506, with no unlisted or duplicate file;
+- the freeze, unchanged and valid;
+- `RECORD.md`, byte-identical at 2,795 words, and the extrapolation, byte-identical;
+- the K3 sentence, disclosed; the extrapolation, bounded and marked INFERRED;
+- M8.15.x's figures at `ae3ad04`, the `R5` flag, the #639 notes, and the 62 anchors.
+
+UA replayed the builder with the frozen commit given by hand, since the zip is not a git checkout. The filing step left: the note's record links take the MIT commit once it exists, and are checked.
+
+**UB: CONFIRM v2.**
+- Against v1 the folder differs in the four files only, and the three diffs, applied to v1, give v2 exactly.
+- `shasum -c` reads 506 OK, with every file listed and every listed file present.
+- The freeze is unchanged, and both tools reproduce.
+- On item 2, UB states where the gap came from. After round 1 of #637's revision (entry 289), K3(a) was `L`'s certificate alone, so the verdict rule's sentence matched it. UB's round-2 clause (entry 305) added the Theorem R test to (a), and left the sentence worded for the old (a). In the retired terms, before #637, (a) read "the point is accepted, and K1 and K2 hold there" (entry 334).
+
+**UB's step.** "Log v2 as entry 334": done. Entry 334 records v2 and the `RESULT_2.md` finding. It was written after the v2 packet was built, so the units' copy ends at entry 333. "Regenerate SHA256SUMS as the very last step and rerun `shasum -a 256 -c`": done for the bench after this entry, and done again when the MIT folder is built, after the last entry the folder holds.
+
+**MIT `main`** has moved by one commit since `c1ea8f2`: `3d7742c`, "coexact gap: cite Kramer (JGSP 6) and Herald (GIQ 3)". It touches no file of this folder and not the census page, so the record commit goes on top of it.
+
+**Next,** each on Blake's word:
+1. **MIT:** bring the worktree up to `main`; build the folder from the bench, its `SHA256SUMS` written fresh last and checked; commit, and verify from the commit's own tree; then push.
+2. **OpenWave:** build the note with the record commit, its links checked; a signed-off commit on a branch from upstream `main`, pushed to the fork. Blake opens the pull request.
+3. **The maintainer's adjudication;** then the roadmap's Done row and the census page's dated note.
+
+## 336. 2026-10-19T00:59:57Z: the record filed, on Blake's word: the MIT folder built from the bench
+
+On Blake's word ("go, file it").
+
+**The worktree** is fast-forwarded to MIT `main` at `3d7742c`. The app's sync refused for want of a git identity, and the branch was behind only, so the fast-forward is the fallback used before.
+
+**The folder** is the bench without `run/dry/` and caches. Against `main` it changes 27 files, and deletes none:
+- **24 new:** `RECORD.md`; `run/out/`'s 12 files; `run/FROZEN.json` and `run/FROZEN_PIN`; the 5 target records in `reference/m815_targets/`; `environment_postrun_2026-10-18.txt`; and `tools/`'s 3 files;
+- **3 modified:** `DEVLOG.md`, `REPRODUCE.md` and `SHA256SUMS`.
+
+**A scan** of those files finds machine paths, user names and emails only where MIT already holds them: three lines of `DEVLOG.md`'s published entries, and the record builder's own check for local paths.
+
+**`SHA256SUMS`** is written fresh after this entry, over the folder's files, itself excluded. The folder is then checked there: `shasum -c`; the manifest against its pin; the freeze; and the record's `--check`.
+
+**Next:** the commit, verified from its own tree; then the push.

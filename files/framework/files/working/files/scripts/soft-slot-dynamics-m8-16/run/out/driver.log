@@ -1,0 +1,34 @@
+M8.16 registered run: 15 cases; outputs in run/out
+C1 (control, R3):
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 24: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 32: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 40: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   checks: {'K1': True, 'K4': True}; 726 s
+C2a (control, R4):
+   C2a N = 16, m = 50: seed ok; 4 of 4 points accepted; 6 s
+   C2a N = 24, m = 138: seed ok; 4 of 4 points accepted; 58 s
+   C2a N = 32, m = 316: seed ok; 4 of 4 points accepted; 782 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True}; 846 s
+C2b (control, R2):
+   C2b N = 16, m = 22: seed ok; 4 of 4 points accepted; 2 s
+   C2b N = 24, m = 84: seed ok; 4 of 4 points accepted; 28 s
+   C2b N = 32, m = 200: seed ok; 4 of 4 points accepted; 323 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True}; 353 s
+C3 (control, R4):
+   C3 N = 16, m = 50: seed ok; 4 of 4 points accepted; 8 s
+   C3 N = 24, m = 138: seed ok; 4 of 4 points accepted; 82 s
+   C3 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1033 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True}; 1124 s
+C2a/R5 (R5gate, R5):
+   C2a/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 9 s
+   C2a/R5 N = 24, m = 193: seed ok; 4 of 4 points accepted; 201 s
+   C2a/R5 N = 32, m = 433: seed ok; 4 of 4 points accepted; 1374 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True}; 1584 s
+P5 (pyramid, R4):
+   P5 N = 16, m = 50: seed ok; 4 of 4 points accepted; 9 s
+   P5 N = 24, m = 138: seed ok; 4 of 4 points accepted; 88 s
+   P5 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1130 s
+   checks: {'K1': True, 'K2': True, 'K4': False, 'converged': True, 'bar': False, 'seeds': True}; 1227 s
+STOP: P5 failed K3, K4; the gate record is written
+verdict: {'verdict': 'NOT QUALIFIED', 'instrument': False, 'r5_gate': True, 'rows': {}, 'failing': ['K3', 'K4'], 'failed': ['P5: K3', 'P5: K4'], 'k3': 'instrument failure: the diagnosis is untested'}; 5860 s
