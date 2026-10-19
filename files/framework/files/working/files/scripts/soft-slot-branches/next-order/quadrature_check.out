@@ -1,0 +1,22 @@
+The first correction by quadrature on SU(2), against exact_values.json (SHA-256 65dba8b5acbd47697a09f1dec9711ab971821e624007ddee27b5809419f4e1bc)
+grid: alpha, gamma 32 points each, cos beta 20 Gauss-Legendre nodes
+   C2a     2I closed: True; class of cos(pi/5): 12 elements; P_rho commutes with 2I to 9.3e-15; s = 0.428571; |psi_u|^2 = 1.000000000000000
+           levels with a nonzero part, besides K: [10, 14, 16, 18] (exact: [10, 14, 16, 18]); Q = 1.000777000777001; R~0(u) = -5.527269340912053e-06
+           relative differences: Q 4.4e-16, R~0 4.4e-14, gradient 3.2e-14, Hessian 1.9e-15, level norms 3.0e-14: ok
+   C2b     2I closed: True; class of cos(pi/5): 12 elements; P_rho commutes with 2I to 5.7e-15; s = 0.250000; |psi_u|^2 = 0.999999999999999
+           levels with a nonzero part, besides K: [13, 17, 19] (exact: [13, 17, 19]); Q = 1.006993006993005; R~0(u) = -4.927866503602614e-05
+           relative differences: Q 2.2e-15, R~0 1.4e-14, gradient 1.1e-14, Hessian 5.9e-15, level norms 1.4e-14: ok
+   C3      2I closed: True; class of cos(pi/5): 12 elements; P_rho commutes with 2I to 9.3e-15; s = 0.428571; |psi_u|^2 = 1.000000000000000
+           levels with a nonzero part, besides K: [14, 18] (exact: [14, 18]); Q = 1.223776223776225; R~0(u) = -7.774822684739047e-04
+           relative differences: Q 8.9e-16, R~0 2.8e-15, gradient 2.5e-15, Hessian 4.2e-15, level norms 2.5e-15: ok
+   C2a/R5  2I closed: True; class of cos(pi/5): 12 elements; P_rho commutes with 2I to 9.2e-15; s = 0.571429; |psi_u|^2 = 1.000000000000000
+           levels with a nonzero part, besides K: [8, 12, 14, 16, 18] (exact: [8, 12, 14, 16, 18]); Q = 1.000437062937064; R~0(u) = -3.176635623311502e-06
+           relative differences: Q 8.9e-16, R~0 5.7e-15, gradient 6.4e-14, Hessian 1.7e-15, level norms 2.0e-14: ok
+   P5      2I closed: True; class of cos(pi/5): 12 elements; P_rho commutes with 2I to 9.3e-15; s = 0.428571; |psi_u|^2 = 1.000000000000000
+           levels with a nonzero part, besides K: [10, 14, 16, 18] (exact: [10, 14, 16, 18]); Q = 1.184615384615385; R~0(u) = -1.524687249251705e-03
+           relative differences: Q 4.4e-16, R~0 4.3e-16, gradient 5.9e-16, Hessian 8.6e-16, level norms 4.8e-16: ok
+   PASS
+arm: the other isotypic part of V_j in place of the slot's: RED
+        C2a: Q differs by 0.00034, R~0 by 0.425 relative
+        P5: Q differs by 0.0808, R~0 by 0.58 relative
+1 claim, passed; the arm red

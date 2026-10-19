@@ -1,0 +1,197 @@
+The pyramid quartet's next-order term: the exact first correction, the Hessian at the germ, and c_g
+comparison data: SHA-256 08bf8a711aa029fd8c639b4cc8911e0a786338476b6ceb0cbbc707cb5e41a9b4 (check iii)
+units R = c = V = 1; mp.dps = 50
+A  the leading order at each case, from the exact quartic in orthonormal coordinates
+   C2a     Q = 1288/1287, k = 3, Mhat u = 8 Q u and Mhat K_u = 0: True; zero multiplicity of Shat_u 4 by its exact characteristic polynomial (cofactor nonzero at 0: True), 4 in floating point; k + r_u = 4
+           s = (0.0 + 0.195804195804j) (imag, Krein +), frozen (0.0 + 0.195804195804j): match
+           s = (0.0 + 0.130536130536j) (imag, Krein +), frozen (0.0 + 0.130536130536j): match
+           s = (0.0 + 1.41414141414j) (imag, Krein +), frozen (0.0 + 1.41414141414j): match
+           s = (0.0 + 2.87179487179j) (imag, Krein +), frozen (0.0 + 2.87179487179j): match
+           s = (0.0 + 0.696192696193j) (imag, Krein +), frozen (0.0 + 0.696192696193j): match
+   C2b     Q = 144/143, k = 5, Mhat u = 8 Q u and Mhat K_u = 0: True; zero multiplicity of Shat_u 6 by its exact characteristic polynomial (cofactor nonzero at 0: True), 6 in floating point; k + r_u = 6
+           s = (0.0 + 0.783216783217j) (imag, Krein +), frozen (0.0 + 0.783216783217j): match
+           s = (0.0 + 1.17482517483j) (imag, Krein +), frozen (0.0 + 1.17482517483j): match
+           s = (0.0 + 2.34965034965j) (imag, Krein +), frozen (0.0 + 2.34965034965j): match
+           s = (0.0 + 3.52447552448j) (imag, Krein +), frozen (0.0 + 3.52447552448j): match
+           s = (0.0 + 3.91608391608j) (imag, Krein +), frozen (0.0 + 3.91608391608j): match
+   C3      Q = 175/143, k = 4, Mhat u = 8 Q u and Mhat K_u = 0: True; zero multiplicity of Shat_u 8 by its exact characteristic polynomial (cofactor nonzero at 0: True), 8 in floating point; k + r_u = 8
+           s = 0.674085679526 (real), frozen 0.674085679526: match
+   C2a/R5  Q = 2289/2288, k = 3, Mhat u = 8 Q u and Mhat K_u = 0: True; zero multiplicity of Shat_u 4 by its exact characteristic polynomial (cofactor nonzero at 0: True), 4 in floating point; k + r_u = 4
+           s = (0.0 + 0.11013986014j) (imag, Krein +), frozen (0.0 + 0.11013986014j): match
+           s = (0.0 + 0.0734265734266j) (imag, Krein +), frozen (0.0 + 0.0734265734266j): match
+           s = (0.0 + 0.795454545455j) (imag, Krein +), frozen (0.0 + 0.795454545455j): match
+           s = (0.0 + 1.61538461538j) (imag, Krein +), frozen (0.0 + 1.61538461538j): match
+           s = (0.0 + 0.391608391608j) (imag, Krein +), frozen (0.0 + 0.391608391608j): match
+   P5      Q = 77/65, k = 4, Mhat u = 8 Q u and Mhat K_u = 0: True; zero multiplicity of Shat_u 6 by its exact characteristic polynomial (cofactor nonzero at 0: True), 6 in floating point; k + r_u = 6
+           s = (0.0 + 0.0622348690957j) (imag, Krein -), frozen (0.0 + 0.0622348691j): match
+           s = (0.0417352859838 + 0.0609168609169j) (complex), frozen (0.041735286 + 0.0609168609j): match
+           s = (0.0 + 1.09518548832j) (imag, Krein +), frozen (0.0 + 1.0951854883j): match
+   PASS
+B  the first correction's gradient at u: Euler, invariance, the fixed directions, check viii
+   C2a     levels [10, 14, 16, 18]; R~0(u) = -608931967/110168679947040; Euler dF_J[u] = 6 F_J and Hess F_J u = 5 grad F_J: True; grad perpendicular to K_u: True; in the fixed directions: True; its radial part 6 R~0(u): True
+   C2b     levels [13, 17, 19]; R~0(u) = -1629062/33058160135; Euler dF_J[u] = 6 F_J and Hess F_J u = 5 grad F_J: True; grad perpendicular to K_u: True; in the fixed directions: True; its radial part 6 R~0(u): True
+   C3      levels [10, 14, 16, 18]; R~0(u) = -2203040/2833556583; Euler dF_J[u] = 6 F_J and Hess F_J u = 5 grad F_J: True; grad perpendicular to K_u: True; in the fixed directions: True; its radial part 6 R~0(u): True
+   C2a/R5  levels [8, 12, 14, 16, 18]; R~0(u) = -122896067/38687492546560; Euler dF_J[u] = 6 F_J and Hess F_J u = 5 grad F_J: True; grad perpendicular to K_u: True; in the fixed directions: True; its radial part 6 R~0(u): True
+   P5      levels [10, 14, 16, 18]; R~0(u) = -267786421/175633672500; Euler dF_J[u] = 6 F_J and Hess F_J u = 5 grad F_J: True; grad perpendicular to K_u: True; in the fixed directions: True; its radial part 6 R~0(u): True
+   P5, check viii: dF_J(u)[n] = -12*sqrt(39)/2275 at 10, -4863*sqrt(39)/386750 at 14, 71*sqrt(39)/22750 at 16, 2*sqrt(39)/425 at 18
+        sum_J t_J dF_J(u)[n] / ((2J+1) mu_J) = -146711*sqrt(39)/10507997500; grad R~0(u) . n = 7188839*sqrt(39)/40530847500, -0.121080263430 of its radial part; check viii's values: True
+   PASS
+C  the Hessian at the germ: z on the normal space, and check i for every generator
+   C2a     Mhat on the fixed directions [10304/1287]; z = (-86990281/21000815447040) in (u); solves Mhat z = grad R~0(u) on the normal space: True; check i: phase ok, rotation x ok, rotation y ok, rotation z ok
+   C2b     Mhat on the fixed directions [1152/143]; z = (-814531/22192890720) in (u); solves Mhat z = grad R~0(u) on the normal space: True; check i: phase ok, rotation x ok, rotation y ok, rotation z ok, Theta ok, i Theta ok
+   C3      Mhat on the fixed directions [1400/143]; z = (-15736/33025135) in (u); solves Mhat z = grad R~0(u) on the normal space: True; check i: phase ok, rotation x ok, rotation y ok, rotation z ok
+   C2a/R5  Mhat on the fixed directions [2289/286]; z = (-17556581/7372266936320) in (u); solves Mhat z = grad R~0(u) on the normal space: True; check i: phase ok, rotation x ok, rotation y ok, rotation z ok
+   P5      Mhat on the fixed directions [616/65, -224/165]; z = (-38255203/39630162000, -1026977*sqrt(39)/7860528000) in (u, n); solves Mhat z = grad R~0(u) on the normal space: True; check i: phase ok, rotation x ok, rotation y ok, rotation z ok
+   P5: the germ y_eps = y0 + eps y1 + O(eps^2) turns off the ray u: y1 . n / |y0| = -2 z_n / Q = 146711*sqrt(39)/665121600 = 0.00137750736308
+   at every case, exactly: D_u = (Hess R~0(u) - 6 R~0(u))/Q^2 - (3 R~0(u)/(2 Q^3)) Mhat - D^3h(u)[z_off]/Q^2, z_off the part of z off the ray: True
+   PASS
+D  Theorem R'(c) at v1, check ii: D_u on K' = C v_{-3}, against the page's gamma_u
+   R4: grad R~0(v1) radial: True; D_u on K' = [[-19919/6697728, 0], [0, -19919/6697728]]; gamma_u on the page -19919/6697728 = -0.002973993569: True
+   R5: grad R~0(v1) radial: True; D_u on K' = [[224487/41628563, 0], [0, 224487/41628563]]; gamma_u on the page 224487/41628563 = 0.005392619486: True
+   PASS
+E  the eigenvalue step against the model, floating point, 50 digits
+   C2a     s = (0.0 + 0.13053613j): c_g = (0.0 - 6.12554215711e-5j); model (0.0 - 6.12554215711e-5j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a     s = (0.0 + 0.1958042j): c_g = (0.0 - 0.000103475406935j); model (0.0 - 0.000103475406935j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a     s = (0.0 + 0.6961927j): c_g = (0.0 - 0.000321441309233j); model (0.0 - 0.000321441309233j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a     s = (0.0 + 1.4141414j): c_g = (0.0 - 0.000570355651397j); model (0.0 - 0.000570355651397j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a     s = (0.0 + 2.8717949j): c_g = (0.0 - 0.00113256005853j); model (0.0 - 0.00113256005853j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2b     s = (0.0 + 0.78321678j): c_g = (0.0 - 0.0002251623048j); model (0.0 - 0.0002251623048j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2b     s = (0.0 + 1.1748252j): c_g = (0.0 - 0.000262074804503j); model (0.0 - 0.000262074804503j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2b     s = (0.0 + 2.3496503j): c_g = (0.0 - 0.000581105504106j); model (0.0 - 0.000581105504106j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2b     s = (0.0 + 3.5244755j): c_g = (0.0 - 0.000731817516616j); model (0.0 - 0.000731817516616j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2b     s = (0.0 + 3.9160839j): c_g = (0.0 - 0.00112381203739j); model (0.0 - 0.00112381203739j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C3      s = 0.67408568: c_g = -0.00020573325; model -0.00020573325; relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a/R5  s = (0.0 + 0.073426573j): c_g = (0.0 - 3.71858716913e-5j); model (0.0 - 3.71858716913e-5j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a/R5  s = (0.0 + 0.11013986j): c_g = (0.0 - 6.25017562608e-5j); model (0.0 - 6.25017562608e-5j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a/R5  s = (0.0 + 0.39160839j): c_g = (0.0 - 0.000225474482959j); model (0.0 - 0.000225474482959j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a/R5  s = (0.0 + 0.79545455j): c_g = (0.0 - 0.000538306767676j); model (0.0 - 0.000538306767676j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   C2a/R5  s = (0.0 + 1.6153846j): c_g = (0.0 - 0.000926240466314j); model (0.0 - 0.000926240466314j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   P5      s = (0.0 + 0.062234869j): c_g = (0.0 - 1.31391176607e-5j); model (0.0 - 1.31391176607e-5j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   P5      s = (0.041735286 + 0.060916861j): c_g = (0.000124233245524 - 0.000234845365306j); model (0.000124233245524 - 0.000234845365306j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   P5      s = (0.0 + 1.0951855j): c_g = (0.0 - 0.00013217151892j); model (0.0 - 0.00013217151892j); relative difference below 1e-12; full gradient at the germs below 1e-40: ok
+   PASS
+F  the record, checks iv to vi: c2 and c3 at the reached eps, and |c_g - c3| <= |c3 - c2|, group by group, at N = 24 and 32, and at N = 16 with its missing channels removed (R4 and R5 level 18; R2 levels 17 and 19)
+   C2a     N = 24, group 1 (imag +1): c_g/(kappa s) = -0.02931319; record c3 (-0.02931315 - 3.808725e-12j), c2 (-0.02931121 - 2.647108e-12j); |c_g - c3| = 4.22e-8, spread 1.94e-6: agrees
+   C2a     N = 24, group 2 (imag +1): c_g/(kappa s) = -0.02602925; record c3 (-0.02602922 + 6.024679e-12j), c2 (-0.02602779 + 1.758605e-12j); |c_g - c3| = 2.92e-8, spread 1.43e-6: agrees
+   C2a     N = 24, group 3 (imag +1): c_g/(kappa s) = -0.02237179; record c3 (-0.02237177 + 1.002702e-12j), c2 (-0.02237073 + 7.16331e-13j); |c_g - c3| = 2.32e-8, spread 1.04e-6: agrees
+   C2a     N = 24, group 4 (imag +1): c_g/(kappa s) = -0.02187539; record c3 (-0.02187535 - 1.550829e-12j), c2 (-0.02187389 - 1.169409e-12j); |c_g - c3| = 4.16e-8, spread 1.46e-6: agrees
+   C2a     N = 24, group 5 (imag +1): c_g/(kappa s) = -0.02561062; record c3 (-0.02561059 - 9.597064e-12j), c2 (-0.02560921 - 7.279591e-12j); |c_g - c3| = 2.89e-8, spread 1.38e-6: agrees
+   C2a     N = 32, group 1 (imag +1): c_g/(kappa s) = -0.02931319; record c3 (-0.02931315 - 6.556334e-12j), c2 (-0.02931121 - 4.677171e-12j); |c_g - c3| = 4.22e-8, spread 1.94e-6: agrees
+   C2a     N = 32, group 2 (imag +1): c_g/(kappa s) = -0.02602925; record c3 (-0.02602922 - 3.017399e-12j), c2 (-0.02602779 - 2.42764e-12j); |c_g - c3| = 2.91e-8, spread 1.43e-6: agrees
+   C2a     N = 32, group 3 (imag +1): c_g/(kappa s) = -0.02237179; record c3 (-0.02237177 - 7.282095e-14j), c2 (-0.02237073 - 3.120548e-14j); |c_g - c3| = 2.32e-8, spread 1.04e-6: agrees
+   C2a     N = 32, group 4 (imag +1): c_g/(kappa s) = -0.02187539; record c3 (-0.02187535 - 3.265657e-13j), c2 (-0.02187389 - 2.773407e-13j); |c_g - c3| = 4.16e-8, spread 1.46e-6: agrees
+   C2a     N = 32, group 5 (imag +1): c_g/(kappa s) = -0.02561062; record c3 (-0.02561059 + 1.917815e-12j), c2 (-0.02560921 + 1.481558e-12j); |c_g - c3| = 2.89e-8, spread 1.38e-6: agrees
+   C2a     N = 16, group 1 (imag +1): c_g/(kappa s) = -0.02828345; record c3 (-0.02828341 + 1.054618e-11j), c2 (-0.02828165 + 7.629348e-12j); |c_g - c3| = 3.75e-8, spread 1.76e-6: agrees; the change from N = 24: derived 0.00103, record (0.00103 + 1.435e-11j)
+   C2a     N = 16, group 2 (imag +1): c_g/(kappa s) = -0.02536382; record c3 (-0.0253638 - 7.348736e-12j), c2 (-0.02536246 - 5.752044e-12j); |c_g - c3| = 2.67e-8, spread 1.34e-6: agrees; the change from N = 24: derived 0.0006654, record (0.0006654 - 1.337e-11j)
+   C2a     N = 16, group 3 (imag +1): c_g/(kappa s) = -0.02018423; record c3 (-0.02018421 + 3.94136e-13j), c2 (-0.02018338 + 2.761284e-13j); |c_g - c3| = 1.84e-8, spread 8.3e-7: agrees; the change from N = 24: derived 0.002188, record (0.002188 - 6.086e-13j)
+   C2a     N = 16, group 4 (imag +1): c_g/(kappa s) = -0.01863589; record c3 (-0.01863586 + 6.843281e-14j), c2 (-0.01863473 + 5.257623e-14j); |c_g - c3| = 3.12e-8, spread 1.13e-6: agrees; the change from N = 24: derived 0.003239, record (0.003239 + 1.619e-12j)
+   C2a     N = 16, group 5 (imag +1): c_g/(kappa s) = -0.02424177; record c3 (-0.02424174 - 1.314066e-12j), c2 (-0.02424055 - 8.264393e-13j); |c_g - c3| = 2.44e-8, spread 1.2e-6: agrees; the change from N = 24: derived 0.001369, record (0.001369 + 8.283e-12j)
+   C2b     N = 24, group 1 (imag +1): c_g/(kappa s) = -0.01838232; record c3 (-0.01838232 - 5.323678e-12j), c2 (-0.01838178 - 4.133841e-12j); |c_g - c3| = 8.36e-9, spread 5.39e-7: agrees
+   C2b     N = 24, group 2 (imag +1): c_g/(kappa s) = -0.01426392; record c3 (-0.01426391 - 9.00473e-12j), c2 (-0.01426372 - 6.840611e-12j); |c_g - c3| = 1.59e-9, spread 1.96e-7: agrees
+   C2b     N = 24, group 3 (imag +1): c_g/(kappa s) = -0.01581388; record c3 (-0.01581387 + 1.782883e-12j), c2 (-0.01581335 + 1.200605e-12j); |c_g - c3| = 1.02e-8, spread 5.25e-7: agrees
+   C2b     N = 24, group 4 (imag +1): c_g/(kappa s) = -0.01327685; record c3 (-0.01327684 + 3.455829e-13j), c2 (-0.01327632 + 2.111633e-13j); |c_g - c3| = 1.13e-8, spread 5.23e-7: agrees
+   C2b     N = 24, group 5 (imag +1): c_g/(kappa s) = -0.01834968; record c3 (-0.01834965 + 8.792543e-13j), c2 (-0.01834856 + 5.741813e-13j); |c_g - c3| = 2.8e-8, spread 1.09e-6: agrees
+   C2b     N = 32, group 1 (imag +1): c_g/(kappa s) = -0.01838232; record c3 (-0.01838232 - 3.411287e-12j), c2 (-0.01838178 - 2.39739e-12j); |c_g - c3| = 8.33e-9, spread 5.4e-7: agrees
+   C2b     N = 32, group 2 (imag +1): c_g/(kappa s) = -0.01426392; record c3 (-0.01426391 - 1.626323e-12j), c2 (-0.01426372 - 1.107453e-12j); |c_g - c3| = 1.63e-9, spread 1.96e-7: agrees
+   C2b     N = 32, group 3 (imag +1): c_g/(kappa s) = -0.01581388; record c3 (-0.01581387 + 2.301722e-12j), c2 (-0.01581335 + 1.801998e-12j); |c_g - c3| = 1.02e-8, spread 5.26e-7: agrees
+   C2b     N = 32, group 4 (imag +1): c_g/(kappa s) = -0.01327685; record c3 (-0.01327684 + 5.329573e-13j), c2 (-0.01327631 + 4.094795e-13j); |c_g - c3| = 1.13e-8, spread 5.23e-7: agrees
+   C2b     N = 32, group 5 (imag +1): c_g/(kappa s) = -0.01834968; record c3 (-0.01834965 - 1.699226e-13j), c2 (-0.01834856 - 8.536258e-14j); |c_g - c3| = 2.8e-8, spread 1.09e-6: agrees
+   C2b     N = 16, group 1 (imag +1): c_g/(kappa s) = -0.01576143; record c3 (-0.01576143 + 8.603331e-13j), c2 (-0.01576105 + 6.531977e-13j); |c_g - c3| = 5.72e-9, spread 3.83e-7: agrees; the change from N = 24: derived 0.002621, record (0.002621 + 6.184e-12j)
+   C2b     N = 16, group 2 (imag +1): c_g/(kappa s) = -0.01089284; record c3 (-0.01089283 + 2.431032e-13j), c2 (-0.01089273 + 1.268864e-13j); |c_g - c3| = 1.04e-9, spread 1.07e-7: agrees; the change from N = 24: derived 0.003371, record (0.003371 + 9.248e-12j)
+   C2b     N = 16, group 3 (imag +1): c_g/(kappa s) = -0.01242504; record c3 (-0.01242503 - 2.586132e-13j), c2 (-0.01242467 - 1.753606e-13j); |c_g - c3| = 6.81e-9, spread 3.6e-7: agrees; the change from N = 24: derived 0.003389, record (0.003389 - 2.041e-12j)
+   C2b     N = 16, group 4 (imag +1): c_g/(kappa s) = -0.01041152; record c3 (-0.01041151 + 2.770845e-13j), c2 (-0.01041112 + 2.01183e-13j); |c_g - c3| = 8.2e-9, spread 3.92e-7: agrees; the change from N = 24: derived 0.002865, record (0.002865 - 6.85e-14j)
+   C2b     N = 16, group 5 (imag +1): c_g/(kappa s) = -0.01477168; record c3 (-0.01477166 - 1.473715e-13j), c2 (-0.01477092 - 1.163069e-13j); |c_g - c3| = 1.75e-8, spread 7.42e-7: agrees; the change from N = 24: derived 0.003578, record (0.003578 - 1.027e-12j)
+   C3      N = 24, group 1 (real): c_g/(kappa s) = -0.02070151; record c3 -0.02070148, c2 -0.02070026; |c_g - c3| = 2.58e-8, spread 1.22e-6: agrees
+   C3      N = 24, group 2 (real): c_g/(kappa s) = -0.02070151; record c3 -0.02070148, c2 -0.02070026; |c_g - c3| = 2.58e-8, spread 1.22e-6: agrees
+   C3      N = 24, group 3 (real): c_g/(kappa s) = -0.02070151; record c3 -0.02070148, c2 -0.02070026; |c_g - c3| = 2.58e-8, spread 1.22e-6: agrees
+   C3      N = 32, group 1 (real): c_g/(kappa s) = -0.02070151; record c3 -0.02070148, c2 -0.02070026; |c_g - c3| = 2.6e-8, spread 1.23e-6: agrees
+   C3      N = 32, group 2 (real): c_g/(kappa s) = -0.02070151; record c3 -0.02070148, c2 -0.02070026; |c_g - c3| = 2.6e-8, spread 1.23e-6: agrees
+   C3      N = 32, group 3 (real): c_g/(kappa s) = -0.02070151; record c3 -0.02070148, c2 -0.02070026; |c_g - c3| = 2.6e-8, spread 1.23e-6: agrees
+   C3      N = 16, group 1 (real): c_g/(kappa s) = -0.01815248; record c3 -0.01815246, c2 -0.01815146; |c_g - c3| = 2.01e-8, spread 1.01e-6: agrees; the change from N = 24: derived 0.002549, record 0.002549
+   C3      N = 16, group 2 (real): c_g/(kappa s) = -0.01815248; record c3 -0.01815246, c2 -0.01815146; |c_g - c3| = 2.01e-8, spread 1.01e-6: agrees; the change from N = 24: derived 0.002549, record 0.002549
+   C3      N = 16, group 3 (real): c_g/(kappa s) = -0.01815248; record c3 -0.01815246, c2 -0.01815146; |c_g - c3| = 2.01e-8, spread 1.01e-6: agrees; the change from N = 24: derived 0.002549, record 0.002549
+   C2a/R5  N = 24, group 1 (imag +1): c_g/(kappa s) = -0.03146647; record c3 (-0.03146643 - 1.517985e-11j), c2 (-0.03146427 - 1.211287e-11j); |c_g - c3| = 4.62e-8, spread 2.16e-6: agrees
+   C2a/R5  N = 24, group 2 (imag +1): c_g/(kappa s) = -0.02808181; record c3 (-0.02808177 + 3.786074e-12j), c2 (-0.02808008 + 1.68844e-12j); |c_g - c3| = 3.52e-8, spread 1.69e-6: agrees
+   C2a/R5  N = 24, group 3 (imag +1): c_g/(kappa s) = -0.03752449; record c3 (-0.03752443 + 1.484225e-11j), c2 (-0.03752131 + 1.146423e-11j); |c_g - c3| = 6.68e-8, spread 3.12e-6: agrees
+   C2a/R5  N = 24, group 4 (imag +1): c_g/(kappa s) = -0.03179422; record c3 (-0.03179419 - 6.640486e-13j), c2 (-0.03179266 - 4.492306e-13j); |c_g - c3| = 3.27e-8, spread 1.52e-6: agrees
+   C2a/R5  N = 24, group 5 (imag +1): c_g/(kappa s) = -0.03192609; record c3 (-0.03192604 - 6.208746e-12j), c2 (-0.0319237 - 3.49695e-12j); |c_g - c3| = 5.17e-8, spread 2.34e-6: agrees
+   C2a/R5  N = 32, group 1 (imag +1): c_g/(kappa s) = -0.03146647; record c3 (-0.03146643 + 5.944282e-12j), c2 (-0.03146427 + 4.823138e-12j); |c_g - c3| = 4.62e-8, spread 2.16e-6: agrees
+   C2a/R5  N = 32, group 2 (imag +1): c_g/(kappa s) = -0.02808181; record c3 (-0.02808177 - 1.30378e-11j), c2 (-0.02808008 - 9.477399e-12j); |c_g - c3| = 3.52e-8, spread 1.69e-6: agrees
+   C2a/R5  N = 32, group 3 (imag +1): c_g/(kappa s) = -0.03752449; record c3 (-0.03752443 + 6.305015e-12j), c2 (-0.03752131 + 4.775423e-12j); |c_g - c3| = 6.67e-8, spread 3.12e-6: agrees
+   C2a/R5  N = 32, group 4 (imag +1): c_g/(kappa s) = -0.03179422; record c3 (-0.03179419 + 6.127293e-13j), c2 (-0.03179266 + 4.399696e-13j); |c_g - c3| = 3.28e-8, spread 1.52e-6: agrees
+   C2a/R5  N = 32, group 5 (imag +1): c_g/(kappa s) = -0.03192609; record c3 (-0.03192604 - 8.703401e-13j), c2 (-0.0319237 - 1.012298e-12j); |c_g - c3| = 5.18e-8, spread 2.34e-6: agrees
+   C2a/R5  N = 16, group 1 (imag +1): c_g/(kappa s) = -0.03045646; record c3 (-0.03045642 - 1.393806e-11j), c2 (-0.03045445 - 1.093209e-11j); |c_g - c3| = 4.07e-8, spread 1.96e-6: agrees; the change from N = 24: derived 0.00101, record (0.00101 + 1.242e-12j)
+   C2a/R5  N = 16, group 2 (imag +1): c_g/(kappa s) = -0.02742907; record c3 (-0.02742904 + 1.102117e-11j), c2 (-0.02742745 + 7.72504e-12j); |c_g - c3| = 3.24e-8, spread 1.59e-6: agrees; the change from N = 24: derived 0.0006527, record (0.0006527 + 7.235e-12j)
+   C2a/R5  N = 16, group 3 (imag +1): c_g/(kappa s) = -0.03537901; record c3 (-0.03537896 - 2.412236e-12j), c2 (-0.03537644 - 1.857084e-12j); |c_g - c3| = 4.93e-8, spread 2.52e-6: agrees; the change from N = 24: derived 0.002145, record (0.002145 - 1.725e-11j)
+   C2a/R5  N = 16, group 4 (imag +1): c_g/(kappa s) = -0.02861712; record c3 (-0.0286171 + 2.748423e-13j), c2 (-0.0286161 + 2.328232e-13j); |c_g - c3| = 2.34e-8, spread 9.97e-7: agrees; the change from N = 24: derived 0.003177, record (0.003177 + 9.389e-13j)
+   C2a/R5  N = 16, group 5 (imag +1): c_g/(kappa s) = -0.03058351; record c3 (-0.03058347 - 1.65935e-12j), c2 (-0.03058143 - 1.352509e-12j); |c_g - c3| = 4.28e-8, spread 2.04e-6: agrees; the change from N = 24: derived 0.001343, record (0.001343 + 4.549e-12j)
+   P5      N = 24, group 1 (imag -1): c_g/(kappa s) = -0.01386182; record c3 (-0.01386185 - 1.214072e-9j), c2 (-0.01386237 - 8.936248e-10j); |c_g - c3| = 2.26e-8, spread 5.21e-7: agrees
+   P5      N = 24, group 2 (complex): c_g/(kappa s) = (-0.1098311 - 0.2091497j); record c3 (-0.1099334 - 0.2089999j), c2 (-0.110261 - 0.2084937j); |c_g - c3| = 0.000181, spread 0.000603: agrees
+   P5      N = 24, group 3 (imag +1): c_g/(kappa s) = -0.007923885; record c3 (-0.007923907 + 7.326545e-12j), c2 (-0.007924728 + 5.38741e-12j); |c_g - c3| = 2.18e-8, spread 8.21e-7: agrees
+   P5      N = 32, group 1 (imag -1): c_g/(kappa s) = -0.01386182; record c3 (-0.01386185 - 1.255762e-9j), c2 (-0.01386236 - 9.536293e-10j); |c_g - c3| = 2.25e-8, spread 5.15e-7: agrees
+   P5      N = 32, group 2 (complex): c_g/(kappa s) = (-0.1098311 - 0.2091497j); record c3 (-0.1099334 - 0.2089999j), c2 (-0.1102611 - 0.2084936j); |c_g - c3| = 0.000181, spread 0.000603: agrees
+   P5      N = 32, group 3 (imag +1): c_g/(kappa s) = -0.007923885; record c3 (-0.007923907 + 1.123047e-12j), c2 (-0.007924726 + 8.510966e-13j); |c_g - c3| = 2.18e-8, spread 8.19e-7: agrees
+   P5      N = 16, group 1 (imag -1): c_g/(kappa s) = -0.0112318; record c3 (-0.01123182 - 7.400784e-10j), c2 (-0.01123236 - 5.590351e-10j); |c_g - c3| = 2.05e-8, spread 5.4e-7: agrees; the change from N = 24: derived 0.00263, record (0.00263 + 4.74e-10j)
+   P5      N = 16, group 2 (complex): c_g/(kappa s) = (-0.1128946 - 0.2062025j); record c3 (-0.1129881 - 0.2060657j), c2 (-0.1132947 - 0.2055943j); |c_g - c3| = 0.000166, spread 0.000562: agrees; the change from N = 24: derived (-0.003064 + 0.002947j), record (-0.003055 + 0.002934j)
+   P5      N = 16, group 3 (imag +1): c_g/(kappa s) = -0.00460195; record c3 (-0.004601967 + 1.453596e-12j), c2 (-0.004602762 + 1.035982e-12j); |c_g - c3| = 1.67e-8, spread 7.95e-7: agrees; the change from N = 24: derived 0.003322, record (0.003322 - 5.873e-12j)
+   PASS
+arms
+   arm: R4 with s = 2/7 (A)                                        RED
+        C2a's Q becomes 3437/3432
+   arm: the cubic recoupling dropped (B)                           RED
+        the weighted sum becomes 1173*sqrt(39)/113863750
+   arm: the germ's shift along n dropped at P5 (C)                 RED
+        check i fails for phase, rotation x, rotation y, rotation z
+   arm: the shift dropped at v1 (D)                                RED
+        D_u on K' becomes -17083153/3831100416 in R4
+   arm: the frequency's shift dropped (E)                          RED
+        the largest relative difference from the model becomes 4.18
+   arm: the lambda^2 part dropped (E)                              RED
+        the largest relative difference from the model becomes 0.354
+   arm: the Hermitian pairing for the bilinear one (E)             RED
+        the largest relative difference from the model becomes 0.597
+   arm: the model's germ held on the ray at P5 (E)                 RED
+        the largest relative difference becomes 15.6
+   arm: the off-ray shift dropped from c_g at P5 (F)               RED
+        P5's groups out of their spread: P5 N = 24 group 1, P5 N = 24 group 2, P5 N = 24 group 3, P5 N = 32 group 1, P5 N = 32 group 2, P5 N = 32 group 3, P5 N = 16 group 1, P5 N = 16 group 2, P5 N = 16 group 3
+the result: c_g per group, relative to kappa s_g, with its five parts, and the conditioning |l| |r|
+   C2a     s = (0.0 + 0.1305361305j)          mult 1  c_g = (0.0 - 6.125542157e-5j)            c_g/(kappa s_g) = -0.026029254                       cond 1.0
+             parts: the spherical Hessian -0.015459306; the amplitude 1.655607e-5; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.00016983696
+   C2a     s = (0.0 + 0.1958041958j)          mult 1  c_g = (0.0 - 0.0001034754069j)           c_g/(kappa s_g) = -0.029313189                       cond 1.0
+             parts: the spherical Hessian -0.018658323; the amplitude 1.655607e-5; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.00025475543
+   C2a     s = (0.0 + 0.6961926962j)          mult 1  c_g = (0.0 - 0.0003214413092j)           c_g/(kappa s_g) = -0.025610623                       cond 1.0
+             parts: the spherical Hessian -0.014304716; the amplitude 1.655607e-5; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.0009057971
+   C2a     s = (0.0 + 1.414141414j)           mult 1  c_g = (0.0 - 0.0005703556514j)           c_g/(kappa s_g) = -0.022371795                       cond 1.0
+             parts: the spherical Hessian -0.010131784; the amplitude 1.655607e-5; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.0018399004
+   C2a     s = (0.0 + 2.871794872j)           mult 1  c_g = (0.0 - 0.001132560059j)            c_g/(kappa s_g) = -0.021875387                       cond 1.0
+             parts: the spherical Hessian -0.0077388635; the amplitude 1.655607e-5; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.003736413
+   C2b     s = (0.0 + 0.7832167832j)          mult 1  c_g = (0.0 - 0.0002251623048j)           c_g/(kappa s_g) = -0.018382324                       cond 1.0
+             parts: the spherical Hessian -0.009820001; the amplitude 0.00014578985; the off-ray shift 0; the frequency -0.0079365079; lambda^2 -0.00077160494
+   C2b     s = (0.0 + 1.174825175j)           mult 1  c_g = (0.0 - 0.0002620748045j)           c_g/(kappa s_g) = -0.014263915                       cond 1.0
+             parts: the spherical Hessian -0.0053157895; the amplitude 0.00014578985; the off-ray shift 0; the frequency -0.0079365079; lambda^2 -0.0011574074
+   C2b     s = (0.0 + 2.34965035j)            mult 1  c_g = (0.0 - 0.0005811055041j)           c_g/(kappa s_g) = -0.015813881                       cond 1.0
+             parts: the spherical Hessian -0.0057083481; the amplitude 0.00014578985; the off-ray shift 0; the frequency -0.0079365079; lambda^2 -0.0023148148
+   C2b     s = (0.0 + 3.524475524j)           mult 1  c_g = (0.0 - 0.0007318175166j)           c_g/(kappa s_g) = -0.013276849                       cond 1.0
+             parts: the spherical Hessian -0.0020139087; the amplitude 0.00014578985; the off-ray shift 0; the frequency -0.0079365079; lambda^2 -0.0034722222
+   C2b     s = (0.0 + 3.916083916j)           mult 1  c_g = (0.0 - 0.001123812037j)            c_g/(kappa s_g) = -0.018349676                       cond 1.0
+             parts: the spherical Hessian -0.0067009335; the amplitude 0.00014578985; the off-ray shift 0; the frequency -0.0079365079; lambda^2 -0.0038580247
+   C3      s = 0.6740856795                   mult 3  c_g = -0.00020573325, -0.00020573325, -0.00020573325 c_g/(kappa s_g) = -0.020701509, -0.020701509, -0.020701509 cond 1.033
+             the correction on the 3-dimensional eigenspace is a multiple of the identity: True; on it, the spherical Hessian -0.011657084, the amplitude 0.0015574271, the off-ray shift 0
+   C2a/R5  s = (0.0 + 0.07342657343j)         mult 1  c_g = (0.0 - 3.718587169e-5j)            c_g/(kappa s_g) = -0.028081809                       cond 1.0
+             parts: the spherical Hessian -0.017579098; the amplitude 9.521582e-6; the off-ray shift 0; the frequency -0.010416667; lambda^2 -9.5565749e-5
+   C2a/R5  s = (0.0 + 0.1101398601j)          mult 1  c_g = (0.0 - 6.250175626e-5j)            c_g/(kappa s_g) = -0.031466474                       cond 1.0
+             parts: the spherical Hessian -0.02091598; the amplitude 9.521582e-6; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.00014334862
+   C2a/R5  s = (0.0 + 0.3916083916j)          mult 1  c_g = (0.0 - 0.000225474483j)            c_g/(kappa s_g) = -0.031926094                       cond 1.0
+             parts: the spherical Hessian -0.021009265; the amplitude 9.521582e-6; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.000509684
+   C2a/R5  s = (0.0 + 0.7954545455j)          mult 1  c_g = (0.0 - 0.0005383067677j)           c_g/(kappa s_g) = -0.037524494                       cond 1.0
+             parts: the spherical Hessian -0.026082054; the amplitude 9.521582e-6; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.0010352956
+   C2a/R5  s = (0.0 + 1.615384615j)           mult 1  c_g = (0.0 - 0.0009262404663j)           c_g/(kappa s_g) = -0.031794221                       cond 1.0
+             parts: the spherical Hessian -0.019284629; the amplitude 9.521582e-6; the off-ray shift 0; the frequency -0.010416667; lambda^2 -0.0021024465
+   P5      s = (0.0 + 0.0622348691j)          mult 1  c_g = (0.0 - 1.313911766e-5j)            c_g/(kappa s_g) = -0.013861824                       cond 14.17
+             parts: the spherical Hessian 0.20915739; the amplitude 0.0032594722; the off-ray shift -0.21683139; the frequency -0.010416667; lambda^2 0.00096936901
+   P5      s = (0.04173528598 + 0.06091686092j) mult 1  c_g = (0.0001242332455 - 0.0002348453653j) c_g/(kappa s_g) = (-0.10983109 - 0.20914972j)        cond 3.683
+             parts: the spherical Hessian (-0.07201077 - 0.25258659j); the amplitude 0.0032594722; the off-ray shift (-0.030825735 + 0.043199519j); the frequency -0.010416667; lambda^2 (0.00016261096 + 0.0002373471j)
+   P5      s = (0.0 + 1.095185488j)           mult 1  c_g = (0.0 - 0.0001321715189j)           c_g/(kappa s_g) = -0.0079238852                      cond 1.171
+             parts: the spherical Hessian -0.0016989404; the amplitude 0.0032594722; the off-ray shift 0.0023416247; the frequency -0.010416667; lambda^2 -0.0014093751
+exact values for quadrature_check.py: exact_values.json, SHA-256 65dba8b5acbd47697a09f1dec9711ab971821e624007ddee27b5809419f4e1bc
+0 claims failed; 9/9 arms red

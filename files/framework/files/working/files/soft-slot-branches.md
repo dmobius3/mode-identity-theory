@@ -9,9 +9,9 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-14):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for three orbits, classifies M8.12's census in R4 and R5, the three orbits certified outside its class there, and R2's fixed-line points; two of the outside orbits, added on 2026-10-14, are born hyperbolic. At R2's degenerate line point, Lemma G in the fixed space of its octahedral isotropy gives a germ, pinned by the symmetry. At second order, a closed form for the reduced function's first correction decides both degenerate orbits: R2's point is spectrally and orbitally stable along its family, and v1 is spectrally stable in R4 and R5. Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
+**Status (2026-10-19):** Derived. In the soft slots R2, R4 and R5, every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude (Lemma G). Along such a branch the small-amplitude linear spectrum is read off the reduced quartic (Theorem R). A slow eigenvalue off the imaginary axis makes the branch unstable. A nondegenerate minimum gives a branch that is spectrally stable and orbitally stable relative to its stationary family. A nondegenerate maximum gives a spectrally stable branch. An indefinite orbit gives one when its slow flow is elliptic with Krein-definite frequencies and its zero modes are accounted for exactly. Exact arithmetic, and interval arithmetic for three orbits, classifies M8.12's census in R4 and R5, the three orbits certified outside its class there, and R2's fixed-line points; two of the outside orbits, added on 2026-10-14, are born hyperbolic. At R2's degenerate line point, Lemma G in the fixed space of its octahedral isotropy gives a germ, pinned by the symmetry. At second order, a closed form for the reduced function's first correction decides both degenerate orbits: R2's point is spectrally and orbitally stable along its family, and v1 is spectrally stable in R4 and R5. One order past Theorem R at a nondegenerate orbit, a closed form gives the slow spectrum's next term (Proposition N, added 2026-10-19); at M8.16's pyramid control and its four soft-slot controls it reproduces every slow group's next-order coefficient in that run's record within its extrapolation spread, with nothing fitted (INFERRED). Nothing is claimed at finite amplitude. The globality of R2's minimum, Proposition C2 of the Slot Ground States, stays OPEN.
 **Summary:** Branch existence and the small-amplitude linear spectrum at the soft slots' critical orbits, with the orbits computed exactly.
-**Inputs:** `slot-action.md` (§V, §VII, §IX), `slot-ground-states.md` (§I, §IV, Theorem D), OpenWave's M8.12 census record (the orbit list and representatives) at `344f416`, `scripts/soft-slot-branches/`, and since 2026-10-14 the Surviving Ray's §7.2 certificates and, as a check of Lemma F, OpenWave M8.10's frozen values
+**Inputs:** `slot-action.md` (§V, §VII, §IX), `slot-ground-states.md` (§I, §IV, Theorem D), OpenWave's M8.12 census record (the orbit list and representatives) at `344f416`, `scripts/soft-slot-branches/`, and since 2026-10-14 the Surviving Ray's §7.2 certificates and, as a check of Lemma F, OpenWave M8.10's frozen values, and since 2026-10-19, as a check of the next order, M8.16's registered run record
 **Parent:** `slot-ground-states.md`
 
 ---
@@ -180,6 +180,134 @@ As in Theorem R, the claims are at small amplitude, and only (b) gives orbital s
 - *The decoupled sector.* The component of weight 4 is $`\mathbb{C}v_{-3}`$, which is $`K'`$, and the circle commutes with $`M_u`$ and $`i`$. So Theorem R′(c) applies, and that pair is imaginary for every small $`\varepsilon`$. Its $`\gamma_u`$ is $`-(19919/6697728)\,R^2`$ in $`R_4`$, Krein-negative, and $`(224487/41628563)\,R^2`$ in $`R_5`$, Krein-positive.
 - *The other components.* There $`\widehat S_u`$ has its zero of multiplicity exactly $`4 = k + r_u`$ and the four simple negative roots of $`v_1`$'s slow polynomial in §IV, and $`J(v_1) \ne 0`$ keeps $`r_u = 1`$ along the branch. So Theorem R(e)'s hypotheses hold there, and the branch is spectrally stable at small amplitude in $`R_4`$ and $`R_5`$.
 
+**The next order at a nondegenerate orbit (added 2026-10-19).** Theorem R(a) gives the slow eigenvalues at a nondegenerate orbit as $`\varepsilon(\kappa s + o(1))`$, and says nothing of the size of the $`o(1)`$ term. Proposition N gives the next term in closed form, from Lemma F and the germ's first shift, and is graded as a new derivation.
+- [`next_order_check.py`](scripts/soft-slot-branches/next-order/next_order_check.py) evaluates it at M8.16's pyramid control and its four soft-slot controls. It is exact up to the eigenvalue step, which runs at 50 digits, with a floating-point model of the slow problem beside it.
+- [`quadrature_check.py`](scripts/soft-slot-branches/next-order/quadrature_check.py) recomputes the first correction from its definition, by quadrature on SU(2).
+
+*The setting.* Fix a nondegenerate critical orbit $`\Gamma u`$ with its branch $`\varphi_\varepsilon`$. $`\tilde R_0`$ is $`\Gamma`$-invariant, so $`\nabla\tilde R_0(u)`$ is orthogonal to $`K_u`$ and lies in $`\mathbb{R}u \oplus N_u`$, where $`M_u`$ is invertible. Let $`\hat z \in \mathbb{R}u \oplus N_u`$ solve $`M_u\hat z = \nabla\tilde R_0(u)`$, and set
+
+```math
+D_u = \kappa_u^{-2}\big(\mathrm{Hess}\,\tilde R_0(u) - D^3H(u)[\hat z]\big).
+```
+
+A slow group $`g`$ is a nonzero eigenvalue $`s_g`$ of $`\widehat S_u`$, with $`\mu_0 = \kappa s_g`$, together with the slow eigenvalues of $`A_\varepsilon`$ near $`\varepsilon\mu_0`$. Here $`i`$ is the complex structure of $`E_0`$, extended complex-linearly to the complexification, whose own scalars carry the eigenvalues, as in Theorem R.
+
+**Proposition N (the next order).** For a slow group $`g`$, let
+
+```math
+T_1 = \frac{c^2}{4\omega_0}\, iD_u - \frac{c^2}{2\omega_0^2}\,\mu_0 + \frac{\mu_0^2}{2\omega_0}\, i,
+```
+
+and, for the complex-bilinear extension of the real inner product, let $`r_a`$ and $`\ell_a`$ be right and left eigenvectors of $`\widehat S_u`$ for $`s_g`$, with $`\ell_a^{T}r_b = \delta_{ab}`$.
+- **(a) A simple eigenvalue.** If $`s_g`$ is simple, then for small $`\varepsilon > 0`$, $`A_\varepsilon`$ has exactly one eigenvalue near $`\varepsilon\mu_0`$. It is smooth in $`\varepsilon`$, and $`\lambda_g(\varepsilon) = \varepsilon\mu_0 + \varepsilon^2c_g + O(\varepsilon^3)`$, with $`c_g = \ell^{T}T_1r`$.
+- **(b) A semisimple eigenvalue.** If $`s_g`$ is semisimple of multiplicity $`m`$, let $`C_{ab} = \ell_a^{T}T_1r_b`$. The $`m`$ slow eigenvalues near $`\varepsilon\mu_0`$, counted as zeros of the reduced determinant of step d, are $`\varepsilon\mu_0 + \varepsilon^2c_a`$ plus remainders.
+  - The individual coefficients $`c_a`$ are the eigenvalues of $`C`$, counted algebraically.
+  - Their remainders are $`o(\varepsilon^2)`$ in general, and $`O(\varepsilon^3)`$ when $`C`$ is semisimple.
+  - Their mean is $`\varepsilon\mu_0 + \varepsilon^2\,\mathrm{tr}\,C/m + O(\varepsilon^3)`$.
+
+The zero eigenvalues are not expanded. Where Theorem R(e)'s hypothesis (Z) holds, its partner and exact-zero steps, which do not use the Krein hypothesis, keep them at 0 for every small $`\varepsilon`$.
+
+*Proof.*
+- *Step a, the reduction to $`E_0`$.* $`\lambda`$ is an eigenvalue of $`A_\varepsilon`$ exactly when $`P(\lambda) = (\lambda^2 + 2i\omega_\varepsilon\lambda)/c^2 + L_\varepsilon`$ has a kernel in $`H^2`$.
+  - *The blocks.* The terms in $`\lambda`$ commute with $`P_0`$, since $`-\Delta`$ commutes with $`i`$, and $`P_0(-\Delta - \sigma_\varepsilon)P_\perp = 0`$. So the off-diagonal blocks of $`P(\lambda)`$ are those of $`gV_\varepsilon`$, with $`V_\varepsilon\zeta = \lvert\varphi_\varepsilon\rvert^2\zeta + 2\varphi_\varepsilon\mathrm{Re}(\varphi_\varepsilon^\dagger\zeta)`$. They are $`O(\varepsilon)`$, since $`\lVert\varphi_\varepsilon\rVert_{L^\infty}^2 = O(\varepsilon/g)`$ by Lemma G and $`H^2 \subset L^\infty`$.
+  - *The higher levels.* $`E_0`$ is the lowest eigenspace, so $`P_\perp(-\Delta - \sigma_\varepsilon)P_\perp \ge \lambda_1 - \lambda_0 - \varepsilon`$, with $`\lambda_1`$ the next eigenvalue. Take $`\lvert\lambda\rvert \le \delta`$ with $`2\omega_0\delta/c^2 \le (\lambda_1 - \lambda_0)/4`$, and $`\varepsilon`$ small. Then $`P_\perp P(\lambda)P_\perp`$ is invertible, with an inverse bounded uniformly, analytic in $`\lambda`$ and smooth in $`\varepsilon`$.
+  - *The Schur complement.* On $`E_0`$ it is $`S(\lambda, \varepsilon) = (\lambda^2 + 2i\omega_\varepsilon\lambda)/c^2 + H(\lambda, \varepsilon)`$, with $`H(\lambda, \varepsilon) = P_0L_\varepsilon P_0 - P_0L_\varepsilon P_\perp\big(P_\perp P(\lambda)P_\perp\big)^{-1}P_\perp L_\varepsilon P_0`$, and $`P(\lambda)`$ has a kernel exactly when $`S(\lambda, \varepsilon)`$ does.
+  - *At $`\lambda = 0`$.* $`H(0, \varepsilon)`$ is the Schur complement of $`L_\varepsilon`$. By the kernel step of Lemma G's proof that is $`\mathrm{Hess}_wf(w_\varepsilon, \sigma_\varepsilon)`$, and by the scaling it is $`(\varepsilon/2)\,\mathrm{Hess}_y\tilde f(y_\varepsilon, \varepsilon)`$.
+  - *The estimate.* The resolvent identity gives $`H(\lambda, \varepsilon) - H(0, \varepsilon) = O(\varepsilon^2\lvert\lambda\rvert)`$, uniformly.
+- *Step b, the Hessian at the germ.* Differentiating the slice's critical equation gives $`y_\varepsilon = y_0 + \varepsilon y_1 + O(\varepsilon^2)`$, with $`y_1 \in \mathbb{R}u \oplus N_u`$ solving $`\kappa_u^{-1}M_uy_1 = -\nabla\tilde R_0(y_0)`$. Two facts give $`\mathrm{Hess}_y\tilde f(y_\varepsilon, \varepsilon) = \kappa_u^{-1}M_u + \varepsilon D_u + O(\varepsilon^2)`$, with $`D_u = \mathrm{Hess}\,\tilde R_0(y_0) + D^3H(y_0)[y_1]`$:
+  - $`\mathrm{Hess}\,H(y_0) - 2 = \kappa_u^{-1}M_u`$;
+  - $`\tilde R(\cdot, 0) = \tilde R_0`$, by Lemma F.
+
+  $`H`$ is quartic and $`\tilde R_0`$ sextic, and $`y_1 = -\kappa_u^{-3/2}\hat z`$, so this is the $`D_u`$ above.
+- *Step c, the frequency.* $`\omega_\varepsilon = \omega_0 + (c^2/2\omega_0)\varepsilon + O(\varepsilon^2)`$.
+- *Step d, the eigenvalue.* Put $`\lambda = \varepsilon\mu`$ and $`T_0 = (c^2/4\omega_0\kappa_u)\,iM_u = \kappa\widehat S_u`$. Steps a to c give $`S(\varepsilon\mu, \varepsilon)/\varepsilon = (2\omega_0/c^2)\,i\,\big(\mu - T_0 - \varepsilon T_1(\mu) - \varepsilon^2T_2(\mu, \varepsilon)\big)`$. Here $`T_1(\mu)`$ is the statement's $`T_1`$ with $`\mu`$ in place of $`\mu_0`$, and $`T_2`$ is smooth and bounded for $`\mu`$ in a compact set. So the slow eigenvalues are $`\varepsilon\mu`$ for the zeros $`\mu`$ of $`F(\mu, \varepsilon) = \det\big(\mu - T_0 - \varepsilon T_1(\mu) - \varepsilon^2T_2(\mu, \varepsilon)\big)`$.
+  - *For a simple eigenvalue,* the zero is simple, and the implicit function theorem gives $`\mu(\varepsilon) = \mu_0 + \varepsilon\,\ell^{T}T_1r + O(\varepsilon^2)`$. By Theorem R(a), $`\varepsilon\mu(\varepsilon)`$ is the only eigenvalue near $`\varepsilon\mu_0`$.
+  - *For a semisimple eigenvalue,* write $`T(\mu, \varepsilon) = T_0 + \varepsilon T_1(\mu) + \varepsilon^2T_2(\mu, \varepsilon)`$, and let $`\Pi = \sum_a r_a\ell_a^{T}`$ be the eigenprojection.
+    - *The reduction.* $`T_0`$ commutes with $`\Pi`$, so the blocks of $`\mu - T_0`$ between the range of $`\Pi`$ and its complement vanish. For $`\mu`$ near $`\mu_0`$ and small $`\varepsilon`$, the block of $`\mu - T`$ on the complement is invertible. So the zeros of $`F`$ near $`\mu_0`$, with multiplicity, are those of the determinant of the Schur complement onto the range of $`\Pi`$. In the basis $`r_a`$ it is $`(\mu - \mu_0) - \varepsilon C(\mu) - \varepsilon^2G(\mu, \varepsilon)`$, with $`C(\mu)_{ab} = \ell_a^{T}T_1(\mu)r_b`$ and $`G`$ analytic in $`\mu`$ and smooth in $`\varepsilon`$.
+    - *The coefficients.* Put $`\mu = \mu_0 + \varepsilon\nu`$. The zeros are then those of $`\det\big(\nu - C - \varepsilon K(\nu, \varepsilon)\big)`$, with $`C = C(\mu_0)`$ and $`K`$ analytic in $`\nu`$ and smooth in $`\varepsilon`$. By Rouché's theorem they tend to the eigenvalues $`c_a`$ of $`C`$, with algebraic multiplicity, so $`\mu = \mu_0 + \varepsilon c_a + o(\varepsilon)`$. At a semisimple eigenvalue $`c_a`$ of $`C`$, the same reduction once more, with $`\nu = c_a + \varepsilon\eta`$, keeps $`\eta`$ bounded, so $`\mu = \mu_0 + \varepsilon c_a + O(\varepsilon^2)`$.
+    - *The mean.* The argument principle on a small circle about $`\mu_0`$ gives the sum of the zeros as $`(2\pi i)^{-1}\oint\mu\,\partial_\mu\log F\,d\mu`$, which is smooth in $`\varepsilon`$. Its derivative at 0 is $`(2\pi i)^{-1}\oint\mathrm{tr}\big((\mu - T_0)^{-1}T_1(\mu)\big)\,d\mu = \mathrm{tr}\,C`$, since $`(\mu - T_0)^{-1}`$ has a simple pole at $`\mu_0`$ with residue $`\Pi`$.
+
+**The split.** Two Euler identities put the radial part of $`\hat z`$ at $`(3\tilde R_0(u)/2\kappa_u)\,u`$:
+- $`\langle\nabla\tilde R_0(u), u\rangle = 6\tilde R_0(u)`$;
+- $`D^3H(u)[u] = 2\,\mathrm{Hess}\,H(u) = 2M_u + 4\kappa_u`$.
+
+With $`\hat z_{\mathrm{off}} \in N_u`$ the rest of $`\hat z`$,
+
+```math
+D_u = \Gamma_u - 3\kappa_u^{-3}\tilde R_0(u)\,M_u - \kappa_u^{-2}D^3H(u)[\hat z_{\mathrm{off}}], \qquad \Gamma_u = \kappa_u^{-2}\big(\mathrm{Hess}\,\tilde R_0(u) - 6\tilde R_0(u)\big).
+```
+
+So $`c_g`$ has five parts:
+- the spherical Hessian, $`(c^2/4\omega_0)\,\ell^{T}i\Gamma_ur`$;
+- the amplitude, $`-3\kappa_u^{-2}\tilde R_0(u)\,\mu_0`$, the same relative shift for every group;
+- the germ's off-ray shift, which is 0 when the germ stays on the ray through $`u`$;
+- the frequency, $`-(c^2/2\omega_0^2)\,\mu_0`$;
+- $`\lambda^2`$, $`(\mu_0^2/2\omega_0)\,\ell^{T}ir`$.
+
+On $`K'`$ at a degenerate orbit whose germ is radial, $`D_u = \Gamma_u = \gamma_u`$, Theorem R′(a)'s form, and the same reduction gives Theorem R′(c)'s pair.
+
+**The checks,** fixed before the computation:
+- *i.* For every generator $`X`$ of $`\Gamma`$, $`D_uXy_0 = -\kappa_u^{-1}M_uXy_1`$ exactly: to order $`\varepsilon`$, the Hessian annihilates the orbit tangent at $`y_\varepsilon`$.
+- *ii.* At $`v_1`$, $`D_u`$ on $`K'`$ is $`\gamma_u`$ times the metric.
+- *iii.* The comparison data, extracted from M8.16's record by [`extract_comparison.py`](scripts/soft-slot-branches/next-order/extract_comparison.py) before the derivation, are checked against their SHA-256. The extractor checks each case file against the run's log, and refuses unless the slow band holds every predicted mode, with multiplicity.
+- *iv.* The record's coefficient, for each group. Take $`h(\varepsilon) = (\lambda(\varepsilon)/\varepsilon - \kappa s_g)/\varepsilon`$ at each point's reached amplitude, with $`\kappa s_g`$ the record's prediction over its nominal $`\varepsilon`$. Then $`\hat c_2`$ is the linear extrapolation of $`h`$ to 0 through the two lowest amplitudes, and $`\hat c_3`$ the quadratic through $`\varepsilon = 0.25`$, 0.5 and 1.
+- *v.* Agreement: $`\lvert c_g - \hat c_3\rvert \le \lvert\hat c_3 - \hat c_2\rvert`$, group by group, at $`N = 24`$ and 32. The right side is an extrapolation spread, not a certified uncertainty.
+- *vi.* Order $`\varepsilon^2`$ reaches only Lemma F's channels, which $`N = 24`$ and 32 hold. The lowest cutoff, $`N = 16`$, lacks level 18 in $`R_4`$ and $`R_5`$, and levels 17 and 19 in $`R_2`$. The same formula with those channels removed must give its coefficient.
+- *vii.* M8.15.x's finite-element track is set beside the result only from $`\varepsilon = 1`$. At its smallest amplitude its in-span mode and the paired lift form a second quartet ([`RESULT_2.md`](https://github.com/dmobius3/mode-identity-theory/blob/ae3ad04d551c078f089a6509acd35922ae01ffdf/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md)), and it measures $`\varepsilon`$ from the mean of its discrete lowest level.
+- *viii.* At the pyramid, $`\Gamma_u`$ fixes $`\mathrm{span}\lbrace u, n\rbrace`$, with $`n = (\sqrt{13}\,v_3 - \sqrt{12}\,v_{-2})/5`$, and the gradient has a component along $`n`$. With $`F_J(y) = \lVert[Y_6(y)\otimes y]_J\rVert^2`$, $`dF_J(u)[n]`$ is $`-12\sqrt{39}/2275`$ at level 10, $`-4863\sqrt{39}/386750`$ at 14, $`71\sqrt{39}/22750`$ at 16 and $`2\sqrt{39}/425`$ at 18. So $`\sum_{J \ne j}t_J\,dF_J(u)[n]/((2J+1)\mu_J) = -146711\sqrt{39}/10507997500`$, −0.1211 of the radial part.
+
+*The evaluation.* The units are $`R = c = V = 1`$, so $`\lambda_0 = K(K+2)`$ and $`\omega_0 = \sqrt{\lambda_0}`$, as in M8.16's record.
+- *The Hessian at the germ.* $`D_u`$ is exact, at each case's unit representative, from `second_order_check.py`'s spin decomposition. At the pyramid this is over $`\mathbb{Q}(\sqrt 3, \sqrt{13})`$.
+- *The eigenvalue step:* at 50 digits.
+- *The model:* the reduced pencil on $`E_0`$, with the germ found by Newton for $`\tilde f = H - \lVert y\rVert^2 + \varepsilon\tilde R_0`$ at $`\varepsilon = 10^{-4}`$, $`2\times10^{-4}`$ and $`4\times10^{-4}`$. Its extrapolation returns every $`c_g`$ to better than $`10^{-12}`$, relative.
+- *The quadrature:* it builds $`2I`$ from its 120 quaternions and uses neither Lemma F's closed form nor the scripts above. It agrees with the exact first correction, its gradient and its Hessian to better than $`10^{-13}`$.
+- *The zeros:* the zero multiplicity of $`\widehat S_u`$ is $`k + r_u`$ at each case, by an exact factorization of its characteristic polynomial. The $`\Omega`$-radical of $`\ker A_\varepsilon`$ keeps its dimension $`r_u`$ along each branch, by the formula for $`\Omega`$ on static vectors (§IV):
+  - where $`r_u = 1`$, the phase direction is in it at every point, and a small perturbation cannot enlarge it;
+  - at the pyramid, $`J(u) \ne 0`$;
+  - at C3, the octahedron, its isotropy keeps $`J(\varphi_\varepsilon) = 0`$.
+
+So (Z) holds at the five cases. Checks i, ii, iii and viii hold, and at the pyramid the germ turns off the ray at $`y_1\cdot n/\lvert y_0\rvert = 146711\sqrt{39}/665121600 \approx 0.00138`$ per unit $`\varepsilon`$.
+
+**At the pyramid** ($`R_4`$, $`\sqrt{12}\,v_3 + \sqrt{13}\,v_{-2}`$, $`Q = 77/65`$, $`\kappa = 0.0152304`$). The record's $`\hat c_3`$ is at $`N = 32`$, and the differences and spreads are relative to $`\lvert\kappa s_g\rvert`$:
+
+| group | $`s_g`$ | $`c_g/(\kappa s_g)`$ | the record's $`\hat c_3/(\kappa s_g)`$ | $`\lvert c_g - \hat c_3\rvert`$ | spread $`\lvert\hat c_3 - \hat c_2\rvert`$ | conditioning |
+| --- | --- | --- | --- | --- | --- | --- |
+| in-span pair, Krein − | $`0.0622348691\,i`$ | −0.0138618 | −0.0138619 | 2.3×10⁻⁸ | 5.2×10⁻⁷ | 14.2 |
+| quartet | $`0.0417352860 + 0.0609168609\,i`$ | −0.109831 − 0.209150 i | −0.109933 − 0.209000 i | 1.8×10⁻⁴ | 6.0×10⁻⁴ | 3.7 |
+| Krein-positive pair | $`1.0951854883\,i`$ | −0.00792389 | −0.00792391 | 2.2×10⁻⁸ | 8.2×10⁻⁷ | 1.2 |
+
+The conditioning is $`\lVert\ell\rVert\,\lVert r\rVert`$ with $`\ell^{T}r = 1`$. The five parts, relative to $`\kappa s_g`$:
+
+| group | spherical Hessian | amplitude | off-ray shift | frequency | $`\lambda^2`$ |
+| --- | --- | --- | --- | --- | --- |
+| in-span pair | +0.20916 | +0.00326 | −0.21683 | −0.01042 | +0.00097 |
+| quartet | −0.07201 − 0.25259 i | +0.00326 | −0.03083 + 0.04320 i | −0.01042 | +0.00016 + 0.00024 i |
+| Krein-positive pair | −0.00170 | +0.00326 | +0.00234 | −0.01042 | −0.00141 |
+
+**At the controls,** every slow group agrees within its spread at $`N = 24`$ and 32. The differences run from 1.6×10⁻⁹ to 6.7×10⁻⁸, against spreads of 2.0×10⁻⁷ to 3.1×10⁻⁶. The germ stays on the ray at each control, so the off-ray part is 0 there. The coefficients $`c_g/(\kappa s_g)`$:
+- C2a, the coherent $`v_3`$ in $`R_4`$: its five pairs at −0.0219 to −0.0293;
+- C2b, $`v_{7/2}`$ in $`R_2`$: −0.0133 to −0.0184;
+- C3, the octahedron in $`R_4`$: its triple at −0.0207. The correction is a multiple of the identity on the eigenspace, so each of the three eigenvalues has its remainder $`O(\varepsilon^3)`$. The record holds the triple as one group of size 3, whose centre is the mean of its eigenvalues: the mean that (b) gives;
+- C2a/R5, the coherent $`v_3`$ in $`R_5`$: −0.0281 to −0.0375.
+
+**At the lowest cutoff,** $`N = 16`$, with the missing channels removed, the formula agrees with every group's coefficient within its spread. It reproduces each change from $`N = 24`$: for the quartet, −0.003064 + 0.002947 i, against the record's −0.003055 + 0.002934 i. Without the off-ray shift, every one of the pyramid's groups falls outside its spread at all three cutoffs.
+
+**What it says.**
+- *The quartet's 17.* At the pyramid the relative coefficient has modulus 0.2362 for the quartet and 0.01386 for the in-span pair: a ratio of 17.04, derived, not fitted. The frequency's shift gives each group −1/96 and the amplitude +0.0033, and $`\lambda^2`$ is at most 0.0014 in modulus there. The difference is the Hessian at the germ:
+  - its spherical part is of one size for both groups: −0.0720 − 0.2526 i for the quartet's member in the first quadrant, of modulus 0.263, against +0.2092 for the in-span pair;
+  - the in-span pair's small coefficient is a near cancellation between that spherical part and the off-ray shift, −0.2168;
+  - without the off-ray shift the ratio would be 1.30.
+- *The readings at the smallest amplitude.* Two terms put the quartet 5.91% from leading order at $`\varepsilon = 0.25`$, the in-span pair 0.347% and the Krein-positive pair 0.198%. M8.16's record reads 5.78%, 0.346% and 0.199% at $`N = 32`$.
+- *Check vii.* At $`\varepsilon = 1`$ and 2, the quartet's deviation is 23.62% and 47.25% by two terms, 21.95% and 41.50% in the record, and 22.39% and 41.69% on M8.15.x's track.
+
+**The grades.**
+- *Proposition N:* DERIVED.
+- *Exact arithmetic:* $`D_u`$, the zero multiplicities, and checks i, ii and viii.
+- *The values of the coefficients:* INFERRED; each $`c_g`$ is floating point at 50 digits, from the exact $`D_u`$.
+- *The agreement with M8.16's record:* INFERRED. The record's $`\hat c_3`$ extrapolates three finite amplitudes. A group outside its spread would have been reported as a disagreement; there is none.
+
+Nothing is claimed at finite amplitude, and no range of $`\varepsilon`$ is claimed in which two terms suffice. Nothing here bears on M8.16's verdict, which stands as registered ([the Slot Dynamics Census](slot-dynamics-census.md), §V, step 4), and nothing here sets a bar for a future registration or decides a census row.
+
 ## IV. The Orbits
 
 **Method.** The computations run in exact arithmetic, in weighted coordinates $`p_m = w_m/\sqrt{(j+m)!\,(j-m)!}`$, where the quartic, the metric, the generators and $`\Theta`$ are rational. For each orbit:
@@ -328,6 +456,17 @@ In `scripts/soft-slot-branches/`:
 - `germ_check.out`: its record.
 - `second_order_check.py` (added 2026-10-14): Lemma F's constants and levels, against binary-icosahedral characters, the projector onto $`2'`$ and OpenWave M8.10's frozen values; $`R_2`$'s degenerate point, its kernel, its isotropy group and $`\gamma_u`$; $`v_1`$'s circle and its $`\gamma_u`$ in $`R_4`$ and $`R_5`$; and a floating-point model of the slow problem, with its effective problem on the generalized kernel. Each claim has a mutation arm that turns it red, and the exit status is 1 if a claim fails or an arm stays green. Under a minute.
 - `second_order_check.out`: its record.
+
+In `scripts/soft-slot-branches/next-order/` (added 2026-10-19), the next order's checks, each run from that folder:
+- `next_order_check.py`: Proposition N at M8.16's pyramid control and its four soft-slot controls.
+  - *Its claims:* the leading order, with each zero multiplicity from an exact characteristic polynomial (A); the first correction's gradient, with check viii (B); the Hessian at the germ, with check i and the split (C); Theorem R′(c) at $`v_1`$, check ii (D); the eigenvalue step against a 50-digit model of the slow problem (E); and the record's coefficients, checks iv to vi (F).
+  - *Its arms:* each claim has a mutation arm that turns it red, nine in all, and the exit status is 1 if a claim fails or an arm stays green.
+  - *To run,* create a new folder `NEW` first, then `python3 -I -B next_order_check.py comparison_data.json NEW/exact_values.json`: about two minutes, and the file it writes equals `exact_values.json`.
+- `next_order_check.out`: its record.
+- `exact_values.json`: the exact first correction at the five cases.
+- `quadrature_check.py`: the first correction, its gradient and its Hessian from the definition, by quadrature on SU(2), against `exact_values.json`, with one mutation arm. A few minutes: `python3 -I -B quadrature_check.py exact_values.json`.
+- `quadrature_check.out`: its record.
+- `extract_comparison.py` and `comparison_data.json`: the comparison data, read from M8.16's record before the derivation. With `NEW` created first, `python3 -I -B extract_comparison.py ../../soft-slot-dynamics-m8-16 NEW/comparison_data.json` reproduces its record fields bit for bit and its recomputed deviations to round-off.
 
 In `scripts/soft-slot-dynamics/`, M8.15's solver, frozen before any target was run, with its control records and the run's record:
 - `m8_15_solver/`: the finite-element solver, the branch driver and the control runs; `out/MANIFEST.json` holds the SHA-256 of every file the run executes, with the environment the controls ran in.
