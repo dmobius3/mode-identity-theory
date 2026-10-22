@@ -1,0 +1,16 @@
+{
+ "written": "2026-10-22T20:36:54Z",
+ "stop": null,
+ "cases": {},
+ "complete": false,
+ "instrument_ok": null,
+ "r5_gate": false,
+ "absent": [
+  "C1",
+  "C2a",
+  "C2b",
+  "C3",
+  "C2a/R5",
+  "P5"
+ ]
+}

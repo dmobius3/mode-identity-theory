@@ -1,0 +1,29 @@
+The record regression: M8.16.1's checks on M8.16's recorded outputs (DRIVER_PLAN.md v2); nothing solved.
+   the record: MIT 87fc643; the values file: b05fff5ddd71c29c79318b6257f940c6035d7c954f3bafa34a22080eecc00333
+1. PASS: 7 outputs, 0 differing from RUNLOG.json; as recorded, K3 'instrument failure: the diagnosis is untested', K4 False
+2. PASS: the serialized cases against the recorded ones: equal on every M8.16 field
+3. PASS: controls: C1 K1, K4; C2a K1, K2, K4; C2b K1, K2, K4; C3 K1, K4; C2a/R5 K1, K4
+4. PASS: the pyramid: K1 True, K2 True
+5. PASS: c2 and c3 against the landed check's printed record values: 12 compared
+      N = 16, group 2, c3: -0.1129881373 -2.060657e-01j against (-0.1129881 - 0.2060657j): ok
+      N = 16, group 2, c2: -0.1132947129 -2.055943e-01j against (-0.1132947 - 0.2055943j): ok
+      N = 24, group 2, c3: -0.1099333944 -2.089999e-01j against (-0.1099334 - 0.2089999j): ok
+      N = 24, group 2, c2: -0.1102610423 -2.084937e-01j against (-0.110261 - 0.2084937j): ok
+      N = 32, group 2, c3: -0.1099334014 -2.089999e-01j against (-0.1099334 - 0.2089999j): ok
+      N = 32, group 2, c2: -0.1102610796 -2.084936e-01j against (-0.1102611 - 0.2084936j): ok
+      N = 16, group 3, c3: -0.004601967096 +1.453596e-12j against (-0.004601967 + 1.453596e-12j): ok
+      N = 16, group 3, c2: -0.004602762213 +1.035982e-12j against (-0.004602762 + 1.035982e-12j): ok
+      N = 24, group 3, c3: -0.007923907117 +7.326545e-12j against (-0.007923907 + 7.326545e-12j): ok
+      N = 24, group 3, c2: -0.007924727758 +5.387410e-12j against (-0.007924728 + 5.38741e-12j): ok
+      N = 32, group 3, c3: -0.007923907103 +1.123047e-12j against (-0.007923907 + 1.123047e-12j): ok
+      N = 32, group 3, c2: -0.00792472612 +8.510966e-13j against (-0.007924726 + 8.510966e-13j): ok
+6. PASS: the bar, by group index: as the terms write check 1 {1: 'pass', 2: 'pass'}; as K3(a) reads it {1: 'pass', 2: 'pass'}
+7. PASS: check 2, by exact index association, against entry 8
+      N = 16 complex: E_c 9.52e-12, 5.44 decades, entry 8 5.4: ok
+      N = 24 complex: E_c 2.27e-11, 5.07 decades, entry 8 5.1: ok
+      N = 32 complex: E_c 4.10e-11, 4.81 decades, entry 8 4.8: ok
+      N = 16 imag: E_c 3.20e-12, 5.72 decades, entry 8 5.7: ok
+      N = 24 imag: E_c 7.66e-12, 5.34 decades, entry 8 5.3: ok
+      N = 32 imag: E_c 1.38e-11, 5.08 decades, entry 8 5.1: ok
+8. PASS: K3 'resolved', (a) {'16': True, '24': True, '32': True}; K4 True
+0 of 8 claims failed; no verdict is computed

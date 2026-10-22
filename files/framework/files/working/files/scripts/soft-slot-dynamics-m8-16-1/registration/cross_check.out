@@ -1,0 +1,10 @@
+1. u (registered): components {'7/2': sqrt(30)/10, '-3/2': sqrt(70)/10}
+   P/lc = z**7 - 7*z**2; degree 7; gcd(P, P') degree 1; discriminant of P/lc = 0
+1. UA's u*: components {'7/2': sqrt(30)/10, '3/2': -sqrt(70)/10, '-3/2': sqrt(70)/10, '-7/2': sqrt(30)/10}
+   P/lc = z**7 - 7*z**5 - 7*z**2 - 1; degree 7; gcd(P, P') degree 0; discriminant of P/lc = 113237162500
+1. UB's u2: components {'7/2': sqrt(30)/10, '3/2': sqrt(70)*I/10, '-3/2': sqrt(70)/10, '-7/2': -sqrt(30)*I/10}
+   P/lc = z**7 + 7*I*z**5 - 7*z**2 + I; degree 7; gcd(P, P') degree 0; discriminant of P/lc = -113237162500 + 20588575000*I
+2. UA's u* = u + Theta u, read with i: Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple; slow polynomial (1859*nu + 15680)*(418161601*nu**2 + 6605190592*nu + 25491013632)/777362416259
+2. UB's u2 = u - i Theta u, read with i: Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple; slow polynomial (1859*nu + 15680)*(418161601*nu**2 + 6605190592*nu + 25491013632)/777362416259
+2. u, registered, read with i: Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple; slow polynomial (20449*nu + 153664)*(418161601*nu**2 + 6989958976*nu + 28677390336)/8550986578849
+   UA's u* and UB's u2 have the same slow polynomial: True; UA's u* against the registered: resultant nonzero True

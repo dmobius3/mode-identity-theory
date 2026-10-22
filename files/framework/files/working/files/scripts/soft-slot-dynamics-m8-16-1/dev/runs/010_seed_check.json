@@ -1,0 +1,208 @@
+{
+ "script": {
+  "path": "dev/seed_check.py",
+  "sha256": "779151b97357428c9002cd7a8860e44553d5688f2e24bdef1429cf82692285da"
+ },
+ "N": 16,
+ "failed": 0,
+ "seeds": [
+  {
+   "name": "C1",
+   "slot": "R3",
+   "Q": 1.0000000000000016,
+   "Q_exact": "1",
+   "crit": 1.0801207922560934e-15,
+   "k": 4,
+   "r": 2,
+   "ok": true
+  },
+  {
+   "name": "C2a",
+   "slot": "R4",
+   "Q": 1.000777000777,
+   "Q_exact": "1288/1287",
+   "crit": 8.984273250829646e-17,
+   "k": 3,
+   "r": 1,
+   "ok": true
+  },
+  {
+   "name": "C3",
+   "slot": "R4",
+   "Q": 1.2237762237762266,
+   "Q_exact": "175/143",
+   "crit": 2.048844727541276e-16,
+   "k": 4,
+   "r": 4,
+   "ok": true
+  },
+  {
+   "name": "P5",
+   "slot": "R4",
+   "Q": 1.1846153846153862,
+   "Q_exact": "77/65",
+   "crit": 6.790621813836803e-16,
+   "k": 4,
+   "r": 2,
+   "ok": true
+  },
+  {
+   "name": "T1/R4",
+   "slot": "R4",
+   "Q": 1.0279720279720312,
+   "Q_exact": "147/143",
+   "crit": 3.797683641205024e-17,
+   "k": 3,
+   "r": 1,
+   "ok": true
+  },
+  {
+   "name": "T2/R4",
+   "slot": "R4",
+   "Q": 1.1590141125024869,
+   "Q_exact": "5831/5031",
+   "crit": 6.436185956816032e-16,
+   "k": 4,
+   "r": 4,
+   "ok": true
+  },
+  {
+   "name": "T3/R4",
+   "slot": "R4",
+   "Q": 1.35975135975136,
+   "Q_exact": "1750/1287",
+   "crit": 4.190226001956878e-16,
+   "k": 4,
+   "r": 4,
+   "ok": true
+  },
+  {
+   "name": "T4/R4",
+   "slot": "R4",
+   "Q": 1.185203461338849,
+   "Q_exact": "1.1852034613388465",
+   "crit": 5.587034814638985e-16,
+   "k": 4,
+   "r": 2,
+   "ok": true
+  },
+  {
+   "name": "C3R/R4",
+   "slot": "R4",
+   "Q": 1.184615384615388,
+   "Q_exact": "77/65",
+   "crit": 4.202783655480418e-16,
+   "k": 4,
+   "r": 2,
+   "ok": true
+  },
+  {
+   "name": "C2a/R5",
+   "slot": "R5",
+   "Q": 1.0004370629370645,
+   "Q_exact": "2289/2288",
+   "crit": 5.2799127460672744e-17,
+   "k": 3,
+   "r": 1,
+   "ok": true
+  },
+  {
+   "name": "T1/R5",
+   "slot": "R5",
+   "Q": 1.015734265734266,
+   "Q_exact": "581/572",
+   "crit": 3.297350514902155e-17,
+   "k": 3,
+   "r": 1,
+   "ok": true
+  },
+  {
+   "name": "T2/R5",
+   "slot": "R5",
+   "Q": 1.0894454382826486,
+   "Q_exact": "609/559",
+   "crit": 6.855765557692839e-16,
+   "k": 4,
+   "r": 4,
+   "ok": true
+  },
+  {
+   "name": "T3/R5",
+   "slot": "R5",
+   "Q": 1.2023601398601402,
+   "Q_exact": "2751/2288",
+   "crit": 2.8484154806920537e-16,
+   "k": 4,
+   "r": 4,
+   "ok": true
+  },
+  {
+   "name": "T4/R5",
+   "slot": "R5",
+   "Q": 1.1041769470031033,
+   "Q_exact": "1.104176947003101",
+   "crit": 5.540038592143224e-16,
+   "k": 4,
+   "r": 2,
+   "ok": true
+  },
+  {
+   "name": "C2b",
+   "slot": "R2",
+   "Q": 1.006993006993007,
+   "Q_exact": "144/143",
+   "crit": 8.365008255741921e-17,
+   "k": 5,
+   "r": 1,
+   "ok": true
+  },
+  {
+   "name": "T5/R2",
+   "slot": "R2",
+   "Q": 1.6923076923076934,
+   "Q_exact": "22/13",
+   "crit": 1.539194916916613e-16,
+   "k": 6,
+   "r": 4,
+   "ok": true
+  },
+  {
+   "name": "T5J/R2",
+   "slot": "R2",
+   "Q": 1.6923076923076936,
+   "Q_exact": "22/13",
+   "crit": 1.5487946064935363e-16,
+   "k": 6,
+   "r": 4,
+   "ok": true
+  }
+ ],
+ "loaded": [
+  "instrument/__init__.py",
+  "instrument/basis.py",
+  "instrument/branches.py",
+  "instrument/certified.py",
+  "instrument/devtools.py",
+  "instrument/functional.py",
+  "instrument/group2i.py",
+  "instrument/linear.py",
+  "instrument/newton.py",
+  "instrument/quadrature.py",
+  "instrument/su2.py",
+  "run/seeds.py"
+ ],
+ "children": [
+  "instrument/__init__.py",
+  "instrument/basis.py",
+  "instrument/branches.py",
+  "instrument/certified.py",
+  "instrument/devtools.py",
+  "instrument/functional.py",
+  "instrument/group2i.py",
+  "instrument/linear.py",
+  "instrument/newton.py",
+  "instrument/quadrature.py",
+  "instrument/su2.py",
+  "run/seeds.py"
+ ]
+}

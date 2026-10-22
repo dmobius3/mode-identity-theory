@@ -1,0 +1,14 @@
+{
+ "verdict": "incomplete",
+ "instrument": null,
+ "r5_gate": false,
+ "rows": {},
+ "members": {},
+ "c3_ray": {},
+ "qualified": [],
+ "failed": [
+  "C2a: K4",
+  "C2b: K4",
+  "C3: K4"
+ ]
+}

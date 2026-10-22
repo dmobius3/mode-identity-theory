@@ -1,0 +1,134 @@
+M8.16.1: the pinned next-order values, by case, group and cutoff (development, off the instrument)
+imports: files/framework/files/working/files/scripts/soft-slot-branches/branches_check.py 555b78339862; files/framework/files/working/files/scripts/soft-slot-branches/germ_check.py da80d1a233c6; files/framework/files/working/files/scripts/soft-slot-branches/next-order/next_order_check.py a2e67c7e2026; files/framework/files/working/files/scripts/soft-slot-branches/second_order_check.py abc13f3d0d9d; files/framework/files/working/files/scripts/soft-slot-branches/next-order/next_order_check.out 2afa6b065a17
+E  channels: {'R4': [10, 14, 16, 18], 'R5': [8, 12, 14, 16, 18], 'R2': [13, 17, 19]}; removed at N = 16: {'R4': (18,), 'R5': (18,), 'R2': (17, 19)}; at 24 and 32: none: PASS
+P5 done
+T1/R4 done
+T1/R5 done
+T2/R4 done
+T2/R5 done
+T3/R4 done
+T3/R5 done
+T5/R2 done
+T5J/R2 done
+C3R/R4 done
+T4/R4 done
+T4/R5 done
+P5: Q = 77/65, k = 4, zero multiplicity 6, fixed directions off the ray 1; A PASS, B PASS, C PASS, D PASS
+   P5 s = (0.0 + 0.0622348690957j), frozen 1 x (0.0 + 0.0622348691j), mult 1, Krein -1: ok
+   P5 s = (0.0417352859838 + 0.0609168609169j), frozen 1 x (0.041735286 + 0.0609168609j), mult 1: ok
+   P5 s = (0.0 + 1.09518548832j), frozen 1 x (0.0 + 1.0951854883j), mult 1, Krein +1: ok
+   P5 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.062234869j): -0.011231798; (0.041735286 + 0.060916861j): (-0.11289462 - 0.20620252j); (0.0 + 1.0951855j): -0.0046019502
+   N = 24 (removed none): (0.0 + 0.062234869j): -0.013861824; (0.041735286 + 0.060916861j): (-0.10983109 - 0.20914972j); (0.0 + 1.0951855j): -0.0079238852
+   N = 32 (removed none): (0.0 + 0.062234869j): -0.013861824; (0.041735286 + 0.060916861j): (-0.10983109 - 0.20914972j); (0.0 + 1.0951855j): -0.0079238852
+T1/R4: Q = 147/143, k = 3, zero multiplicity 4, fixed directions off the ray 0; A PASS, B PASS, C PASS, D PASS
+   T1/R4 s = (0.0 + 0.043512043512j), frozen 1 x (0.0 + 0.043512043512j), mult 1, Krein -1: ok
+   T1/R4 s = (0.0 + 0.783216783217j), frozen 1 x (0.0 + 0.783216783217j), mult 1, Krein +1: ok
+   T1/R4 s = (0.0 + 0.957264957265j), frozen 1 x (0.0 + 0.957264957265j), mult 1, Krein +1: ok
+   T1/R4 s = (0.0 + 1.56643356643j), frozen 1 x (0.0 + 1.56643356643j), mult 1, Krein +1: ok
+   T1/R4 s = (0.0 + 1.30536130536j), frozen 1 x (0.0 + 1.30536130536j), mult 1, Krein +1: ok
+   T1/R4 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.043512044j): -0.029384913; (0.0 + 0.78321678j): -0.0026186953; (0.0 + 0.95726496j): -0.01816397; (0.0 + 1.3053613j): -0.031583083; (0.0 + 1.5664336j): -0.014944806
+   N = 24 (removed none): (0.0 + 0.043512044j): -0.030697602; (0.0 + 0.78321678j): -0.0041647743; (0.0 + 0.95726496j): -0.020137915; (0.0 + 1.3053613j): -0.033051705; (0.0 + 1.5664336j): -0.016626434
+   N = 32 (removed none): (0.0 + 0.043512044j): -0.030697602; (0.0 + 0.78321678j): -0.0041647743; (0.0 + 0.95726496j): -0.020137915; (0.0 + 1.3053613j): -0.033051705; (0.0 + 1.5664336j): -0.016626434
+T1/R5: Q = 581/572, k = 3, zero multiplicity 4, fixed directions off the ray 0; A PASS, B PASS, C PASS, D PASS
+   T1/R5 s = (0.0 + 0.0244755244755j), frozen 9/16 x (0.0 + 0.043512043512j), mult 1, Krein -1: ok
+   T1/R5 s = (0.0 + 0.440559440559j), frozen 9/16 x (0.0 + 0.783216783217j), mult 1, Krein +1: ok
+   T1/R5 s = (0.0 + 0.538461538462j), frozen 9/16 x (0.0 + 0.957264957265j), mult 1, Krein +1: ok
+   T1/R5 s = (0.0 + 0.881118881119j), frozen 9/16 x (0.0 + 1.56643356643j), mult 1, Krein +1: ok
+   T1/R5 s = (0.0 + 0.734265734266j), frozen 9/16 x (0.0 + 1.30536130536j), mult 1, Krein +1: ok
+   T1/R5 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.024475524j): -0.03235783; (0.0 + 0.44055944j): -0.041076764; (0.0 + 0.53846154j): -0.032985594; (0.0 + 0.73426573j): -0.0063244379; (0.0 + 0.88111888j): -0.01910691
+   N = 24 (removed none): (0.0 + 0.024475524j): -0.033679403; (0.0 + 0.44055944j): -0.042629899; (0.0 + 0.53846154j): -0.034963243; (0.0 + 0.73426573j): -0.0078007226; (0.0 + 0.88111888j): -0.020794532
+   N = 32 (removed none): (0.0 + 0.024475524j): -0.033679403; (0.0 + 0.44055944j): -0.042629899; (0.0 + 0.53846154j): -0.034963243; (0.0 + 0.73426573j): -0.0078007226; (0.0 + 0.88111888j): -0.020794532
+T2/R4: Q = 5831/5031, k = 4, zero multiplicity 8, fixed directions off the ray 1; A PASS, B PASS, C PASS, D PASS
+   T2/R4 s = (0.0 + 0.853896863913j), frozen 1 x (0.0 + 0.853896863913j), mult 1, Krein +1: ok
+   T2/R4 s = (0.0 + 0.261691222931j), frozen 1 x (0.0 + 0.261691222931j), mult 2, Krein +1: ok
+   T2/R4 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.26169122j) (x2): -0.050269606; (0.0 + 0.85389686j): -0.014924271
+   N = 24 (removed none): (0.0 + 0.26169122j) (x2): -0.053243072; (0.0 + 0.85389686j): -0.01729234
+   N = 32 (removed none): (0.0 + 0.26169122j) (x2): -0.053243072; (0.0 + 0.85389686j): -0.01729234
+T2/R5: Q = 609/559, k = 4, zero multiplicity 8, fixed directions off the ray 1; A PASS, B PASS, C PASS, D PASS
+   T2/R5 s = (0.0 + 0.480316985951j), frozen 9/16 x (0.0 + 0.853896863913j), mult 1, Krein +1: ok
+   T2/R5 s = (0.0 + 0.147201312899j), frozen 9/16 x (0.0 + 0.261691222931j), mult 2, Krein +1: ok
+   T2/R5 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.14720131j) (x2): 0.001358374; (0.0 + 0.48031699j): -0.0086844233
+   N = 24 (removed none): (0.0 + 0.14720131j) (x2): -0.0018562799; (0.0 + 0.48031699j): -0.011267672
+   N = 32 (removed none): (0.0 + 0.14720131j) (x2): -0.0018562799; (0.0 + 0.48031699j): -0.011267672
+T3/R4: Q = 1750/1287, k = 4, zero multiplicity 8, fixed directions off the ray 0; A PASS, B PASS, C PASS, D PASS
+   T3/R4 s = (0.0 + 1.21230050673j), frozen 1 x (0.0 + 1.21230050673j), mult 1, Krein -1: ok
+   T3/R4 s = (0.0 + 0.953301110188j), frozen 1 x (0.0 + 0.953301110188j), mult 2, Krein -1: ok
+   T3/R4 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.95330111j) (x2): 0.008401425; (0.0 + 1.2123005j): -0.0083840024
+   N = 24 (removed none): (0.0 + 0.95330111j) (x2): 0.0049049986; (0.0 + 1.2123005j): -0.011387915
+   N = 32 (removed none): (0.0 + 0.95330111j) (x2): 0.0049049986; (0.0 + 1.2123005j): -0.011387915
+T3/R5: Q = 2751/2288, k = 4, zero multiplicity 8, fixed directions off the ray 0; A PASS, B PASS, C PASS, D PASS
+   T3/R5 s = (0.0 + 0.681919035037j), frozen 9/16 x (0.0 + 1.21230050673j), mult 1, Krein -1: ok
+   T3/R5 s = (0.0 + 0.536231874481j), frozen 9/16 x (0.0 + 0.953301110188j), mult 2, Krein -1: ok
+   T3/R5 matching one to one: ok
+   N = 16 (removed [18]): (0.0 + 0.53623187j) (x2): -0.048813894; (0.0 + 0.68191904j): -0.026686192
+   N = 24 (removed none): (0.0 + 0.53623187j) (x2): -0.053071358; (0.0 + 0.68191904j): -0.030397612
+   N = 32 (removed none): (0.0 + 0.53623187j) (x2): -0.053071358; (0.0 + 0.68191904j): -0.030397612
+T5/R2: Q = 22/13, k = 6, zero multiplicity 10, fixed directions off the ray 0; A PASS, B PASS, C PASS, D PASS
+   T5/R2 s = (0.0 + 2.74125874126j), frozen 1 x (0.0 + 2.74125874126j), mult 1, Krein -1: ok
+   T5/R2 s = (0.0 + 3.08018011297j), frozen 1 x (0.0 + 3.08018011297j), mult 1, Krein -1: ok
+   T5/R2 s = (0.0 + 2.68857172136j), frozen 1 x (0.0 + 2.68857172136j), mult 1, Krein -1: ok
+   T5/R2 matching one to one: ok
+   N = 16 (removed [17, 19]): (0.0 + 2.6885717j): -0.020203548; (0.0 + 2.7412587j): -0.019219444; (0.0 + 3.0801801j): -0.016804909
+   N = 24 (removed none): (0.0 + 2.6885717j): -0.020672876; (0.0 + 2.7412587j): -0.019717368; (0.0 + 3.0801801j): -0.017372997
+   N = 32 (removed none): (0.0 + 2.6885717j): -0.020672876; (0.0 + 2.7412587j): -0.019717368; (0.0 + 3.0801801j): -0.017372997
+T5J/R2: Q = 22/13, k = 6, zero multiplicity 10, fixed directions off the ray 0; A PASS, B PASS, C PASS, D PASS
+   T5J/R2 s = (0.0 + 2.90424556138j), frozen 1 x (0.0 + 2.90424556138j), mult 1, Krein -1: ok
+   T5J/R2 s = (0.0 + 3.01467473775j), frozen 1 x (0.0 + 3.01467473775j), mult 1, Krein -1: ok
+   T5J/R2 s = (0.0 + 2.58988819459j), frozen 1 x (0.0 + 2.58988819459j), mult 1, Krein -1: ok
+   T5J/R2 matching one to one: ok
+   N = 16 (removed [17, 19]): (0.0 + 2.5898882j): -0.021024715; (0.0 + 2.9042456j): -0.018049091; (0.0 + 3.0146747j): -0.017235369
+   N = 24 (removed none): (0.0 + 2.5898882j): -0.02147018; (0.0 + 2.9042456j): -0.018581025; (0.0 + 3.0146747j): -0.017790949
+   N = 32 (removed none): (0.0 + 2.5898882j): -0.02147018; (0.0 + 2.9042456j): -0.018581025; (0.0 + 3.0146747j): -0.017790949
+C3R/R4: Q = 77/65, k = 4, zero multiplicity 6, fixed directions off the ray 1; A PASS, B PASS, C PASS, D PASS
+   C3R/R4 structure, by ascending |s|: [('complex', 1, None), ('imag', 1, '-'), ('imag', 1, '+')]: ok
+   N = 16 (removed [18]): (0.035566725 + 0.0098695288j): (0.055298972 + 0.090273634j), without the off-ray part (-0.24603565 - 0.027834282j); (0.0 + 0.45383024j): -0.015796111, without the off-ray part -0.051902; (0.0 + 1.0018063j): -0.0013660177, without the off-ray part -0.0059375454
+   N = 24 (removed none): (0.035566725 + 0.0098695288j): (0.054093839 + 0.090049537j), without the off-ray part (-0.2382181 - 0.024521945j); (0.0 + 0.45383024j): -0.018947129, without the off-ray part -0.053971921; (0.0 + 1.0018063j): -0.0044980299, without the off-ray part -0.0089326751
+   N = 32 (removed none): (0.035566725 + 0.0098695288j): (0.054093839 + 0.090049537j), without the off-ray part (-0.2382181 - 0.024521945j); (0.0 + 0.45383024j): -0.018947129, without the off-ray part -0.053971921; (0.0 + 1.0018063j): -0.0044980299, without the off-ray part -0.0089326751
+T4/R4: Q = 1.185203461338846, k = 4, zero multiplicity 6, fixed directions off the ray None; A PASS, B PASS, C PASS, D PASS, X PASS
+   T4/R4 s = (0.0 + 1.01209160489j), frozen 1 x (0.0 + 1.01209160489j), mult 1, Krein +1: ok
+   T4/R4 s = (0.0 + 0.310692742362j), frozen 1 x (0.0 + 0.310692742362j), mult 1, Krein -1: ok
+   T4/R4 s = (0.0 + 0.139251832964j), frozen 1 x (0.0 + 0.139251832964j), mult 1, Krein -1: ok
+   T4/R4 s = (0.0 + 0.00573685922309j), frozen 1 x (0.0 + 0.00573685922309j), mult 1, Krein -1: ok
+   T4/R4 matching one to one: ok
+   check i on D_u at 50 digits: 4.18e-50; the model's own check: the Hessian at the germ annihilates every orbit tangent to 1.55e-51, the germ's gradient 3.46e-51; the model against the formula: at most 7.12e-15, against claim E's 1e-8
+   N = 16 (removed [18]): (0.0 + 0.0057368592j): -0.12002619; (0.0 + 0.13925183j): 0.017521212; (0.0 + 0.31069274j): -0.06543718; (0.0 + 1.0120916j): -0.0049502234
+   N = 24 (removed none): (0.0 + 0.0057368592j): -0.1139721; (0.0 + 0.13925183j): 0.015149127; (0.0 + 0.31069274j): -0.067884705; (0.0 + 1.0120916j): -0.0080172494
+   N = 32 (removed none): (0.0 + 0.0057368592j): -0.1139721; (0.0 + 0.13925183j): 0.015149127; (0.0 + 0.31069274j): -0.067884705; (0.0 + 1.0120916j): -0.0080172494
+T4/R5: Q = 1.104176947003101, k = 4, zero multiplicity 6, fixed directions off the ray None; A PASS, B PASS, C PASS, D PASS, X PASS
+   T4/R5 s = (0.0 + 0.569301527753j), frozen 9/16 x (0.0 + 1.01209160489j), mult 1, Krein +1: ok
+   T4/R5 s = (0.0 + 0.174764667578j), frozen 9/16 x (0.0 + 0.310692742362j), mult 1, Krein -1: ok
+   T4/R5 s = (0.0 + 0.0783291560424j), frozen 9/16 x (0.0 + 0.139251832964j), mult 1, Krein -1: ok
+   T4/R5 s = (0.0 + 0.00322698331299j), frozen 9/16 x (0.0 + 0.00573685922309j), mult 1, Krein -1: ok
+   T4/R5 matching one to one: ok
+   check i on D_u at 50 digits: 5.65e-50; the model's own check: the Hessian at the germ annihilates every orbit tangent to 1.35e-51, the germ's gradient 2.44e-51; the model against the formula: at most 2.68e-15, against claim E's 1e-8
+   N = 16 (removed [18]): (0.0 + 0.0032269833j): 0.23376548; (0.0 + 0.078329156j): -0.05898296; (0.0 + 0.17476467j): 0.017073456; (0.0 + 0.56930153j): -0.019732307
+   N = 24 (removed none): (0.0 + 0.0032269833j): 0.23999; (0.0 + 0.078329156j): -0.061625286; (0.0 + 0.17476467j): 0.014351745; (0.0 + 0.56930153j): -0.023105917
+   N = 32 (removed none): (0.0 + 0.0032269833j): 0.23999; (0.0 + 0.078329156j): -0.061625286; (0.0 + 0.17476467j): 0.014351745; (0.0 + 0.56930153j): -0.023105917
+F  the pyramid against claim F's printed values: PASS
+   P5 N = 16 group 1: -0.0112318 against claim F -0.0112318: ok
+   P5 N = 16 group 2: (-0.1128946 - 0.2062025j) against claim F (-0.1128946 - 0.2062025j): ok
+   P5 N = 16 group 3: -0.00460195 against claim F -0.00460195: ok
+   P5 N = 24 group 1: -0.01386182 against claim F -0.01386182: ok
+   P5 N = 24 group 2: (-0.1098311 - 0.2091497j) against claim F (-0.1098311 - 0.2091497j): ok
+   P5 N = 24 group 3: -0.007923885 against claim F -0.007923885: ok
+   P5 N = 32 group 1: -0.01386182 against claim F -0.01386182: ok
+   P5 N = 32 group 2: (-0.1098311 - 0.2091497j) against claim F (-0.1098311 - 0.2091497j): ok
+   P5 N = 32 group 3: -0.007923885 against claim F -0.007923885: ok
+arms, each of which must turn its check red:
+   arm: N = 16 without its channels removed (F): RED
+   arm: R4 with s = 2/7 at T1/R4 (A): RED
+   arm: the C3 ray read against its Krein signs swapped (A): RED
+   arm: the germ's shift dropped at P5 (B): RED
+   arm: T4/R4's z dropped from D_u (B): RED, check i 0.11
+   arm: T4/R4's germ moved off the critical point (B, the model's check): RED
+   arm: a non-scalar correction on T2/R4's double (C): RED
+   arm: N = 32 computed with level 18 removed at T1/R4 (D): RED
+   arm: the cutoff rule taking L >= N (E): RED
+wrote next_order_values.json, SHA-256 b05fff5ddd71c29c79318b6257f940c6035d7c954f3bafa34a22080eecc00333; its cases section, SHA-256 45ad237179b6c7176b4372f8b36fe6cf20ba95ebdff510f727eec1ea4a2ebeea
+ALL CHECKS PASS; every arm red

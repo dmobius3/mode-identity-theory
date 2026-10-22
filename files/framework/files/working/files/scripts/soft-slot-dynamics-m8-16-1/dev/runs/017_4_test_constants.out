@@ -1,0 +1,65 @@
+Every constant (M8.16.1's DRIVER_PLAN.md v2): both FROZEN VALUES against the code and a test FROZEN.json.
+   M8.16's terms 86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf; M8.16.1's cf6a5da97af3c87c1b25188976c030deee49cdd90251bcb12ced4139fbbd621a
+1. PASS: the forward items, 43, of kinds (a), (b) and (c)
+2. PASS: coverage: every number in both sections claimed once
+      excluded, M8.16: "- **P5's values** are the continuum's": the P5 values' provenance: the overlaps of M8.15.x's survey, as its REGISTER_2.md reads them; read by no check
+      excluded, M8.16: '- **The predicted modes at `ε = 0.25`': INFERRED: the smallest predicted modes and their margins, read from the frozen spectra with ‖A‖ ≈ N(N+2); read by no check
+      excluded, M8.16.1: '**Their smallest predicted modes**': INFERRED: as M8.16's table; read by no check
+      excluded, M8.16.1: '| case | `N = 24` and 32: `c_g/(κs_g)` |': the pinned values, printed to six digits from the values file, which governs; FROZEN.json holds it, and no check reads the printed table
+3. PASS: the reverse scan of cases, checks, seeds, driver: every literal on exactly one list, no entry stale
+      registered: 117 literals
+      case data: 132 literals
+      a formula's own constant: 18 literals
+      a lookup or float guard: 8 literals
+      an unscored report: 5 literals
+      a load-time check: 4 literals
+      the non-FROZEN-VALUES lists, each with its reason:
+        [case data] cases.<module> 'LAM0 = {': each slot's lam0, THE CASES
+        [case data] cases.<module> 'LEVEL = {': each slot's lowest level, THE CASES
+        [a formula's own constant] cases._roots 'd = math.sqrt(b * b - 4 * a * c)': the quadratic formula
+        [a formula's own constant] cases._roots 'return sorted([(-b + d) / (2 * a)': the quadratic formula
+        [case data] cases.<module> 'Q4_T4 = 1 + float(certified.R6_924) / 1287': T4's Q in R4, THE CASES
+        [a lookup or float guard] cases.ladder '> 1e-9 * eps_max': whether eps_max is already a grid value
+        [a formula's own constant] cases._derive 'K = kr + 2 * kc + 2 * ki': K counts each quartet and Krein-negative pair twice
+        [case data] cases.<module> 'R4_LADDER, R5_LADDER, T5_LADDER =': the ladders' last k and eps_max, THE CASES
+        [case data] cases.<module> "'C1': dict(": C1's columns, THE CASES
+        [case data] cases.<module> 'spectrum=[], points=_points(C1_EPS)': C1's columns, THE CASES
+        [case data] cases.<module> ': _case(': each case's columns, THE CASES
+        [a load-time check] cases._written '>= 16:': the tie: a literal printed to 16 digits is a floating-point value
+        [a load-time check] cases._written 'return 0.5 * 10 ** -len(': the tie: half a unit in a literal's last digit
+        [a formula's own constant] cases._tie "z = tc * (1j if cls == 'imag' else 1) * fac": the imaginary unit
+        [a load-time check] cases._tie '+ 4 * EPS * abs(s)': the tie: a few units of double precision
+        [case data] cases.serialize 'rep = {1: 1.0, 0: complex(0.6, 0.3)': C1's generic member, branches.seed_state's
+        [an unscored report] checks.<module> 'FRACTION = 1e-6': the rule's retired fraction, reported beside it
+        [an unscored report] checks.<module> 'TWO_TERM = 0.01': the two-term residual is reported beside 1%
+        [a formula's own constant] checks.predicted 'kappa = 1 / (8 * math.sqrt': kappa = 1/(8 sqrt(lam0) Q), the Result's
+        [a formula's own constant] checks.predicted 'lam = 1j * eps * kappa': the imaginary unit
+        [a formula's own constant] checks.real_orthonormal 'C = (C + C.T) / 2': a matrix's symmetric part
+        [an unscored report] checks._classed '< 1e-9': classing M8.15's values for K6's reported comparison
+        [a lookup or float guard] checks.slow_compare "abs(p['eps'] - eps) < 1e-9": M8.15's point at the same grid value
+        [a lookup or float guard] checks.m815_point "abs(p['eps'] - eps) < 1e-9": M8.15's point at the same grid value
+        [a lookup or float guard] checks.m815_point "abs(t['eps'] - eps) < 1e-9": M8.15's type at the same grid value
+        [a lookup or float guard] checks.check_row_k6 'if e <= 2 + 1e-12' 1e-12: a float guard on K6's boundary at 2
+        [an unscored report] checks.check_row_k6 "r['eps'] > 2 for r in rows": the agreements above 2, reported
+        [case data] seeds.<module> 'NEW = {': the new seeds' slots and levels, THE CASES: WHAT IS ADDED
+        [case data] seeds.<module> "REPS = {'C3R/R4':": the C3 ray's representative, THE CASES: WHAT IS ADDED
+        [case data] seeds.<module> "'T5J/R2': {3.5:": T5J's representative, T5'S SECOND MEMBER
+        [a lookup or float guard] driver.load '> 1e-12': FROZEN.json's representative against the code's, the same numbers
+        [a formula's own constant] driver.k3_arrays 'n2 = 2 * Fn.B.m': a state's real and imaginary halves
+        [a formula's own constant] driver.read_point 'np.zeros(2 * Fn.B.m)': a state's real and imaginary halves
+        [a formula's own constant] driver.read_point 'nA = np.linalg.norm(A, 2)': the spectral norm, of order 2
+        [case data] driver.run_c1 'low = np.array([n == 2': C1's lowest level, 2
+        [case data] driver.run_c1 'c, lam = np.sqrt(eps) * v, 8.0 + eps': C1's lam0 in R3
+        [a formula's own constant] driver.run_c1 'pred = [2 * omega, 2 * omega, np.sqrt(4 * om': Theorem D's frequencies, THE CHECKS
+        [a formula's own constant] driver.run_c1 'ok = (res / size < 1e-15' 3: Theorem D's three frequencies
+        [case data] driver.run_c1 "and rec['blocks'] == 5": C1's five chains, THE CHECKS
+        [a lookup or float guard] driver.run_case 'abs(eps - 0.25) < 1e-12' 1e-12: K3's point among the read points
+        [a formula's own constant] driver.main 'sys.argv[i + 1:i + 4]': the three cutoffs' arguments
+arms, each of which must turn its claim red:
+   A1. FROZEN.json without D's cut: claim 1 names it, ['M8.16 (a) "`D`\'s cut `10⁻⁸ ‖B‖`": FROZEN.json lacks \'D_cut\'']: RED
+   A2. FROZEN.json without K3's axis guard: claim 1 names it, ['M8.16 (a) "the identity guard at `10⁻²`, and K3\'s axis guard at `10⁻⁶`": FROZEN.json lacks \'axis\'']: RED
+   A3. FROZEN.json without check 4's floor: claim 1 names it, ['M8.16.1 (a) "- check 4\'s floor, a tenth of the ceiling;": FROZEN.json lacks \'floor\'']: RED
+   A4. AXIS_MIN changed to 1e-7 in a copy of checks.py: RED
+   A5. a new scoring tolerance, 1.07, in a copy of checks.py: RED
+   A6. 0.37 put after a DEVLOG reference in a copy of the text: RED
+0 failed

@@ -1,0 +1,14 @@
+The facts LADDER_PLAN.md v1 states, read from source; nothing solved.
+1. PASS: 15 points, 0.25 to 32; the sample [0.25, 0.5, 1.0, 2.0] at k = 0, 2, 4, 6; C2a/R5 at [0.25, 0.5, 1.0, 2.0]; T2/R5 and T3/R5 along it: True
+2. PASS: BOUNDARY.md at deec830, SHA-256 a54619de4a31e0abc12e5e7ef55165a5ad0b2fcd9ec9f921b9eb55c7208a4eea; its sections: ['The ruling', 'The lists', 'The admission it sits inside', "UA's technical priority", 'Amendment 1', 'Correction 1 to amendment 1', 'Amendment 2', 'Amendment 3', 'Note to amendments 2 and 3', 'Amendment 4']
+3. PASS: 'C2a/R5' in devtools.GO: True; C2a:ladder named in {'ORDER': False, 'CASES': False, 'build_dry': False, 'DRY': False}; its special cases left in the code: {'cases.py': 2, 'driver.py': 1}
+4. PASS: checks_of's dryladder branch calls check_row_k6; reference/m815/ holds ['branch_C2a_R4.json', 'branch_C2b_R2.json', 'branch_C3_R4.json']; M8.15's branch records: ['branch_C2a_R4.json', 'branch_C2b_R2.json', 'branch_C3_R4.json', 'branch_T1_R4.json', 'branch_T1_R5.json', 'branch_T2_R4.json', 'branch_T2_R5.json', 'branch_T3_R4.json', 'branch_T3_R5.json', 'branch_T4_R4_reconstructed.json', 'branch_T4_R5_reconstructed.json', 'branch_T5_R2.json']
+5. PASS: the fields that differ from 87fc643's ENVIRONMENT.json: ['recorded']
+6. PASS: both files equal their logs' SHA-256: True; 13 fields compared, 0 differing
+7. PASS: per evaluation and per record, seconds, least to largest: N = 16: 0.3 to 0.3, 0.4 to 0.4; N = 24: 6.2 to 6.4, 6.8 to 7.0; N = 32: 42.7 to 44.6, 54.7 to 58.1
+8. PASS: 39 points, 0 off the row; evaluations to 32: N = 24: 4 to 12 per point, 129 in all; N = 32: 4 to 11 per point, 125 in all
+9. PASS: 12 of 12 points; the modes in the slow band, by cutoff: {'16': [5], '24': [5], '32': [5]}
+Estimate (INFERRED, unscored): N = 16: 1 to 1 min; N = 24: 15 to 16 min; N = 32: 103 to 107 min; in all 1.97 to 2.06 h, with N = 16 read on N = 24's counts
+arm, which must turn its fact red:
+   A1. /record/leak moved by one unit in the last place: RED
+0 failed

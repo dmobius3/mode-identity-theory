@@ -1,0 +1,74 @@
+Amendment 5's ladder, scored (LADDER_PLAN.md v2), from run/dry/ and MIT 87fc643; nothing solved.
+   the inputs equal their logs' SHA-256: True; the case equals build_dry.py's ladder case: True; cutoffs [16, 24, 32], 15 points
+1. PASS: acceptance, 45 points
+2. FAIL: the row, K1 and the record at every point, K2 to eps 2, the rule at every eps
+      eps 32: the rule reads Unresolved, None
+   K2 beyond eps 2, unscored: 21 of 24 hold; fails at N = 16, eps 32; fails at N = 24, eps 32; fails at N = 32, eps 32
+3. FAIL: the calibration's conditions
+      N = 16, eps 32: coefficient 0.0806, lift 3.9 u, genuine 6.45e+12 u
+   the largest coefficient 0.0806 (N = 16, eps 32) against 0.0667; the largest lift 7.8 u (N = 32, eps 11.3137) against 100 u; the smallest genuine eigenvalue 1.98e+10 u (N = 32, eps 0.25) against 1e+05 u
+4. PASS: K4's reading, the bar at 0.25 True, the trend True; deviations at 0.25 and 2 by N {'16': [0.0087887199282332, 0.06716593465220878], '24': [0.00931692690969784, 0.07096460237427708], '32': [0.009316926913850275, 0.07096460299403563]}; the driver's stored checks equal these: True
+5. PASS: the sample against the registered run
+reported, unscored:
+   N = 16, eps    0.25: deviation 8.789e-03; converged Elliptic, smallest ratio 681, band 12; coefficient 0.0279, lift 2.6 u, genuine 8.57e+10 u; leak 3.8e-11 against 3.2e-08; identity 1.70e-10 True; 4 evaluations, 0.3 s each, point 1.4 s
+   N = 16, eps  0.3536: deviation 1.239e-02; converged Elliptic, smallest ratio 808, band 12; coefficient 0.0279, lift 1.7 u, genuine 1.21e+11 u; leak 4.5e-11 against 2.3e-08; identity 3.38e-10 True; 4 evaluations, 0.3 s each, point 1.3 s
+   N = 16, eps     0.5: deviation 1.746e-02; converged Elliptic, smallest ratio 958, band 12; coefficient 0.0181, lift 1.4 u, genuine 1.71e+11 u; leak 2.8e-11 against 1.6e-08; identity 6.74e-10 True; 7 evaluations, 0.2 s each, point 2.1 s
+   N = 16, eps  0.7071: deviation 2.456e-02; converged Elliptic, smallest ratio 1.13e+03, band 12; coefficient 0.0273, lift 1.1 u, genuine 2.40e+11 u; leak 2.1e-11 against 1.2e-08; identity 1.34e-09 True; 4 evaluations, 0.3 s each, point 1.4 s
+   N = 16, eps       1: deviation 3.446e-02; converged Elliptic, smallest ratio 1.34e+03, band 12; coefficient 0.0075, lift 1.1 u, genuine 3.38e+11 u; leak 7.2e-12 against 8.3e-09; identity 2.66e-09 True; 7 evaluations, 0.2 s each, point 2.1 s
+   N = 16, eps   1.414: deviation 4.821e-02; converged Elliptic, smallest ratio 1.57e+03, band 11.9; coefficient 0.0137, lift 2.5 u, genuine 4.74e+11 u; leak 1.0e-11 against 5.9e-09; identity 5.25e-09 True; 8 evaluations, 0.2 s each, point 2.3 s
+   N = 16, eps       2: deviation 6.717e-02; converged Elliptic, smallest ratio 1.84e+03, band 11.9; coefficient 0.0180, lift 1.4 u, genuine 6.63e+11 u; leak 4.5e-12 against 4.3e-09; identity 1.03e-08 True; 7 evaluations, 0.2 s each, point 2.0 s
+   N = 16, eps   2.828: deviation 9.301e-02; converged Elliptic, smallest ratio 2.14e+03, band 11.8; coefficient 0.0376, lift 2.2 u, genuine 9.23e+11 u; leak 3.6e-12 against 3.1e-09; identity 2.02e-08 True; 10 evaluations, 0.3 s each, point 3.0 s
+   N = 16, eps       4: deviation 1.277e-01; converged Elliptic, smallest ratio 2.47e+03, band 11.8; coefficient 0.0226, lift 2.6 u, genuine 1.28e+12 u; leak 3.8e-12 against 2.3e-09; identity 3.90e-08 True; 8 evaluations, 0.3 s each, point 2.4 s
+   N = 16, eps   5.657: deviation 1.735e-01; converged Elliptic, smallest ratio 2.81e+03, band 11.6; coefficient 0.0573, lift 1.4 u, genuine 1.75e+12 u; leak 3.3e-12 against 1.7e-09; identity 7.46e-08 True; 9 evaluations, 0.3 s each, point 2.7 s
+   N = 16, eps       8: deviation 2.322e-01; converged Elliptic, smallest ratio 3.15e+03, band 11.5; coefficient 0.0553, lift 2.8 u, genuine 2.38e+12 u; leak 1.9e-12 against 1.3e-09; identity 1.40e-07 True; 9 evaluations, 0.3 s each, point 2.8 s
+   N = 16, eps   11.31: deviation 3.048e-01; converged Elliptic, smallest ratio 3.46e+03, band 11.3; coefficient 0.0290, lift 1.8 u, genuine 3.17e+12 u; leak 1.4e-12 against 9.7e-10; identity 2.57e-07 True; 10 evaluations, 0.3 s each, point 3.0 s
+   N = 16, eps      16: deviation 5.467e-01; converged Elliptic, smallest ratio 3.69e+03, band 11; coefficient 0.0379, lift 0.9 u, genuine 4.15e+12 u; leak 9.8e-13 against 7.7e-10; identity 4.59e-07 True; 10 evaluations, 0.3 s each, point 3.3 s
+   N = 16, eps   22.63: deviation 8.635e-01; converged Elliptic, smallest ratio 3.82e+03, band 10.6; coefficient 0.0603, lift 1.7 u, genuine 5.27e+12 u; leak 1.1e-12 against 6.4e-10; identity 7.88e-07 True; 10 evaluations, 0.3 s each, point 3.2 s
+   N = 16, eps      32: deviation inf; Unresolved None, smallest ratio 3.79e+03, band 10; coefficient 0.0806, lift 3.9 u, genuine 6.45e+12 u; leak 4.2e-13 against 5.6e-10; identity 1.29e-06 True; 10 evaluations, 0.3 s each, point 3.0 s
+   N = 24, eps    0.25: deviation 9.317e-03; converged Elliptic, smallest ratio 681, band 12; coefficient 0.0092, lift 7.3 u, genuine 3.57e+10 u; leak 1.1e-10 against 7.8e-08; identity 1.70e-10 True; 4 evaluations, 6.3 s each, point 31.8 s
+   N = 24, eps  0.3536: deviation 1.314e-02; converged Elliptic, smallest ratio 808, band 12; coefficient 0.0292, lift 3.9 u, genuine 5.04e+10 u; leak 6.4e-11 against 5.5e-08; identity 3.38e-10 True; 4 evaluations, 6.5 s each, point 33.0 s
+   N = 24, eps     0.5: deviation 1.850e-02; converged Elliptic, smallest ratio 958, band 12; coefficient 0.0229, lift 1.1 u, genuine 7.10e+10 u; leak 5.1e-11 against 3.9e-08; identity 6.74e-10 True; 8 evaluations, 6.3 s each, point 57.4 s
+   N = 24, eps  0.7071: deviation 2.601e-02; converged Elliptic, smallest ratio 1.13e+03, band 12; coefficient 0.0237, lift 2.3 u, genuine 1.00e+11 u; leak 2.5e-11 against 2.8e-08; identity 1.34e-09 True; 4 evaluations, 6.2 s each, point 31.7 s
+   N = 24, eps       1: deviation 3.648e-02; converged Elliptic, smallest ratio 1.34e+03, band 12; coefficient 0.0134, lift 1.3 u, genuine 1.41e+11 u; leak 3.5e-11 against 2.0e-08; identity 2.66e-09 True; 7 evaluations, 6.2 s each, point 49.9 s
+   N = 24, eps   1.414: deviation 5.100e-02; converged Elliptic, smallest ratio 1.57e+03, band 11.9; coefficient 0.0176, lift 1.6 u, genuine 1.97e+11 u; leak 3.1e-11 against 1.4e-08; identity 5.25e-09 True; 7 evaluations, 6.1 s each, point 49.9 s
+   N = 24, eps       2: deviation 7.096e-02; converged Elliptic, smallest ratio 1.84e+03, band 11.9; coefficient 0.0273, lift 3.4 u, genuine 2.76e+11 u; leak 1.4e-11 against 1.0e-08; identity 1.03e-08 True; 7 evaluations, 6.1 s each, point 49.3 s
+   N = 24, eps   2.828: deviation 9.812e-02; converged Elliptic, smallest ratio 2.14e+03, band 11.8; coefficient 0.0078, lift 1.0 u, genuine 3.85e+11 u; leak 1.4e-11 against 7.4e-09; identity 2.02e-08 True; 9 evaluations, 6.6 s each, point 66.2 s
+   N = 24, eps       4: deviation 1.345e-01; converged Elliptic, smallest ratio 2.47e+03, band 11.8; coefficient 0.0158, lift 3.1 u, genuine 5.32e+11 u; leak 8.7e-12 against 5.4e-09; identity 3.90e-08 True; 10 evaluations, 6.6 s each, point 72.5 s
+   N = 24, eps   5.657: deviation 1.822e-01; converged Elliptic, smallest ratio 2.81e+03, band 11.6; coefficient 0.0170, lift 2.2 u, genuine 7.31e+11 u; leak 6.8e-12 against 4.0e-09; identity 7.46e-08 True; 8 evaluations, 6.5 s each, point 58.5 s
+   N = 24, eps       8: deviation 2.430e-01; converged Elliptic, smallest ratio 3.15e+03, band 11.5; coefficient 0.0118, lift 0.8 u, genuine 9.92e+11 u; leak 5.6e-12 against 3.0e-09; identity 1.40e-07 True; 9 evaluations, 6.4 s each, point 64.3 s
+   N = 24, eps   11.31: deviation 3.176e-01; converged Elliptic, smallest ratio 3.46e+03, band 11.3; coefficient 0.0287, lift 4.0 u, genuine 1.33e+12 u; leak 3.2e-12 against 2.3e-09; identity 2.57e-07 True; 10 evaluations, 6.5 s each, point 72.2 s
+   N = 24, eps      16: deviation 5.504e-01; converged Elliptic, smallest ratio 3.69e+03, band 11; coefficient 0.0256, lift 0.6 u, genuine 1.74e+12 u; leak 2.9e-12 against 1.8e-09; identity 4.59e-07 True; 9 evaluations, 6.2 s each, point 62.7 s
+   N = 24, eps   22.63: deviation 8.662e-01; converged Elliptic, smallest ratio 3.82e+03, band 10.6; coefficient 0.0245, lift 3.2 u, genuine 2.23e+12 u; leak 2.1e-12 against 1.5e-09; identity 7.88e-07 True; 9 evaluations, 6.2 s each, point 62.3 s
+   N = 24, eps      32: deviation inf; Unresolved None, smallest ratio 3.79e+03, band 10; coefficient 0.0174, lift 5.7 u, genuine 2.77e+12 u; leak 2.2e-12 against 1.3e-09; identity 1.29e-06 True; 10 evaluations, 6.3 s each, point 69.6 s
+   N = 32, eps    0.25: deviation 9.317e-03; converged Elliptic, smallest ratio 681, band 12; coefficient 0.0112, lift 3.1 u, genuine 1.98e+10 u; leak 3.0e-10 against 1.4e-07; identity 1.70e-10 True; 4 evaluations, 42.4 s each, point 226.1 s
+   N = 32, eps  0.3536: deviation 1.314e-02; converged Elliptic, smallest ratio 808, band 12; coefficient 0.0112, lift 2.5 u, genuine 2.79e+10 u; leak 1.4e-10 against 1.0e-07; identity 3.38e-10 True; 4 evaluations, 42.3 s each, point 223.8 s
+   N = 32, eps     0.5: deviation 1.850e-02; converged Elliptic, smallest ratio 958, band 12; coefficient 0.0105, lift 2.1 u, genuine 3.94e+10 u; leak 8.0e-11 against 7.1e-08; identity 6.74e-10 True; 8 evaluations, 42.2 s each, point 392.6 s
+   N = 32, eps  0.7071: deviation 2.601e-02; converged Elliptic, smallest ratio 1.13e+03, band 12; coefficient 0.0076, lift 0.9 u, genuine 5.55e+10 u; leak 8.6e-11 against 5.0e-08; identity 1.34e-09 True; 4 evaluations, 42.2 s each, point 224.3 s
+   N = 32, eps       1: deviation 3.648e-02; converged Elliptic, smallest ratio 1.34e+03, band 12; coefficient 0.0123, lift 0.7 u, genuine 7.80e+10 u; leak 4.4e-11 against 3.6e-08; identity 2.66e-09 True; 7 evaluations, 40.4 s each, point 338.9 s
+   N = 32, eps   1.414: deviation 5.100e-02; converged Elliptic, smallest ratio 1.57e+03, band 11.9; coefficient 0.0160, lift 2.2 u, genuine 1.10e+11 u; leak 8.6e-11 against 2.6e-08; identity 5.25e-09 True; 7 evaluations, 40.6 s each, point 340.3 s
+   N = 32, eps       2: deviation 7.096e-02; converged Elliptic, smallest ratio 1.84e+03, band 11.9; coefficient 0.0284, lift 1.3 u, genuine 1.53e+11 u; leak 1.4e-11 against 1.8e-08; identity 1.03e-08 True; 7 evaluations, 40.6 s each, point 343.1 s
+   N = 32, eps   2.828: deviation 9.812e-02; converged Elliptic, smallest ratio 2.14e+03, band 11.8; coefficient 0.0130, lift 5.6 u, genuine 2.14e+11 u; leak 1.7e-11 against 1.3e-08; identity 2.02e-08 True; 8 evaluations, 44.1 s each, point 411.4 s
+   N = 32, eps       4: deviation 1.345e-01; converged Elliptic, smallest ratio 2.47e+03, band 11.8; coefficient 0.0041, lift 4.4 u, genuine 2.96e+11 u; leak 1.4e-11 against 9.7e-09; identity 3.90e-08 True; 8 evaluations, 45.0 s each, point 420.2 s
+   N = 32, eps   5.657: deviation 1.822e-01; converged Elliptic, smallest ratio 2.81e+03, band 11.6; coefficient 0.0132, lift 6.7 u, genuine 4.07e+11 u; leak 6.4e-12 against 7.2e-09; identity 7.46e-08 True; 8 evaluations, 43.9 s each, point 410.4 s
+   N = 32, eps       8: deviation 2.430e-01; converged Elliptic, smallest ratio 3.15e+03, band 11.5; coefficient 0.0244, lift 4.2 u, genuine 5.54e+11 u; leak 6.5e-12 against 5.4e-09; identity 1.40e-07 True; 9 evaluations, 43.0 s each, point 444.6 s
+   N = 32, eps   11.31: deviation 3.176e-01; converged Elliptic, smallest ratio 3.46e+03, band 11.3; coefficient 0.0285, lift 7.8 u, genuine 7.43e+11 u; leak 4.8e-12 against 4.1e-09; identity 2.57e-07 True; 10 evaluations, 44.0 s each, point 497.1 s
+   N = 32, eps      16: deviation 5.504e-01; converged Elliptic, smallest ratio 3.69e+03, band 11; coefficient 0.0250, lift 1.7 u, genuine 9.79e+11 u; leak 4.0e-12 against 3.3e-09; identity 4.59e-07 True; 9 evaluations, 43.3 s each, point 446.4 s
+   N = 32, eps   22.63: deviation 8.662e-01; converged Elliptic, smallest ratio 3.82e+03, band 10.6; coefficient 0.0410, lift 4.4 u, genuine 1.26e+12 u; leak 4.7e-12 against 2.7e-09; identity 7.88e-07 True; 10 evaluations, 46.8 s each, point 528.7 s
+   N = 32, eps      32: deviation inf; Unresolved None, smallest ratio 3.79e+03, band 10; coefficient 0.0174, lift 3.5 u, genuine 1.58e+12 u; leak 6.8e-12 against 2.3e-09; identity 1.29e-06 True; 10 evaluations, 46.3 s each, point 522.9 s
+   the slow eigenvalues against the registered run, N = 16, eps 0.5: largest relative difference 5.74e-12
+   the slow eigenvalues against the registered run, N = 24, eps 0.5: largest relative difference 5.55e-12
+   the slow eigenvalues against the registered run, N = 32, eps 0.5: largest relative difference 1.02e-11
+   the slow eigenvalues against the registered run, N = 16, eps 1: largest relative difference 1.01e-11
+   the slow eigenvalues against the registered run, N = 24, eps 1: largest relative difference 9.92e-12
+   the slow eigenvalues against the registered run, N = 32, eps 1: largest relative difference 1.44e-11
+   the slow eigenvalues against the registered run, N = 16, eps 2: largest relative difference 4.06e-11
+   the slow eigenvalues against the registered run, N = 24, eps 2: largest relative difference 4.22e-11
+   the slow eigenvalues against the registered run, N = 32, eps 2: largest relative difference 4.37e-11
+   the gate record, as logged True: absent ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'P5'], complete False; the verdict, as logged True: incomplete
+   the case's time 6654 s
+arms, each of which must turn its claim red:
+   A1. acceptance false at N = 32, eps 32: RED
+   A2. a record Hyperbolic at N = 32, eps 32: RED
+   A3. a coefficient above its bound at N = 32, eps 32: RED
+   A4. N = 16, eps 0.25: /record/leak moved by one unit in the last place: RED
+2 failed

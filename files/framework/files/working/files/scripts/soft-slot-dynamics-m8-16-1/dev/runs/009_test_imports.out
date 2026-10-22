@@ -1,0 +1,11 @@
+Every import (M8.16.1's DRIVER_PLAN.md v2), on a temporary copy of the tree; nothing solved.
+   the seed check is step 3's: its seeds line is tested on a synthetic record of the same form
+1. PASS: driver.py, write_guard.py and freeze_block.py load only manifest files, each named in the block with its SHA-256
+      driver: 15 files
+      write_guard: 15 files
+      freeze_block: 4 files
+2. PASS: the seeds line names exactly the record's 11 files, its child processes' included, each equal to its manifest line
+arms, each of which must turn its claim red:
+   A1. instrument/__init__.py dropped from the seeds line: RED
+   A2. dev/extra.py imported by a copy of driver.py: RED
+0 failed

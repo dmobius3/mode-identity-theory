@@ -1,0 +1,9 @@
+M8.16.1 dry run: 1 cases; outputs in run/dry
+C2a/R5:ladder (dryladder, R5):
+   C2a/R5:ladder N = 16, m = 61: seed ok; 15 of 15 points accepted; 36 s
+   C2a/R5:ladder N = 24, m = 193: seed ok; 15 of 15 points accepted; 833 s
+   C2a/R5:ladder N = 32, m = 433: seed ok; 15 of 15 points accepted; 5784 s
+   checks: {'K1': True, 'K4': False, 'converged': False, 'bar': True, 'trend': True}; 6654 s
+verdict: {'verdict': 'incomplete', 'instrument': None, 'r5_gate': False, 'rows': {}, 'members': {}, 'c3_ray': {}, 'qualified': [], 'failed': []}; 6655 s
+
+[exited with code 0]

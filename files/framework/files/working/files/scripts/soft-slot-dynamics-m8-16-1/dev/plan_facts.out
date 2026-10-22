@@ -1,0 +1,14 @@
+DRIVER_PLAN.md v1's facts, read again from source
+   the checkout: deec830b29f4bd6b45e58d2c333946dbbb60e964; the values file: b05fff5ddd71c29c79318b6257f940c6035d7c954f3bafa34a22080eecc00333
+1. PASS: M8.16's manifest: 36 entries, SHA-256 a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a, its pin a5f4517360672bd6812b3f9bf79639df07304bbde19479391006ea03cd15c53a; instrument/ and reference/m815/: 15 files
+2. PASS: run/out unchanged since 87fc643: 0 files moved; 7 logged outputs, 0 differing from RUNLOG.json
+3. PASS: K3 'instrument failure: the diagnosis is untested': {'16': {'a': False, 'b': True, 'c': True, 'd': True}, '24': {'a': False, 'b': True, 'c': True, 'd': True}, '32': {'a': False, 'b': True, 'c': True, 'd': True}}; the seeds True; L's certificate at 0.25 {'16': True, '24': True, '32': True}
+4. PASS: check 1 at the pyramid: 9 of 9 points hold every part, both forms
+A1. PASS: arm: in-span group removed at N = 24, eps = 0.5: K2's matching False, outside the in-span class True
+5. PASS: ties: every one holds; the largest relative difference 3.2e-10, at P5; T5J against its exact spectrum 0.0e+00; s the same at every cutoff True
+A2. PASS: arm: P5's quartet literal moved by 2e-9 in its real part: its tie fails
+6. PASS: KeyError from branches: {('C3R/R4', 'representative'): True, ('C3R/R4', 'seed_state'): True, ('T5J/R2', 'representative'): True, ('T5J/R2', 'seed_state'): True}; in SEALED: []
+7. PASS: log_run numbers by the count of '## ' lines: True; M8.16's log begins at 0; M8.16.1's has 9 such lines, its last entry 9, so log_run would write entry 9 again
+8. PASS: devtools.frozen reads run/m8_16_task_details.md
+9. PASS: terms v3's new constants: ["the ceiling's factors, 0.1 and 10⁻³;", "the resolution test's tenth, with its weights 128/3, 8 and 1/3;", "the extrapolation's points, 0.25, 0.5 and 1."]; check 4's floor factor listed: False
+ALL FACTS HOLD; every arm red

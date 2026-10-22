@@ -1,0 +1,166 @@
+{
+ "order": [
+  "C2a/R5:ladder"
+ ],
+ "cases": {
+  "C2a/R5:ladder": {
+   "role": "dryladder",
+   "slot": "R5",
+   "level": 6,
+   "lam0": 48.0,
+   "orbit": "coherent",
+   "sig": [
+    0,
+    0,
+    10
+   ],
+   "k": 3,
+   "r": 1,
+   "points": [
+    {
+     "eps": 0.25,
+     "read": true
+    },
+    {
+     "eps": 0.3535533905932738,
+     "read": true
+    },
+    {
+     "eps": 0.5,
+     "read": true
+    },
+    {
+     "eps": 0.7071067811865476,
+     "read": true
+    },
+    {
+     "eps": 1.0,
+     "read": true
+    },
+    {
+     "eps": 1.4142135623730951,
+     "read": true
+    },
+    {
+     "eps": 2.0,
+     "read": true
+    },
+    {
+     "eps": 2.8284271247461903,
+     "read": true
+    },
+    {
+     "eps": 4.0,
+     "read": true
+    },
+    {
+     "eps": 5.656854249492381,
+     "read": true
+    },
+    {
+     "eps": 8.0,
+     "read": true
+    },
+    {
+     "eps": 11.313708498984761,
+     "read": true
+    },
+    {
+     "eps": 16.0,
+     "read": true
+    },
+    {
+     "eps": 22.627416997969522,
+     "read": true
+    },
+    {
+     "eps": 32.0,
+     "read": true
+    }
+   ],
+   "cutoffs": [
+    16,
+    24,
+    32
+   ],
+   "m815": null,
+   "dim": 4,
+   "ranks": [
+    1,
+    0
+   ],
+   "chains": 3,
+   "type": "Elliptic",
+   "idx": [
+    0,
+    0,
+    0
+   ],
+   "kr": 0,
+   "kc": 0,
+   "ki": 0,
+   "Q": {
+    "frac": "2289/2288",
+    "value": 1.000437062937063
+   },
+   "s": {
+    "frac": "9/16",
+    "value": 0.5625
+   },
+   "spectrum": [
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "28/143",
+      "value": 0.1958041958041958
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "56/429",
+      "value": 0.13053613053613053
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "140/99",
+      "value": 1.4141414141414141
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "112/39",
+      "value": 2.871794871794872
+     },
+     "mult": 1
+    },
+    {
+     "cls": "imag",
+     "sign": 1,
+     "tau": {
+      "frac": "896/1287",
+      "value": 0.6961926961926962
+     },
+     "mult": 1
+    }
+   ],
+   "representative": {
+    "3": [
+     1.0,
+     0.0
+    ]
+   },
+   "admission": "C2a/R5"
+  }
+ }
+}

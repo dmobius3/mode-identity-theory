@@ -1,0 +1,84 @@
+{
+ "completed": {
+  "C1": {
+   "files": {
+    "C1.json": "f146a03a2a6c5f5dfcc33e159a47c4078d02b91aacea5ea359d94744022a374d"
+   },
+   "t": "2026-10-22T15:37:59Z"
+  },
+  "C2a": {
+   "files": {
+    "C2a.json": "3132484968eb915d7435cb4816e7d641cff4542334bf9729286926a0e6eb31e1"
+   },
+   "t": "2026-10-22T15:38:27Z"
+  },
+  "C2b": {
+   "files": {
+    "C2b.json": "7ae4cc8b2ad689756c44c38be7bbe123c81e98a3b4b12ca3bccf72d9dbe07a97"
+   },
+   "t": "2026-10-22T15:38:40Z"
+  },
+  "C3": {
+   "files": {
+    "C3.json": "89e219648de0d164f2c43b6118afeede5d4f9110e354cfb03f87531064a31dc8"
+   },
+   "t": "2026-10-22T15:39:17Z"
+  },
+  "C2a/R5": {
+   "files": {
+    "C2a_R5.json": "274d0c525135457714bc4b9cbb4f5e6f95136649f5c37ee308bbba6bfbb7d26d"
+   },
+   "t": "2026-10-22T15:40:00Z"
+  }
+ },
+ "gate": {
+  "file": "GATE.json",
+  "sha256": "b8dc29b21354d4610e878f19e94ca81ae7ec62a7a8fa5a32852f3a07d198467b",
+  "written": "2026-10-22T15:40:00Z"
+ },
+ "events": [
+  {
+   "t": "2026-10-22T15:37:55Z",
+   "event": "dry run started; cases ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5']"
+  },
+  {
+   "t": "2026-10-22T15:37:59Z",
+   "event": "C1 completed"
+  },
+  {
+   "t": "2026-10-22T15:38:27Z",
+   "event": "C2a completed"
+  },
+  {
+   "t": "2026-10-22T15:38:40Z",
+   "event": "C2b completed"
+  },
+  {
+   "t": "2026-10-22T15:39:17Z",
+   "event": "C3 completed"
+  },
+  {
+   "t": "2026-10-22T15:40:00Z",
+   "event": "C2a/R5 completed"
+  },
+  {
+   "t": "2026-10-22T15:40:00Z",
+   "event": "gate record written, SHA-256 b8dc29b21354d4610e878f19e94ca81ae7ec62a7a8fa5a32852f3a07d198467b"
+  },
+  {
+   "t": "2026-10-22T15:40:00Z",
+   "event": "verdict (incomplete) and transcript written"
+  }
+ ],
+ "manifest_sha256": "a1870643ea81fac7c1a3b123369613eccaddae51638b842e4e7153c65f1c022d",
+ "verdict": {
+  "file": "VERDICT.json",
+  "sha256": "51e77e50c5ff52bedb21ee6eadc380f4740567a62f4adaa6208cf53942954086",
+  "written": "2026-10-22T15:40:00Z"
+ },
+ "transcript": {
+  "file": "driver.out",
+  "sha256": "82abbca38e600ff810a137e837ace89c037d8ebd8400d23bcd380be5276aef8f",
+  "written": "2026-10-22T15:40:00Z"
+ }
+}

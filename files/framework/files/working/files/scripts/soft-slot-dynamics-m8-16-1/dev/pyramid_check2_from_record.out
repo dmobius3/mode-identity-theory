@@ -1,0 +1,8 @@
+check 2 at the pyramid, from M8.16's record (P5.json SHA-256 dceba2fd5fbacf950d49abfe6b5f21fb3c2f8c8aa5d0defe64d2f12aa4ceddb2; values SHA-256 52077d69a05cf3c6cc0926f55d0e5c64a1c991040082899568db654a7c6c0843)
+N = 16 complex: E = 1.88e-13, 1.80e-13, 1.69e-13 at 0.25, 0.5 and 1, usable True; E_c 9.52e-12 against 2.64e-06: passes, 5.4 decades; the only group of its class
+N = 16 imag   : E = 6.27e-14, 6.27e-14, 6.27e-14 at 0.25, 0.5 and 1, usable True; E_c 3.20e-12 against 1.67e-06: passes, 5.7 decades; the next group of its class at least 198 times as far from x kappa s_g
+N = 24 complex: E = 4.49e-13, 4.30e-13, 4.01e-13 at 0.25, 0.5 and 1, usable True; E_c 2.27e-11 against 2.66e-06: passes, 5.1 decades; the only group of its class
+N = 24 imag   : E = 1.50e-13, 1.50e-13, 1.50e-13 at 0.25, 0.5 and 1, usable True; E_c 7.66e-12 against 1.67e-06: passes, 5.3 decades; the next group of its class at least 117 times as far from x kappa s_g
+N = 32 complex: E = 8.11e-13, 7.76e-13, 7.24e-13 at 0.25, 0.5 and 1, usable True; E_c 4.10e-11 against 2.66e-06: passes, 4.8 decades; the only group of its class
+N = 32 imag   : E = 2.71e-13, 2.71e-13, 2.71e-13 at 0.25, 0.5 and 1, usable True; E_c 1.38e-11 against 1.67e-06: passes, 5.1 decades; the next group of its class at least 117 times as far from x kappa s_g
+check 2 at the pyramid: PASS; the largest E_c over its trigger 1.5e-05

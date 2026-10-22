@@ -1,0 +1,30 @@
+M8.16.1 dry run: 5 cases; outputs in run/dry/plumbing
+C1 (control, R3):
+   C1 N = 12: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 20: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   checks: {'K1': True, 'K4': True}; 4 s
+C2a (control, R4):
+   C2a N = 12, m = 18: seed ok; 4 of 4 points accepted; 1 s
+   C2a N = 16, m = 50: seed ok; 4 of 4 points accepted; 6 s
+   C2a N = 20, m = 90: seed ok; 4 of 4 points accepted; 22 s
+   checks: {'K1': True, 'K4': False, 'converged': False, 'bar': True, 'trend': True, 'K2': True}; 29 s
+   (plumbing pass: C2a failed K4, which stops a real or dry run here; continuing)
+C2b (control, R2):
+   C2b N = 12, m = 8: seed ok; 4 of 4 points accepted; 0 s
+   C2b N = 16, m = 22: seed ok; 4 of 4 points accepted; 2 s
+   C2b N = 20, m = 60: seed ok; 4 of 4 points accepted; 11 s
+   checks: {'K1': True, 'K4': False, 'converged': False, 'bar': True, 'trend': True, 'K2': True}; 13 s
+   (plumbing pass: C2b failed K4, which stops a real or dry run here; continuing)
+C3 (control, R4):
+   C3 N = 12, m = 18: seed ok; 4 of 4 points accepted; 0 s
+   C3 N = 16, m = 50: seed ok; 4 of 4 points accepted; 7 s
+   C3 N = 20, m = 90: seed ok; 4 of 4 points accepted; 29 s
+   checks: {'K1': True, 'K4': False, 'converged': False, 'bar': True, 'trend': True}; 37 s
+   (plumbing pass: C3 failed K4, which stops a real or dry run here; continuing)
+C2a/R5 (R5gate, R5):
+   C2a/R5 N = 12, m = 29: seed ok; 4 of 4 points accepted; 1 s
+   C2a/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 8 s
+   C2a/R5 N = 20, m = 120: seed ok; 4 of 4 points accepted; 32 s
+   checks: {'K1': True, 'K4': False, 'converged': False, 'bar': True, 'trend': True}; 42 s
+verdict: {'verdict': 'incomplete', 'instrument': None, 'r5_gate': False, 'rows': {}, 'members': {}, 'c3_ray': {}, 'qualified': [], 'failed': ['C2a: K4', 'C2b: K4', 'C3: K4']}; 124 s

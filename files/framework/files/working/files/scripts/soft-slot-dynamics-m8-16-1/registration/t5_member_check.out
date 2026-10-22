@@ -1,0 +1,26 @@
+T5's second member: u2 = u p0, p0 = (1 + k)/sqrt2, in orthonormal components (unnormalized): {'7/2': 12*sqrt(35), '3/2': 28*sqrt(15)*I, '-3/2': 28*sqrt(15), '-7/2': -12*sqrt(35)*I}
+A  registered: Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple
+   second:     Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple
+   PASS
+B  second read with i:      (1859*nu + 15680)*(418161601*nu**2 + 6605190592*nu + 25491013632)/777362416259
+   u read with Theta:       (1859*nu + 15680)*(418161601*nu**2 + 6605190592*nu + 25491013632)/777362416259
+   (u + i Theta u) with i:  equal: True
+   PASS
+C  registered (the terms' frozen T5 spectrum: True): (20449*nu + 153664)*(418161601*nu**2 + 6989958976*nu + 28677390336)/8550986578849
+   tau, registered: ['2.6885717214', '2.7412587413', '3.0801801130']; second: ['2.5898881946', '2.9042455614', '3.0146747378']
+   resultant nonzero (no common root): True
+   PASS
+arm: u in place of u2
+A  registered: Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple
+   second:     Q 22/13, sig (9, 0, 0), k 6, r 4, zero mult 10, elliptic, simple
+   PASS
+B  second read with i:      (20449*nu + 153664)*(418161601*nu**2 + 6989958976*nu + 28677390336)/8550986578849
+   u read with Theta:       (1859*nu + 15680)*(418161601*nu**2 + 6605190592*nu + 25491013632)/777362416259
+   (u + i Theta u) with i:  equal: True
+   FAIL
+C  registered (the terms' frozen T5 spectrum: True): (20449*nu + 153664)*(418161601*nu**2 + 6989958976*nu + 28677390336)/8550986578849
+   tau, registered: ['2.6885717214', '2.7412587413', '3.0801801130']; second: ['2.6885717214', '2.7412587413', '3.0801801130']
+   resultant nonzero (no common root): False
+   FAIL
+   arm RED
+all claims pass; arm red

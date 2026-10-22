@@ -1,0 +1,26 @@
+M8.16.1's step 3, the seeds, at N = 16: 17 seeds, 12 of them sealed; certified point from d0de8ca, section IV from b182702
+1. the basis convention: PASS  largest deviation 0.0e+00, on n <= 32 and 15 blocks
+2. the certified point: PASS  (source SHA-256, OUTSIDE strings, 924 r_6) = (True, True, True)
+3. the constructors as data: PASS  largest deviation 1.1e-16; seed_state refused 12 of 12 sealed seeds
+4. the check: PASS
+   C1      R3: Q 1.000000000000002 against 1 (rel 1.6e-15); criticality 1.1e-15; (k, r_u) (4, 2) against (4, 2): PASS
+   C2a     R4: Q 1.000777000777000 against 1288/1287 (rel 6.7e-16); criticality 9.0e-17; (k, r_u) (3, 1) against (3, 1): PASS
+   C3      R4: Q 1.223776223776227 against 175/143 (rel 2.4e-15); criticality 2.0e-16; (k, r_u) (4, 4) against (4, 4): PASS
+   P5      R4: Q 1.184615384615386 against 77/65 (rel 1.3e-15); criticality 6.8e-16; (k, r_u) (4, 2) against (4, 2): PASS
+   T1/R4   R4: Q 1.027972027972031 against 147/143 (rel 3.2e-15); criticality 3.8e-17; (k, r_u) (3, 1) against (3, 1): PASS
+   T2/R4   R4: Q 1.159014112502487 against 5831/5031 (rel 1.9e-15); criticality 6.4e-16; (k, r_u) (4, 4) against (4, 4): PASS
+   T3/R4   R4: Q 1.359751359751360 against 1750/1287 (rel 1.6e-16); criticality 4.2e-16; (k, r_u) (4, 4) against (4, 4): PASS
+   T4/R4   R4: Q 1.185203461338849 against 1.1852034613388465 (rel 2.1e-15); criticality 5.6e-16; (k, r_u) (4, 2) against (4, 2): PASS
+   C3R/R4  R4: Q 1.184615384615388 against 77/65 (rel 2.8e-15); criticality 4.2e-16; (k, r_u) (4, 2) against (4, 2): PASS
+   C2a/R5  R5: Q 1.000437062937064 against 2289/2288 (rel 1.6e-15); criticality 5.3e-17; (k, r_u) (3, 1) against (3, 1): PASS
+   T1/R5   R5: Q 1.015734265734266 against 581/572 (rel 2.2e-16); criticality 3.3e-17; (k, r_u) (3, 1) against (3, 1): PASS
+   T2/R5   R5: Q 1.089445438282649 against 609/559 (rel 1.0e-15); criticality 6.9e-16; (k, r_u) (4, 4) against (4, 4): PASS
+   T3/R5   R5: Q 1.202360139860140 against 2751/2288 (rel 3.7e-16); criticality 2.8e-16; (k, r_u) (4, 4) against (4, 4): PASS
+   T4/R5   R5: Q 1.104176947003103 against 1.104176947003101 (rel 2.0e-15); criticality 5.5e-16; (k, r_u) (4, 2) against (4, 2): PASS
+   C2b     R2: Q 1.006993006993007 against 144/143 (rel 0.0e+00); criticality 8.4e-17; (k, r_u) (5, 1) against (5, 1): PASS
+   T5/R2   R2: Q 1.692307692307693 against 22/13 (rel 6.6e-16); criticality 1.5e-16; (k, r_u) (6, 4) against (6, 4): PASS
+   T5J/R2  R2: Q 1.692307692307694 against 22/13 (rel 7.9e-16); criticality 1.5e-16; (k, r_u) (6, 4) against (6, 4): PASS
+5. the scope: PASS  no sentinel fired
+6. the instrument's guard: PASS  outside seedcheck (case C2a): sealed_seed_for_check refused 12 of 12, first_order ran (size 4), guard refusals 0 of 8 (the arm: none expected); in this seedcheck process: 8 of 8 paths refused
+the record: 12 files loaded here and 12 in the child process, under the tree
+0 failed
