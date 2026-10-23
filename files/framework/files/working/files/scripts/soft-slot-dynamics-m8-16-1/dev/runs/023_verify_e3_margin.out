@@ -1,0 +1,7 @@
+1. a pure eps^3 term of 50 ceilings on the lowest group, away from the next: {0: 'pass', 1: 'pass', 2: 'pass'}: holds
+2. eps^3 terms toward each other, 4.5 ceilings each: readings {0: 'pass', 1: 'pass', 2: 'pass'}, each keeps its own value: True
+2. eps^3 terms toward each other, 5.5 ceilings each: readings {0: 'fail', 1: 'fail', 2: 'pass'}, each keeps its own value: False
+   claim 2: holds
+reported, unscored: the pyramid's recorded departure from eps kappa s_g + eps^2 c_g(N) at the point nearest 1, in ceilings:
+   group 1 (complex, Krein None): N = 16: 1.13 at eps 1.000000; N = 24: 1.16 at eps 1.000000; N = 32: 1.16 at eps 1.000000
+   group 2 (imag, Krein +): N = 16: 0.16 at eps 1.000000; N = 24: 0.11 at eps 1.000000; N = 32: 0.11 at eps 1.000000

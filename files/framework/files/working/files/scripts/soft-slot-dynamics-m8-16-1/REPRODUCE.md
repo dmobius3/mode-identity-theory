@@ -30,7 +30,7 @@ The terms are `run/m8_16_task_details.md`. The census page gives their SHA-256 a
   - `BOUNDARY.md`: amendment 5, written once before the ladder ran. The split, with amendments 1 to 4, is M8.16's [`BOUNDARY.md`](../soft-slot-dynamics-m8-16/BOUNDARY.md);
   - the plans: `DRIVER_PLAN.md` and `LADDER_PLAN.md`;
   - `dev/`: the development scripts and their outputs;
-  - `registration/`: the terms' template, `terms_template_v6.md`, and its builder, `build_terms_v6.py`, with the answer of 2026-10-15 as fetched and the built text; and T5's second member, `t5_second_member.md`, with its two checks.
+  - `registration/`: the terms' template, `terms_template_v7.md`, and its builder, `build_terms_v7.py`, with the answer of 2026-10-15 as fetched and the built text; and T5's second member, `t5_second_member.md`, with its two checks.
 - **Left out:** `run/dry/`, the development runs' output folder. Its plumbing pass is byte-identical to its kept copy, `dev/runs/008_plumbing/`. The ladder's outputs were moved to `dev/runs/015_ladder/` after its run.
 
 ## Before running
@@ -54,7 +54,7 @@ From a copy of this folder. `MIT_REPO` is a full clone of this repository. The t
 
 - **The guard's tests:** `python3 -I -B run/test_guard.py MIT_REPO`. These are 126 tests on temporary trees, with nothing solved.
 - **The three tests of the frozen text:**
-  - `python3 -I -B run/test_verdicts.py MIT_REPO`: every verdict path, 53 checks, on records built from M8.16's;
+  - `python3 -I -B run/test_verdicts.py MIT_REPO`: every verdict path, 57 checks, on records built from M8.16's;
   - `python3 -I -B run/test_constants.py MIT_REPO run/m8_16_task_details.md`: every constant of both terms' FROZEN VALUES, against the code;
   - `python3 -I -B run/test_imports.py dev/seed_check.json`: every import, with the seed check's record.
 - **K3's tests:** `python3 -I -B run/test_k3.py MIT_REPO`.
@@ -74,8 +74,8 @@ Each script writes its output under `run/`. On the recorded machine, in a copy o
 - **The registered run:** `python3 -I -B run/driver.py`, with its outputs in `run/out/`.
   - It refuses every sealed case until `run/FROZEN.json` and its pin, `run/FROZEN_PIN`, exist.
   - `write_guard.py MIT_REPO GO_LINK` writes them once, after the maintainer's go. `freeze_block.py` then writes the freeze block.
-- **The terms' build:** `python3 -I -B registration/build_terms_v6.py MIT_REPO registration/ruling_1015.json 5b7a56b85d733d53e257cf7559b1b69ac05276a2 . registration OUT`, from this folder, with `gh` signed in. `OUT` must not exist.
-  - It fills `registration/terms_template_v6.md` from the files it names. It reads MIT's pages at `HEAD`, which it requires to be `origin/main`, and OpenWave's copy of M8.16's terms through `gh`.
+- **The terms' build:** `python3 -I -B registration/build_terms_v7.py MIT_REPO registration/ruling_1015.json 5b7a56b85d733d53e257cf7559b1b69ac05276a2 . registration OUT`, from this folder, with `gh` signed in. `OUT` must not exist.
+  - It fills `registration/terms_template_v7.md` from the files it names. It reads MIT's pages at `HEAD`, which it requires to be `origin/main`, and OpenWave's copy of M8.16's terms through `gh`.
   - The terms were built at `deec830`. In a scratch full clone, run `git checkout --detach deec830` and `git update-ref refs/remotes/origin/main deec830`, so that both are `deec830`. Then `OUT` equals `registration/m8_16_1_task_details.md`, byte for byte. At a later `main` the builder runs without error, but its text cites that commit and so differs.
   - The text, not the builder, is the artifact.
 

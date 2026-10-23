@@ -1,0 +1,45 @@
+P5      group 1 (entry 1, tau 0.0417+0.0609j): pass
+P5      group 2 (entry 2, tau 1.0952): pass
+T1/R4   group 0 (entry 0, tau 0.0435): pass
+T1/R4   group 1 (entry 1, tau 0.7832): pass
+T1/R4   group 2 (entry 2, tau 0.9573): pass
+T1/R4   group 3 (entry 4, tau 1.3054): pass
+T1/R4   group 4 (entry 3, tau 1.5664): pass
+T1/R5   group 0 (entry 0, tau 0.0435): pass
+T1/R5   group 1 (entry 1, tau 0.7832): pass
+T1/R5   group 2 (entry 2, tau 0.9573): pass
+T1/R5   group 3 (entry 4, tau 1.3054): pass
+T1/R5   group 4 (entry 3, tau 1.5664): pass
+T4/R4   group 0 (entry 3, tau 0.0057): pass
+T4/R4   group 1 (entry 2, tau 0.1393): pass
+T4/R4   group 2 (entry 1, tau 0.3107): pass
+T4/R4   group 3 (entry 0, tau 1.0121): pass
+T4/R5   group 0 (entry 3, tau 0.0057): pass
+T4/R5   group 1 (entry 2, tau 0.1393): pass
+T4/R5   group 2 (entry 1, tau 0.3107): pass
+T4/R5   group 3 (entry 0, tau 1.0121): pass
+T2/R4   group 0 (entry 1, tau 0.2617): pass
+T2/R4   group 1 (entry 0, tau 0.8539): pass
+T2/R5   group 0 (entry 1, tau 0.2617): pass
+T2/R5   group 1 (entry 0, tau 0.8539): pass
+T3/R4   group 0 (entry 1, tau 0.9533): pass
+T3/R4   group 1 (entry 0, tau 1.2123): pass
+T3/R5   group 0 (entry 1, tau 0.9533): pass
+T3/R5   group 1 (entry 0, tau 1.2123): pass
+T5/R2   group 0 (entry 2, tau 2.6886): fail | check 3 at N = 16: the spread 1.69e-04 over the ceiling 5.05e-05; check 3 at N = 24: the spread 1.68e-04 over the ceiling 5.17e-05; check 3 at N = 32: the spread 1.68e-04 over the ceiling 5.17e-05
+T5/R2   group 1 (entry 0, tau 2.7413): fail | check 3 at N = 16: the spread 1.69e-04 over the ceiling 4.90e-05; check 3 at N = 24: the spread 1.68e-04 over the ceiling 5.03e-05; check 4 at N = 24: |c_g - c3| 1.68e-04 over 1.68e-04; check 3 at N = 32: the spread 1.68e-04 over the ceiling 5.03e-05; check 4 at N = 32: |c_g - c3| 1.68e-04 over 1.68e-04
+T5/R2   group 2 (entry 1, tau 3.0802): pass
+C3R/R4  group 0 (entry 0, tau 0.0356+0.0099j): pass
+C3R/R4  group 1 (entry 1, tau 0.4538): pass
+C3R/R4  group 2 (entry 2, tau 1.0018): pass
+T5J/R2  group 0 (entry 2, tau 2.5899): pass
+T5J/R2  group 1 (entry 0, tau 2.9042): pass
+T5J/R2  group 2 (entry 1, tau 3.0147): pass
+
+pairings that move a value to another entry: [('T5/R2', 16, 1.0, (0, 2)), ('T5/R2', 24, 1.0, (0, 2)), ('T5/R2', 32, 1.0, (0, 2))]
+T5/R2, N = 16, eps = 1, entries 2 and 0: straight 0.0394, swapped 0.0390
+T5/R2, N = 24, eps = 1, entries 2 and 0: straight 0.0404, swapped 0.0400
+T5/R2, N = 32, eps = 1, entries 2 and 0: straight 0.0404, swapped 0.0400
+
+claim 1, T5/R2's two lowest groups fail and nothing else does: holds
+claim 2, the pairing moves values at T5/R2 at eps = 1 at every cutoff, and nowhere else: holds

@@ -12,6 +12,7 @@ Every verdict path (M8.16.1's DRIVER_PLAN.md v2), on records built from M8.16's;
    PASS  f. c_g moved ten ceilings at every cutoff: fail by check 4: ['check 4 at N = 16: |c_g - c3| 2.65e-04 over 4.51e-06']
    PASS  g. check 4 failing at N = 16, a point not accepted at N = 24: fail: fail
    PASS  h. the spread zero and c_g 0.05 ceilings from c3: pass: spread/ceiling 8.2e-15, |c_g - c3|/ceiling 0.050
+   PASS  i. T5/R2's spectrum exactly at the next order, its two lowest groups 2% apart: all three pass: {0: 'pass', 1: 'pass', 2: 'pass'}
 2. K3:
    PASS  as recorded: 'resolved': resolved
    PASS  a merged in-span mode, V0 not as expected: the diagnosis is wrong: not resolved, kernel exact: the diagnosis is wrong
@@ -49,6 +50,7 @@ Every verdict path (M8.16.1's DRIVER_PLAN.md v2), on records built from M8.16's;
    PASS  every check passed: QUALIFIED, naming every row and member: QUALIFIED, 10 qualified
    PASS  a row failing K5: not qualified, the verdict QUALIFIED
    PASS  a row failing K6: not qualified
+   PASS  a ladder row whose record has no K6: not qualified
    PASS  the R5 gate failing: the R5 rows not qualified, every other as it was: ['T1/R5', 'T2/R5', 'T3/R5', 'T4/R5']
    PASS  T5J failing: T5/R2 still qualified
    PASS  T5/R2 failing: T5J still qualified
@@ -61,4 +63,6 @@ mutation arms, each of which must turn its assertion red:
    PASS  M2. K3(a) reading check 1 with V0: the merged in-span modes read 'instrument failure': ['instrument failure: the diagnosis is untested', 'instrument failure: the diagnosis is untested', 'instrument failure: the diagnosis is untested']
    PASS  M3. check 2's association by index alone: claim 1d's exchange passes unseen: pass
    PASS  M4. Unresolved taking precedence: claim 1g reads Unresolved: Unresolved
-0 failed of 53
+   PASS  M5. check 1 paired against the leading order, as filed: claim 1i's two lowest groups read fail: {0: 'fail', 1: 'fail', 2: 'pass'}
+   PASS  M6. a missing K6 read as passed, as filed: claim 8's ladder row without K6 qualifies: True
+0 failed of 57

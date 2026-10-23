@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/blake/Desktop/MIT/Stress Tensor/m8_carry_home/dynamics/m8_16_1/soft-slot-dynamics-m8-16-1/dev/verify_b1.py", line 76, in <module>
+    tau = case['spectrum'][g['spectrum_index']]['tau']['value']
+          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+KeyError: 'value'

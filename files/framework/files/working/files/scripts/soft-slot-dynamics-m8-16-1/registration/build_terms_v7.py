@@ -1,14 +1,16 @@
-"""Fill the M8.16.1 terms template (v6) from its sources: every hash, link, quote and number is read or computed here,
+"""Fill the M8.16.1 terms template (v7) from its sources: every hash, link, quote and number is read or computed here,
 none typed. Paths are arguments, and the OpenWave revision of M8.16's terms is pinned. Refuses to overwrite its output.
 
-  python3 -I -B build_terms_v6.py MIT_REPO RULING_1015_JSON OW_COMMIT FOLDER T5_DIR [OUT]
+  python3 -I -B build_terms_v7.py MIT_REPO RULING_1015_JSON OW_COMMIT FOLDER T5_DIR [OUT]
 
 MIT_REPO is a checkout at origin/main; FOLDER is M8.16.1's bench folder, whose pinned values file, BOUNDARY.md,
 DEVLOG.md, the ladder's kept outputs and the logged test outputs are read, each checked against its record; T5_DIR
 holds t5_member_check.out; the template is read from this script's folder. v3 read the bench's preview outputs; v4
 reads the pinned values file in their place. v5 takes the units' fixes to v4: the C3 ray's c_g° named as the prediction
 without the off-ray part, which v4 mislabelled the spherical part, and the floor's groups counted at each cutoff. v6
-cites every entry where the three tests ran, and checks that each cited entry records a test's run."""
+cites every entry where the three tests ran, and checks that each cited entry records a test's run. v7 takes the
+maintainer's B1 on #650: check 1 matched against the next-order values, and the K3(a) paragraph with it; test 1's
+T5 claim, with its arms counted from its output; and the tests' citation, which gains entry 40."""
 import ast
 import hashlib
 import json
@@ -185,9 +187,12 @@ for N, name, z in re.findall(r'N = (\d+), group 2, (c[23]): ([-+0-9.e]+ [-+][0-9
 spread = max(abs(p['c3'] - p['c2']) for p in pairs.values())
 decades = [float(x) for x in re.findall(r', ([0-9.]+) decades, entry 8', rec)]
 assert len(pairs) == 3 and len(decades) == 6
-tv = re.search(r'^0 failed of (\d+)$', logged(folder('run', 'test_verdicts.out')).decode('utf-8'), re.M)[1]
+tv_text = logged(folder('run', 'test_verdicts.out')).decode('utf-8')
+tv = re.search(r'^0 failed of (\d+)$', tv_text, re.M)[1]
+tm = len(re.findall(r'^   PASS  M\d+\. ', tv_text, re.M))      # test 1's mutation arms, each red
+assert tm and not re.search(r'^   FAIL ', tv_text, re.M)
 entries = dict(re.findall(r'^## (\d+)\. (.*?)(?=^## \d+\. |\Z)', devlog, re.M | re.S))
-for n in (14, 15, 16, 23, 28, 29, 30):                # the tests section's citation: each entry records a test's run
+for n in (14, 15, 16, 23, 28, 29, 30, 40):                # the tests section's citation: each entry records a test's run
     assert str(n) in entries and re.search(r'test_(?:verdicts|constants|imports)', entries[str(n)]), n
 tg = re.search(r'^0 failed of (\d+)$', logged(folder('run', 'test_guard.out')).decode('utf-8'), re.M)[1]
 
@@ -264,14 +269,14 @@ fill = {
     'C3R_OFF': fmt3(c3_tot - c3_c0), 'C3R_C0': fmt3(c3_c0), 'C3R_TOT': fmt3(c3_tot),
     'C3R_RATIO': f'{math.floor(min(ratios))}',
     'T5J_LAM': sci(t5j_lam), 'T5J_MARG': f'{round((t5j_lam / 4.40e-7 - 3) / 100) * 100:,}',
-    'PREVIEW': preview, 'TV_N': tv, 'TG_N': tg,
+    'PREVIEW': preview, 'TV_N': tv, 'TV_M': {4: 'four', 5: 'five', 6: 'six', 7: 'seven'}[tm], 'TG_N': tg,
     'LAD_POINTS': f'{accepted}', 'LAD_GAP': f'{gap:.3f}', 'LAD_AGREE': sci(agree, 1),
     'LAD_FACTOR': f'{factor[("16", 32.0)]:.1f}', 'LAD_DEP16': sci(departure('16', 32.0), 1),
     'LAD_DEP24': sci(departure('24', 32.0), 1),
     'LAD_OVER_EPS': num_list([f'{e:.3g}' for e in over]), 'LAD_OVER_F': num_list([f'{factor[("16", e)]:.1f}' for e in over]),
     'LAD_F_HIGH': f'{math.floor(high)}', 'LAD_HOURS': f'{lad["seconds"] / 3600:.2f}',
 }
-text = open(f'{HERE}/terms_template_v6.md', encoding='utf-8').read()
+text = open(f'{HERE}/terms_template_v7.md', encoding='utf-8').read()
 used = set(re.findall(r'«([A-Z0-9_]+)»', text))
 assert used == set(fill) | {'WORDS'}, (used ^ (set(fill) | {'WORDS'}))
 for k, v in fill.items():

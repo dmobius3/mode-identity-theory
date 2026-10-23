@@ -930,3 +930,349 @@ This log is copied in again after this entry.
 4. the local commit, verified from its own tree.
 
 The commit's hash is logged after it, on the bench, since a commit cannot hold its own hash.
+
+## 35. 2026-10-22T23:36:08Z: step 1: the local commit `0d6beae76a32`, verified from its own tree; not pushed
+
+**The commit.**
+- `0d6beae76a324d5e5d5e3246f599ae8fbf4e381f`, on `origin/main` at `deec830b29f4`, which a fetch just before the commit found unmoved.
+- It is 1 ahead and 0 behind, so the push would be a fast-forward. It is not pushed.
+- Author and committer: `Blake Shatto <blake@Blakes-MacBook-Air.local>`, as M8.16's filing was made.
+- It changes 198 files: the 197 of the new folder, and the census page's note.
+
+**Verified from the committed tree,** extracted by `git archive`, not from the working copy:
+- `shasum -a 256 -c SHA256SUMS` passes, with 196 OK and no other line;
+- the manifest, recomputed, equals the pin over 48 files;
+- the census note names the terms' SHA-256 and the pin once each;
+- `REPRODUCE.md` equals the bench's.
+
+**What the commit carries.** The committed log ends at entry 34. This entry and any later ones stay on the bench until the next filing, the run's record, since a commit cannot hold its own hash.
+
+**Next,** each on Blake's word:
+1. the push, `git push origin HEAD:main`, after a fetch, as a fast-forward from `deec830`;
+2. step 2, the OpenWave branch, pushed to the fork, after which Blake opens the pull request.
+
+## 36. 2026-10-22T23:41:12Z: step 1 landed: `0d6beae76a32` pushed to MIT `main`, and read back live
+
+Blake, in his own words: "go on the push".
+
+**The push.** MIT was fetched again, and `origin/main` was still `deec830b29f4`, the commit's parent. `git push origin HEAD:main` was a fast-forward, `deec830b..0d6beae7`, and `ls-remote` shows `main` at `0d6beae76a324d5e5d5e3246f599ae8fbf4e381f`.
+
+**Read back live,** through GitHub's API, at `main`:
+- `REPRODUCE.md`, `run/m8_16_task_details.md` and `run/MANIFEST_PIN` equal the bench's;
+- the census page renders 114 math elements for its 114 math spans;
+- its new note names the terms' SHA-256 and the pin once each, and links the folder's `REPRODUCE.md`.
+
+**What is current.** MIT `main` and this worktree are at `0d6beae`. Blake's main checkout shows the folder once it pulls. The bench's log holds entries 35 and 36, and they reach the folder with the run's record.
+
+**Next, on Blake's word:** step 2, the OpenWave branch, pushed to the fork. It carries the task doc, byte for byte `run/m8_16_task_details.md`, and the roadmap's four edits. Blake opens the pull request.
+
+## 37. 2026-10-22T23:51:30Z: step 2: the OpenWave branch pushed to the fork; Blake opens the pull request
+
+Blake, in his own words: "go on step 2".
+
+**Before branching,** with `upstream` fetched again, at `42b13ab9b65d67f13a01b99af2811e4d4416b051`:
+- **The links.** Every link in the terms resolves: 11 distinct, each read through GitHub's API. That covers the blobs at their commits, with their anchors in the rendered pages, the three #512 comments, #640's review and #642. A made-up anchor, comment and review each fail the same check.
+- **No collision.** No file on `upstream/main` names M8.16.1, no M8 commit has landed since #642, and no pull request is open.
+- **Run-before-write holds:** M8.16 ran and was adjudicated (#640), and the column has since landed only its after-verdict records (#642).
+- **The openings.** M8.13 to M8.16's task docs open with their title and "Pre-registration, for review.", as this one does.
+
+**The branch.** `m8-16-1-second-and-last-qualification-2026-10-22`, on the fork, at `0d290498e6bb1e2783e45d09c1892668caa94c7c`.
+- It is one commit on `upstream/main` `42b13ab9b65d`, signed off for the DCO in the clone's local identity, with the Co-Authored-By line.
+- It changes 2 files, 404 insertions(+), 3 deletions(-):
+  - **`tasks/m8_16_1_task_details.md`, new:** MIT `0d6beae`'s `run/m8_16_task_details.md`, byte for byte. Read back raw from the fork through the API, its SHA-256 is the terms', `eb30e781577abf27690471110b9f161afac34d3bd9a27d7dfa6965962a9af7bd`.
+  - **`m8_roadmap.md`:** the BACKLOG row allocating M8.16.1 (`ROADMAP_STANDARDS.md` § 6), the two M8 status rows the ruling's roadmap condition names, and the snapshot's date, 2026-10-22. Read back from the fork, it equals the commit's.
+
+**Checks,** on the branch:
+- `check_roadmaps.py` is clean on all 7 roadmaps. The row's Description is 59 words of 65, and its Title 11 of 15. An arm adding seven words to the Description fails it, at 66;
+- `check_models_md.py` is clean;
+- `check_no_local.py --require-files` is clean on both files, and `--staged` on the commit.
+
+**The pull request's text** is the bench's `m8_16_1_pr_body_v1.md`, SHA-256 `ee97a6a100eb9939c451fa42fa4d703df523289b67f935350648e7a93619dc82`, on Blake's clipboard.
+- **Its form:** 581 words, one line per paragraph. Its 5 distinct links resolve, MIT's at `0d6beae`.
+- **Its title,** in `m8_16_1_pr_title_v1.txt`: "M8.16.1: pre-registration for the harmonic Galerkin instrument's second and last qualification".
+- **On the units:** it says both units confirmed the final text, and no more, since one of them did not rebuild it.
+
+**Next:**
+1. Blake opens the pull request against `openwave-labs/openwave` `main`.
+2. The review. A change to any word of the terms redoes, on MIT `main` before the go, the terms' two copies, the pin, `SHA256SUMS` and a census note (UB's item 9 for M8.16). A change to the roadmap's rows or the pull request's text does not touch the pin.
+3. The merge, then the maintainer's go.
+4. `write_guard.py`, then the freeze block with `record_environment.py --check`'s two readings, then the run, on mains power with sleep off.
+
+## 38. 2026-10-23T00:13:42Z: step 2: Blake opened the pull request, OpenWave #650
+
+Blake opened [#650](https://github.com/openwave-labs/openwave/pull/650) at 2026-10-22T23:55:08Z. Its head is the branch entry 37 records, at `0d290498e6bb`, its base is `main`, and its state is open.
+- Its title and body are as drafted, the body `m8_16_1_pr_body_v1.md` byte for byte.
+- DCO, the repository's one check, passes, and GitHub reports it mergeable. It changes the two files entry 37 records: `m8_roadmap.md` +4 −3, `tasks/m8_16_1_task_details.md` +400 −0.
+
+Blake, in his own words: "now we wait".
+
+**Next:**
+1. The maintainer's review. Each finding is verified at source before anything changes. A change to any word of the terms redoes, on MIT `main` before the go, the terms' two copies, the pin, `SHA256SUMS` and a census note, and the task doc follows in #650. A change to the roadmap's rows or the pull request's text does not touch the pin.
+2. The merge.
+3. The maintainer's go.
+4. `write_guard.py`, then the freeze block with `record_environment.py --check`'s two readings, then the run, on mains power with sleep off.
+
+## 39. 2026-10-23T21:00:34Z: xrodz's review of #650: changes requested on one blocking item, B1; verified at source (case: synthetic)
+
+**The review,** [#650's](https://github.com/openwave-labs/openwave/pull/650#pullrequestreview-5631395680), 2026-10-23T16:31:16Z, CHANGES_REQUESTED. Its text is kept on the bench as `xrodz_review_650_5631395680.md`, SHA-256 `85a0f06ca8324faf79ce98540c56f7e0bc420cacf09ee0cec962505853bb1603`.
+- **B1, blocking.** Check 1 takes K2's assignment, `checks.match`, which pairs the computed values with the leading-order predictions `εκs_gτ` by least total relative distance. At T5/R2 the two lowest groups sit 2.0% apart at leading order, and at `ε = 1` their next-order shifts are about as large. So on a spectrum where Proposition N holds exactly, the assignment exchanges them, `h_g(1)` is read off the other group, the spread exceeds the ceiling and the bar reads fail. T5/R2 would fail K5 and never be offered to this instrument again.
+  - The fix is the author's. The review offers three: pair against `εκs_g + ε²c_g`; carry each group's identity from `ε = 0.25`; or keep the order of `|λ|` within a bucket.
+  - Test 1 then wants a T5 arm that goes red on the current pairing.
+- **Comment tier, optional while the pin is redone:**
+  - `check_ray`'s discrimination reads True when no group reached checks 1 and 2;
+  - `verdict`'s `.get('K6', True)` would qualify a ladder row whose record has no K6 key;
+  - `write_guard.py`'s inventory comparison reads the values file on both sides.
+- **Found right by the maintainer:** the terms, the pin, the instrument, the boundary, the frozen values, the pyramid's known outcome, T5's second member, the code against the terms apart from B1, the sealing, the conditions and the linters.
+
+**Verified at source.** `dev/verify_b1.py` was run from this folder as it stands at the pin, `146bb7b1…`, with nothing in it changed. For every case the bar reads, it builds a synthetic record whose slow spectrum is exactly `εκs_g + ε²c_g(N)` at each cutoff and at the three points, from `run/next_order_values.json` as `cases.py` serializes it, with a consistent summary. It stubs `checks.k1` and `checks.converged` true, so check 1 reduces to the matching. It then scores the record with `checks.bar`, and tests `checks.match` alone.
+- **Two attempts,** each kept with its script, output and stderr:
+  - `dev/runs/019_1_*` stopped on its own report line, which read a `τ` given only as a fraction, before scoring anything;
+  - `dev/runs/019_2_*`, with `τ` read by `checks.num`, exited 0 with an empty stderr. Script `33382c8ebff32d326dfee4d94fb46d78503b05f2e1c16be5f86a312df2edabb1`, output `0fe653d47d3873b8de1d4156c7a23376546a907ba098977ec1d2f86d60c8d668`.
+- **T5/R2's two lowest groups,** `τ` = 2.6886 and 2.7413, read fail at every cutoff by check 3. The numbers are the review's: at `N = 16`, the spread 1.69e-04 over the ceiling 5.05e-05. The second group also fails check 4 at 24 and 32.
+- **Every other group passes:** 35 of the 37 groups under the bar in the 12 cases.
+- **The exchange.** `match` moves a value to another entry only at T5/R2, at `ε = 1`, at every cutoff. There the straight pairing costs 0.0404 and the exchanged one 0.0400 at `N = 24` and 32, and 0.0394 against 0.0390 at 16.
+
+So B1 holds as stated.
+
+**Also read at source:**
+- K2 uses the assignment for its counts alone, so an exchange within a bucket cannot change it.
+- The leading-order readings at 0.5, 1 and 2 are reported, unscored.
+- So the bar is the only scored reading the exchange reaches: K5, K3(a) and K4's pyramid item, and the C3 ray.
+
+**Next:** the repair, for Blake's decision, and then the units.
+
+## 40. 2026-10-23T21:11:40Z: the repair for #650's B1, built: check 1 matched against the next-order values; a ladder row without K6 fails closed; test 1's T5 claim and two arms; every rerun
+
+Blake, in his own words: "go on building the repair for the units". It follows my recommendation after entry 39: B1 by the review's first fix, and of the comment tier the K6 default alone.
+
+**The changes,** from the filed files at MIT `0d6beae`, whose pin is `146bb7b1…`:
+- **`run/checks.py`,** `3496347436fce7c768969a97387992eff401ba1781b6e95c60e3b9eeafada47e` to `c3122cd0ac692e16a5a6fb7fde178e13b27d9bb1632ad8eed32432b2c6919b84`:
+  - `predicted_next`, new: each frozen spectrum entry's next-order prediction, `εκs_g + ε²c_g(N)` at the cutoff, from the case's values. It returns None when the values lack an entry.
+  - `mode_values`: the assignment is K2's, one to one by class and Krein sign with multiplicity and the least total relative distance, but against `predicted_next` in place of the leading order. It now takes the cutoff. Its reported deviation is still each value's from the leading order, as the terms report it (§ THE NEXT-ORDER BAR, "Reported, unscored").
+  - `bar_cutoff` passes the cutoff.
+  - `k6_holds`, new, read by `verdict`: a row whose case names M8.15's record qualifies only on its own K6 key, and a record without one fails closed. A row with no ladder has no K6.
+- **`run/test_verdicts.py`,** `78097e817d32b9e56b6d03b12a687ce629742ca7e17577010f2f6b6676dc4419` to `498a700d46d195f9b4d9edb93d86fe97dc58ed976f3ca8286cb6910a3c988dae`:
+  - claim 1i: on a synthetic T5/R2 record whose slow spectrum is exactly `εκs_g + ε²c_g(N)` at every cutoff and point, with K1, the convergence reading and a consistent summary in place, all three groups pass;
+  - claim 8 gains a ladder row whose record has no K6, which is not qualified;
+  - arm M5 restores the filed pairing, against the leading order, and arm M6 the filed K6 default.
+- **`dev/verify_b1_fixed.py`,** new: entry 39's harness on the repaired code, with an arm.
+
+**Left as they are,** of the comment tier, with the reason each has in the review:
+- `check_ray`'s discrimination: when no group reaches checks 1 and 2, the ray's outcome already reads failed through the bar, and the ray gates nothing;
+- `write_guard.py`'s inventory comparison: the protection is `_tie` and the bar-membership rule.
+
+**The runs,** one at a time, each with its outputs kept before the next started, each with an empty stderr:
+1. **`run/test_verdicts.py MIT_REPO`** (`dev/runs/020_1_*`): 0 failed of 57.
+   - Against the filed output, only the four new checks and the count differ. So every earlier outcome, the pyramid's included, reads as before.
+   - M5 reads T5's two lowest groups fail and its third pass, B1's outcome. M6 qualifies the ladder row without K6.
+   - Output `aba8d4b2c900446efa8c77aac079507d1e91b8425145881af8af5baf9195bd21`.
+2. **`dev/verify_b1_fixed.py`** (`dev/runs/020_2_*`): every one of the 37 groups under the bar in the 12 cases passes, on a spectrum exactly at the next order. `mode_values` gives every entry its own value, at every case, cutoff and point. With the filed pairing restored, the first claim is red at T5/R2's two lowest groups alone. Output `3ac4290d1441f48f34f74db5cde247247db083913f10168a46925afc3b9557ab`.
+3. **Every other script that reads `run/checks.py`,** each output byte for byte the filed one:
+
+| Script | Kept as | Exit | Its last line | Against the filed output |
+| --- | --- | --- | --- | --- |
+| `run/test_guard.py` | `dev/runs/020_3_*` | 0 | "0 failed of 126" | equal |
+| `run/test_constants.py` | `dev/runs/020_4_*` | 0 | "0 failed" | equal |
+| `run/test_imports.py` | `dev/runs/020_5_*` | 0 | "0 failed" | equal |
+| `run/test_k3.py` | `dev/runs/020_6_*` | 0 | "0 failed" | equal |
+| `run/score_record.py` | `dev/runs/020_7_*` | 0 | "0 of 8 claims failed; no verdict is computed" | equal |
+| `run/score_plumbing.py` | `dev/runs/020_8_*` | 0 | "0 failed" | equal |
+| `run/score_ladder.py` | `dev/runs/020_9_*` | 1 | "2 failed" | equal |
+
+`run/test_constants.py` read terms v6 there. `run/score_ladder.py` read `run/dry/` holding `dev/runs/015_ladder/`'s five files, copied in for its run and removed after, each verified equal to its kept copy, as entry 26 ran it.
+
+**The pin.** The bench's manifest is now `285917ee…`, no longer the pin `146bb7b1…`. That pin is retired at the re-filing, as M8.16's `c1ea8f2` retired its first.
+
+**Next:**
+- terms v7, built at `deec830`. It carries check 1's matching, the K3(a) paragraph's, test 1's list with its count and arms, and the tests' citation, which gains this entry;
+- the constant test on v7's text;
+- the units.
+
+## 41. 2026-10-23T21:13:41Z: terms v7, built at `deec830`, and the constant test on its text
+
+**The build.** The bench's `build_terms_v7.py` `da1c5e9cb5ec28c6287d41defe4d3cc9e05b1fe74a0ccd7419dbac7890b819e7` filled `terms_template_v7.md` `71aeacea0715b01168ac4aaad6bd17fc7cf62032db2d41ba11a23e4402e3f59b`, with `MIT_REPO` a scratch full clone whose `HEAD` and `origin/main` were both `deec830b29f4`, set by the two commands `REPRODUCE.md` gives. It read this folder, with the log through entry 40, and the answer of 2026-10-15 in `registration/`. It exited 0, with an empty stderr.
+- **The text:** terms v7, `m8_16_1_task_details.md`, SHA-256 `9d16712982e5388970fca33de59958721109e09f9d88dec7a2a088489ad3efd6`, 7,669 words by `wc -w`. It replaces v6 at the bench's canonical path, whose bytes are kept in `filing_review_v1/` and at MIT `0d6beae`.
+- **Against v6,** the text differs in five places (49c49, 183c183, 187c187, 307a308, 315,316c316,317 in `diff`'s numbering), and nowhere else:
+  - check 1 matches each group as in K2, but against its next-order value, `εκs_g + ε²c_g(N)`, in place of its leading order, with the reason: T5's two lowest groups;
+  - the K3(a) paragraph matches against the next-order values too;
+  - test 1's list gains the T5 claim;
+  - the tests' citation gains entry 40, with test 1's count, 57, and its arms, six;
+  - the word count, computed, reads about 7,700.
+
+  Its citations of MIT pages stay at `deec830`, as built.
+- **The builder,** against v6's: the template's name; the tests' citation checked at entry 40 too; and test 1's arms counted from its output, which must hold no failure.
+
+**The run:** `run/test_constants.py MIT_REPO ../m8_16_1_task_details.md` on v7, kept as `dev/runs/021_*`. It exited 0, with an empty stderr. Every claim holds, and all six arms are red. Its output differs from entry 40's run on v6 only in the line naming the terms' SHA-256. Output `b224670fa5ed006469ec3a90d365f60823505999ea709b670df1b59857bde02b`.
+
+**Next:** the re-filing's plan and drafts, and the units' packet.
+
+## 42. 2026-10-23T21:15:12Z: run `dev/b1_margins.py`, the margins behind B1's fix (case: synthetic; arithmetic on the pinned values, nothing scored)
+
+**Why.** Before the fix of entry 40 was chosen, the review's three options were weighed on the pinned values in a scratch computation, which this run makes a logged script. It runs on the folder as it stands, with entry 40's code; it reads only the values and `checks.py`'s constants.
+
+**Script** `dac25068704aa19d97f882039ab64bd416e4e2e78ede74b2647182e904c35b71`, kept as `dev/runs/022_*` with its output and an empty stderr. Output `b7ae992c6b4db019812ebd466698c570acdd1ae6d9f1881acbe3349b20066366`.
+
+**Outcome,** over every case the bar reads, every cutoff and the three points, within each class-and-sign bucket:
+- **No two groups change order by `|λ|`** between `εκs_g` and `εκs_g + ε²c_g(N)`. So keeping the order of `|λ|`, the review's third option, would have paired every exact spectrum correctly too.
+- **The smallest separation** of two groups' next-order predictions is 9.8 ceilings, as a shift of `λ`, at T5/R2, `ε = 1`, `N = 24`, over 90 buckets of two groups or more.
+  - So matching against the next-order values, the option entry 40 takes, can move a value only where some group lies about half that far from its prediction.
+  - A group that far off already fails check 3, whose spread moves by a third of the shift at `ε = 1`.
+
+## 43. 2026-10-23T21:20:07Z: the re-filing's plan and drafts, and the units' packet, self-checked
+
+**Drafted** on the bench, with nothing committed, pushed or posted:
+- `REFILING_PLAN.md` v1, `9226af187e487d4ca2e028dabc9d25712f647c4a0a5854c4ba97893ec9412b96`: M8.16's revision after #637, step for step;
+- `refiling_drafts/`: the census note, `REPRODUCE.md` with three lines changed, the two commit messages, the reply to the review, and the pull request's revised paragraph. Values known only at re-filing are marked, to be computed then.
+
+**The packet,** `repair_review_v1.zip`, 279 files, SHA-256 `ef8d11f4c235054136e5eeb404c1a025842a3e19d7a03ccb699adf53ea277136`. It holds the plan and drafts; the review; terms v7 with its source; diffs against MIT `0d6beae` and against v6; this folder through entry 42; and M8.16's revision records.
+
+**Self-checks,** each in a scratch copy:
+- terms v7 rebuilds from the packet's own copies byte for byte, with a clone set at `deec830`;
+- `run/test_verdicts.py` (0 failed of 57) and `dev/verify_b1_fixed.py` reproduce their outputs on a copy of the packet's folder;
+- `dev/verify_b1.py`, copied into MIT `0d6beae`'s folder as `git archive` extracts it, reproduces entry 39's output byte for byte;
+- **the scan:** no hit outside the folder. In it there are two, for the units (the plan's item g):
+  - `dev/runs/019_1_verify_b1.err`, the traceback of entry 39's first attempt, names the bench's path;
+  - entry 35 names the MIT commit identity.
+
+  The plan proposes filing both as they are, as M8.16 filed its kept driver logs.
+
+**Next:** the units' replies. Then the re-filing, each outward step on Blake's word.
+
+## 44. 2026-10-23T21:38:39Z: the units on the repair: GO from both, with fixes; the margin verified at source; corrections to entries 42 and 43
+
+Blake relayed both replies on `repair_review_v1`, with no words of his own. So the re-filing waits for his own word.
+- **UA:** GO on items (a) to (e) and (g), and CHANGE on (f).
+  - The reply's sentence on the margin overstates it. Checks 3 and 4 pass `λ = μ₀ε + c_gε² + dε³` at any `d`, since `h = c_g + dε` is linear and both extrapolations are exact on it. Entry 42 makes the same inference, and a dated correction should record it, with entry 42 left as logged.
+  - UA confirms the code, the tests and v7 by review. It ran the fixed harness itself, but did not rebuild v7 or rerun test 1 against MIT's history.
+  - Keep both scan findings as they are.
+- **UB:** GO on (a) to (g), with two CHANGEs to the reply, a NIT and a third scan finding.
+  - UB rebuilt v7 at `deec830`, byte for byte, and reran test 1 (57 of 57), the harnesses and the other scripts.
+  - Its own pairing, from the values file alone, fails T5/R2's groups 0 and 1 at every cutoff when matched against the leading order, and fails nothing when matched against the next order.
+  - **The first CHANGE** is the margin sentence, in UB's words: the 9.8 ceilings are the whole margin, since two groups pushed toward each other by `ε³` terms exchange there with no check failing.
+  - **The second CHANGE:** "Everything else is byte for byte the filed tree" becomes "Unchanged, byte for byte", since the log, `REPRODUCE.md`, `SHA256SUMS`, `registration/` and `dev/` change too. UB's last line holds once both go in exactly as given.
+  - **The NIT:** the plan's step 8 changes four lines of `REPRODUCE.md`, not three, and entry 43 says three too.
+  - **The third finding:** `dev/runs/020_3_test_guard.stdout` names macOS temp folders, to be filed as it is, with `var/folders` added to the scan.
+  - **Open, Blake's call:** closing the margin fully, by matching `ε = 1` against each group's own extrapolation from 0.25 and 0.5.
+
+**Verified at source.** `dev/verify_e3_margin.py` `c11d543b7c6063fdef36c5f86cad0e6bb20275d0a879310ee017cf0f4946384e` uses entry 39's harness on the repaired code. It is kept as `dev/runs/023_*`, exited 0 with an empty stderr, and its output is `058c8c62aeed56975a4ef64f6dbabc4ec40d1c7075f53236cce51648c0d9fc21`.
+- A pure `ε³` term of 50 ceilings at `ε = 1`, on T5/R2's lowest group, away from the next, passes every group.
+- `ε³` terms on T5/R2's two lowest groups toward each other, in each group's own ceiling: at 4.5 each every group passes, each with its own value; at 5.5 the two read fail, their values exchanged. These are UB's numbers.
+- **Reported, unscored, for scale:** the pyramid's recorded departure from `εκs_g + ε²c_g(N)` at the point nearest 1 is 1.16 ceilings for the quartet and 0.11 for the Krein-positive pair, at `N = 24` and 32, and 1.13 and 0.16 at 16. These are UB's figures, at 24 and 32.
+- **UB's third finding** holds: 6 lines of `dev/runs/020_3_test_guard.stdout`, each naming a different temp folder, against UB's five. The filed tree has none, and `run/test_guard.out` has none. The earlier scans missed them, because their pattern for `/private/var/` does not match the relative `var/folders` the driver prints.
+
+**Corrections, by this entry, to entries left as logged:**
+- **Entry 42's last two sentences.** The 9.8-ceiling separation is a measured margin, not a guarantee from check 3. The last sentence holds for a shift at `ε = 1` alone. Checks 3 and 4 pass a pure `ε³` term at any size, so two groups whose values depart toward each other by 9.8 ceilings in all, at `ε = 1`, exchange with no check failing.
+- **Entry 43's "`REPRODUCE.md` with three lines changed"** reads "four lines": lines 33, 57, 77 and 78 of the draft.
+
+**Adopted:**
+- the reply takes UB's two replacements exactly as given;
+- the plan, now v2, takes the NIT, names the three scan findings, each to be filed as it is, and adds `var/folders` to the scan;
+- the adjudication on the margin sentence: UB's text, which UB asked to go in exactly, also makes UA's correction. It says the margin is measured, and why no check covers it.
+
+**Next:** Blake's call on UB's open item, and then his word for the re-filing.
+
+## 45. 2026-10-23T21:45:40Z: the units on the open call: file the fix as reviewed; Blake's word for the re-filing's step 1
+
+Blake, in his own words: "go if/when gucci w/", with both units' replies on entry 44's open call. The plan is v2, the bench's `REFILING_PLAN.md`, `48e5a4471f86bf69e8b7ac532f303487330a2aa57a906e622c621e70f6128429`.
+- **UA:** GO on step 1, filing the repair as reviewed. Do not build the stronger matching rule first.
+  - The cubic-term counterexample changes the strength of the claim, not the ruling on the repair.
+  - The distinction to keep:
+    - DERIVED: the next-order matching repairs B1's demonstrated misassignment on the registered predictions;
+    - OPEN: whether higher-order terms can cause a different assignment on T5's actual readings at finite amplitude.
+
+    Neither the margin nor this uncertainty is to be read as a theorem, a certified bound or a guaranteed margin.
+  - If xrodz asks for his second option, or finds the residual ambiguity unacceptable, the stronger rule is built and registered then, before his go.
+  - Stop after the verified local commit.
+- **UB:** CONFIRM, filing as reviewed, now.
+  - **A correction to its own reply:** the test log holds six temp-folder paths, as entry 44 counted. UB's search had stopped after five lines, and those six are the only matches in the folder.
+  - **The margin, on the closest comparison:** the pyramid's Krein-positive pair departs about 45 times less than a swap at T5 needs, 0.11 ceilings against 4.9. The quartet's ratio is only about 4, but its `c_g` is twelve times T5's relative to `κs`, so it is a weaker guide.
+  - T5's two groups have next-order coefficients alike, −0.0207 and −0.0197 of `κs`.
+  - The stronger rule has costs of its own: an error at 0.25 or 0.5 carries forward.
+  - **A limit on "nothing is lost":** the matching can change before `FROZEN.json` is written, not after.
+  - UB checks the applied text, entry 44 and the corrected reply in the next packet. Its GO covers its two replacements exactly as given.
+
+**Decided:** the repair is filed as reviewed. The stronger rule is not built unless the maintainer asks, and then before the freeze.
+
+**Next:** the re-filing's step 1, in the plan's order, through a local commit verified from its own tree; then the units' short look at the applied texts. The push, OpenWave's commit and the reply each wait for Blake's word.
+
+## 46. 2026-10-23T21:47:26Z: the re-filing's step 1 stops at the sync: MIT's `main` has moved; and one new scan hit
+
+Under entry 45's word, steps 1 and 2 ran, read-only, and step 1 stops there, as the plan says, for the units and Blake.
+
+**The sync.** MIT was fetched. `origin/main` is `1ac1c7bcce03`, one commit past the filing commit `0d6beae`, at which this worktree's `HEAD` still stands, unchanged.
+- **The commit:** `1ac1c7bc framework page: the gravity interface and five stale lines`, Blake's, changing `files/framework/README.md` alone.
+- It touches none of these: this folder, the census page, the pages the terms cite, M8.16's folder or M8.15's.
+- The five target records' blob ids at `origin/main` and at their named commit equal `run/targets.json`'s, all ten readings.
+- **For Blake's call:** M8.16's sync rule fast-forwarded past such commits once they were checked (M8.16's entries 280 and 281). This plan's step 1 is stricter, and stops.
+
+**The scan** of the folder's 249 files and v7's two source files has no hit beyond step 2's three findings, apart from one:
+- **OpenWave's `check_no_local.py`** reads entry 44's mention of the pattern `/private/var/` as a machine-local path, and fails on that line. The line names a pattern, not a path. The log is never edited, and it is filed in MIT alone.
+- **The three findings** are as step 2 names them: `dev/runs/019_1_verify_b1.err`, entry 35's commit identity and `dev/runs/020_3_test_guard.stdout`.
+
+Nothing was written or pinned, and nothing in this folder changed apart from this entry.
+
+**Next,** on Blake's word: the worktree brought up to `origin/main` as a fast-forward, the sync's check recorded, and step 1 from step 3, with this hit filed as it is.
+
+## 47. 2026-10-23T21:49:30Z: the re-filing's step 1 through the pin: the worktree fast-forwarded, the terms' source and their rebuild, the terms in `run/`, the environment, the new pin
+
+Blake, in his own words: "go ahead, fast-forward and continue step 1".
+
+**The sync.** The app's `sync_with_base_branch` refused, since this repository has no git identity configured, as the bench's notes record. This worktree was behind `origin/main` only, so `git merge --ff-only origin/main` brought it to `1ac1c7bcce03101e8be9ec9a2138791cbb49e759`, with no merge commit and nothing uncommitted. Entry 46 records the one commit it took in, which touches nothing the filing reads.
+
+**The scan** stands as entry 46 records it. The three findings and entry 44's mention of a pattern are filed as they are.
+
+**The terms' source.** `registration/` lost v6's builder, template and built text, each first checked equal to its blob at MIT `0d6beae`, where their bytes stay. It gained:
+- `registration/build_terms_v7.py` `da1c5e9cb5ec28c6287d41defe4d3cc9e05b1fe74a0ccd7419dbac7890b819e7` (entry 41);
+- `registration/terms_template_v7.md` `71aeacea0715b01168ac4aaad6bd17fc7cf62032db2d41ba11a23e4402e3f59b` (entry 41).
+
+**The terms, rebuilt there.** From this folder, `python3 -I -B registration/build_terms_v7.py MIT_REPO registration/ruling_1015.json 5b7a56b85d733d53e257cf7559b1b69ac05276a2 . registration` ran with `MIT_REPO` the scratch full clone set at `deec830`. It exited 0 with an empty stderr, and wrote `registration/m8_16_1_task_details.md` `9d16712982e5388970fca33de59958721109e09f9d88dec7a2a088489ad3efd6`, terms v7 byte for byte.
+
+**The terms in `run/`.** v6's copy was removed, first checked equal to its blob at `0d6beae`. v7 was copied in by exclusive create: `run/m8_16_task_details.md` `9d16712982e5388970fca33de59958721109e09f9d88dec7a2a088489ad3efd6`.
+
+**The environment record** is unchanged, `4d666fce6cddfca04d0950f6cbe3ad2524056e60f52196921a18549680ee9354`, and `--check` found no difference.
+
+**The pin.**
+- The filed `run/MANIFEST_PIN`, `146bb7b1…`, was removed: it is retired, not reused, and its bytes stay at `0d6beae`.
+- `run/pin_manifest.py` wrote the new pin by exclusive create: `8cc2d7e2d01a72fc3572adabf917656abf36cbddd70ed35532b73ae5451790dd`, over the same 48 paths. `instrument/` holds 12, `reference/m815/` 3 and `run/` 33.
+- The manifest, recomputed, equals it, and a second pin was refused with `FileExistsError`.
+
+From here no manifest-covered file changes (UA), and every test runs in a scratch copy only (UB).
+
+## 48. 2026-10-23T22:03:59Z: the re-filing's step 1, the folder: the scratch tests, `REPRODUCE.md`, the folder in MIT's worktree, the census note
+
+**The scratch tests,** as the filing's (entry 34): a copy of this folder, without `run/dry/`, caches and `.DS_Store`, started at the new pin `8cc2d7e2…`, with `run/dry/` restored from its kept copies. The scripts ran one at a time, under `python3 -I -B`, with `MIT_REPO` this worktree at `1ac1c7b`, each with an empty stderr:
+  - `run/test_guard.py`: exit 0, "0 failed of 126";
+  - `run/test_verdicts.py`: exit 0, "0 failed of 57";
+  - `run/test_constants.py`: exit 0, "0 failed";
+  - `run/test_imports.py`: exit 0, "0 failed";
+  - `run/test_k3.py`: exit 0, "0 failed";
+  - `run/score_record.py`: exit 0, "0 of 8 claims failed; no verdict is computed";
+  - `run/score_plumbing.py`: exit 0, "0 failed";
+  - `run/score_ladder.py`: exit 1, "2 failed";
+  - `run/build_dry.py`: exit 0, "DRY.json written: ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5']";
+  - `run/next_order_values.py`: exit 0, "ALL CHECKS PASS; every arm red";
+  - `dev/verify_b1_fixed.py`: exit 0, "the arm is red at T5/R2's two lowest groups alone: holds".
+
+- Each output equals this folder's, byte for byte, and so does every one of the manifest's 48 files.
+- The copy's manifest still equals the pin.
+- On a second copy, one byte appended to `run/test_k3.out` was caught by the comparison and by the manifest alike.
+
+**`REPRODUCE.md`** `f24179e0de70f71a38aa6cbfa7acf35ce91d79929f3bf49d298f7dc57a2b7b20`: the filed text, first checked equal to its blob at `0d6beae`, with the reviewed draft's four lines: test 1's count, 57, and the builder's and template's names, v7. Its two checks ran from the folder: the manifest command printed the pin, and `record_environment.py --check` found no difference.
+
+**The folder in MIT's worktree,** at `1ac1c7b`, brought up to this folder:
+- v6's two source files were removed;
+- 54 files were added, `dev/`'s scripts, outputs and kept runs since the filing among them;
+- 9 were changed: the log, `REPRODUCE.md`, the two terms copies, the pin, `checks.py`, `test_verdicts.py` with its output, and `test_constants.out`;
+- the old `SHA256SUMS` was removed, to be written fresh.
+
+Each file equals this folder's, byte for byte, and the manifest, recomputed there, equals the pin. Git ignores none of them. This log is copied in again after this entry.
+
+**The census note,** under § V, step 4, dated 2026-10-23, directly below the note of 2026-10-22, which stands. It gives the revised terms' SHA-256 and the new pin, each read from the folder's files, and says the hashes above are superseded.
+- The page changes by that one line, and its math spans are unchanged, 114.
+- `metadata-lint.py` reports 0 FAIL and 0 WARN. Its new INFO, "body edited 2026-10-22 after Status 2026-10-20", comes from the filing commit's own note. The Status's Next is still M8.16.1, so the Status stands, as M8.16's revision left its own.
+
+**Next:**
+1. this log copied into the worktree's folder;
+2. `SHA256SUMS`, fresh, and `shasum -c`;
+3. the final scan;
+4. the local commit, verified from its own tree.

@@ -1,5 +1,5 @@
 Every constant (M8.16.1's DRIVER_PLAN.md v2): both FROZEN VALUES against the code and a test FROZEN.json.
-   M8.16's terms 86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf; M8.16.1's eb30e781577abf27690471110b9f161afac34d3bd9a27d7dfa6965962a9af7bd
+   M8.16's terms 86992a5f7a278d639042adad2576c666979fa20f3cb53071daa62c614e83d5cf; M8.16.1's 9d16712982e5388970fca33de59958721109e09f9d88dec7a2a088489ad3efd6
 1. PASS: the forward items, 43, of kinds (a), (b) and (c)
 2. PASS: coverage: every number in both sections claimed once
       excluded, M8.16: "- **P5's values** are the continuum's": the P5 values' provenance: the overlaps of M8.15.x's survey, as its REGISTER_2.md reads them; read by no check

@@ -310,33 +310,53 @@ def lagrange0(xs):
     return [math.prod((0 - xs[k]) / (xs[i] - xs[k]) for k in range(len(xs)) if k != i) for i in range(len(xs))]
 
 
-def mode_values(point, case, eps, j, outside=False):
-    """The computed values K2's assignment gives the predicted modes of the frozen spectrum's entry j at eps, with the
-    record groups holding them: (matched, values, groups, deviation). Without outside the matching is K2's, over the
-    whole slow band; with it, the one theorem_r_outside makes, outside the in-span pair's class, as K3(a) reads it.
-    matched is False when the counts differ in any class-and-sign bucket, or the entry's modes are not all assigned. A
-    value held by no record group of its class and sign, or by two, leaves groups None: check 2 reads that."""
+def predicted_next(case, eps, N):
+    """Per frozen spectrum entry, its modes [(cls, sign, lambda)] with multiplicity at lambda = eps kappa s_g +
+    eps^2 c_g(N), the next-order prediction the bar scores, from the case's values at the cutoff N; None when the
+    values lack an entry. Against the leading order, two groups of one class and sign whose next-order shifts match
+    their separation are exchanged, as T5's two lowest are at eps = 1 (xrodz, B1 on #650)."""
+    vals = {g['spectrum_index']: g for g in (case.get('next_order') or {}).get(str(N), [])}
+    if sorted(vals) != list(range(len(case['spectrum']))):
+        return None
+    return [[(m['cls'], m['sign'], complex(eps * _c(vals[j]['kappa_s']) + eps ** 2 * _c(vals[j]['c_g'])))] * m['mult']
+            for j, m in enumerate(case['spectrum'])]
+
+
+def mode_values(point, case, eps, j, N, outside=False):
+    """The computed values the next-order assignment gives the predicted modes of the frozen spectrum's entry j at eps,
+    with the record groups holding them: (matched, values, groups, deviation). The assignment is K2's, one to one by
+    class and Krein sign with multiplicity and the least total relative distance, but against each entry's next-order
+    prediction at the cutoff N (predicted_next) in place of its leading order (xrodz, B1 on #650). Without outside it
+    runs over the whole slow band; with it, outside the in-span pair's class, as K3(a) reads it. matched is False when
+    the counts differ in any class-and-sign bucket, the values lack an entry, or the entry's modes are not all
+    assigned. A value held by no record group of its class and sign, or by two, leaves groups None: check 2 reads
+    that. The deviation is the largest of the entry's values from its leading order, as M8.16 reports it."""
     if not point or 'groups' not in point:
+        return False, None, None, None
+    per = predicted_next(case, eps, N)
+    if per is None:
         return False, None, None, None
     keep = (lambda x: (x[0], x[1]) != ('imag', -1)) if outside else (lambda x: True)
     band = slow_band(case, eps)
-    ok, _, rows = match([x for x in predicted(case, eps) if keep(x)], [x for x in computed(point, band) if keep(x)])
+    ok, _, rows = match([x for e in per for x in e if keep(x)], [x for x in computed(point, band) if keep(x)])
     m = case['spectrum'][j]
-    pj = predicted(dict(case, spectrum=[m]), eps)[0][2]
+    pj = per[j][0][2]
     mine = [r for r in rows if (r[0], r[1]) == (m['cls'], m['sign']) and r[2] == pj]
     if not ok or len(mine) != m['mult']:
         return False, None, None, None
     vals = [r[3] for r in mine]
+    lead = predicted(dict(case, spectrum=[m]), eps)[0][2]
+    dev = max(abs(v - lead) / abs(lead) for v in vals)
     groups, seen = [], set()
     for v in vals:
         hits = [i for i, g in enumerate(point['groups']) if complex(*g['c']) == v and g['cls'] == m['cls']
                 and computed(dict(groups=[g]), math.inf)[0][1] == m['sign']]
         if len(hits) != 1:
-            return True, vals, None, max(r[4] for r in mine)
+            return True, vals, None, dev
         if hits[0] not in seen:
             seen.add(hits[0])
             groups.append(point['groups'][hits[0]])
-    return True, vals, groups, max(r[4] for r in mine)
+    return True, vals, groups, dev
 
 
 def association(point, groups):
@@ -379,7 +399,7 @@ def bar_cutoff(case_out, case, N, g, form='full'):
         one = bool(p and p.get('accepted') and seed and 'groups' in p)
         if one and form == 'full':
             one = k1(p, case) and converged(case_out, eps, case)
-        matched, vals, groups, dev = mode_values(p, case, eps, g['spectrum_index'], outside=form == 'k3a') if one \
+        matched, vals, groups, dev = mode_values(p, case, eps, g['spectrum_index'], N, outside=form == 'k3a') if one \
             else (False, None, None, None)
         if not matched:
             out['c1'] = False
@@ -728,6 +748,12 @@ def r5_failed(results):
     return [k for k in ('K1', 'K4') if not r['checks'][k]]
 
 
+def k6_holds(r):
+    """K6 where the row has a ladder: a row whose case names M8.15's record qualifies only on its own K6 key, and one
+    whose record has none fails closed (xrodz on #650); a row with no ladder has no K6."""
+    return r['checks'].get('K6', False) if r['case'].get('m815') else True
+
+
 def verdict(results, dry=False):
     """THE VERDICT RULE, with M8.16.1's changes: the instrument qualifies on K1 to K4, K3(a) and K4's pyramid item read
     by the next-order bar; a row on K5, read by the bar, and K6 where it has a ladder, with the R5 control passed for an
@@ -752,7 +778,7 @@ def verdict(results, dry=False):
     for n, r in results.items():
         role = r['case']['role']
         if role == 'row':
-            rows[n] = bool(inst and r['checks']['K5'] and r['checks'].get('K6', True) and (r5 or r['case']['slot'] != 'R5'))
+            rows[n] = bool(inst and r['checks']['K5'] and k6_holds(r) and (r5 or r['case']['slot'] != 'R5'))
         elif role == 'member':
             members[n] = bool(inst and r['checks']['K5'])
         elif role == 'ray':

@@ -8,9 +8,11 @@ Each registered outcome is read from a record built from M8.16's recorded output
 record's commit, 87fc643, each against the SHA-256 its RUNLOG.json records, with the fields that outcome turns on
 edited. Each record is scored by checks.py with M8.16.1's serialized case, and the test asserts the text the terms give
 the outcome. Its parent is the same record unedited: the pyramid as recorded passes the bar, and K3 reads 'resolved'
-(the record regression, score_record.py). Four mutations of the scoring code, each made in this process and undone,
+(the record regression, score_record.py). Six mutations of the scoring code, each made in this process and undone,
 turn their targeted assertions red. Nothing is solved, and no sealed case is built or read: the rows, T5's second
 member and the C3 ray are read from the pyramid's record under their roles, and at the verdict from their checks alone.
+Claim 1i's T5/R2 record is synthetic: its slow spectrum is the frozen next-order prediction itself, with nothing solved
+and no record read (xrodz, B1 on #650).
 The stops' and the resume's driver paths are test_guard.py's tests 9 and 10, which run them through this driver; here,
 the verdict's text at each stop.
 
@@ -28,6 +30,10 @@ Claims, derived before the run:
      g. precedence: check 4's failure at N = 16 beside a point not accepted at N = 24 reads fail;
      h. cancellation: the quartet's spread made zero at N = 24 and its c_g set 0.05 ceilings from c3 there, between
         the spread and check 4's floor, passes.
+     i. two groups of one class and sign whose next-order shifts match their separation (xrodz, B1 on #650): on a
+        synthetic T5/R2 record whose slow spectrum is exactly eps kappa s_g + eps^2 c_g(N) at every cutoff and point,
+        with K1, the convergence reading and a consistent summary in place, all three groups pass, its two lowest,
+        2% apart at leading order, among them.
   2. K3: 'resolved' as recorded; 'not resolved, kernel exact: the diagnosis is wrong' for each mark of a merged in-span
      mode at one cutoff (N = 16, eps = 0.25): V0 not as expected, A's zero cluster not separated, the in-span group
      removed; 'instrument failure: the diagnosis is untested' for each break of L's certificate there (a tangent ten
@@ -42,8 +48,8 @@ Claims, derived before the run:
      read Unresolved.
   7. K1, K2 and the controls' K4, on C2a's record: they pass; V0 broken at a point fails K1 and K4; an extra group in
      the slow band fails K2; a mode moved 6% from leading order at eps = 0.25 fails K4.
-  8. The verdict, from the checks: QUALIFIED, naming every row and member; a row failing K5, or K6, is not qualified;
-     the R5 gate failing leaves the R5 rows not qualified and every other as it was; T5J failing leaves T5/R2
+  8. The verdict, from the checks: QUALIFIED, naming every row and member; a row failing K5, or K6, is not qualified,
+     and so is a ladder row whose record has no K6 (xrodz on #650); the R5 gate failing leaves the R5 rows not qualified and every other as it was; T5J failing leaves T5/R2
      qualified, and the reverse; the C3 ray failing leaves the verdict and every row and member as they were, its
      outcome reported; a control failing K4, and the pyramid's K3 not resolved, each read NOT QUALIFIED naming the
      check, with no row or member qualified; a dry run reads incomplete.
@@ -52,6 +58,8 @@ Mutation arms, each of which must turn its assertion red:
   M2. K3(a) reading check 1 as the terms write it, with V0: claim 2's merged in-span modes read 'instrument failure'.
   M3. check 2's association by index alone, without its consistency: claim 1d's exchange passes check 2.
   M4. Unresolved taking precedence over a failure: claim 1g reads Unresolved.
+  M5. check 1 pairing against the leading order, as filed at MIT 0d6beae: claim 1i's two lowest groups read fail.
+  M6. a missing K6 read as passed, as filed: claim 8's ladder row without K6 qualifies.
 """
 import copy
 import hashlib
@@ -117,7 +125,7 @@ def index_of(c, cls, krein):
 
 def holder(o, c, N, e, gi):
     """The record group holding the frozen group gi's value at (N, e), and its convergence-summary entry."""
-    _, _, groups, _ = ck.mode_values(pt(o, N, e), c, e, c['next_order'][N][gi]['spectrum_index'])
+    _, _, groups, _ = ck.mode_values(pt(o, N, e), c, e, c['next_order'][N][gi]['spectrum_index'], N)
     g = groups[0]
     return g, next(x for x in pt(o, N, e)['summary']['groups'] if sorted(x['idx']) == sorted(g['idx']))
 
@@ -148,6 +156,29 @@ def move_c2(o, c, N, gi, target):
 
 def readings(o, c, form='full'):
     return {gi: r['reading'] for gi, r in ck.bar(o, c, form).items()}
+
+
+def exact_t5():
+    """Claim 1i's record: T5/R2's slow spectrum at exactly eps kappa s_g + eps^2 c_g(N), one group per frozen entry at
+    every cutoff and point, with K1, the convergence reading and a consistent summary in place. Nothing is solved and
+    no record is read."""
+    c = case('T5/R2')
+    o = dict(cutoffs={}, readings={ck.key(e): dict(verdict='converged', type=c['type']) for e in ck.NEXT_EPS})
+    for N in c['next_order']:
+        pts = {}
+        for e in ck.NEXT_EPS:
+            groups, k = [], 0
+            for j, modes in enumerate(ck.predicted_next(c, e, N)):
+                m, lam = c['spectrum'][j], modes[0][2]
+                groups.append(dict(c=[lam.real, lam.imag], cls=m['cls'], status='definite', size=m['mult'],
+                                   neg=m['mult'] if m['sign'] == -1 else 0, idx=list(range(k, k + m['mult']))))
+                k += m['mult']
+            summary = dict(normA=1.0, groups=[dict(g, ok=True, pnorm=1.0, resid=0.0, why=None) for g in groups])
+            rec = dict(v0_matches=True, blocks=c['chains'], separated=True, gray_count=0, nL=c['idx'][0],
+                       nD=c['idx'][1], K=c['idx'][2])
+            pts[ck.key(e)] = dict(accepted=True, eps_reached=e, groups=groups, summary=summary, record=rec)
+        o['cutoffs'][N] = dict(seed=dict(ok=True), points=pts)
+    return o, c
 
 
 def main():
@@ -243,6 +274,12 @@ def main():
     record('h. the spread zero and c_g 0.05 ceilings from c3: pass', h_read == 'pass'
            and x['spread'] < 1e-9 * x['ceiling'] < abs(x['c_g'] - x['c3hat']) < ck.FLOOR * x['ceiling'],
            f"spread/ceiling {x['spread'] / x['ceiling']:.1e}, |c_g - c3|/ceiling {abs(x['c_g'] - x['c3hat']) / x['ceiling']:.3f}")
+    T5O, T5C = exact_t5()
+    lows = sorted(T5C['next_order']['24'], key=lambda g: abs(ck._c(g['kappa_s'])))[:2]
+    lows = [T5C['next_order']['24'].index(g) for g in lows]
+    r = readings(T5O, T5C)
+    record("i. T5/R2's spectrum exactly at the next order, its two lowest groups 2% apart: all three pass",
+           len(r) == 3 and all(x == 'pass' for x in r.values()), r)
 
     say('2. K3:')
     record("as recorded: 'resolved'", ck.k3(P0, PC)['outcome'] == 'resolved', ck.k3(P0, PC)['outcome'])
@@ -367,6 +404,13 @@ def main():
            and 'T1/R4' not in v['qualified'])
     v = ck.verdict(results_with({'T2/R4': dict(K6=False)}))
     record('a row failing K6: not qualified', not v['rows']['T2/R4'] and v['rows']['T2/R5'])
+
+    def without_k6():
+        R = results_with()
+        R['T2/R4']['checks'].pop('K6')
+        return ck.verdict(R)
+    v = without_k6()
+    record('a ladder row whose record has no K6: not qualified', not v['rows']['T2/R4'] and v['rows']['T2/R5'])
     v = ck.verdict(results_with({'C2a/R5': dict(K4=False)}))
     r5 = [n for n in rows if cs.CASES[n]['slot'] == 'R5']
     record('the R5 gate failing: the R5 rows not qualified, every other as it was', v['verdict'] == 'QUALIFIED'
@@ -390,7 +434,7 @@ def main():
     record('a dry run: incomplete', v['verdict'] == 'incomplete')
 
     say('mutation arms, each of which must turn its assertion red:')
-    saved = (ck.FLOOR, ck.bar, ck.association, ck.bar_group)
+    saved = (ck.FLOOR, ck.bar, ck.association, ck.bar_group, ck.predicted_next, ck.k6_holds)
     try:
         ck.FLOOR = 0.0
         m1 = cancellation()[0]
@@ -421,8 +465,21 @@ def main():
         m4 = precedence()
         ck.bar_group = saved[3]
         record('M4. Unresolved taking precedence: claim 1g reads Unresolved', m4 == 'Unresolved', m4)
+
+        def leading_order(c, e, N):
+            return [[(m['cls'], m['sign'], ck.predicted(dict(c, spectrum=[m]), e)[0][2])] * m['mult']
+                    for m in c['spectrum']]
+        ck.predicted_next = leading_order
+        m5 = readings(T5O, T5C)
+        ck.predicted_next = saved[4]
+        record("M5. check 1 paired against the leading order, as filed: claim 1i's two lowest groups read fail",
+               [m5[gi] for gi in lows] == ['fail', 'fail'], m5)
+        ck.k6_holds = lambda r: r['checks'].get('K6', True)
+        m6 = without_k6()['rows']['T2/R4']
+        ck.k6_holds = saved[5]
+        record("M6. a missing K6 read as passed, as filed: claim 8's ladder row without K6 qualifies", m6 is True, m6)
     finally:
-        ck.FLOOR, ck.bar, ck.association, ck.bar_group = saved
+        ck.FLOOR, ck.bar, ck.association, ck.bar_group, ck.predicted_next, ck.k6_holds = saved
     failed = sum(not ok for _, ok in results)
     say(f'{failed} failed of {len(results)}')
     with open(os.path.join(HERE, 'test_verdicts.out'), 'w', encoding='utf-8') as f:

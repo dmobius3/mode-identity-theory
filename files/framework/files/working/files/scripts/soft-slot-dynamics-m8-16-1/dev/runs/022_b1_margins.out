@@ -1,0 +1,7 @@
+1. groups whose order by |lambda| changes within a bucket: none
+2. the smallest separations of next-order predictions, in ceilings as a shift of lambda:
+      9.8  T5/R2 N = 24 eps = 1 ('imag', -1)
+      9.8  T5/R2 N = 32 eps = 1 ('imag', -1)
+     10.0  T5/R2 N = 16 eps = 1 ('imag', -1)
+     19.2  T5/R2 N = 24 eps = 0.5 ('imag', -1)
+   over 90 buckets of two groups or more

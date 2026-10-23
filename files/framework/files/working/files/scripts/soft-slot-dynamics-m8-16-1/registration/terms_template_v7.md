@@ -180,11 +180,11 @@ At the nominal amplitudes the weights are (2, −1) and (8/3, −2, 1/3). The re
    - the point is accepted, with its seed check passed;
    - `V₀` is as expected;
    - the point is converged, with the expected type and indices;
-   - the group is matched as in K2.
+   - the group is matched as in K2, one to one by class and Krein sign with multiplicity, but against each predicted group's next-order value, `εκs_g + ε²c_g(N)`, in place of its leading order. At T5's two lowest groups, whose next-order shifts at `ε = 1` are about as large as their gap at leading order, a match against the leading order exchanges them.
 
    This is new: M8.16's K5 scored only `ε = 0.25`, and reported 0.5 and 1 unscored. On the ladder rows, K6 already scores acceptance and agreement at those points, but not the matching. T1, T4 and T5's second member have no ladder.
 
-   **At K3(a),** check 1 asks only that the point be accepted with its seed checked, and that the slow band match outside the in-span pair's class (`DEVLOG.md` entry 9). K3's other clauses read the kernel and the in-span pair. So a merged in-span pair stays K3(b)'s outcome, as K3's list registers it, and is not read as the instrument's failure under (a).
+   **At K3(a),** check 1 asks only that the point be accepted with its seed checked, and that the slow band match outside the in-span pair's class, against the next-order values as above (`DEVLOG.md` entry 9). K3's other clauses read the kernel and the in-span pair. So a merged in-span pair stays K3(b)'s outcome, as K3's list registers it, and is not read as the instrument's failure under (a).
 2. **Resolved.** The group's numerical estimate `E(ε) = ‖P_g‖ max(‖R_g‖, u‖A‖)`, as the convergence rule computes it, is computed at all three points, with the group's projector passing the convergence rule's frozen checks: the span at 10⁻⁶, the left residual at 10⁴u, the conditioning at 10⁻²/u, and `P X = X` at 10⁻⁶. It is read from the point's summary, whose entries are associated with the record's group by exact eigenvalue-index set, each consistent with it in centre, class, size and Krein count; `E` is their largest, and a missing, duplicated or inconsistent association reads Unresolved. The coefficient's propagated numerical-error estimate, `E_c = Σ |w_i| E(x_i)/x_i²`, is at most a tenth of the group's ceiling. At the nominal amplitudes, `E_c = (128/3) E(0.25) + 8 E(0.5) + E(1)/3`. `E` is the instrument's estimate, not a certified bound. The convergence rule's full uncertainty `U` is not used here. Its floor, the cluster margin of about 4.5×10⁻⁷ at `N = 32`, would fail this test at every slow group of the pyramid.
 3. **Within the ceiling.** The spread is at most `C_g(N) = max(0.1 |c_g(N)|, 10⁻³ |κs_g|)`. A spread over the ceiling fails the check; it never widens the pass.
 4. **Agreement.** `|c_g(N) − ĉ₃| ≤ max(|ĉ₃ − ĉ₂|, 0.1 C_g(N))`. This is M8.16.1's own acceptance rule, not Proposition N's check v. To see why the floor is needed, truncate the expansion at fifth order: `λ = μ₀ε + cε² + dε³ + eε⁴ + fε⁵`. At the reached amplitudes, `ĉ₃ − c = f x₁x₂x₃`, while `ĉ₃ − ĉ₂ = x₁x₂ (e + f (x₁ + x₂ + x₃))`. At the nominal amplitudes these are `0.125 f` and `0.125 e + 0.21875 f`, so the spread alone can fail an exact `c_g` through cancellation, whenever `|e + 1.75 f| < |f|`. The floor keeps a group from failing on that cancellation while `|f x₁x₂x₃|` stays under it, and on noise, which check 2 holds below `C_g(N)/10`. It still tests `c_g(N)` to a tenth of its ceiling.
@@ -305,6 +305,7 @@ Under the stop, a rerun cannot repair a defect. So each class gets a scripted te
 1. **Every verdict path.** For each scored check, a synthetic record for each registered outcome, asserting the verdict text this document gives it:
    - K1 to K6, with K3's three outcomes;
    - the next-order bar's pass, Unresolved (check 1 or 2) and failure (check 3 or 4), with failure's precedence, and a group whose spread is tiny and whose difference lies between the spread and check 4's floor, which must pass;
+   - two groups of one class and sign whose next-order shifts match their gap, on a spectrum exactly at the next order, as at T5's two lowest, which must pass;
    - the `R5` gate, and the C3 ray's gating nothing;
    - T5's second member's independence;
    - the stops, and the resume after an interruption;
@@ -312,8 +313,8 @@ Under the stop, a rerun cannot repair a defect. So each class gets a scripted te
 2. **Every constant.** Every numeric item in both FROZEN VALUES sections is classified as a code-read literal held by `FROZEN.json`, a derived value reproduced by its registered calculation, or an explicitly unscored figure on an exclusion list with its reason. The reverse scan accounts for every effective scoring constant, including those brought forward from M8.16, and rejects an unregistered scoring literal.
 3. **Every import.** Each file the seed check and the driver import is in the manifest and named in the freeze block.
 
-**They ran in development** (`DEVLOG.md` entries 14 to 16, 23 and 28 to 30), each with its arms red:
-- the verdict paths: «TV_N» checks, with four mutations of the verdict code;
+**They ran in development** (`DEVLOG.md` entries 14 to 16, 23, 28 to 30 and 40), each with its arms red:
+- the verdict paths: «TV_N» checks, with «TV_M» mutations of the verdict code;
 - the constants, as test 2 states them, with the reverse scan's lists: registered, case data, a formula's own constant, a lookup or float guard, an unscored report, and a load-time check;
 - the imports: the driver, `write_guard.py`, `freeze_block.py` and the seed check load only manifest files, each named in the freeze block, and the block's seeds line names exactly the files the seed check loaded, its child process's included.
 

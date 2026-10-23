@@ -1,0 +1,5 @@
+12 cases, 37 groups under the bar
+claim 1, every group passes: holds
+claim 2, every entry gets its own exact value: holds
+arm, the leading-order pairing as filed: claim 1 red at [('T5/R2', 0), ('T5/R2', 1)]
+the arm is red at T5/R2's two lowest groups alone: holds

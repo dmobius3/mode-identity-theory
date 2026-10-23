@@ -1,0 +1,8 @@
+The plumbing pass's claims (DRIVER_PLAN.md v2), read from run/dry/plumbing/; nothing solved.
+1. PASS: no exception: the verdict and transcript written and logged
+2. PASS: every case of DRY.json completed, each output as logged
+3. PASS: the gate record written, the pyramid absent, the record incomplete
+4. PASS: the verdict incomplete
+   the cases ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5']; absent ['P5']; the gate's stop None; the verdict 'incomplete'
+arm: C2b's output changed in a temporary copy: claim 2 fails (RED)
+0 failed
