@@ -7,9 +7,9 @@
 
 The cosmos is the same finite space seen whole: a three-sphere, with no boundary and no outside. MIT is a speculative framework; this page lays out what it says about the universe at large, and each linked paper carries the details and caveats.
 
-Nothing stretches. A Möbius surface lies unbent in the sphere's projective quotient, where each point is identified with its opposite; its single edge carries a standing wave, and the observer's phase along that wave is what we read as cosmic time and as redshift. The sphere's curvature enters as a fixed boundary condition rather than a term in Friedmann's equation, so the cosmological data are fit as spatially flat.
+Nothing stretches. A Möbius surface lies unbent in the sphere's projective quotient, where each point is identified with its opposite; its single edge carries a standing wave, and the observer's phase along that wave is what we read as cosmic time and as redshift. The sphere's curvature enters as a fixed boundary condition rather than a term in Friedmann's equation, and MIT fits the cosmological data as spatially flat.
 
-What stays fixed is the vacuum. Its geometric seed is the first positive vibration level of the Möbius surface, set by the sphere's radius, which never changes. What moves is the observer's phase, and that one motion shows up three ways: as an apparent phantom crossing in standard dark-energy fits, as an acceleration scale $`a_0`$ that rises with the Hubble rate, and as a small extra term in the squared Hubble rate.
+What stays fixed is the vacuum. Its geometric seed is the first positive vibration level of the Möbius surface, set by the sphere's radius, which never changes. What moves is the observer's phase, and that one motion can show up three ways: as an apparent phantom crossing in standard dark-energy fits, as an acceleration scale $`a_0`$ that rises with the Hubble rate, and as a small extra term in the squared Hubble rate.
 
 The 120-element group that forms the space leaves an empty stretch in its vibration spectrum, which lines up with the missing large-angle power in the oldest light. The two headline values of the Hubble constant sit two positions apart on its 120-position grid. At a black hole, the wave goes silent for an observer hovering outside. Five predictions are locked in ahead of Euclid's DR1 data.
 
@@ -47,7 +47,7 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 
 ## [Early Galaxies](files/early-galaxies.md)
 
-**A Stronger Tide.** In 1983 Milgrom identified $`a_0`$, the acceleration where galaxy dynamics start to depart from Newton, as a fundamental scale, and its closeness to $`cH_0`$, the speed of light times the Hubble rate, has never had a settled explanation. In MIT both are edge modes on the same standing wave, sharing one normalization, so their ratio is set by where each sits, and it comes out at 0.184, in line with the measured ratio. That ratio holds at every epoch, so $`a_0`$ was larger in the past, rising with the Hubble rate, and the galaxies JWST found too early formed under that stronger tide. MUSE-DARK III has since measured $`a_0`$ rising at intermediate redshift, the predicted direction, though other evolving-scale models and ΛCDM simulations rise too.
+**A Stronger Tide.** In 1983 Milgrom identified $`a_0`$, the acceleration where galaxy dynamics start to depart from Newton, as a fundamental scale, and its closeness to $`cH_0`$, the speed of light times the Hubble rate, has never had a settled explanation. In MIT both are edge modes on the same standing wave, taken to share one normalization, so their ratio is set by where each sits, and it comes out at 0.184, in line with the measured ratio. That ratio holds at every epoch, so $`a_0`$ was larger in the past, rising with the Hubble rate, and the galaxies JWST found too early formed under that stronger tide. MUSE-DARK III has since measured $`a_0`$ rising at intermediate redshift, the predicted direction, though other evolving-scale models and ΛCDM simulations rise too.
 
 >[![Early Galaxies](https://img.youtube.com/vi/BuxnEmMGMFE/mqdefault.jpg)](https://www.youtube.com/watch?v=BuxnEmMGMFE)
 >
