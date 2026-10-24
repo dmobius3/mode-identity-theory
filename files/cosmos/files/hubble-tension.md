@@ -53,7 +53,7 @@ The phase operator $`C(\Theta) = 2\sin^2(\pi\Theta)`$ (the anti-periodic first-p
 | $`H_0`$ | 34/120 | 5.09 | $`+8.4\%`$ | measured through the field |
 | $`\Lambda`$ | 60/120 | 0 | $`-0.27\%`$ | stationary to first order at the antinode |
 
-The displacement column applies the same upward step at every well for comparison. Whether that step is the allowed one at $`a_0`$ is not settled here, since the framework treats $`a_0`$ as a dynamical rather than a bosonic observable.
+The displacement column applies the same upward step at every well for comparison. Whether that step is the allowed one at $`a_0`$ is not settled here, since the framework treats $`a_0`$ as a dynamical rather than a photon-mediated observable.
 
 $`\Lambda`$ sits at the antinode where the derivative vanishes identically, so it is stationary to first order in $`\Theta`$. It is not invariant under a finite step:
 
@@ -85,7 +85,7 @@ which is the SH0ES scale. No galactic physics enters this calculation.
 
 ### What the step size assumes
 
-Geometric observables are taken to access the 60-position bosonic sublattice, the even positions $`k/120 = j/60`$. That assignment is a framework selection rule, not a derivation, and it is the load-bearing assumption of this section. The stakes are direct: a displacement of $`1/120`$ would give $`C(35/120)/C(34/120) = 1.0421`$, a 4.2% shift rather than 8.4%.
+Photon-mediated observables are taken to access the 60-position bosonic sublattice, the even positions $`k/120 = j/60`$, and dynamical ones the full 120. That assignment is a motivated framework selection rule with no representation-theoretic ground, not a derivation, and it is the load-bearing assumption of this section. The stakes are direct: a displacement of $`1/120`$ would give $`C(35/120)/C(34/120) = 1.0421`$, a 4.2% shift rather than 8.4%.
 
 Both available steps have a published local determination close to them. Against the same 67.4 baseline, SH0ES implies $`+8.4\%`$ and matches the $`2/120`$ step, while the Carnegie-Chicago tip-of-the-red-giant-branch value of 70.39 $`\pm`$ 1.22 (stat) $`\pm`$ 1.33 (sys) (Freedman et al. 2025, combined HST and JWST, 24 SN Ia calibrators) implies $`+4.4\%`$, close to the 4.2% of the $`1/120`$ step. The uncertainties do separate SH0ES from the $`1/120`$ endpoint, at two to three standard deviations. They do not separate the two local determinations from each other. The same programme's JWST-only figures, 68.81 and 67.80, imply offsets near 2.1% and 0.6% and match no lattice step at all.
 

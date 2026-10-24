@@ -24,7 +24,7 @@ MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse
 | Quantity | Value |
 |---|---|
 | Scaling law | $`a_0(z) = a_0(0) \times H(z)/H_0`$ |
-| $`a_0/(cH_0)`$ ratio | predicted: 0.184 / observed: 0.183 (SPARC $`a_0`$, Planck $`H_0`$; $`a_0`$ uncertain at tens of percent) |
+| $`a_0/(cH_0)`$ ratio | framework: 0.184 / observed: 0.183 (SPARC $`a_0`$, Planck $`H_0`$), a comparison resting on the two edge rows sharing one weight; $`a_0`$ uncertain at tens of percent |
 | At $`z = 10`$ | $`a_0 \approx 2.46 \times 10^{-9}`$ m/s² (20.5× local) |
 | Collapse speedup | ~2.1× faster through the deep-MOND relation, conditionally (upper-bound estimate against constant-$`a_0`$ MOND: $`\varepsilon_\text{SF} \sim 0.5`$) |
 
@@ -52,7 +52,7 @@ with $`\Omega_\Lambda = 0.685`$ held fixed as the fiducial vacuum-fraction ancho
 
 ### The Ratio from the Scaling Law
 
-The MIT scaling law relates any observable $`A`$ to the Planck reference $`A_P`$ through a phase coefficient and a power of the hierarchy number $`\sqrt{\Omega}`$:
+Within its adopted first-positive and linear-intensity readout premises, the MIT scaling law relates an observable $`A`$ read at a single phase position and a single manifold depth to the Planck reference $`A_P`$, through a phase coefficient and a power of the hierarchy number $`\sqrt{\Omega}`$:
 
 ```math
 \frac{A}{A_P} = C(\Theta) \cdot (\sqrt{\Omega})^{-n}
@@ -66,7 +66,7 @@ Both $`a_0`$ and $`H`$ sit on the temporal edge ($`n = 1`$), referencing the sam
 \frac{a_0}{cH} = \frac{C(13/120)}{C(34/120)} = \frac{2\sin^2(13\pi/120)}{2\sin^2(34\pi/120)} = \frac{0.223}{1.208} = 0.184
 ```
 
-With $`H_0 = 67.4`$ km/s/Mpc (the measured Planck anchor), $`cH_0 = 6.55 \times 10^{-10}`$ m/s², giving observed $`a_0/(cH_0) = 1.2/6.55 = 0.183`$, with $`a_0`$ itself uncertain at tens of percent ([Update 1](early-galaxies-update1.md)). The positions 13/120 and 34/120 have Fibonacci numerators on the 120-grid: two of the framework's wells, which continue a recurrence with no derived sampling rule.
+With $`H_0 = 67.4`$ km/s/Mpc (the measured Planck anchor), $`cH_0 = 6.55 \times 10^{-10}`$ m/s², giving observed $`a_0/(cH_0) = 1.2/6.55 = 0.183`$, with $`a_0`$ itself uncertain at tens of percent ([Update 1](early-galaxies-update1.md)). The positions 13/120 and 34/120 have Fibonacci numerators on the 120-grid: two of the framework's wells, which continue a recurrence with no derived sampling rule. The seats are assignments too: $`H_0`$ at 34 is forced once the motivated photon-mediated-to-60R assignment is granted, while $`a_0`$ at 13, the unique coprime well, is a diagnostic the corpus carries rather than a derived rule, read on the full 120-grid by a motivated assignment; on the 60R grid the same ratio would be $`C(13/60)/C(34/120) = 0.656`$.
 
 Two scope notes follow from this. The absolute scale is calibrated off the measured $`H_0`$ through the kinematic hierarchy $`\Omega_H = (c/(H\ell_P))^2`$, so the prediction does not depend on the open curvature radius $`R`$; only the companion claim that $`\Lambda`$ is constant touches it (the open [R problem](../../framework/files/working/files/r-problem.md)). And the ratio rests on the edge-mode positions and that shared normalization, not on the galactic coherence mechanism $`L_f = v_c^2/a_0`$ that the SPARC test falsified.
 

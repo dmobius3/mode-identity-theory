@@ -105,7 +105,7 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 | [↗](files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap; last empty level near $`\ell \approx 24`$ on the coupling route's R, with α at $`q^2 = 0`$ ($`\ell \approx 28`$ on the circular $`\Lambda`$ back-read); sky projection not derived | deficit below $`\ell \lesssim 30`$ | — |
 | [↗](files/hubble-tension.md#i-the-tension) $`H_0 \cdot t_P`$ | `input` | — | $`1.18 \times 10^{-61}`$ from measured $`H_0`$ | — |
 | [↗](files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `open` | 8.4% lattice step, $`67.4 \to 73.04`$ | SH0ES scale; retrospective, and the galactic trigger proposed to realize the step is falsified; no mechanism is active | — |
-| [↗](files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 (SPARC $`a_0`$, Planck $`H_0`$) | central values within 1%; $`a_0`$ normalization uncertain at tens of percent |
+| [↗](files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 (SPARC $`a_0`$, Planck $`H_0`$) | central values within 1%, on one weight assumed for both rows; $`a_0`$ normalization uncertain at tens of percent |
 | [↗](files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | $`a_0(z{=}2) \approx 3\times`$ local | rising direction corroborated to $`z = 1.44`$ (MUSE-DARK III); rate open; the $`z > 2`$ test pending | — |
 
 ---
