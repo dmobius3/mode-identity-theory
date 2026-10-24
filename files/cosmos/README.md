@@ -95,16 +95,16 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
-| [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ | $`2.845 \times 10^{-122}`$ | ~23% (identification open) |
+| [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ | `anchored (α)` | $`\Lambda_\text{ref}\,\ell_P^2 \approx 2.2 \times 10^{-122}`$ at $`q^2 = 0`$ | $`2.845 \times 10^{-122}`$ | ~23% low at $`q^2 = 0`$, ~47× high at $`M_Z`$ (identification open) |
 | [↗](files/cosmological-constant.md#v-the-open-radius) $`\Lambda_\text{ref}`$ (cross-check) | `anchored (m_μ/m_e)` | $`\Lambda_\text{ref} \approx 8.1 \times 10^{-54}`$ m⁻² | $`1.089 \times 10^{-52}`$ m⁻² | 13.4× low, a miss (identification open) |
 | [↗](../spectrum/files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2; numerator derived, denominator the de Sitter normalization imported from GR; physical identification open | — | — |
-| [↗](files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | surface spectral seed $`2/R^2`$ | — | — |
-| [↗](files/dark-energy.md#iii-w_texteffz---1-at-all-redshifts-fiducial-split) Fiducial-split $`w_\text{eff}(z)`$ sign (diagnostic) | `exact` | $`w_\text{eff}(z) > -1`$ for all $`z \ge 0`$ | awaiting Euclid DR1 Row III, scored in the fiducial split | — |
+| [↗](files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | surface spectral seed $`2/R^2`$: the first positive level on the narrow band $`W \le \pi R/2`$, a physical input, under the Friedrichs extension the framework takes | — | — |
+| [↗](files/dark-energy.md#iii-w_texteffz---1-at-all-redshifts-fiducial-split) Fiducial-split $`w_\text{eff}(z)`$ sign (diagnostic) | `exact` | $`w_\text{eff}(z) > -1`$ for all $`z \ge 0`$ at any $`s_0 > 0`$; $`-1`$ at $`s_0 = 0`$ | awaiting Euclid DR1 Row III, scored in the fiducial split | — |
 | [↗](files/dark-energy.md#primary-fit-snbao) $`\Delta\chi^2`$ vs ΛCDM | `anchored (Λ)` | $`+0.11`$ (same $`k`$) | Pantheon+ & DESI DR2 BAO | degenerate with ΛCDM at the same parameter count |
-| [↗](files/dark-energy.md#the-1z1-term) $`(1+z)^1`$ term | `open` | negative, tied to $`s_0`$ | awaiting next-gen BAO | — |
-| [↗](files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap; last empty level near $`\ell \approx 24`$ on the coupling route's R ($`\ell \approx 28`$ on the circular $`\Lambda`$ back-read); sky projection not derived | deficit below $`\ell \lesssim 30`$ | — |
+| [↗](files/dark-energy.md#the-1z1-term) $`(1+z)^1`$ term | `open` | non-positive: negative for any $`s_0 > 0`$, zero at $`s_0 = 0`$; tied to $`s_0`$ | awaiting next-gen BAO | — |
+| [↗](files/cmb-anomalies.md#iv-the-molien-shell-gap) CMB low-ℓ deficit | `open` | Molien gap; last empty level near $`\ell \approx 24`$ on the coupling route's R, with α at $`q^2 = 0`$ ($`\ell \approx 28`$ on the circular $`\Lambda`$ back-read); sky projection not derived | deficit below $`\ell \lesssim 30`$ | — |
 | [↗](files/hubble-tension.md#i-the-tension) $`H_0 \cdot t_P`$ | `input` | — | $`1.18 \times 10^{-61}`$ from measured $`H_0`$ | — |
-| [↗](files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `open` | 8.4% lattice step, $`67.4 \to 73.04`$ | SH0ES scale; retrospective, and the mechanism that would realize the step is falsified | — |
+| [↗](files/hubble-tension.md#the-84-displacement) $`H_0`$ local shift | `open` | 8.4% lattice step, $`67.4 \to 73.04`$ | SH0ES scale; retrospective, and the galactic trigger proposed to realize the step is falsified; no mechanism is active | — |
 | [↗](files/early-galaxies.md#the-ratio-from-the-scaling-law) $`a_0/(cH_0)`$ | `anchor-free` | 0.184 | 0.183 (SPARC $`a_0`$, Planck $`H_0`$) | central values within 1%; $`a_0`$ normalization uncertain at tens of percent |
 | [↗](files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | $`a_0(z{=}2) \approx 3\times`$ local | rising direction corroborated to $`z = 1.44`$ (MUSE-DARK III); rate open; the $`z > 2`$ test pending | — |
 

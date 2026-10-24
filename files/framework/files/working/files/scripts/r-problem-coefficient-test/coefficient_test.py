@@ -22,8 +22,9 @@ states it apart from the residual this comparison measures.
       reading gives the same figure as the log-fractional one.
   K3  the formula accuracy at which the observed departure would sit exactly at 5 sigma, for the same three
       uncertainties; computed from the departure itself, so a diagnostic and not a criterion
-  K4  the reference-scale choice: the fine-structure page's ~6% gap between alpha at q^2 = 0 and at the Z mass,
-      read through the same 60-power lever, as a factor in Lambda_obs R_ind^2
+  K4  the reference-scale choice: alpha read at the Z mass, in the MS-bar convention the fine-structure page uses
+      there (1/127.95, as in plato-twist.test.py), instead of at q^2 = 0, read through the same 60-power lever, as a
+      factor in Lambda_obs R_ind^2
 The control reruns K1 at Theta = 17/60, the competitor seat on the fine-structure page, and must fail.
 Standard library only.
 """
@@ -33,6 +34,7 @@ LAMBDA_LP2 = 2.845e-122          # named anchor, Lambda * l_P^2
 L_P_M = 1.616255e-35             # Planck length, m (CODATA 2018)
 GPC_M = 3.0856775814913673e25    # 1 Gpc in m
 ALPHA_OBS = 7.2973525693e-3      # CODATA 2018
+ALPHA_MZ = 1.0 / 127.95          # alpha-hat(M_Z), MS-bar, the fine-structure page's Z-mass convention (plato-twist.test.py)
 GRID = 60
 SIGMA_LAMBDA = (0.01, 0.02, 0.03)
 
@@ -80,9 +82,11 @@ def main():
     for s in SIGMA_LAMBDA:
         delta = math.sqrt((v["lever"] / 5.0) ** 2 - s ** 2) / GRID
         print(f"      sigma(Lambda_obs) = {100 * s:.0f}%: delta = {100 * delta:.3f}%")
-    scale_gap = 0.06
-    print(f"K4  the reference scale: a {100 * scale_gap:.0f}% change in the alpha that is inverted moves "
-          f"Lambda_obs R_ind^2 by a factor of {(1.0 + scale_gap) ** GRID:.1f}")
+    run = ALPHA_MZ / ALPHA_OBS                            # alpha at the Z mass over alpha at q^2 = 0
+    k4 = run ** GRID
+    print(f"K4  the reference scale: alpha read at the Z mass (MS-bar, 1/127.95) is {100 * (run - 1):.1f}% above "
+          f"alpha at q^2 = 0, which moves Lambda_obs R_ind^2 by a factor of {k4:.1f}, to {v['product'] / k4:.4f}: "
+          f"Lambda_ref {3.0 * k4 / v['product']:.1f} times Lambda_obs instead of {100 * v['deficit']:.1f}% below it")
     c = route(17 / 60)
     fired = not k1(c)
     print(("PASS" if fired else "FAIL") + "  control: K1 fails at Theta = 17/60, as it must "

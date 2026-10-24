@@ -15,7 +15,7 @@ Mode Identity Theory offers a reading that eases it. The MOND acceleration scale
 \frac{a_0}{cH} = \frac{C(13/120)}{C(34/120)} = 0.184
 ```
 
-Because the ratio holds at every epoch, $`a_0(z) = a_0(0) \times H(z)/H_0`$, where $`H(z)`$ is the phase-clock Hubble rate derived from the static $`S^3`$ baseline. At $`z = 10`$, this gives $`a_0 \approx 20.5 \times`$ the local value. Translated through the deep-MOND relation, conditionally (§III), that enhances effective gravitational acceleration and, on an upper-bound estimate taken against constant-$`a_0`$ MOND, reduces the implied star formation efficiency to $`\varepsilon_\text{SF} \sim 0.5`$, within the physically permitted range; clearing any individual candidate is a separate question.
+Because the ratio holds at every epoch, $`a_0(z) = a_0(0) \times H(z)/H_0`$, where $`H(z)`$ is the phase-clock Hubble rate on the static $`S^3`$ baseline (§II). At $`z = 10`$, this gives $`a_0 \approx 20.5 \times`$ the local value. Translated through the deep-MOND relation, conditionally (§III), that enhances effective gravitational acceleration and, on an upper-bound estimate taken against constant-$`a_0`$ MOND, reduces the implied star formation efficiency to $`\varepsilon_\text{SF} \sim 0.5`$, within the physically permitted range; clearing any individual candidate is a separate question.
 
 MIT predicts $`a_0`$ evolves while $`\Lambda`$ is epoch-independent: the inverse of standard assumptions. This is the companion to the dark energy cornerstone, where the same $`H(z)`$ introduces no independent phantom fluid. One static universe, two signatures.
 
@@ -42,7 +42,7 @@ MIT takes the third option, conditionally. The acceleration scale $`a_0`$ is not
 
 ### Static Baseline
 
-The cosmos is a static three-sphere $`S^3`$. The phase-clock Hubble rate $`H(z)`$ is derived from the standing wave $`\Psi = \cos(t/2)`$ and the Waltz clock $`dt/d\tau = S^{-1/2}`$:
+The cosmos is a static three-sphere $`S^3`$. The phase-clock Hubble rate $`H(z)`$ takes its non-vacuum part from the standing wave $`\Psi = \cos(t/2)`$ and the Waltz clock $`dt/d\tau = S^{-1/2}`$, whose $`-1/2`$ exponent comes through the general-relativity correspondence rather than the postulate layer; the anchored vacuum term enters as its own object, so the whole is a phenomenological $`H(z)`$ rather than the geometric rate under that clock ([the stress-tensor bridge](../../framework/files/working/files/stress-tensor-bridge.md#vi-first-results-the-pinned-target)):
 
 ```math
 \frac{H^2(z)}{H_0^2} = \frac{1 - \Omega_\Lambda}{1 - s_0^2}(1+z)^3 - \frac{(1 - \Omega_\Lambda)\,s_0^2}{1 - s_0^2}(1+z) + \Omega_\Lambda
@@ -135,9 +135,9 @@ MIT's dimensional hierarchy draws a sharp line between modes that live on the te
 | Observable | Manifold depth | Evolves? | Prediction |
 |---|---|---|---|
 | $`a_0`$ (acceleration) | $`n = 1`$ (edge) | Yes, tracks $`H(z)`$ | Evolves with epoch |
-| $`\Lambda`$ (cosmological constant) | $`n = 2`$ (surface) | No | Epoch-independent: fixed by the static radius |
+| $`\Lambda`$ (cosmological constant) | $`n = 2`$ (surface) | No | Epoch-independent: the static radius supplies $`\Lambda_\text{ref} = 3/R^2`$; physical identification open |
 
-This is an inversion of standard assumptions, where $`\Lambda`$ is often treated as potentially evolving (the DESI phantom-crossing signal) while $`a_0`$ is assumed constant (standard MOND). MIT predicts the opposite: $`\Lambda`$ is fixed by the static curvature radius, and $`a_0`$ rides the phase clock.
+This is an inversion of standard assumptions, where $`\Lambda`$ is often treated as potentially evolving (the DESI phantom-crossing signal) while $`a_0`$ is assumed constant (standard MOND). MIT predicts the opposite: $`\Lambda`$ does not evolve, its reference value $`\Lambda_\text{ref} = 3/R^2`$ supplied by the static curvature radius and its identification with the physical $`\Lambda`$ open, and $`a_0`$ rides the phase clock.
 
 The companion paper (*Phantom Dark Energy: Template Artifact in Static Space*) shows that the underlying $`H(z)`$ introduces no independent phantom fluid, and that restricted two-parameter templates can manufacture an apparent crossing from it. This paper predicts that $`a_0`$ evolves with $`H(z)`$; carried into collapse through the deep-MOND relation, conditionally, the evolution roughly halves the implied star-formation efficiency of the JWST galaxies, on an upper-bound estimate taken against constant-$`a_0`$ MOND (§III). Together, the two cornerstones embody the static universe from opposite sides: one observable constant, one evolving, both measured from the same standing wave.
 

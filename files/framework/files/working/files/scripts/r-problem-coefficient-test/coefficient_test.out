@@ -10,5 +10,5 @@ K3  the formula accuracy that would put the observed departure at 5 sigma (a dia
       sigma(Lambda_obs) = 1%: delta = 0.085%
       sigma(Lambda_obs) = 2%: delta = 0.080%
       sigma(Lambda_obs) = 3%: delta = 0.071%
-K4  the reference scale: a 6% change in the alpha that is inverted moves Lambda_obs R_ind^2 by a factor of 33.0
+K4  the reference scale: alpha read at the Z mass (MS-bar, 1/127.95) is 7.1% above alpha at q^2 = 0, which moves Lambda_obs R_ind^2 by a factor of 61.3, to 0.0635: Lambda_ref 47.2 times Lambda_obs instead of 23.0% below it
 PASS  control: K1 fails at Theta = 17/60, as it must (residual 53.2%, Lambda_obs R^2 = 3.86e+11)

@@ -123,6 +123,8 @@ The full Euclid DR1 release, mid 2027, will deliver spectroscopic BAO in four re
 
 *Clarification added 2026-09-02.* **The scope of this row's claims.** The companion analysis scopes $`w_\text{eff}(z) > -1`$ to the fiducial matter split and notes that a different valid split reads $`w_\text{eff} < -1`$ at high $`z`$, so there is no decomposition-independent statement about $`w(z)`$ to make; the decomposition-independent claim is that the underlying $`H(z)`$ introduces no independent phantom fluid, as the prose above states. The same analysis states that its template exercise establishes the mechanism rather than showing DESI's signal to be primarily template bias, so the prose treats template projection as a candidate explanation, matching the callout below.
 
+*Clarification added 2026-10-24, before any Euclid DR1 data.* **The strict inequality holds for $`s_0 > 0`$ and $`z \geq 0`$.** The proof in [dark energy](dark-energy.md) §III takes $`s_0 \in (0, 1)`$ and $`z \geq 0`$, the redshifts the data reach. At $`s_0 = 0`$, which current data allow, the fiducial split gives $`w_\text{eff} = -1`$ at every $`z`$, so this row's statements of $`w_\text{eff}(z) > -1`$ at all $`z`$ hold for $`z \geq 0`$ at any $`s_0 > 0`$. No row, cell, threshold or scoring rule changes: the row fails only if the fiducial split gives $`w_\text{eff} < -1`$ at $`\geq 2\sigma`$, which $`s_0 = 0`$ does not.
+
 | Framework | Prediction | Source |
 |---|---|---|
 | **MIT** | $`w_\text{eff}(z) > -1`$ at all $`z`$ in the fiducial-matter split; no real crossing | [dark-energy](dark-energy.md) §III (proof) |
