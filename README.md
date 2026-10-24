@@ -61,7 +61,7 @@ mode-identity-theory/
     │   ├─ mass-spectrum              ← fermion masses as position on the lattice
     │   ├─ fine-structure             ← α is the first realized step of Λ
     │   ├─ the-waltz                  ← the gravity between surface & space
-    │   └─ the-mirror                 ← curvature duality: gauge gap & zero inaccessibility
+    │   └─ the-mirror                 ← curvature duality: gauge gap & zeros
     └─ tools/                      ← interactive, publications, & references
 ```
 
