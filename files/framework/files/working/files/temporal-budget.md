@@ -149,7 +149,7 @@ At best-fit $`s_0 = 0.389`$, the effective reading is 0.372; the underlying valu
 
 ## V. The $`(1+z)^1`$ Signature
 
-A negative $`(1+z)^1`$ term appears in the expansion, below $`0.8\%`$ of $`H^2`$ at $`z = 1`$ under the joint SN+BAO bound ($`\sim 3\%`$ at the earlier Pantheon+-only reading). The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
+For $`s_0 > 0`$ a negative $`(1+z)^1`$ term appears in $`H^2(z)`$, below $`0.8\%`$ of $`H^2`$ at $`z = 1`$ under the joint SN+BAO bound ($`\sim 3\%`$ at the earlier Pantheon+-only reading); at $`s_0 = 0`$, which the data still allow, it vanishes. The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
 
 | Component | Redshift scaling |
 |---|---|
@@ -338,7 +338,7 @@ Direct $`a_0(z)`$ rotation-curve tests require external kinematic follow-up beyo
 
 | Quantity | MIT | ΛCDM |
 |---|---|---|
-| True $`w_\text{eff}(z) > -1`$ at all $`z`$ (fiducial split) | yes (proven analytically, Λcos paper §III) | yes |
+| True $`w_\text{eff}(z) > -1`$ for $`z \geq 0`$ (fiducial split) | yes at any $`s_0 > 0`$ (proven analytically, Λcos paper §III); $`w_\text{eff} = -1`$ at $`s_0 = 0`$ | no ($`w = -1`$) |
 | Apparent CPL crossing of $`w = -1`$ | yes (template bias artifact, Λcos paper §IV) | no |
 | Apparent $`w_0`$ from CPL fit at $`s_0 = 0.19`$ | $`\approx -1.02`$ | -1 |
 | Apparent $`w_a`$ from CPL fit at $`s_0 = 0.19`$ | $`\approx +0.29`$ | 0 |
@@ -359,7 +359,7 @@ The apparent phantom crossing is demonstrated for CPL, BA, and JBP fitted to the
 
 | Quantity | MIT | ΛCDM |
 |---|---|---|
-| CMB $`\ell_\text{cut}`$ | $`\approx 24`$ on the coupling route's $`R`$ (Molien gap; the $`\approx 28`$ of the measured-$`\Lambda`$ back-read is circular) | no cutoff |
+| CMB $`\ell_\text{cut}`$ | $`\approx 24`$ on the coupling route's $`R`$ with $`\alpha`$ read at $`q^2 = 0`$, under the frozen shell rule, and near 190 with $`\alpha`$ read at the $`Z`$ mass (Molien gap; the $`\approx 28`$ of the measured-$`\Lambda`$ back-read is circular) | no cutoff |
 
 *$`C_2/C_3`$ is not forecast: its value waits on the full projection (transfer functions, primordial weighting, observer position; [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §IV). Parity ($`R_{TT}`$) and the $`\ell = 2/3`$ alignment are dropped here, for different reasons. Chirality shuts only the orientation-reversing grading route to parity; parity itself stays open to this topology through the eigenmode covariance, and is not forecast here. The alignment is severed from this topology, by the quotient's $`A_5`$ isotropy rather than by its chirality (see [CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §III).*
 

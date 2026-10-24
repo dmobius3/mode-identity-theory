@@ -57,14 +57,14 @@ What failed was the independent over-determination of $`R`$ through the CMB-Moli
 
 once the Planck scale is fixed by the second dial.
 
-The eigenvalue structure survives; the absolute surface radius is the open piece. Two paths return $`\Lambda_\text{ref}`$ to a prediction. The first anchors on measured $`\alpha`$: it fixes $`\Omega_\Lambda`$ directly, needs no independent $`R`$, and returns $`\Lambda_\text{ref}\ell_P^2`$ to within 23%. The second is the mass-spectrum route, where two masses at different McKay distances overdetermine $`R`$ but currently land $`\Lambda_\text{ref}`$ about 13.4x low. The coupling route is the tighter of the two; the gap between them is an open consistency item. See the two-dial reading below.
+The eigenvalue structure survives; the absolute surface radius is the open piece. Two paths return $`\Lambda_\text{ref}`$ as a conditional output, its identification with the physical $`\Lambda`$ still the Interface question. The first anchors on measured $`\alpha`$: it fixes $`\Omega_\Lambda`$ directly, needs no independent $`R`$, and returns $`\Lambda_\text{ref}\ell_P^2`$ about 23% low with $`\alpha`$ read at zero momentum transfer; read at the $`Z`$ mass, the same lever puts $`\Lambda_\text{ref}`$ near $`47\,\Lambda_\text{obs}`$ ([the R problem](r-problem.md#the-coefficient-test)). The second is the mass-spectrum route, where two masses at different McKay distances overdetermine $`R`$ but currently land $`\Lambda_\text{ref}`$ about 13.4x low on the canonical electron-muon pair, and within about 3.8x on the muon-top pair. The coupling route is the tighter of the two; the gap between them is an open consistency item. See the two-dial reading below.
 
 More fully, the scaling law has one hierarchy variable $`\Omega_\Lambda`$ with three independent readings of it. Inverting any one fixes $`\Omega_\Lambda`$ and predicts the rest; which one you invert is calibration, the relationships between them are physics:
 
 | Anchor | Reads $`\Omega_\Lambda`$ from | $`\Lambda_\text{ref}`$ | $`\alpha`$ | Role |
 |---|---|---|---|---|
 | Measured $`\Lambda`$ (sets $`R`$) | the radius $`R`$ | circular | 0.4% | current default |
-| Measured $`\alpha`$ | the coupling | 23% (genuine) | circular | best-conditioned |
+| Measured $`\alpha`$ | the coupling | 23% at $`q^2 = 0`$ (genuine) | circular | best-conditioned |
 | Mass spectrum ($`m_\mu/m_e`$) | the mass ratio | ~13.4x (genuine) | ~few % | independent cross-check |
 
 The three readings are one inversion through the same 60-fold lever, and they differ in input conditioning ($`\alpha`$ to ~0.4%, the mass ratio to ~4.5%). The two non-circular routes do not presently agree: the canonical electron-muon reading sits 10.5x from the coupling route in $`\Lambda_\text{ref}`$. Against the measured value that same reading lands about 13.4x low. The lever amplifies small input residuals, but that amplification does not by itself explain the disagreement, and the present machinery does not distinguish conditioning from structural inconsistency. Reconciling the routes is open; see [the R problem](r-problem.md).
@@ -97,8 +97,8 @@ Replaces the current "Measured scales" table in the engine.
 |---|---|---|
 | $`H_0`$ | Edge-sector anchor; fixes $`\Omega_H`$ | Measured calibration |
 | $`\Lambda`$ | Surface-sector anchor; fixes $`R`$ through $`\Lambda_\text{ref} = 3/R^2`$ | Measured calibration |
-| $`\alpha`$ | Alternative surface anchor; measured $`\alpha`$ fixes $`\Omega_\Lambda`$ directly | Measured (dimensionless); returns $`\Lambda_\text{ref}\ell_P^2`$ as a prediction to 23% |
-| $`R`$ | Surface radius in the first positive eigenvalue $`2/R^2`$ and $`\Omega_\Lambda=(R/\ell_P)^2`$ | Calibrated from $`\Lambda`$ today; measured $`\alpha`$ pins $`\Omega_\Lambda`$ (hence $`R`$) to 23%, and the mass-spectrum route (two masses at different distances) is a further, looser path to an independent $`R`$ |
+| $`\alpha`$ | Alternative surface anchor; measured $`\alpha`$ fixes $`\Omega_\Lambda`$ directly | Measured (dimensionless); returns $`\Lambda_\text{ref}\ell_P^2`$ as a conditional output: $`\Lambda_\text{ref}`$ about 23% low with $`\alpha`$ read at $`q^2 = 0`$, near $`47\,\Lambda_\text{obs}`$ at the $`Z`$ mass, and its identification with the physical $`\Lambda`$ open |
+| $`R`$ | Surface radius in the first positive eigenvalue $`2/R^2`$ and $`\Omega_\Lambda=(R/\ell_P)^2`$ | Calibrated from $`\Lambda`$ today; measured $`\alpha`$, read at $`q^2 = 0`$, pins $`\Omega_\Lambda`$, hence $`R \approx 6.1`$ Gpc, 14% above the $`\Lambda`$-calibrated radius, with $`\Lambda_\text{ref}`$ 23% low, and the mass-spectrum route (two masses at different distances) is a further, looser path to an independent $`R`$ |
 | $`m_e`$ or one measured mass | Mass-sector normalization / second dial for the mass-gravity system | Measured calibration or benchmark |
 
 ---
@@ -111,8 +111,8 @@ The mass-and-gravity sector is one closed system. The topology fixes the dimensi
 |---|---|---|
 | $`\Lambda`$ and $`G`$ | Absolute fermion masses | Mass-spectrum reading |
 | $`\Lambda`$ and one measured mass | $`G`$ and the remaining masses | Gravity-constant reading |
-| Two masses at different McKay distances | $`R`$, hence $`\Lambda_\text{ref}`$ as a prediction, and $`G`$ | R-from-spectrum reading (executed 2026-06-15, at order-of-magnitude precision: $`R \approx 20`$ Gpc on the canonical electron-muon pair, $`\approx 10.5`$ Gpc on muon-top; the $`(\rho,\sigma)\to(T_3,Y)`$ rule it needed is the gate of the mass spectrum's §IV.4: [R from the mass spectrum](r-from-mass-spectrum.md)) |
-| Measured $`\alpha`$ (dimensionless) | $`\Omega_\Lambda`$, hence $`\Lambda_\text{ref}\ell_P^2`$ as a prediction | $`\alpha`$ route; $`\Lambda_\text{ref}\ell_P^2 \propto \alpha^{60}`$, within 23% (the 60-fold lever) |
+| Two masses at different McKay distances | $`R`$, hence $`\Lambda_\text{ref}`$ as a conditional output, and $`G`$ | R-from-spectrum reading (executed 2026-06-15, at order-of-magnitude precision: $`R \approx 20`$ Gpc on the canonical electron-muon pair, $`\approx 10.5`$ Gpc on muon-top; the $`(\rho,\sigma)\to(T_3,Y)`$ rule it needed is the gate of the mass spectrum's §IV.4: [R from the mass spectrum](r-from-mass-spectrum.md)) |
+| Measured $`\alpha`$ (dimensionless) | $`\Omega_\Lambda`$, hence $`\Lambda_\text{ref}\ell_P^2`$ as a conditional output | $`\alpha`$ route; $`\Lambda_\text{ref}\ell_P^2 \propto \alpha^{60}`$, about 23% low with $`\alpha`$ read at $`q^2 = 0`$ (the 60-fold lever) |
 | Same-distance or same-exponent ratios | $`m_i/m_j`$ at fixed distance; $`\alpha_s/\alpha_W`$ | Anchor-free structural core |
 
 The anchor-free core is narrower than "all ratios." A mass ratio drops the overall floor $`\mu_\Lambda`$, which cancels in any ratio, but it keeps the McKay elevator $`(\sqrt{\Omega_\Lambda})^{\mathrm{dist}/30}`$ unless both particles sit at the same distance. Across distances the elevator survives, so the ratio carries $`(R/\ell_P)^{\Delta\mathrm{dist}/30}`$, and the mass hierarchy itself is that surviving factor. The same holds in the coupling sector: $`\alpha_s/\alpha_W`$ is anchor-free because both forces share the confinement grid, while $`\alpha_s/\alpha_{EM}`$ carries $`R`$ because the grids differ. So the genuinely anchor-free predictions are the same-depth ratios, and the cross-depth ratios are the lever for reading $`R`$.

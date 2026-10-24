@@ -552,7 +552,7 @@ The $`\cos(\pi/10)`$ factor on the weak coupling is a motivated correction, not 
 
 **Reference scale.** The displayed values compare $`\alpha`$ at low energy with $`\alpha_s`$ and $`\alpha_W`$ in their conventional $`Z`$-mass normalizations; run to the $`Z`$ mass, $`\alpha`$ itself is about 6% from the grid value. The grid returns base assignments; reconciling the reference scales, or deriving the running from the topology, remains open.
 
-**Anchor discipline.** Under the $`\Lambda`$-anchored reading these percent-level agreements are conditional comparisons of the selected ladder, not independent forward predictions. With $`\alpha`$ as the anchor instead, its own 0.4% becomes a closure test and the route's genuine output is $`\Lambda_\text{ref}`$, to 23%; [Inputs and Calibration](#inputs-and-calibration) lays out the anchors.
+**Anchor discipline.** Under the $`\Lambda`$-anchored reading these percent-level agreements are conditional comparisons of the selected ladder, not independent forward predictions. With $`\alpha`$ as the anchor instead, its own 0.4% becomes a closure test and the route's genuine output is $`\Lambda_\text{ref}`$, to 23% with $`\alpha`$ read at zero momentum transfer; [Inputs and Calibration](#inputs-and-calibration) lays out the anchors.
 
 **The Coxeter pair** $`(13, 17)`$ under $`h(E_8) = 30`$ is exceptional but not forced. Within the restricted conjugate-pair comparison, $`(13, 17)`$ stands alone: the three alternatives miss the coupling targets by 15% to 156% across the nine comparisons. The broad control is consistent with its local-density baseline, so it does not establish uniqueness. The restriction is therefore where the selection content lives. The three forces exhaust the grid ladder, monotone in fermionic content: there are only four ways to pair a carrier grid with a target grid, and the table shows three of them filled.
 
@@ -732,7 +732,7 @@ To attach a scale you invert one observable for $`\Omega_\Lambda`$. Three are in
 | Anchor | Determines | $`\Lambda_\text{ref}`$ | $`\alpha`$ | Role |
 |---|---|---|---|---|
 | measured $`\Lambda`$, under $`\Lambda_\text{ref} = 3/R_\Lambda^2`$ | $`\Omega_\Lambda`$ from $`R_\Lambda`$ | circular | 0.4% | current default |
-| measured $`\alpha`$ | $`\Omega_\Lambda`$ from the coupling | 23% | circular | best-conditioned |
+| measured $`\alpha`$ | $`\Omega_\Lambda`$ from the coupling | 23% at $`q^2 = 0`$ | circular | best-conditioned |
 | mass spectrum ($`m_\mu/m_e`$) | $`\Omega_\Lambda`$ from the mass ratio | ~13.4× off | ~few % | independent cross-check |
 
 **The named anchor.** For the $`\Lambda`$-anchored default this repository uses Planck 2018 base-ΛCDM, TT,TE,EE+lowE+lensing: $`H_0 = 67.36`$ km s⁻¹ Mpc⁻¹ and the vacuum density fraction $`f_\Lambda = 0.6847`$ (notation), giving $`\Lambda\,\ell_P^2 = 2.845 \times 10^{-122}`$, hence $`\Omega_\Lambda = 1.054 \times 10^{122}`$ and $`R_\Lambda = 5.38`$ Gpc. Everything absolute in the corpus derives from this named row; other Planck combinations, +BAO in particular, are comparison datasets and not silent replacements for the anchor. The one documented exception is the published mass ladder, pinned to the +BAO row, as the [mass spectrum's calibration note](../spectrum/files/mass-spectrum.md) records; how the working prose rounds the row, and why that leaves $`\Lambda`$ unchanged but not $`R_\Lambda`$, is in the [Calibration Structure](files/working/files/calibration-structure.md#the-named-anchor) note.
@@ -767,7 +767,7 @@ The dimensionless core above holds under any anchor; the rest stand as follows.
 | Quantity | Status |
 |---|---|
 | $`\Omega_\Lambda`$ | over-determined by three readings that do not yet agree |
-| $`\Lambda_\text{ref}`$ (absolute) | conditional output of the $`\alpha`$ reading (23%) or the mass reading (~13.4× off); circular from the $`\Lambda`$ reading; its identification with the physical $`\Lambda`$ is the Interface question |
+| $`\Lambda_\text{ref}`$ (absolute) | conditional output of the $`\alpha`$ reading (23%, with $`\alpha`$ at $`q^2 = 0`$) or the mass reading (~13.4× off); circular from the $`\Lambda`$ reading; its identification with the physical $`\Lambda`$ is the Interface question |
 | $`\alpha`$, $`\alpha_s`$, $`\alpha_W`$ (absolute) | $`\Lambda`$-anchored conditional comparisons (0.4% for $`\alpha`$); the anchor when $`\alpha`$ is the input |
 | first positive eigenvalue $`2/R_\Lambda^2`$ | surface spectral result |
 | absolute fermion masses | set by the $`m_e`$ benchmark |
