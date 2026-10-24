@@ -7,7 +7,7 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The%20mirror%20banner.png?raw=true" width="100%" alt="The Mirror">
 
-On S³/2I, every intrinsic spectral construction in the admissible class defined below can read L-function structure with arbitrary precision but cannot constrain individual L-function zeros. The reading capacity and the writing incapacity are two faces of a single structural fact, forced by the geometry, representation theory, and arithmetic of the manifold.
+On S³/2I, intrinsic spectral constructions in the admissible class defined below can read L-function structure with arbitrary precision, but none constrains the zeros of an individual Dirichlet or Hecke L-function attached to the 2I arithmetic data, in the sense of Definition 4. The reading capacity and the writing incapacity are two faces of a single structural fact, forced by the geometry, representation theory, and arithmetic of the manifold.
 
 ## I. Definitions
 
@@ -88,11 +88,11 @@ Two independent derivation paths (combinatorial Reidemeister + spectral analytic
 
 Selectivity: maximum (4 of 16 characters). Domain: $`s=0`$ only.
 
-For half-integer irreps (R1, R2, R6, R8), the same spectral method gives exact closed forms as well: the full Ray-Singer torsion resolves to $`\varphi^{-4}/4`$, $`\varphi^{4}/4`$, $`1`$, and $`4`$ respectively, so the maximal-selectivity reading holds across both spin parities. The earlier reading, that 28 to 32 characters survive without reducing, was an artifact of a coexact-only truncation that dropped the scalar tower; restoring it collapses the half-integer torsions to the golden-ratio closed forms above (see [the torsion correction](../../framework/files/working/files/torsion-correction.md)).
+For half-integer irreps (R1, R2, R6, R8), the same spectral method gives exact closed forms as well: the full Ray-Singer torsion resolves to $`\varphi^{-4}/4`$, $`\varphi^{4}/4`$, $`1`$, and $`4`$ respectively, so the maximal-selectivity reading holds across both spin parities. A coexact-only truncation, which drops the scalar tower, leaves 28 to 32 characters unreduced; with the scalar tower included, the half-integer torsions collapse to the golden-ratio closed forms above (see [the torsion correction](../../framework/files/working/files/torsion-correction.md)).
 
 ### B. Dirac Factorization
 
-The Dirac operator on $`S^3/2I`$ has eigenvalues $`\pm(n+3/2)/R`$, linear in $`n`$ with no curvature shift. Its spectral zeta factors finitely at all $`s`$ into three L-function layers: $`L(s,\chi)`$, $`L(s-1,\chi)`$, $`L(s-2,\chi)`$ for Dirichlet characters mod 120. The 120-grid carries $`\phi(120)=32`$ characters; of these, 28–32 survive depending on the irrep. That count belongs to the Dirac zeta; it is not the retired coexact-only torsion reading of section III.A, which carried the same numbers for a different operator.
+The Dirac operator on $`S^3/2I`$ has eigenvalues $`\pm(n+3/2)/R`$, linear in $`n`$ with no curvature shift. Its spectral zeta factors finitely at all $`s`$ into three L-function layers: $`L(s,\chi)`$, $`L(s-1,\chi)`$, $`L(s-2,\chi)`$ for Dirichlet characters mod 120. The 120-grid carries $`\phi(120)=32`$ characters; of these, 28–32 survive depending on the irrep. That count belongs to the Dirac zeta; the coexact-only truncation of section III.A gives the same numbers for a different operator.
 
 Selectivity: minimum (28–32 of 32 characters). Domain: all $`s`$.
 
@@ -150,7 +150,7 @@ Per-irrep twisted etas computed via fusion matrices for all three flat connectio
 | $`E_8`$ char. selection | 4 of 16 survive | Exact |
 | Curvature obstruction | Pochhammer tower | Structural proof |
 | Dirac factorization | 3-layer L-decomp. all $`s`$ | Structural |
-| $`S^1`$ bridge | Non-existence proved | 4 independent proofs |
+| $`S^1`$ bridge | Non-existence proved | 4 proofs |
 | Eta multiplicities | $`9\times120`$ signed table | Integer-exact |
 | Eta char. decomp. | 6–12 of 32 survive | Numerical, $`10^{-8}`$ |
 | $`\eta(\sigma,0)`$ exact | 9 rationals, denom divides 720 | Two-path, $`10^{-15}`$ |
@@ -321,7 +321,7 @@ The character table is the complete basis-independent invariant of the group act
 **Lemma 8 ($`\Theta\leftrightarrow s`$ Bridge).**
 **Strategy defeated:** Construct a natural map between the phase position $`\Theta`$ (from the scaling law $`C(\Theta)=2\sin^2(\pi\Theta)`$) and the spectral parameter $`s`$, exploiting their shared $`Z_2`$ symmetry.
 
-*Proof.* Four independent approaches on $`S^1`$ (heat kernel, theta function, Poisson summation, direct decomposition) prove no such map exists. Every eigenspace on $`S^1`$ with anti-periodic BC is 2-dimensional (sin and cos). $`C(\Theta)`$ depends on choosing $`\sin`$ over $`\cos`$. The spectral zeta sees only eigenvalues and multiplicities, blind to this choice. The two $`Z_2`$ symmetries, $`C(\Theta)=C(1-\Theta)`$ from spatial reflection and $`\xi(s)=\xi(1-s)`$ from Poisson/modular duality, arise from different mechanisms and are not related by a natural map.
+*Proof.* Four approaches on $`S^1`$ (heat kernel, theta function, Poisson summation, direct decomposition) prove no such map exists. Every eigenspace on $`S^1`$ with anti-periodic BC is 2-dimensional (sin and cos). $`C(\Theta)`$ depends on choosing $`\sin`$ over $`\cos`$. The spectral zeta sees only eigenvalues and multiplicities, blind to this choice. The two $`Z_2`$ symmetries, $`C(\Theta)=C(1-\Theta)`$ from spatial reflection and $`\xi(s)=\xi(1-s)`$ from Poisson/modular duality, arise from different mechanisms and are not related by a natural map.
 
 On $`S^3/2I`$: the McKay correspondence resolves the basis ambiguity (multiplicities are canonical), but continuous geometric position drops out by Schur's lemma: the right-<i>SU(2)</i> acts transitively, forcing the twisted heat kernel to be constant on the diagonal of each fiber. $`\square`$
 
@@ -397,7 +397,7 @@ $`S^3/2I`$ is a perfect arithmetic mirror. It reflects:
 
 ## VIII. Scope
 
-**Theorem 1** (local to $`S^3/2I`$): For intrinsic natural operators in the admissible class $`\mathcal{F}`$ on $`S^3/2I`$, spectral vanishing does not constrain individual L-function zeros in the sense of Definition 4.
+**Theorem 1** (local to $`S^3/2I`$): For intrinsic natural operators in the admissible class $`\mathcal{F}`$ on $`S^3/2I`$, spectral vanishing does not constrain the zeros of any individual Dirichlet or Hecke L-function attached to the $`2I`$ arithmetic data, in the sense of Definition 4.
 
 **Corollary 1** (local to $`S^3/2I`$): Within the admissible class $`\mathcal{F}`$ on $`S^3/2I`$, the four obstruction layers are exhaustive: coincidence condition, encoding degeneracy, framework mismatch, and character completeness. Every vanishing condition reduces to at least one of them.
 

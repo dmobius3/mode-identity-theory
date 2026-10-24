@@ -36,7 +36,7 @@ The well at 13/120 governs matter dynamics: it is the Fibonacci well ($`F_7 = 13
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fs-two-grids.png?raw=true" width="85%" alt="The phase operator C(Theta) over the rising half of the domain, above two rulers: the spinor grid k/120 and the bosonic grid k/60. The same well label 13 lands at 13/120 on the first and 13/60 on the second, giving C = 0.22 for a0 and C = 0.79 for alpha"></p>
 
-Photons are bosons, and the framework places the coupling $`\alpha = g^2/4\pi`$ on the 60-position bosonic grid ($`\lvert I \rvert = 60`$) rather than the 120-position spinor grid ($`\lvert 2I \rvert = 120`$). The grids differ in resolution, not in the readout: both are read through the intensity $`\lvert\psi\rvert^2`$, and $`a_0`$ at 13/120 is an intensity on the finer grid. Which grid a quantity takes is the framework's assignment by role (§V).
+The framework places the coupling $`\alpha = g^2/4\pi`$ on the 60-position bosonic grid ($`\lvert I \rvert = 60`$) rather than the 120-position spinor grid ($`\lvert 2I \rvert = 120`$), by the ladder's criterion of §V: the photon's action preserves the identity of what it acts on, and the criterion reads that action, not the photon's own spin. The grids differ in resolution, not in the readout: both are read through the intensity $`\lvert\psi\rvert^2`$, and $`a_0`$ at 13/120 is an intensity on the finer grid. Which grid a quantity takes is the framework's assignment by role (§V).
 
 The well label (13) stays the same. The grid denominator changes: $`120 \to 60`$. The phase operator evaluates differently at the two resolutions:
 

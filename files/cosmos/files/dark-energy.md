@@ -68,7 +68,7 @@ For a power-law clock $`dt/d\tau = S^n`$, the requirement that the non-vacuum se
 \frac{dt}{d\tau} = S^{-1/2}
 ```
 
-This is the Waltz clock. At early times $`S \ll 1`$, the clock $`dt/d\tau \propto S^{-1/2}`$ makes $`H \propto S^{-3/2} \propto (1+z)^{3/2}`$, which squares to the familiar matter-density scaling. The exponent is a 3/2, the ratio of matter dilution to the Friedmann square root; identifying that with the face/edge stabilizer ratio of the icosahedral group native to $`S^3`$ ($`|2I| = 120`$) is a conjectured correspondence, not derived. Integer alternatives ($`n = 0, -1, +1`$) produce $`(1+z)^1`$, $`(1+z)^2`$, and $`(1+z)^0`$ scalings respectively; all three are ruled out at $`\Delta\chi^2 > 60`$ against Pantheon+ (Appendix A of the companion analysis).
+This is the Waltz clock. At early times $`S \ll 1`$, the clock $`dt/d\tau \propto S^{-1/2}`$ makes $`H \propto S^{-3/2} \propto (1+z)^{3/2}`$, which squares to the familiar matter-density scaling. The exponent is a 3/2, the ratio of matter dilution to the Friedmann square root; identifying that with the face/edge stabilizer ratio of the icosahedral group native to $`S^3`$ ($`|2I| = 120`$) is a conjectured correspondence, not derived. Integer alternatives ($`n = 0, -1, +1`$) produce $`(1+z)^1`$, $`(1+z)^2`$, and $`(1+z)^0`$ scalings respectively; all three are ruled out at $`\Delta\chi^2 \geq 218.7`$ against the joint Pantheon+ and DESI DR2 BAO dataset (Appendix A of the companion analysis).
 
 ### The Hubble Rate
 
@@ -266,6 +266,8 @@ All predictions are registered on Zenodo in advance of the data. Both criteria b
 |---|---|---|
 | **$`(1+z)^1`$ coefficient in $`H^2(z)`$** (primary) | Non-positive, magnitude tied to $`s_0`$; inferred from a fit that includes a free $`(1+z)^1`$ term alongside the standard FLRW components | Positive coefficient detected, or magnitude inconsistent with fitted $`s_0`$ |
 | Diagnostic $`w_\text{eff}(z)`$ (derived consistency check) | $`> -1`$ under the fiducial split, any $`s_0 > 0`$ | Fiducial split gives $`w_\text{eff} < -1`$ at $`\geq 2\sigma`$ |
+
+*Note added 2026-10-24; the criteria above are unchanged.* The [Euclid card](euclid-dr1.md#v-1z1-coefficient-in-h2z) registers the first row's falsifier with its threshold, a positive coefficient at $`\geq 2\sigma`$, and "detected" above is read at that threshold.
 
 ### Connection to $`a_0(z)`$
 

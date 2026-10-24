@@ -140,9 +140,9 @@ Local distance ladders anchor their absolute scale to calibrators inside a putat
 
 Geometric methods integrate $`1/H(z)`$ along the line of sight, so a locally confined displacement enters only through the coherent fraction of the path. A 13 kpc domain on a baseline of order 1 Gpc gives a fraction near $`10^{-5}`$, falling to $`3 \times 10^{-6}`$ at the Hubble radius. Applied to the 8.4% step, that leaves a direct path-averaging displacement of about one part per million.
 
-This corrects the first version of this note, which treated phase-domain averaging as producing partial, intermediate $`H_0`$ values for geometric methods. The averaging channel is numerically irrelevant, and that prediction does not follow from it.
+Phase-domain averaging therefore does not produce partial, intermediate $`H_0`$ values for geometric methods: the averaging channel is numerically irrelevant.
 
-The correction leaves an unexplained observation rather than a repaired one. Megamasers and one standard treatment of time-delay lensing both return values near 74, where the corrected model no longer predicts anything intermediate. Explaining them would require an additional calibration-coupling mechanism that is not derived here.
+That leaves an unexplained observation. Megamasers and one standard treatment of time-delay lensing both return values near 74, where the model predicts nothing intermediate. Explaining them would require an additional calibration-coupling mechanism that is not derived here.
 
 ## V. Test Outcomes
 
