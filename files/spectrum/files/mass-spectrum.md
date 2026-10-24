@@ -240,7 +240,7 @@ The three counts answer progressively stricter questions: raw mass density cover
 
 The mass formula assigns each Standard Model fermion to a pair $`(\rho, \sigma)`$. The mass-formula factor is the torsion; the identity comes from the stabilizer structure of the icosahedron.
 
-The binary icosahedral group $`2I`$ inherits three stabilizer subgroups from the icosahedron: face ($`Z_3`$, order 3), edge ($`Z_2`$, lifting to $`Z_4`$ in the double cover), and vertex ($`Z_5`$, order 5). Each irrep of $`2I`$ restricts to these subgroups, producing three independent decompositions. MIT reads the face and edge decompositions as color and domain/spin structure; the vertex decomposition supplies the Galois distinction the Coxeter-Galois gate uses. The Möbius twist enters separately, as the motivated weak-coupling correction in §IV.5.
+The binary icosahedral group $`2I`$ inherits three stabilizer subgroups from the icosahedron: face ($`Z_3`$, order 3), edge ($`Z_2`$, lifting to $`Z_4`$ in the double cover), and vertex ($`Z_5`$, order 5). Each irrep of $`2I`$ restricts to these subgroups, producing three independent decompositions. MIT reads the face and edge decompositions as color and domain/spin structure; the vertex decomposition supplies the Galois distinction the Coxeter-Galois gate uses. The Plato twist enters separately, as the weak-coupling correction ansatz of §IV.5; its halving is the spin double cover, not the Möbius orientation $`Z_2`$.
 
 ### 1. Color from Faces
 

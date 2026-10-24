@@ -91,7 +91,7 @@ These three ingredients (matter well, bosonic grid, fractional exponent) map ont
 |---|---|---|---|
 | 1 | $`S^1 = \partial(\text{Möbius}),\ \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\},\ \partial S^3 = \emptyset`$ | Anti-periodic BC | Derived |
 | 2 | $`F_7 = 13`$, $`\gcd(13, 120) = 1`$; EM couples matter | Matter well 13 | Motivated |
-| 3 | $`\lvert\psi\rvert^2`$ (bosonic) | 60R-grid; $`\Theta = 13/60`$ | Motivated grid assignment |
+| 3 | Carrier role bosonic (the photon preserves identity, §V) | 60R-grid; $`\Theta = 13/60`$ | Motivated grid assignment |
 | 4 | $`\alpha`$ epoch-independent | Reference $`\Omega_\Lambda`$ | Framework selection rule |
 | 5 | Minimum grid step: $`1/\lvert I \rvert = 1/60`$ | $`\Omega_\Lambda^{-1/60}`$ | Provisional |
 | 6 | $`C(13/60) \times \Omega_\Lambda^{-1/60}`$ | $`\alpha = 0.00733`$ | Output |
@@ -214,7 +214,7 @@ The percentages are convention-pinned, and the conventions carry weight. The α 
 
 Under the Λ-anchored reading, the α row is a conditional comparison. The 0.4% holds when $`\Omega_\Lambda`$ is fixed externally, from the Planck Λ inference. When α is instead the best-conditioned anchor that fixes $`\Omega_\Lambda`$, its own 0.4% is a consistency check, not an independent prediction, and the genuine output of that route is $`\Lambda_\text{ref} = 3/R^2`$ to 23%. The surface sector is over-determined: you anchor on one of Λ, α, or the mass ratio and the others become conditional outputs, never all at once (see [Three readings of one hierarchy](../../framework/README.md#three-readings-of-one-hierarchy)).
 
-Those anchors do not presently close on one value. Substituting the mass-spectrum $`R_\Lambda`$ for the coupling-route $`R_\Lambda`$ moves $`\Omega_\Lambda`$ by about a factor of ten, which the $`-1/60`$ exponent damps to roughly 4% in the conditional $`\alpha`$ value: small in absolute terms, but an order above the 0.4% quoted here, so the mass and coupling calibrations cannot both preserve the percent-level gauge match. This is the same $`R_\Lambda`$-route tension carried under [Inputs and Calibration](../../framework/README.md#inputs-and-calibration), and it is an internal alternative calibration rather than a revised external Λ of the kind the core-consistency condition in Section VIII speaks to.
+Those anchors do not presently close on one value, and the mass sector does not furnish one $`R_\Lambda`$ at its present precision. Substituting the canonical electron-muon $`R_\Lambda`$ for the coupling-route $`R_\Lambda`$ moves $`\Omega_\Lambda`$ by about a factor of ten, which the $`-1/60`$ exponent damps to roughly 4% in the conditional $`\alpha`$ value; the best assigned pair, the muon and top, near 10.5 Gpc, moves it by about 2.9, which the exponent damps to roughly 2%. Either is small in absolute terms but several times the 0.4% quoted here, so the mass and coupling calibrations cannot both preserve the percent-level gauge match. This is the same $`R_\Lambda`$-route tension carried under [Inputs and Calibration](../../framework/README.md#inputs-and-calibration), and it is an internal alternative calibration rather than a revised external Λ of the kind the core-consistency condition in Section VIII speaks to.
 
 ## VI. The α-Λ Connection
 

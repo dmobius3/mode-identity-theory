@@ -215,7 +215,7 @@ Proved, often architecturally load-bearing, empirically inert. ~150+ leaf lemmas
 | Ω_Λ = (R/ℓ_P)² | ~10¹²² | derived/exact | definition on calibrated R (overclaim) |
 | m_e | 0.511 MeV | benchmark | whole-spectrum lever; m_e↔Λ ~11% loop |
 | μ_Λ = ρ_Λ^(1/4) | 2.25 meV | derived | quartic root of measured Λ (overclaim) |
-| H₀ = 67.4 | "phase-clock best-fit" | consistent | = Planck value, favourable side of tension (overclaim); the framing survived on one live page, early-galaxies §II ("consistent with the MIT phase-clock best-fit"), aligned to "the measured Planck anchor" 2026-09-05 |
+| H₀ = 67.4 | "phase-clock best-fit" | consistent | = Planck value, favourable side of tension (overclaim); the framing survived on early-galaxies §II ("consistent with the MIT phase-clock best-fit"), aligned to "the measured Planck anchor" 2026-09-05; it survived too on hubble-tension §I and in temporal-budget §IX's table, aligned 2026-10-24 |
 | a₀ = 1.2e-10 | MOND | calibration | the normalization the ratios then reproduce |
 | s₀ < 0.19 | data constraint | awaiting | the model's only fitted DoF; prior-sensitive 0.12–0.21 |
 | 122-orders span, H₀·t_P, Planck constants, GR-imported BH quantities, CMB anomaly targets | n/a | structural/derived | inputs fed in (overclaim where framed as outputs) |

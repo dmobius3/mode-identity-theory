@@ -33,7 +33,7 @@ The Planck CMB measurement gives $`H_0 = 67.4 \pm 0.5`$ km/s/Mpc at $`z \approx 
 
 The two-camp description is accurate for those two anchors and is not an accurate description of the full literature. Tip-of-the-red-giant-branch and J-region asymptotic-giant-branch calibrations from the Carnegie-Chicago programme fall well below SH0ES, and time-delay cosmography spans a wide range depending on how the lens mass profile is treated. That untidiness matters for §V and is not incidental.
 
-The framework's own phase-clock fit to Pantheon+ and DESI DR2 BAO prefers the low, Planck-side value, with $`H_0`$ entering as the fitted edge anchor rather than a derived output. It therefore sits on the CMB side of the pair and treats the local excess as the quantity requiring explanation.
+The framework's own phase-clock fit to Pantheon+ and DESI DR2 BAO constrains the combination $`H_0 r_d`$, with $`r_d`$ the BAO sound horizon, not $`H_0`$ alone. The framework takes $`H_0`$ as the measured Planck edge anchor, an input rather than a fitted or derived output, so it sits on the CMB side of the pair by calibration and treats the local excess as the quantity requiring explanation.
 
 In that reading, the two values are one Fibonacci well ($`\Theta_0 = 34/120`$) sampled at two positions. The CMB is taken to record a phase epoch predating local structure and therefore to sample the bare well; the local value corresponds to a one-step displacement. What the lattice fixes is the size of that step (§II). What it does not fix is why any observable would move, or in which direction.
 
