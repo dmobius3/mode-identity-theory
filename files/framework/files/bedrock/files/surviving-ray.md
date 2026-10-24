@@ -1443,6 +1443,23 @@ claim. Lemma 7.3 was not located in
 the sources read, [Bj] and [RK] among them; with it, the classical inequality and its equality case
 give the whole statement.
 
+> **Remark** (every spin)**.** The proofs of Lemma 7.3 and Proposition 7.4 use spin 3 only through
+> its numbers. At spin $`S \ge \tfrac12`$, integer or half-integer, write
+> $`P_u(x, y) = \sum_{m=-S}^{S} u_m \sqrt{\binom{2S}{S+m}}\, x^{S+m}\, y^{S-m}`$ for $`u \in V_S`$,
+> the standard realisation of $`V_S`$ on the binary forms of degree $`2S`$, isometric for the
+> Bombieri norm, and let $`\Theta_S`$ be the time reversal of Section 5.9, which commutes with
+> rotations. Since $`V_{2S}`$ occurs once in $`V_S \otimes V_S`$ and
+> $`\langle S\,S;\, S\,S \mid 2S\,2S\rangle = 1`$, the proof of Lemma 7.3 gives
+> $`\lVert [u \otimes \Theta_S u]_{2S}\rVert^2 = [P_u P_{\Theta_S u}]^2`$, and for two forms of degree
+> $`2S`$ the inequality in the proof of Proposition 7.4 reads
+> $`[pq]^2 \ge [p]^2 [q]^2 / \binom{4S}{2S}`$. As $`[P_u] = [P_{\Theta_S u}] = \lVert u\rVert`$, the
+> top multipole at spin $`S`$ satisfies
+> $`\lVert [u \otimes \Theta_S u]_{2S}\rVert^2 \ge \lVert u\rVert^4 / \binom{4S}{2S}`$, with equality
+> exactly on the coherent states, since Reznick's equality case is unchanged and
+> $`\Theta_S v_S = \varepsilon_S v_{-S}`$. This proves the order $`M = 2S - 1`$ of [Bj]'s statement
+> at every spin $`S \ge 1`$, together with the equality case, which [Bj] do not claim; at $`S = 3`$ it
+> is Proposition 7.4.
+
 **The maximum.**
 
 > **Theorem 7.5.** On $`\mathbb P(V_3)`$, $`\widehat r_6 \le 463/924`$, with equality exactly on
@@ -1797,7 +1814,8 @@ state can reach, probing the question numerically [RK]. Both the value and the q
 (Section 7.1); the exact maximiser set at spin 3, Theorem 7.5, was not located in the sources read. The
 minimum was stated by Björk and coauthors, as one order of a claim about cumulative multipoles, with an
 appendix step unproved and no uniqueness claim [Bj]; with Lemma 7.3 it is the inequality of Beauzamy,
-Bombieri, Enflo and Montgomery [BBEM] with Reznick's equality case [Re] (Section 7.3). [KU] and their
+Bombieri, Enflo and Montgomery [BBEM] with Reznick's equality case [Re] (Section 7.3), and the same
+argument gives it at every spin. [KU] and their
 review [KU-rev] state the nematic bound $`\mathrm{Tr}\,\mathcal N^2 \le 171/2`$ and justify it by the
 trace, 12, and the range $`[0, 9]`$ of the eigenvalues, which also admit $`(9, 3, 0)`$, where
 $`\mathrm{Tr}\,\mathcal N^2 = 90`$; Step 3 of Section 7.3 proves the bound.
