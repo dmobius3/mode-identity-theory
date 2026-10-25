@@ -795,7 +795,7 @@ The body is the theory as it stands; this is the theory as a program. The larges
 
 **Calibration closure: do the independent scale-fixings agree?** No, and this is the framework's largest internal tension: the two non-circular readings of the surface hierarchy disagree, and every absolute scale inherits the ambiguity until one reading is established as the determination of $`R_\Lambda`$. [Inputs and Calibration](#inputs-and-calibration) carries the readings, the numbers and the conditioning question.
 
->**📒 [Energy as Resolution Amplitude](files/working/files/energy-as-resolution-amplitude.md):** energy read as the standing-wave resolution amplitude, a working note toward the stress-energy accounting.
+>**📒 [Energy as Resolution Amplitude](files/working/files/energy-as-resolution-amplitude.md):** a candidate reading of energy as the standing-wave resolution amplitude, and of $`E^2 = (mc^2)^2 + (pc)^2`$ as the Pythagorean theorem on the sampling operation's mode decomposition.
 
 >**📒 [Entropy as Realization Budget](files/working/files/entropy-as-realization-budget.md):** entropy as the logarithm of the number of ways the budget's quanta occupy the accessible modes, with those modes set by the Molien shell-unlock map.
 

@@ -108,7 +108,7 @@ Promotion from MOTIVATED to DERIVED requires walking the following steps.
 
 ## VII. Status Summary
 
-The reframe is structurally consistent with MIT's existing framework. It uses no new postulates. It recovers the SM relativistic energy-momentum relation as Pythagorean theorem on mode decomposition. The photon case checks. The mass formula sits in the right shape to be reinterpreted as temporal-mode amplitude spectrum.
+The reframe is structurally consistent with MIT's existing framework. It uses no new postulates. It would recover the SM relativistic energy-momentum relation as the Pythagorean theorem on the mode decomposition, once the spatial-mode coupling, the orthogonality and the $`c^2`$ factor (Steps 1 to 3) are walked. The photon case is consistent with the Waltz's reading (§III). The mass formula sits in the right shape to be reinterpreted as temporal-mode amplitude spectrum.
 
 None of the promotion steps are walked. The spatial-mode coupling is the core derivation needed. Lorentz recovery is the validation test.
 

@@ -25,13 +25,13 @@ Given S¹ = ∂(Möbius) ↪ S³, ∂S³ = ∅, with anti-periodic boundary cond
 
 that produces finite, well-defined observables?
 
-If not, the separated form is forced within that class. Whether the class exhausts the physical observables is a further premise, not part of the question. The aim is a Gleason-style rigidity (Born is the unique measure on the projection lattice); here it is reached for the phase family and, within definite weight, the integer-depth hierarchy, while the phase profile adds a named member selection and normalization and its intensity readout is conditional on adopted measurement premises; for the third factor it is argued, not yet closed.
+If not, the separated form is forced within that class. Whether the class exhausts the physical observables is a further premise, not part of the question. The aim is a Gleason-style rigidity (Born is the unique measure on the projection lattice); here it is reached for the phase family and, within definite weight, the integer-depth hierarchy, while the phase profile adds a named member selection and normalization and its intensity readout is conditional on adopted measurement premises; for the third factor it is reached, for single-position observables, as a conditional theorem on adopted premises, its weight on the first-positive projection (Step C).
 
 ---
 
 ## What's Closed
 
-The proof splits into three structural pieces. Two close cleanly in their form: the phase operator (anti-periodic BC for the family, background symmetry for the member, with its intensity readout a conditional theorem on adopted measurement premises) and the integer-depth hierarchy (units for the admissible dimensional form, exact homothety for the power). The third, the factored form, *separates* on a Schur + homothety argument (dimensionlessness does not supply it), but is not yet closed: the no-cross-term step needs boundary-mode uniformity (below). The heavy machinery once aimed at the hierarchy addresses a target that dimensional analysis already settles.
+The proof splits into three structural pieces. Two close cleanly in their form: the phase operator (anti-periodic BC for the family, background symmetry for the member, with its intensity readout a conditional theorem on adopted measurement premises) and the integer-depth hierarchy (units for the admissible dimensional form, exact homothety for the power). The third, the factored form, *separates* on a Schur + homothety argument (dimensionlessness does not supply it), and, for single-position observables, closes only conditionally: the no-cross-term step needs boundary-mode uniformity, a conditional theorem on adopted premises whose weight sits on the first-positive projection (below). The heavy machinery once aimed at the hierarchy addresses a target that dimensional analysis already settles.
 
 | Piece | Status | Mechanism |
 |---|---|---|
