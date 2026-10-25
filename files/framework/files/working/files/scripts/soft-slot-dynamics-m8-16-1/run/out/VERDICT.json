@@ -1,0 +1,36 @@
+{
+ "verdict": "QUALIFIED",
+ "instrument": true,
+ "r5_gate": true,
+ "rows": {
+  "T1/R4": true,
+  "T1/R5": true,
+  "T4/R4": true,
+  "T4/R5": true,
+  "T2/R4": true,
+  "T2/R5": true,
+  "T3/R4": true,
+  "T3/R5": true,
+  "T5/R2": true
+ },
+ "members": {
+  "T5J/R2": false
+ },
+ "c3_ray": {
+  "C3R/R4": "passed"
+ },
+ "qualified": [
+  "T1/R4",
+  "T1/R5",
+  "T4/R4",
+  "T4/R5",
+  "T2/R4",
+  "T2/R5",
+  "T3/R4",
+  "T3/R5",
+  "T5/R2"
+ ],
+ "failing": [],
+ "failed": [],
+ "k3": "resolved"
+}

@@ -1276,3 +1276,411 @@ Each file equals this folder's, byte for byte, and the manifest, recomputed ther
 2. `SHA256SUMS`, fresh, and `shasum -c`;
 3. the final scan;
 4. the local commit, verified from its own tree.
+
+## 49. 2026-10-23T22:05:34Z: the re-filing's local commit `d1c0ec889b09`, verified from its own tree; not pushed
+
+**The commit.**
+- `d1c0ec889b09b4a93d5f08e63280080e25e83e2e`, on `origin/main` at `1ac1c7bcce03`, which a fetch just before the commit found unmoved.
+- It is 1 ahead and 0 behind, so the push would be a fast-forward. It is not pushed.
+- Author and committer: `Blake Shatto <blake@Blakes-MacBook-Air.local>`, as the filing's.
+- It changes 65 files: 52 added, 11 modified, and v6's builder and template recorded by git as 2 renames to v7's. The modified files are this folder's nine, its `SHA256SUMS` and the census page.
+
+**Verified from the committed tree,** extracted by `git archive`:
+- `shasum -a 256 -c SHA256SUMS` passes, 248 OK and no other line;
+- the manifest equals the new pin over 48 files;
+- the census page names the revised terms' SHA-256 and the new pin once each, and its note of 2026-10-22 still names v6 and the retired pin, as it stands;
+- `REPRODUCE.md` equals the bench's;
+- `registration/` holds v7's builder and template alone.
+
+The worktree is clean after the commit.
+
+**What the commit carries.** The committed log ends at entry 48. This entry and any later ones stay on the bench until the next filing.
+
+**Next:**
+1. The units' short look at the applied texts, as UB asked: the reply and the pull request's paragraph, filled with this commit's values; the census note; `REPRODUCE.md`'s four lines; the commit's message and file list; and entries 44 to 49.
+2. The push, on Blake's word.
+3. OpenWave's commit, on Blake's word.
+4. The reply on #650, on Blake's word.
+
+## 50. 2026-10-23T22:12:57Z: the units' short look: GO on the push and OpenWave's commit, and on the reply after one fix; Blake's word for the push
+
+Blake, in his own words: "push if/when good w/", with both units' replies on `refiling_look_v1.zip`, `a8cde0d1a8dd9824523f86ce28795a141f72ef2cdb08afffa9a541fb0ab5632e`.
+- **UA:** GO on the MIT push, OpenWave's commit and the pull request's paragraph. On the reply, a CHANGE: its "on `0d6beae`" names the filing, not the commit's parent, which is `1ac1c7b`. UA verified that the bundle identifies `d1c0ec8` and reviewed the committed diffs, without rebuilding the whole tree from the bundle.
+- **UB:** GO on the push, OpenWave's commit and the paragraph, and on the reply after the same fix, in its words.
+  - **The commit:** the bundle verifies against MIT `main`; `d1c0ec8`'s parent is `1ac1c7b`, whose only change is `files/framework/README.md`.
+  - **The folder against `0d6beae`:** 52 added, 10 modified and the two renames. `checks.py`, `test_verdicts.py` and v7's builder and template are byte for byte what UB reviewed. The log's first 42 entries are unchanged.
+  - **From the commit's tree:** `shasum -c` reads 248 OK, the manifest equals the pin, both terms copies are v7, and the census page and `REPRODUCE.md` change as recorded.
+  - **The margin script:** `dev/verify_e3_margin.py` reproduces its kept output.
+  - **The scan:** MIT runs no path check in CI, so the log's mentions of the pattern affect nothing there, and the OpenWave branch carries only the task doc.
+  - **The filled texts** differ from the drafts only in its two replacements and the filled values.
+- **Adopted:** UB's text for the reply's line, exactly as given: "), on `1ac1c7b`, which follows `0d6beae` with one edit to `files/framework/README.md`." It names the commit's real parent and why a diff from the filing shows the README's edit. The next line already says the filing's pin and terms copies are retired, which is UA's point. The draft is now `821f34d69eec600c0bc07a2250a34f03164d09a2d3661e19ba6ae31dfdd8719a`.
+
+**Next:** the push, as a fast-forward from `1ac1c7b` after a fetch, read back live. OpenWave's commit and the reply each wait for Blake's word.
+
+## 51. 2026-10-23T22:13:54Z: the re-filing landed: `d1c0ec889b09` pushed to MIT `main`, and read back live
+
+Under entry 50's word.
+
+**The push.** MIT was fetched again, and `origin/main` was still `1ac1c7bcce03`, the commit's parent. `git push origin HEAD:main` was a fast-forward, `1ac1c7bc..d1c0ec88`, and `ls-remote` shows `main` at `d1c0ec889b09b4a93d5f08e63280080e25e83e2e`.
+
+**Read back live,** through GitHub's API, at `main`:
+- `REPRODUCE.md`, `run/m8_16_task_details.md`, `run/MANIFEST_PIN`, `SHA256SUMS` and `run/checks.py` equal the bench's;
+- the census page renders 114 math elements for its 114 math spans;
+- its note on the revised terms names their SHA-256 and the pin once each, and links #650.
+
+**What is current.** MIT `main` and this worktree are at `d1c0ec8`. Blake's main checkout shows the revision once it pulls. The bench's log holds entries 49 to 51, and they reach the folder with the next filing.
+
+**Next, each on Blake's word:**
+- OpenWave's commit on #650's branch, with the task doc as v7, pushed to the fork;
+- then the reply and the pull request's revised paragraph, filled with both commits, for Blake to post.
+
+## 52. 2026-10-23T22:19:16Z: OpenWave's revision commit on #650's branch, pushed to the fork; the reply and the description, for Blake
+
+Blake, in his own words: "go on the OpenWave commit".
+
+**Before the commit:** the clone sat on #650's branch with nothing uncommitted, and its head, the fork's and #650's were all `0d290498e6bb`. `upstream/main` was still `42b13ab9`, with no M8 change since the branch's base.
+
+**The commit:** `c73fb21d696eff029bfb4618dc6ed1248abe6942`, on `0d290498e6bb`, in the clone's local identity, signed off for the DCO once, with the Co-Authored-By line. Its message is the reviewed draft with MIT's commit, `d1c0ec8`, filled in.
+- It changes one file, +6 −5: the task doc, now v7, byte for byte MIT `d1c0ec8`'s `run/m8_16_task_details.md`. The changed lines are the five places of entry 41.
+- The roadmap's rows are unchanged.
+- `check_roadmaps.py` and `check_models_md.py` are clean, and `check_no_local.py --require-files` is clean on the task doc and the roadmap, and `--staged` on the commit.
+
+**The push:** a fast-forward on the fork, `0d290498..c73fb21d`. #650's head is now `c73fb21d`, its two commits are `0d290498` and `c73fb21d`, and DCO passes. Read back raw from the fork, the task doc hashes to the terms', `9d167129…`.
+
+**For Blake to post,** filled with both commits, the pin, the terms' hash and their words (7,669), with every link resolving:
+- `m8_16_1_pr650_reply_v1.md` `eecbad11c60ac022696067ca78bbccb8eca2a3529417ec10c77ffbb10e47d8cb`: the reply to the review, on his clipboard. It is the draft with UB's three replacements, each exactly as given.
+- `m8_16_1_pr_body_v2.md` `738380b73e5c855ba8538cd76d06e8b757676eafb59546e1306fede779f06d47`: #650's description with its Provenance paragraph replaced by the reviewed draft. The description on #650 was first checked equal to the filed `m8_16_1_pr_body_v1.md`.
+
+**Next:** Blake posts the reply and edits the description, then requests the re-review. After that come the re-review, the merge, the maintainer's go, `write_guard.py`, the freeze block and the run.
+
+## 53. 2026-10-23T22:24:30Z: Blake posted the reply on #650; the description is not yet revised
+
+Blake, in his own words: "posted the reply and updated the description, now we wait".
+- **The reply** is [comment 6375883582](https://github.com/openwave-labs/openwave/pull/650#issuecomment-6375883582), posted at 2026-10-23T22:20:29Z. It equals `m8_16_1_pr650_reply_v1.md` line for line, apart from the draft's last line, which it leaves out: "Both review units confirmed the code, the tests and the final text. No sealed case has run."
+- **The description,** read through the API, still equals the filed `m8_16_1_pr_body_v1.md`. Its Provenance paragraph names MIT `0d6beae`, the pin `146bb7b1…` and terms v6. The pull request was last updated at 2026-10-23T22:20:29Z, with the reply. The revised description, `m8_16_1_pr_body_v2.md`, is on Blake's clipboard.
+- **No review request** is pending on #650.
+
+**Next:** Blake's call on the description and on requesting the re-review. Then the re-review.
+
+## 54. 2026-10-23T22:26:13Z: #650's description revised, without the review units
+
+Blake, in his own words: "bro I have my hands full, just make the changes please. leave the "two review units" shit out that's internal stuff".
+- **The description** is now `m8_16_1_pr_body_v3.md` `373c6923c2175ec06444798c299631feb25970efcb652eda3b15aa06fd95818b`. That is `m8_16_1_pr_body_v2.md` without its last sentence, "Both review units confirmed the final text."
+- It was set with `gh pr edit 650 --body-file`. Read back through the API, it equals the file.
+- Its Provenance paragraph names MIT `d1c0ec8`, the new pin and terms v7. Nothing else in it changed from the filed description, and no line of it names the units.
+- **The reply** stands as Blake posted it, without its line on the units.
+- **The rule, from here on:** the units stay out of every outward text. They stay named in this log and the bench's.
+
+**Next:** the maintainer's re-review.
+
+## 55. 2026-10-24T18:43:22Z: #650 approved and merged: M8.16.1's terms are registered; the maintainer's go, posted as its own comment
+
+Blake, in his own words: "PR merged w/ comment".
+
+**The approval** ([review 5638750915](https://github.com/openwave-labs/openwave/pull/650#pullrequestreview-5638750915), 2026-10-24T15:17:05Z) is kept verbatim on the bench as `xrodz_approval_650_5638750915.md`, body SHA-256 `dbe9f10dde7a3a501e8a3ad010bb64d2a0b72184ecaf36d6a661ee0c07260b10`.
+- B1 is fixed as described. On the review's harness, the 35 groups of the 11 bar cases other than the pyramid pass at every cutoff, while `0d6beae`'s `checks.py` still fails T5/R2's two lowest. M8.16's `P5.json` reads the same under the old code and the new.
+- The maintainer recomputed the manifest independently: `8cc2d7e2…` over 48 paths, five entries changed against the filed manifest. Tests 1 and 2 reproduce byte for byte.
+- **"No maintainer edit was made on the branch."** Its head at the merge, `0d20a00a`, is the maintainer's update-branch merge of `main`, with parents `c73fb21d` and `90e960b1` (#651). Against `c73fb21d` it changes two files outside M8 and no M8 file.
+- **A reading note, on the record:** the margin behind check 1 is measured, not certified. Pushed toward each other by a pure `ε³` term, T5's two lowest exchange from about 4.95 ceilings each, and from about 5.3 the bar reads both fail on a correct `c_g`. The review does not ask for the stronger rule, and the terms' consequences of a failure stand as written.
+- **Commitments it records:** the go as its own comment, then `write_guard.py`, the freeze block and the run; the last qualification; adjudication by the maintainers; and maintainer reproduction for any claim of defective frozen text.
+
+**The merge:** `164288f9` on OpenWave `main`, at 2026-10-24T15:17:15Z. Read at source:
+- the task doc there hashes to `9d16712982e53889…`, the terms, equal to MIT `d1c0ec8`'s copies;
+- the roadmap there equals #650's at `c73fb21d`.
+
+**The go** ([comment 6385959498](https://github.com/openwave-labs/openwave/pull/650#issuecomment-6385959498), 2026-10-24T15:22:33Z) is kept verbatim as `xrodz_go_650_6385959498.md`, body SHA-256 `c5a7d6fb6823dcaf5b61ee195cad82c1e1639f5bc7cca763dba030ec0065b771`.
+- **What it names, in full:** the terms `9d167129…`, merged in `164288f9`; the instrument at MIT `d1c0ec8`; its pin `8cc2d7e2…` over 48 files. "This go covers that pinned tree."
+- **The order it sets:** `write_guard.py` writes `run/FROZEN.json` once, with the terms' SHA-256, the go and the manifest's SHA-256, then `run/FROZEN_PIN`; then the freeze block, `research/m8_16_1/freeze_block.md`, with `FROZEN.json` in full; then the run.
+- **The adjudication** applies M8.16's checks as this task changes them, the next-order bar and the verdict rule's changes, with the reading notes of both reviews.
+
+**Next,** each on Blake's word, as M8.16's entries 325 to 330 went:
+1. the freeze: `write_guard.py MIT_REPO https://github.com/openwave-labs/openwave/pull/650#issuecomment-6385959498`, after its checks;
+2. the freeze block, committed on an OpenWave branch and pushed to the fork, for Blake to open;
+3. the launch of the registered run.
+
+## 56. 2026-10-25T01:42:28Z: the freeze written: `run/FROZEN.json` and `run/FROZEN_PIN`, the target records copied
+
+Blake, in his own words: "go on 1", the first of the three steps the preflight listed: the fast-forward, the checks again, and the write.
+
+**Checked before the write:**
+- the go (entry 55) on GitHub, by the maintainer and unedited, equals the kept copy, whose SHA-256 is entry 55's;
+- it names our terms' SHA-256 and our pin in full, MIT `d1c0ec8` and the merge `164288f9`;
+- MIT `main` is at `b0ada564`, 20 commits past `d1c0ec8`, none of them touching this folder or the census page, which names the pin and the terms once each; the worktree fast-forwarded to it;
+- the bench's manifest equals the pin;
+- no freeze existed, no target record had been copied, and there was no `run/out/`;
+- `record_environment.py --check` found no difference from `run/ENVIRONMENT.json`;
+- each target record's blob id equalled the named one at its commit, and `next_order_values()` and `frozen_values()` passed, called without a write.
+
+**The write.** `run/write_guard.py MIT_REPO GO_LINK` ran with the worktree, at `b0ada564`, as `MIT_REPO` and the go's link.
+- **It wrote by exclusive create:**
+  - `run/FROZEN.json` `c258e299b8f0268e805712b4f087b3533c6e0cd3c37e237bf3d0639540c52a2d`, written 2026-10-25T01:40:57Z, with the 17 cases on the allowlist in the run's order, the frozen values, the next-order values file `b05fff5ddd71c29c79318b6257f940c6035d7c954f3bafa34a22080eecc00333` with its cases section `45ad237179b6c7176b4372f8b36fe6cf20ba95ebdff510f727eec1ea4a2ebeea`, the terms' SHA-256 `9d16712982e5388970fca33de59958721109e09f9d88dec7a2a088489ad3efd6`, the manifest's `8cc2d7e2d01a72fc3572adabf917656abf36cbddd70ed35532b73ae5451790dd` and the go;
+  - `run/FROZEN_PIN`, `c258e299b8f0268e805712b4f087b3533c6e0cd3c37e237bf3d0639540c52a2d`, its SHA-256.
+- **Checked after it:** `devtools.frozen()` admits the freeze, and the manifest still equals `run/MANIFEST_PIN`. `FROZEN.json` holds the terms in `run/`, the pin, the go and the values file, and its allowlist and order are `cases.py`'s 17.
+- **The target records,** each copied from MIT at its named commit only after its blob id equalled the named one, into `reference/m815_targets/`, outside the manifest. They are M8.16's five, blob for blob and byte for byte (its entry 325):
+  - T2_R4: blob `22bb03321404960b76ad568e1091f9629b4bdcb2`, SHA-256 `5b1758c9ec1c6566091fe9028a542f67fd6bd0ad51c927f7147d54c07d876b49`
+  - T2_R5: blob `2a5e77315c8c323e0c9ec8b15629fa26b6b64d98`, SHA-256 `a064683298ebc922ecbba06316a3af11b68a7b6193e7e04c63eaa9fc1ad931ba`
+  - T3_R4: blob `497301e4186b8e45d9efcb4207255d7b257f47e7`, SHA-256 `fe3497a3a4de45a5f3a6d2ce2a6c322feb5399610ad20d9da530acd8abdf3bc2`
+  - T3_R5: blob `a719df9db2b04edc06c1ec82f2d8467fc5b77c41`, SHA-256 `660d0322d1921bb7b6c9e7e1b71bf3c54bea63a6c17a754e22582601b49aaee4`
+  - T5_R2: blob `76501d58c96bec7db585dd525a09994a35f23251`, SHA-256 `6bcdb5cfd58980bf228b4c84271e51d1e6efa5b6052b0fd6cf98cce143a5884f`
+
+**Next,** each on Blake's word:
+1. the freeze block, `research/m8_16_1/freeze_block.md`, built by `run/freeze_block.py` with the solver commit `d1c0ec8` and the seed check's record, `dev/seed_check.json`; committed on an OpenWave branch from `main` and pushed to the fork, with Blake opening the pull request;
+2. the launch of the registered run, on mains with the lid open.
+
+## 57. 2026-10-25T01:48:56Z: the freeze block built, committed on an OpenWave branch and pushed to the fork; Blake opens the pull request
+
+Blake, in his own words: "go on 2".
+
+**The block,** `research/m8_16_1/freeze_block.md`, 4927 lines, SHA-256 `ea30dbff5e030cc254e8a8513486fb34ab6166a511228a5d10155546da3d05c4`. `run/freeze_block.py` built it with the solver commit, MIT `d1c0ec889b09b4a93d5f08e63280080e25e83e2e`, and the seed check's record, `dev/seed_check.json`, and wrote it once, by exclusive create, as `../freeze_block.md` on the bench. Checked against its sources:
+- the terms' SHA-256, the go, and the time `FROZEN.json` was written;
+- the manifest's 48 rows, each equal to the manifest; its SHA-256, equal to `run/MANIFEST_PIN`; and the freeze pin;
+- the environment, as recorded and as read again when the block was built, with no difference;
+- the five target records, with their commits, blob ids and SHA-256;
+- the next-order values file and its cases section;
+- the 17 seeds, each checked;
+- the 12 files the seed check loaded, each equal to its manifest line. They are unchanged since the seed check ran in entry 23: its eleven instrument files equal M8.16's on MIT `main`, `run/seeds.py` has the SHA-256 entry 23 records after its changes, and `dev/seed_check.json` is that run's record, `dev/runs/014_seed_check.json`;
+- `FROZEN.json` in full, byte for byte;
+- the order: the 17 cases of `FROZEN.json`.
+
+**The commit:** `b8f310639b194f68c55bb4b53231f0d40aae8f67`, on `m8-16-1-freeze-block-2026-10-25`, from upstream `main` at `164288f9`, #650's merge, where upstream still stands. It adds the one file, 4927 lines, and is signed off for the DCO. OpenWave's three checks are clean: `check_no_local.py --staged --require-files` (1 file read of 1), `check_roadmaps.py` and `check_models_md.py`.
+
+**The push.** The fork's branch is at `b8f310639b`, and the block, read back raw from the fork, has the bench's SHA-256. No pull request is open.
+
+The pull request's text is drafted as `../m8_16_1_freeze_pr_body_v1.md`, its title as `../m8_16_1_freeze_pr_title_v1.txt`, and the text is on Blake's clipboard. It runs from `dmobius3:m8-16-1-freeze-block-2026-10-25` into `openwave-labs/openwave` `main`.
+
+**Next:**
+1. Blake opens the pull request;
+2. the launch, on Blake's word, once it is open or after its merge;
+3. the run, about 14 to 18 h, on mains with the lid open and Low Power Mode off.
+
+## 58. 2026-10-25T01:53:54Z: #652, the freeze block's pull request, opened by Blake; read back
+
+Blake asked whether to post it as a draft. The answer given: a regular pull request, the shape of M8.16's [#639](https://github.com/openwave-labs/openwave/pull/639), which was opened after #637's go, not as a draft, and merged before that run. He opened it himself, from the terminal, with the `gh pr create` command drafted here, which takes its title and body from entry 57's two files.
+
+**Read back** ([#652](https://github.com/openwave-labs/openwave/pull/652), opened 2026-10-25T01:52:53Z):
+- by dmobius3, open, not a draft;
+- the title and the body equal the drafted files;
+- `dmobius3:m8-16-1-freeze-block-2026-10-25` into `main`, at entry 57's commit `b8f310639b`, its one commit;
+- the one file, `openwave/xperiments/m8_mit/research/m8_16_1/freeze_block.md`, 4927 lines added;
+- the DCO check passes.
+
+It is bound to this session, with the monitor off.
+
+**Next,** on Blake's word: the launch of the registered run, with #652 open or after its merge, on mains, with the lid open, Low Power Mode off and the app left open.
+
+## 59. 2026-10-25T01:58:23Z: the registered run, launched on Blake's go
+
+**The go:** Blake's own words, "launch the run", with #652, the freeze block's pull request, open (entry 58).
+
+**Pre-flight,** read-only, before the launch:
+- `devtools.frozen()` validates, with 17 cases on the allowlist, and the manifest equals `run/MANIFEST_PIN`;
+- `record_environment.py --check`: no difference from `run/ENVIRONMENT.json`;
+- the driver with no flag is the registered run, writing under `run/out/`, which did not exist, so it starts with no run log;
+- no file in this folder newer than `run/FROZEN_PIN` but this log;
+- #652 open, not a draft;
+- the machine: no thermal warning, 308 GiB free, 24 GB of memory with 85% free, and no other run.
+
+**The launch:**
+- **The command:** `python3 -I -B -u run/driver.py`, from the bench, under `caffeinate -i -m -s -w` on its shell, as a background task. Its output goes to `run/out/driver.log` through `tee`, so it also shows live in the app's background-task panel, and `run/out/` was made just before. M8.16's command (its entry 330) redirected the output to the file instead. A two-line test first showed `tee` passing each line on as it came.
+- **The power,** read at 2026-10-25T01:57:34Z: "Now drawing from 'AC Power'"; "-InternalBattery-0 (id=6881379)	80%; charging; 1:15 remaining present: true"; `lowpowermode 0`. Blake's Caffeine app also holds the display awake, and `caffeinate` holds the system, idle and disk assertions on the run's shell.
+- **The tree:** the run's log records the manifest's SHA-256 at the start, `8cc2d7e2d01a72fc3572adabf917656abf36cbddd70ed35532b73ae5451790dd`, equal to `run/MANIFEST_PIN`. The freeze pin is `c258e299b8f0268e805712b4f087b3533c6e0cd3c37e237bf3d0639540c52a2d`.
+- **Started** at 2026-10-25T01:57:38Z. The first case, C1, passed its seed and its three points at `N = 16` within the first minute.
+- **The terms' estimate** (INFERRED): about 13.6 to 17.3 h with the rows, plus about 0.5 h for the C3 ray and 0.2 h for T5J.
+
+The run's record of itself is `run/out/RUNLOG.json`; the driver writes no entry here (M8.16's entry 331, its correction to entry 330). The run's end, or a stop, gets its own entry. Lid open and on mains through the night.
+
+## 60. 2026-10-25T16:38:07Z: the registered run: QUALIFIED; the instrument and all nine rows qualify, T5's second member does not; #652 merged
+
+**The run** launched in entry 59 ended at 2026-10-25T16:35:38Z, 52680 s after its start (52681 s by its own clock), with exit code 0. The cases' run times sum to the wall time within seconds, so the machine did not sleep.
+
+**The verdict,** `run/out/VERDICT.json`, as the driver wrote it: QUALIFIED. The instrument qualifies, with K3's outcome "resolved", and the `R5` gate passed. The rows it qualifies: T1/R4, T1/R5, T4/R4, T4/R5, T2/R4, T2/R5, T3/R4, T3/R5, T5/R2. T5's second member, T5J/R2, is not qualified. The C3 ray passed.
+
+**The order as run,** every case on its three cutoffs:
+
+| case | role | slot | passed | failed | groups under the next-order bar | s |
+| --- | --- | --- | --- | --- | --- | --- |
+| C1 | control | R3 | K1, K4 | none | leading order | 730 |
+| C2a | control | R4 | K1, K4, converged, bar, trend, K2 | none | leading order | 845 |
+| C2b | control | R2 | K1, K4, converged, bar, trend, K2 | none | leading order | 352 |
+| C3 | control | R4 | K1, K4, converged, bar, trend | none | leading order | 1124 |
+| C2a/R5 | R5gate | R5 | K1, K4, converged, bar, trend | none | leading order | 1593 |
+| P5 | pyramid | R4 | K1, K2, K4, converged, bar, seeds | none | 2 pass | 1238 |
+| C3R/R4 | ray | R4 | K1, K2, bar, discrimination | none | 3 pass | 1301 |
+| T1/R4 | row | R4 | K5, bar | none | 5 pass | 1103 |
+| T1/R5 | row | R5 | K5, bar | none | 5 pass | 2114 |
+| T4/R4 | row | R4 | K5, bar | none | 4 pass | 1304 |
+| T4/R5 | row | R5 | K5, bar | none | 4 pass | 2452 |
+| T5J/R2 | member | R2 | none | K5, bar | 3 Unresolved | 506 |
+| T2/R4 | row | R4 | K5, bar, K6 (0 disagree, 9 agree above 2), accepted, seeds, low_ok | none | 2 pass | 6550 |
+| T2/R5 | row | R5 | K5, bar, K6 (0 disagree, 8 agree above 2), accepted, seeds, low_ok | none | 2 pass | 10708 |
+| T3/R4 | row | R4 | K5, bar, K6 (0 disagree, 7 agree above 2), accepted, seeds, low_ok | none | 2 pass | 6916 |
+| T3/R5 | row | R5 | K5, bar, K6 (0 disagree, 7 agree above 2), accepted, seeds, low_ok | none | 2 pass | 11131 |
+| T5/R2 | row | R2 | K5, bar, K6 (0 disagree, 2 agree above 2), accepted, seeds, low_ok | none | 3 pass | 2710 |
+
+**The pyramid,** where M8.16 stopped. K3 is resolved at `N = 16, 24` and 32: (a) to (d) hold at each. Both groups under the bar pass checks 1 to 4 at every cutoff:
+- the quartet: its spread over the ceiling 0.024, 0.026, 0.026, and its distance from the two-term prediction at `ε = 0.25`, relative to leading order, 0.19%, 0.20%, 0.20%. M8.16 read it 5.78% from leading order;
+- the Krein-positive pair: its spread over the ceiling 0.001, 0.001, 0.001, and its distance from the two-term prediction 0.0010%, 0.0007%, 0.0007%.
+
+**T5's second member.** Each of its three slow groups reads Unresolved by check 1 at `ε = 0.25`, at `N = 16, 24` and 32. At that point the seed is checked, the point accepted, K1 holds and each group is matched. The convergence rule reads the point Unresolved: "partner set at -1.36528e-15+6.01511j (+1): non-contracting above the floor", at every cutoff. The slow groups' own rows in that reading converge, with relative change 1.1e-09 at most. Convergence at 0.25 is also K5's own clause, so K5 fails. At 0.5 and 1 the point reads converged, Elliptic, `(9, 3, 6)`.
+- Reported, unscored: at `ε = 2` the rule reads Unresolved again: "partner set at 2.61485e-16+5.93353j (+1): the set's count differs between cutoffs".
+- Under § T5'S SECOND MEMBER the outcome is its own. It stops nothing, and it neither carries nor takes the verdict on T5's registered member, which qualified. Under the stop, the member is not offered to this instrument again.
+
+**Reported, unscored,** as § THE VERDICT RULE: WHAT CHANGES asks: at T1 and T4, in both slots, K5 holds, an exact kernel and a matched slow band under the bar, which is what the diagnosis predicts there.
+
+**The freeze block,** #652, was approved and merged by the maintainer at 2026-10-25T13:35:02Z, during the run; it was open from 01:52:53Z, before any sealed case.
+
+**After the run:** every output equals the SHA-256 the run's log recorded: 18 case files, the gate record, the verdict and the transcript. The log records the manifest pin at its start, `devtools.frozen()` validates, and the manifest still equals the pin. No file outside `run/out/` but this log is newer than `run/FROZEN_PIN`. `run/out/driver.out` equals `run/out/driver.log` byte for byte. The run's files, as `run/out/RUNLOG.json` records them:
+- `run/out/C1.json` `356ffbf4fe71eb1429163e849d53a33f92643b5784124a9d11e9ef8c5e9b15ca`
+- `run/out/C2a.json` `0165455b6ba66d462888521a5273fc8f0a744d4430c808e2855f5e9d06d3c24f`
+- `run/out/C2b.json` `efd5c21e233f08897f5dc9ded449801bfa3fe8d5e8895b6099b1840dd2b5a0fd`
+- `run/out/C3.json` `8e7c303c2e7dfe35e39e3f581ace30d537a1f30073389f8e6aa199b30250d469`
+- `run/out/C2a_R5.json` `387ed7b8e04030a2e10569eedb313ca5713bea92bec5a6bac7bd2e6697e668be`
+- `run/out/P5.json` `c404e49c2a6e52b0754c97349b01c8097db3271af641bc56071fd72098082bd0`
+- `run/out/P5.npz` `64ea832e06882ba39f2a649977edb3496c900a8c79b9e20d46b2506f782e8aab`
+- `run/out/C3R_R4.json` `21706fd5b2548cdcb0bf8b44d2df0c6b62d34abad41363d0fb1e43a14a5c9fb6`
+- `run/out/T1_R4.json` `4371b7a7ed612e11031a97013f46632f25bd6afce80c5a2f5cc86f80a5657c63`
+- `run/out/T1_R5.json` `ede0e0591013f50a3fd3321f97fec8b508946aba0d711f1ab68a29d6cef74c0e`
+- `run/out/T4_R4.json` `e3e64fe89169a07e6a3bcaf44aa0b64aa91eef6b6aab3b2f7109d120ef2a8299`
+- `run/out/T4_R5.json` `94935f9b461afc33767d25ba624082e980bc62e7139caa63a9da47c0077b5349`
+- `run/out/T5J_R2.json` `ae839c5425f13ca9a48bb6f0fc020e91c74ab64b637be0da8a2a5ff752569463`
+- `run/out/T2_R4.json` `4f0ce100703e43d39b92caca466f31cdf788ebd381168f3bfa3fc8e72c51b6b1`
+- `run/out/T2_R5.json` `99de516f8b59d66db297dfbbf5426c6b9ad7f3ae3b154d0b02fe60b9d95ed7bd`
+- `run/out/T3_R4.json` `50167d9de8ed1f6e11152a0b48a631669de532ef6d5021abd916ef8ee81b9489`
+- `run/out/T3_R5.json` `6a581b98bf3687cd64b32d4e833c345a1932a00b2fbf513da9c0c825bc92f2b6`
+- `run/out/T5_R2.json` `cd627750e764006afd39fac9b100e526d995d9f0967b37259b800212a93b3ffa`
+- `run/out/GATE.json` `2d24df590150952a36545a403c34e6a8b1e7b975e7d181897ce899ab55621c19`
+- `run/out/VERDICT.json` `98cf1c684d4cf684cd84dd94acf6a18f1ec82aa501a8bcf6a882d769cc9e603b`
+- `run/out/driver.out` `5a2913687b8d6960fb11891ff21752362d502b5a807f5d397602a6bd2f96b967`
+
+**What stands,** under § THE VERDICT RULE: WHAT CHANGES: the instrument and the nine rows qualify for the census run; the member does not. The adjudication is the maintainers'.
+
+**Next,** each on Blake's word:
+1. the run record, `RECORD.md`, with every group's next-order reading at every cutoff, the member's failing check and point, and the C3 ray's discrimination, as § DEFINITION OF DONE asks; and the method note;
+2. publication on MIT `main` with `REPRODUCE.md`, and the maintainers' adjudication;
+3. after it, the roadmap's Done row and a dated note on the census page;
+4. then the census run, under its own pre-registration, on the nine qualified rows.
+
+## 61. 2026-10-25T20:24:38Z: the run record and the method note drafted, on Blake's word; the packet for the units
+
+On Blake's word ("go on drafting the record"), both are drafted, self-checked and packed for the units. Nothing is committed.
+
+**The record,** `RECORD.md`, 9,152 words, in M8.16's form, carried to M8.16.1's cases: custody; the controls; the pyramid; the C3 ray; the rows, with K5, and K6 point by point; T5's second member; the gate record and the verdict; deviations; corrections; follow-ups; every group's next-order reading at every cutoff, as § DEFINITION OF DONE asks; and reproduction. `tools/build_record.py` builds it from the run's files. It refuses if an output differs from the run's log, if the freeze does not validate, or if a reading differs from what the text states, and `--check` reproduces it.
+
+**Post-run files,** each made after the run and not a record from it: `environment_postrun_2026-10-25.txt`, the environment check after the run, with no difference; and `tools/build_record.py`.
+
+**`REPRODUCE.md`** gains the run: its record, its files, the post-run files, and how to run it again. One change goes beyond the run: the terms' line no longer says the text was confirmed by the review units, under Blake's rule of 2026-10-23.
+
+**The method note,** for OpenWave's `research/findings/`, 2,792 words, in M8.16's form: equations first, the code map, the run, the results against the frozen terms, the findings after the run, provenance, what the run does not verify, and the audit record, left for after the units. `../m8_16_1_note/build_method_note.py` builds it from a source with placeholders, computing every value and every code link's line. It checks the 35 MIT links at the frozen commit, each line anchor on the function it names, and the relative links in OpenWave. The record's links carry a marker until the MIT commit exists.
+
+**Verified at source while drafting:**
+- **A rerun on a complete `run/out/`** solves nothing. In a scratch copy the driver checked every case's outputs against the log, wrote `VERDICT.json` byte for byte as before, and rewrote `driver.out` and `RUNLOG.json`. M8.16's record says such a rerun is refused; that held after its stop, not here, so the record and `REPRODUCE.md` say what this run does.
+- **Three cases lie below the calibration's fitted `m`, 0.204, at `ε = 0.25`:** T5J/R2 and T5/R2 at 0.148, and T3/R4 at 0.184. The record flags them as an extrapolation, beside the `R5` cases.
+- **The approval of #652** ([review 5643418284](https://github.com/openwave-labs/openwave/pull/652#pullrequestreview-5643418284), 2026-10-25T13:34:58Z) is kept verbatim as `../xrodz_approval_652_5643418284.md`, SHA-256 `f8307c0b5f9055beb452825cf38ce076860160844c5d3cfb556d5fe97a46584d`. Its reading note is in the record's custody, with the seed check's bytes checked by the builder.
+
+**The packet:** the cover note `../m8_16_1_record_packet_v1.md`, on Blake's clipboard, and `../m8_16_1_record_review_v1.zip`, revealed in Finder. It holds the note, the bench folder without `run/dry/` and with this log through entry 60, the note's source and builder, the freeze block as merged, the maintainer's texts on #650 and #652, and `REPRODUCE.md`'s diff against `d1c0ec8`. From the packet's copy the record reproduces by `--check`, the note rebuilds byte for byte, and the manifest equals the pin.
+
+**Hashes:**
+- `RECORD.md` `b579427fddf6f975f8c28262d55354a7d817651c0a6698d854d0f3657ce6d6aa`
+- `REPRODUCE.md` `3dfcd7f1cb67b8922138456041a41d8300904cc334234f057c83d20becb7a946`
+- `environment_postrun_2026-10-25.txt` `5e12e201d9fa970e9ccc7db1ad32778c5f50d4a6014ba45bf6e42a0be7554390`
+- `tools/build_record.py` `588f06fae09b4344b8adcaaaccaee8905fa27afec36d3d725391e4f4a89239a7`
+- `../m8_16_1_note/m8_16_1_method_note_src.md` `89d59219a6505d4112a2624ee4021e5c5304587a0b7cbbdf67ec41ae9677b834`
+- `../m8_16_1_note/build_method_note.py` `6b97ab66ab30fffc1ca2ee79004acca93747e12d5e3964b3934a0b2d5b55fe5b`
+- `../m8_16_1_note/m8_16_1_method_note.md` `f782a9faaa44dd2b2d9e24b5762dfeafeb2bc0b5ec55ea7079b4e18109245ea5`
+- `../m8_16_1_record_packet_v1.md` `828fb22a38c636adc273c9fbcb23452ce8f1f0deef04571506d834ad4261ac59`
+- `../m8_16_1_record_review_v1.zip` `a6411444bba8dcfd86512217d56bedd0bb148878b5ae73c454e5293aa715cf42`
+
+**Next:** the units' review, if Blake sends it; then, each on Blake's word, the MIT commit of the record, the note's OpenWave branch, and the maintainers' adjudication.
+
+## 62. 2026-10-25T20:46:26Z: the units on the record's v1 packet: UA GO on the record with one NIT, three changes to the note; UB six changes; each verified at source and adopted; a correction to entry 60
+
+Blake relayed both reviews, for "one more review round so it's perfect".
+
+**UA:** GO on (a) the record, (b) §§ 3 to 7, (c) the stated limits and (f) the filing's remaining steps; GO after one NIT on (d) `REPRODUCE.md`; HOLD on (e) the note, for three wording changes. UA checked 21 output hashes, the pins, the 111 group-cutoff readings and the note's code anchors.
+
+**UB:** six changes, each FIXABLE, none changing a reading. UB checked the custody, `--check`, the rerun, the bar rescored by its own code across the 37 groups, and the note's rebuild.
+
+**Each verified at source, and adopted:**
+- **UA's NIT,** `REPRODUCE.md`'s run bullet: #652 opened before the run and merged during it. Adopted in UA's sense; the link UA gave carried a tracking suffix, left out.
+- **UA's three changes to the note,** in UA's words: § 5's opening, § 5.3's first sentences, and § 7's bullet on the member. Checked: `check_row_k6` scores no disagreement at any read point, and agreement only through `ε = 2`.
+- **UB (a), § 11.** The terms' § THE NEXT-ORDER BAR lists as reported, for every group and cutoff, `c_g`, `ĉ₂`, `ĉ₃`, the spread, the ceiling and `E_c`, and the two-term residual beside 1%. § 11 now gives them all, with the deviation from leading order. Read from the record: the largest `E_c` is 3.5×10⁻³ of `C_g/10`, at T4/R4, and the largest two-term residual 0.21%, at T4/R5, as UB found.
+- **UB (a), the diagnosis** at T1 and T4, which § THE VERDICT RULE: WHAT CHANGES asks the record to report, is now in § 5.
+- **UB (b), T5J's cause.** The convergence rule reads each `ε` once, from the three cutoffs (`instrument/convergence.py`), and the reason stands three times because the three slow groups share one partner set. From the reading's rows: that set, at 6.015i and Krein-positive, changes by 4.8×10⁻⁶ from `N = 24` to 32, against 9.7×10⁻⁷ from 16 to 24 and the floor, 4.1×10⁻⁷. § 6 and the note's § 5.2 say so in UB's words.
+- **UB (b) and (e), the pyramid.** Its pass is a known outcome, read as INFERRED, not a check of Proposition N passed: the terms' § Known outcomes, and the reading note of #650's first review. § 3 and the note's § 5.1 say so. The note's § 5.1 also names what the run adds, the rows, the C3 ray and T5's second member, as the terms' § Known outcomes does.
+- **UB (c), the margin's headroom,** computed over the run's 381 points with a record. The coefficient exceeds the controls' 0.0568 at 87 points in ten cases, and the cluster lies less than ten times below its gray zone at 54 points in seven, least 4.6 times at T3/R5, with points the bar scores among them. Every cluster stays separated and no gray zone is occupied. `L`'s lift is at most 16.8 u‖L‖ and its smallest genuine eigenvalue at least 2.5×10⁹ u‖L‖; the point records store both relative to ‖L‖. § 2 states it, and the note's § 7 names the limit.
+- **UB's optional addition,** in § 10: T5/R2 departs from the two-term prediction at `ε = 1` by at most 0.095 of a ceiling, against the 4.5 to 5.5 ceilings each that an exchange of its two lowest needs (entry 44).
+
+**A correction to entry 60.** It says of T5J: "The convergence rule reads the point Unresolved: "…", at every cutoff." The rule reads the point once, from its three cutoffs. The reason stands once for each slow group, all three sharing that partner.
+
+**Rebuilt:** `RECORD.md`, 11,030 words, which `--check` reproduces; the note, 3,108 words, with its 35 links checked.
+
+**Next:** the v2 packet for the units.
+
+## 63. 2026-10-25T20:47:46Z: the v2 packet for the units
+
+The cover, `../m8_16_1_record_packet_v2.md`, is on Blake's clipboard, and `../m8_16_1_record_review_v2.zip` is revealed in Finder. It holds the folder with this log through entry 62, the note with its source and builder, the freeze block as merged, and the maintainer's texts. Its diffs give `RECORD.md`, the note, its source, both builders and `REPRODUCE.md`, each v1 to v2, and `REPRODUCE.md` against `d1c0ec8`. From the packet's copy the record reproduces by `--check`, the note rebuilds byte for byte, and the manifest equals the pin.
+
+**Hashes:**
+- `RECORD.md` `5cfced23c7af4687135dc40cddafca7facec8495dd2765cc97eac266de51a62c`
+- `REPRODUCE.md` `283a27441153698b98236180a11833e3c3ba6bee6e6a9340cd74183c10503195`
+- `tools/build_record.py` `9b7a88e0df90bb0e5ed21381b31e05ea6b5e4a3b2e8851ab202c22c7baace670`
+- `../m8_16_1_note/m8_16_1_method_note_src.md` `20c233d6430df9d9c08572e7d464b16d64a8ba8a8b95af3c329b0b00f6f9ae46`
+- `../m8_16_1_note/build_method_note.py` `40985aa5f84cbf18514fe18939af4896bbb54ba055cd55356196c63ef2c0fdf4`
+- `../m8_16_1_note/m8_16_1_method_note.md` `6a48611f5f8027058311b4d5265806aa224bfca42f0b61d8267163eecba826b4`
+- `../m8_16_1_record_packet_v2.md` `09e03a05cac1aa1857cc8a0d078420074d39fb48d932e5e94bf8626dee2ca790`
+- `../m8_16_1_record_review_v2.zip` `6aedc279157cc401d1086027b7c6b6c8b05f53c609fd39e6c0e4f228b9fcf7c4`
+
+**Next:** the units on v2; then, each on Blake's word, the MIT commit of the record, the note's OpenWave branch, and the maintainers' adjudication.
+
+## 64. 2026-10-25T20:56:35Z: the units on v2: UA GO on five items and HOLD on § 2's bounds; UB GO on all six once four bounds round outward and the reproduction is computed; each verified at source and adopted; corrections to entries 60 and 62
+
+Blake relayed both reviews: "let me know when you're good".
+
+**UA:** GO on (a), (b), (d), (e) and (f); HOLD on (c), for four bounds rounded the wrong way. UA recomputed the headroom figures from all 381 points and checked § 11's 111 rows.
+
+**UB:** GO on all six, once the four bounds round outward and the note's "The run reproduces M8.16's pyramid" is computed or dropped; one NIT. UB compared all 1,140 numeric cells of § 11 with its own rescoring, and every one matches to its printed digits.
+
+**Verified at source, and adopted:**
+- **The four bounds** were each rounded to the nearest digit where the statement needs rounding outward:
+  - the nearest eigenvalue outside the gray zone lies 10.16 times above its top, stated "at least 10.2";
+  - `L`'s lift is 16.84 u‖L‖, stated "at most 16.8";
+  - the smallest genuine `L` eigenvalue is 2.481×10⁹ u‖L‖, stated "at least 2.5×10⁹";
+  - T5/R2's departure at `ε = 1` is 0.09505 of a ceiling, stated "at most 0.095".
+  Both units' replacements round outward. UA's keep three significant figures throughout, and both builders now round every stated bound that way: 10.1, 16.9, 2.48×10⁹ and 0.0951. "At least 47 times more" is computed from the rounded bound, and holds.
+- **A fifth, found by the sweep:** T5J's slow groups change by 1.147×10⁻⁹, stated "at most 1.1×10⁻⁹" in § 6 and the note's § 5.2. Both now read "at most 1.15×10⁻⁹". The ray's smallest discrimination ratio, 44.35, now reads "at least 44" by the floor.
+- **The reproduction claim** is now computed by `tools/build_record.py`, with the commit read from the terms' citation of M8.16's record. At every point of the pyramid and the five controls, 72 in all, this run's group centres equal those of M8.16's record at MIT `87fc643`, bit for bit, and each record file equals the SHA-256 M8.16's run log gives it. § 3 states this, and the note's § 5.1 cites § 3.
+- **UB's NIT:** the note's § 7 bullet now reads "beyond the controls", since its list starts with P5.
+
+**Corrections.**
+- Entry 62 states `L`'s lift "at most 16.8 u‖L‖" and its smallest genuine eigenvalue "at least 2.5×10⁹ u‖L‖". They are at most 16.9 and at least 2.48×10⁹.
+- Entry 60 states the slow groups' relative change "1.1e-09 at most". It is at most 1.15×10⁻⁹.
+
+**Rebuilt:** `RECORD.md`, 11,071 words, which `--check` reproduces; the note, 3,118 words, with its 35 links checked. The changes from v2 are in `../m8_16_1_record_v3_diffs/`.
+
+**Hashes:**
+- `RECORD.md` `e8ae3e02c3d5613a57a638a982237ae31185dd3012304cf36243c703c9edaa00`
+- `tools/build_record.py` `4fc20d51b0de218122f0eab0ff2f05fa694aa5689ebd2886918bdafc4d1156f3`
+- `../m8_16_1_note/m8_16_1_method_note_src.md` `0aeec6165bc840cdf384179c4bf47b5cabfbda975af5b5b8268e1fc5886a7f26`
+- `../m8_16_1_note/build_method_note.py` `a2e5f5f5acff090fe4c883926de85c0cd942f7f9736889ce7eec17f856877e03`
+- `../m8_16_1_note/m8_16_1_method_note.md` `75d75ec77c42a80f17b4407f21349f1216d24260f7547bc919eb9eb17a1636be`
+
+**Next,** each on Blake's word: the filing, with `SHA256SUMS` last, the MIT commit verified from its own tree, and the push; then the note's OpenWave branch with the record's commit filled in, for Blake to open; then the maintainers' adjudication.
+
+## 65. 2026-10-25T20:59:45Z: the record filed, on Blake's word: the MIT folder built from the bench
+
+On Blake's word ("go on the filing").
+
+**The worktree** is at MIT `main`, `b0ada564`, which has not moved since the freeze (entry 56), and it is clean.
+
+**The folder** is the bench without `run/dry/` and caches. Against `main` it changes 36 files and deletes none:
+- **33 new:** `RECORD.md`; `run/out/`'s 23 files; `run/FROZEN.json` and `run/FROZEN_PIN`; the 5 target records in `reference/m815_targets/`; `environment_postrun_2026-10-25.txt`; and `tools/build_record.py`;
+- **3 modified:** `DEVLOG.md`, `REPRODUCE.md` and `SHA256SUMS`.
+
+**A scan** of those files finds machine paths, user names and emails only where MIT already holds them:
+- the MIT commit identity, in entry 49, as every MIT commit carries it;
+- the interpreter's path, in the post-run environment, as `run/ENVIRONMENT.json` and M8.16's post-run file hold it;
+- the record builder's own check for local paths.
+
+**`SHA256SUMS`** is written fresh after this entry, over the folder's files, itself excluded. The folder is then checked there: `shasum -c`; the manifest against its pin; the freeze; and the record's `--check`.
+
+**Next:** the commit, verified from its own tree; then the push.

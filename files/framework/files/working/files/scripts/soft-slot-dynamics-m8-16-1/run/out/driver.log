@@ -1,0 +1,88 @@
+M8.16.1 registered run: 17 cases; outputs in run/out
+C1 (control, R3):
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 24: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 32: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 40: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   checks: {'K1': True, 'K4': True}; 730 s
+C2a (control, R4):
+   C2a N = 16, m = 50: seed ok; 4 of 4 points accepted; 6 s
+   C2a N = 24, m = 138: seed ok; 4 of 4 points accepted; 57 s
+   C2a N = 32, m = 316: seed ok; 4 of 4 points accepted; 782 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True}; 845 s
+C2b (control, R2):
+   C2b N = 16, m = 22: seed ok; 4 of 4 points accepted; 2 s
+   C2b N = 24, m = 84: seed ok; 4 of 4 points accepted; 28 s
+   C2b N = 32, m = 200: seed ok; 4 of 4 points accepted; 322 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True, 'K2': True}; 352 s
+C3 (control, R4):
+   C3 N = 16, m = 50: seed ok; 4 of 4 points accepted; 8 s
+   C3 N = 24, m = 138: seed ok; 4 of 4 points accepted; 80 s
+   C3 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1035 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True}; 1124 s
+C2a/R5 (R5gate, R5):
+   C2a/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 9 s
+   C2a/R5 N = 24, m = 193: seed ok; 4 of 4 points accepted; 201 s
+   C2a/R5 N = 32, m = 433: seed ok; 4 of 4 points accepted; 1382 s
+   checks: {'K1': True, 'K4': True, 'converged': True, 'bar': True, 'trend': True}; 1593 s
+P5 (pyramid, R4):
+   P5 N = 16, m = 50: seed ok; 4 of 4 points accepted; 10 s
+   P5 N = 24, m = 138: seed ok; 4 of 4 points accepted; 91 s
+   P5 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1137 s
+   checks: {'K1': True, 'K2': True, 'K4': True, 'converged': True, 'bar': True, 'seeds': True}; 1238 s
+C3R/R4 (ray, R4):
+   C3R/R4 N = 16, m = 50: seed ok; 4 of 4 points accepted; 10 s
+   C3R/R4 N = 24, m = 138: seed ok; 4 of 4 points accepted; 97 s
+   C3R/R4 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1194 s
+   checks: {'K1': True, 'K2': True, 'bar': True, 'discrimination': True, 'outcome': 'passed'}; 1301 s
+T1/R4 (row, R4):
+   T1/R4 N = 16, m = 50: seed ok; 4 of 4 points accepted; 8 s
+   T1/R4 N = 24, m = 138: seed ok; 4 of 4 points accepted; 83 s
+   T1/R4 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1011 s
+   checks: {'K5': True, 'bar': True}; 1103 s
+T1/R5 (row, R5):
+   T1/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 13 s
+   T1/R5 N = 24, m = 193: seed ok; 4 of 4 points accepted; 268 s
+   T1/R5 N = 32, m = 433: seed ok; 4 of 4 points accepted; 1833 s
+   checks: {'K5': True, 'bar': True}; 2114 s
+T4/R4 (row, R4):
+   T4/R4 N = 16, m = 50: seed ok; 4 of 4 points accepted; 10 s
+   T4/R4 N = 24, m = 138: seed ok; 4 of 4 points accepted; 93 s
+   T4/R4 N = 32, m = 316: seed ok; 4 of 4 points accepted; 1201 s
+   checks: {'K5': True, 'bar': True}; 1304 s
+T4/R5 (row, R5):
+   T4/R5 N = 16, m = 61: seed ok; 4 of 4 points accepted; 14 s
+   T4/R5 N = 24, m = 193: seed ok; 4 of 4 points accepted; 309 s
+   T4/R5 N = 32, m = 433: seed ok; 4 of 4 points accepted; 2128 s
+   checks: {'K5': True, 'bar': True}; 2452 s
+T5J/R2 (member, R2):
+   T5J/R2 N = 16, m = 22: seed ok; 4 of 4 points accepted; 3 s
+   T5J/R2 N = 24, m = 84: seed ok; 4 of 4 points accepted; 40 s
+   T5J/R2 N = 32, m = 200: seed ok; 4 of 4 points accepted; 463 s
+   checks: {'K5': False, 'bar': False}; 506 s
+T2/R4 (row, R4):
+   T2/R4 N = 16, m = 50: seed ok; 18 of 18 points accepted; 48 s
+   T2/R4 N = 24, m = 138: seed ok; 18 of 18 points accepted; 478 s
+   T2/R4 N = 32, m = 316: seed ok; 18 of 18 points accepted; 6024 s
+   checks: {'K5': True, 'bar': True, 'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 9}; 6550 s
+T2/R5 (row, R5):
+   T2/R5 N = 16, m = 61: seed ok; 15 of 15 points accepted; 63 s
+   T2/R5 N = 24, m = 193: seed ok; 15 of 15 points accepted; 1359 s
+   T2/R5 N = 32, m = 433: seed ok; 15 of 15 points accepted; 9286 s
+   checks: {'K5': True, 'bar': True, 'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 8}; 10708 s
+T3/R4 (row, R4):
+   T3/R4 N = 16, m = 50: seed ok; 18 of 18 points accepted; 50 s
+   T3/R4 N = 24, m = 138: seed ok; 18 of 18 points accepted; 481 s
+   T3/R4 N = 32, m = 316: seed ok; 18 of 18 points accepted; 6384 s
+   checks: {'K5': True, 'bar': True, 'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 7}; 6916 s
+T3/R5 (row, R5):
+   T3/R5 N = 16, m = 61: seed ok; 15 of 15 points accepted; 65 s
+   T3/R5 N = 24, m = 193: seed ok; 15 of 15 points accepted; 1415 s
+   T3/R5 N = 32, m = 433: seed ok; 15 of 15 points accepted; 9651 s
+   checks: {'K5': True, 'bar': True, 'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 7}; 11131 s
+T5/R2 (row, R2):
+   T5/R2 N = 16, m = 22: seed ok; 18 of 18 points accepted; 14 s
+   T5/R2 N = 24, m = 84: seed ok; 18 of 18 points accepted; 212 s
+   T5/R2 N = 32, m = 200: seed ok; 18 of 18 points accepted; 2485 s
+   checks: {'K5': True, 'bar': True, 'K6': True, 'accepted': True, 'seeds': True, 'disagree': 0, 'low_ok': True, 'agree_above_2': 2}; 2710 s
+verdict: {'verdict': 'QUALIFIED', 'instrument': True, 'r5_gate': True, 'rows': {'T1/R4': True, 'T1/R5': True, 'T4/R4': True, 'T4/R5': True, 'T2/R4': True, 'T2/R5': True, 'T3/R4': True, 'T3/R5': True, 'T5/R2': True}, 'members': {'T5J/R2': False}, 'c3_ray': {'C3R/R4': 'passed'}, 'qualified': ['T1/R4', 'T1/R5', 'T4/R4', 'T4/R5', 'T2/R4', 'T2/R5', 'T3/R4', 'T3/R5', 'T5/R2'], 'failing': [], 'failed': [], 'k3': 'resolved'}; 52681 s
