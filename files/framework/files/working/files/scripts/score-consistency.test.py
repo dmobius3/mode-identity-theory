@@ -22,6 +22,15 @@ nothing. It now fails when a page lacks the header or parses no rows, compares e
 column, Standing included, at an exact row width, and runs controls: planted defects,
 each of which must fail before the test reports a pass.
 
+Extended 2026-10-24: row order and the legend. The three tables already agreed cell for
+cell when a strict comparison found the root's legend set differently from the landings',
+and nothing here compared order or legend. The test now also asserts the root's layout,
+the cosmos landing's rows and then the spectrum landing's, each in its landing's order and
+once each, so a reordered or duplicated row fails (rows are keyed by identity, so a
+duplicate used to collapse and pass); and that each page carries exactly one Standing
+legend between its Score heading and its table, the same line on all three. The layout is
+asserted, not discovered: if the root is ever meant to read differently, change it here.
+
 Scope: internal propagation only. It does NOT check whether a value is scientifically
 current -- that is a data-maintenance question and mixing it in would turn a
 deterministic repo test into a monitor.
@@ -67,8 +76,9 @@ def split_cells(line):
 
 def score_rows(text, page):
     """Parse the page's Score table only. Returns (header_found, rows, width_errors), with
-    rows as {identity: (label, [data cells])}."""
-    rows, errors, inside, found = {}, [], False, False
+    rows as {identity: (label, [data cells])}. Also returns the identities in row order,
+    duplicates kept, since the dict collapses a repeated row."""
+    rows, errors, inside, found, order = {}, [], False, False, []
     for line in text.split("\n"):
         if line.strip() == SCORE_HEADER:
             inside = found = True
@@ -102,23 +112,37 @@ def score_rows(text, page):
             data = [re.sub(r"\]\(([^)]+)\)", lambda m: "](" + canonical(m.group(1), page) + ")", c)
                     for c in cells[1:]]
             rows[ident] = (label, data)
-    return found, rows, errors
+            order.append(ident)
+    return found, rows, errors, order
+
+
+LEGEND_LABEL = "**Standing:**"
+
+
+def legends(text):
+    """The Standing legend lines between the Score section's heading and its table header."""
+    lines = text.split("\n")
+    k = next((i for i, l in enumerate(lines) if l.strip() == SCORE_HEADER), None)
+    if k is None:
+        return None
+    h = max((i for i in range(k) if lines[i].startswith("#")), default=-1)
+    return [l.strip() for l in lines[h + 1:k] if l.strip().startswith(LEGEND_LABEL)]
 
 
 def compare(texts):
     """Check the three Score tables against each other. texts maps each page to its text.
     Returns (hard failures, warnings, (root rows, cosmos rows, spectrum rows, shared rows))."""
-    hard, warn, parsed = [], [], {}
+    hard, warn, parsed, orders = [], [], {}, {}
     # 0. every page must carry the header and parse rows; a missing header or an empty
     #    table is a failure, never a vacuous pass
     for page in [ROOT, *LANDINGS.values()]:
-        found, rows, errors = score_rows(texts[page], page)
+        found, rows, errors, order = score_rows(texts[page], page)
         if not found:
             hard.append(f"Score header missing on {page} (expected {SCORE_HEADER})")
         elif not rows:
             hard.append(f"zero rows parsed on {page}")
         hard += errors
-        parsed[page] = rows
+        parsed[page], orders[page] = rows, order
     r, c, s = parsed[ROOT], parsed[LANDINGS["cosmos"]], parsed[LANDINGS["spectrum"]]
     locals_ = {"cosmos": c, "spectrum": s}
 
@@ -136,11 +160,13 @@ def compare(texts):
     #    pairing is ambiguous, fail rather than guess.
     union = set(c) | set(s)
     only_local, only_root = sorted(union - set(r)), sorted(set(r) - union)
+    renamed = {}
     for lk in list(only_local):
         cands = [rk for rk in only_root if rk[0] == lk[0]]
         peers = [x for x in only_local if x[0] == lk[0]]
         if len(cands) == 1 and len(peers) == 1:
             warn.append(f"probable rename on {lk[0]}: landing {lk[1]!r} vs root {cands[0][1]!r}")
+            renamed[cands[0]] = lk
             only_local.remove(lk); only_root.remove(cands[0])
     hard += [f"on a landing, absent from root (deletion or unpairable rename): {k}" for k in only_local]
     hard += [f"on root, no landing owns it (addition or unpairable rename):    {k}" for k in only_root]
@@ -160,6 +186,40 @@ def compare(texts):
                     col = COLUMNS[i] if i < len(COLUMNS) else f"col{i + 2}"
                     hard.append(f"{owner}: {label or rl}\n      [{col}]  root: {a}\n      "
                                 f"{' ' * len(col)}   {owner}: {b}")
+
+    # 4. order. The root reads the cosmos landing's rows, then the spectrum landing's, each in
+    #    its landing's order and once each. Compared over the rows present on both sides, since
+    #    presence is step 2's job, with renames paired as step 2 paired them. A duplicated root
+    #    row survives into this list, where the dict above would have collapsed it.
+    root_seq = [renamed.get(i, i) for i in orders.get(ROOT, [])]
+    expected = orders.get(LANDINGS["cosmos"], []) + orders.get(LANDINGS["spectrum"], [])
+    common = set(root_seq) & set(expected)
+    a = [i for i in root_seq if i in common]
+    b = [i for i in expected if i in common]
+    if a != b:
+        k = next((j for j in range(min(len(a), len(b))) if a[j] != b[j]), min(len(a), len(b)))
+        got = a[k][1] if k < len(a) else "(the end of the table)"
+        want = b[k][1] if k < len(b) else "(the end of the table)"
+        hard.append(f"row order: root row {k + 1} is {got!r}, the landings put {want!r} there "
+                    f"(cosmos's rows, then spectrum's, each in its landing's order, once each)")
+
+    # 5. the legend: exactly one Standing line above each table, the same on all three pages
+    found_legends = {}
+    for page in [ROOT, *LANDINGS.values()]:
+        ls = legends(texts[page])
+        if ls is None:
+            continue
+        if len(ls) != 1:
+            hard.append(f"legend: {page} has {len(ls)} {LEGEND_LABEL} lines above its Score table, not 1")
+        else:
+            found_legends[page] = ls[0]
+    if len(set(found_legends.values())) > 1:
+        ref = found_legends.get(ROOT)
+        for page, line in found_legends.items():
+            if page != ROOT and ref is not None and line != ref:
+                j = next((i for i in range(min(len(line), len(ref))) if line[i] != ref[i]), min(len(line), len(ref)))
+                hard.append(f"legend: {page} differs from {ROOT} at character {j + 1}:\n"
+                            f"      root: ...{ref[max(0, j - 30):j + 30]}\n      {page.split('/')[1]}: ...{line[max(0, j - 30):j + 30]}")
     return hard, warn, (len(r), len(c), len(s), len(set(r) & union))
 
 
@@ -197,6 +257,30 @@ def controls(texts):
     short = "|".join(re.split(r"(?<!\\)\|", rrow.rstrip())[:-2]) + "|"
     hard, _, _ = compare({**texts, ROOT: texts[ROOT].replace(rrow, short, 1)})
     out.append(("a root row missing its last cell", any("cells, the header" in h for h in hard)))
+
+    # The arms below assert their own message twice: absent from the unmutated parent,
+    # present after the one mutation, so a red parent cannot make an arm look discriminating.
+    parent, _, _ = compare(texts)
+    def arm(name, mutated, sign):
+        hard, _, _ = compare(mutated)
+        out.append((name, not any(sign in h for h in parent) and any(sign in h for h in hard)))
+    lines = texts[ROOT].split("\n")
+    k = next(i for i, l in enumerate(lines) if l.strip() == SCORE_HEADER)
+    r1, r2 = k + 2, k + 3
+    # two adjacent root rows swapped must fail on order, with every cell still equal
+    swapped = lines[:r1] + [lines[r2], lines[r1]] + lines[r2 + 1:]
+    arm("two adjacent root rows swapped", {**texts, ROOT: "\n".join(swapped)}, "row order:")
+    # a root row repeated must fail on order: the dict keeps one copy, the order list both
+    duplicated = lines[:r2] + [lines[r1]] + lines[r2:]
+    arm("a root row duplicated", {**texts, ROOT: "\n".join(duplicated)}, "row order:")
+    # one word changed in a landing's legend must fail, naming that landing
+    leg = legends(texts[co])[0]
+    arm(f"a word changed in the legend on {co}",
+        {**texts, co: texts[co].replace(leg, leg.replace("unresolved", "unsettled"), 1)}, f"legend: {co} differs")
+    # the root's legend removed must fail as missing
+    rleg = legends(texts[ROOT])[0]
+    arm("the root's legend removed", {**texts, ROOT: texts[ROOT].replace(rleg + "\n", "", 1)},
+        f"legend: {ROOT} has 0")
     return out
 
 
@@ -222,7 +306,7 @@ def main():
               + ("; controls not run" if not ctl else ""))
         return 1
     print(f"PASS: root {nr} = cosmos {nc} + spectrum {ns}; {shared} shared rows match; "
-          f"{len(ctl)}/{len(ctl)} controls fail as required"
+          f"row order and legend agree; {len(ctl)}/{len(ctl)} controls fail as required"
           + (f"; {len(warn)} warning(s) needing human adjudication" if warn else ""))
     return 0
 
