@@ -136,13 +136,13 @@ The mechanism is structural. The scaling law $`A/A_P = C(\Theta) \cdot (\sqrt{\O
 
 What the mechanism does not settle is the assignment. The framework's [Manifold Index](../../framework/README.md#manifold-index) carries this same depth with no scaling-law observable assigned to it, since nothing measured lands at $`10^{-183}`$; the reading here is about the astrophysical dark phenomenology rather than that dilution row, and the map between the two is open work.
 
-"Dark energy" constitutes ~68% of the universe's energy density. Standard cosmology treats it as a fluid filling space. MIT reads it as the first positive mode of the Möbius surface ($`n = 2`$, $`m_h = 0`$), the spectral seed $`\Lambda_{\text{top}}`$ of a bounded geometry, lifted from surface curvature by the Gauss equation and normalized by the imported de Sitter vacuum relation to the reference value $`\Lambda_{\text{ref}}`$.
+"Dark energy" constitutes ~68% of the universe's energy density. Standard cosmology treats it as a fluid filling space. MIT reads it as the first positive mode of the Möbius surface ($`n = 2`$, $`m_h = 0`$, the tower's first harmonic), the spectral seed $`\Lambda_{\text{top}}`$ of a bounded geometry, lifted from surface curvature by the Gauss equation and normalized by the imported de Sitter vacuum relation to the reference value $`\Lambda_{\text{ref}}`$.
 
 | Label | MIT reading | Manifold |
 |---|---|---|
 | "Dark matter" | Gravitational geometry of $`S^3`$; the assignment is open | $`n = 3`$ |
 | "Dark energy" | First positive mode $`\Lambda_{\text{top}}`$ of Möbius, lifted to $`\Lambda_{\text{ref}}`$ | $`n = 2`$ |
-| Visible matter | Modal samples of $`\Psi`$ | $`n = 1`$ |
+| Visible matter | Modal samples of $`\Psi`$ | the crossing from $`S^1`$ into the surface; masses read on $`\Omega_\Lambda`$ through the [mass formula](mass-spectrum.md), not at an index $`n`$ |
 
 ### The Bullet Cluster
 
