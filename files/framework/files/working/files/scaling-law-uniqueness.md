@@ -60,7 +60,7 @@ Gleason (1957) proved that on a Hilbert space of dimension ≥ 3, the only proba
 
 The MIT analog: show that C(Θ) × (√Ω)⁻ⁿ is the unique sampling rule compatible with the bounded, closed topology of S¹ = ∂M ↪ S³, ∂S³ = ∅.
 
-The precedent is exact for one piece only. C(Θ) is a normalized mode intensity (∫₀¹ C dΘ = 1), so a Gleason-type measure-uniqueness statement is the right tool there. The hierarchy (√Ω)⁻ⁿ is dimensional analysis (Buckingham π), not a measure; the factored form is a separation-of-variables result (the Schur separation, proved below). The three rows are three different rigidity claims of three different types, and only the phase operator is Gleason-shaped; the analogy is motivation for that one piece, not scaffolding for the whole. This note keeps them separate rather than letting one banner blur the kinds of argument or lend the open separation the standing of a measure theorem.
+The precedent is exact for one piece only. C(Θ) is a normalized mode intensity (∫₀¹ C dΘ = 1), so a Gleason-type measure-uniqueness statement is the right tool there. The hierarchy (√Ω)⁻ⁿ is dimensional analysis (Buckingham π), not a measure; the factored form is a separation-of-variables result (the Schur separation, proved below). The three rows are three different rigidity claims of three different types, and only the phase operator is Gleason-shaped; the analogy is motivation for that one piece, not scaffolding for the whole. This note keeps them separate rather than letting one banner blur the kinds of argument or lend the separation, a conditional theorem on adopted premises (Step C), the standing of a measure theorem.
 
 ---
 

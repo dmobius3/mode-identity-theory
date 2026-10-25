@@ -205,9 +205,9 @@ The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its nume
 
 ## 🎼 Score
 
-The framework's quantitative claims, with their standing shown explicitly:
+The framework's quantitative claims, with their standing shown explicitly.
 
-`exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `open` unresolved.
+**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `open` unresolved.
 
 | Observable | Standing | Output | Observed | Agreement |
 |---|---|---|---|---|
