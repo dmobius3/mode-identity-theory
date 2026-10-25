@@ -112,13 +112,13 @@ The honest claim is the left column: realization entropy starts low because the 
 
 ## VI. The turnaround is a sub-budget feature
 
-$`S = \sin(t/2)`$ peaks at $`t = \pi`$ and returns to $`0`$ at the $`t = 2\pi`$ turnaround, so the realization entropy $`\Sigma(S)`$ rises to a maximum at full realization and then falls. This is a reversal of the realization sub-budget, not of the second law. The dominant ledger is gravitational, and gravitational entropy rides straight through the turnaround: black holes stay formed, clumping does not un-clump, so total entropy keeps climbing. The reversal is a real and unusual prediction about the realization sector alone, and it costs nothing observationally: the present sits at $`t_\text{now} < 0.38`$ rad, far inside the rising branch ($`S \approx 0.19`$, about a fifth of the way to full realization).
+$`S = \sin(t/2)`$ peaks at $`t = \pi`$ and returns to $`0`$ at the $`t = 2\pi`$ turnaround, so the realization entropy $`\Sigma(S)`$ rises to a maximum at full realization and then falls. This is a reversal of the realization sub-budget, not of the second law. The dominant ledger is gravitational, and gravitational entropy rides straight through the turnaround: black holes stay formed, clumping does not un-clump, so total entropy keeps climbing. The reversal is a real and unusual prediction about the realization sector alone, and it costs nothing observationally: the present sits at $`t_\text{now} < 0.38`$ rad on the joint SN+BAO fit, far inside the rising branch ($`S_\text{now} < 0.19`$ at 95% CL, posterior median 0.076, under a fifth of the way to full realization).
 
 ---
 
 ## VII. Observational anchors
 
-The thermal history is a phase ladder, every epoch a value of $`S = S_\text{now}/(1+z)`$: recombination at $`S \approx 1.7 \times 10^{-4}`$, BBN near $`S \sim 10^{-10}`$, the pure-wave limit at $`S \to 0`$. The temperature law $`T \propto 1/S`$ reproduces these as the FLRW history does, kinematically ([Redshift and Cooling](redshift-and-cooling.md)).
+The thermal history is a phase ladder, every epoch a value of $`S = S_\text{now}/(1+z)`$: recombination at $`S \lesssim 1.7 \times 10^{-4}`$ (about $`7 \times 10^{-5}`$ at the posterior median), BBN near $`S \sim 10^{-10}`$, the pure-wave limit at $`S \to 0`$. The temperature law $`T \propto 1/S`$ reproduces these as the FLRW history does, kinematically ([Redshift and Cooling](redshift-and-cooling.md)).
 
 For the entropy the bar should sit where it can be cleared. **The honest target is that the entropy must stay consistent with the observed values:** the photon-to-baryon ratio $`\eta \approx 6 \times 10^{-10}`$ and the absolute CMB entropy ($`\sim 10^{89}\,k_B`$). Reproducing $`\eta`$ from harmonic counting would be a baryogenesis number falling out of group theory, which is upside, not the pass condition; it is unlikely to come out cleanly and the page should not stake itself on it. Consistency is the pass; prediction is the bonus.
 

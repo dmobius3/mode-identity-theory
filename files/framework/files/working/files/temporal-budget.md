@@ -16,13 +16,13 @@
 
 Working notes on the temporal budget $`\Psi^2 + S^2 = 1`$, the Waltz clock $`d\tau_H/dt = S^{1/2}`$, and the Pantheon+ distance fit. $`\Omega_m = 0.315`$ is the flat-closure complement $`1 - \Omega_\Lambda`$ of the fixed vacuum anchor, not read off the fit.
 
-Established at model level. With $`S = \sin(t/2)`$ and the Waltz clock, Model D+Λ fits the joint Pantheon+ (1701 SNe Ia) + DESI DR2 BAO (13 data points) dataset at $`\Delta\chi^2 = +0.11`$ relative to flat ΛCDM at equal parameter count (three free parameters: $`s_0`$, $`H_0 r_d`$, $`M_B`$), with $`s_0 < 0.19`$ (95% CL). The earlier Pantheon+-only fit (two free parameters, $`s_0`$, $`H_0`$) gave $`\Delta\chi^2 = +0.6`$; the joint fit supersedes it as the current constraint (§III). $`\Omega_m = 0.315`$ is inherited from the fixed vacuum anchor through flat closure ($`1 - \Omega_\Lambda`$), not recovered from the fitted $`(1+z)^3`$ coefficient (which reads the budget-dressed 0.372 at $`s_0 = 0.389`$, the Pantheon+-only best fit; see §IV). First-principles derivation of the clock exponent from $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ without invoking GR remains open.
+Established at model level. With $`S = \sin(t/2)`$ and the Waltz clock, Model D+Λ fits the joint Pantheon+ (1701 SNe Ia) + DESI DR2 BAO (13 data points) dataset at $`\Delta\chi^2 = +0.11`$ relative to flat ΛCDM at equal parameter count (three free parameters: $`s_0`$, $`H_0 r_d`$, $`M_B`$), with $`s_0 < 0.19`$ (95% CL). The earlier Pantheon+-only fit (two free parameters, $`s_0`$, $`H_0`$) gave $`\Delta\chi^2 = +0.6`$; the joint fit supersedes it as the current constraint (§III). $`\Omega_m = 0.315`$ is inherited from the fixed vacuum anchor through flat closure ($`1 - \Omega_\Lambda`$), not recovered from the fitted $`(1+z)^3`$ coefficient (which reads the budget-dressed 0.371 at $`s_0 = 0.389`$, the Pantheon+-only best fit; see §IV). First-principles derivation of the clock exponent from $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ without invoking GR remains open.
 
 **Related:** [The Budget Map](budget-map.md), [Friedmann as Output](friedmann-as-output.md) (the attack tracker for the clock exponent), [The Waltz](../../../../spectrum/files/the-waltz.md).
 
 **Update (May 2026, Λcos paper).** The best-fit sits at the ΛCDM boundary ($`s_0 = 0.001`$); the posterior median is 0.076. The Pantheon+-only value $`s_0 = 0.389`$ remains within the Pantheon+ posterior but is disfavored by the BAO data. The prediction ledger (§XI) now carries both values.
 
-The paper also demonstrates that standard two-parameter $`w(z)`$ templates (CPL, BA, JBP) produce apparent phantom crossings when fitted to non-phantom Λcos distances, establishing template bias as a structural effect. Clock-exponent selection is empirically validated: integer alternatives $`n = 0, -1, +1`$ give $`\Delta\chi^2 > 60`$ relative to ΛCDM (Appendix A of the Λcos paper). A growth-level consistency check against DESI DR1 ShapeFit+BAO $`f\sigma_{s8}`$ at six tracer effective redshifts gives $`\Delta\chi^2_\text{RSD} < 0.3`$ relative to flat ΛCDM across the data-allowed parameter range.
+The paper also demonstrates that standard two-parameter $`w(z)`$ templates (CPL, BA, JBP) produce apparent phantom crossings when fitted to non-phantom Λcos distances, establishing template bias as a structural effect. Clock-exponent selection is empirically validated within the tested integer family: integer alternatives $`n = 0, -1, +1`$ give $`\Delta\chi^2 > 60`$ relative to ΛCDM (Appendix A of the Λcos paper). A growth-level consistency check against DESI DR1 ShapeFit+BAO $`f\sigma_{s8}`$ at six tracer effective redshifts gives $`\Delta\chi^2_\text{RSD} < 0.3`$ relative to flat ΛCDM across the data-allowed parameter range.
 
 ---
 
@@ -96,19 +96,19 @@ Alternative integer-power clocks ($`S^0`$, $`S^{-1}`$, $`S^{+1}`$: Models A, B, 
 | C (symmetric) | +1 | $`(1+z)^0`$ | +7276.6 |
 | D (Λcos / budget) | -1/2 | $`(1+z)^{3/2}`$ | +0.11 |
 
-The selection is decisive. Only $`n = -1/2`$ is viable.
+Within the tested integer family the selection is decisive: only $`n = -1/2`$ is viable. The continuous measurement leaves the exponent empirically unscored ([The Half-Power Clock](friedmann-as-output.md)).
 
 ---
 
 ## III. Model D+Λ and Pantheon+
 
-The Hubble parameter derived from the budget identity with the Waltz clock and the fixed vacuum-reference Λ (the physical identification is open, see [cosmological constant](../../../../cosmos/files/cosmological-constant.md) §IV):
+The Hubble parameter of Model D+Λ: the budget identity with the Waltz clock gives its non-vacuum part, and the fixed vacuum-reference Λ enters as its own object, so the whole is a phenomenological $`H(z)`$ rather than the geometric rate under that clock ([Stress-Tensor Bridge](stress-tensor-bridge.md#vi-first-results-the-pinned-target); Λ's physical identification is open, see [cosmological constant](../../../../cosmos/files/cosmological-constant.md) §IV):
 
 ```math
 H^2(z) = H_0^2\left[\frac{1-\Omega_\Lambda}{1-s_0^2}(1+z)^3 - \frac{(1-\Omega_\Lambda) s_0^2}{1-s_0^2}(1+z) + \Omega_\Lambda\right]
 ```
 
-Two free parameters: $`s_0 = \sin(t_\text{now}/2)`$ and $`H_0`$. Same count as ΛCDM ($`\Omega_m`$, $`H_0`$). $`\Omega_\Lambda = 0.685`$ is held fixed as the fiducial vacuum-fraction anchor, not fitted in the baseline model; the topology supplies the reference relation $`\Lambda_\text{ref} = 3/R^2`$, while deriving the dimensionless fraction from structure alone remains open. Here $`\Omega_\Lambda`$ is the vacuum density fraction $`f_\Lambda \approx 0.685`$ (conventional ΛCDM usage), distinct from the MIT hierarchy $`\Omega_\Lambda = (R_\Lambda/\ell_P)^2`$ of the scaling-law pages.
+In the Pantheon+-only fit, two free parameters: $`s_0 = \sin(t_\text{now}/2)`$ and $`H_0`$; the joint SN+BAO fit frees three ($`s_0`$, $`H_0 r_d`$, $`M_B`$). Each matches ΛCDM's count, with $`\Omega_m`$ in place of $`s_0`$. $`\Omega_\Lambda = 0.685`$ is held fixed as the fiducial vacuum-fraction anchor, not fitted in the baseline model; the topology supplies the reference relation $`\Lambda_\text{ref} = 3/R^2`$, while deriving the dimensionless fraction from structure alone remains open. Here $`\Omega_\Lambda`$ is the vacuum density fraction $`f_\Lambda \approx 0.685`$ (conventional ΛCDM usage), distinct from the MIT hierarchy $`\Omega_\Lambda = (R_\Lambda/\ell_P)^2`$ of the scaling-law pages.
 
 | Quantity | Pantheon+ only | Joint SN+BAO (Λcos paper) | Source |
 |---|---|---|---|
@@ -141,7 +141,7 @@ $`\Omega_m = 0.315`$ is not fitted by the SN+BAO likelihood in this construction
 \Omega_m^\text{effective} = \frac{1-\Omega_\Lambda}{1-s_0^2} \quad \text{(what the } (1+z)^3 \text{ coefficient reads)}
 ```
 
-At best-fit $`s_0 = 0.389`$, the effective reading is 0.372; the underlying value is 0.315. The Planck value is recovered after removing the budget-identity dressing, consistent with the fixed vacuum anchor; $`\Omega_m = 1 - \Omega_\Lambda`$ is the complement of that anchor, not an independent derivation.
+At the Pantheon+-only best fit $`s_0 = 0.389`$, the effective reading is 0.371; the underlying value is 0.315. The Planck value is recovered after removing the budget-identity dressing, consistent with the fixed vacuum anchor; $`\Omega_m = 1 - \Omega_\Lambda`$ is the complement of that anchor, not an independent derivation.
 
 **Note on the joint constraint.** At $`s_0 < 0.19`$ (95% CL from SN+BAO), the dressing factor $`1/(1-s_0^2)`$ is at most 1.037, so $`\Omega_m^\text{effective} < 0.327`$. The dressing becomes small enough that the effective and underlying readings are nearly identical. This is consistent: the BAO data pull $`s_0`$ toward zero, which is the ΛCDM limit where no dressing exists. The effective-$`\Omega_m`$ reading is structurally intact but observationally marginal at the current joint constraint.
 
@@ -207,8 +207,8 @@ Structural reading: face ($`Z_3`$) contributes to matter dilution, edge ($`Z_2`$
 \Psi = \cos(t/2) & \quad \text{[AXIOM]}\\
 \Psi^2 + S^2 = 1 & \quad \text{[PROPOSED; consistent with data]}\\
 S = \sin(t/2) & \quad \text{[FOLLOWS]}\\
-dt/d\tau_H = S^{-1/2} & \quad \text{[FORCED by $S^3$ dimensionality $+$ GR; empirically validated, integer alternatives ruled out at $\Delta\chi^2 > 60$]}\\
-H^2(z) \text{ from budget} + \Lambda & \quad \text{[MODEL-DERIVED, conditional on the imported clock and fixed vacuum anchor]}\\
+dt/d\tau_H = S^{-1/2} & \quad \text{[FORCED by } S^3 \text{ dimensionality + GR; empirically unique in the tested integer family, the alternatives ruled out at } \Delta\chi^2 > 60 \text{]}\\
+H^2(z) \text{ from budget} + \Lambda & \quad \text{[PHENOMENOLOGICAL: the budget part model-derived from the imported clock, the vacuum anchor added as its own object]}\\
 \text{Fit to Pantheon+} & \quad \text{[ESTABLISHED: } \Delta\chi^2 = +0.6\text{]}\\
 \text{Joint fit to SN+BAO} & \quad \text{[ESTABLISHED: } \Delta\chi^2 = +0.11, \; s_0 < 0.19 \text{ (95\% CL)]}\\
 \Omega_m = 0.315 \text{ inherited} & \quad \text{[INHERITED: flat-closure complement, not a fit output]}\\
@@ -252,7 +252,7 @@ This carries a specific quantified discrepancy, and $`\Phi_\text{now} = 5.22`$ i
 | [First positive eigenvalue](../../bedrock/files/first-eigenvalue.md) | Supplies $`\Lambda_\text{top} = 2/R^2`$, read via the Gauss lift and the imported de Sitter normalization as the reference $`\Lambda_\text{ref} = 3/R^2`$. The dimensionless present-day fraction $`\Omega_\Lambda = 0.685`$ remains a fiducial fit anchor, not derived by the eigenvalue (it also needs the cosmological normalization). |
 | [Hubble tension](../../../../cosmos/files/hubble-tension.md) | The Waltz-clock fit constrains $`H_0 r_d`$, not $`H_0`$, which enters as the measured Planck edge anchor; the early/late discrete snap that would have carried it to the local value is withdrawn with its trigger. |
 | [Energy as Resolution Amplitude](energy-as-resolution-amplitude.md) | Same sampling-operation picture. Redshift as phase ratio + energy as resolution amplitude should unify into a single account. Open. |
-| [Λcos paper](https://github.com/dmobius3/lambda-cos) | Presents Model D+Λ as a standalone phenomenological model ("Λcos") without framework language. Joint SN+BAO constraint: $`s_0 < 0.19`$ (95% CL). Template bias demonstrated: CPL/BA/JBP produce phantom crossings from non-phantom input. Clock exponent empirically validated. Linear-growth consistency check against DESI DR1 ShapeFit+BAO at six tracer effective redshifts gives $`\Delta\chi^2_\text{RSD} < 0.3`$ relative to flat ΛCDM. First quantitative constraint on the budget phase parameter from joint background and growth data. |
+| [Λcos paper](https://github.com/dmobius3/lambda-cos) | Presents Model D+Λ as a standalone phenomenological model ("Λcos") without framework language. Joint SN+BAO constraint: $`s_0 < 0.19`$ (95% CL). Template bias demonstrated: CPL/BA/JBP produce phantom crossings from non-phantom input. Clock exponent selected within the tested integer family. Linear-growth consistency check against DESI DR1 ShapeFit+BAO at six tracer effective redshifts gives $`\Delta\chi^2_\text{RSD} < 0.3`$ relative to flat ΛCDM. First quantitative constraint on the budget phase parameter from joint background and growth data. |
 
 ---
 
@@ -260,7 +260,7 @@ This carries a specific quantified discrepancy, and $`\Phi_\text{now} = 5.22`$ i
 
 | Item | Priority | Notes |
 |---|---|---|
-| Clock from postulate | High | The exponent -1/2 is forced by consistency with budget + GR + $`S^3`$ dimensionality. Integer alternatives empirically ruled out at $`\Delta\chi^2 > 60`$ (Λcos paper). A derivation from $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ that does not invoke GR would promote this from FORCED (given the GR imports) to DERIVED. |
+| Clock from postulate | High | The exponent -1/2 is forced by consistency with budget + GR + $`S^3`$ dimensionality. Integer alternatives empirically ruled out at $`\Delta\chi^2 > 60`$ (Λcos paper). The tick lemma returns it with GR absent, conditionally on its premise ledger, whose kernel exchange symmetry (P2) is supported by reduction and empirically unscored ([The Half-Power Clock](friedmann-as-output.md)). A derivation from $`S^1 = \partial(\text{Möbius}) \hookrightarrow S^3`$ that does not invoke GR and clears that page's bar would promote this from FORCED (given the GR imports) to DERIVED. |
 | $`t_\text{now}`$ from topology | High | The Pantheon+-only fit gives $`t_\text{now} = 0.80`$ rad; the joint SN+BAO constraint gives $`t_\text{now} < 0.38`$ rad (95% CL). The BAO data pull the clock toward zero (the ΛCDM limit). Deriving $`t_\text{now}`$ from topology alone, rather than from data, closes the program, but the empirical value is now uncertain by a factor of $`\sim 2`$ depending on dataset combination. |
 | $`\Phi \leftrightarrow t`$ relation | High | The two phase parameters must be reconciled. |
 | Vertex-<i>Z<sub>5</sub></i> role in bounded-budget correction | Medium | If the $`(1+z)^1`$ term derives from $`Z_5`$ in the temporal budget, the face/edge/vertex completion of the 3/2 accounting becomes explicit. |
