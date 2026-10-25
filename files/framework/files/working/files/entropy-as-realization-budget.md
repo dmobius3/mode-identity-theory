@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-07-07):** MOTIVATED, not derived. The cooling half is established; the entropy half rests on the one unwalked shell-unlock map S↦N_max(S).
+**Status (2026-10-24):** MOTIVATED, not derived. The cooling half is established as a kinematic equivalence, its derivation from the postulate open; the entropy half rests on the one unwalked shell-unlock map S↦N_max(S).
 **Summary:** A candidate account of the thermodynamic arrow in a static universe: entropy as the spread of the resolution-amplitude budget over realized modes.
 **Inputs:** `temporal-budget.md`, `redshift-and-cooling.md`, the 2I Molien shell spectrum, the chronon and the 120-domain
 
@@ -21,7 +21,7 @@ A candidate MIT account of the thermodynamic arrow in a static universe, scoped 
 
 ## I. The question
 
-A static space at fixed volume has no exterior to radiate into and no growing volume to dilute into. Cooling is already answered: budget weight transfers $`\Psi^2 \to S^2`$ as the phase advances, photon energies scale by $`S(\text{emit})/S(\text{obs}) = 1/(1+z)`$, every wavelength by the same factor, so a blackbody stays a blackbody at $`T \propto 1/S`$ ([Redshift and Cooling](redshift-and-cooling.md)). That is the temperature half, and it is settled.
+A static space at fixed volume has no exterior to radiate into and no growing volume to dilute into. Cooling is already answered: budget weight transfers $`\Psi^2 \to S^2`$ as the phase advances, photon energies scale by $`S(\text{emit})/S(\text{obs}) = 1/(1+z)`$, every wavelength by the same factor, so a blackbody stays a blackbody at $`T \propto 1/S`$ ([Redshift and Cooling](redshift-and-cooling.md)). That is the temperature half, established there as a kinematic equivalence with the FLRW thermal law; its first-principles derivation from the postulate stays open.
 
 A temperature law is not an entropy law: cooling fixes $`T \propto 1/S`$ but says nothing about the configuration count. This note is the gameplan for the entropy, and it claims only the realization sector: the arrow of time as the budget resolves, not the gravitational arrow that Penrose's puzzle is about (§V).
 

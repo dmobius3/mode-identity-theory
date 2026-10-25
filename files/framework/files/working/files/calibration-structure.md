@@ -47,7 +47,7 @@ In the surface sector, the eigenvalue statement remains intact. The first positi
 \frac{2}{R^2},
 ```
 
-with the ground state the extension-dependent zero mode (Friedrichs zero gives the $`m_h = 0`$ background).
+with a zero-mode ground state under the adopted Friedrichs extension, the background; the bridging family instead has a negative, defect-bound ground state.
 
 What failed was the independent over-determination of $`R`$ through the CMB-Molien path. Without an independent value of $`R`$, that path no longer predicts the physical $`\Lambda`$ absolutely; two other routes determine $`R`$ independently and return $`\Lambda_\text{ref}`$ as a conditional output (below). Instead, measured $`\Lambda`$ calibrates the surface radius $`R`$ by substitution into the reference relation $`\Lambda_\text{ref} = 3/R^2`$, which is the identification the Interface holds open, imported here as a calibration choice, and hence the surface hierarchy
 
@@ -67,7 +67,7 @@ More fully, the scaling law has one hierarchy variable $`\Omega_\Lambda`$ with t
 | Measured $`\alpha`$ | the coupling | 23% at $`q^2 = 0`$ (genuine) | circular | best-conditioned |
 | Mass spectrum ($`m_\mu/m_e`$) | the mass ratio | ~13.4x (genuine) | ~few % | independent cross-check |
 
-The three readings are one inversion through the same 60-fold lever, and they differ in input conditioning ($`\alpha`$ to ~0.4%, the mass ratio to ~4.5%). The two non-circular routes do not presently agree: the canonical electron-muon reading sits 10.5x from the coupling route in $`\Lambda_\text{ref}`$. Against the measured value that same reading lands about 13.4x low. The lever amplifies small input residuals, but that amplification does not by itself explain the disagreement, and the present machinery does not distinguish conditioning from structural inconsistency. Reconciling the routes is open; see [the R problem](r-problem.md).
+The three readings are one inversion through the same 60-fold lever, and they differ in input conditioning ($`\alpha`$ to ~0.4%, the mass ratio to ~4.5%). The two non-circular routes do not presently agree: the canonical electron-muon reading sits 10.5x from the coupling route in $`\Lambda_\text{ref}`$, with $`\alpha`$ read at $`q^2 = 0`$. Against the measured value that same reading lands about 13.4x low. The lever amplifies small input residuals, but that amplification does not by itself explain the disagreement, and the present machinery does not distinguish conditioning from structural inconsistency. Reconciling the routes is open; see [the R problem](r-problem.md).
 
 This localizes the blast radius. Losing the independent CMB-Molien anchor demotes exactly one claim: $`\Lambda`$ is no longer an absolute prediction. It becomes the measured surface-sector calibration input. Downstream mass and coupling calculations do not collapse, because they require the value of $`\Omega_\Lambda`$, which is fixed once $`R`$ (from measured $`\Lambda`$) and the Planck scale (the second dial) are specified. The McKay mass elevator uses powers of $`\sqrt{\Omega_\Lambda}`$; the gauge couplings use fractional powers of $`\Omega_\Lambda`$ such as $`\Omega_\Lambda^{-1/60}`$. They do not require $`R`$ to be independently predicted, only consistently calibrated.
 

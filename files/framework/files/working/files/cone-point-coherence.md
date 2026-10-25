@@ -64,7 +64,7 @@ The key structural feature: the $`W`$-cancellation (step 9) works because the ar
 
 The cosmic Möbius band has one cone point at $`y = \pi R/2`$. Every meridional line (every $`w`$-position) passes through it. In the zonal sector (the $`w`$-constant first-positive mode), the eigenfunction $`u_0 = \sin(y/R)`$ takes the same value at each $`y`$ regardless of $`w`$. The cone point ($`u_0 = 1`$) is the shared maximum of all meridional lines.
 
-Galactic observers are at different $`w`$-positions on the cosmic Möbius band but share this cone point. The first positive eigenvalue $`\lambda_1 = 2/R^2`$ is established through integration that passes through the cone point. All observers inherit the same eigenvalue because they sample the same first-positive mode on the same band.
+Galactic observers are at different $`w`$-positions on the cosmic Möbius band but share this cone point. The first positive eigenvalue $`\lambda_1 = 2/R^2`$ is established through integration that passes through the cone point. All observers inherit the same eigenvalue if they read the same first-positive mode on the same band. That reading is an adopted premise: on the conic band neither registered sampler carries the output of any of the eighteen ambient blocks run into the first-positive eigenspace ([The First-Positive Transfer Run](first-positive-transfer.md)).
 
 In this reading, galactic coherence is a consequence of:
 - One Möbius band (the cosmic one)

@@ -69,9 +69,9 @@ This is consistent with the Waltz's reading of masslessness as edge-only propaga
 
 If this reframe is real, several SM framings get inverted.
 
-**Mass-energy equivalence is structural, not conversional.** $`mc^2`$ is not "mass converted into energy." Mass and energy are the same quantity read at two manifold sectors. Mass is an $`n=1`$ edge observable; $`c^2`$ lifts it to the $`n=0`$ Planck scale where energy lives. The conversion factor is structural on $`S^1`$, the temporal edge.
+**Mass-energy equivalence is structural, not conversional.** $`mc^2`$ is not "mass converted into energy." Mass and energy are the same quantity. The mass formula reads mass on the surface hierarchy $`\Omega_\Lambda`$ through the McKay elevator, not at an edge index, and the Waltz reads it as the cost of crossing from the temporal edge into the surface; $`c^2`$ converts that cost to an energy. Whether the conversion factor is structural on $`S^1`$, the temporal edge, is Step 3 below.
 
-**Inertia is a wave property, not an object property.** Resistance to changes in sampling trajectory comes from the wave-sampling relationship, not from the sampled object. All observers experience the same wave. The equivalence principle (gravitational mass equals inertial mass) follows immediately: both are the same feature of the same sampling operation.
+**Inertia is a wave property, not an object property.** Resistance to changes in sampling trajectory comes from the wave-sampling relationship, not from the sampled object. All observers experience the same wave. The equivalence principle (gravitational mass equals inertial mass) would follow if gravity couples to the same feature of the same sampling operation, which §VIII leaves open.
 
 **Rest frame is a sampling frame.** "At rest" means sampling at a fixed geodesic position in $`S^3`$. "In motion" means sampling along a path. There is no absolute rest, but there is a well-defined sampling operation for each observer, and the transformation between observers is a transformation between sampling operations.
 
@@ -79,7 +79,7 @@ If this reframe is real, several SM framings get inverted.
 
 ## V. Connection to Existing MIT
 
-The reframe does not need new postulates. It uses elements already derived or axiomatic in the framework.
+The reframe does not need new postulates. It uses elements already in the framework, at the strengths their homes give them: the axiom, the primitive input $`c`$, the engine's mass formula, whose four factors do not stand at one strength, and the Waltz's readings of masslessness, of $`\mathbb{R}^4`$ and of the observer's coordinates.
 
 | Element | Source | Role in reframe |
 |---|---|---|
