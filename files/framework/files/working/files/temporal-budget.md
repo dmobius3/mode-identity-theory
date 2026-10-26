@@ -64,7 +64,7 @@ Bounded realization ($`S \leq 1`$) is the key feature. Nothing in a standard FLR
 
 ### I.A Cooling, in budget terms
 
-Cooling and the redshift it follows from have their own note now: [Redshift and Cooling](redshift-and-cooling.md). In budget terms the content is that the transfer $`\Psi^2 \to S^2`$ earns the cooling without an exterior: at early phase the weight sits in the standing wave ($`\Psi^2 \approx 1`$), and as the phase advances it moves into the realized modes, photon energies scaling by $`S(t_\text{emit})/S(t_\text{obs}) = 1/(1+z)`$, so a blackbody stays a blackbody at $`T \propto 1/S`$, established in the note as a kinematic equivalence with the FLRW thermal law. The distance side is the clock (§II), and the entropy that rides along is a separate reading ([Entropy as Realization Budget](entropy-as-realization-budget.md)).
+Cooling and the redshift it follows from have their own note now: [Redshift and Cooling](redshift-and-cooling.md). In budget terms the content is that the transfer $`\Psi^2 \to S^2`$ earns the cooling without an exterior: at early phase the weight sits in the standing wave ($`\Psi^2 \approx 1`$), and as the phase advances it moves into the realized modes, photon energies scaling by $`S(t_\text{emit})/S(t_\text{obs}) = 1/(1+z)`$, so a blackbody stays a blackbody at $`T \propto 1/S`$, established in the note as a kinematic equivalence with the FLRW thermal law, its derivation from the postulate open. The distance side is the clock (§II), and the entropy that rides along is a separate reading ([Entropy as Realization Budget](entropy-as-realization-budget.md)).
 
 ---
 

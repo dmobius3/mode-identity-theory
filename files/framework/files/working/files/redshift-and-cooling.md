@@ -7,13 +7,13 @@
 
 **Type:** Note
 **State:** Active
-**Status (2026-10-08):** Cooling is established as a kinematic equivalence with the FLRW thermal law; the redshift mechanism is in outline, and the distance side rides on the Waltz clock. The Killing ledger is derived (§VI): read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share, and the exchange waits on the amplitude-to-stress-tensor dictionary.
+**Status (2026-10-25):** Cooling is established as a kinematic equivalence with the FLRW thermal law, its derivation from the postulate, the photon phase-space density included, open (§II); the redshift mechanism is in outline, and the distance side rides on the Waltz clock. The Killing ledger is derived (§VI): read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share, and the exchange waits on the amplitude-to-stress-tensor dictionary.
 **Summary:** How a static universe reddens light and cools a thermal bath, both readings of the temporal budget's state S.
 **Inputs:** `temporal-budget.md`, the standing wave $`\Psi = \cos(t/2)`$, the Waltz clock
 
 How a static universe reddens light and cools a thermal bath, both read off the temporal budget's state $`S`$. Redshift is the phase-ratio mechanism; cooling is that same ratio applied to a blackbody.
 
-Redshift mechanism in outline (the phase ratio on the standing wave); the full derivation from the postulate to the observed $`H(z)`$ is partially walked. Cooling is ESTABLISHED as a kinematic equivalence with the FLRW thermal law. Both are readings of the temporal budget; the distance side rides on the Waltz clock.
+Redshift mechanism in outline (the phase ratio on the standing wave); the full derivation from the postulate to the observed $`H(z)`$ is partially walked. Cooling is ESTABLISHED as a kinematic equivalence with the FLRW thermal law; its derivation from the postulate, the photon phase-space density included, is OPEN. Both are readings of the temporal budget; the distance side rides on the Waltz clock.
 
 **Related:** [The Budget Map](budget-map.md), [The Temporal Budget Identity](temporal-budget.md), [Entropy as Realization Budget](entropy-as-realization-budget.md), [Dark Energy](../../../../cosmos/files/dark-energy.md) (the distance-redshift relation), [The Waltz](../../../../spectrum/files/the-waltz.md).
 

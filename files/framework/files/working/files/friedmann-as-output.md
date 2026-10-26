@@ -32,7 +32,7 @@ The chain, with the epistemic status of each link:
 |---|---|
 | $`\Psi = \cos(t/2)`$ on the temporal edge | AXIOM (anti-periodicity, initial maximum, lowest harmonic) |
 | $`\Psi^2 + S^2 = 1`$, $`S = \sin(t/2)`$ | PROPOSED reading; trigonometric identity |
-| $`1 + z = S(t_\text{obs})/S(t_\text{emit})`$, $`T \propto 1/S`$ | ESTABLISHED kinematic equivalence with the FLRW thermal law ([Redshift and Cooling](redshift-and-cooling.md)) |
+| $`1 + z = S(t_\text{obs})/S(t_\text{emit})`$, $`T \propto 1/S`$ | ESTABLISHED kinematic equivalence with the FLRW thermal law for the cooling, the redshift mechanism in outline; the derivation from the postulate partially walked for the redshift and OPEN for the cooling ([Redshift and Cooling](redshift-and-cooling.md#v-where-it-stands)) |
 | $`a \propto S`$ | the same kinematic dictionary, at the level of observables |
 | **GR comparison** (imported notation, not the corpus's symbols): $`dT_\text{proper} = a\,d\eta`$ | the standard proper/conformal relation. It has the same scale-factor form as the native map $`d\mu_{\text{tick}} = a\,d\tau_H`$, but the identification of the native measures with GR's time variables is not established (see the placement seam below) |
 | $`dt/d\tau = S^{-1/2}`$ | **FORCED by $`S^3`$ dimensionality + GR; the one imported line** |
