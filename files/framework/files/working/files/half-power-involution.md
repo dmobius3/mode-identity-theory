@@ -9,7 +9,7 @@
 **State:** Closed
 **Verdict:** Positive
 **Status (2026-07-05):** Gate (i) of the half-power clock, closed as a qualified yes: the level exchange exists as reciprocity on tick measures, fixing the interface measure at S^{3/2}dt; it does not act on states.
-**Summary:** Establishes the amplitude-intensity level exchange, gate (i) of the half-power clock, as a self-dual involution on tick measures.
+**Summary:** Establishes, as a qualified yes, the amplitude-intensity level exchange, gate (i) of the half-power clock: a self-dual involution on tick measures that does not act on states.
 **Parent:** `friedmann-as-output.md`
 
 Gate (i) of the [half-power clock](friedmann-as-output.md) is CLOSED, as a qualified yes. The level-exchange involution exists as an operator on tick measures, not on states, and it is the same canonical reciprocity whose fixed point places the observer at $`\sqrt{\Omega}`$ in the hierarchy. The honest residue is the anchoring of the measure pair, and the framework's sampling structure supplies exactly three candidate levels whose pairings are enumerable and already adjudicated by the Λcos fits. The primitive self-duality statement lands on the interface tick measure $`S^{3/2}\,dt`$; the $`-1/2`$ follows as a corollary through the established dictionary. The derivation burden moves, sharpened, to the tick lemma (gate ii).

@@ -41,7 +41,7 @@ The 4.5% ratio miss becomes a factor of 13.4 in Λ_ref because the McKay lever i
 
 ## I. The Mechanism
 
-The mass formula (engine file §14):
+The mass formula ([the framework page](../../../README.md#the-mass-formula)):
 
 ```math
 m(\rho, \sigma) = \mu_\Lambda \times C_{\text{geom}}(\rho) \times (\sqrt{\Omega_\Lambda})^{\,\text{dist}(\rho)/30} \times T^2(\rho \otimes \sigma)
@@ -64,7 +64,7 @@ Both μ_Λ and Ω_Λ = (R/ℓ_P)² depend on R and G. Under the conditional exch
 
 ## II. The G-Power Collection
 
-From the Waltz working notes. G enters the mass formula through two doors:
+From [the Waltz](../../../../spectrum/files/the-waltz.md) §II. G enters the mass formula through two doors:
 
 | Factor | G-dependence | Exponent |
 |---|---|---|
@@ -111,9 +111,9 @@ If d_μ ≠ d_e, the ratio depends on Ω_Λ, which depends on R. The topological
 
 | Requirement | Status | Source |
 |---|---|---|
-| Mass formula structure | ESTABLISHED | Engine file §14 |
-| G-power collection | ESTABLISHED | Waltz working notes §II |
-| Electron assignment (ρ, σ, dist) | ASSIGNED (dist = 4) | Engine file §14 |
+| Mass formula structure | ESTABLISHED | [The Mass Formula](../../../README.md#the-mass-formula) |
+| G-power collection | ESTABLISHED | [The Waltz](../../../../spectrum/files/the-waltz.md) §II |
+| Electron assignment (ρ, σ, dist) | ASSIGNED (dist = 4) | mass-spectrum.md §III |
 | Muon assignment (ρ, σ, dist) | ASSIGNED (R8, std, dist = 5; Δd = 1 vs electron) | mass-spectrum.md §III |
 | C_geom for electron and muon | COMPUTED | Kostant exponents |
 | T² for electron and muon | COMPUTED | Reidemeister torsion, T²(R₃)/T²(R₄) = φ⁻⁴ |
@@ -168,9 +168,9 @@ All three are informative. The computation should be done regardless.
 
 ---
 
-## VIII. Connection to the 2% Systematic
+## VIII. The Electron and Muon Residuals
 
-The engine file documents a ~2% systematic offset across multiple observables (Λ, H₀, a₀, electron mass running ~2% high, muon ~2.5% low). The electron and muon bracket the measured values from opposite sides. Their geometric mean lands within about 1% of measured G, the two one-sided residuals cancelling rather than a genuine 1%-level determination ([the Waltz](../../../../spectrum/files/the-waltz.md)); the framework keeps G measured. This bracketing pattern is consistent with a single upstream correction (suspected: Gauss-Codazzi factor precision). The opposite-direction bracketing that helps the geometric mean (where the misses cancel) hurts the ratio (where they compound). R is read from the ratio m_μ/m_e, not the geometric mean, so the two ~2% misses add to a 4.5% ratio miss, which the Δd = 1 McKay lever amplifies by 60× into the factor-of-13.4 offset in Λ_ref (Result section). The earlier estimate here, that 2% would carry through as 2% in Λ, assumed the misses were common-mode in the ratio; they are anti-correlated. The order-of-magnitude floor for the electron-muon pair is set by this residual correlation, not by the per-mass 2% accuracy. The 2026-07-28 torsion correction changed the pair scan, though: with the top well-fit at (R2, triv), the muon-top pair (both residuals within 7%, Δd = 2) does beat the electron-muon factor of 13.4, reaching 3.8×, so the achievable floor is now about half an order of magnitude.
+On the mass spectrum's table the electron runs about 2% high and the muon about 2.5% low (pred/obs 1.02 and 0.97, [mass-spectrum](../../../../spectrum/files/mass-spectrum.md) §III), so the two bracket the measured values from opposite sides. Their geometric mean lands within about 1% of measured G, the two one-sided residuals cancelling rather than a genuine 1%-level determination ([the Waltz](../../../../spectrum/files/the-waltz.md)); the framework keeps G measured. No page derives a common upstream correction behind the bracketing. The opposite-direction bracketing that helps the geometric mean (where the misses cancel) hurts the ratio (where they compound). R is read from the ratio m_μ/m_e, not the geometric mean, so the two ~2% misses add to a 4.5% ratio miss, which the Δd = 1 McKay lever amplifies by 60× into the factor-of-13.4 offset in Λ_ref (Result section). The earlier estimate here, that 2% would carry through as 2% in Λ_ref, assumed the misses were common-mode in the ratio; they are anti-correlated. The order-of-magnitude floor for the electron-muon pair is set by this residual correlation, not by the per-mass 2% accuracy. The 2026-07-28 torsion correction changed the pair scan, though: with the top well-fit at (R2, triv), the muon-top pair (both residuals within 7%, Δd = 2) does beat the electron-muon factor of 13.4, reaching 3.8×, so the achievable floor is now about half an order of magnitude.
 
 ---
 

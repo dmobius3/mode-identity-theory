@@ -109,7 +109,7 @@ Status: DEAD. The absolute-$`\Phi`$ bridge from the horizon to ordinary coherenc
 
 ---
 
-## IV. Pieces on the Bench (Motivated, Not Yet Joined)
+## IV. Pieces on the Bench (Not Yet Joined)
 
 ### Piece A: 2D angular + 1D radial = perceived 3D
 
@@ -307,7 +307,7 @@ The structure doesn't change. The scale does. The coherence domain does.
 | Prediction | Falsified if... |
 |------------|-----------------|
 | Observer-isolation guardrail | Any derivation implying two observers' realities become disconnected rather than differently sampled. Treated as a flag on the derivation, not a result. |
-| Coherence domains nest | Phase field effects shown to operate ONLY at galactic scale with no sub-galactic structure |
+| Coherence domains nest | Stated for phase-field effects, whose trigger is withdrawn (Joint 3), so the row has no live test: one needs a derived effect of crossing a coherence boundary on $`\Theta`$, $`C(\Theta)`$ or the sampling operator (Gap 8) |
 | Oort Cloud is a coherence boundary | An observer outside the Oort Cloud (interstellar probe) measures identical CMB multipole alignment |
 | CMB-ecliptic alignment is local | Multiple independent stellar systems shown to share the SAME CMB alignment axis |
 | 144,000 AU is structural | Oort Cloud boundary precisely measured at a value incompatible with 144,000 (e.g., 80,000 or 300,000 AU with tight error bars) |
