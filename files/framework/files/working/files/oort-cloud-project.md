@@ -7,15 +7,15 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-10-03):** Working bench: Section II derived apart from its annotated rows, Section III joints under load, Section IV pieces motivated, Section V gaps. The central question is whether the 120-grid nests at every gravitationally coherent scale.
+**Status (2026-10-25):** Working bench: Section II derived apart from its annotated rows, Section III joints under load (Joint 4 tested and dead), Section IV pieces not yet joined (A to C motivated, D and F observations, E downstream), Section V gaps. The question is whether the 120-grid nests at every gravitationally coherent scale. Standard celestial mechanics gives a solar tidal-crossover radius of the right order, without uniquely determining the Oort Cloud's outer boundary, so the central open form is whether crossing a coherence boundary does anything to $`\Theta`$, $`C(\Theta)`$ or the sampling operator (Gap 8).
 **Summary:** Asks whether MIT's structure projects into every gravitationally coherent scale, making the Oort Cloud the solar-scale coherence boundary.
 **Inputs:** the first positive eigenvalue (first-eigenvalue paper), the phase-field coherence scale (L_f SPARC-falsified, L_g open), the 120-grid scale-free projection, the 3/2 conversion
 
 > The grid doesn't set a size; it sets a structure.
 
-Working bench. Locked parts (Section II) are derived. Joints (Section III) are under load. Pieces (Section IV) are motivated but not yet joined. Gaps (Section V) are genuinely open.
+Working bench. Locked parts (Section II) are derived apart from their annotated rows, which carry their own grades. Joints (Section III) are under load, and one (Joint 4) has been tested and killed. Pieces (Section IV) are not yet joined: A to C are motivated, D and F are observations, and E is downstream. Gaps (Section V) are genuinely open.
 
-**Related:** [Cone point coherence notes](cone-point-coherence.md) (geometric mechanism behind $`L_f`$), [SPARC phase field notes](sparc-phase-field.md) (empirical test of $`L_f`$ across 175 galaxies), [Black Double Zero's](../../../../cosmos/files/black-hole.md) §VIII.1 (the killed absolute-$`\Phi`$ bridge to the horizon, Joint 4).
+**Related:** [Cone point coherence notes](cone-point-coherence.md) (geometric mechanism for coherence within $`L_g`$), [SPARC phase field notes](sparc-phase-field.md) (empirical test of $`L_f`$ across 175 galaxies), [Black Double Zero's](../../../../cosmos/files/black-hole.md) §VIII.1 (the killed absolute-$`\Phi`$ bridge to the horizon, Joint 4).
 
 ---
 
@@ -31,20 +31,20 @@ Everything on this bench serves that question.
 
 ## II. Parts (Locked)
 
-Derived, tested, load-bearing. Pick up and use.
+Load-bearing, each at its home's grade: where a part rests on a condition, its row says so. Two rows are records, not parts to use: $`L_f`$ (SPARC-falsified) and $`\Theta_f^{\text{env}}`$ (withdrawn).
 
 | Part | What it is | Derived from | Reference |
 |------|-----------|--------------|-----------|
-| $`\Psi(t) = \cos(t/2)`$ | Cosmic wave, period $`4\pi`$ | Anti-periodic BC on $`S^1`$ | Engine, [One Wave](../../../README.md#one-wave) |
-| $`C(\Theta) = 2\sin^2(\pi\Theta)`$ | Phase operator | Anti-periodic BC, unit normalization | Engine, [The Phase Operator](../../../README.md#the-phase-operator) |
-| 120-grid | Phase resolution native to $`S^3`$ | Binary icosahedral group ($`\|2I\| = 120`$) | Engine, [The Sampling Grids](../../../README.md#the-sampling-grids) |
-| $`\sqrt{\Omega} = 10^{61}`$ | Observer midpoint | UV-IR fixed point on bounded domain | Engine, [The Hierarchy and the Observer](../../../README.md#the-hierarchy-and-the-observer) |
-| $`(\sqrt{\Omega})^{-n}`$ | Hierarchy factor | Volume dilution in $`n`$-manifold | Engine, [The Hierarchy and the Observer](../../../README.md#the-hierarchy-and-the-observer) |
+| $`\Psi(t) = \cos(t/2)`$ | Cosmic wave, period $`4\pi`$ | Anti-periodic BC per lap, on the one-lap lift of the orientation-twisting core loop, not on the closed edge; initial maximum $`\Psi(0) = +1`$; fundamental mode $`m = 0`$ | Engine, [One Wave](../../../README.md#one-wave) |
+| $`C(\Theta) = 2\sin^2(\pi\Theta)`$ | Phase operator, fixed within the spectral-boundary class | Anti-periodic BC (the sinusoidal family; for fields the Möbius sign does not reach, the adopted cone rule); isotropy, orthogonality and the boundary node (the member); unit-mean normalization (the 2); the intensity reading is a measurement premise | Engine, [The Phase Operator](../../../README.md#the-phase-operator) |
+| 120-grid | Phase resolution of the observable domain $`S^3/2I`$: the order of $`2I`$, not a feature of the smooth $`S^3`$ | Binary icosahedral group ($`\|2I\| = 120`$); terminality and perfectness both point at $`2I`$, and the theorem folding them into one proof is open | Engine, [The Sampling Grids](../../../README.md#the-sampling-grids) |
+| $`\sqrt{\Omega} = 10^{61}`$ | Observer midpoint: the hierarchy's self-dual point, which MIT identifies with the observer scale; why observers sit there is open | UV-IR fixed point on bounded domain; $`\Omega`$ read from an anchor, not derived | Engine, [The Hierarchy and the Observer](../../../README.md#the-hierarchy-and-the-observer) |
+| $`(\sqrt{\Omega})^{-n}`$ | Hierarchy factor | Exact homothety at definite weight $`n`$ (the weight an admissibility condition on the class, not a theorem), read as volume dilution in the $`n`$-manifold | Engine, [The Hierarchy and the Observer](../../../README.md#the-hierarchy-and-the-observer) |
 | 3/2 conversion | Perception geometry: surface-to-venue | Gauss/Ricci lift (the 3), de Sitter vacuum normalization (the 1/2, imported from general relativity), totally geodesic covering band ($`A = 0`$), isotropy | [The Waltz](../../../../spectrum/files/the-waltz.md) |
-| $`\Lambda_\text{ref} = 3/R_\Lambda^2`$ | Vacuum-reference value, not a prediction | Scaling law gives the seed $`\Lambda_\text{top} = 2/R_\Lambda^2`$; the 3/2 lift gives the reference. On the $`\Lambda`$-anchored default it reproduces the measured $`2.845 \times 10^{-122}`$ by construction, since $`R_\Lambda`$ is back-read from $`\Lambda`$; the non-circular $`\alpha`$ route lands ~23% low | [The Waltz](../../../../spectrum/files/the-waltz.md) |
-| $`\tau = T/120`$ | Chronon at any scale | 120-grid applied to mode period $`T`$ | Engine, [The Chronon](../../../README.md#the-chronon) |
+| $`\Lambda_\text{ref} = 3/R_\Lambda^2`$ | Vacuum-reference value, not a prediction | Scaling law gives the seed $`\Lambda_\text{top} = 2/R_\Lambda^2`$; the 3/2 lift gives the reference. On the $`\Lambda`$-anchored default it reproduces the measured $`2.845 \times 10^{-122}`$ by construction, since $`R_\Lambda`$ is back-read from $`\Lambda`$; the non-circular $`\alpha`$ route returns it as a conditional output, ~23% low with $`\alpha`$ read at $`q^2 = 0`$ and near $`47\,\Lambda_\text{obs}`$ at the $`Z`$ mass | [The Waltz](../../../../spectrum/files/the-waltz.md) |
+| $`\tau = T/120`$ | Phase step of a mode with period $`T`$: the engine's chronon on the cosmic phase; at other scales a chronon only if the grid nests (Piece B) | 120-grid applied to mode period $`T`$ | Engine, [The Chronon](../../../README.md#the-chronon) |
 | $`\tau_c/\tau_P = \sqrt{\Omega}`$ | Chronon ratio spans $`10^{61}`$, on the cosmic period's provisional 33 Gyr (Joint 2) | Same midpoint, temporal channel | Engine, [The Chronon](../../../README.md#the-chronon) |
-| $`L_f = v_c^2/a_0`$ | Coherence scale (galactic, ~13 kpc). SPARC-falsified as single coherence radius; retained as the tested candidate | Phase field mechanics | Engine, [The Phase Field](../../../README.md#the-phase-field) |
+| $`L_f = v_c^2/a_0`$ | Coherence scale (galactic, ~13 kpc). SPARC-falsified as single coherence radius; retained as the tested candidate | The standard MOND transition radius, proposed with the phase-field mechanism as the bound of a phase domain | Engine, [The Phase Field](../../../README.md#the-phase-field) |
 | $`\Delta\Theta_{\min} = 2/120`$ | Minimum bosonic step | 60R resolution, $`\lvert I\rvert = 60`$ | Engine, [The Sampling Grids](../../../README.md#the-sampling-grids) |
 | $`\Theta_f^{\text{env}} \approx 2/120`$ (MW) | Environmental phase shift. Withdrawn with the trigger that would have realized it (SPARC-falsified); retained as the record of the mechanism | Minimum step at Milky Way potential | Engine, [The Phase Field](../../../README.md#the-phase-field) |
 
@@ -87,13 +87,13 @@ Ratio: $`\tau_c/\tau_P \approx 10^{61} = \sqrt{\Omega}`$. The observer's structu
 
 Status: DERIVED that the grid applies to any period, since it is group-theoretic. The cosmic row is provisional: its 33 Gyr converts the $`4\pi`$ period to a duration, which waits on the open phase-to-clock map ([temporal budget](temporal-budget.md#viii-two-phase-parameters) §VIII), and the ratio's $`10^{61}`$ rides on that number. Whether the grid nests at every gravitationally coherent scale is this page's open question (Piece B).
 
-A second setting: the Molien series on $`S^3/2I`$ shows $`2I`$ filtering scalar harmonics on the full 3D $`S^3`$, producing a gap in the invariant spectrum that MIT reads as the counterpart of the CMB low-<i>ℓ</i> deficit. The gap is a spectral fact about the quotient and holds independent of cosmology; where it lands on the sky rides on the independently read curvature radius, and reaching a multipole at all takes a spatial projection the framework does not yet derive ([CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §IV). The same algebra that sets the 120 domain on the surface operates on the 3D harmonics of the venue, so the filtering is genuinely volumetric rather than confined to the 2D Möbius surface. That much supports the claim that the 120-grid projects into every gravitationally coherent scale, at both the 2D surface eigenvalue and the 3D cavity spectrum; whether it projects onto the sky is a separate question, and open.
+A second setting: the Molien series on $`S^3/2I`$ shows $`2I`$ filtering scalar harmonics on the full 3D $`S^3`$, producing a gap in the invariant spectrum that MIT reads as the counterpart of the CMB low-<i>ℓ</i> deficit. The gap is a spectral fact about the quotient and holds independent of cosmology; where it lands on the sky rides on the independently read curvature radius, and reaching a multipole at all takes a spatial projection the framework does not yet derive ([CMB Anomalies](../../../../cosmos/files/cmb-anomalies.md) §IV). The same algebra that sets the 120 domain on the surface operates on the 3D harmonics of the venue, so the filtering is genuinely volumetric rather than confined to the 2D Möbius surface. That much establishes $`2I`$ filtering of the cosmic domain's three-dimensional harmonics. The conic band's two-dimensional first-positive eigenvalue is a separate spectral result, and neither registered sampler carries the ambient spectral blocks' outputs into that mode ([The First-Positive Transfer Run](first-positive-transfer.md)). Whether the grid nests at smaller gravitationally coherent scales stays Piece B's question, and whether the spectrum projects onto the sky is separately open.
 
 ### Joint 3: Observation is sampling through a coherent domain
 
 Phase field mechanics: $`\Theta = \Theta_0 + \Theta_f`$, where $`\Theta_f`$ depends on environment (gravitational potential). Sampling requires a domain where potential is coherent. At galactic scale, the proposed coherence radius was $`L_f \approx 13`$ kpc (SPARC-falsified).
 
-Status: The principle (coherence required for sampling) was posed with the phase-field mechanism, whose trigger is withdrawn ([Hubble Tension](../../../../cosmos/files/hubble-tension.md)); no derivation of it is on record apart from that mechanism, so it stands as MOTIVATED. The specific galactic scale $`L_f = v_c^2/a_0`$ was derived, tested against SPARC, and falsified. The galactic coherence scale $`L_g`$ is open.
+Status: The principle (coherence required for sampling) was posed with the phase-field mechanism, whose trigger is withdrawn ([Hubble Tension](../../../../cosmos/files/hubble-tension.md)); no derivation of it is on record apart from that mechanism, so it stands as MOTIVATED. The specific galactic scale $`L_f = v_c^2/a_0`$, the standard MOND transition radius proposed as the coherence radius, was tested against SPARC and falsified. The galactic coherence scale $`L_g`$ is open.
 
 The [cone point coherence notes](cone-point-coherence.md) explore the geometric mechanism: whether the $`W`$-independence of the zonal first-positive eigenvalue is the structural reason coherence holds within $`L_g`$. The zonal eigenvalue $`2/R^2`$ does not depend on $`W`$ because the zonal equation contains no $`W`$: the constant transverse mode has $`\mu = 0`$ ([first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) §4.1). It is the first positive eigenvalue only for the narrow band, $`W \le \pi R/2`$ (Theorem 1.2). Key findings from the coherence notes: GR tidal curvature in the flat-curve regime is Euler-type with power-law Jacobi solutions that structurally cannot zero, so the needed curvature lives at the topology-gravity interface; and SPARC falsified $`L_f = v_c^2/a_0`$ as the coherence radius, shifting the cone-point target from $`L_f`$ to whatever $`L_g`$ turns out to be.
 
@@ -141,14 +141,14 @@ Tested for the solar/Oort case in Piece C: standard dynamics alone (no MIT conte
 
 | Mode | Dominant potential | Coherence boundary | Approximate scale |
 |------|-------------------|------------------------|--------------------|
-| Cosmic | $`\Lambda`$ | $`R_\Lambda`$ (de Sitter horizon) | $`\sim 10^{26}`$ m |
-| Galactic | Dark matter halo | $`L_g`$ (unknown; original candidate $`L_f`$ falsified) | $`\sim 4 \times 10^{20}`$ m |
+| Cosmic | $`\Lambda`$ | $`R_\Lambda`$ (the curvature radius; the de Sitter horizon in the standard register) | $`\sim 10^{26}`$ m |
+| Galactic | Galactic gravity (a dark-matter halo in the standard description) | $`L_g`$ (unknown; original candidate $`L_f`$ falsified) | $`\sim 4 \times 10^{20}`$ m |
 | Stellar | Solar gravity | Oort Cloud | $`\sim 2 \times 10^{16}`$ m (~144,000 AU) |
 | Planetary | Earth gravity | Hill sphere | $`\sim 1.5 \times 10^{9}`$ m |
 
 At each boundary: the dominant mode changes. The observer transitions from one coherence domain to the next. What changes is which instrument the observer is listening through, not what's being listened to.
 
-The machinery that derives $`L_f = v_c^2/a_0`$ at galactic scale has not been run at other scales, and it used the wrong kind of variable (absolute potential/velocity, not a tidal comparison; see above). The question: does the tidal-dominance definition generalize to $`L_g`$ and the other boundaries, and separately, does crossing $`\mathcal{D}=1`$ have any derived effect on the sampling operator, or only a standard-dynamics location?
+The proposal that set $`L_f = v_c^2/a_0`$ at galactic scale has not been carried to other scales, and it used the wrong kind of variable (absolute potential/velocity, not a tidal comparison; see above). The question: does the tidal-dominance definition generalize to $`L_g`$ and the other boundaries, and separately, does crossing $`\mathcal{D}=1`$ have any derived effect on the sampling operator, or only a standard-dynamics location?
 
 Status: MOTIVATED. The dominance criterion is now precise; whether it does anything to $`\Theta`$ or $`C`$ is the central open question of the project.
 
@@ -190,15 +190,15 @@ Status: MOTIVATED. Requires Piece B to lock first. Tidal-dominance boundary test
 
 ### Piece D: 144,000 = $`12^2 \times 10^3`$
 
-The number 144,000 sits at a junction of structures native to $`S^3`$:
+The number 144,000 sits at a junction of structures the icosahedral domain $`S^3/2I`$ carries:
 
 | Path | Value | Structure |
 |------|-------|-----------|
 | Fibonacci | $`F_{12} = 144`$ | 12th Fibonacci number |
-| 12-fold | $`12^2 = 144`$ | Square of the zodiacal/structural division |
+| Vertex count | $`12^2 = 144`$ | Square of 12, the icosahedron's vertex count |
 | 120-grid | $`120 = 12 \times 10`$ | 12 is a factor of 120 |
 
-The 12-fold structure is native to $`S^3`$ (12 is a factor of 120; the icosahedron has 12 vertices). Fibonacci wells live on the 120-grid. $`144 = F_{12} = 12^2`$. The two sequences that MIT treats as fundamental (Fibonacci stability and 12-fold partition) intersect at this number.
+The number 12 occurs as the icosahedron's vertex count and as a divisor of $`\lvert 2I\rvert = 120`$; neither establishes an independent twelve-fold partition. Fibonacci wells live on the 120-grid. $`144 = F_{12} = 12^2`$. The Fibonacci sequence and the square of 12 meet at this number: one number fact, not two independent witnesses.
 
 Caution: the Oort Cloud radius is observationally estimated between ~50,000 and ~200,000 AU depending on the source. 144,000 falls within that range but is not a precision measurement. Whether the number is structural or approximate is genuinely open.
 
@@ -241,7 +241,6 @@ Status: OBSERVATION. Intriguing. Possibly coincidence. Requires nested chronon d
 | 4 | The radial channel (formal operator) | Conceptually identified: phase-reading along $`S^1`$. Redshift is the observable expression. Formal operator definition connecting this to the sampling theorem remains open. | LOW (concept clear; formalism follows) |
 | 5 | $`\times 1000`$ factor | 144 appears at the structural level ($`F_{12}`$, $`12^2`$). The physical boundary is at 144,000 AU. Where does the $`\times 10^3`$ come from? Scaling between hierarchy levels? | MEDIUM |
 | 6 | Oort Cloud observational precision | Literature review: how well is the boundary actually constrained? Is 144,000 AU within the uncertainty, or is it a specific measured value? | LOW (but determines whether Piece D is meaningful) |
-
 | 7 | Arpeggio structure | Black hole (node) → galaxy (first harmonic) → universe (fundamental) → octave (Möbius double cover). If the cone point nests, each scale is a partial of the same standing wave, and the progression across scales is an arpeggio through the chord. Is the relationship between nested coherence domains harmonic? Does the node-to-mode progression follow the same spectral structure at every level? Note: Joint 4 killed the literal reading (black hole = same $`\Phi\to\Theta`$ response as a coherence boundary); whatever "node" means in this arpeggio, it isn't that. | MEDIUM (conceptual; sharpens after Gap 1) |
 | 8 | Does crossing $`\mathcal{D}=1`$ do anything? | The tidal-dominance boundary test (Piece C) succeeds at the level of standard dynamics. Whether crossing it has any derived effect on $`\Theta`$, $`C(\Theta)`$, or the sampling operator is untouched. This is now the sharpest form of the project's central question (Section I). | HIGH (this is now the actual open question, not the boundary location) |
 
@@ -260,7 +259,9 @@ Cosmic mode (T = 33 Gyr, boundary = R_Λ)
     |        |
     |        |--- 120-grid projects into galactic chronon
     |        |
-    |        |--- Black holes = nodes (double zeros: Θ → 0, Ω_H → 0)
+    |        |--- Black holes = nodes (conjectured double zero)
+    |        |      Θ → 0 derived, for the exterior stationary congruence
+    |        |      Ω_Ψ → 0 conjectured; joint limit open
     |        |
     |        |--- Stellar mode (T = ?, boundary ≈ 144,000 AU)
     |                 |
