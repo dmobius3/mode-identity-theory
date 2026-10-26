@@ -13,9 +13,9 @@
 
 Working notes on determining the curvature radius R independently of Λ, the CMB, and the de Sitter relation, using the mass formula's dependence on the hierarchy factor Ω_Λ.
 
-**Status:** EXECUTED (2026-06-15). Order-of-magnitude result. The route runs and genuinely breaks the circularity, but the precision ceiling is about 1 order of magnitude, not the few percent originally targeted. Electron and muon give R ≈ 20 Gpc, Λ ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× below the observed 1.089 × 10⁻⁵². The 2026-07-28 torsion correction improves this: with the top now well-fit at (R2, triv), the muon-top pair infers Λ within 3.8× (about half an order of magnitude), the best of any assigned pair, and electron-muon remains the lepton-only cross-check. See the Result section.
+**Status:** EXECUTED (2026-06-15). Order-of-magnitude result. The route runs and genuinely breaks the circularity, but the precision ceiling is about 1 order of magnitude, not the few percent originally targeted. Electron and muon give R ≈ 20 Gpc, Λ_ref ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× below the measured Λ, 1.089 × 10⁻⁵². The 2026-07-28 torsion correction improves this: with the top now well-fit at (R2, triv), the muon-top pair puts Λ_ref within 3.8× of the measured Λ (about half an order of magnitude), the best of any assigned pair, and electron-muon remains the lepton-only cross-check. See the Result section.
 
-**Why this matters:** ΛR² = 3 starts from the postulate's spectral seed 2/R², lifted by the Gauss equation and normalized by the imported de Sitter vacuum relation (provenance in [the R problem](r-problem.md)). The seed is the content, not the coefficient. But Λ = 3/R² produces a number only with an independent R. Every previous route to R is either circular (de Sitter: R = √(3/Λ), feeds Λ back) or not an independent route to R (the Molien gap fixes the low-ℓ deficit boundary, a surviving spectral fact, but does not by itself pin R). The mass spectrum does determine R independently of measured Λ, the CMB, and the de Sitter back-read, so the circularity is genuinely broken: with an independently determined R, Λ_ref = 3/R² becomes a conditional output from particle physics. Converting R to Λ_ref then uses the Gauss/de Sitter reference relation and is not independent of it, and whether Λ_ref is the physical cosmological constant remains the open Interface question. The prediction lands within about half an order of magnitude of observed for the best assigned pair (muon-top), and within about one order for the electron-muon lepton pair, a real result at that bar but not the percent-level number Sections VI and VIII originally claimed.
+**Why this matters:** Λ_ref R² = 3 starts from the postulate's spectral seed 2/R², lifted by the Gauss equation and normalized by the imported de Sitter vacuum relation (provenance in [the R problem](r-problem.md)). The seed is the content, not the coefficient. But Λ_ref = 3/R² produces a number only with an independent R. Every previous route to R is either circular (de Sitter: R = √(3/Λ), feeds Λ back) or not an independent route to R (the Molien gap fixes the low-ℓ deficit boundary, a surviving spectral fact, but does not by itself pin R). The mass spectrum does determine R independently of measured Λ, the CMB, and the de Sitter back-read, so the circularity is genuinely broken: with an independently determined R, Λ_ref = 3/R² becomes a conditional output from particle physics. Converting R to Λ_ref then uses the Gauss/de Sitter reference relation and is not independent of it, and whether Λ_ref is the physical cosmological constant remains the open Interface question. The conditional output lands within about half an order of magnitude of the measured Λ for the best assigned pair (muon-top), and within about one order for the electron-muon lepton pair, a real result at that bar but not the percent-level number Sections VI and VIII originally claimed.
 
 ---
 
@@ -27,13 +27,13 @@ The formula reproduces both masses (m_e = 5.22 × 10⁻⁴ GeV, m_μ = 0.103 GeV
 
 - Ω_Λ = 1.42 × 10¹²³ (framework value 1.04 × 10¹²²)
 - R ≈ 20 Gpc (framework 5.38 Gpc), a factor 3.7 too large
-- Λ ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× below the observed 1.089 × 10⁻⁵² (1.13 orders of magnitude); R too large, so Λ too small
+- Λ_ref ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× below the measured Λ, 1.089 × 10⁻⁵² (1.13 orders of magnitude); R too large, so Λ_ref too small
 
-The 4.5% ratio miss becomes a factor of 13.4 in Λ because the McKay lever is weak: with Δd = 1 the ratio depends on Ω_Λ only through (√Ω_Λ)^(1/30), so inverting amplifies any input error by 60/Δd = 60×.
+The 4.5% ratio miss becomes a factor of 13.4 in Λ_ref because the McKay lever is weak: with Δd = 1 the ratio depends on Ω_Λ only through (√Ω_Λ)^(1/30), so inverting amplifies any input error by 60/Δd = 60×.
 
-**Pair scan (updated 2026-07-28).** Every assigned charged-fermion pair was re-checked on the corrected table. The [half-integer torsion correction](torsion-correction.md) moved the top quark onto a well-fit address, (R2, triv) at pred/obs 0.93, and that changes the outcome: the muon-top pair (Δd = 2) now infers Λ ≈ 2.9 × 10⁻⁵³, only 3.8× from observed, and electron-top (Δd = 3) infers Λ ≈ 1.9 × 10⁻⁵³, 5.9× off, both beating electron-muon's 13.4×. Muon (residual 1.02) and top (0.93) are the common-mode, well-fit, high-distance pair the pre-correction scan reported as absent. The earlier worry that electron-bottom might now win is settled negatively: with bottom at its nearest compatible address (R4, gal), electron-bottom lands 58× off, worse than electron-muon. Pairs involving the down quark or τ still blow the inversion up (10⁴ to 10²⁹ off), and the up quark's former low-distance fit was the coexact-only artifact and drops out (it is now unassigned). The McKay-propagator note this scan previously leaned on was reopened by the correction and has since closed negative again on the corrected table ([its re-test result](mckay-propagator-correction.md#retest-result)).
+**Pair scan (updated 2026-07-28).** Every assigned charged-fermion pair was re-checked on the corrected table. The [half-integer torsion correction](torsion-correction.md) moved the top quark onto a well-fit address, (R2, triv) at pred/obs 0.93, and that changes the outcome: the muon-top pair (Δd = 2) now puts Λ_ref near 2.9 × 10⁻⁵³, only 3.8× from the measured Λ, and electron-top (Δd = 3) near 1.9 × 10⁻⁵³, 5.9× off, both beating electron-muon's 13.4×. Muon (residual 1.02) and top (0.93) are the common-mode, well-fit, high-distance pair the pre-correction scan reported as absent. The earlier worry that electron-bottom might now win is settled negatively: with bottom at its nearest compatible address (R4, gal), electron-bottom lands 58× off, worse than electron-muon. Pairs involving the down quark or τ still blow the inversion up (10⁴ to 10²⁹ off), and the up quark's former low-distance fit was the coexact-only artifact and drops out (it is now unassigned). The McKay-propagator note this scan previously leaned on was reopened by the correction and has since closed negative again on the corrected table ([its re-test result](mckay-propagator-correction.md#retest-result)).
 
-**The floor.** With the corrected top the tightest single estimate is muon-top, Λ within about 0.6 orders of magnitude (3.8×), improving on the electron-muon estimate of 1.13 orders (13.4×). The ceiling is still the formula's few-percent ratio scatter amplified by the McKay lever, but the best available lever now rests on a well-fit high-distance pair rather than the weak Δd = 1 lepton pair, so pair selection does help: the correction lowered the floor by roughly half an order of magnitude. Electron-muon remains the clean lepton-only cross-check at 13.4×.
+**The floor.** With the corrected top the tightest single estimate is muon-top, Λ_ref within about 0.6 orders of magnitude of the measured Λ (3.8×), improving on the electron-muon estimate of 1.13 orders (13.4×). The ceiling is still the formula's few-percent ratio scatter amplified by the McKay lever, but the best available lever now rests on a well-fit high-distance pair rather than the weak Δd = 1 lepton pair, so pair selection does help: the correction lowered the floor by roughly half an order of magnitude. Electron-muon remains the clean lepton-only cross-check at 13.4×.
 
 **What stands.** Topology plus two measured lepton masses plus zero cosmological input land Λ_ref within about 1 order of magnitude of the measured value, on a radius determined independently of measured Λ, the CMB, and the de Sitter back-read. That is a real, falsifiable, independent leg under Λ_ref = 3/R² at R of order Gpc. It is not, and structurally cannot be, a percent-level prediction.
 
@@ -58,7 +58,7 @@ All physical dimensions live in the vacuum energy floor:
 \mu_\Lambda = \rho_\Lambda^{1/4} = \left(\frac{\Lambda c^4}{8\pi G}\right)^{1/4}
 ```
 
-Both μ_Λ and Ω_Λ = (R/ℓ_P)² depend on R and G. But G = 3c⁴/(8πR²μ_Λ⁴), so everything reduces to (c, ℏ, R, topological ratios).
+Both μ_Λ and Ω_Λ = (R/ℓ_P)² depend on R and G. Under the conditional exchange-rate closure G = 3c⁴/(8πR²μ_Λ⁴), which holds only once the vacuum density inside μ_Λ is identified with 3/R² (§II), everything reduces to (c, ℏ, R, topological ratios); the framework keeps G measured, and the two-mass route does not need the closure.
 
 ---
 
@@ -95,11 +95,7 @@ One equation, one unknown (G), given R and one measured mass. But G and R are re
 
 ## III. The Two-Mass Determination
 
-One measured mass (m_e) gives one equation in one unknown (R, with G slaved to R).
-
-A second measured mass (m_μ) gives a second equation in the same unknown. The system is overdetermined. Either:
-- Both give the same R (framework is consistent, R is determined)
-- They disagree (framework fails at the mass formula level)
+With G held at its measured value, the ratio of two masses at different McKay distances cancels the common μ_Λ normalization and determines Ω_Λ, hence R = ℓ_P √Ω_Λ: one equation from two measured masses, not two independent determinations with G slaved to R. Other assigned pairs supply consistency checks; whether their spread is conditioning or a structural inconsistency is not yet distinguished (§VII).
 
 The ratio of two masses at different McKay distances:
 
@@ -121,12 +117,12 @@ If d_μ ≠ d_e, the ratio depends on Ω_Λ, which depends on R. The topological
 | Muon assignment (ρ, σ, dist) | ASSIGNED (R8, std, dist = 5; Δd = 1 vs electron) | mass-spectrum.md §III |
 | C_geom for electron and muon | COMPUTED | Kostant exponents |
 | T² for electron and muon | COMPUTED | Reidemeister torsion, T²(R₃)/T²(R₄) = φ⁻⁴ |
-| (ρ,σ) → (T₃,Y) assignment rule | ESTABLISHED AS A GATE RULE (eleven featured: 5 assigned + 2 neutrino-proxy + 4 structural) | mass-spectrum.md §IV.4 |
+| (ρ,σ) → (T₃,Y) assignment rule | ESTABLISHED AS A GATE RULE, THOUGH BESPOKE (eleven featured: 5 assigned + 2 neutrino-proxy + 4 structural) | mass-spectrum.md §IV.4 |
 | Electron mass (measured) | 0.511 MeV | Input |
 | Muon mass (measured) | 105.66 MeV | Input |
 | Muon/electron ratio | 206.768 | Known to 9 significant figures |
 
-The assignment rule is resolved (mass-spectrum.md §IV.4, eleven featured addresses) and the computation has been executed; see the Result section. The remaining limitation is precision, not the assignments: the McKay-lever amplification (Sections VI and VIII) caps the route at order of magnitude.
+The assignment rule is established as a gate rule, though bespoke (mass-spectrum.md §IV.4, eleven featured addresses), and the computation has been executed; see the Result section. The McKay-lever amplification (Sections VI and VIII) caps the route at order of magnitude; whether the spread between pairs is that conditioning or a structural inconsistency, the assignments included, is not yet distinguished ([the R problem](r-problem.md)).
 
 ---
 
@@ -138,11 +134,11 @@ The assignment rule is resolved (mass-spectrum.md §IV.4, eleven featured addres
 
 **Step 3.** Solve for Ω_Λ from the measured ratio and the computed topological prefactors.
 
-**Step 4.** Extract R from Ω_Λ = (R/ℓ_P)², noting ℓ_P depends on G which depends on R. The G-power collection resolves this to a single closed-form exponent.
+**Step 4.** Extract R from Ω_Λ = (R/ℓ_P)² with the measured Planck length, ℓ_P = √(ħG/c³) at measured G; the conditional G closure of §II is not used.
 
-**Step 5.** Compute Λ = 3/R².
+**Step 5.** Compute the conditional reference value Λ_ref = 3/R², with the Gauss/de Sitter normalization.
 
-**Step 6.** Compare with Λ_obs = 1.089 × 10⁻⁵² m⁻². Result: Λ ≈ 8.1 × 10⁻⁵⁴, about 13.4× low (Result section).
+**Step 6.** Compare Λ_ref with the measured Λ_obs = 1.089 × 10⁻⁵² m⁻². Result: Λ_ref ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× low (Result section).
 
 ---
 
@@ -156,7 +152,7 @@ The forward chain runs:
 
 The route takes no CMB input and no de Sitter back-read for R, so it breaks the circularity. It does not avoid the de Sitter normalization: the spectral seed 2/R² is the native surface result, and the lift to 3/R² carries the Gauss/Ricci 3 together with the imported de Sitter 1/2, so the final coefficient is 2 × 3/2 and the imported factor sits inside it. The seed rather than the full coefficient is the native content. What the route supplies is an independent determination of R from topology plus two measured masses, and a conditional Λ_ref output; whether Λ_ref is the physical cosmological constant is the open Interface placement question.
 
-The realized precision is order of magnitude, not percent. The few-percent target stated in the original draft was wrong. The McKay lever for the electron-muon pair is weak (Δd = 1), so the formula's few-percent ratio accuracy amplifies by 60× into a roughly 1-order-of-magnitude uncertainty on Λ (executed value Λ ≈ 8.1 × 10⁻⁵⁴, about 13.4× below observed; Result section). The honest claim is "Λ within about half an order of magnitude of observed for the best pair (muon-top), within about one order for the electron-muon lepton pair, from particle physics alone," which is the success at the bar the structure supports.
+The realized precision is order of magnitude, not percent. The few-percent target stated in the original draft was wrong. The McKay lever for the electron-muon pair is weak (Δd = 1), so the formula's few-percent ratio accuracy amplifies by 60× into a roughly 1-order-of-magnitude uncertainty on Λ_ref (executed value Λ_ref ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× below the measured Λ; Result section). The honest claim is "Λ_ref within about half an order of magnitude of the measured Λ for the best pair (muon-top), within about one order for the electron-muon lepton pair, on a radius from particle physics alone," which is the success at the bar the structure supports.
 
 ---
 
@@ -168,13 +164,13 @@ The realized precision is order of magnitude, not percent. The few-percent targe
 
 All three are informative. The computation should be done regardless.
 
-**Realized outcome.** The second, in a precise sense: R from electron-muon gives Λ 13.4× from observed, and the best assigned pair (muon-top, after the 2026-07-28 correction) gives 3.8×, far enough to fail a percent-level prediction but within about half an order of magnitude, which is a real result at the order-of-magnitude bar. The third mode is retired (the assignments are Established). The first did not occur fatally: different pairs give different R, but the 1-to-2-order spread is the expected McKay-lever amplification of the formula's residual scatter, not an inconsistency in the assignments.
+**Realized outcome.** The second, in a precise sense: R from electron-muon gives Λ_ref 13.4× from the measured Λ, and the best assigned pair (muon-top, after the 2026-07-28 correction) gives 3.8×, far enough to fail a percent-level prediction but within about half an order of magnitude, which is a real result at the order-of-magnitude bar. The third mode is retired: the computation ran on the adjudicated addresses, under a gate rule established though bespoke. The first is not settled: different pairs give different R, a 1-to-2-order spread of the size the McKay-lever amplification of the formula's residual scatter can produce, but the present machinery does not distinguish that conditioning from an inconsistency in the assignments ([the R problem](r-problem.md)).
 
 ---
 
 ## VIII. Connection to the 2% Systematic
 
-The engine file documents a ~2% systematic offset across multiple observables (Λ, H₀, a₀, electron mass running ~2% high, muon ~2.5% low). The electron and muon bracket the measured values from opposite sides. Their geometric mean recovers G to better than 1% (Waltz document). This bracketing pattern is consistent with a single upstream correction (suspected: Gauss-Codazzi factor precision). The opposite-direction bracketing that helps the geometric mean (where the misses cancel) hurts the ratio (where they compound). R is read from the ratio m_μ/m_e, not the geometric mean, so the two ~2% misses add to a 4.5% ratio miss, which the Δd = 1 McKay lever amplifies by 60× into the factor-of-13.4 offset in Λ (Result section). The earlier estimate here, that 2% would carry through as 2% in Λ, assumed the misses were common-mode in the ratio; they are anti-correlated. The order-of-magnitude floor for the electron-muon pair is set by this residual correlation, not by the per-mass 2% accuracy. The 2026-07-28 torsion correction changed the pair scan, though: with the top well-fit at (R2, triv), the muon-top pair (both residuals within 7%, Δd = 2) does beat the electron-muon factor of 13.4, reaching 3.8×, so the achievable floor is now about half an order of magnitude.
+The engine file documents a ~2% systematic offset across multiple observables (Λ, H₀, a₀, electron mass running ~2% high, muon ~2.5% low). The electron and muon bracket the measured values from opposite sides. Their geometric mean lands within about 1% of measured G, the two one-sided residuals cancelling rather than a genuine 1%-level determination ([the Waltz](../../../../spectrum/files/the-waltz.md)); the framework keeps G measured. This bracketing pattern is consistent with a single upstream correction (suspected: Gauss-Codazzi factor precision). The opposite-direction bracketing that helps the geometric mean (where the misses cancel) hurts the ratio (where they compound). R is read from the ratio m_μ/m_e, not the geometric mean, so the two ~2% misses add to a 4.5% ratio miss, which the Δd = 1 McKay lever amplifies by 60× into the factor-of-13.4 offset in Λ_ref (Result section). The earlier estimate here, that 2% would carry through as 2% in Λ, assumed the misses were common-mode in the ratio; they are anti-correlated. The order-of-magnitude floor for the electron-muon pair is set by this residual correlation, not by the per-mass 2% accuracy. The 2026-07-28 torsion correction changed the pair scan, though: with the top well-fit at (R2, triv), the muon-top pair (both residuals within 7%, Δd = 2) does beat the electron-muon factor of 13.4, reaching 3.8×, so the achievable floor is now about half an order of magnitude.
 
 ---
 
