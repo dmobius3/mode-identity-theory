@@ -8,7 +8,7 @@
 **Type:** Result
 **State:** Closed
 **Status (2026-07-05):** Gate (ii) of the half-power clock closes conditionally on the §VII premise ledger; the computation returns S^{3/2}dt. The ε measurement later diagnosed the dial contaminated (see clock-asymmetry-fit); P2 stands as supported-by-reduction, not derived.
-**Summary:** Derives the interface tick measure as the geometric mean of the two ledger measures, fixing dμ_tick = S^{3/2}dt.
+**Summary:** Derives the interface tick measure as the geometric mean of the two ledger measures, dμ_tick = S^{3/2}dt, conditionally on its §VII premise ledger (P1 definitional with motivated support; P2 supported by reduction and empirically unscored, not derived).
 **Inputs:** `half-power-involution.md`, the regraded uniqueness lemma, the chronon, `entropy-as-realization-budget.md`
 **Parent:** `friedmann-as-output.md`
 **Frozen:** 2026-07-05 the tick definition, the disambiguation menu, and the verdict table (posted before computing)

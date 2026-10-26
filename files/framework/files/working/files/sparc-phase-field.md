@@ -289,6 +289,8 @@ This is a locked-pipeline blind analysis of pre-existing data, and the writeup s
 
 The primary defense is therefore not a timestamp. It is that $`L_f = v_c^2/a_0`$ and the slope ≈ 1 predictions are parameter-free consequences of the MIT topology, fixed before any galaxy was examined: nothing in the pipeline is fitted. The deposit is the secondary defense, retiring the threshold-tuning objection. The genuine pre-registered test against unseen data is Euclid DR1, not SPARC. Keep the two distinct: SPARC is a blind reanalysis, Euclid is the pre-registration.
 
+*Added 2026-10-26: $`L_f = v_c^2/a_0`$ is the standard MOND transition radius, which the phase-field mechanism proposed as the bound of a phase domain; it was not derived from the topology ([Hubble Tension](../../../../cosmos/files/hubble-tension.md) §III). SPARC falsified it as a single coherence radius, and the derivations built on it retire with the trigger. The pipeline's no-fitting defense stands as written.*
+
 ---
 
 ## V. Falsification at the Component Level
@@ -391,6 +393,8 @@ A fourth claim, that the H₀ shift is binary rather than continuous, is not tes
 If the three SPARC-testable claims hold across the sample, the phase field mechanism is supported independently of Euclid. If any fail, the specific failure mode tells you what to fix.
 
 The geometric mechanism behind $`L_f`$ as a coherence scale is explored in the [cone point coherence notes](cone-point-coherence.md), which ask whether the $`W`$-independence of the zonal first-positive eigenvalue nests to galactic scale. On the cosmic band that independence holds because the zonal equation contains no $`W`$ ([first-eigenvalue paper](../../bedrock/files/first-eigenvalue.md) §4.1), and the eigenvalue is first positive only for the narrow band, $`W \le \pi R/2`$ (Theorem 1.2). The SPARC test is empirical; the cone point analysis is structural. Both probe the same object ($`L_f`$) from different directions.
+
+*Added 2026-10-26: the cone point notes now target an unknown galactic scale $`L_g`$ rather than $`L_f`$. SPARC removed $`L_f`$ as the coherence radius, and the notes' curvature-sourcing question stands against $`L_g`$ ([cone point coherence notes](cone-point-coherence.md)), so the two analyses probe different objects.*
 
 ---
 
