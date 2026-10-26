@@ -7,7 +7,7 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-07-04):** Part one closed: the four bookkeeping items are assembled, with the Degeratu sign caveat applied.
+**Status (2026-10-26):** Part one closed: the four bookkeeping items are closed by exact computation, the three ingredients of the revised Step 4 computing in one currency, character sums on 2I; Degeratu's Molien-series formulas agree with the pinned sign convention exactly, with no sign flip.
 **Summary:** Assembles the index-theoretic bookkeeping for the bridge coupling calculation, part one of Step 4.
 **Parent:** `postulate-bridge.md`
 

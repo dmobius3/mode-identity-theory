@@ -7,8 +7,8 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-07-01):** Part two closed, terminal: the coupling identity holds and the Möbius channel decouples route-specifically, so the staged route closes as a split.
-**Summary:** Proves the coupling identity and the Möbius-channel decoupling, the terminal document of the bridge's staged route, part two of Step 4.
+**Status (2026-10-26):** Part two closed, terminal: the three-ingredient coupling identity degenerates, the Möbius data coupling to the Galois asymmetry with coefficient exactly zero along every restriction-route formula with the canonical pullback coefficient bundle, while the gauge dictionary survives as theorems, so the staged route closes as a split.
+**Summary:** Proves that the Möbius channel decouples from the Galois asymmetry, route-specifically, with the boundary-interior gauge dictionary as the positive residue: the terminal document of the bridge's staged route, part two of Step 4.
 **Parent:** `postulate-bridge.md`
 
 Closed; the terminal document of the staged route. The three-ingredient identity degenerates, and the degeneration is proved, not estimated: along every restriction-route formula with the canonical pullback coefficient bundle, the Möbius ingredient couples to the Galois sector with coefficient exactly zero (the triviality lemma: every coefficient built on $`W`$ restricts rank-trivially to the characteristic slot). The negative is route-specific, per the program's standing standard; the positive residue, the boundary-interior gauge dictionary, survives as theorems. Worksheet: [step4-coupling.test.py](scripts/step4-coupling.test.py) (sanity check on the evaluations, not a substitute for the route scoping).

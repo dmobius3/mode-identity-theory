@@ -8,13 +8,13 @@
 **Type:** Test
 **State:** Closed
 **Verdict:** Positive
-**Status (2026-07-01):** Step 1 closed: the boundary spectral asymmetry $`\rho_{\mathrm{ad}Q'} - \rho_{\mathrm{ad}Q} = -8/5`$ is nonzero and Galois-sourced, so the gate opens and Steps 2-4 proceed.
+**Status (2026-10-26):** Step 1 closed: the boundary spectral asymmetry $`\rho_{\mathrm{ad}Q'} - \rho_{\mathrm{ad}Q} = -8/5`$ is nonzero and Galois-sourced, so the gate opens; Steps 2 to 4 have since run, and the staged route closed as a route-specific split (Step 4, part two).
 **Summary:** Computes the odd-signature rho-invariant difference between the Galois-conjugate flat connections Q and Q' on S³/2I, the Step-1 gate the bridge must clear.
 **Inputs:** `../../bedrock/files/galois-pair.md`, BHKK (arXiv:math/9908020)
 **Parent:** `postulate-bridge.md`
 **Frozen:** 2026-07-01 the convention block (the rho normalization, fixed before computing)
 
-Step 1 of the postulate-bridge staged plan, closed; gate open. The boundary rho difference is $`8/5`$ in magnitude, nonzero and Galois-sourced. Step 2 fixes the orientation: on the resolution boundary, $`\rho_{\mathrm{ad}Q'}-\rho_{\mathrm{ad}Q}=-8/5`$, and the magnitude $`73/15`$ is now anchored in print (BHKK); see [Step 2](step2-analytic-setup.md). The interior classes are computed in [Step 3](step3-interior-classes.md); the coupling question is resolved in [Step 4](step4-coupling.md) (route-specific split: gauge dictionary proved, Möbius channel decoupled).
+Step 1 of the postulate-bridge staged plan, closed; gate open. The boundary rho difference is $`8/5`$ in magnitude, nonzero and Galois-sourced. Step 2 fixes the orientation: on the resolution boundary, $`\rho_{\mathrm{ad}Q'}-\rho_{\mathrm{ad}Q}=-8/5`$, and the magnitude $`73/15`$ of $`\rho_{\mathrm{ad}Q}`$ is now anchored in print (BHKK); see [Step 2](step2-analytic-setup.md). The interior classes are computed in [Step 3](step3-interior-classes.md); the coupling question is resolved in [Step 4](step4-coupling.md) (route-specific split: gauge dictionary proved, Möbius channel decoupled).
 
 **Related:** [Galois pair](../../bedrock/files/galois-pair.md) (the published pillar), [Postulate bridge](postulate-bridge.md), [First eigenvalue](../../bedrock/files/first-eigenvalue.md), [Coexact gap](../../bedrock/files/coexact-gap.md).
 

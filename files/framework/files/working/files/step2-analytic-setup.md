@@ -7,12 +7,12 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-07-01):** The analytic framework is fixed (ALE instanton on the minimal resolution of C²/2I, Kronheimer-Nakajima; the orbifold cone a consistency check). The distance-six coefficient the bridge needs is set up here, not proved; that is Step 3's target.
+**Status (2026-10-26):** The analytic framework is fixed (ALE instanton on the minimal resolution of C²/2I, Kronheimer-Nakajima; the orbifold cone a consistency check), and the sign is resolved: ρ_adQ′ − ρ_adQ = −8/5 on the resolution-boundary orientation, with the magnitude 73/15 of ρ_adQ anchored in print (BHKK). The distance-six coefficient the bridge needs is set up here, not proved; Step 3 recast Step 4's test as a three-ingredient identity, and Step 4 closed it as a route-specific split.
 **Summary:** Fixes the analytic setup for the postulate-bridge coupling calculation: the ALE filling, the tautological-bundle basis, and the rho-invariant conventions the later steps compute in.
 **Inputs:** `eta-gatekeeper.md`, BHKK (arXiv:math/9908020), Kronheimer-Nakajima, Nakajima, Fintushel-Stern
 **Parent:** `postulate-bridge.md`
 
-Closed. The analytic framework is fixed (ALE instanton on the minimal resolution of $`\mathbb{C}^2/2I`$, Kronheimer-Nakajima; the orbifold cone is a consistency check only), and the orientation is resolved: on the resolution-boundary orientation $`\rho_{\mathrm{ad}Q'}-\rho_{\mathrm{ad}Q}=-8/5`$, with the magnitude $`73/15`$ anchored in print (BHKK). The Step-1 gate conclusion is unchanged; [Step 3](step3-interior-classes.md) is closed (interior classes computed, Galois-blind) and Step 4 is complete ([part one](step4-bookkeeping.md), [part two](step4-coupling.md): route-specific split).
+Closed. The analytic framework is fixed (ALE instanton on the minimal resolution of $`\mathbb{C}^2/2I`$, Kronheimer-Nakajima; the orbifold cone is a consistency check only), and the orientation is resolved: on the resolution-boundary orientation $`\rho_{\mathrm{ad}Q'}-\rho_{\mathrm{ad}Q}=-8/5`$, with the magnitude $`73/15`$ of $`\rho_{\mathrm{ad}Q}`$ anchored in print (BHKK). The Step-1 gate conclusion is unchanged; [Step 3](step3-interior-classes.md) is closed (interior classes computed, Galois-blind) and Step 4 is complete ([part one](step4-bookkeeping.md), [part two](step4-coupling.md): route-specific split).
 
 **Related:** [η-gatekeeper (Step 1)](eta-gatekeeper.md), [Postulate bridge](postulate-bridge.md), [Coexact gap](../../bedrock/files/coexact-gap.md).
 
