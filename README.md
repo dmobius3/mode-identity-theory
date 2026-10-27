@@ -7,25 +7,25 @@
 
 ---
 
-**Mode Identity Theory** starts with a simple bet: fundamental physics is not missing more ingredients. It is missing the boundary conditions that fix the forms and values the existing ingredients take. Instead of changing Einstein's equations or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
+**Mode Identity Theory starts with a simple bet:** fundamental physics is not missing more ingredients. It is missing the boundary conditions that determine the forms those ingredients take and the values they assume. Instead of changing Einstein's equations or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
 
-MIT keeps Einstein's field equations and the Standard Model as the local rules, and adds a global geometric structure beneath them. Read that way: topology comes first, the wave is fundamental, matter appears where the wave is sampled, and time is its phase. The observer is part of that realization, not something standing outside it. Some consequences are exact mathematics, some are quantitative correspondences, and some remain open research.
+MIT keeps Einstein's field equations and the Standard Model as the local rules of physics, while adding a global geometric structure beneath them. In this picture, topology comes first. The wave is fundamental. Matter appears where that wave is sampled, and time is its phase. The observer is part of the realization rather than something standing outside it. Some of what follows is exact mathematics, some is quantitative correspondence, and some remains open research.
 
-What began as an accidental search query turned philosophy, turned topology, turned theory. The surprise was that once the geometry was fixed, quantities that normally look unrelated began appearing as different readings of the same structure: cosmic scales, particle identities, couplings, and masses. None of this was planned.
+What began with an unexpected search query became a philosophical question, then a problem in topology, and eventually a physical framework. The surprise was that once the geometry was fixed, quantities that normally appear unrelated began to emerge as different readings of the same structure: cosmic scales, particle identities, coupling constants, and masses.
 
-In 300 BC, Euclid proved Plato's observation that only five regular solids close perfectly in ordinary space. Today, ESA's Euclid telescope is surveying billions of galaxies to measure how the universe expands and structure grows. MIT makes its own geometric bet: **one shape, one wave, and the rest is accounting.**
+Around 300 BC, Euclid proved that only five regular solids close perfectly in ordinary space, formalizing an observation often attributed to Plato. Today, ESA's Euclid telescope is surveying billions of galaxies to measure how the universe expands and how structure grows. MIT makes its own geometric bet: **one shape, one wave, and the rest is accounting.**
 
 ---
 
 **💬 Frequently Asked Questions**
 
-***What shape is the universe?*** MIT starts with a three-sphere, $`S^3`$: a finite space that closes on itself, with no boundary and no outside. By the Poincaré theorem it is the only such space that is simply connected. The observable domain is the smooth quotient $`S^3/2I`$. The 120-element group $`2I`$ used to form that quotient supplies the discrete representation labels the framework uses to resolve physical states. The underlying space does not stretch; MIT models cosmic expansion as changing phase and realization of the wave. We see more of the wave realized, so distances appear to grow.
+***What shape is the universe?*** It starts with a three-sphere, $S^3$: a finite space that closes on itself, with no boundary and no outside. By the Poincaré theorem, it is the only closed three-manifold that is simply connected. The observable domain is the smooth quotient $S^3/2I$. The 120-element binary icosahedral group, $2I$, used to form that quotient also furnishes the discrete representation labels the framework uses to resolve physical states. The underlying space remains fixed. What we interpret as cosmic expansion is a change in the phase and realization of the wave. More of the wave comes into view, and distances appear to grow.
 
-***Why a Möbius band?*** The three-sphere supplies the space; the Möbius band supplies the boundary structure, embedded unbent in the projective three-space, the three-sphere with opposite points identified. It is the simplest one-sided surface with a single edge. Go around it once and orientation reverses, giving the sign flip and anti-periodic behavior behind the wave's 4π period. Its single edge also gives the theory one continuous place to carry phase, which is where time enters.
+***Why a Möbius band?*** While the three-sphere supplies the space, the Möbius band supplies the boundary structure. Embedded naturally in projective three-space, it is the simplest surface that is both one-sided and bounded by a single edge. Traverse it once and orientation reverses. That reversal becomes the sign flip behind the wave's anti-periodic behavior and its 4π period. The same edge provides a single continuous path on which phase can be carried, giving the theory a natural place for time to enter.
 
-***What is matter, and what are we?*** Matter is the realized form of the wave: stable patterns that become definite when the underlying mode is sampled. "Observer" is used in that minimal physical sense. An atom already qualifies because it is a bounded system in which the wave takes on definite values; a human is an enormously more complicated observer built from the same process. We are not outside the universe looking in. We are part of the structure doing the resolving.
+***What is matter, and what are we?*** Matter is the realized form of the wave: stable patterns that become definite when the underlying mode is sampled. In MIT, an observer is simply any bounded system in which that sampling occurs. An atom qualifies because the wave takes on definite values within it; a human is a vastly more complex observer built from the same process. We are not outside the universe looking in. We are part of the structure through which the universe becomes definite.
 
-***How did it begin?*** In MIT, the Big Bang is not the creation of space. The closed spatial domain is already there. What begins is the measurable phase history of the wave, starting at maximum standing-wave amplitude and evolving toward greater realization. The early universe is therefore not a smaller copy of today's space, but the same underlying domain read at an earlier phase of the cycle: like a three-dimensional cymatic pattern gradually energizing.
+***How did it begin?*** In this framework, the Big Bang was not the creation of space. Our closed spatial domain was already here. What began was the measurable history of the wave: a standing wave at maximum amplitude that evolves toward greater realization. The early universe was therefore not a smaller version of today's space, but the same underlying domain viewed at an earlier phase of the cycle. A useful analogy is a three-dimensional cymatic pattern gradually coming into definition as energy moves through it.
 
 ---
 
@@ -79,11 +79,11 @@ mode-identity-theory/
 \Large \boxed{S^1 = \partial(\text{Möbius}), \quad \text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}, \quad \partial S^3 = \emptyset}
 ```
 
-MIT starts with a finite space that closes on itself, so there is no outer boundary: the three-sphere. Identify each of its points with the opposite one, and a Möbius surface with one continuous edge embeds, unbent, in the space that results. The three-sphere supplies the space; the Möbius band supplies the twist and the boundary on which phase is carried.
+MIT starts with a finite space that closes on itself, so there is no outer boundary: the three-sphere. If each point is identified with its opposite, the resulting projective three-space admits an unbent Möbius surface with a single continuous edge. The three-sphere supplies the space; the Möbius band supplies the twist and the boundary along which phase is carried.
 
-The observable domain is the smooth quotient $`S^3/2I`$, whose first step is that same opposite-point identification. It remains a smooth manifold, while the 120-element symmetry group $`2I`$ supplies the representation structure the framework uses to distinguish physical states.
+The observable domain is the smooth quotient $S^3/2I$. The same opposite-point identification forms part of that construction, while the 120-element binary icosahedral group, $2I$, provides the representation structure the framework uses to distinguish physical states. The result remains a smooth manifold.
 
-So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band supplies the boundary condition, and $`2I`$ supplies the symmetry structure from which the physics is read.**
+So the geometry has three jobs: **$S^3$ supplies the space, the Möbius band supplies the boundary condition, and $2I$ supplies the symmetry structure from which the physics is read.**
 
 ---
 
@@ -97,13 +97,15 @@ So the geometry has three jobs: **$`S^3`$ supplies the space, the Möbius band s
 \Large \boxed{\Psi = \cos(t/2), \quad \text{period } 4\pi}
 ```
 
-The underlying space stays fixed. What changes is the phase of a standing wave carried by the temporal boundary.
+The underlying space remains fixed. What changes is the phase of a standing wave carried by the temporal boundary.
 
-The Möbius twist makes the lifted wave change sign after one lap and return only after two, so its fundamental phase period is $`4\pi`$ rather than $`2\pi`$. The closed edge itself returns after two laps, so nothing on it is double-valued. The advance of that phase is time.
+The Möbius twist causes the lifted wave to change sign after one circuit and return to itself only after two. As a result, its fundamental phase period is $4\pi$ rather than $2\pi$. The boundary itself also closes only after two circuits, so nothing defined on it is double-valued. The progression of that phase is what the theory identifies as time.
 
-The cosine has a complement, $`S = \sin(t/2)`$, and together they always make one whole: $`\Psi^2 + S^2 = 1`$. $`\Psi^2`$ is the share still standing as wave; $`S^2`$ is the share already realized as modes. As the phase advances, weight moves from the first to the second, and that single number $`S`$ is what cosmological observations read.
+The cosine wave has a complementary component, $S=\sin(t/2)$, and together they always form a complete whole: $`\Psi^2 + S^2 = 1`$
 
-Matter appears when the wave is sampled. **Most modes cancel; the surviving patterns are the physical states.** In that sense the universe is not built from separate particles placed into space; particles are stable realizations of the same underlying wave.
+$\Psi^2$ represents the portion still carried as wave, while $S^2$ represents the portion already realized as modes. As phase advances, weight shifts from the first to the second. That single quantity, $S$, is the variable the framework associates with cosmological observations.
+
+Matter appears where the wave is sampled. Most possible modes cancel. The surviving patterns become the physical states we observe. In that sense, the universe is not built from separate particles placed into space. Particles are stable realizations of a single underlying wave.
 
 ---
 
@@ -117,17 +119,17 @@ Matter appears when the wave is sampled. **Most modes cancel; the surviving patt
 \Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
 ```
 
-The scaling law asks two questions about a quantity: **where is it sampled, and at what geometric scale does it live?**
+The scaling law asks two questions about a quantity: **where is it sampled, and at what geometric scale is it defined?**
 
-> **$`A/A_P`$** says how large the quantity is compared with the natural Planck-scale unit of the same kind.
+> **$`A/A_P`$** measures the quantity relative to its natural Planck-scale unit.
 
-> **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** gives the position on the wave.
+> **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** gives its position on the wave.
 
 > **$`(\sqrt{\Omega})^{-n}`$** gives the suppression associated with the geometric layer being read.
 
-The powers of ten come from the hierarchy; the wave position sets the leading digits. The index $`n`$ accounts for the *form* of the suppression, one power per geometric layer. It does not predict the hierarchy's own size: $`\Omega`$ is fixed from an anchor and then read across the rest of the structure.
+The powers of ten come from the hierarchy; the wave position supplies the leading digits. The index $n$ describes the form of the suppression, with one power for each geometric layer crossed. It does not determine the size of the hierarchy itself. The value of $\Omega$ is fixed from an anchor and then read across the rest of the structure.
 
-The wave is not sampled everywhere. The golden field $`\mathbb{Q}(\sqrt5)`$ is already native to the $`2I`$ geometry, but continuing that arithmetic into the realized Fibonacci wells is a separate selection step that remains open.
+The wave is not sampled continuously across all possible positions. The golden field, $\mathbb{Q}(\sqrt5)$, is already built into the $2I$ geometry, but the additional step that selects the realized Fibonacci wells remains an open problem. The wells are observed throughout the framework; the rule that chooses them has not yet been derived.
 
 ---
 
@@ -141,9 +143,9 @@ The wave is not sampled everywhere. The golden field $`\mathbb{Q}(\sqrt5)`$ is a
 \Large \boxed{|2I| = 120 = 2^3 \cdot 3 \cdot 5}
 ```
 
-A particle is not identified by one number. It has an address in the symmetry: a representation seat $`\rho`$ together with a flat-vacuum label $`\sigma`$.
+A particle is not identified by a single number. In MIT, each state has an address in the symmetry: a representation seat $\rho$ together with a flat-vacuum label $\sigma$.
 
-The 120-element structure contains three natural stabilizers associated with faces, edges, and vertices. Looking at the same state through each one reveals a different part of its identity:
+The 120-element structure contains three natural stabilizers associated with faces, edges, and vertices. Looking at the same state through each one reveals a different aspect of its identity:
 
 > **Faces sort color.**
 
@@ -151,9 +153,9 @@ The 120-element structure contains three natural stabilizers associated with fac
 
 > **Vertices sort the electroweak address.**
 
-The representation theory supplies those decompositions, and in MIT they are the geometric origin of the Standard Model's quantum numbers. The three flat vacua supply the second part of the address: MIT identifies them with the three generations, though which vacuum carries which generation is still open.
+The representation theory provides these decompositions, and MIT interprets them as the geometric origin of the Standard Model's quantum numbers. The three flat vacua provide the second part of the address. The framework identifies them with the three particle generations, although which vacuum corresponds to which generation remains an open question.
 
-**The address says what kind of particle it is; the mass formula says how heavy, and the mass settles which generation.**
+**The address determines what a particle can be. The mass formula determines how heavy it is. Together they determine which generation appears.**
 
 ---
 
@@ -179,7 +181,7 @@ It builds a mass from four pieces:
 
 > **The Vacuum (torsion dial):** $`T^2(\rho \otimes \sigma)`$ adjusts the result according to which flat vacuum the state occupies.
 
-Across the eight nontrivial representation seats and three vacua, the formula produces 24 fermion entries. Their proximity to the measured masses is a **comparison, not a prediction.** The weight of the construction rests instead on the 24-entry geometric spectrum and the exact torsion algebra, whose eight nontrivial irrep-level forms an independent method reproduced.
+Across the eight nontrivial representation seats and three vacua, the formula produces a 24-entry fermion spectrum. Its proximity to the measured masses is a comparison, not a prediction. The weight of the construction rests instead on the existence of the 24-entry geometric spectrum and on the exact torsion algebra. The eight nontrivial irrep-level torsion forms were reproduced independently by a second method, providing an internal consistency check on the construction.
 
 ---
 
@@ -195,11 +197,11 @@ Across the eight nontrivial representation seats and three vacua, the formula pr
 
 The framework has two seams, and they do different jobs.
 
-The Möbius embedding supplies the vacuum-side surface geometry. The quotient $`S^3 \to S^3/2I`$ supplies the matter-side representation structure. One is an unbent surface in the projective quotient $`S^3/\{\pm I\}`$; the other is the quotient by the whole symmetry group, whose first step is that same identification of opposite points. They are not the same operation, and the framework does not collapse them into one.
+The Möbius embedding provides the vacuum-side geometry. The quotient $S^3 \to S^3/2I$ provides the matter-side representation structure. The first is an unbent surface embedded in the projective quotient $S^3/{\pm I}$. The second is the quotient by the full binary icosahedral symmetry group, whose construction includes that same identification of opposite points as an initial step. The two constructions are related, but they are not the same operation, and the framework does not treat them as interchangeable.
 
-The familiar factor $`3/2`$ belongs only to the vacuum-side conversion: its numerator comes from the derived geometry of the Möbius band's unbent covering surface in isotropic $`S^3`$, while its denominator is the de Sitter normalization imported from general relativity.
+The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its numerator comes from the derived geometry of the Möbius band's unbent covering surface in isotropic $S^3$, while its denominator comes from the de Sitter normalization inherited from general relativity.
 
->Gravity is not a fourth force waiting for an empty rung on the particle grid. MIT puts gravity at the interface between the smooth substrate and the discrete structure built on it. Einstein's field equations remain the local gravitational law; what is still open is the dynamical bridge that tells them exactly how the realized wave content sources the geometry.
+>Gravity is not a fourth force waiting for an empty seat on the particle grid. In MIT, gravity lives at the interface between the smooth geometric substrate and the discrete representation structure built upon it. Einstein's field equations remain the local law of gravity. What remains open is the dynamical bridge that specifies exactly how realized wave content sources the geometry.
 
 ---
 
