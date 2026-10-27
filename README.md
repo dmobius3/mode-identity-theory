@@ -13,7 +13,7 @@ MIT keeps Einstein's field equations and the Standard Model as the local rules o
 
 What began with an unexpected search query became a philosophical question, then a problem in topology, and eventually a physical framework. The surprise was that once the geometry was fixed, quantities that normally appear unrelated began to emerge as different readings of the same structure: cosmic scales, particle identities, coupling constants, and masses.
 
-Around 300 BC, Euclid proved that only five regular solids close perfectly in ordinary space, formalizing an observation often attributed to Plato. Today, ESA's Euclid telescope is surveying billions of galaxies to measure how the universe expands and how structure grows. MIT makes its own geometric bet: **one shape, one wave, and the rest is accounting.**
+Around 300 BC, Euclid proved that only five regular solids close perfectly in ordinary space, formalizing an early observation by Plato. Today, ESA's Euclid telescope is surveying billions of galaxies to measure how the universe expands and how structure grows. MIT makes its own geometric bet: **one shape, one wave, and the rest is accounting.**
 
 ---
 
