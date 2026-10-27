@@ -21,7 +21,7 @@ Around 300 BC, Euclid proved that only five regular solids close perfectly in or
 
 ***What shape is the universe?*** It starts with a three-sphere, $S^3$: a finite space that closes on itself, with no boundary and no outside. By the Poincaré theorem, it is the only closed three-manifold that is simply connected. The observable domain is the smooth quotient $S^3/2I$. The 120-element binary icosahedral group, $2I$, used to form that quotient also furnishes the discrete representation labels the framework uses to resolve physical states. The underlying space remains fixed. What we interpret as cosmic expansion is a change in the phase and realization of the wave. More of the wave comes into view, and distances appear to grow.
 
-***Why a Möbius band?*** While the three-sphere supplies the space, the Möbius band supplies the boundary structure. Embedded naturally in projective three-space, it is the simplest surface that is both one-sided and bounded by a single edge. Traverse it once and orientation reverses. That reversal becomes the sign flip behind the wave's anti-periodic behavior and its 4π period. The same edge provides a single continuous path on which phase can be carried, giving the theory a natural place for time to enter.
+***Why a Möbius band?*** While the three-sphere supplies the space, the Möbius band supplies the boundary structure. Embedded naturally in projective three-space, it is the simplest surface that is both one-sided and bounded by a single edge. Traverse it once and orientation reverses. That reversal becomes the sign flip behind the wave's anti-periodic behavior and its 4π period. The same edge provides a single continuous path on which phase can be carried, giving the theory a natural place for time.
 
 ***What is matter, and what are we?*** Matter is the realized form of the wave: stable patterns that become definite when the underlying mode is sampled. In MIT, an observer is simply any bounded system in which that sampling occurs. An atom qualifies because the wave takes on definite values within it; a human is a vastly more complex observer built from the same process. We are not outside the universe looking in. We are part of the structure through which the universe becomes definite.
 
@@ -119,7 +119,7 @@ Matter appears where the wave is sampled. Most possible modes cancel. The surviv
 \Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
 ```
 
-The scaling law asks two questions about a quantity: **where is it sampled, and at what geometric scale is it defined?**
+The scaling law asks two questions about any quantity: **where is it sampled, and at what geometric scale is it defined?**
 
 > **$`A/A_P`$** measures the quantity relative to its natural Planck-scale unit.
 
@@ -129,7 +129,7 @@ The scaling law asks two questions about a quantity: **where is it sampled, and 
 
 The powers of ten come from the hierarchy; the wave position supplies the leading digits. The index $n$ describes the form of the suppression, with one power for each geometric layer crossed. It does not determine the size of the hierarchy itself. The value of $\Omega$ is fixed from an anchor and then read across the rest of the structure.
 
-The wave is not sampled continuously across all possible positions. The golden field, $\mathbb{Q}(\sqrt5)$, is already built into the $2I$ geometry, but the additional step that selects the realized Fibonacci wells remains an open problem. The wells are observed throughout the framework; the rule that chooses them has not yet been derived.
+The wave is not sampled continuously across all possible positions. The golden field, $\mathbb{Q}(\sqrt5)$, is already built into the $2I$ geometry, but the additional step that selects the realized Fibonacci wells remains an open problem. The wells are observed throughout the framework; the rule that chooses them is not yet derived.
 
 ---
 
