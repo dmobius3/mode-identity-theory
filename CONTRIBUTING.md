@@ -98,13 +98,13 @@ OpenWave's M8 column has independently reproduced or audited the results the fra
 
 ## 🍻 Special Thanks To
 
->**Gregory A. Beckman** | Unified Electromagnetic Toroidal Cosmology: [github.com/Kneedeep2005/UETC](https://github.com/Kneedeep2005/UETC)
+>**Gregory A. Beckman** | Unified Electromagnetic Toroidal Cosmology: [github.com/Kneedeep2005/UETC](https://github.com/Kneedeep2005/UETC) |
 
->**Von Christian Berrang** | [github.com/Christianfwb/frequenzprojekt](https://github.com/Christianfwb/frequenzprojekt) | [10.5281/zenodo.16727005](https://doi.org/10.5281/zenodo.16727005)
+>**Von Christian Berrang** | [github.com/Christianfwb/frequenzprojekt](https://github.com/Christianfwb/frequenzprojekt) | [10.5281/zenodo.16727005](https://doi.org/10.5281/zenodo.16727005) |
 
->**Adam Murphy** | [impactme.ai](https://impactme.ai/)
+>**Adam Murphy** | [impactme.ai](https://impactme.ai/) | [TOE-Share](https://theoryofeverything.ai/) |
 
->**Paul Watford** | The Standard Model from One Polynomial: [10.5281/zenodo.19455028](https://doi.org/10.5281/zenodo.19455028)
+>**Paul Watford** | The Standard Model from One Polynomial: [10.5281/zenodo.19455028](https://doi.org/10.5281/zenodo.19455028) |
 
 ---
 
