@@ -181,7 +181,7 @@ It builds a mass from four pieces:
 
 > **The Vacuum (torsion dial):** $`T^2(\rho \otimes \sigma)`$ adjusts the result according to which flat vacuum the state occupies.
 
-Across the eight nontrivial representation seats and three vacua, the formula produces a 24-entry fermion spectrum. Its proximity to the measured masses is a comparison, not a prediction. The weight of the construction rests instead on the existence of the 24-entry geometric spectrum and on the exact torsion algebra. The eight nontrivial irrep-level torsion forms were reproduced independently by a second method, providing an internal consistency check on the construction.
+Across the eight nontrivial representation seats and three vacua, the formula produces a 24-entry fermion spectrum. Its proximity to the measured masses is a comparison, not a prediction. The weight of the construction rests instead on the existence of the 24-entry geometric spectrum and on the exact torsion algebra.
 
 ---
 
