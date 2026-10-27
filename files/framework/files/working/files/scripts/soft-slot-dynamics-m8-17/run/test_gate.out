@@ -1,0 +1,11 @@
+Test 3, the reproduction gate, on data already on record, with no solve, in a seedcheck process.
+1. PASS: rule 1 at 23 points of the controls and the pyramid: M8.16.1's equal M8.16's; the whole points, readings and identity, C1's N = 40 included: 0 differences
+2. PASS: rule 3 holds at 0.5, 1 and 2 on the ladder against the sample; beside it, rule 1 holds at 0.25 (0 differences) and fails at 0.5 (11342 differences), 1 (11727 differences), 2 (12189 differences)
+3. PASS: rule 2 at the five withheld points, each record carrying spectral fields beside the stored solve
+4. PASS: every compared field, mutated alone, fails its rule
+      rule 1, C2a at 0.25: 18540 leaves mutated, 0 passed; a field added and one removed fail
+      rule 1, P5 at 0.25: 16723 leaves mutated, 0 passed; a field added and one removed fail
+      rule 3, the ladder at 0.5: 35 categorical fields mutated, 0 passed; a Krein count added fails
+      rule 2, five points: 180 mutations and removals, 0 passed
+5. PASS: a timing changed, rule 1 passes; a timing changed, rule 3 passes; lam changed, rule 3 passes; a spectral field changed, rule 2 passes
+0 failed

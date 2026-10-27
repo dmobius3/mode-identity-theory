@@ -1,0 +1,205 @@
+{
+ "completed": {
+  "C1": {
+   "files": {
+    "C1.json": "356ffbf4fe71eb1429163e849d53a33f92643b5784124a9d11e9ef8c5e9b15ca"
+   },
+   "t": "2026-10-25T02:09:48Z"
+  },
+  "C2a": {
+   "files": {
+    "C2a.json": "0165455b6ba66d462888521a5273fc8f0a744d4430c808e2855f5e9d06d3c24f"
+   },
+   "t": "2026-10-25T02:23:53Z"
+  },
+  "C2b": {
+   "files": {
+    "C2b.json": "efd5c21e233f08897f5dc9ded449801bfa3fe8d5e8895b6099b1840dd2b5a0fd"
+   },
+   "t": "2026-10-25T02:29:45Z"
+  },
+  "C3": {
+   "files": {
+    "C3.json": "8e7c303c2e7dfe35e39e3f581ace30d537a1f30073389f8e6aa199b30250d469"
+   },
+   "t": "2026-10-25T02:48:29Z"
+  },
+  "C2a/R5": {
+   "files": {
+    "C2a_R5.json": "387ed7b8e04030a2e10569eedb313ca5713bea92bec5a6bac7bd2e6697e668be"
+   },
+   "t": "2026-10-25T03:15:02Z"
+  },
+  "P5": {
+   "files": {
+    "P5.json": "c404e49c2a6e52b0754c97349b01c8097db3271af641bc56071fd72098082bd0",
+    "P5.npz": "64ea832e06882ba39f2a649977edb3496c900a8c79b9e20d46b2506f782e8aab"
+   },
+   "t": "2026-10-25T03:35:40Z"
+  },
+  "C3R/R4": {
+   "files": {
+    "C3R_R4.json": "21706fd5b2548cdcb0bf8b44d2df0c6b62d34abad41363d0fb1e43a14a5c9fb6"
+   },
+   "t": "2026-10-25T03:57:21Z"
+  },
+  "T1/R4": {
+   "files": {
+    "T1_R4.json": "4371b7a7ed612e11031a97013f46632f25bd6afce80c5a2f5cc86f80a5657c63"
+   },
+   "t": "2026-10-25T04:15:44Z"
+  },
+  "T1/R5": {
+   "files": {
+    "T1_R5.json": "ede0e0591013f50a3fd3321f97fec8b508946aba0d711f1ab68a29d6cef74c0e"
+   },
+   "t": "2026-10-25T04:50:58Z"
+  },
+  "T4/R4": {
+   "files": {
+    "T4_R4.json": "e3e64fe89169a07e6a3bcaf44aa0b64aa91eef6b6aab3b2f7109d120ef2a8299"
+   },
+   "t": "2026-10-25T05:12:42Z"
+  },
+  "T4/R5": {
+   "files": {
+    "T4_R5.json": "94935f9b461afc33767d25ba624082e980bc62e7139caa63a9da47c0077b5349"
+   },
+   "t": "2026-10-25T05:53:34Z"
+  },
+  "T5J/R2": {
+   "files": {
+    "T5J_R2.json": "ae839c5425f13ca9a48bb6f0fc020e91c74ab64b637be0da8a2a5ff752569463"
+   },
+   "t": "2026-10-25T06:02:01Z"
+  },
+  "T2/R4": {
+   "files": {
+    "T2_R4.json": "4f0ce100703e43d39b92caca466f31cdf788ebd381168f3bfa3fc8e72c51b6b1"
+   },
+   "t": "2026-10-25T07:51:11Z"
+  },
+  "T2/R5": {
+   "files": {
+    "T2_R5.json": "99de516f8b59d66db297dfbbf5426c6b9ad7f3ae3b154d0b02fe60b9d95ed7bd"
+   },
+   "t": "2026-10-25T10:49:40Z"
+  },
+  "T3/R4": {
+   "files": {
+    "T3_R4.json": "50167d9de8ed1f6e11152a0b48a631669de532ef6d5021abd916ef8ee81b9489"
+   },
+   "t": "2026-10-25T12:44:56Z"
+  },
+  "T3/R5": {
+   "files": {
+    "T3_R5.json": "6a581b98bf3687cd64b32d4e833c345a1932a00b2fbf513da9c0c825bc92f2b6"
+   },
+   "t": "2026-10-25T15:50:28Z"
+  },
+  "T5/R2": {
+   "files": {
+    "T5_R2.json": "cd627750e764006afd39fac9b100e526d995d9f0967b37259b800212a93b3ffa"
+   },
+   "t": "2026-10-25T16:35:38Z"
+  }
+ },
+ "gate": {
+  "file": "GATE.json",
+  "sha256": "2d24df590150952a36545a403c34e6a8b1e7b975e7d181897ce899ab55621c19",
+  "written": "2026-10-25T03:35:40Z"
+ },
+ "events": [
+  {
+   "t": "2026-10-25T01:57:38Z",
+   "event": "run started; cases ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'P5', 'C3R/R4', 'T1/R4', 'T1/R5', 'T4/R4', 'T4/R5', 'T5J/R2', 'T2/R4', 'T2/R5', 'T3/R4', 'T3/R5', 'T5/R2']"
+  },
+  {
+   "t": "2026-10-25T02:09:48Z",
+   "event": "C1 completed"
+  },
+  {
+   "t": "2026-10-25T02:23:53Z",
+   "event": "C2a completed"
+  },
+  {
+   "t": "2026-10-25T02:29:45Z",
+   "event": "C2b completed"
+  },
+  {
+   "t": "2026-10-25T02:48:29Z",
+   "event": "C3 completed"
+  },
+  {
+   "t": "2026-10-25T03:15:02Z",
+   "event": "C2a/R5 completed"
+  },
+  {
+   "t": "2026-10-25T03:35:40Z",
+   "event": "P5 completed"
+  },
+  {
+   "t": "2026-10-25T03:35:40Z",
+   "event": "gate record written, SHA-256 2d24df590150952a36545a403c34e6a8b1e7b975e7d181897ce899ab55621c19"
+  },
+  {
+   "t": "2026-10-25T03:57:21Z",
+   "event": "C3R/R4 completed"
+  },
+  {
+   "t": "2026-10-25T04:15:44Z",
+   "event": "T1/R4 completed"
+  },
+  {
+   "t": "2026-10-25T04:50:58Z",
+   "event": "T1/R5 completed"
+  },
+  {
+   "t": "2026-10-25T05:12:42Z",
+   "event": "T4/R4 completed"
+  },
+  {
+   "t": "2026-10-25T05:53:34Z",
+   "event": "T4/R5 completed"
+  },
+  {
+   "t": "2026-10-25T06:02:01Z",
+   "event": "T5J/R2 completed"
+  },
+  {
+   "t": "2026-10-25T07:51:11Z",
+   "event": "T2/R4 completed"
+  },
+  {
+   "t": "2026-10-25T10:49:40Z",
+   "event": "T2/R5 completed"
+  },
+  {
+   "t": "2026-10-25T12:44:56Z",
+   "event": "T3/R4 completed"
+  },
+  {
+   "t": "2026-10-25T15:50:28Z",
+   "event": "T3/R5 completed"
+  },
+  {
+   "t": "2026-10-25T16:35:38Z",
+   "event": "T5/R2 completed"
+  },
+  {
+   "t": "2026-10-25T16:35:38Z",
+   "event": "verdict (QUALIFIED) and transcript written"
+  }
+ ],
+ "manifest_sha256": "8cc2d7e2d01a72fc3572adabf917656abf36cbddd70ed35532b73ae5451790dd",
+ "verdict": {
+  "file": "VERDICT.json",
+  "sha256": "98cf1c684d4cf684cd84dd94acf6a18f1ec82aa501a8bcf6a882d769cc9e603b",
+  "written": "2026-10-25T16:35:38Z"
+ },
+ "transcript": {
+  "file": "driver.out",
+  "sha256": "5a2913687b8d6960fb11891ff21752362d502b5a807f5d397602a6bd2f96b967",
+  "written": "2026-10-25T16:35:38Z"
+ }
+}

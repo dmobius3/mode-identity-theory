@@ -138,6 +138,7 @@ One step at a time, each gated on the last. If the maintainer admits no instrume
    - **The controls:** the coherent and weight-7/2 rows.
    - **Persistence:** a test on every Elliptic stretch.
      - **Note (2026-10-15).** The #512 ruling leaves these tests outside the instrument's admission: they need a pre-registration of their own. M8.15's finite-element dynamics is a candidate, subject to demonstrated adequacy for each newly identified Elliptic stretch, and S5 is unchanged.
+   - **Note (2026-10-27), on M8.17's terms.** M8.17's terms, the census run's, were fixed on 2026-10-27, before any of its sealed readings was computed, as the text to be filed with OpenWave: SHA-256 `667159c3db993396a10a75775acf79e78f744d161c641ebc37c9e6baf3af7cea`. Its instrument and run code, M8.16.1's byte for byte, are frozen with the census's own code in [`scripts/soft-slot-dynamics-m8-17/`](scripts/soft-slot-dynamics-m8-17/REPRODUCE.md), with the terms in its `run/` and its manifest pinned at SHA-256 `2deed9aa564a6ccb4af36734e8ee6bdc787c9265b1be97cca22f0c76a4da9299`. No sealed reading is computed before OpenWave's merge of the task and the maintainer's go.
 6. **The sequel** to the Surviving Ray.
 
 ## VI. When It Is Done

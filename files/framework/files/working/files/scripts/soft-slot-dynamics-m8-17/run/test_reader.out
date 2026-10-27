@@ -1,0 +1,24 @@
+Test 2, the reader, on M8.16.1's outputs, with no solve, in a seedcheck process.
+1. PASS: the rule replayed on the stored summaries equals the stored reading at 95 of 95 read points
+2. PASS: K1 at every cutoff at 95 of 95 read points; this instrument classifies 84; identity kept at 95
+      not classified here: T3/R4 16: the rule reads it Unresolved: tested set at 2.79122e-15+3.51578j (+3): the set's count differs between cutoffs
+      not classified here: T3/R4 45.2548: the rule reads it Unresolved: tested set at -7.05549e-16+3.23787j (+5): the set's count differs between cutoffs
+      not classified here: T3/R4 64: the rule reads it Unresolved: tested set at -2.67583e-15+3.03461j (+5): the set's count differs between cutoffs
+      not classified here: T5/R2 5.65685: the rule reads it Unresolved: partner set at 3.20878e-15+5.77121j (+1): the set's count differs between cutoffs; partner set at 3.20878e-15+5.77121j (
+      not classified here: T5/R2 8: the rule reads it Unresolved: partner set at 2.66246e-15+5.67184j (+1): the set's count differs between cutoffs; partner set at 2.66246e-15+5.67184j (
+      not classified here: T5/R2 11.3137: the rule reads it Unresolved: partner set at -2.07388e-15+5.53882j (+1): the set's count differs between cutoffs; partner set at -2.07388e-15+5.53882j
+      not classified here: T5/R2 16: the rule reads it Unresolved: partner set at -1.84007e-15+5.36336j (+1): non-contracting above the floor; partner set at -1.84007e-15+5.36336j (+1): n
+      not classified here: T5/R2 22.6274: the rule reads it Unresolved: partner set at 1.67077e-16+5.13822j (+1): non-contracting above the floor; partner set at 1.67077e-16+5.13822j (+1): non
+      not classified here: T5/R2 32: the rule reads it Unresolved: tested set at 8.02228e-16+0.436471j (+1): the set's count differs between cutoffs; partner set at 2.26776e-15+4.85989j (
+      not classified here: T5/R2 64: the rule reads it Unresolved: tested set at -2.20149e-15+0.606222j (+2): the set's count differs between cutoffs; tested group at -2.15883e-15+0.48168
+      not classified here: T5/R2 90.5097: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -1.03234e-14+0.527107j (+2): the
+3. PASS: K6 reproduced: 79 points decided and read, 11 Unresolved here; classified by {'this instrument': 16, 'both': 68, "M8.15's": 11}
+4. PASS: the first-time readings from the records alone: 56 on the run's rows, equal to census_lib.NEW, and T3/R5's 16, inside M8.15.2's location (15.6356, 16.5832)
+5. PASS: refused 200 of 200: the 56, T3/R5's withheld 16, and every grid interval's midpoint
+      census.frozen(): no freeze: run/FROZEN.json or its pin is absent
+6. PASS: every run row's seed refused, the census driver refused, and the solver and record paths refused in this process
+arms, each of which must turn its claim red:
+   A1. a stored group centre moved by 1e-9, T3/R4 at 8, N = 32: RED
+   A2. the sealed() check removed: 195 points not refused: RED
+   A3. identity kept = False at T2/R5, 4: RED
+0 failed

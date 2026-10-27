@@ -1,0 +1,24 @@
+--- m8_17_task_details.md (v4)
++++ m8_17_task_details.md (v5)
+@@ -1,6 +1,6 @@
+ # M8.17: THE SLOT DYNAMICS CENSUS RUN, a delta on M8.16.1's terms
+ 
+-Pre-registration, draft v4 for review. It governs nothing until the maintainer's go. **Sealed until the freeze:** all 56 first-time spectral readings, the four points M8.16.1 solved without a linear record among them, and every point the locator computes (§ THE POINTS). None of them has a classification on any instrument: M8.15 left each undecided, and M8.16.1 either never reached it or solved it without computing its record.
++Pre-registration, for review. It governs nothing until the maintainer's go. **Sealed until the freeze:** all 56 first-time spectral readings, the four points M8.16.1 solved without a linear record among them, and every point the locator computes (§ THE POINTS). None of them has a classification on any instrument: M8.15 left each undecided, and M8.16.1 either never reached it or solved it without computing its record.
+ 
+ ## TASK PLANNING
+ 
+@@ -248,10 +248,11 @@
+   - **T1's and T4's points at `ε` = 0.5, 1 and 2,** reached from different predecessors, must each equal M8.16.1's record in type, indices, `V₀`'s dimension and ranks, chains, Krein counts and the rule's verdict.
+ 
+   The first point that does not reproduce stops the run, as a reproducibility failure, and nothing is repaired or rerun.
+-- **The estimate.** From M8.16.1's timings, about 14 hours of compute:
++- **The estimate.** From M8.16.1's timings, about 15 to 16 hours of compute:
+   - about 7.7 hours for T1's and T4's paths;
+   - 3.8 for the paths of T2/R4, T3/R4 and T5/R2;
+-  - 2.4 for the locator, its midpoints solved from both ends.
++  - about 4 for the locator on T2/R4's change, its path recomputed from the seed to 32 and its midpoints solved from both ends;
++  - about 1 to 6 more for each further bracket, by its row and its upper end.
+ 
+ ## DEFINITION OF DONE
+ 

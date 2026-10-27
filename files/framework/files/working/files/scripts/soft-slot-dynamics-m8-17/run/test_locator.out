@@ -1,0 +1,39 @@
+Test 4, the locator and the classification, on synthetic records, with no solve, in a seedcheck process.
+baseline: PASS: (20, 30), n(L) +1 at 25.004 at every cutoff: located True, union (25.0, 25.009765625), span [24.75, 25.25986328125]: 'a change of type located between the guard readings, with `n(L)` changing by +1 inside the interval at `N = 24` and 32'
+   the unchanged index, apart: n(L) 3 at both ends, with the type changing: kind 'unchanged', True
+   UA's case, N = 16 bisected with +2 at 26.3: located True; N = 16 reported: delta 2, interval [26.298828125, 26.30859375]: PASS
+arms: the real code refuses or labels as the terms require, and the mutant lets the scenario through:
+   w/2: the two cutoffs' changes 9e-3 apart, in one interval at w but not at w/2: real as required; mutant RED
+   the union's w: two overlapping intervals, each under w/2, their union over w (location()): real as required; mutant RED
+   the first offset, 0.01: the lower side reads Hyperbolic at 1% and Elliptic at 5%: real as required; mutant RED
+   the single retry at 0.05: the lower side unclassified at 1% and 5%, classified at 10%: real as required; mutant RED
+   the window bound: a change at 39.95, its upper guard past the window's 40: real as required; mutant RED
+   the two-ends distance: the two solutions 5e-2 apart at N = 32: real as required; mutant RED
+   the two-ends n(L): from above n(L) = 4 at the first midpoint, 25, from below 3: real as required; mutant RED
+   a bracket end that does not reproduce: the upper end's lam differs by 1e-12 at N = 32: real as required; mutant RED
+   a bracket end with no record to reproduce: real as required; mutant RED
+   the overlap: the cutoffs' intervals meeting at a point only: real as required; mutant RED
+   the signed change: +1 at N = 24, +2 at N = 32: real as required; mutant RED
+   a zero signed change (location()): real as required; mutant RED
+   the two-change stop: n(L) 3, then 5 from 22, then 4 from 28; the first midpoint reads 5: real as required; mutant RED
+   K1 at a midpoint: K1 fails at N = 32 from 24.95 to 25.2, at the midpoints and not the guards: real as required; mutant RED
+   the type bracket: a change across an unclassified grid point is no type bracket: real as required; mutant RED
+   the index bracket: n(L) changes at N = 24 and not at 32: real as required; mutant RED
+   the inadequate index evidence: both ends' n(L) unresolved at N = 24 and 32, not read as unchanged: real as required; mutant RED
+   the precedence: M8.15.2's location accounts for T3/R5's change across its unclassified 16: real as required; mutant RED
+   the instrument named: an Unresolved reading here is no second confirmation of M8.15's: real as required; mutant RED
+   the contradiction, in type: the instruments disagree: real as required; mutant RED
+   the contradiction, in K: the instruments disagree: real as required; mutant RED
+   the contradiction, in k_i^-: the instruments disagree: real as required; mutant RED
+   each guard from its own end: from above the upper guards read Unresolved, from below Hyperbolic: real as required; mutant RED
+   the stop record: a completed run is not marked stopped: real as required; mutant RED
+   UA's case, N = 16 not bisected, its ends' n(L) unresolved: located from N = 24 and 32: real as required; mutant RED
+   UA's case, N = 16 stopped at its first midpoint, n(L) unresolved there: located from N = 24 and 32: real as required; mutant RED
+the record, end to end, on synthetic outputs beside the known outcomes:
+   R1. T2/R4 Elliptic at 16 and 22.63: PASS: jobs [('T2/R4', (22.627416997969522, 32.0))]; Each change of type located
+   R2. T2/R4 Unresolved at 22.63: PASS: Not settled by this run; open [22.627416997969522, [16.0, 32.0]]
+   R3. T2/R5 and T3/R5 on the known outcomes: PASS: T2/R5 Elliptic throughout; T3/R5 Each change of type located, 16 classified False
+   R4. T1/R4 Elliptic throughout; then Hyperbolic at 8 with n(L) unchanged: PASS: Elliptic throughout; then [(5.656854249492381, 8.0, 'unchanged'), (8.0, 11.313708498984761, 'unchanged')]
+   R5. T5/R2 Unresolved at 128 and 132: PASS: Not settled by this run; open [128.0, 132.0]
+   R6. the stop record: PASS: stopped in a locator job: 8 jobs named; at T3/R4: ['T2/R4', 'T3/R4']; no stop: {}
+26 arms; 0 failed

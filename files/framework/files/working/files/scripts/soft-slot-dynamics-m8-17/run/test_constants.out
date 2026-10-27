@@ -1,0 +1,34 @@
+Test 1, every constant: M8.17's terms against the code, a test FROZEN.json and the records on file.
+   the terms 667159c3db993396a10a75775acf79e78f744d161c641ebc37c9e6baf3af7cea
+1. PASS: the forward items, 63: 28 of kind (a), 28 of kind (b), 7 of kind (c)
+2. PASS: coverage: 251 numbers, 71 references or names, the rest each claimed once
+      (c) ['4', '500', '8', '000']: the word budget, reported
+      (c) ['54', '381']: M8.16.1's stated limit, inherited: its RECORD.md
+      (c) ['15', '16']: the estimate, reported
+      (c) ['7.7']: the estimate, reported
+      (c) ['3.8']: the estimate, reported
+      (c) ['4']: the estimate, reported
+      (c) ['2', '6', '2', '4', '9']: the estimate, reported
+3. PASS: the reverse scan of census_lib, census, write_guard, freeze_block: every literal on exactly one list, no entry stale
+      registered: 19 literals
+      a formula's own constant: 1 literals
+      a lookup or float guard: 4 literals
+      a name: a rule's number, or the usage's argument count: 6 literals
+        [a lookup or float guard] census_lib.sealed 'abs(e - eps) <= 1e-12 * e': a grid value's own float
+        [a lookup or float guard] census_lib.there "abs(x['eps'] - eps) < 1e-9": M8.15's type at the same grid value, as K6 reads it
+        [a formula's own constant] census_lib.bisect 'm = (a + b) / 2': the arithmetic midpoint
+        [a lookup or float guard] census_lib.locate 'x <= hi * (1 + 1e-12)': the bracket's upper end among the grid values
+        [a name: a rule's number, or the usage's argument count] census_lib.<module> 'GATES = {1: gate_full, 2: gate_solve, 3: gat': the reproduction rules, by number
+        [a name: a rule's number, or the usage's argument count] census_lib.rule_for 'return 1 if read[k] else 2': the reproduction rules, by number
+        [a name: a rule's number, or the usage's argument count] census_lib.rule_for 'return 3 if read[k] else None': the reproduction rules, by number
+        [a name: a rule's number, or the usage's argument count] write_guard.<module> 'if len(sys.argv) != 2:': the usage: one argument, the go
+        [a name: a rule's number, or the usage's argument count] freeze_block.<module> 'if len(sys.argv) != 3:': the usage: the solver commit and the block's path
+        [a lookup or float guard] census.path 'e <= upto * (1 + 1e-12)': the path's last grid value
+4. PASS: the freeze writer on a temporary copy: exact terms: FROZEN.json written in the copy, admitted by devtools.frozen() and by the copy's census.frozen(), allowlist ['T2/R4', 'T3/R4', 'T5/R2', 'T1/R4', 'T4/R4', 'T1/R5', 'T4/R5']
+arms, each of which must turn its claim red:
+   A1. FROZEN.json without the census values' w: RED
+   A2. W changed to 2e-3 in a copy of census_lib.py: RED
+   A3. a new tolerance, 1.07, in a copy of census_lib.py: RED
+   A4. '#512 and 0.37' in a copy of the document: RED
+   A5. the placed terms with one byte changed: write() refuses and names them: RED
+0 failed

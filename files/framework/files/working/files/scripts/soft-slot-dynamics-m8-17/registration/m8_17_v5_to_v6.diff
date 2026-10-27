@@ -1,0 +1,11 @@
+--- m8_17_task_details.md (v5)
++++ m8_17_task_details.md (v6)
+@@ -252,7 +252,7 @@
+   - about 7.7 hours for T1's and T4's paths;
+   - 3.8 for the paths of T2/R4, T3/R4 and T5/R2;
+   - about 4 for the locator on T2/R4's change, its path recomputed from the seed to 32 and its midpoints solved from both ends;
+-  - about 1 to 6 more for each further bracket, by its row and its upper end.
++  - about 2 to 6 more for each further bracket in `R4`, about 2 in `R2`, and about 4 to 9 in `R5`, by its row and its upper end.
+ 
+ ## DEFINITION OF DONE
+ 

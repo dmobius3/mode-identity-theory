@@ -1,0 +1,16 @@
+   C2a N = 12, m = 18: seed ok; 3 of 3 points accepted; 1 s
+   C2a N = 16, m = 50: seed ok; 3 of 3 points accepted; 6 s
+   C2a N = 20, m = 90: seed ok; 3 of 3 points accepted; 29 s
+run_case: 36 s
+1. eps 0.25: the recomputed path against run_case: 0 differences
+1. eps 0.353553: the recomputed path against run_case: 0 differences
+1. eps 0.5: the recomputed path against run_case: 0 differences
+   (0.353553, 0.5): the recomputed path, 3 points, 0 not reproduced
+2. census_lib.locate: stop None; kind unchanged; n(L) at the ends {16: [0, 0], 20: [0, 0]}
+3. bisect at N = 20: 10 midpoints, complete True, interval [0.49985698573300125, 0.5], largest two-ends distance 6.96e-07, K1 at every midpoint True; 122 s
+4. the lower guard, delta 0.01, eps 0.350053: the rule reads it Unresolved: tested group at -6.9565e-17+0.0179856j: non-contracting above the floor; tested 
+4. the lower guard, delta 0.05, eps 0.335909: the rule reads it Unresolved: tested group at -8.41792e-16+0.0172642j: non-contracting above the floor; tested
+4. the upper guard, delta 0.01, eps 0.357267: the rule reads it Unresolved: tested group at 4.41855e-17+0.0183535j: non-contracting above the floor; tested 
+4. the upper guard, delta 0.05, eps 0.371417: the rule reads it Unresolved: tested group at 7.8995e-16+0.0190745j: non-contracting above the floor; tested g
+   the grid points at these cutoffs: ['the rule reads it Unresolved: tested gro', 'the rule reads it Unresolved: tested gro', 'the rule reads it Unresolved: tested gro']; the guards' failures ['no lower guard reading is classified', 'no upper guard reading is classified']
+0 failed

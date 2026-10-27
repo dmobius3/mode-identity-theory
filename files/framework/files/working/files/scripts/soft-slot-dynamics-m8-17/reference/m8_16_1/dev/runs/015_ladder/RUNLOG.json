@@ -1,0 +1,44 @@
+{
+ "completed": {
+  "C2a/R5:ladder": {
+   "files": {
+    "C2a_R5_ladder.json": "a3937aaf2d48796344810f68a594b7f66ae555ddfb59ed037cc3756a1dee2b43"
+   },
+   "t": "2026-10-22T20:36:53Z"
+  }
+ },
+ "gate": {
+  "file": "GATE.json",
+  "sha256": "3a200bf2d5d2fa92c2967ebd91bd315e46bcf1d5e3435a74dd246e148c45f20c",
+  "written": "2026-10-22T20:36:54Z"
+ },
+ "events": [
+  {
+   "t": "2026-10-22T18:45:59Z",
+   "event": "dry run started; cases ['C2a/R5:ladder']"
+  },
+  {
+   "t": "2026-10-22T20:36:53Z",
+   "event": "C2a/R5:ladder completed"
+  },
+  {
+   "t": "2026-10-22T20:36:54Z",
+   "event": "gate record written, SHA-256 3a200bf2d5d2fa92c2967ebd91bd315e46bcf1d5e3435a74dd246e148c45f20c"
+  },
+  {
+   "t": "2026-10-22T20:36:54Z",
+   "event": "verdict (incomplete) and transcript written"
+  }
+ ],
+ "manifest_sha256": "55ccf8d4e9a45aacfbc73827619ffc9b84c8159512f27a8c93220f51f901fec5",
+ "verdict": {
+  "file": "VERDICT.json",
+  "sha256": "43a0483d1d5c8226217da7264ee78f26985f855a67cab5ecafb243021ccd02a3",
+  "written": "2026-10-22T20:36:54Z"
+ },
+ "transcript": {
+  "file": "driver.out",
+  "sha256": "561c5380f759aa9c6efebace739d1925b43e40336f20de655eb4e0b9b6bd72e7",
+  "written": "2026-10-22T20:36:54Z"
+ }
+}

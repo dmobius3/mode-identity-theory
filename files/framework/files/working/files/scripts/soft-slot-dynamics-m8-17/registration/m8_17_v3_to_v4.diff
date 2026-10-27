@@ -1,0 +1,58 @@
+--- m8_17_task_details.md, v3
++++ m8_17_task_details.md, v4
+@@ -1,6 +1,6 @@
+ # M8.17: THE SLOT DYNAMICS CENSUS RUN, a delta on M8.16.1's terms
+ 
+-Pre-registration, draft v3 for review. It governs nothing until the maintainer's go. **Sealed until the freeze:** all 56 first-time spectral readings, the four points M8.16.1 solved without a linear record among them, and every point the locator computes (§ THE POINTS). None of them has a classification on any instrument: M8.15 left each undecided, and M8.16.1 either never reached it or solved it without computing its record.
++Pre-registration, draft v4 for review. It governs nothing until the maintainer's go. **Sealed until the freeze:** all 56 first-time spectral readings, the four points M8.16.1 solved without a linear record among them, and every point the locator computes (§ THE POINTS). None of them has a classification on any instrument: M8.15 left each undecided, and M8.16.1 either never reached it or solved it without computing its record.
+ 
+ ## TASK PLANNING
+ 
+@@ -18,7 +18,7 @@
+ - **T2 in `R5`** is Elliptic at every point on M8.15's record.
+ - **T3 in `R5`** is closed on M8.15.2's location, under its clause 3 ([#632](https://github.com/openwave-labs/openwave/pull/632#pullrequestreview-5511519208)). The change of type is located between its guard readings, Elliptic at 15.6356 and Hyperbolic at 16.5832 at level 3. Its one undecided grid point, `ε = 16`, lies between them, so the location accounts for it.
+ 
+-**What this task asks:** classify each of those points with the frozen instrument and its frozen convergence rule, locate each change of type the classified points bracket, and end each of the nine rows in one of S4's ways.
++**What this task asks:** classify each of those points with the frozen instrument and its frozen convergence rule, locate each change of type the classified points bracket, and record each of the nine rows' outcomes, stating separately whether it meets an S4 completion condition.
+ 
+ **Old and new evidence.** The instrument is deterministic, and every point M8.15 decided or M8.16.1 read has its outcome on record (§ Known outcomes). This task claims no new evidence from them. The new evidence is the 56 points above, never classified on any instrument, and the points the locator computes.
+ 
+@@ -41,7 +41,7 @@
+ | A point it does not classify is not offered to this instrument again without a ruling | § THE ROW OUTCOMES |
+ | No persistence test (the boundary) | § What this task is not |
+ 
+-- **Word budget.** About 4,400 words, inside § 12.2's cap of about 8,000.
++- **Word budget.** About 4,500 words, inside § 12.2's cap of about 8,000.
+ - **Run-before-write** (`PR_REVIEW_STANDARDS.md` § 12.2) is met: M8.16.1 ran and was adjudicated (#653), and its records after the verdict landed (#654).
+ - **ID.** M8.17, which no M8 file or open pull request carries. The BACKLOG row the filing creates allocates it (`ROADMAP_STANDARDS.md` § 6).
+ - **Inherited.** Every rule of M8.16.1's terms that this document does not change governs here: the filed text, SHA-256 `9d167129…`, the 47,420-byte prefix of [`m8_16_1_task_details.md`](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/tasks/m8_16_1_task_details.md), and through it M8.16's. Inherited unchanged, in particular:
+@@ -108,7 +108,7 @@
+ | --- | --- | --- | --- | --- |
+ | T1/R4, T4/R4 | none | 0.25, 0.5, 1, 2 | the other 14 | the whole grid, to 72 |
+ | T1/R5, T4/R5 | none | 0.25, 0.5, 1, 2 | the other 11 | the whole grid, to 32 |
+-| T2/R4 | Elliptic to 11.31; Hyperbolic from 32 | 16 points | 16 and 22.63, and the change of type | the grid to its type bracket's upper end, at most 32, then the locator |
++| T2/R4 | Elliptic to 11.31; Hyperbolic from 32 | 16 points | 16 and 22.63, and the change of type | the grid to 22.63, and on to 32 where its type bracket is (22.63, 32), then the locator |
+ | T2/R5 | Elliptic at all 15 | all 15 | none: Elliptic throughout on M8.15's record | none |
+ | T3/R4 | Elliptic at 17, all but 32 | 17 points | 32 | the grid to 32 |
+ | T3/R5 | Elliptic to 11.31; Hyperbolic at 22.63 and 32; the change located between 15.6356 and 16.5832 | 14 points | none: `ε = 16` lies inside the location | none |
+@@ -140,8 +140,9 @@
+ **The brackets:**
+ - **A change already located,** M8.15.2's on T3/R5, keeps its location: its grid point inside the location, `ε = 16`, is accounted for, and the locator does not rerun it.
+ - **A type bracket** is two consecutive registered grid points of a row, both classified, whose types differ. A change of type across an unclassified grid point has no type bracket: it is bracketed by the nearest classified points and not located, with that point named.
+-- **An index bracket** is a type bracket whose ends have `n(L)` resolved at every cutoff, and different between the ends.
+-- **A type bracket that is not an index bracket** is a type change with no `n(L)` change, such as a Krein collision, which T1's Krein-mixed spectrum allows. The record names it: "Type change detected without an `n(L)` change. The registered index locator is inapplicable; the location remains OPEN. No location or S6 closure is claimed."
++- **An index bracket** is a type bracket whose ends have `n(L)` resolved at `N = 24` and 32, and different between the ends at both. These are the cutoffs that decide a location. `N = 16` is bisected where its ends' `n(L)` is resolved and different, and reported otherwise.
++- **A type bracket whose ends' `n(L)` is resolved and equal at `N = 24` and 32** is a type change with no `n(L)` change, such as a Krein collision, which T1's Krein-mixed spectrum allows. The record names it: "Type change detected without an `n(L)` change. The registered index locator is inapplicable; the location remains OPEN. No location or S6 closure is claimed."
++- **A type bracket whose ends' `n(L)` is missing or unresolved at `N = 24` or 32, or changes at one of them and not the other,** has inadequate index evidence. The record names it so: "The index evidence is inadequate; it is not evidence of no index change." It is not located, and no S6 closure is claimed.
+ 
+ **The bisection,** on each index bracket, at each cutoff on its own path:
+ - where an end has a known record but no stored solution vector, the registered path recomputes that end, and it passes the reproduction gate (§ THE FREEZE, THE GUARD AND THE RUN) before either inward continuation begins;
+@@ -225,7 +226,7 @@
+    - a bracket end missing or not reproducing;
+    - the overlap, and the signed `Δn(L)` agreement;
+    - the two-change stop;
+-   - the type and index brackets;
++   - the type and index brackets, with the unchanged index and the inadequate index evidence kept apart;
+    - the precedence, and the contradiction.
+ 
+ ## FROZEN VALUES: WHAT IS NEW
