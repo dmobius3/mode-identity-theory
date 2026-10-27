@@ -7,7 +7,7 @@
 
 ---
 
-**Mode Identity Theory starts with a simple bet:** fundamental physics is not missing more ingredients. It is missing the boundary conditions that determine the forms those ingredients take and the values they assume. Instead of changing Einstein's equations or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
+**Mode Identity Theory starts with a simple bet:** fundamental physics is not missing more ingredients. It is missing the boundary conditions that determine the forms those ingredients take and the values they assume. Instead of changing relativity or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
 
 MIT keeps Einstein's field equations and the Standard Model as the local rules of physics, while adding a global geometric structure beneath them. In this picture, topology comes first. The wave is fundamental. Matter appears where that wave is sampled, and time is its phase. The observer is part of the realization rather than something standing outside it. Some of what follows is exact mathematics, some is quantitative correspondence, and some remains open research.
 
