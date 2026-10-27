@@ -251,7 +251,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 
 ><a href="https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview"><img src="https://img1.wsimg.com/isteam/ip/21cc2ac0-6dc4-4b19-93ef-6a7079ac9d3c/Euclid_mission_poster_horizontal.png/:/rs=w:2560,h:1440" width="320" alt="Euclid Mission"></a>
 >
->*[ESA Euclid Mission:](https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview) Euclid is designed to explore the evolution of the dark Universe. It is creating a 3D-map of the Universe by observing billions of galaxies out to 10 billion light-years, across more than a third of the sky. Euclid is revealing how structure has formed over cosmic history – and from this, astronomers can infer the properties of dark energy, dark matter and gravity, to reveal more about their precise nature.*
+>*[ESA Euclid Mission:](https://www.esa.int/Science_Exploration/Space_Science/Euclid_overview) The Euclid telescope is designed to explore the evolution of the dark Universe. It is creating a 3D-map of the Universe by observing billions of galaxies across more than a third of the sky. Euclid is revealing how structure has formed over cosmic history – and from this, astronomers can infer the properties of dark energy, dark matter and gravity, to reveal more about their precise nature.*
 
 | Test | MIT says | Field baseline | MIT loses if |
 |---|---|---|---|
