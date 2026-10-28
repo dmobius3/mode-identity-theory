@@ -1,0 +1,10 @@
+FILING_PLAN.md's step 3 gives the launch command this test runs, once
+case 1, the earlier form, ungrouped: a clean launch: exit 0; the log holds only the run, without the hash check or the verdict
+case 2, the command without pipefail: census.py fails with exit 3: exit 0; the failure's status is lost through tee
+case 3, the command: a clean launch: exit 0; the log holds the hash check, the verdict and the run
+case 4, the command: census.py fails with exit 3: exit 3; the log holds the hash check, the verdict and the traceback
+case 5, the command: a wrong hash: exit 1; census.py never starts
+case 6, the command: the resume check refuses: exit 1; census.py never starts
+case 7, the command, twice: a relaunch appends: exit 0; the log holds both launches, 2 records
+no caffeinate left running by the cases
+0 failed

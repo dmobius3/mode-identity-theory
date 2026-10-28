@@ -377,3 +377,340 @@ From here no manifest-covered file changes, and every test runs in a scratch cop
 9. **The census note,** under § V, step 5, as its last item, from `../filing_drafts/census_note.md`. It names the terms' SHA-256 and the pin once each, read from the folder's files, and links `REPRODUCE.md`. The page's math is unchanged, 125 inline spans, and its Status line is unchanged. `metadata-lint.py` reports 0 FAIL and 0 WARN. The page, edited: `9eb1653b31b6a4a3b09c2b539fa78c867936d8f466accecb1b830feac8982cb4`.
 
 **Next:** this log is copied into the worktree's folder; then step 10, `SHA256SUMS`, and step 11, the local commit, not pushed.
+
+## 14. 2026-10-27T02:12:02Z: the filing, steps 10 and 11: the local commit, not pushed
+
+This entry stays on the bench, since a commit cannot hold its own hash. It reaches the MIT folder with the run's record. The folder as committed holds this log through entry 13.
+
+10. **`SHA256SUMS`,** fresh from the MIT folder's final inventory, in M8.16.1's form: 85 lines, one per file but itself, sorted by path. From the folder, `shasum -a 256 -c SHA256SUMS` passes on every line. The final scan ran under the same rule as step 2 on the folder's 86 files. The known string occurs once, in `DEVLOG.md`, and there is no other email-shaped string, local path, credential or session internal. `check_no_local.py --require-files` is clean, reading 73. The sums are copied to the bench.
+11. **The local commit,** MIT `338b87365fea6e2b31bb9bb861851b2d46b7d4b5`:
+   - its parent is `e09d453`, `origin/main` when fetched again just before;
+   - author and committer are the MIT commit identity, with the Co-Authored-By line, and the message is `../filing_drafts/commit_mit.txt` with its three values read from the files;
+   - it changes 87 files, the folder's 86 and the census page: 87 files changed, 4556459 insertions(+);
+   - verified from its own tree, extracted by `git archive`: `shasum -c` passes; the manifest equals the pin; the census note names the terms' SHA-256 and the pin once each; no `FROZEN.json`.
+
+    It is not pushed.
+
+**Next:** step 12, the push, on Blake's word. Then step 2, OpenWave, on Blake's word after the push.
+
+## 15. 2026-10-27T02:13:59Z: the filing, step 12: the push
+
+Blake, in his own words: "go ahead and push".
+
+**The push.** MIT was fetched again, and `origin/main` was still `e09d453`, the commit's parent. `git push origin HEAD:main` was a fast-forward, `e09d4532..338b8736`, and `ls-remote` shows `main` at `338b87365fea6e2b31bb9bb861851b2d46b7d4b5`.
+
+**Read back live,** through GitHub's API, at `main`:
+- `REPRODUCE.md`, `run/m8_16_task_details.md` and `run/MANIFEST_PIN` equal the bench's;
+- the census page renders 125 math elements for its 125 math spans;
+- its new note names the terms' SHA-256 and the pin once each, and its link to the folder's `REPRODUCE.md` renders.
+
+**What is current.** MIT `main` and this worktree are at `338b873`. Blake's main checkout shows the folder once it pulls. This log's entries 14 and 15 stay on the bench and reach the folder with the run's record.
+
+**Next:** step 2, OpenWave's branch, on Blake's word.
+
+## 16. 2026-10-27T02:19:10Z: the filing, step 2: OpenWave's branch, on the fork
+
+Blake, in his own words: "let's begin step 2".
+
+14. **Before branching,** with `upstream` fetched again:
+    - every link in the terms resolves, 9 of 9, each read through GitHub's API: the MIT blob at `292b158`, OpenWave's copy of M8.16.1's terms, the three #512 comments, #620, and the reviews on #632, #653 and #654. A made-up review, comment and path each fail the same check;
+    - `upstream/main` is `0567ec74`. "M8.17" occurs in no upstream file, no M8 file has changed since #654's merge, and no pull request is open;
+    - run-before-write holds: #653 and #654 are merged;
+    - M8.16.1's, M8.16's and M8.15.2's task docs open "Pre-registration, for review.", with no blockquote, as v6 does.
+15. **The branch,** `m8-17-census-run-2026-10-27`, on `upstream/main`:
+    - `openwave/xperiments/m8_mit/research/tasks/m8_17_task_details.md`, new: MIT `338b873`'s `run/m8_16_task_details.md`, byte for byte;
+    - `openwave/xperiments/m8_mit/research/m8_roadmap.md`: the four edits of `../filing_drafts/m8_roadmap_edits.md`, dated 2026-10-27, +4 −3.
+16. **The checks,** on the branch:
+    - `check_roadmaps.py` is clean, and an arm that takes the row's Description to 66 words fails it, over the cap of 65 by 1;
+    - `check_models_md.py` is clean;
+    - `check_no_local.py --require-files` is clean on both files.
+17. **The commit,** `81f4811aa9037e83c9ed1e93b2fd3defa1d09b94`, parent `0567ec74f146c4c07bdfddcd8b58f8af9c0c35d5`, 2 files changed, 271 insertions(+), 3 deletions(-). It is signed off for the DCO in the clone's identity, the noreply address, with the Co-Authored-By line, and the message is `../filing_drafts/commit_openwave.txt` with MIT's commit filled in. It is pushed to the fork, whose branch shows the commit. The task doc, read back raw from the fork through GitHub's API, hashes to the terms' SHA-256.
+
+**The pull request's text:** the title in `../m8_17_pr_title_v1.txt`, and the body in `../m8_17_pr_body_v1.md` `535395ba442e312ff11061751641b03d0d4ca05d4f88030988d8f23899c8fbdb`, from `../filing_drafts/pr_body.md` with its values read from the files. Its five links resolve, and it closes with the reviewer's minor-corrections line. The body is on Blake's clipboard.
+
+**Next:** Blake opens the pull request. After its merge, in the terms' order: the maintainer's go, `write_guard.py`, the freeze block, then the run.
+
+## 17. 2026-10-27T02:23:55Z: the units on the pull request's body; v2
+
+Blake will open the pull request on the morning of 2026-10-27, his time, and relayed both units ("consider").
+- **UA:** GO, with one wording NIT. The body said every known point "must reproduce M8.16.1's record, by the terms' three rules", but the four withheld points hold no spectral record, only their solve and acceptance fields. UA's sentence replaces it, verified against the terms' rule 2: "Every known point recomputed on the run's paths must pass the applicable reproduction rule. The four previously withheld solves are compared only on their retained solve and acceptance fields; their spectral readings are new evidence. The first reproduction failure stops the run."
+- **UB:** GO, with nothing to change. UB checked every filled value against the live state: MIT `338b873` and its extracted tree; the folder; the terms; the census note; both MIT links; the fork's branch `81f4811` on `upstream/main` `0567ec74`; the three checkers; and no pull request open. The title goes in GitHub's title field.
+
+**The body, v2:** `../m8_17_pr_body_v2.md` `3294c7343efb53fae5d4b0e6b29ac113c58fbfdf8c33104354ca55c36798b62e`, v1 with that sentence and nothing else. Its five links still resolve, and it is on Blake's clipboard. `../filing_drafts/pr_body.md` carries the same sentence.
+
+**Before the pull request opens:** a recheck that `upstream/main` has not moved in a way that touches an M8 file, and that no pull request carries M8.17. If an M8 file has changed, the branch is updated first.
+
+## 18. 2026-10-27T09:56:21Z: the recheck, and the pull request opened as #662
+
+On Blake's word ("run the recheck, about to open the PR"), before it opened, through GitHub's API:
+- **OpenWave's `main`** had moved from `0567ec74` to `fbbc437d`: four commits, #660 and #661 with their merge commits, all M5, with one M5 row in `MODELS.md`. No changed line of their patches names M8, and neither of the branch's two files is among them. M8.17 was not upstream: the roadmap had no line for it, and `research/tasks/m8_17_task_details.md` did not exist.
+- **No pull request was open,** and none in any state carried M8.17.
+- **The branch** was still `81f4811a`, four commits behind `main`. `main`'s rules require a branch to be up to date before it merges; on #650 the maintainer merged `main` into the branch at review. No M8 file had moved, so the branch was left as it was.
+- **MIT:** `338b873` is an ancestor of `main`, which is six README commits ahead of it; none touches the folder or the census page. The body's five links resolve, and the three made-up arms fail.
+- **The body:** Blake's clipboard had been overwritten, so v2 went back on it, equal to the file byte for byte.
+
+**The pull request,** [#662](https://github.com/openwave-labs/openwave/pull/662), opened by Blake at 2026-10-27T09:53:25Z. Read back through GitHub's API:
+- base `openwave-labs/openwave` `main` at `fbbc437d6456994af4453e1f372e57a818ae640a`, and head `dmobius3/openwave` `m8-17-census-run-2026-10-27` at `81f4811aa9037e83c9ed1e93b2fd3defa1d09b94`;
+- its title equals `../m8_17_pr_title_v1.txt`, and its body equals `../m8_17_pr_body_v2.md` byte for byte, `3294c7343efb53fae5d4b0e6b29ac113c58fbfdf8c33104354ca55c36798b62e`;
+- 1 commit, 2 files, +271 −3; DCO passes; it is mergeable and behind `main`; the maintainer's review is requested, with no review or comment yet.
+
+**Next:** the maintainer's review. After the merge and the maintainer's go, in the terms' order: `write_guard.py`, the freeze block, then the run.
+
+## 19. 2026-10-27T14:15:03Z: #662 merged; the approval and the go, read
+
+Blake: "PR merged, let's read it". Read through GitHub's API:
+- **The merge:** [#662](https://github.com/openwave-labs/openwave/pull/662) merged at 2026-10-27T13:43:38Z as `a4c7a270b65e45039aedb96668ed8598ede4591c`, on `main` at `fea758b6`. The maintainer first merged `main` into the branch, `099c2a16`, as on #650, then approved and merged. The merged task doc equals the terms byte for byte, 27,823 bytes, `667159c3db993396a10a75775acf79e78f744d161c641ebc37c9e6baf3af7cea`, and the merged roadmap equals the branch's. Against the branch's commit, the merge changed only M5 files and `MODELS.md`, all from `main`. `main` is the merge itself, and no other M8 commit followed it.
+- **The approval,** [review 5668005976](https://github.com/openwave-labs/openwave/pull/662#pullrequestreview-5668005976): approved with no findings and no maintainer edits. It checked the terms, MIT `338b873` and the 85 sums, the copies byte for byte and the 52 sources, the pin by its own listing, the points, the estimate, the rulings, the code against the terms and the code's intent, the five tests rerun under its own environment (Python 3.12.14, NumPy 2.5.3, SciPy 1.18.1; each output byte for byte), the roadmap, and DCO. It gives five reading notes, with no change asked.
+- **The go,** [comment 6443460379](https://github.com/openwave-labs/openwave/pull/662#issuecomment-6443460379), unedited, names the terms `667159c3…` merged in `a4c7a270`, MIT `338b873`, the pin `2deed9aa…` over 35 files and `SOURCES.json` at `8833e7e9…`, and covers that pinned tree. Its order: `write_guard.py`, then the freeze block at `research/m8_17/freeze_block.md` with `FROZEN.json` in full, before the run; the record on MIT `main` with `REPRODUCE.md`; the adjudication applies the terms' sections and the three reproduction rules, with the approval's reading notes.
+- **Recomputed here:** the terms, the pin and `SOURCES.json` equal the go's; M8.16.1's run log `84f2c9f6…`, terms `9d167129…` and manifest pin `8cc2d7e2…`, from its `FROZEN.json`, equal the approval's table.
+- **Kept verbatim,** each the API's body with one trailing newline: `../xrodz_approval_662_5668005976.md` `a6677fc378f39f7b7969ba07f451e961de6c09cc403522783f2a771d5a0e5656` and `../xrodz_go_662_6443460379.md` `cae99256ccf04068182caef369ed74a94356b55ea15268829e0f8ad871b6d024`.
+
+**The reading notes, each read at source:**
+1. **The exact rules assume the recorded environment.** Holds: `census.py` reads no environment before it starts. As M8.16.1's run did, `record_environment.py --check` runs before the launch and after the run, and the freeze block records the environment read again when it is written.
+2. **Where a stop falls.** Holds: `gate_row` runs when a row's `run_case` returns, and `stop_run` follows `complete`, as step 1 of `census.py`'s docstring says.
+3. **A path the run cannot reach.** Holds. A bracket end is classified either on this instrument, which needs every cutoff accepted there (`here()`), or by M8.15, whose classified points on the rows the run computes all lie where M8.16.1 solved the path. Those 70 points are accepted at all three cutoffs, with the same points at each, and the run must reproduce them.
+4. **The reference files.** Holds: `SOURCES.json` lists 33 files under `reference/`, and `write_guard.targets` adds `SOURCES.json` itself, 34 targets.
+5. **A locator stop the resume would not see.** Holds. `complete()` saves the log with the job completed before `stop_run()` saves the stop, and the `completed earlier` branch loads the job's record without reading its `stop` field. A resume would go on to the later locator jobs, and `assemble` would raise `KeyError` on the record's missing `located`, writing no classification. It needs a reproduction failure in a locator job and an interruption between two consecutive writes of the log. The maintainer leaves a re-pin to us: Blake's decision.
+
+**Next:** Blake's decision on note 5. Then, each on Blake's word: `write_guard.py` with the go, the freeze block and its pull request, and the run, with `record_environment.py --check` before and after.
+
+## 20. 2026-10-27T14:53:47Z: the pre-flight packet, v1, for the units
+
+On Blake's word ("give me a short packet for the units to review for help with the pre-flight decision(s)"):
+- **The cover,** `../m8_17_preflight_packet_v1.md` `3712c69bbe846475d7f09b47b76305cbd406d47961c64e262cb7e6fe5d447abe`, puts three items to the units, GO or HOLD: (a) reading note 5, a re-pin, or no re-pin with a resume check, which I recommend; (b) the launch once the freeze block's pull request is open and DCO passes, as M8.16.1's launched with #652 open; (c) M8.16.1's pre-flight checks carried over, with no test run in the folder after the freeze.
+- **The zip,** `../m8_17_preflight_review_v1.zip` `2dbdb7287d25ec2fc03b5f26d46ec988a525c232f5fc097452320cd58df3fbe0`, 112 entries: the cover; the approval and the go verbatim; `FILING_PLAN.md`; `preflight_reads.py` with its output; and this folder, with this log through entry 19.
+- **Read today:** `record_environment.py --check` finds no difference; the manifest equals the pin; `SHA256SUMS` fails only this log, by its bench-only entries 14 to 19; MIT `main` is 10 commits past `338b873`, none touching the folder or the census page.
+- **Checked from a fresh unzip:** `preflight_reads.py` reproduces its output (70 points accepted at all three cutoffs; 34 targets), and the manifest equals the pin. The packet holds no home-folder or scratch path. Its email-shaped strings are the known ones: the MIT commit identity in entry 11 and in the plan, and the plan's DCO address.
+
+**Next:** the units on the packet; then Blake's decisions, and the freeze on Blake's word.
+
+## 21. 2026-10-27T15:19:30Z: the units on the pre-flight packet; the resume check, built and recorded before the write
+
+Blake relayed both units ("continue if/when gucci"). Each finding is read at source.
+- **UA:** GO on (a), no re-pin, on conditions: the check outside this folder, since `tools/` here would add a file the filed inventory does not hold; run before every launch of `census.py`; refusing on a stop in the log, a root `STOP.json` or a completed `locate:` record carrying `stop`, and failing closed on a completed record missing, unreadable or not at its hash; arms for both interrupted-stop states, a clean resume and a stopped-run control; no write to the folder. Its SHA-256, arms and purpose go in this log and in the freeze block's pull request, and UA reviews them before the first launch. GO on (b), with the pull request open, DCO passing and its block complete as read from GitHub. GO on (c), with both admissions and `--check` after the write, and the resume check on the pre-launch list.
+- **UB:** GO on (a), (b) and (c). One more consequence of the gap holds at source: on the resumed path the stopped job's ends go into `extra` (`census.py` lines 292 to 293; UB's 291 to 292 is one line early), and the later locator jobs compute past the stop before `assemble` raises. FIXABLE, taken: the check runs in the launch command, `&&` before `census.py`, so every relaunch runs it. NITs, taken: arms for `run/out/` absent, a clean log, `STOP.json` and a stopped `locate:` job, with `STOP.json` looked for in `interrupted/` too; the pull request says the run launches once it is open and DCO passes; the script built and recorded before `write_guard.py`, and the freeze block written outside the folder; the task doc on OpenWave `main` checked against the terms' hash before the write.
+- **Verified at source:** UB's quote of #653's custody row, "#652 opened at 01:52:53Z, before the run started at 01:57:38Z, and merged at 13:35:02Z, during it"; OpenWave `main` at `6973f353`, its task doc at the terms' hash, and no M8 commit since the merge; MIT `main` at `33790bfb`; this folder equal to MIT `338b873`'s tree but for this log, whose entries 1 to 13 are MIT's byte for byte.
+
+**The units differ on one point,** where the check lives. UA's reason holds, and UB's command takes any path, so the check is outside the folder, in `../resume_check/`. From the folder, the launch command is `python3 -I -B ../resume_check/resume_check.py . && python3 -I -B -u run/census.py`.
+
+**The resume check:** `../resume_check/resume_check.py` `914021a08c6a19724ad9057a4226f7ac2d58cbb5b173655f5017b85ae26bb401`; its arms, `test_resume_check.py` `fcaf616c4ab2f6d686d692961c701d793b56c6e70c939da569c01ac7b49f74a1`; their output, `test_resume_check.out` `31581efc963212f84ed6e03e15575432d223204ef06114fc8b3ffe2c1a18f056`.
+- It refuses on eight checks: a stop in the log; the run's record in the log, so the run has completed; a `STOP.json` anywhere under `run/out/`, `interrupted/` included; a JSON file there carrying a stop; one whose reproduction gate failed at a point; a completed job's file missing or not at its logged hash; `run/out/` holding files but no `RUNLOG.json`; a JSON file that does not parse. From the units: the stop in the log, `STOP.json`, the stop field, the completed file and the unreadable file. Mine: the completed run, the failed gate and the missing log, and the stop field and unreadable checks read every JSON file, not only the completed jobs'.
+- 19 arms, each with its verdict and the files unchanged: `run/out/` absent and empty; a clean resume; UA's two interrupted-stop states; the stopped-run control; UB's `STOP.json` moved to `interrupted/`; a locator stop written but not logged; a row's failed gate, saved and moved; a completed file missing, altered and truncated; the log truncated; no log; and a completed run. Each check's mutant is caught by an arm, the command line exits 0 and 1 as it should, and the output repeats byte for byte.
+- On this folder now: `run/out/` does not exist, so it passes.
+
+**`../FILING_PLAN.md` step 3,** in place: the go; the resume check before the write; the checks before the write, with UB's; both admissions and `--check` after it; the freeze block outside the folder, with `SOLVER_COMMIT` `338b873`, its pull request stating the launch order and naming the check; the checks before the launch; the launch command; `--check` after the run.
+
+**Next:** the checks before the write, then `write_guard.py` with the go.
+
+## 22. 2026-10-27T15:22:21Z: the freeze written, `run/FROZEN.json` and its pin; the freeze block built
+
+On Blake's word ("continue if/when gucci"), with both units' GO on (c), in step 3's order.
+
+**Checked before the write,** read-only, with this folder's files hashed before and after and unchanged:
+- the go, by xrodz and unedited, equal to its kept copy byte for byte, naming the terms', the manifest's and `SOURCES.json`'s SHA-256 in full, MIT `338b873` and the merge `a4c7a270`;
+- the task doc on OpenWave `main` at the terms' SHA-256;
+- MIT `main` 10 commits past `338b873`, none touching this folder or the census page;
+- the manifest equal to the pin; no freeze and no `run/out/`; the placed terms equal to `registration/`'s;
+- `record_environment.py --check`: no difference;
+- `tools/copy_from_mit.py`, against MIT's objects: every reference copy equal to its blob, writing nothing;
+- the resume check: PASS, since `run/out/` does not exist.
+
+**The write:** `python3 -I -B run/write_guard.py` with the go wrote `run/FROZEN.json` at 2026-10-27T15:20:25Z, 69,729 bytes, `bea8d27a537198b3f3a840f9af2b2e4aba8c70d7982e512766c71bd1093375b6`, and then `run/FROZEN_PIN`, which holds that SHA-256.
+
+**Checked after it:**
+- both admissions: `devtools.frozen()` admits the tree, and `census.frozen()` admits it with the same `FROZEN.json`;
+- its fields against their sources: the terms' SHA-256; the manifest's, still equal to the pin; the go; the allowlist and the order, the seven rows of `census_lib.RUN_ORDER`; 34 targets, the 33 reference files and `SOURCES.json`, each on disk at its SHA-256; the inherited section, equal to M8.16.1's `FROZEN.json`; the census values, equal to `census_lib.frozen_values()`;
+- `record_environment.py --check`: no difference; the resume check: PASS; no `run/out/`.
+
+**The freeze block:** `python3 -I -B run/freeze_block.py` with MIT's commit `338b873` in full wrote `../freeze_block.md` by exclusive create, outside the folder (UB), 3,706 lines, `ea531de4fa91b3472d591b246336a0c986e13365c3105d477dad40407f40d710`. Checked against its sources: the terms and the go; `FROZEN.json`'s time; the solver commit; the manifest's 35 rows, each as the manifest lists it, and both pins; the environment, as recorded in full, with no difference read again; the 34 reference rows, each as `FROZEN.json` names it; what is inherited from M8.16.1; the 56 first-time readings; `FROZEN.json` in full, byte for byte; the order. It holds no home-folder or scratch path, no email-shaped string and no em-dash.
+
+No sealed point has been computed.
+
+**Next:** the units on the resume check, the freeze and the block, with the freeze block's pull request text; then, on Blake's word, its branch on the fork, and Blake opens the pull request; then the launch, on Blake's word, once it is open and DCO passes.
+
+## 23. 2026-10-27T15:26:12Z: the freeze packet, v1, for the units; the link checker's gap
+
+On Blake's word ("continue if/when gucci"): UA's review of the resume check before the launch, with the freeze and its block.
+- **The cover,** `../m8_17_freeze_packet_v1.md` `3d547e1db1f76b690b047fc4de27f8164f60a962bef06bf1b6c2408cace5bc29`: GO or HOLD on (a) the resume check, (b) the freeze, (c) the freeze block with its pull request's drafts.
+- **The zip,** `../m8_17_freeze_review_v1.zip` `aea71e986d77ca9993b2589f2ad1f3b16ce1dda4af0de7c8fd4923572630d1a4`, 120 entries: the cover; `resume_check/`; the block; the pull request's title, body and commit message; `FILING_PLAN.md`; `freeze_checks.py` with its output; and this folder, frozen, with this log through entry 22.
+- **The drafts:** `../m8_17_freeze_pr_title_v1.txt`; `../m8_17_freeze_pr_body_v1.md` `a50bddccbc99d0444fd14f7d6c0f9d54bf32ca3b68930493f07fc1229d7f7eaa`; `../filing_drafts/commit_freeze_block.txt` `70ccafc851b1777ff221d0525f62599552e18ad491fcfe542276819226661c18`. They follow #652's form, with the launch order (UB), the resume check by its SHA-256, arms and purpose (UA), and the reviewer line. `check_no_local.py --require-files` is clean on the block, and fails on an arm with a home path appended.
+- **The link checker,** mine and outside this folder, read no comment anchor on a pull request, so it reported the go's link as failing. The go itself was read through the API before the write. The checker now reads such anchors, and two arms fail as they must: a made-up comment, and a real one on the wrong pull request. Both of the body's links resolve, and #662's body still resolves 5 of 5.
+- **Checked from a fresh unzip:** `freeze_checks.py` and `test_resume_check.py` reproduce their outputs byte for byte, both admissions pass on the copy, and no cache is left. The packet holds no home-folder or scratch path but the checker's own pattern. Its email-shaped strings are the known ones: the MIT commit identity in entry 11 and in the plan, and the DCO and co-author addresses in the plan and the commit draft.
+
+**Next:** the units on the packet; then, each on Blake's word: the block's branch on the fork, Blake opens the pull request, and the launch once it is open and DCO passes.
+
+## 24. 2026-10-27T15:58:27Z: the units on the freeze packet; the resume check, v2, with UB's fix
+
+Blake relayed both units ("continue if/when gucci"). Each finding is read at source.
+- **UA:** FINAL GO on (a), (b) and (c), its reruns reproducing the packet's outputs and SHA-256s. One requirement, taken: since the check sits outside the pinned tree, its SHA-256 is checked against the reviewed one before the first launch and every relaunch. UA also asks for `--check` just before the launch, no concurrent run, and the freeze block's pull request readable before the first sealed solve.
+- **UB:** GO on (b), HOLD on (a) with one FIXABLE, and GO on (c) once (a) is in, with one NIT. UB corrects its own pre-flight line numbers to 292 to 293. Verified at source: the folder is the pre-flight one plus `FROZEN.json` and its pin, and `write_guard.build()`, rebuilt now, equals `FROZEN.json` in every field but `written`.
+  - **The FIXABLE, taken.** The `unreadable` check refused every JSON file under `run/out/` that does not parse, and so three states the inherited resume rules recover from: a job's file cut short inside `complete()`'s write before the log names it; that file moved to `interrupted/`; and `CENSUS.json` cut short before the log records it. Reproduced: v1 refuses all three. M8.16.1's largest row files run 6.8 to 9.1 MB, so the write's window is comparable to the gap the check closes. Now `unreadable` refuses only `RUNLOG.json` and a completed job's file, and any other file that does not parse is reported. The reported line is mine, worded for each case: `resume()` moves a partial at the top of `run/out/` aside, and its job is computed again; one under `interrupted/` was moved by an earlier resume; `CENSUS.json`, which `KEEP` names, is written again. Three arms are added for UB's states.
+  - **The NIT, taken:** the reference files' wording in the body and the commit message, the 33 copies with their MIT commit and blob, and `SOURCES.json` at its SHA-256, since its row in the block shows `this tree` and no blob.
+- **The check, v2:** `../resume_check/resume_check.py` `2c4762ef369f84218992e3ec30d29e78b6d07d798bc596edce41f6cfd5b9f87f`; `test_resume_check.py` `88538e8cc72ae2022e4e09b316ae9c884e1faa19550fc8b4f443ce94560e3b63`; `test_resume_check.out` `d9b9c6b8e30bc979af69c0e989a1d744e1a21659c105cf053429f48f04d79de4`. Its 22 arms pass and its 8 mutants are caught. v1's 33 output lines are unchanged and in order, with four added. Against v1's check the new arms fail, as they must. The output repeats byte for byte, and on this folder the check passes.
+- **The drafts:** `../m8_17_freeze_pr_body_v2.md` `83281e25f60521a1aff8bfc707aaa03eec3e183386bfb2230f16dcbb6ba5e490`, with the new SHA-256, 22 arms, "the log or a completed job's file that does not parse", the hash check before the check runs (UA), and UB's wording for the reference files; its two links resolve. `../filing_drafts/commit_freeze_block.txt` `f6390c3a4319dcb42732f5cb68a772e7f26237a3a1e920c7daee997b5b70d5dc`, in place, with UB's wording.
+- **`../FILING_PLAN.md` step 3,** in place: the launch command checks the reviewed check's SHA-256 first (UA); `--check` just before, and no concurrent run (UA); the console output, through `tee -a`, goes to `../census_console.log`, outside the folder, so no file of ours sits in `run/out/` before its log.
+
+**Next:** the units' short look at v2, since UA asks that the launch use reviewed bytes; then, each on Blake's word: the block's branch on the fork, Blake opens the pull request, and the launch.
+
+## 25. 2026-10-27T15:59:54Z: the freeze packet, v2, for the units' short look
+
+- **The cover,** `../m8_17_freeze_packet_v2.md` `92e56a8892ce746f1ee13b18fa9ddb73a3a2fd62a60efbd764f6d1a14435eb9c`: GO or HOLD on (a) the resume check, v2; (b) the launch command, with UA's hash check and the console log outside the folder; (c) the pull request's text, v2.
+- **The zip,** `../m8_17_freeze_review_v2.zip` `136b54a305dca8e8177844d41b268fc9b70d756e0d880f0a38d270b62692519e`, 127 entries: v1's contents with the check, the body, the commit message and the plan at v2; `diffs/`, each change from v1; and this folder, v1's but for this log, through entry 24.
+- **Checked from a fresh unzip:** `freeze_checks.py` reproduces v1's output byte for byte, `test_resume_check.py` reproduces its own, and no cache is left. The only home-folder pattern is `freeze_checks.py`'s own, and the email-shaped strings are the known ones.
+
+**Next:** the units' short look; then, each on Blake's word: the block's branch on the fork, Blake opens the pull request, and the launch.
+
+## 26. 2026-10-27T16:16:40Z: the units on the freeze packet, v2; the launch command, recorded with the reviewed check's SHA-256
+
+Blake relayed both units, then gave his word: "let's keep going up until the point you're ready for the full shebang". Each finding is read at source.
+- **UA:** GO on (a) and (c). UA accepts `2c4762ef369f84218992e3ec30d29e78b6d07d798bc596edce41f6cfd5b9f87f` as the final bytes of the check, which is the file's SHA-256 and entry 24's. HOLD on (b), one FIXABLE: without `pipefail`, a failing `census.py` piped through `tee` returns success.
+- **UB:** GO on (a), (b) and (c), with one FIXABLE and one NIT before the launch. The FIXABLE: in `A && B && C | tee` the pipe binds to `C` alone, so the console log would hold neither the hash check nor the resume check's verdict. The NIT: say where the console log goes in the record.
+- **Verified on stubs, in zsh,** the app's shell: the plan's form logged only the run, and without `pipefail` a stub `census.py` exiting 3 came back as 0. Both findings hold, and the two fixes combine.
+
+**The launch command,** from the folder, recorded before the launch with the reviewed check's SHA-256 (UA), for the first launch and every relaunch (UB):
+
+```
+set -o pipefail; caffeinate -i -m -s -w $$ & { printf '%s  %s\n' 2c4762ef369f84218992e3ec30d29e78b6d07d798bc596edce41f6cfd5b9f87f ../resume_check/resume_check.py | shasum -a 256 -c - && python3 -I -B ../resume_check/resume_check.py . && python3 -I -B -u run/census.py; } 2>&1 | tee -a ../census_console.log
+```
+
+**`../resume_check/test_launch_wrapper.py`** `8211659cc99026efe3d640b794a6fd46ab131bd564fed96e2be343ce3025b5a9`, with its output `test_launch_wrapper.out` `00296c908d33f9a28c4866a04c30e31dc8df990ce0a10855f840702d8061fae1`. It takes the command's text from `../FILING_PLAN.md` step 3 and runs it on stubs laid out as the run is:
+- the command exits 0 on a clean launch, with the hash check, the verdict and the run in the console log;
+- it exits 3 when `census.py` fails with 3, the traceback in the log;
+- it exits 1 on a wrong hash or a refusing resume check, and `census.py` never starts;
+- a relaunch appends to the log, and no `caffeinate` is left running;
+- the two replaced forms show what they lost, the ungrouped log and the lost status.
+
+The output repeats byte for byte, and an arm with the plan's `tee -a` changed to `tee` fails its first line.
+
+**`../FILING_PLAN.md` step 3,** in place: the command written out in full, with `RESUME_CHECK_SHA256` for the hash; and, after the run, `../census_console.log` copied byte for byte to `run/out/census_console.log` for the record, as M8.16.1 published its console output as `run/out/driver.log` at `292b158`, with its SHA-256 in this log, and nothing copied while a resume is still possible (UB).
+
+**Next,** on Blake's word: the freeze block's branch on the fork; then Blake opens the pull request; then the checks before the launch, and the launch on Blake's word.
+
+## 27. 2026-10-27T16:18:22Z: the freeze block's branch on the fork; the pull request's text on Blake's clipboard
+
+On Blake's word ("let's keep going up until the point you're ready for the full shebang"):
+- **Before branching,** with `upstream` and the fork fetched: OpenWave `main` at `71aa6227`, with the merge `a4c7a270` an ancestor and no M8 commit since it; no `research/m8_17/` upstream; the task doc on `main` at the terms' SHA-256; no pull request open; the branch's name free; the clone clean, in its local identity, the noreply address.
+- **The branch,** `m8-17-freeze-block-2026-10-27`, on `upstream/main` `71aa6227`, adds one file, `openwave/xperiments/m8_mit/research/m8_17/freeze_block.md`: the bench's `../freeze_block.md`, byte for byte.
+- **The checks,** on the branch: `check_no_local.py --require-files` is clean on the block, and `check_roadmaps.py` and `check_models_md.py` are clean.
+- **The commit,** `ba6834a877fa7dfbaf791df8656659d0c5b4789e`, parent `71aa6227e4e483cd474ff53c3cf10fd6546c7e9f`: 1 file, 3,706 insertions, with author and committer the clone's identity. Its message is `../filing_drafts/commit_freeze_block.txt`, byte for byte, with the DCO sign-off and the Co-Authored-By line.
+- **Pushed to the fork,** and read back through GitHub's API: the branch's head is the commit, its one file is the block, and the block equals the bench's, byte for byte.
+
+**The pull request's text:** the title in `../m8_17_freeze_pr_title_v1.txt`, and the body `../m8_17_freeze_pr_body_v2.md` `83281e25f60521a1aff8bfc707aaa03eec3e183386bfb2230f16dcbb6ba5e490`, on Blake's clipboard.
+
+**Next:** Blake opens the pull request; then, read back, the checks before the launch, and the launch on Blake's word.
+
+## 28. 2026-10-27T16:43:54Z: #673, the freeze block's pull request, opened by Blake; read back; the checks before the launch, clean
+
+Blake opened [#673](https://github.com/openwave-labs/openwave/pull/673) at 2026-10-27T16:41:23Z, with a reviewer line of Blake's choosing: "Reviewer may apply minor prose corrections at merge at their discretion. Please raise headings and anything data-sensitive in review." Read back through GitHub's API:
+- base `openwave-labs/openwave` `main` at `71aa6227`, and head `m8-17-freeze-block-2026-10-27` at `ba6834a877fa7dfbaf791df8656659d0c5b4789e`;
+- its title equals `../m8_17_freeze_pr_title_v1.txt`, and its body is `../m8_17_freeze_pr_body_v2.md` with that line in place of the long one; `../m8_17_freeze_pr_body_v3.md`, drafted with a line for a generated file, was not used;
+- one commit and one file, the block, equal at the pull request's head to the bench's, byte for byte; DCO passes; the maintainer's review is requested, with no review or comment yet.
+
+**The checks before the launch,** `../prelaunch_checks.py` `9afac6a9516b72cbfc0c704ad86f0e4b2c07642fac2a2cd8806aa8b0d7979e60`, run with 673, all clean: both admissions; the manifest and the freeze pin; `--check` with no difference; no `run/out/`; no census run in progress; no file newer than `run/FROZEN_PIN` but this log; the resume check at its reviewed SHA-256, and passing; mains power; and the pull request open, with one file, the block equal, and DCO passing. Read separately: no automatic install of updates, Low Power Mode off, and 306 GB free. Caffeine is off, and the command's `caffeinate` holds the machine awake. Neither OpenWave `main` nor MIT `main` has moved in M8 or in this folder.
+
+**Next:** the launch, on Blake's Go, with these checks read again just before it.
+
+## 29. 2026-10-27T19:31:28Z: #673 merged; the approval kept; the checks before the launch, clean; ready for the launch
+
+On Blake's word ("PR landed. Let's prepare for takeoff."), read through GitHub's API:
+- **The merge:** xrodz approved [#673](https://github.com/openwave-labs/openwave/pull/673) (review 5672718851) with no findings and no maintainer edits, and merged it at 2026-10-27T18:59:56Z as `c21d2f8c716f51b84428eba83c7cddd693075b9d`, on `main` at `71aa6227`, the branch needing no update. The merge changes nothing against the branch's commit, the block on OpenWave `main` equals the bench's byte for byte, and `main` is the merge itself.
+- **The approval:** the maintainer rebuilt the block with their own script from MIT's git objects at `338b873`, byte for byte, with each check armed. Its pins table equals ours: the block, the terms, the solver commit, the manifest pin, the freeze pin, `SOURCES.json`, and the resume check at `2c4762ef…`. It is kept verbatim, as the API's body with one trailing newline: `../xrodz_approval_673_5672718851.md` `1cee4fbcd1a699fdaedc4a76666db3f1e060092e7cec04b58e2308e557f91720`.
+- **Its two reading notes,** with no change asked:
+  1. The adjudication reads note 1 from the run's own environment readings, at its start and its end, in the record. `record_environment.py --check` runs just before the launch, in the checks below, and again after the run.
+  2. The adjudication will check the published `resume_check.py` against `2c4762ef…`, read it in full, and confirm that every launch and relaunch went through it. The console log records each launch's hash check and verdict, and it joins the record as `run/out/census_console.log`. The check and its arms are published with the record.
+- **The commitments it records:** the block is a frozen record that maintainers never edit; every launch and relaunch runs as `resume_check.py && census.py`, and the check and its arms are published with the record; and the adjudication accepted at #662 also checks the resume check.
+
+**The checks before the launch:** `../prelaunch_checks.py` `2b5061e9578f4d8df5a89ed580228cec1d1acf1c7b3f72a8116735bd774c65c3` now reads a merged pull request, and the block on `main` too. Run with 673, all its checks are clean: both admissions; the manifest and the freeze pin; `--check` with no difference; no `run/out/`; no census run in progress; no file newer than `run/FROZEN_PIN` but this log; the resume check at its reviewed SHA-256, and passing; mains power; #673 merged, with one file, the block equal at its head and on `main`; and DCO passing.
+
+**Ready for the launch.** On Blake's word, from this folder, as a background task, with entry 26's command. `../census_console.log` does not exist yet. The checks are read again just before the launch.
+
+## 30. 2026-10-27T19:51:26Z: the registered run, launched on Blake's word
+
+**The go:** Blake's own word, "launch.", after #673's merge (entry 29).
+
+**The checks before the launch,** read just before it: `../prelaunch_checks.py 673`, all clean, its output kept as `../prelaunch_checks_launch.out` `ba2bcef3d772cf26580714ba3a18680bfa8d341f4a8f8ef8bbbefd8af6e97db0`.
+
+**The command:** entry 26's, read from this log and run unchanged, from this folder, as a background task in the app's shell, zsh (task `b420rko3j`). Its output shows live in the app's background-task panel and goes, through `tee -a`, to `../census_console.log`.
+
+**The start, read back:**
+- the console log: the hash check `OK`; the resume check `PASS`, with `run/out/` not yet existing; and the run's first lines, "M8.17, the census run: 7 rows; outputs in run/out" and "T2/R4 (R4): 14 points";
+- `run/out/RUNLOG.json`: the manifest at the pin, `2deed9aa…`, no case completed, and one event, the run started at 2026-10-27T19:50:47Z, with the seven rows in their registered order;
+- `census.py` running as one process, with `caffeinate -i -m -s -w` on its shell.
+
+**Power:** mains, with the lid open. `caffeinate` holds idle, disk and system sleep for the shell's life.
+
+**Next:** the run's end or a stop, in about 15 to 16 hours; then `--check`, the console log copied into the record, and this log's entry.
+
+## 31. 2026-10-28T16:19:39Z: the registered run's end: complete, with no stop
+
+The background task ended with exit status 0, and the run wrote its own record at 2026-10-28T16:18:02Z: 73,635 s of compute, 20.5 hours from the start at 2026-10-27T19:50:47Z.
+- **The rows:** all seven, with every point accepted at every cutoff. The reproduction gate compared 63 points of M8.16.1's record, with no failure. The rows' times: T2/R4 4,650 s; T3/R4 5,271 s; T5/R2 3,205 s; T1/R4 6,043 s; T4/R4 6,759 s; T1/R5 9,912 s; T4/R5 10,150 s.
+- **The locator:** two brackets, each with its recomputed path reproduced (14, 12 points):
+  - `locate:T2/R4:16:22.627416998: index; located: True; 10605 s`;
+  - `locate:T4/R5:8:11.313708499: index; located: False; 17032 s`, its bisections at `N = 24` and 32 stopped by K1.
+- **The record:** `run/out/CENSUS.json` `d010db400a6bdef2ad64ce1bfd0e085995c49e62ba1982325ff6234f8d233aac` and the transcript `census.out` `50fac723ceaa77c778ba2a3b20011559d87ac51259b6b939f776cf699f883352`, each at the SHA-256 the log records. There is no stop, and of the nine rows none is unclassified. The run's printed row outcomes, as the transcript holds them:
+  - T1/R4: Not settled by this run; open: 5
+  - T4/R4: Not settled by this run; open: 6
+  - T1/R5: Not settled by this run; open: 1
+  - T4/R5: Not settled by this run; open: 1
+  - T2/R4: Each change of type located
+  - T2/R5: Elliptic throughout
+  - T3/R4: Elliptic throughout
+  - T3/R5: Each change of type located
+  - T5/R2: Not settled by this run; open: 3
+- **Custody:** the 9 completed jobs' files are at their logged SHA-256, and the manifest still equals the pin.
+- **After the run:** `record_environment.py --check` finds no difference (`../environment_after_run.out` `5e12e201d9fa970e9ccc7db1ad32778c5f50d4a6014ba45bf6e42a0be7554390`). The resume check now refuses a relaunch, since the run has completed. With the run ended, `../census_console.log` is copied byte for byte to `run/out/census_console.log`, `41f13f667bffdf05cf20327ee2430417775d1224607df5ede8fc084061761476` (UB).
+
+Against the terms' estimate, about 15 to 16 hours with each further bracket adding hours: the rows took 12.8 hours against about 11.5, the R5 rows the most, and the two brackets 2.9 and 4.7 hours.
+
+**Next,** each on Blake's word: the run's record and method note, drafted for the units; the record on MIT, with the resume check and its arms; and the maintainers' adjudication.
+
+## 32. 2026-10-28T16:46:31Z: the record and the method note, drafted for the units
+
+On Blake's word ("Next step."), after the run's end (entry 31). Nothing is committed or filed.
+- **Post-run files placed in this folder,** each byte for byte the bench's: `prelaunch_checks_2026-10-27.txt`, the checks read just before the launch; `environment_postrun_2026-10-28.txt`, the environment read after the run; and `launch/`, holding the resume check `resume_check.py`, its arms and their output, and `prelaunch_checks.py`, as they ran from the bench.
+- **`RECORD.md`** `8aba9b41eca5e5b789ad875736859bffef766f8c70d800d98a1048bf5c05e5f5`, 7,856 words, built by `tools/build_record.py` `93fad02e891ba006eab3ccfe15886620afe2e0d348a015d58f73ef843b21ece2`. It gives the custody; the reproduction gate; every point of the nine windows, with its classification, its instrument and this instrument's reading; every bracket; the row outcomes, with S4 stated separately; what is new; and reproduction.
+  - The builder recomputes every row's record with `census_lib.assemble` on the run's files, and refuses unless `run/out/CENSUS.json` equals it.
+  - It reads #662's merge, #673's opening and merge, the launch command and the launch from entries 19 and 26 to 30. It checks the console log against the transcript, the readings before and after the run, and the resume check's bytes.
+  - `--check` reproduces the record.
+- **The builder's arms,** `../record_arms/arms.py`, on a copy of this folder. Each of these makes it refuse: a row file changed; the resume check changed; a fact removed from this log; `CENSUS.json` changed, with its logged hash rewritten to match; the console log's hash line changed; a difference in the post-run environment; and the freeze pin changed. `--check` also catches an edited record (`../record_arms/arms.out` `8b45fb098cb7957ed8d9b0f02e68748adc5e06f11b34bd08b665f9074066c432`).
+- **The method note,** `../m8_17_note/m8_17_method_note.md` `6466b4792bb4b9a577a4f8684497d5811e64e328ddfc16791efce568751ea605`, 2,517 words, for OpenWave's `research/findings/`. `../m8_17_note/build_method_note.py` `943019658f656078e376c557ec61ca79c19a79def8d8ea4792fd60c644b066e9` builds it from `m8_17_method_note_src.md` `c4fd07f90da9a55bfcf425b19b73a20c75d605044f2193e747f848c8e4e2e818`:
+  - every value comes from the run's files;
+  - its 36 code links are pinned to MIT `338b873`, each on the definition it names;
+  - every OpenWave link it carries is present at `upstream/main`.
+
+  The record's commit stays marked until the record lands, and its § 8, the audit record, waits for the review.
+- **`REPRODUCE.md`,** revised for the record (`../REPRODUCE_postrun.diff`, against `338b873`). It adds the run, the record, the run's files, `launch/` and the post-run files; test 2 in a copy without the freeze's two files (UB's queued note); how to rerun the run and check the record; and the run's time.
+- **The tests,** from copies of this folder as it now stands, frozen. Tests 1, 3, 4 and 5 reproduce their outputs byte for byte, and test 2 does in a copy without `run/FROZEN.json` and `run/FROZEN_PIN`. In the frozen copy, test 2's claim 6 fails, as the revised `REPRODUCE.md` says. The resume check's arms, from a copy of `launch/`, reproduce theirs.
+- **The packet** for the units: `../m8_17_record_packet_v1.md` and `../m8_17_record_review_v1.zip`, which holds this log through this entry. Their hashes are in the program log.
+
+**Next:** the units' review; then, each on Blake's word: the record on MIT, the method note on OpenWave, and the maintainers' adjudication.
+
+## 33. 2026-10-28T17:12:03Z: the units on the record packet; the record, v2
+
+Blake relayed both units and gave the word: "yes, one quick re-review b4 we post". Each finding is read at source.
+- **UA:** GO on the run's results and their reading, with every count, both locator records and the 25 Unresolved readings rechecked. HOLD on the filing for one shared issue: `SHA256SUMS` is the filed inventory, 85 lines against the folder's 109 files, failing on this log and `REPRODUCE.md`, with 23 files unlisted.
+  - UA's procedure, taken: regenerate it last, at the record's commit. Then check that every file but itself appears once; that the check passes; that the manifest equals the pin; that both admissions pass and the run log's hashes are unchanged; and that the pre-run inventory stays at MIT `338b873`.
+  - UA's NIT on the note's § 1.1, that T2/R4's locator rebuilt its upper end at `ε = 32`, does not hold at source. T2/R4's bracket was (16, 22.63), and its recomputed path ran 14 points, to 22.63. § 1.1 now says so.
+- **UB:** GO on (a) to (d), with two FIXABLEs and two NITs, each taken:
+  - (a): the record names the parts of K1 that failed at T4/R5's stopped midpoint, as the run's records state them, with the midpoint before, and the note's § 5.2 carries the same. Verified at source: at `N = 24`, the separation and `V₀`'s expectation, with `outside_min` 3.69 and 3.70×10⁻⁶ against `margin` 2.03×10⁻⁶ and leaks of 9.4 and 8.2×10⁻⁶; at 32, the separation alone, 6.12×10⁻⁶ against 2.72×10⁻⁶; at the midpoint before, `outside_min` 2.48 and 2.53×10⁻⁵.
+  - (b): the note's § 7 carries the calibration's range. Verified: K1 held at every grid point of the computed paths but T5/R2's 132, at `N = 16`.
+  - (d): the record names `SHA256SUMS` as regenerated at the record's commit, with the pre-run inventory at `338b873`. `launch/` gains `test_launch_wrapper.py` and its output, at the SHA-256 entry 26 records, with the caveat that its first check reads the bench's `FILING_PLAN.md`.
+  - **A correction to entry 32:** the note's "36 code links" are 33 code links and 3 links to the record. The builder now counts them apart.
+  - UB's reading of T4/R5's stop, an eigenvalue entering the zero cluster's gray zone, is INFERRED and left to the adjudication. T4/R5's `k_i⁻` change at 32 is not a type bracket, and the terms ask nothing of it.
+- **Rebuilt:**
+  - `RECORD.md` `b6459894e3b5b52e3ce41745fec3dbb7a9c17fdb67e100c2f715bfb265cd784a`, 8,031 words, by `tools/build_record.py` `fcee4a2d2b8a927509e867f35479ca8d66fccc32ff8745f3e0dfedce9ecd1c30`. `--check` reproduces it.
+  - The note, `../m8_17_note/m8_17_method_note.md` `1ad648dd8943a006645d59a89240df4f0e581b226885c67dc450a253a417c81e`, 2,676 words, from its source `addc0ed17667f2f1d280f4c38f767b455564c7b27495434275880c2c2e2a48f4` by its builder `63adf746d266b6682b674cfc3730d65b257b87000061ff0b29d816a986a12df9`, with its links checked.
+- **`REPRODUCE.md`** `12ff465a5dd78b3b7bb273c5d5e04bc8e2cb39d9fe206d47f752396fca4b7ea0`: `SHA256SUMS`'s regeneration, and the wrapper test in `launch/`.
+- **`SHA256SUMS`** is regenerated after this entry, for the units' look, and again last, at the record's commit. The program log records each.
+
+**Next:** the units' quick re-review; then, on Blake's word, the record's commit on MIT, the method note's pull request on OpenWave, and the maintainers' adjudication.
+
+## 34. 2026-10-28T17:20:32Z: the units on the record, v2: GO; the record's publication
+
+Blake relayed both units and gave the word: "commit if/when good". Each finding is read at source.
+- **UA:** GO, the v1 hold closed. UA reran the record's check, `shasum -c` on all 110 files, the five checks, the run log's 11 hashes and the pre-run inventory at `338b873`. It confirmed the K1 parts, the calibration statement and the correction to its § 1.1 NIT, and applying `build_record.py`'s diff to v1 gave it v2's bytes.
+- **UB:** GO, with one procedural point, taken: after this entry, `build_record.py --check` runs alongside `publish_checks.py --write`, since the builder reads its facts from this log.
+- **The publication,** on MIT, in this folder, as § DEFINITION OF DONE states: the record, `REPRODUCE.md` and the run's outputs, with the post-run files, and this log through this entry. `SHA256SUMS` is regenerated last, after this entry, with UA's five checks. This entry cannot name its own commit, so the commit and its verification are recorded on the bench and in the program log.
+
+**Next:** the push, on Blake's word; then the method note's pull request on OpenWave, with the record's commit filled in; then the adjudication.

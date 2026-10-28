@@ -1,0 +1,22 @@
+ok    both admissions: devtools.frozen() and census.frozen()
+ok    the manifest equals the pin
+ok    run/FROZEN_PIN is the SHA-256 of run/FROZEN.json
+ok    record_environment.py --check: no difference
+ok    run/out/ does not exist: this is the first launch
+ok    no census run in progress
+ok    no file in the folder newer than run/FROZEN_PIN but DEVLOG.md: DEVLOG.md
+ok    the resume check at its reviewed SHA-256, 2c4762ef
+ok    the resume check passes on the folder
+ok    on mains power: Now drawing from 'AC Power'
+info  Caffeine: no assertion seen
+info  pmset: disksleep            10; sleep                1 (sleep prevented by powerd, Claude); displaysleep         20
+info  software update: Automatic checking for updates is turned on
+info  free disk space: 314 GB
+ok    #673 is merged, as c21d2f8c, against openwave-labs/openwave main, head m8-17-freeze-block-2026-10-27 at ba6834a8
+ok    #673 changes one file, the block
+ok    the block at the pull request's head equals the bench's, byte for byte
+ok    the block on OpenWave main equals the bench's, byte for byte
+ok    DCO passes on ba6834a8
+the launch command, from the folder, as DEVLOG.md entry 26 records it:
+      set -o pipefail; caffeinate -i -m -s -w $$ & { printf '%s  %s\n' 2c4762ef369f84218992e3ec30d29e78b6d07d798bc596edce41f6cfd5b9f87f ../resume_check/resume_check.py | shasum -a 256 -c - && python3 -I -B ../resume_check/resume_check.py . && python3 -I -B -u run/census.py; } 2>&1 | tee -a ../census_console.log
+0 failed

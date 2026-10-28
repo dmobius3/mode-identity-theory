@@ -1,0 +1,37 @@
+arm 01, run/out/ absent, a first launch: PASS; the files unchanged: True
+arm 02, run/out/ empty, a first launch: PASS; the files unchanged: True
+arm 03, a clean resume, with a moved partial: PASS; the files unchanged: True
+arm 04, a locator job's stop saved, the log's not (UA 1): REFUSED by stop field; the files unchanged: True
+arm 05, STOP.json written, the log's stop not (UA 2): REFUSED by STOP.json, stop field; the files unchanged: True
+arm 06, STOP.json alone: REFUSED by STOP.json; the files unchanged: True
+arm 07, a stopped run, the control: REFUSED by STOP.json, log stop, stop field; the files unchanged: True
+arm 08, the log's stop alone: REFUSED by log stop; the files unchanged: True
+arm 09, STOP.json moved to interrupted/ (UB): REFUSED by STOP.json, stop field; the files unchanged: True
+arm 10, STOP.json moved to interrupted/, alone: REFUSED by STOP.json; the files unchanged: True
+arm 11, a locator job's stop written, not yet logged: REFUSED by stop field; the files unchanged: True
+arm 12, a row's failed gate saved, the log's stop not: REFUSED by failed gate; the files unchanged: True
+arm 13, a moved row's failed gate: REFUSED by failed gate; the files unchanged: True
+arm 14, a completed job's file missing: REFUSED by completed file; the files unchanged: True
+arm 15, a completed job's file altered: REFUSED by completed file; the files unchanged: True
+arm 16, a completed job's file truncated: REFUSED by completed file, unreadable; the files unchanged: True
+arm 17, RUNLOG.json truncated: REFUSED by unreadable; the files unchanged: True
+arm 18, files but no RUNLOG.json: REFUSED by no log; the files unchanged: True
+arm 19, the run complete: REFUSED by run complete; the files unchanged: True
+arm 20, a job's file truncated, not yet logged (UB): PASS; the files unchanged: True
+arm 21, that file, moved to interrupted/ (UB): PASS; the files unchanged: True
+arm 22, CENSUS.json truncated, the log's record not saved (UB): PASS; the files unchanged: True
+mutant without 'log stop': caught by 1 arm
+mutant without 'run complete': caught by 1 arm
+mutant without 'STOP.json': caught by 2 arms
+mutant without 'stop field': caught by 2 arms
+mutant without 'failed gate': caught by 2 arms
+mutant without 'completed file': caught by 2 arms
+mutant without 'no log': caught by 1 arm
+mutant without 'unreadable': caught by 1 arm
+the command line, run/out/ absent, a first launch: exit 0
+the command line, a clean resume, with a moved partial: exit 0
+the command line, a locator job's stop saved, the log's not (UA 1): exit 1
+the command line, the run complete: exit 1
+the command line, a job's file truncated, not yet logged (UB): exit 0
+the command line, no folder: refused with its usage
+0 failed

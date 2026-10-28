@@ -1,0 +1,63 @@
+../resume_check/resume_check.py: OK
+run/out/ does not exist: a first launch
+resume check: PASS
+M8.17, the census run: 7 rows; outputs in run/out
+T2/R4 (R4): 14 points
+   T2/R4 N = 16, m = 50: seed ok; 14 of 14 points accepted; 32 s
+   T2/R4 N = 24, m = 138: seed ok; 14 of 14 points accepted; 337 s
+   T2/R4 N = 32, m = 316: seed ok; 14 of 14 points accepted; 4281 s
+   T2/R4: 4650 s; reproduction: 14 points compared, 0 failed
+T3/R4 (R4): 15 points
+   T3/R4 N = 16, m = 50: seed ok; 15 of 15 points accepted; 38 s
+   T3/R4 N = 24, m = 138: seed ok; 15 of 15 points accepted; 370 s
+   T3/R4 N = 32, m = 316: seed ok; 15 of 15 points accepted; 4863 s
+   T3/R4: 5271 s; reproduction: 15 points compared, 0 failed
+T5/R2 (R2): 20 points
+   T5/R2 N = 16, m = 22: seed ok; 20 of 20 points accepted; 19 s
+   T5/R2 N = 24, m = 84: seed ok; 20 of 20 points accepted; 248 s
+   T5/R2 N = 32, m = 200: seed ok; 20 of 20 points accepted; 2937 s
+   T5/R2: 3205 s; reproduction: 18 points compared, 0 failed
+T1/R4 (R4): 18 points
+   T1/R4 N = 16, m = 50: seed ok; 18 of 18 points accepted; 46 s
+   T1/R4 N = 24, m = 138: seed ok; 18 of 18 points accepted; 439 s
+   T1/R4 N = 32, m = 316: seed ok; 18 of 18 points accepted; 5557 s
+   T1/R4: 6043 s; reproduction: 4 points compared, 0 failed
+T4/R4 (R4): 18 points
+   T4/R4 N = 16, m = 50: seed ok; 18 of 18 points accepted; 48 s
+   T4/R4 N = 24, m = 138: seed ok; 18 of 18 points accepted; 492 s
+   T4/R4 N = 32, m = 316: seed ok; 18 of 18 points accepted; 6218 s
+   T4/R4: 6759 s; reproduction: 4 points compared, 0 failed
+T1/R5 (R5): 15 points
+   T1/R5 N = 16, m = 61: seed ok; 15 of 15 points accepted; 57 s
+   T1/R5 N = 24, m = 193: seed ok; 15 of 15 points accepted; 1200 s
+   T1/R5 N = 32, m = 433: seed ok; 15 of 15 points accepted; 8656 s
+   T1/R5: 9912 s; reproduction: 4 points compared, 0 failed
+T4/R5 (R5): 15 points
+   T4/R5 N = 16, m = 61: seed ok; 15 of 15 points accepted; 57 s
+   T4/R5 N = 24, m = 193: seed ok; 15 of 15 points accepted; 1273 s
+   T4/R5 N = 32, m = 433: seed ok; 15 of 15 points accepted; 8819 s
+   T4/R5: 10150 s; reproduction: 4 points compared, 0 failed
+locate:T2/R4:16:22.627416998:
+   (16, 22.6274): the recomputed path, 14 points, 0 not reproduced
+   N = 16: 10 midpoints, interval [16.194162607362387, 16.200634694274466], complete
+   N = 24: 10 midpoints, interval [16.271827650307344, 16.278299737219424], complete
+   N = 32: 10 midpoints, interval [16.271827650307344, 16.278299737219424], complete
+   the lower guard at 16.1091, from 16: Elliptic
+   the upper guard at 16.4411, from 22.6274: Hyperbolic
+   locate:T2/R4:16:22.627416998: index; located: True; 10605 s
+locate:T4/R5:8:11.313708499:
+   (8, 11.3137): the recomputed path, 12 points, 0 not reproduced
+   N = 16: 10 midpoints, interval [8.851079428938467, 8.854315472394507], complete
+   N = 24: 10 midpoints, interval [8.718401647240835, 8.724873734152915], stopped: K1 fails
+   N = 32: 10 midpoints, interval [8.718401647240835, 8.724873734152915], stopped: K1 fails
+   locate:T4/R5:8:11.313708499: index; located: False; 17032 s
+T1/R4: Not settled by this run; open: 5
+T4/R4: Not settled by this run; open: 6
+T1/R5: Not settled by this run; open: 1
+T4/R5: Not settled by this run; open: 1
+T2/R4: Each change of type located
+T2/R5: Elliptic throughout
+T3/R4: Elliptic throughout
+T3/R5: Each change of type located
+T5/R2: Not settled by this run; open: 3
+73635 s
