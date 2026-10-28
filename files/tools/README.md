@@ -56,7 +56,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 | [↗](/files/cosmos/files/hubble-tension.md) Hubble tension | Λ Stationary, H₀ Local: A Phase-Lattice Correspondence for the Hubble Tension | 2026 Jan | [zenodo.18363693](https://doi.org/10.5281/zenodo.18363693) | [4.5/5](https://theoryofeverything.ai/review-profile/paper/a48e57e3-a79d-4a7d-b460-23d02699f7aa) |  |
 | [↗](/files/cosmos/files/cmb-anomalies.md) CMB anomalies | Λ Constant, Axis Aligned: CMB Anomalies from Topology | 2025 Dec | [zenodo.18092169](https://doi.org/10.5281/zenodo.18092169) | [4.2/5](https://theoryofeverything.ai/review-profile/paper/d6be7496-415a-4c11-9fcf-0a307129e13f) |  |
 | [↗](/files/cosmos/files/early-galaxies.md) Early galaxies | An Epoch-dependent Acceleration Scale from Bounded Topology: Predictions for High-redshift Galactic Dynamics | 2026 Jun | [SSRN 6933958](https://ssrn.com/abstract=6933958) | [4.0/5](https://theoryofeverything.ai/review-profile/paper/c43ec577-1f38-4f64-a302-3a8569732290) |  |
-| [↗](/files/cosmos/files/black-hole.md) Black holes |  |  |  |  |  |
+| [↗](/files/cosmos/files/black-hole.md) Black holes |  | 2026 April |  | [4.2/5](https://theoryofeverything.ai/review-profile/paper/31746fa6-6dcb-402f-b1ae-93720a98b8aa) |  |
 | [↗](/files/cosmos/files/euclid-dr1.md) Euclid DR1 | Euclid DR1: A Pre-Registered Contender Showdown | 2026 Jun | [zenodo.20563047](https://doi.org/10.5281/zenodo.20563047) |  |  |
 
 ### 🌈 Spectrum
