@@ -1,0 +1,17 @@
+group orders: 120 120
+trace of the order-10 generator: Q 1.618033989, Q' -0.618033989
+a =  1: dimension of degree-a maps carrying Q to Q' = 0
+a =  2: dimension of degree-a maps carrying Q to Q' = 0
+a =  3: dimension of degree-a maps carrying Q to Q' = 0
+a =  4: dimension of degree-a maps carrying Q to Q' = 0
+a =  5: dimension of degree-a maps carrying Q to Q' = 0
+a =  6: dimension of degree-a maps carrying Q to Q' = 0
+a =  7: dimension of degree-a maps carrying Q to Q' = 1
+a =  8: dimension of degree-a maps carrying Q to Q' = 0
+a =  9: dimension of degree-a maps carrying Q to Q' = 0
+a = 10: dimension of degree-a maps carrying Q to Q' = 0
+a = 11: dimension of degree-a maps carrying Q to Q' = 0
+a = 7: equivariance residual over all 120 elements 5.8e-15
+a = 7: t^7 coefficients |F1| 3.4e-17, |F2| 8.5e-02 (a zero at [1:0] for a component whose coefficient is ~0)
+a = 7: finite roots per component 6, 7; closest finite root of F1 to one of F2 0.589
+a = 7: Sylvester matrix, smallest over largest singular value 3.012e-02

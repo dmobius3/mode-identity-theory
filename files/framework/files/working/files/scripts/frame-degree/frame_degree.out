@@ -1,0 +1,11 @@
+degree of the radial map, faces oriented outward in the convex frame
+  direction [1, 2, 4]: convex frame +1, twin frame +7
+  direction [-3, 5, 2]: convex frame +1, twin frame +7
+  direction [7, -2, 3]: convex frame +1, twin frame +7
+twin frame realizes the same 60 port permutations by rotations: max residual 6.7e-16
+characters (phi = 1.618033989, 1 - phi = -0.618033989)
+  identity            1 elements  convex frame [3.0]  twin frame [3.0]
+  order 2            15 elements  convex frame [-1.0]  twin frame [-1.0]
+  order 3            20 elements  convex frame [0.0]  twin frame [0.0]
+  order 5, one-step  12 elements  convex frame [1.618033989]  twin frame [-0.618033989]
+  order 5, two-step  12 elements  convex frame [-0.618033989]  twin frame [1.618033989]

@@ -1,0 +1,27 @@
+triangulation: 81920 faces; identity map degree +1.000000
+twin (rho -> rho'): 6-dimensional space of equivariant maps of degree <= 7
+  degree  -17  min|P|/max|P| 0.083  odd, +-2 mod 5, prime to 3: True
+  degree  -17  min|P|/max|P| 0.481  odd, +-2 mod 5, prime to 3: True
+  degree   +7  min|P|/max|P| 0.576  odd, +-2 mod 5, prime to 3: True
+  degree   -7  min|P|/max|P| 0.035  odd, +-2 mod 5, prime to 3: True
+  degree  -17  min|P|/max|P| 0.120  odd, +-2 mod 5, prime to 3: True
+  degree   +7  min|P|/max|P| 0.552  odd, +-2 mod 5, prime to 3: True
+  degree  -17  min|P|/max|P| 0.060  odd, +-2 mod 5, prime to 3: True
+  degree   -7  min|P|/max|P| 0.730  odd, +-2 mod 5, prime to 3: True
+  degree   -7  min|P|/max|P| 0.285  odd, +-2 mod 5, prime to 3: True
+  degree  +17  min|P|/max|P| 0.070  odd, +-2 mod 5, prime to 3: True
+  degree   -7  min|P|/max|P| 0.097  odd, +-2 mod 5, prime to 3: True
+  degree  +13  min|P|/max|P| 0.008  odd, +-2 mod 5, prime to 3: True
+  drawn 12, kept 12 (dropped maps nearly vanishing on the sphere)
+control (rho -> rho): 8-dimensional space of equivariant maps of degree <= 7
+  degree   -1  min|P|/max|P| 0.851  odd, +-1 mod 5, prime to 3: True
+  degree   +1  min|P|/max|P| 0.973  odd, +-1 mod 5, prime to 3: True
+  degree   -1  min|P|/max|P| 0.940  odd, +-1 mod 5, prime to 3: True
+  degree   -1  min|P|/max|P| 0.966  odd, +-1 mod 5, prime to 3: True
+  degree   -1  min|P|/max|P| 0.845  odd, +-1 mod 5, prime to 3: True
+  degree   -1  min|P|/max|P| 0.840  odd, +-1 mod 5, prime to 3: True
+  degree   -1  min|P|/max|P| 0.563  odd, +-1 mod 5, prime to 3: True
+  degree   +1  min|P|/max|P| 0.178  odd, +-1 mod 5, prime to 3: True
+  drawn 8, kept 8 (dropped maps nearly vanishing on the sphere)
+twin congruence rejects every control degree: True
+control congruence rejects every twin degree: True

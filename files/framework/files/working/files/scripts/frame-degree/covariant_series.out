@@ -1,0 +1,6 @@
+Q  in Sym^a Q, first degrees: [1, 11, 13, 19, 21, 23, 25, 29]
+Q' in Sym^a Q, first degrees: [7, 13, 17, 19, 23, 25, 27, 29]
+a < 95: multiplicity of Q  equals series for generators 1, 11, 19, 29: True
+a < 95: multiplicity of Q' equals series for generators 7, 13, 17, 23: True
+residues mod 30 that are odd, +-1 mod 5 and prime to 3: [1, 11, 19, 29]
+residues mod 30 that are odd, +-2 mod 5 and prime to 3: [7, 13, 17, 23]
