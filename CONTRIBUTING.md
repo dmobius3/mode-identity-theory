@@ -3,7 +3,7 @@
 
 ---
 
-# 🧩 Contribute
+# 🧩 Contributing
 
 Mode Identity Theory has open problems you can work on without accepting its physical interpretation. Most are ordinary problems in spectral geometry, geometric analysis or computation; one is a data analysis waiting on Euclid. Each entry states what is already proved, what is open, what would count as closing it, and where the source lives.
 
