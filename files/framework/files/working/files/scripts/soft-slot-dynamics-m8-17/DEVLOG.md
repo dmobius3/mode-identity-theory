@@ -714,3 +714,126 @@ Blake relayed both units and gave the word: "commit if/when good". Each finding 
 - **The publication,** on MIT, in this folder, as § DEFINITION OF DONE states: the record, `REPRODUCE.md` and the run's outputs, with the post-run files, and this log through this entry. `SHA256SUMS` is regenerated last, after this entry, with UA's five checks. This entry cannot name its own commit, so the commit and its verification are recorded on the bench and in the program log.
 
 **Next:** the push, on Blake's word; then the method note's pull request on OpenWave, with the record's commit filled in; then the adjudication.
+
+## 35. 2026-10-28T17:22:24Z: the record's commit on MIT, local, not pushed (bench-only)
+
+On Blake's word ("commit if/when good"), after entry 34:
+- **Before the commit:** `tools/build_record.py --check` reproduced the record after entry 34, as UB asked. `../publish_checks.py --write` then regenerated `SHA256SUMS` last, `81be8d2996183013902011fa598cb379697190a1c7617d42e4ad28e50618f374`, and its five checks passed. The scan found no home-folder or scratch path but the record builder's own pattern, and no email-shaped string but entry 11's known one.
+- **The worktree** fast-forwarded to MIT `origin/main` at `9651a3f5`, the branch having been behind only: none of the commits since `338b873` touches this folder or the census page, and none touches a protected path. The app's sync tool refused, since no git identity is configured. This folder was copied in, equal to the bench byte for byte: 25 new files and 3 changed.
+- **The commit,** `7b66f8a0e207888042e6bb4a9ab636f946cb2a81`, parent `9651a3f523b375a5c0d024bdf7c4c440f628d4ca`: 28 files, all in this folder, in the MIT commit identity that `338b873` carries. Its message is `../commit_record.txt`.
+- **Verified from its own tree:** the record reproduces, `shasum -a 256 -c SHA256SUMS` passes on all 110 files, the regenerated inventory equals `SHA256SUMS`, and the folder equals the bench's file for file.
+
+This entry, being after the commit, is on the bench only.
+
+**Next:** the push, on Blake's word; then the method note, built with the record's commit and its audit record, on an OpenWave branch for Blake to open; then the adjudication.
+
+## 36. 2026-10-28T17:29:36Z: the record pushed to MIT `main` (bench-only)
+
+On Blake's word ("push"): the commit went to MIT `main` as a fast-forward, `9651a3f5..7b66f8a0`. Read back through GitHub's API:
+- `main` is `7b66f8a0e207888042e6bb4a9ab636f946cb2a81`;
+- `RECORD.md`, `SHA256SUMS`, `REPRODUCE.md`, this log, `run/out/CENSUS.json`, `run/out/RUNLOG.json`, `run/FROZEN.json`, `launch/resume_check.py` and the largest output, T4/R5's locator file, each equal the commit's, byte for byte;
+- the folder holds 111 files, and the published log is this one through entry 34.
+
+**Next:** the method note, built with the record's commit and its audit record, on an OpenWave branch for Blake to open, on Blake's word; then the adjudication.
+
+## 37. 2026-10-28T17:32:40Z: the method note, rebuilt with the record's commit and its audit record (bench-only)
+
+On Blake's word ("rebuild the note"):
+- **The audit record,** `../m8_17_note/audit.md` `e1839982179ffcaf8869145bd5d57cb9e896e0731de517d3735eb99dbadee6d3`: the two rounds of checks before filing, what they led to and that no reading changed, with no review unit named.
+- **The note,** `../m8_17_note/m8_17_method_note.md` `d4f7378a28c17c4eaa7364d2e7caedd331862a0f10d58a983883f64fe7bbb352`, 2,853 words, rebuilt with the record's commit, MIT `7b66f8a0`, and that audit record. From v2 only the three record links and § 8 change. The builder checked the 33 code links and the 3 record links against MIT's objects, and every OpenWave link at `upstream/main`.
+- **Read on GitHub:** the record links resolve at `7b66f8a0`, `RECORD.md` as a file and the folder as a tree. `check_no_local.py --require-files` is clean on the note.
+
+**Next:** the note's OpenWave branch, with the roadmap's BACKLOG row as #653 carried M8.16.1's, pushed to the fork for Blake to open, on Blake's word; then the adjudication.
+
+## 38. 2026-10-28T17:41:00Z: the method note's OpenWave branch on the fork; the pull request's text on Blake's clipboard (bench-only)
+
+On Blake's word ("continue if/when good"), with both units' GO on the rebuilt note:
+- **UA:** GO to file the note unchanged, with one optional NIT, taken, since it gives the terms' own rule: § 1.3 now says `N = 16` "is bisected where its ends' `n(L)` is resolved and different, and reported otherwise". The note, rebuilt, `c8531020f8e933fb70c08f9cf69b5503f482ea75831f2d889fe66a35c0cd82f0`, differs from entry 37's in that sentence alone. Its links were checked again.
+- **UB:** GO. The record's commit, its tree, its links and § 8 each hold, and nothing else in the note changed from v2.
+- **Before branching:** OpenWave `main` at `d7ac4267`, with no M8 commit since #673's merge; no `findings/m8_17_method_note.md` upstream; no pull request open; the branch's name free.
+- **The branch,** `m8-17-run-record-2026-10-28`, on `upstream/main` `d7ac4267`, as #653 carried M8.16.1's:
+  - `findings/m8_17_method_note.md`, new: the note, byte for byte;
+  - `m8_roadmap.md`: M8.17's BACKLOG row's gate, "the maintainers' adjudication of the run", linking the note.
+- **The checks:** `check_roadmaps.py`, `check_models_md.py` and `check_no_local.py --require-files` on both files are clean.
+- **The commit,** `e5a13682c2ec3ca60be38c06f0e8f281114071f7`, signed off for the DCO in the clone's noreply identity, with the Co-Authored-By line; its message is `../filing_drafts/commit_note.txt`. Pushed to the fork, the branch's head is the commit, and the note and the roadmap read back byte for byte.
+- **The pull request's text:** the title in `../m8_17_note_pr_title_v1.txt`, and the body, `../m8_17_note_pr_body_v1.md` `428c2c446d32659e92dc8f17cc62f15fd6aec8621eaef619435dcab0ad851fa3`, in #653's form, with Blake's reviewer line. Its four links resolve. The link checker, outside this folder, now reads folder links, with two arms that fail as they must. The body is on Blake's clipboard.
+
+**Next:** Blake opens the pull request; then the maintainers' adjudication; after it, the roadmap's Done row and the census page's dated note.
+
+## 39. 2026-10-29T00:52:23Z: #676 merged; the adjudication: M8.17 stands as recorded (bench-only)
+
+Blake: "PR merged". Read through GitHub's API:
+- **The merge:** xrodz approved [#676](https://github.com/openwave-labs/openwave/pull/676) (review 5691493287) and merged it at 2026-10-29T00:40:12Z as `e4957d194ea8dc875b587a140418750b50eee3be`, on `main` at `d7ac4267`. The branch needed no update, and there was no maintainer edit: the note on OpenWave `main` is the bench's byte for byte, the roadmap is the branch's, and no M8 commit has followed.
+- **The adjudication:** "the M8.17 census run stands as recorded".
+  - The maintainer re-derived every classification, both brackets and the nine row outcomes from the run's published files, with their own scripts and against the terms. They agree with the record at every point, and there are no blocking findings.
+  - It licenses the nine row outcomes. It does not license a rerun, a type at any unclassified point, the location's identification with the genuine crossing, any S5 or S6 ruling, or a `MODELS.md` cell.
+  - Its pins equal ours: the record's commit, `FROZEN.json`, the resume check, the run's log, the census record and `RECORD.md`.
+  - It is kept verbatim: `../xrodz_approval_676_5691493287.md` `266b4c6b16df7d35b107b47a0b74125a86124b8128416e92c1342bcc482e872a`.
+- **Two comment-tier items, for the close-out:**
+  1. the note has no **Scope** line, which `METHOD_NOTE.md` § The scope line adopted on 2026-10-27, after #662 merged;
+  2. both M8 status rows, "Where is M8?" and "What decides the program?", still read as before the run, and the Done row is their place.
+- **A reading note, with no change asked.** At T4/R5's stopped midpoint, the nearest eigenvalue outside the cluster on the `n(L) = 7` side shrinks steadily along the bisections, its square about linear in `ε`. That is consistent with one pair passing through zero near `ε ≈ 8.7217`. The stopped midpoint, about 7×10⁻⁵ below it, put that pair in the gray zone; had K1 held there, the next interval would have completed the bisection. The outcome does not change.
+- **The commitments:** the adjudication is discharged. The close-out is the author's, on the author's schedule, and the maintainers review it: the Done row, both status rows, and the census page's dated note on MIT, with each row's ending and catalog status, any S6 question, and S5 open.
+
+**Next,** on Blake's word: the close-out, drafted for the units. It is the census page's dated note on MIT, and an OpenWave pull request with the Done row, both status rows and the note's **Scope** line.
+
+## 40. 2026-10-29T01:33:42Z: the close-out, drafted for the units
+
+On Blake's word ("Let's start the close-out"), as the terms' § DEFINITION OF DONE and #676's commitments ask, after M8.16.1's records after its verdict (MIT `e09d453`, OpenWave #654). Nothing is committed, pushed or posted.
+- **MIT, the census page,** `../closeout/mit/slot-dynamics-census.md` `f8a43a6a4d8ee1fd10cde413fcf4a2522f06385dec339c1f9b7edcf7bc9bd6c7`, on `origin/main` `7b66f8a0`:
+  - a dated note in § V, step 5, after the adjudication: the run, the four rows that meet an S4 completion condition and the five not settled, the S6 questions the record raises, stated and not ruled and grouped by S6's sentence, and S5 open;
+  - the catalog's nine rows, each point's instrument named under the terms' label rule: four "closed under S4", the rest "open: not settled by the census run";
+  - the Status line, dated 2026-10-29.
+
+  Beyond the terms' list, for the units: the coherent row in `R5`, whose ladder was to come with the census run's controls, which did not run (the cell gives M8.16.1's C2a/R5); a dated pointer in § IV; § VIII's open-rows line; M8.17 in § III's opening and the Inputs line; and two label bullets.
+- **MIT, the working index's census row,** `../closeout/mit/README.md` `cd4f814a55e4d241e58d2c62467121d4fcbf81c9feb9750e0da03a72ef618cf5`.
+- **This folder's `REPRODUCE.md`,** `f834902fb754989862b703617e4f19c219fa841e45c957373a728b96268a0aa3`: its run line names the adjudication. `tools/build_record.py --check` still reproduces `RECORD.md`.
+- **OpenWave, on `upstream/main` `e4957d19`:**
+  - the roadmap, `6e713ecf4fa5e548d6d5d7956ca1ec84b9c0e207f996646904c86389d41ba6a0`: the Done row, 64 words by the checker's count; both status rows; the snapshot's date; the author's notes entry, 124 words;
+  - the task file, `2445cdc82e5790b1d7e1ab5faa1736f84b4de7c044d4fffade5d31ce7dfc100c`: a dated note after the terms, which stay the exact 27,823-byte prefix;
+  - the method note, `d99928060dd9d7e9da7fd4c822246a15d3a1dc0b95dc1f27bf2e6f04fe25a2e1`: its **Scope** line, built from the source, `../m8_17_note/m8_17_method_note_src.md` `1eac71de7a315817951e418899febf94c35f3b78b79efd6d063d94a0bb7138e7`, with nothing else changed;
+  - the briefing, `a66b56332703ac3083dfb6a35588382a1c349ca4b73900d53a3b88a9794fbe7e`: an M8.17 row.
+
+  The MIT close-out commit appears as markers until it exists.
+- **The checks:** `../closeout/tools/check_closeout.py` `cbff2498d781c0291137ae4b9e6986642a4336e3db485b2d7c4cb25445ac13cd`, its output `8f2aea511d4cf7defe4a09076f7d0aa70847379d5c4a70d4fd2dce0ff7e251d9`: every check passes, OpenWave's three checkers among them, and the census page holds 137 math spans. `arms_closeout.py` `cf0bb066ce783385f53b69a9b7465851cbb1f100b28bab158bd9996ad9c92e3c`: six arms, each failing as it must, its output `d7116f1afb9615c6c08468d66d7c46d66e3ad7b66cd304f0f2c67259a1baf56d`. The link checker, now `../closeout/tools/check_links.py` `4f8c1becfabb98d55fb9a6da19850311924c6a636467b2886859cac4605a5ea8`, reads bare discussion, issue and commit links, each with an arm.
+- **The packet:** `../m8_17_closeout_packet_v1.md` `c5ebc89f5a96f360ae5525fe53c39185c82b90723371dd27f3b62cf634a23ba4` and `../m8_17_closeout_review_v1.zip` `0e7a765df1bd6e3e9857b37be17970b9c117d316a07354a568729c6c20e51944`, with the pull request's text, `../closeout/pr_title_v1.txt` and `../closeout/pr_body_v1.md` `723314542a1ea09d34a2bd041238e62b4c2ba749fbbb69d89516bc3ea24041d7`, and both commit messages.
+
+**Next:** the units' review. Then, each on Blake's word: the MIT commit, with this folder rebuilt, this log through the commit's entry and `SHA256SUMS` regenerated last, and its push; the OpenWave branch, filled with that commit; and Blake opens the pull request.
+
+## 41. 2026-10-29T01:58:37Z: the units on the close-out packet; the close-out, v2
+
+Blake relayed both units: "let's assess". Each finding was read at source.
+- **UA:** GO on the science and on (a) to (d), with the S6 wording kept as drafted. HOLD on one FIXABLE, taken: the fill wrote only the four OpenWave drafts, though v1's cover said it also filled the pull request's body and the OpenWave commit message. `check_closeout.py` now fills both under `OUT/publish/`, refuses any surviving marker, and checks on GitHub every external link the fill adds. Two arms are added: a marker left in the body, and a commit that does not exist.
+- **UB:** GO on (a) to (d), and on v1 once one FIXABLE is in. It is taken as worded: T4 in `R5` gets its own S6 bullet. Its open item is a locator stop at a bracket whose points are all classified, so its question comes before S6. The first bullet covers T1 in both slots and T4 in `R4`. UB's reading, that the stop sits at the crossing, the one place § IV's prediction leaves open, holds against § IV and stays INFERRED. Three NITs, taken:
+  - the coherent row's status names its gap;
+  - T4 reads "Elliptic and then Hyperbolic wherever classified", in the page's Status line and the dated note, and also in the working index, the "Where is M8?" row, the briefing and the MIT commit message, where the drafts state the same claim. The Done row stays at 64 of 65 words;
+  - `REPRODUCE.md`'s `SHA256SUMS` sentence names the regeneration at the close-out commit.
+- **Not changed:** T2/R4's two intervals, which UB raised for my read. The cell shows both and says M8.15.2's two levels disagree, by 1.4%. M8.17's interval sits about 0.04% below M8.15.2's level-3 one, and the guard readings bracket both.
+- **A gate added:** GitHub's renderer, on the exact bytes, finds 139 of 139 math expressions on the census page and 370 of 370 on the working index.
+- **The drafts:**
+  - the census page, `4f7d95b15ed5aa0f8806c003b1922f5bb922381c0ce736271244e23ebc6df6d1`;
+  - the working index, `019f5120b924bbf25de7c39d5134be8b652955d4d41f55d34cd5c20edc6cd852`;
+  - this folder's `REPRODUCE.md`, `e3a604760101cfc77ab02ed6beb5559151cd61a8db2c3b4c9b4dd0456176f3a9`;
+  - the roadmap, `5433a6227bfc62d6320619e305c5beb8770636736b8e2b72e926686904790396`;
+  - the briefing, `c4f564b92832e45b00d9ad2e5d15c671dc7b1e17aca2d3e8ccfca788fc1f0ddb`;
+  - the MIT commit message, `22eef1cad9d0b10f8f7438aa6a528ad6c8b94e5a62d42361dfe5bf336b84a63e`.
+- **The checks:**
+  - `check_closeout.py`, `df2ce070ab34c41ef4e144e9d000ca5acc2e13e9c87a14afac8631aea3be46f4`: every check passes, in `d87396938077ca2f686139832e78b89e0c4f01fea15a199e18bc0c14e19c1273`;
+  - the fill's dry run, with the record's commit standing in, resolves every link it adds, in `cb503ef1520454649ee858b8523c7d8b79a28383f62629ad42ba2c281fb45aa3`;
+  - `arms_closeout.py`, `dda671ff41a86e17634168eef2f4a251b60af8ef7092ba40dce062498ff8dbfc`: eight arms, each failing as it must, in `9f8a5c57c8bde810881df7f634b47534ee16f5027661f4c2a78efa8d915dde99`.
+- **The packet:** `../m8_17_closeout_packet_v2.md` `539dfbeda21664ced41269ab8c62284cd283f2461a75c62b2279c426f61c6a99` and `../m8_17_closeout_review_v2.zip` `564a21215ff9538524f2a881ca733174612ab27fcc97bcbae4879b8accb8e69c`.
+
+**Next:** the units' brief look at v2. Then, each on Blake's word: the MIT commit and its push; the OpenWave branch, filled with that commit; and Blake opens the pull request.
+
+## 42. 2026-10-29T02:08:18Z: the close-out filed, on Blake's word: the census page's notes, with this folder rebuilt from the bench
+
+On Blake's word ("commit and push if/when gucci"), after both units' GO on v2.
+- **The units on v2.** UA: GO, the HOLD closed, with no further change. The filing follows UA's sequence, with the fill run against the new commit, since the rehearsal does not replace that check. UB: GO. UB's rerun on fresh clones matches; the external links and GitHub's renderer, which UB's session cannot reach, rest on the dry run.
+- **The heads.** MIT `main` is still the record's commit, `7b66f8a0`. OpenWave's upstream `main` is still #676's merge, `e4957d19`, with no pull request open.
+- **The checker.** For the run after the push, it reads the MIT bases at the close-out commit's parent and requires the commit to hold the drafts byte for byte; before the push nothing changes, and it passes again on these heads.
+- **The commit** changes five files:
+  - the census page and the working index, as drafted in v2;
+  - this folder, rebuilt from the bench: `REPRODUCE.md` names the adjudication and this regeneration of `SHA256SUMS`, and this log runs through this entry. Entries 35 to 41 were written on the bench after the record's commit, and they publish here; 35 to 39 say so in their headings.
+- `RECORD.md` is unchanged, and `tools/build_record.py --check` reproduces it after this entry. `SHA256SUMS` is written fresh after this entry, over the folder's files, itself excluded, by `../publish_checks.py --write`, with its five checks.
+
+**Next:** the commit, verified from its own tree; the push; then the OpenWave branch, filled with that commit and checked against it.
