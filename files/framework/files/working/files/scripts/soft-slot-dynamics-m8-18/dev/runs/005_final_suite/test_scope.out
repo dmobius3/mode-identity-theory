@@ -1,0 +1,44 @@
+Test 6, the gates and the read, through the run's whole order, on stub solves, in a seedcheck process.
+S1. PASS: 126 files logged, 0 left out, each job's peak size logged: True; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's location, 10 of those midpoints read from each end, none elsewhere; 54 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+S2. PASS: the kernel at N = 40: C3: K1 fails at eps = 1; no later solve at N = 40; T1/R4 at 1.41 keeps M8.17's causes
+S3. PASS: the control gate: C2a/R5: eps = 2: Unresolved, None: synthetic; all six recorded; no target solved at any cutoff
+S4. PASS: Arm B not located; Arm A went on: T1/R4 Elliptic throughout
+S5. PASS: reproducibility failure: C2b at N = 32: eps 0.25: /lam: 63.25 against 63.2500000000001
+S6. PASS: 8 reads refused of 8: [True, True, True, True, True, True, True, True]
+S7. PASS: Cutoff.solve refused: True; C1 refused: True
+S8. PASS: 1.41 classified; the four later points untested at N = 40; nothing solved past 8: True
+S9. PASS: interrupted: True; the partial file moved: True; completed paths solved again: 0; the same record: True
+S10. PASS: reproducibility failure in Arm B: a midpoint does not reproduce at N = 24: synthetic
+S11. PASS: no target is read before the gate record shows the controls passed
+S12. PASS: the end at 5.65685: K1 fails at N = 40; 5.66 stays Hyperbolic; 0 midpoints solved
+S13. PASS: a read with no path job refused: True; interrupted with the files unlogged: True; no read of them: True; moved aside: True; the path solved again, 18 steps; the same record: True
+S14. PASS: interrupted with no stop on record: True; the resume: reproducibility failure in Arm B: a midpoint does not reproduce at N = 24: synthetic
+S15. PASS: the kernel at N = 40: C1: out of memory; a solve at C3, a read at P5, and C1: [True, True, True]; each recorded in GATE.json, the run reaching its record
+S16. PASS: the band: C2a 1: the stored band 11.973666961010276 is not level 18's; no row assembled, at a target and at a control: [True, True]
+S17. PASS: a defect in the code: T1/R5: a read at N = 40, eps = 32, as twelve, is outside the scope
+S18. PASS: reproducibility failure in Arm B: M8.17's bracket (8, 11.3137) is not the frozen one; 0 solves
+S19. PASS: at most 0 other case's cutoffs at N = 40 held when a cutoff is made
+S20. PASS: 2 brackets refused: the end at 32: M8.17 classified it on M8.15's instrument alone, with no indices to agree with | the end at 64: M8.17 classified it on M8.15's instrument alone, with no indices to agree with; ; 0 midpoints solved
+arms, each a mutation of census.py that must turn its scene red:
+   the read's scope check removed: S6: RED: 8 reads refused of 8: [False, False, False, False, False, False, False, False]
+   the order check in Cutoff.solve removed: S7: RED: Cutoff.solve refused: False; C1 refused: True
+   the gate's check on a target removed: S11: RED: the target ran
+   the kernel's stop removed: S2: RED: None; no later solve at N = 40; T1/R4 at 1.41 keeps M8.17's causes
+   the reproduction check removed: S5: RED: no stop
+   a read at every point of a path: S1: RED: a defect in the code: C2a: a read at N = 40, eps = 0.25, as path, is outside the scope
+   the borrowed end's check removed: S12: RED: a change of type located between the guard readings, with `n(L)` changing by -1 inside the interval at `N = 32` and 40; 5.66 stays Hyperbolic; 66 midp
+   every path point read at N = 40: S1: RED: a defect in the code: T5/R2: a read at N = 40, eps = 0.25, as twelve, is outside the scope
+   a read that skips the solve-state gate: S13: RED: a read with no path job was not refused
+   Arm A's location, its solutions file not logged: S1: RED: 125 files logged, 1 left out, each job's peak size logged: True; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's 
+   Arm B's location, its solutions file not logged: S1: RED: 125 files logged, 1 left out, each job's peak size logged: True; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's 
+   the order check in C1 removed: S7: RED: Cutoff.solve refused: True; C1 refused: False
+   a resume that passes over Arm B's stop: S14: RED: interrupted with no stop on record: True; the resume: no stop
+   the memory failure not caught at a control: S15: RED: MemoryError: the scene
+   the memory failure not caught at C1: S15: RED: MemoryError: the scene
+   the band's stop removed: S16: RED: no stop; no row assembled, at a target and at a control: [False, False]
+   the refused read's stop removed: S17: RED: OutOfScope: T1/R5: a read at N = 40, eps = 32, as twelve, is outside the scope
+   the bracket's check removed: S18: RED: no stop; 339 solves
+   a control's cutoffs kept: S19: RED: at most 6 other case's cutoffs at N = 40 held when a cutoff is made
+   every end taken as on the path: S20: RED: 2 brackets refused: the end at 32: M8.17 classified it on M8.15's instrument alone, with no indices to agree with | the end at 64: M8.17 classified it
+   the peak size not logged: S1: RED: 126 files logged, 0 left out, each job's peak size logged: False; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's
+0 failed

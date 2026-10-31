@@ -1,0 +1,85 @@
+Tests 5 and 7, classification and the locator, on synthetic records, with no solve, in a seedcheck process.
+test 5. PASS: a point classified on Arm A's ladder is the baseline; arms:
+   K1 at N = 24: real as required; mutant RED
+   K1 at N = 32: real as required; mutant RED
+   K1 at N = 40: real as required; mutant RED
+   the rule's verdict: Unresolved, with a type in the record: real as required; mutant RED
+   the first pair: M8.17's stored distance at T5/R2's 128, 0.01036, kept False: real as required; mutant RED
+   the second pair: the distance over 10^-2 between N = 32 and 40: real as required; mutant RED
+   the indices from N = 40, not from the lowest cutoff: real as required; mutant RED
+baseline on (16, 24, 32): PASS: (20, 30), n(L) +1 at 25.004: located True, union (25.0, 25.009765625), span [24.75, 25.25986328125]: 'a change of type located between the guard readings, with `n(L)` changing by +1 inside the interval at `N = 24` and 32'
+   the unchanged index, apart: n(L) 3 at both ends, with the type changing: kind 'unchanged', True
+   the reported cutoff, N = 16, bisected with +2 at 26.3: located True; reported: delta 2, interval [26.298828125, 26.30859375]: PASS
+baseline on (24, 32, 40): PASS: (20, 30), n(L) +1 at 25.004: located True, union (25.0, 25.009765625), span [24.75, 25.25986328125]: 'a change of type located between the guard readings, with `n(L)` changing by +1 inside the interval at `N = 32` and 40'
+   the unchanged index, apart: n(L) 3 at both ends, with the type changing: kind 'unchanged', True
+   the reported cutoff, N = 24, bisected with +2 at 26.3: located True; reported: delta 2, interval [26.298828125, 26.30859375]: PASS
+with moved = None, bisect equals M8.17's: PASS: 114 bisections, 0 differ
+the moved midpoint:
+   M1. K1 fails at the midpoint 25, holds at the moved point 24: located, the refused midpoint in the record and deciding nothing; with moved = None it stops at K1: real as required; other side RED
+   M2. K1 fails at the moved point: an unsuccessful stop, with no second move; a mutant moves again: real as required; other side RED
+   M3. a solve fails at a midpoint: no move; a mutant moves: real as required; other side RED
+   M4. K1 holds at every midpoint: no move; a mutant moves: real as required; other side RED
+   M5. the ten stored midpoints replayed, the moved point 8.720990 completing with n(L) 7 and 6: [True, True, True, True]: real as required; other side RED
+   M6. the fraction mutated to 0.5: M5 fails: real as required; other side RED
+   M6. the end mutated to the upper: M5 fails: real as required; other side RED
+a bracket's borrowed end: PASS: an end that carries its classification is admissible; arms:
+   K1 fails at N = 40: real refuses; mutant RED
+   type differs from M8.17's classification: real refuses; mutant RED
+   nL differs from M8.17's classification: real refuses; mutant RED
+   nD differs from M8.17's classification: real refuses; mutant RED
+   K differs from M8.17's classification: real refuses; mutant RED
+   ki differs from M8.17's classification: real refuses; mutant RED
+   identity fails on 24-32: real refuses; mutant RED
+   identity fails on 32-40: real refuses; mutant RED
+   no accepted record at N = 40: real refuses; mutant RED
+   T5/R2's 32, classified on M8.15's instrument alone: real refuses; mutant RED
+   T5/R2's 64, past its path and on M8.15's instrument alone: real refuses; mutant RED
+   a type bracket with no end among the twelve: real refuses; mutant RED
+arms: the real code refuses or labels as the terms require, and the mutant lets the scenario through:
+   [16+24+32] w/2: the two cutoffs' changes 9e-3 apart, in one interval at w but not at w/2: real as required; mutant RED
+   [16+24+32] the union's w: two overlapping intervals, each under w/2, their union over w: real as required; mutant RED
+   [16+24+32] the first offset, 0.01: the lower side reads Hyperbolic at 1% and Elliptic at 5%: real as required; mutant RED
+   [16+24+32] the single retry at 0.05: the lower side unclassified at 1% and 5%, classified at 10%: real as required; mutant RED
+   [16+24+32] the window bound: a change at 39.95, its upper guard past the window's 40: real as required; mutant RED
+   [16+24+32] the two-ends distance: the two solutions 5e-2 apart at the top cutoff: real as required; mutant RED
+   [16+24+32] the two-ends n(L): from above n(L) = 4 at the first midpoint, 25, from below 3: real as required; mutant RED
+   [16+24+32] a bracket end that does not reproduce: the upper end's lam differs by 1e-12: real as required; mutant RED
+   [16+24+32] a bracket end with no record to reproduce: real as required; mutant RED
+   [16+24+32] the overlap: the cutoffs' intervals meeting at a point only: real as required; mutant RED
+   [16+24+32] the signed change: +1 at the lower deciding cutoff, +2 at the top: real as required; mutant RED
+   [16+24+32] a zero signed change: real as required; mutant RED
+   [16+24+32] the two-change stop: n(L) 3, then 5 from 22, then 4 from 28; the first midpoint reads 5: real as required; mutant RED
+   [16+24+32] K1 at a midpoint: K1 fails at the top cutoff from 24.95 to 25.2, at the midpoints and not the guards: real as required; mutant RED
+   [16+24+32] the type bracket: a change across an unclassified grid point is no type bracket: real as required; mutant RED
+   [16+24+32] the index bracket: n(L) changes at the lower deciding cutoff and not at the top: real as required; mutant RED
+   [16+24+32] the inadequate index evidence: both ends' n(L) unresolved at the deciding cutoffs, not read as unchanged: real as required; mutant RED
+   [16+24+32] each guard from its own end: from above the upper guards read Unresolved, from below Hyperbolic: real as required; mutant RED
+   [16+24+32] the reported cutoff, N = 16, not bisected, its ends' n(L) unresolved: located from the deciding two: real as required; mutant RED
+   [16+24+32] the reported cutoff, N = 16, stopped at its first midpoint: located from the deciding two: real as required; mutant RED
+   [24+32+40] w/2: the two cutoffs' changes 9e-3 apart, in one interval at w but not at w/2: real as required; mutant RED
+   [24+32+40] the union's w: two overlapping intervals, each under w/2, their union over w: real as required; mutant RED
+   [24+32+40] the first offset, 0.01: the lower side reads Hyperbolic at 1% and Elliptic at 5%: real as required; mutant RED
+   [24+32+40] the single retry at 0.05: the lower side unclassified at 1% and 5%, classified at 10%: real as required; mutant RED
+   [24+32+40] the window bound: a change at 39.95, its upper guard past the window's 40: real as required; mutant RED
+   [24+32+40] the two-ends distance: the two solutions 5e-2 apart at the top cutoff: real as required; mutant RED
+   [24+32+40] the two-ends n(L): from above n(L) = 4 at the first midpoint, 25, from below 3: real as required; mutant RED
+   [24+32+40] a bracket end that does not reproduce: the upper end's lam differs by 1e-12: real as required; mutant RED
+   [24+32+40] a bracket end with no record to reproduce: real as required; mutant RED
+   [24+32+40] the overlap: the cutoffs' intervals meeting at a point only: real as required; mutant RED
+   [24+32+40] the signed change: +1 at the lower deciding cutoff, +2 at the top: real as required; mutant RED
+   [24+32+40] a zero signed change: real as required; mutant RED
+   [24+32+40] the two-change stop: n(L) 3, then 5 from 22, then 4 from 28; the first midpoint reads 5: real as required; mutant RED
+   [24+32+40] K1 at a midpoint: K1 fails at the top cutoff from 24.95 to 25.2, at the midpoints and not the guards: real as required; mutant RED
+   [24+32+40] the type bracket: a change across an unclassified grid point is no type bracket: real as required; mutant RED
+   [24+32+40] the index bracket: n(L) changes at the lower deciding cutoff and not at the top: real as required; mutant RED
+   [24+32+40] the inadequate index evidence: both ends' n(L) unresolved at the deciding cutoffs, not read as unchanged: real as required; mutant RED
+   [24+32+40] each guard from its own end: from above the upper guards read Unresolved, from below Hyperbolic: real as required; mutant RED
+   [24+32+40] the reported cutoff, N = 24, not bisected, its ends' n(L) unresolved: located from the deciding two: real as required; mutant RED
+   [24+32+40] the reported cutoff, N = 24, stopped at its first midpoint: located from the deciding two: real as required; mutant RED
+the record, end to end, on synthetic outputs beside M8.17's classification:
+   R1. the pattern of the replay: PASS: jobs [('T4/R4', (4.0, 5.656854249492381))]; T1/R4: Elliptic throughout; T4/R4: Not settled by this run; T1/R5: Elliptic throughout; T4/R5: Each change of type located; T5/R2: Not settled by this run
+   R2. a gate stops Arm A: PASS: 12 of the twelve keep M8.17's causes, the gate named; Arm B's row Each change of type located
+   R3. T4/R4 at 4 Unresolved: PASS: [(2.8284271247461903, 5.656854249492381, 'across')]
+   R4. a borrowed end refused: PASS: Not settled by this run; 5.66 stays Hyperbolic
+   R5. a type bracket with no end among the twelve: PASS: no job; no location was attempted: no end of it is one of the twelve
+40 arms on the two ladders; 0 failed

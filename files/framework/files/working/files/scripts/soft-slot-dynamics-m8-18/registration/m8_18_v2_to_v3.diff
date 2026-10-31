@@ -1,0 +1,42 @@
+--- m8_18_pack_v2/m8_18_task_details.md
++++ registration/m8_18_task_details.md
+@@ -80,10 +80,10 @@
+ ### What this task is not
+ 
+ - **No persistence test,** per the boundary. S5's obligation stays open, under a pre-registration of its own, and so does the census's close, which needs S5.
+-- **No new instrument, no revised code, no new bar.** The instrument, K1 and branch identity's test are M8.16.1's, and the rule is M8.16.1's with the level the answer of 2026-10-30 fixes.
++- **No new instrument, no revised instrument code, no new bar.** The instrument, K1 and branch identity's test are M8.16.1's, and the rule is M8.16.1's with the level the answer of 2026-10-30 fixes.
+ - **No cutoff but 24, 32 and 40 in Arm A, and none but 16, 24 and 32 in Arm B.** `N = 16` is not read in Arm A, C1's own check aside (§ ARM A, The kernel), and no cutoff is added after the freeze.
+ - **No point but the twelve in Arm A.** `N = 40` solves the paths' other grid points and reads no spectrum there, apart from a bracket's end, which adds no classification (§ ARM A). M8.17's classifications at those points stand, and the rule does not read them on this ladder.
+-- **No moved midpoint but T4/R5's.** A bracket this run creates uses M8.17's locator unchanged.
++- **No moved midpoint but T4/R5's.** A bracket this run creates uses M8.17's locator, with no moved midpoint, under Arm A's rules for a stored or borrowed end (§ ARM A).
+ - **Not a rescoring of M8.15, M8.15.2, M8.16.1 or M8.17.** Their verdicts stand as adjudicated. A point M8.17 read Unresolved and this run classifies has two records, on two ladders, and neither corrects the other.
+ - **No point on T5J or T5's other members,** and **no M8.4 object, slot relation, mass or particle state,** as in M8.17. Nothing here moves M8.7's gate or a MODELS.md cell.
+ 
+@@ -129,7 +129,7 @@
+ 
+ **The ladders.** Arm A's are `N = 24`, 32 and 40, each from its own seed, along its own continuation path. Arm B's are M8.17's, `N = 16`, 24 and 32.
+ 
+-**The solves.** Each point's solve and record use M8.16.1's `driver.read_point` and the instrument's continuation, through M8.17's `census.Cutoff`, with its step split as § ARM A states. This run does not call `driver.run_case`, which passes its ladder's lowest cutoff to the rule and computes branch identity only between its two highest cutoffs. M8.17 showed that `Cutoff` reproduces `run_case` field for field: at low cutoffs on C2a in its development pass, and on every recomputed point of its two locator paths in the run.
++**The solves.** Each solve uses the instrument's continuation and each read uses M8.16.1's `driver.read_point`, through M8.17's `census.Cutoff`, with its step split as § ARM A states. This run does not call `driver.run_case`, which passes its ladder's lowest cutoff to the rule and computes branch identity only between its two highest cutoffs. M8.17 showed that `Cutoff` reproduces `run_case` field for field: at low cutoffs on C2a in its development pass, and on every recomputed point of its two locator paths in the run.
+ 
+ **Why `N = 16` is left out (DERIVED).** Order `ε²` reaches only Lemma F's channels ([`soft-slot-branches.md`](https://github.com/dmobius3/mode-identity-theory/blob/7a2c638cd1b1bda1df57db1d47304d14aaa3249b/files/framework/files/working/files/soft-slot-branches.md), § III): levels 10, 14, 16 and 18 in `R4`; 8, 12, 14, 16 and 18 in `R5`; and 13, 17 and 19 in `R2`. `N = 16`'s truncated space stops at level 16, so it lacks level 18 in `R4` and `R5`, and levels 17 and 19 in `R2`. `N = 24`, 32 and 40 hold every one. The answers of 2026-10-20 (§ 1) recorded the same, and § III's check vi removes those channels to reproduce `N = 16`'s coefficients.
+ 
+@@ -227,7 +227,7 @@
+ - **A row's classified points** are M8.17's and this run's. Type brackets, index brackets and changes across unclassified points are as M8.17's terms define them.
+ - **The deciding cutoffs are `N = 32` and 40.** `N = 24` is bisected where its ends' `n(L)` is resolved and different, and reported otherwise. Where M8.17's text has `N = 24` and 32 deciding and `N = 16` reported, this ladder reads `N = 32` and 40 deciding and `N = 24` reported.
+ - **A bracket's end outside the twelve** has its `N = 40` record computed from its stored solution, and it keeps the classification M8.17 gave it. M8.17's locator reads two ends classified on one ladder, so before such an end enters a bracket it must meet that condition on this one: its `N = 40` record is accepted and K1 holds, its type, `n(L)`, `n(D)`, `K` and `k_i⁻` agree with M8.17's classification, and branch identity holds on both pairs. If any of these fails, the bracket is not located under this registration. The end's adjudicated classification stays unchanged. Its `N = 40` record is evidence that the bracket is admissible, not a new classification, and the rule does not read it.
+-- **Each bisection starts from the ends' stored solutions,** since M8.17's locator recomputes an end only where no solution vector is stored. So no path is recomputed here, M8.17's comparison of a recomputed path does not run, and no reading on this ladder is compared with a record on M8.17's. Each stored solution passes the solve-state gate (§ THE FREEZE, THE GUARD AND THE RUN).
++- **Each bisection starts from the ends' stored solutions,** since M8.17's terms recompute an end only "where an end has a known record but no stored solution vector". M8.17's code always recomputed, since only the pyramid's vectors were stored then, so this run's locator code takes the stored ends, shown in the diff. So no path is recomputed here, M8.17's comparison of a recomputed path does not run, and no reading on this ladder is compared with a record on M8.17's. Each stored solution passes the solve-state gate (§ THE FREEZE, THE GUARD AND THE RUN).
+ - **The guard readings** are read at all three cutoffs at one `ε`, and classified as above, with branch identity on both pairs.
+ - **The name** is M8.17's, with "at `N = 32` and 40". The location claims "a change of type located between the guard readings", and its identification with the genuine index crossing is not claimed, as the census page's step 2 note states.
+ 
+@@ -349,7 +349,7 @@
+ 
+   The first point that does not reproduce stops the run, as a reproducibility failure, and nothing is repaired or rerun.
+ - **The solve-state gate.** `N = 40` has no record to reproduce, so nothing at that cutoff is compared with one. The run's log records the SHA-256 of each path job's stored solutions when the job completes. A stored solution is used, by a read or by a bisection's continuation, only if its file still has that SHA-256 and its `λ` equals the job's record. One that fails stops the run, as a reproducibility failure.
+-- **Interruption.** M8.16.1's rules apply to each job, a path at one cutoff or a location's stage, in place of each case. A resume refuses another tree's manifest, a stopped run and a completed job whose file differs, moves partial outputs aside, and restarts at the first incomplete job.
++- **Interruption.** M8.16.1's rules apply to each job in place of each case: a path at one cutoff, its read, an identity, a case's reading, the gate or a location. A resume refuses another tree's manifest, a stopped run and a completed job whose file differs, moves partial outputs aside, and restarts at the first incomplete job.
+ - **The estimate,** INFERRED from M8.16.1's and M8.17's timings and M8.16's at `N = 40`: about 55 to 70 hours of compute.
+   - about 6 hours for Arm B;
+   - 10 to 13 for the controls;

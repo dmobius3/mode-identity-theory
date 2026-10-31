@@ -1,0 +1,56 @@
+--- registration/m8_18_task_details.md,v3
++++ registration/m8_18_task_details.md
+@@ -120,6 +120,8 @@
+ - An unsuccessful stop in Arm B ends Arm B only. Arm A goes on.
+ - A failure inside Arm A's gates ends Arm A. The twelve stay unclassified, and the record is written.
+ - **A reproduction failure is global.** A recomputed point that does not equal its record, in either arm, is evidence about the machine or the code and not about a branch, so it stops the run. Every record already written is kept, and no reading of Arm A is classified. Arm B's record, if written, stands as written, with the stop named beside it, since its own path and midpoints reproduced before it was written.
++- A scored reading whose stored band is not the frozen level's is a defect in the code: it stops the run, as a reproducibility failure does, and no reading of Arm A is classified.
++- A read refused at `N = 40` is the same kind of defect, and stops the run the same way.
+ 
+ One registration means one adjudication, so a dispute over either arm holds up both.
+ 
+@@ -202,7 +204,7 @@
+ 
+ **It passes** when, at `N = 40`, each control's seed passes its check, every point is accepted, and K1 holds as M8.16.1's terms freeze it, with its calibration constants unchanged: `checks.k1` at each point, and for C1 `checks.check_c1` over its four registered cutoffs, which reproduces M8.16.1's record.
+ 
+-**If it fails at any control,** Arm A ends there. No further `N = 40` solve runs, no point is classified at `N = 40`, and the twelve stay unclassified. A control that cannot finish on the machine is a failure of this check.
++**If it fails at any control,** Arm A ends there. No further `N = 40` solve runs, no point is classified at `N = 40`, and the twelve stay unclassified. A control whose `N = 40` path or read runs out of memory is a failure of this check, recorded with that cause. An interrupted run resumes under the run's rules.
+ 
+ ### The control gate
+ 
+@@ -226,7 +228,7 @@
+ M8.17's locator, on this ladder:
+ - **A row's classified points** are M8.17's and this run's. Type brackets, index brackets and changes across unclassified points are as M8.17's terms define them.
+ - **The deciding cutoffs are `N = 32` and 40.** `N = 24` is bisected where its ends' `n(L)` is resolved and different, and reported otherwise. Where M8.17's text has `N = 24` and 32 deciding and `N = 16` reported, this ladder reads `N = 32` and 40 deciding and `N = 24` reported.
+-- **A bracket's end outside the twelve** has its `N = 40` record computed from its stored solution, and it keeps the classification M8.17 gave it. M8.17's locator reads two ends classified on one ladder, so before such an end enters a bracket it must meet that condition on this one: its `N = 40` record is accepted and K1 holds, its type, `n(L)`, `n(D)`, `K` and `k_i⁻` agree with M8.17's classification, and branch identity holds on both pairs. If any of these fails, the bracket is not located under this registration. The end's adjudicated classification stays unchanged. Its `N = 40` record is evidence that the bracket is admissible, not a new classification, and the rule does not read it.
++- **A bracket's end outside the twelve** has its `N = 40` record computed from its stored solution, and it keeps the classification M8.17 gave it. M8.17's locator reads two ends classified on one ladder, so before such an end enters a bracket it must meet that condition on this one: its `N = 40` record is accepted and K1 holds, its type, `n(L)`, `n(D)`, `K` and `k_i⁻` agree with M8.17's classification, and branch identity holds on both pairs. If any of these fails, the bracket is not located under this registration. An end M8.17 classified on M8.15's instrument alone holds no indices to agree with, and an end past its row's path has no stored solution, so neither can meet the condition. The end's adjudicated classification stays unchanged. Its `N = 40` record is evidence that the bracket is admissible, not a new classification, and the rule does not read it.
+ - **Each bisection starts from the ends' stored solutions,** since M8.17's terms recompute an end only "where an end has a known record but no stored solution vector". M8.17's code always recomputed, since only the pyramid's vectors were stored then, so this run's locator code takes the stored ends, shown in the diff. So no path is recomputed here, M8.17's comparison of a recomputed path does not run, and no reading on this ladder is compared with a record on M8.17's. Each stored solution passes the solve-state gate (§ THE FREEZE, THE GUARD AND THE RUN).
+ - **The guard readings** are read at all three cutoffs at one `ε`, and classified as above, with branch identity on both pairs.
+ - **The name** is M8.17's, with "at `N = 32` and 40". The location claims "a change of type located between the guard readings", and its identification with the genuine index crossing is not claimed, as the census page's step 2 note states.
+@@ -314,7 +316,7 @@
+ 3. **The band.** On stored records, every scored reading's band equals the frozen level's: 17 in `R2`, 18 in `R4` and `R5`. A mutation that passes 24 must fail the test. The run applies the same test to every scored reading before it writes the record. The reading beside it, on the band above `N = 24`, is recorded and changes nothing: on synthetic records where it reads Unresolved and the scored reading converged, the point classifies and the gate passes. At a point with a Krein-negative group, the recorded distance from the left-out groups to the nearest one equals a direct computation, and a mutation that omits it fails.
+ 4. **The reproduction gate, on data on record, with no solve:** the exact comparison of a path at `N = 24` and 32 against M8.17's outputs and M8.16.1's controls, with P5's `k3_overlaps` at 0.25 left out since `Cutoff` does not compute them; the comparison of M8.17's midpoints; the solve-state gate, on a stored file; and a mutation of each compared field or file, which must fail it.
+ 5. **Classification and identity, on synthetic records.** Each condition has an arm whose removal lets a counterexample through: K1 at each cutoff, the rule's verdict, each identity pair, and the type from `N = 40`. M8.17's stored distances at T5/R2's 128 and 132 are the counterexample for the first pair.
+-6. **The gates' scope, on synthetic records.** A kernel failure ends Arm A and leaves Arm B's record; a control failing the gate stops the targets; a control failure in `R5` stops `R4`'s targets too; an Arm B stop leaves Arm A running; a reproduction failure stops both. With a spy on `driver.read_point` and stub solves through the run's whole order, a read at `N = 40` outside its frozen scope must be refused, and so must a `N = 40` solve started before Arm B's record is written. At the paths' other `N = 40` grid points the spy counts no call, and a solve not accepted there ends the path.
++6. **The gates' scope, on synthetic records.** A kernel failure ends Arm A and leaves Arm B's record; a control failing the gate stops the targets; a control failure in `R5` stops `R4`'s targets too; an Arm B stop leaves Arm A running; a reproduction failure stops both. A control out of memory at `N = 40` is that control's kernel failure, with the cause recorded. A scored reading off the frozen band and a refused read each stop the run. A stop on record is read again on a resume. Arm B's bracket must equal the frozen one. With a spy on `driver.read_point` and stub solves through the run's whole order, a read at `N = 40` outside its frozen scope must be refused, and so must a `N = 40` solve started before Arm B's record is written. At the paths' other `N = 40` grid points the spy counts no call, and a solve not accepted there ends the path.
+ 7. **The locator, on synthetic records.** M8.17's arms carry over, on both ladders. With `moved = None`, `bisect` must equal M8.17's on every arm. The moved midpoint has its own arms:
+    - K1 fails at a midpoint and holds at the moved point: the moved point counts, and the refused midpoint stays in the record and decides nothing;
+    - K1 fails at the moved point: an unsuccessful stop, with no second move;
+@@ -323,7 +325,7 @@
+    - M8.17's ten stored midpoints, replayed through a stub solver, reach the stop, and the moved point completes the bisection with `n(L)` 7 and with 6;
+    - a mutation of the fraction or the end must fail.
+ 
+-   A bracket's end outside the twelve has its own arms: its `N = 40` record failing K1, failing either identity, or differing from M8.17's type or any index must leave the bracket not located, with the end's classification unchanged.
++   A bracket's end outside the twelve has its own arms: its `N = 40` record failing K1, failing either identity, or differing from M8.17's type or any index must leave the bracket not located, with the end's classification unchanged. An end with no indices on record, or past its row's path, is refused with that cause.
+ 8. **Plumbing, with real solves, at cutoffs the run never uses,** on the GO-list control C2a at `N = 12`, 16 and 20: paths through `Cutoff` with a spectral record at chosen points only, stored solutions, a resume from them, both identity pairs, and the band's call.
+ 9. **The freeze rehearsal,** as M8.17's.
+ 
+@@ -357,7 +359,7 @@
+   - 31 to 44 for the targets' `N = 40` paths;
+   - about 9 to 13 more for each new bracket in `R4`.
+ 
+-  The kernel check measures `N = 40`'s time and memory on the controls, before any of Arm A's targets. No target's path at `N = 40`, and no `R5` path at that cutoff, has run on this instrument.
++  The kernel check measures `N = 40`'s time and memory on the controls, before any of Arm A's targets: the run's log gives each job's time and the process's peak resident size. No target's path at `N = 40`, and no `R5` path at that cutoff, has run on this instrument.
+ 
+ ## DEFINITION OF DONE
+ 

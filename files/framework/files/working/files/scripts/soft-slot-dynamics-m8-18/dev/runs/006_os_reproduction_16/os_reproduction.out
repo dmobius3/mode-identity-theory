@@ -1,0 +1,6 @@
+N = 16, on macOS 15.8.2
+C2b (R2), N = 16, 4 points: 3599 leaves compared, 0 differ; 2 s
+C2a (R4), N = 16, 4 points: 8433 leaves compared, 0 differ; 5 s
+C3 (R4), N = 16, 4 points: 3800 leaves compared, 0 differ; 7 s
+C2a/R5 (R5), N = 16, 4 points: 10152 leaves compared, 0 differ; 8 s
+0 of 4 differ

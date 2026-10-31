@@ -1,0 +1,83 @@
+{
+ "interpreter": {
+  "build": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+  "executable": "/opt/homebrew/Caskroom/miniforge/base/bin/python3",
+  "flags": {
+   "dont_write_bytecode": 1,
+   "isolated": 1,
+   "optimize": 0
+  },
+  "implementation": "CPython",
+  "version": "3.13.13"
+ },
+ "machine": {
+  "arch": "arm64",
+  "cores": 8,
+  "cpu": "Apple M3",
+  "efficiency_cores": 4,
+  "model": "Mac15,13",
+  "performance_cores": 4
+ },
+ "numpy": {
+  "blas": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "2.5.0"
+ },
+ "os": {
+  "build": "24H232",
+  "kernel": "24.6.0",
+  "product": "macOS",
+  "version": "15.8.2"
+ },
+ "recorded": "2026-10-31T10:07:21Z",
+ "scipy": {
+  "blas": {
+   "cython blas ilp64": false,
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "1.18.0"
+ },
+ "threading": {
+  "MKL_NUM_THREADS": null,
+  "OMP_NUM_THREADS": null,
+  "OPENBLAS_NUM_THREADS": null,
+  "VECLIB_MAXIMUM_THREADS": null
+ }
+}

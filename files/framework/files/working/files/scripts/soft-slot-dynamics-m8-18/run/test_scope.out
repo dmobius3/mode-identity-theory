@@ -1,0 +1,73 @@
+Test 6, the gates and the read, through the run's whole order, on stub solves, in a seedcheck process.
+S1. PASS: 126 files logged, 0 left out, each job's peak size logged: True; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's location, 10 of those midpoints read from each end, 0 other points read twice; 54 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+S2. PASS: the kernel at N = 40: C3: K1 fails at eps = 1; solves at N = 40: 12 of the controls, 0 of the targets; T1/R4 at 1.41: classified False, not read: the kernel at N = 40: C3: K1 fails at eps = 1
+S3. PASS: the control gate: C2a/R5: eps = 2: Unresolved, None: synthetic; 6 recorded; 0 target solves
+S4. PASS: Arm B located: False; the gate passed: True; T1/R4: Elliptic throughout
+S5. PASS: reproducibility failure: C2b at N = 32: eps 0.25: /lam: 63.25 against 63.2500000000001
+S6. PASS: 8 reads refused of 8: [True, True, True, True, True, True, True, True]
+S7. PASS: Cutoff.solve refused: True; C1 refused: True
+S8. PASS: 1.41 classified: True; 4 of the four later points untested at N = 40; 0 solves past 8
+S9. PASS: interrupted: True; the partial file moved: True; completed paths solved again: 0; the same record: True
+S10. PASS: reproducibility failure in Arm B: a midpoint does not reproduce at N = 24: synthetic
+S11. PASS: no target is read before the gate record shows the controls passed
+S12. PASS: the end at 5.65685: K1 fails at N = 40; 5.66 stays Hyperbolic; 0 midpoints solved
+S13. PASS: a read with no path job refused: True; interrupted with the files unlogged: True; no read of them: True; moved aside: True; the path solved again, 18 steps; the same record: True
+S14. PASS: interrupted with no stop on record: True; the resume: reproducibility failure in Arm B: a midpoint does not reproduce at N = 24: synthetic
+S15. PASS: C3: the kernel at N = 40: C3: out of memory; GATE.json logged: True; 5 rows | P5: the kernel at N = 40: P5: out of memory; GATE.json logged: True; 5 rows | C2b: the kernel at N = 40: C2b: out of memory; GATE.json logged: True; 5 rows | C1: the kernel at N = 40: C1: out of memory; GATE.json logged: True; 5 rows
+S16. PASS: T1/R4: the band: T1/R4 64: the stored band 8.390661716751913 is not level 18's; 0 rows assembled | C2a: the band: C2a 1: the stored band 11.973666961010276 is not level 18's; 0 rows assembled
+S17. PASS: a defect in the code: OutOfScope: T1/R5: a read at N = 40, eps = 32, as twelve, is outside the scope
+S18. PASS: reproducibility failure in Arm B: M8.17's bracket (8, 11.3137) is not the frozen one; 0 solves
+S19. PASS: at most 0 other case's cutoffs at N = 40 held when a cutoff is made
+S20. PASS: 2 brackets refused; past-path causes: 1; M8.15-only causes: 2; 0 midpoints solved: the end at 32: M8.17 classified it on M8.15's instrument alone, with no indices to agree with | the end at 64: M8.17 classified it on M8.15's instrument alone, with no indices to agree with; the end at 64: it lies past the row's path, so no solution is stored
+S21. PASS: 3 launches ended there, 3 starts, 0 solves of it in the next; of the twelve read: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}; out of memory at T1/R4: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}; out of memory at T4/R4: {'T5/R2': 1, 'T1/R4': 5, 'T4/R4': 0, 'T1/R5': 1}; after an interruption at T4/R4, 0 solves of the job out of memory in the next launch
+S22. PASS: 3 launches ended there, 3 starts, 0 midpoints in the next: locate:T4/R4:4:5.65685424949: started by 3 launches and left unfinished; located False, kind unfinished; ends (True, 'Elliptic', True, 'Hyperbolic'); {'T5/R2': 1, 'T1/R4': 5, 'T4/R4': 5, 'T1/R5': 1}; out of memory: out of memory; located False, kind unfinished; ends (True, 'Elliptic', True, 'Hyperbolic'); {'T5/R2': 1, 'T1/R4': 5, 'T4/R4': 5, 'T1/R5': 1}
+S23. PASS: C3: 3 launches ended there, 3 starts: the kernel at N = 40: C3: path:C3:40: started by 3 launches and left unfinished; 0 target jobs started | C1: 3 launches ended there, 3 starts: the kernel at N = 40: C1: C1: started by 3 launches and left unfinished; 0 target jobs started
+S24. PASS: 3 launches ended there, 3 starts, 0 calls in the next, its record written: True: Arm B: kind unfinished, located False, reproduced False, arm_b: started by 3 launches and left unfinished; Arm A went on: 5 of T1/R4's twelve read; T4/R5: Not settled by this run; out of memory: Arm B: kind unfinished, located False, reproduced False, out of memory; Arm A went on: 5 of T1/R4's twelve read; T4/R5: Not settled by this run
+S25. PASS: 3 launches ended there, 3 starts, 0 solves of it in the next: path:C2a:24: started by 3 launches and left unfinished; 0 rows; a further launch refused: True; out of memory: out of memory; 0 rows
+S26. PASS: a target: a defect in the code: ValueError: the scene; 1 starts of its job; 0 rows; a further launch refused: True | a control: a defect in the code: PermissionError: the scene; 1 starts of its job; 0 rows; a further launch refused: True | the assembly: a defect in the code: KeyError: 'the scene'; 0 starts of its job; 0 rows; a further launch refused: True
+S27. PASS: 2 and 2 launches ended, 5 launches in all, starts (3, 3); the same record: True; stop: None
+S28. PASS: reproducibility failure: T4/R4 at N = 32: eps 0.25: /lam: 48.25 against 48.2500000000001; finished before it: ['T5/R2', 'T1/R4']; 0 rows assembled
+S29. PASS: exit statuses [-9, -9, -9, 0]; 3 starts in the log; left: {'T1/R4': 'path:T1/R4:40: started by 3 launches and left unfinished'}; of the twelve read: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}
+arms, each a mutation of census.py that must turn its scene red:
+   the read's scope check removed: S6: RED: 8 reads refused of 8: [False, False, False, False, False, False, False, False]
+   the order check in Cutoff.solve removed: S7: RED: Cutoff.solve refused: False; C1 refused: True
+   the gate's check on a target removed: S11: RED: the target ran
+   the kernel's stop removed: S2: RED: None; solves at N = 40: 24 of the controls, 89 of the targets; T1/R4 at 1.41: classified True, not read: None
+   the reproduction check removed: S5: RED: no stop
+   a read at every point of a path: S1: RED: a defect in the code: OutOfScope: C2a: a read at N = 40, eps = 0.25, as path, is outside the scope
+   the borrowed end's check removed: S12: RED: a change of type located between the guard readings, with `n(L)` changing by -1 inside the interval at `N = 32` and 40; 5.66 stays Hyperbolic; 66 midpoints solved
+   every path point read at N = 40: S1: RED: a defect in the code: OutOfScope: T5/R2: a read at N = 40, eps = 0.25, as twelve, is outside the scope
+   a read that skips the solve-state gate: S13: RED: a read with no path job was not refused
+   Arm A's location, its solutions file not logged: S1: RED: 125 files logged, 1 left out, each job's peak size logged: True; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's location, 10 of those midpoints read from each end, 0 other points read twice; 54 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+   Arm B's location, its solutions file not logged: S1: RED: 125 files logged, 1 left out, each job's peak size logged: True; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's location, 10 of those midpoints read from each end, 0 other points read twice; 54 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+   the order check in C1 removed: S7: RED: Cutoff.solve refused: True; C1 refused: False
+   a resume that passes over Arm B's stop: S14: RED: interrupted with no stop on record: True; the resume: no stop
+   the memory failure not caught at a control: S15: RED: C3: stopped: out of memory | P5: stopped: out of memory | C2b: stopped: out of memory | C1: the kernel at N = 40: C1: out of memory; GATE.json logged: True; 5 rows
+   the unfinished job not caught at a control: S23: RED: C3: 3 launches ended there, 3 starts; stopped: path:C3:40: started by 3 launches and left unfinished | C1: 3 launches ended there, 3 starts: the kernel at N = 40: C1: C1: started by 3 launches and left unfinished; 0 target jobs started
+   the memory failure not caught at C1: S15: RED: C3: the kernel at N = 40: C3: out of memory; GATE.json logged: True; 5 rows | P5: the kernel at N = 40: P5: out of memory; GATE.json logged: True; 5 rows | C2b: the kernel at N = 40: C2b: out of memory; GATE.json logged: True; 5 rows | C1: stopped: out of memory
+   the unfinished job not caught at C1: S23: RED: C3: 3 launches ended there, 3 starts: the kernel at N = 40: C3: path:C3:40: started by 3 launches and left unfinished; 0 target jobs started | C1: 3 launches ended there, 3 starts; stopped: C1: started by 3 launches and left unfinished
+   the band's stop removed: S16: RED: T1/R4: no stop; 5 rows assembled | C2a: no stop; 5 rows assembled
+   the refused read's stop removed: S17: RED: OutOfScope: T1/R5: a read at N = 40, eps = 32, as twelve, is outside the scope
+   the bracket's check removed: S18: RED: no stop; 339 solves
+   a control's cutoffs kept: S19: RED: at most 6 other case's cutoffs at N = 40 held when a cutoff is made
+   every end taken as on the path: S20: RED: 2 brackets refused; past-path causes: 0; M8.15-only causes: 2; 0 midpoints solved: the end at 32: M8.17 classified it on M8.15's instrument alone, with no indices to agree with | the end at 64: M8.17 classified it on M8.15's instrument alone, with no indices to agree with; the end at 64: no accepted record at N = 40
+   the peak size not logged: S1: RED: 126 files logged, 0 left out, each job's peak size logged: False; 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's location, 10 of those midpoints read from each end, 0 other points read twice; 54 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+   no scope check, every path point read, for the spy's count: S1: RED: 126 files logged, 0 left out, each job's peak size logged: True; 114 reads of 103 points at N = 40: 24 of the controls, 12 of the twelve, 67 of T4/R4's location, 11 of those midpoints read from each end, 0 other points read twice; 0 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+   the unfinished job not caught at a target: S21: RED: 3 launches ended there, 3 starts; stopped: path:T1/R4:40: started by 3 launches and left unfinished
+   the memory failure not caught at a target: S21: RED: 3 launches ended there, 3 starts, 0 solves of it in the next; of the twelve read: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}; out of memory at T1/R4: stopped: out of memory
+   the unfinished job not caught at a location: S22: RED: 3 launches ended there, 3 starts; stopped: locate:T4/R4:4:5.65685424949: started by 3 launches and left unfinished
+   the memory failure not caught at a location: S22: RED: 3 launches ended there, 3 starts, 0 midpoints in the next: locate:T4/R4:4:5.65685424949: started by 3 launches and left unfinished; located False, kind unfinished; ends (True, 'Elliptic', True, 'Hyperbolic'); {'T5/R2': 1, 'T1/R4': 5, 'T4/R4': 5, 'T1/R5': 1}; out of memory: stopped: out of memory
+   the unfinished job not caught in Arm B: S24: RED: 3 launches ended there, 3 starts; stopped: arm_b: started by 3 launches and left unfinished
+   the memory failure not caught in Arm B: S24: RED: 3 launches ended there, 3 starts, 0 calls in the next, its record written: True: Arm B: kind unfinished, located False, reproduced False, arm_b: started by 3 launches and left unfinished; Arm A went on: 5 of T1/R4's twelve read; T4/R5: Not settled by this run; out of memory: stopped: out of memory
+   out of memory taken for a defect: S25: RED: 3 launches ended there, 3 starts, 0 solves of it in the next: path:C2a:24: started by 3 launches and left unfinished; 0 rows; a further launch refused: True; out of memory: a defect in the code: MemoryError: the scene; 0 rows
+   the limit ignored: S21: RED: 3 launches ended there, and the next started it again: 4 starts in the log
+   a start not written before the solve: S21: RED: 3 launches ended there, and the next started it again: 0 starts in the log
+   a resume that forgets the starts: S21: RED: 3 launches ended there, and the next started it again: 1 starts in the log
+   a job out of memory started again: S21: RED: 3 launches ended there, 3 starts, 0 solves of it in the next; of the twelve read: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}; out of memory at T1/R4: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}; out of memory at T4/R4: {'T5/R2': 1, 'T1/R4': 5, 'T4/R4': 0, 'T1/R5': 1}; after an interruption at T4/R4, 18 solves of the job out of memory in the next launch
+   the count taken from launches: S27: RED: 2 and 0 launches ended, 5 launches in all, starts (2, 0); the same record: False; stop: None
+   the catch of a defect removed: S26: RED: ValueError: the scene
+   a broad handler at a target, a defect taken for a limit: S26: RED: a target: no stop; 1 starts of its job; 5 rows; a further launch refused: False | a control: a defect in the code: PermissionError: the scene; 1 starts of its job; 0 rows; a further launch refused: True | the assembly: a defect in the code: KeyError: 'the scene'; 0 starts of its job; 0 rows; a further launch refused: True
+   a broad handler at a control, a defect taken for a limit: S26: RED: a target: a defect in the code: ValueError: the scene; 1 starts of its job; 0 rows; a further launch refused: True | a control: no stop; 1 starts of its job; 5 rows; a further launch refused: False | the assembly: a defect in the code: KeyError: 'the scene'; 0 starts of its job; 0 rows; a further launch refused: True
+   a start not written before the solve, under a real kill: S29: RED: exit statuses [-9, -9, -9, -9]; 0 starts in the log
+   a broad handler at a target, a stop taken for a limit: S28: RED: no stop; finished before it: ['T5/R2', 'T1/R4', 'T1/R5']; 5 rows assembled
+0 failed

@@ -1,0 +1,17 @@
+moved nothing: N = 16, on macOS 15.8.2
+moved nothing: C2b (R2), N = 16, 4 points: 3599 leaves compared, 0 differ; 2 s
+moved nothing: C2a (R4), N = 16, 4 points: 8433 leaves compared, 0 differ; 6 s
+moved nothing: C3 (R4), N = 16, 4 points: 3800 leaves compared, 0 differ; 7 s
+moved nothing: C2a/R5 (R5), N = 16, 4 points: 10152 leaves compared, 0 differ; 9 s
+moved nothing: 0 of 4 differ
+C2b, one float of its record moved one place, /coefficient: RED: C2b (R2), N = 16, 4 points: 3599 leaves compared, 1 differ, 1 floats, the largest relative difference 2.02e-16, 0 of another kind; 2 s
+   eps 0.25: /coefficient: 0.01715134214775236 against 0.017151342147752362
+C2a, one float of its record moved one place, /coefficient: RED: C2a (R4), N = 16, 4 points: 8433 leaves compared, 1 differ, 1 floats, the largest relative difference 1.18e-16, 0 of another kind; 6 s
+   eps 0.25: /coefficient: 0.029496697093367705 against 0.029496697093367708
+C3, one float of its record moved one place, /coefficient: RED: C3 (R4), N = 16, 4 points: 3800 leaves compared, 1 differ, 1 floats, the largest relative difference 1.16e-16, 0 of another kind; 8 s
+   eps 0.25: /coefficient: 0.029912003847760715 against 0.02991200384776072
+C2a/R5, one float of its record moved one place, /coefficient: RED: C2a/R5 (R5), N = 16, 4 points: 10152 leaves compared, 1 differ, 1 floats, the largest relative difference 1.25e-16, 0 of another kind; 9 s
+   eps 0.25: /coefficient: 0.027861044306706544 against 0.027861044306706547
+C1, one float of its record moved one place, /points/0.5/coefficient: RED: C1 (R3), N = 16, 24 and 32: 52696 leaves compared, 1 differ, 1 floats, the largest relative difference 1.54e-16, 0 of another kind; 148 s
+   /cutoffs/16/points/0.5/coefficient: 0.04493354652770996 against 0.044933546527709964
+0 failed

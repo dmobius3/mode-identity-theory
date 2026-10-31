@@ -1,0 +1,86 @@
+--- registration/m8_18_task_details.md,v4
++++ registration/m8_18_task_details.md
+@@ -67,6 +67,7 @@
+   - solving and reading as separate operations at `N = 40`, and a solve-state gate where no record exists (§ ARM A; § THE FREEZE, THE GUARD AND THE RUN);
+   - the locator's deciding cutoffs and a bracket's borrowed end in Arm A, and its midpoint in Arm B (§ ARM A; § ARM B);
+   - how the rows stand afterwards, under the ruling's reading of S6 (§ THE ROW OUTCOMES);
++  - what ends a part of the run, and a count of each job's attempts (§ TWO ARMS, ONE REGISTRATION; § THE FREEZE, THE GUARD AND THE RUN);
+   - no qualification verdict: this task qualifies nothing.
+ 
+   Its code is new, in `run/census.py` and `run/census_lib.py`, in a folder of its own beside M8.17's, which it leaves unchanged. Their differences from M8.17's files are filed with the terms as a diff.
+@@ -122,6 +123,13 @@
+ - **A reproduction failure is global.** A recomputed point that does not equal its record, in either arm, is evidence about the machine or the code and not about a branch, so it stops the run. Every record already written is kept, and no reading of Arm A is classified. Arm B's record, if written, stands as written, with the stop named beside it, since its own path and midpoints reproduced before it was written.
+ - A scored reading whose stored band is not the frozen level's is a defect in the code: it stops the run, as a reproducibility failure does, and no reading of Arm A is classified.
+ - A read refused at `N = 40` is the same kind of defect, and stops the run the same way.
++- **A job that runs out of memory, or that three launches start and leave unfinished, ends the part of the run it belongs to,** with the cause named in the record:
++  - a control's `N = 40` path, read or identity, or C1: the kernel check fails, and Arm A ends;
++  - a target's job: that row stays unread, and the run goes on to the next row;
++  - a location: that bracket is not located, and its ends keep their classifications;
++  - Arm B: Arm B ends, not located, and Arm A goes on;
++  - any other job: the run stops.
++- **Any other exception the run raises** is a defect in the code. It stops the run on its first launch, as a reproducibility failure does, so a defect is never counted as an interruption.
+ 
+ One registration means one adjudication, so a dispute over either arm holds up both.
+ 
+@@ -204,7 +212,7 @@
+ 
+ **It passes** when, at `N = 40`, each control's seed passes its check, every point is accepted, and K1 holds as M8.16.1's terms freeze it, with its calibration constants unchanged: `checks.k1` at each point, and for C1 `checks.check_c1` over its four registered cutoffs, which reproduces M8.16.1's record.
+ 
+-**If it fails at any control,** Arm A ends there. No further `N = 40` solve runs, no point is classified at `N = 40`, and the twelve stay unclassified. A control whose `N = 40` path or read runs out of memory is a failure of this check, recorded with that cause. An interrupted run resumes under the run's rules.
++**If it fails at any control,** Arm A ends there. No further `N = 40` solve runs, no point is classified at `N = 40`, and the twelve stay unclassified. A control's `N = 40` path, read or identity, or C1, that runs out of memory, or that three launches start and leave unfinished, is a failure of this check, recorded with that cause. An interrupted run resumes under the run's rules.
+ 
+ ### The control gate
+ 
+@@ -274,7 +282,7 @@
+ 
+ **What a location claims** is "a change of type located between the guard readings", with `n(L)` changing inside the interval at `N = 24` and 32. Its identification with the genuine index crossing is not claimed, and Corollary I is not applied.
+ 
+-**A failure.** The bracket stays not located, with the stop named. Nothing is repaired and rerun, and the bracket is not offered to this instrument again.
++**A failure.** The bracket stays not located, with the stop named. Nothing is repaired and rerun, and the bracket is not offered to this instrument again. A job that ends Arm B is named as that, in a record of its own kind: it is neither a stop of the locator nor a reproduction, and the record claims nothing of the path or the midpoints.
+ 
+ ## THE ROW OUTCOMES
+ 
+@@ -294,6 +302,8 @@
+ 
+ **Where Arm A's gates stop the targets,** no target has been read. The record names the failed kernel or control gate and keeps each point's cause as M8.17 recorded it, and that is not a second outcome with that cause.
+ 
++**Where a job ended a target,** that row stays unread, and the same holds: each of its twelve keeps M8.17's cause, with this run's cause named beside it, and that is not a second outcome with that cause. The other rows are read and classified as usual. A bracket a job ended stays not located, and its ends keep their classifications.
++
+ S4's third ending is not reached here, as in M8.17.
+ 
+ **For the catalog,** the census page's dated note after the adjudication gives each row's ending and moves its status, on MIT, and names each point's instrument and ladder.
+@@ -316,7 +326,7 @@
+ 3. **The band.** On stored records, every scored reading's band equals the frozen level's: 17 in `R2`, 18 in `R4` and `R5`. A mutation that passes 24 must fail the test. The run applies the same test to every scored reading before it writes the record. The reading beside it, on the band above `N = 24`, is recorded and changes nothing: on synthetic records where it reads Unresolved and the scored reading converged, the point classifies and the gate passes. At a point with a Krein-negative group, the recorded distance from the left-out groups to the nearest one equals a direct computation, and a mutation that omits it fails.
+ 4. **The reproduction gate, on data on record, with no solve:** the exact comparison of a path at `N = 24` and 32 against M8.17's outputs and M8.16.1's controls, with P5's `k3_overlaps` at 0.25 left out since `Cutoff` does not compute them; the comparison of M8.17's midpoints; the solve-state gate, on a stored file; and a mutation of each compared field or file, which must fail it.
+ 5. **Classification and identity, on synthetic records.** Each condition has an arm whose removal lets a counterexample through: K1 at each cutoff, the rule's verdict, each identity pair, and the type from `N = 40`. M8.17's stored distances at T5/R2's 128 and 132 are the counterexample for the first pair.
+-6. **The gates' scope, on synthetic records.** A kernel failure ends Arm A and leaves Arm B's record; a control failing the gate stops the targets; a control failure in `R5` stops `R4`'s targets too; an Arm B stop leaves Arm A running; a reproduction failure stops both. A control out of memory at `N = 40` is that control's kernel failure, with the cause recorded. A scored reading off the frozen band and a refused read each stop the run. A stop on record is read again on a resume. Arm B's bracket must equal the frozen one. With a spy on `driver.read_point` and stub solves through the run's whole order, a read at `N = 40` outside its frozen scope must be refused, and so must a `N = 40` solve started before Arm B's record is written. At the paths' other `N = 40` grid points the spy counts no call, and a solve not accepted there ends the path.
++6. **The gates' scope, on synthetic records.** A kernel failure ends Arm A and leaves Arm B's record; a control failing the gate stops the targets; a control failure in `R5` stops `R4`'s targets too; an Arm B stop leaves Arm A running; a reproduction failure stops both. Each route of a job out of memory or left unfinished by three launches has its own scene, with no fourth start of the job: a control's `N = 40` job and C1 fail the kernel check and no target runs; a target's row stays unread, with the rows before and after it classified; a location's bracket is not located, and its ends keep their classifications; Arm B ends, naming the job, and Arm A goes on; any other job stops the run. Attempts are counted per job, a job interrupted fewer than three times completes, and a job out of memory is not started again on a later launch. Any other exception stops the run on its first launch. A reproduction failure after a target has finished still classifies nothing. A scored reading off the frozen band and a refused read each stop the run. A stop on record is read again on a resume. Arm B's bracket must equal the frozen one. With a spy on `driver.read_point` and stub solves through the run's whole order, a read at `N = 40` outside its frozen scope must be refused, and so must a `N = 40` solve started before Arm B's record is written. At the paths' other `N = 40` grid points the spy counts no call, and a solve not accepted there ends the path.
+ 7. **The locator, on synthetic records.** M8.17's arms carry over, on both ladders. With `moved = None`, `bisect` must equal M8.17's on every arm. The moved midpoint has its own arms:
+    - K1 fails at a midpoint and holds at the moved point: the moved point counts, and the refused midpoint stays in the record and decides nothing;
+    - K1 fails at the moved point: an unsuccessful stop, with no second move;
+@@ -337,6 +347,7 @@
+ - `BAND_N = 16`, and the band above `N = 24` as the unscored reading;
+ - the controls, their order and their registered points;
+ - `moved = 0.4`, from the lower end, for T4/R5's (8, 11.31) alone;
++- `ATTEMPTS = 3`, the starts a job is allowed, counted per job from the run's log;
+ - M8.17's outputs, by the SHA-256 its run's log records (`run/out/RUNLOG.json`, `7d761506…`), and M8.16.1's controls, C3R/R4's among them, by its log's;
+ - the instrument's files at `d1c0ec8` and this task's manifest pin.
+ 
+@@ -351,7 +362,7 @@
+ 
+   The first point that does not reproduce stops the run, as a reproducibility failure, and nothing is repaired or rerun.
+ - **The solve-state gate.** `N = 40` has no record to reproduce, so nothing at that cutoff is compared with one. The run's log records the SHA-256 of each path job's stored solutions when the job completes. A stored solution is used, by a read or by a bisection's continuation, only if its file still has that SHA-256 and its `λ` equals the job's record. One that fails stops the run, as a reproducibility failure.
+-- **Interruption.** M8.16.1's rules apply to each job in place of each case: a path at one cutoff, its read, an identity, a case's reading, the gate or a location. A resume refuses another tree's manifest, a stopped run and a completed job whose file differs, moves partial outputs aside, and restarts at the first incomplete job.
++- **Interruption.** M8.16.1's rules apply to each job in place of each case: a path at one cutoff, its read, an identity, a case's reading, the gate or a location. A resume refuses another tree's manifest, a stopped run and a completed job whose file differs, moves partial outputs aside, and restarts at the first incomplete job. Each job's start is logged before it solves, and its attempts are counted from those entries alone, so an interruption elsewhere, or a launch that never reaches the job, does not count. A completed job is never repeated. A job that ran out of memory is not started again, and a launch that finds a job started three times and not completed starts it no fourth time: each takes its route.
+ - **The estimate,** INFERRED from M8.16.1's and M8.17's timings and M8.16's at `N = 40`: about 55 to 70 hours of compute.
+   - about 6 hours for Arm B;
+   - 10 to 13 for the controls;
+@@ -368,7 +379,7 @@
+   - each of the twelve with its classification or its cause, on both bands, and the Krein-negative distance where it applies;
+   - every bracket, with its location or the condition it failed;
+   - each of the five rows' standing;
+-  - each stop, in either arm.
++  - each stop, in either arm, and each job that ended a part of the run, with its cause.
+ - **The publication:** the record, `REPRODUCE.md`, the run's outputs and stored solutions, and the diff against M8.17's code, on MIT, in this task's folder.
+ - **The method note** on OpenWave, and the maintainers' adjudication.
+ - **The roadmap:** both M8 status rows record the filing, and the Done row states the adjudicated outcome.

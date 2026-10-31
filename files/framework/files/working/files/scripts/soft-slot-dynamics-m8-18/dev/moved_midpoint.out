@@ -1,0 +1,24 @@
+N = 24: stopped at [8.718402, 8.724874], width 6.4721e-03, 7.423e-04 of its lower end; stop: K1 fails
+   eps 8.673097  n(L) 7  nearest 9.4335e-05  square 8.8991e-09  margin 2.029e-06  K1 True
+   eps 8.698985  n(L) 7  nearest 6.4790e-05  square 4.1978e-09  margin 2.032e-06  K1 True
+   eps 8.711930  n(L) 7  nearest 4.2603e-05  square 1.8150e-09  margin 2.034e-06  K1 True
+   eps 8.718402  n(L) 7  nearest 2.4808e-05  square 6.1546e-10  margin 2.034e-06  K1 True
+   eps 8.721638  n(L) 7  nearest 3.6937e-06  square 1.3643e-11  margin 2.035e-06  K1 False
+   eps 8.724874  n(L) 6  nearest 2.4280e-05  square 5.8954e-10  margin 2.035e-06  K1 True
+   squares fall at 1.816e-07 to 1.860e-07 per unit; from the last two, 1.860e-07; crossing near 8.721711
+   K1 refuses below 6.104e-06 (three margins); so roughly from eps 8.721511
+   fraction 0.4: moved point 8.720990; nearest eigenvalue about 1.158e-05, 1.90 times the limit
+   interval left: n(L) 7 there, [8.720990, 8.724874], width 3.8833e-03; n(L) 6 there, [8.718402, 8.720990], width 2.5888e-03; complete below 4.3605e-03 and 4.3592e-03
+   the fraction must exceed 0.3263 to complete with n(L) 7 at the moved point
+N = 32: stopped at [8.718402, 8.724874], width 6.4721e-03, 7.423e-04 of its lower end; stop: K1 fails
+   eps 8.673097  n(L) 7  nearest 9.4456e-05  square 8.9220e-09  margin 2.715e-06  K1 True
+   eps 8.698985  n(L) 7  nearest 6.4970e-05  square 4.2211e-09  margin 2.720e-06  K1 True
+   eps 8.711930  n(L) 7  nearest 4.2879e-05  square 1.8386e-09  margin 2.722e-06  K1 True
+   eps 8.718402  n(L) 7  nearest 2.5282e-05  square 6.3916e-10  margin 2.723e-06  K1 True
+   eps 8.721638  n(L) 7  nearest 6.1163e-06  square 3.7409e-11  margin 2.723e-06  K1 False
+   eps 8.724874  n(L) 6  nearest 2.3785e-05  square 5.6571e-10  margin 2.724e-06  K1 True
+   squares fall at 1.816e-07 to 1.860e-07 per unit; from the last two, 1.860e-07; crossing near 8.721839
+   K1 refuses below 8.169e-06 (three margins); so roughly from eps 8.721480
+   fraction 0.4: moved point 8.720990; nearest eigenvalue about 1.256e-05, 1.54 times the limit
+   interval left: n(L) 7 there, [8.720990, 8.724874], width 3.8833e-03; n(L) 6 there, [8.718402, 8.720990], width 2.5888e-03; complete below 4.3605e-03 and 4.3592e-03
+   the fraction must exceed 0.3263 to complete with n(L) 7 at the moved point

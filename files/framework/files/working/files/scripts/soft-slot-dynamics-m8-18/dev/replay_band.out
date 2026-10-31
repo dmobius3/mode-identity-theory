@@ -1,0 +1,54 @@
+CONTROLS (type on the record | band above 24 | band above 16)
+  C2a 0.25: Elliptic | converged | converged
+  C2a 0.5: Elliptic | converged | converged
+  C2a 1: Elliptic | converged | converged
+  C2a 2: Elliptic | converged | converged
+  C2a_R5 0.25: Elliptic | converged | converged
+  C2a_R5 0.5: Elliptic | converged | converged
+  C2a_R5 1: Elliptic | converged | converged
+  C2a_R5 2: Elliptic | Unresolved | converged
+      above 24: tested set at -6.48018e-16+7.97871j (+1): the set's count differs between cutoffs
+  C2b 0.25: Elliptic | converged | converged
+  C2b 0.5: Elliptic | converged | converged
+  C2b 1: Elliptic | converged | converged
+  C2b 2: Elliptic | converged | converged
+  C3 0.25: Hyperbolic | converged | converged
+  C3 0.5: Hyperbolic | converged | converged
+  C3 1: Hyperbolic | converged | converged
+  C3 2: Hyperbolic | converged | converged
+  C3R_R4 0.25: Hyperbolic | converged | converged
+  C3R_R4 0.5: Hyperbolic | converged | converged
+  C3R_R4 1: Hyperbolic | converged | converged
+  C3R_R4 2: Hyperbolic | converged | converged
+  P5 0.25: Hyperbolic | converged | converged
+  P5 0.5: Hyperbolic | converged | converged
+  P5 1: Hyperbolic | converged | converged
+  P5 2: Hyperbolic | converged | converged
+THE TWELVE
+  T1_R4 1.41421: above 24: converged, Elliptic | above 16: converged, Elliptic
+  T1_R4 32: above 24: converged, Elliptic | above 16: converged, Elliptic
+  T1_R4 45.2548: above 24: converged, Elliptic | above 16: converged, Elliptic
+  T1_R4 64: above 24: Unresolved, None | above 16: converged, Elliptic
+      above 24: tested set at -3.72208e-15+6.88686j (+1): the set's count differs between cutoffs
+  T1_R4 72: above 24: converged, Elliptic | above 16: converged, Elliptic
+  T1_R5 32: above 24: Unresolved, None | above 16: converged, Elliptic
+      above 24: tested set at -5.72637e-15+7.35287j (+1): the set's count differs between cutoffs
+  T4_R4 4: above 24: Unresolved, None | above 16: converged, Elliptic
+      above 24: tested set at -1.86165e-15+7.88939j (+1): the set's count differs between cutoffs
+  T4_R4 8: above 24: converged, Hyperbolic | above 16: converged, Hyperbolic
+  T4_R4 11.3137: above 24: converged, Hyperbolic | above 16: converged, Hyperbolic
+  T4_R4 64: above 24: Unresolved, None | above 16: converged, Hyperbolic
+      above 24: tested set at -2.21915e-16+6.46068j (+4): the set's count differs between cutoffs
+      above 24: tested set at -2.3582e-15+8.09603j (+1): the set's count differs between cutoffs
+  T4_R4 72: above 24: Unresolved, None | above 16: Unresolved, None
+      above 24: tested group at 0.0192974+0.440095j: U 3.13e-03 above a tenth of its distance to the imaginary axis, 1.93e-02
+      above 24: tested set at -2.32314e-16+6.3575j (+3): the set's count differs between cutoffs
+      above 24: tested set at -1.53046e-16+7.93639j (+1): the set's count differs between cutoffs
+      above 16: tested group at 0.0192974+0.440095j: U 3.13e-03 above a tenth of its distance to the imaginary axis, 1.93e-02
+  T5_R2 45.2548: above 24: converged, Elliptic | above 16: converged, Elliptic
+converged: 7 of 12 with the band above 24; 11 of 12 with the band above 16
+
+C2a/R5 at 2, imaginary groups near 7.98i
+  N = 16: [(8.013502, 1, 0, 'imag'), (7.997207, 1, 0, 'imag'), (7.978368, 1, 0, 'imag'), (7.98647, 1, 0, 'imag'), (7.967264, 1, 0, 'imag'), (7.969243, 1, 0, 'imag'), (7.978731, 1, 0, 'imag'), (7.97639, 1, 0, 'imag'), (7.971785, 1, 0, 'imag'), (7.973507, 1, 0, 'imag'), (7.972882, 1, 0, 'imag'), (7.976005, 1, 0, 'imag'), (7.970293, 1, 0, 'imag'), (7.978867, 1, 0, 'imag'), (7.970274, 1, 0, 'imag')]
+  N = 24: [(7.978346, 1, 0, 'imag'), (8.013431, 1, 0, 'imag'), (7.997071, 1, 0, 'imag'), (7.986317, 1, 0, 'imag'), (7.967238, 1, 0, 'imag'), (7.969181, 1, 0, 'imag'), (7.971746, 1, 0, 'imag'), (7.978703, 1, 0, 'imag'), (7.976354, 1, 0, 'imag'), (7.972853, 1, 0, 'imag'), (7.975983, 1, 0, 'imag'), (7.973397, 1, 0, 'imag'), (7.978729, 1, 0, 'imag'), (7.970251, 1, 0, 'imag'), (7.970189, 1, 0, 'imag')]
+  N = 32: [(8.013291, 1, 0, 'imag'), (7.996996, 1, 0, 'imag'), (7.978346, 1, 0, 'imag'), (7.986278, 1, 0, 'imag'), (7.967238, 1, 0, 'imag'), (7.969179, 1, 0, 'imag'), (7.976354, 1, 0, 'imag'), (7.975982, 1, 0, 'imag'), (7.971746, 1, 0, 'imag'), (7.972852, 1, 0, 'imag'), (7.978706, 2, 0, 'imag'), (7.970185, 1, 0, 'imag'), (7.97025, 1, 0, 'imag'), (7.973387, 1, 0, 'imag')]

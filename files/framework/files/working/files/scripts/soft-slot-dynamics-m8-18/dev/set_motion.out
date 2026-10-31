@@ -1,0 +1,6 @@
+C2a/R5 at 2 near 7.979i: members 2, window 7.979i to 7.979i, bottleneck 24 to 32 2.31e-05; nearest Krein-negative none
+T4/R4 at 4 near 7.889i: members 2, window 7.889i to 7.889i, bottleneck 24 to 32 6.98e-05; nearest Krein-negative 7.87 away
+T1/R5 at 32 near 7.353i: members 2, window 7.353i to 7.359i, bottleneck 24 to 32 8.58e-03; nearest Krein-negative 7.35 away
+T1/R4 at 64 near 6.887i: members 2, window 6.884i to 6.887i, bottleneck 24 to 32 4.83e-03; nearest Krein-negative 6.87 away
+T4/R4 at 64 near 6.461i: members 2, window 6.461i to 6.487i, bottleneck 24 to 32 1.02e-02; nearest Krein-negative 6.10 away
+T4/R4 at 64 near 8.096i: members 2, window 8.096i to 8.107i, bottleneck 24 to 32 8.33e-03; nearest Krein-negative 7.73 away

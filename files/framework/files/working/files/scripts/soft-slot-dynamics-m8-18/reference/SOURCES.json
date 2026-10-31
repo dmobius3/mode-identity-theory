@@ -1,0 +1,329 @@
+{
+ "commits": {
+  "d1c0ec8": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+  "292b158": "292b158cf1a53902489ced3426e1f047699aeb62",
+  "7b66f8a": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81"
+ },
+ "files": [
+  {
+   "file": "instrument/__init__.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/__init__.py",
+   "blob": "3b86311d904ed7ed14da306067ddde744122a3ad",
+   "sha256": "ebb8d0440edae25ee0755fa962d24061fbebb502bf5176d3084a422188d2dcdc",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/basis.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/basis.py",
+   "blob": "d0e21c429a43a71ffa673e0d9a53ea3278cc8c8e",
+   "sha256": "5728c5e8c9532bc4764dd5b9d111f693e5ba86c415d4a2b4f880e8196c66616b",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/branches.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/branches.py",
+   "blob": "e46cc2af118845e90af62fe535802bad4e60593c",
+   "sha256": "4e32a8cfd1cd7db4ced242ecddf5e22c9319134029877b78eae74b13b3d1a55f",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/certified.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/certified.py",
+   "blob": "1834624f49ca1bf83e17e04a2086dbbf0362172d",
+   "sha256": "1f5dde36bde7edfc3257e7581b2538ab7853693ab8ed1b48dae6dc0e2de343d1",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/convergence.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/convergence.py",
+   "blob": "136d3aa827b1acd448e356d21520139ddf13e3c7",
+   "sha256": "02404ab43313eb4d67cb336edbed364d9071187da66dec44bbd4f997cf66bd51",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/devtools.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/devtools.py",
+   "blob": "67db7c0ced4d77518844feff822c889d90d2a857",
+   "sha256": "3a2d0f7d2c5bd74bdedf2a673989a67cadef25c508424ad25501745c7adb7d0f",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/functional.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/functional.py",
+   "blob": "99893f8812cfaceae38efad755d25403de50de9d",
+   "sha256": "f8f9329f1fa5d2bb1f7e3718d5e5bdfa94e86f9e0dcc4dda308a7f86c0f00d79",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/group2i.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/group2i.py",
+   "blob": "f8d64191d2eed5d01eb66b336ec4244e58289e6c",
+   "sha256": "0a9732afe32b3509976de2e519c0f8da3d4f773d2495c5c2d58d27fe5aaa85f0",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/linear.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/linear.py",
+   "blob": "b9578ed02daa517183915986c8fe6059a833f0e9",
+   "sha256": "e0fce88f3ed8374f94f6ba329813cfb639f05a2407f9a313f66cbe79744f11c2",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/newton.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/newton.py",
+   "blob": "ff2e78ccdb5049d153f622c0d91e74fc8b02cd17",
+   "sha256": "36bd989fe10891ba49757025a908b95569cb7b7ee1901f87299dede2a10fe00f",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/quadrature.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/quadrature.py",
+   "blob": "5f38133e00d584a6dbdc1308b63441503f1c15e9",
+   "sha256": "6c9baf9d1bd3bc8741006490f88fd4a1e134f0cd3a6ffd8f9b7f1a6074e30a71",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "instrument/su2.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/instrument/su2.py",
+   "blob": "0dd46dc6b37621cca070eaf595748dd2e4e4a955",
+   "sha256": "60c4f8088a089341e76fb159847784336f4ad6a886a72a1c7683ef86a63b75f6",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/cases.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/cases.py",
+   "blob": "cc453aa287feaf5db3f040708c90e303b64eadaa",
+   "sha256": "cfc3663dc5c9ac469335ca71d8884312504362c455b6291b758d45b92ab25e9c",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/seeds.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/seeds.py",
+   "blob": "ef7c7bce1d34ae39ffaf8052c5398cdb234e0dbd",
+   "sha256": "11916c7ccd9c27583933c78b8d79f5c9ed0472c4ade946312acf4cf0bd80d87c",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/driver.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/driver.py",
+   "blob": "85240ce8ee2bc27ed70a8ba1fb1c1dd8e7f612ee",
+   "sha256": "6fad387effeb2ac805a09f485a11037b7575f511558776d0461dd8c6f5b622f9",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/checks.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/checks.py",
+   "blob": "3d6d75a4a4f35e117249f801b4d71b4d80021589",
+   "sha256": "c3122cd0ac692e16a5a6fb7fde178e13b27d9bb1632ad8eed32432b2c6919b84",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/next_order_values.json",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/next_order_values.json",
+   "blob": "ae52dd9d85ff2e4685950ffa8ffd61661f2f7078",
+   "sha256": "b05fff5ddd71c29c79318b6257f940c6035d7c954f3bafa34a22080eecc00333",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/pin_manifest.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/pin_manifest.py",
+   "blob": "f1c12c9e96232ec980cb23635c19d1035a06d579",
+   "sha256": "4e7c7ab3eb36bafcb956c67751bdbc121767ba9b57bec89a8a108f5b67798580",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "run/record_environment.py",
+   "commit": "d1c0ec889b09b4a93d5f08e63280080e25e83e2e",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/record_environment.py",
+   "blob": "44500f478649e6f3da4472b61bf1a8dc62b6c974",
+   "sha256": "1494fb8afd942e74a646671fe16f03ad4d9b095ae62cd1be35a51b2eb3a10059",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/RUNLOG.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/RUNLOG.json",
+   "blob": "ccdd58fe8a4498b1d94ebf272ce2c80aaafb193e",
+   "sha256": "84f2c9f6667e02d030dfe1d0f759ad183cd0bc6293228bd60e3aa0a2785edadb",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/C1.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/C1.json",
+   "blob": "4ccac3d2843c4082fb13af7d34ece7b49c15fe07",
+   "sha256": "356ffbf4fe71eb1429163e849d53a33f92643b5784124a9d11e9ef8c5e9b15ca",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/C2a.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/C2a.json",
+   "blob": "91564933c228cdc5df300decaae4e62602d42b4b",
+   "sha256": "0165455b6ba66d462888521a5273fc8f0a744d4430c808e2855f5e9d06d3c24f",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/C2b.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/C2b.json",
+   "blob": "19f80bada697e9d7e3a9274270089cb2e0c8cc1c",
+   "sha256": "efd5c21e233f08897f5dc9ded449801bfa3fe8d5e8895b6099b1840dd2b5a0fd",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/C3.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/C3.json",
+   "blob": "8ebe57cbb36e2e9704f7bd6208901311e5b82a70",
+   "sha256": "8e7c303c2e7dfe35e39e3f581ace30d537a1f30073389f8e6aa199b30250d469",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/C2a_R5.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/C2a_R5.json",
+   "blob": "af6c5fce0d2befbbade54a375c7db89e391226a2",
+   "sha256": "387ed7b8e04030a2e10569eedb313ca5713bea92bec5a6bac7bd2e6697e668be",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/P5.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/P5.json",
+   "blob": "b123611e0b013fadf9d449ee90302f6924ebbf6a",
+   "sha256": "c404e49c2a6e52b0754c97349b01c8097db3271af641bc56071fd72098082bd0",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/out/C3R_R4.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/out/C3R_R4.json",
+   "blob": "dfc8566b1f1969030be5b5161f17b83fdd16e2f5",
+   "sha256": "21706fd5b2548cdcb0bf8b44d2df0c6b62d34abad41363d0fb1e43a14a5c9fb6",
+   "pinned_by": "M8.16.1's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_16_1/run/FROZEN.json",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/FROZEN.json",
+   "blob": "9da1269b789bc8703d0ec819657b70bcffae1f9c",
+   "sha256": "c258e299b8f0268e805712b4f087b3533c6e0cd3c37e237bf3d0639540c52a2d",
+   "pinned_by": "SHA256SUMS at 292b158"
+  },
+  {
+   "file": "reference/m8_16_1/run/m8_16_task_details.md",
+   "commit": "292b158cf1a53902489ced3426e1f047699aeb62",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-16-1/run/m8_16_task_details.md",
+   "blob": "746fb0c38ceb994caf9f32096d455e63c1f4a80b",
+   "sha256": "9d16712982e5388970fca33de59958721109e09f9d88dec7a2a088489ad3efd6",
+   "pinned_by": "M8.16.1's run/FROZEN.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/RUNLOG.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/RUNLOG.json",
+   "blob": "d3e29ce7d6f5ce64b721e17b188c72db2e174b64",
+   "sha256": "7d761506f8bfb05cee50ddc6cbf29b0a97fb20c7d9242d57c6765cff8114196a",
+   "pinned_by": "SHA256SUMS at 7b66f8a"
+  },
+  {
+   "file": "reference/m8_17/run/out/T1_R4.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/T1_R4.json",
+   "blob": "d7480d323c91df14a990aea1cfe3a7f4751d53f9",
+   "sha256": "06e51a090e310a2accf6bab21fdee693ab2806ff6115bb8a7f10b54aae96bcc9",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/T1_R5.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/T1_R5.json",
+   "blob": "1740687e6215cc0783defdb279db939ef3a3cf95",
+   "sha256": "e8ecd65f3754e6bd047e0d6c34964d59aaa44bd05bb522a71a884118926d3678",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/T4_R4.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/T4_R4.json",
+   "blob": "2e825c81b3e8dcb52daf25fbfd0f4b09a80f713c",
+   "sha256": "2955bc02cb2c653deb28f13bcdf53229b21541521681900661183a632823e512",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/T4_R5.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/T4_R5.json",
+   "blob": "1cb6cee89f8dc653f038e6c894336ceb9349d656",
+   "sha256": "167ddab0d696d2758581a8f7063d0d74283c13bbe2500fb60c91665e1a2ce95c",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/T5_R2.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/T5_R2.json",
+   "blob": "5501e2c7590788242ba5da7bb8d07cf2710bc72c",
+   "sha256": "fb185a91edcf7099950e4e7529d125136537769992d8bddb9cb18edf0d632bec",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/locate_T4_R5_8_11.313708499.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/locate_T4_R5_8_11.313708499.json",
+   "blob": "cee35076c3670febf1f4e08f9baeea571d89ff20",
+   "sha256": "517aa9f62a45255ec4a76690e95069935d32265e532a7858e58d8709cf10af55",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/out/CENSUS.json",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/out/CENSUS.json",
+   "blob": "626c25386b93a36f9b7c5bd9dd5215e1822c05f9",
+   "sha256": "d010db400a6bdef2ad64ce1bfd0e085995c49e62ba1982325ff6234f8d233aac",
+   "pinned_by": "M8.17's run/out/RUNLOG.json"
+  },
+  {
+   "file": "reference/m8_17/run/census.py",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/census.py",
+   "blob": "7be181f99c814cd422ffdb34d80947fa9a9aa5c0",
+   "sha256": "f4c60943215bea341656638ec431ee79206d0561fd266906b018196cfdb5421d",
+   "pinned_by": "SHA256SUMS at 7b66f8a"
+  },
+  {
+   "file": "reference/m8_17/run/census_lib.py",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/census_lib.py",
+   "blob": "2889ff860096c8e610115bdc39a085e5e8619fac",
+   "sha256": "4873006e94e09bdf1b03396e2e9e85881ce503d2def0a2036858691706d6a321",
+   "pinned_by": "SHA256SUMS at 7b66f8a"
+  },
+  {
+   "file": "reference/m8_17/run/m8_16_task_details.md",
+   "commit": "7b66f8a0e207888042e6bb4a9ab636f946cb2a81",
+   "path": "files/framework/files/working/files/scripts/soft-slot-dynamics-m8-17/run/m8_16_task_details.md",
+   "blob": "c6b2b13a88b59734ac949d18541f5490ea49332d",
+   "sha256": "667159c3db993396a10a75775acf79e78f744d161c641ebc37c9e6baf3af7cea",
+   "pinned_by": "SHA256SUMS at 7b66f8a"
+  }
+ ]
+}

@@ -1,0 +1,12 @@
+Tests 2 and 3, the reader and the band, with no solve, in a seedcheck process.
+1. PASS: census.rule reproduces M8.17's reading at 86 stored points of the five rows
+2. PASS: a cutoff missing reads Unresolved; the 12 of the twelve, on M8.17's records, each refuse: untested at N = 40
+3. PASS: the stored band is the frozen level's at 86 points: level 17 in R2, 18 in R4 and R5
+4. PASS: where the reading beside it is Unresolved and the scored one converged, the point classifies and the gate passes: [True, True, True, True]
+5. PASS: the Krein-negative distance equals a direct computation: ['T4/R4 at 4: 7.862020861537129', 'T1/R4 at 64: 4.472677825746014', 'T4/R4 at 64: 5.891798463871949']; C2a records None
+arms, each of which must turn its claim red:
+   A1. BAND_N set to 24: a level energy no longer the frozen level: RED
+   A2. the reading beside it read in place of the scored one: RED
+   A3. the Krein-negative distance omitted: RED
+   A4. the left-out set taken as every group: RED
+0 failed

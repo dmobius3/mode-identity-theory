@@ -1,0 +1,19 @@
+N = 16, on macOS 15.8.2
+C2b (R2), N = 16, 4 points: 3599 leaves compared, 0 differ; 2 s
+C2a (R4), N = 16, 4 points: 8433 leaves compared, 0 differ; 5 s
+C3 (R4), N = 16, 4 points: 3800 leaves compared, 0 differ; 7 s
+C2a/R5 (R5), N = 16, 4 points: 10152 leaves compared, 0 differ; 8 s
+0 of 4 differ
+C1 (R3), N = 16, 24 and 32: 52696 leaves compared, 0 differ; 137 s
+N = 24, on macOS 15.8.2
+C2b (R2), N = 24, 4 points: 13476 leaves compared, 0 differ; 27 s
+C2a (R4), N = 24, 4 points: 22777 leaves compared, 0 differ; 57 s
+C3 (R4), N = 24, 4 points: 10696 leaves compared, 0 differ; 81 s
+C2a/R5 (R5), N = 24, 4 points: 30121 leaves compared, 0 differ; 197 s
+0 of 4 differ
+N = 32, on macOS 15.8.2
+C2b (R2), N = 32, 4 points: 30491 leaves compared, 0 differ; 317 s
+C2a (R4), N = 32, 4 points: 47643 leaves compared, 0 differ; 761 s
+C3 (R4), N = 32, 4 points: 22262 leaves compared, 0 differ; 1001 s
+C2a/R5 (R5), N = 32, 4 points: 60425 leaves compared, 0 differ; 1335 s
+0 of 4 differ

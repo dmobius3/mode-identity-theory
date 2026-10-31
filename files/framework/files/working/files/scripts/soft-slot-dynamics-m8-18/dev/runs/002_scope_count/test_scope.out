@@ -1,0 +1,25 @@
+Test 6, the gates and the read, through the run's whole order, on stub solves, in a seedcheck process.
+S1. PASS: 59 reads of 49 points at N = 40: 24 of the controls, 12 of the twelve, 13 of T4/R4's location, 10 of those midpoints read from each end, none elsewhere; 54 of the paths' other grid points solved and unread; T1/R4: Elliptic throughout, T4/R4: Each change of type located, T1/R5: Elliptic throughout, T4/R5: Each change of type located, T5/R2: Not settled by this run
+S2. PASS: the kernel at N = 40: C3: K1 fails at eps = 1; no later solve at N = 40; T1/R4 at 1.41 keeps M8.17's causes
+S3. PASS: the control gate: C2a/R5: eps = 2: Unresolved, None: synthetic; all six recorded; no target solved at any cutoff
+S4. PASS: Arm B not located; Arm A went on: T1/R4 Elliptic throughout
+S5. PASS: reproducibility failure: C2b at N = 32: eps 0.25: /lam: 63.25 against 63.2500000000001
+S6. PASS: 8 reads refused of 8: [True, True, True, True, True, True, True, True]
+S7. PASS: Cutoff.solve refused: True; C1 refused: True
+S8. PASS: 1.41 classified; the four later points untested at N = 40; nothing solved past 8: True
+S9. PASS: interrupted: True; the partial file moved: True; completed paths solved again: 0; the same record: True
+S10. PASS: reproducibility failure in Arm B: a midpoint does not reproduce at N = 24: synthetic
+S11. PASS: no target is read before the gate record shows the controls passed
+S12. PASS: the end at 5.65685: K1 fails at N = 40; 5.66 stays Hyperbolic; 0 midpoints solved
+S13. PASS: a read with no path job refused: True; interrupted with the files unlogged: True; no read of them: True; moved aside: True; the path solved again, 18 steps; the same record: True
+arms, each a mutation of census.py that must turn its scene red:
+   the read's scope check removed: S6: RED
+   the order check in Cutoff.solve removed: S7: RED
+   the gate's check on a target removed: S11: RED
+   the kernel's stop removed: S2: RED
+   the reproduction check removed: S5: RED
+   a read at every point of a path: S1: RED
+   the borrowed end's check removed: S12: RED
+   every path point read at N = 40: S1: RED
+   a read that skips the solve-state gate: S13: RED
+0 failed

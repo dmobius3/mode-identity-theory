@@ -1,0 +1,18 @@
+The guard procedure, rehearsed on a temporary copy of this folder; the folder itself is not touched.
+1. PASS: the filed terms in run/, equal to registration/'s, SHA-256 007a0097c6c7d91877733ba38586bfa5229851d87341f622099d79bbc34584a6
+2. PASS: run/ENVIRONMENT.json written, and --check finds no difference
+3. PASS: the manifest pinned, the terms and the environment record among its files, and recomputed equal to the pin; a second pin refused
+4. PASS: FROZEN.json and its pin written once; a second write refused
+5. PASS: devtools.frozen() and the copy's census.frozen() admit it: ['T4/R5', 'C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'P5', 'C3R/R4', 'T5/R2', 'T1/R4', 'T4/R4', 'T1/R5']
+6. PASS: the freeze block: the terms' SHA-256, the go, both pins, every manifest line once, no environment difference, the 22 reference files, FROZEN.json in full and the order
+arms, each of which census.frozen() must refuse, on the frozen copy restored after each:
+   A1. a byte appended to run/test_gate.out: RED; devtools.frozen() refuses; census.frozen(): PermissionError: the running tree differs from the frozen manifest
+   A2. a byte changed in M8.17's T1/R4 output: RED; devtools.frozen() refuses; census.frozen(): PermissionError: the target record reference/m8_17/run/out/T1_R4.json differs from FROZEN.json's
+   A3. a space added to FROZEN.json: RED; devtools.frozen() refuses; census.frozen(): PermissionError: run/FROZEN.json differs from its pin, run/FROZEN_PIN (UA)
+   A4. the terms in run/ changed by one byte: RED; devtools.frozen() refuses; census.frozen(): PermissionError: the running tree differs from the frozen manifest
+   A5. T1/R4's path cut short in a forged FROZEN.json, its pin rewritten: RED; devtools.frozen() admits; census.frozen(): PermissionError: FROZEN.json's case T1/R4 differs from M8.16.1's with this task's points and ladder
+   A6. the census values' moved changed in a forged FROZEN.json, its pin rewritten: RED; devtools.frozen() admits; census.frozen(): PermissionError: FROZEN.json's census values differ from census_lib's
+   A7. a byte changed in reference/SOURCES.json: RED; devtools.frozen() refuses; census.frozen(): PermissionError: the target record reference/SOURCES.json differs from FROZEN.json's
+   the copy restored: census.frozen() admits it again
+the folder itself: untouched
+0 failed

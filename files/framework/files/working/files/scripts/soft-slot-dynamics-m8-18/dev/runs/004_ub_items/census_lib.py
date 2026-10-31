@@ -1,0 +1,723 @@
+"""M8.18's census logic, with no solve: the points and ladders, the read's scope, the reproduction rules, the band,
+classifying a point, the brackets, the locator's decisions and the rows' standing (M8.18's terms: THE TESTED BAND, ARM
+A, ARM B, THE ROW OUTCOMES, and THE FREEZE, THE GUARD AND THE RUN). It is M8.17's census_lib.py, with its functions
+taking a ladder; what is new is named where it is made.
+
+Everything here reads records: M8.16.1's and M8.17's outputs, and this run's own records. The solves and the records
+of the run's points are census.py's, through M8.16.1's driver and the frozen instrument. The locator's bisection takes
+its solve and its agreement measure as arguments, so the same code runs on the instrument in the run and on synthetic
+records in the tests.
+
+A ladder is a dict: its cutoffs, the two that decide a location, and the pairs branch identity reads. Arm A's beside
+key says that each reading is also taken on the band above N = 24, unscored.
+
+Readings of the terms that the code makes, each stated where it is made:
+  - n(L) is resolved at a cutoff when the point was solved and accepted there and its record holds no n(L) item among
+    its unresolved, its gray zone or L's zero count against V0's chains (nl_at);
+  - two intervals overlap when their interiors meet: intervals that only touch hold the two cutoffs' changes on
+    opposite sides of a point both sampled (location);
+  - the two-ends agreement measures the solution continued from the upper end against the one continued from the
+    lower, as branch identity measures the higher cutoff's against the lower's embedded (census.aligned);
+  - a left-out group is one, at the ladder's highest cutoff, whose eigenvalues no row of the reading reads
+    (krein_distance).
+"""
+import json
+import math
+import os
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+sys.path.insert(0, ROOT)
+sys.path.insert(0, HERE)
+import cases as cs  # noqa: E402
+import checks as ck  # noqa: E402
+
+# --- the ladders, the points and the band (THE INSTRUMENT AND THE LADDERS; THE TESTED BAND; ARM A) --------------------
+ARM_A = dict(name='A', cutoffs=(24, 32, 40), deciding=(32, 40), pairs=((24, 32), (32, 40)), beside=True)
+ARM_B = dict(name='B', cutoffs=tuple(cs.CUTOFFS), deciding=(24, 32), pairs=((24, 32),), beside=False)
+TOP = ARM_A['cutoffs'][-1]                  # the cutoff with no record on file, and the read's scope (in_scope)
+BAND_N = 16                                 # n_lo, for every scored reading: the level above N = 16
+BESIDE_N = 24                               # n_lo of the unscored reading beside it
+BAND_LEVEL = {'R2': 17, 'R4': 18, 'R5': 18}  # the level BAND_N gives, which the band's test confirms
+WINDOWS = {'R4': cs.ladder(16, 72.0), 'R5': cs.ladder(14, 32.0), 'R2': cs.ladder(18, 132.0)}
+ROWS = ['T1/R4', 'T4/R4', 'T1/R5', 'T4/R5', 'T5/R2']
+SLOT = {r: r.split('/')[1] for r in ROWS}
+TARGETS = ['T5/R2', 'T1/R4', 'T4/R4', 'T1/R5']         # Arm A's rows, in the run's order
+ARM_B_ROW = 'T4/R5'
+CONTROLS = ['C1', 'C2a', 'C2b', 'C3', 'C2a/R5', 'P5', 'C3R/R4']   # M8.16.1's, in its order
+READ_CONTROLS = CONTROLS[1:]                # the six the rule reads; C1's test is Theorem D's check
+RUN_ORDER = [ARM_B_ROW] + CONTROLS + TARGETS
+_W4, _W5, _W2 = WINDOWS['R4'], WINDOWS['R5'], WINDOWS['R2']
+TWELVE = {'T1/R4': [_W4[5], _W4[14], _W4[15], _W4[16], _W4[17]], 'T4/R4': [_W4[8], _W4[10], _W4[11], _W4[16], _W4[17]],
+          'T1/R5': [_W5[14]], 'T5/R2': [_W2[15]]}
+PATHS = {'T1/R4': _W4, 'T4/R4': _W4, 'T1/R5': _W5, 'T5/R2': _W2[:16], ARM_B_ROW: _W5[:12]}
+BRACKET_B = (_W5[10], _W5[11])              # T4/R5's (8, 11.31), Arm B's one bracket
+MOVED = 0.4                                 # Arm B's moved midpoint: this fraction of the interval above its lower end
+# the locator (M8.17's LOCATING A CHANGE OF TYPE)
+W = 1e-3                                    # the union's width, relative to its lower end
+W_HALF = W / 2                              # each cutoff's bisection completes below it
+DELTAS = (0.01, 0.05)                       # the guards' offsets, the second a single retry
+AGREE = ck.IDENTITY                         # the two-ends agreement: branch identity's 1e-2
+# the reproduction rules (THE FREEZE, THE GUARD AND THE RUN)
+TIMINGS = frozenset(('seconds', 'seconds_record', 'setup_seconds'))
+NOT_COMPUTED = frozenset(('k3_overlaps',))  # P5's at 0.25, which run_case computed and Cutoff does not
+ELLIPTIC_THROUGHOUT, LOCATED_ALL, NOT_SETTLED = ('Elliptic throughout', 'Each change of type located',
+                                                 'Not settled by this run')
+UNCHANGED_INDEX = ('Type change detected without an `n(L)` change. The registered index locator is inapplicable; '
+                   'the location remains OPEN. No location or S6 closure is claimed.')
+INADEQUATE_INDEX = 'The index evidence is inadequate; it is not evidence of no index change.'
+REF_17 = ('reference', 'm8_17', 'run', 'out')
+REF_161 = ('reference', 'm8_16_1', 'run', 'out')
+LOCATED_B = 'locate_T4_R5_8_11.313708499.json'         # M8.17's locator on Arm B's bracket
+NO_MEMORY = 'out of memory'                            # a control's failure of the kernel check, with that cause
+
+
+def key(eps):
+    return ck.key(eps)
+
+
+def pair_key(pair):
+    return f'{pair[0]}-{pair[1]}'
+
+
+def on(eps, values):
+    return key(eps) in {key(e) for e in values}
+
+
+def path_points(name):
+    """The case's registered points, as its FROZEN.json case lists them. A control keeps M8.16.1's, every one read. On a
+    row, read marks the points the rule reads: the twelve, and Arm B's whole path, as M8.17's locator reads it."""
+    if name in CONTROLS:
+        return [dict(p) for p in cs.CASES[name]['points']]
+    return [dict(eps=e, read=name == ARM_B_ROW or on(e, TWELVE[name])) for e in PATHS[name]]
+
+
+def ladder_of(name):
+    return ARM_B if name == ARM_B_ROW else ARM_A
+
+
+def cutoffs_of(name):
+    """The case's cutoffs: C1 keeps its own four, and every other case takes its arm's ladder."""
+    return list(cs.CASES[name]['cutoffs']) if name == 'C1' else list(ladder_of(name)['cutoffs'])
+
+
+def frozen_values():
+    """FROZEN VALUES: WHAT IS NEW, as FROZEN.json's census section holds them."""
+    arm = lambda L: dict(cutoffs=list(L['cutoffs']), deciding=list(L['deciding']), pairs=[list(p) for p in L['pairs']])  # noqa: E731
+    return dict(arm_a=arm(ARM_A), arm_b=arm(ARM_B), top=TOP, band_n=BAND_N, beside_n=BESIDE_N,
+                band_level=dict(BAND_LEVEL), windows={s: list(w) for s, w in WINDOWS.items()}, rows=list(ROWS),
+                targets=list(TARGETS), controls=list(CONTROLS), read_controls=list(READ_CONTROLS),
+                run_order=list(RUN_ORDER), twelve={r: list(v) for r, v in TWELVE.items()},
+                paths={r: list(p) for r, p in PATHS.items()}, bracket_b=list(BRACKET_B), moved=MOVED, w=W,
+                w_half=W_HALF, deltas=list(DELTAS), agree=AGREE)
+
+
+# --- the read's scope (ARM A, Solving and reading) ------------------------------------------------------------------
+class OutOfScope(Exception):
+    pass
+
+
+def in_scope(name, N, eps, why, bracket=None):
+    """Whether a read at (name, N, eps) lies in the frozen scope: every read at a lower cutoff; at N = 40, a control's
+    registered point, one of the twelve, a bracket's end, or a location's midpoints and guard readings, each by its
+    own why. bracket: the location's (lo, hi), while one is open."""
+    if N != TOP:
+        return True
+    if why == 'control':
+        return name in READ_CONTROLS and on(eps, cs.SAMPLE)
+    if why == 'twelve':
+        return name in TWELVE and on(eps, TWELVE[name])
+    if bracket is None or name not in TWELVE:
+        return False
+    if why == 'end':
+        return on(eps, bracket)
+    if why == 'location':
+        return bracket[0] * (1 - DELTAS[-1]) <= eps <= bracket[1] * (1 + DELTAS[-1])
+    return False
+
+
+# --- the band (THE TESTED BAND) -------------------------------------------------------------------------------------
+def band_value(slot, lam):
+    """The band edge at lam on the frozen level, computed apart from the rule."""
+    n = BAND_LEVEL[slot]
+    return math.sqrt(n * (n + 2)) - math.sqrt(lam)
+
+
+def band_ok(reading, slot, lam):
+    """Whether a scored reading's stored band is the frozen level's."""
+    return reading.get('band') is not None and abs(reading['band'] - band_value(slot, lam)) <= 1e-12
+
+
+def krein_distance(summary, reading):
+    """The distance from the left-out groups to the nearest Krein-negative group, at the ladder's highest cutoff: None
+    where the point holds no Krein-negative group. A left-out group is one no row of the reading reads."""
+    read = {j for row in reading['rows'] for j in row.get('top', [])}
+    left = [g for g in summary['groups'] if not set(g['idx']) & read]
+    neg = [g for g in summary['groups'] if g['cls'] == 'imag' and g['neg']]
+    if not neg:
+        return None
+    if not left:
+        return dict(distance=None, left_out=0, negative=len(neg))
+    d, g, h = min(((abs(complex(*a['c']) - complex(*b['c'])), a, b) for a in left for b in neg), key=lambda x: x[0])
+    return dict(distance=d, left_out=len(left), negative=len(neg), group=g['c'], nearest=h['c'])
+
+
+# --- one point's records ------------------------------------------------------------------------------------------
+def at(case_out, eps, lad):
+    """A case output's records of one point: each cutoff's point, the rule's reading, the reading beside it and the
+    identity records, by pair. A file of M8.16.1's or M8.17's holds one identity record, for N = 24 and 32."""
+    k = key(eps)
+    idn = case_out.get('identity', {}).get(k)
+    if idn is not None and 'kept' in idn:
+        idn = {pair_key(ARM_A['pairs'][0]): idn}
+    return dict(points={N: case_out['cutoffs'].get(str(N), {}).get('points', {}).get(k) for N in lad['cutoffs']},
+                reading=case_out.get('readings', {}).get(k), beside=case_out.get('beside', {}).get(k),
+                identity=idn or {})
+
+
+# --- the reproduction rules ---------------------------------------------------------------------------------------
+def _equal(a, b):
+    if isinstance(a, float) and isinstance(b, float) and math.isnan(a) and math.isnan(b):
+        return True
+    return type(a) is type(b) and a == b
+
+
+def differences(a, b, path='', ignore=TIMINGS):
+    """Every field in which two records differ, the ignored fields aside (the timings), as paths."""
+    if isinstance(a, dict) and isinstance(b, dict):
+        out = []
+        for k in sorted(set(a) | set(b), key=str):
+            if k in ignore:
+                continue
+            if k not in a or k not in b:
+                out.append(f'{path}/{k}: in one record only')
+            else:
+                out += differences(a[k], b[k], f'{path}/{k}', ignore)
+        return out
+    if isinstance(a, list) and isinstance(b, list):
+        if len(a) != len(b):
+            return [f'{path}: {len(a)} entries against {len(b)}']
+        return [d for i, (x, y) in enumerate(zip(a, b)) for d in differences(x, y, f'{path}[{i}]', ignore)]
+    return [] if _equal(a, b) else [f'{path}: {a!r} against {b!r}']
+
+
+def gate_cutoff(mine, theirs, eps_list):
+    """A path at one cutoff against its record: every point field for field, timings aside, and the seed. mine and
+    theirs: {seed, points}. P5's k3_overlaps, which run_case computed and Cutoff does not, are left out."""
+    ignore = TIMINGS | NOT_COMPUTED
+    out = [f'seed: {d}' for d in differences(mine.get('seed'), theirs.get('seed'), ignore=ignore)]
+    for e in eps_list:
+        k = key(e)
+        out += [f'eps {e:g}: {d}' for d in differences(mine['points'].get(k), theirs['points'].get(k), ignore=ignore)]
+    return out
+
+
+def gate_identity(mine, theirs, eps_list):
+    """The identity records between N = 24 and 32 against the record's, field for field."""
+    out = []
+    for e in eps_list:
+        k = key(e)
+        out += [f'eps {e:g}: {d}' for d in differences((mine.get(k) or {}).get(pair_key(ARM_A['pairs'][0])), theirs.get(k))]
+    return out
+
+
+def gate_full(mine, theirs, lad):
+    """A point of Arm B's path, reached by its own steps, equals its record field for field, timings aside: each
+    cutoff's point, the rule's reading and the identity record."""
+    out = []
+    for N in lad['cutoffs']:
+        out += [f'N = {N}: {d}' for d in differences(mine['points'][N], theirs['points'][N])]
+    out += [f'reading: {d}' for d in differences(mine['reading'], theirs['reading'])]
+    for pair in lad['pairs']:
+        out += [f'identity: {d}' for d in differences(mine['identity'].get(pair_key(pair)),
+                                                      theirs['identity'].get(pair_key(pair)))]
+    return out
+
+
+def gate_midpoints(mine, theirs):
+    """Each of M8.17's midpoints at one cutoff equals this run's, in order, timings aside. The moved point, which
+    M8.17 never computed, comes after them. mine and theirs: the bisection's midpoints, as records."""
+    if len(mine) < len(theirs):
+        return [f'{len(mine)} midpoints against {len(theirs)}']
+    out = []
+    for i, (a, b) in enumerate(zip(mine, theirs)):
+        out += [f'midpoint {i}: {d}' for d in differences({k: v for k, v in a.items() if k != 'moved'}, b)]
+    return out
+
+
+# --- classifying a point (ARM A, Classifying a point) --------------------------------------------------------------
+def here(pt, case, lad):
+    """This instrument's classification on a ladder: at every cutoff accepted and K1 holding, the rule's reading
+    converged, and branch identity kept on every pair. The type is the rule's, with the highest cutoff's indices."""
+    causes = []
+    for N in lad['cutoffs']:
+        p = pt['points'][N]
+        if not p:
+            causes.append(f'untested at N = {N}')
+        elif not p.get('accepted') or 'record' not in p:
+            causes.append(f"untested at N = {N}: {p.get('reason', 'no record')}")
+        elif not ck.k1(p, case):
+            causes.append(f'K1 fails at N = {N}')
+    rd = pt['reading']
+    if not rd:
+        causes.append('no reading')
+    elif rd['verdict'] != 'converged':
+        causes.append('the rule reads it Unresolved: ' + '; '.join(rd['reasons']))
+    elif rd['type'] not in ('Elliptic', 'Hyperbolic'):
+        causes.append(f"the rule reads it converged with no type: {rd['type']!r}")
+    for pair in lad['pairs']:
+        idn = pt['identity'].get(pair_key(pair))
+        if not idn:
+            causes.append(f'no branch identity record between N = {pair[0]} and {pair[1]}')
+        elif not idn['kept']:
+            causes.append(f"branch identity fails between N = {pair[0]} and {pair[1]}: aligned distance "
+                          f"{idn['aligned_distance']:.3g}, the records {'agree' if idn['same_record'] else 'differ'}")
+    if causes:
+        return dict(classified=False, causes=causes)
+    hi = pt['points'][lad['cutoffs'][-1]]
+    out = dict(classified=True, type=rd['type'], nL=hi['record']['nL'], nD=hi['record']['nD'], K=hi['record']['K'],
+               ki=hi['record']['ki'])
+    if lad['beside']:
+        out['krein_distance'] = krein_distance(hi['summary'], rd)
+    return out
+
+
+def admissible(pt, cls, case, lad, on_path=True):
+    """A bracket's end outside the twelve, on this ladder (ARM A, Locating a change of type): its highest cutoff's
+    record accepted, with K1; its type and indices those of M8.17's classification cls; and branch identity on every
+    pair. It returns the failures, each naming its own cause: an end past the row's path has no stored solution, and an
+    end M8.17 classified on M8.15's instrument alone has no indices to agree with. The rule does not read the end, and
+    its classification does not change."""
+    top = lad['cutoffs'][-1]
+    p, h, fails = pt['points'].get(top), cls.get('here') or {}, []
+    if h.get('nL') is None:
+        fails.append(f"M8.17 classified it on {cls.get('instrument')} instrument alone, with no indices to agree with")
+    if not on_path:
+        return fails + ["it lies past the row's path, so no solution is stored"]
+    if not p or not p.get('accepted') or 'record' not in p:
+        return fails + [f'no accepted record at N = {top}']
+    if not ck.k1(p, case):
+        fails.append(f'K1 fails at N = {top}')
+    r = p['record']
+    want = dict(type=cls.get('type'))
+    if h.get('nL') is not None:
+        want.update(nL=h.get('nL'), nD=h.get('nD'), K=h.get('K'), ki=h.get('ki'))
+    fails += [f'{f} is {r[f]!r} at N = {top}, {w!r} in M8.17\'s classification' for f, w in want.items() if r[f] != w]
+    for pair in lad['pairs']:
+        idn = pt['identity'].get(pair_key(pair))
+        if not idn:
+            fails.append(f'no branch identity record between N = {pair[0]} and {pair[1]}')
+        elif not idn['kept']:
+            fails.append(f'branch identity fails between N = {pair[0]} and {pair[1]}')
+    return fails
+
+
+# --- Arm A's gates (ARM A, The kernel, The control gate) -----------------------------------------------------------
+def kernel_failures(rec, case, eps_list):
+    """The kernel on one control at N = 40: its seed's check, and at each registered point accepted, with K1."""
+    fails = [] if rec['seed']['ok'] else ['the seed fails its check']
+    for e in eps_list:
+        p = rec['points'].get(key(e))
+        if not p or not p.get('accepted') or 'record' not in p:
+            fails.append(f'not accepted at eps = {e:g}')
+        elif not ck.k1(p, case):
+            fails.append(f'K1 fails at eps = {e:g}')
+    return fails
+
+
+def control_failures(out, case):
+    """The control gate on one control: at each registered point, converged with the type and indices on its record
+    (checks.converged), and branch identity on both pairs."""
+    fails = []
+    for p in case['points']:
+        e, k = p['eps'], key(p['eps'])
+        if not ck.converged(out, e, case):
+            rd = out['readings'].get(k) or {}
+            fails.append(f"eps = {e:g}: {rd.get('verdict')}, {rd.get('type')}: {'; '.join(rd.get('reasons', []))}")
+        for pair in ARM_A['pairs']:
+            idn = out['identity'].get(k, {}).get(pair_key(pair))
+            if not idn or not idn['kept']:
+                fails.append(f'eps = {e:g}: branch identity fails between N = {pair[0]} and {pair[1]}')
+    return fails
+
+
+def band_failures(results, controls, located, cases):
+    """The band's test on every scored reading on Arm A's ladder: the controls, the twelve, and each guard of Arm A's
+    locations. A reading with a cutoff missing holds no band, and classifies nothing."""
+    fails = []
+
+    def one(name, tag, rd, lam, slot):
+        if rd and rd.get('reasons') != ['a cutoff is missing'] and not band_ok(rd, slot, lam):
+            fails.append(f"{name} {tag}: the stored band {rd.get('band')!r} is not level {BAND_LEVEL[slot]}'s")
+    for name, out in {**controls, **results}.items():
+        slot = cases[name]['slot']
+        for k, rd in out['readings'].items():
+            p = out['cutoffs'][str(TOP)]['points'].get(k)
+            if p and 'lam' in p:
+                one(name, k, rd, p['lam'], slot)
+    for (row, _, _), rec in located.items():
+        if row == ARM_B_ROW:
+            continue
+        for side, rs in (rec.get('guards') or {}).items():
+            for g in rs:
+                pts = g['reading']['records']
+                p = pts['points'].get(TOP) or pts['points'].get(str(TOP))
+                if p and 'lam' in p:
+                    one(row, f"{side} guard at {g['eps']:g}", pts['reading'], p['lam'], cases[row]['slot'])
+    return fails
+
+
+# --- the brackets ---------------------------------------------------------------------------------------------------
+def nl_at(p):
+    """n(L) at one cutoff, or None where it is missing or unresolved."""
+    if not p or not p.get('accepted') or 'record' not in p:
+        return None
+    r = p['record']
+    if any(u.startswith('n(L):') for u in r['unresolved']):
+        return None
+    return r['nL']
+
+
+def bracket_kind(lo, hi, lad):
+    """'index', 'unchanged' or 'inadequate', from the ends' n(L) at the deciding cutoffs (lo, hi: each cutoff's point)."""
+    pairs = {N: (nl_at(lo[N]), nl_at(hi[N])) for N in lad['deciding']}
+    if any(a is None or b is None for a, b in pairs.values()):
+        return 'inadequate', pairs
+    changed = [a != b for a, b in pairs.values()]
+    if all(changed):
+        return 'index', pairs
+    if not any(changed):
+        return 'unchanged', pairs
+    return 'inadequate', pairs
+
+
+def changes(row_points):
+    """Each change of type between the row's classified points, in grid order: a type bracket where the two are
+    consecutive grid points, and otherwise a change across the unclassified points between them, named."""
+    cl = [(i, e, c) for i, (e, c) in enumerate(row_points) if c['classified']]
+    out = []
+    for (i, e1, c1), (j, e2, c2) in zip(cl, cl[1:]):
+        if c1['type'] == c2['type']:
+            continue
+        between = [row_points[k][0] for k in range(i + 1, j)]
+        out.append(dict(kind='type' if not between else 'across', lo=e1, hi=e2, lo_type=c1['type'],
+                        hi_type=c2['type'], between=between))
+    return out
+
+
+# --- the bisection and the location -------------------------------------------------------------------------------
+def bisect(a, b, nl_a, nl_b, end_a, end_b, solve, agree, moved=None):
+    """One cutoff's bisection of an index bracket (a, b), its ends' n(L) nl_a and nl_b, from their continuation states.
+    solve(state, eps) -> dict(ok, why, state, k1, nL): a continuation to eps, recorded, with K1 and n(L) by inertia
+    (None if unresolved); agree(sol_lower, sol_upper) -> the aligned distance. Each midpoint is solved from both ends;
+    the half whose ends differ in n(L) is kept; it completes when the interval is narrower than w/2 of its lower end.
+    moved, Arm B's alone: a midpoint where K1 fails moves once to that fraction of the interval above its lower end,
+    the refused midpoint staying in the record. Returns dict(complete, interval, stop, midpoints)."""
+    mids = []
+    while not b - a < W_HALF * a:
+        m = (a + b) / 2
+        s_lo, s_hi = solve(end_a, m), solve(end_b, m)
+        mids.append(dict(eps=m, from_lower=s_lo, from_upper=s_hi))
+        if moved is not None and s_lo['ok'] and s_hi['ok'] and not (s_lo['k1'] and s_hi['k1']):
+            m = a + moved * (b - a)
+            s_lo, s_hi = solve(end_a, m), solve(end_b, m)
+            mids.append(dict(eps=m, from_lower=s_lo, from_upper=s_hi, moved=True))
+        stop = None
+        if not (s_lo['ok'] and s_hi['ok']):
+            stop = 'a solve fails or is not accepted: ' + '; '.join(s['why'] for s in (s_lo, s_hi) if not s['ok'])
+        elif not (s_lo['k1'] and s_hi['k1']):
+            stop = 'K1 fails'
+        elif s_lo['nL'] is None or s_hi['nL'] is None:
+            stop = 'n(L) unresolved'
+        else:
+            d = agree(s_lo, s_hi)
+            mids[-1]['distance'] = d
+            if not d <= AGREE:
+                stop = f'the two solutions disagree: aligned distance {d:.3g}'
+            elif s_lo['nL'] != s_hi['nL']:
+                stop = f"the two solutions disagree: n(L) = {s_lo['nL']} from below, {s_hi['nL']} from above"
+        if stop is None:
+            n = s_lo['nL']
+            if n == nl_a:
+                a, end_a = m, s_lo['state']
+            elif n == nl_b:
+                b, end_b = m, s_hi['state']
+            else:
+                stop = f'n(L) = {n} matches neither end ({nl_a}, {nl_b}): two changes in the bracket'
+        if stop is not None:
+            return dict(complete=False, interval=[a, b], stop=stop, midpoints=mids)
+    return dict(complete=True, interval=[a, b], stop=None, midpoints=mids)
+
+
+def location(res, delta, lad):
+    """The location's conditions at the deciding cutoffs (res: {N: bisect result or a stop}, delta: {N: the signed
+    change}): (union, failures). The other cutoff's result is reported and does not decide."""
+    fails = []
+    n1, n2 = lad['deciding']
+    for N in lad['deciding']:
+        r = res.get(N)
+        if r is None or not r['complete']:
+            fails.append(f"N = {N}: an unsuccessful stop: {r['stop'] if r else 'not bisected'}")
+        elif not r['interval'][1] - r['interval'][0] < W_HALF * r['interval'][0]:
+            fails.append(f'N = {N}: the interval is not narrower than w/2 of its lower end')
+    if fails:
+        return None, fails
+    (a1, b1), (a2, b2) = (res[N]['interval'] for N in lad['deciding'])
+    lo, hi = min(a1, a2), max(b1, b2)
+    if not max(a1, a2) < min(b1, b2):
+        fails.append(f'the intervals at N = {n1} and {n2} do not overlap')
+    if not hi - lo < W * lo:
+        fails.append('the union is not narrower than w of its lower end')
+    if delta[n1] != delta[n2]:
+        fails.append(f'the signed change differs: {delta[n1]:+d} at N = {n1}, {delta[n2]:+d} at N = {n2}')
+    elif delta[n1] == 0:
+        fails.append('the signed change is zero')
+    return (None, fails) if fails else ((lo, hi), [])
+
+
+def inside(g, window):
+    """Whether an amplitude lies inside the row's window."""
+    return window[0] <= g <= window[-1]
+
+
+def guard_offsets(union, window):
+    """Each side's guard amplitudes, by delta in order: the lower at the union's lower end times 1 - delta, the upper at
+    its upper end times 1 + delta, None where it would fall outside the window."""
+    lo, hi = union
+    return {'lower': [(d, lo * (1 - d) if inside(lo * (1 - d), window) else None) for d in DELTAS],
+            'upper': [(d, hi * (1 + d) if inside(hi * (1 + d), window) else None) for d in DELTAS]}
+
+
+def guards(union, window, types, read_guard):
+    """The guard readings: each side's first classified reading counts, at delta = 0.01 and then 0.05, and must carry
+    its bracket end's type (types: {'lower': ..., 'upper': ...}); a guard outside the window is not computed.
+    read_guard(side, eps) -> this instrument's classification. Returns (readings, failures)."""
+    readings, fails = {}, []
+    for side, offs in guard_offsets(union, window).items():
+        readings[side], got, outside = [], None, False
+        for d, g in offs:
+            if g is None:
+                fails.append(f'the {side} guard at delta = {d} would fall outside the window: not computed')
+                outside = True
+                break
+            c = read_guard(side, g)
+            readings[side].append(dict(delta=d, eps=g, reading=c))
+            if c['classified']:
+                got = c
+                break
+        if got is None and not outside:
+            fails.append(f'no {side} guard reading is classified')
+        elif got is not None and got['type'] != types[side]:
+            fails.append(f"the {side} guard reads {got['type']}, not its end's {types[side]}")
+    return readings, fails
+
+
+def span(readings):
+    """The guard readings that count, the first classified on each side, as (lower, upper)."""
+    first = [next(g['eps'] for g in readings[side] if g['reading']['classified']) for side in ('lower', 'upper')]
+    return tuple(first)
+
+
+def located_name(delta, lad):
+    n1, n2 = lad['deciding']
+    return (f'a change of type located between the guard readings, with `n(L)` changing by {delta:+d} inside the '
+            f'interval at `N = {n1}` and {n2}')
+
+
+def public(s):
+    """A step's record for the output: its outcome, K1, n(L) and point, without its arrays."""
+    return dict(ok=s['ok'], why=s['why'], k1=s['k1'], nL=s['nL'], point=s['point'])
+
+
+def locate(ch, window, case, cuts, readings, aligned, ref, lad, moved=None, gate_mids=None, say=print):
+    """Arm B's bracket (ARM B; M8.17's LOCATING A CHANGE OF TYPE). cuts: {N: a cutoff with seed_ok, path(upto) -> {key:
+    step}, the registered path from its seed along the window's grid, and step(state, eps) -> step, a continuation,
+    recorded}; a step is dict(ok, why, state, c, k1, nL, point). readings(sols) -> one point's records from each cutoff's
+    step; aligned(cutoff, s1, s2) -> the two-ends distance; ref(eps) -> the record a recomputed point must equal, or
+    None. Each cutoff's path is recomputed to the bracket's upper end, and every recomputed point must equal its record,
+    timings aside, before any inward continuation; then settle. Returns (record, stop), stop naming the first recomputed
+    point or midpoint that does not reproduce."""
+    lo, hi = ch['lo'], ch['hi']
+    paths = {N: (cu.path(hi) if cu.seed_ok else {}) for N, cu in cuts.items()}
+    rec = dict(bracket=[lo, hi], types=[ch['lo_type'], ch['hi_type']], seeds={N: cu.seed_ok for N, cu in cuts.items()},
+               path={}, ends={})
+    failed = []
+    for e in [x for x in window if x <= hi * (1 + 1e-12)]:
+        k = key(e)
+        mine = readings({N: paths[N].get(k) for N in lad['cutoffs']})
+        r = ref(e)
+        fails = ['no record to reproduce'] if r is None else gate_full(mine, r, lad)
+        rec['path'][k] = dict(ok=not fails, failures=fails)
+        if fails:
+            failed.append(e)
+        if k in (key(lo), key(hi)):
+            rec['ends'][k] = mine
+    say(f"   ({lo:g}, {hi:g}): the recomputed path, {len(rec['path'])} points, {len(failed)} not reproduced")
+    if failed:
+        rec['stop'] = f'a recomputed point does not reproduce: eps = {failed[0]:g}'
+        return rec, rec['stop']
+    states = {N: (paths[N][key(lo)]['state'], paths[N][key(hi)]['state']) for N in cuts}
+    return settle(rec, ch, window, case, cuts, readings, aligned, lad, states, moved, gate_mids, say)
+
+
+def settle(rec, ch, window, case, cuts, readings, aligned, lad, states, moved=None, gate_mids=None, say=print):
+    """The rest of one bracket, from its ends' records and states: the index evidence, each cutoff's bisection, the
+    location and the guard readings. rec['ends'] holds both ends' records; states: {N: (lower end's, upper end's)}.
+    gate_mids(N, midpoints) -> the differences from M8.17's record, or None: Arm B's alone. Returns (rec, stop)."""
+    lo, hi = ch['lo'], ch['hi']
+    lo_pts, hi_pts = rec['ends'][key(lo)]['points'], rec['ends'][key(hi)]['points']
+    kind, pairs = bracket_kind(lo_pts, hi_pts, lad)
+    rec['kind'], rec['nL'] = kind, {N: list(p) for N, p in pairs.items()}
+    if kind != 'index':
+        rec['located'], rec['why'] = False, UNCHANGED_INDEX if kind == 'unchanged' else INADEQUATE_INDEX
+        return rec, None
+    res, delta = {}, {}
+    for N in lad['cutoffs']:
+        a_nl, b_nl = nl_at(lo_pts[N]), nl_at(hi_pts[N])
+        if N not in lad['deciding'] and (a_nl is None or b_nl is None or a_nl == b_nl):
+            res[N] = dict(complete=False, interval=None, stop=f"not bisected: its ends' n(L) are {a_nl} and {b_nl}",
+                          midpoints=[])
+            continue
+        delta[N] = b_nl - a_nl
+        cu = cuts[N]
+        res[N] = bisect(lo, hi, a_nl, b_nl, states[N][0], states[N][1], cu.step,
+                        lambda s1, s2, cu=cu: aligned(cu, s1, s2), moved)
+        for mpt in res[N]['midpoints']:
+            mpt['from_lower'], mpt['from_upper'] = public(mpt['from_lower']), public(mpt['from_upper'])
+        say(f"   N = {N}: {len(res[N]['midpoints'])} midpoints, interval {res[N]['interval']}, "
+            f"{'complete' if res[N]['complete'] else 'stopped: ' + res[N]['stop']}")
+        fails = gate_mids(N, res[N]['midpoints']) if gate_mids else []
+        if fails:
+            rec['bisection'], rec['stop'] = res, f'a midpoint does not reproduce at N = {N}: {fails[0]}'
+            return rec, rec['stop']
+    rec['bisection'], rec['delta'] = res, delta
+    union, fails = location(res, delta, lad)
+    rec['union'], rec['failures'] = union, fails
+    if union is not None:
+        def read_guard(side, g):
+            start = 0 if side == 'lower' else 1
+            pt = readings({N: cuts[N].step(states[N][start], g) for N in lad['cutoffs']})
+            c = here(pt, case, lad)
+            say(f"   the {side} guard at {g:.6g}, from {[lo, hi][start]:g}: "
+                f"{c['type'] if c['classified'] else 'not classified: ' + '; '.join(c['causes'])}")
+            return dict(c, records=pt)
+        readings_, gfails = guards(union, window, {'lower': ch['lo_type'], 'upper': ch['hi_type']}, read_guard)
+        rec['guards'], rec['failures'] = readings_, fails + gfails
+    rec['located'] = union is not None and not rec['failures']
+    rec['span'] = list(span(rec['guards'])) if rec['located'] else None
+    rec['why'] = located_name(delta[lad['deciding'][0]], lad) if rec['located'] else '; '.join(rec['failures'])
+    return rec, None
+
+
+# --- the row outcomes (THE ROW OUTCOMES) --------------------------------------------------------------------------
+def row_outcome(row_points, chs, spans):
+    """The row's run outcome and what leaves it unsettled. row_points: [(eps, classification)]; chs: its changes, each
+    with 'located' and 'why'; spans: each located change's guard readings (lower, upper), whose points between it
+    accounts for."""
+    open_ = []
+    for e, c in row_points:
+        if not c['classified'] and not any(lo < e < hi for lo, hi in spans):
+            open_.append(dict(point=e, causes=c['causes']))
+    for ch in chs:
+        if not ch['located']:
+            open_.append(dict(change=[ch['lo'], ch['hi']], kind=ch['kind'], why=ch['why']))
+    if open_:
+        return NOT_SETTLED, open_
+    if not chs and all(c['classified'] and c['type'] == 'Elliptic' for _, c in row_points):
+        return ELLIPTIC_THROUGHOUT, []
+    return LOCATED_ALL, []
+
+
+def meets_s4(outcome):
+    """S4's first and second endings; its third, an Unresolved point documented after an adequacy test, is not reached."""
+    return outcome in (ELLIPTIC_THROUGHOUT, LOCATED_ALL)
+
+
+# --- the records on file ----------------------------------------------------------------------------------------------
+def load_json(path):
+    with open(path, encoding='utf-8') as f:
+        return json.load(f)
+
+
+def m817_file(name, root=ROOT):
+    return load_json(os.path.join(root, *REF_17, name))
+
+
+def m8161_file(name, root=ROOT):
+    return load_json(os.path.join(root, *REF_161, name))
+
+
+def theirs(name, root=ROOT):
+    """The record a case's paths at N = 24 and 32 must reproduce: M8.17's for a row, M8.16.1's for a control."""
+    f = name.replace('/', '_') + '.json'
+    return m817_file(f, root) if name in ROWS else m8161_file(f, root)
+
+
+# --- the rows, the jobs and the record -------------------------------------------------------------------------------
+def classify_rows(results, m817, gate):
+    """Each row's points and its changes of type. A point of the twelve takes this run's classification, on Arm A's
+    ladder. Every other point keeps M8.17's, unread on this ladder. results: {row: this run's case output}; m817: M8.17's
+    CENSUS.json; gate: what stopped Arm A before the targets, or None. Where a gate stopped them, each of the twelve keeps
+    M8.17's causes, and the gate is named: no target was read, so nothing here is a second outcome with that cause."""
+    rows = {}
+    for row in ROWS:
+        pts = []
+        for p in m817['rows'][row]['points']:
+            e = p['eps']
+            if row in TWELVE and on(e, TWELVE[row]):
+                if row in results:
+                    c = here(at(results[row], e, ARM_A), results[row]['case'], ARM_A)
+                    c = dict(c, instrument='this run, on N = 24, 32 and 40' if c['classified'] else None, source='this run',
+                             beside=_beside(results[row], e))
+                elif gate:
+                    c = dict(classified=False, instrument=None, causes=p['causes'], not_read=gate, source="M8.17's causes")
+                else:
+                    c = dict(classified=False, instrument=None, causes=p['causes'], not_read='the run stopped',
+                             source="M8.17's causes")
+            else:
+                c = dict({k: v for k, v in p.items() if k != 'eps'}, source="M8.17's classification")
+            pts.append((e, c))
+        rows[row] = dict(points=pts, changes=changes(pts))
+    return rows
+
+
+def _beside(result, e):
+    b = at(result, e, ARM_A)['beside']
+    return dict(verdict=b['verdict'], type=b['type'], reasons=b['reasons']) if b else None
+
+
+def ours(row, ch):
+    """Whether a type bracket is one the new readings bracket: an end of it is one of the twelve."""
+    return on(ch['lo'], TWELVE[row]) or on(ch['hi'], TWELVE[row])
+
+
+def jobs(state):
+    """The locator's brackets on Arm A's rows, in the run's order: each type bracket the new readings bracket. T4/R5's
+    is Arm B's."""
+    return [(row, ch) for row in TARGETS for ch in state[row]['changes'] if ch['kind'] == 'type' and ours(row, ch)]
+
+
+def assemble(state, located):
+    """Each row's record: its points, its changes, each with its location or the condition it failed, its standing,
+    what leaves it open, and whether it meets an S4 completion condition. located: {(row, key(lo), key(hi)): the
+    locator's record}, Arm B's among them."""
+    rows = {}
+    for row in ROWS:
+        chs = state[row]['changes']
+        for ch in chs:
+            if ch['kind'] == 'across':
+                ch['located'] = False
+                ch['why'] = f"a change of type across the unclassified grid points {ch['between']}: not located"
+                continue
+            r = located.get((row, key(ch['lo']), key(ch['hi'])))
+            if r is None:
+                why = 'no end of it is one of the twelve' if row in TWELVE and not ours(row, ch) else 'the run stopped before it'
+                ch.update(located=False, why=f'no location was attempted: {why}')
+            else:
+                ch.update(located=r['located'], bracket_kind=r.get('kind'), why=r['why'], span=r.get('span'))
+        spans = [tuple(ch['span']) for ch in chs if ch.get('located') and ch.get('span')]
+        outcome, open_ = row_outcome(state[row]['points'], chs, spans)
+        rows[row] = dict(points=[dict(eps=e, **c) for e, c in state[row]['points']], changes=chs, outcome=outcome,
+                         open=open_, meets_s4=meets_s4(outcome))
+    return rows

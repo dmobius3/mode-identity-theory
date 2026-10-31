@@ -1,0 +1,3446 @@
+{
+ "stop": null,
+ "rows": {
+  "T1/R4": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 9.47465e-16+4.02388j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at 9.47465e-16+4.02388j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 3.01235e-15+0.342541j (+2): the set's count differs between cutoffs; tested set at 3.71208e-16+3.6807j (+1): the set's count differs between cutoffs; tested set at -7.11106e-16+3.92415j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at 3.01235e-15+0.342541j (+2): the set's count differs between cutoffs; tested set at 3.71208e-16+3.6807j (+1): the set's count differs between cutoffs; tested set at -7.11106e-16+3.92415j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 45.254833995939045,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 4.94519e-16+3.56238j (+1): the set's count differs between cutoffs; tested set at 2.24587e-16+3.86997j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at 4.94519e-16+3.56238j (+1): the set's count differs between cutoffs; tested set at 2.24587e-16+3.86997j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 64.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 4.81427e-16+3.4127j (+1): the set's count differs between cutoffs; tested set at 4.38554e-17+3.79165j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at 4.81427e-16+3.4127j (+1): the set's count differs between cutoffs; tested set at 4.38554e-17+3.79165j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 72.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -9.30127e-16+3.35419j (+1): the set's count differs between cutoffs; tested set at 2.16492e-16+3.75837j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at -9.30127e-16+3.35419j (+1): the set's count differs between cutoffs; tested set at 2.16492e-16+3.75837j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    }
+   ],
+   "changes": [],
+   "outcome": "Not settled by this run",
+   "open": [
+    {
+     "point": 1.4142135623730951,
+     "causes": [
+      "the rule reads it Unresolved: tested set at 9.47465e-16+4.02388j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 32.0,
+     "causes": [
+      "the rule reads it Unresolved: tested set at 3.01235e-15+0.342541j (+2): the set's count differs between cutoffs; tested set at 3.71208e-16+3.6807j (+1): the set's count differs between cutoffs; tested set at -7.11106e-16+3.92415j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 45.254833995939045,
+     "causes": [
+      "the rule reads it Unresolved: tested set at 4.94519e-16+3.56238j (+1): the set's count differs between cutoffs; tested set at 2.24587e-16+3.86997j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 64.0,
+     "causes": [
+      "the rule reads it Unresolved: tested set at 4.81427e-16+3.4127j (+1): the set's count differs between cutoffs; tested set at 4.38554e-17+3.79165j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 72.0,
+     "causes": [
+      "the rule reads it Unresolved: tested set at -9.30127e-16+3.35419j (+1): the set's count differs between cutoffs; tested set at 2.16492e-16+3.75837j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    }
+   ],
+   "meets_s4": false
+  },
+  "T4/R4": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -9.98233e-16+4.00991j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at -9.98233e-16+4.00991j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 7.8458e-16+3.98968j (+1): the set's count differs between cutoffs; tested set at -1.00202e-15+3.88085j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at 7.8458e-16+3.98968j (+1): the set's count differs between cutoffs; tested set at -1.00202e-15+3.88085j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -2.54393e-15+3.97075j (+1): the set's count differs between cutoffs; tested set at -9.63062e-16+3.83191j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at -2.54393e-15+3.97075j (+1): the set's count differs between cutoffs; tested set at -9.63062e-16+3.83191j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 45.254833995939045,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 64.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested group at 3.39649e-15+3.0127j: non-contracting above the floor"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested group at 3.39649e-15+3.0127j: non-contracting above the floor",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 72.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested group at 2.15032e-15+2.93462j: non-contracting above the floor; tested set at 1.11333e-15+3.29749j (+2): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested group at 2.15032e-15+2.93462j: non-contracting above the floor; tested set at 1.11333e-15+3.29749j (+2): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "across",
+     "lo": 2.8284271247461903,
+     "hi": 5.656854249492381,
+     "lo_type": "Elliptic",
+     "hi_type": "Hyperbolic",
+     "between": [
+      4.0
+     ],
+     "located": false,
+     "why": "a change of type across the unclassified grid points [4.0]: not located"
+    }
+   ],
+   "outcome": "Not settled by this run",
+   "open": [
+    {
+     "point": 4.0,
+     "causes": [
+      "the rule reads it Unresolved: tested set at -9.98233e-16+4.00991j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 8.0,
+     "causes": [
+      "the rule reads it Unresolved: tested set at 7.8458e-16+3.98968j (+1): the set's count differs between cutoffs; tested set at -1.00202e-15+3.88085j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 11.313708498984761,
+     "causes": [
+      "the rule reads it Unresolved: tested set at -2.54393e-15+3.97075j (+1): the set's count differs between cutoffs; tested set at -9.63062e-16+3.83191j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 64.0,
+     "causes": [
+      "the rule reads it Unresolved: tested group at 3.39649e-15+3.0127j: non-contracting above the floor",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "point": 72.0,
+     "causes": [
+      "the rule reads it Unresolved: tested group at 2.15032e-15+2.93462j: non-contracting above the floor; tested set at 1.11333e-15+3.29749j (+2): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    },
+    {
+     "change": [
+      2.8284271247461903,
+      5.656854249492381
+     ],
+     "kind": "across",
+     "why": "a change of type across the unclassified grid points [4.0]: not located"
+    }
+   ],
+   "meets_s4": false
+  },
+  "T1/R5": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 2,
+      "nD": 0,
+      "K": 2,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 9.90708e-16+0.301797j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at 9.90708e-16+0.301797j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ],
+     "source": "this run"
+    }
+   ],
+   "changes": [],
+   "outcome": "Not settled by this run",
+   "open": [
+    {
+     "point": 32.0,
+     "causes": [
+      "the rule reads it Unresolved: tested set at 9.90708e-16+0.301797j (+1): the set's count differs between cutoffs",
+      "M8.15 holds no record of this row"
+     ]
+    }
+   ],
+   "meets_s4": false
+  },
+  "T4/R5": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 7,
+      "nD": 1,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 2
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 1,
+      "K": 5,
+      "ki": 1
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 holds no record of this row"
+      ]
+     },
+     "source": "this run"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "type",
+     "lo": 8.0,
+     "hi": 11.313708498984761,
+     "lo_type": "Elliptic",
+     "hi_type": "Hyperbolic",
+     "between": [],
+     "located": false,
+     "bracket_kind": "index",
+     "why": "N = 24: an unsuccessful stop: K1 fails; N = 32: an unsuccessful stop: K1 fails",
+     "span": null
+    }
+   ],
+   "outcome": "Not settled by this run",
+   "open": [
+    {
+     "change": [
+      8.0,
+      11.313708498984761
+     ],
+     "kind": "type",
+     "why": "N = 24: an unsuccessful stop: K1 fails; N = 32: an unsuccessful stop: K1 fails"
+    }
+   ],
+   "meets_s4": false
+  },
+  "T2/R4": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 5,
+      "nD": 3,
+      "K": 2,
+      "ki": 0
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 5,
+      "nD": 3,
+      "K": 2,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Hyperbolic",
+      "K": 2,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 45.254833995939045,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 5,
+      "nD": 3,
+      "K": 2,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Hyperbolic",
+      "K": 2,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 64.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 5,
+      "nD": 3,
+      "K": 2,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Hyperbolic",
+      "K": 2,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 72.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 5,
+      "nD": 3,
+      "K": 2,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Hyperbolic",
+      "K": 2,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "type",
+     "lo": 16.0,
+     "hi": 22.627416997969522,
+     "lo_type": "Elliptic",
+     "hi_type": "Hyperbolic",
+     "between": [],
+     "located": true,
+     "bracket_kind": "index",
+     "why": "a change of type located between the guard readings, with `n(L)` changing by +2 inside the interval at `N = 24` and 32",
+     "span": [
+      16.10910937380427,
+      16.441082734591618
+     ]
+    }
+   ],
+   "outcome": "Each change of type located",
+   "open": [],
+   "meets_s4": true
+  },
+  "T2/R5": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 3,
+      "nD": 3,
+      "K": 0,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 0,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    }
+   ],
+   "changes": [],
+   "outcome": "Elliptic throughout",
+   "open": [],
+   "meets_s4": true
+  },
+  "T3/R4": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 2.79122e-15+3.51578j (+3): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "this instrument",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 45.254833995939045,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -7.05549e-16+3.23787j (+5): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 64.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -2.67583e-15+3.03461j (+5): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 72.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    }
+   ],
+   "changes": [],
+   "outcome": "Elliptic throughout",
+   "open": [],
+   "meets_s4": true
+  },
+  "T3/R5": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 16.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "T3/R5 at eps = 16 is a withheld point; not computed here"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "causes": [
+      "T3/R5 at eps = 16 is a withheld point; not computed here",
+      "M8.15 left it Unresolved"
+     ],
+     "source": "none"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 7,
+      "nD": 3,
+      "K": 4,
+      "ki": 1
+     },
+     "m815": {
+      "decided": true,
+      "type": "Hyperbolic",
+      "K": 4,
+      "ki": 1
+     },
+     "source": "M8.16.1's and M8.15's records"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Hyperbolic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 6,
+      "nD": 3,
+      "K": 3,
+      "ki": 0
+     },
+     "m815": {
+      "decided": true,
+      "type": "Hyperbolic",
+      "K": 3,
+      "ki": 0
+     },
+     "source": "M8.16.1's and M8.15's records"
+    }
+   ],
+   "changes": [
+    {
+     "kind": "across",
+     "lo": 11.313708498984761,
+     "hi": 22.627416997969522,
+     "lo_type": "Elliptic",
+     "hi_type": "Hyperbolic",
+     "between": [
+      16.0
+     ],
+     "located": true,
+     "why": "M8.15.2's location (#632), level 3"
+    }
+   ],
+   "outcome": "Each change of type located",
+   "open": [],
+   "meets_s4": true
+  },
+  "T5/R2": {
+   "points": [
+    {
+     "eps": 0.25,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.3535533905932738,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.5,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 0.7071067811865476,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 1.4142135623730951,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 2.8284271247461903,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 4.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "both",
+     "here": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 5.656854249492381,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: partner set at 3.20878e-15+5.77121j (+1): the set's count differs between cutoffs; partner set at 3.20878e-15+5.77121j (+1): the set's count differs between cutoffs; partner set at 3.20878e-15+5.77121j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 8.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: partner set at 2.66246e-15+5.67184j (+1): the set's count differs between cutoffs; partner set at 2.66246e-15+5.67184j (+1): the set's count differs between cutoffs; partner set at 2.66246e-15+5.67184j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 11.313708498984761,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: partner set at -2.07388e-15+5.53882j (+1): the set's count differs between cutoffs; partner set at -2.07388e-15+5.53882j (+1): the set's count differs between cutoffs; partner set at -2.07388e-15+5.53882j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 16.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: partner set at -1.84007e-15+5.36336j (+1): non-contracting above the floor; partner set at -1.84007e-15+5.36336j (+1): non-contracting above the floor; partner set at -1.84007e-15+5.36336j (+1): non-contracting above the floor"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 22.627416997969522,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: partner set at 1.67077e-16+5.13822j (+1): non-contracting above the floor; partner set at 1.67077e-16+5.13822j (+1): non-contracting above the floor; partner set at 1.67077e-16+5.13822j (+1): non-contracting above the floor"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 32.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at 8.02228e-16+0.436471j (+1): the set's count differs between cutoffs; partner set at 2.26776e-15+4.85989j (+1): non-contracting above the floor; partner set at 2.26776e-15+4.85989j (+1): non-contracting above the floor; partner set at 2.26776e-15+4.85989j (+1): non-contracting above the floor"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 45.254833995939045,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -6.21607e-16+0.592227j (+2): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested set at -6.21607e-16+0.592227j (+2): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs",
+      "M8.15 left it Unresolved"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 64.0,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested set at -2.20149e-15+0.606222j (+2): the set's count differs between cutoffs; tested group at -2.15883e-15+0.481689j: non-contracting above the floor; tested group at 1.05424e-15+0.39386j: non-contracting above the floor"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 90.50966799187809,
+     "classified": true,
+     "type": "Elliptic",
+     "instrument": "M8.15's",
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -1.03234e-14+0.527107j (+2): the set's count differs between cutoffs; tested group at 2.8818e-15+0.263559j: non-contracting above the floor; partner set at 1.34931e-15+3.80019j (+1): the set's count differs between cutoffs; partner set at 1.34931e-15+3.80019j (+1): the set's count differs between cutoffs; partner set at 1.34931e-15+3.80019j (+1): the set's count differs between cutoffs"
+      ]
+     },
+     "m815": {
+      "decided": true,
+      "type": "Elliptic",
+      "K": 6,
+      "ki": 3
+     },
+     "source": "this run"
+    },
+    {
+     "eps": 128.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: tested group at 0.0964772+0.154937j: U 8.03e-02 above a tenth of its distance to the imaginary axis, 9.65e-02; partner set at -6.33775e-16+3.45647j (+1): the set's count differs between cutoffs",
+       "branch identity fails: aligned distance 0.0104, the records agree"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "causes": [
+      "the rule reads it Unresolved: tested group at 0.0964772+0.154937j: U 8.03e-02 above a tenth of its distance to the imaginary axis, 9.65e-02; partner set at -6.33775e-16+3.45647j (+1): the set's count differs between cutoffs",
+      "branch identity fails: aligned distance 0.0104, the records agree",
+      "M8.15 left it Unresolved"
+     ],
+     "source": "this run"
+    },
+    {
+     "eps": 132.0,
+     "classified": false,
+     "instrument": null,
+     "here": {
+      "classified": false,
+      "causes": [
+       "K1 fails at N = 16",
+       "the rule reads it Unresolved: structure: a record is unresolved; structure: the type, indices, V0 or Krein counts differ along the ladder; tested group at 0.160267+0.156776j: U 5.03e-02 above a tenth of its distance to the imaginary axis, 1.60e-01; partner set at 1.00578e-15+3.46832j (+1): non-contracting above the floor",
+       "branch identity fails: aligned distance 0.0106, the records agree"
+      ]
+     },
+     "m815": {
+      "decided": false,
+      "causes": [
+       "M8.15 left it Unresolved"
+      ]
+     },
+     "causes": [
+      "K1 fails at N = 16",
+      "the rule reads it Unresolved: structure: a record is unresolved; structure: the type, indices, V0 or Krein counts differ along the ladder; tested group at 0.160267+0.156776j: U 5.03e-02 above a tenth of its distance to the imaginary axis, 1.60e-01; partner set at 1.00578e-15+3.46832j (+1): non-contracting above the floor",
+      "branch identity fails: aligned distance 0.0106, the records agree",
+      "M8.15 left it Unresolved"
+     ],
+     "source": "this run"
+    }
+   ],
+   "changes": [],
+   "outcome": "Not settled by this run",
+   "open": [
+    {
+     "point": 45.254833995939045,
+     "causes": [
+      "the rule reads it Unresolved: tested set at -6.21607e-16+0.592227j (+2): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs; partner set at -3.45032e-16+4.53231j (+1): the set's count differs between cutoffs",
+      "M8.15 left it Unresolved"
+     ]
+    },
+    {
+     "point": 128.0,
+     "causes": [
+      "the rule reads it Unresolved: tested group at 0.0964772+0.154937j: U 8.03e-02 above a tenth of its distance to the imaginary axis, 9.65e-02; partner set at -6.33775e-16+3.45647j (+1): the set's count differs between cutoffs",
+      "branch identity fails: aligned distance 0.0104, the records agree",
+      "M8.15 left it Unresolved"
+     ]
+    },
+    {
+     "point": 132.0,
+     "causes": [
+      "K1 fails at N = 16",
+      "the rule reads it Unresolved: structure: a record is unresolved; structure: the type, indices, V0 or Krein counts differ along the ladder; tested group at 0.160267+0.156776j: U 5.03e-02 above a tenth of its distance to the imaginary axis, 1.60e-01; partner set at 1.00578e-15+3.46832j (+1): non-contracting above the floor",
+      "branch identity fails: aligned distance 0.0106, the records agree",
+      "M8.15 left it Unresolved"
+     ]
+    }
+   ],
+   "meets_s4": false
+  }
+ },
+ "unclassified": {}
+}

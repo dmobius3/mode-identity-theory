@@ -1,0 +1,14 @@
+Test 4, the reproduction gate, on data on record, with no solve, in a seedcheck process.
+1. PASS: M8.17's recomputed ends of T4/R5 equal its row's records at every cutoff: 0 differences
+2. PASS: 220 points of the five rows and six controls at N = 24 and 32; P5's k3_overlaps left out at 0.25 passes (True), and another field left out fails (True)
+3. PASS: the identity records at 86 points
+4. PASS: 30 of M8.17's midpoints, at every cutoff, alone and with a moved point after them
+5. PASS: every compared field, mutated alone, fails its gate
+      C2a at 0.25, N = 24: 5550 leaves mutated, 0 passed; a field added and one removed fail
+      C2a at 0.25, N = 32: 10560 leaves mutated, 0 passed; a field added and one removed fail
+      T4/R4 at 4, N = 24: 5419 leaves mutated, 0 passed; a field added and one removed fail
+      the identity at 4: 3 leaves mutated, 0 passed
+      the refused midpoint, N = 32: 34345 leaves mutated, 0 passed; a midpoint removed fails
+6. PASS: a timing changed passes the path's gate and the midpoints'
+7. PASS: the solve-state gate: solutions returned as written: True; a byte in C2a_N24.npz: True; a byte in C2a_N24.json: True; a lam that differs, the files logged again: True; no job: True
+0 failed
