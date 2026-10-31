@@ -295,3 +295,60 @@ Blake's word, on the choice entry 12 left open: "do it the right way, we have th
 **Entries 9 to 13.** Entry 9 said it would reach the folder with the run's record. A folder commit comes sooner now, so entries 9 to 13 reach it with v6's commit, and only the entries after it stay on the bench.
 
 **The state.** MIT `main` is `7942d9b`. The fork's branch still holds v5's task doc, no M8.18 pull request is open, and Blake's clipboard holds a body with v5's hash, which is not to be used. Next are steps 10 and 11, and the units' packet on v6. The push and the fork wait for their reply and Blake's word.
+
+## 15. 2026-10-31T16:09:37Z: steps 10 and 11 for v6, the local commit, and the units' packet
+
+**Step 10.** `SHA256SUMS`, fresh, 171 lines, `a3771e4ecdef83545be77dd6cec658726ad070a1acdd9736851853ebc4d00692`. `shasum -c` passes from the folder. The scan of the final folder read 172 files, 97.8 MB, with the control found 1,389 times and 0 hits, and `check_no_local.py --require-files` is clean on 110 of 172 files. The sums are on the bench.
+
+**Step 11.** MIT `87613f4f70d8443baa80b92ee05805879d848f25`, on `7942d9b81ea48cc4237beba8413cb0b3722121af`, which `origin/main` still is: 24 files, 12 modified and 12 added, the folder's and the census page. Extracted by `git archive`, its tree passes `shasum -c` on 171 files, its manifest equals the pin, the page names the terms' SHA-256 and the pin once each, and one byte appended to `run/test_gate.out` is caught by the sums and by the manifest. It is not pushed.
+
+**The sweep, on v6.** `sweep_v6.py` is extended to `sweep_v6b.py`: every line of both diffs in the terms against the file it names, the run's ladders, its kinds of job, and each corrected sentence. It reran on v6 with 0 failed. Two checks failed on their first pass, and both were mine: a regex with its backslashes doubled, and a job pattern that looked only at literal arguments of `begin`. The one quotation that differs only by the terms' backticks is now reported as that.
+
+**The units' packet:** `m8_18_v6_review.zip`, `0ee6670318027b47a704a4ac8ab0c43b970989f5db3240fb5608f2ac6ef8e79f`, 196 files, with the folder as the commit's tree. From a clean extract, every byte equals its source, `shasum -c` passes on 171 files, the manifest equals the pin, and tests 1, 2 and 3, 5 and 7, 6 and 9 exit 0 with outputs byte-equal to the folder's. The cover is on Blake's clipboard in place of the body with v5's hash.
+
+This entry stays on the bench, since a commit cannot hold its own hash. The push and the fork wait for the units' replies and Blake's word.
+
+## 16. 2026-10-31T16:30:02Z: both units on v6; v7's edits
+
+Blake's word: "proceed if/when gucci:", with UA's GO and UB's GO on v6.
+
+**UA:** GO on items (a) to (f), with no finding. Its two filing safeguards are already the plan: section v3 supersedes the steps' historical values, and the fork's commit is rebuilt rather than pushed as it stands.
+
+**UB:** GO on (a), (c), (d), (e) and (f). On (b), three NITs of the kind entry 13's sweep looked for, and on (e) one stale line in the plan. UB left the choice to Blake and advised taking them while v6 is local. Each was checked at source.
+
+1. **Line 19, taken.** It said every reading at `N = 24` and 32 is on record. `census_lib.settle` bisects a new bracket at each deciding cutoff, 32 among them, and at 24 where its ends' `n(L)` are resolved and differ, so those midpoints are new readings, and § Known outcomes lists them. UB's replacement goes in as worded.
+2. **The list under "New evidence", added here.** A bracket's end outside the twelve is read at `N = 40`, and that record can refuse the bracket (§ ARM A), but the list does not name it. It now does, with no number, so test 1 gains no item.
+3. **Line 123, taken, in other words.** `locate` and `settle` return a stop for a point that does not reproduce, and `arm_b` writes `ARM_B.json` with that stop and then raises. So "if written" admits a record whose path did not reproduce, and the sentence's "since" is false of it, as UB says. UB's "if Arm B finished before the stop" leaves a second case: a record from `not_located`, which ended Arm B and whose docstring says nothing in it was reproduced. So the sentence now reads "Arm B's record, if its own path and midpoints reproduced, stands as written, with the stop named beside it." Either other record is kept under the sentence before it.
+4. **The guards' band, taken.** UB's mutation reproduces: with the guard loop of `band_failures` removed from a copy of `census_lib.py`, tests 2 and 3, 5 and 7, and 6 all pass with outputs byte-equal. S16 now takes a guard off the band on each side of T4/R4's location, and a new arm, the first mutation of `census_lib.py` in test 6, removes the loop. The terms' test 6 already says a scored reading off the band stops the run, so its text does not change.
+5. **The plan's stale line,** under "What is filed": fixed in place, with the final scan.
+
+**The decision.** These are the kind of claim v6 was reopened for, and Blake's word on that choice was "do it the right way, we have the time." UA's "no v7" stands against no finding of UB's: UA reports none, and UB's hold at source. So: v7.
+
+- `instrument/`, `run/census.py` and `run/census_lib.py` do not change, so the machine check does not rerun. All of step 6 reruns on the new pin, so that the commit's claim covers every test on it.
+- v7 is a commit on `87613f4`, which stays in the history, so every hash in this log resolves once it is pushed.
+- The census note made in `87613f4` has never been public, so it takes v7's values in place, and the page keeps two notes.
+- No further unit round: both gave GO on v6, the wording is UB's but for items 2 and 3 above, and no rule, point or frozen value moves. On Blake's word the push and the fork follow.
+
+## 17. 2026-10-31T18:25:47Z: v7: the pin, step 6, and steps 7 to 9
+
+**The terms,** v7: SHA-256 `924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c`, 7,768 words by `wc -w`, equal in `registration/` and `run/`, and "About 7,750 words" still holds. `registration/m8_18_v6_to_v7.diff` shows every word: three lines.
+
+**What moved in the manifest,** against `87613f4`: 37 files before and after, and six moved: `run/m8_16_task_details.md`, `run/test_constants.py`, now `7bffcf90f8021ef54f8783f53a0a55acea9973526a559d32ab8069825dc29fc8`, in one anchor, `run/test_scope.py`, now `43a928cd87d540ca86df0fdd4bde37a70094a4e385eccfdd75d863eb3a6aa846`, and the outputs of tests 1, 6 and 9. `instrument/`, `run/census.py` and `run/census_lib.py` are as they were, `run/ENVIRONMENT.json` stands, `--check` finds no difference, and the OS is still 15.8.2. `dev/gen_items.py` finds the same 108 items.
+
+**Test 6:** 29 scenes and 42 arms, every arm red. S16 reports a guard off the band on each side of T4/R4's location, each a stop with no row assembled. The new arm takes the loop out of `census_lib.band_failures`: the target and the control still stop, and both guards read "no stop; 5 rows assembled", so it goes red for its named reason. The arm that removes the band's stop now reads "no stop" four times.
+
+**Tests 1, 6 and 9** ran on a scratch copy before the pin, and their outputs came into the folder from there. `dev/runs/017_v7_tests/` keeps them, with both scripts.
+
+**The scan,** before the pin: 176 files, 97.9 MB, the control string found 1,479 times, 0 hits. `check_no_local.py --require-files` is clean on 110 of 176 files. All 40 reference copies are present and equal.
+
+**The pin:** `6d244f4af56b71d60f17077724628b7489b278e84a7d24565c17038ed19ba43a`, over 37 files. A second pin is refused, and the manifest, recomputed, equals it.
+
+**Step 6,** on a scratch copy of the pinned folder (177 files), from 16:33:25Z to 18:25:17Z. All six tests: exit 0, empty stderr, each output byte-equal to the folder's. Test 4's sweep took 1 h 47 min. The copy's manifest after them equals the pin. The plumbing pass: exit 0, empty stderr, and the only difference from the folder's output is its time, 136 s for 138 s. `dev/gen_items.py` finds the same 108 items in test 1's order. On a second copy, one byte appended to `run/test_gate.out` is caught by the comparison and by the manifest. `dev/runs/018_v7_step6/` keeps the outputs. `dev/plumbing_census.py` did not change, so its output in `dev/` stands.
+
+**Step 7.** `REPRODUCE.md`, from its draft, is v6's bytes again. From the folder the manifest prints the pin, `--check` finds no difference, and all 40 reference copies are present and equal.
+
+**Step 8.** The worktree's folder is recopied: 185 files before this entry's copy, each equal to the bench's, and the manifest there equals the pin.
+
+**Step 9.** The note `87613f4` made takes v7's words and values in place, so the page has two notes on M8.18's terms. The note of v5 stands as made. The page's `$` count is unchanged at 302, `metadata-lint.py` reports 0 FAIL, 0 WARN and 42 INFO, and the Status stands.
+
+**Entries 15 to 17** reach the folder with v7's commit. Next are steps 10 and 11, then the push and the fork, on Blake's word in entry 16.

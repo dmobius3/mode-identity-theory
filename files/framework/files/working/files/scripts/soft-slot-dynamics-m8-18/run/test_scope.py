@@ -40,7 +40,8 @@ The scenes:
       reads Arm B's stop from its file, stops the run and writes STOP.json.
   S15. a control out of memory at N = 40, in a solve at C3, a read at P5, an identity at C2b, and in C1: each is that
       control's kernel failure with the cause named, GATE.json records it, Arm A ends, and the run reaches its record.
-  S16. a scored reading off the frozen band, at a target and at a control: the run stops, and no row is assembled.
+  S16. a scored reading off the frozen band, at a target, at a control and at a location's guard on each side: the run
+      stops, and no row is assembled.
   S17. a read refused at N = 40 through the run's whole order: a stop on record, and no row is assembled.
   S18. Arm B's bracket on M8.17's record differs from the frozen one: the run stops before any solve.
   S19. no case's cutoffs at N = 40 are held when another case's are made.
@@ -69,13 +70,13 @@ The scenes:
       own and SIGKILLs itself at T1/R4's N = 40 path, with nothing raised, three times; the fourth, a new process, reads the
       count from the log on disk, starts no fourth attempt, and reaches its record with the row unread.
 
-Arms, each a mutation of census.py that must let its scene through: the read's scope check removed (S6); that check
+Arms, each a mutation of census.py, one of census_lib.py, that must let its scene through: the read's scope check removed (S6); that check
 removed with every path point read, for the spy's count (S1); the order check removed (S7); the gate's check on a target
 removed (S11); the kernel's stop removed (S2); the reproduction check removed (S5); a read at every point of a path (S1);
 the borrowed end's check removed (S12); the solve-state gate skipped by a read that takes the solutions from memory (S13);
 a location's solutions file not logged, in Arm A and in Arm B (S1); C1's own order check removed (S7); a resume that
 passes over a stop Arm B recorded (S14); the memory failure not caught, at a control and at C1 (S15); the band's stop
-removed (S16); the refused read's stop removed (S17); the bracket's check removed (S18); a control's cutoffs kept (S19);
+removed (S16); the guards' band test removed, in census_lib.py (S16); the refused read's stop removed (S17); the bracket's check removed (S18); a control's cutoffs kept (S19);
 the path's end taken as on the path for every end (S20); the peak size not logged (S1); each route's two causes, one at a
 time, at a target (S21), a location (S22) and Arm B (S24), and the unfinished job at a control and at C1 (S23); out of
 memory taken for a defect (S25); the limit ignored, a start not written before the solve, a resume that forgets the
@@ -621,17 +622,31 @@ def s15(C):
 
 def s16(C):
     res, lines = [], []
-    for name, e in (('T1/R4', 64.0), ('C2a', 1.0)):
+    ref, t2, _ = scene_run(C, Scene())
+    shutil.rmtree(t2, ignore_errors=True)
+    lo, hi = ref['rows']['T4/R4']['changes'][0]['span']
+    for name, e, at in (('T1/R4', 64.0, 'T1/R4 '), ('C2a', 1.0, 'C2a '), ('T4/R4', lo, 'T4/R4 lower guard at '), ('T4/R4', hi, 'T4/R4 upper guard at ')):
         tmp = tempfile.mkdtemp(dir=os.environ.get('TMPDIR'))
         try:
             rec, _, run = scene_run(C, Scene(band_bad=[(name, k(e))]), tmp)
             why = (rec['stop'] or {}).get('why', 'no stop')
-            res.append(why.startswith(f'the band: {name} ') and rec['rows'] == {} and bool(rec['bands']['failures'])
+            res.append(why.startswith(f'the band: {at}') and rec['rows'] == {} and bool(rec['bands']['failures'])
                        and os.path.exists(os.path.join(tmp, 'STOP.json')) and rec['arm_b']['located'])
             lines.append(f"{name}: {why}; {len(rec['rows'])} rows assembled")
         finally:
             shutil.rmtree(tmp, ignore_errors=True)
     return all(res), ' | '.join(lines)
+
+
+def with_band(band):
+    """S16 with the band's test from a mutation of census_lib.py."""
+    def scene(C):
+        real, lib.band_failures = lib.band_failures, band
+        try:
+            return s16(C)
+        finally:
+            lib.band_failures = real
+    return scene
 
 
 def s17(C):
@@ -1084,6 +1099,9 @@ def main():
         arms.append(('the unfinished job not caught at C1: S23', red(s23, mutant(src, m1, m1.replace(both, 'MemoryError'), 'a15b', tmp))))
         bd = "            if bands:\n                raise StopRun(f'the band: {bands[0]}', bands)\n"
         arms.append(("the band's stop removed: S16", red(s16, mutant(src, bd, '', 'a16', tmp))))
+        gl = "    for (row, _, _), rec in located.items():\n        if row == ARM_B_ROW:\n"
+        off = mutant(open(lib.__file__, encoding='utf-8').read(), gl, gl.replace('located.items()', '{}.items()'), 'a16b', tmp).band_failures
+        arms.append(("the guards' band test removed, in census_lib.py: S16", red(with_band(off), census)))
         oos = "        except Exception as e:\n            self.stop(f'a defect in the code: {type(e).__name__}: {e}', traceback.format_exc())\n"
         arms.append(("the refused read's stop removed: S17", red(s17, mutant(src, oos, '', 'a17', tmp), lib.OutOfScope)))
         br_ = "            if (lib.key(ch['lo']), lib.key(ch['hi'])) != tuple(map(lib.key, lib.BRACKET_B)):\n"
@@ -1122,7 +1140,7 @@ def main():
         arms.append(("a broad handler at a target, a stop taken for a limit: S28", red(s28, mutant(src, tg, tg.replace(both, '(MemoryError, StopRun)'), 'a37', tmp))))
     finally:
         shutil.rmtree(tmp, ignore_errors=True)
-    say('arms, each a mutation of census.py that must turn its scene red:')
+    say('arms, each a mutation of census.py, one of census_lib.py, that must turn its scene red:')
     for label, (r, detail) in arms:
         same = detail == lines[label.rsplit(': ', 1)[1]]
         say(f"   {label}: {'GREEN' if not r else 'SAME LINE' if same else 'RED'}: {detail}")

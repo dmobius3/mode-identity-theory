@@ -1,5 +1,5 @@
 Test 1, every constant: M8.18's terms against the code, a test FROZEN.json and the records on file.
-   the terms 12aa29f76c4bd94afbac6e6ce97e8b8e67cf85f1f6addf3685ad3045dc4716f1
+   the terms 924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c
 1. PASS: the forward items, 108: 70 of kind (a), 26 of kind (b), 12 of kind (c)
 2. PASS: coverage: 515 numbers, 110 references or names, the rest each claimed once
       (c) ['8', '000']: the word budget, reported

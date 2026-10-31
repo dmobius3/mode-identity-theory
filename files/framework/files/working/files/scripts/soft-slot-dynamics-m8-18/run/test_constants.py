@@ -75,7 +75,7 @@ ITEMS = [
      ['8', '11.31', '7', '6', '24', '32', '8.721638'], 'b', ['bracket', 'nl_ends', 'b', 'refused']),
     ("T5/R2's 128 and 132 are not here. Branch identity between `N = 24` and 32 failed ",
      ['128', '132', '24', '32'], 'b', ['t5_out', 'a']),
-    ('ading at `N = 24` and 32 is on record, so this task claims no new evidence from them. The new evidence is at `N = 40`, at T4',
+    ('ading at `N = 24` and 32 on the paths is on record, so this task claims no new evidence from them. The new evidence is at `N = 40`, at T4',
      ['24', '32', '40'], 'a', ['a']),
     ('wn path; `N = 16` not re',
      ['16'], 'a', ['b']),

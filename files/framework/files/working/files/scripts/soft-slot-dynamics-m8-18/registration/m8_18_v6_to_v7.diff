@@ -1,0 +1,29 @@
+--- registration/m8_18_task_details.md,v6
++++ registration/m8_18_task_details.md
+@@ -16,7 +16,7 @@
+ 
+ **What this task asks:** classify the twelve points with the frozen instrument and rule on the new ladder, once the controls have shown that the ladder reads them correctly; locate T4/R5's change, and any change the twelve bracket; and record where each of the five rows stands afterwards, stating separately whether it meets an S4 completion condition.
+ 
+-**Old and new evidence.** The instrument is deterministic, and every reading at `N = 24` and 32 is on record, so this task claims no new evidence from them. The new evidence is at `N = 40`, at T4/R5's moved midpoint, and at the guard readings (§ Known outcomes).
++**Old and new evidence.** The instrument is deterministic, and every reading at `N = 24` and 32 on the paths is on record, so this task claims no new evidence from them. The new evidence is at `N = 40`, at T4/R5's moved midpoint, at the guard readings, and at the midpoints of any bracket this run creates (§ Known outcomes).
+ 
+ ### Standing
+ 
+@@ -101,7 +101,7 @@
+ - the `N = 40` records at the twelve points, and what the rule reads from them;
+ - the six controls' readings on this ladder, which test the ladder and say nothing of a row;
+ - T4/R5's moved midpoint;
+-- each guard reading, and the midpoints of any bracket this run creates.
++- each guard reading, the midpoints of any bracket this run creates, and the new record at a bracket's end outside the twelve.
+ 
+ ### Ownership and run format
+ 
+@@ -120,7 +120,7 @@
+ - The kernel check and the control gate are Arm A's: the answer of 2026-10-29 sets them in its § 1, for the reading at `N = 40`, and its § 2 sets none for the locator, which may file on its own. Arm B also runs first, so its record is written before either gate.
+ - An unsuccessful stop in Arm B ends Arm B only. Arm A goes on.
+ - A failure inside Arm A's gates ends Arm A. The twelve stay unclassified, and the record is written.
+-- **A reproduction failure is global.** A recomputed point that does not equal its record, in either arm, is evidence about the machine or the code and not about a branch, so it stops the run. Every record already written is kept, and no reading of Arm A is classified. Arm B's record, if written, stands as written, with the stop named beside it, since its own path and midpoints reproduced before it was written.
++- **A reproduction failure is global.** A recomputed point that does not equal its record, in either arm, is evidence about the machine or the code and not about a branch, so it stops the run. Every record already written is kept, and no reading of Arm A is classified. Arm B's record, if its own path and midpoints reproduced, stands as written, with the stop named beside it.
+ - A scored reading whose stored band is not the frozen level's is a defect in the code: it stops the run, as a reproducibility failure does, and no reading of Arm A is classified.
+ - A read refused at `N = 40` is the same kind of defect, and stops the run the same way.
+ - **A job that runs out of memory, or that three launches start and leave unfinished, ends the part of the run it belongs to,** with the cause named in the record:

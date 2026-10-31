@@ -14,7 +14,7 @@ S12. PASS: the end at 5.65685: K1 fails at N = 40; 5.66 stays Hyperbolic; 0 midp
 S13. PASS: a read with no path job refused: True; interrupted with the files unlogged: True; no read of them: True; moved aside: True; the path solved again, 18 steps; the same record: True
 S14. PASS: interrupted with no stop on record: True; the resume: reproducibility failure in Arm B: a midpoint does not reproduce at N = 24: synthetic
 S15. PASS: C3: the kernel at N = 40: C3: out of memory; GATE.json logged: True; 5 rows | P5: the kernel at N = 40: P5: out of memory; GATE.json logged: True; 5 rows | C2b: the kernel at N = 40: C2b: out of memory; GATE.json logged: True; 5 rows | C1: the kernel at N = 40: C1: out of memory; GATE.json logged: True; 5 rows
-S16. PASS: T1/R4: the band: T1/R4 64: the stored band 8.390661716751913 is not level 18's; 0 rows assembled | C2a: the band: C2a 1: the stored band 11.973666961010276 is not level 18's; 0 rows assembled
+S16. PASS: T1/R4: the band: T1/R4 64: the stored band 8.390661716751913 is not level 18's; 0 rows assembled | C2a: the band: C2a 1: the stored band 11.973666961010276 is not level 18's; 0 rows assembled | T4/R4: the band: T4/R4 lower guard at 4.45497: the stored band 11.731086686907782 is not level 18's; 0 rows assembled | T4/R4: the band: T4/R4 upper guard at 4.5466: the stored band 11.724763416125503 is not level 18's; 0 rows assembled
 S17. PASS: a defect in the code: OutOfScope: T1/R5: a read at N = 40, eps = 32, as twelve, is outside the scope
 S18. PASS: reproducibility failure in Arm B: M8.17's bracket (8, 11.3137) is not the frozen one; 0 solves
 S19. PASS: at most 0 other case's cutoffs at N = 40 held when a cutoff is made
@@ -28,7 +28,7 @@ S26. PASS: a target: a defect in the code: ValueError: the scene; 1 starts of it
 S27. PASS: 2 and 2 launches ended, 5 launches in all, starts (3, 3); the same record: True; stop: None
 S28. PASS: reproducibility failure: T4/R4 at N = 32: eps 0.25: /lam: 48.25 against 48.2500000000001; finished before it: ['T5/R2', 'T1/R4']; 0 rows assembled
 S29. PASS: exit statuses [-9, -9, -9, 0]; 3 starts in the log; left: {'T1/R4': 'path:T1/R4:40: started by 3 launches and left unfinished'}; of the twelve read: {'T5/R2': 1, 'T1/R4': 0, 'T4/R4': 5, 'T1/R5': 1}
-arms, each a mutation of census.py that must turn its scene red:
+arms, each a mutation of census.py, one of census_lib.py, that must turn its scene red:
    the read's scope check removed: S6: RED: 8 reads refused of 8: [False, False, False, False, False, False, False, False]
    the order check in Cutoff.solve removed: S7: RED: Cutoff.solve refused: False; C1 refused: True
    the gate's check on a target removed: S11: RED: the target ran
@@ -46,7 +46,8 @@ arms, each a mutation of census.py that must turn its scene red:
    the unfinished job not caught at a control: S23: RED: C3: 3 launches ended there, 3 starts; stopped: path:C3:40: started by 3 launches and left unfinished | C1: 3 launches ended there, 3 starts: the kernel at N = 40: C1: C1: started by 3 launches and left unfinished; 0 target jobs started
    the memory failure not caught at C1: S15: RED: C3: the kernel at N = 40: C3: out of memory; GATE.json logged: True; 5 rows | P5: the kernel at N = 40: P5: out of memory; GATE.json logged: True; 5 rows | C2b: the kernel at N = 40: C2b: out of memory; GATE.json logged: True; 5 rows | C1: stopped: out of memory
    the unfinished job not caught at C1: S23: RED: C3: 3 launches ended there, 3 starts: the kernel at N = 40: C3: path:C3:40: started by 3 launches and left unfinished; 0 target jobs started | C1: 3 launches ended there, 3 starts; stopped: C1: started by 3 launches and left unfinished
-   the band's stop removed: S16: RED: T1/R4: no stop; 5 rows assembled | C2a: no stop; 5 rows assembled
+   the band's stop removed: S16: RED: T1/R4: no stop; 5 rows assembled | C2a: no stop; 5 rows assembled | T4/R4: no stop; 5 rows assembled | T4/R4: no stop; 5 rows assembled
+   the guards' band test removed, in census_lib.py: S16: RED: T1/R4: the band: T1/R4 64: the stored band 8.390661716751913 is not level 18's; 0 rows assembled | C2a: the band: C2a 1: the stored band 11.973666961010276 is not level 18's; 0 rows assembled | T4/R4: no stop; 5 rows assembled | T4/R4: no stop; 5 rows assembled
    the refused read's stop removed: S17: RED: OutOfScope: T1/R5: a read at N = 40, eps = 32, as twelve, is outside the scope
    the bracket's check removed: S18: RED: no stop; 339 solves
    a control's cutoffs kept: S19: RED: at most 6 other case's cutoffs at N = 40 held when a cutoff is made
