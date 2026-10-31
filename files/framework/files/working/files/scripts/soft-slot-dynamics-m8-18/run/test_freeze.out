@@ -1,5 +1,5 @@
 The guard procedure, rehearsed on a temporary copy of this folder; the folder itself is not touched.
-1. PASS: the filed terms in run/, equal to registration/'s, SHA-256 020793c0b5e98c458b78ac5f4c9c3adce9318c0a3f14c932eee9ca4465523db7
+1. PASS: the filed terms in run/, equal to registration/'s, SHA-256 12aa29f76c4bd94afbac6e6ce97e8b8e67cf85f1f6addf3685ad3045dc4716f1
 2. PASS: run/ENVIRONMENT.json written, and --check finds no difference
 3. PASS: the manifest pinned, the terms and the environment record among its files, and recomputed equal to the pin; a second pin refused
 4. PASS: FROZEN.json and its pin written once; a second write refused

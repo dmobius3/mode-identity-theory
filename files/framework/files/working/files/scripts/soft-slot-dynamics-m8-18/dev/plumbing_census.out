@@ -4,4 +4,4 @@
 4. PASS: a continuation to 1.5 from the stored state equals one from the live state, bit for bit: True
 5. PASS: both identity pairs ['12-16', '16-20'], kept: [True, True]; the scored band 7.895562, level 14; the band beside it 11.902598, level 18
 6. PASS: bisect with K1 forced to fail at the first midpoint, 1.25: moved to 1.1, then 10 more midpoints, complete True, interval [1.99912109375, 2.0]
-133 s; 0 failed
+138 s; 0 failed

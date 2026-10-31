@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Test 8: a plumbing pass of this run's instrument side, on the GO-list control C2a, at cutoffs the registered run never
-uses (12, 16, 20), never scored, and outside the run: development only (M8.18's terms: THE TESTS BEFORE THE FREEZE,
-test 8, as M8.17's plumbing pass). No solve at N = 40.
+"""Test 8: a plumbing pass of this run's instrument side, on the GO-list control C2a, at cutoffs where the registered run
+never solves it (12, 16, 20), never scored, and outside the run: development only (M8.18's terms: THE TESTS BEFORE
+THE FREEZE, test 8, as M8.17's plumbing pass). No solve at N = 40.
 
 Usage: plumbing_census.py
 

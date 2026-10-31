@@ -1,9 +1,9 @@
 Test 1, every constant: M8.18's terms against the code, a test FROZEN.json and the records on file.
-   the terms 020793c0b5e98c458b78ac5f4c9c3adce9318c0a3f14c932eee9ca4465523db7
+   the terms 12aa29f76c4bd94afbac6e6ce97e8b8e67cf85f1f6addf3685ad3045dc4716f1
 1. PASS: the forward items, 108: 70 of kind (a), 26 of kind (b), 12 of kind (c)
 2. PASS: coverage: 515 numbers, 110 references or names, the rest each claimed once
       (c) ['8', '000']: the word budget, reported
-      (c) ['7', '000', '8', '000']: the word budget, reported
+      (c) ['7', '750', '8', '000']: the word budget, reported
       (c) ['40', '0.5', '1', '2', '78', '106']: M8.16's development record, reported: DEVLOG entries 78 and 106
       (c) ['16', '10', '14', '16', '18', '8', '12', '14', '16', '18', '13', '17', '19', '16', '17', '19', '24', '32', '40', '16']: Lemma F's levels, quoted from soft-slot-branches.md, section III, at MIT 7a2c638; N = 16 stops at 16
       (c) ['2', '4', '32', '64', '64', '24', '32', '5.3×10⁻³', '4.8×10⁻³', '8.3×10⁻³', '1.3×10⁻²', '2.3×10⁻⁵', '7.0×10⁻⁵']: the maintainer's measure and the points it read, quoted from the answer of 2026-10-30, section 3

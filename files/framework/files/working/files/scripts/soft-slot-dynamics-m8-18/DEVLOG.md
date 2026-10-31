@@ -191,3 +191,107 @@ The dress rehearsal ran on a copy of the unpinned folder with steps 3 to 5 appli
 **Step 9.** The census note, under § V, step 5, as its last item, directly before the sequel: one line added, the terms' SHA-256 and the pin each read from the folder's files. The page's `$` count is 302 before and after, `metadata-lint.py` reports 0 FAIL, 0 WARN and 41 INFO, and the Status stands. The three relative links, two in `REPRODUCE.md` and one in the note, resolve, M8.16.1's `#what-is-here` among them.
 
 Step 10 and the local commit run next.
+
+## 9. 2026-10-31T11:56:43Z: steps 10 and 11, the local commit
+
+**Step 10.** `SHA256SUMS`, fresh from the final inventory, in M8.17's form: 159 lines, one per file but itself, sorted by path. `shasum -a 256 -c SHA256SUMS` passes on every line from the folder. The final scan read all 160 files, 97.7 MB, with no hit and the control string found 1,235 times, and `check_no_local.py --require-files` is clean on the 108 files it reads of the 160 selected. No cache and no `.DS_Store`. The sums are copied to the bench.
+
+**Step 11.** MIT commit `7942d9b81ea48cc4237beba8413cb0b3722121af`, on `7a2c638cd1b1bda1df57db1d47304d14aaa3249b`, with `origin/main` fetched again just before and still there: 161 files, the folder's 160 and the census page. Verified from its own tree, extracted by `git archive`: `shasum -c` passes on all 159 lines, the manifest equals the pin, and the census note names the terms' SHA-256 and the pin once each. On that extract, one byte appended to `run/test_gate.out` is caught by the sums and by the manifest alike.
+
+It is not pushed: `origin/main` stays at the base. This entry stays on the bench, since a commit cannot hold its own hash, and reaches the folder with the run's record. The plan stops here. The push, the OpenWave filing, the go, the freeze, the freeze block and the run each wait for Blake's word.
+
+## 10. 2026-10-31T13:12:47Z: step 12, the push
+
+Blake's word: "push". MIT was fetched again, and `origin/main` was still `7a2c638cd1b1bda1df57db1d47304d14aaa3249b`, so the push was a fast-forward of one commit. `git push origin HEAD:main` put `main` at `7942d9b81ea48cc4237beba8413cb0b3722121af`; `ls-remote` and GitHub's API both show it.
+
+Read back live through GitHub's API: `REPRODUCE.md`, `SHA256SUMS`, the terms, `run/MANIFEST_PIN` and the census page each hash equal to the local file. The live page renders all 151 math spans, with no "Unable to render", and holds the note once.
+
+This entry and entry 9 stay on the bench and reach the folder with the run's record. OpenWave's filing waits for Blake's word.
+
+## 11. 2026-10-31T13:48:21Z: the filing plan's steps 14 to 17, the fork
+
+Blake's word: "start the OpenWave filing".
+
+**Step 14,** with `upstream` fetched again. All 11 links in the terms resolve, each at its source and over HTTP: the blobs at their commits in MIT and OpenWave, the heading's anchor at OpenWave `e8762263`, five comment ids on #512, the review on #676 and #677. "M8.18" occurs nowhere under `m8_mit/` or `dev_docs/`, and no pull request is open. Run-before-write holds: #676 and #677 are merged. M8.16.1's and M8.17's task docs open with their title and "Pre-registration, for review.", as v5 does.
+
+**`upstream/main` moved during the step,** from the plan's `e8762263612a3e981f67009079c2cdae66a0071c` to `6b0b24f45e56e7d7746d5546bac836e60a9d2d9a`: the merge of #685, 4 files, all under `m5_liquid_crystal`. Nothing under M8, `dev_docs/`, `.github/` or MODELS.md changed, and the roadmap's blob is the same, so the four edits apply as drafted. "M8.18" still occurs nowhere, and no pull request is open. The plan puts the branch on `upstream/main`, so it is on `6b0b24f4`. My script's stop was stricter than the plan and stopped before the branch, with nothing changed. The terms' link at `e8762263` is a fixed commit and stays as filed.
+
+**Step 15.** Branch `m8-18-census-remedies-2026-10-31`, with two files: `research/tasks/m8_18_task_details.md`, new, byte for byte MIT's `run/m8_16_task_details.md`, and `research/m8_roadmap.md`, one line added and three changed, +4 −3, each edit taken from the draft's fenced blocks: the BACKLOG row, the snapshot's date, and the two M8 status rows.
+
+**Step 16.** `check_roadmaps.py`, `check_models_md.py` and `check_no_local.py --require-files` on both files are clean. On a scratch copy of the roadmap, 14 words added to the row's Description stay clean, and 15 fail with "description is 66 words, cap 65", so the Description is 51 words.
+
+**Step 17.** OpenWave commit `39723a07f79c4c0bdf406670a62e75896b4f1324`, on `6b0b24f45e56e7d7746d5546bac836e60a9d2d9a`, in the clone's local identity, signed off in its message, with the Co-Authored-By line: 2 files, +390 −3. It is pushed to the fork, and `ls-remote` shows it. Read back raw from the fork through the API, the task doc hashes to the terms' SHA-256, `020793c0b5e98c458b78ac5f4c9c3adce9318c0a3f14c932eee9ca4465523db7`, and the roadmap equals the branch's. GitHub's compare shows the branch 1 ahead of `main` and 0 behind.
+
+The pull request is Blake's to open. `m8_18_pr_title_v1.txt`, `b6e34a327fd47d7a8d35623ec9385c898316f88e8cba3e992cbd79417ce04709`, and `m8_18_pr_body_v1.md`, `5c1297499213e076fa993879a4a6703e23b6a466d81b1f0cbd0fddf1ece51e70`, sit beside the folder, filled from the files, with every link answering 200. GitHub's renderer gives 1 table, 3 rows and 7 list items. No pull request is open and nothing is posted. The go, the resume check, the freeze, the freeze block and the run wait for the merge and Blake's word.
+
+## 12. 2026-10-31T13:58:37Z: UA's last sweep of the pull request's body, and a correction
+
+Blake's word: "last sweep for NITs if you want them:", with UA's GO to file and three wording NITs on `m8_18_pr_body_v1.md`. Each was checked at source.
+
+**NIT 1, taken, in the terms' own words.** The body said "three launches leave unfinished". A launch can leave a job unfinished by never reaching it, and `ATTEMPTS` counts starts per job. The terms say "three launches start and leave unfinished", and the body now does too.
+
+**NIT 2, taken, in other words, and a correction.** The body said the plumbing pass solved C2a "at cutoffs the run never uses". Read as a statement about the run's cutoffs, that is wrong at `N = 16`: `census_lib.cutoffs_of` gives T4/R5, Arm B's row, 16, 24 and 32, and C1 16, 24, 32 and 40. What holds is narrower. It gives C2a 24, 32 and 40, so the run never solves C2a at 12, 16 or 20. UA's wording, "outside the registered control and target ladders", has the same fault at `N = 16`, so the body now reads "at `N` = 12, 16 and 20, where the run never solves it".
+
+The same phrase stands where this round changes nothing: test 8 in the terms, in `run/` and `registration/`; two sentences of `REPRODUCE.md`; and the docstring of `dev/plumbing_census.py`. All of them are in MIT `7942d9b`. No rule, number, reading or job depends on the phrase: the terms fix each ladder elsewhere, in § The instrument and the ladders, and the pass solved no point the run reads.
+
+- **The terms stay v5.** Reopening them for this means a new hash, pin, sums and census note after both units' GO, and test 8 reads truly as "never uses on C2a". This entry is the dated correction. If review reopens the terms, test 8 takes "where the run never solves it", with UB's sentence from entry 6.
+- **`REPRODUCE.md`** is corrected with the run's record, in the folder's next commit: the plan allows no commit touching the folder between step 11's and the write.
+
+**NIT 3, not taken.** It would replace the body's last sentence, which is Blake's own line, used verbatim on every M8 pull request. "Data-sensitive" there carries the filed terms, and the body's "After the merge" paragraph already says that any change to the terms' words redoes the hash and the pin on MIT `main` before the go.
+
+**The body:** `m8_18_pr_body_v2.md`, `48c1ada9a0b0bbcc5cb67a275689641ad5db322a4cc8f2c34d0fde16507a5e93`, the draft `filing_drafts/pr_body.md` carrying both edits. Its checks ran again: every link answers 200, and GitHub's renderer gives 1 table, 3 rows and 7 list items. It replaces v1 on Blake's clipboard.
+
+## 13. 2026-10-31T14:09:02Z: the terms reopened; the sweep; v6's edits
+
+Blake's word, on the choice entry 12 left open: "do it the right way, we have the time." Entry 12's decision to keep v5 is superseded. The terms are corrected before they are filed, so that the text OpenWave reviews is exact, and the plan's path for a change to the terms applies: the terms in `registration/` and `run/`, test 1 and the rehearsal in a scratch copy, the pin, `SHA256SUMS` and a new census note. MIT `7942d9b` stands as history, and the correction is a new commit on it.
+
+**The sweep.** One phrase was not the proposition. Before any edit, v5 was read whole against the code, for any claim of that kind: prose about the run or its code that no numbered test reads.
+
+**What held:**
+- every quotation: the boundary, 123 words, verbatim in 18955679; the docstring; M8.16's two; M8.17's one; the answers' two. The sweep's comparison reported one miss, the line under "The calibration's range": it is verbatim in 19076863, and the terms add only the backticks around `N = 40`;
+- M8.17's 27,823-byte prefix, at its SHA-256;
+- all 19 files called byte for byte, `instrument/` and M8.16.1's run code, against `d1c0ec8`;
+- the 14 files the terms name, and the calls they name, with `driver.run_case` never called;
+- the moved midpoint's diff, line for line against `census_lib.bisect` and M8.17's;
+- the jobs: `arm_b`, `C1`, `path:`, `read:`, `identity:`, `case:`, `gate` and `locate:`, which are the eight kinds UB's sentence lists;
+- `REPRODUCE.md`'s "a few kilobytes": a seed state is 352 to 6,928 bytes at `N` = 16, 24 and 32.
+
+**What did not, and v6's seven edits.** None changes a rule, a point, a frozen value or a file the run executes.
+1. **The band's diff.** The terms called the change one line and showed a `+` line that is not in the code. It was true of v1. The call moved to `census.rule`, which also takes the reading beside it, and `run/census.py` holds neither that line nor one like it. Two edits: the sentence, and the diff's `+` lines, now the code's two. The `-` line is M8.17's, unchanged. Every line of both diffs now stands verbatim in the file it names, and that was checked mechanically.
+2. **Test 8.** "at cutoffs the run never uses" is wrong at `N = 16`, as entry 12 sets out. It now reads "at `N = 12`, 16 and 20, where the run never solves it".
+3. **"No point but the twelve in Arm A."** A new bracket's midpoints and guard readings are points of Arm A, and a guard is classified. The bullet is about the paths' grid points, as its next sentence says, so it now reads "No grid point but the twelve is classified in Arm A."
+4. **Test 6** had "left unfinished by three launches", the shorthand UA caught in the pull request's body. It now uses the rule's words: "that three launches start and leave unfinished".
+5. **The interruption rule** takes UB's sentence from entry 6 as worded, with Arm B and C1 in the list of jobs.
+6. **The word budget** said "About 7,000 words", v2's figure. v6 is 7,752 words by `wc -w`, so it now says "About 7,750 words". Test 1 reports this item unscored, which is why no test caught it.
+
+`run/test_constants.py` changes in three anchors only, with the budget's tokens, since its items are anchored in the text. `dev/gen_items.py` on v6 finds the same 108 items, and these three are the only ones that differ. `dev/plumbing_census.py`'s docstring and two sentences of `REPRODUCE.md` take test 8's correction. `run/census.py`, `run/census_lib.py` and `instrument/` do not change, so the machine check does not rerun.
+
+**The units see v6 before it leaves this machine.** Both gave GO on v5's bytes. So the plan runs through the local commit and stops, and the push and the fork wait for their reply and Blake's word.
+
+## 14. 2026-10-31T16:02:44Z: v6: the pin, step 6, and steps 7 to 9
+
+**The terms,** v6: SHA-256 `12aa29f76c4bd94afbac6e6ce97e8b8e67cf85f1f6addf3685ad3045dc4716f1`, 7,752 words by `wc -w`, equal in `registration/` and `run/`. `registration/m8_18_v5_to_v6.diff` shows every word.
+
+**What moved in the manifest,** against MIT `7942d9b`: 37 files before and after, and four moved: `run/m8_16_task_details.md`, `run/test_constants.py`, now `dd1b54be49f7a4433f4ee8c60a684779078c3157b87e8d453d86346c34b66993`, `run/test_constants.out` and `run/test_freeze.out`. `instrument/`, `run/census.py` and `run/census_lib.py` are as they were. `run/ENVIRONMENT.json` stands, at `79f009089a3b983d9f0e48e3e80dc0d17bc354520d20c332fc2cf7274eff6e80`, and `--check` finds no difference. The OS is still 15.8.2.
+
+**Tests 1 and 9** ran on a scratch copy of the folder before the pin, and their outputs came into the folder from there. `dev/runs/015_v6_tests/` keeps them, with `run/test_constants.py`.
+
+**The scan,** before the pin: 163 files, 97.8 MB, the control string found 1,329 times, 0 hits. `check_no_local.py --require-files` is clean on 108 of 163 files. `tools/copy_from_mit.py` finds all 40 reference copies present and equal.
+
+**The pin:** `e5e4b0433fd05034ecd37b67674d88a61f0fc4a1bfc159b197a2be34c9b94fe2`, over 37 files. A second pin is refused, and the manifest, recomputed, equals it.
+
+**Step 6,** on a scratch copy of the pinned folder (164 files), from 14:11:19Z to 15:59:36Z. All six tests: exit 0, empty stderr, each output byte-equal to the folder's, and each output's time inside its test's window, so each test wrote its own. Test 4's sweep took 1 h 44 min. The copy's manifest after them equals the pin. The plumbing pass: exit 0, empty stderr, and the only difference from the folder's output is its time, 138 s for 133 s. `dev/gen_items.py` finds the same 108 items in test 1's order. On a second copy, one byte appended to `run/test_gate.out` is caught by the comparison and by the manifest.
+
+`dev/runs/016_v6_step6/` keeps the outputs and the plumbing script. `dev/plumbing_census.out` is now this run's, so it is the output of `dev/plumbing_census.py` at its final hash, `d7fef57fbd7df584c89b6738993d9ced0a3d48dbd6bb7317c0cac6d894cce51d`. Both are outside the manifest.
+
+**The dress rehearsal did not run again.** Step 6 ran every test on the real pin. What the rehearsal adds past that is the freeze with a dummy go, both admissions, the freeze block and `prelaunch_checks.py`. Test 9 ran the first three on v6, and `prelaunch_checks.py` holds no value of the terms and did not change.
+
+**Step 7.** `REPRODUCE.md` is rewritten from its draft, with the two sentences on the plumbing pass changed: `3a9b4c96247a503c3ebe607b21fe636343efea47afb6705a2d42f9108e3e23bc`. From the folder the manifest prints the pin, `--check` finds no difference, and all 40 reference copies are present and equal.
+
+**Step 8.** v5's `SHA256SUMS` is off the bench until step 10. The worktree's folder is recopied: 171 files before this entry's copy, each equal to the bench's, and the manifest there equals the pin.
+
+**Step 9.** The second dated note on M8.18's terms stands directly after the first, which stands as made, under § V, step 5. It gives the new SHA-256 and pin and says they replace the two values in the note above. The page's `$` count is unchanged at 302, `metadata-lint.py` reports 0 FAIL, 0 WARN and 42 INFO, and the Status stands.
+
+**Entries 9 to 13.** Entry 9 said it would reach the folder with the run's record. A folder commit comes sooner now, so entries 9 to 13 reach it with v6's commit, and only the entries after it stay on the bench.
+
+**The state.** MIT `main` is `7942d9b`. The fork's branch still holds v5's task doc, no M8.18 pull request is open, and Blake's clipboard holds a body with v5's hash, which is not to be used. Next are steps 10 and 11, and the units' packet on v6. The push and the fork wait for their reply and Blake's word.
