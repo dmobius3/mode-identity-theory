@@ -352,3 +352,205 @@ Blake's word: "proceed if/when gucci:", with UA's GO and UB's GO on v6.
 **Step 9.** The note `87613f4` made takes v7's words and values in place, so the page has two notes on M8.18's terms. The note of v5 stands as made. The page's `$` count is unchanged at 302, `metadata-lint.py` reports 0 FAIL, 0 WARN and 42 INFO, and the Status stands.
 
 **Entries 15 to 17** reach the folder with v7's commit. Next are steps 10 and 11, then the push and the fork, on Blake's word in entry 16.
+
+## 18. 2026-10-31T18:28:03Z: steps 10 to 17 for v7: the commit, the push, the fork
+
+**Step 10.** `SHA256SUMS`, fresh, 185 lines, `b324720ccb41c2f3f892262c9db367b5e7f0daac5042fc7b8abf8e8977094a8b`. `shasum -c` passes from the folder. The scan of the final folder read 186 files, 98.0 MB, with the control found 1,564 times and 0 hits, and `check_no_local.py --require-files` is clean on 113 of 186 files.
+
+**Step 11.** MIT `4bd8bbd8e3c60a387210c4464bf0c7915d10bdc3`, on `87613f4f70d8443baa80b92ee05805879d848f25`: 25 files, 11 modified and 14 added, the folder's and the census page. Extracted by `git archive`, its tree passes `shasum -c` on 185 files, its manifest equals the pin, the page names the terms' SHA-256 and the pin once each, and one byte appended to `run/test_gate.out` is caught by the sums and by the manifest.
+
+**Step 12,** on Blake's word in entry 16: pushed, two commits, a fast-forward from `7942d9b`. `ls-remote` and GitHub's API show `4bd8bbd`. `REPRODUCE.md`, `SHA256SUMS`, the terms, the pin and the census page each hash equal live, the page renders 151 of 151 math spans, and it holds two notes on M8.18's terms, the corrected one once.
+
+**Steps 14 to 17.** `upstream/main` moved to `daa5f631`, #686, M5 only, with the roadmap's blob the same. "M8.18" occurs nowhere under `m8_mit/` upstream, and no pull request is on the branch or open. The fork's branch is rebuilt as one commit on `daa5f631`: `f23dad7504020c1e7aa7cd483f38a1025394a69d`, pushed with a lease on `39723a0`, v5's. The task doc reads back raw at `924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c`, and the roadmap reads back equal. `check_roadmaps.py`, `check_models_md.py` and `check_no_local.py --require-files` are clean, and the Description's arm fails at 66 words. The terms' 11 links resolve.
+
+**The body:** `m8_18_pr_body_v3.md`, `af659bbcf5b21e6817037b13c79a8dd4345433d559689606b0a05935076a0f28`, with the new values, and its sentence on new evidence takes the terms' list. All its links answer 200, and GitHub's renderer gives 1 table, 3 rows and 7 list items. The title file stays v1. The body is on Blake's clipboard, and `m8_18_pr_body_v2.md`, with v5's hash, is not to be used.
+
+Blake opens the pull request. Nothing is frozen, and no solve has run at `N = 40`. This entry stays on the bench until the folder's next commit.
+
+## 19. 2026-10-31T19:06:07Z: the pull request
+
+Blake opened OpenWave #687 at 2026-10-31T18:40:01Z, https://github.com/openwave-labs/openwave/pull/687. Its title and body equal `m8_18_pr_title_v1.txt` and `m8_18_pr_body_v3.md`, byte for byte. Its head is `f23dad7504020c1e7aa7cd483f38a1025394a69d`, one commit, and the task doc at the pull request's head has the terms' SHA-256, `924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c`. DCO passes, and it waits for review.
+
+Next: the maintainer's review, and after the merge the merged tree diffed against this head. The go is kept unedited, and the freeze waits for it and Blake's word.
+
+## 20. 2026-10-31T21:10:48Z: #687 merged; the approval and the go, read
+
+Blake: "PR merged". Read through GitHub's API:
+- **The merge:** [#687](https://github.com/openwave-labs/openwave/pull/687) merged at 2026-10-31T20:40:20Z as `a81d50c996694f32a750efc1d1014c5debb9b35b`, on `main` at `daa5f631`, by the maintainer. The diff from the head `f23dad7` to the merge is empty, so nothing was edited, and the merged task doc equals the terms, 44,825 bytes, `924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c`.
+- **The approval,** [review 5724825686](https://github.com/openwave-labs/openwave/pull/687#pullrequestreview-5724825686): approved, with no blocking finding and no maintainer edits, at the reviewed head. It checked the terms, MIT `4bd8bbd` and the 185 sums, the copies byte for byte, the pin by its own listing, the twelve, the rule on 110 stored points by its own port, the moved midpoint, the rulings, the code against the terms and the code's intent. Its "Not checked" says the author's tests were read and not rerun.
+- **The go,** [comment 6548866246](https://github.com/openwave-labs/openwave/pull/687#issuecomment-6548866246), unedited, names the terms `924e7ee3…`, MIT `4bd8bbd`, the pin `6d244f4a…` over 37 files and `SOURCES.json` at `c90e734e…`, and covers that pinned tree. Its order: `write_guard.py`, then the freeze block at `research/m8_18/freeze_block.md` with `FROZEN.json` in full, before the run. The adjudication will apply the reading notes in the approval.
+- **Recomputed here:** the terms, the pin and `SOURCES.json` equal the go's, and the two run logs the approval names are the two `SOURCES.json` lists.
+- **Kept verbatim,** each the API's body with one trailing newline: `../xrodz_approval_687_5724825686.md` `1ec0aafe20fcf217e52b1e6613db12370655e5c45134ce01d8151052555c6386` and `../xrodz_go_687_6548866246.md` `e239250116ca2d42bb07e80d19ee72acdce060bfacc14eb12352f977496d1df7`.
+
+**The reading notes, each read at source. No note asks for a change, and none leaves a re-pin.**
+1. **The exact rules assume the recorded environment.** Holds. `census.py` reads no environment before it starts. The launch chain runs `record_environment.py --check` before it, and the plan runs it after the run, as M8.17's did.
+2. **A global stop and the rows.** Holds. § THE ROW OUTCOMES covers a gate's stop and a job's end, and not a global stop, so its "A failure" applies. `census['rows']` stays empty, and `census['arm_b']` stays None if Arm B itself stopped, with its record in `ARM_B.json`.
+3. **The band's test at run time.** Holds. `band_failures` runs once, after the gate and the targets, and it skips Arm B's row. So the record must let the adjudication read the stored band of Arm B's guards: `tools/build_record.py` should show them.
+4. **Closure per item.** Holds as a reading: the sentence is the terms', and the note rules nothing on S5.
+
+**The checks before the write,** read-only, all clean: the go live equals its kept copy and has not been edited; the task doc on OpenWave `main` is at the terms' SHA-256; MIT `main` is `4bd8bbd`, with no commit touching the folder or the census page since; the manifest equals the pin; no freeze and no `run/out/`; `--check` finds no difference; all 40 reference copies equal their blobs; the OS is 15.8.2; the resume check is at its reviewed `9405929a…` and passes. One check read red on my own `cut` of a long path. Read in full, the only file that differs from the commit's tree is `DEVLOG.md`, and the commit's copy is a prefix of the bench's.
+
+The Mac was on battery at this reading. macOS 27.2 is still on offer and not installed.
+
+**Next, each on Blake's word:** `write_guard.py` with the go; the admissions and `--check`; the freeze block with `SOLVER_COMMIT` `4bd8bbd`, and its branch on the fork; Blake opens its pull request; `prelaunch_checks.py`, on mains power; the launch.
+
+## 21. 2026-10-31T21:13:27Z: Blake's word for the freeze; the resume check and the launch command
+
+Blake's word: "freeze it", after the checks in entry 20. They ran again just now, each clean, with this folder's files hashed before and after and unchanged: the go, live, equal to its kept copy and not edited; the task doc on OpenWave `main` at the terms' SHA-256; MIT `main` at `4bd8bbd`, with no commit touching the folder or the census page since; the manifest equal to the pin; the placed terms equal to `registration/`'s; no freeze and no `run/out/`; `--check` with no difference; all 40 reference copies equal to their blobs; the OS 15.8.2.
+
+**The resume check,** recorded before the write: `../resume_check/resume_check.py`, `9405929a8518f5f5df68b0206c71d64fce90d4ea4921b01cebd4f1f4caae0971`, outside the folder. It reads `run/out/`, writes nothing, and refuses a launch on any sign of a stop. `test_resume_check.py` has 21 arms, with each check's removal caught, and `test_launch_wrapper.py` runs the command's form on stubs: both report 0 failed, and both were in the units' build review. It passes on the folder now.
+
+**The launch command,** from the plan's text with that SHA-256 in place, from the folder, every launch the same:
+
+```
+set -o pipefail; caffeinate -i -m -s -w $$ & { printf '%s  %s\n' 9405929a8518f5f5df68b0206c71d64fce90d4ea4921b01cebd4f1f4caae0971 ../resume_check/resume_check.py | shasum -a 256 -c - && python3 -I -B ../resume_check/resume_check.py . && python3 -I -B run/record_environment.py --check | tail -1 && python3 -I -B -u run/census.py; } 2>&1 | tee -a ../census_console.log
+```
+
+Next: `write_guard.py` with the go.
+
+## 22. 2026-10-31T21:15:04Z: the freeze written, `run/FROZEN.json` and its pin; the freeze block built
+
+**The write:** `python3 -I -B run/write_guard.py` with the go wrote `run/FROZEN.json` at 2026-10-31T21:13:28Z, 72,874 bytes, `b5902494f927ec5daee1562fdf3d64bf3f402eb2cc9cac777de7a29aaa7c32d5`, and then `run/FROZEN_PIN`, which holds that SHA-256.
+
+**Checked after it:**
+- both admissions: `devtools.frozen()` admits the tree, and `census.frozen()` admits it with the same `FROZEN.json`;
+- its fields against their sources: the terms' SHA-256; the manifest's, still equal to the pin; both also as the go names them; the go's link; the allowlist and the order, the 12 rows of `census_lib.RUN_ORDER`; 22 targets, the 21 reference files and `SOURCES.json`, each on disk at its SHA-256; the inherited section, equal to M8.16.1's `FROZEN.json`; the census values, equal to `census_lib.frozen_values()`;
+- `record_environment.py --check`: no difference; the resume check: PASS; no `run/out/`.
+
+**The freeze block:** `python3 -I -B run/freeze_block.py` with MIT's commit `4bd8bbd` in full wrote `../freeze_block.md` by exclusive create, outside the folder, 4,111 lines, `1ec71f2f0e1c8e92b17cdfeffc6d3b7d05ed72b5c6528b9e6c815c326e42ecfd`. Checked against its sources: the terms and the go; `FROZEN.json`'s time and pin; the solver commit; the manifest's 37 rows and pin; the environment as recorded, with no difference read again; the 22 reference rows; what is inherited from M8.16.1; `FROZEN.json` in full, byte for byte; and the order. No home-folder or scratch path, and `check_no_local.py --require-files` is clean. It names the interpreter's system path, as M8.17's did.
+
+No sealed reading has been computed. Next, on Blake's word in this round: the block on the fork, for Blake to open. Then the launch, on Blake's word, on mains power, after `prelaunch_checks.py`.
+
+## 23. 2026-10-31T21:16:05Z: the freeze block's branch on the fork; the pull request's text on Blake's clipboard
+
+- **Before branching,** with `upstream` and the fork fetched: OpenWave `main` at the merge `a81d50c9`, with no M8 commit since it; no `research/m8_18/` upstream; the task doc on `main` at the terms' SHA-256; the branch's name free; the clone clean, in its local identity, the noreply address.
+- **The branch,** `m8-18-freeze-block-2026-10-31`, on `upstream/main` `a81d50c9`, adds one file, `openwave/xperiments/m8_mit/research/m8_18/freeze_block.md`: the bench's `../freeze_block.md`, byte for byte.
+- **The checks,** on the branch: `check_no_local.py --require-files` is clean on the block, and `check_roadmaps.py` and `check_models_md.py` are clean.
+- **The commit,** `23393ced03ab519f73ecb6ab017b145919e8d78c`, parent `a81d50c996694f32a750efc1d1014c5debb9b35b`: 1 file, with author and committer the clone's identity. Its message is `../filing_drafts/commit_freeze_block.txt` with its values filled, with the DCO sign-off and the Co-Authored-By line.
+- **Pushed to the fork,** and read back through GitHub's API: the block equals the bench's, `1ec71f2f0e1c8e92b17cdfeffc6d3b7d05ed72b5c6528b9e6c815c326e42ecfd`, and the branch is one commit ahead of `main`, with one file.
+
+**The pull request's text:** the title in `../m8_18_freeze_pr_title_v1.txt`, and the body `../m8_18_freeze_pr_body_v1.md`, `adcc3b6f9bdc2195a6b0b42bc142d10b752059c73799991ee88a7facff81c58d`, on Blake's clipboard. It carries Blake's reviewer line. Both links answer 200, and GitHub's renderer gives 1 table, 2 rows and 7 list items.
+
+**`prelaunch_checks.py`, read-only, with no pull request yet:** 12 ok and 1 failed. The failure is mains power: the Mac is on battery. It reports 346 GB free and macOS 27.2 on offer, not installed.
+
+**Next:** Blake opens the pull request; it is read back; then `prelaunch_checks.py` with its number, on mains power, and the launch on Blake's word, once it is open and DCO passes.
+
+## 24. 2026-10-31T21:45:39Z: #688, the freeze block's pull request, opened by Blake; read back; the checks before the launch, clean
+
+Blake opened [#688](https://github.com/openwave-labs/openwave/pull/688) at 2026-10-31T21:17:17Z. Read back: the title and body as drafted, byte for byte; head `23393ced03ab519f73ecb6ab017b145919e8d78c`, one commit, one file, the block equal to the bench's byte for byte, `1ec71f2f0e1c8e92b17cdfeffc6d3b7d05ed72b5c6528b9e6c815c326e42ecfd`; DCO passes.
+
+`prelaunch_checks.py 688`: 17 ok, 0 failed, on mains power, with `run/out/` absent, so no solve has run at `N = 40`. For the record: 346 GB free, and macOS 27.2 on offer, not installed.
+
+**Next:** the launch, on Blake's word, with the checks read again just before it.
+
+## 25. 2026-10-31T21:52:29Z: the registered run, launched on Blake's word
+
+**The go:** Blake's own word, "Run", with #688 open and DCO passing, before its merge, as its body says.
+
+**The checks before the launch,** read just before it: `../prelaunch_checks.py 688`, 0 failed, kept as `../prelaunch_checks_launch.out`, `820dc69ed28b0f1d1c626475a7172afa1aead21f351580135955028e548be236`.
+
+**The command:** entry 21's, read from this log and run unchanged, from this folder, as a background task in the app's shell, zsh (task `bgg8fplvd`). Its output shows live in the app's background-task panel and goes, through `tee -a`, to `../census_console.log`.
+
+**The start, read back:**
+- the console log: the hash check `OK`; the resume check `PASS`, with `run/out/` not yet existing; `--check` with no difference; and the run's first line;
+- `run/out/RUNLOG.json`: the manifest at the pin, `6d244f4af56b71d60f17077724628b7489b278e84a7d24565c17038ed19ba43a`, no job completed, the run started at 2026-10-31T21:51:23Z with the twelve rows in their registered order, and `arm_b` started;
+- `census.py` running as one process, with `caffeinate -i -m -s -w` on its shell.
+
+**Power:** mains.
+
+**The cores.** As the run started, Blake: "You know I have multiple cores too...". The facts: the machine has 8 cores, 4 performance and 4 efficiency, and 24 GB. The pinned code has no pool or second process, and it runs one job at a time in the order the terms fix. Sampled just after the start, `census.py` used 100% of a core. Its BLAS is Accelerate's, with no thread variable set, as the environment record fixes. Using more cores would change the pinned code and the terms' order, so it needs a new pin, go and freeze. The launch went ahead on Blake's word.
+
+## 26. 2026-11-01T13:33:46Z: the run's end: T4/R5 located; Arm A ended at the control gate
+
+**The end.** Task `bgg8fplvd` exited 0, in one launch: started 2026-10-31T21:51:23Z, record written 2026-11-01T13:17:32Z, 55,569 s. No stop, and no job was left unfinished. 57 jobs completed, and the largest peak resident size logged is 3,702,833,152 bytes. `/Library/Logs/DiagnosticReports/` holds no `JetsamEvent` report from the run. The 55 to 70 hours estimated included the targets, which did not run.
+
+**Arm B.** All 12 recomputed path points and all of M8.17's midpoints reproduced. At `N = 24` and 32, K1 refused the midpoint 8.721637690696875, which stays in the record and decides nothing, and it held at the moved point, 8.720990482005668, where `n(L)` reads 7. Both deciding cutoffs complete on [8.720990482005668, 8.724873734152915]. `N = 16` completes on [8.851079428938467, 8.854315472394507], reported. The lower guard at 8.633780577185611 reads Elliptic. The upper guard at `δ = 0.01`, 8.812122471494444, reads Unresolved, with `n(L)` 7 at `N = 16` against 6 at `N = 24` and 32, as § The guards inferred. The retry at `δ = 0.05`, 9.161117420860561, reads Hyperbolic. The run names it: "a change of type located between the guard readings, with n(L) changing by -1 inside the interval at N = 24 and 32". T4/R5's outcome is Each change of type located, and `meets_s4` is true. Every guard's stored band equals `sqrt(18 × 20) - sqrt(λ)`, `R5`'s frozen level, for the third note of #687's approval.
+
+**Arm A's gates.** The controls' paths at `N = 24` and 32 ran with no reproduction failure. The kernel at `N = 40` passed on all seven controls: each seed passed, every point was accepted, K1 held, and C1 passed at its four cutoffs. The control gate did not pass: 22 of the 24 points read converged with their recorded type and indices, and branch identity held on both pairs at all 24. The two that did not:
+- P5 at `ε = 0.25`: "eps = 0.25: Unresolved, None: tested set at 8.67568e-16+4.02029j (+1): non-contracting above the floor";
+- C3R/R4 at `ε = 0.25`: "eps = 0.25: Unresolved, None: structure: a record is unresolved", from the `N = 40` record's "n(D): an eigenvalue of D lies in its gray zone".
+
+As the terms state: "A failure inside Arm A's gates ends Arm A. The twelve stay unclassified, and the record is written." No target was solved or read, at any cutoff.
+
+**The rows.** T1/R4, open 5; T4/R4, open 6, its five points and the change across 4, not located; T1/R5, open 1; T5/R2, open 3, 45.25 and the unadmitted 128 and 132; T4/R5, located. Each of the twelve carries `not_read`, naming the gate, and keeps M8.17's cause. § THE ROW OUTCOMES: "that is not a second outcome with that cause". So S6's first sentence is not reached for them, and S6 on T5's row, which waits for 45.25 to be read again, is not reached either.
+
+**The cause, read after the run.** This is a diagnostic outside the run, in `dev/runs/019_gate_cause/`, on a scratch copy and the stored outputs. It scores nothing and changes no record. Its six reads reproduce the stored `type`, `nL`, `nD`, `K`, `margin`, `unresolved` and `normA`.
+- **P5.** Two Krein-positive eigenvalues near 4.0203 sit 1.1345×10⁻⁵ apart at `N = 24` and 32, and each moves by less than 1×10⁻¹⁰ from 24 to 32. `linear.record` links eigenvalues within `τ(λ) = max(margin, 10 sqrt(u ‖A‖ |λ|))`, and ‖A‖ grows with the cutoff: 576, 1,040 and 1,632. So `τ` is 7.1726×10⁻⁶, 9.6363×10⁻⁶ and 1.2071×10⁻⁵, and it passes the gap at `N = 40` alone, by 6.4%. There the pair is stored as one group of size 2 at its mean, and the set's change from `N = 32` is half the gap, 5.6726×10⁻⁶, against 5.3902×10⁻¹¹ from 24 to 32 and the floor 5.5336×10⁻⁷. That is the rule's "non-contracting above the floor". Across all 24 control points, this is the only pair inside the tested band that `τ` links at `N = 40` alone (`tau_band.out`).
+- **C3R/R4.** D's negative eigenvalue is -0.01596075 at all three cutoffs, to the seven digits printed. `n(D)`'s gray zone is read against ‖B‖, 576.141, 1,040.140 and 1,632.310, and its top, `10⁻⁵ ‖B‖`, is 0.00576, 0.01040 and 0.01632. It passes 0.01596075 at `N = 40` alone, by 2.3%.
+- At both points the `N = 40` record reads Hyperbolic with (5, 1, 4), the recorded type and indices. The gate asks for a converged reading, and it was applied as the terms state. Both failures are at the controls' smallest amplitude, and neither feature moved with the cutoff (DERIVED from the records and the six reads).
+
+**What could have seen it.** Neither crossing needed a sealed reading. The pair's gap is in the stored `N = 32` record, D's eigenvalue reads in 3 s at `N = 24`, and ‖A‖ and ‖B‖ at `N = 40` follow from the top level, about `N(N + 2) - λ`. No check of the frozen tolerances at `N = 40`'s norms was run before the filing.
+
+**After the run.** `--check` finds no difference, kept as `../environment_after_run.out`, `37ff13a0681f43a7454612ddc5ea580af7723af9acb9b7afb705e1003497b0b7`, with the OS at 15.8.2. `../census_console.log` is copied byte for byte to `run/out/census_console.log`, `34547133730260cd8544c5f99c8747484b3ad561765d643a0b64e0c547eaae64`. `run/out/` is otherwise as the run left it.
+
+**#688.** Merged at 2026-10-31T22:01:22Z, as `bdc8fae84c4f9e4a524388ac870096d1edb651cc`, with no maintainer edits: the merge's tree equals head `23393ced03ab519f73ecb6ab017b145919e8d78c`'s. The approval is kept verbatim as `../xrodz_approval_688_5725136193.md`, `fd89717757c6c3e9ca3fefe8a2ea0c856d043cc0408edbe3bc6d657a910d87c7`. It finds nothing and asks no change. It adds to the adjudication: `resume_check.py` and its arms are published with the record and read in full, and the run's log is read against the go, the written time and the pull request's opening. The launch was after that opening, 21:17:17Z, as its body says.
+
+Nothing is committed, pushed or posted. What follows the record for the twelve is Blake's decision.
+
+## 27. 2026-11-01T16:38:59Z: the record and the method note, drafted for the units; the tests reproduced after the run
+
+**Blake's decision,** the bench's log, entry 152: M8.18 closes as registered, with the record, the method note and the adjudication; a short notice goes on #512 once the record is on MIT; the remaining values are computed on MIT's side, outside OpenWave's column. Nothing in this folder is repaired, and no record changes.
+
+**The record.** `RECORD.md`, 5,409 words, `b993be28e8163c499ccfed4e8b538bcb8e53bda23cbbe1203e9a8aa4f5e39cdc`, built by `tools/build_record.py`, `ef05f6684adabb7405624d0b8054bb558202ce30608d714cd576684f6f1ff716`. The builder follows M8.17's. It recomputes the rows with the frozen `census_lib.assemble` and the gate with `lib.control_failures` and `lib.kernel_failures`, and refuses unless they equal `run/out/CENSUS.json` and `run/out/GATE.json`. Its --check reproduces the record. § 4 is the diagnostic of entry 26, marked as made after the run. § 7 gives each row's standing and reports three statements that bear on S6, without applying it.
+
+**The arms.** `../record_arms/arms.py`, on a copy of this folder: 14 changes each make the builder refuse for its named reason, an edit to `RECORD.md` makes --check exit 1, and the restored copy reproduces. `../record_arms/arms.out`, `9653b387c9431b169668a0d3f9539e32f3293ae66485830d9364b71ca31e28db`, reads 0 failed.
+
+**The tests after the run,** from copies of this folder, with nothing touching it. `run/test_constants.py`, `run/test_reader.py`, `run/test_locator.py`, `run/test_scope.py`, `run/test_freeze.py`, `launch/test_resume_check.py` and `run/test_gate.py` each exit 0 with nothing on stderr, and each rewrites its output equal to the one here, byte for byte. `test_gate.py` took 6,614 s. `test_reader.py` reads the same with the freeze's two files present and with them removed, so `REPRODUCE.md` carries no caveat for it, unlike M8.17's. `launch/test_launch_wrapper.py` was not rerun: it reads bench files that are not published, as `REPRODUCE.md` says.
+
+**`REPRODUCE.md`,** post-run, `c1659afc56327ff2b18d65248765500b25c1ac5342c07b339776bcaf582f41a5`: the diff against `4bd8bbd` is `../REPRODUCE_postrun.diff`.
+
+**The post-run files placed:** `launch/`, `prelaunch_checks_2026-10-31.txt`, `environment_postrun_2026-11-01.txt`, `run/out/census_console.log` and `dev/runs/019_gate_cause/`. `run/out/` is otherwise as the run left it. `SHA256SUMS` stays the pre-run inventory until the record's commit, where it is written fresh, last.
+
+**The method note,** `../m8_18_note/m8_18_method_note.md`, 2,681 words, `da46e0a657b00fa12f6a09f773076102bfe8f66172085af536cd1758b098edc9`: 34 code links and 3 links to the record checked. The record's commit stays marked `⟨record-commit⟩`, and § 8, the audit record, waits for review.
+
+**The notice,** `../notice_512_v1.md`, `bded12723e98ca04eac078b4c7ebb7b02df3ebcb28b7a0c415a50101ab2ec7af`: a draft for #512, for after the record is on MIT, asking nothing. Blake posts it.
+
+Nothing is committed, pushed or posted.
+
+**Next:** the units' review of `../m8_18_record_packet_v1.md`. Then, each on Blake's word: the MIT commit, with this log through the commit's entry and `SHA256SUMS` regenerated last; its push; the OpenWave branch filled with that commit; and Blake opens the pull request.
+
+## 28. 2026-11-01T19:45:30Z: the units on the packet, adjudicated; P5's pair read at `N = 40`
+
+**The verdicts.** UA: GO on items (a) to (d), and HOLD on one sentence of the notice. UB: HOLD for three FIXABLEs, none FATAL, with GO on (c) and (d). UB recomputed the gate, the kernel, the rows and Arm B from `run/out/` and found no number wrong, and UA checked all 78 logged output files against their SHA-256. Each finding was checked at source.
+
+- **UB 1, S6 leaves out the twelve's own case: taken.** The census page's note of 2026-10-30 names two cases, no remedy admitted and a remedy that meets the same cause again. The twelve, and T4/R4's change across 4, are in neither: a remedy was admitted and ran, and its gate stopped before it read them. `RECORD.md` § 7 gains that fourth statement, § 11 carries it to the adjudication, and the note's § 5.3 follows. One addition to UB's text: the request of 2026-10-29 asked about "an admitted remedy ends without resolving its obstruction", and the answer reads "Yes, your reading of S6 holds". That bears on the same question, so the adjudication has both.
+- **UB 2, the DERIVED grade held for C3R/R4 only: taken, by UB's better fix.** `dev/runs/019_gate_cause/pair_gap.py` reads P5 at `ε = 0.25` at all three cutoffs from the stored solutions, on a copy of this folder, and takes the eigenvalues before they are linked. Its output, `7bd6bcb9c1fb0766525504de0f7f1420f7bb61262ae6b4deb2fbe531413dbde4`: the gap is 1.1345×10⁻⁵ at each cutoff; the pair is one group at `N = 40` alone; from 32 to 40 its members move by 7.5×10⁻¹⁴ and 1.8×10⁻¹⁴; and the three reads reproduce the stored records. So DERIVED holds at both points, and § 4 and the note's § 5.1 say so. The builder now reads this output and refuses if it differs, with three new arms.
+- **UB's NITs: taken.** "The twelve cases of `census_lib.RUN_ORDER`", and "On the recorded machine," before the reads in § 4.
+- **UA, the notice's sentence on the corrections, and UB 3, its undertakings: taken together,** in `../notice_512_v2.md`, `a1506ea956b7ea55dd1d5150f42e4bf6eb36c7ac28f8952c4a5051c4e7fce1d5`. It names the instrument and the two tolerances, says the computation is a repaired one outside this thread and not an M8 outcome, says the method is stated before any MIT-side reading of the twelve and revises nothing here, says those values take no part in S6 on the census page, and replaces "This asks nothing of you" with UB's line on the comment of 2026-10-29. Its sentence that the sequel follows the census's close, S5 included, restates what was posted. Whether that stands is Blake's call.
+- **UA's NIT on `REPRODUCE.md`: taken.** The tests write beside their scripts, most of them under `run/`.
+- **UA's caution on the grade:** the DERIVED statement covers these two numerical mechanisms only, not the branches and not the twelve's causes. § 4 and the note already keep to that.
+
+**After the edits:** `RECORD.md`, `d62d88fc7d6fab0fbaa5222b63ab2a8452265876d4a3b42cde3e2f4c4443c7f5`, built by `tools/build_record.py`, `873afd0127b6057a9d1d93e4fc50a8828b9b7de08c0250798c7075000d0da313`, and --check reproduces it. The note, `eecd931db2393d93f0650af6b9245b90135666ac7f67920e0310506dfd1d9b36`, is rebuilt with its links checked. `../record_arms/arms.out`, `286daeb9314fbba4a0bd897bcc487ac1861dfb44372baacedc68f3521224cdaa`: 17 changes refused, the edit to the record caught, 0 failed. No run file changed.
+
+Nothing is committed, pushed or posted.
+
+**Next:** Blake's call on the notice's S5 sentence, and `../m8_18_record_packet_v2.md`, for the units to confirm the holds. Then, each on Blake's word, the MIT commit and what follows it.
+
+## 29. 2026-11-01T20:05:35Z: the units on packet v2, adjudicated
+
+**The verdicts.** UA: GO on v2, with no further redlines. UB: the grade on the gate's cause and both NITs cleared, and `pair_gap.py` rerun, with the gap and the linking as stated. Two holds remain, each with its text given. Both units would keep the notice's S5 sentence, and Blake sent v2 with it as drafted, so it stays.
+
+- **UB 1, the S6 quote: taken.** The phrase and the "Yes" quoted alone read as covering the twelve, whose remedy never met their cause. § 7 and the note's § 5.3 now give the request's question in full, its reading "through S6's first sentence where a remedy meets the same cause again", and the answer's two named cases. One change to UB's text: "read its own question" becomes "read the ruling of 2026-10-20 as covering these cases", which is what the request says. All the quotes were checked against `../posted_19277944.md` and `../ruling_2026-10-29_19278753.md`, byte for byte.
+- **UB 2, the notice: taken,** in `../notice_512_v3.md`, `3267b6da46e81b9cdbdd9208cbfda655cd150935eb9487f6cc35b3c9a65c868c`.
+  - `linear.record` applies `τ(λ)` inside each cutoff's record, before the rule compares anything across cutoffs, so the tolerance is now named as "the distance within which `linear.record` links two eigenvalues into one group". The lead-in reads "changes in how it treats the two tolerances", which holds whether the MIT-side method changes `τ` or only how the rule reads it.
+  - The ruling's failure row has no scope, so the notice now quotes it, adds "Nothing under M8 is", and says that the MIT-side computation reads the twelve on this instrument again, so "your condition's words may reach it". UB's "reach" becomes "may reach", which fits a question.
+  - The last paragraph takes UB's question: "does your condition reach a computation outside this thread?", with no MIT-side reading before the maintainer has had the chance to say. Whether the notice asks is Blake's call. The draft asks, and the plan of 2026-11-01 said it would ask nothing.
+- **One change of my own.** UB's rerun gives P5's members moving by 8.0×10⁻¹⁵ and 6.2×10⁻¹⁵ from 32 to 40, against 7.5×10⁻¹⁴ and 1.8×10⁻¹⁴ here. Those digits are rounding, so `RECORD.md` § 4 and the note's § 5.1 now say "less than 10⁻¹³, the size of rounding". The builder and the note's builder refuse above that, with a new arm. `pair_gap.out` is unchanged.
+
+**After the edits:** `RECORD.md`, `42112071d12b0c8d7e550eec04b1121f8ff4004c4e96d912dbb03121a0d4d73a`, built by `tools/build_record.py`, `41adab6241fbbf3ff0451c4ba458daf1be9ac9141b89d352ab7c58c78a30f392`, and --check reproduces it. The note, `0215cbbaaaad2194aa371902d1d53634acbab4872141571ebdebe7690ffb9b4c`, is rebuilt with its links checked. `../record_arms/arms.out`, `f6415d257fd99d6539ba4d6f061a7a6023d23abf30dd048cc29bf906855020f2`: 18 changes refused, the edit to the record caught, 0 failed. No run file changed.
+
+No further review round: UB gave each replacement, and UA has no further redlines.
+
+Nothing is committed, pushed or posted.
+
+**Next:** Blake's call on whether the notice asks. Then, on Blake's word, the MIT commit, with this log through the commit's entry and `SHA256SUMS` regenerated last.
+
+## 30. 2026-11-01T20:18:45Z: the units on v4: GO; the record's publication
+
+Blake relayed both units and gave the word: "commit and push if good w/". Each verdict is read at source.
+- **UB's check of the bytes:** GO. UB read v4 against v2: the record, the note and the notice changed as listed, `run/` is byte-identical to v1, and `dev/` to v2. `build_record.py --check` reproduces the record, its 18 checks end in "0 failed", and every quote matches its source. UB's text is improved at "read the ruling of 2026-10-20 as covering these cases", and "less than 10⁻¹³, the size of rounding" is fair: both machines' movements fall under it, and so does the eigensolver's error at `N = 40`, about 3.6×10⁻¹³.
+- **UA:** GO on the record, the note and v4. Its ASK fell with Blake's statement that the answer would not decide the computation, and it reran the record's check.
+- **Whether the notice asks.** Blake: "leave no stone untruned on the survivying ray so we can continue the M8 dynamics program." So a "yes, it reaches" would not stop the MIT-side computation, and `../notice_512_v4.md`, `0990696f05812f7c12ce791c4f4c532312394569de4cc5652d5d6e3dbd3939d4`, tells: it names the departure from the comment of 2026-10-29 and says we intend to proceed, before any of the twelve is read. It is posted once the record is on MIT and its links are filled in. Both units read the risk the same way: telling first establishes transparency, not agreement, and no audit is guaranteed.
+- **The publication,** on MIT, in this folder, as § DEFINITION OF DONE states: the record, `REPRODUCE.md` and the run's outputs, with the post-run files, and this log through this entry. After this entry `tools/build_record.py --check` runs, and `../publish_checks.py --write` regenerates `SHA256SUMS` last, with its five checks. This entry cannot name its own commit, so the commit and its verification are recorded on the bench and in the program log.
+
+**Next:** the method note, built with the record's commit and its audit record, on an OpenWave branch for Blake to open, on Blake's word; the notice; then the adjudication.

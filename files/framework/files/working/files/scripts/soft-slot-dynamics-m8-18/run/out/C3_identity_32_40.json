@@ -1,0 +1,30 @@
+{
+ "0.25": {
+  "32-40": {
+   "aligned_distance": 3.573853113425358e-11,
+   "same_record": true,
+   "kept": true
+  }
+ },
+ "0.5": {
+  "32-40": {
+   "aligned_distance": 2.8506555422393375e-10,
+   "same_record": true,
+   "kept": true
+  }
+ },
+ "1": {
+  "32-40": {
+   "aligned_distance": 2.267104270148158e-09,
+   "same_record": true,
+   "kept": true
+  }
+ },
+ "2": {
+  "32-40": {
+   "aligned_distance": 1.7924244592596387e-08,
+   "same_record": true,
+   "kept": true
+  }
+ }
+}

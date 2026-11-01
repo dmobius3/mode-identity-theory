@@ -1,0 +1,30 @@
+C3R/R4 N 24 eps 0.25: 3 s; ||B|| 576.141; D's eigenvalues [-1.596075e-02 -3.949986e-16 -2.721620e-16 -2.247513e-16 -2.012295e-16
+  5.002213e-01]
+   |ev| / ||B||, sorted: [3.4927e-19 3.9010e-19 4.7239e-19 6.8559e-19 2.7703e-05 8.6823e-04]; gray zone (1e-8, 1e-5); gray's top in units of ev: 0.00576141
+   this read: unresolved [], margin 3.2880894743e-07, nD 1
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+C3R/R4 N 32 eps 0.25: 25 s; ||B|| 1040.14; D's eigenvalues [-1.596075e-02  8.526034e-16  8.658883e-16  1.071544e-15  1.296445e-15
+  5.002213e-01]
+   |ev| / ||B||, sorted: [8.1970e-19 8.3247e-19 1.0302e-18 1.2464e-18 1.5345e-05 4.8092e-04]; gray zone (1e-8, 1e-5); gray's top in units of ev: 0.0104014
+   this read: unresolved [], margin 4.4175437636e-07, nD 1
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+C3R/R4 N 40 eps 0.25: 138 s; ||B|| 1632.31; D's eigenvalues [-1.596075e-02  1.334061e-15  1.439682e-15  1.515389e-15  1.837036e-15
+  5.002213e-01]
+   |ev| / ||B||, sorted: [8.1728e-19 8.8199e-19 9.2837e-19 1.1254e-18 9.7780e-06 3.0645e-04]; gray zone (1e-8, 1e-5); gray's top in units of ev: 0.0163231
+   this read: unresolved ['n(D): an eigenvalue of D lies in its gray zone'], margin 5.5338234810e-07, nD 1
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+C3R/R4 N 40 eps 0.5: 146 s; ||B|| 1632.62; D's eigenvalues [-3.078029e-02  1.600144e-15  2.240734e-15  2.560293e-15  2.718969e-15
+  9.983294e-01]
+   |ev| / ||B||, sorted: [9.8011e-19 1.3725e-18 1.5682e-18 1.6654e-18 1.8853e-05 6.1149e-04]; gray zone (1e-8, 1e-5); gray's top in units of ev: 0.0163262
+   this read: unresolved [], margin 7.8300371173e-07, nD 1
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+P5 N 32 eps 0.25: 26 s; ||B|| 1040.11; D's eigenvalues [-7.140693e-02 -2.897576e-15 -2.737942e-15 -2.705776e-15 -2.573488e-15
+  5.002418e-01]
+   |ev| / ||B||, sorted: [2.4742e-18 2.6014e-18 2.6324e-18 2.7858e-18 6.8653e-05 4.8095e-04]; gray zone (1e-8, 1e-5); gray's top in units of ev: 0.0104011
+   this read: unresolved [], margin 4.4173995710e-07, nD 1
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+P5 N 40 eps 0.25: 134 s; ||B|| 1632.26; D's eigenvalues [-7.140693e-02 -2.997850e-15 -2.699019e-15 -2.680669e-15 -2.594474e-15
+  5.002418e-01]
+   |ev| / ||B||, sorted: [1.5895e-18 1.6423e-18 1.6535e-18 1.8366e-18 4.3747e-05 3.0647e-04]; gray zone (1e-8, 1e-5); gray's top in units of ev: 0.0163226
+   this read: unresolved [], margin 5.5336310931e-07, nD 1
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}

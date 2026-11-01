@@ -1,0 +1,25 @@
+Inside the tested band (|lam| < band/2): imaginary neighbours at N = 32 whose gap lies in (tau(32), tau(40)], and the smallest gap/tau(40) above 1
+ C2a     eps 0.25: 0 hits []; nearest gap/tau40 above 1: 6.11 at 4.027903
+ C2a     eps  0.5: 0 hits []; nearest gap/tau40 above 1: 11.15 at 4.029547
+ C2a     eps    1: 0 hits []; nearest gap/tau40 above 1: 18.10 at 4.032802
+ C2a     eps    2: 0 hits []; nearest gap/tau40 above 1: 19.88 at 4.039179
+ C2b     eps 0.25: 0 hits []; nearest gap/tau40 above 1: 2089.67 at 0.015241
+ C2b     eps  0.5: 0 hits []; nearest gap/tau40 above 1: 2914.60 at 0.030344
+ C2b     eps    1: 0 hits []; nearest gap/tau40 above 1: 4008.73 at 0.060143
+ C2b     eps    2: 0 hits []; nearest gap/tau40 above 1: 5359.15 at 0.118172
+ C3      eps 0.25: 0 hits []; nearest gap/tau40 above 1: 85.84 at 4.023636
+ C3      eps  0.5: 0 hits []; nearest gap/tau40 above 1: 169.93 at 4.021013
+ C3      eps    1: 0 hits []; nearest gap/tau40 above 1: 332.95 at 4.01574
+ C3      eps    2: 0 hits []; nearest gap/tau40 above 1: 639.15 at 4.005089
+ C2a_R5  eps 0.25: 0 hits []; nearest gap/tau40 above 1: 8.54 at 2.012106
+ C2a_R5  eps  0.5: 0 hits []; nearest gap/tau40 above 1: 17.00 at 2.008166
+ C2a_R5  eps    1: 0 hits []; nearest gap/tau40 above 1: 33.72 at 2.000359
+ C2a_R5  eps    2: 0 hits []; nearest gap/tau40 above 1: 66.35 at 1.985021
+ P5      eps 0.25: 1 hits [(4.020296, '1.135e-05', '1.207e-05')]; nearest gap/tau40 above 1: 16.36 at 4.025047
+ P5      eps  0.5: 0 hits []; nearest gap/tau40 above 1: 3.60 at 4.014391
+ P5      eps    1: 0 hits []; nearest gap/tau40 above 1: 13.91 at 4.002721
+ P5      eps    2: 0 hits []; nearest gap/tau40 above 1: 53.36 at 3.979914
+ C3R_R4  eps 0.25: 0 hits []; nearest gap/tau40 above 1: 2.88 at 4.018143
+ C3R_R4  eps  0.5: 0 hits []; nearest gap/tau40 above 1: 4.67 at 4.010084
+ C3R_R4  eps    1: 0 hits []; nearest gap/tau40 above 1: 4.55 at 3.994095
+ C3R_R4  eps    2: 0 hits []; nearest gap/tau40 above 1: 14.16 at 3.96275

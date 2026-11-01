@@ -5,6 +5,7 @@ This is M8.18, the two remedies [#512](https://github.com/openwave-labs/openwave
 - **Its two arms.** Arm A reads twelve points on `N = 24`, 32 and 40, once the kernel at `N = 40` and six controls have passed, and locates any change of type the new readings bracket. Arm B runs M8.17's locator again on T4/R5's bracket, with a midpoint where K1 fails moved once.
 - **Its admission.** OpenWave's [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19278753) admitted both remedies on 2026-10-29, and [fixed the first one's band](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19296471) on 2026-10-30, inside the boundary of 2026-10-15.
 - **Before the freeze.** It was built and tested with no solve at `N = 40`. One plumbing pass solved the GO-list control C2a at `N` = 12, 16 and 20, where the run never solves it, and a machine check solved the GO-list controls and C1 at `N` = 16, 24 and 32, since the OS moved after M8.17's run. `DEVLOG.md` records each step. It was frozen here before any sealed reading was computed.
+- **The run.** The registered run began on 2026-10-31, after the maintainer's go and after the freeze block's pull request, [#688](https://github.com/openwave-labs/openwave/pull/688), opened, and it completed on 2026-11-01 with no stop. Arm B located T4/R5's change of type. Arm A ended at the control gate, where P5 and C3R/R4 at `ε = 0.25` read Unresolved, so none of the twelve was read. `RECORD.md` gives all of it.
 
 The terms are `run/m8_16_task_details.md`, under the name the instrument's `devtools.frozen()` reads; `registration/m8_18_task_details.md` is the same text, with its diffs. The census page gives their SHA-256 and the manifest pin.
 
@@ -16,6 +17,7 @@ The terms are `run/m8_16_task_details.md`, under the name the instrument's `devt
 
 ## What is here
 
+- **The record,** `RECORD.md`: the run's custody, Arm B's location, Arm A's gates, the twelve, the brackets and the row outcomes, built from the run's files by `tools/build_record.py`, with a diagnostic of the gate's failure in its § 4.
 - **The terms,** `run/m8_16_task_details.md`, under the name the instrument's `devtools.frozen()` reads, as M8.16.1's terms placed theirs. `registration/` holds the same text, `m8_18_task_details.md`, with the diffs between its versions, and the code's diffs against M8.17's.
 - **The instrument,** `instrument/`: M8.16.1's, byte for byte, as [M8.16.1's note](../soft-slot-dynamics-m8-16-1/REPRODUCE.md#what-is-here) lists it.
 - **The run,** `run/`:
@@ -24,11 +26,16 @@ The terms are `run/m8_16_task_details.md`, under the name the instrument's `devt
   - `census.py`: the registered run, with solving and reading separate operations and the run cut into jobs;
   - `pin_manifest.py`, `write_guard.py`, `freeze_block.py` and `record_environment.py`: the freeze's steps and the environment record;
   - the tests, each with its output: `test_constants.py`, every number in the terms; `test_reader.py`, M8.17's readings reconstructed, the twelve refused, and the band; `test_gate.py`, the reproduction rules and the solve-state gate on data already on record, with a mutation of each compared field; `test_locator.py`, classification and the locator on synthetic records, each condition with its arm; `test_scope.py`, the gates and the read's scope through the run's whole order on stub solves, with a spy on the read and a mutation of each guard; and `test_freeze.py`, the guard's steps rehearsed on a temporary copy.
+- **The run's files:**
+  - `run/out/`: Arm B's record and stored solutions, each control's paths, stored solutions, reads, identities and case file, C1's file, the gate's record `GATE.json`, the census record `CENSUS.json`, the transcript `census.out`, the run's console output `census_console.log`, and its log `RUNLOG.json`, which records the SHA-256 of each completed job's files and of the record and the transcript;
+  - `run/FROZEN.json` and `run/FROZEN_PIN`: the freeze, written once after the maintainer's go.
+- **The launch,** `launch/`: the resume check every launch ran before `census.py`, `resume_check.py`, with its arms, `test_resume_check.py`, and their output; `prelaunch_checks.py`; and `test_launch_wrapper.py` with its output, the launch command's form run on stubs. They ran from the bench beside this folder, the check at `../resume_check/`, outside the pinned tree, and are published here byte for byte. The pre-launch checks and the wrapper test read files on the bench, such as `FILING_PLAN.md`, which are not published, so they rerun only beside them.
+- **Post-run files,** made or placed after the run and not records from it: `prelaunch_checks_2026-10-31.txt`, the checks read just before the launch; `environment_postrun_2026-11-01.txt`, the environment read again after it; `launch/`; `run/out/census_console.log`, copied from beside this folder once the run had ended; `dev/runs/019_gate_cause/`, the diagnostic `RECORD.md` § 4 reads; and `tools/build_record.py`.
 - **`reference/`:** files this run reads, copied byte for byte from this repository's history. They are M8.17's outputs on the five rows, its locator on T4/R5, its `CENSUS.json` and its two code files, and M8.16.1's controls. `SOURCES.json` names each one's commit, path, blob and SHA-256, and `tools/copy_from_mit.py` copies and checks them.
 - **The development record:**
   - `DEVLOG.md`: every step, ruling and correction, in order, never edited;
   - `registration/`: the terms and the diffs;
-  - `dev/`: the replay's scripts and the moved midpoint's values, the plumbing pass with its output, the machine check with its arm and their outputs, `gen_items.py`, which lists test 1's items from the terms, and `runs/`, the tests' kept runs.
+  - `dev/`: the replay's scripts and the moved midpoint's values, the plumbing pass with its output, the machine check with its arm and their outputs, `gen_items.py`, which lists test 1's items from the terms, and `runs/`, the tests' kept runs and the post-run diagnostic.
 
 ## Before running
 
@@ -44,7 +51,7 @@ The terms are `run/m8_16_task_details.md`, under the name the instrument's `devt
   - **The software:** Python 3.13.13, NumPy 2.5.0 and SciPy 1.18.0, on Accelerate's BLAS and LAPACK with no threading variable set: M8.16.1's, unchanged. The OS is not: M8.16.1's and M8.17's records were made on macOS 15.8 (24H23), and the machine check below reproduces them on this one.
   - **Other machines:** bitwise agreement is not promised.
 - **Run every script with `python3 -I -B`.** Never use `-O`, which removes the code's asserts: the run refuses it.
-- **Run in a copy of this folder.** The tests write their outputs under `run/`. A write there outside `run/out/` that changes a byte changes the manifest, and the run then refuses every sealed case.
+- **Run in a copy of this folder.** The tests write their outputs beside their scripts, most of them under `run/`. A write there outside `run/out/` that changes a byte changes the manifest, and the run then refuses every sealed case.
 
 ## The tests
 
@@ -54,18 +61,19 @@ From a copy of this folder, with nothing solved:
 - `python3 -I -B run/test_gate.py`, in about 110 minutes;
 - `python3 -I -B run/test_locator.py`;
 - `python3 -I -B run/test_scope.py`;
-- `python3 -I -B run/test_freeze.py`.
+- `python3 -I -B run/test_freeze.py`;
+- `python3 -I -B launch/test_resume_check.py`, the resume check's arms, which rewrite `launch/test_resume_check.out`.
 
-Each writes its output under `run/`. On the recorded machine, in a copy of this folder, each output equals the one here, byte for byte. Tests 1 and 9 rehearse the freeze on temporary copies of their own, which leave out this folder's freeze files: the placed terms, the environment record, the pins and `FROZEN.json`. So they read the same before the freeze and after it, and they check that this folder's freeze files are as they were.
+Each writes its output beside its script. On the recorded machine, in a copy of this folder, each output equals the one here, byte for byte. Tests 1 and 9 rehearse the freeze on temporary copies of their own, which leave out this folder's freeze files: the placed terms, the environment record, the pins and `FROZEN.json`. So they read the same before the freeze and after it, and they check that this folder's freeze files are as they were.
 
 - **The plumbing pass:** `python3 -I -B dev/plumbing_census.py`, in 2 to 4 minutes. It solves the GO-list control C2a at cutoffs 12, 16 and 20, where the run never solves it, and writes `dev/plumbing_census.out`. Its output equals the one here apart from its timings and, on another machine, real parts below 10⁻¹⁴, which only move where a truncated line ends.
 - **The machine check:** `python3 -I -B dev/os_reproduction.py N`, for `N` = 16, 24 and 32, and `python3 -I -B dev/os_reproduction.py C1`, in about an hour. NumPy and SciPy link Accelerate, which ships with the OS, and the reproduction gate compares every float exactly, so this run's OS had to reproduce records made on an earlier one. It solves the GO-list controls through the run's own path, read and comparison, and C1 through `run_c1`, against their records, and appends to `dev/os_reproduction.out`. On the recorded machine all 13 comparisons are exact. `python3 -I -B dev/os_reproduction_arm.py` moves one float of a record by one unit in the last place, and the comparison reports that leaf and no other.
 
 ## The freeze and the run
 
-- **The freeze,** once, after the maintainer's go:
-  - `python3 -I -B run/write_guard.py GO_LINK` writes `run/FROZEN.json` and its pin, `run/FROZEN_PIN`;
-  - `python3 -I -B run/freeze_block.py SOLVER_COMMIT OUT_MD` writes the freeze block.
-- **The registered run:** `python3 -I -B -u run/census.py`, with its outputs in `run/out/`. It refuses to start until `run/FROZEN.json` and its pin exist and validate.
+- **The freeze** was written once, after the maintainer's go: `python3 -I -B run/write_guard.py GO_LINK` wrote `run/FROZEN.json` and its pin, `run/FROZEN_PIN`, and `python3 -I -B run/freeze_block.py SOLVER_COMMIT OUT_MD` wrote the freeze block, filed on OpenWave as `research/m8_18/freeze_block.md` in [#688](https://github.com/openwave-labs/openwave/pull/688).
+- **The registered run** ran once, by the launch command `RECORD.md` § 1 gives: it checks the resume check's SHA-256, runs the check, runs `run/record_environment.py --check`, and then `python3 -I -B -u run/census.py`, with its outputs in `run/out/`. `census.py` refuses to start until `run/FROZEN.json` and its pin validate.
+  - To run it again, use a copy without `run/out/`, with `launch/` copied to `../resume_check/` beside it. In a copy that keeps `run/out/`, the resume check refuses, since the run has completed.
+  - `python3 -I -B tools/build_record.py --check` rebuilds `RECORD.md` from the run's files, recomputes the gate and every row with `census_lib`, and reports any difference.
 
-**Resources:** for the registered run on the recorded machine, the terms estimate about 55 to 70 hours of compute, with about 9 to 13 more for each new bracket in `R4`. Each stored solution is a few kilobytes.
+**Resources:** for the registered run on the recorded machine, the terms estimate about 55 to 70 hours of compute, with about 9 to 13 more for each new bracket in `R4`. It took 55569 s, about 15.4 hours, since the gate stopped Arm A before the targets (`RECORD.md`, § 1). Each stored solution is a few kilobytes.

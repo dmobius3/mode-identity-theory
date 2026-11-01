@@ -1,0 +1,51 @@
+M8.18, the census's two remedies; outputs in run/out
+Arm B, T4/R5 on (8, 11.3137):
+   (8, 11.3137): the recomputed path, 12 points, 0 not reproduced
+   N = 16: 10 midpoints, interval [8.851079428938467, 8.854315472394507], complete
+   N = 24: 11 midpoints, interval [8.720990482005668, 8.724873734152915], complete
+   N = 32: 11 midpoints, interval [8.720990482005668, 8.724873734152915], complete
+   the lower guard at 8.63378, from 8: Elliptic
+   the upper guard at 8.81212, from 11.3137: not classified: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested group at 0.000131694+0j: no candidate of its class and Krein sign at a lower cutoff
+   the upper guard at 9.16112, from 11.3137: Hyperbolic
+Arm B: index; located: True; a change of type located between the guard readings, with `n(L)` changing by -1 inside the interval at `N = 24` and 32
+C2a: N = 24 and 32
+   C2a N = 24: 4 of 4 points solved; 46 s
+   C2a N = 32: 4 of 4 points solved; 652 s
+C2b: N = 24 and 32
+   C2b N = 24: 4 of 4 points solved; 23 s
+   C2b N = 32: 4 of 4 points solved; 278 s
+C3: N = 24 and 32
+   C3 N = 24: 4 of 4 points solved; 70 s
+   C3 N = 32: 4 of 4 points solved; 910 s
+C2a/R5: N = 24 and 32
+   C2a/R5 N = 24: 4 of 4 points solved; 170 s
+   C2a/R5 N = 32: 4 of 4 points solved; 1110 s
+P5: N = 24 and 32
+   P5 N = 24: 4 of 4 points solved; 76 s
+   P5 N = 32: 4 of 4 points solved; 985 s
+C3R/R4: N = 24 and 32
+   C3R/R4 N = 24: 4 of 4 points solved; 85 s
+   C3R/R4 N = 32: 4 of 4 points solved; 1042 s
+C1, at its four cutoffs:
+   C1 N = 16: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 24: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 32: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+   C1 N = 40: seed ok; eps 0.5 ok, eps 1 ok, eps 2 ok
+C2a: N = 40
+   C2a N = 40: 4 of 4 points solved; 3381 s
+C2b: N = 40
+   C2b N = 40: 4 of 4 points solved; 1244 s
+C3: N = 40
+   C3 N = 40: 4 of 4 points solved; 4673 s
+C2a/R5: N = 40
+   C2a/R5 N = 40: 4 of 4 points solved; 5485 s
+P5: N = 40
+   P5 N = 40: 4 of 4 points solved; 5229 s
+C3R/R4: N = 40
+   C3R/R4 N = 40: 4 of 4 points solved; 5351 s
+T1/R4: Not settled by this run; open: 5
+T4/R4: Not settled by this run; open: 6
+T1/R5: Not settled by this run; open: 1
+T4/R5: Each change of type located
+T5/R2: Not settled by this run; open: 3
+55569 s

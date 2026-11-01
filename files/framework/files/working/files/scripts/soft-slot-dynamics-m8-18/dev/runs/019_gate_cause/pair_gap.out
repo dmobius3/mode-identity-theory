@@ -1,0 +1,8 @@
+N 24: the pair's imaginary parts 4.020284391477 and 4.020295736541; real parts below 1e-15; gap 1.1345e-05; tau 7.1726e-06; one group: False
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+N 32: the pair's imaginary parts 4.020284391423 and 4.020295736569; real parts below 8e-16; gap 1.1345e-05; tau 9.6363e-06; one group: False
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+N 40: the pair's imaginary parts 4.020284391423 and 4.020295736569; real parts below 1e-15; gap 1.1345e-05; tau 1.2071e-05; one group: True
+   against the stored read: {'type': True, 'nL': True, 'nD': True, 'K': True, 'margin': True, 'unresolved': True, 'normA': True}
+from N 24 to 32: the lower moves 5.4e-11, the upper 2.8e-11
+from N 32 to 40: the lower moves 7.5e-14, the upper 1.8e-14

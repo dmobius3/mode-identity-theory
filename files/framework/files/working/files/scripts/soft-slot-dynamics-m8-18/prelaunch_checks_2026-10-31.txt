@@ -1,0 +1,25 @@
+ok    DEVLOG.md records the launch command once: 1
+ok    both admissions: devtools.frozen() and census.frozen()
+ok    the manifest equals the pin
+ok    run/FROZEN_PIN is the SHA-256 of run/FROZEN.json
+ok    record_environment.py --check: no difference
+ok    run/out/ does not exist: this is the first launch, and no solve has run at N = 40
+ok    test 6's output: 0 failed, every arm red, the control cache's arm among them
+ok    the machine check, on this OS, macOS 15.8.2: 13 comparisons, none differing
+ok    no census run in progress
+ok    no file in the folder newer than run/FROZEN_PIN but DEVLOG.md: DEVLOG.md
+ok    the resume check at its reviewed SHA-256, 9405929a
+ok    the resume check passes on the folder
+ok    on mains power: Now drawing from 'AC Power'
+info  Caffeine: no assertion seen
+info  pmset: disksleep            10; sleep                1 (sleep prevented by powerd, Claude); displaysleep         20
+info  software update: Automatic checking for updates is turned on
+info  updates on offer, to stay uninstalled until the record is written: macOS 27.2
+info  free disk space: 346 GB
+ok    #688 is open against openwave-labs/openwave main, head m8-18-freeze-block-2026-10-31 at 23393ced
+ok    #688 changes one file, the block
+ok    the block at the pull request's head equals the bench's, byte for byte
+ok    DCO passes on 23393ced
+the launch command, from the folder, as DEVLOG.md records it:
+      set -o pipefail; caffeinate -i -m -s -w $$ & { printf '%s  %s\n' 9405929a8518f5f5df68b0206c71d64fce90d4ea4921b01cebd4f1f4caae0971 ../resume_check/resume_check.py | shasum -a 256 -c - && python3 -I -B ../resume_check/resume_check.py . && python3 -I -B run/record_environment.py --check | tail -1 && python3 -I -B -u run/census.py; } 2>&1 | tee -a ../census_console.log
+0 failed

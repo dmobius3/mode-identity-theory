@@ -1,0 +1,25 @@
+{
+ "kernel": {
+  "C1": [],
+  "C2a": [],
+  "C2b": [],
+  "C3": [],
+  "C2a/R5": [],
+  "P5": [],
+  "C3R/R4": []
+ },
+ "control": {
+  "C2a": [],
+  "C2b": [],
+  "C3": [],
+  "C2a/R5": [],
+  "P5": [
+   "eps = 0.25: Unresolved, None: tested set at 8.67568e-16+4.02029j (+1): non-contracting above the floor"
+  ],
+  "C3R/R4": [
+   "eps = 0.25: Unresolved, None: structure: a record is unresolved"
+  ]
+ },
+ "passed": false,
+ "stopped": "the control gate: P5: eps = 0.25: Unresolved, None: tested set at 8.67568e-16+4.02029j (+1): non-contracting above the floor"
+}
