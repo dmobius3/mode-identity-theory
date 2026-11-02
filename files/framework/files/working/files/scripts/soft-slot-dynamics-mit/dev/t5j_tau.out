@@ -1,0 +1,7 @@
+eps 0.25 Unresolved ['partner set at -1.36528e-15+6.01511j (+1): non-contracting above the floor']
+eps 0.5 converged []
+eps 1 converged []
+eps 2 Unresolved ["partner set at 2.61485e-16+5.93353j (+1): the set's count differs between cutoffs"]
+N = 16: normA 133.225, margin 1.538e-07, tau 4.2183e-06, sizes [1, 1], gap 8.7839e-06, gap / tau 2.082
+N = 24: normA 512.380, margin 3.017e-07, tau 8.2725e-06, sizes [1, 1], gap 8.7801e-06, gap / tau 1.061
+N = 32: normA 960.246, margin 4.130e-07, tau 1.1325e-05, sizes [2], gap not stored (linked)

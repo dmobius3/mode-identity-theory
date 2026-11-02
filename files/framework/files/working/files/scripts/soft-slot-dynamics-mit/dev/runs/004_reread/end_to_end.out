@@ -1,0 +1,58 @@
+path_ctl_C2a_N24: complete, 0 s
+path_ctl_C2a_N32: complete, 0 s
+path_ctl_C2a_N40: complete, 0 s
+path_ctl_C2b_N24: complete, 0 s
+path_ctl_C2b_N32: complete, 0 s
+path_ctl_C2b_N40: complete, 0 s
+path_ctl_C3_N24: complete, 0 s
+path_ctl_C3_N32: complete, 0 s
+path_ctl_C3_N40: complete, 0 s
+path_ctl_C2a_R5_N24: complete, 0 s
+path_ctl_C2a_R5_N32: complete, 0 s
+path_ctl_C2a_R5_N40: complete, 0 s
+path_ctl_P5_N24: complete, 0 s
+path_ctl_P5_N32: complete, 0 s
+path_ctl_P5_N40: complete, 0 s
+path_ctl_C3R_R4_N24: complete, 0 s
+path_ctl_C3R_R4_N32: complete, 0 s
+path_ctl_C3R_R4_N40: complete, 0 s
+72 points read again; 20 differences from M8.18
+identity_ctl_C2a_24_32: complete, 10 s
+identity_ctl_C2a_32_40: complete, 51 s
+reading_ctl_C2a: complete, 1 s
+ctl_C2a: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C2b_24_32: complete, 11 s
+identity_ctl_C2b_32_40: complete, 59 s
+reading_ctl_C2b: complete, 0 s
+ctl_C2b: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C3_24_32: complete, 9 s
+identity_ctl_C3_32_40: complete, 49 s
+reading_ctl_C3: complete, 0 s
+ctl_C3: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C2a_R5_24_32: complete, 18 s
+identity_ctl_C2a_R5_32_40: complete, 85 s
+reading_ctl_C2a_R5: complete, 1 s
+ctl_C2a_R5: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_P5_24_32: complete, 10 s
+identity_ctl_P5_32_40: complete, 48 s
+reading_ctl_P5: complete, 0 s
+ctl_P5: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C3R_R4_24_32: complete, 10 s
+identity_ctl_C3R_R4_32_40: complete, 49 s
+reading_ctl_C3R_R4: complete, 0 s
+ctl_C3R_R4: as-built reading, reading beside it and both identities equal M8.18's
+changed: 24 of 24 converged, with the type and indices on the record; moved [('C3R/R4', '0.25'), ('P5', '0.25')]
+classified differently at 2 points
+ctl_C2a N = 24 0.25: /record/leak: 7.47996763007285e-11 against 6.538970488867162e-11
+ctl_C2a N = 24 0.5: /record/leak: 1.8120400301013128e-11 against 2.2101050317043538e-11
+ctl_C2a N = 24 1: /record/leak: 2.6818293562813686e-11 against 2.0262863963423917e-11
+ctl_C2a N = 24 2: /record/leak: 4.818200551235536e-12 against 7.657720539076051e-12
+ctl_C2b N = 24 0.25: /record/leak: 1.3845287330941561e-11 against 1.496886939282672e-11
+ctl_C2b N = 24 0.5: /record/leak: 5.518205246296221e-12 against 3.657201313067746e-12
+ctl_C2b N = 24 1: /record/leak: 4.110407216783473e-12 against 4.421083414352543e-12
+ctl_C2b N = 24 2: /record/leak: 2.5010208001359475e-12 against 2.009215041406855e-12
+ctl_C3 N = 24 0.25: /record/leak: 1.2677016762291508e-11 against 1.2253240760355968e-11
+ctl_C3 N = 24 0.5: /record/leak: 6.5698634721766856e-12 against 7.459542792279754e-12
+ctl_C3 N = 24 1: /record/leak: 5.542201626442358e-12 against 4.608586521834467e-12
+ctl_C3 N = 24 2: /record/leak: 1.8850413871278913e-12 against 2.0020553418296392e-12
+FAIL

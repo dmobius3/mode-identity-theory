@@ -1,0 +1,339 @@
+{
+ "events": [
+  {
+   "t": "2026-11-02T20:29:02Z",
+   "event": "launch: rereads, 4 at once, threads 0",
+   "manifest": "4214dbe74c224bfba8b17f3e89ffebdbb7ff901ac3c793e72491538c8541ad43"
+  },
+  {
+   "t": "2026-11-02T20:29:02Z",
+   "event": "reread_ctl_C2a_R5_N40 started",
+   "pid": 19022
+  },
+  {
+   "t": "2026-11-02T20:29:02Z",
+   "event": "reread_ctl_C3R_R4_N40 started",
+   "pid": 19023
+  },
+  {
+   "t": "2026-11-02T20:29:02Z",
+   "event": "reread_ctl_P5_N40 started",
+   "pid": 19024
+  },
+  {
+   "t": "2026-11-02T20:29:02Z",
+   "event": "reread_ctl_C3_N40 started",
+   "pid": 19025
+  },
+  {
+   "t": "2026-11-02T20:51:06Z",
+   "event": "reread_ctl_C3_N40 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T20:51:06Z",
+   "event": "reread_ctl_C2a_N40 started",
+   "pid": 19950
+  },
+  {
+   "t": "2026-11-02T20:52:59Z",
+   "event": "reread_ctl_P5_N40 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T20:52:59Z",
+   "event": "reread_ctl_C2b_N40 started",
+   "pid": 20000
+  },
+  {
+   "t": "2026-11-02T20:53:29Z",
+   "event": "reread_ctl_C3R_R4_N40 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T20:53:29Z",
+   "event": "reread_ctl_C2a_R5_N32 started",
+   "pid": 20010
+  },
+  {
+   "t": "2026-11-02T21:01:48Z",
+   "event": "reread_ctl_C2b_N40 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:01:48Z",
+   "event": "reread_ctl_C3R_R4_N32 started",
+   "pid": 20199
+  },
+  {
+   "t": "2026-11-02T21:02:35Z",
+   "event": "reread_ctl_C2a_R5_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:02:35Z",
+   "event": "reread_ctl_P5_N32 started",
+   "pid": 20222
+  },
+  {
+   "t": "2026-11-02T21:05:44Z",
+   "event": "reread_ctl_C3R_R4_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:05:44Z",
+   "event": "reread_ctl_C3_N32 started",
+   "pid": 20308
+  },
+  {
+   "t": "2026-11-02T21:06:32Z",
+   "event": "reread_ctl_P5_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:06:32Z",
+   "event": "reread_ctl_C2a_N32 started",
+   "pid": 20328
+  },
+  {
+   "t": "2026-11-02T21:09:47Z",
+   "event": "reread_ctl_C3_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:09:48Z",
+   "event": "reread_ctl_C2b_N32 started",
+   "pid": 20552
+  },
+  {
+   "t": "2026-11-02T21:10:55Z",
+   "event": "reread_ctl_C2a_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:10:55Z",
+   "event": "reread_ctl_C2a_R5_N24 started",
+   "pid": 20589
+  },
+  {
+   "t": "2026-11-02T21:11:30Z",
+   "event": "reread_ctl_C2b_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:11:30Z",
+   "event": "reread_ctl_C3R_R4_N24 started",
+   "pid": 20662
+  },
+  {
+   "t": "2026-11-02T21:11:57Z",
+   "event": "reread_ctl_C3R_R4_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:11:57Z",
+   "event": "reread_ctl_P5_N24 started",
+   "pid": 20682
+  },
+  {
+   "t": "2026-11-02T21:12:06Z",
+   "event": "reread_ctl_C2a_R5_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:12:06Z",
+   "event": "reread_ctl_C3_N24 started",
+   "pid": 20696
+  },
+  {
+   "t": "2026-11-02T21:12:27Z",
+   "event": "reread_ctl_P5_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:12:27Z",
+   "event": "reread_ctl_C2a_N24 started",
+   "pid": 20715
+  },
+  {
+   "t": "2026-11-02T21:12:33Z",
+   "event": "reread_ctl_C3_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:12:33Z",
+   "event": "reread_ctl_C2b_N24 started",
+   "pid": 20719
+  },
+  {
+   "t": "2026-11-02T21:12:44Z",
+   "event": "reread_ctl_C2b_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:12:50Z",
+   "event": "reread_ctl_C2a_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:13:48Z",
+   "event": "reread_ctl_C2a_N40 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:15:04Z",
+   "event": "reread_ctl_C2a_R5_N40 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T21:15:04Z",
+   "event": "launch ended; 0 failed: []"
+  }
+ ],
+ "jobs": {
+  "reread_ctl_C2a_R5_N40": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 2762.3845891952515,
+   "peak_rss_bytes": 1488617472,
+   "cpu_seconds": 2696.0453740000003,
+   "ok": true
+  },
+  "reread_ctl_C3R_R4_N40": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1466.8865959644318,
+   "peak_rss_bytes": 1582039040,
+   "cpu_seconds": 1428.069228,
+   "ok": true
+  },
+  "reread_ctl_P5_N40": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1437.1589450836182,
+   "peak_rss_bytes": 1496809472,
+   "cpu_seconds": 1399.946984,
+   "ok": true
+  },
+  "reread_ctl_C3_N40": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1324.6870250701904,
+   "peak_rss_bytes": 1566195712,
+   "cpu_seconds": 1290.6218359999998,
+   "ok": true
+  },
+  "reread_ctl_C2a_N40": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1361.2317361831665,
+   "peak_rss_bytes": 1681309696,
+   "cpu_seconds": 1328.374337,
+   "ok": true
+  },
+  "reread_ctl_C2b_N40": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 529.4531860351562,
+   "peak_rss_bytes": 1525432320,
+   "cpu_seconds": 517.763701,
+   "ok": true
+  },
+  "reread_ctl_C2a_R5_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 546.0006241798401,
+   "peak_rss_bytes": 1528430592,
+   "cpu_seconds": 534.0265059999999,
+   "ok": true
+  },
+  "reread_ctl_C3R_R4_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 236.11790204048157,
+   "peak_rss_bytes": 1729527808,
+   "cpu_seconds": 232.399185,
+   "ok": true
+  },
+  "reread_ctl_P5_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 236.9990270137787,
+   "peak_rss_bytes": 1747648512,
+   "cpu_seconds": 234.012023,
+   "ok": true
+  },
+  "reread_ctl_C3_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 243.13016819953918,
+   "peak_rss_bytes": 1504198656,
+   "cpu_seconds": 237.211241,
+   "ok": true
+  },
+  "reread_ctl_C2a_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 263.29010009765625,
+   "peak_rss_bytes": 1487962112,
+   "cpu_seconds": 256.326332,
+   "ok": true
+  },
+  "reread_ctl_C2b_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 102.83513021469116,
+   "peak_rss_bytes": 1419608064,
+   "cpu_seconds": 100.005439,
+   "ok": true
+  },
+  "reread_ctl_C2a_R5_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 70.82699704170227,
+   "peak_rss_bytes": 1489666048,
+   "cpu_seconds": 67.538836,
+   "ok": true
+  },
+  "reread_ctl_C3R_R4_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 26.256473779678345,
+   "peak_rss_bytes": 2294202368,
+   "cpu_seconds": 25.071286,
+   "ok": true
+  },
+  "reread_ctl_P5_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 30.367859840393066,
+   "peak_rss_bytes": 2465349632,
+   "cpu_seconds": 27.323707999999996,
+   "ok": true
+  },
+  "reread_ctl_C3_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 27.240033864974976,
+   "peak_rss_bytes": 2248736768,
+   "cpu_seconds": 24.720384,
+   "ok": true
+  },
+  "reread_ctl_C2a_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 23.09052014350891,
+   "peak_rss_bytes": 2521776128,
+   "cpu_seconds": 22.386573,
+   "ok": true
+  },
+  "reread_ctl_C2b_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 10.648720026016235,
+   "peak_rss_bytes": 1210236928,
+   "cpu_seconds": 10.311241,
+   "ok": true
+  }
+ }
+}

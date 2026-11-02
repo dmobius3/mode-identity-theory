@@ -1,0 +1,11 @@
+{
+ "job": "path_ctl_P5_N32",
+ "files": {
+  "ctl_P5_N32.npz": "a2034530714eb8a83c91d51cccf33792549abf735ebd7a653ba032fcebf292bd",
+  "ctl_P5_N32.json": "50b0362ec0c436e123e72c17e5ead3db7cdb24a7326a6935ba20f7fc8cb19b21"
+ },
+ "t": "2026-11-02T17:42:53Z",
+ "seconds": 1951.7934493750217,
+ "manifest": "e586416f6d6185d2c32aa053892ac0a91f998dc6bb1f2c2be6e96fe7349bed28",
+ "peak_rss_bytes": 1358741504
+}

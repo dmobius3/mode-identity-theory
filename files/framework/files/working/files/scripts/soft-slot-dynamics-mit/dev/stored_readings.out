@@ -1,0 +1,63 @@
+A. The twelve: type and n(L), n(D), K at N = 16, 24, 32, and the rule's verdict on the record
+  T1_R4    1.414: Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2 | Unresolved | same type and indices: True
+  T1_R4   32.000: Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2 | Unresolved | same type and indices: True
+  T1_R4   45.255: Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2 | Unresolved | same type and indices: True
+  T1_R4   64.000: Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2 | Unresolved | same type and indices: True
+  T1_R4   72.000: Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2 | Unresolved | same type and indices: True
+  T1_R5   32.000: Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2 | Unresolved | same type and indices: True
+  T4_R4    4.000: Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6 | Unresolved | same type and indices: True
+  T4_R4    8.000: Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Unresolved | same type and indices: True
+  T4_R4   11.314: Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Unresolved | same type and indices: True
+  T4_R4   64.000: Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Unresolved | same type and indices: True
+  T4_R4   72.000: Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2 | Unresolved | same type and indices: True
+  T5_R2   45.255: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved | same type and indices: True
+  same type and indices at all three cutoffs: 12 of 12
+
+B. T5 in R2, its whole ladder, with the off-axis groups
+     0.250: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     0.354: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     0.500: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     0.707: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     1.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     1.414: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     2.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     2.828: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     4.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | converged
+     5.657: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+     8.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    11.314: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    16.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    22.627: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    32.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    45.255: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    64.000: Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+    90.510: Hype 4,0,4 off-axis 1 | Elli 9,3,6 | Elli 9,3,6 | Unresolved
+   128.000: Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Unresolved
+   132.000: Unre 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Unresolved
+  off-axis at 90.51, N = 16: [(0.2105, 0.1516, 1)]
+  off-axis at 90.51, N = 24: []
+  off-axis at 90.51, N = 32: []
+  off-axis at 128.00, N = 16: [(0.5251, 0.1874, 1)]
+  off-axis at 128.00, N = 24: [(0.2183, 0.1623, 1)]
+  off-axis at 128.00, N = 32: [(0.0965, 0.1549, 1)]
+  off-axis at 132.00, N = 16: [(0.5441, 0.1907, 1)]
+  off-axis at 132.00, N = 24: [(0.2577, 0.1646, 1)]
+  off-axis at 132.00, N = 32: [(0.1603, 0.1568, 1)]
+
+C. A three-point extrapolation of the quartet's real part, N = 16, 24, 32 (INFERRED; the rate is not shown)
+  128: [0.5251, 0.2183, 0.0965], ratio 0.397, Aitken limit 0.0161
+  132: [0.5441, 0.2577, 0.1603], ratio 0.340, Aitken limit 0.1101
+
+D. Solve costs: N = 40 over N = 32 on M8.18's six controls (path jobs), then M8.17's rows at N = 32
+  C2a: N = 32 11.0 min, N = 40 57.0 min, ratio 5.18; read at N = 40 10.0 min for 4 points
+  C2b: N = 32 4.8 min, N = 40 21.5 min, ratio 4.48; read at N = 40 3.0 min for 4 points
+  C3: N = 32 15.3 min, N = 40 78.5 min, ratio 5.13; read at N = 40 8.8 min for 4 points
+  C2a/R5: N = 32 18.8 min, N = 40 92.5 min, ratio 4.93; read at N = 40 20.6 min for 4 points
+  P5: N = 32 16.5 min, N = 40 87.8 min, ratio 5.31; read at N = 40 9.6 min for 4 points
+  C3R/R4: N = 32 17.5 min, N = 40 89.8 min, ratio 5.13; read at N = 40 9.8 min for 4 points
+  mean ratio in R4: 5.19; R5, C2a/R5: 4.93; R2, C2b: 4.48
+  T1_R4: 18 points, N = 32 1.54 h, projected N = 40 8.0 h
+  T4_R4: 18 points, N = 32 1.72 h, projected N = 40 8.9 h
+  T1_R5: 15 points, N = 32 2.40 h, projected N = 40 11.8 h
+  T5_R2: 20 points, N = 32 0.81 h, projected N = 40 3.6 h
+  the four rows at N = 40, in series: 32.4 h (a projection: M8.17's seconds carry its records)

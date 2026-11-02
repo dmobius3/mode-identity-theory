@@ -1,0 +1,11 @@
+262 readings
+as built reproduces all 262, field for field; changed moves [('M8.16.1', 'T5J_R2', '0.25'), ('M8.18 controls', 'C3R_R4', '0.25'), ('M8.18 controls', 'P5', '0.25')]
+a motion of 3e-6 at N = 40 alone stays Unresolved under A: True
+a pair really closing stays Unresolved under A: True
+arm A removed: red for its reason: ["the changed reading moves [('M8.18 controls', 'C3R_R4', '0.25')]"]
+arm the blur made a no-op: red for its reason: ["the changed reading moves [('M8.18 controls', 'C3R_R4', '0.25')]"]
+arm B removed: red for its reason: ["the changed reading moves [('M8.16.1', 'T5J_R2', '0.25'), ('M8.18 controls', 'P5', '0.25')]"]
+arm the rule moved as built: red for its reason: ['as built, M8.18 controls C2a 0.25: /reasons: 1 entries against 0']
+arm the blur as a centroid: the closing pair missed, red for its reason
+5 of 5 arms red for their reasons
+PASS

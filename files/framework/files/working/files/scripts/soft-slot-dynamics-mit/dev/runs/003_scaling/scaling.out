@@ -1,0 +1,8 @@
+threads 1, 1 side by side: mean job 172 s, last 172 s, cpu 171 s per job, peak 1.37 GB, throughput 1.00 of one job alone at one thread
+threads unset, 1 side by side: mean job 179 s, last 179 s, cpu 178 s per job, peak 1.40 GB, throughput 0.96 of one job alone at one thread
+threads 1, 2 side by side: mean job 219 s, last 221 s, cpu 217 s per job, peak 1.61 GB, throughput 1.57 of one job alone at one thread
+threads 1, 3 side by side: mean job 264 s, last 268 s, cpu 261 s per job, peak 1.48 GB, throughput 1.95 of one job alone at one thread
+threads 1, 4 side by side: mean job 327 s, last 328 s, cpu 320 s per job, peak 1.41 GB, throughput 2.10 of one job alone at one thread
+threads 1, 6 side by side: mean job 480 s, last 483 s, cpu 444 s per job, peak 1.29 GB, throughput 2.15 of one job alone at one thread
+threads 1, 8 side by side: mean job 738 s, last 742 s, cpu 508 s per job, peak 1.13 GB, throughput 1.86 of one job alone at one thread
+threads unset, 4 side by side: mean job 331 s, last 332 s, cpu 326 s per job, peak 1.48 GB, throughput 2.08 of one job alone at one thread

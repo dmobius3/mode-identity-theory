@@ -1,0 +1,19 @@
+{
+ "allowlist": [
+  "C2a",
+  "C2a/R5",
+  "C2b",
+  "C3",
+  "C3R/R4",
+  "P5",
+  "T1/R4",
+  "T1/R5",
+  "T4/R4",
+  "T5/R2",
+  "T5J/R2"
+ ],
+ "manifest_sha256": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "note": "MIT's own manifest; no OpenWave freeze",
+ "targets": [],
+ "terms_sha256": "924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c"
+}

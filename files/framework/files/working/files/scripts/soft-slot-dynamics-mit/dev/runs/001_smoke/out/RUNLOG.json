@@ -1,0 +1,33 @@
+{
+ "events": [
+  {
+   "t": "2026-11-02T17:09:37Z",
+   "event": "launch: controls, 1 at once, threads 1",
+   "manifest": "67b3ba866742f725b94032458a45096536eb398b011ec50efb6f1315625e2196"
+  },
+  {
+   "t": "2026-11-02T17:09:37Z",
+   "event": "path_ctl_C2b_N24 started",
+   "pid": 8938
+  },
+  {
+   "t": "2026-11-02T17:10:01Z",
+   "event": "path_ctl_C2b_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:10:01Z",
+   "event": "launch ended; 0 failed: []"
+  }
+ ],
+ "jobs": {
+  "path_ctl_C2b_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 23.538205862045288,
+   "peak_rss_bytes": 1054965760,
+   "cpu_seconds": 23.420894,
+   "ok": true
+  }
+ }
+}

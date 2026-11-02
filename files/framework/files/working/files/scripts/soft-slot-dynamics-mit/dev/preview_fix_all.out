@@ -1,0 +1,16 @@
+M8.18 controls: 24 readings, 22 stored converged
+M8.16.1 controls: 123 readings, 110 stored converged
+M8.17 rows: 115 readings, 92 stored converged
+total 262 as-built differences 0 records holding n(D)'s gray-zone line 1
+changed under the candidates:
+   ('M8.18 controls', 'C3R_R4', '0.25', ['24', '32', '40'], 'Unresolved', 'Unresolved', 'converged', 1, 1, 0)
+   ('M8.18 controls', 'P5', '0.25', ['24', '32', '40'], 'Unresolved', 'converged', 'converged', 1, 0, 0)
+   ('M8.16.1 controls', 'T5J_R2', '0.25', ['16', '24', '32'], 'Unresolved', 'converged', 'converged', 3, 0, 0)
+P5 at 0.25 under A: {'verdict': 'converged', 'reasons': []}
+  the merged group moved by 3e-06 at N = 40: Unresolved ["tested set at 8.67568e-16+4.02029j (+1): the set's count differs between cutoffs"]
+  the merged group moved by 1e-06 at N = 40: Unresolved ['tested set at 8.67568e-16+4.02029j (+1): non-contracting above the floor']
+pair means: ['4.020290064008975', '4.020290063996088', '4.020290063996134']
+P5, imaginary groups under 4.03 at N = 32:
+  0.25 n 11 smallest gaps [1.135e-05 1.976e-04 1.991e-04 6.608e-04]
+  0.5 n 11 smallest gaps [4.343e-05 3.768e-04 3.972e-04 1.301e-03]
+  1 n 11 smallest gaps [0.    0.001 0.001 0.003]

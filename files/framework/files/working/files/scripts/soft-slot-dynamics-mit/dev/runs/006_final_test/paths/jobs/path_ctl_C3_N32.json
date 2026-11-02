@@ -1,0 +1,11 @@
+{
+ "job": "path_ctl_C3_N32",
+ "files": {
+  "ctl_C3_N32.npz": "b3b877438930fe5969bc36b374752b4210b5a2e0f56b81fd895f581c12594003",
+  "ctl_C3_N32.json": "db88da7888b5feaeb6410f6791ba486906c1f22d79c120a607fcb218859a3986"
+ },
+ "t": "2026-11-02T20:11:06Z",
+ "seconds": 1904.249023124983,
+ "manifest": "4214dbe74c224bfba8b17f3e89ffebdbb7ff901ac3c793e72491538c8541ad43",
+ "peak_rss_bytes": 1450688512
+}

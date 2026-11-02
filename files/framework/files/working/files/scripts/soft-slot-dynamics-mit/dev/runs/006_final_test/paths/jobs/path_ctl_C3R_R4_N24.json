@@ -1,0 +1,11 @@
+{
+ "job": "path_ctl_C3R_R4_N24",
+ "files": {
+  "ctl_C3R_R4_N24.npz": "99e6349df1de74108c7acd25884c5ef55931711b3015e4e298dfb07423267891",
+  "ctl_C3R_R4_N24.json": "49a2ce2aacc9e5d40fe78454ab4f556b5830fd30b1afcfbb5941856ed0cf3054"
+ },
+ "t": "2026-11-02T20:20:05Z",
+ "seconds": 164.21825104102027,
+ "manifest": "4214dbe74c224bfba8b17f3e89ffebdbb7ff901ac3c793e72491538c8541ad43",
+ "peak_rss_bytes": 2225799168
+}

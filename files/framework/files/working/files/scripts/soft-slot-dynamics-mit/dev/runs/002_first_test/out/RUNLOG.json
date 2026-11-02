@@ -1,0 +1,231 @@
+{
+ "events": [
+  {
+   "t": "2026-11-02T17:10:21Z",
+   "event": "launch: controls, 4 at once, threads 1",
+   "manifest": "67b3ba866742f725b94032458a45096536eb398b011ec50efb6f1315625e2196"
+  },
+  {
+   "t": "2026-11-02T17:10:21Z",
+   "event": "path_ctl_C2a_R5_N32 started",
+   "pid": 8989
+  },
+  {
+   "t": "2026-11-02T17:10:21Z",
+   "event": "path_ctl_C3R_R4_N32 started",
+   "pid": 8990
+  },
+  {
+   "t": "2026-11-02T17:10:21Z",
+   "event": "path_ctl_P5_N32 started",
+   "pid": 8991
+  },
+  {
+   "t": "2026-11-02T17:10:21Z",
+   "event": "path_ctl_C3_N32 started",
+   "pid": 8992
+  },
+  {
+   "t": "2026-11-02T17:39:57Z",
+   "event": "path_ctl_C3_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:39:57Z",
+   "event": "path_ctl_C2a_N32 started",
+   "pid": 10061
+  },
+  {
+   "t": "2026-11-02T17:42:53Z",
+   "event": "path_ctl_P5_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:42:53Z",
+   "event": "path_ctl_C2b_N32 started",
+   "pid": 10269
+  },
+  {
+   "t": "2026-11-02T17:44:51Z",
+   "event": "path_ctl_C3R_R4_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:44:51Z",
+   "event": "path_ctl_C2a_R5_N24 started",
+   "pid": 10384
+  },
+  {
+   "t": "2026-11-02T17:45:42Z",
+   "event": "path_ctl_C2a_R5_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:45:42Z",
+   "event": "path_ctl_C3R_R4_N24 started",
+   "pid": 10432
+  },
+  {
+   "t": "2026-11-02T17:48:20Z",
+   "event": "path_ctl_C3R_R4_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:48:20Z",
+   "event": "path_ctl_P5_N24 started",
+   "pid": 10530
+  },
+  {
+   "t": "2026-11-02T17:50:26Z",
+   "event": "path_ctl_C2a_R5_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:50:26Z",
+   "event": "path_ctl_C3_N24 started",
+   "pid": 10566
+  },
+  {
+   "t": "2026-11-02T17:50:38Z",
+   "event": "path_ctl_P5_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:50:38Z",
+   "event": "path_ctl_C2a_N24 started",
+   "pid": 10569
+  },
+  {
+   "t": "2026-11-02T17:51:58Z",
+   "event": "path_ctl_C2b_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:51:58Z",
+   "event": "path_ctl_C2b_N24 started",
+   "pid": 10593
+  },
+  {
+   "t": "2026-11-02T17:52:08Z",
+   "event": "path_ctl_C2a_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:52:32Z",
+   "event": "path_ctl_C3_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:52:37Z",
+   "event": "path_ctl_C2b_N24 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:57:03Z",
+   "event": "path_ctl_C2a_N32 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-02T17:57:03Z",
+   "event": "launch ended; 0 failed: []"
+  }
+ ],
+ "jobs": {
+  "path_ctl_C2a_R5_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 2121.091845035553,
+   "peak_rss_bytes": 1433174016,
+   "cpu_seconds": 2064.7364660000003,
+   "ok": true
+  },
+  "path_ctl_C3R_R4_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 2069.7408559322357,
+   "peak_rss_bytes": 1377779712,
+   "cpu_seconds": 2016.2194570000001,
+   "ok": true
+  },
+  "path_ctl_P5_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1952.2207553386688,
+   "peak_rss_bytes": 1358741504,
+   "cpu_seconds": 1901.8260770000002,
+   "ok": true
+  },
+  "path_ctl_C3_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1776.2091047763824,
+   "peak_rss_bytes": 1355071488,
+   "cpu_seconds": 1730.416946,
+   "ok": true
+  },
+  "path_ctl_C2a_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 1025.6291720867157,
+   "peak_rss_bytes": 1846607872,
+   "cpu_seconds": 1006.4255989999999,
+   "ok": true
+  },
+  "path_ctl_C2b_N32": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 545.0503916740417,
+   "peak_rss_bytes": 1334181888,
+   "cpu_seconds": 531.309878,
+   "ok": true
+  },
+  "path_ctl_C2a_R5_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 335.06854701042175,
+   "peak_rss_bytes": 1479786496,
+   "cpu_seconds": 325.944074,
+   "ok": true
+  },
+  "path_ctl_C3R_R4_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 157.41654086112976,
+   "peak_rss_bytes": 2213740544,
+   "cpu_seconds": 153.234813,
+   "ok": true
+  },
+  "path_ctl_P5_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 138.17708086967468,
+   "peak_rss_bytes": 2256306176,
+   "cpu_seconds": 136.368488,
+   "ok": true
+  },
+  "path_ctl_C3_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 126.35257697105408,
+   "peak_rss_bytes": 2226503680,
+   "cpu_seconds": 123.603657,
+   "ok": true
+  },
+  "path_ctl_C2a_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 89.95286798477173,
+   "peak_rss_bytes": 2170437632,
+   "cpu_seconds": 87.71929399999999,
+   "ok": true
+  },
+  "path_ctl_C2b_N24": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 39.02022194862366,
+   "peak_rss_bytes": 993296384,
+   "cpu_seconds": 38.145064,
+   "ok": true
+  }
+ }
+}

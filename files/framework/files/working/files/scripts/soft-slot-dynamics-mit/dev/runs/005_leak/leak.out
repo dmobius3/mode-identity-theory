@@ -1,0 +1,7 @@
+reread of ctl_C2b at N = 24, one job alone, against M8.18's records; `runner.py OUT rereads --tags ctl_C2b --cutoffs 24 --jobs 1 --threads T`
+threads 0 (VECLIB_MAXIMUM_THREADS unset): no difference at any of the four points
+threads 1: 0.25, /record/leak 1.3845287330941561e-11 against 1.496886939282672e-11
+           0.5,  /record/leak 5.518205246296221e-12 against 3.657201313067746e-12
+           1,    /record/leak 4.110407216783473e-12 against 4.421083414352543e-12
+           2,    /record/leak 2.5010208001359475e-12 against 2.009215041406855e-12
+over all 72 points of dev/runs/004_reread, at one thread: /record/leak alone, at N = 24 alone, at 20 points

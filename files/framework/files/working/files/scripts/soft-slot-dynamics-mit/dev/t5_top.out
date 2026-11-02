@@ -1,0 +1,42 @@
+m(eps) on N = 32, and m / eps
+    16.000  m   10.34987  m/eps 0.64687  dm/deps 0.68377
+    22.627  m   15.09208  m/eps 0.66698  dm/deps 0.71554
+    32.000  m   22.16363  m/eps 0.69261  dm/deps 0.75449
+    45.255  m   32.75751  m/eps 0.72385  dm/deps 0.79925
+    64.000  m   48.62458  m/eps 0.75976  dm/deps 0.84646
+    90.510  m   72.25607  m/eps 0.79832  dm/deps 0.89143
+   128.000  m  107.11310  m/eps 0.83682  dm/deps 0.92976
+   132.000  m  110.89876  m/eps 0.84014  dm/deps 0.94642
+
+N = 16
+    64.00 {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6, 'krein': [1, 1, 1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+    90.51 {'type': 'Hyperbolic', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+   128.00 {'type': 'Hyperbolic', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+   132.00 {'type': 'Unresolved', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 2, 0], 'blocks': 6, 'unresolved': ['V0 does not match its expectation: dimension 10 against 10, ranks [4, 2, 0] against [4, 0], symmetry leak 3.6e-12']}
+N = 24
+    64.00 {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6, 'krein': [1, 1, 1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+    90.51 {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6, 'krein': [1, 1, 1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+   128.00 {'type': 'Hyperbolic', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+   132.00 {'type': 'Hyperbolic', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+N = 32
+    64.00 {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6, 'krein': [1, 1, 1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+    90.51 {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6, 'krein': [1, 1, 1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+   128.00 {'type': 'Hyperbolic', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+   132.00 {'type': 'Hyperbolic', 'nL': 4, 'nD': 0, 'K': 4, 'krein': [1], 'sdim': 10, 'ranks': [4, 0], 'blocks': 6, 'unresolved': []}
+
+smallest |eigenvalue| on the imaginary axis outside the cluster, N = 32
+    45.25 [(0.4295, 1, None), (0.4805, 1, None), (0.5922, 1, None), (4.5323, 1, None), (4.5417, 1, None)]
+    64.00 [(0.3939, 1, None), (0.4817, 1, None), (0.6062, 1, None), (4.1702, 1, None), (4.1862, 1, None)]
+    90.51 [(0.2636, 1, None), (0.4231, 1, None), (0.5271, 1, None), (3.8002, 1, None), (3.8262, 1, None)]
+   128.00 [(0.2981, 1, None), (3.4565, 1, None), (3.4952, 1, None), (3.9771, 1, None), (3.992, 1, None)]
+   132.00 [(0.284, 1, None), (3.4284, 1, None), (3.4683, 1, None), (3.9529, 1, None), (3.9601, 1, None)]
+
+threading: {"MKL_NUM_THREADS": null, "OMP_NUM_THREADS": null, "OPENBLAS_NUM_THREADS": null, "VECLIB_MAXIMUM_THREADS": null}
+os: {"build": "24H232", "kernel": "24.6.0", "product": "macOS", "version": "15.8.2"} machine: {"arch": "arm64", "cores": 8, "cpu": "Apple M3", "efficiency_cores": 4, "model": "Mac15,13", "performance_cores": 4}
+
+the low pairs and off-axis groups, with the count of negative Krein directions, N = 32
+    45.25 [(-0.0, 0.5922, 'imag', 1), (-0.0, 0.4805, 'imag', 1), (0.0, 0.4295, 'imag', 1)]
+    64.00 [(-0.0, 0.6062, 'imag', 1), (-0.0, 0.4817, 'imag', 1), (0.0, 0.3939, 'imag', 1)]
+    90.51 [(-0.0, 0.5271, 'imag', 1), (0.0, 0.4231, 'imag', 1), (0.0, 0.2636, 'imag', 1)]
+   128.00 [(0.0, 0.2981, 'imag', 1), (0.0965, 0.1549, 'complex', None)]
+   132.00 [(-0.0, 0.284, 'imag', 1), (0.1603, 0.1568, 'complex', None)]

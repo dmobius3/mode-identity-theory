@@ -1,0 +1,29 @@
+ok   the job was killed after 2 of 4 points
+ok   its checkpoint holds them
+ok   the second launch resumed
+ok   the resumed path equals the stored one: 1 paths; 28 solve fields and 348 array entries compared; 0 differences
+ok   no checkpoint is left
+ok   a checkpoint that is not a prefix refuses
+ok   no commit refuses
+ok   a commit whose page lacks the pin refuses: the census page at 86a4796b1224a3fcd68ff3c82ed45ba1c918d0dd does not name the manifest pin 4214dbe74c224bfba8b17f3e89ffebdbb7ff901ac3c793e72491538c8541ad43
+ok   a commit off origin/main refuses
+ok   a read through jobs.py with no note refuses
+ok   a reading with no note refuses
+ok   a commit whose page names the pin passes
+ok   the read was killed after its first point
+ok   the second launch finished it
+ok   the resumed read equals M8.18's record: 0 differences
+ok   a path with no completed job refuses
+ok   a stored file that changed refuses
+ok   a stored lam that differs from its fields refuses
+ok   inside withheld a record refuses
+ok   inside withheld inertia refuses
+ok   B lifts the line and types a record that held nothing else
+ok   a flag that does not clear it leaves the record
+ok   another item keeps it Unresolved
+ok   a Hyperbolic record keeps its type
+ok   capture leaves the record's call as built
+ok   B's flag clears the same eigenvalue, the gate's case
+ok   capture holds D and L
+ok   capture restores what it patched
+PASS

@@ -1,0 +1,11 @@
+{
+ "job": "path_ctl_C2a_N24",
+ "files": {
+  "ctl_C2a_N24.npz": "76fd3114142c9079c071b281581149d7545621056f99935a69bc3b1b05a74920",
+  "ctl_C2a_N24.json": "e3ec68d60918d8e9413e80ae964588570e8e607439c3e29af262c16b277cea04"
+ },
+ "t": "2026-11-02T20:24:05Z",
+ "seconds": 93.71953562501585,
+ "manifest": "4214dbe74c224bfba8b17f3e89ffebdbb7ff901ac3c793e72491538c8541ad43",
+ "peak_rss_bytes": 2188492800
+}

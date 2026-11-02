@@ -1,0 +1,21 @@
+fresh_P5       N = 24: admission P5, seed ok True, k, r = 4, 2, crit 4.7e-16, 2 points from 0.24 to 0.3, 3 s
+fresh_P5       N = 40: admission P5, seed ok True, k, r = 4, 2, crit 1.1e-15, 2 points from 0.24 to 0.3, 70 s
+fresh_C3R_R4   N = 24: admission C3R/R4, seed ok True, k, r = 4, 2, crit 6.8e-16, 2 points from 0.2 to 0.3, 2 s
+fresh_C3R_R4   N = 40: admission C3R/R4, seed ok True, k, r = 4, 2, crit 2.8e-16, 2 points from 0.2 to 0.3, 76 s
+fresh_C2b      N = 24: admission C2b, seed ok True, k, r = 5, 1, crit 1.1e-16, 1 points from 0.3 to 0.3, 2 s
+fresh_C2b      N = 40: admission C2b, seed ok True, k, r = 5, 1, crit 1.1e-16, 1 points from 0.3 to 0.3, 92 s
+fresh_C2a_R5   N = 24: admission C2a/R5, seed ok True, k, r = 3, 1, crit 5.8e-17, 1 points from 0.3 to 0.3, 4 s
+fresh_C2a_R5   N = 40: admission C2a/R5, seed ok True, k, r = 3, 1, crit 6.3e-17, 1 points from 0.3 to 0.3, 127 s
+T1_R4          N = 24: admission T1/R4, seed ok True, k, r = 3, 1, crit 3.9e-17, 18 points from 0.25 to 72, 3 s
+T1_R4          N = 40: admission T1/R4, seed ok True, k, r = 3, 1, crit 2.9e-17, 18 points from 0.25 to 72, 74 s
+T4_R4          N = 24: admission T4/R4, seed ok True, k, r = 4, 2, crit 1.0e-15, 18 points from 0.25 to 72, 3 s
+T4_R4          N = 40: admission T4/R4, seed ok True, k, r = 4, 2, crit 6.3e-16, 18 points from 0.25 to 72, 77 s
+T1_R5          N = 24: admission T1/R5, seed ok True, k, r = 3, 1, crit 4.2e-17, 15 points from 0.25 to 32, 4 s
+T1_R5          N = 40: admission T1/R5, seed ok True, k, r = 3, 1, crit 2.6e-17, 15 points from 0.25 to 32, 123 s
+T5_R2          N = 24: admission T5/R2, seed ok True, k, r = 6, 4, crit 4.8e-16, 31 points from 0.25 to 132, 2 s
+T5_R2          N = 40: admission T5/R2, seed ok True, k, r = 6, 4, crit 2.4e-16, 31 points from 0.25 to 132, 82 s
+T5J_R2         N = 24: admission T5J/R2, seed ok True, k, r = 6, 4, crit 5.3e-16, 20 points from 0.25 to 132, 2 s
+T5J_R2         N = 40: admission T5J/R2, seed ok True, k, r = 6, 4, crit 1.1e-16, 20 points from 0.25 to 132, 84 s
+C2a_R5         N = 24: admission C2a/R5, seed ok True, k, r = 3, 1, crit 5.8e-17, 15 points from 0.25 to 32, 4 s
+C2a_R5         N = 40: admission C2a/R5, seed ok True, k, r = 3, 1, crit 6.3e-17, 15 points from 0.25 to 32, 122 s
+20 starts, 0 refused; no solve ran; manifest 391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65

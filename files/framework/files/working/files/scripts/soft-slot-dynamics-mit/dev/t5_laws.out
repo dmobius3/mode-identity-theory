@@ -1,0 +1,26 @@
+stored quartets, real and imaginary parts
+    90.510 [('16', 0.21054, 0.15164), ('24', None, None), ('32', None, None)]
+   128.000 [('16', 0.52506, 0.18741), ('24', 0.21835, 0.16232), ('32', 0.09648, 0.15494)]
+   132.000 [('16', 0.54411, 0.19065), ('24', 0.25766, 0.16461), ('32', 0.16027, 0.15678)]
+
+laws
+  eps 128: stored [0.5251, 0.2183, 0.0965]
+    geometric in the real part:        limit 0.0161, ratio 0.397; N = 40 0.0481, N = 48 0.0288
+    algebraic a + b N^-p:              limit -0.1047, p 1.646; N = 40 0.0346, N = 48 -0.0015; zero near N = 47.6
+    geometric in its square (collision): limit 0.0393, ratio 0.168; N = 40 0.0534, N = 48 0.0420
+  eps 132: stored [0.5441, 0.2577, 0.1603]
+    geometric in the real part:        limit 0.1101, ratio 0.340; N = 40 0.1272, N = 48 0.1159
+    algebraic a + b N^-p:              limit 0.0414, p 2.081; N = 40 0.1161, N = 48 0.0925; zero near N = None
+    geometric in its square (collision): limit 0.1301, ratio 0.177; N = 40 0.1359, N = 48 0.1311
+
+where the collision sits, from the square of the real part, linear in eps, per cutoff
+  N = 16: slope 0.00509, from 128 and 132: 73.88
+  N = 24: slope 0.00468, from 128 and 132: 117.81
+  N = 32: slope 0.00409, from 128 and 132: 125.73
+  N = 16 from 90.51 and 128 instead: slope 0.00617, 83.33
+  geometric limit with N = 16 from 128 and 132: 127.47, ratio 0.180, N = 40 127.15
+  geometric limit with N = 16 from 90.51 and 128: 128.09, ratio 0.230, N = 40 127.54
+
+m on the ladder at 128 and 132, the solve field's own rate
+  eps 128: m [105.4636, 106.9398, 107.1131], ratio 0.117, limit 107.1362
+  eps 132: m [109.1546, 110.7165, 110.8988], ratio 0.117, limit 110.9228
