@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mode Identity Theory | Interactive Calculator</title>
-  <meta name="description" content="Run the MIT scaling law yourself. One postulate, each value fixed by a named selection principle. S¹ = ∂(Möbius), Möbius ↪ ℝP³ = S³/{±I}, ∂S³ = ∅.">
+  <meta name="description" content="Run the MIT scaling law yourself. One postulate and the framework's formulas, with the inputs exposed. S¹ = ∂(Möbius), Möbius ↪ ℝP³ = S³/{±I}, ∂S³ = ∅.">
   <meta name="author" content="Blake Shatto, P.E.">
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap" rel="stylesheet">
   <style>
@@ -110,7 +110,7 @@
       <tr><td>1</td><td>Temporal edge S¹</td><td>H₀, a₀</td><td>~10⁻⁶¹</td></tr><tr><td>2</td><td>Möbius surface</td><td>Λ</td><td>~10⁻¹²²</td></tr><tr><td>3/2</td><td>Gauss lift + de Sitter interface</td><td>Gravity</td><td></td></tr><tr><td>3</td><td>Space S³</td><td>Null "dark matter"</td><td>~10⁻¹⁸³</td></tr>
     </tbody></table></div>
     <div class="section"><h3>Derivation Chain</h3>
-      <p class="body">The calculator derives every scale from first principles. No hardcoded outputs.</p>
+      <p class="body">The calculator computes every scale from measured constants. No hardcoded outputs.</p>
       <table id="chainTable"><thead><tr><th>Quantity</th><th>Formula</th><th>Value</th></tr></thead><tbody></tbody></table>
     </div>
   </div>
@@ -120,12 +120,12 @@
     <div class="section">
       <h3>The Mass Formula</h3>
       <div class="eq-box">m(ρ, σ) = μ<sub>Λ</sub> × C<sub>geom</sub>(ρ) × (√Ω<sub>Λ</sub>)<sup>dist/30</sup> × T²(ρ ⊗ σ)</div>
-      <p class="body">Four factors. Four sources. Each traced to the postulate. The only operation is multiplication.</p>
+      <p class="body">Four factors. Four sources. The only operation is multiplication.</p>
       <table><thead><tr><th>Factor</th><th>Value</th><th>Source</th></tr></thead><tbody>
         <tr><td>μ<sub>Λ</sub></td><td id="muDisplay">ρ<sub>Λ</sub><sup>1/4</sup></td><td>Vacuum energy floor</td></tr>
         <tr><td>C<sub>geom</sub>(ρ)</td><td>Geometric mean of C(e/D) over Kostant exponents</td><td>Phase operator on sunflower</td></tr>
         <tr><td>(√Ω<sub>Λ</sub>)<sup>dist/30</sup></td><td id="sqrtOLDisplay">√Ω<sub>Λ</sub></td><td>McKay graph distance</td></tr>
-        <tr><td>T²(ρ ⊗ σ)</td><td>24 vacuum-twisted values</td><td>Reidemeister torsion</td></tr>
+        <tr><td>T²(ρ ⊗ σ)</td><td>24 vacuum-twisted values</td><td>Reidemeister torsion; canonical normalization on the 2 diagonal products</td></tr>
       </tbody></table>
     </div>
     <div class="section">
@@ -159,12 +159,12 @@
           <select id="specVacuum"><option value="triv" selected>Trivial (σ_triv)</option><option value="std">Standard (σ_std)</option><option value="gal">Galois (σ_gal)</option></select>
         </label>
       </div>
-      <div class="mass-result"><div class="value" id="massValue">-</div><div class="label" id="massLabel">predicted mass</div></div>
+      <div class="mass-result"><div class="value" id="massValue">-</div><div class="label" id="massLabel">formula mass</div></div>
       <div class="result-box"><table id="specBreakdown"><tbody></tbody></table></div>
     </div>
     <div class="section">
-      <h3>The 24 Predictions</h3>
-      <p class="body">Formula A applied to 8 nontrivial irreps × 3 vacua. Sorted by predicted mass.</p>
+      <h3>The 24 Entries</h3>
+      <p class="body">The formula applied to 8 nontrivial irreps × 3 vacua, sorted by mass: a comparison with the measured fermions, not a prediction. The torsion values are exact closed forms. A pre-registered null test shows that shuffling them among the entries does as well 69% of the time, so the ×3 matches are no evidence for where they sit.</p>
       <div style="overflow-x:auto"><table id="massTable24"><thead><tr>
         <th class="sortable" data-sort="rank">#<span class="arrow"></span></th>
         <th class="sortable" data-sort="r">ρ<span class="arrow"></span></th>
@@ -196,7 +196,7 @@
 
 <script>
 // ══════════════════════════════════════════════════════════════
-//  DERIVATION CHAIN: From first principles, not hardcoded
+//  DERIVATION CHAIN: From measured constants, not hardcoded
 // ══════════════════════════════════════════════════════════════
 
 // CODATA 2018 physical constants
@@ -539,9 +539,9 @@ function compSpec() {
     if (ratio < nd) { nd = ratio; near = nm; }
   }
   document.getElementById('massLabel').textContent =
-    "predicted mass" + (nd < 10 ? "  ·  nearest SM: " + near + " (×" + nd.toFixed(2) + ")" : "");
+    "formula mass" + (nd < 10 ? "  ·  nearest SM: " + near + " (×" + nd.toFixed(2) + ")" : "");
   var bd = [
-    ["μ<sub>Λ</sub>", fS(MU_L) + " GeV", "ρ<sub>Λ</sub><sup>1/4</sup> (derived)"],
+    ["μ<sub>Λ</sub>", fS(MU_L) + " GeV", "ρ<sub>Λ</sub><sup>1/4</sup> (calibrated)"],
     ["C<sub>geom</sub>(" + ir.l + ")", ir.cg.toFixed(4), "Kostant sunflower (D=" + ir.D + ", computed)"],
     ["dist(" + ir.l + ")", ir.dist + " / 30", "McKay graph distance"],
     ["(√Ω<sub>Λ</sub>)<sup>dist/30</sup>", fS(h), "Hierarchy: (" + fS(SQRT_OL, 4) + ")<sup>" + ir.dist + "/30</sup>"],

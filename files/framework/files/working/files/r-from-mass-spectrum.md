@@ -23,7 +23,7 @@ Working notes on determining the curvature radius R independently of Λ, the CMB
 
 Run with the framework's own published data (`mass-spectrum.md`): electron = (R7, triv, dist 4), muon = (R8, std, dist 5), so Δd = 1; C_geom(R7) = 0.7564, C_geom(R8) = 0.2382; T²(R7, triv) = 2.250, T²(R8, std) = 13.090; √Ω_Λ = 1.019 × 10⁶¹.
 
-The formula reproduces both masses (m_e = 5.22 × 10⁻⁴ GeV, m_μ = 0.103 GeV) and predicts the ratio m_μ/m_e = 198 against the measured 206.8, a 4.5% miss. Inverting that ratio for the scale gives:
+The formula comes close to both masses (m_e = 5.22 × 10⁻⁴ GeV, m_μ = 0.103 GeV) and gives the ratio m_μ/m_e = 198 against the measured 206.8, a 4.5% miss. Inverting that ratio for the scale gives:
 
 - Ω_Λ = 1.42 × 10¹²³ (framework value 1.04 × 10¹²²)
 - R ≈ 20 Gpc (framework 5.38 Gpc), a factor 3.7 too large
@@ -35,7 +35,7 @@ The 4.5% ratio miss becomes a factor of 13.4 in Λ_ref because the McKay lever i
 
 **The floor.** With the corrected top the tightest single estimate is muon-top, Λ_ref within about 0.6 orders of magnitude of the measured Λ (3.8×), improving on the electron-muon estimate of 1.13 orders (13.4×). The ceiling is still the formula's few-percent ratio scatter amplified by the McKay lever, but the best available lever now rests on a well-fit high-distance pair rather than the weak Δd = 1 lepton pair, so pair selection does help: the correction lowered the floor by roughly half an order of magnitude. Electron-muon remains the clean lepton-only cross-check at 13.4×.
 
-**What stands.** Topology plus two measured lepton masses plus zero cosmological input land Λ_ref within about 1 order of magnitude of the measured value, on a radius determined independently of measured Λ, the CMB, and the de Sitter back-read. That is a real, falsifiable, independent leg under Λ_ref = 3/R² at R of order Gpc. It is not, and structurally cannot be, a percent-level prediction.
+**What stands.** The mass formula plus two measured lepton masses plus zero cosmological input land Λ_ref within about 1 order of magnitude of the measured value, on a radius determined independently of measured Λ, the CMB, and the de Sitter back-read. That is a real, falsifiable, independent leg under Λ_ref = 3/R² at R of order Gpc. It is not, and structurally cannot be, a percent-level prediction.
 
 ---
 
@@ -47,7 +47,7 @@ The mass formula ([the framework page](../../../README.md#the-mass-formula)):
 m(\rho, \sigma) = \mu_\Lambda \times C_{\text{geom}}(\rho) \times (\sqrt{\Omega_\Lambda})^{\,\text{dist}(\rho)/30} \times T^2(\rho \otimes \sigma)
 ```
 
-Three of the four factors are dimensionless topological ratios:
+Three of the four factors are dimensionless ratios:
 - C_geom(ρ): geometric mean of C(e/D) over Kostant exponents of irrep ρ
 - (√Ω_Λ)^(dist/30): McKay graph distance dilution, h(E₈) = 30
 - T²(ρ⊗σ): Reidemeister torsion
@@ -111,7 +111,7 @@ If d_μ ≠ d_e, the ratio depends on Ω_Λ, which depends on R. The topological
 
 | Requirement | Status | Source |
 |---|---|---|
-| Mass formula structure | ESTABLISHED | [The Mass Formula](../../../README.md#the-mass-formula) |
+| Mass formula structure | STATED; entry rule OPEN; 1/30 NOT YET DERIVED | [The Mass Formula](../../../README.md#the-mass-formula) |
 | G-power collection | ESTABLISHED | [The Waltz](../../../../spectrum/files/the-waltz.md) §II |
 | Electron assignment (ρ, σ, dist) | ASSIGNED (dist = 4) | mass-spectrum.md §III |
 | Muon assignment (ρ, σ, dist) | ASSIGNED (R8, std, dist = 5; Δd = 1 vs electron) | mass-spectrum.md §III |
@@ -150,7 +150,7 @@ The forward chain runs:
 \frac{m_\mu}{m_e} \text{ (measured)} \xrightarrow{\text{mass formula}} \Omega_\Lambda \xrightarrow{R = \ell_P\sqrt{\Omega_\Lambda}} R \xrightarrow{\text{Gauss} \,\times\, \text{de Sitter}} \Lambda_\text{ref} = 3/R^2
 ```
 
-The route takes no CMB input and no de Sitter back-read for R, so it breaks the circularity. It does not avoid the de Sitter normalization: the spectral seed 2/R² is the native surface result, and the lift to 3/R² carries the Gauss/Ricci 3 together with the imported de Sitter 1/2, so the final coefficient is 2 × 3/2 and the imported factor sits inside it. The seed rather than the full coefficient is the native content. What the route supplies is an independent determination of R from topology plus two measured masses, and a conditional Λ_ref output; whether Λ_ref is the physical cosmological constant is the open Interface placement question.
+The route takes no CMB input and no de Sitter back-read for R, so it breaks the circularity. It does not avoid the de Sitter normalization: the spectral seed 2/R² is the native surface result, and the lift to 3/R² carries the Gauss/Ricci 3 together with the imported de Sitter 1/2, so the final coefficient is 2 × 3/2 and the imported factor sits inside it. The seed rather than the full coefficient is the native content. What the route supplies is an independent determination of R from the mass formula plus two measured masses, and a conditional Λ_ref output; whether Λ_ref is the physical cosmological constant is the open Interface placement question.
 
 The realized precision is order of magnitude, not percent. The few-percent target stated in the original draft was wrong. The McKay lever for the electron-muon pair is weak (Δd = 1), so the formula's few-percent ratio accuracy amplifies by 60× into a roughly 1-order-of-magnitude uncertainty on Λ_ref (executed value Λ_ref ≈ 8.1 × 10⁻⁵⁴ m⁻², about 13.4× below the measured Λ; Result section). The honest claim is "Λ_ref within about half an order of magnitude of the measured Λ for the best pair (muon-top), within about one order for the electron-muon lepton pair, on a radius from particle physics alone," which is the success at the bar the structure supports.
 

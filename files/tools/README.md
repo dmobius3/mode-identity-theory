@@ -9,7 +9,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 
 ## 👾 Interactive
 
->**[The Calculator](https://dmobius3.github.io/mode-identity-theory/files/tools/files/calculator.html)**: run the framework end to end. Four factors, four sources, one operation: the couplings, the 24-entry mass spectrum, and the cosmological readings, computed by the topology on top of one measured hierarchy anchor, and you choose which one.
+>**[The Calculator](https://dmobius3.github.io/mode-identity-theory/files/tools/files/calculator.html)**: run the framework end to end. Four factors, four sources, one operation: the couplings, the 24-entry mass spectrum, and the cosmological readings, computed by the framework on top of one measured hierarchy anchor, and you choose which one.
 
 >**[The Topology](https://dmobius3.github.io/mode-identity-theory/files/tools/files/topology.html)**: turn the carrier in your hand: an unbent lune on a great sphere of $`S^3`$, whose opposite tips the antipodal map $`-I`$ identifies, making it the Möbius band in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$; its edge and the edge's lift to $`S^3`$; the cone point; the icosahedral symmetry; and the first positive mode, read at the wells.
 

@@ -157,7 +157,7 @@ The 120-element structure contains three natural stabilizers associated with fac
 
 The representation theory provides these decompositions, and MIT interprets them as the geometric origin of the Standard Model's quantum numbers. The three flat vacua provide the second part of the address. The framework identifies them with the three particle generations, although which vacuum corresponds to which generation remains an open question.
 
-**The address determines what a particle can be. The mass formula determines how heavy it is. Together they determine which generation appears.**
+**The address determines what a particle can be. The mass formula puts a mass on each address. Which address is which particle is read against the measured masses.**
 
 ---
 

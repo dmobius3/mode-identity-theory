@@ -69,7 +69,7 @@ Each irrep sits at a specific position on the finite domain, encoded by its Kost
 C_\text{geom}(\rho) = \bigl(\prod_e 2\sin^2(\pi e/D)\bigr)^{1/(2\,\dim\rho)}
 ```
 
-The domain size depends on spin: $`D = 60`$ for integer-spin, $`D = 120`$ for half-integer. This encodes the fundamental distinction between bosons and fermions in the geometry. The domain size traces to the edge stabilizer $`Z_4 \subset 2I`$: integer-spin irreps carry only real $`Z_4`$ content ($`D = 60 = |I|`$), half-integer carry only complex pairs ($`D = 120 = |2I|`$).
+The domain size depends on spin: $`D = 60`$ for integer-spin, $`D = 120`$ for half-integer. MIT reads this split as the spin-statistics distinction (§IV.2). The domain size traces to the edge stabilizer $`Z_4 \subset 2I`$: integer-spin irreps carry only real $`Z_4`$ content ($`D = 60 = |I|`$), half-integer carry only complex pairs ($`D = 120 = |2I|`$).
 
 | Irrep | Spin | $`D`$ | $`C_\text{geom}`$ |
 |---|---|---|---|

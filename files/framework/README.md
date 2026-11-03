@@ -571,7 +571,7 @@ The vacant fourth rung has a SUSY reading. The one missing pairing would turn a 
 
 *What fixes the masses, and where do three generations come from?*
 
-The mass spectrum assembles in three moves, each set by the same topology: the curvature gap on the coexact gauge modes, the three flat vacua, and the four-factor formula that ranks the fermions.
+The mass spectrum assembles in three moves on the same topology: the curvature gap on the coexact gauge modes, the three flat vacua, and the four-factor formula that ranks twenty-four entries.
 
 ### The Gauge Gap
 
