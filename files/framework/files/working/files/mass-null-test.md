@@ -9,7 +9,7 @@
 **State:** Closed
 **Verdict:** Uninformative
 **Status (2026-07-28):** v1.1 executed (p_A = 0.690): randomly reassigning the 24 torsion factors across the fixed quantum-number slots reproduces or exceeds the observed ×3 coverage in 69% of draws, so the proximity count is uninformative about the specific torsion values. The structural outputs and outliers carry the weight.
-**Summary:** A pre-registered null test asking whether the mass scorecard's within-×3 hit rate carries information about the specific torsion values, or is density.
+**Summary:** A pre-registered null test asking whether the mass scorecard's within-×3 hit rate carries information about where the specific torsion values sit, or is density.
 **Inputs:** the mass formula and 24-entry table (mass-spectrum §II-III), the torsion tables, the Coxeter-Galois gate and stabilizer decompositions
 **Frozen:** 2026-07-11 the v1.0 design and 2026-07-28 the v1.1 registration, each frozen before its run
 

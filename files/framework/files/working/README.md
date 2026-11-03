@@ -568,6 +568,8 @@ Registered and exploratory tests run against public datasets, with verdicts.
 
 **Result (2026-07-28):** The ×3 count is uninformative about the torsion values. Randomly reassigning the 24 torsion factors across the fixed quantum-number slots reproduces or exceeds the observed coverage in 69.0% of draws (Null A, $`p_A = 0.690`$; the null $`S_1`$ mean of 5.02 sits at the observed coverage of 5, and the B / C / D secondaries stay far above the 0.01 information band). The mass table's evidential weight rests on the exact structural outputs (the 24-entry construction, the $`T_3`$ gate evaluations of a bespoke gate rule, and the closed-form torsion algebra: the Galois pairs $`\varphi^{-4}`$ and $`\varphi^{-8}`$, the exact-inverse sector products, $`R_7`$'s Galois-blind 4) and the falsifiable outliers, not on the ×3 proximity count; the test does not validate those structural outputs, it removes the proximity scorecard as torsion evidence. This is the re-run on the corrected torsion table (tag `mass-null-v1.1`); the pre-correction run (`mass-null-v1.0`, $`p_A = 0.174`$) is retained as history. Design frozen before each run (tag on the frozen bundle), results committed separately.
 
+**Note (2026-11-02):** Null A scores the placement of the 24 torsion factors, not the closed-form derivation of the values.
+
 ---
 
 ### [The Molien Shells, Step Two (Preregistered Low-ℓ Test)](files/molien-step-two.md)

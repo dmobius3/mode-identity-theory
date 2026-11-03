@@ -91,6 +91,8 @@ Environment: python3 + numpy + mpmath. Every gate id must be attacked by at leas
 
 **What this does and does not change here.** Row 4 of §4 moves from one implementation to two independent methods in exact agreement. Nothing else in this note moves: the single-target orientation fix, the coexact-only diagnosis, the 24-product propagation and the null-test status are as stated, and the reproduction does not bear on whether the torsion values fit the measured masses, which `mass-null-v1.1` already answered.
 
+**Note (2026-11-02), on this section's wording.** Of "the nine closed forms" in the Result paragraph, the run compared the eight nontrivial ones; $`T^2(R_0) = 1`$, the canonical integral-cohomology normalization, lies outside it, as do the 24 downstream products. On fit to the measured masses, Null A of `mass-null-v1.1` removes the ×3 count as evidence for the value-to-slot pairing (§4). Neither result derives the mass entry rule ([mass-spectrum](../../../../spectrum/files/mass-spectrum.md) §VI).
+
 ---
 
 / **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
