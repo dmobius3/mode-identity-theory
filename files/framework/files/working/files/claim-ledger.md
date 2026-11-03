@@ -105,7 +105,7 @@ a₀/(cH₀)     ← a₀, H₀ ; reproduced by C(13/120)/C(34/120) = 0.184
 Ω_Λ (α-route)← α                      (α → Ω_Λ → R → Λ_ref, 23% at q² = 0)  ← CYCLE 2
 α_s, α_W     ← C(17/..), Ω_Λ, cos(π/10)
 m_e [obs, BENCHMARK]
-fermion masses ← μ_Λ, C_geom(ρ), Ω_Λ^(dist/30), T²(ρ⊗σ)   (all relative to m_e)
+fermion masses ← μ_Λ, C_geom(ρ), (√Ω_Λ)^(dist/30), T²(ρ⊗σ)   (all relative to m_e)
 R_Λ (Λ back-read) ≈ 5.4 Gpc  ← measured Λ                  [circular default]
 R (coupling) ≈ 6.13 Gpc ← α at q² = 0
 R (mass, e-μ, canonical) ≈ 20 Gpc   ← m_e, m_μ, Δd = 1 (60-fold lever)   ← CYCLE 7 (~3.2× / ~10.5× in Λ_ref vs coupling; ~3.7× / ~13.4× vs the Λ back-read)

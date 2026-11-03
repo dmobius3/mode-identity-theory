@@ -93,6 +93,8 @@ Environment: python3 + numpy + mpmath. Every gate id must be attacked by at leas
 
 **Note (2026-11-02), on this section's wording.** Of "the nine closed forms" in the Result paragraph, the run compared the eight nontrivial ones; $`T^2(R_0) = 1`$, the canonical integral-cohomology normalization, lies outside it, as do the 24 downstream products. On fit to the measured masses, Null A of `mass-null-v1.1` removes the ×3 count as evidence for the value-to-slot pairing (§4). Neither result derives the mass entry rule ([mass-spectrum](../../../../spectrum/files/mass-spectrum.md) §VI).
 
+**Note (2026-11-02), on the script's docstring.** The docstring of [`torsion-correction.test.py`](scripts/torsion-correction.test.py) still says the independent-method reproduction has not been performed; M8.8, recorded in this section, is that reproduction. The script is left as it is because the M8.8 builder pins its bytes (SHA-256 `2662e4b5…` in `sources.pinned.json`).
+
 ---
 
 / **[`↑top`](#top)** / **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** / **[`framework`](/files/framework/)** / **[`bedrock`](/files/framework/files/bedrock/)** / **[`dynamics`](/files/framework/files/dynamics/)** / **[`working`](/files/framework/files/working/)** / **[`cosmos`](/files/cosmos/)** / **[`spectrum`](/files/spectrum/)** / **[`tools`](/files/tools/)** /
