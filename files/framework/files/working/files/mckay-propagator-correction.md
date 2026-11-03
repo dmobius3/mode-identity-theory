@@ -105,6 +105,8 @@ All are consistent with zero; none cut the scatter by more than a few percent. T
 
 **Verdict.** This is the §8 failure mode: no propagation- or branching-based correction improves the fit. The high-distance residual is roughly symmetric scatter at the ~×1.8 level, not a distance trend. Two isolated, unrelated anomalies remain: the down overshoot (a lone Galois miss at R8, borderline given the 4.67 ± 0.5 MeV lattice uncertainty) and the tau undershoot (a lone standard-vacuum miss at R4). They share no mechanism and are not captured by any path quantity. The propagator/branch-point route is closed; §1 to §11 below are retained as the record of what was tried.
 
+**Note (2026-11-02), on the down-quark uncertainty.** PDG 2025 gives 4.70 ± 0.07 MeV in place of the 4.67 ± 0.5 MeV above, and on the corrected table the down entry stays above ×3 across that range ([mass spectrum](../../../../spectrum/files/mass-spectrum.md) §III).
+
 ---
 
 ## 1. The Problem

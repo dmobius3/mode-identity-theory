@@ -242,6 +242,8 @@ Null A $`S_1`$ count table: $`\{1{:}19,\ 2{:}747,\ 3{:}7724,\ 4{:}22520,\ 5{:}33
 
 **What this run cannot say** is unchanged from §VII: nothing about the skeleton it holds fixed, and a high $`p_A`$ does not falsify the formula's mechanism. It measures one thing: on the corrected table, the ×3 scorecard is not evidence about the torsions. The structural outputs carry the evidential weight, exactly where the corrected page already places it.
 
+**Note (2026-11-02), on the live copies.** The live pages that carry this verdict's weight sentence (mass spectrum §III, the framework README, the root and spectrum READMEs) now leave out "the falsifiable outliers": rank 16 and the heavy shell read as structural residuals that count against the entry rule, the dead zone's physical status is open, and the neutrino ordering carries no scorecard weight ([mass spectrum](../../../../spectrum/files/mass-spectrum.md) §V, §VI). The verdict above stands as registered.
+
 ---
 
 *The ladder is held. The dial is shuffled. The count speaks for itself.*
