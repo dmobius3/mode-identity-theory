@@ -4,12 +4,17 @@ by this tree's code, through jobs.py's reread, identity and reading. Nothing new
 is needed for the reads themselves; identity and reading go through note_gate, here on a throwaway repository whose
 census page names the pin.
 
-It asks four things:
+It asks five things:
   1. every read reproduces M8.18's record, field for field, timings and the new fields aside;
   2. the as-built reading of every point equals M8.18's, with the reading beside it and both identities;
   3. the changed reading is converged at all 24, with the type and indices on the record, and it differs from the as-built
      one at exactly P5 and C3R/R4 at 0.25;
-  4. B's flag clears the one record holding n(D)'s line, read from the record's own call, not assumed.
+  4. B's flag clears the one record holding n(D)'s line, read from the record's own call, not assumed;
+  5. P5's pair at 0.25 reads, at every cutoff, the eigenvalues M8.18's diagnostic measured (dev/runs/019_gate_cause/
+     pair_gap.out in its folder), in the reading's own row.
+
+The path records here are the test's own, written under this tree, whose pin is not a solve pin, so identity runs jobs.py
+with this tree's pin added to the solve pins (jobs_here); dev/test_jobs.py tests the gate itself.
 
 Usage: runner.py OUT rereads --source M818_OUT, then test_end_to_end.py OUT M818_OUT
 """
@@ -24,12 +29,21 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT)
 sys.path.insert(0, os.path.join(ROOT, 'run'))
+from instrument import devtools  # noqa: E402
 import census_lib as lib  # noqa: E402
 import driver as dr  # noqa: E402
 import grid  # noqa: E402
 import jobs  # noqa: E402
 
 JOBS = os.path.join(ROOT, 'run', 'jobs.py')
+PAIR = {'24': (4.020284391477, 4.020295736541), '32': (4.020284391423, 4.020295736569), '40': (4.020284391423, 4.020295736569)}
+WIDENED = ('import sys; sys.path.insert(0, sys.argv.pop(1)); import jobs; '
+           'jobs.SOLVE_PINS = jobs.SOLVE_PINS | {sys.argv.pop(1)}; jobs.main()')
+
+
+def jobs_here(*args):
+    """jobs.py's command line, with this tree's own pin added to the solve pins: the test writes its path records under it."""
+    return [sys.executable, '-I', '-B', '-c', WIDENED, os.path.join(ROOT, 'run'), devtools.manifest()[1], *args]
 
 
 def main():
@@ -72,7 +86,7 @@ def main():
     moved, conv, lifted = set(), 0, 0
     for tag, name in grid.CONTROLS.items():
         for a, b in zip(grid.LADDER, grid.LADDER[1:]):
-            subprocess.run([sys.executable, '-I', '-B', JOBS, out, 'identity', tag, str(a), str(b), *note], check=True, cwd=ROOT)
+            subprocess.run(jobs_here(out, 'identity', tag, str(a), str(b), *note), check=True, cwd=ROOT)
         subprocess.run([sys.executable, '-I', '-B', JOBS, out, 'reading', tag, *note], check=True, cwd=ROOT)
         mine, theirs = lib.load_json(os.path.join(out, f'{tag}.json')), lib.load_json(os.path.join(m818, f'{dr.safe(name)}.json'))
         for field in ('readings', 'beside', 'identity'):
@@ -93,6 +107,19 @@ def main():
                 fails.append(f"{tag} {k}: not classified under the change: {b['changed'].get('causes')}")
             lifted += b['as_built'] != b['changed']
         print(f"{tag}: as-built reading, reading beside it and both identities equal M8.18's", flush=True)
+    # 5. the pair's members, in the row
+    mine = lib.load_json(os.path.join(out, 'ctl_P5.json'))
+    row = [r for r in mine['changed']['0.25']['rows'] if r.get('kind') == 'set' and 'levels' in r
+           and any(abs(z[1] - 4.02029) < 1e-4 for z in r['levels'][0])]
+    if len(row) != 1:
+        fails.append(f"P5 at 0.25: {len(row)} rows hold the pair")
+    else:
+        for N, lev in zip(('40', '32', '24'), row[0]['levels']):
+            got = sorted(z[1] for z in lev if abs(z[1] - 4.02029) < 1e-4)
+            print(f'P5 at 0.25, the pair at N = {N}: {got[0]:.12f}, {got[1]:.12f}, gap {got[1] - got[0]:.4e}', flush=True)
+            if any(abs(a - b) > 1e-12 for a, b in zip(got, PAIR[N])):
+                fails.append(f'P5 at 0.25, N = {N}: {got} against {PAIR[N]}')
+        print(f"its row: d1 {row[0]['d1']:.3e}, d2 {row[0]['d2']:.3e}, U {row[0]['U']:.3e}, d {row[0]['d']:.3e}, ok {row[0]['ok']}", flush=True)
     print(f'changed: {conv} of 24 converged, with the type and indices on the record; moved {sorted(moved)}')
     print(f'classified differently at {lifted} points')
     if moved != {('P5', '0.25'), ('C3R/R4', '0.25')}:

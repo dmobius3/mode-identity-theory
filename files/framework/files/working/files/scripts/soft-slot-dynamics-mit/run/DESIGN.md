@@ -1,6 +1,6 @@
 # MIT's own computation: the design
 
-*In the manifest, so the pin holds it. Everything here is written before any new solve.*
+*In the manifest, so the pin holds it. Written before any new solve, and revised before any read of one (DEVLOG 7 and 8).*
 
 ## 1. What this is
 
@@ -11,13 +11,16 @@ This is MIT's own computation. It is outside M8. Its code is off M8.16.1's pin, 
 ## 2. What is and is not changed
 
 Every file of `instrument/` and `run/` that M8.18's run used is here, and byte for byte M8.18's, except:
-- `instrument/convergence.py`: the arm `same_resolution`, which is candidate A. Without the arm the rule is unchanged (`dev/test_regression.out`).
+- `instrument/convergence.py`: the arm `own_eigenvalues`, which is candidate A. Without the arm the rule is unchanged (`dev/test_regression.out`).
 
 New files, none of which the solver imports:
 - `run/changed.py`: candidate B, and the changed reading.
 - `run/grid.py`: what is solved and read, and the pass marks.
+- `run/fresh.py`: the marks' test, and the gate they put on the rows.
 - `run/jobs.py`, `run/runner.py`: one job at a time in its own process, side by side.
 - `tools/pin.py`, `tools/inventory.py`, and what they write: `run/MANIFEST_PIN`, `run/FROZEN.json`, `run/FROZEN_PIN` and `SHA256SUMS`. `run/ENVIRONMENT.json` is this machine's reading, taken by M8.18's own `run/record_environment.py`.
+
+**What a read keeps,** beside the record: B's flag, D's eigenvalues, L's eigenvalues nearest zero, and each linked group's eigenvalues, by the group's indices.
 
 **The solves do not touch the changes.** `branches`, `newton`, `functional`, `basis` and `certified` import neither `linear` nor `convergence`, and a solve runs inside `checks.withheld`, where every record path refuses. So no solve rests on A or B, and no spectrum exists until a read makes one.
 
@@ -27,13 +30,15 @@ New files, none of which the solver imports:
 
 M8.18's control gate failed at two points, because two tolerances grow with the cutoff through ‖A‖ or ‖B‖, which grow about as `N²`, and each passed a feature that does not move.
 
-**A: a set's members are compared at the top cutoff's linking distance at every cutoff.** `τ(λ) = max(margin, 10 sqrt(u ‖A‖ |λ|))` links two values into one group. At P5, `ε = 0.25`, a stable pair 1.1345×10⁻⁵ apart stayed two groups at `N = 24` and 32, and became one at `N = 40` alone, and the rule read the link as motion. A leaves every one-to-one match alone. It changes how a set's change is measured, and only for members within the top cutoff's `τ` of each other.
+**A: a set is read by its eigenvalues, not by its groups' centres.** `τ(λ) = max(margin, 10 sqrt(u ‖A‖ |λ|))` links two values into one group, and the rule reads a group by its centre. At P5, `ε = 0.25`, a stable pair 1.1345×10⁻⁵ apart stayed two groups at `N = 24` and 32, and became one at `N = 40` alone, and the rule read the link as motion. A read now keeps each linked group's eigenvalues, and under A a set's change between two cutoffs is the bottleneck distance between its eigenvalues. Every other step of the rule stands, so its contraction test and its floor read the eigenvalues' own motion. A leaves every one-to-one match alone, and it can move a verdict either way. A set's row keeps its eigenvalues at every cutoff.
 
-**B: n(D)'s gray zone is (10⁻⁸, 10⁻⁷) ‖B‖, a factor of 10 above its cut, as L's is, in place of the inherited factor of 1000.** At C3R/R4, `ε = 0.25`, D's eigenvalue -0.01596075 fell inside the old top at `N = 40` alone, by 2.3%. The cut stays, so `n(D)` and D's nullity cannot move. B moves only the flag.
+**The A it replaces.** The pin of `6063351ad376a8965936e0ad7001dec3c7d1b429` held another A, which compared a set's members at the top cutoff's linking distance. It read a pair by its centre wherever its gap lay inside `τ(40)`, so a gap that closed there read converged (`dev/runs/007_a_limit/`). As built, the rule has the same blindness where a pair is linked at one cutoff and apart at another. The review of that pin asked for the members to be kept and for a guard on them. With the members kept, this A puts them to the rule's own test in place of a guard, with no blur and no new threshold. The guards asked for were stricter, and read Unresolved closing pairs this A reads converged (DEVLOG 7). No solve changed, since no solve uses this code.
 
-**What they were chosen knowing.** Both were chosen knowing M8.18's gate failure, its 24 control readings and M8.17's stored readings at the twelve. All three. A preview ran over all 262 published readings, the twelve included, before this design (`dev/preview_fix.py`, `dev/preview_fix_all.out`). It changes none of M8.17's 115. Readings already on record are not new evidence for the changed code.
+**B: n(D)'s gray zone is (10⁻⁸, 10⁻⁷) ‖B‖, a factor of 10 above its cut, as L's is, in place of the inherited factor of 1000.** At C3R/R4, `ε = 0.25`, D's eigenvalue -0.01596075 fell inside the old top at `N = 40` alone, by 2.3%. The cut stays, so `n(D)` and D's nullity cannot move. B moves only the flag, and the changed classification reads branch identity's record test with the records as B types them (`changed.identity`), so a flag at one cutoff does not cost a point its branch.
 
-**What they reach.** Beyond M8.18's two failures, A moves T5J at `ε = 0.25`, a pair 8.78×10⁻⁶ apart merged at `N = 32` alone (`dev/t5j_tau.out`). That is P5's mechanism with one difference: T5J's members move by about 10⁻⁶ per rung, where P5's move by rounding. Its separation is 8.7839×10⁻⁶ at `N = 16` and 8.7801×10⁻⁶ at `N = 24`. `N = 32` stores none, since the pair is linked there and a read keeps only a linked group's centre, so after the note its members are measured at `N = 32` and 40, as `dev/runs/019_gate_cause/pair_gap.py` in M8.18's folder measured P5's, and whether the gap closes is reported beside any T5J verdict under A. M8.16.1's verdict on T5J stands. Any T5J verdict under A is MIT's own.
+**What they were chosen knowing.** Both were chosen knowing M8.18's gate failure, its 24 control readings and M8.17's stored readings at the twelve. All three. A preview of the first A ran over all 262 published readings, the twelve included, before this design (`dev/preview_fix.py`, `dev/preview_fix_all.out`), and changed none of M8.17's 115. This A cannot be previewed on them, since no stored summary keeps a linked group's eigenvalues, and it was chosen knowing the same three and the first A's limit. Readings already on record are not new evidence for the changed code.
+
+**What they reach.** Beyond M8.18's two failures, the first A moved T5J at `ε = 0.25`, a pair 8.78×10⁻⁶ apart merged at `N = 32` alone (`dev/t5j_tau.out`). That is P5's mechanism with one difference: T5J's members move by about 10⁻⁶ per rung, where P5's move by rounding. Its separation is 8.7839×10⁻⁶ at `N = 16` and 8.7801×10⁻⁶ at `N = 24`. `N = 32` stores none, since M8.16.1's record keeps only a linked group's centre. This computation's reads keep the members, so the row gives the pair at every cutoff, and whether the gap closes is read there. M8.16.1's verdict on T5J stands. Any T5J verdict under A is MIT's own.
 
 **Each point reports both verdicts.** As built and changed, side by side. Where they agree, that point rests on no changed code. The eigenvalues and the indices rest on none of it.
 
@@ -59,9 +64,9 @@ The ladder is `N = 24`, 32 and 40, each cutoff on its own path from the seed. `N
 
 **A failed step ends that path** at that point. The record says so. Nothing is rerun on another grid before the note.
 
-**`N = 48`** is in reserve for T5's top, in `R2` alone, added by its own dated commit if `N = 40` leaves it open. The stored 24-to-32 distance already fails the identity guard at 128 and 132 by 3.6% and 6.2%, so a clean reading there may need 32, 40 and 48.
+**`N = 48`** is in reserve for T5's top, in `R2` alone, added by its own dated commit if `N = 40` leaves it open. The stored 24-to-32 distance already fails the identity guard at 128 and 132 by 3.6% and 6.2%, so a clean reading there may need 32, 40 and 48. That commit states what counts as open, the ladder with its band and identity pairs, its own control evidence, and the three laws' values at `N = 48`, first. Nothing here extends to `N = 48` by itself.
 
-**T4/R4's locator** is M8.17's, `census_lib.settle`, on the bracket (2.83, 5.66), narrowed to (4, 5.66) if the read at 4 classifies it Elliptic. It runs on this ladder as M8.18's terms read M8.17's locator there: `N = 32` and 40 deciding, `N = 24` bisected where its ends' `n(L)` is resolved and different and reported otherwise, K1 asked at every midpoint, and a location is named only where both verdicts agree at its guard readings. It reads at its midpoints, so it runs after the note. Its job lands by its own dated commit.
+**T4/R4's locator** is M8.17's, `census_lib.settle`, on the bracket (2.83, 5.66), narrowed to (4, 5.66) if the read at 4 classifies it Elliptic. It runs on this ladder as M8.18's terms read M8.17's locator there: `N = 32` and 40 deciding, `N = 24` bisected where its ends' `n(L)` is resolved and different and reported otherwise, K1 asked at every midpoint, and a location is named only where both verdicts agree at its guard readings, with the end at 4 read both ways. A midpoint K1 refuses is moved once, as M8.18's Arm B moved one (`census_lib.MOVED`), so with no refusal this is M8.17's locator unchanged. The job reproduces one stored location before it is used. It reads at its midpoints, so it runs after the note. Its job lands by its own dated commit.
 
 ## 5. Fresh controls, pass marks first
 
@@ -76,7 +81,9 @@ Amplitudes no record holds, next to the failures. Each is read before any row, a
 | C2b, 0.30 | converged | converged | `R2`, no change expected |
 | C2a/R5, 0.30 | converged | converged | `R5`, no change expected |
 
-The two windows are INFERRED, from the stored gaps at 0.25 and 0.5 (`dev/runs/019_gate_cause` in M8.18's folder). A control that misses a mark is diagnosed and disclosed before any row is read, and tested on further fresh points. The pass marks live in `run/grid.py`, and `dev/fresh_pass.py` tests them, each cause from the records.
+The two windows are INFERRED, from the stored gaps at 0.25 and 0.5 (`dev/runs/019_gate_cause` in M8.18's folder). A control that misses a mark is diagnosed and disclosed before any row is read, and tested on further fresh points. Moving past a miss takes a dated commit, since the marks are in the manifest. The pass marks live in `run/grid.py`, `run/fresh.py` tests them, each cause from the records, and its job records the pass. `run/jobs.py` and `run/runner.py` refuse a row without that record, and a default launch takes the fresh controls first. The check's job and its file are named by the marks they test, so a miss stays on record, and new marks get a pass of their own. No job record in the run's output is deleted or rewritten: a read made again goes to a new output folder, which its dated commit names.
+
+A pass shows that these points hold their marks on this code, and no more. It does not show that a pair is stable at any other point. The 0.30 points show only that nothing moved there. C3R/R4 at 0.20 is Hyperbolic, so it does not exercise `changed.identity`.
 
 ## 6. Stated before any read
 
@@ -86,15 +93,15 @@ All INFERRED, from stored known outcomes (`dev/stored_readings.out`, `dev/t5_top
 - **T5's quartet at `N = 40`.** The real part at 128 reads about 0.048 if it is geometric in `N`, 0.035 if algebraic, and 0.053 if its square is geometric, the law near a Krein collision. At 132: 0.127, 0.116, 0.136.
 - **Every law keeps 132 off the axis,** and 128 is too close to call. On the collision law the collision sits near 127 at `N = 40`, with a limit of 127.5 to 128.
 - **An Elliptic stretch with `K` = 4** should appear before the quartet, because the index drop and the quartet look like separate events. A collision moves no index, and the three low pairs at 90.51 are all Krein-negative, so one has to pass through zero before two can leave the axis.
-- **No new link at `N = 40` alone** at any stored point of the rows (`dev/tolerances.out`).
+- **No new link at `N = 40` alone** at any stored point of the rows, in the tested set (`dev/tolerances.out`).
 
 ## 7. The order
 
 1. The pin: one MIT commit, pushed, holding this folder.
 2. The solves, on the pinned code, side by side. Between the pin and the note there are no spectral reads, no diagnostic previews and no grid change from a result. The only checks are on solve fields (`dev/solve_checks.py`): that `N = 24` and 32 paths reproduce the stored ones where their grids agree, and that `m` at T5's stored points does.
-3. The review of the design and the changed code, with the solves running. Any change after the pin gets its own dated commit.
-4. The dated note on the census page, which names the manifest pin. `run/jobs.py` refuses every read of this computation's solutions until it is given that commit.
-5. The reads: the fresh controls, against their marks (`dev/fresh_pass.py`), then each row's classified points, then the items.
+3. The review of the design and the changed code, with the solves running. Any change after the pin gets its own dated commit, and one under `run/` or `instrument/` waits for the last solve, since the manifest guards the sealed seeds.
+4. The dated note on the census page, which names the manifest pin current on its date and the one the solves ran under, `391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65`. `run/jobs.py` refuses every read of this computation's solutions until it is given that commit.
+5. The reads: the fresh controls, then their pass on record, then each row's classified points, then the items.
 6. T4/R4's locator, and T5's top.
 7. The record, labelled as MIT's own, then a census-page note.
 

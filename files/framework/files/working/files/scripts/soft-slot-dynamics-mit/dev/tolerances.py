@@ -5,7 +5,7 @@ or read, and every value is a stored known outcome. What it prints is a forecast
 on a tolerance alone, stated before any solve:
 
   tau: imaginary neighbours in the tested set at N = 32 whose gap lies under tau(40) or tau(48) and over tau(32), so that
-       they merge at the new cutoff alone. Candidate A forgives these where they are stable, and only these.
+       they merge at the new cutoff alone. Candidate A reads these by their eigenvalues.
   gap: the smallest other gap, over tau(40).
   A0:  the smallest eigenvalue of A outside the cluster, over the top of its gray zone at N = 40 (K1's separation).
   L:   L's smallest genuine eigenvalue, over the top of L's gray zone at N = 40.

@@ -5,16 +5,19 @@ Usage: jobs.py OUT path TAG N                         a path at one cutoff, solv
        jobs.py OUT read TAG N --note COMMIT --repo R  its records, from the stored solutions
        jobs.py OUT identity TAG N1 N2 --note ...      branch identity between two cutoffs, from the records
        jobs.py OUT reading TAG --note ...             the rule on the ladder: both verdicts at every point
+       jobs.py OUT fresh --note ...                   the fresh controls against their marks, the pass the rows need
        jobs.py OUT reread TAG N SOURCE                M8.18's stored solutions read again, against its records
 
 A job is one file set, in OUT, with a record in OUT/jobs/ holding each file's SHA-256, its time and its peak resident
 size. A path is written point by point, so a killed job resumes at its next point and loses only the one under way. A
-stored solution is used only through its hash and its lam, as M8.18's solve-state gate does (stored). The solve is
-census.Cutoff's, and so runs inside checks.withheld, where every record path refuses.
+stored solution is used only through its hash and its lam, as M8.18's solve-state gate does, and only from a path solved
+under a manifest in SOLVE_PINS (stored). The solve is census.Cutoff's, and so runs inside checks.withheld, where every
+record path refuses.
 
 No read of this computation's own solutions runs before the dated note: note_gate wants a commit on the repository's
-origin/main whose census page names this tree's manifest pin. reread alone needs no note: it reads M8.18's solutions at
-M8.18's points, whose records are on file, and writes nothing but the comparison.
+origin/main whose census page names this tree's manifest pin. No row is read before the fresh controls pass: fresh.refusal
+wants the record of a pass. reread alone needs no note: it refuses any tag but M8.18's controls and any source but M8.18's
+published files, by M8.18's SHA256SUMS, pinned here, so it reads only points whose records are on file.
 """
 import json
 import os
@@ -34,10 +37,14 @@ import driver as dr  # noqa: E402
 import census_lib as lib  # noqa: E402
 import census  # noqa: E402
 import changed  # noqa: E402
+import fresh  # noqa: E402
 import grid  # noqa: E402
 
 NOTE_PAGE = 'files/framework/files/working/files/slot-dynamics-census.md'
-NEW_FIELDS = frozenset(('b_resolved', 'd_eigs', 'l_near'))        # what a read here adds to M8.18's point
+NEW_FIELDS = frozenset(('b_resolved', 'd_eigs', 'l_near', 'members'))        # what a read here adds to M8.18's point
+M818_SUMS = '69b88f8c8bacb5722510b1f9110199ac9b6a8cc24112a1aedb8a3a3c594a80b7'   # M8.18's SHA256SUMS, which lists its run/out
+# the manifests the paths were solved under
+SOLVE_PINS = frozenset(('391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65',))
 
 
 def say(s):
@@ -181,8 +188,10 @@ def record_of(out, job):
 
 
 def stored(out, tag, N):
-    """A path's solutions through the solve-state gate: (seed, sols)."""
-    record_of(out, f'path_{tag}_N{N}')
+    """A path's solutions through the solve-state gate, from a path solved under a solve pin: (seed, sols)."""
+    rec = record_of(out, f'path_{tag}_N{N}')
+    if rec['manifest'] not in SOLVE_PINS:
+        raise PermissionError(f"{tag} at N = {N} was solved under {rec['manifest']}, not a solve pin")
     held = load_path(os.path.join(out, f'{tag}_N{N}'))
     if held is None:
         raise PermissionError(f'no stored path for {tag} at N = {N}')
@@ -258,7 +267,7 @@ def rule(pts):
         return built, beside, built
     hi = pts[-1]
     return built, beside, changed.reading([q['summary'] for q in pts], [q['b_resolved'] for q in pts], hi['eig'], hi['lam'],
-                                          hi['record']['margin'], lib.BAND_N)
+                                          hi['record']['margin'], lib.BAND_N, [q['members'] for q in pts])
 
 
 def reading(out, tag):
@@ -280,16 +289,48 @@ def reading(out, tag):
     for e in eps:
         k = lib.key(e)
         a = lib.here(lib.at(res, e, lib.ARM_A), res['case'], lib.ARM_A)
-        b = lib.here(lib.at(dict(res, readings=res['changed']), e, lib.ARM_A), res['case'], lib.ARM_A)
+        pb = lib.at(dict(res, readings=res['changed']), e, lib.ARM_A)
+        pb['identity'] = {lib.pair_key(p): changed.identity(pb['identity'].get(lib.pair_key(p)), pb['points'], p)
+                          for p in lib.ARM_A['pairs']}
+        b = lib.here(pb, res['case'], lib.ARM_A)
         res['both'][k] = dict(as_built=a, changed=b, same=a == b)
     fname = f'{tag}.json'
     write_json(job.at(fname), res)
     job.complete([fname])
 
 
+def fresh_job(out):
+    """The fresh controls against their marks: the record fresh.refusal reads, named by the marks it tests."""
+    name, pass_file = fresh.names()
+    job = Job(out, name)
+    if job.done():
+        return
+    res = fresh.evaluate(out)
+    write_json(job.at(pass_file), res)
+    job.complete([pass_file])
+    say(f"   {sum(not v for v in res['results'].values())} of {len(res['results'])} points hold their marks")
+
+
+def m818_files(source, tag, N):
+    """Refuses unless tag is one of M8.18's controls and source is M8.18's run/out, its files by M8.18's SHA256SUMS."""
+    if tag not in grid.CONTROLS:
+        raise PermissionError(f'reread reads M8.18 controls alone, not {tag}')
+    sums = os.path.join(source, os.pardir, os.pardir, 'SHA256SUMS')
+    if not os.path.exists(sums) or dr.sha(sums) != M818_SUMS:
+        raise PermissionError(f"{source} is not M8.18's published output: its SHA256SUMS is not the pinned one")
+    with open(sums, encoding='utf-8') as f:
+        held = {line.split(None, 1)[1].strip(): line.split()[0] for line in f}
+    base = f'{dr.safe(grid.CONTROLS[tag])}_N{N}'
+    for f in (base + '.npz', base + '.json', base + '_read.json'):
+        p = os.path.join(source, f)
+        if not os.path.exists(p) or dr.sha(p) != held.get(f'run/out/{f}'):
+            raise PermissionError(f"{f} differs from M8.18's SHA256SUMS")
+
+
 def reread(out, tag, N, source):
     """M8.18's solutions at one cutoff read again by this tree's code, every field against M8.18's record, timings and
     the new fields aside. Nothing new is read: every point here has a record on file."""
+    m818_files(source, tag, N)
     job = Job(out, f'reread_{tag}_N{N}')
     if job.done():
         return
@@ -331,8 +372,14 @@ def main():
         path(out, args[0], int(args[1]))
     elif kind == 'reread':
         reread(out, args[0], int(args[1]), args[2])
-    elif kind in ('read', 'identity', 'reading'):
+    elif kind in ('read', 'identity', 'reading', 'fresh'):
         note_gate(note, repo)
+        if kind == 'fresh':
+            fresh_job(out)
+            return
+        why = fresh.refusal(out) if args[0] in grid.ROWS else None
+        if why:
+            raise PermissionError(f'no row is read before the fresh controls pass: {why}')
         if kind == 'read':
             read(out, args[0], int(args[1]))
         elif kind == 'identity':

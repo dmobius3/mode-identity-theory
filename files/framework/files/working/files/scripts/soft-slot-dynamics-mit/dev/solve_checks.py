@@ -51,6 +51,8 @@ def main():
                 if same_path and d:
                     rows.append(f'{k}: DIFFERS on its own path: {d[0]}')
                     bad += 1
+                elif 'm' not in mine[k]:
+                    rows.append(f"{k}: not accepted: {mine[k].get('reason')}")
                 elif not same_path:
                     rows.append(f"{k}: new path, m differs by {abs(mine[k]['m'] - stored[k]['m']) / stored[k]['m']:.2e}, "
                                 f"eps_reached by {abs(mine[k]['eps_reached'] - stored[k]['eps_reached']):.1e}")

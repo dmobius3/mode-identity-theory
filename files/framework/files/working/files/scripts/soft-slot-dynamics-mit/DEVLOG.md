@@ -81,3 +81,104 @@ Both units gave a GO for the solves, and each finding was checked at source. No 
 **Repeated on the final tree:** `dev/entries_check.py`, 20 starts, 0 refused, no solve.
 
 **The pin:** `391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65`.
+
+## 6. 2026-11-03T00:01:32Z: a limit of A, found for the reader's review
+
+`dev/closing_within_tau.py`, `.out`, on P5's stored record at 0.25. Nothing is solved or read. `dev/test_regression.py`'s closing pair sits at 4×10⁻⁵ and 3×10⁻⁵, both above τ(40), so it never tested a pair inside τ(40). With the group of two at `N = 40` kept and other gaps at `N = 24` and 32:
+
+- **Inside τ(40) at both,** 1.15×10⁻⁵ and 1.0×10⁻⁵, and 1.2×10⁻⁵ and 1.0×10⁻⁵: Unresolved as built, converged under A. A reads the pair by its centre alone at every cutoff, so a closing gap is not seen.
+- **Above τ(40) at `N = 24` alone,** 1.25×10⁻⁵ and 1.0×10⁻⁵: the same. The members' change falls to zero at `N = 32` under A, and the rule reads that as contracting.
+- **Stable above τ(40),** 1.25×10⁻⁵ at both: Unresolved under A, as it should be.
+- **3×10⁻⁵ and 1.0×10⁻⁵:** converged both ways, since a falling change is what the rule passes.
+
+A linked group keeps only its centre, so at a cutoff where the pair is linked the record cannot tell these from P5's stable pair. So a changed verdict alone does not show that a pair is stable, and the design's measure at T5J is too narrow. The proposal, for the units: wherever A alone moves a verdict, the pair's members are measured at every cutoff, and the changed verdict stands only if the gap's change between neighbouring cutoffs stays below the top cutoff's margin. Any change to `run/DESIGN.md` waits for the solves to end, since the manifest guards the sealed seeds.
+
+## 7. 2026-11-03T07:49:23Z: the units on the reader, and the reader they asked for
+
+Both units reviewed the changed reader. UA: HOLD for new readings until (b), (e), (f) and (g) are fixed and tested. UB: GO after fixes. Neither objects to the solves. Each finding was checked at source. The fixes are made in a copy of this folder on the bench, since nothing under `run/` or `instrument/` here changes while the solves run, and they come here after the last solve, by a dated commit.
+
+**A, redesigned** (UA (a), (b), (e); UB (a), (b), (e)). Both units asked to keep a linked group's members and to guard the verdicts A moves by them. With the members kept, A needs no blur. A read now keeps each linked group's eigenvalues by the group's indices, beside its centre (`members`). Under A a set is read by its eigenvalues: its change between two cutoffs is the bottleneck distance between them, the measure the rule already uses between centres, and its row keeps them at every cutoff (`levels`). Every other step of the rule stands. The first A, pinned at `6063351ad376a8965936e0ad7001dec3c7d1b429`, is replaced before any read of this computation. `dev/closing_within_tau.py` needs its arm, so it moved with its output to `dev/runs/007_a_limit/`, and `dev/test_regression.py` holds its cases.
+
+**One departure, for the units.** Both asked for a bound on the members' change: UA, where A alone turns Unresolved into converged, each adjacent gap change below the top cutoff's margin, which is entry 6's proposal narrowed to those verdicts; UB, wherever a set has a group linked at one cutoff and its members apart at another, each offset's change below the floor. This A puts the members to the rule's own test instead, now that a read keeps them: a change that contracts or stays under the floor, and a remaining error under a tenth of the distance to the nearest event. On P5's pair at 0.25, with the floor 5.53×10⁻⁷:
+
+| Gaps at `N = 24`, 32, 40 (L: one group) | As built | This A | UA's bound | UB's bound |
+|---|---|---|---|---|
+| 1.1345×10⁻⁵ at all three, L at 40: stable, as stored | Unresolved | converged | converged | converged |
+| 1.2×10⁻⁵, 1.0×10⁻⁵, L 8×10⁻⁶: closing | Unresolved | Unresolved | Unresolved | Unresolved |
+| 1.15×10⁻⁵, 1.0×10⁻⁵, L 8.5×10⁻⁶: closing, slower | Unresolved | Unresolved | Unresolved | Unresolved |
+| 1.2×10⁻⁵, 1.0×10⁻⁵, L 9.8×10⁻⁶: closing, its change falling | Unresolved | converged | Unresolved | Unresolved |
+| L 6×10⁻⁶, 1.0×10⁻⁵, 1.4×10⁻⁵: opening | converged | Unresolved | Unresolved | Unresolved |
+| 3×10⁻⁵, 1.0×10⁻⁵, L 5×10⁻⁶: closing fast | converged | converged | converged | Unresolved |
+| 8.78×10⁻⁶ at all three, L at 32 and 40 | converged | converged | converged | converged |
+
+The as-built and A columns are run (`dev/test_regression.out`); the bounds' columns are DERIVED from the gaps and the floor. In the fourth row each member moves 1.0×10⁻⁶ and then 1.0×10⁻⁷, so the remaining error is 1.1×10⁻⁸, and as built reads Unresolved because it takes the link at `N = 40` for motion, the cause P5 failed by. In the sixth, as built passes the pair by the same contraction. A one-to-one group with either row's steps converges under the rule, so a bound would put a set's members to a test no other group meets. What a bound adds is a guard against a slow rate under a faster one, which the rule's docstring names as its limit for every group. If the units rule for a bound, it goes into the changed verdict as they write it, before the note.
+
+**Taken as given:**
+- UA (f), UB (f): `reread` first calls `m818_files`, whose first line is UB's. It then refuses a source whose `SHA256SUMS` is not M8.18's, pinned in `run/jobs.py`, or whose files differ from it. `run/runner.py` refuses reads, identities, readings and `fresh` without `--note` and `--repo`, before it writes to `RUNLOG.json`, UB's line with `fresh` added.
+- UA (g): `run/fresh.py` is new. The job `fresh` writes `fresh_pass.json`: each mark's misses, the marks, and the hashes of the reading files they rest on. `run/jobs.py` refuses a row's read, identity or reading without a pass for `run/grid.py`'s marks on unchanged files, and `run/runner.py` plans no row until then, so a default launch takes the fresh controls first. `dev/fresh_pass.py` now runs `run/fresh.py`.
+- UB (c): `changed.identity`, UB's code with `bool()` around `same`, which changes nothing, and UB's replacement in `jobs.reading`, as written. The C2b case is section 12 of `dev/test_jobs.py`.
+- UB (h): `dev/solve_checks.py` reports a failed point on a new path by its reason.
+- UB (a), section 6: "in the tested set".
+- UA (i), UB (i): section 4 says what the locator's job and `N = 48`'s commit must state before either reads, and T5J's members are in every read.
+
+**Taken with a change:**
+- UB (e): each group's members are stored as its indices and their eigenvalues, not as a bare list, so they carry the stable reference UA (e) asked for.
+- UB (g): `link` gets no offset check of its own. Under this A the changed verdict at a fresh point reads the members itself, so its mark is that check. Section 5 says what a pass does not show.
+- UA (a), UB (a), section 3: A is new, so the section is new. It says A can move a verdict either way, and "The A it replaces" says what the first one did.
+
+**Kept:** UA (c), (d), (h); UB (d). UA's qualification goes into the notes for the dated note.
+
+**The tests** (`dev/runs/008_reader_v2/`), on this copy's code, two at a time beside the four solves:
+- `dev/test_regression.py`: the 262 stored readings of M8.18's controls, M8.16.1 and M8.17, as built, field for field. The change moves C3R/R4 at 0.25 alone among them, since no stored summary keeps the members. The table's seven cases read as stated, and 5 of 5 arms are red for their reasons.
+- `dev/test_jobs.py`: 49 claims.
+- M8.18's stored solutions at all three cutoffs, read again: 72 points, 0 differences from M8.18's records, the members aside. 18 rereads, 6,508 s wall, peak 2.41 GB.
+- The as-built reading, the reading beside it and both identities equal M8.18's at all six controls. The changed reading is converged at 24 of 24 with the type and indices on the record, moving exactly P5 and C3R/R4 at 0.25, and the classification differs at those 2 points alone. P5's pair at 0.25 is `pair_gap.out`'s at each cutoff to 10⁻¹², its gap 1.1345×10⁻⁵, and its row reads d1 5.390×10⁻¹¹, d2 7.550×10⁻¹⁴ and U at the floor, 5.534×10⁻⁷ (`end_to_end.out`).
+- `dev/fresh_pass.py --test` on these reads: the six known marks pass, three wrong marks are reported, and none is missed. Its output equals v1's (`dev/fresh_pass_test.out`).
+
+A first launch, beside the solves, slowed them and was stopped. These reads are the second launch's, on mains, and `RUNLOG.json` holds it alone.
+
+**Big outputs.** The reads, 51 MB, stay on the bench; `runner.py OUT rereads --source` regenerates them from M8.18's folder. The run's `RUNLOG.json` and its `reread_*.json` comparisons stay here.
+
+**This copy's pin:** `b4a1faa5c85bfb0d433dc637f5861d246ee5c80367299b123cc317048840bf35`.
+
+## 8. 2026-11-03T14:08:01Z: the units on reader v2, and their fixes
+
+Both units reviewed reader v2 (entry 7). UA: GO, subject to the dated-note and fresh-control gates, with one operational NIT. UB: GO after fixes, two of them FIXABLE and two NITs. Neither objects to the solves. Each finding was checked at source, and the fixes are made in this copy on the bench, as entry 7's were.
+
+**No bound.** Both units accept this A without a bound on the members' change: UA accepts the argument for the rule's own test, and UB withdraws its bound. UA's caution: a converged set does not show that a pair's internal gap is constant or that a collision cannot occur. Section 5 says what a pass does not show, and the notes for the dated note carry the caution.
+
+**Taken as given:**
+- UB 2: section 3's sentence, as written: "With the members kept, this A puts them to the rule's own test in place of a guard, with no blur and no new threshold. The guards asked for were stricter, and read Unresolved closing pairs this A reads converged (DEVLOG 7)."
+- UB 4: `SOLVE_PINS` in `run/jobs.py`, the manifest the solves run under, and `stored` refusing a path whose job record names any other, as written, with UB's comment on the line above to keep the line's length. Section 7's item 4, as written. `reread` reads M8.18's files through `m818_files`, not `stored`, so it is unchanged.
+- UB 6: the fresh check's job and file are named by the marks they test, `fresh_` and `fresh_pass_` with the first 12 hex digits of the SHA-256 of `json.dumps(marks_now())` (`fresh.names`). `refusal` reads the file for the current marks and refuses unless its SHA-256 is the one its job logged. A miss stays on record, and new marks get a pass of their own.
+- UB 6, NIT: `run/runner.py` plans `fresh` only once every fresh control's reading is complete, and says which it waits for, so an early launch counts no start.
+- UA (g), NIT: under UB 6's naming a failed check stays on record. Section 5 adds that no job record in the run's output is deleted or rewritten: a read made again goes to a new output folder, which its dated commit names.
+
+**One more change:** the design's opening line said everything in it was written before any new solve, but entry 7 revised sections 2 to 7 after the solves began. It now reads "Written before any new solve, and revised before any read of one (DEVLOG 7 and 8)."
+
+**Checked:** UB 5: `M818_SUMS` is the SHA-256 of M8.18's `SHA256SUMS` at `6063351a`, 285 lines; at M8.18's record commit `5241a2d5` that file hashes otherwise, so the pinned list is the close-out's. UA reran the stored-data tests on Python 3.13.5, NumPy 2.3.5 and SciPy 1.17.0, and UB reproduced four outputs byte for byte. The jobs test and the 72-point reread, which need M8.18's solutions and a clone, rest on this machine's runs alone.
+
+**Pins to come:** `N = 48`'s commit adds its solves' pin to `SOLVE_PINS` the same way (UB 4), and so does the locator's job, which solves at its midpoints.
+
+**The tests** (`dev/runs/009_unit_fixes/`), on this copy's code, one at a time beside the four solves:
+- `dev/test_regression.py`, `dev/tolerances.py` and `dev/fresh_pass.py --test`: each output equals its `.out`, byte for byte.
+- `dev/test_jobs.py`: 58 claims, PASS. New: the solve-pin gate both ways, a path solved under this tree refusing and the same path passing once its record names the solve pin; and the fresh check by its marks, an early launch waiting with no start counted, the check planned under its marks' name once the readings are complete, a pass file other than the one its job logged refusing, and a miss staying on record when the marks change, the new marks needing a pass of their own and the old marks still refusing. The test's path is solved under this tree, so its reads run `jobs.py` with this tree's pin added to the solve pins (`jobs_here`), in the test alone.
+- `dev/test_end_to_end.py`, from run 008's rereads of M8.18's six controls, since no fix touches a read, with the identities and readings run again on this code through the note gate: the as-built readings, the readings beside them and both identities equal M8.18's at all six controls; the changed reading is converged at 24 of 24, moving exactly P5 and C3R/R4 at 0.25; P5's pair equals `pair_gap.out` at each cutoff. PASS, its output equal to run 008's, timings aside. Its path records are the test's own, written under this tree, so its identities run through `jobs_here` too.
+
+The first launch of these ran before the copy was re-pinned. The jobs test stopped at its note-gate claim and the end-to-end test at its first identity, each on "the running tree differs from run/MANIFEST_PIN", the gate refusing as it should. Their temporary outputs were removed, the copy was re-pinned, and every test ran again.
+
+**Outputs.** The end-to-end run's identities and readings, with their job records, stay on the bench beside run 008's reads. `dev/runs/009_unit_fixes/` keeps the changed code as run and both outputs, and `dev/test_jobs.out` is this run's.
+
+**This copy's pin:** `8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645`.
+
+## 9. 2026-11-04T05:05:18Z: the solves ended, and the reader lands
+
+**The solves** ended at 2026-11-04 04:50Z, 29.2 hours after their launch: all 30 path jobs, the six rows and the four fresh controls at `N = 24`, 32 and 40, completed with exit 0, and none failed. Every path log has all its points accepted, 369 in all. Every job record names the manifest the solves ran under, `391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65`, and the 60 files the records logged match their SHA-256; the manifest equalled that pin to the end. Nothing of this computation has been read.
+
+**The reader lands.** On Blake's word, the bench copy of entries 7 and 8 replaced this folder's files outside `run/out`, which no step touched, so the folder outside `run/out` equals the copy file for file. Against the pin commit's tree, 38 files are added and 18 changed, none removed. `run/fresh.py` is new; `run/changed.py`, `run/jobs.py`, `run/runner.py`, `run/DESIGN.md` and `instrument/convergence.py` are the copy's, with `dev/`'s tests, their outputs and runs 007 to 009. The folder's two files the copy lacked, entry 6's `dev/closing_within_tau.py` and its output, were removed here, since entry 7 moved them byte for byte to `dev/runs/007_a_limit/`.
+
+**The pin.** `tools/pin.py` gives `8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645`, the copy's, so `run/MANIFEST_PIN`, `run/FROZEN.json` and `run/FROZEN_PIN` equal the copy's byte for byte. `run/jobs.py`'s `SOLVE_PINS` holds the solves' manifest alone, so the reads take these paths and refuse any path solved under another.
+
+**The commit** leaves out `run/out`: the solves' outputs come with the record (DESIGN section 7). `SHA256SUMS`, written last, lists the committed tree, 258 files.
+
+**Next:** the dated note on the census page, naming both pins, on Blake's word; then the fresh controls, their pass on record, the rows and the items.

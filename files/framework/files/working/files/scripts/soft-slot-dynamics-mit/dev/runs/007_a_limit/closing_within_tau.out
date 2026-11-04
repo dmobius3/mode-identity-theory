@@ -1,0 +1,7 @@
+P5 at 0.25, the pair near 4.02029: tau at N = 24, 32, 40: 7.1726e-06, 9.6363e-06, 1.2071e-05
+gaps 1.1345e-05, 1.1345e-05, one group at N = 40 (as stored: does not move): as built Unresolved; under A converged
+gaps 1.1500e-05, 1.0000e-05, one group at N = 40 (closing, inside tau(40) at both): as built Unresolved; under A converged
+gaps 1.2000e-05, 1.0000e-05, one group at N = 40 (closing, inside tau(40) at both): as built Unresolved; under A converged
+gaps 1.2500e-05, 1.0000e-05, one group at N = 40 (closing, above tau(40) at N = 24 alone): as built Unresolved; under A converged
+gaps 1.2500e-05, 1.2500e-05, one group at N = 40 (stable, above tau(40) at both): as built Unresolved; under A Unresolved
+gaps 3.0000e-05, 1.0000e-05, one group at N = 40 (closing, above tau(40) at N = 24 alone): as built converged; under A converged

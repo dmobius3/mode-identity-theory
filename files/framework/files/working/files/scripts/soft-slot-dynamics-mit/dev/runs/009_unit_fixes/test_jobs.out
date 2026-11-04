@@ -1,0 +1,60 @@
+ok   the job was killed after 2 of 4 points
+ok   its checkpoint holds them
+ok   the second launch resumed
+ok   the resumed path equals the stored one: 1 paths; 28 solve fields and 348 array entries compared; 0 differences
+ok   no checkpoint is left
+ok   a checkpoint that is not a prefix refuses
+ok   no commit refuses
+ok   a commit whose page lacks the pin refuses: the census page at 340ee37d889983a809c3df4c68981903812256dd does not name the manifest pin 8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645
+ok   a commit off origin/main refuses
+ok   a read through jobs.py with no note refuses
+ok   a reading with no note refuses
+ok   a commit whose page names the pin passes
+ok   the read was killed after its first point
+ok   the second launch finished it
+ok   the resumed read equals M8.18's record: 0 differences
+ok   every read point holds its linked groups, by the fields the rule asks
+ok   a path with no completed job refuses
+ok   a stored file that changed refuses
+ok   a stored lam that differs from its fields refuses
+ok   a path solved under this tree, whose pin is not a solve pin, refuses
+ok   the same path, its record naming the solve pin, passes
+ok   inside withheld a record refuses
+ok   inside withheld inertia refuses
+ok   B lifts the line and types a record that held nothing else
+ok   a flag that does not clear it leaves the record
+ok   another item keeps it Unresolved
+ok   a Hyperbolic record keeps its type
+ok   capture leaves the record's call as built
+ok   B's flag clears the same eigenvalue, the gate's case
+ok   capture holds D and L
+ok   capture restores what it patched
+ok   capture restores the summary
+ok   a linked group with no members refuses
+ok   its members go beside its centre, by its indices
+ok   reread refuses a row: reread reads M8.18 controls alone, not T1_R4
+ok   M8.18's own files pass
+ok   a copy of its files passes
+ok   a file that differs refuses: C2b_N24.json differs from M8.18's SHA256SUMS
+ok   another SHA256SUMS refuses: /var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/mit_jobs_56yt4pvz/m5/run/out is not M8.18's published output: its SHA256SUMS is not the pinned one
+ok   a row with no pass on record refuses
+the rows wait: the fresh controls have no pass on record
+ok   a default launch takes the fresh controls alone
+ok   a launch naming a row refuses
+ok   a fresh launch before the fresh readings waits, and counts no start
+ok   once they are complete it is planned, named by the marks
+ok   a miss refuses, and names itself
+ok   a pass for other marks refuses
+ok   a reading file that changed refuses
+ok   a pass file other than the one its job logged refuses
+ok   a pass opens the gate, and the read stops at its own next check
+ok   a default launch then takes the rows too
+ok   new marks have no pass of their own until their check runs
+ok   their pass opens the gate
+ok   the miss stays on record beside it
+ok   under the old marks the miss still refuses
+ok   reads with no note refuse at the launch
+ok   the flag at N = 40 alone keeps the branch under B
+ok   a flag B does not clear leaves it as it was
+ok   no record leaves it as it was
+PASS

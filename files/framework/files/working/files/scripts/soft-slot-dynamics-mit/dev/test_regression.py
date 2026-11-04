@@ -3,13 +3,18 @@
 changes were chosen. Nothing is solved.
 
 Over the 262 published readings, M8.18's 24, M8.16.1's 123 and M8.17's 115: this tree's rule as built must give each
-stored reading field for field, and the changed reading must move exactly three verdicts, C3R/R4 and P5 at 0.25 on
-M8.18's ladder and T5J at 0.25 on M8.16.1's, and no reason elsewhere. B's flag is not stored, so the one record holding
-n(D)'s line is lifted on the fact that D's eigenvalue there, -0.01596075, lies far above B's top (dev/runs/019_gate_cause
-in M8.18's folder; the reread reads the flag itself). Each arm must turn it red for its named reason.
+stored reading field for field. A stored summary keeps no linked group's members, so A acts on nothing here, and the
+changed reading must move exactly one verdict, C3R/R4 at 0.25 by B, and no reason elsewhere. B's flag is not stored, so
+the one record holding n(D)'s line is lifted on the fact that D's eigenvalue there, -0.01596075, lies far above B's top
+(dev/runs/019_gate_cause in M8.18's folder; the reread reads the flag itself).
+
+A is tested on P5's stored record at 0.25 with its pair's gap at each cutoff set by TABLE, linked or apart, and the
+members given: each case must read as TABLE says. dev/test_end_to_end.py tests it on the members of real reads. Each arm
+must turn this file red for its named reason.
 
 Usage: test_regression.py SCRIPTS_DIR
 """
+import contextlib
 import copy
 import glob
 import json
@@ -29,7 +34,15 @@ import changed  # noqa: E402
 N_LO = 16
 SETS = (('M8.18 controls', 'soft-slot-dynamics-m8-18/run/out', 24), ('M8.16.1', 'soft-slot-dynamics-m8-16-1/run/out', 123),
         ('M8.17 rows', 'soft-slot-dynamics-m8-17/run/out', 115))
-EXPECTED = {('M8.18 controls', 'C3R_R4', '0.25'), ('M8.18 controls', 'P5', '0.25'), ('M8.16.1', 'T5J_R2', '0.25')}
+EXPECTED = {('M8.18 controls', 'C3R_R4', '0.25')}
+# (what, the pair's gap at N = 24, 32 and 40, each linked or apart, the verdict as built, the verdict under A)
+TABLE = (('stable, as stored', (1.1345e-5, 1.1345e-5, ('L', 1.1345e-5)), 'Unresolved', 'converged'),
+         ('closing inside tau(40)', (1.2e-5, 1.0e-5, ('L', 8e-6)), 'Unresolved', 'Unresolved'),
+         ('closing inside tau(40), slower', (1.15e-5, 1.0e-5, ('L', 8.5e-6)), 'Unresolved', 'Unresolved'),
+         ('closing, its change falling', (1.2e-5, 1.0e-5, ('L', 9.8e-6)), 'Unresolved', 'converged'),
+         ('opening, linked at N = 24', (('L', 6e-6), 1.0e-5, 1.4e-5), 'converged', 'Unresolved'),
+         ('closing fast', (3e-5, 1.0e-5, ('L', 5e-6)), 'converged', 'converged'),
+         ('linked at N = 32 and 40, stable', (8.78e-6, ('L', 8.78e-6), ('L', 8.78e-6)), 'converged', 'converged'))
 
 
 def load(scripts):
@@ -82,26 +95,51 @@ def p5(records):
     return next(r for r in records if r[:3] == ('M8.18 controls', 'P5', '0.25'))
 
 
-def motion_caught(records, shift=3e-6):
-    """A motion of the merged group at N = 40 alone is real, and A must still read it Unresolved."""
-    label, name, e, sums, eig, lam, marg, rd = p5(records)
-    s2 = copy.deepcopy(sums)
-    g = [x for x in s2[-1]['groups'] if x['size'] == 2 and abs(complex(*x['c']).imag - 4.02029) < 1e-5][0]
-    g['c'][1] += shift
-    return changed.reading(s2, [True] * 3, eig, lam, marg, N_LO)['verdict'] == 'Unresolved'
+def pair(s):
+    return sorted((x for x in s['groups'] if abs(complex(*x['c']).imag - 4.02029) < 1e-5), key=lambda x: x['c'][1])
 
 
-def closing_caught(records):
-    """A pair really closing, 4e-5 apart at N = 24 and 3e-5 at N = 32, both wider than tau(40), and one group at N = 40:
-    the links A forgives are the top cutoff's only, so A must read this Unresolved. A centroid would pass it, which is why
-    the rule's arm 'set_centroid' is a mutation and A is not that arm."""
-    label, name, e, sums, eig, lam, marg, rd = p5(records)
+def with_pair(sums, gaps):
+    """P5's summaries with its pair at the given gaps: a number, two groups; ('L', gap), one group of two, with its members,
+    about the pair's stored centre."""
     s2 = copy.deepcopy(sums)
-    for lev, gap in ((0, 4e-5), (1, 3e-5)):
-        g = sorted((x for x in s2[lev]['groups'] if abs(complex(*x['c']).imag - 4.02029) < 1e-5), key=lambda x: x['c'][1])
-        mid = (g[0]['c'][1] + g[1]['c'][1]) / 2
-        g[0]['c'][1], g[1]['c'][1] = mid - gap / 2, mid + gap / 2
-    return changed.reading(s2, [True] * 3, eig, lam, marg, N_LO)['verdict'] == 'Unresolved'
+    mid = sum(g['c'][1] for g in pair(sums[0])) / 2
+    for s, gap in zip(s2, gaps):
+        gs = pair(s)
+        if isinstance(gap, tuple):
+            if len(gs) == 2:
+                s['groups'].remove(gs[1])
+            g = gs[0]
+            g.update(size=2, members=[[0.0, mid - gap[1] / 2], [0.0, mid + gap[1] / 2]])
+            g['c'][1] = mid
+        else:
+            if len(gs) == 1:
+                h = copy.deepcopy(gs[0])
+                s['groups'].append(h)
+                gs = [gs[0], h]
+            for g, sign in zip(gs, (-1, 1)):
+                g['size'] = 1
+                g.pop('members', None)
+                g['c'][1] = mid + sign * gap / 2
+    return s2
+
+
+def table(records):
+    """TABLE's verdicts, as failures."""
+    label, name, e, sums, eig, lam, marg, rd = p5(records)
+    fails = []
+    for what, gaps, built, under in TABLE:
+        s2 = with_pair(sums, gaps)
+        got = (ck.reading(s2, eig, lam, marg, N_LO)['verdict'], changed.reading(s2, [True] * 3, eig, lam, marg, N_LO)['verdict'])
+        print(f'  {what}: {gaps}: as built {got[0]}, under A {got[1]}', flush=True)
+        if got != (built, under):
+            fails.append(f'{what}: as built {got[0]}, under A {got[1]}, not {built}, {under}')
+    return fails
+
+
+def quiet(f, *a):
+    with open(os.devnull, 'w') as null, contextlib.redirect_stdout(null):
+        return f(*a)
 
 
 def main():
@@ -110,16 +148,14 @@ def main():
     fails, moved = check(records)
     print(f'as built reproduces all {len(records)}, field for field; changed moves {sorted(moved)}' if not fails else fails)
     ok = not fails
-    good = motion_caught(records)
-    print(f'a motion of 3e-6 at N = 40 alone stays Unresolved under A: {good}', flush=True)
-    ok &= good
-    good = closing_caught(records)
-    print(f'a pair really closing stays Unresolved under A: {good}', flush=True)
-    ok &= good
+    print(f"A on P5's pair, its gap set at each cutoff, {len(TABLE)} cases:", flush=True)
+    bad = table(records)
+    print(bad if bad else 'each reads as stated', flush=True)
+    ok &= not bad
 
     # the arms: each mutation must turn the check red for its own reason
     arms = 0
-    sep, blur, lift, factor = cv.separation, cv._blur, changed.lifted, cv.FACTOR
+    sep, own, lift, factor = cv.separation, cv._members, changed.lifted, cv.FACTOR
 
     def expect(name, reason, got):
         nonlocal arms, ok
@@ -129,24 +165,20 @@ def main():
         ok &= red
 
     cv.separation = lambda sums, band=None, arms=(): sep(sums, band=band)
-    expect('A removed', "the changed reading moves [('M8.18 controls', 'C3R_R4', '0.25')]", check(records)[0])
+    expect('A removed', 'stable, as stored: as built Unresolved, under A Unresolved', quiet(table, records))
     cv.separation = sep
-    cv._blur = lambda p, hi: p
-    expect('the blur made a no-op', "the changed reading moves [('M8.18 controls', 'C3R_R4', '0.25')]", check(records)[0])
-    cv._blur = blur
+    cv._members = lambda g: [cv._c(g)] * g['size']
+    expect('the members ignored', 'stable, as stored: as built Unresolved, under A Unresolved', quiet(table, records))
+    cv._members = own
     changed.lifted = lambda s, f: s
-    expect('B removed', "the changed reading moves [('M8.16.1', 'T5J_R2', '0.25'), ('M8.18 controls', 'P5', '0.25')]",
-           check(records)[0])
+    expect('B removed', 'the changed reading moves []', check(records)[0])
     changed.lifted = lift
     cv.FACTOR = 0.001
     expect('the rule moved as built', 'as built,', check(records)[0])
     cv.FACTOR = factor
-    cv._blur = lambda p, hi: [sum(p) / len(p)] * len(p)
-    res = closing_caught(records)
-    print(f"arm the blur as a centroid: the closing pair {'still caught' if res else 'missed, red for its reason'}", flush=True)
-    cv._blur = blur
-    arms += not res
-    ok &= not res
+    cv.separation = lambda sums, band=None, arms=(): sep(sums, band=band, arms=tuple(arms) + ('set_centroid',))
+    expect('a set read at its centroid', 'closing inside tau(40): as built converged, under A converged', quiet(table, records))
+    cv.separation = sep
     print(f'{arms} of 5 arms red for their reasons')
     print('PASS' if ok and arms == 5 else 'FAIL')
     raise SystemExit(0 if ok and arms == 5 else 1)

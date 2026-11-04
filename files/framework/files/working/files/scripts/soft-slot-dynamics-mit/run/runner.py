@@ -5,7 +5,9 @@ Usage: runner.py OUT KIND [--jobs K] [--threads T] [--tags A,B] [--cutoffs N1,N2
   KIND: solves     every path of the computation (grid.solves), or the tags and cutoffs named
         controls   M8.18's control paths, for the runner's first test
         rereads    M8.18's control solutions read again, from --source
-        reads, identities, readings   after the dated note: each refuses without --note and --repo
+        reads, identities, readings, fresh   after the dated note: each refuses without --note and --repo. With no
+                   --tags the first three take the fresh controls, and the rows once `fresh` has recorded their pass.
+                   `fresh` is planned once every fresh control's reading is complete
   --jobs K      how many at once, 4 unless given
   --threads T   VECLIB_MAXIMUM_THREADS for each job; 0, the default, leaves it unset, as M8.18's run did. At 1 a solve
                 is unchanged and as fast, but one record field at N = 24 moves in its round-off (dev/runs/005_leak)
@@ -28,6 +30,7 @@ ROOT = os.path.dirname(HERE)
 sys.path.insert(0, ROOT)
 sys.path.insert(0, HERE)
 from instrument import devtools  # noqa: E402
+import fresh  # noqa: E402
 import grid  # noqa: E402
 
 JOBS = os.path.join(HERE, 'jobs.py')
@@ -47,10 +50,25 @@ def option(argv, flag, default=None):
     return argv[argv.index(flag) + 1] if flag in argv else default
 
 
-def plan(kind, argv):
+def read_tags(tags, out):
+    """What a read may touch: the tags named, or the fresh controls, with the rows once those have passed (DESIGN.md,
+    section 5). Rows named before the pass refuse here, and in jobs.py."""
+    why = fresh.refusal(out)
+    if tags is None:
+        if why:
+            say(f'the rows wait: {why}')
+        return list(grid.FRESH) + ([] if why else list(grid.ROWS))
+    if why and set(tags) & set(grid.ROWS):
+        raise SystemExit(f'refused: no row is read before the fresh controls pass: {why}')
+    return tags
+
+
+def plan(kind, argv, out):
     """[(job name, jobs.py arguments, rough hours)], longest first."""
     tags = option(argv, '--tags')
     tags = tags.split(',') if tags else None
+    if kind in ('reads', 'identities', 'readings'):
+        tags = read_tags(tags, out)
     cuts = option(argv, '--cutoffs')
     cuts = [int(x) for x in cuts.split(',')] if cuts else list(grid.LADDER)
     src = option(argv, '--source')
@@ -64,14 +82,18 @@ def plan(kind, argv):
         base = [(t, N) for t, N in grid.solves() if (tags is None or t in tags) and N in cuts]
         jobs = [(f'path_{t}_N{N}', ['path', t, str(N)], grid.hours(t, N)) for t, N in base]
     elif kind == 'reads':
-        base = [(t, N) for t, N in grid.solves() if (tags is None or t in tags) and N in cuts]
+        base = [(t, N) for t, N in grid.solves() if t in tags and N in cuts]
         jobs = [(f'read_{t}_N{N}', ['read', t, str(N)], grid.hours(t, N) / 5) for t, N in base]
     elif kind == 'identities':
         pairs = list(zip(grid.LADDER, grid.LADDER[1:]))
-        jobs = [(f'identity_{t}_{a}_{b}', ['identity', t, str(a), str(b)], 0.1) for t in (tags or list(grid.FRESH) + list(grid.ROWS))
-                for a, b in pairs]
+        jobs = [(f'identity_{t}_{a}_{b}', ['identity', t, str(a), str(b)], 0.1) for t in tags for a, b in pairs]
     elif kind == 'readings':
-        jobs = [(f'reading_{t}', ['reading', t], 0.01) for t in (tags or list(grid.FRESH) + list(grid.ROWS))]
+        jobs = [(f'reading_{t}', ['reading', t], 0.01) for t in tags]
+    elif kind == 'fresh':
+        waiting = [t for t in grid.FRESH if not os.path.exists(os.path.join(out, 'jobs', f'reading_{t}.json'))]
+        if waiting:
+            say(f"the fresh check waits for the readings of {', '.join(waiting)}")
+        jobs = [] if waiting else [(fresh.names()[0], ['fresh'], 0.01)]
     else:
         raise SystemExit(__doc__)
     return sorted(jobs, key=lambda j: -j[2])
@@ -99,6 +121,8 @@ def main():
     threads = int(option(argv, '--threads', '0'))
     note, repo = option(argv, '--note'), option(argv, '--repo')
     tail = ['--note', note, '--repo', repo] if note else []
+    if kind in ('reads', 'identities', 'readings', 'fresh') and not (note and repo):
+        raise SystemExit('refused: reads need --note and --repo')
     if alive(out):
         raise SystemExit(f'refused: jobs are alive on {out}: {alive(out)}')
     for d in (out, os.path.join(out, 'jobs'), os.path.join(out, 'logs')):
@@ -119,7 +143,7 @@ def main():
         if threads:
             env[v] = str(threads)
     todo, running, failed = [], {}, []
-    for name, args, hours in plan(kind, argv):
+    for name, args, hours in plan(kind, argv, out):
         rec = log['jobs'].setdefault(name, dict(starts=0))
         if os.path.exists(os.path.join(out, 'jobs', name + '.json')):
             continue

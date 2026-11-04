@@ -49,19 +49,19 @@ order of the groups. 'no_floor' drops the floor from U only: the
 margin stays the threshold below which a non-contracting sequence is round-off, without which about half of a
 converged point's unchanged groups read non-contracting and every point reads Unresolved (DEVLOG 154).
 
-'same_resolution' is not a mutation: it is MIT's candidate A (run/changed.py). linear.group links two values within tau,
-which grows with ||A||, so a pair that does not move can be two groups at the lower cutoffs and one at the top, and step
-3 then reads the link as motion. Under it a set's members are compared at the top cutoff's linking distance at every
-cutoff (_blur). Nothing else in the rule changes, and without the arm the rule is M8.16.1's, line for line.
+'own_eigenvalues' is not a mutation: it is MIT's candidate A (run/changed.py). linear.group links two values within tau,
+which grows with ||A||, so one pair can be two groups at one cutoff and one group at another, and step 3, which reads a
+group by its centre, then reads the link as motion, or as contraction. Under it a set is read by its eigenvalues: a
+group whose summary carries the members a read kept gives those in place of its centre, and the set's row keeps them at
+every cutoff. Nothing else in the rule changes, and without the arm the rule is M8.16.1's, line for line.
 """
 import numpy as np
 from scipy.optimize import linear_sum_assignment
-from . import linear as ln
 
 U = np.finfo(float).eps
 FACTOR = 0.1
 ARMS = ('factor_one', 'last_change', 'contract_ignored', 'no_floor', 'no_numerical', 'no_gray', 'no_axis', 'no_krein',
-        'no_partner', 'set_centroid', 'one_way_set', 'same_resolution')
+        'no_partner', 'set_centroid', 'one_way_set', 'own_eigenvalues')
 COND_MAX = 1e-2 / U        # Y^H X conditioning beyond which the projector is not usable
 LEFT_MAX = 1e4 * U         # the left vectors' residual, relative to ||A||, beyond which the pairing is not verified
 IDEM_MAX = 1e-6            # ||P X - X|| / ||X||, beyond which the projector is not normalized
@@ -251,15 +251,9 @@ def merged_sets(levels, seeds):
     return {s: union[find(s)] if clo[s] is not None else None for s in seeds}
 
 
-def _blur(p, hi):
-    """A set's members at one cutoff, each at the mean of those linked to it at the top cutoff's linking distance, the
-    tau of linear.record with hi's ||A|| and margin. The count, with multiplicity, does not change."""
-    vals = np.array(p, dtype=complex)
-    tol = np.maximum(hi['margin'], ln.KAPPA_D * np.sqrt(U * hi['normA'] * np.abs(vals)))
-    out = vals.copy()
-    for g in ln.group(vals, tol):
-        out[g] = vals[g].mean()
-    return list(out)
+def _members(g):
+    """A group's eigenvalues: the members its summary carries, or its centre, as many times as its size."""
+    return [complex(*z) for z in g['members']] if 'members' in g else [_c(g)] * g['size']
 
 
 def _chain(levels, i):
@@ -360,11 +354,13 @@ def separation(sums, band=None, arms=()):
         hi_members = [g for _, g in members[0]]
         cls, neg = hi_members[0]['cls'], hi_members[0]['neg']
         pts = [[_c(g) for _, g in lev for _ in range(g['size'])] for lev in members]
-        if kind == 'set' and 'same_resolution' in arms:
-            pts = [_blur(p, hi) for p in pts]
+        if kind == 'set' and 'own_eigenvalues' in arms:
+            pts = [[z for _, g in lev for z in _members(g)] for lev in members]
         row = dict(c=[[z.real, z.imag] for z in pts[0]] if kind == 'set' else [pts[0][0].real, pts[0][0].imag],
                    cls=cls, neg=neg, role=role, kind=kind, count=len(pts[0]),
                    top=sorted(j for _, g in members[0] for j in (g.get('idx') or [])))   # the eigenvalues it reads
+        if kind == 'set' and 'own_eigenvalues' in arms:
+            row['levels'] = [[[z.real, z.imag] for z in p] for p in pts]                 # highest cutoff first
         name = f"{role} {'set' if kind == 'set' else 'group'} at {pts[0][0]:.6g}" + (f" (+{len(pts[0]) - 1})" if kind == 'set' else '')
         if len({len(p) for p in pts}) > 1:
             row.update(ok=False, why="the set's count differs between cutoffs")

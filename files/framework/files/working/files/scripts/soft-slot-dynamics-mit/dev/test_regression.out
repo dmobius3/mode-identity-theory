@@ -1,11 +1,18 @@
 262 readings
-as built reproduces all 262, field for field; changed moves [('M8.16.1', 'T5J_R2', '0.25'), ('M8.18 controls', 'C3R_R4', '0.25'), ('M8.18 controls', 'P5', '0.25')]
-a motion of 3e-6 at N = 40 alone stays Unresolved under A: True
-a pair really closing stays Unresolved under A: True
-arm A removed: red for its reason: ["the changed reading moves [('M8.18 controls', 'C3R_R4', '0.25')]"]
-arm the blur made a no-op: red for its reason: ["the changed reading moves [('M8.18 controls', 'C3R_R4', '0.25')]"]
-arm B removed: red for its reason: ["the changed reading moves [('M8.16.1', 'T5J_R2', '0.25'), ('M8.18 controls', 'P5', '0.25')]"]
+as built reproduces all 262, field for field; changed moves [('M8.18 controls', 'C3R_R4', '0.25')]
+A on P5's pair, its gap set at each cutoff, 7 cases:
+  stable, as stored: (1.1345e-05, 1.1345e-05, ('L', 1.1345e-05)): as built Unresolved, under A converged
+  closing inside tau(40): (1.2e-05, 1e-05, ('L', 8e-06)): as built Unresolved, under A Unresolved
+  closing inside tau(40), slower: (1.15e-05, 1e-05, ('L', 8.5e-06)): as built Unresolved, under A Unresolved
+  closing, its change falling: (1.2e-05, 1e-05, ('L', 9.8e-06)): as built Unresolved, under A converged
+  opening, linked at N = 24: (('L', 6e-06), 1e-05, 1.4e-05): as built converged, under A Unresolved
+  closing fast: (3e-05, 1e-05, ('L', 5e-06)): as built converged, under A converged
+  linked at N = 32 and 40, stable: (8.78e-06, ('L', 8.78e-06), ('L', 8.78e-06)): as built converged, under A converged
+each reads as stated
+arm A removed: red for its reason: ['stable, as stored: as built Unresolved, under A Unresolved, not Unresolved, converged']
+arm the members ignored: red for its reason: ['stable, as stored: as built Unresolved, under A Unresolved, not Unresolved, converged']
+arm B removed: red for its reason: ['the changed reading moves []']
 arm the rule moved as built: red for its reason: ['as built, M8.18 controls C2a 0.25: /reasons: 1 entries against 0']
-arm the blur as a centroid: the closing pair missed, red for its reason
+arm a set read at its centroid: red for its reason: ['stable, as stored: as built converged, under A converged, not Unresolved, converged']
 5 of 5 arms red for their reasons
 PASS

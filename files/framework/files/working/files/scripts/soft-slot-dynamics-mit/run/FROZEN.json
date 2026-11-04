@@ -12,7 +12,7 @@
   "T5/R2",
   "T5J/R2"
  ],
- "manifest_sha256": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "manifest_sha256": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
  "note": "MIT's own manifest; no OpenWave freeze",
  "targets": [],
  "terms_sha256": "924e7ee363a756a88ba2a9ee9bc03eb56c4fe27778c6e8f920a42a5229034a4c"

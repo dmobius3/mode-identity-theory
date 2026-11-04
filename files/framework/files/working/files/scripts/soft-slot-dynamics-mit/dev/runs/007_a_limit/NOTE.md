@@ -1,0 +1,1 @@
+The limit of the first candidate A, as it was found: these two files ran on the tree of commit `6063351ad376a8965936e0ad7001dec3c7d1b429`, whose `dev/` also holds the `test_regression.py` they import, and they need its arm `same_resolution`. `dev/test_regression.py`'s TABLE holds the same cases on this tree.

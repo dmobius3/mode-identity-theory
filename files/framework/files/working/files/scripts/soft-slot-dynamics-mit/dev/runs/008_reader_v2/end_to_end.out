@@ -1,0 +1,51 @@
+path_ctl_C2a_N24: complete, 0 s
+path_ctl_C2a_N32: complete, 0 s
+path_ctl_C2a_N40: complete, 0 s
+path_ctl_C2b_N24: complete, 0 s
+path_ctl_C2b_N32: complete, 0 s
+path_ctl_C2b_N40: complete, 0 s
+path_ctl_C3_N24: complete, 0 s
+path_ctl_C3_N32: complete, 0 s
+path_ctl_C3_N40: complete, 0 s
+path_ctl_C2a_R5_N24: complete, 0 s
+path_ctl_C2a_R5_N32: complete, 0 s
+path_ctl_C2a_R5_N40: complete, 0 s
+path_ctl_P5_N24: complete, 0 s
+path_ctl_P5_N32: complete, 0 s
+path_ctl_P5_N40: complete, 0 s
+path_ctl_C3R_R4_N24: complete, 0 s
+path_ctl_C3R_R4_N32: complete, 0 s
+path_ctl_C3R_R4_N40: complete, 0 s
+72 points read again; 0 differences from M8.18
+identity_ctl_C2a_24_32: complete, 16 s
+identity_ctl_C2a_32_40: complete, 78 s
+reading_ctl_C2a: complete, 1 s
+ctl_C2a: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C2b_24_32: complete, 20 s
+identity_ctl_C2b_32_40: complete, 116 s
+reading_ctl_C2b: complete, 0 s
+ctl_C2b: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C3_24_32: complete, 16 s
+identity_ctl_C3_32_40: complete, 79 s
+reading_ctl_C3: complete, 0 s
+ctl_C3: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C2a_R5_24_32: complete, 28 s
+identity_ctl_C2a_R5_32_40: complete, 136 s
+reading_ctl_C2a_R5: complete, 1 s
+ctl_C2a_R5: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_P5_24_32: complete, 16 s
+identity_ctl_P5_32_40: complete, 83 s
+reading_ctl_P5: complete, 1 s
+ctl_P5: as-built reading, reading beside it and both identities equal M8.18's
+identity_ctl_C3R_R4_24_32: complete, 17 s
+identity_ctl_C3R_R4_32_40: complete, 81 s
+reading_ctl_C3R_R4: complete, 1 s
+ctl_C3R_R4: as-built reading, reading beside it and both identities equal M8.18's
+P5 at 0.25, the pair at N = 40: 4.020284391423, 4.020295736569, gap 1.1345e-05
+P5 at 0.25, the pair at N = 32: 4.020284391423, 4.020295736569, gap 1.1345e-05
+P5 at 0.25, the pair at N = 24: 4.020284391477, 4.020295736541, gap 1.1345e-05
+its row: d1 5.390e-11, d2 7.550e-14, U 5.534e-07, d 4.020e+00, ok True
+changed: 24 of 24 converged, with the type and indices on the record; moved [('C3R/R4', '0.25'), ('P5', '0.25')]
+classified differently at 2 points
+no failure
+PASS
