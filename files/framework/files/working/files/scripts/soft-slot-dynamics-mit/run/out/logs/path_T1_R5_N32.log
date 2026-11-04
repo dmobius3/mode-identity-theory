@@ -1,0 +1,17 @@
+   0.25: accepted; 681 s
+   0.353553390593: accepted; 689 s
+   0.5: accepted; 572 s
+   0.707106781187: accepted; 783 s
+   1: accepted; 799 s
+   1.41421356237: accepted; 788 s
+   2: accepted; 780 s
+   2.82842712475: accepted; 981 s
+   4: accepted; 1005 s
+   5.65685424949: accepted; 996 s
+   8: accepted; 1457 s
+   11.313708499: accepted; 1269 s
+   16: accepted; 1348 s
+   22.627416998: accepted; 1421 s
+   32: accepted; 1196 s
+path_T1_R5_N32: complete, 14785 s
+   15 of 15 points solved

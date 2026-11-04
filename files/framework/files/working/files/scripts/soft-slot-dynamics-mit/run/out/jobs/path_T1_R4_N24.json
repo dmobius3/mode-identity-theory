@@ -1,0 +1,11 @@
+{
+ "job": "path_T1_R4_N24",
+ "files": {
+  "T1_R4_N24.npz": "4aa2a7dcc37f8ff4a6136d679cb9e9743e15349c7d709d9675f0a02339ba40a1",
+  "T1_R4_N24.json": "582c9f01cf257295b3ca5b6512c36b742147de1ad2069fcbfb8735446dd5d74e"
+ },
+ "t": "2026-11-04T04:44:17Z",
+ "seconds": 659.1821148750023,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 2462564352
+}

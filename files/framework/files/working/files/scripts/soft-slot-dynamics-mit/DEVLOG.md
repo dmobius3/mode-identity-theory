@@ -182,3 +182,15 @@ The first launch of these ran before the copy was re-pinned. The jobs test stopp
 **The commit** leaves out `run/out`: the solves' outputs come with the record (DESIGN section 7). `SHA256SUMS`, written last, lists the committed tree, 258 files.
 
 **Next:** the dated note on the census page, naming both pins, on Blake's word; then the fresh controls, their pass on record, the rows and the items.
+
+## 10. 2026-11-04T14:24:32Z: the one look before the note, and the dated note
+
+**The solve checks** (`dev/runs/010_solve_checks/`), the design's one look before the note, at solve fields alone (section 7, item 2). `solve_checks.py`, against M8.17's and M8.16.1's stored paths: 0 failures. Every path at `N = 24` and 32 on a stored grid equals its record field for field, T5 to 64, and where a grid is new a stored point's `m` differs by at most 8.48×10⁻⁷ relative. `slope_check.py`, written for the units' review of the note: at every such point that difference is dm/dε along the path times the difference in the amplitude reached, over `m`, within 0.5%, by central differences of the solve fields. So the two paths stop at slightly different amplitudes of one curve; whether the coarse path stepped onto another solution stays OPEN (UA).
+
+**The dated note,** under the census page's § V, step 5, drafted from `NOTES_for_the_dated_note.md`. Both units reviewed v1: nothing FATAL, and their changes are in v2, 1562 words, which lands on Blake's word ("Gucci, post it"). It names the pin current on its date, `8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645`, and the solves', `391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65`.
+
+**The output, but the solutions** (UB). The note's commit carries `run/out` but its 30 `.npz` files: the 30 job records, which name the solve pin and log both files' SHA-256, each path's solve fields and log, and `RUNLOG.json`, 91 files, byte for byte the review packet's. Which solutions existed before any read is then on record, and `record_of` checks each against it at the read. The `.npz` files come with the record. Entry 9 left `run/out` out of its commit; this one takes all of it but the solutions.
+
+**`SHA256SUMS`** lists the committed tree, 353 files. The manifest does not move, since `run/out` and `dev/` lie outside it.
+
+**Next:** the reads, with the note's commit, the fresh controls first.

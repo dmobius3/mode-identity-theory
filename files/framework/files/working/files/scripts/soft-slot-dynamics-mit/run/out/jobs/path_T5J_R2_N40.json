@@ -1,0 +1,11 @@
+{
+ "job": "path_T5J_R2_N40",
+ "files": {
+  "T5J_R2_N40.npz": "d3ff2cd40fb712c48ea99d62309716c10b0e720d3b735d124042d3713146bc7c",
+  "T5J_R2_N40.json": "8afed0cf46db945981e266d2d775e0fc232c9108548fd6594ef0971ede640c8d"
+ },
+ "t": "2026-11-04T00:43:19Z",
+ "seconds": 24052.26566437498,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 1707048960
+}

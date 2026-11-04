@@ -1,0 +1,11 @@
+{
+ "job": "path_fresh_P5_N40",
+ "files": {
+  "fresh_P5_N40.npz": "85a2ed93a73d9356480fa779a3348e92d4efb834efebbfafdd6a27eaa46dae1a",
+  "fresh_P5_N40.json": "bcf7712bd5acfa2d9531b3e7f7e65990f9c8dc8eb5615095977d4c42d374b618"
+ },
+ "t": "2026-11-04T04:12:28Z",
+ "seconds": 3861.7223717079614,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 1616592896
+}

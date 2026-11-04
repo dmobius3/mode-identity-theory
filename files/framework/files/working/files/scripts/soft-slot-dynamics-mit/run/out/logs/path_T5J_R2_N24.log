@@ -1,0 +1,22 @@
+   0.25: accepted; 16 s
+   0.353553390593: accepted; 11 s
+   0.5: accepted; 11 s
+   0.707106781187: accepted; 11 s
+   1: accepted; 15 s
+   1.41421356237: accepted; 14 s
+   2: accepted; 16 s
+   2.82842712475: accepted; 16 s
+   4: accepted; 14 s
+   5.65685424949: accepted; 15 s
+   8: accepted; 18 s
+   11.313708499: accepted; 19 s
+   16: accepted; 20 s
+   22.627416998: accepted; 26 s
+   32: accepted; 30 s
+   45.2548339959: accepted; 32 s
+   64: accepted; 29 s
+   90.5096679919: accepted; 25 s
+   128: accepted; 18 s
+   132: accepted; 12 s
+path_T5J_R2_N24: complete, 372 s
+   20 of 20 points solved

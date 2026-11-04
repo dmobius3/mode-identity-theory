@@ -1,0 +1,20 @@
+   0.25: accepted; 2717 s
+   0.353553390593: accepted; 5086 s
+   0.5: accepted; 4139 s
+   0.707106781187: accepted; 5136 s
+   1: accepted; 5048 s
+   1.41421356237: accepted; 3232 s
+   2: accepted; 3110 s
+   2.82842712475: accepted; 2220 s
+   4: accepted; 3183 s
+   5.65685424949: accepted; 3176 s
+   8: accepted; 3182 s
+   11.313708499: accepted; 3465 s
+   16: accepted; 2973 s
+   22.627416998: accepted; 3604 s
+   32: accepted; 3632 s
+   45.2548339959: accepted; 4199 s
+   64: accepted; 3517 s
+   72: accepted; 3005 s
+path_T1_R4_N40: complete, 64807 s
+   18 of 18 points solved

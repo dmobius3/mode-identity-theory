@@ -1,0 +1,11 @@
+{
+ "job": "path_fresh_C2b_N32",
+ "files": {
+  "fresh_C2b_N32.npz": "22b694289965b8d4c6f4241f0458409661e1d1f5641e791d3ae5362148b09377",
+  "fresh_C2b_N32.json": "88048cec3c341b65fb56224c7e0d4ff965ddbe3dd6f9a436cfcf968c70d0ea32"
+ },
+ "t": "2026-11-04T04:46:27Z",
+ "seconds": 129.6090997919673,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 1730674688
+}

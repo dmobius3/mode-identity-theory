@@ -1,0 +1,11 @@
+{
+ "job": "path_T1_R5_N32",
+ "files": {
+  "T1_R5_N32.npz": "7d4da19f64026eaaf7f42aa79cea81ea9efc9595ae6ee97ffcfc7a142dd10f8b",
+  "T1_R5_N32.json": "862aac3854aefe982a27b0a02996825bd131442a6950df3075793c4d14df5aab"
+ },
+ "t": "2026-11-04T01:18:22Z",
+ "seconds": 14785.138569790986,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 1682800640
+}

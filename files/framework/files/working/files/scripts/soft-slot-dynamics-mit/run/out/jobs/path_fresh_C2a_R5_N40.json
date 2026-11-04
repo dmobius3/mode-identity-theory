@@ -1,0 +1,11 @@
+{
+ "job": "path_fresh_C2a_R5_N40",
+ "files": {
+  "fresh_C2a_R5_N40.npz": "9782e5e39802d11a43401ea55c3e85a512fff135e96e3323d0ffcd7e56358c94",
+  "fresh_C2a_R5_N40.json": "66cbafcd12eebd73457bfb982d68cd4819ab5550f18bb3911dd0fb0366464adb"
+ },
+ "t": "2026-11-04T03:46:33Z",
+ "seconds": 1769.488414374995,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 1543012352
+}

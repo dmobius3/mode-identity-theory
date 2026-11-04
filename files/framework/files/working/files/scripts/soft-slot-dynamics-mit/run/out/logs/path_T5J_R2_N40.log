@@ -1,0 +1,22 @@
+   0.25: accepted; 936 s
+   0.353553390593: accepted; 735 s
+   0.5: accepted; 743 s
+   0.707106781187: accepted; 742 s
+   1: accepted; 981 s
+   1.41421356237: accepted; 963 s
+   2: accepted; 1054 s
+   2.82842712475: accepted; 1069 s
+   4: accepted; 1131 s
+   5.65685424949: accepted; 1142 s
+   8: accepted; 1162 s
+   11.313708499: accepted; 1285 s
+   16: accepted; 1252 s
+   22.627416998: accepted; 1691 s
+   32: accepted; 1676 s
+   45.2548339959: accepted; 1655 s
+   64: accepted; 1576 s
+   90.5096679919: accepted; 1605 s
+   128: accepted; 1499 s
+   132: accepted; 1065 s
+path_T5J_R2_N40: complete, 24052 s
+   20 of 20 points solved

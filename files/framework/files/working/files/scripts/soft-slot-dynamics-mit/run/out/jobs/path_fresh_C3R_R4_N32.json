@@ -1,0 +1,11 @@
+{
+ "job": "path_fresh_C3R_R4_N32",
+ "files": {
+  "fresh_C3R_R4_N32.npz": "079430a07f637c5fd5c71a5e7cfeff62ceec41377d3fb452c54532abc09f2457",
+  "fresh_C3R_R4_N32.json": "64672cda67e008b9234837d33f4337bc52810ed72cb11e68269bc2391def52cf"
+ },
+ "t": "2026-11-04T04:39:08Z",
+ "seconds": 825.4922427920392,
+ "manifest": "391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65",
+ "peak_rss_bytes": 1713733632
+}
