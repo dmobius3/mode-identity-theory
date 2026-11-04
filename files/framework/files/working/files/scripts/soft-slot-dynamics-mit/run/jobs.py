@@ -7,6 +7,8 @@ Usage: jobs.py OUT path TAG N                         a path at one cutoff, solv
        jobs.py OUT reading TAG --note ...             the rule on the ladder: both verdicts at every point
        jobs.py OUT fresh --note ...                   the fresh controls against their marks, the pass the rows need
        jobs.py OUT reread TAG N SOURCE                M8.18's stored solutions read again, against its records
+       jobs.py OUT locate_repro SOURCE --note ...     M8.18's Arm B run again, against its record (run/locate.py)
+       jobs.py OUT locate --note ...                  T4/R4's locator, once the reproduction has passed
 
 A job is one file set, in OUT, with a record in OUT/jobs/ holding each file's SHA-256, its time and its peak resident
 size. A path is written point by point, so a killed job resumes at its next point and loses only the one under way. A
@@ -372,6 +374,19 @@ def main():
         path(out, args[0], int(args[1]))
     elif kind == 'reread':
         reread(out, args[0], int(args[1]), args[2])
+    elif kind in ('locate_repro', 'locate'):
+        note_gate(note, repo)
+        import locate                   # here, since run/locate.py imports this module
+        if kind == 'locate_repro':
+            locate.repro(out, args[0])
+            why = locate.refusal(out)
+            if why:                     # on record and failed: exit nonzero, so the runner reports the job failed
+                raise SystemExit(f'{why}; its record stands, and T4/R4 is not read')
+            return
+        why = fresh.refusal(out)
+        if why:
+            raise PermissionError(f'no row is read before the fresh controls pass: {why}')
+        locate.locate(out)
     elif kind in ('read', 'identity', 'reading', 'fresh'):
         note_gate(note, repo)
         if kind == 'fresh':

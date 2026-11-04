@@ -38,6 +38,9 @@ PASS_MARKS = {('fresh_P5', 0.24): ('Unresolved', 'converged', 'link'), ('fresh_P
 HOURS_40 = dict(T1_R4=8.0, T4_R4=8.9, T1_R5=11.8, T5_R2=5.6, T5J_R2=3.6, C2a_R5=12.0, fresh_P5=0.8, fresh_C3R_R4=0.8,
                 fresh_C2b=0.1, fresh_C2a_R5=0.4, ctl_C2a=0.95, ctl_C2b=0.36, ctl_C3=1.31, ctl_P5=1.46, ctl_C3R_R4=1.50,
                 ctl_C2a_R5=1.54)
+# T4/R4's locator (run/LOCATOR.md; DESIGN.md, section 4): the row, its bracket, narrowed from (2.83, 5.66) to (4, 5.66)
+# because the reads classify 4 Elliptic, and the case of the location its job reproduces first, M8.18's Arm B on T4/R5
+LOCATOR = dict(row='T4_R4', bracket=(W4[8], W4[9]), repro='T4/R5')
 
 
 def entry(tag):
@@ -65,4 +68,5 @@ def solves():
 
 
 def allowlist():
-    return sorted({n for n, _ in ROWS.values()} | {n for n, _ in FRESH.values()} | set(CONTROLS.values()))
+    return sorted({n for n, _ in ROWS.values()} | {n for n, _ in FRESH.values()} | set(CONTROLS.values())
+                  | {LOCATOR['repro']})

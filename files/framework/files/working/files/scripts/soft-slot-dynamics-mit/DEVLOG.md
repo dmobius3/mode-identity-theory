@@ -232,3 +232,21 @@ On Blake's word ("Go after considering"), with both units' reviews of the readin
 **For the record and its note** (UB): the coherent row's census entry, that its ladder above 2 did not run, describes M8's record and stays true. A note says MIT's computation reads the row to 32.
 
 **Next:** T4/R4's locator, its terms and its job, for the units' review before any midpoint is solved.
+
+## 13. 2026-11-04T20:54:54Z: T4/R4's locator, its terms and its job, and its note
+
+On Blake's word ("Land if/when gucci"), with both units' GO on v2. Nothing has been solved or read since the reads' records (`bcee21ad`).
+
+**The terms,** `run/LOCATOR.md`, 1658 words. T4/R4's bracket is (4, 5.66), from the reads by section 4's rule. The bisection is `census_lib.settle`, byte for byte M8.18's, on Arm A's ladder, `N = 32` and 40 deciding and 24 bisected and reported. It takes Arm B's moved midpoint, as section 4 fixed it before the row was read, knowing that M8.18's terms gave a new bracket no moved midpoint and named this one the likeliest to stop on K1. A location is named only where both verdicts agree at the guard readings the locator takes. Before T4/R4 is read, M8.18's location of T4/R5's change is reproduced on this tree: the whole record against `ARM_B.json`, field for field, timings aside, and its 146 solution arrays entry for entry.
+
+**The job,** `run/locate.py`, new. `grid.py` gains `LOCATOR`, and the allowlist gains T4/R5, the reproduction's case. `jobs.py` gains `locate_repro` and `locate` behind the note gate, `locate` behind the fresh gate too. A reproduction on record that did not pass exits nonzero, so the runner reports it failed. `runner.py` gains the kind `locate`, which plans the reproduction first, from `--source`, and T4/R4 once it has passed. Only the bracket's ends pass through `jobs.stored`. The midpoints' and guards' solutions are solved and read inside the job, so `SOLVE_PINS` stays `391b097f` alone: no tree can list its own pin.
+
+**The review.** v1 (`locator_review_v1.zip`): both units GO after fixes, nothing FATAL. They kept all three readings: the moved midpoint per midpoint; both verdicts at the guards the locator takes, with no retry of their own; the note before the run. UB conceded that a tree cannot list its own pin, and withdrew the quartet's steps, which came from a rounded value. v2 takes UA's three redlines and UB's four as written, in the terms and the note. The note gives UA's sentence the page's names for the rows. UA's NIT is applied: the nonzero exit. A claim of my own is corrected: §6's rules were fixed "before the row was read", not "before any of them was read". On v2 both units GO, once the note carries its two changes and the new pin, and the checks pass on the final tree: they hold.
+
+**Tests, on this tree:** `dev/test_locate.py`, 46 claims, PASS, on records alone, with nothing in `run/out` written. M8.18's own `run/test_locator.py`, 40 arms, rerun in a copy of its folder, gives its committed output byte for byte (`dev/runs/012_locator_tests/`).
+
+**The note,** under the note of 2026-11-04, with the Inputs line naming `run/LOCATOR.md`. Its checks pass on this tree: the gate passes at the pin and refuses the base page and an off-main commit; GitHub renders 177 of 177 math expressions; the lint gives 0 FAIL, 0 WARN.
+
+**Pins:** the manifest moves to `340684d5b5c9c9162e8dab76606b8f91607eeaab5a42fac461bb529fd0116c87`; the solves' pin is unchanged.
+
+**Next,** on Blake's word: `runner.py run/out locate` twice, with `--source` M8.18's published folder, `--note` this commit and `--repo` MIT. First the reproduction, then T4/R4 if it passes.

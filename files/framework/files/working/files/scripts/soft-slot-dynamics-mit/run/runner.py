@@ -8,6 +8,8 @@ Usage: runner.py OUT KIND [--jobs K] [--threads T] [--tags A,B] [--cutoffs N1,N2
         reads, identities, readings, fresh   after the dated note: each refuses without --note and --repo. With no
                    --tags the first three take the fresh controls, and the rows once `fresh` has recorded their pass.
                    `fresh` is planned once every fresh control's reading is complete
+        locate     T4/R4's locator (run/LOCATOR.md): the reproduction of M8.18's Arm B first, from --source, M8.18's
+                   published folder; once it has passed, T4/R4. Each refuses without --note and --repo
   --jobs K      how many at once, 4 unless given
   --threads T   VECLIB_MAXIMUM_THREADS for each job; 0, the default, leaves it unset, as M8.18's run did. At 1 a solve
                 is unchanged and as fast, but one record field at N = 24 moves in its round-off (dev/runs/005_leak)
@@ -94,6 +96,17 @@ def plan(kind, argv, out):
         if waiting:
             say(f"the fresh check waits for the readings of {', '.join(waiting)}")
         jobs = [] if waiting else [(fresh.names()[0], ['fresh'], 0.01)]
+    elif kind == 'locate':
+        import locate                    # here: it loads the instrument, which no other kind's plan needs
+        if not os.path.exists(os.path.join(out, 'jobs', locate.REPRO_JOB + '.json')):
+            if not src:
+                raise SystemExit("refused: the reproduction needs --source, M8.18's published folder")
+            jobs = [(locate.REPRO_JOB, ['locate_repro', os.path.abspath(src)], 5.3)]
+        else:
+            why = locate.refusal(out)
+            if why:
+                raise SystemExit(f'refused: {why}')
+            jobs = [(locate.JOB, ['locate'], 8.0)]
     else:
         raise SystemExit(__doc__)
     return sorted(jobs, key=lambda j: -j[2])
@@ -121,7 +134,7 @@ def main():
     threads = int(option(argv, '--threads', '0'))
     note, repo = option(argv, '--note'), option(argv, '--repo')
     tail = ['--note', note, '--repo', repo] if note else []
-    if kind in ('reads', 'identities', 'readings', 'fresh') and not (note and repo):
+    if kind in ('reads', 'identities', 'readings', 'fresh', 'locate') and not (note and repo):
         raise SystemExit('refused: reads need --note and --repo')
     if alive(out):
         raise SystemExit(f'refused: jobs are alive on {out}: {alive(out)}')

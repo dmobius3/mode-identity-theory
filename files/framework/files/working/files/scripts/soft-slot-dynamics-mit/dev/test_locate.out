@@ -1,0 +1,59 @@
+1. The frozen values
+ok   the row, its bracket on the grid, and the reproduction's case
+ok   the allowlist gains T4/R5 alone, against the run's as committed
+ok   census_lib's locator constants as M8.18 froze them
+ok   the code the locator runs is byte for byte M8.18's: 17 of 17 files (instrument/convergence.py aside, whose arm the locator does not use)
+2. The bracket, from the reads
+ok   one change of type both ways, Elliptic to Hyperbolic, on the grid's own values
+ok   index evidence: index, n(L) {32: (7, 6), 40: (7, 6)} at the deciding cutoffs, and (7, 6) at N = 24, so it is bisected
+ok   both ends classified both ways: 4 Elliptic (7, 1, 6), 5.66 Hyperbolic (6, 1, 5)
+ok   a reading that leaves the end at 4 unclassified changed refuses
+ok   a reading that types 5.66 Elliptic as built refuses
+ok   the stored ends pass the solve pins at N = 24, 32 and 40, accepted, their lam the reads' own
+3. The changed classification at a guard reading
+ok   it equals the reading's changed classification at 18 of 18 points of T4/R4
+ok   the same from records after a round trip, their keys strings
+ok   at T5's second member's 0.354 it gives the changed classification, Elliptic, where as built it is not classified; reading the records as built, the mutation, gives the other
+4. Both verdicts, on synthetic records
+ok   both agree at the guards that count: the location stands, the changed readings recorded
+ok   the changed reading unclassified at the lower guard that counts: not located, the guard named
+ok   the mutation that skips the check lets it through
+ok   the changed reading of another type at the upper guard: not located
+ok   a guard that does not count does not decide: the 0.05 guard counts, and the location stands
+ok   a bracket not located as built stays not located
+ok   a stop before the guards records no changed reading
+5. The reproduction's comparison
+ok   M8.18's files by its pinned SHA256SUMS: 6 files, each as listed
+ok   a copy of those files passes
+ok   ARM_B.json changed by one field refuses
+ok   a SHA256SUMS other than the pinned one refuses
+ok   the record's comparison: ARM_B.json against itself, no difference
+ok   one midpoint field changed: one difference, named (['/bisection/24/midpoints[3]/from_lower/nL: 99 against 7'])
+ok   a timing changed: no difference
+ok   the solutions' comparison: arm_b_solutions.npz against itself, 146 arrays, none unequal
+ok   one entry changed: that array named (N16_0_c)
+ok   T4/R5's case here is M8.18's frozen one, and M8.17's bracket is Arm B's
+ok   as_m818 sets aside the new fields alone
+6. The gates
+ok   T4/R4 refuses with no reproduction on record
+locate_repro_T4_R5: complete, 0 s
+ok   a passing reproduction on record: no refusal
+ok   the runner then plans T4/R4: [('locate_T4_R4', ['locate'], 8.0)]
+locate_repro_T4_R5: complete, 0 s
+ok   a failed reproduction refuses, naming its stop
+ok   and the runner refuses it
+locate_repro_T4_R5: complete, 0 s
+ok   a reproduction file changed after its job logged it refuses
+ok   a reproduction file missing refuses
+ok   the runner refuses the reproduction with no --source
+ok   and plans it first, from --source
+ok   jobs.py locate_repro with no note refuses
+ok   jobs.py locate with no note refuses
+ok   jobs.py locate with the reads' note, beb7eee2, whose page names another pin, refuses
+ok   the runner refuses a launch with no note
+7. A failed reproduction exits nonzero, through the note gate
+locate_repro_T4_R5: complete, 0 s
+ok   a reproduction on record that did not pass exits nonzero, naming its stop, its record standing
+locate_repro_T4_R5: complete, 0 s
+ok   a passing one exits zero
+PASS
