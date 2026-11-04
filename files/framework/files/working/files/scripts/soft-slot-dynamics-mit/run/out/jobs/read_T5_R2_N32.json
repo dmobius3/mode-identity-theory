@@ -1,0 +1,10 @@
+{
+ "job": "read_T5_R2_N32",
+ "files": {
+  "T5_R2_N32_read.json": "37ec3be976f941a4d9738fd6c7f2ba8ae3d5eb81d376944252ee05a33f5bce4e"
+ },
+ "t": "2026-11-04T18:46:36Z",
+ "seconds": 585.0482742079766,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 1494827008
+}

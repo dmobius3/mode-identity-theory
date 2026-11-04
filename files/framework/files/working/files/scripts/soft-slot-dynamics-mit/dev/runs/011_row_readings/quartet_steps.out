@@ -1,0 +1,4 @@
+128: stored at N = 16, 24, 32: 0.5250557350, 0.2183463285, 0.0964771814; this run at N = 24, 32, 40: 0.2183463258, 0.0964771759, 0.0913408456
+  steps: 16 to 24 0.306709, 24 to 32 0.121869 (stored) and 0.121869 (this run), 32 to 40 0.005136; the stored and this run's N = 32 differ by 5.42e-09
+132: stored at N = 16, 24, 32: 0.5441131148, 0.2576576355, 0.1602670817; this run at N = 24, 32, 40: 0.2576576355, 0.1602670817, 0.1567980664
+  steps: 16 to 24 0.286455, 24 to 32 0.097391 (stored) and 0.097391 (this run), 32 to 40 0.003469; the stored and this run's N = 32 differ by 9.36e-14

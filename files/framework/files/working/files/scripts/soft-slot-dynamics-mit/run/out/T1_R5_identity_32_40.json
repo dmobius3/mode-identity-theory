@@ -1,0 +1,77 @@
+{
+ "0.25": {
+  "aligned_distance": 9.39038353329863e-13,
+  "same_record": true,
+  "kept": true
+ },
+ "0.353553390593": {
+  "aligned_distance": 2.6385508832348476e-12,
+  "same_record": true,
+  "kept": true
+ },
+ "0.5": {
+  "aligned_distance": 7.393798318696085e-12,
+  "same_record": true,
+  "kept": true
+ },
+ "0.707106781187": {
+  "aligned_distance": 2.0640001907311343e-11,
+  "same_record": true,
+  "kept": true
+ },
+ "1": {
+  "aligned_distance": 5.730794697718928e-11,
+  "same_record": true,
+  "kept": true
+ },
+ "1.41421356237": {
+  "aligned_distance": 1.5792110281544378e-10,
+  "same_record": true,
+  "kept": true
+ },
+ "2": {
+  "aligned_distance": 4.306036705328352e-10,
+  "same_record": true,
+  "kept": true
+ },
+ "2.82842712475": {
+  "aligned_distance": 1.156987178954588e-09,
+  "same_record": true,
+  "kept": true
+ },
+ "4": {
+  "aligned_distance": 3.046138542079145e-09,
+  "same_record": true,
+  "kept": true
+ },
+ "5.65685424949": {
+  "aligned_distance": 7.799850772867729e-09,
+  "same_record": true,
+  "kept": true
+ },
+ "8": {
+  "aligned_distance": 1.9236476190820757e-08,
+  "same_record": true,
+  "kept": true
+ },
+ "11.313708499": {
+  "aligned_distance": 4.514873480065895e-08,
+  "same_record": true,
+  "kept": true
+ },
+ "16": {
+  "aligned_distance": 9.944692167614573e-08,
+  "same_record": true,
+  "kept": true
+ },
+ "22.627416998": {
+  "aligned_distance": 2.0259041709166103e-07,
+  "same_record": true,
+  "kept": true
+ },
+ "32": {
+  "aligned_distance": 3.76768700369876e-07,
+  "same_record": true,
+  "kept": true
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "job": "read_T5J_R2_N40",
+ "files": {
+  "T5J_R2_N40_read.json": "f852c953851038f7b1d4c6c7b1b26231624aaebd8e0fce89efe37566104f7109"
+ },
+ "t": "2026-11-04T18:00:54Z",
+ "seconds": 2315.167596250016,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 1578680320
+}

@@ -1,0 +1,102 @@
+{
+ "0.25": {
+  "aligned_distance": 2.3632563816000866e-10,
+  "same_record": true,
+  "kept": true
+ },
+ "0.353553390593": {
+  "aligned_distance": 6.667353569090026e-10,
+  "same_record": true,
+  "kept": true
+ },
+ "0.5": {
+  "aligned_distance": 1.879055762933786e-09,
+  "same_record": true,
+  "kept": true
+ },
+ "0.707106781187": {
+  "aligned_distance": 5.2878703785103795e-09,
+  "same_record": true,
+  "kept": true
+ },
+ "1": {
+  "aligned_distance": 1.484951438155236e-08,
+  "same_record": true,
+  "kept": true
+ },
+ "1.41421356237": {
+  "aligned_distance": 4.1577184221846937e-08,
+  "same_record": true,
+  "kept": true
+ },
+ "2": {
+  "aligned_distance": 1.1592577064775704e-07,
+  "same_record": true,
+  "kept": true
+ },
+ "2.82842712475": {
+  "aligned_distance": 3.2132185220173494e-07,
+  "same_record": true,
+  "kept": true
+ },
+ "4": {
+  "aligned_distance": 8.832575752050287e-07,
+  "same_record": true,
+  "kept": true
+ },
+ "5.65685424949": {
+  "aligned_distance": 2.3996936103812326e-06,
+  "same_record": true,
+  "kept": true
+ },
+ "8": {
+  "aligned_distance": 6.413769849971479e-06,
+  "same_record": true,
+  "kept": true
+ },
+ "11.313708499": {
+  "aligned_distance": 1.675642699687108e-05,
+  "same_record": true,
+  "kept": true
+ },
+ "16": {
+  "aligned_distance": 4.242807491658158e-05,
+  "same_record": true,
+  "kept": true
+ },
+ "22.627416998": {
+  "aligned_distance": 0.00010298981163437315,
+  "same_record": true,
+  "kept": true
+ },
+ "32": {
+  "aligned_distance": 0.00023658653714222867,
+  "same_record": true,
+  "kept": true
+ },
+ "45.2548339959": {
+  "aligned_distance": 0.0005074272221991771,
+  "same_record": true,
+  "kept": true
+ },
+ "64": {
+  "aligned_distance": 0.0010045883091824434,
+  "same_record": true,
+  "kept": true
+ },
+ "90.5096679919": {
+  "aligned_distance": 0.0018237020369286077,
+  "same_record": true,
+  "kept": true
+ },
+ "128": {
+  "aligned_distance": 0.003031844070767621,
+  "same_record": true,
+  "kept": true
+ },
+ "132": {
+  "aligned_distance": 0.00315855766175067,
+  "same_record": true,
+  "kept": true
+ }
+}

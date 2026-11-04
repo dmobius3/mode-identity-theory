@@ -1,0 +1,10 @@
+{
+ "job": "read_fresh_C2b_N32",
+ "files": {
+  "fresh_C2b_N32_read.json": "7e0bb3d1610925a95e766a3c983ec78af7a45a108c28296a3a1acb0c72811ec3"
+ },
+ "t": "2026-11-04T15:32:13Z",
+ "seconds": 37.261787041963544,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 1665662976
+}

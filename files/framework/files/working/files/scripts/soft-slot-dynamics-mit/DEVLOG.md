@@ -194,3 +194,41 @@ The first launch of these ran before the copy was re-pinned. The jobs test stopp
 **`SHA256SUMS`** lists the committed tree, 353 files. The manifest does not move, since `run/out` and `dev/` lie outside it.
 
 **Next:** the reads, with the note's commit, the fresh controls first.
+
+## 11. 2026-11-04T19:12:02Z: the fresh controls passed, and the rows' readings
+
+**The fresh controls,** on Blake's word ("Start the reads"), with the note's commit `beb7eee2`: 12 reads, 8 identities, 4 readings and the check `fresh_4f6e521d36a7`, none failed. The check passed with no miss (`run/out/fresh_pass_4f6e521d36a7.json`): P5 at 0.24, C3R/R4 at 0.20 Unresolved as built and converged changed; P5 at 0.30, C3R/R4 at 0.30, C2b at 0.30, C2a/R5 at 0.30 converged both ways, each with the case's own type and indices at all three cutoffs, K1 and branch identity on both pairs, and the two Unresolved as built by their marks' causes, P5's link and C3R/R4's flag.
+
+**The rows:** 18 reads, 12 identities and 6 readings, four at a time, from 15:36Z to 18:58Z, none failed. All 61 read-side job records name the manifest pin `8a812b47`, and every file they log has the SHA-256 they logged.
+
+**What the readings give** (`dev/runs/011_row_readings/`: `row_readings.py`, on the reading files alone, nothing solved or read again):
+- **The twelve,** classified both ways at `N = 24`, 32 and 40, each with M8.17's stored type and indices at every cutoff: T1 Elliptic (2, 0, 2) at 1.41, 32, 45.25, 64 and 72 in `R4` and at 32 in `R5`; T4 in `R4` Elliptic (7, 1, 6) at 4 and Hyperbolic (6, 1, 5) at 8, 11.31, 64 and 72; T5 Elliptic (9, 3, 6) at 45.25. 12 of 12.
+- **The rows,** classified as built and changed: T1 in `R4`, 18 of 18, and in `R5`, 15 of 15, all Elliptic (2, 0, 2); T4 in `R4`, 18 of 18, Elliptic (7, 1, 6) from 0.25 to 4 and Hyperbolic (6, 1, 5) from 5.66 to 72; the coherent row in `R5`, 15 of 15, all Elliptic (0, 0, 0) to 32; T5, 20 of 31, Elliptic (9, 3, 6) wherever classified; T5's second member, 15 of 20 as built and 16 changed, likewise. The two readings differ at one row point, the second member's 0.354.
+- **T5's top.** From 127 to 132 each cutoff's record is Hyperbolic (4, 0, 4) with one quartet off the axis, K1 holds at each, and the rule reads every point converged both ways, `U` at most 0.0056 of its distance to the axis, where the bar is a tenth. None is classified: branch identity fails between `N = 24` and 32 alone, its aligned distance 0.0103 to 0.0106 against the guard of 10⁻², with the records agreeing, while between 32 and 40 it holds at 0.0030 to 0.0032. So `N = 40` leaves T5's top open, as section 4 allowed for from the stored distance between `N = 24` and 32. The quartet's real part at `N = 40`: 0.0649 at 127, 0.0913 at 128, 0.1116 at 129, 0.1285 at 130, 0.1568 at 132.
+- **Below it** the type and indices move with the cutoff: (9, 3, 6) to 112 at `N = 24` and to 120 at 32 and 40; Elliptic (4, 0, 4) at 116 at `N = 24` and at 124 at 32 and 40; Hyperbolic from 120 at `N = 24` and from 126 at 32 and 40. So 116 to 124 differ in structure along the ladder, and at 126 the quartet lies 0.0075 off the axis at `N = 40`, with `U` above a tenth of that.
+- **T5 at 11.31 and 16, and its second member at 4 and 5.66:** a partner set holds one eigenvalue at `N = 24` and two at 32 and 40.
+- **T5's second member.** The pair at 0.25 lies 8.7801×10⁻⁶ apart at `N = 24`, two groups, and 8.7779×10⁻⁶ apart at 32 and 40, one group, its members equal to ten digits between them. The gap does not close, and the point is classified Elliptic (9, 3, 6) both ways. At 0.354 a partner pair 1.25×10⁻⁵ apart is one group at `N = 40` alone: as built its centre steps 6.23×10⁻⁶ and reads non-contracting above the floor, and under A its eigenvalues step 1.62×10⁻¹², so it reads converged. That is P5's mechanism, at a point no record holds. At 128 and 132 it reads as T5 does, Hyperbolic (4, 0, 4) with branch identity failing between `N = 24` and 32; its quartet's real part at `N = 40` is 0.0447 and 0.1233.
+
+**Section 6, against the readings:**
+- The twelve keep their stored type and indices at `N = 40`: **held,** 12 of 12.
+- T5's quartet at `N = 40`: **missed.** Its real part is 0.0913 at 128 and 0.1568 at 132, above every law (0.035 to 0.053; 0.116 to 0.136). From `N = 32` it moved 0.0051 and 0.0035, where the laws asked 0.043 to 0.061 and 0.024 to 0.044.
+- 132 off the axis, and 128 too close to call: 132 **held,** and 128 reads off the axis too, each converged by the rule.
+- The collision near 127 at `N = 40`, with a limit of 127.5 to 128: **missed.** At `N = 40` it lies between 124, Elliptic, and 126, Hyperbolic. On the collision law, the real part squared linear in ε (its slope 0.00403 to 0.00416 between neighbours at `N = 40`), it sits at 125.97, with 118.08 at `N = 24` and 125.75 at 32, and an Aitken limit of 125.98 (INFERRED).
+- An Elliptic stretch with `K` = 4 before the quartet: **held,** at every cutoff.
+- No new link at `N = 40` alone at a stored point of the rows: **held.** The one new link at `N = 40` alone is the second member's at 0.354, which no record holds.
+
+**Next:** T4/R4's locator on (4, 5.66), since the read at 4 classifies it Elliptic, and `N = 48` for T5's top, each by its own dated commit with its terms first (section 4), on Blake's word.
+
+## 12. 2026-11-04T19:54:34Z: the reads' records, before the locator's terms
+
+On Blake's word ("Go after considering"), with both units' reviews of the readings. UA: draft T4/R4's locator terms and its job, and send them for review before any midpoint is solved; no run of the locator yet; `N = 48` stays apart, and the two misses stay recorded as misses. UB: the terms are written knowing these readings, so the reads should be on main first, the outputs or at least their job records with each file's SHA-256, as item 6 on the note had it for the solves.
+
+**This commit carries the reads' records:** the 61 new job records (30 reads, 20 identities, 10 readings and the fresh check), each naming the pin and the SHA-256 of every file it wrote; their 61 logs; `RUNLOG.json`; the 20 branch-identity files; and the fresh pass. The 30 read files and 10 reading files, 292 MB, stay on the bench with the 30 `.npz` solutions, for the record: each is named with its SHA-256 by the job record that wrote it, so the readings the terms are written knowing are fixed by records committed before them.
+
+**The quartet's steps at full digits** (`dev/runs/011_row_readings/quartet_steps.py`, since UB took them from rounded values): at 128, 0.306709, 0.121869 and 0.005136 from `N = 16` to 40; at 132, 0.286455, 0.097391 and 0.003469. Entry 11's 0.0051 and 0.0035 stand; UB's 0.0057 and 0.0032 come from `N = 32` rounded to 0.097 and 0.160. This run's values at `N = 24` and 32 equal M8.17's to within 5.4×10⁻⁹ at 128 and 9.4×10⁻¹⁴ at 132, though its path into them is new.
+
+**Where each missed expectation was stated** (UB): the quartet's real part at `N = 40`, in DESIGN.md section 6 and in the census page's note of 2026-11-04; the collision's place, near 127 with a limit of 127.5 to 128, in DESIGN.md section 6 alone. The note does not carry it.
+
+**For the record and its note** (UB): the coherent row's census entry, that its ladder above 2 did not run, describes M8's record and stays true. A note says MIT's computation reads the row to 32.
+
+**Next:** T4/R4's locator, its terms and its job, for the units' review before any midpoint is solved.

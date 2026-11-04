@@ -1,0 +1,21 @@
+   0.25: read, 17 s
+   0.353553390593: read, 18 s
+   0.5: read, 20 s
+   0.707106781187: read, 18 s
+   1: read, 18 s
+   1.41421356237: read, 19 s
+   2: read, 19 s
+   2.82842712475: read, 20 s
+   4: read, 20 s
+   5.65685424949: read, 20 s
+   8: read, 20 s
+   11.313708499: read, 21 s
+   16: read, 19 s
+   22.627416998: read, 20 s
+   32: read, 17 s
+   45.2548339959: read, 18 s
+   64: read, 18 s
+   90.5096679919: read, 18 s
+   128: read, 17 s
+   132: read, 17 s
+read_T5J_R2_N32: complete, 394 s

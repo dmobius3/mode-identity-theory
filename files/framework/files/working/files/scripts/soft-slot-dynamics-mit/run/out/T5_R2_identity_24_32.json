@@ -1,0 +1,157 @@
+{
+ "0.25": {
+  "aligned_distance": 2.5594320616653714e-07,
+  "same_record": true,
+  "kept": true
+ },
+ "0.353553390593": {
+  "aligned_distance": 5.108060456425325e-07,
+  "same_record": true,
+  "kept": true
+ },
+ "0.5": {
+  "aligned_distance": 1.0185655567276346e-06,
+  "same_record": true,
+  "kept": true
+ },
+ "0.707106781187": {
+  "aligned_distance": 2.0285518695687273e-06,
+  "same_record": true,
+  "kept": true
+ },
+ "1": {
+  "aligned_distance": 4.03299941336795e-06,
+  "same_record": true,
+  "kept": true
+ },
+ "1.41421356237": {
+  "aligned_distance": 7.99839176921406e-06,
+  "same_record": true,
+  "kept": true
+ },
+ "2": {
+  "aligned_distance": 1.5807887173416355e-05,
+  "same_record": true,
+  "kept": true
+ },
+ "2.82842712475": {
+  "aligned_distance": 3.109059702914384e-05,
+  "same_record": true,
+  "kept": true
+ },
+ "4": {
+  "aligned_distance": 6.0731118638588427e-05,
+  "same_record": true,
+  "kept": true
+ },
+ "5.65685424949": {
+  "aligned_distance": 0.00011749669613004211,
+  "same_record": true,
+  "kept": true
+ },
+ "8": {
+  "aligned_distance": 0.00022429288521024144,
+  "same_record": true,
+  "kept": true
+ },
+ "11.313708499": {
+  "aligned_distance": 0.0004202473852532403,
+  "same_record": true,
+  "kept": true
+ },
+ "16": {
+  "aligned_distance": 0.0007674096312887436,
+  "same_record": true,
+  "kept": true
+ },
+ "22.627416998": {
+  "aligned_distance": 0.0013533870794134042,
+  "same_record": true,
+  "kept": true
+ },
+ "32": {
+  "aligned_distance": 0.002280533889327988,
+  "same_record": true,
+  "kept": true
+ },
+ "45.2548339959": {
+  "aligned_distance": 0.0036342695713876202,
+  "same_record": true,
+  "kept": true
+ },
+ "64": {
+  "aligned_distance": 0.005445642715792251,
+  "same_record": true,
+  "kept": true
+ },
+ "76": {
+  "aligned_distance": 0.006507525940463213,
+  "same_record": true,
+  "kept": true
+ },
+ "90.5096679919": {
+  "aligned_distance": 0.007693039062235512,
+  "same_record": true,
+  "kept": true
+ },
+ "100": {
+  "aligned_distance": 0.008416794614268471,
+  "same_record": true,
+  "kept": true
+ },
+ "106": {
+  "aligned_distance": 0.008855684783320307,
+  "same_record": true,
+  "kept": true
+ },
+ "112": {
+  "aligned_distance": 0.009281326475096297,
+  "same_record": true,
+  "kept": true
+ },
+ "116": {
+  "aligned_distance": 0.00955818922638284,
+  "same_record": false,
+  "kept": false
+ },
+ "120": {
+  "aligned_distance": 0.009829830255744177,
+  "same_record": false,
+  "kept": false
+ },
+ "124": {
+  "aligned_distance": 0.010096484038009957,
+  "same_record": false,
+  "kept": false
+ },
+ "126": {
+  "aligned_distance": 0.010228009272566896,
+  "same_record": true,
+  "kept": false
+ },
+ "127": {
+  "aligned_distance": 0.010293332840810455,
+  "same_record": true,
+  "kept": false
+ },
+ "128": {
+  "aligned_distance": 0.010358367882485921,
+  "same_record": true,
+  "kept": false
+ },
+ "129": {
+  "aligned_distance": 0.01042311745476138,
+  "same_record": true,
+  "kept": false
+ },
+ "130": {
+  "aligned_distance": 0.010487584537749535,
+  "same_record": true,
+  "kept": false
+ },
+ "132": {
+  "aligned_distance": 0.010615682916758467,
+  "same_record": true,
+  "kept": false
+ }
+}

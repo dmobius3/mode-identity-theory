@@ -1,0 +1,341 @@
+A. The twelve: M8.17's stored type and indices at N = 16, 24, 32; this run's records at N = 24, 32, 40, its classification as built and changed, and branch identity's aligned distance on both pairs
+  T1_R4    1.414: stored Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; now Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; as built Elliptic (2, 0, 2), changed Elliptic (2, 0, 2); identity 24-32 3.68e-07, 32-40 5.71e-10; same type and indices: True
+  T1_R4   32.000: stored Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; now Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; as built Elliptic (2, 0, 2), changed Elliptic (2, 0, 2); identity 24-32 7.43e-05, 32-40 1.67e-06; same type and indices: True
+  T1_R4   45.255: stored Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; now Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; as built Elliptic (2, 0, 2), changed Elliptic (2, 0, 2); identity 24-32 0.00011, 32-40 3.03e-06; same type and indices: True
+  T1_R4   64.000: stored Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; now Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; as built Elliptic (2, 0, 2), changed Elliptic (2, 0, 2); identity 24-32 0.000154, 32-40 5e-06; same type and indices: True
+  T1_R4   72.000: stored Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; now Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; as built Elliptic (2, 0, 2), changed Elliptic (2, 0, 2); identity 24-32 0.000171, 32-40 5.82e-06; same type and indices: True
+  T1_R5   32.000: stored Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; now Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2; as built Elliptic (2, 0, 2), changed Elliptic (2, 0, 2); identity 24-32 3.99e-05, 32-40 3.77e-07; same type and indices: True
+  T4_R4    4.000: stored Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6; now Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6; as built Elliptic (7, 1, 6), changed Elliptic (7, 1, 6); identity 24-32 1.79e-05, 32-40 1.56e-07; same type and indices: True
+  T4_R4    8.000: stored Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1; now Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1; as built Hyperbolic (6, 1, 5), changed Hyperbolic (6, 1, 5); identity 24-32 6.43e-05, 32-40 1.06e-06; same type and indices: True
+  T4_R4   11.314: stored Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1; now Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1; as built Hyperbolic (6, 1, 5), changed Hyperbolic (6, 1, 5); identity 24-32 0.00012, 32-40 2.7e-06; same type and indices: True
+  T4_R4   64.000: stored Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1; now Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1; as built Hyperbolic (6, 1, 5), changed Hyperbolic (6, 1, 5); identity 24-32 0.00226, 32-40 0.000218; same type and indices: True
+  T4_R4   72.000: stored Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2; now Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2; as built Hyperbolic (6, 1, 5), changed Hyperbolic (6, 1, 5); identity 24-32 0.0027, 32-40 0.000283; same type and indices: True
+  T5_R2   45.255: stored Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6; now Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6; as built Elliptic (9, 3, 6), changed Elliptic (9, 3, 6); identity 24-32 0.00363, 32-40 0.000507; same type and indices: True
+  the twelve keep their stored type and indices at N = 40, classified both ways: 12 of 12
+
+B. Every row's ladder: the records at N = 24, 32, 40; the classification as built and changed; branch identity's aligned distance on both pairs (the guard is 1e-2); the causes where a point is not classified
+  T1_R4 (R4), 18 points: classified 18 as built, 18 changed
+       0.2500  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.2e-08, 3.37e-12
+       0.3536  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.4e-08, 9.48e-12
+       0.5000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 4.77e-08, 2.66e-11
+       0.7071  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 9.46e-08, 7.43e-11
+       1.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.87e-07, 2.07e-10
+       1.4142  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 3.68e-07, 5.71e-10
+       2.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 7.2e-07, 1.56e-09
+       2.8284  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.4e-06, 4.22e-09
+       4.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.67e-06, 1.12e-08
+       5.6569  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 5.03e-06, 2.9e-08
+       8.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 9.27e-06, 7.27e-08
+      11.3137  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.66e-05, 1.75e-07
+      16.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.87e-05, 3.97e-07
+      22.6274  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 4.74e-05, 8.47e-07
+      32.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 7.43e-05, 1.67e-06
+      45.2548  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 0.00011, 3.03e-06
+      64.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 0.000154, 5e-06
+      72.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 0.000171, 5.82e-06
+  T4_R4 (R4), 18 points: classified 18 as built, 18 changed
+       0.2500  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 7.91e-08, 4.57e-11
+       0.3536  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 1.58e-07, 1.29e-10
+       0.5000  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 3.14e-07, 3.61e-10
+       0.7071  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 6.23e-07, 1.01e-09
+       1.0000  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 1.23e-06, 2.82e-09
+       1.4142  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 2.43e-06, 7.81e-09
+       2.0000  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 4.78e-06, 2.15e-08
+       2.8284  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 9.3e-06, 5.84e-08
+       4.0000  Elli 7,1,6 | Elli 7,1,6 | Elli 7,1,6  ->  Elliptic (7, 1, 6); identity 1.79e-05, 1.56e-07
+       5.6569  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 3.42e-05, 4.12e-07
+       8.0000  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 6.43e-05, 1.06e-06
+      11.3137  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 0.00012, 2.7e-06
+      16.0000  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 0.000221, 6.79e-06
+      22.6274  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 0.000407, 1.69e-05
+      32.0000  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 0.000738, 4.12e-05
+      45.2548  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 0.00131, 9.69e-05
+      64.0000  Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1 | Hype 6,1,5 off-axis 1  ->  Hyperbolic (6, 1, 5); identity 0.00226, 0.000218
+      72.0000  Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2 | Hype 6,1,5 off-axis 2  ->  Hyperbolic (6, 1, 5); identity 0.0027, 0.000283
+  T1_R5 (R5), 15 points: classified 15 as built, 15 changed
+       0.2500  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 7.17e-09, 9.39e-13
+       0.3536  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.43e-08, 2.64e-12
+       0.5000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.84e-08, 7.39e-12
+       0.7071  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 5.63e-08, 2.06e-11
+       1.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.11e-07, 5.73e-11
+       1.4142  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.19e-07, 1.58e-10
+       2.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 4.27e-07, 4.31e-10
+       2.8284  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 8.26e-07, 1.16e-09
+       4.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.58e-06, 3.05e-09
+       5.6569  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.95e-06, 7.8e-09
+       8.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 5.4e-06, 1.92e-08
+      11.3137  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 9.56e-06, 4.51e-08
+      16.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 1.62e-05, 9.94e-08
+      22.6274  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 2.62e-05, 2.03e-07
+      32.0000  Elli 2,0,2 | Elli 2,0,2 | Elli 2,0,2  ->  Elliptic (2, 0, 2); identity 3.99e-05, 3.77e-07
+  T5_R2 (R2), 31 points: classified 20 as built, 20 changed
+       0.2500  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 2.56e-07, 2.36e-10
+       0.3536  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 5.11e-07, 6.67e-10
+       0.5000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 1.02e-06, 1.88e-09
+       0.7071  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 2.03e-06, 5.29e-09
+       1.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 4.03e-06, 1.48e-08
+       1.4142  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 8e-06, 4.16e-08
+       2.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 1.58e-05, 1.16e-07
+       2.8284  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 3.11e-05, 3.21e-07
+       4.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 6.07e-05, 8.83e-07
+       5.6569  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.000117, 2.4e-06
+       8.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.000224, 6.41e-06
+      11.3137  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  not classified; identity 0.00042, 1.68e-05
+               as built: the rule reads it Unresolved: partner set at -6.99597e-16+5.53881j (+1): the set's count differs between cutoffs; partner set at -6.99597e-16+5.53881j (+1): the set's count differs between cutoffs; partner set at -6.99597e-16+5.53881j (+1): the set's count differs between cutoffs
+      16.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  not classified; identity 0.000767, 4.24e-05
+               as built: the rule reads it Unresolved: partner set at -2.7761e-15+5.36336j (+1): the set's count differs between cutoffs; partner set at -2.7761e-15+5.36336j (+1): the set's count differs between cutoffs; partner set at -2.7761e-15+5.36336j (+1): the set's count differs between cutoffs
+      22.6274  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00135, 0.000103
+      32.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00228, 0.000237
+      45.2548  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00363, 0.000507
+      64.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00545, 0.001
+      76.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00651, 0.00137
+      90.5097  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00769, 0.00182
+     100.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00842, 0.00213
+     106.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00886, 0.00232
+     112.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00928, 0.00252
+     116.0000  Elli 4,0,4 | Elli 9,3,6 | Elli 9,3,6  ->  not classified; identity 0.00956 fails, 0.00265
+               as built: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -1.09137e-14+0.355471j (+2): the set's count differs between cutoffs
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.00956, the records differ
+     120.0000  Hype 4,0,4 off-axis 1 | Elli 9,3,6 | Elli 9,3,6  ->  not classified; identity 0.00983 fails, 0.00278
+               as built: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 4.50588e-15+0.326446j (+2): the set's count differs between cutoffs
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.00983, the records differ
+     124.0000  Hype 4,0,4 off-axis 1 | Elli 4,0,4 | Elli 4,0,4  ->  not classified; identity 0.0101 fails, 0.0029
+               as built: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 5.24784e-15+0.312519j (+1): the set's count differs between cutoffs; tested set at -2.54131e-15+5.03508j (+12): the set's count differs between cutoffs
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0101, the records differ
+     126.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0102 fails, 0.00297
+               as built: the rule reads it Unresolved: tested group at 0.00750184+0.153725j: U 3.88e-03 above a tenth of its distance to the imaginary axis, 7.50e-03
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0102, the records agree
+     127.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0103 fails, 0.003
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0103, the records agree
+     128.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0104 fails, 0.00303
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree
+     129.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0104 fails, 0.00306
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree
+     130.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0105 fails, 0.0031
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0105, the records agree
+     132.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0106 fails, 0.00316
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0106, the records agree
+  T5J_R2 (R2), 20 points: classified 15 as built, 16 changed
+       0.2500  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 2.56e-07, 2.36e-10
+       0.3536  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  not classified | changed Elliptic (9, 3, 6); identity 5.11e-07, 6.67e-10
+               as built: the rule reads it Unresolved: partner set at 3.63051e-16+6.01021j (+1): non-contracting above the floor; partner set at 3.63051e-16+6.01021j (+1): non-contracting above the floor; partner set at 3.63051e-16+6.01021j (+1): non-contracting above the floor
+       0.5000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 1.02e-06, 1.88e-09
+       0.7071  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 2.03e-06, 5.29e-09
+       1.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 4.03e-06, 1.48e-08
+       1.4142  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 8e-06, 4.16e-08
+       2.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 1.58e-05, 1.16e-07
+       2.8284  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 3.11e-05, 3.21e-07
+       4.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  not classified; identity 6.07e-05, 8.83e-07
+               as built: the rule reads it Unresolved: partner set at -4.77373e-16+5.84336j (+1): the set's count differs between cutoffs; partner set at -4.77373e-16+5.84336j (+1): the set's count differs between cutoffs; partner set at -4.77373e-16+5.84336j (+1): the set's count differs between cutoffs
+       5.6569  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  not classified; identity 0.000117, 2.4e-06
+               as built: the rule reads it Unresolved: partner set at -5.73596e-16+5.77108j (+1): the set's count differs between cutoffs; partner set at -5.73596e-16+5.77108j (+1): the set's count differs between cutoffs; partner set at -5.73596e-16+5.77108j (+1): the set's count differs between cutoffs
+       8.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.000224, 6.41e-06
+      11.3137  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00042, 1.68e-05
+      16.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.000767, 4.24e-05
+      22.6274  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00135, 0.000103
+      32.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00228, 0.000237
+      45.2548  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00363, 0.000507
+      64.0000  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00545, 0.001
+      90.5097  Elli 9,3,6 | Elli 9,3,6 | Elli 9,3,6  ->  Elliptic (9, 3, 6); identity 0.00769, 0.00182
+     128.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0104 fails, 0.00303
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree
+     132.0000  Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1 | Hype 4,0,4 off-axis 1  ->  not classified; identity 0.0106 fails, 0.00316
+               as built: branch identity fails between N = 24 and 32: aligned distance 0.0106, the records agree
+  C2a_R5 (R5), 15 points: classified 15 as built, 15 changed
+       0.2500  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 1.7e-10, 6.33e-15
+       0.3536  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 3.38e-10, 1.74e-14
+       0.5000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 6.74e-10, 4.88e-14
+       0.7071  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 1.34e-09, 1.37e-13
+       1.0000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 2.66e-09, 3.81e-13
+       1.4142  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 5.25e-09, 1.06e-12
+       2.0000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 1.03e-08, 2.92e-12
+       2.8284  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 2.02e-08, 7.96e-12
+       4.0000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 3.9e-08, 2.14e-11
+       5.6569  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 7.46e-08, 5.65e-11
+       8.0000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 1.4e-07, 1.45e-10
+      11.3137  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 2.57e-07, 3.6e-10
+      16.0000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 4.59e-07, 8.54e-10
+      22.6274  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 7.88e-07, 1.91e-09
+      32.0000  Elli 0,0,0 | Elli 0,0,0 | Elli 0,0,0  ->  Elliptic (0, 0, 0); identity 1.29e-06, 4e-09
+
+C. T5's top, from 64: the records at each cutoff, then the quartet, the rule's row on it at N = 40, and its real part against section 6
+  N = 24: (9, 3, 6) to 112; Elliptic with K = 4 at ['116']; Hyperbolic from 120
+  N = 32: (9, 3, 6) to 120; Elliptic with K = 4 at ['124']; Hyperbolic from 126
+  N = 40: (9, 3, 6) to 120; Elliptic with K = 4 at ['124']; Hyperbolic from 126
+      64: off the axis at N = 24 none | 32 none | 40 none
+      76: off the axis at N = 24 none | 32 none | 40 none
+  90.5097: off the axis at N = 24 none | 32 none | 40 none
+     100: off the axis at N = 24 none | 32 none | 40 none
+     106: off the axis at N = 24 none | 32 none | 40 none
+     112: off the axis at N = 24 none | 32 none | 40 none
+     116: off the axis at N = 24 none | 32 none | 40 none
+     120: off the axis at N = 24 0.09443+0.15744i (complex, size 1) | 32 none | 40 none
+     124: off the axis at N = 24 0.16882+0.15993i (complex, size 1) | 32 none | 40 none
+     126: off the axis at N = 24 0.19530+0.16114i (complex, size 1) | 32 0.03090+0.15398i (complex, size 1) | 40 0.00750+0.15373i (complex, size 1)
+          the rule's as-built row: tested group at 0.00750+0.15373i, U 0.00388, d 0.0075 to the imaginary axis, U/d 0.517, fails: None
+          the rule's changed row: tested group at 0.00750+0.15373i, U 0.00388, d 0.0075 to the imaginary axis, U/d 0.517, fails: None
+     127: off the axis at N = 24 0.20718+0.16173i (complex, size 1) | 32 0.07173+0.15446i (complex, size 1) | 40 0.06491+0.15420i (complex, size 1)
+          the rule's as-built row: tested group at 0.06491+0.15420i, U 0.000361, d 0.0649 to the imaginary axis, U/d 0.00557, ok
+          the rule's changed row: tested group at 0.06491+0.15420i, U 0.000361, d 0.0649 to the imaginary axis, U/d 0.00557, ok
+     128: off the axis at N = 24 0.21835+0.16232i (complex, size 1) | 32 0.09648+0.15494i (complex, size 1) | 40 0.09134+0.15467i (complex, size 1)
+          the rule's as-built row: tested group at 0.09134+0.15467i, U 0.000226, d 0.0913 to the imaginary axis, U/d 0.00248, ok
+          the rule's changed row: tested group at 0.09134+0.15467i, U 0.000226, d 0.0913 to the imaginary axis, U/d 0.00248, ok
+     129: off the axis at N = 24 0.22891+0.16290i (complex, size 1) | 32 0.11595+0.15541i (complex, size 1) | 40 0.11156+0.15514i (complex, size 1)
+          the rule's as-built row: tested group at 0.11156+0.15514i, U 0.000178, d 0.112 to the imaginary axis, U/d 0.00159, ok
+          the rule's changed row: tested group at 0.11156+0.15514i, U 0.000178, d 0.112 to the imaginary axis, U/d 0.00159, ok
+     130: off the axis at N = 24 0.23894+0.16348i (complex, size 1) | 32 0.13249+0.15587i (complex, size 1) | 40 0.12853+0.15560i (complex, size 1)
+          the rule's as-built row: tested group at 0.12853+0.15560i, U 0.000153, d 0.129 to the imaginary axis, U/d 0.00119, ok
+          the rule's changed row: tested group at 0.12853+0.15560i, U 0.000153, d 0.129 to the imaginary axis, U/d 0.00119, ok
+     132: off the axis at N = 24 0.25766+0.16461i (complex, size 1) | 32 0.16027+0.15678i (complex, size 1) | 40 0.15680+0.15650i (complex, size 1)
+          the rule's as-built row: tested group at 0.15680+0.15650i, U 0.000129, d 0.157 to the imaginary axis, U/d 0.00082, ok
+          the rule's changed row: tested group at 0.15680+0.15650i, U 0.000129, d 0.157 to the imaginary axis, U/d 0.00082, ok
+  the quartet's real part at 128: N = 24, 32, 40 [[0.21835], [0.09648], [0.09134]]; section 6 at N = 40: geometric 0.048, algebraic 0.035, square 0.053; within [0.035, 0.053]: False
+  the quartet's real part at 132: N = 24, 32, 40 [[0.25766], [0.16027], [0.1568]]; section 6 at N = 40: geometric 0.127, algebraic 0.116, square 0.136; within [0.116, 0.136]: False
+  the collision at each cutoff: its bracket from the records, then the square-root law, the real part squared linear in eps over the points off the axis (INFERRED; the collision law of section 6)
+    N = 24: between 116 (Elliptic) and 120 by the records; slope 0.00465 to 0.00490 between neighbours, 0.00479 fitted over 8 points; zero at 118.078
+    N = 32: between 124 (Elliptic) and 126 by the records; slope 0.00407 to 0.00419 between neighbours, 0.00412 fitted over 6 points; zero at 125.752
+    N = 40: between 124 (Elliptic) and 126 by the records; slope 0.00403 to 0.00416 between neighbours, 0.00409 fitted over 6 points; zero at 125.969
+    the zeros [118.078, 125.752, 125.969], ratio 0.028, Aitken limit 125.976 (INFERRED; the rate is not shown)
+  T5 and its second member at 128, N = 40: m 107.148393436 and 107.148393676; the quartet 0.09134085+0.15467404j and 0.04471661+0.15685895j, apart by 0.0467; the second member's real part at N = 24, 32, 40 [[0.18317], [0.05269], [0.04472]]
+  T5 and its second member at 132, N = 40: m 110.936779726 and 110.936779726; the quartet 0.15679807+0.15649621j and 0.12328704+0.15841557j, apart by 0.0336; the second member's real part at N = 24, 32, 40 [[0.21992], [0.1268], [0.12329]]
+
+D. T5's second member: the pair at 0.25 (its window as dev/t5j_tau.py takes it), then every set the changed reading formed on the row
+  0.25, N = 24: group sizes [1, 1], members ['6.0151109668', '6.0151197469'], gap 8.78013e-06, margin 3.017e-07
+  0.25, N = 32: group sizes [2], members ['6.0151105130', '6.0151192909'], gap 8.77792e-06, margin 4.130e-07
+  0.25, N = 40: group sizes [2], members ['6.0151105130', '6.0151192909'], gap 8.77792e-06, margin 5.224e-07
+  0.25: partner set at -1.77138e-16+6.01512j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [2], [2]], ok
+        N = 24: ['6.0151197469', '6.0151109668']
+        N = 32: ['6.0151192909', '6.0151105130']
+        N = 40: ['6.0151192909', '6.0151105130']
+  0.353553: partner set at -6.10314e-16+6.01022j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [2]], ok
+        N = 24: ['6.0102204189', '6.0102079545']
+        N = 32: ['6.0102195068', '6.0102070469']
+        N = 40: ['6.0102195068', '6.0102070469']
+        as built: partner set, d2 6.230e-06, d1 9.121e-07, floor 5.345e-07, U inf, d 6.000e+00, fails: non-contracting above the floor
+        as built: partner set, d2 6.230e-06, d1 9.121e-07, floor 5.345e-07, U inf, d 6.002e+00, fails: non-contracting above the floor
+        as built: partner set, d2 6.230e-06, d1 9.121e-07, floor 5.345e-07, U inf, d 6.001e+00, fails: non-contracting above the floor
+        changed: partner set, d2 1.616e-12, d1 9.121e-07, floor 5.345e-07, U 5.345e-07, d 6.000e+00, ok
+        changed: partner set, d2 1.616e-12, d1 9.121e-07, floor 5.345e-07, U 5.345e-07, d 6.002e+00, ok
+        changed: partner set, d2 1.616e-12, d1 9.121e-07, floor 5.345e-07, U 5.345e-07, d 6.001e+00, ok
+  2: partner set at -5.69581e-18+5.93353j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['5.9335574171', '5.9334825762']
+        N = 32: ['5.9335281672', '5.9334534769']
+        N = 40: ['5.9335281658', '5.9334534754']
+  2.82843: partner set at -8.50901e-16+5.89579j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['5.8958473337', '5.8957383411']
+        N = 32: ['5.8957887986', '5.8956801159']
+        N = 40: ['5.8957887929', '5.8956801102']
+  4: partner set at -4.77373e-16+5.84336j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1], [1, 1], [1, 1]], fails: the set's count differs between cutoffs
+        N = 24: ['5.8433210629']
+        N = 32: ['5.8433644981', '5.8432045937']
+        N = 40: ['5.8433644762', '5.8432045717']
+  5.65685: partner set at -5.73596e-16+5.77108j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1], [1, 1], [1, 1]], fails: the set's count differs between cutoffs
+        N = 24: ['5.7710693389']
+        N = 32: ['5.7710753476', '5.7708365474']
+        N = 40: ['5.7710752641', '5.7708364636']
+  8: partner set at -1.83006e-15+5.67242j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['5.6728881579', '5.6725215224']
+        N = 32: ['5.6724207153', '5.6720570196']
+        N = 40: ['5.6724204062', '5.6720567089']
+  11.3137: partner set at -4.96305e-17+5.53972j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['5.5406545977', '5.5400801575']
+        N = 32: ['5.5397241335', '5.5391562125']
+        N = 40: ['5.5397230326', '5.5391551042']
+  16: partner set at 5.67538e-15+5.36481j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['5.3666569594', '5.3657281447']
+        N = 32: ['5.3648135351', '5.3638996978']
+        N = 40: ['5.3648098408', '5.3638959692']
+  22.6274: partner set at -7.31042e-16+5.1406j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['5.1442399572', '5.1426846590']
+        N = 32: ['5.1406116165', '5.1390922609']
+        N = 40: ['5.1406002849', '5.1390807688']
+  32: partner set at -4.63809e-15+4.8639j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['4.8710206395', '4.8683280627']
+        N = 32: ['4.8639336565', '4.8613316856']
+        N = 40: ['4.8639031407', '4.8613004202']
+  45.2548: partner set at -7.62345e-16+4.53918j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['4.5529736153', '4.5482064203']
+        N = 32: ['4.5392481597', '4.5347199872']
+        N = 40: ['4.5391789534', '4.5346474558']
+  64: partner set at 6.89121e-16+4.17409j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['4.2082753332', '4.1998357374']
+        N = 32: ['4.1820309203', '4.1742365402']
+        N = 40: ['4.1740900493', '4.1818975381']
+  90.5097: tested set at -4.9432e-15+0.506309j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['0.4894157462', '0.4480717599']
+        N = 32: ['0.4633050562', '0.5063754696']
+        N = 40: ['0.5063088182', '0.4632302104']
+  90.5097: partner set at 9.8462e-16+3.81903j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['3.8682454391', '3.8537651996']
+        N = 32: ['3.8193067795', '3.8065317565']
+        N = 40: ['3.8190271757', '3.8062090646']
+  128: partner set at -2.19278e-15+3.46464j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['3.5489665856', '3.5722704775']
+        N = 32: ['3.4848455756', '3.4657027705']
+        N = 40: ['3.4646426451', '3.4839019261']
+  132: partner set at -3.46294e-15+3.45652j, 2 eigenvalues, group sizes at N = 24, 32, 40 [[1, 1], [1, 1], [1, 1]], ok
+        N = 24: ['3.5251800296', '3.5493871608']
+        N = 32: ['3.4378566514', '3.4575875199']
+        N = 40: ['3.4565184252', '3.4366611831']
+
+E. Every set the rule formed in the rows (the changed reading, which keeps the members), with its group sizes at N = 24, 32, 40; a stored point is one with a record at N = 32 in M8.17's or M8.16.1's files
+  T1_R4: no set
+  T4_R4: no set
+  T1_R5: no set
+  T5_R2    5.6569 (stored): partner set at -2.23413e-15+5.77069j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2    8.0000 (stored): partner set at -4.94146e-16+5.67263j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2   11.3137 (stored): partner set at -6.99597e-16+5.53881j, 2 eigenvalues, sizes [[1], [1, 1], [1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5_R2   16.0000 (stored): partner set at -2.7761e-15+5.36336j, 2 eigenvalues, sizes [[1], [1, 1], [1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5_R2   22.6274 (stored): partner set at 1.78349e-15+5.13821j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2   32.0000 (stored): partner set at 1.83612e-15+4.86533j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2   45.2548 (stored): partner set at -3.566e-15+4.53223j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2   64.0000 (stored): partner set at -1.65866e-15+4.17008j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2   76.0000: partner set at -1.04534e-15+3.98548j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2   90.5097 (stored): partner set at -2.66702e-16+3.79984j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  100.0000: tested set at -4.70173e-15+0.476828j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  100.0000: partner set at -9.52863e-16+3.72615j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  106.0000: tested set at -1.69226e-16+0.374184j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  106.0000: partner set at -4.61852e-16+3.66929j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  112.0000: tested set at -7.16262e-16+0.392242j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  112.0000: partner set at -2.72761e-15+3.61669j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  116.0000: tested set at -1.09137e-14+0.355471j, 3 eigenvalues, sizes [[1, 1], [1, 1, 1], [1, 1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5_R2  116.0000: partner set at -9.65629e-16+3.54863j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  120.0000: tested set at 4.50588e-15+0.326446j, 3 eigenvalues, sizes [[1], [1, 1, 1], [1, 1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5_R2  120.0000: partner set at 7.97982e-16+3.51602j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  124.0000: tested set at 5.24784e-15+0.312519j, 2 eigenvalues, sizes [[1], [1, 1], [1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5_R2  124.0000: tested set at -2.54131e-15+5.03508j, 13 eigenvalues, sizes [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5_R2  126.0000: partner set at -1.42904e-15+3.50838j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  127.0000: partner set at 1.77493e-15+3.50133j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  128.0000 (stored): partner set at 6.1745e-16+3.45535j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  129.0000: partner set at 1.57683e-15+3.44817j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  130.0000: partner set at -2.15597e-16+3.44106j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5_R2  132.0000 (stored): partner set at -1.4262e-17+3.42711j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2    0.2500 (stored): partner set at -1.77138e-16+6.01512j, 2 eigenvalues, sizes [[1, 1], [2], [2]]; the link differs between cutoffs: True; at N = 40 alone: False; ok
+  T5J_R2    0.3536: partner set at -6.10314e-16+6.01022j, 2 eigenvalues, sizes [[1, 1], [1, 1], [2]]; the link differs between cutoffs: True; at N = 40 alone: True; ok
+  T5J_R2    2.0000 (stored): partner set at -5.69581e-18+5.93353j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2    2.8284: partner set at -8.50901e-16+5.89579j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2    4.0000: partner set at -4.77373e-16+5.84336j, 2 eigenvalues, sizes [[1], [1, 1], [1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5J_R2    5.6569: partner set at -5.73596e-16+5.77108j, 2 eigenvalues, sizes [[1], [1, 1], [1, 1]]; the link differs between cutoffs: True; at N = 40 alone: False; fails: the set's count differs between cutoffs
+  T5J_R2    8.0000: partner set at -1.83006e-15+5.67242j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   11.3137: partner set at -4.96305e-17+5.53972j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   16.0000: partner set at 5.67538e-15+5.36481j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   22.6274: partner set at -7.31042e-16+5.1406j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   32.0000: partner set at -4.63809e-15+4.8639j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   45.2548: partner set at -7.62345e-16+4.53918j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   64.0000: partner set at 6.89121e-16+4.17409j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   90.5097: tested set at -4.9432e-15+0.506309j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2   90.5097: partner set at 9.8462e-16+3.81903j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2  128.0000: partner set at -2.19278e-15+3.46464j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  T5J_R2  132.0000: partner set at -3.46294e-15+3.45652j, 2 eigenvalues, sizes [[1, 1], [1, 1], [1, 1]]; the link differs between cutoffs: False; at N = 40 alone: False; ok
+  C2a_R5: no set
+  a new link at N = 40 alone: 1 [('T5J_R2', 0.353553390593, False)]; at a stored point: 0
+
+F. Section 6, statement by statement
+  the twelve keep their stored type and indices at N = 40: 12 of 12
+  T5's quartet at 128, N = 40: real part [0.09134], section 6 [0.035, 0.048, 0.053]; it moved 0.0051 from N = 32, where the laws asked geometric 0.048, algebraic 0.061, square 0.043; record Hyperbolic; the rule as built converged, changed converged; classified False
+  T5's quartet at 132, N = 40: real part [0.1568], section 6 [0.116, 0.127, 0.136]; it moved 0.0035 from N = 32, where the laws asked geometric 0.033, algebraic 0.044, square 0.024; record Hyperbolic; the rule as built converged, changed converged; classified False
+  the quartet first off the axis at N = 40: 126, after 124 (Elliptic); on the collision law at 125.969, with an Aitken limit of 125.976 (INFERRED); section 6 put it near 127 at N = 40, with a limit of 127.5 to 128
+  an Elliptic stretch with K = 4 before the quartet, N = 24: ['116']
+  an Elliptic stretch with K = 4 before the quartet, N = 32: ['124']
+  an Elliptic stretch with K = 4 before the quartet, N = 40: ['124']
+  a new link at N = 40 alone at a stored point of the rows: 0

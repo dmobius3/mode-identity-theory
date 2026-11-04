@@ -1,0 +1,10 @@
+{
+ "job": "identity_fresh_C2a_R5_24_32",
+ "files": {
+  "fresh_C2a_R5_identity_24_32.json": "d3207b08754388365dd35142389a6cc720f198049e0f43172c6cd03c846d5d9c"
+ },
+ "t": "2026-11-04T15:34:16Z",
+ "seconds": 23.995184875035193,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 852901888
+}

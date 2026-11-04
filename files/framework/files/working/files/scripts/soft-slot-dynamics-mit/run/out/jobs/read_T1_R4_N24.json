@@ -1,0 +1,10 @@
+{
+ "job": "read_T1_R4_N24",
+ "files": {
+  "T1_R4_N24_read.json": "6c38c2b25c4e50840c26e24fbdf9cc259781d9ffc1915e99b62b40f4f9cce482"
+ },
+ "t": "2026-11-04T18:54:33Z",
+ "seconds": 81.61389112495817,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 2304475136
+}

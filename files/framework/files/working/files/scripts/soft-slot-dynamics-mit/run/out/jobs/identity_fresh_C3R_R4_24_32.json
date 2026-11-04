@@ -1,0 +1,10 @@
+{
+ "job": "identity_fresh_C3R_R4_24_32",
+ "files": {
+  "fresh_C3R_R4_identity_24_32.json": "9c5421b52342e82ad0ed2f736c4f7b24f18af0694a3c2bd73e1fd351fc1fdedd"
+ },
+ "t": "2026-11-04T15:33:33Z",
+ "seconds": 13.575100000016391,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 2159804416
+}

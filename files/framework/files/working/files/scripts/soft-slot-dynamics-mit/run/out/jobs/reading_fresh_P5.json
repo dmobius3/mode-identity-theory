@@ -1,0 +1,10 @@
+{
+ "job": "reading_fresh_P5",
+ "files": {
+  "fresh_P5.json": "827acf02f1edcda89bbc2dcae9ec58896cc682d88574d11a3382e46c5b9b7e6c"
+ },
+ "t": "2026-11-04T15:35:42Z",
+ "seconds": 0.20436787500511855,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 100433920
+}

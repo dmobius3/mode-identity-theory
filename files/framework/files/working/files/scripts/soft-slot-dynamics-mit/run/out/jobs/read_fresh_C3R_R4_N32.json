@@ -1,0 +1,10 @@
+{
+ "job": "read_fresh_C3R_R4_N32",
+ "files": {
+  "fresh_C3R_R4_N32_read.json": "f4012af52ead7bb5dab31f78060271d7d1f1ddd3eff50284b60489d3d19c46ab"
+ },
+ "t": "2026-11-04T15:25:59Z",
+ "seconds": 115.06775025004754,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 1541570560
+}

@@ -1,0 +1,10 @@
+{
+ "job": "reading_T5_R2",
+ "files": {
+  "T5_R2.json": "0e1c403061d27dfe65d4ec56ba5f5d4dc623360df6e521422fbd57923e10d09e"
+ },
+ "t": "2026-11-04T18:58:26Z",
+ "seconds": 4.260196874965914,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 334757888
+}

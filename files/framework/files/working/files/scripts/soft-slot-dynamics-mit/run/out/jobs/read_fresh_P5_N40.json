@@ -1,0 +1,10 @@
+{
+ "job": "read_fresh_P5_N40",
+ "files": {
+  "fresh_P5_N40_read.json": "b7b671f6f5caac4c96b81fc722ab05cfce6eef06fe10b6cf6b8e4bd31d806d38"
+ },
+ "t": "2026-11-04T15:32:48Z",
+ "seconds": 626.3708057919866,
+ "manifest": "8a812b476074b3599416e7dc173e3d022d155b0a568329b1273c1b10a2dbd645",
+ "peak_rss_bytes": 1693466624
+}
