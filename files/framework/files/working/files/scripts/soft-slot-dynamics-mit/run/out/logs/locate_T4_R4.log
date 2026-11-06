@@ -1,0 +1,6 @@
+T4/R4 on (4, 5.65685)
+   N = 24: 11 midpoints, interval [5.588897336915544, 5.592133380371584], stopped: K1 fails
+   N = 32: 11 midpoints, interval [5.588897336915544, 5.592133380371584], stopped: K1 fails
+   N = 40: 11 midpoints, interval [5.588897336915544, 5.592133380371584], stopped: K1 fails
+locate_T4_R4: complete, 27261 s
+   T4/R4: index; located: False; N = 32: an unsuccessful stop: K1 fails; N = 40: an unsuccessful stop: K1 fails

@@ -1,0 +1,11 @@
+{
+ "job": "locate_repro_T4_R5",
+ "files": {
+  "LOCATE_REPRO_T4_R5.json": "abb12c1fb34b2ff557f9f9eb2161ebce7c1806a672033ab3e918f5b220921500",
+  "locate_repro_T4_R5_solutions.npz": "9eea9ab8e0028beed22477270ac8f11576739cd219461f71ae6746e5ee8c1042"
+ },
+ "t": "2026-11-05T02:28:10Z",
+ "seconds": 19638.31674400001,
+ "manifest": "340684d5b5c9c9162e8dab76606b8f91607eeaab5a42fac461bb529fd0116c87",
+ "peak_rss_bytes": 2093285376
+}

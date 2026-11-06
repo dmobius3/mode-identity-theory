@@ -10,6 +10,11 @@ Usage: runner.py OUT KIND [--jobs K] [--threads T] [--tags A,B] [--cutoffs N1,N2
                    `fresh` is planned once every fresh control's reading is complete
         locate     T4/R4's locator (run/LOCATOR.md): the reproduction of M8.18's Arm B first, from --source, M8.18's
                    published folder; once it has passed, T4/R4. Each refuses without --note and --repo
+        solves48   T5's top at N = 48 (run/TOP48.md): T5's whole grid and the fresh controls' paths at N = 48
+        rechecks48, reads48, identities48, readings48, fresh48, top48   its reads, each refusing without --note and
+                   --repo: the stored reads at N = 32 and 40 again, then N = 48, branch identity between 40 and 48, the
+                   rule on 32, 40 and 48, the fresh controls' check on the new ladder, and T5's outcome. With no --tags
+                   the first four take the fresh controls, and T5 once `fresh48` has recorded their pass
   --jobs K      how many at once, 4 unless given
   --threads T   VECLIB_MAXIMUM_THREADS for each job; 0, the default, leaves it unset, as M8.18's run did. At 1 a solve
                 is unchanged and as fast, but one record field at N = 24 moves in its round-off (dev/runs/005_leak)
@@ -65,12 +70,30 @@ def read_tags(tags, out):
     return tags
 
 
+def tags_48(tags, out):
+    """What the new ladder may touch: the tags named, or the fresh controls, with T5 once they have passed on the new
+    ladder (run/TOP48.md, section 4). T5 named before that pass refuses here, and in jobs.py."""
+    why = fresh.refusal_48(out)
+    row = grid.TOP48['row']
+    if tags is None:
+        if why:
+            say(f"T5's top waits: {why}")
+        return list(grid.FRESH) + ([] if why else [row])
+    if set(tags) - set(grid.PATHS_48):
+        raise SystemExit(f'refused: the new ladder reads {", ".join(grid.PATHS_48)} alone')
+    if why and row in tags:
+        raise SystemExit(f"refused: T5's top is not read at N = 48 before the fresh controls pass there: {why}")
+    return tags
+
+
 def plan(kind, argv, out):
     """[(job name, jobs.py arguments, rough hours)], longest first."""
     tags = option(argv, '--tags')
     tags = tags.split(',') if tags else None
     if kind in ('reads', 'identities', 'readings'):
         tags = read_tags(tags, out)
+    if kind in ('rechecks48', 'reads48', 'identities48', 'readings48'):
+        tags = tags_48(tags, out)
     cuts = option(argv, '--cutoffs')
     cuts = [int(x) for x in cuts.split(',')] if cuts else list(grid.LADDER)
     src = option(argv, '--source')
@@ -96,6 +119,27 @@ def plan(kind, argv, out):
         if waiting:
             say(f"the fresh check waits for the readings of {', '.join(waiting)}")
         jobs = [] if waiting else [(fresh.names()[0], ['fresh'], 0.01)]
+    elif kind == 'solves48':
+        jobs = [(f'path_{t}_N48', ['path', t, '48'], grid.hours(t, 48)) for t, _ in grid.solves_48()
+                if tags is None or t in tags]
+    elif kind == 'rechecks48':
+        jobs = [(f'recheck48_{t}_N{N}', ['recheck48', t, str(N)], grid.hours(t, N) / 5) for t in tags for N in (32, 40)]
+    elif kind == 'reads48':
+        jobs = [(f'read_{t}_N48', ['read48', t], grid.hours(t, 48) / 5) for t in tags]
+    elif kind == 'identities48':
+        jobs = [(f'identity_{t}_40_48', ['identity48', t], 0.1) for t in tags]
+    elif kind == 'readings48':
+        jobs = [(f'reading48_{t}', ['reading48', t], 0.01) for t in tags]
+    elif kind == 'fresh48':
+        waiting = [t for t in grid.FRESH if not os.path.exists(os.path.join(out, 'jobs', f'reading48_{t}.json'))]
+        if waiting:
+            say(f"the fresh48 check waits for the new ladder's readings of {', '.join(waiting)}")
+        jobs = [] if waiting else [(fresh.names_48()[0], ['fresh48'], 0.01)]
+    elif kind == 'top48':
+        why = fresh.refusal_48(out)
+        if why:
+            raise SystemExit(f"refused: T5's top waits for the fresh controls' pass on the new ladder: {why}")
+        jobs = [('top48', ['top48'], 0.01)]
     elif kind == 'locate':
         import locate                    # here: it loads the instrument, which no other kind's plan needs
         if not os.path.exists(os.path.join(out, 'jobs', locate.REPRO_JOB + '.json')):
@@ -134,7 +178,8 @@ def main():
     threads = int(option(argv, '--threads', '0'))
     note, repo = option(argv, '--note'), option(argv, '--repo')
     tail = ['--note', note, '--repo', repo] if note else []
-    if kind in ('reads', 'identities', 'readings', 'fresh', 'locate') and not (note and repo):
+    if kind in ('reads', 'identities', 'readings', 'fresh', 'locate', 'rechecks48', 'reads48', 'identities48', 'readings48',
+                'fresh48', 'top48') and not (note and repo):
         raise SystemExit('refused: reads need --note and --repo')
     if alive(out):
         raise SystemExit(f'refused: jobs are alive on {out}: {alive(out)}')

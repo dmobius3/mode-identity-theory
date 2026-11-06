@@ -1,0 +1,10 @@
+the reproduction: M8.18's Arm B, T4/R5 on (8, 11.3137)
+   (8, 11.3137): the recomputed path, 12 points, 0 not reproduced
+   N = 16: 10 midpoints, interval [8.851079428938467, 8.854315472394507], complete
+   N = 24: 11 midpoints, interval [8.720990482005668, 8.724873734152915], complete
+   N = 32: 11 midpoints, interval [8.720990482005668, 8.724873734152915], complete
+   the lower guard at 8.63378, from 8: Elliptic
+   the upper guard at 8.81212, from 11.3137: not classified: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested group at 0.000131694+0j: no candidate of its class and Krein sign at a lower cutoff
+   the upper guard at 9.16112, from 11.3137: Hyperbolic
+locate_repro_T4_R5: complete, 19638 s
+   the reproduction passed: stop None; 0 differences from ARM_B.json; 0 of 146 arrays unequal

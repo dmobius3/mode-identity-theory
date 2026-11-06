@@ -1,0 +1,108 @@
+A. The targets and the in-row controls on (24, 32, 40): each cutoff's record; both classifications; branch identity's aligned distance on both pairs (the guard is 1e-2)
+     100 (in-row control): 24 Elli (9, 3, 6) | 32 Elli (9, 3, 6) | 40 Elli (9, 3, 6)
+          as built Elliptic (9, 3, 6), changed Elliptic (9, 3, 6); aligned distance (24, 32) 0.008417, (32, 40) 0.00213
+     106 (in-row control): 24 Elli (9, 3, 6) | 32 Elli (9, 3, 6) | 40 Elli (9, 3, 6)
+          as built Elliptic (9, 3, 6), changed Elliptic (9, 3, 6); aligned distance (24, 32) 0.008856, (32, 40) 0.002324
+     112 (in-row control): 24 Elli (9, 3, 6) | 32 Elli (9, 3, 6) | 40 Elli (9, 3, 6)
+          as built Elliptic (9, 3, 6), changed Elliptic (9, 3, 6); aligned distance (24, 32) 0.009281, (32, 40) 0.002518
+     116 (target): 24 Elli (4, 0, 4) | 32 Elli (9, 3, 6) | 40 Elli (9, 3, 6)
+          as built not classified, changed not classified; aligned distance (24, 32) 0.009558, (32, 40) 0.002648
+          causes as built: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -1.09137e-14+0.355471j (+2): the set's count differs between cutoffs; branch identity fails between N = 24 and 32: aligned distance 0.00956, the records differ
+     120 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Elli (9, 3, 6) | 40 Elli (9, 3, 6)
+          as built not classified, changed not classified; aligned distance (24, 32) 0.00983, (32, 40) 0.002776
+          causes as built: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 4.50588e-15+0.326446j (+2): the set's count differs between cutoffs; branch identity fails between N = 24 and 32: aligned distance 0.00983, the records differ
+     124 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Elli (4, 0, 4) | 40 Elli (4, 0, 4)
+          as built not classified, changed not classified; aligned distance (24, 32) 0.0101, (32, 40) 0.002904
+          causes as built: the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 5.24784e-15+0.312519j (+1): the set's count differs between cutoffs; tested set at -2.54131e-15+5.03508j (+12): the set's count differs between cutoffs; branch identity fails between
+     126 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Hype (4, 0, 4) off-axis 1 | 40 Hype (4, 0, 4) off-axis 1
+          as built not classified, changed not classified; aligned distance (24, 32) 0.01023, (32, 40) 0.002968
+          causes as built: the rule reads it Unresolved: tested group at 0.00750184+0.153725j: U 3.88e-03 above a tenth of its distance to the imaginary axis, 7.50e-03; branch identity fails between N = 24 and 32: aligned distance 0.0102, the records agree
+     127 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Hype (4, 0, 4) off-axis 1 | 40 Hype (4, 0, 4) off-axis 1
+          as built not classified, changed not classified; aligned distance (24, 32) 0.01029, (32, 40) 0.003
+          causes as built: branch identity fails between N = 24 and 32: aligned distance 0.0103, the records agree
+     128 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Hype (4, 0, 4) off-axis 1 | 40 Hype (4, 0, 4) off-axis 1
+          as built not classified, changed not classified; aligned distance (24, 32) 0.01036, (32, 40) 0.003032
+          causes as built: branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree
+     129 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Hype (4, 0, 4) off-axis 1 | 40 Hype (4, 0, 4) off-axis 1
+          as built not classified, changed not classified; aligned distance (24, 32) 0.01042, (32, 40) 0.003064
+          causes as built: branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree
+     130 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Hype (4, 0, 4) off-axis 1 | 40 Hype (4, 0, 4) off-axis 1
+          as built not classified, changed not classified; aligned distance (24, 32) 0.01049, (32, 40) 0.003095
+          causes as built: branch identity fails between N = 24 and 32: aligned distance 0.0105, the records agree
+     132 (target): 24 Hype (4, 0, 4) off-axis 1 | 32 Hype (4, 0, 4) off-axis 1 | 40 Hype (4, 0, 4) off-axis 1
+          as built not classified, changed not classified; aligned distance (24, 32) 0.01062, (32, 40) 0.003159
+          causes as built: branch identity fails between N = 24 and 32: aligned distance 0.0106, the records agree
+
+B. The quartet's real part: the design's three laws, pinned before any read, beside N = 40's reading; then the same laws on N = 24, 32 and 40, at 48 (INFERRED)
+  127: real part at N = 24, 32, 40: 0.207178, 0.071725, 0.064908; steps 0.135453, 0.006818; imaginary part at 40 0.154203
+      refitted (from 24, 32, 40): geometric limit 0.06455, ratio 0.05033, at 48 0.06456; algebraic limit 0.06413, p 10.2, at 48 0.06425; square limit 0.06473, ratio 0.02466, at 48 0.06473
+      the step from 40 to 48: 1.77e-04 to 6.58e-04
+  128: real part at N = 24, 32, 40: 0.218346, 0.096477, 0.091341; steps 0.121869, 0.005136; imaginary part at 40 0.154674
+      pinned (from 16, 24, 32): geometric 0.0481 at 40, 0.0288 at 48; algebraic 0.0346 at 40, -0.0015 at 48; square 0.0534 at 40, 0.0420 at 48; N = 40 reads 0.0913, above every law: True
+      refitted (from 24, 32, 40): geometric limit 0.09111, ratio 0.04215, at 48 0.09112; algebraic limit 0.09084, p 10.84, at 48 0.09091; square limit 0.09120, ratio 0.02514, at 48 0.09121
+      the step from 40 to 48: 1.33e-04 to 4.32e-04
+  129: real part at N = 24, 32, 40: 0.228907, 0.115949, 0.111562; steps 0.112958, 0.004387; imaginary part at 40 0.155139
+      refitted (from 24, 32, 40): geometric limit 0.11138, ratio 0.03884, at 48 0.11139; algebraic limit 0.11116, p 11.13, at 48 0.11122; square limit 0.11144, ratio 0.02562, at 48 0.11145
+      the step from 40 to 48: 1.15e-04 to 3.47e-04
+  130: real part at N = 24, 32, 40: 0.238940, 0.132488, 0.128535; steps 0.106452, 0.003953; imaginary part at 40 0.155597
+      refitted (from 24, 32, 40): geometric limit 0.12838, ratio 0.03714, at 48 0.12839; algebraic limit 0.12819, p 11.29, at 48 0.12823; square limit 0.12843, ratio 0.0261, at 48 0.12843
+      the step from 40 to 48: 1.05e-04 to 3.02e-04
+  132: real part at N = 24, 32, 40: 0.257658, 0.160267, 0.156798; steps 0.097391, 0.003469; imaginary part at 40 0.156496
+      pinned (from 16, 24, 32): geometric 0.1272 at 40, 0.1159 at 48; algebraic 0.1161 at 40, 0.0925 at 48; square 0.1359 at 40, 0.1311 at 48; N = 40 reads 0.1568, above every law: True
+      refitted (from 24, 32, 40): geometric limit 0.15667, ratio 0.03562, at 48 0.15667; algebraic limit 0.15651, p 11.44, at 48 0.15654; square limit 0.15670, ratio 0.02702, at 48 0.15670
+      the step from 40 to 48: 9.48e-05 to 2.56e-04
+
+C. The collision, the real part squared linear in eps over the Hyperbolic points at each cutoff (the square-root law, INFERRED), and the index drop by the records
+  N = 24: (9, 3, 6) to 112; Elliptic with K = 4 at ['116']; Hyperbolic from 120; the collision at 118.078 (slope 0.00479 over 8 points)
+  N = 32: (9, 3, 6) to 120; Elliptic with K = 4 at ['124']; Hyperbolic from 126; the collision at 125.752 (slope 0.00412 over 6 points)
+  N = 40: (9, 3, 6) to 120; Elliptic with K = 4 at ['124']; Hyperbolic from 126; the collision at 125.969 (slope 0.00409 over 6 points)
+  the zeros [118.078, 125.752, 125.969]: ratio 0.0284, Aitken limit 125.976, at 48 by that ratio 125.976; the design's "near 127 at N = 40, with a limit of 127.5 to 128" missed at 40
+
+D. Branch identity at (40, 48), by the ratio of the last two pairs (INFERRED), against the guard
+     100: (24, 32) 0.008417, (32, 40) 0.00213, ratio 0.253; at (40, 48) 0.00054, 19 times under the guard
+     106: (24, 32) 0.008856, (32, 40) 0.002324, ratio 0.262; at (40, 48) 0.00061, 16 times under the guard
+     112: (24, 32) 0.009281, (32, 40) 0.002518, ratio 0.271; at (40, 48) 0.00068, 15 times under the guard
+     116: (24, 32) 0.009558, (32, 40) 0.002648, ratio 0.277; at (40, 48) 0.00073, 14 times under the guard
+     120: (24, 32) 0.00983, (32, 40) 0.002776, ratio 0.282; at (40, 48) 0.00078, 13 times under the guard
+     124: (24, 32) 0.0101, (32, 40) 0.002904, ratio 0.288; at (40, 48) 0.00084, 12 times under the guard
+     126: (24, 32) 0.01023, (32, 40) 0.002968, ratio 0.290; at (40, 48) 0.00086, 12 times under the guard
+     127: (24, 32) 0.01029, (32, 40) 0.003, ratio 0.291; at (40, 48) 0.00087, 11 times under the guard
+     128: (24, 32) 0.01036, (32, 40) 0.003032, ratio 0.293; at (40, 48) 0.00089, 11 times under the guard
+     129: (24, 32) 0.01042, (32, 40) 0.003064, ratio 0.294; at (40, 48) 0.0009, 11 times under the guard
+     130: (24, 32) 0.01049, (32, 40) 0.003095, ratio 0.295; at (40, 48) 0.00091, 11 times under the guard
+     132: (24, 32) 0.01062, (32, 40) 0.003159, ratio 0.298; at (40, 48) 0.00094, 11 times under the guard
+
+E. The tolerances at N = 48, from the N = 40 reads (dev/tolerances.py's method: ||A|| at a new cutoff is the N = 40 value plus the difference of N (N + 2); ||B|| is taken as ||A||, INFERRED)
+  T5_R2 100: margin 1.08e-05 at 40, 1.3e-05 at 48; a new link at 48 alone none; the nearest other gap 6.41e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 5.13e+03; L 4.58e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000234
+  T5_R2 106: margin 1.12e-05 at 40, 1.34e-05 at 48; a new link at 48 alone none; the nearest other gap 4.77e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 3.8e+03; L 3.28e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000234
+  T5_R2 112: margin 1.15e-05 at 40, 1.39e-05 at 48; a new link at 48 alone none; the nearest other gap 2.76e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 2.4e+03; L 1.94e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000235
+  T5_R2 116: margin 1.18e-05 at 40, 1.42e-05 at 48; a new link at 48 alone none; the nearest other gap 1.07e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 1.37e+03; L 1.04e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000236
+  T5_R2 120: margin 1.2e-05 at 40, 1.45e-05 at 48; a new link at 48 alone none; the nearest other gap 1.13e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 200; L 1.37e+07; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000236
+  T5_R2 124: margin 1.23e-05 at 40, 1.47e-05 at 48; a new link at 48 alone none; the nearest other gap 4.65e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 1.39e+03; L 7.72e+07; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000237
+  T5_R2 126: margin 1.24e-05 at 40, 1.49e-05 at 48; a new link at 48 alone none; the nearest other gap 2.13e+05 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 3.45e+03; L 1.23e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000237
+  T5_R2 127: margin 1.25e-05 at 40, 1.49e-05 at 48; a new link at 48 alone none; the nearest other gap 2.11e+05 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 3.73e+03; L 1.45e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000237
+  T5_R2 128: margin 1.25e-05 at 40, 1.5e-05 at 48; a new link at 48 alone none; the nearest other gap 2.1e+05 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 3.99e+03; L 1.68e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000237
+  T5_R2 129: margin 1.26e-05 at 40, 1.51e-05 at 48; a new link at 48 alone none; the nearest other gap 2.09e+05 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 4.22e+03; L 1.91e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000237
+  T5_R2 130: margin 1.27e-05 at 40, 1.52e-05 at 48; a new link at 48 alone none; the nearest other gap 2.08e+05 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 4.44e+03; L 2.14e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000237
+  T5_R2 132: margin 1.28e-05 at 40, 1.53e-05 at 48; a new link at 48 alone none; the nearest other gap 2.05e+05 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 4.83e+03; L 2.59e+08; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000238
+  fresh_P5 0.24: margin 5.42e-07 at 40, 6.51e-07 at 48; a new link at 48 alone none; the nearest other gap 13.1 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 116; L 1.62e+05; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000235
+  fresh_P5 0.3: margin 6.06e-07 at 40, 7.28e-07 at 48; a new link at 48 alone none; the nearest other gap 1.11 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 130; L 2.01e+05; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000235
+      P5 0.24 at N = 24: the groups within 1e-3 of 4.0205i have sizes [1, 1, 1, 1]
+      P5 0.24 at N = 32: the groups within 1e-3 of 4.0205i have sizes [1, 1, 1, 1]
+      P5 0.24 at N = 40: the groups within 1e-3 of 4.0205i have sizes [2, 1, 1]
+      tau at 4.0205 and N = 32: 9.6370e-06
+      tau at 4.0205 and N = 40: 1.2072e-05
+      tau at 4.0205 and N = 48: 1.4491e-05
+  fresh_C3R_R4 0.2: margin 5.38e-07 at 40, 6.46e-07 at 48; a new link at 48 alone none; the nearest other gap 1.99 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 58.6; L 2.36e+05; n(D)'s old zone at 48 holds 1 eigenvalue(s) [-0.01286]; under B the top at 48 is 0.000235
+  fresh_C3R_R4 0.3: margin 6.06e-07 at 40, 7.28e-07 at 48; a new link at 48 alone none; the nearest other gap 2.77 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 78.5; L 3.57e+05; n(D)'s old zone at 48 holds 1 eigenvalue(s) [-0.019016]; under B the top at 48 is 0.000235
+  fresh_C2b 0.3: margin 6.38e-07 at 40, 7.73e-07 at 48; a new link at 48 alone none; the nearest other gap 1.88e+03 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 1.58e+03; L 1.16e+07; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000226
+  fresh_C2a_R5 0.3: margin 6.59e-07 at 40, 7.92e-07 at 48; a new link at 48 alone none; the nearest other gap 8.53 tau(48); K1's separation, A's smallest eigenvalue outside the cluster over 3 margin at 48, 166; L 1.05e+06; n(D)'s old zone at 48 holds 0 eigenvalue(s); under B the top at 48 is 0.000235
+  n(D)'s inherited flag forecast with ||B|| taken as ||A||, against every read record at N = 24, 32 and 40: 369 agree, 0 disagree 
+
+F. The cost: each path's and read's seconds at N = 32 and 40, four jobs at a time, and their ratio carried to 48 (INFERRED; N^9 would give 5.16)
+  T5_R2: 31 points; path 1.88 h at 32, 9.45 h at 40, ratio 5.03 (N^7.24), so 3.75 more at 48: 35.4 h to 48.8 h; a read 110 s a point at 40, 6.9 to 9.5 min at 48
+  fresh_P5: 2 points; path 0.21 h at 32, 1.06 h at 40, ratio 5.00 (N^7.21), so 3.72 more at 48: 3.9 h to 5.5 h; a read 282 s a point at 40, 17.5 to 24.3 min at 48
+  fresh_C3R_R4: 2 points; path 0.23 h at 32, 1.14 h at 40, ratio 5.03 (N^7.24), so 3.74 more at 48: 4.2 h to 5.9 h; a read 284 s a point at 40, 17.7 to 24.4 min at 48
+  fresh_C2b: 1 points; path 0.03 h at 32, 0.16 h at 40, ratio 5.04 (N^7.25), so 3.75 more at 48: 0.6 h to 0.8 h; a read 101 s a point at 40, 6.3 to 8.7 min at 48
+  fresh_C2a_R5: 1 points; path 0.10 h at 32, 0.46 h at 40, ratio 4.60 (N^6.84), so 3.48 more at 48: 1.6 h to 2.4 h; a read 556 s a point at 40, 32.3 to 47.9 min at 48
+  the largest peak resident size of a path or read job at N = 40: 1.68 GiB

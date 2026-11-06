@@ -86,10 +86,12 @@ def main():
     claim('the row, its bracket on the grid, and the reproduction\'s case',
           grid.LOCATOR == dict(row='T4_R4', bracket=(W4[8], W4[9]), repro='T4/R5') and W4[8] == 4.0
           and abs(W4[9] - 4 * 2 ** 0.5) < 1e-14 and W4[7] < W4[8])
-    committed = os.path.join(repo, 'files/framework/files/working/files/scripts/soft-slot-dynamics-mit/run/FROZEN.json')
-    with open(committed, encoding='utf-8') as f:
-        before = set(json.load(f)['allowlist'])
-    claim("the allowlist gains T4/R5 alone, against the run's as committed",
+    reads = subprocess.run(['git', '-C', repo, 'log', '-1', '--format=%H', "--grep=the reads' records, before the locator",
+                            'origin/main'], capture_output=True, text=True, check=True).stdout.strip()
+    before = set(json.loads(subprocess.run(['git', '-C', repo, 'show', f'{reads}:files/framework/files/working/files/scripts/'
+                                            'soft-slot-dynamics-mit/run/FROZEN.json'], capture_output=True, text=True,
+                                           check=True).stdout)['allowlist'])
+    claim(f"the allowlist gains T4/R5 alone, against the run's at the reads' commit, {reads[:8]}",
           set(grid.allowlist()) - before == {'T4/R5'} and before <= set(grid.allowlist()))
     claim("census_lib's locator constants as M8.18 froze them",
           (lib.MOVED, lib.W, lib.W_HALF, lib.DELTAS, lib.AGREE) == (0.4, 1e-3, 5e-4, (0.01, 0.05), 1e-2)

@@ -9,6 +9,9 @@ into 128 and 132, so T5's readings above 90.51 are new solves, and the stored on
 The fresh points are amplitudes no record holds, next to M8.18's two failures, with pass marks stated first (PASS_MARKS;
 DESIGN.md). They are read before any row. P5's pair sits between tau(32) and tau(40) for eps from about 0.230 to 0.258;
 C3R/R4's D eigenvalue sits between the two gray-zone tops for eps from about 0.159 to 0.256.
+
+T5's top at N = 48 (run/TOP48.md) is stated here before any solve at N = 48: the new ladder, T5's targets and
+in-row controls on its own path, the paths at N = 48, and the fresh controls' marks on the new ladder.
 """
 import json
 
@@ -41,6 +44,23 @@ HOURS_40 = dict(T1_R4=8.0, T4_R4=8.9, T1_R5=11.8, T5_R2=5.6, T5J_R2=3.6, C2a_R5=
 # T4/R4's locator (run/LOCATOR.md; DESIGN.md, section 4): the row, its bracket, narrowed from (2.83, 5.66) to (4, 5.66)
 # because the reads classify 4 Elliptic, and the case of the location its job reproduces first, M8.18's Arm B on T4/R5
 LOCATOR = dict(row='T4_R4', bracket=(W4[8], W4[9]), repro='T4/R5')
+# T5's top at N = 48 (run/TOP48.md; DESIGN.md, section 4): the new ladder, all three deciding, with the first ladder's band,
+# guard and both verdicts; the targets, T5's points above 90.51 not classified on the first ladder; the in-row controls,
+# its points above 90.51 classified there, with their marks; and the paths solved at N = 48, each on its own grid
+LADDER_48 = (32, 40, 48)
+LAD_48 = dict(name='48', cutoffs=LADDER_48, deciding=(40, 48), pairs=((32, 40), (40, 48)), beside=True)
+TOP48 = dict(row='T5_R2', targets=(116.0, 120.0, 124.0, 126.0, 127.0, 128.0, 129.0, 130.0, 132.0),
+             in_row=(100.0, 106.0, 112.0), in_row_marks=dict(type='Elliptic', nL=9, nD=3, K=6))
+PATHS_48 = ('T5_R2',) + tuple(FRESH)
+# Each fresh point's marks on the new ladder, stated before any solve at N = 48 (run/TOP48.md, section 4): (as-built
+# verdict, or None where it is reported and not marked; changed verdict; what the as-built Unresolved must rest on:
+# 'flag_40_48' or 'flag_48', D's flag at those cutoffs alone with B clearing it), with the case's own type and indices,
+# K1 and the seed's check at every cutoff
+PASS_MARKS_48 = {('fresh_P5', 0.24): (None, 'converged', None), ('fresh_P5', 0.30): ('converged', 'converged', None),
+                 ('fresh_C3R_R4', 0.20): ('Unresolved', 'converged', 'flag_40_48'),
+                 ('fresh_C3R_R4', 0.30): ('Unresolved', 'converged', 'flag_48'),
+                 ('fresh_C2b', 0.30): ('converged', 'converged', None),
+                 ('fresh_C2a_R5', 0.30): ('converged', 'converged', None)}
 
 
 def entry(tag):
@@ -58,13 +78,18 @@ def entry(tag):
 
 def hours(tag, N):
     """A job's rough length, for the order alone: M8.18's ratios between cutoffs."""
-    return HOURS_40.get(tag, 1.0) / {24: 53.0, 32: 5.1, 40: 1.0}[N]
+    return HOURS_40.get(tag, 1.0) / {24: 53.0, 32: 5.1, 40: 1.0, 48: 1 / 3.75}[N]
 
 
 def solves():
     """Every solve of the computation, longest first."""
     jobs = [(tag, N) for tag in list(FRESH) + list(ROWS) for N in LADDER]
     return sorted(jobs, key=lambda j: -hours(*j))
+
+
+def solves_48():
+    """Every solve at N = 48 (run/TOP48.md), longest first."""
+    return sorted(((tag, 48) for tag in PATHS_48), key=lambda j: -hours(*j))
 
 
 def allowlist():

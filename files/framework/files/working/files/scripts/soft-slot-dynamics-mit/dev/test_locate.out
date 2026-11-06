@@ -1,6 +1,6 @@
 1. The frozen values
 ok   the row, its bracket on the grid, and the reproduction's case
-ok   the allowlist gains T4/R5 alone, against the run's as committed
+ok   the allowlist gains T4/R5 alone, against the run's at the reads' commit, bcee21ad
 ok   census_lib's locator constants as M8.18 froze them
 ok   the code the locator runs is byte for byte M8.18's: 17 of 17 files (instrument/convergence.py aside, whose arm the locator does not use)
 2. The bracket, from the reads

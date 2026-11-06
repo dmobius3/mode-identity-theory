@@ -1,0 +1,11 @@
+{
+ "job": "locate_T4_R4",
+ "files": {
+  "LOCATE_T4_R4.json": "40cdc69c685e46b6ba39f95f557e847e93a3e3e19ceab069f597119d28534009",
+  "locate_T4_R4_solutions.npz": "6b7e6da669d7b39904a6f953b8d31bdebf45f3e1a9bf19245d26ea45bf570d0a"
+ },
+ "t": "2026-11-05T10:02:33Z",
+ "seconds": 27261.067038999987,
+ "manifest": "340684d5b5c9c9162e8dab76606b8f91607eeaab5a42fac461bb529fd0116c87",
+ "peak_rss_bytes": 3535929344
+}

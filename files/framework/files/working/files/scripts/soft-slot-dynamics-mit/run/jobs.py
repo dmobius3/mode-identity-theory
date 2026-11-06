@@ -9,6 +9,13 @@ Usage: jobs.py OUT path TAG N                         a path at one cutoff, solv
        jobs.py OUT reread TAG N SOURCE                M8.18's stored solutions read again, against its records
        jobs.py OUT locate_repro SOURCE --note ...     M8.18's Arm B run again, against its record (run/locate.py)
        jobs.py OUT locate --note ...                  T4/R4's locator, once the reproduction has passed
+       jobs.py OUT recheck48 TAG N --note ...         T5's top at N = 48 (run/TOP48.md): the stored reads at N = 32
+                                                      or 40, at the points the new ladder reads, read again
+       jobs.py OUT read48 TAG --note ...              its records at N = 48, once its recheck has passed
+       jobs.py OUT identity48 TAG --note ...          branch identity between N = 40 and 48
+       jobs.py OUT reading48 TAG --note ...           the rule on N = 32, 40 and 48: both verdicts at every point
+       jobs.py OUT fresh48 --note ...                 the fresh controls against their marks on the new ladder
+       jobs.py OUT top48 --note ...                   T5's in-row controls against their marks, and each target
 
 A job is one file set, in OUT, with a record in OUT/jobs/ holding each file's SHA-256, its time and its peak resident
 size. A path is written point by point, so a killed job resumes at its next point and loses only the one under way. A
@@ -20,6 +27,10 @@ No read of this computation's own solutions runs before the dated note: note_gat
 origin/main whose census page names this tree's manifest pin. No row is read before the fresh controls pass: fresh.refusal
 wants the record of a pass. reread alone needs no note: it refuses any tag but M8.18's controls and any source but M8.18's
 published files, by M8.18's SHA256SUMS, pinned here, so it reads only points whose records are on file.
+
+T5's top at N = 48 (run/TOP48.md) reads only after its recheck has passed, and T5 itself only after the fresh controls
+have passed on the new ladder (fresh.refusal_48). Its paths at N = 48 are path jobs like any other, solved under their
+own pin, which a later tree adds to SOLVE_PINS.
 """
 import json
 import os
@@ -201,6 +212,8 @@ def stored(out, tag, N):
 
 
 def path(out, tag, N):
+    if N > 48 or (N == 48 and tag not in grid.PATHS_48):
+        raise PermissionError(f'no path for {tag} at N = {N}: N = 48 solves grid.PATHS_48 alone (run/TOP48.md)')
     job = Job(out, f'path_{tag}_N{N}')
     if job.done():
         return
@@ -222,6 +235,8 @@ def read(out, tag, N):
     if job.done():
         return
     name, eps, case = grid.entry(tag)
+    if N == 48:
+        eps = points_48(tag)
     devtools.require(case['admission'])
     seed, sols = stored(out, tag, N)
     fname = f'{tag}_N{N}_read.json'
@@ -245,6 +260,8 @@ def identity(out, tag, Na, Nb):
     if job.done():
         return
     name, eps, case = grid.entry(tag)
+    if 48 in (Na, Nb):
+        eps = points_48(tag)
     devtools.require(case['admission'])
     cuts = {N: Cut(name, case, N) for N in (Na, Nb)}
     st = {N: stored(out, tag, N)[1] for N in (Na, Nb)}
@@ -272,33 +289,164 @@ def rule(pts):
                                           hi['record']['margin'], lib.BAND_N, [q['members'] for q in pts])
 
 
-def reading(out, tag):
-    job = Job(out, f'reading_{tag}')
-    if job.done():
-        return
-    name, eps, case = grid.entry(tag)
-    recs = {N: lib.load_json(job.at(f'{tag}_N{N}_read.json')) for N in grid.LADDER}
-    pairs = list(zip(grid.LADDER, grid.LADDER[1:]))
-    ids = {lib.pair_key(p): lib.load_json(job.at(f'{tag}_identity_{p[0]}_{p[1]}.json')) for p in pairs}
-    res = dict(case=case, cutoffs={str(N): recs[N] for N in grid.LADDER}, readings={}, beside={}, changed={}, identity={},
-               both={})
+def ladder_reading(out, tag, ladder, lad, eps=None):
+    """The rule on one ladder at an entry's points, or at eps: both verdicts at every point. On the first ladder it is
+    the reading every row's file holds; on the new one, run/TOP48.md's."""
+    name, all_eps, case = grid.entry(tag)
+    eps = all_eps if eps is None else eps
+    recs = {N: lib.load_json(os.path.join(out, f'{tag}_N{N}_read.json')) for N in ladder}
+    pairs = list(zip(ladder, ladder[1:]))
+    ids = {lib.pair_key(p): lib.load_json(os.path.join(out, f'{tag}_identity_{p[0]}_{p[1]}.json')) for p in pairs}
+    res = dict(case=dict(case, cutoffs=list(ladder)), cutoffs={str(N): recs[N] for N in ladder}, readings={}, beside={},
+               changed={}, identity={}, both={})
     for e in eps:
         k = lib.key(e)
-        pts = [recs[N]['points'].get(k) for N in grid.LADDER]
+        pts = [recs[N]['points'].get(k) for N in ladder]
         res['readings'][k], res['beside'][k], res['changed'][k] = rule(pts)
         res['identity'][k] = {pk: v.get(k) for pk, v in ids.items()}
     res = census.roundtrip(res)
     for e in eps:
         k = lib.key(e)
-        a = lib.here(lib.at(res, e, lib.ARM_A), res['case'], lib.ARM_A)
-        pb = lib.at(dict(res, readings=res['changed']), e, lib.ARM_A)
+        a = lib.here(lib.at(res, e, lad), res['case'], lad)
+        pb = lib.at(dict(res, readings=res['changed']), e, lad)
         pb['identity'] = {lib.pair_key(p): changed.identity(pb['identity'].get(lib.pair_key(p)), pb['points'], p)
-                          for p in lib.ARM_A['pairs']}
-        b = lib.here(pb, res['case'], lib.ARM_A)
+                          for p in lad['pairs']}
+        b = lib.here(pb, res['case'], lad)
         res['both'][k] = dict(as_built=a, changed=b, same=a == b)
+    return res
+
+
+def reading(out, tag):
+    job = Job(out, f'reading_{tag}')
+    if job.done():
+        return
+    res = ladder_reading(out, tag, grid.LADDER, lib.ARM_A)
     fname = f'{tag}.json'
     write_json(job.at(fname), res)
     job.complete([fname])
+
+
+# --- T5's top at N = 48 (run/TOP48.md) --------------------------------------------------------------------------------
+def points_48(tag):
+    """The amplitudes the new ladder reads on one entry: T5's targets and in-row controls, or a fresh control's every
+    point. Any other entry refuses."""
+    name, eps, case = grid.entry(tag)
+    if tag == grid.TOP48['row']:
+        want = {lib.key(e) for e in grid.TOP48['targets'] + grid.TOP48['in_row']}
+        got = [e for e in eps if lib.key(e) in want]
+        if len(got) != len(want):
+            raise RuntimeError("T5's grid does not hold every point the new ladder reads")
+        return got
+    if tag in grid.FRESH:
+        return list(eps)
+    raise PermissionError(f'the new ladder reads T5 and the fresh controls alone, not {tag}')
+
+
+def recheck48(out, tag, N):
+    """The stored solutions at N = 32 or 40, at the points the new ladder reads, read again by this tree, each against
+    its stored read field for field, timings aside (run/TOP48.md, section 4). Nothing new is read."""
+    if N not in grid.LADDER_48[:2]:
+        raise PermissionError(f'the recheck reads N = 32 and 40 alone, not {N}')
+    job = Job(out, f'recheck48_{tag}_N{N}')
+    if job.done():
+        return
+    name, eps, case = grid.entry(tag)
+    devtools.require(case['admission'])
+    seed, sols = stored(out, tag, N)
+    record_of(out, f'read_{tag}_N{N}')
+    theirs = lib.load_json(job.at(f'{tag}_N{N}_read.json'))['points']
+    cu = Cut(name, case, N)
+    res = {}
+    for e in points_48(tag):
+        k, s = lib.key(e), sols[lib.key(e)]
+        mine = census.roundtrip(cu.read(s, e)['point'] if s['ok'] else s['point'])
+        res[k] = lib.differences(mine, theirs[k])
+        say(f'   {k}: {len(res[k])} differences')
+    fname = f'recheck48_{tag}_N{N}.json'
+    write_json(job.at(fname), dict(differences=res, same=not any(res.values())))
+    job.complete([fname])
+
+
+def recheck_refusal(out, tag):
+    """Why the new ladder may not read tag at N = 48 yet, or None once its recheck has passed at N = 32 and 40."""
+    for N in grid.LADDER_48[:2]:
+        job = f'recheck48_{tag}_N{N}'
+        try:
+            record_of(out, job)
+        except PermissionError as e:
+            return str(e)
+        if not lib.load_json(os.path.join(out, job + '.json'))['same']:
+            return f'{job} found a difference from the stored read'
+    return None
+
+
+def reading48(out, tag):
+    """The rule on N = 32, 40 and 48 at the points the new ladder reads, both verdicts at each, from files checked
+    against the jobs that wrote them."""
+    job = Job(out, f'reading48_{tag}')
+    if job.done():
+        return
+    for N in grid.LADDER_48:
+        record_of(out, f'read_{tag}_N{N}')
+    for a, b in grid.LAD_48['pairs']:
+        record_of(out, f'identity_{tag}_{a}_{b}')
+    res = ladder_reading(out, tag, grid.LADDER_48, grid.LAD_48, points_48(tag))
+    fname = f'{tag}_L48.json'
+    write_json(job.at(fname), res)
+    job.complete([fname])
+
+
+def fresh48_job(out):
+    """The fresh controls against their marks on the new ladder: the record fresh.refusal_48 reads."""
+    name, pass_file = fresh.names_48()
+    job = Job(out, name)
+    if job.done():
+        return
+    for tag in sorted({t for t, _ in grid.PASS_MARKS_48}):
+        record_of(out, f'reading48_{tag}')
+    res = fresh.evaluate_48(out)
+    write_json(job.at(pass_file), res)
+    job.complete([pass_file])
+    say(f"   {sum(not v for v in res['results'].values())} of {len(res['results'])} points hold their marks")
+
+
+def top48(out):
+    """T5's top on the new ladder (run/TOP48.md, section 6): each in-row control against its marks, then each target's
+    readings both ways, beside its reading on the first ladder. If an in-row control misses, no target is classified on
+    the new ladder, and each target's reading there is kept as reported."""
+    job = Job(out, 'top48')
+    if job.done():
+        return
+    tag = grid.TOP48['row']
+    record_of(out, f'reading48_{tag}')
+    record_of(out, f'reading_{tag}')
+    new = lib.load_json(os.path.join(out, f'{tag}_L48.json'))
+    first = lib.load_json(os.path.join(out, f'{tag}.json'))
+    marks = grid.TOP48['in_row_marks']
+    controls = {}
+    for e in grid.TOP48['in_row']:
+        k, miss = lib.key(e), []
+        for arm, c in new['both'][k].items():
+            if arm == 'same':
+                continue
+            if not c['classified']:
+                miss.append(f"{arm}: not classified: {'; '.join(c['causes'])}")
+            elif any(c[f] != v for f, v in marks.items()):
+                miss.append(f"{arm}: {c['type']} ({c['nL']}, {c['nD']}, {c['K']}), marked {marks}")
+        controls[k] = miss
+    held = not any(controls.values())
+    targets = {}
+    for e in grid.TOP48['targets']:
+        k, b = lib.key(e), new['both'][lib.key(e)]
+        on_48 = {arm: b[arm] if held else dict(classified=False, causes=['an in-row control missed its marks'],
+                                               reported=b[arm]) for arm in ('as_built', 'changed')}
+        targets[k] = dict(on_48=on_48, same=b['same'], on_first=first['both'][k])
+    res = dict(ladder=list(grid.LADDER_48), first_ladder=list(grid.LADDER), in_row=controls, in_row_held=held,
+               targets=targets)
+    write_json(job.at('TOP48.json'), res)
+    job.complete(['TOP48.json'])
+    say(f"   in-row controls held: {held}; classified on the new ladder, as built: "
+        f"{[k for k, t in targets.items() if t['on_48']['as_built']['classified']]}")
 
 
 def fresh_job(out):
@@ -387,11 +535,39 @@ def main():
         if why:
             raise PermissionError(f'no row is read before the fresh controls pass: {why}')
         locate.locate(out)
+    elif kind in ('recheck48', 'read48', 'identity48', 'reading48', 'fresh48', 'top48'):
+        note_gate(note, repo)
+        if kind == 'fresh48':
+            fresh48_job(out)
+            return
+        tag = grid.TOP48['row'] if kind == 'top48' else args[0]
+        why = fresh.refusal(out) if tag in grid.ROWS else None
+        if not why and tag in grid.ROWS and kind != 'recheck48':
+            why = fresh.refusal_48(out)
+        if why:
+            raise PermissionError(f"no read of T5's top at N = 48 before the fresh controls pass: {why}")
+        if kind == 'top48':
+            top48(out)
+            return
+        if kind == 'recheck48':
+            recheck48(out, tag, int(args[1]))
+            return
+        why = recheck_refusal(out, tag)
+        if why:
+            raise PermissionError(f'no read at N = 48 before the recheck passes: {why}')
+        if kind == 'read48':
+            read(out, tag, 48)
+        elif kind == 'identity48':
+            identity(out, tag, 40, 48)
+        else:
+            reading48(out, tag)
     elif kind in ('read', 'identity', 'reading', 'fresh'):
         note_gate(note, repo)
         if kind == 'fresh':
             fresh_job(out)
             return
+        if kind in ('read', 'identity') and 48 in [int(x) for x in args[1:]]:
+            raise PermissionError('N = 48 is read by read48 and identity48 alone, behind their gates (run/TOP48.md)')
         why = fresh.refusal(out) if args[0] in grid.ROWS else None
         if why:
             raise PermissionError(f'no row is read before the fresh controls pass: {why}')

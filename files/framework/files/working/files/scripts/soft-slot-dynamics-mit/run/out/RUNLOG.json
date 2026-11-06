@@ -981,6 +981,44 @@
   {
    "t": "2026-11-04T18:58:29Z",
    "event": "launch ended; 0 failed: []"
+  },
+  {
+   "t": "2026-11-04T21:00:51Z",
+   "event": "launch: locate, 1 at once, threads 0",
+   "manifest": "340684d5b5c9c9162e8dab76606b8f91607eeaab5a42fac461bb529fd0116c87"
+  },
+  {
+   "t": "2026-11-04T21:00:51Z",
+   "event": "locate_repro_T4_R5 started",
+   "pid": 14575
+  },
+  {
+   "t": "2026-11-05T02:28:10Z",
+   "event": "locate_repro_T4_R5 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-05T02:28:10Z",
+   "event": "launch ended; 0 failed: []"
+  },
+  {
+   "t": "2026-11-05T02:28:11Z",
+   "event": "launch: locate, 1 at once, threads 0",
+   "manifest": "340684d5b5c9c9162e8dab76606b8f91607eeaab5a42fac461bb529fd0116c87"
+  },
+  {
+   "t": "2026-11-05T02:28:11Z",
+   "event": "locate_T4_R4 started",
+   "pid": 21219
+  },
+  {
+   "t": "2026-11-05T10:02:33Z",
+   "event": "locate_T4_R4 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-05T10:02:33Z",
+   "event": "launch ended; 0 failed: []"
   }
  ],
  "jobs": {
@@ -1710,6 +1748,22 @@
    "seconds": 4.019508123397827,
    "peak_rss_bytes": 330891264,
    "cpu_seconds": 4.010287,
+   "ok": true
+  },
+  "locate_repro_T4_R5": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 19638.9629611969,
+   "peak_rss_bytes": 2093285376,
+   "cpu_seconds": 19604.916231000003,
+   "ok": true
+  },
+  "locate_T4_R4": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 27261.540823221207,
+   "peak_rss_bytes": 3535929344,
+   "cpu_seconds": 27252.75948,
    "ok": true
   }
  }

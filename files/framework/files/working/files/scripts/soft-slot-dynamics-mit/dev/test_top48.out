@@ -1,0 +1,96 @@
+1. The frozen values
+ok   T5's points above 90.51 not classified on the first ladder, both ways, are the targets: ['116', '120', '124', '126', '127', '128', '129', '130', '132']
+ok   those classified both ways are the in-row controls: ['100', '106', '112'], and no point above 90.51 is classified one way only
+ok   the in-row controls' marks are their classification on the first ladder, both ways: {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6}
+ok   the new ladder reads those twelve on T5, on its own grid values: [100.0, 106.0, 112.0, 116.0, 120.0, 124.0, 126.0, 127.0, 128.0, 129.0, 130.0, 132.0]
+ok   a fresh control's points are its whole entry, and any other entry refuses
+ok   the new ladder is N = 32, 40 and 48 with pairs (32, 40) and (40, 48), and the band beside it: {'name': '48', 'cutoffs': (32, 40, 48), 'deciding': (40, 48), 'pairs': ((32, 40), (40, 48)), 'beside': True}
+ok   the band and the guard are unchanged: BAND_N 16, BESIDE_N 24, the guard 0.01
+ok   the paths at N = 48 are T5's whole grid, first, and the four fresh entries: [('T5_R2', 48), ('fresh_P5', 48), ('fresh_C3R_R4', 48), ('fresh_C2a_R5', 48), ('fresh_C2b', 48)]
+ok   SOLVE_PINS is the solves' pin alone, 391b097f, the one T5's path at N = 40 ran under
+ok   the fresh marks on the new ladder are for the same six points as the first ladder's
+ok   every module a read runs, 19 files, is byte for byte the reader's at 649bba39, under which the reads at N = 32 and 40 ran: none differs
+ok   and jobs.Cut, which solves and reads each point, is byte for byte the reader's
+2. The first ladder unchanged
+ok   ladder_reading on the first ladder gives T5_R2.json on record, field for field
+ok   ladder_reading on the first ladder gives fresh_P5.json on record, field for field
+ok   ladder_reading on the first ladder gives fresh_C3R_R4.json on record, field for field
+ok   ladder_reading on the first ladder gives fresh_C2b.json on record, field for field
+ok   ladder_reading on the first ladder gives fresh_C2a_R5.json on record, field for field
+ok   fresh.evaluate gives the pass on record, fresh_pass_4f6e521d36a7.json
+ok   and the rows still pass the first gate
+3. The marks on the new ladder, on first-ladder files read as the new ladder's
+ok   C3R/R4 at 0.20, its flag at the top cutoff alone, passes flag_48
+ok   and misses flag_40_48: ["as built Unresolved, and not by the mark's flag_40_48: ['structure: a record is unresolved']"]
+ok   with the flag added at N = 40 too, flag_40_48 passes and flag_48 misses
+ok   a flag B does not clear misses flag_48
+ok   P5 at 0.24, Unresolved as built, passes an unmarked as-built verdict
+ok   and misses a converged one: ["as built Unresolved, marked converged: ['tested set at -7.98366e-17+4.02053j (+1): non-contracting above the floor']"]
+ok   a changed verdict moved misses
+ok   an index moved at N = 48 misses
+ok   a seed's check failed at N = 48 misses
+ok   T5 waits with no fresh48 pass on record
+ok   the fresh48 job and file are named by the new marks, not the first: fresh48_d74efe6efa48, fresh48_pass_d74efe6efa48.json
+fresh48_d74efe6efa48: complete, 0 s
+ok   a failed pass refuses, naming the miss
+fresh48_d74efe6efa48: complete, 0 s
+ok   a pass for other marks refuses
+fresh48_d74efe6efa48: complete, 0 s
+ok   a pass for the new marks lets T5 through
+4. The jobs' gates, in process
+ok   a path at N = 48 outside grid.PATHS_48 refuses
+ok   a path above N = 48 refuses
+ok   no job record was written
+ok   the recheck refuses N = 24 and 48
+ok   with no recheck on record, a read at 48 refuses
+recheck48_fresh_C2b_N32: complete, 0 s
+recheck48_fresh_C2b_N40: complete, 0 s
+ok   a recheck that found a difference refuses
+recheck48_fresh_C2b_N40: complete, 0 s
+ok   a passing recheck at both cutoffs lets the read through
+ok   a recheck file changed after its job logged it refuses
+5. The gates through jobs.py, past the note gate
+ok   in the copy the rows pass the first gate, and T5 waits at the second
+ok   jobs.py read T5_R2 48 refuses N = 48
+ok   jobs.py identity T5_R2 40 48 refuses N = 48
+ok   jobs.py read48 T5_R2 refuses before the fresh48 pass
+ok   jobs.py identity48 T5_R2 refuses before the fresh48 pass
+ok   jobs.py reading48 T5_R2 refuses before the fresh48 pass
+ok   jobs.py top48 refuses before the fresh48 pass
+ok   a fresh control's read at 48 refuses before its recheck
+ok   T5's recheck passes the fresh48 gate and stops at its stored path, none here
+ok   fresh48 refuses without the new ladder's readings
+ok   nothing was written but what the copy holds
+ok   jobs.py read48 with no note refuses
+6. The runner
+ok   solves48 plans T5's whole grid first, then the four fresh paths: ['path_T5_R2_N48', 'path_fresh_P5_N48', 'path_fresh_C3R_R4_N48', 'path_fresh_C2a_R5_N48', 'path_fresh_C2b_N48']
+T5's top waits: the fresh controls have no pass on record
+ok   the reads plan the fresh controls alone before the fresh48 pass
+ok   T5 named before the pass refuses
+ok   an entry outside grid.PATHS_48 refuses
+ok   top48 refuses before the pass
+the fresh48 check waits for the new ladder's readings of fresh_P5, fresh_C3R_R4, fresh_C2b, fresh_C2a_R5
+ok   fresh48 waits for the new ladder's readings
+T5's top waits: the fresh controls have no pass on record
+ok   the rechecks plan N = 32 and 40 for each fresh control
+fresh48_d74efe6efa48: complete, 0 s
+ok   after the pass the reads add T5, and top48 is planned
+reading48_fresh_P5: complete, 0 s
+reading48_fresh_C3R_R4: complete, 0 s
+reading48_fresh_C2b: complete, 0 s
+reading48_fresh_C2a_R5: complete, 0 s
+ok   with every reading on the new ladder, fresh48 is planned
+ok   a read launch with no note refuses
+7. top48 on synthetic readings
+reading48_T5_R2: complete, 0 s
+reading_T5_R2: complete, 0 s
+top48: complete, 0 s
+   in-row controls held: True; classified on the new ladder, as built: ['116', '120', '124', '126', '127', '128', '129', '130', '132']
+ok   with the in-row controls holding, each target keeps its readings both ways, beside the first ladder's
+reading48_T5_R2: complete, 0 s
+reading_T5_R2: complete, 0 s
+top48: complete, 0 s
+   in-row controls held: False; classified on the new ladder, as built: []
+ok   with 106's type moved, the miss is named: ["as_built: Hyperbolic (9, 3, 6), marked {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6}", "changed: Hyperbolic (9, 3, 6), marked {'type': 'Elliptic', 'nL': 9, 'nD': 3, 'K': 6}"]
+ok   and no target is classified on the new ladder, each reading kept as reported
+PASS

@@ -1,0 +1,131 @@
+1. The reproduction: M8.18's Arm B, T4/R5
+   passed True; stop None; 0 differences from ARM_B.json; 0 of 146 arrays unequal
+   run/out/ARM_B.json: the same file in M8.18's folder
+   run/out/arm_b_solutions.npz: the same file in M8.18's folder
+   run/FROZEN.json: the same file in M8.18's folder
+   reference/m8_17/run/out/T4_R5.json: the same file in M8.18's folder
+   reference/m8_17/run/out/locate_T4_R5_8_11.313708499.json: the same file in M8.18's folder
+   reference/m8_17/run/out/CENSUS.json: the same file in M8.18's folder
+
+2. T4/R4 on (4, 5.65685): index bracket, Elliptic to Hyperbolic; n(L) at the ends {'32': [7, 6], '40': [7, 6]}; signed change {'24': -1, '32': -1, '40': -1}
+   the end 4: as built Elliptic, changed Elliptic, same True
+   the end 5.65685: as built Hyperbolic, changed Hyperbolic, same True
+   N = 24: complete False; interval [5.588897336915544, 5.592133380371584], width 0.00323604, 0.000579 of its lower end, where completion asks below 0.0005; stop: K1 fails
+      0 4.828427124746       distance 1.90e-12
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.458e-06, cluster max 2.53e-08, outside min 0.0001568 = 108 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.458e-06, cluster max 3.32e-08, outside min 0.0001568 = 108 margin
+      1 5.242640687119       distance 6.07e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.52e-06, cluster max 4.56e-08, outside min 0.0001178 = 77.5 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.52e-06, cluster max 4.99e-08, outside min 0.0001178 = 77.5 margin
+      2 5.449747468306       distance 1.43e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.55e-06, cluster max 2.39e-08, outside min 7.892e-05 = 50.9 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.55e-06, cluster max 1.78e-08, outside min 7.892e-05 = 50.9 margin
+      3 5.553300858899       distance 1.69e-09
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.565e-06, cluster max 3.13e-08, outside min 4.161e-05 = 26.6 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.565e-06, cluster max 2.97e-08, outside min 4.161e-05 = 26.6 margin
+      4 5.605077554196       distance 2.03e-10
+          from_lower: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 1.573e-06, cluster max 3.7e-08, outside min 2.646e-05 = 16.8 margin
+          from_upper: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 1.573e-06, cluster max 5.23e-08, outside min 2.646e-05 = 16.8 margin
+      5 5.579189206547       distance 5.28e-11
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.569e-06, cluster max 3.83e-08, outside min 2.304e-05 = 14.7 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.569e-06, cluster max 2.81e-08, outside min 2.304e-05 = 14.7 margin
+      6 5.592133380372       distance 7.83e-11
+          from_lower: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 1.571e-06, cluster max 1.14e-08, outside min 8.981e-06 = 5.72 margin
+          from_upper: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 1.571e-06, cluster max 3.44e-08, outside min 8.981e-06 = 5.72 margin
+      7 5.585661293460       distance 1.57e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.57e-06, cluster max 4.06e-08, outside min 1.504e-05 = 9.58 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.57e-06, cluster max 1.62e-08, outside min 1.504e-05 = 9.58 margin
+      8 5.588897336916       distance 1.56e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.57e-06, cluster max 2.04e-08, outside min 8.545e-06 = 5.44 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.57e-06, cluster max 2.67e-08, outside min 8.545e-06 = 5.44 margin
+      9 5.590515358644       distance -
+          from_lower: accepted True, its record Unresolved (6, 1, 5); K1 False (V0 True, chains 4, separated False), n(L) 6; margin 1.571e-06, cluster max 1.17e-08, outside min 1.937e-06 = 1.23 margin
+          from_upper: accepted True, its record Unresolved (6, 1, 5); K1 False (V0 True, chains 4, separated False), n(L) 6; margin 1.571e-06, cluster max 4.06e-08, outside min 1.938e-06 = 1.23 margin
+     10 5.590191754298 moved distance -
+          from_lower: accepted True, its record Unresolved (7, 1, 6); K1 False (V0 True, chains 4, separated False), n(L) 7; margin 1.571e-06, cluster max 3.12e-08, outside min 3.407e-06 = 2.17 margin
+          from_upper: accepted True, its record Unresolved (7, 1, 6); K1 False (V0 True, chains 4, separated False), n(L) 7; margin 1.571e-06, cluster max 6.79e-08, outside min 3.407e-06 = 2.17 margin
+   N = 32: complete False; interval [5.588897336915544, 5.592133380371584], width 0.00323604, 0.000579 of its lower end, where completion asks below 0.0005; stop: K1 fails
+      0 4.828427124746       distance 1.88e-12
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.956e-06, cluster max 3.65e-08, outside min 0.0001569 = 80.2 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 1.956e-06, cluster max 3.05e-08, outside min 0.0001569 = 80.2 margin
+      1 5.242640687119       distance 6.07e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.04e-06, cluster max 3.74e-08, outside min 0.0001178 = 57.8 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.04e-06, cluster max 4.06e-08, outside min 0.0001178 = 57.8 margin
+      2 5.449747468306       distance 1.43e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.08e-06, cluster max 3.37e-08, outside min 7.894e-05 = 37.9 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.08e-06, cluster max 7.72e-08, outside min 7.894e-05 = 37.9 margin
+      3 5.553300858899       distance 1.69e-09
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.1e-06, cluster max 2.25e-08, outside min 4.164e-05 = 19.8 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.1e-06, cluster max 2.87e-08, outside min 4.164e-05 = 19.8 margin
+      4 5.605077554196       distance 2.03e-10
+          from_lower: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.11e-06, cluster max 2.27e-08, outside min 2.641e-05 = 12.5 margin
+          from_upper: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.11e-06, cluster max 3.99e-08, outside min 2.641e-05 = 12.5 margin
+      5 5.579189206547       distance 5.27e-11
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.105e-06, cluster max 5.24e-08, outside min 2.31e-05 = 11 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.105e-06, cluster max 2.32e-08, outside min 2.31e-05 = 11 margin
+      6 5.592133380372       distance 1.18e-11
+          from_lower: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.108e-06, cluster max 6.7e-08, outside min 8.834e-06 = 4.19 margin
+          from_upper: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.108e-06, cluster max 4.58e-08, outside min 8.834e-06 = 4.19 margin
+      7 5.585661293460       distance 1.57e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.107e-06, cluster max 3.98e-08, outside min 1.513e-05 = 7.18 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.107e-06, cluster max 7.23e-08, outside min 1.513e-05 = 7.18 margin
+      8 5.588897336916       distance 1.56e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.107e-06, cluster max 1.54e-08, outside min 8.698e-06 = 4.13 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.107e-06, cluster max 4.55e-08, outside min 8.698e-06 = 4.13 margin
+      9 5.590515358644       distance -
+          from_lower: accepted True, its record Unresolved (6, 2, 4); K1 False (V0 False, chains 4, separated False), n(L) 6; margin 2.108e-06, cluster max 1.06e-06, outside min 0.01291 = 6.13e+03 margin
+          from_upper: accepted True, its record Unresolved (6, 2, 4); K1 False (V0 False, chains 4, separated False), n(L) 6; margin 2.108e-06, cluster max 1.07e-06, outside min 0.01291 = 6.13e+03 margin
+     10 5.590191754298 moved distance -
+          from_lower: accepted True, its record Unresolved (7, 1, 6); K1 False (V0 True, chains 4, separated False), n(L) 7; margin 2.107e-06, cluster max 4.87e-08, outside min 3.773e-06 = 1.79 margin
+          from_upper: accepted True, its record Unresolved (7, 1, 6); K1 False (V0 True, chains 4, separated False), n(L) 7; margin 2.107e-06, cluster max 2.25e-08, outside min 3.772e-06 = 1.79 margin
+   N = 40: complete False; interval [5.588897336915544, 5.592133380371584], width 0.00323604, 0.000579 of its lower end, where completion asks below 0.0005; stop: K1 fails
+      0 4.828427124746       distance 1.88e-12
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.452e-06, cluster max 3e-08, outside min 0.0001569 = 64 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.452e-06, cluster max 3.26e-08, outside min 0.0001569 = 64 margin
+      1 5.242640687119       distance 6.07e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.557e-06, cluster max 4.17e-08, outside min 0.0001178 = 46.1 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.557e-06, cluster max 2.59e-08, outside min 0.0001178 = 46.1 margin
+      2 5.449747468306       distance 1.43e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.608e-06, cluster max 3.62e-08, outside min 7.894e-05 = 30.3 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.608e-06, cluster max 4.99e-08, outside min 7.894e-05 = 30.3 margin
+      3 5.553300858899       distance 1.69e-09
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.633e-06, cluster max 8.72e-08, outside min 4.164e-05 = 15.8 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.633e-06, cluster max 5.98e-08, outside min 4.164e-05 = 15.8 margin
+      4 5.605077554196       distance 2.03e-10
+          from_lower: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.645e-06, cluster max 1.86e-08, outside min 2.641e-05 = 9.99 margin
+          from_upper: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.645e-06, cluster max 4.8e-08, outside min 2.641e-05 = 9.99 margin
+      5 5.579189206547       distance 5.28e-11
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.639e-06, cluster max 7.52e-08, outside min 2.31e-05 = 8.75 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.639e-06, cluster max 6.52e-08, outside min 2.31e-05 = 8.75 margin
+      6 5.592133380372       distance 8.56e-12
+          from_lower: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.642e-06, cluster max 9.96e-08, outside min 8.834e-06 = 3.34 margin
+          from_upper: accepted True, its record Hyperbolic (6, 1, 5); K1 True (V0 True, chains 4, separated True), n(L) 6; margin 2.642e-06, cluster max 2.38e-08, outside min 8.834e-06 = 3.34 margin
+      7 5.585661293460       distance 1.57e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.641e-06, cluster max 4.99e-08, outside min 1.513e-05 = 5.73 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.641e-06, cluster max 3.94e-08, outside min 1.513e-05 = 5.73 margin
+      8 5.588897336916       distance 1.56e-08
+          from_lower: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.641e-06, cluster max 3.74e-08, outside min 8.698e-06 = 3.29 margin
+          from_upper: accepted True, its record Elliptic (7, 1, 6); K1 True (V0 True, chains 4, separated True), n(L) 7; margin 2.641e-06, cluster max 3.51e-08, outside min 8.697e-06 = 3.29 margin
+      9 5.590515358644       distance -
+          from_lower: accepted True, its record Unresolved (6, 2, 4); K1 False (V0 False, chains 4, separated False), n(L) 6; margin 2.642e-06, cluster max 1.06e-06, outside min 0.01291 = 4.89e+03 margin
+          from_upper: accepted True, its record Unresolved (6, 2, 4); K1 False (V0 False, chains 4, separated False), n(L) 6; margin 2.642e-06, cluster max 1.07e-06, outside min 0.01291 = 4.89e+03 margin
+     10 5.590191754298 moved distance -
+          from_lower: accepted True, its record Unresolved (7, 1, 6); K1 False (V0 True, chains 4, separated False), n(L) 7; margin 2.642e-06, cluster max 3.04e-08, outside min 3.772e-06 = 1.43 margin
+          from_upper: accepted True, its record Unresolved (7, 1, 6); K1 False (V0 True, chains 4, separated False), n(L) 7; margin 2.642e-06, cluster max 1.63e-08, outside min 3.772e-06 = 1.43 margin
+   located False; union None; span None; guards None; both verdicts None
+   failures: ['N = 32: an unsuccessful stop: K1 fails', 'N = 40: an unsuccessful stop: K1 fails']
+   why: N = 32: an unsuccessful stop: K1 fails; N = 40: an unsuccessful stop: K1 fails
+
+3. INFERRED, outside the rule: the eigenvalue of L that changes sign, and where K1 cannot hold
+   N = 24: the line through 5 accepted midpoints, slope 0.018848, largest residual 5.6e-07; its zero 5.5904150; between the two refused points, by interpolation, 5.5904363
+          |lambda|^2/|mu| at those midpoints 2.517e-06 to 2.53e-06; at the refused points 5.590192: mu -4.603e-06, |lambda| 3.407e-06, ratio 2.522e-06, 5.590515: mu 1.487e-06, |lambda| 1.937e-06, ratio 2.523e-06
+          K1's neighbourhood, |lambda| < 3 margin with margin 1.57e-06: |eps - zero| < 0.0004667, twice that 0.0009334, where completion asks an interval below 0.002794
+          the interval's ends lie 0.001518 below and 0.001718 above the zero; the moved point -0.000223 from it (n(L) 7), the midpoint +0.0001 from it (n(L) 6)
+   N = 32: the line through 5 accepted midpoints, slope 0.018847, largest residual 5.6e-07; its zero 5.5904701; between the two refused points, by interpolation, 5.5904915
+          |lambda|^2/|mu| at those midpoints 2.517e-06 to 2.531e-06; at the refused points 5.590192: mu -5.642e-06, |lambda| 3.773e-06, ratio 2.523e-06, 5.590515: mu 4.481e-07, |lambda| 1.063e-06, ratio 2.523e-06
+          K1's neighbourhood, |lambda| < 3 margin with margin 2.107e-06: |eps - zero| < 0.0008402, twice that 0.00168, where completion asks an interval below 0.002794
+          the interval's ends lie 0.001573 below and 0.001663 above the zero; the moved point -0.000278 from it (n(L) 7), the midpoint +4.53e-05 from it (n(L) 6)
+   N = 40: the line through 5 accepted midpoints, slope 0.018847, largest residual 5.6e-07; its zero 5.5904701; between the two refused points, by interpolation, 5.5904915
+          |lambda|^2/|mu| at those midpoints 2.517e-06 to 2.531e-06; at the refused points 5.590192: mu -5.641e-06, |lambda| 3.772e-06, ratio 2.523e-06, 5.590515: mu 4.491e-07, |lambda| 1.064e-06, ratio 2.523e-06
+          K1's neighbourhood, |lambda| < 3 margin with margin 2.641e-06: |eps - zero| < 0.00132, twice that 0.00264, where completion asks an interval below 0.002794
+          the interval's ends lie 0.001573 below and 0.001663 above the zero; the moved point -0.000278 from it (n(L) 7), the midpoint +4.53e-05 from it (n(L) 6)
