@@ -1019,6 +1019,65 @@
   {
    "t": "2026-11-05T10:02:33Z",
    "event": "launch ended; 0 failed: []"
+  },
+  {
+   "t": "2026-11-06T06:10:43Z",
+   "event": "launch: solves48, 4 at once, threads 0",
+   "manifest": "80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf"
+  },
+  {
+   "t": "2026-11-06T06:10:43Z",
+   "event": "path_T5_R2_N48 started",
+   "pid": 44335
+  },
+  {
+   "t": "2026-11-06T06:10:43Z",
+   "event": "path_fresh_P5_N48 started",
+   "pid": 44336
+  },
+  {
+   "t": "2026-11-06T06:10:43Z",
+   "event": "path_fresh_C3R_R4_N48 started",
+   "pid": 44337
+  },
+  {
+   "t": "2026-11-06T06:10:43Z",
+   "event": "path_fresh_C2a_R5_N48 started",
+   "pid": 44338
+  },
+  {
+   "t": "2026-11-06T08:30:53Z",
+   "event": "path_fresh_C2a_R5_N48 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-06T08:30:53Z",
+   "event": "path_fresh_C2b_N48 started",
+   "pid": 48633
+  },
+  {
+   "t": "2026-11-06T09:14:37Z",
+   "event": "path_fresh_C2b_N48 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-06T11:03:39Z",
+   "event": "path_fresh_C3R_R4_N48 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-06T11:29:41Z",
+   "event": "path_fresh_P5_N48 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-07T05:21:14Z",
+   "event": "path_T5_R2_N48 completed",
+   "exit": 0
+  },
+  {
+   "t": "2026-11-07T05:21:14Z",
+   "event": "launch ended; 0 failed: []"
   }
  ],
  "jobs": {
@@ -1764,6 +1823,46 @@
    "seconds": 27261.540823221207,
    "peak_rss_bytes": 3535929344,
    "cpu_seconds": 27252.75948,
+   "ok": true
+  },
+  "path_T5_R2_N48": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 83430.569917202,
+   "peak_rss_bytes": 1650032640,
+   "cpu_seconds": 83183.819176,
+   "ok": true
+  },
+  "path_fresh_P5_N48": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 19138.237293720245,
+   "peak_rss_bytes": 1580843008,
+   "cpu_seconds": 19052.840531,
+   "ok": true
+  },
+  "path_fresh_C3R_R4_N48": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 17575.80398106575,
+   "peak_rss_bytes": 1496645632,
+   "cpu_seconds": 17492.225122,
+   "ok": true
+  },
+  "path_fresh_C2a_R5_N48": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 8410.072707891464,
+   "peak_rss_bytes": 1295286272,
+   "cpu_seconds": 8351.781588,
+   "ok": true
+  },
+  "path_fresh_C2b_N48": {
+   "starts": 1,
+   "exit": 0,
+   "seconds": 2624.3568959236145,
+   "peak_rss_bytes": 1569554432,
+   "cpu_seconds": 2611.76267,
    "ok": true
   }
  }

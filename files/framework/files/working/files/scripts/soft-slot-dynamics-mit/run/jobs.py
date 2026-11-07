@@ -57,7 +57,8 @@ NOTE_PAGE = 'files/framework/files/working/files/slot-dynamics-census.md'
 NEW_FIELDS = frozenset(('b_resolved', 'd_eigs', 'l_near', 'members'))        # what a read here adds to M8.18's point
 M818_SUMS = '69b88f8c8bacb5722510b1f9110199ac9b6a8cc24112a1aedb8a3a3c594a80b7'   # M8.18's SHA256SUMS, which lists its run/out
 # the manifests the paths were solved under
-SOLVE_PINS = frozenset(('391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65',))
+SOLVE_PINS = frozenset(('391b097fa6164e502c341b384381d19207d943f5692bb67f43a1cb2c28d49c65',
+                        '80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf'))
 
 
 def say(s):

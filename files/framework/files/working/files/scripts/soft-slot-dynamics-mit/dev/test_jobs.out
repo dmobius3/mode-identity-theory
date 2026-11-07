@@ -5,7 +5,7 @@ ok   the resumed path equals the stored one: 1 paths; 28 solve fields and 348 ar
 ok   no checkpoint is left
 ok   a checkpoint that is not a prefix refuses
 ok   no commit refuses
-ok   a commit whose page lacks the pin refuses: the census page at 82ce2462ca2beb937d6f5c88014d4c8f91295033 does not name the manifest pin 80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf
+ok   a commit whose page lacks the pin refuses: the census page at b6d27325040e8e2212b79361efe7d0e8ff8a4629 does not name the manifest pin dbf9e7cfce8bce4186421b1cc126c991e7f99212299a2c4a8b7917d1624aba9e
 ok   a commit off origin/main refuses
 ok   a read through jobs.py with no note refuses
 ok   a reading with no note refuses
@@ -36,7 +36,7 @@ ok   reread refuses a row: reread reads M8.18 controls alone, not T1_R4
 ok   M8.18's own files pass
 ok   a copy of its files passes
 ok   a file that differs refuses: C2b_N24.json differs from M8.18's SHA256SUMS
-ok   another SHA256SUMS refuses: /var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/mit_jobs_ok_75fwi/m5/run/out is not M8.18's published output: its SHA256SUMS is not the pinned one
+ok   another SHA256SUMS refuses: /var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/mit_jobs_xchmdcxf/m5/run/out is not M8.18's published output: its SHA256SUMS is not the pinned one
 ok   a row with no pass on record refuses
 the rows wait: the fresh controls have no pass on record
 ok   a default launch takes the fresh controls alone

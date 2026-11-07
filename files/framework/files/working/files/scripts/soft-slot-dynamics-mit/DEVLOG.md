@@ -284,3 +284,33 @@ Drafted on Blake's word ("Draft if/when gucci") and staged on his word ("get me 
 **Pins:** the manifest moves to `80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf`; the solves' pin is unchanged.
 
 **Next,** on Blake's "go": this commit, pushed, then `runner.py run/out solves48`, T5's whole grid and the four fresh paths at `N = 48`, four at a time, about one to two days (INFERRED). After the last solve, on his word, the reads' tree and note B.
+
+## 16. 2026-11-07T05:33:01Z: the solves at `N = 48` ended, every point accepted
+
+**The solves** at `N = 48` ended at 2026-11-07 05:21:14Z, 23.2 hours after their launch on Blake's "go": all five path jobs, T5's whole grid and the four fresh paths, completed with exit 0, and none failed. Every path log has all its points accepted, 37 in all: T5's 31, P5's and C3R/R4's two each, C2a/R5's and C2b's one each. Each seed's check at 48 passed. Every job record names the manifest the solves ran under, `80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf`, and the 10 files the records logged match their SHA-256; the manifest equalled that pin at the end. These are the only checks `run/TOP48.md` section 7 allows between the two pins, on solve fields alone. Nothing at `N = 48` has been read.
+
+**The reached points.** Every point's reached ε lies within 2.8×10⁻⁶ of its target, relatively. The fresh paths reached the same ε as at `N = 40`, bit for bit. T5's differ from `N = 40`'s at 20 of its 31 points, by at most 2.8×10⁻¹² of the target, as between the earlier cutoffs: 8.2×10⁻¹⁰ from 24 to 32, and 5.6×10⁻¹¹ from 32 to 40.
+
+**The cost,** against section 8's INFERRED projection. T5's path took 83430 s, 23.2 hours: four jobs at a time for its first 5.3 hours and alone after, its points alone taking 1.96 to 2.55 times their `N = 40` time. P5's took 5.32 hours, C3R/R4's 4.88, C2a/R5's 2.34 and C2b's 0.73, each inside its projected range. The peak resident size was 1.21 to 1.54 GiB a job.
+
+**Next,** on Blake's word: the reads' tree (section 7, step 3), `SOLVE_PINS` gaining `80df072c`, re-pinned, in one commit with note B on the census page, its four values filled. Then the reads, each kind after the one before has passed: the recheck, the fresh controls, T5's points, and `top48`.
+
+## 17. 2026-11-07T06:04:36Z: the reads' tree and note B, before any read at `N = 48`
+
+On Blake's word ("commit and push if/when good"), after both units' GO on v1 with no fixes. Nothing at `N = 48` has been read.
+
+**The tree.** `run/jobs.py`'s `SOLVE_PINS` gains `80df072c`, the manifest the five paths at `N = 48` ran under, read from their job records. It is the tree's one change in the manifest, which moves to the pin below; with that line reverted, the tree re-pins to `80df072c` (the packet's arm 1, which UB checked against main). `dev/test_top48.py`'s pin claim follows the change: it asks for the two pins, and two claims beside it ask that each path at `N = 48` pass the solve-state gate, its whole entry held and every point accepted, and that with the first pin alone each refuse, naming "not a solve pin". `dev/runs/015_solve_checks_48/` holds the checks between the two pins: each seed's check, each point's acceptance, each job record's manifest and files, and the launch's events, with 0 failures. Beyond `run/TOP48.md` section 7's two checks, and deciding nothing, it also sets each point's reached amplitude against its record at `N = 40`, as entry 16 reports. Both units kept that look, in the script and in note B, so the record shows where it went past the terms' "only checks".
+
+**The review.** `reads48_review_v1.zip` (`646ac29b`): both units GO with no fixes, keeping all five of my choices: `test_top48` changed in place, the solves' tree's version staying on main at `a27a093c`; the commit's contents, as the dated note's commit chose them; the date; the Status line unchanged; and this entry with the commit. The arms that must go red, the packet's `checks/mutations_v1.py`, went red as named.
+
+**Rerun elsewhere.** Three claims are exact on the run's machine alone, and elsewhere agree to round-off, not bit for bit. `test_top48`'s section 2 claim for T5 differs by one unit in the last place of the unscored `rel_change` at 129, so the packet's mutation check, which asks that exactly two claims fail, finds three. `test_jobs`'s "the resumed path equals the stored one" and "the resumed read equals M8.18's record" fail off this machine, with 16 and 5453 differences where UB ran them. Re-solving C2b at `N = 24`, UB found the solutions agreeing to 1.6×10⁻¹⁶ to 3.6×10⁻¹⁵ relative, `m`, `lam` and the amplitude to the last digit or two, `floor_rel` differing by a factor of 2.2 and Newton's evaluation count at one point: round-off from another machine, not a defect.
+
+**Tests, on this tree:** `dev/test_top48.py`, 68 claims; `dev/test_jobs.py`, 58; `dev/test_locate.py`, 46; all PASS, with outputs equal to the reviewed ones but for a temporary folder's name in `test_jobs.out`.
+
+**The solves' records** ride with this commit: entry 16, the five paths' solve fields at `N = 48`, their job records and logs, and `RUNLOG.json`. Their solutions stay on the bench, each named by its SHA-256 in its job record.
+
+**Note B,** on the census page under § V, step 5, after the locator's note: v2's wording with its four values filled, the date, the two pins and the solves, and the Inputs line naming `run/TOP48.md`. It names this tree's pin, so `jobs.note_gate` passes on its commit.
+
+**Pins:** the manifest moves to `dbf9e7cfce8bce4186421b1cc126c991e7f99212299a2c4a8b7917d1624aba9e`; the solves at `N = 48` ran under `80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf`.
+
+**Next,** on Blake's word: the reads under this pin, each given this commit: `rechecks48` first; then the fresh controls' `reads48`, `identities48`, `readings48` and `fresh48`; then T5's; then `top48`.

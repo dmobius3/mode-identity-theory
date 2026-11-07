@@ -1,0 +1,30 @@
+1. Each path at N = 48: its job record, its seed and its points
+   T5_R2: 2 files as logged, under 80df072c; seed's check passes (crit 6.6e-16); 31 of 31 points accepted; largest |eps reached - eps| 7.5e-07, against 1e-06; 23.18 h
+   fresh_P5: 2 files as logged, under 80df072c; seed's check passes (crit 8.6e-16); 2 of 2 points accepted; largest |eps reached - eps| 2.9e-07, against 1e-06; 5.32 h
+   fresh_C3R_R4: 2 files as logged, under 80df072c; seed's check passes (crit 1.5e-15); 2 of 2 points accepted; largest |eps reached - eps| 1.9e-07, against 1e-06; 4.88 h
+   fresh_C2a_R5: 2 files as logged, under 80df072c; seed's check passes (crit 5.6e-17); 1 of 1 points accepted; largest |eps reached - eps| 8.5e-07, against 1e-06; 2.34 h
+   fresh_C2b: 2 files as logged, under 80df072c; seed's check passes (crit 6.8e-17); 1 of 1 points accepted; largest |eps reached - eps| 1.1e-09, against 1e-06; 0.73 h
+   one manifest for all: True, 80df072cca091ce8722ba593b79580e4132b37db0e9a62a31bc324c445f9ebcf; in SOLVE_PINS: True
+2. The launch, in RUNLOG.json
+   2026-11-06T06:10:43Z launch: solves48, 4 at once, threads 0
+   2026-11-06T06:10:43Z path_T5_R2_N48 started
+   2026-11-06T06:10:43Z path_fresh_P5_N48 started
+   2026-11-06T06:10:43Z path_fresh_C3R_R4_N48 started
+   2026-11-06T06:10:43Z path_fresh_C2a_R5_N48 started
+   2026-11-06T08:30:53Z path_fresh_C2a_R5_N48 completed, exit 0
+   2026-11-06T08:30:53Z path_fresh_C2b_N48 started
+   2026-11-06T09:14:37Z path_fresh_C2b_N48 completed, exit 0
+   2026-11-06T11:03:39Z path_fresh_C3R_R4_N48 completed, exit 0
+   2026-11-06T11:29:41Z path_fresh_P5_N48 completed, exit 0
+   2026-11-07T05:21:14Z path_T5_R2_N48 completed, exit 0
+   2026-11-07T05:21:14Z launch ended; 0 failed: []
+   every path completed with exit 0 and none failed: True
+3. Beyond the two checks, deciding nothing: the reached amplitude against the record at N = 40
+   T5_R2: differs at 20 of 31 points, by at most 2.8e-12 of the amplitude
+   fresh_P5: differs at 0 of 2 points, by at most 0 of the amplitude
+   fresh_C3R_R4: differs at 0 of 2 points, by at most 0 of the amplitude
+   fresh_C2a_R5: differs at 0 of 1 points, by at most 0 of the amplitude
+   fresh_C2b: differs at 0 of 1 points, by at most 0 of the amplitude
+   beside it, T5_R2 from N = 24 to 32: differs at 27 of 31 points, by at most 8.2e-10
+   beside it, T5_R2 from N = 32 to 40: differs at 26 of 31 points, by at most 5.6e-11
+0 failures

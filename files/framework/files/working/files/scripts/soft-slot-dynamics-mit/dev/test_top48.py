@@ -5,8 +5,9 @@ Temporary outputs go to a temporary folder.
   1. The frozen values: the targets and in-row controls follow from T5's reading file on the first ladder, checked
      against its job record, by section 1's rule, and the in-row controls' marks are their classification there; the
      points the new ladder reads; the new ladder, its pairs, the band and the guard; the paths at N = 48, T5's first;
-     SOLVE_PINS, the solves' pin alone; the fresh marks on the same six points; and every module a read runs, byte for
-     byte the one the reads at N = 32 and 40 ran.
+     SOLVE_PINS, the two solves' pins, and each path at N = 48 through the solve-state gate, refused under the first
+     pin alone; the fresh marks on the same six points; and every module a read runs, byte for byte the one the
+     reads at N = 32 and 40 ran.
   2. The first ladder unchanged: jobs.ladder_reading on it gives every reading file on record, T5's and the four fresh
      controls', field for field, and fresh.evaluate gives the pass on record.
   3. The marks on the new ladder, on a first-ladder file read as the new ladder's: C3R/R4's flag, at its top cutoff
@@ -123,8 +124,26 @@ def main():
     claim(f"the paths at N = 48 are T5's whole grid, first, and the four fresh entries: {grid.solves_48()}",
           grid.solves_48()[0] == (t5, 48) and sorted(t for t, _ in grid.solves_48()) == sorted([t5, *grid.FRESH]))
     pin = jobs.record_of(out, f'path_{t5}_N40')['manifest']
-    claim(f"SOLVE_PINS is the solves' pin alone, {pin[:8]}, the one T5's path at N = 40 ran under",
-          jobs.SOLVE_PINS == frozenset((pin,)))
+    pin48 = jobs.record_of(out, f'path_{t5}_N48')['manifest']
+    claim(f"SOLVE_PINS is the two solves' pins: {pin[:8]}, the one T5's path at N = 40 ran under, and {pin48[:8]}, "
+          'the one its path at N = 48 ran under', jobs.SOLVE_PINS == frozenset((pin, pin48)) and pin != pin48)
+    def gate48(t):
+        try:
+            return jobs.stored(out, t, 48)
+        except PermissionError as e:
+            return str(e)
+    held = {t: gate48(t) for t, _ in grid.solves_48()}
+    refused = {t: h for t, h in held.items() if isinstance(h, str)}
+    claim('each path at N = 48 passes the solve-state gate, its whole entry held and every point accepted: '
+          + (', '.join(f'{t} {len(h[1])}' for t, h in held.items()) if not refused else f'refused: {refused}'),
+          not refused and all(sorted(h[1]) == sorted(lib.key(e) for e in grid.entry(t)[1])
+                              and all(s['ok'] for s in h[1].values()) for t, h in held.items()))
+    both, jobs.SOLVE_PINS = jobs.SOLVE_PINS, frozenset((pin,))
+    try:
+        claim('and with SOLVE_PINS the first pin alone, as in the solves\' tree, each refuses as not a solve pin',
+              all(refuses(jobs.stored, out, t, 48, want='not a solve pin') for t, _ in grid.solves_48()))
+    finally:
+        jobs.SOLVE_PINS = both
     claim('the fresh marks on the new ladder are for the same six points as the first ladder\'s',
           set(grid.PASS_MARKS_48) == set(grid.PASS_MARKS))
     reader = subprocess.run(['git', '-C', repo, 'log', '-1', '--format=%H', "--grep=the reader's changes, landed after the "

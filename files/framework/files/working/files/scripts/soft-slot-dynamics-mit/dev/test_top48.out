@@ -7,7 +7,9 @@ ok   a fresh control's points are its whole entry, and any other entry refuses
 ok   the new ladder is N = 32, 40 and 48 with pairs (32, 40) and (40, 48), and the band beside it: {'name': '48', 'cutoffs': (32, 40, 48), 'deciding': (40, 48), 'pairs': ((32, 40), (40, 48)), 'beside': True}
 ok   the band and the guard are unchanged: BAND_N 16, BESIDE_N 24, the guard 0.01
 ok   the paths at N = 48 are T5's whole grid, first, and the four fresh entries: [('T5_R2', 48), ('fresh_P5', 48), ('fresh_C3R_R4', 48), ('fresh_C2a_R5', 48), ('fresh_C2b', 48)]
-ok   SOLVE_PINS is the solves' pin alone, 391b097f, the one T5's path at N = 40 ran under
+ok   SOLVE_PINS is the two solves' pins: 391b097f, the one T5's path at N = 40 ran under, and 80df072c, the one its path at N = 48 ran under
+ok   each path at N = 48 passes the solve-state gate, its whole entry held and every point accepted: T5_R2 31, fresh_P5 2, fresh_C3R_R4 2, fresh_C2a_R5 1, fresh_C2b 1
+ok   and with SOLVE_PINS the first pin alone, as in the solves' tree, each refuses as not a solve pin
 ok   the fresh marks on the new ladder are for the same six points as the first ladder's
 ok   every module a read runs, 19 files, is byte for byte the reader's at 649bba39, under which the reads at N = 32 and 40 ran: none differs
 ok   and jobs.Cut, which solves and reads each point, is byte for byte the reader's
