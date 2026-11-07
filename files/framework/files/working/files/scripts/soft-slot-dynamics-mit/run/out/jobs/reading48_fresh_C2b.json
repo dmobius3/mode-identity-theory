@@ -1,0 +1,10 @@
+{
+ "job": "reading48_fresh_C2b",
+ "files": {
+  "fresh_C2b_L48.json": "45a92ba421837a310d8b421e439f53aed9e41a55f31ea5a0d59bf59cec541dc9"
+ },
+ "t": "2026-11-07T07:11:50Z",
+ "seconds": 0.09985133400186896,
+ "manifest": "dbf9e7cfce8bce4186421b1cc126c991e7f99212299a2c4a8b7917d1624aba9e",
+ "peak_rss_bytes": 93929472
+}

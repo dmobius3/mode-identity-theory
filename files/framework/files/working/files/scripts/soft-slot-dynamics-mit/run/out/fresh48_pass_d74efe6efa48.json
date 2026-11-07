@@ -1,0 +1,61 @@
+{
+ "results": {
+  "fresh_P5 0.24": [],
+  "fresh_P5 0.3": [],
+  "fresh_C3R_R4 0.2": [],
+  "fresh_C3R_R4 0.3": [],
+  "fresh_C2b 0.3": [],
+  "fresh_C2a_R5 0.3": []
+ },
+ "passed": true,
+ "marks": [
+  [
+   "fresh_P5",
+   0.24,
+   null,
+   "converged",
+   null
+  ],
+  [
+   "fresh_P5",
+   0.3,
+   "converged",
+   "converged",
+   null
+  ],
+  [
+   "fresh_C3R_R4",
+   0.2,
+   "Unresolved",
+   "converged",
+   "flag_40_48"
+  ],
+  [
+   "fresh_C3R_R4",
+   0.3,
+   "Unresolved",
+   "converged",
+   "flag_48"
+  ],
+  [
+   "fresh_C2b",
+   0.3,
+   "converged",
+   "converged",
+   null
+  ],
+  [
+   "fresh_C2a_R5",
+   0.3,
+   "converged",
+   "converged",
+   null
+  ]
+ ],
+ "files": {
+  "fresh_C2a_R5_L48.json": "9056c70d87ca709692704c848ea3de400de56a2501f920f420e7eafedbf8cba5",
+  "fresh_C2b_L48.json": "45a92ba421837a310d8b421e439f53aed9e41a55f31ea5a0d59bf59cec541dc9",
+  "fresh_C3R_R4_L48.json": "5fcf76b237d2927aea2a68845f4ef5ef5f0e8ce72d40abfe3d60492bbb9c9c2a",
+  "fresh_P5_L48.json": "907902495ca395119802ab237908bec8a526e6fccf8931adfa5cf60568ab4bbf"
+ }
+}

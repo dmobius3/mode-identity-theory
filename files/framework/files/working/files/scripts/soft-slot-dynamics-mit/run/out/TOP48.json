@@ -1,0 +1,672 @@
+{
+ "ladder": [
+  32,
+  40,
+  48
+ ],
+ "first_ladder": [
+  24,
+  32,
+  40
+ ],
+ "in_row": {
+  "100": [
+   "as_built: not classified: the rule reads it Unresolved: tested group at -5.08961e-15+0.393814j: non-contracting above the floor",
+   "changed: not classified: the rule reads it Unresolved: tested group at -5.08961e-15+0.393814j: non-contracting above the floor"
+  ],
+  "106": [
+   "as_built: not classified: the rule reads it Unresolved: tested group at 2.85116e-15+0.374237j: non-contracting above the floor",
+   "changed: not classified: the rule reads it Unresolved: tested group at 2.85116e-15+0.374237j: non-contracting above the floor"
+  ],
+  "112": []
+ },
+ "in_row_held": false,
+ "targets": {
+  "116": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3,
+      "krein_distance": {
+       "distance": 3.2278851886399273,
+       "left_out": 1294,
+       "negative": 3,
+       "group": [
+        -9.830687950577658e-16,
+        3.583638055647752
+       ],
+       "nearest": [
+        -2.6915231700280987e-15,
+        0.35575286700782444
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3,
+      "krein_distance": {
+       "distance": 3.2278851886399273,
+       "left_out": 1294,
+       "negative": 3,
+       "group": [
+        -9.830687950577658e-16,
+        3.583638055647752
+       ],
+       "nearest": [
+        -2.6915231700280987e-15,
+        0.35575286700782444
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -1.09137e-14+0.355471j (+2): the set's count differs between cutoffs",
+      "branch identity fails between N = 24 and 32: aligned distance 0.00956, the records differ"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -1.09137e-14+0.355471j (+2): the set's count differs between cutoffs",
+      "branch identity fails between N = 24 and 32: aligned distance 0.00956, the records differ"
+     ]
+    },
+    "same": true
+   }
+  },
+  "120": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3,
+      "krein_distance": {
+       "distance": 3.225771408717513,
+       "left_out": 1300,
+       "negative": 3,
+       "group": [
+        1.0502000264420543e-15,
+        3.552326750338088
+       ],
+       "nearest": [
+        5.453826352099815e-16,
+        0.3265553416205749
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 9,
+      "nD": 3,
+      "K": 6,
+      "ki": 3,
+      "krein_distance": {
+       "distance": 3.225771408717513,
+       "left_out": 1300,
+       "negative": 3,
+       "group": [
+        1.0502000264420543e-15,
+        3.552326750338088
+       ],
+       "nearest": [
+        5.453826352099815e-16,
+        0.3265553416205749
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 4.50588e-15+0.326446j (+2): the set's count differs between cutoffs",
+      "branch identity fails between N = 24 and 32: aligned distance 0.00983, the records differ"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 4.50588e-15+0.326446j (+2): the set's count differs between cutoffs",
+      "branch identity fails between N = 24 and 32: aligned distance 0.00983, the records differ"
+     ]
+    },
+    "same": true
+   }
+  },
+  "124": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 2,
+      "krein_distance": {
+       "distance": 3.1721154694267892,
+       "left_out": 1300,
+       "negative": 2,
+       "group": [
+        -4.052357883114775e-15,
+        3.484764244896225
+       ],
+       "nearest": [
+        -1.3659614643992705e-14,
+        0.3126487754694356
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Elliptic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 2,
+      "krein_distance": {
+       "distance": 3.1721154694267892,
+       "left_out": 1300,
+       "negative": 2,
+       "group": [
+        -4.052357883114775e-15,
+        3.484764244896225
+       ],
+       "nearest": [
+        -1.3659614643992705e-14,
+        0.3126487754694356
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 5.24784e-15+0.312519j (+1): the set's count differs between cutoffs; tested set at -2.54131e-15+5.03508j (+12): the set's count differs between cutoffs",
+      "branch identity fails between N = 24 and 32: aligned distance 0.0101, the records differ"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at 5.24784e-15+0.312519j (+1): the set's count differs between cutoffs; tested set at -2.54131e-15+5.03508j (+12): the set's count differs between cutoffs",
+      "branch identity fails between N = 24 and 32: aligned distance 0.0101, the records differ"
+     ]
+    },
+    "same": true
+   }
+  },
+  "126": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -6.11978e-16+0.305675j (+1): the set's count differs between cutoffs; tested set at -2.32012e-16+4.21981j (+14): the set's count differs between cutoffs",
+       "branch identity fails between N = 40 and 48: aligned distance 0.000415, the records differ"
+      ]
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": false,
+      "causes": [
+       "the rule reads it Unresolved: structure: the type, indices, V0 or Krein counts differ along the ladder; tested set at -6.11978e-16+0.305675j (+1): the set's count differs between cutoffs; tested set at -2.32012e-16+4.21981j (+14): the set's count differs between cutoffs",
+       "branch identity fails between N = 40 and 48: aligned distance 0.000415, the records differ"
+      ]
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: tested group at 0.00750184+0.153725j: U 3.88e-03 above a tenth of its distance to the imaginary axis, 7.50e-03",
+      "branch identity fails between N = 24 and 32: aligned distance 0.0102, the records agree"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "the rule reads it Unresolved: tested group at 0.00750184+0.153725j: U 3.88e-03 above a tenth of its distance to the imaginary axis, 7.50e-03",
+      "branch identity fails between N = 24 and 32: aligned distance 0.0102, the records agree"
+     ]
+    },
+    "same": true
+   }
+  },
+  "127": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.1989122116976265,
+       "left_out": 1293,
+       "negative": 1,
+       "group": [
+        2.264974028411584e-16,
+        3.5010965683100865
+       ],
+       "nearest": [
+        -7.887515357465334e-15,
+        0.30218435661246
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.1989122116976265,
+       "left_out": 1293,
+       "negative": 1,
+       "group": [
+        2.264974028411584e-16,
+        3.5010965683100865
+       ],
+       "nearest": [
+        -7.887515357465334e-15,
+        0.30218435661246
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0103, the records agree"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0103, the records agree"
+     ]
+    },
+    "same": true
+   }
+  },
+  "128": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.1954324777966416,
+       "left_out": 1296,
+       "negative": 1,
+       "group": [
+        4.107507279789657e-15,
+        3.4941250652002096
+       ],
+       "nearest": [
+        -4.836360026204407e-17,
+        0.29869258740356774
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.1954324777966416,
+       "left_out": 1296,
+       "negative": 1,
+       "group": [
+        4.107507279789657e-15,
+        3.4941250652002096
+       ],
+       "nearest": [
+        -4.836360026204407e-17,
+        0.29869258740356774
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree"
+     ]
+    },
+    "same": true
+   }
+  },
+  "129": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.192036352129271,
+       "left_out": 1296,
+       "negative": 1,
+       "group": [
+        -3.4362973350924615e-15,
+        3.4872362131528605
+       ],
+       "nearest": [
+        -1.8734905848738677e-16,
+        0.29519986102358964
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.192036352129271,
+       "left_out": 1296,
+       "negative": 1,
+       "group": [
+        -3.4362973350924615e-15,
+        3.4872362131528605
+       ],
+       "nearest": [
+        -1.8734905848738677e-16,
+        0.29519986102358964
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0104, the records agree"
+     ]
+    },
+    "same": true
+   }
+  },
+  "130": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.1887220272184003,
+       "left_out": 1294,
+       "negative": 1,
+       "group": [
+        -1.078092679296478e-15,
+        3.480428697208509
+       ],
+       "nearest": [
+        4.8926224394128154e-17,
+        0.2917066699901087
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.1887220272184003,
+       "left_out": 1294,
+       "negative": 1,
+       "group": [
+        -1.078092679296478e-15,
+        3.480428697208509
+       ],
+       "nearest": [
+        4.8926224394128154e-17,
+        0.2917066699901087
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0105, the records agree"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0105, the records agree"
+     ]
+    },
+    "same": true
+   }
+  },
+  "132": {
+   "on_48": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.182331730508336,
+       "left_out": 1301,
+       "negative": 1,
+       "group": [
+        4.4226614869146866e-15,
+        3.467052519141834
+       ],
+       "nearest": [
+        1.5730944061538528e-14,
+        0.2847207886334983
+       ]
+      }
+     }
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "an in-row control missed its marks"
+     ],
+     "reported": {
+      "classified": true,
+      "type": "Hyperbolic",
+      "nL": 4,
+      "nD": 0,
+      "K": 4,
+      "ki": 1,
+      "krein_distance": {
+       "distance": 3.182331730508336,
+       "left_out": 1301,
+       "negative": 1,
+       "group": [
+        4.4226614869146866e-15,
+        3.467052519141834
+       ],
+       "nearest": [
+        1.5730944061538528e-14,
+        0.2847207886334983
+       ]
+      }
+     }
+    }
+   },
+   "same": true,
+   "on_first": {
+    "as_built": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0106, the records agree"
+     ]
+    },
+    "changed": {
+     "classified": false,
+     "causes": [
+      "branch identity fails between N = 24 and 32: aligned distance 0.0106, the records agree"
+     ]
+    },
+    "same": true
+   }
+  }
+ }
+}

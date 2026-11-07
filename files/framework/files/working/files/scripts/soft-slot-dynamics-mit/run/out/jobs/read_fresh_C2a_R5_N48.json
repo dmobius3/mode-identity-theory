@@ -1,0 +1,10 @@
+{
+ "job": "read_fresh_C2a_R5_N48",
+ "files": {
+  "fresh_C2a_R5_N48_read.json": "1f79c82543d2d3384325a850d0b63e4561c52164113de55fe7601180038839d4"
+ },
+ "t": "2026-11-07T07:03:38Z",
+ "seconds": 2530.2182057499886,
+ "manifest": "dbf9e7cfce8bce4186421b1cc126c991e7f99212299a2c4a8b7917d1624aba9e",
+ "peak_rss_bytes": 2103083008
+}
