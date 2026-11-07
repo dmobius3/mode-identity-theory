@@ -275,8 +275,8 @@ invariants,
 \qquad (j = 0,\dots,15),
 ```
 
-so invariants occur at levels 0, 12, 20, 24 and 30. Only the gap below
-level 12 is used below. Second, the branching of the state space itself. $`V_3`$ has integer spin,
+so invariants occur at levels 0, 12, 20, 24 and 30. Only the dimensions through
+level 12 are used below. Second, the branching of the state space itself. $`V_3`$ has integer spin,
 so $`-I`$ acts trivially and $`V_3`$ factors through $`2I/\{\pm I\} \cong A_5`$, whose irreducible
 dimensions are $`1, 3, 3, 4, 5`$. The character sum gives $`\langle \chi, \chi \rangle = 2`$, so the
 restriction is multiplicity-free with two constituents, and $`\dim (V_3)^{2I} = 0`$ excludes the
@@ -1076,7 +1076,7 @@ states agree with the energies [KU] tabulate for their inert states.
 The equation of Section 2.5 is the Euler-Lagrange equation of an energy whose quartic term is a
 positive multiple of $`g\int\lvert\psi\rvert^4`$, Section 2.5 fixes $`g = 1`$, and clause 5 of
 Theorem 5.1 makes the quartic an increasing affine function of $`\widehat r_6`$, since $`w_6 > 0`$
-(Section 5.5). So at the paper's normalisation the reduced energy increases with $`\widehat r_6`$.
+(Section 5.3). So at the paper's normalisation the reduced energy increases with $`\widehat r_6`$.
 By Proposition 6.1 it then increases with $`\widetilde{E}`$ at $`(-1, 32, 12)`$: at the paper's
 normalisation, the selected interaction is the condensate energy at that point, and the opposite
 normalisation, $`g = -1`$, is the point $`(1, -32, -12)`$. Write $`(n_-, n_0, n_+)`$ for the
@@ -1223,7 +1223,7 @@ $`x^2 = 23/10`$, $`s = \sqrt{46}`$ and both roots are real and positive, so the 
 $`\pm 0.5585\ldots`$. It is [KU]'s state E, at $`\eta = 3/43`$. At $`y^2 = 5/2`$, $`s = i\sqrt{50}`$
 and the two roots are purely imaginary of opposite sign, so the azimuths differ by $`60^\circ`$: the
 triangles are **staggered**, at $`h = 1/\sqrt 3`$ exactly, which is the **regular octahedron**. The
-tabulated octahedron is exact the same way: its sextic is a constant times $`z(z^4+1)`$, with roots
+tabulated octahedron is exact in the same way: its sextic is a constant times $`z(z^4+1)`$, with roots
 at both poles and at the fourth roots of $`-1`$ on the equator. Figure 2 draws the four shapes.
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/majorana-constellations.png?raw=true" width="90%" alt="Majorana constellations on the unit sphere: a hexagon on the equator, an octahedron, a pentagonal pyramid and a trigonal prism, each labelled with its value of the rank-6 multipole norm"></p>
