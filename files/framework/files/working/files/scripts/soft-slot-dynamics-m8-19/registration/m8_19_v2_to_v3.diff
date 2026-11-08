@@ -1,0 +1,32 @@
+--- m8_19_v2.md
++++ m8_19_v3.md
+@@ -59,7 +59,7 @@
+ 
+ ### Ownership and run format
+ 
+-Author-proposed, author-run, maintainer-adjudicated, as M8.15 to M8.18. One registered run on the author's machine, on mains power with sleep off, after the maintainer's go and the freeze block's pull request.
++Author-proposed, author-run, maintainer-adjudicated, as M8.15 to M8.18. One registered run on the author's machine, on mains power with sleep off, after the maintainer's go and the freeze block's pull request. At most four jobs run at once, each on one thread, as M8.15's jobs ran, so that they sit on the machine's four performance cores; § THE FREEZE, THE GUARD AND THE RUN fixes which jobs may share a wave.
+ 
+ ## THE INSTRUMENT
+ 
+@@ -155,11 +155,18 @@
+ | The coherent row's test | 1.7 to 7.4 |
+ | Expected, in all | about 25 to 35 |
+ 
+-If T4's gates all pass, which needs a margin rate below about 2.9×10⁻⁴ in `R5` and 1.2×10⁻⁴ in `R4`, its tests add about 27 to 53 hours in `R5` (`T` from 15750 to 19750) and 65 to 103 in `R4` (`T` = 38000), with C2a/R4's control at the longer `T` first, another 65 to 103. Every gate is read before any test runs, so that cost is known before it starts.
++At four jobs at once, in the waves below, the expected run takes about 15 to 25 hours of wall time.
++
++If T4's gates all pass, which needs a margin rate below about 2.9×10⁻⁴ in `R5` and 1.2×10⁻⁴ in `R4`, its tests add about 27 to 53 hours in `R5` (`T` from 15750 to 19750) and 65 to 103 in `R4` (`T` = 38000), with C2a/R4's control at the longer `T` first, another 65 to 103: about 6 to 9 days of wall time, the two tests running side by side after the control. Every gate is read before any test runs, so that cost is known before it starts.
+ 
+ ## THE FREEZE, THE GUARD AND THE RUN
+ 
+-As M8.18: a freeze block pins every file by SHA-256 in `FROZEN.json` before the go; the driver refuses to run without it, and refuses any target before the controls have passed. The run's order: the controls; then every stretch's continuation and gates, and the coherent row's ladder, all written before any target evolves; then C2a/R4's control at the longest `T`, if any test needs more than 2750; then the tests; then the record.
++As M8.18: a freeze block pins every file by SHA-256 in `FROZEN.json` before the go; the driver refuses to run without it, and refuses any target before the controls have passed. The run goes in waves of at most four single-thread jobs, a job starting as another ends, and no wave starts before the one it depends on has ended:
++1. **The controls:** M8.15's dynamics gate, C1, C2a, C2b and C3; then C3's rate run, `P5a`, C3 at `ε` = 3 and C2a/R4 at 1 with `T` = 2750.
++2. **The gates:** the four continuations, T1 and T4 in both slots, and the coherent row's ladder, each with its gates, all written before any target evolves.
++3. **The longest control,** C2a/R4 at 1 at the longest `T` the gates set, if any test needs more than 2750. Tests with `T` up to 2750 may run beside it.
++4. **The tests,** up to four at once; a test longer than 2750 starts only after the longest control has Persisted, valid.
++5. **The record.**
+ 
+ ## DEFINITION OF DONE
+ 

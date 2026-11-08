@@ -1,0 +1,80 @@
+--- m8_19_v3.md
++++ m8_19_v4.md
+@@ -59,7 +59,7 @@
+ 
+ ### Ownership and run format
+ 
+-Author-proposed, author-run, maintainer-adjudicated, as M8.15 to M8.18. One registered run on the author's machine, on mains power with sleep off, after the maintainer's go and the freeze block's pull request. At most four jobs run at once, each on one thread, as M8.15's jobs ran, so that they sit on the machine's four performance cores; § THE FREEZE, THE GUARD AND THE RUN fixes which jobs may share a wave.
++Author-proposed, author-run, maintainer-adjudicated, as M8.15 to M8.18. One registered run on the author's machine, on mains power with sleep off, after the maintainer's go and the freeze block's pull request. At most four jobs run at once, each on one thread, as M8.15's jobs ran, matching the machine's four performance cores; § THE FREEZE, THE GUARD AND THE RUN fixes which jobs may share a wave.
+ 
+ ## THE INSTRUMENT
+ 
+@@ -83,20 +83,20 @@
+ 
+ ## THE GATES
+ 
+-Fixed here, before any target evolves. Every stretch's points are solved and their gates read and written to the record before any target evolves. A stretch's test point is its highest classified point above 0.25 at which gates 2 to 7 all pass; the search walks down the stretch from the top. If none passes, the stretch ends untested, its cause named from the first gate that failed at each classified point, all recorded.
++Fixed here, before any target evolves. Every stretch's points are solved and their gates read and written to the record before any target evolves. A stretch's test point is its highest classified point at which gates 2 to 7 all pass; the search walks down the stretch from the top, to its lowest classified point. If none passes, the stretch ends untested, its cause named from the first gate that failed at each classified point, all recorded.
+ 
+ 1. **The controls,** before anything else (§ THE CONTROLS).
+ 2. **The standing wave:** an accepted Newton solution at the point, at levels 3 and 2, on the continuation path from the seed.
+ 3. **The cluster and the mode.** `G_tol` passes the frozen cluster check at levels 2 and 3, as `Point.cluster_ok` reads it: its algebraic dimension the frozen one, closed under λ → −λ, λ̄ and −λ̄, and an Ω-Gram matrix whose smallest singular value is at least 10⁻⁶ of its largest. And the target mode is identified outside `G_tol`: the slowest genuine slow mode with the reference's Krein sign and multiplicity, found exactly once among the genuine modes.
+ 4. **Agreement on that mode:** its eigenvalue at levels 2 and 3 within 5% of each other, with the same Krein sign; and, where OpenWave's record holds a harmonic reading at the point, within 5% of that reading's slowest genuine slow mode, with the same Krein sign and multiplicity. On the coherent row's ladder above 2, the reference is level 3 alone.
+-5. **Excitation:** the perturbation's slow half carries at least 1% of its energy on the identified mode, read before evolution, with the frozen seed.
++5. **Excitation:** with `v_s` the frozen perturbation's slow half, `B` the real invariant subspace of the identified mode and `P_B` its Ω-orthogonal projector, `‖P_B v_s‖² / ‖v_s‖² ≥ 0.01`, both in the positive-definite energy norm the frozen `persistence.py` scales the perturbation in. It is a projection measure, not a share of the signed Hamiltonian energy, which is negative on a Krein-negative mode. It is read and recorded before evolution, with the frozen seed and no redraw.
+ 6. **The time scale:** `T = max(1000, P)`, rounded up to the next multiple of 250, with `P = 2π/|λ|` the identified mode's period at level 2, so that the test spans at least one period of the mode it is meant to probe.
+ 7. **The margin:** `r · T ≤ ln(1/(10η))`, with `r` the largest real part among the level-2 eigenvalues the frozen code classes lifted or rigid, as in M8.15. It is the instrument's own bound on how long it can run at that point.
+ 
+ **What a failed gate does.**
+ - **A failed control (gate 1)** stops the run before any target. Its cause and the operations it stopped are recorded. Whether it shows the instrument inadequate for each stretch, and so gives S5's untested ending, is for the maintainer's adjudication; the driver assigns no ending.
+ - **A failed gate 2 to 7** at a point moves the search down the stretch. No evolution runs at a point whose gates fail.
+-- **No stretch is tested twice,** and no verdict is turned into another.
++- **No stretch is tested twice,** no verdict is turned into another, and nothing is repaired and rerun under these terms; any other route would be a separate request.
+ 
+ ## THE CONTROLS
+ 
+@@ -104,8 +104,8 @@
+ - **M8.15's dynamics gate, whole** (`m815_controls.py`): C1 at `ε` = 6, and C2a and C2b at 1, Persist; C3 at 1 Fails; and C3's rate run fits within 5% of the linear rate.
+ - **The slice control** M8.15's record asks for (`RECORD.md` § 5): M8.15.x's control 1a, `P5a`, whose Newton must stop under the repaired test below 10⁻¹¹.
+ - **A control at an amplitude no record holds:** C3, the octahedron in `R4`, at `ε` = 3, which must Fail.
+-- **A control at a duration no record holds:** C2a/R4 at `ε` = 1, with `T` = 2750 by gate 6, which must Persist, valid.
+-- **The longest test.** A target test whose `T` exceeds 2750 runs only after C2a/R4 at 1 has Persisted, valid, at that `T`. That control runs once, at the longest `T` any target's gates set, after every gate is read and before any target evolves. If it does not Persist, valid, the tests it was to cover do not run, the cause is recorded, and their stretches' endings are for the maintainer's adjudication, as for any failed control.
++- **A control at a duration no record holds:** C2a/R4 at `ε` = 1, read through gates 3, 5, 6 and 7 as a target is, with `T` = 2750 by gate 6, which must Persist, valid.
++- **The longest test.** A target test whose `T` exceeds 2750 runs only after C2a/R4 at 1 has Persisted, valid, at that `T`. That control runs once, at the longest `T` any target's gates set, after every gate is read and before any test longer than 2750 evolves. If it does not Persist, valid, the tests it was to cover do not run, the cause is recorded, and their stretches' endings are for the maintainer's adjudication, as for any failed control.
+ 
+ Each control's verdict must be the one stated.
+ 
+@@ -113,14 +113,14 @@
+ 
+ Two gates, each with an outcome of its own.
+ - **The ladder.** The coherent orbit in `R5` from its seed along `R5`'s ladder to 32, with M8.15's frozen linear types at level 3, cross-checked at level 2, as C2a's in `R4`. At 0.25, 0.5, 1 and 2 the types must agree with M8.16.1's. The outcome: either the ladder establishes the types it reads, or it is not established, its cause named. **An unestablished ladder stays its own outcome:** S5's untested ending does not close it, and the row stays closed enough on Theorem A, as the census records.
+-- **The test.** On the stretch the ladder establishes, by the gates above. If the ladder is not established, on the stretch on record, 0.25 to 2, where gate 6 sets `T` = 2750 at 2, the duration C2a/R4's control covers.
++- **The test.** On the stretch the ladder establishes, by the gates above. If the ladder is not established, on the stretch on record, 0.25 to 2, where gate 6 sets `T` at 2500 or 2750 at 2, inside gate 4's band, the durations C2a/R4's control covers.
+ 
+ ## THE OUTCOMES
+ 
+ Per stretch, with no aggregate, the frozen evaluator's verdict at the test point, with `T`, the periods spanned, max d_⊥, max d_rot and the reference floor:
+ - **Persists** or **Fails:** the stretch has its test, as S5 asks.
+ - **Unresolved:** an adequately executed test that shows neither persistence nor failure under the thresholds. These terms read it as the test S5 asks for, earning no persistence conclusion, and ask the maintainer to confirm that reading.
+-- **Invalid,** for drift or for a run that fails the validity rule: the stretch ends untested under S5, with that cause.
++- **Invalid,** for drift or for a run that fails the validity rule: these terms read it as S5's untested ending, with that cause, and ask the maintainer to confirm that reading, since an Invalid verdict is read after the target has evolved.
+ - **Untested,** where no point passes the gates, with each point's cause.
+ 
+ The ladder's outcome is recorded apart. No outcome claims orbital stability or instability: a test that Persists is evidence to `T`, not beyond, and one that Fails shows non-persistence at `η` to `T` on this instrument.
+@@ -138,6 +138,7 @@
+ On the bench, before the freeze, none on a target or on the coherent row in `R5`:
+ - the driver's diff, reproducing M8.15.x's records of C2a/R4 at 8 and of control 1a bit for bit;
+ - that the driver reaches C3 at `ε` = 3 and reads its gates there, without evolving it;
++- a smoke test of four jobs at once on the controls' recorded points, at a short `T` and read for nothing: one thread each, each record under its own path, and the orchestrator's order;
+ - each gate's mutation arm, turning it red for its named reason on the controls at their recorded points;
+ - `tools/periods.py`, reproducing the time-scale table from the committed records.
+ 
+@@ -161,7 +162,7 @@
+ 
+ ## THE FREEZE, THE GUARD AND THE RUN
+ 
+-As M8.18: a freeze block pins every file by SHA-256 in `FROZEN.json` before the go; the driver refuses to run without it, and refuses any target before the controls have passed. The run goes in waves of at most four single-thread jobs, a job starting as another ends, and no wave starts before the one it depends on has ended:
++As M8.18: a freeze block pins every file by SHA-256 in `FROZEN.json` before the go; the driver refuses to run without it, refuses any target before wave 1's controls have passed, and refuses any test longer than 2750 before the longest control has Persisted, valid. The orchestrator that starts the waves is frozen with the driver. Each job writes its own record, atomically, under its own path, the two C2a/R4 controls included, and no record overwrites another. A job that three launches leave unfinished ends its part of the run, its cause recorded, as in M8.18; a launch that ends early writes nothing that is read. The run goes in waves of at most four single-thread jobs, a job starting as another ends, and no wave starts before the one it depends on has ended:
+ 1. **The controls:** M8.15's dynamics gate, C1, C2a, C2b and C3; then C3's rate run, `P5a`, C3 at `ε` = 3 and C2a/R4 at 1 with `T` = 2750.
+ 2. **The gates:** the four continuations, T1 and T4 in both slots, and the coherent row's ladder, each with its gates, all written before any target evolves.
+ 3. **The longest control,** C2a/R4 at 1 at the longest `T` the gates set, if any test needs more than 2750. Tests with `T` up to 2750 may run beside it.

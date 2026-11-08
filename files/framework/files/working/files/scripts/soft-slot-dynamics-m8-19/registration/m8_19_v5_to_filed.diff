@@ -1,0 +1,11 @@
+--- m8_19_v5.md
++++ m8_19_task_details.md
+@@ -40,7 +40,7 @@
+ These are on record or follow from it. This task names them and claims no new evidence from them.
+ - **T1's cluster check fails at every ladder point** on M8.15's instrument, 18 in `R4` and 15 in `R5` ("cluster check (`G_tol` dimension 6, frozen 4)", `RECORD.md` § 2, adjudicated on #620). The record reads this as the 0.9 overlap rule taking the Krein-negative slow mode into `G_tol`; #620 left that reading unratified (the census, § IV). M8.15.x's replacement rule "fails as registered" ([`RESULT_2.md`](https://github.com/dmobius3/mode-identity-theory/blob/c0297f9910e4989ee4492226e1035032ed74f791/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-15x/qualification/RESULT_2.md)), and the module was left out of the freeze (the qualification's [`README.md`](https://github.com/dmobius3/mode-identity-theory/blob/c0297f9910e4989ee4492226e1035032ed74f791/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-15x/qualification/README.md)). The same failure is expected on this registration's instrument.
+ - **T4 has no finite-element solution on record:** Newton failed at the seed (`RECORD.md` § 3). A post-run diagnosis outside the record attributes it to the stopping test (INFERRED, the census, § IV); M8.15.x's frozen solver repairs that test.
+-- **The slow time scales,** from the adjudicated spectra (M8.17's readings for T1 and T4, M8.16.1's for the coherent row), recomputed by `tools/periods.py`: at every Elliptic point of T1 and T4 the slowest genuine slow mode is Krein-negative, with period `P = 2π/|λ|`:
++- **The slow time scales,** from the adjudicated spectra (M8.17's readings for T1 and T4, M8.16.1's for the coherent row), recomputed by [`tools/periods.py`](https://github.com/dmobius3/mode-identity-theory/blob/0b98e28e2f234753bcef370a4df5c3cf383b2664/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-19/registration/tools/periods.py): at every Elliptic point of T1 and T4 the slowest genuine slow mode is Krein-negative, with period `P = 2π/|λ|`:
+ 
+ | Stretch | Point with the shortest `P` | `P` | Periods in `T` = 1000 |
+ | --- | --- | --- | --- |
