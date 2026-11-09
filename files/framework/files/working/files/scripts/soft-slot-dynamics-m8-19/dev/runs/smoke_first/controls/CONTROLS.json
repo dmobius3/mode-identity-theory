@@ -1,0 +1,49 @@
+{
+ "controls": {
+  "dyn_C1": {
+   "passed": false,
+   "verdict": "Invalid (Persists on an invalid run)",
+   "wanted": "Persists",
+   "max_dperp": 0.0009996684245826499,
+   "t_fail": null
+  },
+  "dyn_C2a": {
+   "passed": false,
+   "verdict": "Invalid (Persists on an invalid run)",
+   "wanted": "Persists",
+   "max_dperp": 0.000999904235973982,
+   "t_fail": null
+  },
+  "dyn_C2b": {
+   "passed": false,
+   "verdict": "Invalid (Persists on an invalid run)",
+   "wanted": "Persists",
+   "max_dperp": 0.0009998368936998316,
+   "t_fail": null
+  },
+  "dyn_C3": {
+   "passed": false,
+   "verdict": "Invalid (Persists on an invalid run)",
+   "wanted": "Fails",
+   "max_dperp": 0.0010000059301925217,
+   "t_fail": null
+  },
+  "rate": {
+   "passed": false,
+   "why": "not completed"
+  },
+  "p5a": {
+   "passed": false,
+   "why": "not completed"
+  },
+  "c3e3": {
+   "passed": false,
+   "why": "not completed"
+  },
+  "c2a_dur": {
+   "passed": false,
+   "rule": "Persists, valid, at T = 2750 by gate 6"
+  }
+ },
+ "all_passed": false
+}

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "gates_C2a_R4",
+  "wave": 2,
+  "args": [
+   "--standin"
+  ],
+  "needs": [],
+  "after": [],
+  "gate1": false,
+  "long": false
+ },
+ {
+  "id": "plan",
+  "wave": 2,
+  "args": [
+   "--standin"
+  ],
+  "needs": [
+   "gates_C2a_R4"
+  ],
+  "after": [],
+  "gate1": false,
+  "long": false
+ },
+ {
+  "id": "p5a",
+  "wave": 1,
+  "args": [],
+  "needs": [],
+  "after": [],
+  "gate1": false,
+  "long": false
+ },
+ {
+  "id": "c3e3",
+  "wave": 1,
+  "args": [
+   "--no-evolve"
+  ],
+  "needs": [],
+  "after": [],
+  "gate1": false,
+  "long": false
+ },
+ {
+  "id": "c2a_dur",
+  "wave": 1,
+  "args": [
+   "--no-evolve"
+  ],
+  "needs": [],
+  "after": [],
+  "gate1": false,
+  "long": false
+ }
+]

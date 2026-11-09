@@ -1,0 +1,12 @@
+ok   four jobs ran at once, never more: at most 4
+ok   one thread each, every computing job sampled: {'dyn_C1': 1, 'dyn_C2a': 1, 'dyn_C2b': 1, 'dyn_C3': 1, 'c2a_dur': 1}
+ok   the orchestrator's order: the four controls, then the duration control as one ends, then gate 1: ['dyn_C1', 'dyn_C2a', 'dyn_C2b', 'dyn_C3', 'c2a_dur', 'controls']
+ok   the fifth job started only after one of the four completed
+ok   every job completed in its own folder
+ok   no two records share a path: 23 files
+ok   dyn_C1: its 20 rows to T = 20 equal the first rows of M8.15.x's C1 series, bit for bit
+ok   dyn_C2a: its 21 rows to T = 20 equal the first rows of M8.15.x's C2a series, bit for bit
+ok   dyn_C2b: its 21 rows to T = 20 equal the first rows of M8.15.x's C2b series, bit for bit
+ok   dyn_C3: its 21 rows to T = 20 equal the first rows of M8.15.x's C3 series, bit for bit
+ok   c2a_dur: its 21 rows to T = 20 equal the first rows of M8.15.x's C2a series, bit for bit
+PASS

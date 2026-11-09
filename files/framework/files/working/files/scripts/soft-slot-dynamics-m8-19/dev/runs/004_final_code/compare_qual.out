@@ -1,0 +1,9 @@
+same  level 3: the points at 0.25 to 8 (11 on record) (770 leaves)
+same  level 2: the points at 0.25 to 8 (11 on record) (770 leaves)
+same  the types at 0.25 to 8 (11 on record) (22 leaves)
+same  the cross at 0.25 to 8 (4 on record) (12 leaves)
+same  the validity check at 0.25 (2 leaves)
+same  the changes of type at 0.25 to 8
+same  the test at 8: every field run_test returns (22 leaves)
+same  the test's series at 8: (1002, 7) against (1002, 7), bytes equal
+PASS

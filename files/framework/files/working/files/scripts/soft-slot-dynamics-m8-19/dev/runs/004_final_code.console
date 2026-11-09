@@ -1,0 +1,13 @@
+2026-11-09T14:39:34Z started gates_C2a_R4 (start 1, pid 14817)
+2026-11-09T14:39:34Z started p5a (start 1, pid 14818)
+2026-11-09T14:39:34Z started c3e3 (start 1, pid 14819)
+2026-11-09T14:39:34Z started c2a_dur (start 1, pid 14820)
+2026-11-09T14:39:42Z completed p5a
+2026-11-09T14:39:52Z completed c3e3
+2026-11-09T14:46:42Z completed c2a_dur
+2026-11-09T15:09:03Z completed gates_C2a_R4
+2026-11-09T15:09:03Z started plan (start 1, pid 15725)
+2026-11-09T15:09:04Z completed plan
+2026-11-09T15:09:04Z started test_C2a_R4_standin_1 (start 1, pid 15726)
+2026-11-09T16:17:45Z completed test_C2a_R4_standin_1
+2026-11-09T16:17:45Z launch ended; pending []; stop None

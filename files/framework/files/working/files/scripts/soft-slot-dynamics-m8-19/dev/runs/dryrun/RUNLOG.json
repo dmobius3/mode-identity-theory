@@ -1,0 +1,506 @@
+{
+ "pin": "bench dryrun c489d0760ec6aad5109ce3ed211d2a493bb809c89b7c9f8301dec4846eaa70a1 545193dcee2445f2d5439f4480dc967a8094ed1c1ed435b2959309fc13dcec35 8ca542418620ea080e3fe8ecd7393975b66b90f1034c45bed65a0c47d4c5cca9",
+ "bench": true,
+ "launches": [
+  "2026-11-08T16:24:16Z"
+ ],
+ "jobs": [
+  {
+   "id": "gates_C2a_R4",
+   "wave": 2,
+   "args": [
+    "--standin"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "plan",
+   "wave": 2,
+   "args": [
+    "--standin"
+   ],
+   "needs": [
+    "gates_C2a_R4"
+   ],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "test_C2a_R4_standin_1",
+   "wave": 4,
+   "args": [],
+   "needs": [
+    "plan"
+   ],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C1",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2b",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C3",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "rate",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "p5a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c3e3",
+   "wave": 1,
+   "args": [
+    "--no-evolve"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c2a_dur",
+   "wave": 1,
+   "args": [
+    "--no-evolve"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "controls",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "rate",
+    "p5a",
+    "c3e3",
+    "c2a_dur"
+   ],
+   "gate1": false,
+   "long": false
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "launch",
+   "number": 1
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "started",
+   "job": "gates_C2a_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "process",
+   "job": "gates_C2a_R4",
+   "start": 1,
+   "pid": 97734
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "started",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "process",
+   "job": "dyn_C1",
+   "start": 1,
+   "pid": 97735
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "started",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "process",
+   "job": "dyn_C2a",
+   "start": 1,
+   "pid": 97736
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "started",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:24:16Z",
+   "event": "process",
+   "job": "dyn_C2b",
+   "start": 1,
+   "pid": 97737
+  },
+  {
+   "t": "2026-11-08T17:12:53Z",
+   "event": "completed",
+   "job": "gates_C2a_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T17:12:53Z",
+   "event": "started",
+   "job": "plan",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T17:12:53Z",
+   "event": "process",
+   "job": "plan",
+   "start": 1,
+   "pid": 99209
+  },
+  {
+   "t": "2026-11-08T17:12:54Z",
+   "event": "completed",
+   "job": "plan",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T17:12:54Z",
+   "event": "plan read",
+   "added": [
+    "test_C2a_R4_standin_1"
+   ]
+  },
+  {
+   "t": "2026-11-08T17:12:54Z",
+   "event": "started",
+   "job": "test_C2a_R4_standin_1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T17:12:54Z",
+   "event": "process",
+   "job": "test_C2a_R4_standin_1",
+   "start": 1,
+   "pid": 99211
+  },
+  {
+   "t": "2026-11-08T17:39:38Z",
+   "event": "completed",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T17:39:38Z",
+   "event": "started",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T17:39:38Z",
+   "event": "process",
+   "job": "dyn_C3",
+   "start": 1,
+   "pid": 311
+  },
+  {
+   "t": "2026-11-08T18:23:44Z",
+   "event": "completed",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:23:44Z",
+   "event": "started",
+   "job": "rate",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:23:44Z",
+   "event": "process",
+   "job": "rate",
+   "start": 1,
+   "pid": 1178
+  },
+  {
+   "t": "2026-11-08T18:26:28Z",
+   "event": "completed",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:26:28Z",
+   "event": "started",
+   "job": "p5a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:26:28Z",
+   "event": "process",
+   "job": "p5a",
+   "start": 1,
+   "pid": 1222
+  },
+  {
+   "t": "2026-11-08T18:26:38Z",
+   "event": "completed",
+   "job": "p5a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:26:38Z",
+   "event": "started",
+   "job": "c3e3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:26:38Z",
+   "event": "process",
+   "job": "c3e3",
+   "start": 1,
+   "pid": 1230
+  },
+  {
+   "t": "2026-11-08T18:27:02Z",
+   "event": "completed",
+   "job": "c3e3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:27:02Z",
+   "event": "started",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:27:02Z",
+   "event": "process",
+   "job": "c2a_dur",
+   "start": 1,
+   "pid": 1237
+  },
+  {
+   "t": "2026-11-08T18:35:12Z",
+   "event": "completed",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T18:59:07Z",
+   "event": "completed",
+   "job": "test_C2a_R4_standin_1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T19:26:38Z",
+   "event": "completed",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T19:47:24Z",
+   "event": "completed",
+   "job": "rate",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T19:47:24Z",
+   "event": "started",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T19:47:24Z",
+   "event": "process",
+   "job": "controls",
+   "start": 1,
+   "pid": 3825
+  },
+  {
+   "t": "2026-11-08T19:47:25Z",
+   "event": "completed",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T19:47:25Z",
+   "event": "launch ended",
+   "pending": [],
+   "stopped": null
+  }
+ ],
+ "completed": {
+  "gates_C2a_R4": {
+   "files": {
+    "console.log": "5f229886e13b2718c67b782cc61bb0da4b60bce1016f4c63b6245f6065170ac4",
+    "gates.json": "a490149756c31eee6bf5aa2fd7c065463d779d47a4858288bc6c16a203952d83",
+    "job.json": "7bda9b6ec90ae0040742d78775cde3aba714047fc6cbf6b381a371f89c39ac86",
+    "states_L2.npz": "bc154d3fe39e3719123c7d9df1bac3af9b1375323a5a01ebd586caba6191a7c6"
+   },
+   "t": "2026-11-08T17:12:53Z",
+   "start": 1
+  },
+  "plan": {
+   "files": {
+    "PLAN.json": "0f2725c37efc76b26e39a6b48028d250e14c37d69e2cb7ff44b52f857dfbb87c",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "f8f235983ebd8e77256eb0dc6b8fa74ea6bc67bbc38af958b52f7956cce93ca6"
+   },
+   "t": "2026-11-08T17:12:54Z",
+   "start": 1
+  },
+  "dyn_C2b": {
+   "files": {
+    "console.log": "fe537da31cee5bd048b808985a5d99de17fa817b0bfce2930f0e1ff4cbc52182",
+    "dynamics_C2b.json": "313d281281d58ed25ab602d0fda13bc5858e9b469446ea7fa21f6c1f61ae3445",
+    "dynamics_C2b.npy": "2beb802872dd80d9fe0d6f977c051b885466b572b834e12ffd191bcbcdd4d116",
+    "job.json": "8b3f92144af7d847cb587eda46e88d68123e12f6a48a00a22cecb40a6e6ca653"
+   },
+   "t": "2026-11-08T17:39:38Z",
+   "start": 1
+  },
+  "dyn_C2a": {
+   "files": {
+    "console.log": "a17d2dbc1a232457a518d633a02ba6f9c31034eaa97a34c8af790695e4d51601",
+    "dynamics_C2a.json": "007fd91fff0df50471556904c4fb236be841f212a35aa6fe88c31ec898265e5f",
+    "dynamics_C2a.npy": "73d85070daeb45d2ff91908f6e68ac927164f2b493b518c7cb27a6760ea6b693",
+    "job.json": "540bd9890d64538b45f2c38c2b273902c429af1ae06deb1dd70c596a06cae331"
+   },
+   "t": "2026-11-08T18:23:44Z",
+   "start": 1
+  },
+  "dyn_C1": {
+   "files": {
+    "console.log": "32174d91f198c8c08a9926445c77bb0afd704e0f6afc4df460f2c6d2ba1ff59f",
+    "dynamics_C1.json": "24370b97aeb67673441baa45b39baa745f1b927e20ccee3819a958c031b0db74",
+    "dynamics_C1.npy": "e29625fca70916e8ab5c8eec8eb077356835347ce06449cd58978cac64786201",
+    "job.json": "52fb5ae8678e630f8937c344c9120532ba889cceefdfab4fc0cd791577b30984"
+   },
+   "t": "2026-11-08T18:26:28Z",
+   "start": 1
+  },
+  "p5a": {
+   "files": {
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "control_1a_arm.json": "a99a2d2aad4fe8358b101a487ff0943ee0e1159e6a1ec98f00d22441788c7d7c",
+    "job.json": "77f2b9c8bb2090741a1f9510c3fa1c595ad582b4c067284c599e04aa1327ea94"
+   },
+   "t": "2026-11-08T18:26:38Z",
+   "start": 1
+  },
+  "c3e3": {
+   "files": {
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dynamics_C3_eps3_gates.json": "534feafef2a20a01f182a9aab757dd575a3776cf8aabbe0a2c8f191faf0b22fc",
+    "job.json": "50ebbdb9ca821e8c4b7782b089b9a718e1440e6791758f00c0238daf954bb40f"
+   },
+   "t": "2026-11-08T18:27:02Z",
+   "start": 1
+  },
+  "c2a_dur": {
+   "files": {
+    "c2a.json": "acf6f0bdd91f4bf08e0f73f14b0d70bc89f988c0e77e44c63ef3f3937085c58d",
+    "console.log": "1c0baa1276926c09092642d65c771f6614d42171c5ab7c76f21739f6178a1f77",
+    "job.json": "fef5c5fd4911312a3783f26f84bdcbb26d73e7350261bfc888eebe65b9b37009"
+   },
+   "t": "2026-11-08T18:35:12Z",
+   "start": 1
+  },
+  "test_C2a_R4_standin_1": {
+   "files": {
+    "console.log": "d0751e96d4aa9f6667abf7de292806e6b494fe3b7401255f81da6326865134d0",
+    "job.json": "7711fb6df3ce0503199497ea2b5e4fcf5124a32bdea22dedea10424dd333141f",
+    "test.json": "71455f4a3cc1df591235ccd7c466445efb93293910e4be567b7d3c10d45a1160",
+    "test.npy": "c49f036e543863ee453a9ed567005f6ab2073ef952814b8fa9ad5554454663cb"
+   },
+   "t": "2026-11-08T18:59:07Z",
+   "start": 1
+  },
+  "dyn_C3": {
+   "files": {
+    "console.log": "5fd365e46f5c84dfd58f00f36ad9dd0394ce11a4eaab2134b8ade83335205b08",
+    "dynamics_C3.json": "5c6011846f3b2364be215520db6615ee70fc3e16ea7354f12a6d350e49c43b92",
+    "dynamics_C3.npy": "598b434ab364a53f433f70ebecd637ac09606c7206a299bfe987f540849dc982",
+    "job.json": "8963cd0505e935c19c2c4a6d7d16b6d8cb50ddd2fc15718a9e710fd39e6a4808"
+   },
+   "t": "2026-11-08T19:26:38Z",
+   "start": 1
+  },
+  "rate": {
+   "files": {
+    "console.log": "ff6115b533cc9de866bd4bdb6100e8cfdb618d16907f00eaa81ca2fa48d32eb7",
+    "dynamics_C3_rate.json": "c2fd6aec7a8445d132a8e5bffcf16d6566cba648e28c4e9dd534cdd851ae45b0",
+    "dynamics_C3_rate.npy": "cc0d9a958c0b84b851805021f4a7316b2fd5f279627dd11c38d829bbbc86503e",
+    "job.json": "70b0a5399cd5d9168e2a8c1045d301ab9197cb0d59093544231f888201b0db75"
+   },
+   "t": "2026-11-08T19:47:24Z",
+   "start": 1
+  },
+  "controls": {
+   "files": {
+    "CONTROLS.json": "5297af2fdd0785e8ac9775c51e65014d32b0def5152e2c8b730c82ebea4211c8",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "7538da821a8fbce233e8048413c3fb1d1315a6b3703a96ae0b61f02da5a4107d"
+   },
+   "t": "2026-11-08T19:47:25Z",
+   "start": 1
+  }
+ },
+ "ended": {},
+ "not_run": {},
+ "stop": null
+}

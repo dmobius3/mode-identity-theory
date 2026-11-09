@@ -1,0 +1,15 @@
+The sealed cases set up without a solve: no Newton step, no eigenvalue of the Laplacian or a linearization
+level 2: mesh built in 3 s
+  C2a/R4: C2a (R4): |H| = 10, fixed-space dimension 1216 of 6048 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0007810546 against exact 1.0007770008, relative +4.05e-06; 10 s
+  C2a/R5: C2a (R5): |H| = 10, fixed-space dimension 1616 of 8064 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0004337533 against exact 1.0004370629, relative -3.31e-06; 10 s
+  T1/R4: T1 (R4): |H| = 10, fixed-space dimension 1216 of 6048 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0279288712 against exact 1.0279720280, relative -4.20e-05; 9 s
+  T1/R5: T1 (R5): |H| = 10, fixed-space dimension 1616 of 8064 real; fibre maps fitted to 2.6e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0157479773 against exact 1.0157342657, relative +1.35e-05; 11 s
+  T4/R4: T4 (R4): |H| = 4, fixed-space dimension 3040 of 6048 real; fibre maps fitted to 1.8e-10; seed in the fixed space to 9.2e-11; frozen cluster dimension 6; slice J; seed Q 1.1852095874 against exact 1.1852034613, relative +5.17e-06; 10 s
+  T4/R5: T4 (R5): |H| = 4, fixed-space dimension 4032 of 8064 real; fibre maps fitted to 2.6e-10; seed in the fixed space to 1.3e-10; frozen cluster dimension 6; slice J; seed Q 1.1041759187 against exact 1.1041769470, relative -9.31e-07; 11 s
+level 3: mesh built in 30 s
+  C2a/R4: C2a (R4): |H| = 10, fixed-space dimension 14528 of 72576 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0007771988 against exact 1.0007770008, relative +1.98e-07; 252 s
+  C2a/R5: C2a (R5): |H| = 10, fixed-space dimension 19360 of 96768 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0004368796 against exact 1.0004370629, relative -1.83e-07; 280 s
+  T1/R4: T1 (R4): |H| = 10, fixed-space dimension 14528 of 72576 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0279698892 against exact 1.0279720280, relative -2.08e-06; 227 s
+  T1/R5: T1 (R5): |H| = 10, fixed-space dimension 19360 of 96768 real; fibre maps fitted to 2.7e-09; seed in the fixed space to 1.7e-09; frozen cluster dimension 4; no slice; seed Q 1.0157350467 against exact 1.0157342657, relative +7.69e-07; 234 s
+  T4/R4: T4 (R4): |H| = 4, fixed-space dimension 36320 of 72576 real; fibre maps fitted to 8.6e-11; seed in the fixed space to 4.3e-11; frozen cluster dimension 6; slice J; seed Q 1.1852039174 against exact 1.1852034613, relative +3.85e-07; 122 s
+  T4/R5: T4 (R5): |H| = 4, fixed-space dimension 48384 of 96768 real; fibre maps fitted to 1.2e-10; seed in the fixed space to 5.8e-11; frozen cluster dimension 6; slice J; seed Q 1.1041769676 against exact 1.1041769470, relative +1.87e-08; 148 s

@@ -1,0 +1,270 @@
+{
+ "pin": "bench final-code 7c0d89c1d865fb9dad25c46fc3cbb1414dc92a8a770ea7194ce982456a5349fa 25373f75ef92e93a92a1efd13edce3703e0ae890a71f08eaad9b0a2242450305 d2bc185a0327e3dc81938a4d9b7585e6a0f1598f60907cb1a6e0c8742751a383",
+ "bench": true,
+ "launches": [
+  "2026-11-09T14:39:34Z"
+ ],
+ "jobs": [
+  {
+   "id": "gates_C2a_R4",
+   "wave": 2,
+   "args": [
+    "--standin"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "plan",
+   "wave": 2,
+   "args": [
+    "--standin"
+   ],
+   "needs": [
+    "gates_C2a_R4"
+   ],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "test_C2a_R4_standin_1",
+   "wave": 4,
+   "args": [],
+   "needs": [
+    "plan"
+   ],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "p5a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c3e3",
+   "wave": 1,
+   "args": [
+    "--no-evolve"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c2a_dur",
+   "wave": 1,
+   "args": [
+    "--no-evolve"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "launch",
+   "number": 1
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "started",
+   "job": "gates_C2a_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "process",
+   "job": "gates_C2a_R4",
+   "start": 1,
+   "pid": 14817
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "started",
+   "job": "p5a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "process",
+   "job": "p5a",
+   "start": 1,
+   "pid": 14818
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "started",
+   "job": "c3e3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "process",
+   "job": "c3e3",
+   "start": 1,
+   "pid": 14819
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "started",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T14:39:34Z",
+   "event": "process",
+   "job": "c2a_dur",
+   "start": 1,
+   "pid": 14820
+  },
+  {
+   "t": "2026-11-09T14:39:42Z",
+   "event": "completed",
+   "job": "p5a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T14:39:52Z",
+   "event": "completed",
+   "job": "c3e3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T14:46:42Z",
+   "event": "completed",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T15:09:03Z",
+   "event": "completed",
+   "job": "gates_C2a_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T15:09:03Z",
+   "event": "started",
+   "job": "plan",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T15:09:03Z",
+   "event": "process",
+   "job": "plan",
+   "start": 1,
+   "pid": 15725
+  },
+  {
+   "t": "2026-11-09T15:09:04Z",
+   "event": "completed",
+   "job": "plan",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T15:09:04Z",
+   "event": "plan read",
+   "added": [
+    "test_C2a_R4_standin_1"
+   ]
+  },
+  {
+   "t": "2026-11-09T15:09:04Z",
+   "event": "started",
+   "job": "test_C2a_R4_standin_1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T15:09:04Z",
+   "event": "process",
+   "job": "test_C2a_R4_standin_1",
+   "start": 1,
+   "pid": 15726
+  },
+  {
+   "t": "2026-11-09T16:17:45Z",
+   "event": "completed",
+   "job": "test_C2a_R4_standin_1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T16:17:45Z",
+   "event": "launch ended",
+   "pending": [],
+   "stopped": null
+  }
+ ],
+ "completed": {
+  "p5a": {
+   "files": {
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "control_1a_arm.json": "1d9bdd2b8132d612f6eea599362e9827324946ce322eb497783e2e97ca54c090",
+    "job.json": "83242f9cf39b665de5de94b2903455c2a76ce15d5c742c140455edff1b23d270"
+   },
+   "t": "2026-11-09T14:39:42Z",
+   "start": 1
+  },
+  "c3e3": {
+   "files": {
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dynamics_C3_eps3_gates.json": "534feafef2a20a01f182a9aab757dd575a3776cf8aabbe0a2c8f191faf0b22fc",
+    "job.json": "0422e84181b4669308d2025c50dc1e2f3180c91104dd1c4f36cf49a635a537ba"
+   },
+   "t": "2026-11-09T14:39:52Z",
+   "start": 1
+  },
+  "c2a_dur": {
+   "files": {
+    "c2a.json": "923312440cd08ec5640fb31dda65091d79c7d94fd592b77002f0317d9bd3854b",
+    "console.log": "e211aba192a3fb9dc09752af7d56fd23edfa86eef24e4e66c7bb409275e70c11",
+    "job.json": "d648e5b9853b1b6e0b584c40d3514c08def68911e883768530ddb3e5a142583d"
+   },
+   "t": "2026-11-09T14:46:42Z",
+   "start": 1
+  },
+  "gates_C2a_R4": {
+   "files": {
+    "console.log": "3b73cad5e51bd87e06237549cb1b435738d4f11db1f4f5e01c8dd00f4eb52a53",
+    "gates.json": "6ad2dce50f6ae2279937e5ea751073ceef0f7d7114d24d3772f4221446ed7b02",
+    "job.json": "857b10a7d94ad4d111eb1008cc3defeaa76abe5f4f42bbe0d747db6b584c1718",
+    "states_L2.npz": "bc154d3fe39e3719123c7d9df1bac3af9b1375323a5a01ebd586caba6191a7c6"
+   },
+   "t": "2026-11-09T15:09:03Z",
+   "start": 1
+  },
+  "plan": {
+   "files": {
+    "PLAN.json": "0f2725c37efc76b26e39a6b48028d250e14c37d69e2cb7ff44b52f857dfbb87c",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "8562a4d057efdbd78c39a9310024e5d153f7569bb2656b333bd81f2045324f37"
+   },
+   "t": "2026-11-09T15:09:04Z",
+   "start": 1
+  },
+  "test_C2a_R4_standin_1": {
+   "files": {
+    "console.log": "d0751e96d4aa9f6667abf7de292806e6b494fe3b7401255f81da6326865134d0",
+    "job.json": "ac866ae4f6cabee28e9ac34f1379c2399e43554cefe43908fe170341eaf39f5f",
+    "test.json": "e08321fdcbe445cddd1869e94432fd12ad48485dffca861b6a3a16b6db1b26b5",
+    "test.npy": "c49f036e543863ee453a9ed567005f6ab2073ef952814b8fa9ad5554454663cb"
+   },
+   "t": "2026-11-09T16:17:45Z",
+   "start": 1
+  }
+ },
+ "ended": {},
+ "not_run": {},
+ "stop": null
+}

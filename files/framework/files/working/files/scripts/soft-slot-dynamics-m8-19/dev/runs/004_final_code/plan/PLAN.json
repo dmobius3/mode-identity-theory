@@ -1,0 +1,16 @@
+{
+ "tests": {
+  "C2a_R4_standin_1": {
+   "job": "gates_C2a_R4",
+   "case": "C2a",
+   "slot": 4,
+   "eps": 8.0,
+   "T": 1000.0,
+   "P": 404.7147583922175
+  }
+ },
+ "untested": {},
+ "gates_not_completed": [],
+ "T_max": 1000.0,
+ "long_control": false
+}

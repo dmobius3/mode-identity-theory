@@ -1,0 +1,29 @@
+ok   this folder's run/ has no FROZEN.json
+ok   no FROZEN.json: refused: REFUSED no FROZEN.json
+ok   the registered orchestrator refuses with no FROZEN.json: REFUSED: no FROZEN.json
+ok   write_guard refuses before the environment is recorded
+ok   record_environment writes run/ENVIRONMENT.json: B_MAXIMUM_THREADS": null
+ }
+}
+ENVIRONMENT.json written; 4a2b1c535cb2caa07cf9a6a975de07dc08633f8648b401b83617e9e5e7aab556
+ok   write_guard writes FROZEN.json and its pin: FROZEN.json written: 16 files pinned; pin 3e13f7c15c3cb8d1f667132fe810d49da48fd60247aedd636fbd0ccf21ec0e16
+ok   the freeze reads back valid: VALID
+ok   every file under run/ and reference/ is pinned, the freeze files and out/ apart: 16 pins
+ok   a second write_guard is refused
+ok   a pinned run file changed: REFUSED run/m819_gates.py differs from its pin
+ok     undone, valid again
+ok   an unpinned file under run/: REFUSED the files under run/ and reference/ are not the pinned set
+ok     undone, valid again
+ok   a reference file changed: REFUSED reference/m8_17/run/out/T4_R5.json differs from its pin
+ok     undone, valid again
+ok   FROZEN.json changed without its pin: REFUSED FROZEN.json is not at its pin, FROZEN_PIN
+ok     undone, valid again
+ok   no go: REFUSED FROZEN.json is not marked frozen with a go
+ok     undone, valid again
+ok   M8.15's frozen numbers changed: REFUSED M8.15's frozen numbers differ from FROZEN.json's
+ok     undone, valid again
+ok   another terms' SHA-256: REFUSED the terms' SHA-256 differs
+ok     undone, valid again
+ok   another instrument manifest: REFUSED the instrument differs from its manifest ([])
+ok     undone, valid again
+PASS

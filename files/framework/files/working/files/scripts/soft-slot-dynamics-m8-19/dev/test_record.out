@@ -1,0 +1,16 @@
+ok   A: gate 1 recorded as filed
+ok   A: one stretch, the stand-in's: ['C2a_R4_standin_1']
+ok   A: its points, causes and test point as gates.json holds them
+ok   A: the test at 8 recorded from test.json: {"outcome": "tested", "verdict": "Persists", "T": 1000.0, "periods": 2.4708760411224717, "valid": true, "max_dperp": 0.0009934776664656249, "max_drot": 1.41650147843349e-06, "max_dref": 4.3100469952616735e-13}
+ok   A: no coherent ladder, nothing newly identified, ended or not run
+ok   B: the ladder's outcome recorded apart, as gates.json holds it
+ok   B: the stretch tested as in A
+ok   B: nothing newly identified
+ok   B2: each other Elliptic run named apart, numbered, with its points: {"C2a_R5_new_1": {"label": "The coherent row in R5, Elliptic at 16", "points": [16.0], "outcome": "no test fixed", "why": "a newly identified Elliptic stretch, apart from the one its ladder establishes: these terms fix no test for it, so S5 stays open for it, for the maintainer"}, "C2a_R5_new_2": {"label": "The coherent row in R5, Elliptic from 22.6274 to 32", "points": [22.627416997969522, 32.0], "outcome": "no test fixed", "why": "a newly identified Elliptic stretch, apart from the one its ladder establishes: these terms fix no test for it, so S5 stays open for it, for the maintainer"}}
+ok   B2: each with no test fixed, and S5 open for it, for the maintainer
+ok   B2: none among the terms' stretches, and none Untested
+ok   C: every stretch the terms name is in the record: 6 of 6
+ok   C: each sent for adjudication with its job's cause: ['coherent_R5: not run', 'gates_T1_R4: not run', 'gates_T1_R5: not run', 'gates_T4_R4: not run', 'gates_T4_R5: not run']
+ok   C: the coherent row's ladder sent for adjudication with its job's cause: {"outcome": "for adjudication", "why": "coherent_R5: not run"}
+stretches named: ['C2a_R5_1', 'T1_R4_1', 'T1_R4_2', 'T1_R5_1', 'T4_R4_1', 'T4_R5_1']
+PASS

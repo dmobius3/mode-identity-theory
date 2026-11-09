@@ -1,0 +1,13 @@
+2026-11-08T16:14:55Z started dyn_C1 (start 1, pid 96729)
+2026-11-08T16:14:55Z started dyn_C2a (start 1, pid 96730)
+2026-11-08T16:14:55Z started dyn_C2b (start 1, pid 96731)
+2026-11-08T16:14:55Z started dyn_C3 (start 1, pid 96732)
+2026-11-08T16:16:21Z completed dyn_C2b
+2026-11-08T16:16:21Z started c2a_dur (start 1, pid 96989)
+2026-11-08T16:17:15Z completed dyn_C1
+2026-11-08T16:17:26Z completed dyn_C2a
+2026-11-08T16:17:26Z completed dyn_C3
+2026-11-08T16:23:37Z completed c2a_dur
+2026-11-08T16:23:37Z started controls (start 1, pid 97686)
+2026-11-08T16:23:38Z completed controls
+2026-11-08T16:23:38Z launch ended; pending []; stop None

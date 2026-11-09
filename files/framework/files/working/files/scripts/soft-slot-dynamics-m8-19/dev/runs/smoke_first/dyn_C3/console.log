@@ -1,0 +1,41 @@
+{
+ "verdict": "Invalid (Persists on an invalid run)",
+ "valid": false,
+ "valid_under_v6_energy_rule": false,
+ "read_until": 19.975481282894304,
+ "max_d": 0.0010000059267330796,
+ "max_dperp": 0.0010000059301925217,
+ "max_drot": 6.124426389901513e-07,
+ "max_dref": 4.164933225553328e-14,
+ "charge_drift": 4.715363048844554e-16,
+ "energy_drift": 2.3471356057492166e-06,
+ "energy_pert": 2.477261984961753e-05,
+ "energy_dev_vs_pert": 0.09474716925369743,
+ "energy_secular_drift": 0.04420114529429742,
+ "t_fail": null,
+ "drot_at_fail": null,
+ "r": 1.8995222061946038e-16,
+ "dt": 0.008186672656923894,
+ "direction": "split",
+ "initial_energy_norm": 0.001000035634642404,
+ "N_obs": 122,
+ "N_step": 2443,
+ "T_int": 20.000041300865075,
+ "seconds": 135.36146473884583,
+ "level2_rates": [
+  [
+   0.009737451477599475,
+   0.0
+  ],
+  [
+   0.009737451477599766,
+   0.0
+  ],
+  [
+   0.009737451477600101,
+   0.0
+  ]
+ ],
+ "cluster_dim": 8,
+ "eps": 1.0
+}

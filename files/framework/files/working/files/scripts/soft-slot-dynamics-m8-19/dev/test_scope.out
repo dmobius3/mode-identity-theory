@@ -1,0 +1,44 @@
+ok   A: every job completed, nothing ended or not run: 20 completed
+ok   A: at most four at once: 4
+ok   A: wave 1 in the terms' order, gate 1 after all of it: ['dyn_C1', 'dyn_C2a', 'dyn_C2b', 'dyn_C3', 'rate', 'p5a', 'c3e3', 'c2a_dur', 'controls']
+ok   A: no gates job before gate 1 completed
+ok   A: the plan after every gates job
+ok   A: the longest control at the longest T: ['--long-T', '15750.0']
+ok   A: the T4/R5 test (T = 15750) after the longest control
+ok   A: the shorter tests need no longest control
+ok   A: the record last
+ok   A: each sealed job's guard was called: ['coherent_R5', 'gates_T1_R4', 'gates_T1_R5', 'gates_T4_R4', 'gates_T4_R5', 'test_C2a_R5_1', 'test_T4_R4_1', 'test_T4_R5_1']
+ok   A: the record: T1 untested, T4/R4 tested, T4/R5 Unresolved, the coherent row tested: {'T1_R4_1': 'Untested', 'T1_R4_2': 'Untested', 'T1_R5_1': 'Untested', 'T4_R4_1': 'tested', 'T4_R5_1': 'tested, Unresolved (the terms ask the maintainer to confirm the reading)', 'C2a_R5_1': 'tested'}
+ok   A: the coherent row's ladder recorded apart, nothing newly identified
+ok   B: gate 1 fails on C3 at 3
+ok   B: no sealed job started
+ok   B: the gates jobs and the plan not run, gate 1 named
+ok   B: the record runs and sends every stretch to adjudication
+ok   B: the coherent row's ladder sent for adjudication, gate 1 named
+ok   C: the T4/R5 test not run, the longest control named
+ok   C: the shorter tests ran
+ok   C: the record sends T4/R5 to adjudication with the cause: test_T4_R5_1: the longest control did not Persist, valid
+ok   C: the run did not stop
+ok   D: three launches, each starting the raising gates job once: [1, 1, 1]
+ok   D: the plan waited for the third launch
+ok   D: the raising gates job ended after three starts
+ok   D: the plan ran without it and the other tests ran
+ok   D: the record sends T4/R4 to adjudication with the cause: gates_T4_R4: RuntimeError at stage start: stub: a gates job that raises
+ok   E: three launches, each starting the raising control once, then it ended: [1, 1, 1]
+ok   E: gate 1 ran only on the third launch, and failed on the control
+ok   E: no gates job and no plan ever started: []
+ok   E: each not run, gate 1 named
+ok   E: no sealed guard was called: []
+ok   E: the record sends every stretch and the coherent row's ladder to adjudication
+ok   F: three launches, each starting the longest control once, then it ended: [1, 1, 1]
+ok   F: the test longer than 2750 never started, and is not run with the cause: {'t': '2026-11-09T14:39:01Z', 'why': 'c2a_long did not complete'}
+ok   F: the tests up to 2750 ran on the first launch
+ok   F: the record sends T4/R5 to adjudication with the cause, and records the others tested: test_T4_R5_1: c2a_long did not complete
+ok   F: the run did not stop
+ok   A: no launch started a job twice: []
+ok   B: no launch started a job twice: []
+ok   C: no launch started a job twice: []
+ok   D: no launch started a job twice: []
+ok   E: no launch started a job twice: []
+ok   F: no launch started a job twice: []
+PASS

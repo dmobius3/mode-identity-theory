@@ -1,0 +1,275 @@
+{
+ "pin": "bench smoke 7c0d89c1d865fb9dad25c46fc3cbb1414dc92a8a770ea7194ce982456a5349fa 25373f75ef92e93a92a1efd13edce3703e0ae890a71f08eaad9b0a2242450305 d2bc185a0327e3dc81938a4d9b7585e6a0f1598f60907cb1a6e0c8742751a383",
+ "bench": true,
+ "launches": [
+  "2026-11-09T01:16:38Z"
+ ],
+ "jobs": [
+  {
+   "id": "dyn_C1",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2a",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2b",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C3",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c2a_dur",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "controls",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "c2a_dur"
+   ],
+   "gate1": false,
+   "long": false
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "launch",
+   "number": 1
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "started",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "process",
+   "job": "dyn_C1",
+   "start": 1,
+   "pid": 11310
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "started",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "process",
+   "job": "dyn_C2a",
+   "start": 1,
+   "pid": 11311
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "started",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "process",
+   "job": "dyn_C2b",
+   "start": 1,
+   "pid": 11312
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "started",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:16:38Z",
+   "event": "process",
+   "job": "dyn_C3",
+   "start": 1,
+   "pid": 11313
+  },
+  {
+   "t": "2026-11-09T01:20:52Z",
+   "event": "completed",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:20:52Z",
+   "event": "started",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:20:52Z",
+   "event": "process",
+   "job": "c2a_dur",
+   "start": 1,
+   "pid": 11940
+  },
+  {
+   "t": "2026-11-09T01:22:34Z",
+   "event": "completed",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:22:38Z",
+   "event": "completed",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:22:41Z",
+   "event": "completed",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:32:52Z",
+   "event": "completed",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:32:52Z",
+   "event": "started",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:32:52Z",
+   "event": "process",
+   "job": "controls",
+   "start": 1,
+   "pid": 12947
+  },
+  {
+   "t": "2026-11-09T01:32:53Z",
+   "event": "completed",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-09T01:32:53Z",
+   "event": "launch ended",
+   "pending": [],
+   "stopped": null
+  }
+ ],
+ "completed": {
+  "dyn_C2b": {
+   "files": {
+    "console.log": "4673ac0d3539ca6865ac4cc3dc9d80239e3f84aef41896f28fc92fc8a1709c70",
+    "dynamics_C2b.json": "7df4b0387d283ed76f31d62675071d78dba2125a3eb5cb53681844b38537f7ed",
+    "dynamics_C2b.npy": "e039cd4267336efbbfeb46550b7bc8e7a6ad34bfc28b907d2d328ff39642e5fb",
+    "job.json": "ae4636d349d0af57dc10f5d9d1e945efa363397570335d17851f89b939feeb4a"
+   },
+   "t": "2026-11-09T01:20:52Z",
+   "start": 1
+  },
+  "dyn_C3": {
+   "files": {
+    "console.log": "2bb41557431d329b10521d7e8bca553c59f96d11c9f0d68aad32503a30503ab1",
+    "dynamics_C3.json": "d650a641bd3a5eb34362550f4916b731217cd05810b9690e61a980ccda31cf06",
+    "dynamics_C3.npy": "3d341fa241709d16695d804516278113899a676602c85ea988d24d3b65824ff0",
+    "job.json": "4b1f1585ec8aba138f6992f185b396819ddf8a6ec588b5874475f1befa58b843"
+   },
+   "t": "2026-11-09T01:22:34Z",
+   "start": 1
+  },
+  "dyn_C1": {
+   "files": {
+    "console.log": "1fb13036c8a30745dacc96ccf001f52db84f9596028135816ebde6577c2f9bde",
+    "dynamics_C1.json": "521fda592411bed64268fac58aae93ded09e97051813ee5856ff2106e5d918bc",
+    "dynamics_C1.npy": "020394ee450cedfdef526cb07a59e6ce0f5e62854f9e1ac0034e9c1c2bff7616",
+    "job.json": "1cd4199fef877c2cd5236c2059300cf795af04f9f968cb7fcc1b47884782c293"
+   },
+   "t": "2026-11-09T01:22:38Z",
+   "start": 1
+  },
+  "dyn_C2a": {
+   "files": {
+    "console.log": "88074d38ca9e973b0157763c50819b8b0ee4ed8973da698724f9d104172f6c95",
+    "dynamics_C2a.json": "e56aa958268cddfa358b87746d9519052c9b6d52da1016f65e213362e690a026",
+    "dynamics_C2a.npy": "f328981ede4dba7ad1a4222c6fac59da54e1486e51cf5aa89ed46fb53974c24e",
+    "job.json": "4ddc0da3f4f506fda8f322750fb2d64e38877ec83071b5e97fee1eee6cf89f75"
+   },
+   "t": "2026-11-09T01:22:41Z",
+   "start": 1
+  },
+  "c2a_dur": {
+   "files": {
+    "c2a.json": "d0b85786a108881a0767b51ef5f55e05bebc30e052f860bb600e1c1513756020",
+    "console.log": "b791d17e729d4f89ac94f8a3b90d8185cd326c4766f038d3e1bd7e90f7cc2c82",
+    "job.json": "5467fcfc6fea395c2d1b71d5a4f491756f69a79011f9b219e1665707584fd6cf",
+    "test.npy": "f328981ede4dba7ad1a4222c6fac59da54e1486e51cf5aa89ed46fb53974c24e"
+   },
+   "t": "2026-11-09T01:32:52Z",
+   "start": 1
+  },
+  "controls": {
+   "files": {
+    "CONTROLS.json": "ab5aacfb354be94337f9318c0d1a58b8253313c62cc1b1a6be63e2fadf959559",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "7e65225cb9aa0678d45dae4d24180921183a0eb8075e9fa0fd335956e112c7bb"
+   },
+   "t": "2026-11-09T01:32:53Z",
+   "start": 1
+  }
+ },
+ "ended": {},
+ "not_run": {},
+ "stop": null
+}

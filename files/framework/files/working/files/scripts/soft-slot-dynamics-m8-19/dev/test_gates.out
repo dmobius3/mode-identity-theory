@@ -1,0 +1,42 @@
+ok   arm 0: every stored point read again gives its stored reading: 11 of 11
+ok   the stand-in's search lands at 8 with T = 1000: (8.0, 1000.0)
+     arms at eps 8.0 (reference: level3) and 0.25 (harmonic)
+ok   gate 2: no level-2 solution: first failed 2, why 'no accepted solution at level 2'
+ok   gate 2: no level-3 solution: first failed 2, why 'no accepted solution at level 3'
+ok   gate 3: the level-3 cluster check: first failed 3, why 'level 3 cluster check'
+ok   gate 3: the level-2 cluster check: first failed 3, why 'level 2 cluster check'
+ok   gate 3: the reference's Krein sign flipped: first failed 3, why 'level 3: no genuine imaginary mode with Krein sign -; level 2: no genuine imaginary mode with Krein sign -'
+ok   gate 3: the reference's count 2: first failed 3, why "level 3: the mode is not identified: 1 candidate of Krein sign + within 5% of the slowest (modulus 0.000586637), where the reference's multiplicity is 2; level 2: the mode is not identified: 1 candidate of Krein sign + within 5% of the slowest (modulus 0.000603663), where the reference's multiplicity is 2"
+ok   gate 3: a near twin of the level-2 mode: first failed 3, why "level 2: the mode is not identified: 2 candidates of Krein sign + within 5% of the slowest (moduli 0.000603663, 0.000615737), where the reference's multiplicity is 1"
+ok   gate 3: the near twin's refusal names both moduli: level 2: the mode is not identified: 2 candidates of Krein sign + within 5% of the slowest (moduli 0.000603663, 0.000615737), where the reference's multiplicity is 1
+ok   gate 4: levels 2 and 3 apart by 6%: first failed 4, why 'levels 2 and 3 differ by 5.817%'
+ok   gate 4: the harmonic reading 6% off: first failed 4, why 'level 3 differs from the harmonic reading by 5.319%'
+ok   gate 5: a share of 0.0099: first failed 5, why 'the slow half carries 0.990% on the mode'
+ok   gate 7: r T just above ln(1/(10 eta)): first failed 7, why 'r T = 4.61 exceeds ln(1/(10 eta))'
+ok   gate 7: r T just below passes
+ok   gate 6: P = 999.9 gives T = 1000.0: got 1000.0
+ok   gate 6: P = 1000.0 gives T = 1000.0: got 1000.0
+ok   gate 6: P = 1000.1 gives T = 1250.0: got 1250.0
+ok   gate 6: P = 2750.0 gives T = 2750.0: got 2750.0
+ok   gate 6: P = 2750.0000000027503 gives T = 3000.0: got 3000.0
+ok   gate 6: P = 2717.7 gives T = 2750.0: got 2750.0
+ok   the search: the top point red moves the test down one point: 5.656854249492381 against 5.656854249492381
+ok   the duration control: gate 4 is not read
+ok   stretches: an unclassified point splits a stretch: [[0.25, 0.5], [2.0, 4.0]]
+ok   the coherent stretch: all Elliptic, the whole ladder
+ok   the coherent stretch: the run through 2
+ok   the coherent stretch: not established, the record
+ok   the coherent row: an Elliptic run above a gap is named apart: [[8.0]]
+ok   the coherent row: none apart when the whole ladder is the stretch
+ok   the coherent row: none apart on a ladder not established
+ok   guard: gate 1 not run: controls has not completed
+ok   guard: gate 1 failed: gate 1 did not pass
+ok   guard: CONTROLS.json changed after it completed: controls/CONTROLS.json differs from the SHA-256 the run logged
+ok   guard: a sealed job on the bench: T4/R5 is sealed: no bench run touches it
+ok   guard: a sealed job with no FROZEN.json: no FROZEN.json
+ok   guard: a control is not sealed
+ok   guard: a test longer than 2750 before the longest control: c2a_long has not completed
+ok   guard: the longest control did not Persist: a test longer than 2750 waits for the longest control to Persist, valid
+ok   guard: a test longer than 2750 after the longest control Persisted
+ok   guard: a test of 2750 or less waits for nothing
+PASS

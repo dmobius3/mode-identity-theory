@@ -1,0 +1,25 @@
+2026-11-08T16:24:16Z started gates_C2a_R4 (start 1, pid 97734)
+2026-11-08T16:24:16Z started dyn_C1 (start 1, pid 97735)
+2026-11-08T16:24:16Z started dyn_C2a (start 1, pid 97736)
+2026-11-08T16:24:16Z started dyn_C2b (start 1, pid 97737)
+2026-11-08T17:12:53Z completed gates_C2a_R4
+2026-11-08T17:12:53Z started plan (start 1, pid 99209)
+2026-11-08T17:12:54Z completed plan
+2026-11-08T17:12:54Z started test_C2a_R4_standin_1 (start 1, pid 99211)
+2026-11-08T17:39:38Z completed dyn_C2b
+2026-11-08T17:39:38Z started dyn_C3 (start 1, pid 311)
+2026-11-08T18:23:44Z completed dyn_C2a
+2026-11-08T18:23:44Z started rate (start 1, pid 1178)
+2026-11-08T18:26:28Z completed dyn_C1
+2026-11-08T18:26:28Z started p5a (start 1, pid 1222)
+2026-11-08T18:26:38Z completed p5a
+2026-11-08T18:26:38Z started c3e3 (start 1, pid 1230)
+2026-11-08T18:27:02Z completed c3e3
+2026-11-08T18:27:02Z started c2a_dur (start 1, pid 1237)
+2026-11-08T18:35:12Z completed c2a_dur
+2026-11-08T18:59:07Z completed test_C2a_R4_standin_1
+2026-11-08T19:26:38Z completed dyn_C3
+2026-11-08T19:47:24Z completed rate
+2026-11-08T19:47:24Z started controls (start 1, pid 3825)
+2026-11-08T19:47:25Z completed controls
+2026-11-08T19:47:25Z launch ended; pending []; stop None

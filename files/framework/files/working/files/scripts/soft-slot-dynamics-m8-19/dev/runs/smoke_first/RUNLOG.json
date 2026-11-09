@@ -1,0 +1,275 @@
+{
+ "pin": "bench smoke c489d0760ec6aad5109ce3ed211d2a493bb809c89b7c9f8301dec4846eaa70a1 545193dcee2445f2d5439f4480dc967a8094ed1c1ed435b2959309fc13dcec35 8ca542418620ea080e3fe8ecd7393975b66b90f1034c45bed65a0c47d4c5cca9",
+ "bench": true,
+ "launches": [
+  "2026-11-08T16:14:55Z"
+ ],
+ "jobs": [
+  {
+   "id": "dyn_C1",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2a",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2b",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C3",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c2a_dur",
+   "wave": 1,
+   "args": [
+    "--T",
+    "20"
+   ],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "controls",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "c2a_dur"
+   ],
+   "gate1": false,
+   "long": false
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "launch",
+   "number": 1
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "started",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "process",
+   "job": "dyn_C1",
+   "start": 1,
+   "pid": 96729
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "started",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "process",
+   "job": "dyn_C2a",
+   "start": 1,
+   "pid": 96730
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "started",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "process",
+   "job": "dyn_C2b",
+   "start": 1,
+   "pid": 96731
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "started",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:14:55Z",
+   "event": "process",
+   "job": "dyn_C3",
+   "start": 1,
+   "pid": 96732
+  },
+  {
+   "t": "2026-11-08T16:16:21Z",
+   "event": "completed",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:16:21Z",
+   "event": "started",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:16:21Z",
+   "event": "process",
+   "job": "c2a_dur",
+   "start": 1,
+   "pid": 96989
+  },
+  {
+   "t": "2026-11-08T16:17:15Z",
+   "event": "completed",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:17:26Z",
+   "event": "completed",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:17:26Z",
+   "event": "completed",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:23:37Z",
+   "event": "completed",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:23:37Z",
+   "event": "started",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:23:37Z",
+   "event": "process",
+   "job": "controls",
+   "start": 1,
+   "pid": 97686
+  },
+  {
+   "t": "2026-11-08T16:23:38Z",
+   "event": "completed",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-08T16:23:38Z",
+   "event": "launch ended",
+   "pending": [],
+   "stopped": null
+  }
+ ],
+ "completed": {
+  "dyn_C2b": {
+   "files": {
+    "console.log": "29e81600dfbb8c5f95ecb01e48453018c5569772ff28750e4c85e9696d93af00",
+    "dynamics_C2b.json": "3a2df4ca2e068c6cb25467165ced017a165d81fdc31bf253f98669e1ff28c8b5",
+    "dynamics_C2b.npy": "e039cd4267336efbbfeb46550b7bc8e7a6ad34bfc28b907d2d328ff39642e5fb",
+    "job.json": "67173777e61b907067385c17b3be51ad9c93bc42730440a4bf590eefce7fc8f8"
+   },
+   "t": "2026-11-08T16:16:21Z",
+   "start": 1
+  },
+  "dyn_C1": {
+   "files": {
+    "console.log": "7fb926c5d89a00c34f63f8dab741d3950fa7fab76ad312414df9062860853a0a",
+    "dynamics_C1.json": "7400d209e6d3e438cd15db3d6ad7a6ad2d39725ce0d0b8b784cc39970d401e39",
+    "dynamics_C1.npy": "020394ee450cedfdef526cb07a59e6ce0f5e62854f9e1ac0034e9c1c2bff7616",
+    "job.json": "f3a116c36b6532961b94cada5fbbb29d4ce6dc370b5e9c9d1349798a0f85a090"
+   },
+   "t": "2026-11-08T16:17:15Z",
+   "start": 1
+  },
+  "dyn_C2a": {
+   "files": {
+    "console.log": "43525e124418fda927de845f80c5dba78d70fbdede4c7c7bae53902e1c05990f",
+    "dynamics_C2a.json": "b3a91ae60e7e0863c71c35bee747816759121868ea90df61e87e77b2271d4a97",
+    "dynamics_C2a.npy": "f328981ede4dba7ad1a4222c6fac59da54e1486e51cf5aa89ed46fb53974c24e",
+    "job.json": "80004e3e5f2b67dff856cd875bfcbb5c358d67aed9d99581152dad17e668b63c"
+   },
+   "t": "2026-11-08T16:17:26Z",
+   "start": 1
+  },
+  "dyn_C3": {
+   "files": {
+    "console.log": "1a79a63dc9763369aafbefaa2e8f1e02cfd35883e17ea11ed880957dae56c908",
+    "dynamics_C3.json": "ac4251adac8c44d9f1d5bf2e7877b368a68f18f95d39d10d6e242ce9ba972aeb",
+    "dynamics_C3.npy": "3d341fa241709d16695d804516278113899a676602c85ea988d24d3b65824ff0",
+    "job.json": "52e7ddaaf524c37aa44450c8fab3e35abb3992965dda9f20053e7bb1745b4d7d"
+   },
+   "t": "2026-11-08T16:17:26Z",
+   "start": 1
+  },
+  "c2a_dur": {
+   "files": {
+    "c2a.json": "12a412c1da11d4f7c5c8c936f981048c08f7123eadac9c2f2103778f34d05576",
+    "console.log": "9b54733a240bc1848fc828b09799fba7563fa936a231db390f6e1b5b19d6fd15",
+    "job.json": "29a0f9e1990242d2485665485f82ff48077d1dd2e31b0f2ff94f8b9656d850e3",
+    "test.npy": "f328981ede4dba7ad1a4222c6fac59da54e1486e51cf5aa89ed46fb53974c24e"
+   },
+   "t": "2026-11-08T16:23:37Z",
+   "start": 1
+  },
+  "controls": {
+   "files": {
+    "CONTROLS.json": "ab5aacfb354be94337f9318c0d1a58b8253313c62cc1b1a6be63e2fadf959559",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "da4e1037593bd14dd264b6f41ab5f2235a56e8103b95267ba537145fe111a61c"
+   },
+   "t": "2026-11-08T16:23:38Z",
+   "start": 1
+  }
+ },
+ "ended": {},
+ "not_run": {},
+ "stop": null
+}

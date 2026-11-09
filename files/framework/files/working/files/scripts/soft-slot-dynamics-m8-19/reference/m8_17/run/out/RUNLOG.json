@@ -1,0 +1,116 @@
+{
+ "completed": {
+  "T2/R4": {
+   "files": {
+    "T2_R4.json": "6240d252b790a8dc403d0efd1bfa252151c6f5997c8a9c557ba4c7e615874ccc"
+   },
+   "t": "2026-10-27T21:08:18Z"
+  },
+  "T3/R4": {
+   "files": {
+    "T3_R4.json": "02a953d33b7844d332456e6127873cacffc6e9e86eba1c6763250ba3da6f377b"
+   },
+   "t": "2026-10-27T22:36:09Z"
+  },
+  "T5/R2": {
+   "files": {
+    "T5_R2.json": "fb185a91edcf7099950e4e7529d125136537769992d8bddb9cb18edf0d632bec"
+   },
+   "t": "2026-10-27T23:29:34Z"
+  },
+  "T1/R4": {
+   "files": {
+    "T1_R4.json": "06e51a090e310a2accf6bab21fdee693ab2806ff6115bb8a7f10b54aae96bcc9"
+   },
+   "t": "2026-10-28T01:10:19Z"
+  },
+  "T4/R4": {
+   "files": {
+    "T4_R4.json": "2955bc02cb2c653deb28f13bcdf53229b21541521681900661183a632823e512"
+   },
+   "t": "2026-10-28T03:02:59Z"
+  },
+  "T1/R5": {
+   "files": {
+    "T1_R5.json": "e8ecd65f3754e6bd047e0d6c34964d59aaa44bd05bb522a71a884118926d3678"
+   },
+   "t": "2026-10-28T05:48:12Z"
+  },
+  "T4/R5": {
+   "files": {
+    "T4_R5.json": "167ddab0d696d2758581a8f7063d0d74283c13bbe2500fb60c91665e1a2ce95c"
+   },
+   "t": "2026-10-28T08:37:23Z"
+  },
+  "locate:T2/R4:16:22.627416998": {
+   "files": {
+    "locate_T2_R4_16_22.627416998.json": "ea1b9937ed82b9049e7faa50ea0bc0a22d92c4f08bc3e38de96fa6ed10570924"
+   },
+   "t": "2026-10-28T11:34:08Z"
+  },
+  "locate:T4/R5:8:11.313708499": {
+   "files": {
+    "locate_T4_R5_8_11.313708499.json": "517aa9f62a45255ec4a76690e95069935d32265e532a7858e58d8709cf10af55"
+   },
+   "t": "2026-10-28T16:18:02Z"
+  }
+ },
+ "gate": null,
+ "events": [
+  {
+   "t": "2026-10-27T19:50:47Z",
+   "event": "run started; rows ['T2/R4', 'T3/R4', 'T5/R2', 'T1/R4', 'T4/R4', 'T1/R5', 'T4/R5']"
+  },
+  {
+   "t": "2026-10-27T21:08:18Z",
+   "event": "T2/R4 completed"
+  },
+  {
+   "t": "2026-10-27T22:36:09Z",
+   "event": "T3/R4 completed"
+  },
+  {
+   "t": "2026-10-27T23:29:34Z",
+   "event": "T5/R2 completed"
+  },
+  {
+   "t": "2026-10-28T01:10:19Z",
+   "event": "T1/R4 completed"
+  },
+  {
+   "t": "2026-10-28T03:02:59Z",
+   "event": "T4/R4 completed"
+  },
+  {
+   "t": "2026-10-28T05:48:12Z",
+   "event": "T1/R5 completed"
+  },
+  {
+   "t": "2026-10-28T08:37:23Z",
+   "event": "T4/R5 completed"
+  },
+  {
+   "t": "2026-10-28T11:34:08Z",
+   "event": "locate:T2/R4:16:22.627416998 completed"
+  },
+  {
+   "t": "2026-10-28T16:18:02Z",
+   "event": "locate:T4/R5:8:11.313708499 completed"
+  },
+  {
+   "t": "2026-10-28T16:18:02Z",
+   "event": "record and transcript written"
+  }
+ ],
+ "manifest_sha256": "2deed9aa564a6ccb4af36734e8ee6bdc787c9265b1be97cca22f0c76a4da9299",
+ "census": {
+  "file": "CENSUS.json",
+  "sha256": "d010db400a6bdef2ad64ce1bfd0e085995c49e62ba1982325ff6234f8d233aac",
+  "written": "2026-10-28T16:18:02Z"
+ },
+ "transcript": {
+  "file": "census.out",
+  "sha256": "50fac723ceaa77c778ba2a3b20011559d87ac51259b6b939f776cf699f883352",
+  "written": "2026-10-28T16:18:02Z"
+ }
+}

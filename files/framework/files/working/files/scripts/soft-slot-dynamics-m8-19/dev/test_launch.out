@@ -1,0 +1,24 @@
+ok   1: three launches, each starting the raising job once, and each start ended: 3 launches, starts by launch [1, 1, 1], 3 ends
+ok   1: each end names the forced exception and its stage: RuntimeError at stage dynamics: forced exception at stage dynamics (armed control, controls only)
+ok   1: the first two launches ended with it and what needs it pending: [['dyn_C1', 'dyn_C2b', 'controls'], ['dyn_C1', 'dyn_C2b', 'controls'], []]
+ok   1: on the third launch, the job ended its part of the run
+ok   1: what needs it is not run, with the cause, only on the third launch
+ok   1: what only waits on it runs and completes, on the third launch
+ok   1: each start's folder is moved aside, none into the run: ['dyn_C1.1', 'dyn_C1.2', 'dyn_C1.3']
+ok   1: gate 1 reads the ended job as not completed
+ok   2: the killed start ended with the signal: [{'t': '2026-11-09T00:26:08Z', 'event': 'ended', 'job': 'dyn_C1', 'start': 1, 'code': -9, 'cause': 'ended by signal 9'}]
+ok   2: the launch ended with the job pending, not started again: [{'t': '2026-11-09T00:26:08Z', 'event': 'launch ended', 'pending': ['dyn_C1'], 'stopped': None}]
+ok   2: a relaunch started it again and it completed
+ok   2: the killed start's folder is aside, the completed one in the run
+ok   3: the job outlives the orchestrator
+ok   3: a relaunch refuses while the job lives: REFUSED: dyn_C1 (start 1, pid 10314) is still running
+ok   3: the relaunch ends the open start: [{'t': '2026-11-09T00:34:30Z', 'event': 'ended', 'job': 'dyn_C1', 'start': 1, 'code': None, 'cause': 'the launch that started it ended before it'}]
+ok   3: and starts the job again, counting the start
+ok   3: the open start's folder, complete or not, is aside and not read
+ok   4: the sealed job refused on the bench and the run stopped: {'t': '2026-11-09T00:40:07Z', 'why': 'gates_T1_R4 refused: T1/R4 is sealed: no bench run touches it'}
+ok   4: a relaunch refuses the stopped run
+ok   1: no launch started a job twice: []
+ok   2: no launch started a job twice: []
+ok   3: no launch started a job twice: []
+ok   4: no launch started a job twice: []
+PASS
