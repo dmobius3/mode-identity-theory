@@ -144,3 +144,15 @@ Nothing sealed was solved, given a spectrum or evolved.
 **The folder to publish:** this folder at the commit, without caches, and without `dev/runs/launch_tests/` and `dev/runs/scope_tests/`. The failure-path and scope tests rebuild those two on every run, and the scope test's holds the stub's made-up records under the targets' names, which are not results; the tests' outputs, `dev/test_launch.out` and `dev/test_scope.out`, are in. The dry run's records are in, under `dev/runs/`. As M8.18's, `SHA256SUMS` lists every file in the folder but itself, `registration/` included, which is in the repository already and does not change.
 
 **Next:** the folder into the repository, and the request for the go on #698, which Blake posts. At the go, `record_environment.py` writes `run/ENVIRONMENT.json` once and `write_guard.py` writes the freeze, on Blake's word; then the freeze block and the run.
+
+## 10. 2026-11-09T17:32:31Z: the request for the go, reviewed; DESIGN.md's note on the readings' words
+
+**The reviews,** relayed by Blake: both give their go on the request after fixes. Taken:
+- the wall time also names the terms' longer case, about 2 to 3.5 months if T4's gates pass only at its stretches' lowest points (one review);
+- the order: the folder checked against its `SHA256SUMS` before the freeze, since `write_guard.py` hashes the folder as it stands, so that `FROZEN.json` holds the bytes the request names (the other); the terms' "before the go", read literally, stated beside the reading the request asks the maintainer to confirm, with a stop if the freeze must come first (both);
+- reading 3's stretch as the unbroken run of Elliptic ladder points that contains 2, as far below and above it as it goes, since "through 2" could be read as ending at 2 (the other). It starts at 0.25 only if the ladder's points at 0.354, 0.707 and 1.414, which M8.16.1 has no types for, read Elliptic, so the request does not say "from 0.25";
+- reading 5 in the terms' words, "start and leave unfinished"; the opening names the setups' one decomposition, the symmetry projector's SVD; and `write_guard.py` as modelled on M8.18's, while `record_environment.py` is M8.18's byte for byte (the other, narrowed).
+
+**DESIGN.md:** the other review asks for its readings in the request's words, since the go covers it and its reading 4 says "as M8.18's every relaunch was", where M8.18's run never relaunched. The readings as ruled stay as made, and a dated note after them gives the request's words for readings 3 to 5, the ones the maintainer is asked to confirm. No file under `run/` or `reference/` changed, so no test reran.
+
+**Next:** on Blake's word, this folder into the repository with its new `SHA256SUMS`, and the request's hashes and links moved to that commit; then Blake posts the request on #698.
