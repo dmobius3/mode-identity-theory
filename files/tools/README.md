@@ -37,7 +37,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 
 ## 📚 Publication Registry
 
-### 📐 Framework
+>### 📐 Framework
 
 | Page | Paper | Date | Concept DOI | TOE-Share | OpenWave |
 |---|---|---|---|---|---|
@@ -47,7 +47,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 | [↗](/files/framework/files/bedrock/files/galois-pair.md) Galois pair | An Affine Rho–Index Conversion and the Galois Pair on the Poincaré Homology Sphere | 2026 Jul | [SSRN 7129118](https://ssrn.com/abstract=7129118) | [![TOE-Share AI review: 4.2 / 5](https://theoryofeverything.ai/api/badge/paper/bfb63b33-d026-4110-95b2-90b5957291e3?style=square)](https://theoryofeverything.ai/review-profile/paper/bfb63b33-d026-4110-95b2-90b5957291e3?utm_source=toeshare_badge) | [M8.1.1 S-B](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/findings/m8_1_1_method_note.md) |
 | [↗](/files/framework/files/bedrock/files/surviving-ray.md) Surviving ray | The Surviving Ray: the spin-3 coupling point that $`S^3/2I`$ selects, and its critical geometry | 2026 Sep | [SSRN 7515378](https://ssrn.com/abstract=7515378) | [![TOE-Share AI review: 4.3 / 5](https://theoryofeverything.ai/api/badge/paper/a3797810-6785-4f0b-9a75-8c9a6771d879?style=square)](https://theoryofeverything.ai/review-profile/paper/a3797810-6785-4f0b-9a75-8c9a6771d879?utm_source=toeshare_badge) | [M8.1.2](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md) |
 
-### 🪐 Cosmos
+>### 🪐 Cosmos
 
 | Page | Paper | Date | Concept DOI | TOE-Share | OpenWave |
 |---|---|---|---|---|---|
@@ -59,7 +59,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 | [↗](/files/cosmos/files/black-hole.md) Black holes |  | 2026 April |  | [4.2/5](https://theoryofeverything.ai/review-profile/paper/31746fa6-6dcb-402f-b1ae-93720a98b8aa) |  |
 | [↗](/files/cosmos/files/euclid-dr1.md) Euclid DR1 | Euclid DR1: A Pre-Registered Contender Showdown | 2026 Jun | [zenodo.20563047](https://doi.org/10.5281/zenodo.20563047) |  |  |
 
-### 🌈 Spectrum
+>### 🌈 Spectrum
 
 | Page | Paper | Date | Concept DOI | TOE-Share | OpenWave |
 |---|---|---|---|---|---|
