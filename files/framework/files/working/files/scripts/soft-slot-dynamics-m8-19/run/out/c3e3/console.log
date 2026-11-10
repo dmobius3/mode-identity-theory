@@ -1,0 +1,10 @@
+      t =    98.9: d 5.617e-03, d_perp 5.617e-03, d_rot 7.108e-06, reference 6.2e-13
+      t =   198.8: d 9.194e-02, d_perp 9.184e-02, d_rot 9.986e-05, reference 9.7e-12
+      t =   298.6: d 9.231e-01, d_perp 8.158e-01, d_rot 3.139e-02, reference 1.6e-10
+      t =   398.5: d 7.416e-01, d_perp 5.003e-01, d_rot 4.105e-01, reference 2.7e-09
+      t =   498.4: d 1.283e+00, d_perp 7.624e-01, d_rot 3.372e-01, reference 4.4e-08
+      t =   598.3: d 1.280e+00, d_perp 4.137e-01, d_rot 7.581e-01, reference 7.3e-07
+      t =   698.1: d 1.246e+00, d_perp 4.750e-01, d_rot 5.585e-01, reference 1.2e-05
+      t =   798.0: d 1.126e+00, d_perp 4.218e-01, d_rot 7.648e-01, reference 2.0e-04
+      t =   897.9: d 1.215e+00, d_perp 7.409e-01, d_rot 4.273e-01, reference 3.3e-03
+      t =   997.8: d 1.126e+00, d_perp 6.799e-01, d_rot 5.297e-01, reference 5.5e-02

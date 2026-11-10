@@ -1,0 +1,53 @@
+{
+ "verdict": "Fails",
+ "valid": true,
+ "valid_under_v6_energy_rule": false,
+ "read_until": 202.75113502137717,
+ "max_d": 1.3779537246565403,
+ "max_dperp": 0.90349169605351,
+ "max_drot": 0.8419200320416051,
+ "max_dref": 1.0869360510954897e-11,
+ "charge_drift": 7.832626720075013e-15,
+ "energy_drift": 2.272015524951041e-06,
+ "energy_pert": 2.406568053146515e-05,
+ "energy_dev_vs_pert": 0.09440894563444609,
+ "energy_secular_drift": 0.004773766969900056,
+ "t_fail": 202.75113502137717,
+ "drot_at_fail": 0.00011248602383983253,
+ "r": 7.103692634125025e-16,
+ "dt": 0.008186672656923894,
+ "direction": "split",
+ "initial_energy_norm": 0.0010000892463304936,
+ "N_obs": 122,
+ "N_step": 122150,
+ "T_int": 1000.0020650432538,
+ "seconds": 6866.801312685013,
+ "eps": 3.0,
+ "eps_reached": 2.999999989329851,
+ "residual": 7.677030177964852e-13,
+ "cluster": {
+  "dim": 8,
+  "frozen_dim": 8,
+  "closed": true,
+  "omega_gram": 0.9562310101020525,
+  "ok": true
+ },
+ "level2_rates": [
+  [
+   0.0280904202805715,
+   -5.608080084238013e-16
+  ],
+  [
+   0.0280904202805715,
+   5.608080084238013e-16
+  ],
+  [
+   0.028090420280572834,
+   0.0
+  ]
+ ],
+ "control": {
+  "passed": true,
+  "rule": "must Fail"
+ }
+}

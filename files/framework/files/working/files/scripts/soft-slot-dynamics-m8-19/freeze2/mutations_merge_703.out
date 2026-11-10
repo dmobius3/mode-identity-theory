@@ -1,0 +1,8 @@
+ok    the control, unchanged: passes
+ok    a byte appended to the pushed block: red on ['the block at the merge commit equals the pushed block, byte for byte', 'the pins it restates, five, each equal to ours']
+ok    the second FROZEN.json's hash taken from the first's: red on ['each short hash it gives names one of ours', 'the pins it restates, five, each equal to ours']
+ok    the ruling's time moved to the start of its day: red on ['nothing else posted on #698, #702 or #703 since the ruling but the review', "the times it gives: the block's, and the opening's; the ruling's, the second freeze's and the opening's among them"]
+ok    the review read as edited at the merge: red on ['the review never edited']
+ok    the merge commit's tree taken from main before the merge: red on ["its tree the pushed commit's tree"]
+ok    the review's first short hash one digit off: red on ['each short hash it gives names one of ours']
+mutations_merge_703: PASS 6 arms and the control

@@ -1,0 +1,4 @@
+recorded from the shell, the launch reads: 1 differences: ['threading.MKL_NUM_THREADS', 'threading.OMP_NUM_THREADS', 'threading.OPENBLAS_NUM_THREADS', 'threading.VECLIB_MAXIMUM_THREADS']
+recorded by the launch's route, the launch reads: 0 differences: none
+that record against the bench's: ['recorded', 'threading.MKL_NUM_THREADS', 'threading.OMP_NUM_THREADS', 'threading.OPENBLAS_NUM_THREADS', 'threading.VECLIB_MAXIMUM_THREADS']
+threading recorded: {'MKL_NUM_THREADS': '1', 'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1'}

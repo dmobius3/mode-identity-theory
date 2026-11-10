@@ -1,0 +1,26 @@
+== the second FROZEN.json, field by field
+ok    its fields, in the first one's order, and no other: ['frozen', 'go', 'written', 'terms_sha256', 'solver_commit', 'instrument_manifest_sha256', 'pins', 'freeze_numbers']
+ok    frozen, with the ruling's link as its go
+ok    the terms' SHA-256, the solver commit and the manifest's SHA-256, each as the go names it
+ok    freeze_numbers equal to the instrument's out/freeze_numbers.json and to the first freeze's
+ok    15 pins at their SHA256SUMS lines, equal to the first freeze's, and the new record: 16
+ok    every pin at its file now
+ok    FROZEN_PIN holds the second FROZEN.json's SHA-256
+ok    written after the ruling, the environment recorded before it was written: 2026-11-10T00:41:59Z < 2026-11-10T00:55:03Z <= 2026-11-10T00:55:03Z
+ok    the two FROZEN.json differ in the environment pin, written and go alone: (['go', 'written'], ['run/ENVIRONMENT.json'])
+== the first freeze, as kept
+ok    kept beside the folder: its three files alone: ['ENVIRONMENT.json', 'FROZEN.json', 'FROZEN_PIN']
+ok    at the pins #702 records and the ruling names, the go's link in it
+ok    the two environment records differ in the four threading fields and the time alone, the interpreter path and flags included: ['recorded', 'threading.MKL_NUM_THREADS', 'threading.OMP_NUM_THREADS', 'threading.OPENBLAS_NUM_THREADS', 'threading.VECLIB_MAXIMUM_THREADS']
+== the folder
+ok    the folder's files are the commit's tree and the second freeze's three, nothing else: ['run/ENVIRONMENT.json', 'run/FROZEN.json', 'run/FROZEN_PIN']
+ok    SHA256SUMS: every listed file OK, at the go's SHA-256
+ok    no run/out/, and no cache in the folder or the instrument
+ok    the worktree's M8.19 folder and instrument unchanged
+== the launch's two checks, in a fresh process, by the launch's route
+ok    validate_frozen passes, with the ruling's link, and the check reads no difference: 16 https://github.com/openwave-labs/openwave/pull/698#issuecomment-6755529199
+differences: none
+
+== the environment check from the shell, which the launch never runs
+ok    from the shell, with the four unset, it reads the four threading differences, as the launch's route never does: ["differences: ['threading.MKL_NUM_THREADS', 'threading.OMP_NUM_THREADS', 'threading.OPENBLAS_NUM_THREADS', 'threading.VECLIB_MAXIMUM_THREADS']"]
+verify_frozen_2: PASS

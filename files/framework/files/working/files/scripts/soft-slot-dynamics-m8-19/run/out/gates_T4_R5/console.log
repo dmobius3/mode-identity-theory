@@ -1,0 +1,26 @@
+  L3 eps 0.25: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 7.60e-05; peak resident 5.8 GB
+  L3 eps 0.3536: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 8.95e-05; peak resident 6.7 GB
+  L3 eps 0.5: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.05e-04; peak resident 6.7 GB
+  L3 eps 0.7071: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.22e-04; peak resident 6.7 GB
+  L3 eps 1: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.41e-04; peak resident 6.7 GB
+  L3 eps 1.414: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.60e-04; peak resident 6.7 GB
+  L3 eps 2: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.77e-04; peak resident 7.3 GB
+  L3 eps 2.828: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 2.07e-04; peak resident 8.4 GB
+  L3 eps 4: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 2.72e-04; peak resident 8.4 GB
+  L3 eps 5.657: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 2.96e-04; peak resident 8.4 GB
+  L3 eps 8: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 3.40e-04; peak resident 8.4 GB
+<the bench>/soft-slot-dynamics-m8-15x/m8_15x_solver/linearize.py:50: ComplexWarning: Casting complex values to real discards the imaginary part
+  z = -lu.solve(np.asarray(y2 + G @ y1, dtype=dt))
+/opt/homebrew/Caskroom/miniforge/base/lib/python3.13/site-packages/scipy/sparse/_data.py:73: ComplexWarning: Casting complex values to real discards the imaginary part
+  self.data.astype(dtype, casting=casting, copy=True),
+  L2 eps 0.25: cluster 6/6 ok=True; S dim 14, gap 867; peak resident 8.4 GB
+  L2 eps 0.3536: cluster 6/6 ok=True; S dim 14, gap 615; peak resident 8.4 GB
+  L2 eps 0.5: cluster 6/6 ok=True; S dim 14, gap 436; peak resident 8.4 GB
+  L2 eps 0.7071: cluster 6/6 ok=True; S dim 14, gap 309; peak resident 8.4 GB
+  L2 eps 1: cluster 8/6 ok=False; S dim 14, gap 220; peak resident 8.4 GB
+  L2 eps 1.414: cluster 8/6 ok=False; S dim 14, gap 156; peak resident 8.4 GB
+  L2 eps 2: cluster 8/6 ok=False; S dim 14, gap 111; peak resident 8.4 GB
+  L2 eps 2.828: cluster 8/6 ok=False; S dim 14, gap 79.7; peak resident 8.4 GB
+  L2 eps 4: cluster 8/6 ok=False; S dim 14, gap 57.3; peak resident 8.4 GB
+  L2 eps 5.657: cluster 8/6 ok=False; S dim 14, gap 41.4; peak resident 8.4 GB
+  L2 eps 8: cluster 7/6 ok=False; S dim 14, gap 30.3; peak resident 8.4 GB

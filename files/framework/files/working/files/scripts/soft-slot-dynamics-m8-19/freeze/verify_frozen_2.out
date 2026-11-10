@@ -1,0 +1,19 @@
+      FROZEN.json: 9431 bytes, written 2026-11-09T19:53:23Z, SHA-256 1e5107d0c6117a7d45c378827b8ee6670c1ce8964b1099992be05e4769486393
+ok    FROZEN_PIN holds FROZEN.json's SHA-256
+ok    frozen, with the go's link: https://github.com/openwave-labs/openwave/pull/698#issuecomment-6749289423
+ok    the terms' SHA-256 is the go's
+ok    the solver commit is the go's: 97a8c08
+ok    the instrument manifest's SHA-256 is the go's
+ok    SHA256SUMS on the bench is at the go's SHA-256
+ok    the pins are run/ and reference/ as SHA256SUMS lists them, and run/ENVIRONMENT.json: 16 pins
+ok    each listed pin is at its SHA256SUMS line
+ok    the ENVIRONMENT.json pin is the file's SHA-256: 43b7d084a46860ca1700030445569780d87edf5484b1801932b08903cdad3c3f
+ok    reference/SOURCES.json's pin is the go's
+ok    freeze_numbers equals the instrument's out/freeze_numbers.json
+ok    FROZEN.json holds no field beyond write_guard.py's
+ok    the driver's validate_frozen passes in a fresh process: 16
+ok    record_environment.py --check: no difference
+ok    no run/out yet
+ok    no __pycache__ in the folder or the instrument
+      ENVIRONMENT.json against M8.18's, the fields that differ: ['recorded']
+verify FROZEN.json: PASS

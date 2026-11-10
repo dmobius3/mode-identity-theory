@@ -1,0 +1,52 @@
+{
+ "controls": {
+  "dyn_C1": {
+   "passed": true,
+   "verdict": "Persists",
+   "wanted": "Persists",
+   "max_dperp": 0.0009996684245826499,
+   "t_fail": null
+  },
+  "dyn_C2a": {
+   "passed": true,
+   "verdict": "Persists",
+   "wanted": "Persists",
+   "max_dperp": 0.000999904235973982,
+   "t_fail": null
+  },
+  "dyn_C2b": {
+   "passed": true,
+   "verdict": "Persists",
+   "wanted": "Persists",
+   "max_dperp": 0.0009998368936998316,
+   "t_fail": null
+  },
+  "dyn_C3": {
+   "passed": true,
+   "verdict": "Fails",
+   "wanted": "Fails",
+   "max_dperp": 0.9040488335256167,
+   "t_fail": 583.2840534605136
+  },
+  "rate": {
+   "passed": true,
+   "fitted": 0.009740525346941262,
+   "linear_L2": 0.009737451477600101,
+   "points": 655
+  },
+  "p5a": {
+   "passed": true,
+   "rule": "the seed solve stops under the repaired test below 1e-11"
+  },
+  "c3e3": {
+   "passed": true,
+   "rule": "must Fail",
+   "verdict": "Fails"
+  },
+  "c2a_dur": {
+   "passed": true,
+   "rule": "Persists, valid, at T = 2750 by gate 6"
+  }
+ },
+ "all_passed": true
+}

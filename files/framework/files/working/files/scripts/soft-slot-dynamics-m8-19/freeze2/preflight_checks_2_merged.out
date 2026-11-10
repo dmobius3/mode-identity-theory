@@ -1,0 +1,45 @@
+== the copy the run uses, on the second freeze
+ok    shasum -a 256 -c SHA256SUMS: every listed file OK: 183 of 183
+ok    the copy's files are the commit's tree and the second freeze's three, nothing else: 184 + 3
+ok    no run/out/ yet
+ok    no empty folder, cache or .DS_Store
+ok    FROZEN.json at FROZEN_PIN, with the ruling's link as its go
+ok    by the launch's route, in a fresh process: validate_frozen passes with the ruling's link, and the environment check reads no difference: 16 https://github.com/openwave-labs/openwave/pull/698#issuecomment-6755529199
+differences: none
+ok    the first freeze kept, its three files at the pins #702 records
+== the instrument
+ok    the bench's instrument link resolves to the worktree's instrument
+ok    the worktree's instrument, m8_15_math and M8.19 folder: nothing changed or untracked
+ok    the worktree's copies equal the folder commit's
+ok    no cache in the instrument
+== OpenWave
+ok    the go live equals its kept copy, unedited
+ok    the ruling live equals its kept copy, unedited
+ok    nothing posted on #698, #702 or #703 since the ruling by anyone else but the approval: []
+      ours since the ruling: none
+ok    the approval, as kept and unedited: by #703's merger, on the pushed commit, before the merge: APPROVED by xrodz at 2026-11-10T03:07:09Z
+ok    #702 merged, as the record of the first freeze
+ok    #703 merged as kept, its head the second block's commit, as pushed: closed, merged True, head bbb91265, the fork's branch bbb91265
+ok    the second block on OpenWave's main, byte for byte: 78f04167
+ok    #703 adds the second block alone
+ok    #703: DCO passes
+      #703 opened 2026-11-10T02:07:48Z, merged 2026-11-10T03:07:14Z; the second freeze written 2026-11-10T00:55:03Z
+== the machine
+ok    on mains power: Now drawing from 'AC Power'
+      -InternalBattery-0 (id=6881379)	85%; AC attached; not charging present: true
+ok    Low Power Mode off: lowpowermode         0
+      pmset:  standby       1; powernap       1; disksleep      10; sleep        1 (sleep prevented by runningboardd, coreaudiod, powerd, Music, bluetoothd, Claude, AddressBookSourceSync); hibernatemode    3; displaysleep     20
+ok    awake with the lid as it is: open, or closed on mains with an external display: lid closed: Yes; displays: ['LG IPS FULLHD']
+      sleep holds now: {'PreventUserIdleDisplaySleep': 0, 'PreventSystemSleep': 0, 'PreventUserIdleSystemSleep': 1}; the orchestrator adds caffeinate -i -s -w on its own pid
+ok    no macOS update set to download or install by itself: {'AutomaticDownload': '0', 'AutomaticallyInstallMacOSUpdates': 'unset', 'CriticalUpdateInstall': '0', 'ConfigDataInstall': '0'}
+ok    no scheduled restart, shutdown or sleep: Scheduled power events:
+ [0]  wake at 11/09/2026 18:58:20 by 'com.apple.alarm.user-invisible-com.apple.osanalytics.hardhighengagementtimer'
+ [1]  wake at 11/10/2026 01:23:18 by 'com.apple.alarm.user-invisible-com.apple.calaccessd.travelEngine.periodicRefreshTimer'
+ok    macOS is the environment record's: 15.8.2 24H232
+== disk and load
+ok    at least 20 GB free on the bench volume: 299 GB
+      load average 2.24 2.31 2.50; busiest: 84% mds_stores; 31% WindowServer; 10% Music; 9% Claude Helper; 7% Claude Helper (Renderer)
+      other Python processes: none
+FAIL  no other process above 50% of a core: [(84, 'mds_stores')]
+ok    no M8.19 driver or orchestrator process running: []
+pre-flight 2, after the merge: FAIL (1): ['no other process above 50% of a core']

@@ -1,0 +1,494 @@
+ok    the bench's run/ before: no out/: ['ENVIRONMENT.json', 'FROZEN.json', 'FROZEN_PIN', 'm819_branch.py', 'm819_gates.py', 'm819_run.py', 'm8_19_task_details.md', 'record_environment.py', 'write_guard.py']
+ok    the rehearsal freeze's pins against the bench's: the environment record alone: ['run/ENVIRONMENT.json']
+ok    the orchestrator passed both checks and launched: exit None
+ok    four jobs started, wave 1's first four controls: [('dyn_C1', 35028), ('dyn_C2a', 35029), ('dyn_C2b', 35030), ('dyn_C3', 35031)]
+ok    after 30 s: no job ended, completed or refused, and no stop: ['launch', 'started', 'process', 'started', 'process', 'started', 'process', 'started', 'process']
+ok    dyn_C1: its process alive and computing, its staging folder holding its console alone: 35028 Rs     0:23.51 00:30 /opt/homebrew/Caskroom/miniforge/base/bin/python3 ... dyn_C1; staged ['console.log']
+ok    dyn_C2a: its process alive and computing, its staging folder holding its console alone: 35029 Rs     0:23.29 00:30 /opt/homebrew/Caskroom/miniforge/base/bin/python3 ... dyn_C2a; staged ['console.log']
+ok    dyn_C2b: its process alive and computing, its staging folder holding its console alone: 35030 Rs     0:23.61 00:30 /opt/homebrew/Caskroom/miniforge/base/bin/python3 ... dyn_C2b; staged ['console.log']
+ok    dyn_C3: its process alive and computing, its staging folder holding its console alone: 35031 Rs     0:23.43 00:30 /opt/homebrew/Caskroom/miniforge/base/bin/python3 ... dyn_C3; staged ['console.log']
+
+== the orchestrator, ended by SIGTERM: exit 1
+recorded: {
+ "interpreter": {
+  "build": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+  "executable": "/opt/homebrew/Caskroom/miniforge/base/bin/python3",
+  "flags": {
+   "dont_write_bytecode": 1,
+   "isolated": 1,
+   "optimize": 0
+  },
+  "implementation": "CPython",
+  "version": "3.13.13"
+ },
+ "machine": {
+  "arch": "arm64",
+  "cores": 8,
+  "cpu": "Apple M3",
+  "efficiency_cores": 4,
+  "model": "Mac15,13",
+  "performance_cores": 4
+ },
+ "numpy": {
+  "blas": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "2.5.0"
+ },
+ "os": {
+  "build": "24H232",
+  "kernel": "24.6.0",
+  "product": "macOS",
+  "version": "15.8.2"
+ },
+ "scipy": {
+  "blas": {
+   "cython blas ilp64": false,
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "1.18.0"
+ },
+ "threading": {
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "VECLIB_MAXIMUM_THREADS": "1"
+ }
+}
+live: {
+ "interpreter": {
+  "build": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+  "executable": "/opt/homebrew/Caskroom/miniforge/base/bin/python3",
+  "flags": {
+   "dont_write_bytecode": 1,
+   "isolated": 1,
+   "optimize": 0
+  },
+  "implementation": "CPython",
+  "version": "3.13.13"
+ },
+ "machine": {
+  "arch": "arm64",
+  "cores": 8,
+  "cpu": "Apple M3",
+  "efficiency_cores": 4,
+  "model": "Mac15,13",
+  "performance_cores": 4
+ },
+ "numpy": {
+  "blas": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "2.5.0"
+ },
+ "os": {
+  "build": "24H232",
+  "kernel": "24.6.0",
+  "product": "macOS",
+  "version": "15.8.2"
+ },
+ "scipy": {
+  "blas": {
+   "cython blas ilp64": false,
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "1.18.0"
+ },
+ "threading": {
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "VECLIB_MAXIMUM_THREADS": "1"
+ }
+}
+differences: none
+2026-11-10T00:09:14Z started dyn_C1 (start 1, pid 35028)
+2026-11-10T00:09:14Z started dyn_C2a (start 1, pid 35029)
+2026-11-10T00:09:14Z started dyn_C2b (start 1, pid 35030)
+2026-11-10T00:09:14Z started dyn_C3 (start 1, pid 35031)
+
+== the run log, in full
+{
+ "pin": "b23d0955127a461be3f431164ff111ccdaff89068889600eed813d1b96e01411",
+ "bench": false,
+ "launches": [
+  "2026-11-10T00:09:14Z"
+ ],
+ "jobs": [
+  {
+   "id": "dyn_C1",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2b",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C3",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "rate",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "p5a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c3e3",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c2a_dur",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "controls",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "rate",
+    "p5a",
+    "c3e3",
+    "c2a_dur"
+   ],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "gates_T1_R4",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "gates_T1_R5",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "gates_T4_R4",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "gates_T4_R5",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "coherent_R5",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "plan",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [
+    "gates_T1_R4",
+    "gates_T1_R5",
+    "gates_T4_R4",
+    "gates_T4_R5",
+    "coherent_R5"
+   ],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "record",
+   "wave": 5,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "rate",
+    "p5a",
+    "c3e3",
+    "c2a_dur",
+    "controls",
+    "gates_T1_R4",
+    "gates_T1_R5",
+    "gates_T4_R4",
+    "gates_T4_R5",
+    "coherent_R5",
+    "plan"
+   ],
+   "gate1": false,
+   "long": false
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "launch",
+   "number": 1
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "started",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "process",
+   "job": "dyn_C1",
+   "start": 1,
+   "pid": 35028
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "started",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "process",
+   "job": "dyn_C2a",
+   "start": 1,
+   "pid": 35029
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "started",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "process",
+   "job": "dyn_C2b",
+   "start": 1,
+   "pid": 35030
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "started",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T00:09:14Z",
+   "event": "process",
+   "job": "dyn_C3",
+   "start": 1,
+   "pid": 35031
+  },
+  {
+   "t": "2026-11-10T00:09:44Z",
+   "event": "ended",
+   "job": "dyn_C1",
+   "start": 1,
+   "code": -15,
+   "cause": "the orchestrator was ended by signal 15"
+  },
+  {
+   "t": "2026-11-10T00:09:44Z",
+   "event": "ended",
+   "job": "dyn_C2a",
+   "start": 1,
+   "code": -15,
+   "cause": "the orchestrator was ended by signal 15"
+  },
+  {
+   "t": "2026-11-10T00:09:44Z",
+   "event": "ended",
+   "job": "dyn_C2b",
+   "start": 1,
+   "code": -15,
+   "cause": "the orchestrator was ended by signal 15"
+  },
+  {
+   "t": "2026-11-10T00:09:44Z",
+   "event": "ended",
+   "job": "dyn_C3",
+   "start": 1,
+   "code": -15,
+   "cause": "the orchestrator was ended by signal 15"
+  },
+  {
+   "t": "2026-11-10T00:09:44Z",
+   "event": "launch ended",
+   "signal": 15
+  }
+ ],
+ "completed": {},
+ "ended": {},
+ "not_run": {},
+ "stop": null
+}
+
+== out/ after the launch
+    4493  RUNLOG.json
+       0  interrupted/dyn_C1.1/console.log
+       0  interrupted/dyn_C2a.1/console.log
+       0  interrupted/dyn_C2b.1/console.log
+       0  interrupted/dyn_C3.1/console.log
+
+ok    exit 1, from the signal handler
+ok    each start ended by the signal, the launch ended with it, no stop and nothing completed
+ok    the run log holds the registered order and the rehearsal freeze's pin, not a bench run
+ok    the four staging folders moved to out/interrupted/, nothing else written: ['RUNLOG.json', 'interrupted/dyn_C1.1/console.log', 'interrupted/dyn_C2a.1/console.log', 'interrupted/dyn_C2b.1/console.log', 'interrupted/dyn_C3.1/console.log']
+ok    no process left: no job, no caffeinate: []
+ok    the bench's run/ after: unchanged, no out/
+ok    no cache written in the instrument
+rehearse_launch: PASS

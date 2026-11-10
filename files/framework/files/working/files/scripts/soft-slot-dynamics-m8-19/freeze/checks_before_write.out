@@ -1,0 +1,38 @@
+ok    the go live equals its kept copy
+ok    the go is unedited: 2026-11-09T19:25:45Z
+ok    the go is by xrodz, an OpenWave member
+ok    the go names four SHA-256 values: 4
+      the go names the folder at 94a679ac (94a679acc0c8ae9b7e002a063f0c31da8f82d538) and the solver at 97a8c08 (97a8c0884c5e3a0ed25afb345f3d668340c5b537)
+      the go link: https://github.com/openwave-labs/openwave/pull/698#issuecomment-6749289423
+ok    OpenWave main's task document, read by API, is at the terms' SHA-256
+ok    the clone's upstream/main (015640cb) task document is at the terms' SHA-256
+ok    the bench's run/m8_19_task_details.md is at the terms' SHA-256
+ok    the folder commit is on origin/main (94a679ac)
+ok    no commit on origin/main since touches the M8.19 folder or the instrument
+ok    the worktree's M8.19 folder and instrument equal the folder commit's
+ok    the worktree's M8.19 folder and instrument hold no untracked or changed file
+ok    the bench's instrument link resolves to the worktree's instrument: <an MIT clone>/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-15x
+ok    the instrument's MANIFEST.json is at the go's SHA-256
+ok    every instrument .py file is at its manifest (17 files)
+ok    every instrument .py file equals its blob at 97a8c08
+ok    MANIFEST.json equals its blob at 97a8c08
+ok    out/freeze_numbers.json equals its blob at 94a679ac
+ok    no __pycache__ in the instrument
+ok    no run/ENVIRONMENT.json on the bench
+ok    no run/FROZEN.json on the bench
+ok    no run/FROZEN_PIN on the bench
+ok    no run/out on the bench
+ok    SHA256SUMS at 94a679ac is at the go's SHA-256
+ok    SHA256SUMS lists 183 files: 183
+ok    every listed file the bench holds is at its SHA-256: 175 of 175
+ok    the bench lacks only registration/'s files: 8 missing
+ok    no SHA256SUMS or registration/ on the bench yet
+ok    no unlisted file under run/ or reference/
+      unlisted on the bench: 393 files, under ['dev/runs/launch_tests', 'dev/runs/scope_tests']
+ok    no .DS_Store or __pycache__ in the bench folder
+ok    reference/SOURCES.json is at the go's SHA-256
+ok    the 8 reference copies equal their blobs and SOURCES.json's SHA-256
+      python3: /opt/homebrew/Caskroom/miniforge/base/bin/python3 3.13.13; isolated 1, dont_write_bytecode 1
+      threading variables in this shell: {'VECLIB_MAXIMUM_THREADS': None, 'OMP_NUM_THREADS': None, 'OPENBLAS_NUM_THREADS': None, 'MKL_NUM_THREADS': None}
+      macOS 15.8.2 24H232
+checks before the write: PASS

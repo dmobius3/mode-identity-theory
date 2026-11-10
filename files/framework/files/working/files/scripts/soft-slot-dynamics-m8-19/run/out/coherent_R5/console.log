@@ -1,0 +1,46 @@
+  L3 eps 0.25: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.04e-06; peak resident 5.6 GB
+  L3 eps 0.3536: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.03e-06; peak resident 6.4 GB
+  L3 eps 0.5: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.03e-06; peak resident 6.4 GB
+  L3 eps 0.7071: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.03e-06; peak resident 6.4 GB
+  L3 eps 1: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.02e-06; peak resident 6.4 GB
+  L3 eps 1.414: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.02e-06; peak resident 6.5 GB
+  L3 eps 2: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 1.01e-06; peak resident 6.5 GB
+  L3 eps 2.828: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.93e-07; peak resident 6.7 GB
+  L3 eps 4: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.75e-07; peak resident 6.9 GB
+  L3 eps 5.657: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.51e-07; peak resident 8.4 GB
+  L3 eps 8: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 9.20e-07; peak resident 8.4 GB
+  L3 eps 11.31: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 8.78e-07; peak resident 8.4 GB
+  L3 eps 16: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 8.26e-07; peak resident 8.4 GB
+  L3 eps 22.63: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 7.63e-07; peak resident 8.4 GB
+  L3 eps 32: cluster 4/4 ok=True; Krein 0,0,0 vs 0 balanced; zero-crossing False; lifted max 6.90e-07; peak resident 8.4 GB
+  validity at eps_min: pass (worst 1.328%)
+  L2 eps 0.25: cluster 4/4 ok=True; S dim 14, gap 279; peak resident 8.4 GB
+  L2 eps 0.3536: cluster 4/4 ok=True; S dim 14, gap 198; peak resident 8.4 GB
+  L2 eps 0.5: cluster 4/4 ok=True; S dim 14, gap 140; peak resident 8.4 GB
+  L2 eps 0.7071: cluster 4/4 ok=True; S dim 14, gap 99.8; peak resident 8.4 GB
+  L2 eps 1: cluster 4/4 ok=True; S dim 14, gap 71; peak resident 8.4 GB
+  L2 eps 1.414: cluster 4/4 ok=True; S dim 14, gap 50.7; peak resident 8.4 GB
+  L2 eps 2: cluster 4/4 ok=True; S dim 14, gap 36.3; peak resident 8.4 GB
+  L2 eps 2.828: cluster 4/4 ok=True; S dim 14, gap 26.2; peak resident 8.4 GB
+  L2 eps 4: cluster 4/4 ok=True; S dim 14, gap 19; peak resident 8.4 GB
+  L2 eps 5.657: cluster 4/4 ok=True; S dim 14, gap 14; peak resident 8.4 GB
+  L2 eps 8: cluster 4/4 ok=True; S dim 14, gap 10.4; peak resident 8.4 GB
+  L2 eps 11.31: cluster 4/4 ok=True; S dim 14, gap 7.89; peak resident 8.4 GB
+  L2 eps 16: cluster 4/4 ok=True; S dim 14, gap 6.14; peak resident 8.4 GB
+  L2 eps 22.63: cluster 4/4 ok=True; S dim 14, gap 4.93; peak resident 8.4 GB
+  L2 eps 32: cluster 4/4 ok=True; S dim 14, gap 4.1; peak resident 8.4 GB
+  eps 0.25: Elliptic
+  eps 0.3536: Elliptic
+  eps 0.5: Elliptic
+  eps 0.7071: Elliptic
+  eps 1: Elliptic
+  eps 1.414: Elliptic
+  eps 2: Elliptic
+  eps 2.828: Elliptic
+  eps 4: Elliptic
+  eps 5.657: Elliptic
+  eps 8: Elliptic
+  eps 11.31: Elliptic
+  eps 16: Elliptic
+  eps 22.63: Elliptic
+  eps 32: Elliptic

@@ -1,0 +1,10 @@
+DEVLOG.md back at its blob (24698 bytes); entry 11, 4617 bytes, kept in ../DEVLOG_after_freeze.md
+moved dev/runs/launch_tests (36 files) to ../bench_scratch_aside/dev/runs/launch_tests
+moved dev/runs/scope_tests (357 files) to ../bench_scratch_aside/dev/runs/scope_tests
+moved dev/runs/004_final_code/.staging (0 files) to ../bench_scratch_aside/dev/runs/004_final_code/.staging
+moved dev/runs/dryrun/.staging (0 files) to ../bench_scratch_aside/dev/runs/dryrun/.staging
+Traceback (most recent call last):
+  File "<the bench>/freeze/reconcile_copy.py", line 47, in <module>
+    assert not os.path.exists(dst)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

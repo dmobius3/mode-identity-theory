@@ -1,0 +1,3 @@
+$ (from the folder) /opt/homebrew/Caskroom/miniforge/base/bin/python3 -I -B run/write_guard.py https://github.com/openwave-labs/openwave/pull/698#issuecomment-6755529199 --terms-from <an OpenWave clone>
+FROZEN.json written: 16 files pinned; pin 88940b293d440dd004377d1ba1ad948d945a38cf99e375e4640b1449fe9f445c
+exit 0

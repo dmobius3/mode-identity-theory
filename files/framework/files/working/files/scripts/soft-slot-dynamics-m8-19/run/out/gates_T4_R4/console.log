@@ -1,0 +1,20 @@
+  L3 eps 0.25: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.06e-04; peak resident 4.2 GB
+  L3 eps 0.3536: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.28e-04; peak resident 4.2 GB
+  L3 eps 0.5: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.56e-04; peak resident 4.2 GB
+  L3 eps 0.7071: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 1.90e-04; peak resident 4.2 GB
+  L3 eps 1: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 2.34e-04; peak resident 4.2 GB
+  L3 eps 1.414: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 2.91e-04; peak resident 4.2 GB
+  L3 eps 2: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 3.65e-04; peak resident 4.2 GB
+  L3 eps 2.828: cluster 8/6 ok=False; Krein 0,0,2 vs 4 balanced; zero-crossing False; lifted max 4.64e-04; peak resident 4.2 GB
+<the bench>/soft-slot-dynamics-m8-15x/m8_15x_solver/linearize.py:50: ComplexWarning: Casting complex values to real discards the imaginary part
+  z = -lu.solve(np.asarray(y2 + G @ y1, dtype=dt))
+/opt/homebrew/Caskroom/miniforge/base/lib/python3.13/site-packages/scipy/sparse/_data.py:73: ComplexWarning: Casting complex values to real discards the imaginary part
+  self.data.astype(dtype, casting=casting, copy=True),
+  L2 eps 0.25: cluster 5/6 ok=False; S dim 14, gap 1.05e+03; peak resident 4.2 GB
+  L2 eps 0.3536: cluster 5/6 ok=False; S dim 14, gap 743; peak resident 4.2 GB
+  L2 eps 0.5: cluster 5/6 ok=False; S dim 14, gap 525; peak resident 4.2 GB
+  L2 eps 0.7071: cluster 8/6 ok=False; S dim 14, gap 371; peak resident 4.2 GB
+  L2 eps 1: cluster 8/6 ok=False; S dim 14, gap 263; peak resident 4.2 GB
+  L2 eps 1.414: cluster 8/6 ok=False; S dim 14, gap 186; peak resident 4.2 GB
+  L2 eps 2: cluster 8/6 ok=False; S dim 14, gap 131; peak resident 4.2 GB
+  L2 eps 2.828: cluster 8/6 ok=False; S dim 14, gap 93.1; peak resident 4.2 GB

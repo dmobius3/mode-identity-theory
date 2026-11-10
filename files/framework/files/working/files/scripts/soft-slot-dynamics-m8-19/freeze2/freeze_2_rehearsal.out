@@ -1,0 +1,31 @@
+rehearsal of freeze_2.py on a scratch copy of the bench folder; the bench is not touched
+the folder: /var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/m819_freeze2_rehearsal_pxs99vgd/soft-slot-dynamics-m8-19
+the first freeze kept in: /var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/m819_freeze2_rehearsal_pxs99vgd/first_freeze
+the ruling: https://github.com/openwave-labs/openwave/pull/698#issuecomment-6755529199
+the go: https://github.com/openwave-labs/openwave/pull/698#issuecomment-6749289423
+
+(a) the first freeze moved out of run/, each byte and time unchanged:
+    run/ENVIRONMENT.json -> ../../../../../../../../../var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/m819_freeze2_rehearsal_pxs99vgd/first_freeze/run/ENVIRONMENT.json  43b7d084a46860ca1700030445569780d87edf5484b1801932b08903cdad3c3f
+    run/FROZEN.json -> ../../../../../../../../../var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/m819_freeze2_rehearsal_pxs99vgd/first_freeze/run/FROZEN.json  1e5107d0c6117a7d45c378827b8ee6670c1ce8964b1099992be05e4769486393
+    run/FROZEN_PIN -> ../../../../../../../../../var/folders/hl/yxygp24d6s1djnzfc3qcygs40000gn/T/m819_freeze2_rehearsal_pxs99vgd/first_freeze/run/FROZEN_PIN  ea3320b424d620fb7b56c7da10808b7696b66f6e7265f7e6d4d8b034c8df7517
+
+(b) shasum -a 256 -c SHA256SUMS: 183 of 183 OK, exit 0; SHA256SUMS at the go's SHA-256; the folder's 184 files are the tree at 94a679ac, nothing else
+
+(c) recorded by the launch's route, from the folder:
+    /opt/homebrew/Caskroom/miniforge/base/bin/python3 -I -B -c "import os, subprocess, sys; sys.path.insert(0, os.path.abspath('run')); import m819_branch; sys.exit(subprocess.run([sys.executable, '-I', '-B', os.path.join(os.path.abspath('run'), 'record_environment.py')]).returncode)"
+    run/ENVIRONMENT.json 848ac97be5e9a4a20a77725f72b50f0271c7e957113428bcf349735014238700, recorded 2026-11-10T00:52:23Z
+    against the first: ['recorded', 'threading.MKL_NUM_THREADS', 'threading.OMP_NUM_THREADS', 'threading.OPENBLAS_NUM_THREADS', 'threading.VECLIB_MAXIMUM_THREADS']; threading {'MKL_NUM_THREADS': '1', 'OMP_NUM_THREADS': '1', 'OPENBLAS_NUM_THREADS': '1', 'VECLIB_MAXIMUM_THREADS': '1'}
+
+(d) /opt/homebrew/Caskroom/miniforge/base/bin/python3 -I -B run/write_guard.py https://github.com/openwave-labs/openwave/pull/698#issuecomment-6755529199 --terms-from <an OpenWave clone>
+    FROZEN.json written: 16 files pinned; pin ff3d09be850938874e168af836a34c3012301e550bc3c4fe8a96d55a829edcfb
+    run/FROZEN.json written 2026-11-10T00:52:23Z, pin ff3d09be850938874e168af836a34c3012301e550bc3c4fe8a96d55a829edcfb
+    against the first: fields ['go', 'written']; pins ['run/ENVIRONMENT.json']; 16 pins
+
+(e) replayed: validate_frozen: passed; 16 pins; go https://github.com/openwave-labs/openwave/pull/698#issuecomment-6755529199
+    differences: none; exit 0
+
+after: the folder is the tree and the second freeze's three files; SHA256SUMS 183 of 183 OK; no run/out/
+freeze_2: DONE
+freeze_2.py exit 0
+outputs: ['record_environment.out', 'replay_main_checks.out', 'sha256sums_check.out', 'sha256sums_check_after.out', 'write_guard.out']
+the bench's run/ after: ['ENVIRONMENT.json', 'FROZEN.json', 'FROZEN_PIN', 'm819_branch.py', 'm819_gates.py', 'm819_run.py', 'm8_19_task_details.md', 'record_environment.py', 'write_guard.py'] ; first_freeze on the bench: False

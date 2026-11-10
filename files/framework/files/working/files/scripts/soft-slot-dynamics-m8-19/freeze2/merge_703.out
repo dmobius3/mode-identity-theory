@@ -1,0 +1,27 @@
+== #703, merged
+ok    #703 merged and closed: merged 2026-11-10T03:07:14Z by xrodz, opened 2026-11-10T02:07:48Z
+ok    its head the pushed commit, one commit, onto main where it was opened: bbb91265
+ok    its title and body as opened and as the files hold them
+ok    its body never edited: never
+ok    it adds the second block alone
+      events: review_requested 2026-11-10T02:07:49Z dmobius3; merged 2026-11-10T03:07:14Z xrodz; closed 2026-11-10T03:07:14Z xrodz
+== the review
+ok    one review, an approval by the merger, an OpenWave member, on the pushed commit, before the merge: 1 review(s); APPROVED by xrodz at 2026-11-10T03:07:09Z
+ok    the review never edited: never
+ok    its verdict: approve and merge, no findings, no maintainer edits: approve and merge, no findings, no maintainer edits.
+ok    the bench copy's SHA256SUMS is the folder commit's
+ok    the second FROZEN_PIN holds the second FROZEN.json's hash
+ok    the pins it restates, five, each equal to ours: 5 rows
+ok    each short hash it gives names one of ours: 43b7d084 the first ENVIRONMENT.json; 1e5107d0 the first FROZEN.json; ea3320b4 the first FROZEN_PIN; 1e5107d0 the first FROZEN.json; 9416dd93 the second ENVIRONMENT.json; 88940b29 the second FROZEN.json; f2295e0b the terms; 2b9864ab the instrument manifest; 1e8f8d0b SHA256SUMS
+ok    the commits it names: MIT's folder commit and the solver's: 94a679ac, 97a8c08
+ok    the times it gives: the block's, and the opening's; the ruling's, the second freeze's and the opening's among them: 00:41:59Z, 00:55:02Z, 00:55:03Z, 00:55:04Z, 00:55:05Z, 02:07:48Z
+== the merge commit
+ok    its parents main before the merge and the pushed commit: 734eb28f, bbb91265
+ok    its tree the pushed commit's tree: 697f09e0
+ok    the block at the merge commit equals the pushed block, byte for byte: 78f04167473b6f315f9d7b20f3cb0ff16e86e8c2c064d35ed125b8ba11162c4a
+ok    main at the merge commit: 47ce7a48, 2026-11-10T03:07:13Z
+      its message: Merge pull request #703 from dmobius3/m8-19-freeze-block-2-2026-11-10 / M8.19: the second freeze block
+== since the ruling
+ok    nothing else posted on #698, #702 or #703 since the ruling but the review: []
+      read-back saved: ['events.json', 'graphql.json', 'main.json', 'merge_commit.json', 'pr.json', 'reviews.json']
+merge 703: PASS

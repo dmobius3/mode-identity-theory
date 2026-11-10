@@ -1,0 +1,9 @@
+ok    the control, unchanged: fails only the machine's: ['Low Power Mode off', 'on mains power'] (9 s)
+BAD   the kept approval's id one more: red on ['no other process above 50% of a core', 'nothing posted on #698, #702 or #703 since the ruling by anyone else but the approval', "the approval, as kept and unedited: by #703's merger, on the pushed commit, before the merge"] besides the control's (10 s)
+ok    the approval read as dismissed: red on ["the approval, as kept and unedited: by #703's merger, on the pushed commit, before the merge"] besides the control's (9 s)
+BAD   the approval's body read with a space more: red on ['no other process above 50% of a core', "the approval, as kept and unedited: by #703's merger, on the pushed commit, before the merge"] besides the control's (9 s)
+ok    the approval read as edited at the merge: red on ["the approval, as kept and unedited: by #703's merger, on the pushed commit, before the merge"] besides the control's (9 s)
+BAD   the pull request read as open: red on ["#703 merged as kept, its head the second block's commit, as pushed", 'no other process above 50% of a core'] besides the control's (9 s)
+ok    the kept merge commit taken as main before the merge: red on ["#703 merged as kept, its head the second block's commit, as pushed"] besides the control's (11 s)
+BAD   a byte appended to the pushed block: red on ['no other process above 50% of a core', "the second block on OpenWave's main, byte for byte"] besides the control's (8 s)
+mutations_preflight_2_merged: BAD ["the kept approval's id one more", "the approval's body read with a space more", 'the pull request read as open', 'a byte appended to the pushed block']

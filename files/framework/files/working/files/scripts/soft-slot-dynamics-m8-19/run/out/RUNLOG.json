@@ -1,0 +1,722 @@
+{
+ "pin": "88940b293d440dd004377d1ba1ad948d945a38cf99e375e4640b1449fe9f445c",
+ "bench": false,
+ "launches": [
+  "2026-11-10T03:53:24Z"
+ ],
+ "jobs": [
+  {
+   "id": "dyn_C1",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C2b",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "dyn_C3",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "rate",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "p5a",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c3e3",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "c2a_dur",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "controls",
+   "wave": 1,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "rate",
+    "p5a",
+    "c3e3",
+    "c2a_dur"
+   ],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "gates_T1_R4",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "gates_T1_R5",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "gates_T4_R4",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "gates_T4_R5",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "coherent_R5",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "plan",
+   "wave": 2,
+   "args": [],
+   "needs": [
+    "controls"
+   ],
+   "after": [
+    "gates_T1_R4",
+    "gates_T1_R5",
+    "gates_T4_R4",
+    "gates_T4_R5",
+    "coherent_R5"
+   ],
+   "gate1": true,
+   "long": false
+  },
+  {
+   "id": "test_C2a_R5_1",
+   "wave": 4,
+   "args": [],
+   "needs": [
+    "plan"
+   ],
+   "after": [],
+   "gate1": false,
+   "long": false
+  },
+  {
+   "id": "record",
+   "wave": 5,
+   "args": [],
+   "needs": [],
+   "after": [
+    "dyn_C1",
+    "dyn_C2a",
+    "dyn_C2b",
+    "dyn_C3",
+    "rate",
+    "p5a",
+    "c3e3",
+    "c2a_dur",
+    "controls",
+    "gates_T1_R4",
+    "gates_T1_R5",
+    "gates_T4_R4",
+    "gates_T4_R5",
+    "coherent_R5",
+    "plan",
+    "test_C2a_R5_1"
+   ],
+   "gate1": false,
+   "long": false
+  }
+ ],
+ "events": [
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "launch",
+   "number": 1
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "started",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "process",
+   "job": "dyn_C1",
+   "start": 1,
+   "pid": 45135
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "started",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "process",
+   "job": "dyn_C2a",
+   "start": 1,
+   "pid": 45136
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "started",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "process",
+   "job": "dyn_C2b",
+   "start": 1,
+   "pid": 45137
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "started",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T03:53:24Z",
+   "event": "process",
+   "job": "dyn_C3",
+   "start": 1,
+   "pid": 45138
+  },
+  {
+   "t": "2026-11-10T04:59:02Z",
+   "event": "completed",
+   "job": "dyn_C2b",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T04:59:02Z",
+   "event": "started",
+   "job": "rate",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T04:59:02Z",
+   "event": "process",
+   "job": "rate",
+   "start": 1,
+   "pid": 46248
+  },
+  {
+   "t": "2026-11-10T05:39:14Z",
+   "event": "completed",
+   "job": "dyn_C2a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T05:39:14Z",
+   "event": "started",
+   "job": "p5a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T05:39:14Z",
+   "event": "process",
+   "job": "p5a",
+   "start": 1,
+   "pid": 46732
+  },
+  {
+   "t": "2026-11-10T05:39:23Z",
+   "event": "completed",
+   "job": "p5a",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T05:39:23Z",
+   "event": "started",
+   "job": "c3e3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T05:39:23Z",
+   "event": "process",
+   "job": "c3e3",
+   "start": 1,
+   "pid": 46737
+  },
+  {
+   "t": "2026-11-10T05:39:53Z",
+   "event": "completed",
+   "job": "dyn_C1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T05:39:53Z",
+   "event": "started",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T05:39:53Z",
+   "event": "process",
+   "job": "c2a_dur",
+   "start": 1,
+   "pid": 46751
+  },
+  {
+   "t": "2026-11-10T05:43:01Z",
+   "event": "completed",
+   "job": "dyn_C3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T06:53:52Z",
+   "event": "completed",
+   "job": "rate",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T07:34:11Z",
+   "event": "completed",
+   "job": "c3e3",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:23Z",
+   "event": "completed",
+   "job": "c2a_dur",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:23Z",
+   "event": "started",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:23Z",
+   "event": "process",
+   "job": "controls",
+   "start": 1,
+   "pid": 49630
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "completed",
+   "job": "controls",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "started",
+   "job": "gates_T1_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "process",
+   "job": "gates_T1_R4",
+   "start": 1,
+   "pid": 49633
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "started",
+   "job": "gates_T1_R5",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "process",
+   "job": "gates_T1_R5",
+   "start": 1,
+   "pid": 49634
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "started",
+   "job": "gates_T4_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "process",
+   "job": "gates_T4_R4",
+   "start": 1,
+   "pid": 49635
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "started",
+   "job": "gates_T4_R5",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T09:30:24Z",
+   "event": "process",
+   "job": "gates_T4_R5",
+   "start": 1,
+   "pid": 49636
+  },
+  {
+   "t": "2026-11-10T10:25:09Z",
+   "event": "completed",
+   "job": "gates_T1_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T10:25:09Z",
+   "event": "started",
+   "job": "coherent_R5",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T10:25:09Z",
+   "event": "process",
+   "job": "coherent_R5",
+   "start": 1,
+   "pid": 50489
+  },
+  {
+   "t": "2026-11-10T11:01:22Z",
+   "event": "completed",
+   "job": "gates_T4_R4",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T11:20:51Z",
+   "event": "completed",
+   "job": "gates_T1_R5",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T12:02:34Z",
+   "event": "completed",
+   "job": "coherent_R5",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T13:00:19Z",
+   "event": "completed",
+   "job": "gates_T4_R5",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T13:00:19Z",
+   "event": "started",
+   "job": "plan",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T13:00:19Z",
+   "event": "process",
+   "job": "plan",
+   "start": 1,
+   "pid": 53049
+  },
+  {
+   "t": "2026-11-10T13:00:20Z",
+   "event": "completed",
+   "job": "plan",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T13:00:20Z",
+   "event": "plan read",
+   "added": [
+    "test_C2a_R5_1"
+   ]
+  },
+  {
+   "t": "2026-11-10T13:00:20Z",
+   "event": "started",
+   "job": "test_C2a_R5_1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T13:00:20Z",
+   "event": "process",
+   "job": "test_C2a_R5_1",
+   "start": 1,
+   "pid": 53052
+  },
+  {
+   "t": "2026-11-10T14:42:58Z",
+   "event": "completed",
+   "job": "test_C2a_R5_1",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T14:42:58Z",
+   "event": "started",
+   "job": "record",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T14:42:58Z",
+   "event": "process",
+   "job": "record",
+   "start": 1,
+   "pid": 54777
+  },
+  {
+   "t": "2026-11-10T14:42:59Z",
+   "event": "completed",
+   "job": "record",
+   "start": 1
+  },
+  {
+   "t": "2026-11-10T14:42:59Z",
+   "event": "launch ended",
+   "pending": [],
+   "stopped": null
+  }
+ ],
+ "completed": {
+  "dyn_C2b": {
+   "files": {
+    "console.log": "2034ff2063915e30d1883b0c75d8f828d4717b97c0b32074c03a6a65746e6019",
+    "dynamics_C2b.json": "bd035b8d5b211b00deb4e0fe5cf19cd255fd0be959279233218b63e283013055",
+    "dynamics_C2b.npy": "2beb802872dd80d9fe0d6f977c051b885466b572b834e12ffd191bcbcdd4d116",
+    "job.json": "513f4bb41aaf3fdbdcd93e4ab39fb9a79059b6a45816bed542c7b5b6ba398694"
+   },
+   "t": "2026-11-10T04:59:02Z",
+   "start": 1
+  },
+  "dyn_C2a": {
+   "files": {
+    "console.log": "7169ed4065c6ca09b3dab455be8caa85e31af3e675bbf7aa63173da737aef0dc",
+    "dynamics_C2a.json": "1dce41f11c1b65134757d39d0bc0cfa22c85b83c6b80fce0e1c5109614e7c625",
+    "dynamics_C2a.npy": "73d85070daeb45d2ff91908f6e68ac927164f2b493b518c7cb27a6760ea6b693",
+    "job.json": "4f65cc09610284b29f26862c0c19e0ee7b9451743963c1364507616181b78da9"
+   },
+   "t": "2026-11-10T05:39:14Z",
+   "start": 1
+  },
+  "p5a": {
+   "files": {
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "control_1a_arm.json": "c80aeae4b15190ec9e281642bf0e2c5baa24ba427184dfdcfe43cef7af99160c",
+    "job.json": "53cfec67d6e5b0e2275bb1c78bb7e213f734c1daa00c1caac7adf888a0d9ae76"
+   },
+   "t": "2026-11-10T05:39:23Z",
+   "start": 1
+  },
+  "dyn_C1": {
+   "files": {
+    "console.log": "b8025ffeb1b16fa4afc8b3b6f6c7a4b814234be9d53d75f384f317cadfcbc903",
+    "dynamics_C1.json": "8c4ab8971757bcd166f3276dc20c7da4551262eb495adcd4f3e079f6fe7dfd25",
+    "dynamics_C1.npy": "e29625fca70916e8ab5c8eec8eb077356835347ce06449cd58978cac64786201",
+    "job.json": "8458c567a98fa3bb0fcc8cedc3ffd21880e2ca1a7e55b2fb5914b7e8f6ac66ab"
+   },
+   "t": "2026-11-10T05:39:53Z",
+   "start": 1
+  },
+  "dyn_C3": {
+   "files": {
+    "console.log": "f013f25ab6cbb443d8093e777f5f3c1fc762366d9387a3db3daefb2db21e5f24",
+    "dynamics_C3.json": "c8a35bf788894a661e248475484fb9633f98366c02c9a97b5f514d7739806bd0",
+    "dynamics_C3.npy": "598b434ab364a53f433f70ebecd637ac09606c7206a299bfe987f540849dc982",
+    "job.json": "48bee20c74aa83802cd66afb794bc4bdd924f224ec60a6a3ad70449ae945bb71"
+   },
+   "t": "2026-11-10T05:43:01Z",
+   "start": 1
+  },
+  "rate": {
+   "files": {
+    "console.log": "c2078cadcf9751fe7c83207f1a933f986c302edbb85d2a8fa34b6f49794a6e00",
+    "dynamics_C3_rate.json": "da039d1f1c7d8ac0ceee1e28d0eb23ac0d5b1f93bde6ebc1636d7ee4f1accc1c",
+    "dynamics_C3_rate.npy": "cc0d9a958c0b84b851805021f4a7316b2fd5f279627dd11c38d829bbbc86503e",
+    "job.json": "aceb377111a674add5d76d0eb01e6bd753ba09b34898273101cc16f0f83438e6"
+   },
+   "t": "2026-11-10T06:53:52Z",
+   "start": 1
+  },
+  "c3e3": {
+   "files": {
+    "console.log": "58af8f595b8a7db564a3dc58c3a4eb19dd27a7609a9d1480da3d880d932bfbbd",
+    "dynamics_C3_eps3.json": "41da04854c86a9fda0b2cbe35400b63dfbdc276830b36650bffab653ca982503",
+    "dynamics_C3_eps3.npy": "4788d0e065611475586ea285db15c2c50630acd7bae4c666d1f4fe456b8d69e6",
+    "job.json": "97482c9a3045396714dbc73c1585e261c7c770b465de3f26997f014044489dbe"
+   },
+   "t": "2026-11-10T07:34:11Z",
+   "start": 1
+  },
+  "c2a_dur": {
+   "files": {
+    "c2a.json": "a009a7f4d75deb2c701ee65dee7691fd2d1f2a0263a5636b3f941a6eae6ca35e",
+    "console.log": "02c74e9db9a1a5f303fe44977f8a3c673d94b7c3d7e2d7b9cc20fdc3d429b2f5",
+    "job.json": "cc86890f82e4c4dfa906122080c3d763504d6251fb0c0d09a38a7bc593e3e645",
+    "test.npy": "78e3c390ea2ef73ffd6b9743f2bc51234f75f57d694d702185b55c61d75c86f1"
+   },
+   "t": "2026-11-10T09:30:23Z",
+   "start": 1
+  },
+  "controls": {
+   "files": {
+    "CONTROLS.json": "05460c8d2a15bcffdf6224172df10d9988ce915d88de03405c3ff4735a083b2e",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "df4ad00ea43228522b2c66c878dbe606b0c246908928ea32d7fb679f898ee51e"
+   },
+   "t": "2026-11-10T09:30:24Z",
+   "start": 1
+  },
+  "gates_T1_R4": {
+   "files": {
+    "console.log": "ec74752d68203088d90b2088bf8a8832b080b9dbfc78fbaf31e7407efd04903f",
+    "gates.json": "719cfaadcce80a9d813eadd4b1a07bd2185ecc601d78615b440715734cae9721",
+    "job.json": "79778c1bfcc4e33bcedbff7b8619caf7059ba4e52b1d3e79753ddb59d63aaef4",
+    "states_L2.npz": "4880a0060ff11e50aeb02c220b44a59f818a14a34e17a8e988528ffabe755917"
+   },
+   "t": "2026-11-10T10:25:09Z",
+   "start": 1
+  },
+  "gates_T4_R4": {
+   "files": {
+    "console.log": "582ddfc36c7838be36eb7931749e8fde6b7afb1fbcc6d2562f1c003db1a286cd",
+    "gates.json": "9eed29cf159f5623d4a6d73541c037d137cd9f5a82a7e22ec331c761d9c9d194",
+    "job.json": "93199668566e6c5aec32c4c383336d34ce74ac567e34527309583eccd3c87592",
+    "states_L2.npz": "ffe5b635b64f28a2d0dd0b376d27b6555edf28e2ed3177fd21cefb950aec4a09"
+   },
+   "t": "2026-11-10T11:01:22Z",
+   "start": 1
+  },
+  "gates_T1_R5": {
+   "files": {
+    "console.log": "96381fe3d656eb72af9626b25cdbca836f80d28189490e7b8acc064fdc292451",
+    "gates.json": "0e65b3ea8f8f99d4cf94047934e11f580f29819c64a9d343321d9e9367e25688",
+    "job.json": "9feba14be581122041222c5555cecbe9c346cf6fce1e497fe0bb7c11e2199858",
+    "states_L2.npz": "273e4daa92862926913795ad65d5de222d7261ddd9d0441fecfaa45cc005a43d"
+   },
+   "t": "2026-11-10T11:20:51Z",
+   "start": 1
+  },
+  "coherent_R5": {
+   "files": {
+    "console.log": "70b9d201e7783493c061cedaa27cace1d0c0ea464c84b734783b7f1e9967ede3",
+    "gates.json": "033fb00b47444de47123cf68f2d95ae89712eba235b4893830b8a51392b1796d",
+    "job.json": "ec41fab00d22a171d366dc7c39015b0db9d370dbb9ff31ec937b5dfa7d915971",
+    "states_L2.npz": "b4eac660b34ea4d4087be932caffb30b03414a4f31429d0f51778eec2b8bcf4b"
+   },
+   "t": "2026-11-10T12:02:34Z",
+   "start": 1
+  },
+  "gates_T4_R5": {
+   "files": {
+    "console.log": "6e458c3cfb7baf8f561f721dde5362c873ac80b559001d5ae9f1281d0471ef45",
+    "gates.json": "6fdf76d46d148043e79a2d2ef6e603b88a633a2b125f068d8a7e51ade1d73e65",
+    "job.json": "9e6bc03f5582209d2775037e02a464619029bb004f49551e9e12251717128b06",
+    "states_L2.npz": "b52337b3a2259ea80e7b55f6ff149f868480144fe4f3101bccb625620fbbfaa2"
+   },
+   "t": "2026-11-10T13:00:19Z",
+   "start": 1
+  },
+  "plan": {
+   "files": {
+    "PLAN.json": "fdf0f9cb1c120b591f639938fc60b10c93697dc674672fc419be96af162a92df",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "f543d578710957faa8be19e58b8a072fcef47ec32436def241527dd891e6c76f"
+   },
+   "t": "2026-11-10T13:00:20Z",
+   "start": 1
+  },
+  "test_C2a_R5_1": {
+   "files": {
+    "console.log": "cef4e80fa5503ff7394fea6311a4bcfc08517c9a752f18ba3280630cdc4a0ec3",
+    "job.json": "e510d2c7b0a18dfa16537189d5964fe1df4cc2543347cc1f82c1b65a6996712a",
+    "test.json": "0e12fabbfb52b7cd815c2df8531ece465b6fdb27f8a1377fb697e8f603d1c646",
+    "test.npy": "5d64efdf62541150b662626f7488c59eb529e28fd6abb6fe1b77fd7c0944852b"
+   },
+   "t": "2026-11-10T14:42:58Z",
+   "start": 1
+  },
+  "record": {
+   "files": {
+    "RECORD.json": "0a869b34c672837f3eee17bdff8b9d82fe51fc64a6077aa9d26e0079089ba2df",
+    "console.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "job.json": "cb82b3a4d07e1071193decd5585e2787593b509e2a5f227ddf5ebbf0dceeecd4"
+   },
+   "t": "2026-11-10T14:42:59Z",
+   "start": 1
+  }
+ },
+ "ended": {},
+ "not_run": {},
+ "stop": null
+}

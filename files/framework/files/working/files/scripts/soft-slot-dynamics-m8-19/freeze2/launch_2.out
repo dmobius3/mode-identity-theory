@@ -1,0 +1,200 @@
+recorded: {
+ "interpreter": {
+  "build": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+  "executable": "/opt/homebrew/Caskroom/miniforge/base/bin/python3",
+  "flags": {
+   "dont_write_bytecode": 1,
+   "isolated": 1,
+   "optimize": 0
+  },
+  "implementation": "CPython",
+  "version": "3.13.13"
+ },
+ "machine": {
+  "arch": "arm64",
+  "cores": 8,
+  "cpu": "Apple M3",
+  "efficiency_cores": 4,
+  "model": "Mac15,13",
+  "performance_cores": 4
+ },
+ "numpy": {
+  "blas": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "2.5.0"
+ },
+ "os": {
+  "build": "24H232",
+  "kernel": "24.6.0",
+  "product": "macOS",
+  "version": "15.8.2"
+ },
+ "scipy": {
+  "blas": {
+   "cython blas ilp64": false,
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "1.18.0"
+ },
+ "threading": {
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "VECLIB_MAXIMUM_THREADS": "1"
+ }
+}
+live: {
+ "interpreter": {
+  "build": "3.13.13 | packaged by conda-forge | (main, Apr  8 2026, 02:29:07) [Clang 19.1.7 ]",
+  "executable": "/opt/homebrew/Caskroom/miniforge/base/bin/python3",
+  "flags": {
+   "dont_write_bytecode": 1,
+   "isolated": 1,
+   "optimize": 0
+  },
+  "implementation": "CPython",
+  "version": "3.13.13"
+ },
+ "machine": {
+  "arch": "arm64",
+  "cores": 8,
+  "cpu": "Apple M3",
+  "efficiency_cores": 4,
+  "model": "Mac15,13",
+  "performance_cores": 4
+ },
+ "numpy": {
+  "blas": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "system",
+   "found": true,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "2.5.0"
+ },
+ "os": {
+  "build": "24H232",
+  "kernel": "24.6.0",
+  "product": "macOS",
+  "version": "15.8.2"
+ },
+ "scipy": {
+  "blas": {
+   "cython blas ilp64": false,
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "lapack": {
+   "detection method": "extraframeworks",
+   "found": true,
+   "has ilp64": false,
+   "include directory": "unknown",
+   "lib directory": "unknown",
+   "name": "Accelerate",
+   "openblas configuration": "unknown",
+   "pc file directory": "unknown",
+   "version": "unknown"
+  },
+  "version": "1.18.0"
+ },
+ "threading": {
+  "MKL_NUM_THREADS": "1",
+  "OMP_NUM_THREADS": "1",
+  "OPENBLAS_NUM_THREADS": "1",
+  "VECLIB_MAXIMUM_THREADS": "1"
+ }
+}
+differences: none
+2026-11-10T03:53:24Z started dyn_C1 (start 1, pid 45135)
+2026-11-10T03:53:24Z started dyn_C2a (start 1, pid 45136)
+2026-11-10T03:53:24Z started dyn_C2b (start 1, pid 45137)
+2026-11-10T03:53:24Z started dyn_C3 (start 1, pid 45138)
+2026-11-10T04:59:02Z completed dyn_C2b
+2026-11-10T04:59:02Z started rate (start 1, pid 46248)
+2026-11-10T05:39:14Z completed dyn_C2a
+2026-11-10T05:39:14Z started p5a (start 1, pid 46732)
+2026-11-10T05:39:23Z completed p5a
+2026-11-10T05:39:23Z started c3e3 (start 1, pid 46737)
+2026-11-10T05:39:53Z completed dyn_C1
+2026-11-10T05:39:53Z started c2a_dur (start 1, pid 46751)
+2026-11-10T05:43:01Z completed dyn_C3
+2026-11-10T06:53:52Z completed rate
+2026-11-10T07:34:11Z completed c3e3
+2026-11-10T09:30:23Z completed c2a_dur
+2026-11-10T09:30:23Z started controls (start 1, pid 49630)
+2026-11-10T09:30:24Z completed controls
+2026-11-10T09:30:24Z started gates_T1_R4 (start 1, pid 49633)
+2026-11-10T09:30:24Z started gates_T1_R5 (start 1, pid 49634)
+2026-11-10T09:30:24Z started gates_T4_R4 (start 1, pid 49635)
+2026-11-10T09:30:24Z started gates_T4_R5 (start 1, pid 49636)
+2026-11-10T10:25:09Z completed gates_T1_R4
+2026-11-10T10:25:09Z started coherent_R5 (start 1, pid 50489)
+2026-11-10T11:01:22Z completed gates_T4_R4
+2026-11-10T11:20:51Z completed gates_T1_R5
+2026-11-10T12:02:34Z completed coherent_R5
+2026-11-10T13:00:19Z completed gates_T4_R5
+2026-11-10T13:00:19Z started plan (start 1, pid 53049)
+2026-11-10T13:00:20Z completed plan
+2026-11-10T13:00:20Z started test_C2a_R5_1 (start 1, pid 53052)
+2026-11-10T14:42:58Z completed test_C2a_R5_1
+2026-11-10T14:42:58Z started record (start 1, pid 54777)
+2026-11-10T14:42:59Z completed record
+2026-11-10T14:42:59Z launch ended; pending []; stop None

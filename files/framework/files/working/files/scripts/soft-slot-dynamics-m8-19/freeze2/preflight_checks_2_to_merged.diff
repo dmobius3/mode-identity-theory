@@ -1,0 +1,94 @@
+--- preflight_checks_2.py	2026-11-09 21:10:21
++++ preflight_checks_2_merged.py	2026-11-09 22:29:45
+@@ -1,12 +1,14 @@
+-"""M8.19's checks before the launch on the second freeze, read-only, on the form of the first's
+-(../freeze/preflight_checks.py): the copy the run uses against the go's bytes and the second freeze, with the
+-environment check run by the launch's route, the driver imported first, as main() runs it, since from the shell it now
+-reads the four threading variables as unset against the record's 1; the first freeze as kept; the instrument;
+-OpenWave (the go, the ruling, anything posted since, #702 merged, the second block's pull request open at the pushed
+-commit with its DCO check passed); the machine (mains power, Low Power Mode, the lid and displays, sleep holds, macOS
+-updates, scheduled power events); disk and load. Nothing is written but stdout. Every hash, link and commit is read from
+-the go and the ruling as kept, from git, from GitHub or from the files, none typed."""
+-import hashlib, json, os, re, subprocess, sys
++"""M8.19's checks before the launch on the second freeze, after the second block's merge: preflight_checks_2.py, whose
++first run stands with its output, with its OpenWave checks for #703 merged in place of open and the rest unchanged.
++Read-only, on the form of the first's (../freeze/preflight_checks.py): the copy the run uses against the go's bytes and
++the second freeze, with the environment check run by the launch's route, the driver imported first, as main() runs it,
++since from the shell it now reads the four threading variables as unset against the record's 1; the first freeze as
++kept; the instrument; OpenWave (the go, the ruling, nothing posted since but the approval, as kept and unedited, #702
++merged, the second block's pull request merged at the pushed commit as kept, the block on main byte for byte, its DCO
++check passed); the machine (mains power, Low Power Mode, the lid and displays, sleep holds, macOS updates, scheduled
++power events); disk and load. Nothing is written but stdout. Every hash, link and commit is read from the go, the
++ruling and the merge as kept, from git, from GitHub or from the files, none typed."""
++import base64, hashlib, json, os, re, subprocess, sys
+ 
+ ROOTB = os.environ['M819_BENCH']
+ B = os.path.join(ROOTB, 'soft-slot-dynamics-m8-19')
+@@ -49,6 +51,9 @@
+ go = json.load(open(os.path.join(ROOTB, 'go_request_v1', 'go.json'), encoding='utf-8'))
+ ru = json.load(open(os.path.join(ROOTB, 'launch_refusal_ask_v2', 'ruling', 'ruling.json'), encoding='utf-8'))
+ PRN = json.load(open(os.path.join(ROOTB, 'freeze_block_2_v2', 'posted', 'pr_new.json'), encoding='utf-8'))['number']
++MRG = os.path.join(ROOTB, 'freeze_block_2_v2', 'posted', 'merged')
++MK = json.load(open(os.path.join(MRG, 'pr.json'), encoding='utf-8'))
++RK = json.load(open(os.path.join(MRG, 'reviews.json'), encoding='utf-8'))
+ FULL = run('git', '-C', WT, 'rev-parse', re.search(r'the folder at MIT `([0-9a-f]+)`', go['body']).group(1) + '^{commit}').strip()
+ F = json.load(open(os.path.join(B, 'run', 'FROZEN.json')))
+ F1 = json.load(open(os.path.join(K, 'FROZEN.json')))
+@@ -87,26 +92,44 @@
+ for name, kept in (('the go', go), ('the ruling', ru)):
+     live = gh(f"repos/openwave-labs/openwave/issues/comments/{kept['id']}")
+     ok(f'{name} live equals its kept copy, unedited', live['body'] == kept['body'] and live['created_at'] == live['updated_at'])
+-after, ours = [], []
++after, ours, approval = [], [], []
+ for path in ('issues/698/comments', 'issues/702/comments', f'issues/{PRN}/comments', f'pulls/{PRN}/comments', f'pulls/{PRN}/reviews'):
+     for c in gh(f'repos/openwave-labs/openwave/{path}', pages=True):
+         t = c.get('created_at') or c.get('submitted_at') or ''
+         if t > ru['created_at']:
+-            (ours if c['user']['login'] == 'dmobius3' else after).append((path, c['user']['login'], t))
+-ok(f'nothing posted on #698, #702 or #{PRN} since the ruling by anyone else', not after, after)
++            if path == f'pulls/{PRN}/reviews' and len(RK) == 1 and c['id'] == RK[0]['id']:
++                approval.append(c)
++            else:
++                (ours if c['user']['login'] == 'dmobius3' else after).append((path, c['user']['login'], t))
++ok(f'nothing posted on #698, #702 or #{PRN} since the ruling by anyone else but the approval', not after, after)
+ info(f'ours since the ruling: {ours if ours else "none"}')
++Q = 'query($o:String!,$n:String!,$p:Int!){repository(owner:$o,name:$n){pullRequest(number:$p){reviews(first:20){nodes{databaseId lastEditedAt}}}}}'
++edits = {n['databaseId']: n['lastEditedAt'] for n in json.loads(run('gh', 'api', 'graphql', '-f', f'query={Q}', '-f', 'o=openwave-labs',
++         '-f', 'n=openwave', '-F', f'p={PRN}'))['data']['repository']['pullRequest']['reviews']['nodes']}
++a = approval[0] if len(approval) == 1 else {}
++ok(f"the approval, as kept and unedited: by #{PRN}'s merger, on the pushed commit, before the merge", len(RK) == 1 and len(approval) == 1
++   and a['state'] == 'APPROVED' == RK[0]['state'] and a['body'] == RK[0]['body'] and a['commit_id'] == RK[0]['commit_id'] == MK['head']['sha']
++   and a['user']['login'] == RK[0]['user']['login'] == MK['merged_by']['login'] and a['submitted_at'] == RK[0]['submitted_at'] <= MK['merged_at']
++   and a['id'] in edits and edits[a['id']] is None, f"{a.get('state')} by {(a.get('user') or {}).get('login')} at {a.get('submitted_at')}")
+ p702 = gh('repos/openwave-labs/openwave/pulls/702')
+ ok('#702 merged, as the record of the first freeze', p702['merged'] and p702['state'] == 'closed')
+ pr = gh(f'repos/openwave-labs/openwave/pulls/{PRN}')
+ head = run('git', '-C', CLONE, 'rev-parse', BRANCH).strip()
+ fork = run('git', '-C', CLONE, 'ls-remote', 'origin', f'refs/heads/{BRANCH}').split('\t')[0]
+-ok(f"#{PRN} open, its head the second block's commit, as pushed", pr['state'] == 'open' and not pr['draft'] and pr['head']['sha'] == head == fork
+-   and pr['base']['ref'] == 'main', f"{pr['state']}, head {pr['head']['sha'][:8]}")
++mc = gh(f"repos/openwave-labs/openwave/git/commits/{pr['merge_commit_sha']}") if pr.get('merged') else {}
++ok(f"#{PRN} merged as kept, its head the second block's commit, as pushed", pr['merged'] is True and pr['state'] == 'closed'
++   and pr['head']['sha'] == head == MK['head']['sha'] and fork in (head, '') and pr['base']['ref'] == 'main'
++   and pr['merge_commit_sha'] == MK['merge_commit_sha'] and pr['merged_at'] == MK['merged_at']
++   and [p['sha'] for p in mc.get('parents', [])] == [MK['base']['sha'], head],
++   f"{pr['state']}, merged {pr['merged']}, head {pr['head']['sha'][:8]}, the fork's branch {fork[:8] if fork else 'deleted'}")
++blk = open(os.path.join(ROOTB, 'freeze_block_2_v2', 'freeze_block_2.md'), 'rb').read()
++om = base64.b64decode(gh(f'repos/openwave-labs/openwave/contents/{BLOCK2}?ref=main')['content'])
++ok("the second block on OpenWave's main, byte for byte", om == blk, hashlib.sha256(om).hexdigest()[:8])
+ pf = gh(f'repos/openwave-labs/openwave/pulls/{PRN}/files', pages=True)
+ ok(f"#{PRN} adds the second block alone", [(f['filename'], f['status']) for f in pf] == [(BLOCK2, 'added')])
+ runs = gh(f"repos/openwave-labs/openwave/commits/{head}/check-runs")['check_runs']
+ ok(f'#{PRN}: DCO passes', [r['conclusion'] for r in runs if r['name'] == 'DCO'] == ['success'])
+-info(f"#{PRN} opened {pr['created_at']}; the second freeze written {F['written']}")
++info(f"#{PRN} opened {pr['created_at']}, merged {pr['merged_at']}; the second freeze written {F['written']}")
+ 
+ print('== the machine')
+ batt = run('pmset', '-g', 'batt')
+@@ -157,5 +180,5 @@
+ left = [l for l in run('ps', '-A', '-o', 'pid=,command=').splitlines() if 'm819_branch.py' in l or 'm819_run.py' in l]
+ ok('no M8.19 driver or orchestrator process running', not left, left)
+ 
+-print('pre-flight 2:', 'PASS' if not fails else f'FAIL ({len(fails)}): {fails}')
++print('pre-flight 2, after the merge:', 'PASS' if not fails else f'FAIL ({len(fails)}): {fails}')
+ sys.exit(1 if fails else 0)

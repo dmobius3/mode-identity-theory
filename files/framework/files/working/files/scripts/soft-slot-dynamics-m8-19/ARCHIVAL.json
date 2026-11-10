@@ -1,0 +1,225 @@
+{
+ "placeholders": {
+  "os.environ['M819_BENCH'] / <the bench>": "the bench's folder that held the run's folder and the freeze's files",
+  "os.environ['M819_MIT_CLONE'] / <an MIT clone>": "the clone of MIT the bench's instrument link points into",
+  "os.environ['M819_OPENWAVE_CLONE'] / <an OpenWave clone>": "the clone of OpenWave the freeze's terms were read from",
+  "os.environ['M819_OPENWAVE_CLONE_FROM_HOME']": "that clone, as a path from the home folder, inside os.path.expanduser"
+ },
+ "rule": "each copy is its original with each local path replaced: in a script, a quoted path by os.environ[VAR], plus the rest of the quoted text if any; in an output, the path by its placeholder. Putting the paths back gives the original byte for byte, at original_sha256; lines lists the lines that differ.",
+ "copies": {
+  "run/out/gates_T4_R4/console.log": {
+   "original_sha256": "582ddfc36c7838be36eb7931749e8fde6b7afb1fbcc6d2562f1c003db1a286cd",
+   "copy_sha256": "3ea41e067989d558be8c118b2d10b63b41ad575b7512fe9bcd043c83b52de7d2",
+   "lines": [
+    9
+   ],
+   "kind": "output"
+  },
+  "run/out/gates_T4_R5/console.log": {
+   "original_sha256": "6e458c3cfb7baf8f561f721dde5362c873ac80b559001d5ae9f1281d0471ef45",
+   "copy_sha256": "1f75bbb731f0fd6e38152650820e6da83c8e706cc2a67cd1a5b2951ff332f703",
+   "lines": [
+    12
+   ],
+   "kind": "output"
+  },
+  "freeze/bring_to_commit.py": {
+   "original_sha256": "6c4c0a500b494abb022278755dc93968a59e7ccf99eeca9877f8f9d8f549ad6e",
+   "copy_sha256": "45775b31effa3949af0dbe76a9b856c2434cce9d50f88f81d647177f235ba19f",
+   "lines": [
+    5,
+    7
+   ],
+   "kind": "script"
+  },
+  "freeze/checks_before_write.out": {
+   "original_sha256": "9750a8fd8254dcf7084168f6264e8444baa327846304f74abeaa2db8774ba377",
+   "copy_sha256": "112a37fc313fdd0a8f1e8229ff7eb51105ef115ab1c9734b35434968face656e",
+   "lines": [
+    14
+   ],
+   "kind": "output"
+  },
+  "freeze/checks_before_write.py": {
+   "original_sha256": "9faf8270ff1e4421b1bcee56db00a548df1dc32d00c265a87f3ba1cee0ab9e99",
+   "copy_sha256": "77ad10f688396daab06acab89d8dbb8833f4a0f304154e160e70f0301bd5d35a",
+   "lines": [
+    5,
+    8,
+    11
+   ],
+   "kind": "script"
+  },
+  "freeze/freeze_block.py": {
+   "original_sha256": "0af0d171ce176effccdf8756edacb860e61dc8f793c150f8d01014e06e45f3a5",
+   "copy_sha256": "c48602ad040454cad601fd6ed2aaa6bf8743002ff5af5b89a4e3f406c4174c91",
+   "lines": [
+    27,
+    29
+   ],
+   "kind": "script"
+  },
+  "freeze/preflight_checks.py": {
+   "original_sha256": "1c5daca4ca6da17bdf519a4be6f4c927b28d2050c563be1672da234a91a42f43",
+   "copy_sha256": "9d6494daa5f2e5feee9d3ebc775186c6f2e327755259d7aa16a2e781f1f45e33",
+   "lines": [
+    7,
+    9,
+    13
+   ],
+   "kind": "script"
+  },
+  "freeze/reconcile_copy.out": {
+   "original_sha256": "d6a0a8eee28cd64a6793fd928896d3f6426b39484bd947f55d2c2dfa365c7626",
+   "copy_sha256": "a3c8abec9720dac3b272adf6011d9ce4b553683fdddbe076a505ab910c297be5",
+   "lines": [
+    7
+   ],
+   "kind": "output"
+  },
+  "freeze/reconcile_copy.py": {
+   "original_sha256": "cd718a121fed5713fac6b64e24e9b1ddc4b9594d13246bd595b896059928427c",
+   "copy_sha256": "cea78109c95b67b72cc0ec58ccb5e0d3b89145cb49ce1119e7d5945085213387",
+   "lines": [
+    8,
+    10
+   ],
+   "kind": "script"
+  },
+  "freeze/reconcile_copy_2.py": {
+   "original_sha256": "2baab12ba5d27f7c8396d72aa8e74ab2b555d00dace994cb4557316180f11382",
+   "copy_sha256": "ee40ae6bd5d755f65560d1758737104c229e8b531956456d78d7770b4da939f8",
+   "lines": [
+    6,
+    8
+   ],
+   "kind": "script"
+  },
+  "freeze/rehearse_env.py": {
+   "original_sha256": "3ed5d9ab7c5438a9f583763cbd0827ec9387a8d5096893134f85eb3d2f280972",
+   "copy_sha256": "77650213361194b1a95b98382a3d3856e188a82ac617e46f24dce524f0abeb8d",
+   "lines": [
+    5
+   ],
+   "kind": "script"
+  },
+  "freeze/rehearse_launch.py": {
+   "original_sha256": "6d9ea94d736a8ce126258e9f78f66579b7bb02f8b9e5d7944fa46ee7d582a823",
+   "copy_sha256": "15f19455645f29f8d56fe787f21815e6751a76f130aef57e5ea9c5f5cca05310",
+   "lines": [
+    8
+   ],
+   "kind": "script"
+  },
+  "freeze/verify_frozen.py": {
+   "original_sha256": "229ad02ddec685d4040fcbe89b77bff1e7d671e688ca1d8184b16577a76434b6",
+   "copy_sha256": "80c21fb3761cfb8651f3115a6037bb82b76cafbc968fcf9121b02064496c64c8",
+   "lines": [
+    5,
+    7
+   ],
+   "kind": "script"
+  },
+  "freeze2/checks_before_write_2.py": {
+   "original_sha256": "b4a936553e502a70c48a46109c54b0c90062d89a46bf17b8285d507d59984c5e",
+   "copy_sha256": "7bfd35083c5b8ea13cecf2511f01682e9391558b1e87f6924e0e586fa0ba2a41",
+   "lines": [
+    9,
+    12,
+    15
+   ],
+   "kind": "script"
+  },
+  "freeze2/freeze_2.out": {
+   "original_sha256": "e06eda9fb719740ef5de89ab70bfbd9fa53734d2bee9f40af349ae46836b63b2",
+   "copy_sha256": "8f4de6ca9cc611b772d20994a06bdb96cce55341a153f5a9d54c6e3cc074b2d8",
+   "lines": [
+    1,
+    2,
+    18
+   ],
+   "kind": "output"
+  },
+  "freeze2/freeze_2.py": {
+   "original_sha256": "c3ac9855a3daaea92918e7fc19ff4e7baeb43198b959882b8299eb1638bcc4b1",
+   "copy_sha256": "e64d688aab61d60a2232f8310c0ac3bef195dabcca0d73867746fde30c44a14d",
+   "lines": [
+    21,
+    23
+   ],
+   "kind": "script"
+  },
+  "freeze2/freeze_2_rehearsal.out": {
+   "original_sha256": "46f50cb82f1a5b45a2263d10abf688d0b8cc06734b41b62e4d4f603eab96400c",
+   "copy_sha256": "35afd6ee75899df3a3e5ccfa0a820b3396d79ba46ff7f14fe1840bc065302dca",
+   "lines": [
+    19
+   ],
+   "kind": "output"
+  },
+  "freeze2/freeze_block_2.py": {
+   "original_sha256": "8589c001c2e8caeb833c0af01f09aee0efffb31cb644fed26c4f3e3cd4711faf",
+   "copy_sha256": "b8562f996439f971ac827a52075bd09871de3cafa44ffbbb2248d6eca0a0e880",
+   "lines": [
+    30,
+    34,
+    35
+   ],
+   "kind": "script"
+  },
+  "freeze2/merge_703.py": {
+   "original_sha256": "460db1cac031a0df03138d582e64f54e36dcd7356698de14a699d105686c9071",
+   "copy_sha256": "733100f0ec5f78e39ec66e8b3a15de037c2f77ee1240e0dfec35904a28698b55",
+   "lines": [
+    12,
+    16
+   ],
+   "kind": "script"
+  },
+  "freeze2/out/write_guard.out": {
+   "original_sha256": "9e415ddf3487d07fef060ce8fde0a2374816e155a36d91e0f26f691efc490a88",
+   "copy_sha256": "7f80e65862b66ff10f2565fd3f24c585c5b5a4198f63a8c22a185df107b2a3dc",
+   "lines": [
+    1
+   ],
+   "kind": "output"
+  },
+  "freeze2/preflight_checks_2.py": {
+   "original_sha256": "d21310cedb6199e3c91b8c214019032cb8476082af6da8b8952d42848c2d6a02",
+   "copy_sha256": "2fc7790e5b08d26a5f18ff38d6abd40fc3bc4d4dfbb7e42a208a603fe0787e2c",
+   "lines": [
+    11,
+    14,
+    18
+   ],
+   "kind": "script"
+  },
+  "freeze2/preflight_checks_2_merged.py": {
+   "original_sha256": "f00f245b471c300f256350916130af741ff3770b7c333ccb015bd3443693a663",
+   "copy_sha256": "204b785127be342ecc15306d1bfe828cb0d2036a2670c5b89205e636791869d6",
+   "lines": [
+    13,
+    16,
+    20
+   ],
+   "kind": "script"
+  },
+  "freeze2/preflight_checks_2_to_merged.diff": {
+   "original_sha256": "e8ccf2524fb80be25dc9e299338dcc71d2e2222e483ccbd61650153cbd5b6102",
+   "copy_sha256": "e8417273e09da9b4af204c2e1cf3601b3cc7e46db42ca5b5a57b95b7dc76f787",
+   "lines": [
+    25
+   ],
+   "kind": "script"
+  },
+  "freeze2/verify_frozen_2.py": {
+   "original_sha256": "74c916d1c92ff94da6d1dac786101bdda9cd01934eb804c866c1c554c3298802",
+   "copy_sha256": "cc0291b9470a151937e9d96d842d9f4459b10cf99a58f6ecf10482cafc347937",
+   "lines": [
+    8,
+    11
+   ],
+   "kind": "script"
+  }
+ }
+}

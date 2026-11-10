@@ -1,0 +1,28 @@
+ok    the ruling live equals its kept copy, unedited, by xrodz, an OpenWave member: 2026-11-10T00:41:59Z
+ok    the go live equals its kept copy, unedited, by xrodz, an OpenWave member: 2026-11-09T19:25:45Z
+ok    the ruling links the go and grants the second writing
+ok    nothing posted on #698 or #702 since the ruling: []
+ok    the ruling's SHA256SUMS and manifest are the go's
+ok    OpenWave main's task document, read by API, is at the terms' SHA-256
+ok    the clone's upstream/main (734eb28f, fetched) task document is at the terms' SHA-256
+ok    the bench's run/m8_19_task_details.md is at the terms' SHA-256
+ok    the folder commit is on origin/main (94a679ac)
+ok    no commit on origin/main since touches the M8.19 folder or the instrument
+ok    the worktree's M8.19 folder and instrument equal the folder commit's
+ok    the worktree's M8.19 folder and instrument hold no untracked or changed file
+ok    the bench's instrument link resolves to the worktree's instrument
+ok    the instrument's MANIFEST.json is at the go's SHA-256
+ok    every instrument .py file is at its manifest and equals its blob at 97a8c08 (17 files)
+ok    out/freeze_numbers.json equals its blob at 94a679ac
+ok    no __pycache__ in the instrument
+ok    the first freeze's three files in run/, at the pins #702 and the ruling name
+ok    validate_frozen passes on the first freeze: 16
+
+ok    shasum -a 256 -c SHA256SUMS: every listed file OK, SHA256SUMS at the go's SHA-256: 183 of 183
+ok    the copy's files are the commit's tree and the first freeze's three, nothing else: nothing from a rehearsal under run/ or reference/: []
+ok    no run/out/, cache or .DS_Store in the copy
+ok    the first freeze's keeping place is free
+ok    macOS is the first record's: 15.8.2 24H232
+ok    by the launch's route, in scratch: the record differs from the first in the four threading fields and the time alone: ['recorded', 'threading.MKL_NUM_THREADS', 'threading.OMP_NUM_THREADS', 'threading.OPENBLAS_NUM_THREADS', 'threading.VECLIB_MAXIMUM_THREADS']
+      python3: /opt/homebrew/Caskroom/miniforge/base/bin/python3 3.13.13; isolated 1, dont_write_bytecode 1
+checks before the second writing: PASS
