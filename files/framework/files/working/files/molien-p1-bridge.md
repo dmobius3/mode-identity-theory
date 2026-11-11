@@ -167,3 +167,7 @@ What stays open has two parts. Which flattening MIT performs matters on the low 
 ## VIII. Checks
 
 The three scripts in [`scripts/molien-p1-bridge/`](scripts/molien-p1-bridge/) are pure computation, needing only numpy and scipy, and each record beside them reproduces byte for byte from its script: [`isotropy_check.out`](scripts/molien-p1-bridge/isotropy_check.out), [`quotient_half_check.out`](scripts/molien-p1-bridge/quotient_half_check.out) and [`flattening_check.out`](scripts/molien-p1-bridge/flattening_check.out). The last two write the invariant projector Π as P. Not computed: the flat-limit asymptotics, which the checks show numerically; Bochner's theorem, the density argument of §V and the spin-1/2 symbol, which are standard; and anything on the sky.
+
+---
+
+| **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |

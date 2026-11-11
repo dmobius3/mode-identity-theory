@@ -98,3 +98,7 @@ In [`scripts/first-positive-transfer/`](scripts/first-positive-transfer/), with 
 - `setup/`: the frozen terms, `FREEZE.md`, and the two checks they name under `tools/`, byte for byte, each with its record. `axes.py` checks the convention and the placements' axes exactly; `g4_terms.py` checks the characters and $`\tau(-I)`$, the blocks' degrees, the classes, the placements' symmetries and the seam, each with a planted defect.
 - `run-1/`: the solver's two input files, its return (SHA-256 `eb776a5c19890d5d56fa04772975158b8e518730acec88c12c035fbac8241361`), its scripts and its result records, as returned. The paper it received is the bedrock page with navigation, figures, citation and certification removed.
 - `review/`: `numbers_check.py`, built on `transfer_kernel.py`, checks the norms, the classes, six rows and the margin; `same_trace_check.py` checks the same-trace spectrum. Both come with their records.
+
+---
+
+| **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |

@@ -178,3 +178,7 @@ In [`scripts/tier2-fixed-boundary/`](scripts/tier2-fixed-boundary/), with the SH
 - `setup/`: checks of the facts disclosed with the frozen terms, with three mutation controls, and their record.
 - `run-1/`: the solver's two input files, its return (SHA-256 `86abc5206347b275a825041318676278deef533691671ff48989c5a8c364e4bb`), its nine scripts, and their output records from the rerun.
 - `review/`: `independent_check.py` checks the exact ground state, and runs finite differences, Radau shooting and a mutation arm. `neumann_check.py` checks the reflection, the Neumann spectrum, the closed-bottle totals and the exact bounds. Both come with their records.
+
+---
+
+| **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
