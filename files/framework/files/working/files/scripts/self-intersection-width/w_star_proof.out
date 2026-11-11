@@ -1,0 +1,28 @@
+Part E: exact arithmetic
+  2I: 120 exact elements, closed (products with every fifth element, both sides)
+  axes: 31 = 15 + 10 + 6
+  cos^2(theta) = (5 + 2 sqrt 5)/15 and tan(theta) = 3 - sqrt 5 for the adjacent pair: exact
+  the triangle a, a', v: cos(theta) = cos(lambda3) cos(lambda5) exactly (right angle at v); tan(lambda3) = phi^-2, tan(lambda5) = phi^-1
+  its angles at a and a' are pi/3 and pi/5 exactly: tan(lambda3) = tan(theta)/2, tan(lambda5) = (phi/2) tan(theta)
+  at b = M, N = P: entry inequality holds with equality for 10 axes (2 two-fold, 3 three-fold, 5 five-fold), strictly for 21, fails for 0
+  so W_* = theta/2 exactly at that pose   PASS
+Part I: interval arithmetic, 50 digits
+  W0 = 0.326179069892 rad, theta = 0.652358139784 rad
+    (a) h5(theta) against h5(W0): 0.929618127333 > 0.910123873019   PASS
+    (b) h3(W0) against h3(d_max): 0.850014383785 > 0.84899790478   PASS
+    (c) 1 against xi_3(d_max): 1.0 > 0.475154539366   PASS
+    (c) 1 against xi_5(d'_max): 1.0 > 0.399840066856   PASS
+  d_max = 24.4775245239 deg, d'_max = 31.8971572994 deg, beta_bar = 0.906482007138 rad = 51.9375932136 deg
+    (1) 7pi/15 against beta_bar: 1.46607657168 > 0.906482007138   PASS
+  sigma* = 0.106759445703 rad
+    (2) g(sigma*) against beta_bar: 1.05200004277 > 0.906482007138   PASS
+    (3) pi/2 against theta + sigma_max/2: 1.57079632679 > 0.818140976183   PASS
+    (4) sigma_max against sigma*: 0.331565672796 > 0.106759445703   PASS
+  all comparisons certified   PASS
+Part S: the two-axis lemma scanned over one Moebius triangle (floats)
+  poses: 81811800 (b on a 300-step barycentric grid of the triangle, N every 0.1 deg)
+  tan(theta/2) = 0.338261213;  the largest min(T(a), T(a')) does not exceed it by more than 1e-12   PASS
+  it reaches tan(theta/2) to within 1e-12, within 0.001 deg of the edge midpoint M: True
+  mutation (three-fold read as two-fold): largest value 0.397387   exceeds the bound, as it should
+  mutation (wrong five-fold axis): largest value 0.763932   exceeds the bound, as it should
+  control (five-fold read as three-fold): the largest value still does not exceed tan(theta/2) by more than 1e-12: True

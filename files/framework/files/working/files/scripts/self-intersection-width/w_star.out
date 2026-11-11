@@ -1,0 +1,22 @@
+Part 0
+  2I: 120 elements, closed under multiplication
+  axes: 31 = 15 of order 2 + 10 of order 3 + 6 of order 5
+Part 1: closed form against the direct route
+  poses: 120
+  max |closed - direct| below 1e-12 rad   PASS
+  mutation (no c|n_N| term): max difference 0.102 rad   fails as it should
+  mutation (five-fold at 2pi/5): max difference 0.118 rad   fails as it should
+  first axis to bind: five-fold in 65 of 120 poses, three-fold in 28, two-fold in 27
+Part 2: the maximum over poses
+  random poses: 3000000; best raw W_* = 18.4792 deg
+  240 best poses refined: largest W_* = 18.688684 deg (tan W = 0.33826121)
+  more than half of the 240 reach it to within 1e-9 in tan W: True
+  binding axes at the best pose (within 1e-7 in tan W): 10 = 2 two-fold + 3 three-fold + 5 five-fold
+  the axis b, nearest axes: order 3 at 18.6887 deg, order 5 at 18.6887 deg, order 2 at 19.5954 deg, order 2 at 19.5954 deg
+  the pole N, nearest axes: order 2 at 0.0000 deg, order 3 at 20.9052 deg, order 3 at 20.9052 deg, order 5 at 31.7175 deg
+  the point e, nearest axes: order 5 at 7.8764 deg, order 2 at 25.7220 deg, order 2 at 25.7220 deg, order 3 at 29.5010 deg
+  grid cross-check over one (2,3,5) triangle: best grid W_* = 18.658815 deg   below the refined maximum
+  refined from the grid's best point: W_* = 18.688684 deg
+Part 3: W_* over Haar-random poses
+  poses: 2000000;  mean 6.831 deg;  quantiles 5/25/50/75/95%: 2.170, 4.834, 6.806, 8.490, 12.111;  largest seen 18.501
+  first axis to bind: five-fold 47.6%, three-fold 30.7%, two-fold 21.7%

@@ -316,6 +316,16 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 ---
 
+### [The First Self-Intersection Width](files/self-intersection-width.md)
+
+**Result (2026-11-10):** The width at which the unbent conic carrier's image in $`S^3/2I`$ first meets itself, as a function of the carrier's pose, and its maximum over poses. It is the least, over the 31 icosahedral axes, of an explicit entry width, and at every pose it is at most $`\tfrac12\arctan(3 - \sqrt5)\,R \approx 0.326\,R`$, with equality exactly at 30 double lunes, each the lift of the narrower conic band of the projective carrier's Proposition 3.2 for an adjacent three-fold and five-fold pair of axes. The bound's proof uses two axes, seven comparisons certified in interval arithmetic and an exact computation at the extremal pose. It selects no pose and caps no width, since the carrier's physical domain is $`\mathbb{RP}^3`$ by ruling, and its symmetry strata are not classified.
+
+**Inputs:** [The Projective Carrier](files/projective-carrier.md) §I, Proposition 0.4; §IV, Proposition 3.2; §XI, 1f; [w_star.py](files/scripts/self-intersection-width/w_star.py), [w_star_proof.py](files/scripts/self-intersection-width/w_star_proof.py).
+
+**Parent:** [The Projective Carrier](files/projective-carrier.md)
+
+---
+
 ### [The Soft-Slot Branches](files/soft-slot-branches.md)
 
 **Result (2026-10-19):** Whether the soft slots' critical orbits carry branches, and what their small-amplitude spectrum is, without a run. Every critical orbit of the reduced quartic that is nondegenerate modulo the stationary symmetry group continues to a branch of standing waves at small amplitude, and the reduced quartic decides the branch's small-amplitude linear spectrum: unstable where the slow flow is hyperbolic; spectrally and orbitally stable at a nondegenerate minimum; spectrally stable at a nondegenerate maximum, and at an elliptic saddle with Krein-definite frequencies once its zero modes are counted exactly. So each soft slot has an orbitally stable branch at small amplitude, and with the Slot Ground States every slot has one. Exact arithmetic, and interval arithmetic for three orbits, classifies M8.12's census in $`R_4`$ and $`R_5`$, the three orbits certified outside its class there, and $`R_2`$'s fixed-line points; two of the outside orbits, added on 2026-10-14, are born hyperbolic. At $`R_2`$'s degenerate line point, Lemma G in the fixed space of its octahedral isotropy gives a germ, pinned by the symmetry. At second order, a closed form for the reduced function's first correction decides both degenerate orbits: $`R_2`$'s point is spectrally and orbitally stable along its family, and $`v_1`$ is spectrally stable in $`R_4`$ and $`R_5`$. One order past Theorem R at a nondegenerate orbit, a closed form gives the slow spectrum's next term, and it reproduces the next-order coefficients extrapolated from M8.16's readings at the pyramid control and its four soft-slot controls, within their extrapolation spread, with nothing fitted (INFERRED). Finite amplitude, and the globality of $`R_2`$'s minimum, stay open.
