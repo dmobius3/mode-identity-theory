@@ -16,7 +16,7 @@
 
 RESULT, a derivation with no pre-committed pass condition. Four proofs from [The Projective Carrier](projective-carrier.md), moved here on 2026-11-11 without change, each under a copy of its statement. The statements live on that page, and its gate holds the copies equal to them. Section and statement numbers are that page's. The fence on least area, and the second variation that the remark under Proposition 6 calls *above*, are in its §IX.
 
-**Related:** [The Projective Carrier](projective-carrier.md), [The Lipschitz Comparison](lipschitz-comparison.md), [The Projective Carrier: Scope Inventory](carrier-inventory.md).
+**Related:** [The Projective Carrier](projective-carrier.md), [The Lipschitz Comparison](lipschitz-comparison.md), [The Projective Carrier: Scope Inventory](carrier-inventory.md), [The Projective Carrier: Decision Records](carrier-decisions.md).
 
 ## Proposition 4.1
 

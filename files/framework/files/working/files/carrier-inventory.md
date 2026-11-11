@@ -16,7 +16,7 @@
 
 This page is [§X of The Projective Carrier](projective-carrier.md#x-what-this-page-does-not-do), *What this page does not do*, moved here on 2026-11-11 without change. In the moved text, *this page*, *here* and the *it* of the first sentence mean The Projective Carrier. Section, statement and sub-decision numbers are that page's. The five readings (A), (A′), (B), (B′) and (C) are defined in its §XI. The sub-decisions and the ledger that the moved text places in §XI are now on [The Projective Carrier: Decision Records](carrier-decisions.md), with what each reading would gain and owe; §XI keeps the readings themselves and a table of the sub-decisions.
 
-**Related:** [The Projective Carrier](projective-carrier.md), [The Projective Carrier: Supporting Proofs](carrier-proofs.md).
+**Related:** [The Projective Carrier](projective-carrier.md), [The Projective Carrier: Supporting Proofs](carrier-proofs.md), [The Projective Carrier: Decision Records](carrier-decisions.md).
 
 ## What The Projective Carrier does not do
 
