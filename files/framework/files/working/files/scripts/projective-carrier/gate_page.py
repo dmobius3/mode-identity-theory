@@ -1,18 +1,18 @@
 #!/usr/bin/env python3
-"""Standing gate for projective-carrier.md and for the two pages that hold text moved from it, carrier-inventory.md
-(its section X) and carrier-proofs.md (four proofs).  No args: the checks.  --arms: each check must fail on a planted
-defect, parent green first.
+"""Standing gate for projective-carrier.md and for the three pages that hold text moved from it, carrier-inventory.md
+(its section X), carrier-proofs.md (four proofs) and carrier-decisions.md (its section XI from the sub-decisions on).
+No args: the checks.  --arms: each check must fail on a planted defect, parent green first.
 
 Run it from a checkout of this repository at origin/main, with network access and an authenticated gh CLI. P3 reads
-anchor ids from GitHub's rendering of each linked page at HEAD, P4 renders each of the three pages through
+anchor ids from GitHub's rendering of each linked page at HEAD, P4 renders each of the four pages through
 `gh api markdown`, and a missing tool, a failed fetch or a checkout off origin/main stops the run with an error:
 nothing is skipped. Every check reads the working tree, the state about to be committed. P3 takes an anchor from
 GitHub's ids only where a page's bytes match HEAD, and there the local heading rule must agree with it; a page with
-uncommitted edits is checked by the local rule alone. P1, P3 to P6, P9 and P10 run on each of the three pages; P2, P7,
-P8 and P11 to P14 read projective-carrier.md; P15 to P20 hold the three pages together. The pages quote other pages,
-so rerun this gate whenever one of them changes. A commit that changes a quoted sentence, such as a scope note,
-updates or dates the matching entry of carrier-inventory.md in the same commit. Each quotation is listed with the
-pages that carry it, and is checked on each."""
+uncommitted edits is checked by the local rule alone. P1, P3 to P6, P9 and P10 run on each of the four pages; P2, P7,
+P8, P11 to P14 and P22 read projective-carrier.md and the pages that point into it; P15 to P21 hold the four pages
+together. The pages quote other pages, so rerun this gate whenever one of them changes. A commit that changes a quoted
+sentence, such as a scope note, updates or dates the matching entry of carrier-inventory.md in the same commit. Each
+quotation is listed with the pages that carry it, and is checked on each."""
 import hashlib, html, os, re, subprocess, sys, unicodedata, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -100,7 +100,7 @@ QUOTES = [  # (exact bytes, the corpus page that must contain them at HEAD, the 
     ("the two $`\\mathbb{Z}_2`$ structures remain distinct", f"{WF}/postulate-bridge.md", ('inventory',)),
     ("canonically trivial", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
     ("a circle as the edge of a Möbius band embedded in $`S^3`$", f"{WF}/postulate-bridge.md", ('inventory',)),
-    ("postulate embedding", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
+    ("postulate embedding", f"{WF}/postulate-bridge.md", ('page', 'inventory', 'decisions')),
     ("The zero-excitation equilibrium cannot be the totally geodesic embedding", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
     ("The topology excludes the zero-bending configuration", f"{WF}/postulate-bridge.md", ('inventory',)),
     ("The central $`2I`$ sign and the Möbius normal sign are independent structures", f"{WF}/sampler-first-test.md", ('inventory',)),
@@ -113,12 +113,12 @@ QUOTES = [  # (exact bytes, the corpus page that must contain them at HEAD, the 
     ("A restriction on the admissible variations counts only when the postulate motivates it and it is declared before the computation, never because it rescues a candidate.", f"{WF}/postulate-bridge.md", ('page',)),
     ("only after a further mechanism selects the realized member", f"{WF}/postulate-bridge.md", ('page',)),
     ("a singular surface model", "files/framework/files/bedrock/README.md", ('page', 'inventory')),
-    ("the extension selection", f"{WF}/scaling-law-uniqueness.md", ('page', 'inventory')),
-    ("spectrally an orientable object", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page', 'inventory')),
-    ("the one quantity in the model that the intrinsic geometry leaves free", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page',)),
-    ("the framework's default", f"{WF}/scaling-law-uniqueness.md", ('page', 'inventory')),
-    ("an Euler-Lagrange matching equation", f"{WF}/postulate-bridge.md", ('page',)),
-    ("assumed as an inclusion by hand", f"{WF}/postulate-bridge.md", ('page',)),
+    ("the extension selection", f"{WF}/scaling-law-uniqueness.md", ('inventory', 'decisions')),
+    ("spectrally an orientable object", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page', 'inventory', 'decisions')),
+    ("the one quantity in the model that the intrinsic geometry leaves free", "files/framework/files/bedrock/files/first-eigenvalue.md", ('decisions',)),
+    ("the framework's default", f"{WF}/scaling-law-uniqueness.md", ('inventory', 'decisions')),
+    ("an Euler-Lagrange matching equation", f"{WF}/postulate-bridge.md", ('decisions',)),
+    ("assumed as an inclusion by hand", f"{WF}/postulate-bridge.md", ('decisions',)),
     ("the Friedrichs realization is spectrally an orientable object, a Neumann lune", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page',)),
     ("a singular surface model, not a smooth totally geodesic submanifold of $`S^3/2I`$", "files/framework/files/bedrock/README.md", ('inventory',)),
     ("not by seating the Möbius band inside $`S^3/2I`$", "files/framework/files/bedrock/README.md", ('inventory',)),
@@ -132,10 +132,10 @@ QUOTES = [  # (exact bytes, the corpus page that must contain them at HEAD, the 
     ("Tier 2's totally geodesic candidate has been removed: it is topologically unavailable to a smooth Möbius band", f"{WF}/postulate-bridge.md", ('inventory',)),
     ("the transverse-not-restrictive result as the residue", f"{WF}/postulate-bridge.md", ('inventory',)),
     ("should not be rescued by modifying the band", f"{WF}/sampler-first-test.md", ('inventory',)),
-    ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md", ('page',)),
+    ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md", ('decisions',)),
     ("an exact same-mode identity", f"{WF}/scaling-law-uniqueness.md", ('page',)),
-    ("Excited modes ($`m > 0`$) on the Möbius surface bend the embedding", "files/spectrum/files/the-waltz.md", ('page',)),
-    ("the extension question governs only the ground state, which the factorization never samples", f"{WF}/scaling-law-uniqueness.md", ('page',)),
+    ("Excited modes ($`m > 0`$) on the Möbius surface bend the embedding", "files/spectrum/files/the-waltz.md", ('page', 'decisions')),
+    ("the extension question governs only the ground state, which the factorization never samples", f"{WF}/scaling-law-uniqueness.md", ('decisions',)),
     ("even had $`S = \\{\\pm 1\\}`$ been achievable", f"{WF}/sampler-first-test.md", ('inventory',)),
     ("nothing would have been resolved at sixty either", f"{WF}/sampler-first-test.md", ('inventory',)),
     ("belong to a named operator on the embedded band's induced metric rather than being imported from the intrinsic conic pillar", f"{WF}/postulate-bridge.md", ('inventory',)),
@@ -191,12 +191,17 @@ PUBLIC = {  # canonical page -> {section anchor: links into this page that its r
 }
 
 
-FAMILY = {  # the page, and the two pages that hold text moved from it (2026-11); all three sit in one folder
+FAMILY = {  # the page, and the three pages that hold text moved from it (2026-11); all four sit in one folder
     "page": SELF_REL,
     "inventory": WF + "/carrier-inventory.md",
     "proofs": WF + "/carrier-proofs.md",
+    "decisions": WF + "/carrier-decisions.md",
 }
-TITLES = {"inventory": "# The Projective Carrier: Scope Inventory", "proofs": "# The Projective Carrier: Supporting Proofs"}
+TITLES = {"inventory": "# The Projective Carrier: Scope Inventory", "proofs": "# The Projective Carrier: Supporting Proofs",
+          "decisions": "# The Projective Carrier: Decision Records"}
+EM = chr(0x2014)
+DATE_RE = r"\d{4}-\d{2}-\d{2}"
+CLAUSE = re.compile(r"\b(?:Decided|Ruled)\b[^:.]*?" + DATE_RE + r"[^:.]*(?=:)")
 MOVED_PROOFS = {  # proposition -> (its heading on the proofs page, the anchor on the page of the section that states it)
     "4.1": ("Proposition 4.1", "vi-lemma-4-the-2r2-mode-is-the-bands-tilt"),
     "4.2": ("Proposition 4.2", "vi-lemma-4-the-2r2-mode-is-the-bands-tilt"),
@@ -255,6 +260,28 @@ def section_of(md, anchor):
     return md[sp[0]:sp[1]] if sp else ""
 
 
+def into_page(rel, p):
+    """True when the link target p, written on the page rel, is this page at its live state: relative or rooted, or
+    GitHub's main branch; a link pinned to a commit shows that commit's page and is not."""
+    if p.startswith("http"):
+        return not re.search(r"/blob/[0-9a-f]{7,40}/", p) and p.endswith("/blob/main/" + SELF_REL)
+    dest = p.lstrip("/") if p.startswith("/") else os.path.normpath(os.path.join(os.path.dirname(rel), p))
+    return dest == SELF_REL
+
+
+def linked_pages(rel, line):
+    # The local pages other than this one that a line of the page rel links, by their paths from the root.
+    out = []
+    for m in re.finditer(r"\]\(([^)#\s]+\.md)(?:#[^)\s]*)?\)", line):
+        p = m.group(1)
+        if p.startswith("http") or into_page(rel, p):
+            continue
+        dest = p.lstrip("/") if p.startswith("/") else os.path.normpath(os.path.join(os.path.dirname(rel), p))
+        if os.path.isfile(os.path.join(REPO, dest)):
+            out.append(dest)
+    return out
+
+
 def checks(fam, ctx):
     """fam: the three pages' texts by key.  Checks named for one page read fam["page"]."""
     r = {}
@@ -267,7 +294,7 @@ def checks(fam, ctx):
         bare = re.sub(r"```math\n.*?```", "", re.sub(r"\$`.*?`\$", "", x, flags=re.S), flags=re.S)
         found = ["em-dash"] * ("\u2014" in x) + ["bare $"] * ("$" in bare) + re.findall(r"\[[^\]]*\$`[^\]]*\]\(", x) + re.findall(r"\b(?:F1|F2|F3|F4|redline)\b", x)
         bad += [(key, f) for f in found]
-    r["P1 hygiene on each of the three pages: no em-dash, bare dollar, math in link text or unit attribution"] = (not bad, bad)
+    r["P1 hygiene on each of the four pages: no em-dash, bare dollar, math in link text or unit attribution"] = (not bad, bad)
     lines = t.split("\n")
     i = lines.index("# The Projective Carrier")
     got = [l for l in lines[i + 1:i + 12] if l.startswith("**")]
@@ -423,7 +450,9 @@ def checks(fam, ctx):
             bad.append((prop, "pointer"))
     if "](carrier-inventory.md)" not in section_of(t, "x-what-this-page-does-not-do"):
         bad.append(("section X", "link"))
-    r["P15 every moved block has a link where it stood: a pointer under each of the four statements, and a link in section X"] = (not bad, bad)
+    if "](carrier-decisions.md)" not in section_of(t, "xi-the-ruling"):
+        bad.append(("section XI", "link"))
+    r["P15 every moved block has a link where it stood: a pointer under each of the four statements, and a link in each of sections X and XI"] = (not bad, bad)
     proofs = fam["proofs"]
     psec = sections(proofs)
     pointers = re.findall(r"^\*Proof\.\* On \[[^\]]+\]\(carrier-proofs\.md#([^)\s]+)\)", t, re.M)
@@ -455,6 +484,73 @@ def checks(fam, ctx):
         if len(got) != len(HEADER) - 1 or not all(re.match(h, g) for g, h in zip(got, HEADER[:-1])):
             bad.append((key, [g[:14] for g in got]))
     r["P20 each new page's header is in schema order: Type, State, Status, Summary, Inputs, Parent"] = (not bad, bad)
+    dl = fam["decisions"].split("\n")
+    xi = section_of(t, "xi-the-ruling")
+    bad, subs = [], []
+    starts = [i for i, l in enumerate(dl) if l.startswith("**What stays to decide.**")]
+    ends = [i for i, l in enumerate(dl) if l.startswith("**The ledger.**")]
+    if len(starts) != 1 or len(ends) != 1 or ends[0] < starts[0]:
+        bad.append(("decisions page", "its sub-decisions are not between What stays to decide and The ledger"))
+    else:
+        for l in dl[starts[0] + 1:ends[0]]:
+            m = re.match(r"^- \*\*(1[a-g]\. .+?)\.\*\*", l)
+            if m:
+                subs.append([m.group(1), [], l])
+            elif subs and l.startswith("  - "):
+                subs[-1][1].append(l[4:])
+                subs[-1][2] += "\n" + l
+    rows = re.findall(r"^\| (1[a-g]\. [^|]+?) \| ([^|]+?) \|$", xi, re.M)
+    if [l for l, _ in rows] != [x[0] for x in subs] or len(rows) != 7:
+        bad.append(("rows", [l[:3] for l, _ in rows], [x[0][:3] for x in subs]))
+    decided = set()
+    for label, items, blk in subs:
+        row = next((c for l, c in rows if l == label), None)
+        if row is None:
+            continue
+        need = []
+        for it in items:
+            m = re.match(r"^\*\*([^*]+)\*\*", it) or re.match(r"^\*([^*]+)\*", it)
+            lead = m.group(1).rstrip(".") if m else ""
+            clauses = CLAUSE.findall(it)
+            if lead and re.search(DATE_RE, lead):
+                need.append(lead)
+            elif clauses:
+                need += [f"{lead}: {c}" for c in clauses]
+            if lead.startswith("Decided") or any(c.startswith("Decided") for c in clauses):
+                decided.add(label[:2])
+        bad += [(label[:2], "missing from its row: " + x[:50]) for x in need if x not in row]
+        pieces = [p.rstrip(".") for part in row.split(". ") for p in part.split(": ")]
+        bad += [(label[:2], "not on the decisions page under it: " + p[:50]) for p in pieces if p and p != "Open" and p not in blk]
+        if row.startswith("Open. ") == (label[:2] in decided):
+            bad.append((label[:2], "marked open" if label[:2] in decided else "not marked open"))
+    m = re.search(r"((?:1[a-g], )*1[a-g]) and (1[a-g]) have since been decided", xi)
+    listed = set(re.findall(r"1[a-g]", m.group(0))) if m else set()
+    if listed != decided:
+        bad.append(("the ruling's list of decided sub-decisions", sorted(listed), "against the decisions page", sorted(decided)))
+    r["P21 \u00a7XI's table gives each sub-decision its label, its dated lead-ins and its standing in the decisions page's words, and marks open exactly the sub-decisions the ruling's sentence leaves undecided"] = (not bad, bad)
+    known = {q for q, _, _ in QUOTES}
+    bad, seen = [], 0
+    for rel in ctx["markdown"]:
+        if rel in own:
+            continue
+        text = read(rel)
+        if "projective-carrier.md" not in text:
+            continue
+        for line in text.split("\n"):
+            anchors = {m.group(2) for m in re.finditer(r"\]\(([^)#\s]*projective-carrier\.md)#([^)\s]+)\)", line) if into_page(rel, m.group(1))}
+            if not anchors:
+                continue
+            seen += 1
+            for q in re.findall(r'"([^"\n]{12,})"', re.sub(r'<a id="[^"]*"></a>', "", line)):
+                if q in known:
+                    continue
+                if not any(q in x for x in fam.values()):
+                    if not any(q in read(d) for d in linked_pages(rel, line)):
+                        bad.append((rel.split("/")[-1], sorted(anchors), q[:50], "on none of these pages, nor on another page the line links"))
+                    continue
+                if not any(q in section_of(t, a) for a in anchors):
+                    bad.append((rel.split("/")[-1], sorted(anchors), q[:50]))
+    r["P22 a quotation that another page sets beside a link to one of this page's sections lies in that section, unless it quotes another page that line links"] = (not bad and seen >= 20, bad or seen)
     return r
 
 
@@ -508,6 +604,7 @@ def main():
     bridge = WF + "/postulate-bridge.md"
     waltz = "files/spectrum/files/the-waltz.md"
     contributing = "CONTRIBUTING.md"
+    slot_action = WF + "/slot-action.md"
     big = "\n" + "$`" + "{" * 2100 + "}" * 2100 + "`$\n"
     arms = [  # (check, where the defect is planted, the family, the context)
         ("P1", "the page", on("page", "The premise is adopted by ruling", "The premise is adopted \u2014 by ruling"), ctx),
@@ -553,6 +650,26 @@ def main():
         ("P19", "the page's links to the proofs page", dict(fam, page=re.sub(r"\]\(carrier-proofs\.md[^)]*\)", "](lipschitz-comparison.md)", t)), ctx),
         ("P20", "the proofs page's header", on("proofs", "**Type:** Result\n**State:** Closed", "**State:** Closed\n**Type:** Result"), ctx),
         ("P20", "the inventory's header", dict(fam, inventory=re.sub(r"\n\*\*Inputs:\*\*[^\n]*", "", fam["inventory"], count=1)), ctx),
+        ("P1", "the decisions", more("decisions", "\n" + EM + "\n"), ctx),
+        ("P3", "the decisions", on("decisions", "scaling-law-uniqueness.md#linear-readout-two-routes-and-a-no-go", "scaling-law-uniqueness.md#linear-readout-two-roads"), ctx),
+        ("P4", "the decisions", on("decisions", "$`A_{ij} = 0`$. It is the only cell", "$`A_{ij} = 0$. It is the only cell"), ctx),
+        ("P5", "the decisions", more("decisions", big), ctx),
+        ("P6", "the decisions", on("decisions", "spectrally an orientable object", "spectrally an oriented object"), ctx),
+        ("P9", "the decisions", more("decisions", '\nA page that says "this is not on the verified list" fails.\n'), ctx),
+        ("P10", "the proofs", more("proofs", '\n[Route 1](postulate-bridge.md#route-1) "The dance runs on two distinct seams"\n'), ctx),
+        ("P10", "the decisions", more("decisions", '\n[Route 1](postulate-bridge.md#route-1) "The dance runs on two distinct seams"\n'), ctx),
+        ("P15", "section XI's link", on("page", "are on [The Projective Carrier: Decision Records](carrier-decisions.md), moved there", "are on The Projective Carrier: Decision Records, moved there"), ctx),
+        ("P19", "the decisions page's Parent", on("decisions", "**Parent:** `projective-carrier.md`", "**Parent:** `postulate-bridge.md`"), ctx),
+        ("P20", "the decisions page's header", on("decisions", "**Type:** Result\n**State:** Open", "**State:** Open\n**Type:** Result"), ctx),
+        ("P21", "a lead-in reworded in its row", on("page", "| Decided 2026-09-29: Friedrichs in both sectors |", "| Decided 2026-09-29: Friedrichs in the twisted sector |"), ctx),
+        ("P21", "a label without its reading tags", on("page", "| 1d. The sampler (A, A\u2032) |", "| 1d. The sampler |"), ctx),
+        ("P21", "a dated note dropped from its row", on("page", ". Note (2026-10-05), on Proposition 8 |", " |"), ctx),
+        ("P21", "the open sub-decision shown as decided", on("page", "| Open. Ruled 2026-09-30", "| Ruled 2026-09-30"), ctx),
+        ("P21", "a decision on the decisions page that the table lacks", on("decisions", "  - *Ruled 2026-09-30: the framework's two-lap sentence binds as topology only.*", "  - *Decided 2026-11-12: a planted decision.*\n  - *Ruled 2026-09-30: the framework's two-lap sentence binds as topology only.*"), ctx),
+        ("P22", "slot-action.md's link moved to \u00a7I", fam, with_("P22", source=(slot_action, src(slot_action).replace("projective-carrier.md#xi-the-ruling", "projective-carrier.md#i-the-projective-layer", 1)))),
+        ("P22", "the words slot-action.md quotes, dropped from \u00a7XI's table", on("page", "where the sampler's target bundles live, reached", "reached"), ctx),
+        ("P22", "the list of files scanned", fam, with_("P22", markdown=[])),
+        ("P22", "the words slot-action.md quotes, reworded on all four pages", {k: v.replace("where the sampler's target bundles live", "where the sampler's target bundles sit") for k, v in fam.items()}, ctx),
     ]
     rc = silent = 0
     for key, where, bfam, bctx in arms:

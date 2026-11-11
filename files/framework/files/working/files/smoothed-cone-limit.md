@@ -9,7 +9,7 @@
 **State:** Active
 **Status (2026-10-03):** Declared before any computation (§§II-IV), then derived (§V): for the declared class the limit is the Friedrichs realization, eigenvalue by eigenvalue and in norm-resolvent sense under a fixed unitary identification, with the twisted bottom $`(1 + o(1))/(R^2\ln(4/\varepsilon))`$ (Proposition 1). Cross-checked (§VI) in the $`n = 0`$ sector: the twisted bottom approaches the declared curve and meets it to the integration's floor at $`\varepsilon \le 10^{-6}`$, and the twisted and untwisted levels merge. The extension of §II stays declared, and the rate $`O(1/\ln(1/\varepsilon))`$ for the other levels and for the merging stays a target. The first-eigenvalue paper carries Proposition 1's twisted case, with its proof, as its Proposition 7.1. §II's bridging outcome was in fact excluded for the class by nonnegativity (§V).
 **Summary:** Whether smoothing the conic band's pinch selects the Friedrichs realization the carrier adopts or a transmitting one: the class it will be checked in, the curves the numbers will be compared with, and the claims it will not make.
-**Inputs:** `../../bedrock/files/first-eigenvalue.md` (§7, Propositions 3.7 and 4.4, the conic trace coordinates), `projective-carrier.md` (§XI, 1e), `scaling-law-uniqueness.md`, `scripts/smoothed-cone-limit/`
+**Inputs:** `../../bedrock/files/first-eigenvalue.md` (§7, Propositions 3.7 and 4.4, the conic trace coordinates), `projective-carrier.md` (§XI, 1e), `carrier-decisions.md` (1e), `scaling-law-uniqueness.md`, `scripts/smoothed-cone-limit/`
 **Parent:** `projective-carrier.md`
 
 ---

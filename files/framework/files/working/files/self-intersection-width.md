@@ -9,7 +9,7 @@
 **State:** Closed
 **Status (2026-11-10):** Derived. Place the unbent conic carrier $`M(W)`$ in $`\mathbb{RP}^3`$ at any pose, and let $`W_*`$ be the width at which its image in $`S^3/2I`$ first meets itself. It is the least, over the 31 icosahedral axes, of an explicit entry width (Proposition 1). At every pose $`W_* \le \tfrac12\arctan(3 - \sqrt5)\,R \approx 0.326\,R`$, with equality exactly at 30 double lunes, each the lift of the narrower conic band of the projective carrier's Proposition 3.2 for an adjacent three-fold and five-fold pair of axes (Theorem 3). The bound's proof uses two axes, seven numerical comparisons certified in interval arithmetic, and an exact computation at the extremal pose. The result selects no pose and caps no width: the carrier's physical domain is $`\mathbb{RP}^3`$ by the ruling of 2026-10-02, and $`W_*`$ is a property of the observation map. Its symmetry strata are not classified.
 **Summary:** The width at which the unbent conic carrier's image in $`S^3/2I`$ first meets itself, as a function of the carrier's pose, and its maximum over poses.
-**Inputs:** `projective-carrier.md` (§I, Proposition 0.4; §IV, Proposition 3.2; §XI 1f), `scripts/self-intersection-width/`
+**Inputs:** `projective-carrier.md` (§I, Proposition 0.4; §IV, Proposition 3.2; §XI 1f), `carrier-decisions.md` (1f), `scripts/self-intersection-width/`
 **Parent:** `projective-carrier.md`
 
 ---

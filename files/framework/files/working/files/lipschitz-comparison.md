@@ -9,7 +9,7 @@
 **State:** Closed
 **Status (2026-10-05):** Derived. With the edge fixed as parametrized and the core generating, the unbent conic carrier $`M(W)`$ has the least area among Lipschitz carrier-class competitors at every embedded width, and a competitor ties it only by covering it once. This is Proposition 8 of the projective carrier, extending its Proposition 7 from finite-piecewise-smooth competitors. The proof follows Proposition 7's route. Crofton's formula with multiplicity comes from the area formula applied to the map that sends a point and a direction to a line, and the parity of the line count from local degrees. The tie comes from a measure-theoretic form of Proposition 7's step 6, which needs no second fundamental form. The result completes the fixed-edge area comparison for the natural competitor class. It grounds neither the conic realization (1b) nor the fixed edge (1c), and it selects no width.
 **Summary:** Whether the conic carrier's least area with its edge fixed, proved for finite-piecewise-smooth competitors, holds for Lipschitz ones, the regularity class of Proposition 6, and with what equality case.
-**Inputs:** `projective-carrier.md` (§IX, Propositions 5, 6 and 7, §XI 1b and 1c), `carrier-proofs.md` (the proof of Proposition 7), `postulate-bridge.md` (the bar)
+**Inputs:** `projective-carrier.md` (§IX, Propositions 5, 6 and 7, §XI 1b and 1c), `carrier-decisions.md` (1b and 1c), `carrier-proofs.md` (the proof of Proposition 7), `postulate-bridge.md` (the bar)
 **Parent:** `projective-carrier.md`
 
 ---

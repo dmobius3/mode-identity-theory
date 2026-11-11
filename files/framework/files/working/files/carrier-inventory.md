@@ -14,9 +14,11 @@
 
 ---
 
-This page is [§X of The Projective Carrier](projective-carrier.md#x-what-this-page-does-not-do), *What this page does not do*, moved here on 2026-11-11 without change. In the moved text, *this page*, *here* and the *it* of the first sentence mean The Projective Carrier. Section, statement and sub-decision numbers are that page's. The five readings (A), (A′), (B), (B′) and (C) are defined in its §XI.
+This page is [§X of The Projective Carrier](projective-carrier.md#x-what-this-page-does-not-do), *What this page does not do*, moved here on 2026-11-11 without change. In the moved text, *this page*, *here* and the *it* of the first sentence mean The Projective Carrier. Section, statement and sub-decision numbers are that page's. The five readings (A), (A′), (B), (B′) and (C) are defined in its §XI. The sub-decisions and the ledger that the moved text places in §XI are now on [The Projective Carrier: Decision Records](carrier-decisions.md), with what each reading would gain and owe; §XI keeps the readings themselves and a table of the sub-decisions.
 
 **Related:** [The Projective Carrier](projective-carrier.md), [The Projective Carrier: Supporting Proofs](carrier-proofs.md).
+
+## What The Projective Carrier does not do
 
 Apart from a paragraph in the Λ page's §III and the pointers to this page from the postulate bridge and the working index, it changes no other page's claims. The premise is adopted (§XI), so the pages below took scope notes or rewording, made separately. The research debts the adoption raises, rather than rewording, are in §XI's ledger under (A). The readings (A), (A′), (B), (B′) and (C) are §XI's. One entry, at the end, is independent of the ruling; the Λ page carries it. Since 2026-09-27 the working-layer pages below carry dated scope notes, except Cone Point Coherence, which the ruling leaves as it was. Since 2026-09-28 the public pages state the placement, the two seams and the two signs in place, with the formula rewritten (§XI, 1a); the Euclid card carries the change as a dated clarification.
 
