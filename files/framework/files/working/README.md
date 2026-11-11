@@ -101,6 +101,16 @@ Orienting notes that index other work.
 
 ---
 
+### [The Projective Carrier: Scope Inventory](files/carrier-inventory.md)
+
+**Summary:** What the carrier ruling changes on other pages and what it leaves alone: an inventory, page by page, with each page's wording quoted and held to its source by The Projective Carrier's gate.
+
+**Inputs:** [The Projective Carrier](files/projective-carrier.md) §XI.
+
+**Parent:** [The Projective Carrier](files/projective-carrier.md)
+
+---
+
 ## :mountain_snow: Math Foundation
 
 Closing any one of these upgrades everything downstream.
@@ -117,7 +127,7 @@ A variational reading now sits over both, as program architecture rather than a 
 
 The dynamical direction's Tier 2 has run its first computation ([The Tier 2 Fixed-Boundary Run](files/tier2-fixed-boundary.md)). The specified band, Lawson's Möbius band, is unstable under the fixed-boundary area functional, with index 2 and nullity 1. The index was already stated in the literature, and the nullity follows from a published computation. Every minimal Möbius band spanning a great circle is unstable the same way, so in that regime no smooth embedded band attains the infimum of area.
 
-Where the carrier sits is ruled (2026-09-27) on [The Projective Carrier](files/projective-carrier.md): the vacuum carrier itself is unbent, so the carrier is realized through the projective layer, lifting to and embedding in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$ with its core the central $`-I`$, and in the spinorial sectors the central sign is its Möbius holonomy. Its physical domain is $`\mathbb{RP}^3`$, by ruling (2026-10-02), and $`S^3/2I`$ is its observable domain; its pose relative to $`2I`$ is free. The conic band is the leading realization, not uniquely selected. Its stability is derived for the fixed-edge area problem, and an independent check frozen before the run has reproduced it blind: a fixed-edge theorem, not vacuum stability, which counts toward the Tier 2 bar only once the realization and the fixed edge are grounded. The alternatives the ruling set aside stay on that page as the decision's record, beside its inventory of the pages the ruling changed. For Tier 3 the substrate's radius is separately ruled a kinematic parameter (2026-10-10): a framework-level posit stated before the bar, its variation lies outside the admissible phase space, while the fixed edge, adopted on modeling grounds, still does not count. The radius ruling's second-order check has since run ([The Fixed Radius at Second Order](files/fixed-radius-second-order.md#results)): for a barotropic perfect fluid on (a) or (c), under that page's four ruled readings, the ruling's "every order" fails at second order, FATAL-class for that pairing; ruled 2026-10-12, the fixed radius stands, the stress-tensor bridge's C12 gains a second-order duty, and the static placement stays open. The carrier's cone extension is decided (2026-09-29): Friedrichs in both sectors, which needs no defect length. Its sampler is decided the same day: the transverse derivative, normalized at unit radius, for every block, one operator independent of spin and statistics. Its temporal edge is decided with it: time runs on the abstract boundary circle, of which the figure-eight is the image. Its boundary regime is decided (2026-10-01): the edge is held fixed, as a modeling input rather than a derived law.
+Where the carrier sits is ruled (2026-09-27) on [The Projective Carrier](files/projective-carrier.md): the vacuum carrier itself is unbent, so the carrier is realized through the projective layer, lifting to and embedding in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$ with its core the central $`-I`$, and in the spinorial sectors the central sign is its Möbius holonomy. Its physical domain is $`\mathbb{RP}^3`$, by ruling (2026-10-02), and $`S^3/2I`$ is its observable domain; its pose relative to $`2I`$ is free. The conic band is the leading realization, not uniquely selected. Its stability is derived for the fixed-edge area problem, and an independent check frozen before the run has reproduced it blind: a fixed-edge theorem, not vacuum stability, which counts toward the Tier 2 bar only once the realization and the fixed edge are grounded. The alternatives the ruling set aside stay on that page as the decision's record; its inventory of the pages the ruling changed is [The Projective Carrier: Scope Inventory](files/carrier-inventory.md). For Tier 3 the substrate's radius is separately ruled a kinematic parameter (2026-10-10): a framework-level posit stated before the bar, its variation lies outside the admissible phase space, while the fixed edge, adopted on modeling grounds, still does not count. The radius ruling's second-order check has since run ([The Fixed Radius at Second Order](files/fixed-radius-second-order.md#results)): for a barotropic perfect fluid on (a) or (c), under that page's four ruled readings, the ruling's "every order" fails at second order, FATAL-class for that pairing; ruled 2026-10-12, the fixed radius stands, the stress-tensor bridge's C12 gains a second-order duty, and the static placement stays open. The carrier's cone extension is decided (2026-09-29): Friedrichs in both sectors, which needs no defect length. Its sampler is decided the same day: the transverse derivative, normalized at unit radius, for every block, one operator independent of spin and statistics. Its temporal edge is decided with it: time runs on the abstract boundary circle, of which the figure-eight is the image. Its boundary regime is decided (2026-10-01): the edge is held fixed, as a modeling input rather than a derived law.
 
 **Gated by:** `gate:variational-independence-bar`
 
@@ -390,7 +400,17 @@ Closed: executed computations and derivations with their outcomes in hand.
 
 **Result (2026-10-05):** Whether the conic carrier's least area with its edge fixed, proved for finite-piecewise-smooth competitors, holds for Lipschitz ones. It does, with the same equality case: with the edge fixed as parametrized and the core generating, $`M(W)`$ has the least area among Lipschitz carrier-class competitors, and a competitor ties it only by covering it once (the projective carrier's Proposition 8). Crofton's formula with multiplicity comes from the area formula applied to the map that sends a point and a direction to a line, the parity of the line count from local degrees, and the tie from a measure-theoretic form of Proposition 7's step 6. It grounds neither the conic realization nor the fixed edge, and it selects no width.
 
-**Inputs:** [The Projective Carrier](files/projective-carrier.md) §IX, Propositions 5, 6 and 7.
+**Inputs:** [The Projective Carrier](files/projective-carrier.md) §IX, Propositions 5, 6 and 7; [The Projective Carrier: Supporting Proofs](files/carrier-proofs.md), the proof of Proposition 7.
+
+**Parent:** [The Projective Carrier](files/projective-carrier.md)
+
+---
+
+### [The Projective Carrier: Supporting Proofs](files/carrier-proofs.md)
+
+**Result (2026-10-01):** Derived. The proofs of Propositions 4.1, 4.2, 6 and 7 of The Projective Carrier, each under a copy of its statement, with the remarks that followed three of them. Among bands of Proposition 3's class with a connected smooth locus only the conic bands have a rigid tilt as a Friedrichs mode (4.1). Under the Friedrichs realization the exact $`2/R^2`$, kept as the simple first positive level, does not force geodesic laps, since near every conic band suitably chosen moves of one lap off its line within the plane, away from the pinch, keep it (4.2). With the edge fixed, the bowtie at the cone point is locally area-minimizing: a competitor that re-maps the band only within a small ball about it has strictly more area unless it covers the carrier's image there exactly once (6). Coupled to changes elsewhere, no continuous finite-piecewise-smooth carrier-class competitor with the edge fixed as parametrized has less area than the conic band, and one ties only by covering it once (7).
+
+**Inputs:** [The Projective Carrier](files/projective-carrier.md) §VI, Propositions 4.1 and 4.2; §IX, Propositions 6 and 7.
 
 **Parent:** [The Projective Carrier](files/projective-carrier.md)
 

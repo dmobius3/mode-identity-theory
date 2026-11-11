@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
-"""Standing gate for projective-carrier.md. No args: the checks. --arms: each check must fail on a planted defect,
-parent green first.
+"""Standing gate for projective-carrier.md and for the two pages that hold text moved from it, carrier-inventory.md
+(its section X) and carrier-proofs.md (four proofs).  No args: the checks.  --arms: each check must fail on a planted
+defect, parent green first.
 
 Run it from a checkout of this repository at origin/main, with network access and an authenticated gh CLI. P3 reads
-anchor ids from GitHub's rendering of each linked page at HEAD, P4 renders the page through `gh api markdown`, and a
-missing tool, a failed fetch or a checkout off origin/main stops the run with an error: nothing is skipped. Every
-check reads the working tree, the state about to be committed. P3 takes an anchor from GitHub's ids only where a
-page's bytes match HEAD, and there the local heading rule must agree with it; a page with uncommitted edits is
-checked by the local rule alone. The page
-quotes other pages, so rerun this gate whenever one of them changes. A commit that changes a quoted sentence, such as a
-scope note, updates or dates the matching entry of the page's §X in the same commit."""
+anchor ids from GitHub's rendering of each linked page at HEAD, P4 renders each of the three pages through
+`gh api markdown`, and a missing tool, a failed fetch or a checkout off origin/main stops the run with an error:
+nothing is skipped. Every check reads the working tree, the state about to be committed. P3 takes an anchor from
+GitHub's ids only where a page's bytes match HEAD, and there the local heading rule must agree with it; a page with
+uncommitted edits is checked by the local rule alone. P1, P3 to P6, P9 and P10 run on each of the three pages; P2, P7,
+P8 and P11 to P14 read projective-carrier.md; P15 to P20 hold the three pages together. The pages quote other pages,
+so rerun this gate whenever one of them changes. A commit that changes a quoted sentence, such as a scope note,
+updates or dates the matching entry of carrier-inventory.md in the same commit. Each quotation is listed with the
+pages that carry it, and is checked on each."""
 import hashlib, html, os, re, subprocess, sys, unicodedata, urllib.parse, urllib.request
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -78,80 +81,80 @@ def sections(md):
     return spans
 
 
-QUOTES = [  # (exact bytes on the page, the corpus page that must contain them at HEAD)
-    ("are antipodal maps on different spheres serving different purposes, and they must not be merged.", f"{WF}/sampler-first-test.md"),
-    ("the band's $`\\mathbb{Z}_2`$ cannot be a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md"),
-    ("cannot be identified with any $`2I`$-datum", f"{WF}/postulate-bridge.md"),
-    ("The covering geometry constrains, but does not by itself fix, the extension", "files/framework/files/bedrock/files/first-eigenvalue.md"),
-    ("the edge-identified quotient of a totally geodesic covering great-$`S^2`$ band in $`S^3`$", "files/cosmos/files/cosmological-constant.md"),
-    ("transverse, not restrictive", f"{WF}/postulate-bridge.md"),
-    ("time is the boundary of a non-orientable surface embedded in a closed three-space", "files/framework/README.md"),
-    ("The twists and identifications live in that built structure", "files/framework/README.md"),
-    ("and not the Möbius orientation sign of One Shape", "files/framework/README.md"),
-    ("The Möbius sign flip and the central $`-I`$ of $`2I`$ are two distinct $`Z_2`$'s", "files/framework/README.md"),
-    ("the framework does not treat them as interchangeable", "README.md"),
-    ("an embedded spectral carrier", "files/cosmos/files/cosmological-constant.md"),
-    ("The dance runs on two distinct seams", "files/spectrum/files/the-waltz.md"),
-    ("the orientation $`\\mathbb{Z}_2`$ is not a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md"),
-    ("$`\\mathbb Z_2^{\\text{Möbius}} \\neq \\mathbb Z_2^{\\text{centre}}`$ as identified structures", f"{WF}/postulate-bridge.md"),
-    ("the two $`\\mathbb{Z}_2`$ structures remain distinct", f"{WF}/postulate-bridge.md"),
-    ("canonically trivial", f"{WF}/postulate-bridge.md"),
-    ("a circle as the edge of a Möbius band embedded in $`S^3`$", f"{WF}/postulate-bridge.md"),
-    ("postulate embedding", f"{WF}/postulate-bridge.md"),
-    ("The zero-excitation equilibrium cannot be the totally geodesic embedding", f"{WF}/postulate-bridge.md"),
-    ("The topology excludes the zero-bending configuration", f"{WF}/postulate-bridge.md"),
-    ("The central $`2I`$ sign and the Möbius normal sign are independent structures", f"{WF}/sampler-first-test.md"),
-    ("$`\\mathcal L`$'s $`\\mathbb Z_2`$ cannot be a $`2I`$ character", f"{WF}/sampler-first-test.md"),
-    ("the two $`\\mathbb{Z}_2`$ structures are different objects", f"{WF}/variational-score-to-sample.md"),
-    ("not the Möbius orientation $`Z_2`$, which the framework keeps distinct from that split", f"{WF}/plato-twist.md"),
-    ("stays distinct both from the base edge $`Z_2`$ above and from the central $`-I`$ inside the lifted $`Z_4`$", "files/spectrum/files/mass-spectrum.md"),
-    ("group each block carries", f"{WF}/scaling-law-uniqueness.md"),
-    ("The postulate embedding must be a critical point of the independently motivated functional whose second variation is nonnegative on every admissible variation of the declared class", f"{WF}/postulate-bridge.md"),
-    ("A restriction on the admissible variations counts only when the postulate motivates it and it is declared before the computation, never because it rescues a candidate.", f"{WF}/postulate-bridge.md"),
-    ("only after a further mechanism selects the realized member", f"{WF}/postulate-bridge.md"),
-    ("a singular surface model", "files/framework/files/bedrock/README.md"),
-    ("the extension selection", f"{WF}/scaling-law-uniqueness.md"),
-    ("spectrally an orientable object", "files/framework/files/bedrock/files/first-eigenvalue.md"),
-    ("the one quantity in the model that the intrinsic geometry leaves free", "files/framework/files/bedrock/files/first-eigenvalue.md"),
-    ("the framework's default", f"{WF}/scaling-law-uniqueness.md"),
-    ("an Euler-Lagrange matching equation", f"{WF}/postulate-bridge.md"),
-    ("assumed as an inclusion by hand", f"{WF}/postulate-bridge.md"),
-    ("the Friedrichs realization is spectrally an orientable object, a Neumann lune", "files/framework/files/bedrock/files/first-eigenvalue.md"),
-    ("a singular surface model, not a smooth totally geodesic submanifold of $`S^3/2I`$", "files/framework/files/bedrock/README.md"),
-    ("not by seating the Möbius band inside $`S^3/2I`$", "files/framework/files/bedrock/README.md"),
-    ("The deeper obstruction", f"{WF}/postulate-bridge.md"),
-    ("The band lives upstairs on a great $`S^2 \\subset S^3`$", f"{WF}/postulate-bridge.md"),
-    ("compose only if the surface is group-stable, and it is not", f"{WF}/postulate-bridge.md"),
-    ("left translation by any non-central element moves the defining $`3`$-plane", f"{WF}/postulate-bridge.md"),
-    ("the band does not descend (the deeper obstruction)", f"{WF}/postulate-bridge.md"),
-    ("rules out descent of the band to $`X`$ as a $`2I`$-stable submanifold", f"{WF}/postulate-bridge.md"),
-    ("the deck element $`-1`$ never stabilizes an admissible band", "files/framework/files/working/README.md"),
-    ("Tier 2's totally geodesic candidate has been removed: it is topologically unavailable to a smooth Möbius band", f"{WF}/postulate-bridge.md"),
-    ("the transverse-not-restrictive result as the residue", f"{WF}/postulate-bridge.md"),
-    ("should not be rescued by modifying the band", f"{WF}/sampler-first-test.md"),
-    ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md"),
-    ("an exact same-mode identity", f"{WF}/scaling-law-uniqueness.md"),
-    ("Excited modes ($`m > 0`$) on the Möbius surface bend the embedding", "files/spectrum/files/the-waltz.md"),
-    ("the extension question governs only the ground state, which the factorization never samples", f"{WF}/scaling-law-uniqueness.md"),
-    ("even had $`S = \\{\\pm 1\\}`$ been achievable", f"{WF}/sampler-first-test.md"),
-    ("nothing would have been resolved at sixty either", f"{WF}/sampler-first-test.md"),
-    ("belong to a named operator on the embedded band's induced metric rather than being imported from the intrinsic conic pillar", f"{WF}/postulate-bridge.md"),
-    ("This decouples the factorization from the extension selection", f"{WF}/scaling-law-uniqueness.md"),
-    ("bridging extension (not Friedrichs; see §II)", f"{WF}/cone-point-coherence.md"),
-    ("the holonomy picks out the twisted sector", "files/cosmos/files/cosmological-constant.md"),
-    ("The holonomy selects the twisted sector in which the first positive level is identified", "files/cosmos/files/cosmological-constant.md"),
-    ("The anti-periodic flip acts per lap", "files/framework/README.md"),
-    ("The paper's model is intrinsic, and the paper places it in no three-dimensional space", "files/cosmos/files/black-hole.md"),
-    ("These are different operations doing different jobs", "files/framework/README.md"),
-    ("The two seams share one step without merging", "files/framework/README.md"),
-    ("the orientation sign and the central $`-I`$ are carried by one loop", "files/framework/README.md"),
-    ("the carrier's physical domain is $`\\mathbb{RP}^3`$, the layer where it embeds", "files/framework/README.md"),
-    ("enters separately", "files/framework/files/bedrock/README.md"),
-    ("The quotient's central stage reaches the band itself", "files/framework/files/bedrock/README.md"),
-    ("The carrier embeds unbent in the projective layer", "files/framework/files/bedrock/README.md"),
-    ("the resulting projective three-space admits an unbent Möbius surface with a single continuous edge", "README.md"),
-    ("includes that same identification of opposite points as an initial step", "README.md"),
-    ("The postulate embeds a non-orientable carrier, unbent, in its central quotient", "files/cosmos/files/cosmological-constant.md"),
+QUOTES = [  # (exact bytes, the corpus page that must contain them at HEAD, the pages of FAMILY that carry them)
+    ("are antipodal maps on different spheres serving different purposes, and they must not be merged.", f"{WF}/sampler-first-test.md", ('page',)),
+    ("the band's $`\\mathbb{Z}_2`$ cannot be a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
+    ("cannot be identified with any $`2I`$-datum", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("The covering geometry constrains, but does not by itself fix, the extension", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page',)),
+    ("the edge-identified quotient of a totally geodesic covering great-$`S^2`$ band in $`S^3`$", "files/cosmos/files/cosmological-constant.md", ('inventory',)),
+    ("transverse, not restrictive", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
+    ("time is the boundary of a non-orientable surface embedded in a closed three-space", "files/framework/README.md", ('page',)),
+    ("The twists and identifications live in that built structure", "files/framework/README.md", ('page',)),
+    ("and not the Möbius orientation sign of One Shape", "files/framework/README.md", ('inventory',)),
+    ("The Möbius sign flip and the central $`-I`$ of $`2I`$ are two distinct $`Z_2`$'s", "files/framework/README.md", ('inventory',)),
+    ("the framework does not treat them as interchangeable", "README.md", ('inventory',)),
+    ("an embedded spectral carrier", "files/cosmos/files/cosmological-constant.md", ('inventory',)),
+    ("The dance runs on two distinct seams", "files/spectrum/files/the-waltz.md", ('inventory',)),
+    ("the orientation $`\\mathbb{Z}_2`$ is not a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("$`\\mathbb Z_2^{\\text{Möbius}} \\neq \\mathbb Z_2^{\\text{centre}}`$ as identified structures", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("the two $`\\mathbb{Z}_2`$ structures remain distinct", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("canonically trivial", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
+    ("a circle as the edge of a Möbius band embedded in $`S^3`$", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("postulate embedding", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
+    ("The zero-excitation equilibrium cannot be the totally geodesic embedding", f"{WF}/postulate-bridge.md", ('page', 'inventory')),
+    ("The topology excludes the zero-bending configuration", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("The central $`2I`$ sign and the Möbius normal sign are independent structures", f"{WF}/sampler-first-test.md", ('inventory',)),
+    ("$`\\mathcal L`$'s $`\\mathbb Z_2`$ cannot be a $`2I`$ character", f"{WF}/sampler-first-test.md", ('inventory',)),
+    ("the two $`\\mathbb{Z}_2`$ structures are different objects", f"{WF}/variational-score-to-sample.md", ('inventory',)),
+    ("not the Möbius orientation $`Z_2`$, which the framework keeps distinct from that split", f"{WF}/plato-twist.md", ('inventory',)),
+    ("stays distinct both from the base edge $`Z_2`$ above and from the central $`-I`$ inside the lifted $`Z_4`$", "files/spectrum/files/mass-spectrum.md", ('inventory',)),
+    ("group each block carries", f"{WF}/scaling-law-uniqueness.md", ('inventory',)),
+    ("The postulate embedding must be a critical point of the independently motivated functional whose second variation is nonnegative on every admissible variation of the declared class", f"{WF}/postulate-bridge.md", ('page',)),
+    ("A restriction on the admissible variations counts only when the postulate motivates it and it is declared before the computation, never because it rescues a candidate.", f"{WF}/postulate-bridge.md", ('page',)),
+    ("only after a further mechanism selects the realized member", f"{WF}/postulate-bridge.md", ('page',)),
+    ("a singular surface model", "files/framework/files/bedrock/README.md", ('page', 'inventory')),
+    ("the extension selection", f"{WF}/scaling-law-uniqueness.md", ('page', 'inventory')),
+    ("spectrally an orientable object", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page', 'inventory')),
+    ("the one quantity in the model that the intrinsic geometry leaves free", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page',)),
+    ("the framework's default", f"{WF}/scaling-law-uniqueness.md", ('page', 'inventory')),
+    ("an Euler-Lagrange matching equation", f"{WF}/postulate-bridge.md", ('page',)),
+    ("assumed as an inclusion by hand", f"{WF}/postulate-bridge.md", ('page',)),
+    ("the Friedrichs realization is spectrally an orientable object, a Neumann lune", "files/framework/files/bedrock/files/first-eigenvalue.md", ('page',)),
+    ("a singular surface model, not a smooth totally geodesic submanifold of $`S^3/2I`$", "files/framework/files/bedrock/README.md", ('inventory',)),
+    ("not by seating the Möbius band inside $`S^3/2I`$", "files/framework/files/bedrock/README.md", ('inventory',)),
+    ("The deeper obstruction", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("The band lives upstairs on a great $`S^2 \\subset S^3`$", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("compose only if the surface is group-stable, and it is not", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("left translation by any non-central element moves the defining $`3`$-plane", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("the band does not descend (the deeper obstruction)", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("rules out descent of the band to $`X`$ as a $`2I`$-stable submanifold", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("the deck element $`-1`$ never stabilizes an admissible band", "files/framework/files/working/README.md", ('inventory',)),
+    ("Tier 2's totally geodesic candidate has been removed: it is topologically unavailable to a smooth Möbius band", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("the transverse-not-restrictive result as the residue", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("should not be rescued by modifying the band", f"{WF}/sampler-first-test.md", ('inventory',)),
+    ("of which the Möbius carrier is the edge-identified quotient", "files/cosmos/files/cosmological-constant.md", ('page',)),
+    ("an exact same-mode identity", f"{WF}/scaling-law-uniqueness.md", ('page',)),
+    ("Excited modes ($`m > 0`$) on the Möbius surface bend the embedding", "files/spectrum/files/the-waltz.md", ('page',)),
+    ("the extension question governs only the ground state, which the factorization never samples", f"{WF}/scaling-law-uniqueness.md", ('page',)),
+    ("even had $`S = \\{\\pm 1\\}`$ been achievable", f"{WF}/sampler-first-test.md", ('inventory',)),
+    ("nothing would have been resolved at sixty either", f"{WF}/sampler-first-test.md", ('inventory',)),
+    ("belong to a named operator on the embedded band's induced metric rather than being imported from the intrinsic conic pillar", f"{WF}/postulate-bridge.md", ('inventory',)),
+    ("This decouples the factorization from the extension selection", f"{WF}/scaling-law-uniqueness.md", ('inventory',)),
+    ("bridging extension (not Friedrichs; see §II)", f"{WF}/cone-point-coherence.md", ('inventory',)),
+    ("the holonomy picks out the twisted sector", "files/cosmos/files/cosmological-constant.md", ('inventory',)),
+    ("The holonomy selects the twisted sector in which the first positive level is identified", "files/cosmos/files/cosmological-constant.md", ('inventory',)),
+    ("The anti-periodic flip acts per lap", "files/framework/README.md", ('inventory',)),
+    ("The paper's model is intrinsic, and the paper places it in no three-dimensional space", "files/cosmos/files/black-hole.md", ('page',)),
+    ("These are different operations doing different jobs", "files/framework/README.md", ('inventory',)),
+    ("The two seams share one step without merging", "files/framework/README.md", ('inventory',)),
+    ("the orientation sign and the central $`-I`$ are carried by one loop", "files/framework/README.md", ('inventory',)),
+    ("the carrier's physical domain is $`\\mathbb{RP}^3`$, the layer where it embeds", "files/framework/README.md", ('inventory',)),
+    ("enters separately", "files/framework/files/bedrock/README.md", ('inventory',)),
+    ("The quotient's central stage reaches the band itself", "files/framework/files/bedrock/README.md", ('inventory',)),
+    ("The carrier embeds unbent in the projective layer", "files/framework/files/bedrock/README.md", ('inventory',)),
+    ("the resulting projective three-space admits an unbent Möbius surface with a single continuous edge", "README.md", ('inventory',)),
+    ("includes that same identification of opposite points as an initial step", "README.md", ('inventory',)),
+    ("The postulate embeds a non-orientable carrier, unbent, in its central quotient", "files/cosmos/files/cosmological-constant.md", ('inventory',)),
 ]
 
 EXPECTED = {  # each record's PASS and ARM FIRED lines, exactly
@@ -188,12 +191,38 @@ PUBLIC = {  # canonical page -> {section anchor: links into this page that its r
 }
 
 
+FAMILY = {  # the page, and the two pages that hold text moved from it (2026-11); all three sit in one folder
+    "page": SELF_REL,
+    "inventory": WF + "/carrier-inventory.md",
+    "proofs": WF + "/carrier-proofs.md",
+}
+TITLES = {"inventory": "# The Projective Carrier: Scope Inventory", "proofs": "# The Projective Carrier: Supporting Proofs"}
+MOVED_PROOFS = {  # proposition -> (its heading on the proofs page, the anchor on the page of the section that states it)
+    "4.1": ("Proposition 4.1", "vi-lemma-4-the-2r2-mode-is-the-bands-tilt"),
+    "4.2": ("Proposition 4.2", "vi-lemma-4-the-2r2-mode-is-the-bands-tilt"),
+    "6": ("Proposition 6", "ix-fixed-edge-stability"),
+    "7": ("Proposition 7", "ix-fixed-edge-stability"),
+}
+_RENDER = {}
+_LINT = {}
+
+
 def spans(t):
     return re.findall(r"\$`(.*?)`\$", t, re.S) + re.findall(r"```math\n(.*?)```", t, re.S)
 
 
+def render(t):
+    """GitHub's rendering of t, fetched once for each distinct text."""
+    if t not in _RENDER:
+        _RENDER[t] = subprocess.run(["gh", "api", "markdown", "-f", "mode=gfm", "-f", "context=dmobius3/mode-identity-theory", "-F", "text=@-"],
+                                    input=t, capture_output=True, text=True, check=True).stdout
+    return _RENDER[t]
+
+
 def lint(t):
     """metadata-lint over the working layer, with t standing in for the page."""
+    if t in _LINT:
+        return _LINT[t]
     tmp = None
     if t != open(PAGE, encoding="utf-8").read():
         tmp = os.path.join(REPO, WF, "projective-carrier.gate-arm.md")
@@ -205,7 +234,8 @@ def lint(t):
         if tmp:
             os.remove(tmp)
     m = re.search(r"(\d+) FAIL, (\d+) WARN", out)
-    return (bool(m) and m.groups() == ("0", "0")), (m.group(0) if m else out[-120:])
+    _LINT[t] = (bool(m) and m.groups() == ("0", "0")), (m.group(0) if m else out[-120:])
+    return _LINT[t]
 
 
 def tracked(folder):
@@ -215,13 +245,29 @@ def tracked(folder):
     return sorted(os.path.relpath(os.path.join(REPO, n), folder) for n in names if not n.endswith("/SHA256SUMS"))
 
 
-def checks(t, ctx):
+def markdown_files():
+    """Every markdown file git would commit, by its path from the repository's root."""
+    return sorted(n for n in sh(["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard", "--", "*.md"], REPO).split("\0") if n)
+
+
+def section_of(md, anchor):
+    sp = sections(md).get(anchor)
+    return md[sp[0]:sp[1]] if sp else ""
+
+
+def checks(fam, ctx):
+    """fam: the three pages' texts by key.  Checks named for one page read fam["page"]."""
     r = {}
+    t = fam["page"]
     outs, files, manifest = ctx["outs"], ctx["files"], ctx["manifest"]
-    read = lambda rel: ctx["sources"][rel] if rel in ctx["sources"] else src(rel)
-    bare = re.sub(r"```math\n.*?```", "", re.sub(r"\$`.*?`\$", "", t, flags=re.S), flags=re.S)
-    bad = ["em-dash"] * ("\u2014" in t) + ["bare $"] * ("$" in bare) + re.findall(r"\[[^\]]*\$`[^\]]*\]\(", t) + re.findall(r"\b(?:F1|F2|F3|F4|redline)\b", t)
-    r["P1 hygiene: no em-dash, bare dollar, math in link text or unit attribution"] = (not bad, bad)
+    own = {rel: key for key, rel in FAMILY.items()}
+    read = lambda rel: fam[own[rel]] if rel in own else (ctx["sources"][rel] if rel in ctx["sources"] else src(rel))
+    bad = []
+    for key, x in fam.items():
+        bare = re.sub(r"```math\n.*?```", "", re.sub(r"\$`.*?`\$", "", x, flags=re.S), flags=re.S)
+        found = ["em-dash"] * ("\u2014" in x) + ["bare $"] * ("$" in bare) + re.findall(r"\[[^\]]*\$`[^\]]*\]\(", x) + re.findall(r"\b(?:F1|F2|F3|F4|redline)\b", x)
+        bad += [(key, f) for f in found]
+    r["P1 hygiene on each of the three pages: no em-dash, bare dollar, math in link text or unit attribution"] = (not bad, bad)
     lines = t.split("\n")
     i = lines.index("# The Projective Carrier")
     got = [l for l in lines[i + 1:i + 12] if l.startswith("**")]
@@ -229,35 +275,41 @@ def checks(t, ctx):
     lint_ok, lint_info = lint(t)
     r["P2 header in schema order, Frozen included; metadata-lint 0 FAIL 0 WARN"] = (order and lint_ok, (got[:2], lint_info))
     bad = []
-    for tgt in re.findall(r"\]\(([^)\s]+)\)", t):
-        if tgt.startswith("http") or tgt.startswith("/files/") or tgt == "#top":
-            continue
-        p, _, a = tgt.partition("#")
-        if p.startswith("scripts/projective-carrier/"):
-            if not os.path.exists(os.path.join(SCRIPTS, p[len("scripts/projective-carrier/"):])):
-                bad.append(tgt)
-            continue
-        rel = os.path.normpath(os.path.join(WF, p))
-        if not os.path.exists(os.path.join(REPO, rel)):
-            bad.append(tgt)
-        elif a:
-            text = read(rel)
-            local = a in sections(text)
-            ok = (local and a in live_ids(rel)) if text == at_head(rel) else local
-            if not ok:
-                bad.append(tgt)
-    for tgt in re.findall(r"`((?:\.\./)*[\w./-]+\.md)`", t):
-        if not os.path.exists(os.path.join(REPO, os.path.normpath(os.path.join(WF, tgt)))):
-            bad.append(tgt)
-    r["P3 every link resolves; each anchor is a heading id of the committed-to-be page, live on GitHub where unchanged"] = (not bad, bad)
-    gh = subprocess.run(["gh", "api", "markdown", "-f", "mode=gfm", "-f", "context=dmobius3/mode-identity-theory", "-F", "text=@-"],
-                        input=t, capture_output=True, text=True, check=True).stdout
-    n = len(re.findall(r"<math-renderer", gh))
-    r["P4 GitHub renders every math span"] = (n == len(spans(t)) and "$`" not in html.unescape(re.sub(r"<[^>]+>", " ", gh)), (n, len(spans(t))))
-    budget = sum(1 + s.count("{") for s in spans(t))
-    r["P5 math budget under 2000"] = (budget < 2000, budget)
-    miss = [q[:40] for q, rel in QUOTES if q not in t or q not in read(rel)]
-    r["P6 every quoted phrase is verbatim on its source page"] = (not miss, miss)
+    for key, x in fam.items():
+        for tgt in re.findall(r"\]\(([^)\s]+)\)", x):
+            if tgt.startswith("http") or tgt.startswith("/files/") or tgt == "#top":
+                continue
+            p, _, a = tgt.partition("#")
+            if p.startswith("scripts/projective-carrier/"):
+                if not os.path.exists(os.path.join(SCRIPTS, p[len("scripts/projective-carrier/"):])):
+                    bad.append((key, tgt))
+                continue
+            rel = os.path.normpath(os.path.join(WF, p))
+            if not os.path.exists(os.path.join(REPO, rel)):
+                bad.append((key, tgt))
+            elif a:
+                text = read(rel)
+                local = a in sections(text)
+                ok = (local and a in live_ids(rel)) if text == at_head(rel) else local
+                if not ok:
+                    bad.append((key, tgt))
+        for tgt in re.findall(r"`((?:\.\./)*[\w./-]+\.md)`", x):
+            if not os.path.exists(os.path.join(REPO, os.path.normpath(os.path.join(WF, tgt)))):
+                bad.append((key, tgt))
+    r["P3 on each page every link resolves; each anchor is a heading id of the committed-to-be page, live on GitHub where unchanged"] = (not bad, bad)
+    bad, counts = [], {}
+    for key, x in fam.items():
+        gh = render(x)
+        n = len(re.findall(r"<math-renderer", gh))
+        counts[key] = (n, len(spans(x)))
+        if n != len(spans(x)) or "$`" in html.unescape(re.sub(r"<[^>]+>", " ", gh)):
+            bad.append(key)
+    r["P4 GitHub renders every math span on each page"] = (not bad, counts)
+    budget = {key: sum(1 + s.count("{") for s in spans(x)) for key, x in fam.items()}
+    r["P5 math budget under 2000 on each page"] = (all(b < 2000 for b in budget.values()), budget)
+    miss = [(q[:40], c) for q, rel, carriers in QUOTES for c in carriers if q not in fam[c]] + [(q[:40], rel) for q, rel, _ in QUOTES if q not in read(rel)]
+    miss += [(q[:40], "carried nowhere") for q, _, carriers in QUOTES if not carriers]
+    r["P6 every quoted phrase is on each page recorded as carrying it and verbatim on its source page"] = (not miss, miss)
     table = re.search(r"\| \$`\\lambda_0 R\^2`\$ \|(.*)\|", t).group(1).split("|")
     got = [x.strip() for x in table]
     rec = {f"{float(l.split()[0]):.2f}": l.split()[3] for l in outs["smooth_band.out"].split("\n") if re.match(r"^\d\.\d\d ", l)}
@@ -270,24 +322,27 @@ def checks(t, ctx):
         if f"`{name}.py`" not in t or have != lines_exp or re.search(r"^(FAIL|ARM SILENT)", o, re.M):
             bad.append(name)
     r["P8 each named script's record carries exactly its expected checks and arms"] = (not bad, bad)
-    known = {q for q, _ in QUOTES}
-    prose = re.sub(r'<a id="[^"]*"></a>', "", t)  # an anchor's id is not a quotation
-    loose = [q[:40] for q in re.findall(r'"([^"\n]{12,})"', prose) if q not in known]
-    r["P9 every quotation on the page is on the verified list"] = (not loose, loose)
+    known = {q for q, _, _ in QUOTES}
+    loose = []
+    for key, x in fam.items():
+        prose = re.sub(r'<a id="[^"]*"></a>', "", x)  # an anchor's id is not a quotation
+        loose += [(key, q[:40]) for q in re.findall(r'"([^"\n]{12,})"', prose) if q not in known]
+    r["P9 every quotation on each page is on the verified list"] = (not loose, loose)
     bad = []
     link_re = re.compile(r"\]\(([^)#\s]+\.md)#([^)\s]+)\)")
-    for para in t.split("\n"):
-        links = list(link_re.finditer(para))
-        for k, m in enumerate(links):
-            nxt = links[k + 1].start() if k + 1 < len(links) else len(para)
-            q = re.match(r'[^"\n]{0,60}?"([^"\n]{12,})"', para[m.end():nxt])
-            if not q:
-                continue
-            md = read(os.path.normpath(os.path.join(WF, m.group(1))))
-            sp = sections(md).get(m.group(2))
-            if sp is None or q.group(1) not in md[sp[0]:sp[1]]:
-                bad.append((m.group(2), q.group(1)[:40]))
-    r["P10 a quotation that directly follows a section link lies in that section"] = (not bad, bad)
+    for key, x in fam.items():
+        for para in x.split("\n"):
+            links = list(link_re.finditer(para))
+            for k, m in enumerate(links):
+                nxt = links[k + 1].start() if k + 1 < len(links) else len(para)
+                q = re.match(r'[^"\n]{0,60}?"([^"\n]{12,})"', para[m.end():nxt])
+                if not q:
+                    continue
+                md = read(os.path.normpath(os.path.join(WF, m.group(1))))
+                sp = sections(md).get(m.group(2))
+                if sp is None or q.group(1) not in md[sp[0]:sp[1]]:
+                    bad.append((key, m.group(2), q.group(1)[:40]))
+    r["P10 on each page a quotation that directly follows a section link lies in that section"] = (not bad, bad)
     fz = re.search(r"^\*\*Frozen:\*\* (\d{4}-\d{2}-\d{2}) .*SHA-256 `([0-9a-f]{64})`", t, re.M)
     span = FROZEN.search(t)
     reg = re.search(r"^\*Registered (\d{4}-\d{2}-\d{2})", t, re.M)
@@ -331,6 +386,75 @@ def checks(t, ctx):
     if "](projective-carrier.md)" not in row:
         bad.append(("claim-ledger.md", "uniformity row"))
     r["P13 the pages that point into this page carry their links and dated scope notes"] = (not bad, bad)
+
+    # The checks below came with the move of 2026-11: section X's body and four proofs now sit on the two other pages.
+    heads = sections(t)
+    bad, seen = [], 0
+    for rel in ctx["markdown"]:
+        if rel == SELF_REL:
+            continue
+        text = read(rel)
+        if "projective-carrier.md" not in text:
+            continue
+        for m in re.finditer(r"\]\(([^)#\s]*projective-carrier\.md)#([^)\s]+)\)", text):
+            p = m.group(1)
+            if p.startswith("http"):
+                if re.search(r"/blob/[0-9a-f]{7,40}/", p) or not p.endswith("/blob/main/" + SELF_REL):
+                    continue  # a link pinned to a commit shows that commit's page; a link to another site is not this page
+                dest = SELF_REL
+            else:
+                dest = p.lstrip("/") if p.startswith("/") else os.path.normpath(os.path.join(os.path.dirname(rel), p))
+            if dest != SELF_REL:
+                continue
+            seen += 1
+            if m.group(2) not in heads:
+                bad.append((rel, m.group(2)))
+    r["P14 every anchor that another page links on this page is a heading here"] = (not bad and seen >= 20, bad or seen)
+    bad = []
+    for prop, (heading, _) in MOVED_PROOFS.items():
+        starts = [m.start() for m in re.finditer(r"^\*\*Proposition " + re.escape(prop) + r" \(", t, re.M)]
+        if len(starts) != 1:
+            bad.append((prop, "statement"))
+            continue
+        rest = t[starts[0] + 1:]
+        end = re.search(r"^(\*\*Proposition |\*\*Lemma |\*\*Theorem |\*\*Corollary |## )", rest, re.M)
+        seg = rest[:end.start()] if end else rest
+        if not re.search(r"^\*Proof\.\* On \[[^\]]+\]\(carrier-proofs\.md#" + re.escape(slug(heading)) + r"\)", seg, re.M):
+            bad.append((prop, "pointer"))
+    if "](carrier-inventory.md)" not in section_of(t, "x-what-this-page-does-not-do"):
+        bad.append(("section X", "link"))
+    r["P15 every moved block has a link where it stood: a pointer under each of the four statements, and a link in section X"] = (not bad, bad)
+    proofs = fam["proofs"]
+    psec = sections(proofs)
+    pointers = re.findall(r"^\*Proof\.\* On \[[^\]]+\]\(carrier-proofs\.md#([^)\s]+)\)", t, re.M)
+    want = sorted(slug(h) for h, _ in MOVED_PROOFS.values())
+    bad = [a for a in pointers if a not in psec] + ([("pointers", sorted(pointers))] if sorted(pointers) != want else [])
+    bad += [h for h, _ in MOVED_PROOFS.values() if not re.search(r"^## " + re.escape(h) + r"$", proofs, re.M)]
+    r["P16 every proof pointer resolves to its proposition's heading on the proofs page"] = (not bad, bad)
+    bad = []
+    for prop, (heading, anchor) in MOVED_PROOFS.items():
+        sec = section_of(proofs, slug(heading))
+        if f"](projective-carrier.md#{anchor})" not in sec or anchor not in heads or not re.search(r"^\*Proof\.\*", sec, re.M):
+            bad.append(prop)
+    r["P17 every proof on the proofs page links back to the section that states its proposition"] = (not bad, bad)
+    bad = []
+    for prop, (heading, anchor) in MOVED_PROOFS.items():
+        sec = section_of(proofs, slug(heading))
+        m = re.search(r"\]\(projective-carrier\.md#" + re.escape(anchor) + r"\):\n(.*?)\n\*Proof\.\*", sec, re.S)
+        copy = m.group(1).strip("\n") if m else ""
+        if not copy.startswith(f"**Proposition {prop} (") or t.count(copy + "\n\n*Proof.* On [") != 1:
+            bad.append(prop)
+    r["P18 every statement copied to the proofs page equals its lines on this page"] = (not bad, bad)
+    bad = [key for key in TITLES if "](projective-carrier.md" not in fam[key] or "\n**Parent:** `projective-carrier.md`\n" not in fam[key]]
+    bad += [key for key in TITLES if f"]({os.path.basename(FAMILY[key])}" not in t]
+    r["P19 each new page links its parent and names it as Parent, and this page links each new page"] = (not bad, bad)
+    bad = []
+    for key, title in TITLES.items():
+        ls = fam[key].split("\n")
+        got = [l for l in ls[ls.index(title) + 1:ls.index(title) + 10] if l.startswith("**")] if title in ls else []
+        if len(got) != len(HEADER) - 1 or not all(re.match(h, g) for g, h in zip(got, HEADER[:-1])):
+            bad.append((key, [g[:14] for g in got]))
+    r["P20 each new page's header is in schema order: Type, State, Status, Summary, Inputs, Parent"] = (not bad, bad)
     return r
 
 
@@ -338,13 +462,15 @@ def context():
     return {"outs": {f"{n}.out": open(os.path.join(SCRIPTS, f"{n}.out"), encoding="utf-8").read() for n in EXPECTED},
             "files": {nm: open(os.path.join(SCRIPTS, nm), "rb").read() for nm in tracked(SCRIPTS)},
             "manifest": open(os.path.join(SCRIPTS, "SHA256SUMS"), encoding="utf-8").read(),
+            "markdown": markdown_files(),
             "sources": {}}
 
 
 def main():
-    t = open(PAGE, encoding="utf-8").read()
+    fam = {key: src(rel) for key, rel in FAMILY.items()}
+    t = fam["page"]
     ctx = context()
-    res = checks(t, ctx)
+    res = checks(fam, ctx)
     for k, (ok, info) in res.items():
         print(("PASS " if ok else "FAIL ") + k + ("" if ok else f"  {info}"))
     green = all(ok for ok, _ in res.values())
@@ -368,38 +494,76 @@ def main():
                 c[k] = v
         return c
 
+    def on(key, old, new):
+        """The family with one string of one page changed; the string has to be there."""
+        assert old in fam[key], (key, old)
+        return dict(fam, **{key: fam[key].replace(old, new, 1)})
+
+    def more(key, tail):
+        return dict(fam, **{key: fam[key] + tail})
+
     bc = ctx["outs"]["bent_carrier.out"]
     first_pass = next(l for l in bc.split("\n") if l.startswith("PASS "))
     lam = "files/cosmos/files/cosmological-constant.md"
     bridge = WF + "/postulate-bridge.md"
     waltz = "files/spectrum/files/the-waltz.md"
-    arms = [
-        ("P1", t.replace("The premise is adopted by ruling", "The premise is adopted \u2014 by ruling", 1), ctx),
-        ("P2", t.replace("**State:** Active", "**State:** Running", 1), ctx),
-        ("P3", t.replace("postulate-bridge.md#route-1", "postulate-bridge.md#route-one", 1), ctx),
-        ("P3", t, with_("P3", source=(bridge, src(bridge).replace('<a id="route-1"></a>', '<a id="route-one"></a>', 1)))),
-        ("P4", t.replace("$`\\mathbb{RP}^3 = S^3/\\{\\pm I\\}`$, the one space form", "$`\\mathbb{RP}^3 = S^3/\\{\\pm I\\}$, the one space form", 1), ctx),
-        ("P5", t + "\n" + "$`" + "{" * 2100 + "}" * 2100 + "`$\n", ctx),
-        ("P6", t.replace("they must not be merged.", "they must never be merged.", 1), ctx),
-        ("P7", t.replace("| 1.0212 | 1.0891 |", "| 1.0213 | 1.0891 |", 1), ctx),
-        ("P8", t, with_("P8", out=("bent_carrier.out", bc.replace(first_pass + "\n", "", 1)))),
-        ("P8", t, with_("P8", out=("bent_carrier.out", bc + "PASS B10 an unexpected check\n"))),
-        ("P9", t.replace("The dance runs on two distinct seams", "The dance runs on two separate seams", 1), ctx),
-        ("P10", t.replace("#iii-the-spectral-seed) \"The holonomy selects", "#ii-the-geometry) \"The holonomy selects", 1), ctx),
-        ("P11", t.replace("- **Tolerance.** The extrapolated bottom", "- **Tolerance.** The extrapolated  bottom", 1), ctx),
-        ("P12", t, with_("P12", file=("lift_trace.py", ctx["files"]["lift_trace.py"] + b"\n"))),
-        ("P12", t, with_("P12", manifest=ctx["manifest"] + "0" * 64 + "  stray.txt\n")),
-        ("P13", t, with_("P13", source=(lam, src(lam).replace("projective-carrier.md#ii-lemma-1", "projective-carrier.md#ii-lemma-one", 1)))),
-        ("P13", t, with_("P13", source=(bridge, re.sub(r"\n\n\*\*Scope under the ruling \([^)]*\)\.\*\* Both walls stand\.[^\n]*", "", src(bridge), count=1)))),
-        ("P13", t, with_("P13", source=(waltz, src(waltz).replace("working/files/projective-carrier.md", "working/files/plato-twist.md", 1)))),
+    contributing = "CONTRIBUTING.md"
+    big = "\n" + "$`" + "{" * 2100 + "}" * 2100 + "`$\n"
+    arms = [  # (check, where the defect is planted, the family, the context)
+        ("P1", "the page", on("page", "The premise is adopted by ruling", "The premise is adopted \u2014 by ruling"), ctx),
+        ("P1", "the inventory", more("inventory", "\n\u2014\n"), ctx),
+        ("P1", "the proofs", more("proofs", "\n\u2014\n"), ctx),
+        ("P2", "the page", on("page", "**State:** Active", "**State:** Running"), ctx),
+        ("P3", "the page", on("page", "scaling-law-uniqueness.md#linear-readout-two-routes-and-a-no-go", "scaling-law-uniqueness.md#linear-readout-two-roads"), ctx),
+        ("P3", "the inventory", on("inventory", "postulate-bridge.md#route-1", "postulate-bridge.md#route-one"), ctx),
+        ("P3", "the bridge's anchor, reached from the inventory", fam, with_("P3", source=(bridge, src(bridge).replace('<a id="route-1"></a>', '<a id="route-one"></a>', 1)))),
+        ("P3", "the proofs", on("proofs", "projective-carrier.md#ix-fixed-edge-stability", "projective-carrier.md#ix-fixed-edge"), ctx),
+        ("P4", "the page", on("page", "$`\\mathbb{RP}^3 = S^3/\\{\\pm I\\}`$, the one space form", "$`\\mathbb{RP}^3 = S^3/\\{\\pm I\\}$, the one space form"), ctx),
+        ("P4", "the inventory", on("inventory", "lying in $`\\mathbb{RP}^3`$.", "lying in $`\\mathbb{RP}^3$."), ctx),
+        ("P4", "the proofs", on("proofs", "On the smooth locus $`x_e`$ solves", "On the smooth locus $`x_e$ solves"), ctx),
+        ("P5", "the page", more("page", big), ctx),
+        ("P5", "the inventory", more("inventory", big), ctx),
+        ("P5", "the proofs", more("proofs", big), ctx),
+        ("P6", "the page", on("page", "they must not be merged.", "they must never be merged."), ctx),
+        ("P6", "the inventory", on("inventory", "These are different operations doing different jobs", "These are different operations doing separate jobs"), ctx),
+        ("P7", "the page", on("page", "| 1.0212 | 1.0891 |", "| 1.0213 | 1.0891 |"), ctx),
+        ("P8", "a record", fam, with_("P8", out=("bent_carrier.out", bc.replace(first_pass + "\n", "", 1)))),
+        ("P8", "a record", fam, with_("P8", out=("bent_carrier.out", bc + "PASS B10 an unexpected check\n"))),
+        ("P9", "the page", on("page", "transverse, not restrictive", "transverse, not restricting"), ctx),
+        ("P9", "the inventory", on("inventory", "The dance runs on two distinct seams", "The dance runs on two separate seams"), ctx),
+        ("P9", "the proofs", more("proofs", '\nA page that says "this is not on the verified list" fails.\n'), ctx),
+        ("P10", "the page", on("page", "the-waltz.md#the-surface-leads-only-the-vacuum) \"Excited modes", "the-waltz.md#i-the-two-partners) \"Excited modes"), ctx),
+        ("P10", "the inventory", on("inventory", "#iii-the-spectral-seed) \"The holonomy selects", "#ii-the-geometry) \"The holonomy selects"), ctx),
+        ("P11", "the page", on("page", "- **Tolerance.** The extrapolated bottom", "- **Tolerance.** The extrapolated  bottom"), ctx),
+        ("P12", "a script", fam, with_("P12", file=("lift_trace.py", ctx["files"]["lift_trace.py"] + b"\n"))),
+        ("P12", "the manifest", fam, with_("P12", manifest=ctx["manifest"] + "0" * 64 + "  stray.txt\n")),
+        ("P13", "the Λ page", fam, with_("P13", source=(lam, src(lam).replace("projective-carrier.md#ii-lemma-1", "projective-carrier.md#ii-lemma-one", 1)))),
+        ("P13", "the bridge", fam, with_("P13", source=(bridge, re.sub(r"\n\n\*\*Scope under the ruling \([^)]*\)\.\*\* Both walls stand\.[^\n]*", "", src(bridge), count=1)))),
+        ("P13", "the Waltz", fam, with_("P13", source=(waltz, src(waltz).replace("working/files/projective-carrier.md", "working/files/plato-twist.md", 1)))),
+        ("P14", "CONTRIBUTING's link to section XI", fam, with_("P14", source=(contributing, src(contributing).replace("projective-carrier.md#xi-the-ruling", "projective-carrier.md#xi-the-rulings", 1)))),
+        ("P14", "the list of files scanned", fam, with_("P14", markdown=[])),
+        ("P15", "the pointer under Proposition 6", on("page", "(carrier-proofs.md#proposition-6)", "(carrier-proofs.md#proposition-7)"), ctx),
+        ("P15", "section X's link", on("page", "It is now [The Projective Carrier: Scope Inventory](carrier-inventory.md), moved", "It is now The Projective Carrier: Scope Inventory, moved"), ctx),
+        ("P16", "a heading on the proofs page", on("proofs", "\n## Proposition 6\n", "\n## Proposition Six\n"), ctx),
+        ("P17", "a link back on the proofs page", on("proofs", "[The Projective Carrier, §IX](projective-carrier.md#ix-fixed-edge-stability):", "The Projective Carrier, §IX:"), ctx),
+        ("P18", "a statement's copy on the proofs page", on("proofs", "Let $`D`$ be the strip", "Let $`D`$ be a strip"), ctx),
+        ("P18", "a statement on the page", on("page", "least area with the edge fixed).** Let $`M'`$ be a competitor", "least area with the edge fixed).** Let $`M'`$ be any competitor"), ctx),
+        ("P18", "a statement's copy cut short on the proofs page", on("proofs", "\n\nSo under the Friedrichs realization the exact $`2/R^2`$, kept as the first positive level, forces a singular point that carries the twist (Corollary 2.1) but not geodesic laps.", ""), ctx),
+        ("P19", "the inventory's Parent", on("inventory", "**Parent:** `projective-carrier.md`", "**Parent:** `postulate-bridge.md`"), ctx),
+        ("P19", "the page's links to the proofs page", dict(fam, page=re.sub(r"\]\(carrier-proofs\.md[^)]*\)", "](lipschitz-comparison.md)", t)), ctx),
+        ("P20", "the proofs page's header", on("proofs", "**Type:** Result\n**State:** Closed", "**State:** Closed\n**Type:** Result"), ctx),
+        ("P20", "the inventory's header", dict(fam, inventory=re.sub(r"\n\*\*Inputs:\*\*[^\n]*", "", fam["inventory"], count=1)), ctx),
     ]
-    rc = 0
-    for key, bt, bctx in arms:
-        assert (bt, bctx) != (t, ctx), key
+    rc = silent = 0
+    for key, where, bfam, bctx in arms:
+        assert (bfam, bctx) != (fam, ctx), (key, where)
         name = next(k for k in res if k.startswith(key + " "))
-        fired = not checks(bt, bctx)[name][0]
-        print(("ARM FIRED " if fired else "ARM SILENT ") + name)
+        ok, info = checks(bfam, bctx)[name]
+        fired = not ok
+        print(("ARM FIRED " if fired else "ARM SILENT ") + f"{key} [{where}] " + name[len(key) + 1:] + (f"  {str(info)[:150]}" if fired else ""))
         rc |= 0 if fired else 1
+        silent += 0 if fired else 1
+    print(f"arms: {len(arms) - silent} of {len(arms)} fired")
     return rc
 
 
