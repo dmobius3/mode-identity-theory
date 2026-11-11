@@ -89,7 +89,7 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("The twists and identifications live in that built structure", "files/framework/README.md"),
     ("and not the Möbius orientation sign of One Shape", "files/framework/README.md"),
     ("The Möbius sign flip and the central $`-I`$ of $`2I`$ are two distinct $`Z_2`$'s", "files/framework/README.md"),
-    ("the framework does not collapse them into one", "README.md"),
+    ("the framework does not treat them as interchangeable", "README.md"),
     ("an embedded spectral carrier", "files/cosmos/files/cosmological-constant.md"),
     ("The dance runs on two distinct seams", "files/spectrum/files/the-waltz.md"),
     ("the orientation $`\\mathbb{Z}_2`$ is not a $`2I`$-equivariant datum", f"{WF}/postulate-bridge.md"),
@@ -149,8 +149,8 @@ QUOTES = [  # (exact bytes on the page, the corpus page that must contain them a
     ("enters separately", "files/framework/files/bedrock/README.md"),
     ("The quotient's central stage reaches the band itself", "files/framework/files/bedrock/README.md"),
     ("The carrier embeds unbent in the projective layer", "files/framework/files/bedrock/README.md"),
-    ("embeds, unbent, in the space that results", "README.md"),
-    ("first step is that same identification", "README.md"),
+    ("the resulting projective three-space admits an unbent Möbius surface with a single continuous edge", "README.md"),
+    ("includes that same identification of opposite points as an initial step", "README.md"),
     ("The postulate embeds a non-orientable carrier, unbent, in its central quotient", "files/cosmos/files/cosmological-constant.md"),
 ]
 
