@@ -1907,8 +1907,8 @@ which member of it the icosahedral quotient permits, for the density-type intera
 ```
 Shatto, B. (2026).
 The Surviving Ray: the spin-3 coupling point that S³/2I selects, and its critical geometry.
-SSRN.
-https://ssrn.com/abstract=7515378
+Zenodo.
+https://doi.org/10.5281/zenodo.22681501
 ```
 
 ---
