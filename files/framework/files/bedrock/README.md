@@ -45,6 +45,10 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 **The Interaction:** On the Poincaré homology sphere $`S^3/2I`$, for a level-6 spin-3 block state with the density interaction, binary-icosahedral symmetry cuts the four scattering channels of the spin-3 family to two, one of them radial, so the surviving self-interaction is a single projective ray. The quartic it governs reduces to the top multipole, which runs over spin-3 states exactly from $`1/924`$, on the coherent states, to $`463/924`$, on the hexagon, the NOON state up to a rotation; between the two ends lie ten critical orbits within a stated symmetry class and three more certified outside it. The interaction is a hypothesis, not a consequence.
 
+>[![Surviving Ray](https://img.youtube.com/vi/MtDlm0uKNQ8/mqdefault.jpg)](https://youtu.be/MtDlm0uKNQ8)
+>
+>*Video: [The Geometric Filter](https://youtu.be/MtDlm0uKNQ8)*
+
 ---
 
 ## [Postulate Bridge](../working/files/postulate-bridge.md)
