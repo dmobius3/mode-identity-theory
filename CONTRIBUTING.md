@@ -11,7 +11,7 @@ Mode Identity Theory has open problems you can work on without accepting its phy
 
 **How a check runs here.** The [fixed-edge stability check](/files/framework/files/working/files/fixed-edge-check.md) is a complete example: terms frozen before the run, two blind rooms that derived the result without seeing its source, an independent maintainer, and the outcome recorded whichever way it went. It reproduced, and its record says what the check could not see.
 
-**How to take part.** Post in [Discussions](https://github.com/dmobius3/mode-identity-theory/discussions) or open an issue, with a write-up or a script. The text here is licensed CC BY 4.0 and the code MIT, so you can build on any of it with attribution. The scripts run on Python 3.13; [`requirements.txt`](/requirements.txt) lists the packages they need, at the versions the recorded runs used.
+**How to take part.** Post in [Discussions](https://github.com/dmobius3/mode-identity-theory/discussions) or open an [Issue](https://github.com/dmobius3/mode-identity-theory/issues), with a write-up or a script. The text here is licensed CC BY 4.0 and the code MIT, so you can build on any of it with attribution. The scripts run on Python 3.13; [`requirements.txt`](/requirements.txt) lists the packages they need, at the versions the recorded runs used.
 
 ## 🌱 A Good First Problem
 
