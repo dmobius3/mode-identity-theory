@@ -87,6 +87,7 @@ With the electron setting the scale, entries land within a factor of 3 of five o
 | [↗](files/mass-spectrum.md#iii-the-24-entries) $`m_e`$ (electron) | `input` | — | 0.511 MeV | — |
 | [↗](files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Rank 16 entry | `open` | $`R_5`$ gal, ~418 MeV; structural residual by default | no measured fermion; ordinary colored state excluded | — |
 | [↗](files/mass-spectrum.md#v-dead-zone-targets-and-exclusions) Dead zone | `open` | 6 entries, sub-eV to keV; physical status open | no SM fermions in range | — |
+| [↗](files/mass-spectrum.md#the-neutrino-ladder) Neutrino ladder | `open` | $`R_1`$ entries 0.87, 7.3, 66.7 meV; a proxy comparison, already excluded as absolute masses | splitting scales 8.65 and 50.1 meV | ordered like the splitting scales; an inverted mass ordering would falsify the reading |
 | [↗](files/mass-spectrum.md#1-mass-sector-floor--mu_lambda) $`\mu_\Lambda`$ Λ-derived mass floor | `anchored (Λ)` | $`\mu_\Lambda \approx 2.25`$ meV | derived scale; not directly measured | — |
 | [↗](files/fine-structure.md#alpha_s-the-strong-coupling) $`\alpha_s`$ | `anchored (Λ)` | 0.1162 (ladder conjecture) | 0.1180 | 1.5% |
 | [↗](files/fine-structure.md#alpha_w-the-weak-coupling-and-the-plato-twist) $`\alpha_W`$ | `anchored (Λ)` | 0.0339 (ladder conjecture; includes the $`\cos(\pi/10)`$ insertion ansatz) | 0.0338 | 0.3% |
