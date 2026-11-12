@@ -67,6 +67,8 @@ mode-identity-theory/
     └─ tools/                      ← interactive, publications, & references
 ```
 
+*`main` is the repository's root on its main branch, as in each page's navigation bar. Each level keeps its pages in a `files/` folder, which the tree leaves out, so `bedrock/` is at `files/framework/files/bedrock/`; the links below go straight to each section.*
+
 | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
 
 ---
