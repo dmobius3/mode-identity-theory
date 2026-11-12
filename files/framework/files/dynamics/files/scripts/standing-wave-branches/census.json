@@ -1,0 +1,1154 @@
+{
+ "commit": "c7e3f46e",
+ "sources": {
+  "points": "soft-slot-dynamics-m8-17/RECORD.md, § 3",
+  "T2/R4": "M8.17 record, § 4",
+  "T3/R5": "M8.15.2 record, T3/R5",
+  "T4/R5": "M8.18 record"
+ },
+ "rows": {
+  "T1/R4": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 45.25,
+    "eps_text": "45.25",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 64.0,
+    "eps_text": "64",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 72.0,
+    "eps_text": "72",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   }
+  ],
+  "T4/R4": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 45.25,
+    "eps_text": "45.25",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 64.0,
+    "eps_text": "64",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 72.0,
+    "eps_text": "72",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   }
+  ],
+  "T1/R5": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   }
+  ],
+  "T4/R5": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   }
+  ],
+  "T2/R4": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "both"
+   },
+   {
+    "eps": 45.25,
+    "eps_text": "45.25",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "both"
+   },
+   {
+    "eps": 64.0,
+    "eps_text": "64",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "both"
+   },
+   {
+    "eps": 72.0,
+    "eps_text": "72",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "both"
+   }
+  ],
+  "T2/R5": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   }
+  ],
+  "T3/R4": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "this instrument"
+   },
+   {
+    "eps": 45.25,
+    "eps_text": "45.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 64.0,
+    "eps_text": "64",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 72.0,
+    "eps_text": "72",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   }
+  ],
+  "T3/R5": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "not classified; accounted for by M8.15.2's location",
+    "kind": "U",
+    "instrument": "none"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "both"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Hyperbolic",
+    "kind": "H",
+    "instrument": "both"
+   }
+  ],
+  "T5/R2": [
+   {
+    "eps": 0.25,
+    "eps_text": "0.25",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.354,
+    "eps_text": "0.354",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.5,
+    "eps_text": "0.5",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 0.707,
+    "eps_text": "0.707",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.0,
+    "eps_text": "1",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 1.41,
+    "eps_text": "1.41",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.0,
+    "eps_text": "2",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 2.83,
+    "eps_text": "2.83",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 4.0,
+    "eps_text": "4",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "both"
+   },
+   {
+    "eps": 5.66,
+    "eps_text": "5.66",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 8.0,
+    "eps_text": "8",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 11.31,
+    "eps_text": "11.31",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 16.0,
+    "eps_text": "16",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 22.63,
+    "eps_text": "22.63",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 32.0,
+    "eps_text": "32",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 45.25,
+    "eps_text": "45.25",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 64.0,
+    "eps_text": "64",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 90.51,
+    "eps_text": "90.51",
+    "classification": "Elliptic",
+    "kind": "E",
+    "instrument": "M8.15's"
+   },
+   {
+    "eps": 128.0,
+    "eps_text": "128",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   },
+   {
+    "eps": 132.0,
+    "eps_text": "132",
+    "classification": "not classified",
+    "kind": "O",
+    "instrument": "none"
+   }
+  ]
+ },
+ "brackets": {
+  "T2/R4": {
+   "kind": "harmonic",
+   "nL": [
+    [
+     "16.271828",
+     "16.278300"
+    ]
+   ],
+   "labels": [
+    "N = 24 and 32"
+   ],
+   "guards": [
+    "16.109109",
+    "16.441083"
+   ],
+   "guard_note": "1% outside",
+   "source": "M8.17 record, § 4"
+  },
+  "T3/R5": {
+   "kind": "finite element",
+   "nL": [
+    [
+     "15.7803",
+     "15.7895"
+    ],
+    [
+     "15.7437",
+     "15.7529"
+    ]
+   ],
+   "labels": [
+    "mesh level 3",
+    "mesh level 2"
+   ],
+   "guards": [
+    "15.6356",
+    "16.5832"
+   ],
+   "guard_note": "level 3; the upper read at 5%",
+   "source": "M8.15.2 record, T3/R5"
+  },
+  "T4/R5": {
+   "kind": "harmonic",
+   "nL": [
+    [
+     "8.720990",
+     "8.724874"
+    ]
+   ],
+   "labels": [
+    "N = 24 and 32"
+   ],
+   "guards": [
+    "8.633781",
+    "9.161117"
+   ],
+   "guard_note": "the upper read at 5%, on the retry",
+   "source": "M8.18 record"
+  }
+ }
+}

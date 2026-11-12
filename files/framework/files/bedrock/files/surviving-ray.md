@@ -282,7 +282,7 @@ is the orthogonal projector onto the $`\sigma`$-summand of $`V_3`$.
 
 ### 2.5 The interaction, and what the results are relative to
 
-Everything below concerns one interaction, fixed here so that Sections 4 to 8 read off a single
+Everything below concerns one interaction, fixed here so that Sections 4 to 7 read off a single
 definition rather than several. The problem is
 
 ```math
@@ -1687,7 +1687,7 @@ Three searches were run: whether the results of Section 3 are known; whether the
 - **[RK]** J. L. Romero, A. B. Klimov, A. Z. Goldberg, G. Leuchs and L. L. Sánchez-Soto, Multipoles from Majorana constellations. *Phys. Rev. A* **109** (2024), 012214; arXiv:2401.07904.
 - **[Sh]** B. Shatto, The Surviving Ray: channel selection for a cubic self-interaction on $`S^3/2I`$. *Zenodo* (2026), [https://doi.org/10.5281/zenodo.22681502](https://doi.org/10.5281/zenodo.22681502).
 - **[SP]** L. Santos and T. Pfau, Spin-3 chromium Bose-Einstein condensates. *Phys. Rev. Lett.* **96** (2006), 190404; arXiv:cond-mat/0510634.
-- **[SR2]** B. Shatto, Nonlinear Standing-Wave Branches and Spectral Transitions on the Poincaré Homology Sphere, the companion paper, in preparation: [`surviving-ray-2.md`](/files/framework/files/dynamics/files/surviving-ray-2.md).
+- **[SR2]** B. Shatto, Nonlinear Standing-Wave Branches on the Poincaré Homology Sphere: Ground States and Small-Amplitude Spectral Stability, the companion paper, in preparation: [`standing-wave-branches.md`](/files/framework/files/dynamics/files/standing-wave-branches.md).
 
 ---
 
