@@ -7,7 +7,7 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/postulate_bridge.png?raw=true" width="100%" alt="Bedrock">
 
-The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}`$, with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal edge $`S^1`$, the Möbius surface it bounds, which embeds unbent in the central quotient $`\mathbb{RP}^3`$ of $`S^3`$, and the space $`S^3`$ that covers it. The standalone mathematics papers below put operators on two of those objects, the surface and the space, and a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds. The temporal edge $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum.
+The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}`$, with $`\partial S^3 = \emptyset`$, and it nests three objects: the temporal edge $`S^1`$, the Möbius surface it bounds, which embeds unbent in the central quotient $`\mathbb{RP}^3`$ of $`S^3`$, and the space $`S^3`$ that covers it. The standalone mathematics papers below put operators on two of those objects, the surface and the space, a third reads the arithmetic of the four-dimensional filling that the space-quotient $`S^3/2I`$ bounds, and a fourth finds the one self-interaction that quotient leaves a spin-3 block state with the density interaction. The temporal edge $`S^1`$ is the boundary datum produced by the embedding, not a separate spectrum.
 
 ---
 
@@ -38,6 +38,12 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 >[![Galois Pair](https://img.youtube.com/vi/Jb1nDkJevxs/mqdefault.jpg)](https://www.youtube.com/watch?v=Jb1nDkJevxs)
 >
 >*Video: [The Galois Pair on S³/2I: How E₈ Remembers Boundary Asymmetry](https://www.youtube.com/watch?v=Jb1nDkJevxs)*
+
+---
+
+## [Surviving Ray](files/surviving-ray.md)
+
+**The Interaction:** On the Poincaré homology sphere $`S^3/2I`$, for a level-6 spin-3 block state with the density interaction, binary-icosahedral symmetry cuts the four scattering channels of the spin-3 family to two, one of them radial, so the surviving self-interaction is a single projective ray. The quartic it governs reduces to the top multipole, which runs over spin-3 states exactly from $`1/924`$, on the coherent states, to $`463/924`$, on the hexagon, the NOON state up to a rotation; between the two ends lie ten critical orbits within a stated symmetry class and three more certified outside it. The interaction is a hypothesis, not a consequence.
 
 ---
 

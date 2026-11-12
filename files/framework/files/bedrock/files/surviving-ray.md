@@ -25,21 +25,7 @@ time-reversal reading, and Peter-Weyl on $`S^3`$. One result established here is
 and the selection it forces for that interaction, together with an accounting of which parts of the
 arithmetic are icosahedral and which are universal facts about spin 3 with time reversal.
 
-In the coordinates of that literature the surviving ray is one coupling point, by a polynomial
-identity with the spin-3 mean-field energy, where the literature has the stationary states and,
-numerically, the ground states. This paper gives an audited census within a stated class,
-certified critical orbits outside it, and exact results at the two ends. Within the class of orbits
-whose fixed locus has projective dimension at most one there are exactly ten critical orbits, with
-their Morse indices; three outside it are certified by interval arithmetic, and with them the index
-no longer increases with the value. On the unit sphere, $`\lVert\rho_6\rVert^2`$ is least exactly on
-the coherent states, through an identity that brings in the Beauzamy-Bombieri-Enflo-Montgomery
-inequality with Reznick's equality case, and greatest, at $`463/924`$, exactly on the hexagon orbit
-(Theorem 7.5), with the steps an audit supplied marked in its proof. Back on the quotient, the first
-correction at the four symmetry-pinned rays is exact and was reproduced blind, and local branch germs
-exist, for sufficiently small amplitude, at the six rays of Section 7.1, where they are expanded, and
-by the same theorem at $`v_1`$ and $`v_2`$, as an audited argument. The icosahedral content is the
-selection and the setting of the branch problem; everything at the point is spin 3, and the point is
-where this interaction lands, not the coupling of a physical condensate.
+In the coordinates of that literature the surviving ray is one coupling point, by a polynomial identity with the spin-3 mean-field energy, where the literature has the stationary states and, numerically, the ground states. At that point the paper gives the critical geometry and both of its ends. On the unit sphere, $`\lVert\rho_6\rVert^2`$ is least, at $`1/924`$, exactly on the coherent states, through an identity that brings in the Beauzamy-Bombieri-Enflo-Montgomery inequality with Reznick's equality case, and the same argument gives the top multipole's minimum at every spin, with its equality case. It is greatest, at $`463/924`$, exactly on the hexagon orbit, the NOON state up to a rotation (Theorem 7.5), its uniqueness an audited argument. Between the ends, within the class of orbits whose fixed locus has projective dimension at most one, there are exactly ten critical orbits, with their Morse indices, by an audited argument, and three outside the class are certified by interval arithmetic; with them the index no longer increases with the value. The icosahedral content is the selection; everything at the point is spin 3, and the point is where this interaction lands, not the coupling of a physical condensate.
 
 ---
 
@@ -76,7 +62,7 @@ on the time-reversal-invariant rays. In the language of constellations, the chan
 when the six Majorana points are antipodally symmetric as a multiset. The proof is short and rests on a classical fact about binary forms,
 that two nonzero forms of the same degree with vanishing Jacobian are proportional, so it is billed
 as a proposition rather than a theorem; the possibility that the underlying joint covariant is named
-in the classical invariant-theory literature is left open in Section 9 rather than settled here.
+in the classical invariant-theory literature is left open in Section 8 rather than settled here.
 
 The second is the selection, and it takes three steps rather than one. The invariant-degree filter
 leaves the density only ranks 0 and 6. The multiplicity-free branching then scalarises the
@@ -116,16 +102,11 @@ classification is an audited argument, and its values were reproduced blind [M8.
 orbits outside the class are certified by interval arithmetic. The minimum of $`\widehat r_6`$ is
 $`1/924`$, attained exactly on the coherent states, by an identity that brings the
 Beauzamy-Bombieri-Enflo-Montgomery inequality [BBEM], with Reznick's equality case [Re], to the top
-multipole; it completes a statement of Björk et al. [Bj]. The maximum is $`463/924`$, attained
+multipole; it completes a statement of Björk et al. [Bj], and the same argument proves that statement's top order at every spin, with its equality case (Section 7.3). The maximum is $`463/924`$, attained
 exactly on the hexagon orbit (Theorem 7.5); the value and the question are Romero et al.'s [RK], and
 the argument was audited on the OpenWave M8 track [M8.13].
 
-Back on the quotient, the selected equation is a bifurcation problem on the flat bundles over
-$`S^3/2I`$, with the nonlinearity kept as a hypothesis (Section 8). The first correction at the four
-symmetry-pinned rays is exact and was reproduced blind [M8.10]; local branch germs exist, for
-sufficiently small amplitude, at the six rays of Section 7.1, where they are expanded, and by the same
-theorem at $`v_1`$ and $`v_2`$, as an audited argument [M8.11]. No radius is given for the germs, and
-neither result implies stability.
+Back on the quotient, the selected equation poses a bifurcation problem on the flat bundles over $`S^3/2I`$, with the nonlinearity kept as a hypothesis, and the critical rays of Section 7 are the critical directions of its leading reduced problem, though not by themselves solutions. Whether and where they continue to branches of standing waves is the question of a companion paper [SR2], under a stated wave equation; this one stops at the geometry and makes no statement about solutions or their stability.
 
 One boundary should be drawn explicitly. The configurations appearing below are known: the octahedral
 constellation is the anticoherent state of order 3 in the standard classification, and critical rays
@@ -135,13 +116,13 @@ of the selection is which member of a known family a specific geometry forces, a
 accounting of what that forcing does and does not explain. At the point the boundary has a companion:
 *knowing the phases is not classifying the critical geometry* (Section 7.2).
 
-The sentences above naming the wider constellation literature rest on abstracts and publisher records, and every search is reported as a search (Section 9.3).
+The sentences above naming the wider constellation literature rest on abstracts and publisher records, and every search is reported as a search (Section 8.3).
 
 Sections 2 to 5 set up the state space, the quotient and the interaction, prove the ambient proposition
 and the selection theorem, and derive its consequences across levels and sectors. Section 6 places the
 selected interaction in the condensate literature's coupling space, Section 7 gives the critical
-geometry there, and Section 8 returns to the quotient. Section 9 gives the limits, the prior art, the
-search and the open historical question; the certification closes the page.
+geometry there, ending with its two extremes. Section 8 gives the limits, the prior art and the
+search; the certification closes the page.
 
 ---
 
@@ -317,8 +298,8 @@ Nothing below determines $`g`$. For the channel-selection question a nonzero mag
 absorbed into the amplitude, since the problem is projective in $`\psi`$ and $`g`$ rescales the
 amplitude at which a given ray solves it. Absorbing $`\lvert g\rvert`$ leaves the sign, which no
 rescaling removes, and that sign is immaterial here because an overall nonzero real factor does not
-move the tangential critical equation, though it matters in Sections 6 to 8, where the indices, the
-least-energy ray and the direction of the germs depend on it (Section 6.2). So $`g = 1`$ is taken throughout, a normalisation rather than
+move the tangential critical equation, though it matters in Sections 6 and 7, where the indices and the
+least-energy ray depend on it (Section 6.2). So $`g = 1`$ is taken throughout, a normalisation rather than
 a result: its sign and its physical scale are not derived here, and the 1 is not a computed
 coupling.
 
@@ -352,7 +333,7 @@ the spin of the target: the self-interaction is the spin-3 channel, which Sectio
 within, and the covariant below is the spin-8 channel. Section 5.7 shows the spin-8 channel is
 populated on $`X`$, with exactly the time-reversal-invariant states annihilating it. The result is a
 proposition and not a theorem, its ingredients are classical, and whether the covariant has appeared
-before is left open in Section 9; nothing in the paper's contribution rests on the answer.
+before is left open in Section 8; nothing in the paper's contribution rests on the answer.
 
 ### 3.1 The cubic covariant
 
@@ -734,7 +715,7 @@ and the critical set do not.
 Lemma 4.1 in this language says $`R_K(P) = 0`$ for $`K = 1,\dots,5`$, which is a statement about
 $`P`$ and leaves $`\rho_K(u)`$ untouched.
 
-The formula is also what defines the individual $`w_K`$: by Sections 9.5, 5.5 and 4.2 the seven
+The formula is also what defines the individual $`w_K`$: by Sections 5.5 and 4.2 the seven
 quartics $`\lVert\rho_K\rVert^2`$ span a four-dimensional space, so they satisfy three linear
 relations, and the $`w_K`$ are the ones the Peter-Weyl factorisation produces, not coefficients read
 off from $`Q`$. Nothing downstream turns on this. Only $`w_0`$ and $`w_6`$ are nonzero, since
@@ -871,7 +852,7 @@ c_K \;=\; (-1)^{K+1}\, 2\sqrt{\frac{\dim V_K}{\dim V_3}} ,
 ```
 
 so the quartic weight and the cubic weight differ by a fixed nonzero factor per channel, as an identity
-in $`u`$ and $`\bar u`$; Section 9.5 obtains the same correspondence structurally, as an equivariant
+in $`u`$ and $`\bar u`$; the end of this section obtains the same correspondence structurally, as an equivariant
 isomorphism from the invariant quartics onto $`\mathscr E_3`$. Nothing in Theorem 5.1 depends on it.
 Reading nonvanishing of every $`c_K`$ as injectivity would need the spanning fact of Section 4.2, which
 is not used here.
@@ -881,6 +862,18 @@ critical problem is governed by $`M_6`$ alone. Since $`Q = A/B^2`$ with $`B(u) =
 the gradient of the denominator is radial, so for $`\lVert u\rVert = 1`$,
 $`\Pi_{u^\perp}\nabla_{\bar u} Q \propto \Pi_{u^\perp}\mathcal I(u)`$: with clause 1 and $`M_0`$ radial,
 the tangential equation involves $`M_6`$ alone, with the nonzero coefficient above. That is clause 4 in full.
+
+**Where the family sits.** The homogeneous quartic $`\widetilde{Q}`$, not its projective normalisation $`Q`$, is one member of
+a four-dimensional space of $`\mathrm{SU}(2)`$-invariant quartics on spin 3. That space has the same
+dimension as $`\mathscr E_3`$, and for the same reason: both are counted by the four summands
+$`V_0 \oplus V_2 \oplus V_4 \oplus V_6`$ of $`\mathrm{Sym}^2 V_3`$, so selecting a quartic and
+selecting a cubic map are the same problem in two costumes. Equal dimension alone would not say
+that, so here is the map: $`\widetilde{Q} \mapsto \nabla_{\bar u}\widetilde{Q}`$ is equivariant and
+linear from invariant homogeneous quartics to $`\mathscr E_3`$, and injective, since Euler's
+identity recovers a homogeneous quartic from its gradient. Both spaces have dimension four, so it is
+an isomorphism; this section exhibits it channel by channel, as the per-rank identity
+$`\nabla_{\bar u}\lVert\rho_K\rVert^2 = c_K M_K`$ with every $`c_K`$ nonzero. The contribution is not the family, and not the quartic considered in isolation, but
+which member of it the icosahedral quotient permits, for the density-type interaction of Section 2.5.
 
 ### 5.6 The normalisation, and what it does not settle
 
@@ -950,9 +943,9 @@ becomes a statement about $`X`$ rather than an ambient one:
 > Among block states at level 6, those whose cubic nonlinearity has no level-16 component are
 > exactly the time-reversal-invariant ones.
 
-### 5.9 Three corollaries
+### 5.8 Two corollaries
 
-Three consequences of Theorem 5.1 bracket it from below, across and above. Throughout this
+Two consequences of Theorem 5.1 bracket it from below and across. Throughout this
 subsection write
 
 ```math
@@ -962,7 +955,7 @@ subsection write
 the projective form of the top multipole, which agrees with
 $`\lVert\rho_6\rVert^2`$ on the unit sphere of $`V_3`$.
 
-> **Corollary 5.4.** *Nothing projective below level 6.* For a single-sector block state with the
+> **Corollary 5.3.** *Nothing projective below level 6.* For a single-sector block state with the
 > density-type interaction of Section 2.5, the projected self-interaction is radial at every
 > level $`\ell < 6`$. Level 6 is the first level at which $`S^3/2I`$ permits a non-radial cubic
 > self-interaction at all.
@@ -982,7 +975,7 @@ direction is selected. $`\square`$
 The argument covers half-integer $`j`$ as readily as integer $`j`$, so levels 1, 3 and 5 are covered on
 the same footing as 2 and 4, and it uses Schur's lemma, not the icosahedral invariant gap.
 
-> **Corollary 5.5.** *The two sectors select the same shapes.* The reduced quartics of the two
+> **Corollary 5.4.** *The two sectors select the same shapes.* The reduced quartics of the two
 > sectors have the same critical set on $`\mathbb P(V_3)`$, with the same ordering of values.
 
 By clause 5, $`Q_d([u]) = w_0/7 + w_6(d)\,\widehat r_6([u]) = 1 + w_6(d)\,\widehat r_6([u])`$,
@@ -998,21 +991,7 @@ So once the filter has selected rank 6, the shape problem stops being icosahedra
 question about spin 3 with time reversal, which is why Section 7.1 could be carried out without the
 group appearing again.
 
-> **Corollary 5.6.** *But their nonlinear shifts differ.* Let $`[u]`$ be a critical ray and let
-> $`\psi`$ be the corresponding block state normalised so that $`\int_X \lvert\psi\rvert^2 = 1`$.
-> Then the projected self-interaction acts on $`\psi`$ by the scalar $`Q_d([u])`$, and
-> $`Q_{\mathbf 3'} - Q_{\mathbf 4} = \tfrac{49}{156}\,\widehat r_6([u])`$.
-
-At a critical ray the tangential part vanishes, so $`\mathcal I(\psi) = \beta\psi`$ for some scalar
-$`\beta`$. Pairing with $`\psi`$ and using that the block projection is self-adjoint with $`\psi`$
-in its range gives $`\beta \int\lvert\psi\rvert^2 = \int\lvert\psi\rvert^4`$, so with the stated
-normalisation $`\beta = \int\lvert\psi\rvert^4 = Q_d([u])`$. The difference is then
-$`(28/39 - 21/52)\,\widehat r_6 = \tfrac{49}{156}\,\widehat r_6`$. $`\square`$
-
-The two shifts agree only where $`\widehat r_6 = 0`$, so they
-differ at every ray whose top multipole is nonzero, the four tabulated ones included.
-
-None of the three corollaries is a statement about solutions of the equation; like Theorem 5.1, they
+Neither corollary is a statement about solutions of the equation; like Theorem 5.1, they
 concern the leading reduced problem.
 
 ---
@@ -1052,7 +1031,7 @@ $`(2,2)`$ are $`\mathrm{Sym}^2 V_3^{*} \otimes \mathrm{Sym}^2 \overline V_3^{*}`
 forms on $`\mathrm{Sym}^2 V_3`$ evaluated on squares, and the real ones are the hermitian forms. So
 the invariant real quartics of this bidegree are the invariant hermitian forms on
 $`\mathrm{Sym}^2 V_3 = V_0 \oplus V_2 \oplus V_4 \oplus V_6`$, which is multiplicity-free, and by
-Schur's lemma they form a real space of dimension four, the count of Section 9.5. The four quartics
+Schur's lemma they form a real space of dimension four, the count of Section 5.5. The four quartics
 $`\lVert u\rVert^4`$, $`\lvert f\rvert^2`$, $`\lVert B_0\rVert^2`$ and $`\lVert B_2\rVert^2`$ lie in it,
 and they are independent:
 at the weight states $`v_3, v_2, v_1, v_0`$ they take the values
@@ -1119,6 +1098,8 @@ Section 6 placed the quartic at one point of the four-channel family. This secti
 critical set there: the critical rays of $`\widehat r_6`$ on $`\mathbb P(V_3)`$, with their values
 and their signatures, which by Section 6.2 give the Morse indices of the reduced energy at both
 signs. Nothing in it uses $`2I`$.
+
+The critical rays matter to the equation of Section 2.5. In its Lyapunov-Schmidt reduction at the level-6 eigenvalue, the leading cubic term is the self-interaction of Sections 4 and 5 and the quartic plays the part of the reduced energy (Section 5.5), so its critical rays are the critical directions of the leading reduced problem, though not by themselves solutions: the range equation and the existence of branches are the companion paper's [SR2], under a stated wave equation, and this paper stops at their geometry.
 
 ### 7.1 Six rays found by symmetry
 
@@ -1258,7 +1239,7 @@ phase, is exactly ten orbits [M8.12]. At each orbit the signature $`(n_-, n_0, n
 variation of $`\widehat r_6`$ is computed exactly, from its characteristic polynomial, on the space
 transverse to the phase and rotation directions, of dimension 10 at the weight states and 9
 elsewhere. The census was pre-registered by the author and reproduced blind in two rooms under an adversarial
-audit, which graded its arguments sound [M8.12]; it is an audited argument.
+audit, which graded its arguments sound [M8.12]; it is an audited argument. In this paper that grade is the M8 track's label: an argument "checked step by step by one AI auditor and read by the designer", each step graded established, or established with the audit's supplied part named, and "never recorded as a verified or proven theorem, since AI agents sit on both the drafting and the checking side" [M8.11]. M8.12's three rooms were AI agents [M8.12], and M8.13's auditor worked as M8.11's did [M8.13].
 
 Both tables give two notions of symmetry. The *rotation stabiliser* is the stabiliser of the ray in
 $`\mathrm{SO}(3)`$. The *full isotropy* is the stabiliser of the vector in the group generated by
@@ -1366,13 +1347,14 @@ containing it, at either sign, so no procedure that returns local minima on thos
 [KU]'s included, even on the odd-weight subspace where [KU] computed their state C numerically
 [KU, § IV.C], which contains $`\mathcal O_1`$ and $`\mathcal O_3`$. Of [KU]'s other rows that might
 supply a formula at the point, G and R do not exist there, since their parameters would need square
-roots of negative numbers, and J reduces to P, so none supplies a formula for one of them; Section 9.2
+roots of negative numbers, and J reduces to P, so none supplies a formula for one of them; Section 8.2
 compares their isotropy types with [KU]'s table.
 
 **What is not claimed.** Outside the class the critical set is not classified: the three orbits
 above are the ones the numerical censuses found, and nothing here says there are no others. The
 signatures are Morse data of $`\widehat r_6`$, and so of the reduced energy on the block at each
-sign; they are not stability statements about the local branch germs of Section 8.
+sign; they are not stability statements about the standing waves that start at these orbits, which
+the companion paper treats [SR2].
 
 ### 7.3 The extremes
 
@@ -1447,7 +1429,7 @@ give the whole statement.
 > its numbers. At spin $`S \ge \tfrac12`$, integer or half-integer, write
 > $`P_u(x, y) = \sum_{m=-S}^{S} u_m \sqrt{\binom{2S}{S+m}}\, x^{S+m}\, y^{S-m}`$ for $`u \in V_S`$,
 > the standard realisation of $`V_S`$ on the binary forms of degree $`2S`$, isometric for the
-> Bombieri norm, and let $`\Theta_S`$ be the time reversal of Section 5.9, which commutes with
+> Bombieri norm, and let $`\Theta_S`$ be the time reversal of Section 5.8, which commutes with
 > rotations. Since $`V_{2S}`$ occurs once in $`V_S \otimes V_S`$ and
 > $`\langle S\,S;\, S\,S \mid 2S\,2S\rangle = 1`$, the proof of Lemma 7.3 gives
 > $`\lVert [u \otimes \Theta_S u]_{2S}\rVert^2 = [P_u P_{\Theta_S u}]^2`$, and for two forms of degree
@@ -1465,8 +1447,8 @@ give the whole statement.
 > **Theorem 7.5.** On $`\mathbb P(V_3)`$, $`\widehat r_6 \le 463/924`$, with equality exactly on
 > the orbit of the hexagon $`(v_3 + v_{-3})/\sqrt 2`$ under rotations and phase.
 
-The argument is the author's. An independent audit graded every step of it established, found no
-gap and no false statement, and supplied steps that the author's text left out. The proof below
+The argument is the author's. An independent audit on OpenWave's M8 track [M8.13] graded every step of it established, found no
+gap and no false statement, and supplied steps that the author's text left out. Its adjudication records the uniqueness as an audited argument, in the sense of Section 7.2. The proof below
 follows that argument, restructured in a few places, and a dagger † marks each supplied step it
 still uses, one-line facts included; a [map](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/dagger-map.md) in the paper's scripts folder
 names the restructurings and matches each dagger to the audit's records. Work on the unit sphere of $`V_3`$, with $`f`$ and
@@ -1609,171 +1591,18 @@ time reverse of a sixth power is the sixth power of the orthogonal form.
 
 ---
 
-## 8. Local branch germs on the quotient
+## 8. Discussion
 
-Section 8.1 interprets Theorem 5.1 and derives nothing: its Lyapunov-Schmidt reading explains why the
-quartic is worth extremising, and Sections 8.2 and 8.3 report how far the problem it poses has since
-been carried.
-
-### 8.1 The setting
-
-The equation is the one fixed in Section 2.5, $`(-\Delta - \lambda)\psi + \lvert\psi\rvert^2\psi = 0`$,
-with $`\lambda`$ a spectral parameter near $`\lambda_6 = 48/R^2`$, the level-6 eigenvalue of the
-Laplacian on $`S^3`$. The kernel that Lyapunov-Schmidt needs is that of the linearisation
-$`-\Delta - \lambda`$ at $`\lambda = \lambda_6`$, the level-6 eigenspace
-$`V_3 \otimes \mathrm{Hom}_{2I}(\sigma, V_3)`$, of dimension seven since the branching is
-multiplicity-free, and near that value the equation splits into a projection onto the kernel and a
-complementary range equation. Level 6 is fixed by the choice of object, since spin-3 states put the
-left index in $`V_3`$, and it is the bottom of the spectrum on both bundles: odd levels are excluded by
-parity, since $`-I`$ acts on them as $`-1`$ while $`\mathbf 3'`$ and $`\mathbf 4`$ factor through
-$`A_5 = 2I/\{\pm I\}`$, and, extending the branching table of Section 4.3 downward, the even levels
-below 6 carry $`\mathbf 1`$, $`\mathbf 3`$ and $`\mathbf 5`$. No claim is made that the states
-bifurcating at level 6 minimise anything, so the word ground state is avoided.
-
-The leading cubic term of the reduction is the projection of the nonlinearity onto the eigenspace,
-which is the self-interaction of Sections 4 and 5, and the quartic $`Q`$ plays the part of the reduced
-energy (Section 5.5). The critical rays of $`Q`$ are therefore the **critical directions of the leading
-reduced problem**, and not by themselves solutions of the equation: a solution needs the range equation
-as well.
-
-Both records work with $`(-\Delta - \lambda)\psi + g\lvert\psi\rvert^2\psi = 0`$ at general real
-$`g \neq 0`$ and state every value per power of $`g`$, which covers both signs of Section 6.2. They
-work in the convention $`R = 1`$, so the bifurcation eigenvalue is 48, with each block section $`\Phi`$
-normalised by $`\int_X \lvert\Phi\rvert^2 = 1`$, as in Corollary 5.6; their values move with these
-conventions [M8.10], [M8.11].
-
-### 8.2 The first correction at four rays
-
-[M8.10] carries the reduction one order further at the four symmetry-pinned rays of Section 7.1, the
-coherent, zonal, octahedral and hexagonal rays, in both sectors. With $`\Phi`$ a critical ray's block
-section and $`K`$ the level-6 block, expand
-
-```math
-\psi \;=\; a\Phi + a^3\xi + O(a^5), \qquad \lambda \;=\; 48 + \lambda_2 a^2 + \lambda_4 a^4 + O(a^6),
-```
-
-with $`\langle\Phi, \psi\rangle`$ real and $`\Pi_K \xi = 0`$. At order $`a^3`$ the block part gives
-$`\lambda_2 = gQ`$, with $`Q = \int_X \lvert\Phi\rvert^4 = 1 + w_6(\sigma)\,\widehat r_6`$ the scalar
-of Corollary 5.6, and the range part gives $`A\xi = -g\,\Pi_\perp N(\Phi)`$, with
-$`N(\psi) = \lvert\psi\rvert^2\psi`$ and $`A = -\Delta - 48`$ inverted on $`K^\perp`$. At order $`a^5`$
-the block part gives
-
-```math
-\lambda_4 \;=\; g\,\langle \Phi, DN_\Phi[\xi]\rangle \;=\; -3g^2 \sum_{n \neq 6} \frac{\lVert \Pi_n N(\Phi)\rVert^2}{n(n+2) - 48} ,
-\qquad DN_\Phi[h] \;=\; 2\,\mathrm{Re}(\Phi^\dagger h)\,\Phi + \lvert\Phi\rvert^2 h ,
-```
-
-provided its part orthogonal to $`\Phi`$ vanishes, which is the condition for the ray to persist at
-this order; the sum is finite, since the cubic of a level-6 section has no content above level 18.
-[M8.10] finds the condition met at all four rays and gives the eight values of $`\lambda_4/g^2`$, two
-sectors at each ray, as exact results reproduced blind.
-
-Every $`\lambda_4/g^2`$ is negative, and the sign needs two facts, both in the paper. No level of
-either sector lies below 6 (Section 8.1), and levels are even, so every $`n \neq 6`$ in the sum has
-$`n \ge 8`$ and a positive denominator. And $`Q > 1`$, since $`w_6 > 0`$ and
-$`\widehat r_6 \ge 1/924`$ (Proposition 7.4), so $`\lvert\Phi\rvert^2`$ is not constant, and with
-Parseval the strict Cauchy-Schwarz inequality gives
-$`\sum_{n \neq 6} \lVert \Pi_n N(\Phi)\rVert^2 = \int_X \lvert\Phi\rvert^6 - Q^2 > 0`$. So
-$`\lambda_4 < 0`$ for $`g \neq 0`$ wherever the formula holds. This is the solver's route in [M8.10], with
-its level hypothesis written out. At leading order the two sectors differ by one factor at every ray,
-$`(\lambda_2(\mathbf 3') - g)/(\lambda_2(\mathbf 4) - g) = w_6(\mathbf 3')/w_6(\mathbf 4) = 16/9`$,
-which is Corollary 5.6's statement that they agree about shape and disagree about scale; at the next
-order they stop being proportional: the four ratios $`\lambda_4(\mathbf 3')/\lambda_4(\mathbf 4)`$
-are pairwise distinct [M8.10].
-
-At the pentagonal pyramid the same expansion fails: the order-$`a^5`$ block equation has a part
-orthogonal to $`\Phi`$ in both sectors, so no $`\lambda_4`$ is defined for a fixed direction, and
-[M8.10] ran the pyramid as a negative control that fired blind. The pyramid lies on a fixed line
-(Lemma 7.2), so its direction can move along it, and Section 8.3 lets it.
-
-### 8.3 Local branch germs
-
-[M8.11] asks whether the formal expansions are the Taylor expansions of actual solutions, at the four
-pinned rays and at the two rays of Lemma 7.2, the pentagonal pyramid and the trigonal prism. Its
-answer is a local existence theorem, which stands here at the standing its record gives it: an
-audited argument, checked step by step by one AI auditor and read by the designer, with AI agents on
-both the drafting and the checking side, and not a verified theorem.
-
-> **Local branch germs** [M8.11]. Let $`[u]`$ be a critical ray, $`H`$ its stabiliser in
-> $`\mathrm{SO}(3)`$, acting on it by a character, $`X_H`$ the closed subspace of sections that $`H`$
-> fixes up to that character, and $`m`$ the complex dimension of the block part of $`X_H`$. Suppose that
-> $`m = 1`$, or that the Hessian of $`Q`$ at the ray, on a slice of the projectivised block part of
-> $`X_H`$ transverse to the continuous symmetries that preserve it, is invertible. Then for each sector
-> and each $`g \neq 0`$ there are a neighbourhood of $`(0, 48)`$ and an $`\varepsilon > 0`$ such that,
-> for every amplitude $`a`$ with $`0 < \lvert a\rvert < \varepsilon`$, exactly one solution
-> $`(\psi, \lambda)`$ in that neighbourhood has $`\psi \in X_H`$, in the gauge of the expansion
-> ($`\langle\Phi, \psi\rangle = a`$ real, the range part orthogonal to $`K`$), with its block part near
-> the ray on that slice. Both $`\lambda`$ and $`\psi/a`$ are analytic in $`a^2`$, their Taylor
-> coefficients are those of the formal expansion, and rotations carry the germ to equivalent germs at
-> the conjugate rays. No lower bound on $`\varepsilon`$ is given. The hypothesis holds at the six rays
-> of Section 7.1: $`m = 1`$ at the four pinned rays, and at the pyramid and the prism the slice Hessian
-> is invertible, as shown below.
-
-The argument has the standard architecture [GS]. The audit graded every step of the theorem established,
-with one step it supplied, an analytic change of parameter in the identification of the Taylor
-coefficients [M8.11]. After dividing by $`a^3`$ to remove the trivial solution, the range
-equation is solved in $`X_H`$ by the implicit function theorem, $`A`$ being invertible on $`K^\perp`$ with
-a gap of 32 in sector $`\mathbf 4`$ and 72 in sector $`\mathbf 3'`$ above the level-6 eigenvalue,
-and what remains is the gradient of a reduced functional on a slice through the ray. At the ray its
-Jacobian is block-triangular, with blocks $`-1`$ and
-$`\tfrac14\,\mathrm{Hess}_T Q = \tfrac14\,w_6\,\mathrm{Hess}_T\,\widehat r_6`$, by a bridge the
-record proves. At the four pinned rays $`m = 1`$, the slice is a point, and no nondegeneracy condition
-enters: the symmetry pins the germ. At the pyramid and the prism $`m = 2`$, and the slice Hessian is
-$`\mathrm{Hess}_T\,\widehat r_6 = -104/55`$ along the pyramid's real curve of Section 7.1, the other
-direction in its line being a rotation, and $`\mathrm{diag}(920/473,\ 8/11)`$ on the prism's chart, with
-no cross term. Neither vanishes, in either sector.
-
-The weight states $`v_1`$ and $`v_2`$ satisfy the hypothesis too, with $`m = 1`$, each weight space
-being one-dimensional, and the frozen task of [M8.11] records them as covered by the theorem; that run
-neither expanded nor scored them, so no values are given for them here. The degeneracy of $`v_1`$ found
-in Section 7.2 does not obstruct its germ: rotations about the axis act on its kernel,
-$`\mathrm{span}\{v_{-3}, i v_{-3}\}`$ [M8.12], by a different character from the one on $`v_1`$, so the
-kernel lies outside the fixed space, and it means only that the germ need not be isolated among all
-solutions, which the theorem does not claim.
-
-At the pyramid and the prism the direction also moves, at order $`a^2`$, by a tilt in the slice fixed by
-the tangential part of the order-$`a^5`$ block equation. At each ray it points opposite ways in the two
-sectors, as the forcing does, at the prism it lies along one real direction of the chart by a symmetry
-of the prism, and [M8.11] gives the exact values. The tilt does not change $`\lambda_4`$ at this order,
-by [M8.11]'s lemma, since criticality removes its contribution, so $`\lambda_4`$ at the pyramid and the
-prism is given by the formula of Section 8.2, with the sign argued there; [M8.11] gives the values. A
-solver and an auditor derived these values, the second variations, the forcing and the tilt blind,
-and the auditor computed every one of them exactly [M8.11].
-
-At the paper's sign $`g = 1`$ (Section 6.2), $`\lambda - 48 = Q a^2 + O(a^4)`$ with $`Q > 1`$, so every
-germ leaves the linear point upward in $`\lambda`$, and at $`g = -1`$ downward. The next coefficient
-$`\lambda_4/g^2`$ is negative at all six rays in both sectors, whatever the sign.
-
-### 8.4 The ceilings that remain
-
-**The reduction is carried through at six rays, and only locally.** What this paper derives itself is
-exact at leading cubic order: the finite-dimensional problem on the degenerate eigenspace, from Sections
-4 and 5. Beyond that order it derives the sign of $`\lambda_4`$ (Section 8.2) from facts of its own; the
-coefficients and the germs are the records'. At the six rays of Section 7.1 the records carry the range
-equation to the order the germs need, and there the formal expansions are the Taylor expansions of local
-branch germs, for sufficiently small amplitude, as an audited argument. Everything else stays out of reach. There is no radius, since no
-lower bound on $`\varepsilon`$ is given. There is no stability of any kind, and the Morse indices of
-Section 7 are data of the reduced energy, not stability statements about the germs. Nothing is claimed
-at finite amplitude. No germ statement is made here for the C3 and D2 rays or
-for the three orbits outside the class.
-
-Everything in Sections 3 through 5 stands without this section, and neither it nor the germs is a
-statement about the dynamics the interaction came from: the nonlinearity of Section 2.5 is a hypothesis
-of the paper. The reduction from a degenerate eigenspace is classical [GS], used here rather than
-developed, and no property of it is proved in this paper.
-
----
-
-## 9. Discussion
-
-### 9.1 What is not claimed
+### 8.1 What is not claimed
 
 Everything above concerns a single block state in a single sector. No statement is made about a
 field occupying distinct flat-bundle sectors at once, or about a nonlinearity coupling one sector's
-density to another's amplitude. Corollaries 5.5 and 5.6 compare the two sectors; they do not
-describe a configuration containing both. The mixed problem is not posed here, let alone solved.
+density to another's amplitude. Corollary 5.4 compares the two sectors; it does not
+describe a configuration containing both. The mixed problem is not posed here, let alone solved. Nor is
+anything here a statement about solutions of the equation of Section 2.5 or their stability, which
+the companion paper [SR2] takes up.
 
-### 9.2 Prior art, and where the boundary falls
+### 8.2 Prior art, and where the boundary falls
 
 The setting and many of the objects of Sections 6 and 7 are known, to the condensate literature, to the
 literature on Majorana constellations and anticoherence, and to the classical theory of binary forms.
@@ -1828,50 +1657,11 @@ $`t`$-design is anticoherent of order at least $`t`$, and the octahedron is both
 Recognising a configuration is not the same as selecting it, and knowing the phases is not classifying
 the critical geometry: the condensate literature has the states and the ground states at the point, and
 what this paper adds there is the identity that places the ray at the point, the census within a class
-and its Morse indices, three certified orbits outside it, and the two ends proved.
+and its Morse indices, three certified orbits outside it, and the two ends, the maximum's uniqueness as an audited argument.
 
-### 9.3 The search, stated as a search
+### 8.3 The search
 
-Three searches were run. The first asked whether the results of Section 3 are known; the polarised
-identity of Section 3.1 and the zero-set statement of Proposition 3.3 were not located. The second,
-ten queries across six lines of approach, asked the question the contribution rests on, whether the
-selection statement of Section 5 has been made before: nothing was found that filters a cubic
-interaction by a finite subgroup on a space form, or that puts $`\lvert\psi\rvert^2\psi`$ on a flat
-bundle over $`S^3/2I`$, and the adjacencies it found are cited where they belong. The third read the
-sources of Sections 6 and 7 in their own text: [KU], [KU-rev], [DH], [SP], [BTD], [BTD07], [HY], [BPR],
-[RK] and [Bj] from their preprint sources, and [Re] in full; [BBEM] itself was not read, and its
-inequality enters through [Re]'s statement of it. Each thing Section 9.2 says this paper adds at the
-point was not located in them: the identity of Proposition 6.1, whose application to the ray of Theorem
-5.1 is specific to the selection made here; the completeness of the census within its class, which [KU]
-do not claim; the Morse indices of Section 7.2; the three orbits outside the class, with the caveat of
-Section 9.2; the identity of Lemma 7.3, which completes the proof of the minimum; and the exact
-maximiser set of Theorem 7.5.
-
-**Not surfaced is not the same as new.** The searches were real but not exhaustive: the equivariant
-bifurcation literature is largely in monographs that search engines index poorly, the older
-invariant-theory literature was not worked, and no subscription index was used.
-
-### 9.4 The open historical question
-
-The object $`\Phi(F,G) = F\,(F,G)_1`$ is a joint covariant of two independent binary sextics, of
-bidegree $`(2,1)`$ and order 16, and it is entirely possible that it is named in Grace and Young [GY],
-Elliott, or Gordan. The covariant of Section 3 is its specialisation $`G = \Theta F`$ along the
-time-reversal diagonal, and whether that has appeared before is a separate question from whether
-$`\Phi`$ has. Both are left open here.
-
-### 9.5 Where the family sits
-
-The homogeneous quartic $`\widetilde{Q}`$, not its projective normalisation $`Q`$, is one member of
-a four-dimensional space of $`\mathrm{SU}(2)`$-invariant quartics on spin 3. That space has the same
-dimension as $`\mathscr E_3`$, and for the same reason: both are counted by the four summands
-$`V_0 \oplus V_2 \oplus V_4 \oplus V_6`$ of $`\mathrm{Sym}^2 V_3`$, so selecting a quartic and
-selecting a cubic map are the same problem in two costumes. Equal dimension alone would not say
-that, so here is the map: $`\widetilde{Q} \mapsto \nabla_{\bar u}\widetilde{Q}`$ is equivariant and
-linear from invariant homogeneous quartics to $`\mathscr E_3`$, and injective, since Euler's
-identity recovers a homogeneous quartic from its gradient. Both spaces have dimension four, so it is
-an isomorphism; Section 5.5 exhibits it channel by channel, as the per-rank identity
-$`\nabla_{\bar u}\lVert\rho_K\rVert^2 = c_K M_K`$ with every $`c_K`$ nonzero. The contribution is not the family, and not the quartic considered in isolation, but
-which member of it the icosahedral quotient permits, for the density-type interaction of Section 2.5.
+Three searches were run: whether the results of Section 3 are known; whether the selection statement of Section 5 has been made before, in ten queries across six lines of approach; and the sources of Sections 6 and 7, read in their own text, [KU], [KU-rev], [DH], [SP], [BTD], [BTD07], [HY], [BPR], [RK] and [Bj] from their preprint sources and [Re] in full, with [BBEM]'s inequality taken from [Re]'s statement of it. None located the polarised identity of Section 3.1, the zero-set statement of Proposition 3.3, a filter of a cubic interaction by a finite subgroup on a space form, $`\lvert\psi\rvert^2\psi`$ on a flat bundle over $`S^3/2I`$, or anything Section 8.2 says this paper adds at the point. **Not surfaced is not the same as new.** The searches were not exhaustive: the equivariant bifurcation literature, largely in monographs, and the older invariant-theory literature were not worked through, and no subscription index was used. Two historical questions stay open: whether the object $`\Phi(F,G) = F\,(F,G)_1`$, a joint covariant of two independent binary sextics of bidegree $`(2,1)`$ and order 16, is named in Grace and Young [GY], Elliott or Gordan, as it may well be, and whether its specialisation $`G = \Theta F`$ of Section 3 has appeared before.
 
 ---
 
@@ -1885,12 +1675,10 @@ which member of it the icosahedral quotient permits, for the density-type intera
 - **[CPK]** J. Crann, R. Pereira and D. W. Kribs, Spherical designs and anticoherent spin states. *J. Phys. A: Math. Theor.* **43** (2010), 255307.
 - **[DH]** R. B. Diener and T.-L. Ho, $`^{52}`$Cr spinor condensate: a biaxial or uniaxial spin nematic. *Phys. Rev. Lett.* **96** (2006), 190405; arXiv:cond-mat/0511751.
 - **[Fa]** U. Fano, Description of states in quantum mechanics by density matrix and operator techniques. *Rev. Mod. Phys.* **29** (1957), 74.
-- **[GS]** M. Golubitsky and D. G. Schaeffer, Singularities and Groups in Bifurcation Theory, Volume I. Applied Mathematical Sciences **51**, Springer (1985).
 - **[GY]** J. H. Grace and A. Young, The Algebra of Invariants. Cambridge University Press (1903).
 - **[HY]** L. He and S. Yi, Magnetic properties of a spin-3 chromium condensate. *Phys. Rev. A* **80** (2009), 033618; arXiv:0902.4276.
 - **[KU]** Y. Kawaguchi and M. Ueda, Symmetry classification of spinor Bose-Einstein condensates. *Phys. Rev. A* **84** (2011), 053616; arXiv:1109.0400.
 - **[KU-rev]** Y. Kawaguchi and M. Ueda, Spinor Bose-Einstein condensates. *Phys. Rep.* **520** (2012), 253–381; arXiv:1001.2072.
-- **[M8.10]** OpenWave M8 track, M8.10: first correction at the level-6 critical rays. The [task record](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_10_task_details.md) and [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_10_method_note.md), 2026.
 - **[M8.11]** OpenWave M8 track, M8.11: local branch germs at the level-6 critical rays. The [task record](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_11_task_details.md) and [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_11_method_note.md), 2026.
 - **[M8.12]** OpenWave M8 track, M8.12: the reduced Morse census of the level-6 quartic. The [task record](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_12_task_details.md) and [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_12_method_note.md), 2026.
 - **[M8.13]** OpenWave M8 track, M8.13: audit of the uniqueness of the top-multipole maximum at spin 3. The [task record](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_13_task_details.md), with the adjudication, 2026.
@@ -1899,6 +1687,7 @@ which member of it the icosahedral quotient permits, for the density-type intera
 - **[RK]** J. L. Romero, A. B. Klimov, A. Z. Goldberg, G. Leuchs and L. L. Sánchez-Soto, Multipoles from Majorana constellations. *Phys. Rev. A* **109** (2024), 012214; arXiv:2401.07904.
 - **[Sh]** B. Shatto, The Surviving Ray: channel selection for a cubic self-interaction on $`S^3/2I`$. *Zenodo* (2026), [https://doi.org/10.5281/zenodo.22681502](https://doi.org/10.5281/zenodo.22681502).
 - **[SP]** L. Santos and T. Pfau, Spin-3 chromium Bose-Einstein condensates. *Phys. Rev. Lett.* **96** (2006), 190404; arXiv:cond-mat/0510634.
+- **[SR2]** B. Shatto, Nonlinear Standing-Wave Branches and Spectral Transitions on the Poincaré Homology Sphere, the companion paper, in preparation: [`surviving-ray-2.md`](/files/framework/files/dynamics/files/surviving-ray-2.md).
 
 ---
 
@@ -1923,33 +1712,27 @@ definition in their own code, with no access to the paper, its title or any valu
 auditor, working on disjoint primitives, tried to refute every answer the solver gave and refuted none.
 This is a blind recomputation of those claims, from definitions, not a second proof:
 the proofs were not checked line by line, the run stops at level 6 and at the two interactions built
-there, the general-spin constant of Section 5.9 was left out of the claims, and no dynamics was run.
+there, the general-spin constant of Section 5.8 was left out of the claims, and no dynamics was run.
 The [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md) carries the full record.
 
-Four later runs on the track reproduced or audited the results of Sections 7 and 8, and every link to
-its records points to its repository at one commit, `b0b07867`. M8.10 reproduced the eight values of
-the first correction in Section 8.2 blind, as exact results, and its negative control at the pyramid
-fired blind ([task](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_10_task_details.md), [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_10_method_note.md)).
-M8.11 audited the local branch germs: the theorem of Section 8.3 is an audited argument, with one
-supplied step, and the one-line sign step of its $`\lambda_4`$ lemma was graded a defect and overruled
-with the reason recorded; the run's method note puts the weight states $`v_1`$ and $`v_2`$ out of
-scope, while its frozen task, which Section 8.3 follows, covers them
-([task](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_11_task_details.md), [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_11_method_note.md)).
+Two later runs on the track reproduced or audited the results of Section 7, and every link to
+its records points to its repository at one commit, `b0b07867`.
 M8.12 reproduced the census of Section 7.2 in two blind rooms under an adversarial audit; the
 adjudication records every claim reproduced and the classification's arguments sound, with one clause
 left open, the uniqueness of the maximum
 ([task](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_12_task_details.md), [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_12_method_note.md)).
 M8.13 audited that uniqueness: an offline auditor reached the complete maximiser set by its own route
-before it saw the author's, then graded the author's argument part by part, ten verdicts with no gap
+before it saw the author's, with one sub-step asserted, which it reported itself and the maintainer's own check had
+already closed, then graded the author's argument part by part, ten verdicts with no gap
 and no defect. The adjudication records the uniqueness as an audited argument. It did not check the
-note's attribution of the nematic bound, which Section 9.2 takes from the sources themselves, and in its
+note's attribution of the nematic bound, which Section 8.2 takes from the sources themselves, and in its
 words, "the gate's 97 checks and the mutation suite's 66 arms remain the author's report"; the package
 has since landed, [with those instruments](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/scripts/m8_13_author/MANIFEST.md)
 ([task, with the adjudication](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_13_task_details.md),
 [auditor's return](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/m8_13/run/stage2b_return.md),
 [author's dated correction](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/scripts/m8_12_author/S0_S3_MAXIMUM_CORRECTION.md)).
 
-Section 7.3 carries the author's argument as a complete proof, with a dagger on each step the audit
+Section 7.3 carries the author's argument in full, with a dagger on each step the audit
 supplied. The [dagger map](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/dagger-map.md) names the proof's five departures from the audited
 note, matches each dagger to the audit's three records, and notes the two supplied steps that Section 6
 also uses.
