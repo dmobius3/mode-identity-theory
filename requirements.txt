@@ -1,0 +1,18 @@
+# Python packages for rerunning the scripts in this repository.
+# The committed records were made with CPython 3.13.13 and the exact versions below.
+# Install: python3 -m pip install -r requirements.txt
+numpy==2.5.0
+scipy==1.18.0
+sympy==1.14.0
+mpmath==1.3.0
+
+# Needed only by the Molien and Euclid Row IV scripts: camb by euclid-row-iv/, molien-ratio-table/,
+# molien-ratio-table-runs/, molien-step-two/ and molien-step-two-runs/; clipy-like and astropy by
+# molien-step-two/ alone. Install them with:
+#   python3 -m pip install camb==2.0.4 clipy-like==0.15 astropy==8.0.1
+#
+# The nonflat distance comparison's scripts (nonflat-distance-comparison/) run in the environment of
+# the Λcos repository instead, recorded in that folder's qualification.json: Python 3.9.6, numpy 2.0.2,
+# scipy 1.13.1 and pandas 2.3.3.
+#
+# The script folders are under files/framework/files/working/files/scripts/.
