@@ -41,7 +41,7 @@ Around 300 BC, Euclid proved that only five regular solids close perfectly in or
 
 ```
 mode-identity-theory/
-├─ main/                          ← you are here
+├─ main                           ← you are here
     ├─ framework/                  ← the postulate & derivations
     │   ├─ bedrock/                 ← standalone mathematics papers
     │   │   ├─ first-eigenvalue       ← twisted Möbius Laplacian operator
