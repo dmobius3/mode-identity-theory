@@ -88,6 +88,8 @@ On its own terms, then, the run completes its totals numerically in $`m = \pm 2`
 
 **Reproduction.** The solver's nine scripts, rerun, reproduce its recorded output line for line. The regenerated records are in `run-1/`.
 
+**Note (2026-11-12), on the controls record.** `run-1/step4_controls.out` ends in a traceback. The script's closing summary indexes a two-item list with NumPy booleans, which NumPy 2 rejects. Each control prints its verdict before that summary, at lines 16, 29 and 51 of the record: C1, C2 and C3 pass, C2's line being typed text, as the third gap below records. The summary only restates them. A rerun on NumPy 2.5.0 reproduces the record line for line, traceback included, so the solver's script stays as written and the record as the rerun produced it.
+
 **Conformance.** The solver followed the frozen method. Its return says the method was followed exactly, with no deviations and no underdetermined points, and that overstates it. The return is kept unedited, and this section is authoritative. Seven gaps are recorded, and none changes a value or a count.
 
 1. **Resolutions.** "64 and 128 points" was read as Trefethen's $`N`$, so 65 and 129 nodes, without flagging the reading. The two resolutions agree to 5e−11.
