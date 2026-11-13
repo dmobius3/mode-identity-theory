@@ -45,10 +45,6 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 **The Energies:** What MIT says the energies of stable states across the eight slots obey, the relation the last row of OpenWave's M8 success ladder asks for. It was registered before any derivation, with three declared routes; none yields a relation, so none is filed, and a dynamics can still aim at the ladder's other rows without it.
 
-### [Stress-Tensor Bridge](../working/files/stress-tensor-bridge.md)
-
-**The Sourcing:** The open half: from the realized wave content to a stress tensor with a declared placement, the metric whose Einstein equations it sources. No leg of the bridge is derived and no candidate matter action exists; a [variational route](../working/files/variational-score-to-sample.md) is preferred for building one. Two targets the bridge named are proved, a [volume cap](../working/files/volume-cap.md) and a [propagation theorem](../working/files/propagation-theorem.md), and a [preregistered SN+BAO test](../working/files/nonflat-distance-comparison.md) of a closed effective geometry, keeping the flat fit's $`H(z)`$ and setting today's effective curvature radius equal to the static one, excludes it at 6.13 Gpc, disfavors it at 10.5 Gpc and does not exclude it at 19.7 Gpc, leaving the flat effective description untouched. With the radius fixed, a barotropic perfect fluid with $`\rho_0 + p_0 > 0`$ is not, perturbatively and under the fixed-radius test's ruled readings, a [consistent source](../working/files/fixed-radius-second-order.md) for the static domain. The slot action defines a stress tensor of its own but, as an effective theory, is no candidate; a matter action that carried the slot fields and supplied the missing source would join the two halves.
-
 ---
 
 ## 🏄‍♂️ Collaboration on OpenWave
