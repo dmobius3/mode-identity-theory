@@ -31,6 +31,22 @@ The Euclid Data Release 1 arrives in two stages. DR1-Foundation, in November 202
 
 ---
 
+<a id="timeline"></a>
+## :spiral_calendar: Timeline
+
+*Added 2026-11-13, after the release of DR1-Foundation.* A record of the card's deposits and of the Euclid releases that bear on it, updated in place as releases happen, in commits separate from any scoring commit. It holds no outcomes: the outcome of each of Rows I to V goes in that row's section and the Scoreboard. The schedule field above stands as written. Dates to come are ESA's ([DR1](https://www.cosmos.esa.int/web/euclid/data-release-dr1), [timeline](https://www.cosmos.esa.int/web/euclid/timeline)), and the timeline gives them as tentative.
+
+| Date | Release or deposit | For this card |
+|---|---|---|
+| 5 June 2026 | [Card first deposited](https://doi.org/10.5281/zenodo.20563048) | Five predictions against four named contenders, each with a falsification threshold |
+| 24 June 2026 | Quick Data Release 2 (Q2) | Quick-look, outside the card's scope; listed as the one Euclid release between the two deposits |
+| 25 September 2026 | [Card version 2 deposited](https://doi.org/10.5281/zenodo.22948978) | Rewrites Row II's threshold, adds the scoring rules for Rows I and IV, and replaces the ground rules, among them the rule that an edit voids a row, with the scoring section above; the version Row IV is scored against |
+| 12 November 2026 | DR1-Foundation released | Row IV can score from here on; its record is in §IV |
+| 16 June 2027 | Full DR1 | Rows I, II, III and V read its products |
+| June 2029 | DR2 | Row II defers to it, with outside kinematics, under its stated conditions; after a null DR1 result, Row V looks to it for a stronger test |
+
+---
+
 ## :crystal_ball: Prediction Summary
 
 | # | Observable | MIT prediction | Euclid DR1 channel | Falsifies MIT if |
@@ -156,6 +172,8 @@ Euclid's wide-area photometric survey will dramatically extend the JWST-discover
 > ⚠️ *Euclid DR1 wide-area photometry at z > 10 may yield a catalog too sparse or selection-dominated to distinguish the MIT and ΛCDM mass-function forecasts at the stated threshold. If DR1 uncertainties or selection systematics are too large to determine whether the abundance of M<sub>*</sub> ~ 10<sup>10</sup> M<sub>☉</sub> galaxies at z > 10 lies above or within the Boylan-Kolchin (2023) ΛCDM forecast at the stated 2σ threshold, this row is deferred to DR2 / JWST cross-calibration and is not counted in the row-by-row tally.*
 
 > 🎯 *Outcome to be recorded after DR1-Foundation, November 2026. The wide-area photometric source catalogue and the spectra ship at that stage, which puts this row roughly half a year ahead of the other four.* *(Superseded on 2026-09-23 by the rule below: the outcome is recorded when the first qualifying measurement appears, at the Foundation stage or later.)*
+
+*Recorded 2026-11-13, after the release of DR1-Foundation.* **No qualifying measurement yet.** DR1-Foundation came with 26 Euclid Collaboration papers ([ESA's list](https://www.cosmos.esa.int/web/euclid/dr1-papers)): on the data, its processing and calibration, and first results on strong lenses, low-surface-brightness stellar systems, the shapes of star-forming galaxies and emission-line maps. None measures the abundance of galaxies above $`10^{10}\,M_\odot`$ at $`z > 10`$, so none is a candidate to record under the rule below, and the row is deferred under its June provision.
 
 *Added 2026-09-23, before any Euclid DR1 data; the power rule made exact on 2026-09-24.* **Row IV's scoring rule.** The row as first written left open what its comparison is, which statistic and which measurement score, how its 2σ is computed, and when it scores. This entry fixes them. Its scope does not change: the row reads Euclid-based wide-area measurements, as its cells say, from DR1 or a later release; quick-look products stay outside the card, as its scope field says.
 
