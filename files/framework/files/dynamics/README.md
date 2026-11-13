@@ -51,7 +51,7 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave)
 
-The runs these pages cite are filed with [OpenWave](https://github.com/openwave-labs/openwave), an open-source physics simulator, in M8, MIT's column there: each is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review. The column asks whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight slots, and the [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start.
+The runs these pages cite are filed with [OpenWave](https://github.com/openwave-labs/openwave), an open-source physics simulator, in M8, MIT's column there: each is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review. The column asks whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight slots, and the [M8 roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) is the place to start. [M8 on OpenWave](/files/tools/files/openwave/README.md) maps each task to its record and to MIT's files.
 
 ---
 

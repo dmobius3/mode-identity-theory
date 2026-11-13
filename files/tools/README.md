@@ -29,7 +29,7 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 
 >[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)
 >
->**[OpenWave](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)**: an open-source subatomic physics simulator, and a neutral arena that holds candidate field theories to the same public pass/fail criteria.
+>**[OpenWave](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)**: an open-source subatomic physics simulator, and a neutral arena that holds candidate field theories to the same public pass/fail criteria. MIT's column there is M8, and [M8 on OpenWave](files/openwave/README.md) maps each of its tasks to its record and to MIT's files.
 
 >[![TOE-Share](/files/assets/toe-share-banner-navy.svg)](https://theoryofeverything.ai/author/b-shatto)
 >

@@ -64,6 +64,7 @@ mode-identity-theory/
     │   ├─ the-waltz                  ← the gravity between surface & space
     │   └─ the-mirror                 ← curvature duality: gauge gap & zeros
     └─ tools/                      ← interactive, publications, & references
+        └─ openwave/                ← MIT's M8 column on OpenWave: every task & its files
 ```
 
 | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
