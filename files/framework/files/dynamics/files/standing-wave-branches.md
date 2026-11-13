@@ -508,4 +508,14 @@ The scripts behind the derived results' computations are in the folders `soft-sl
 
 ---
 
+## Adjudicated numerical census
+
+[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/c8aff9191eda1174d9b228c74507bb6cf4c8d101/openwave/xperiments/m8_mit/research/findings/m8_17_method_note.md)
+
+The finite-amplitude record of Section 5 was made on the OpenWave M8 track, in runs each pre-registered and adjudicated by the project's maintainer on a public pull request. On it the branches born elliptic were followed numerically, each along a ladder of registered amplitudes from the smallest to its slot's spectral gap, on two instruments, a finite-element discretization [OW15] and a harmonic Galerkin one, which OpenWave's M8.16.1 run qualified [OW16.1]. When the census closed, on 2026-11-10, two branches ended Elliptic throughout, three changes of type were located, none identified with a crossing, and four branches ended instrument-limited, their classified types kept and no type claimed at their open points. These are adjudicated numerical verdicts, not theorems: a type is read at the registered points, not between them and not in the continuum.
+
+The M8.17 [method note](https://github.com/openwave-labs/openwave/blob/c8aff9191eda1174d9b228c74507bb6cf4c8d101/openwave/xperiments/m8_mit/research/findings/m8_17_method_note.md) documents the census run, from 2026-10-27 to 2026-10-28, and points to its record; that run left five branches not settled. The endings at the close also rest on runs before and after it: M8.15 and M8.15.2, on the finite-element instrument, and M8.18, the census's two remedies; the persistence tests are M8.15's and M8.19's. The references [OW15] to [OW19] name each run's record and the pull request that adjudicated it. The census's rules are on its page [SDC], with MIT's own computation of the open items, which is outside M8 and changes none of the census's closures.
+
+---
+
 | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
