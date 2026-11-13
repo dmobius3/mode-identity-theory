@@ -1,11 +1,11 @@
-T1/R4: 18 points, 13 Elliptic, 0 Hyperbolic, open ['1.41', '32', '45.25', '64', '72'], undecided none; instrument-limited
-T4/R4: 18 points, 8 Elliptic, 5 Hyperbolic, open ['4', '8', '11.31', '64', '72'], undecided none; instrument-limited
-T1/R5: 15 points, 14 Elliptic, 0 Hyperbolic, open ['32'], undecided none; instrument-limited
-T4/R5: 15 points, 11 Elliptic, 4 Hyperbolic, open none, undecided none; change of type located
-T2/R4: 18 points, 13 Elliptic, 5 Hyperbolic, open none, undecided none; change of type located
-T2/R5: 15 points, 15 Elliptic, 0 Hyperbolic, open none, undecided none; elliptic throughout
-T3/R4: 18 points, 18 Elliptic, 0 Hyperbolic, open none, undecided none; elliptic throughout
-T3/R5: 15 points, 12 Elliptic, 2 Hyperbolic, open none, undecided ['16']; change of type located
-T5/R2: 20 points, 17 Elliptic, 0 Hyperbolic, open ['45.25', '128', '132'], undecided none; instrument-limited
+T1/R4: 18 points, 13 Elliptic, 0 Hyperbolic, open ['1.41', '32', '45.25', '64', '72'], undecided none; discretization-limited
+T4/R4: 18 points, 8 Elliptic, 5 Hyperbolic, open ['4', '8', '11.31', '64', '72'], undecided none; discretization-limited
+T1/R5: 15 points, 14 Elliptic, 0 Hyperbolic, open ['32'], undecided none; discretization-limited
+T4/R5: 15 points, 11 Elliptic, 4 Hyperbolic, open none, undecided none; change of type bracketed
+T2/R4: 18 points, 13 Elliptic, 5 Hyperbolic, open none, undecided none; change of type bracketed
+T2/R5: 15 points, 15 Elliptic, 0 Hyperbolic, open none, undecided none; Elliptic throughout
+T3/R4: 18 points, 18 Elliptic, 0 Hyperbolic, open none, undecided none; Elliptic throughout
+T3/R5: 15 points, 12 Elliptic, 2 Hyperbolic, open none, undecided ['16']; change of type bracketed
+T5/R2: 20 points, 17 Elliptic, 0 Hyperbolic, open ['45.25', '128', '132'], undecided none; discretization-limited
 wrote census.json
 wrote figures/figure1-census.tex, .pdf and .png

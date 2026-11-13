@@ -347,7 +347,7 @@ s.append('\\node[font=\\scriptsize, anchor=east, align=right] at (-0.32,1.44) {f
 s.append('\\draw[black!60] (-0.44,-0.44) -- (-0.95,-0.95) node[anchor=north east, font=\\scriptsize, align=right, '
          'inner sep=1pt] {slow part,\\\\ within $O(\\varepsilon)$ of 0};')
 s.append('\\draw[black!60] (0.10,-0.06) -- (0.55,-0.95) node[anchor=north west, font=\\scriptsize, align=left, '
-         'inner sep=1pt] {structural\\\\ zeros};')
+         'inner sep=1pt] {zeros forced\\\\ by symmetry};')
 s.append('\\end{tikzpicture}')
 build('figure-spectrum', '\n'.join(s))
 

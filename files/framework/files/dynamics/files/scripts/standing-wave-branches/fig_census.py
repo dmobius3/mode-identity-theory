@@ -91,13 +91,13 @@ GAP = {'R4': 72, 'R5': 32, 'R2': 132}
 NAME = {'T1': ('$v_2$', 'v2'), 'T2': ('prism', 'prism'), 'T3': ('hexagon', 'hexagon'), 'T4': (r'$\mathcal{O}_3$', 'O3'),
         'T5': ('line {7/2, −3/2}, member $i$', 'member i')}
 TABLE6 = {  # (ending, Elliptic count, Hyperbolic count, open points), Table 6 of the draft, which check v16 ties to the census
-    'T2/R5': ('elliptic throughout', 15, 0, []), 'T3/R4': ('elliptic throughout', 18, 0, []),
-    'T2/R4': ('change of type located', None, None, []), 'T3/R5': ('change of type located', None, None, []),
-    'T4/R5': ('change of type located', None, None, []),
-    'T1/R4': ('instrument-limited', 13, 0, ['1.41', '32', '45.25', '64', '72']),
-    'T1/R5': ('instrument-limited', 14, 0, ['32']),
-    'T4/R4': ('instrument-limited', None, None, ['4', '8', '11.31', '64', '72']),
-    'T5/R2': ('instrument-limited', 17, 0, ['45.25', '128', '132']),
+    'T2/R5': ('Elliptic throughout', 15, 0, []), 'T3/R4': ('Elliptic throughout', 18, 0, []),
+    'T2/R4': ('change of type bracketed', None, None, []), 'T3/R5': ('change of type bracketed', None, None, []),
+    'T4/R5': ('change of type bracketed', None, None, []),
+    'T1/R4': ('discretization-limited', 13, 0, ['1.41', '32', '45.25', '64', '72']),
+    'T1/R5': ('discretization-limited', 14, 0, ['32']),
+    'T4/R4': ('discretization-limited', None, None, ['4', '8', '11.31', '64', '72']),
+    'T5/R2': ('discretization-limited', 17, 0, ['45.25', '128', '132']),
 }
 grid = lambda n_k, extra: [round(0.25 * 2 ** (k / 2), 6) for k in range(n_k)] + extra
 GRID = {'R4': grid(17, [72.0]), 'R5': grid(15, []), 'R2': grid(19, [132.0])}
@@ -113,7 +113,7 @@ for key, pts in ROWS.items():
     assert ko == opens, (key, ko, opens)
     if n_e is not None:
         assert (ke, kh) == (n_e, n_h), (key, ke, kh)
-    if ending == 'change of type located':
+    if ending == 'change of type bracketed':
         assert key in BRACKETS and not ko, key
         kinds = [p['kind'] for p in pts if p['kind'] in 'EH']
         assert kinds == sorted(kinds), key  # Elliptic, then Hyperbolic, at the classified points
@@ -138,9 +138,9 @@ HEAD = {'R4': '$R_4$, to its gap at 72', 'R5': '$R_5$, to its gap at 32',
         'R2': '$R_2$, the line $\\{7/2, -3/2\\}$, to its gap at 132'}
 LABEL = {'T1': '$v_2$', 'T2': 'prism', 'T3': 'hexagon', 'T4': '$\\mathcal{O}_3$', 'T5': 'member $i$'}
 ROMAN = {'T2/R4': 'i', 'T3/R5': 'ii', 'T4/R5': 'iii'}
-TITLE = {'T2/R4': ('prism, $R_4$', 'harmonic, $N = 24$ and 32'),
+TITLE = {'T2/R4': ('prism, $R_4$', 'Galerkin, $N = 24$ and 32'),
          'T3/R5': ('hexagon, $R_5$', 'finite element, two mesh levels'),
-         'T4/R5': ('$\\mathcal{O}_3$, $R_5$', 'harmonic, $N = 24$ and 32')}
+         'T4/R5': ('$\\mathcal{O}_3$, $R_5$', 'Galerkin, $N = 24$ and 32')}
 W, LO, HI = 13.0, 0.21, 175.0
 TICKS = [0.25, 0.5, 1, 2, 4, 8, 16, 32, 72, 132]
 X = lambda e: W * (math.log(e) - math.log(LO)) / (math.log(HI) - math.log(LO))
@@ -189,8 +189,8 @@ for t in TICKS:
     txt = f'{t:g}'
     s.append(f'\\draw[black!70] ({X(t):.3f},{ybot:.3f}) -- ++(0,-0.08) node[below, font=\\footnotesize] {{{txt}}};')
 s.append(f'\\node[font=\\small] at ({W / 2:.3f},{ybot - 0.78:.3f}) {{$\\varepsilon$, in units of $1/R^2$, on a log scale}};')
-LEG = [('E', 'classified Elliptic'), ('H', 'classified Hyperbolic'), ('O', 'not classified: instrument-limited'),
-       ('U', 'undecided, inside a located interval'), ('V', 'a located change, enlarged in (b)')]
+LEG = [('E', 'classified Elliptic'), ('H', 'classified Hyperbolic'), ('O', 'not classified: discretization-limited'),
+       ('U', 'unclassified, inside a bracketing interval'), ('V', 'a bracketed change, enlarged in (b)')]
 LPOS = [(0.2, 0), (4.1, 0), (8.0, 0), (0.2, 1), (6.35, 1)]
 for (k, txt), (lx, row) in zip(LEG, LPOS):
     ly = ytop + 0.95 - 0.42 * row
