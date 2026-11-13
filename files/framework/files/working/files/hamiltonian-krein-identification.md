@@ -5,6 +5,8 @@
 
 # 🧮 The Hamiltonian–Krein Identification
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Hamiltonian-Krein.png?raw=true" width="100%">
+
 **Type:** Result
 **State:** Closed
 **Status (2026-10-15):** Derived. On a branch of standing waves of the slot action with its symmetry exact, the number of unstable and Krein-negative eigenvalues, k_r + 2k_c + 2k_i⁻, equals n(L) − n(D): the stationary operator's negative index less the energy's negative index on the generalized kernel (Theorem K). M8.15's instrument reads that number as its genuine index h wherever its structural cluster spans the generalized kernel, and the number changes only where eigenvalues of the linearization pass through zero. At a transversal genuine crossing of the stationary operator, where the family's own Jordan structure stays regular, the symplectic form on the whole kernel sorts the crossing directions three ways (Theorem C): an Ω-nondegenerate pair passes through zero imaginary and reverses its Krein sign; a radical direction reaching into the crossing moves a pair between real and imaginary there; a direction paired with the family's own radical moves no eigenvalue, while n(L) and n(D) change together. So the census's step 2 holds in its first sentence, on that reading of h, and its second needs a qualifier: such a crossing moves a pair between real and imaginary only through the second case. Checked on two-dimensional models and on a perturbed model at R2's degenerate point, where the three cases occur at different members of its family. The pitchfork at a crossing, and the identification of T3/R5's located change, stay open.
