@@ -15,6 +15,10 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 **The Standing Waves:** Under that action, every slot has an orbitally stable set of ground states at each nonzero charge, and in five of the slots the set is an exact family whose every member is spectrally stable. In the three soft slots each nondegenerate critical orbit of a reduced quartic carries a branch of standing waves at small amplitude, whose type there the quartic decides. In two of those slots the quartic is the Surviving Ray's top multipole, and its two ends part: the minimum, the coherent orbit, carries the orbitally stable ground states at small charge, and the maximum, the hexagon, a branch spectrally stable at small amplitude, its orbital stability open. Past small amplitude, on OpenWave's adjudicated numerics, two branches born elliptic are classified elliptic at every registered point up to their slots' spectral gaps, three change type at located amplitudes, and four end at the instruments' limits. The action is motivated, not derived, and every result is conditional on it.
 
+>[![Standing-Wave Branches](https://img.youtube.com/vi/EkHsHrlqi-U/mqdefault.jpg)](https://youtu.be/EkHsHrlqi-U)
+>
+>*Video: [Standing-Wave Branches](https://youtu.be/EkHsHrlqi-U)*
+
 ---
 
 ### [Slot Action](../working/files/slot-action.md)
