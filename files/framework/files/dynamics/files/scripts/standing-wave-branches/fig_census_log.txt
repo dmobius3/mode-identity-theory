@@ -8,4 +8,4 @@ T3/R4: 18 points, 18 Elliptic, 0 Hyperbolic, open none, undecided none; elliptic
 T3/R5: 15 points, 12 Elliptic, 2 Hyperbolic, open none, undecided ['16']; change of type located
 T5/R2: 20 points, 17 Elliptic, 0 Hyperbolic, open ['45.25', '128', '132'], undecided none; instrument-limited
 wrote census.json
-wrote figures/figure1-census.pdf and .png
+wrote figures/figure1-census.tex, .pdf and .png

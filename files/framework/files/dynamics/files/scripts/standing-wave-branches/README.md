@@ -24,10 +24,10 @@ Before it draws, it checks that the graph is the McKay graph of 2I with Table 1'
 
 Before it draws, it checks each row against the census's close as the draft's Table 6 states it (window, counts, open
 points, endings), and it stops on any difference. `census.json` holds what it read, with each value's record.
-`figures/figure1-census.pdf` and `.png` are the figure, which the page links by absolute URL; its file name is from when it was the page's only figure. `fig_census_log.txt` is the run's log.
+`figures/figure1-census.tex`, `.pdf` and `.png` are the figure, drawn in TikZ in the style of the repository's other figures, its PDF without dates, so a rerun gives the same bytes; the page links the PNG by absolute URL, and its file name is from when it was the page's only figure. `fig_census_log.txt` is the run's log.
 
-Rerun from this folder, in a clone of MIT that has `c7e3f46e` in its history; the script reads the records
-from that commit, whatever is checked out:
+Rerun from this folder, in a clone of MIT that has `c7e3f46e` in its history, with pdflatex and pdftocairo
+installed; the script reads the records from that commit, whatever is checked out:
 
     python3 fig_census.py
 

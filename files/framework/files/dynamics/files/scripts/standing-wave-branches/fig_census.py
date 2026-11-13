@@ -3,7 +3,8 @@
 Reads, at MIT commit c7e3f46e: M8.17's record (§ 3, every registered point of the nine branches with its classification
 and instrument; § 4, the prism's located interval in R4 and its guards), M8.18's record (O3's located interval in R5 and
 its guards) and M8.15.2's record (the hexagon's two mesh-level n(L) steps in R5 and its guards). Writes census.json, what
-it read with the record each value came from; figure1-census.pdf and .png; and fig_census_log.txt. Before drawing, it
+it read with the record each value came from; figure1-census.tex, .pdf and .png, the figure in TikZ in the style of
+the repository's other figures, its PDF without dates; and fig_census_log.txt. Before drawing, it
 checks each row against the census's close as Table 6 states it: the window, the classified and open points, the types.
 Usage: fig_census.py [MIT_CLONE [OUT_DIR]]; by default the repository this script is in, and this folder, with
 the images in its figures/ folder."""
@@ -13,10 +14,6 @@ import re
 import subprocess
 import sys
 
-import matplotlib
-matplotlib.use('Agg')
-import matplotlib.pyplot as plt  # noqa: E402
-from matplotlib.lines import Line2D  # noqa: E402
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 MIT = sys.argv[1] if len(sys.argv) > 1 else subprocess.run(['git', '-C', HERE, 'rev-parse', '--show-toplevel'],
@@ -133,99 +130,117 @@ with open(os.path.join(OUT, 'census.json'), 'w') as f:
                'rows': ROWS, 'brackets': BRACKETS}, f, indent=1, ensure_ascii=False)
 note('wrote census.json')
 
-# --- the figure ---------------------------------------------------------------------------------------------------------------
-INK, INK2, GRIDC, SURFACE, SHADE = '#0b0b0b', '#52514e', '#e3e2dd', '#ffffff', '#f1f0ec'
-ELL, HYP = '#2a78d6', '#eb6834'
-plt.rcParams.update({'font.size': 8.5, 'axes.labelsize': 8.5, 'axes.edgecolor': INK2, 'axes.labelcolor': INK,
-                     'xtick.color': INK2, 'ytick.color': INK2, 'axes.linewidth': 0.6, 'grid.color': GRIDC,
-                     'grid.linewidth': 0.6, 'grid.linestyle': '-', 'axes.axisbelow': True, 'legend.frameon': False,
-                     'legend.fontsize': 7.5, 'figure.facecolor': SURFACE, 'axes.facecolor': SURFACE,
-                     'savefig.facecolor': SURFACE, 'lines.solid_capstyle': 'round', 'mathtext.fontset': 'dejavusans'})
-MK = {'E': dict(marker='o', ms=5.4, color=ELL, mec=SURFACE, mew=0.8, ls='none', zorder=3),
-      'H': dict(marker='s', ms=4.9, color=HYP, mec=SURFACE, mew=0.8, ls='none', zorder=3),
-      'O': dict(marker='o', ms=5.4, mfc=SURFACE, mec=INK2, mew=1.0, ls='none', zorder=3),
-      'U': dict(marker='|', ms=7.0, color=INK2, mew=1.2, ls='none', zorder=3)}
+# --- the figure, in TikZ, in the style of the repository's other figures ---------------------------------------------------
+import math  # noqa: E402
 
 ORDER = [('R4', ['T1/R4', 'T2/R4', 'T3/R4', 'T4/R4']), ('R5', ['T1/R5', 'T2/R5', 'T3/R5', 'T4/R5']), ('R2', ['T5/R2'])]
-HEAD = {'R4': '$R_4$, to its gap at 72', 'R5': '$R_5$, to its gap at 32', 'R2': r'$R_2$, the line {7/2, $-$3/2}, to its gap at 132'}
-LABEL = {'T1': '$v_2$', 'T2': 'prism', 'T3': 'hexagon', 'T4': r'$\mathcal{O}_3$', 'T5': 'member $i$'}
+HEAD = {'R4': '$R_4$, to its gap at 72', 'R5': '$R_5$, to its gap at 32',
+        'R2': '$R_2$, the line $\\{7/2, -3/2\\}$, to its gap at 132'}
+LABEL = {'T1': '$v_2$', 'T2': 'prism', 'T3': 'hexagon', 'T4': '$\\mathcal{O}_3$', 'T5': 'member $i$'}
 ROMAN = {'T2/R4': 'i', 'T3/R5': 'ii', 'T4/R5': 'iii'}
-fig = plt.figure(figsize=(7.2, 6.0))
-gs = fig.add_gridspec(2, 3, height_ratios=[3.6, 1.0], left=0.11, right=0.985, top=0.885, bottom=0.075, hspace=0.42,
-                      wspace=0.3)
-ax = fig.add_subplot(gs[0, :])
-y, ys, yt = 0.0, {}, []
+TITLE = {'T2/R4': ('prism, $R_4$', 'harmonic, $N = 24$ and 32'),
+         'T3/R5': ('hexagon, $R_5$', 'finite element, two mesh levels'),
+         'T4/R5': ('$\\mathcal{O}_3$, $R_5$', 'harmonic, $N = 24$ and 32')}
+W, LO, HI = 13.0, 0.21, 175.0
+TICKS = [0.25, 0.5, 1, 2, 4, 8, 16, 32, 72, 132]
+X = lambda e: W * (math.log(e) - math.log(LO)) / (math.log(HI) - math.log(LO))
+
+
+def mark(kind, x, y):
+    if kind == 'E':
+        return f'\\fill ({x:.3f},{y:.3f}) circle (1.7pt);'
+    if kind == 'H':
+        return f'\\fill ([shift={{(-1.55pt,-1.55pt)}}]{x:.3f},{y:.3f}) rectangle ++(3.1pt,3.1pt);'
+    if kind == 'O':
+        return f'\\draw[black!75, fill=white, line width=0.6pt] ({x:.3f},{y:.3f}) circle (1.7pt);'
+    if kind == 'U':
+        return f'\\draw[black!75, line width=0.9pt] ([yshift=-3.2pt]{x:.3f},{y:.3f}) -- ([yshift=3.2pt]{x:.3f},{y:.3f});'
+    if kind == 'V':
+        return f'\\fill ({x:.3f},{y:.3f}) -- ++(-2.6pt,4pt) -- ++(5.2pt,0) -- cycle;'
+    raise SystemExit(f'STOP: no mark for {kind}')
+
+
+s = ['\\begin{tikzpicture}[line cap=round, line join=round]']
+y, ys = 0.0, {}
 for slot, keys in ORDER:
-    ax.text(0.226, y + 0.62, HEAD[slot], fontsize=7.6, color=INK, ha='left', va='center')
+    s.append(f'\\node[font=\\footnotesize, anchor=west, fill=white, inner sep=1pt] at ({X(0.25) - 0.13:.3f},{y + 0.40:.3f}) '
+             f'{{{HEAD[slot]}}};')
     for key in keys:
         ys[key] = y
-        yt.append((y, LABEL[key.split('/')[0]]))
-        y -= 1.0
-    y -= 0.75
+        s.append(f'\\node[font=\\small, anchor=east] at (-0.15,{y:.3f}) {{{LABEL[key.split("/")[0]]}}};')
+        y -= 0.52
+    y -= 0.40
+ybot, ytop = y + 0.20, 0.62
+s[1:1] = [f'\\draw[black!10] ({X(t):.3f},{ybot:.3f}) -- ({X(t):.3f},{ytop:.3f});' for t in TICKS]  # the grid, underneath
 for key, pts in ROWS.items():
     slot = key.split('/')[1]
-    yy = ys[key]
-    ax.plot([0.25, GAP[slot]], [yy, yy], color=GRIDC, lw=1.0, zorder=1)
-    for kind in 'EHOU':
-        xs = [p['eps'] for p in pts if p['kind'] == kind]
-        if xs:
-            ax.plot(xs, [yy] * len(xs), **MK[kind])
+    s.append(f'\\draw[black!25, line width=0.8pt] ({X(0.25):.3f},{ys[key]:.3f}) -- ({X(GAP[slot]):.3f},{ys[key]:.3f});')
+for key, pts in ROWS.items():
+    for p in pts:
+        s.append(mark(p['kind'], X(p['eps']), ys[key]))
     if key in BRACKETS:
         lo, hi = (float(v) for v in BRACKETS[key]['nL'][0])
-        xc = (lo * hi) ** 0.5
-        ax.plot([xc], [yy + 0.36], marker='v', ms=4.6, color=INK, ls='none', zorder=4)
-        ax.text(xc * 1.07, yy + 0.36, f'({ROMAN[key]})', fontsize=6.8, color=INK, va='center', ha='left')
-ax.set_xscale('log')
-ax.set_xlim(0.21, 175)
-ax.set_xticks([0.25, 0.5, 1, 2, 4, 8, 16, 32, 72, 132], ['0.25', '0.5', '1', '2', '4', '8', '16', '32', '72', '132'])
-ax.minorticks_off()
-ax.set_xlabel(r'$\varepsilon$, in units of $1/R^2$, on a log scale')
-ax.set_yticks([v for v, _ in yt], [t for _, t in yt])
-ax.tick_params(axis='y', length=0, labelsize=8)
-ax.set_ylim(y + 1.35, 1.0)
-ax.grid(axis='x')
-for side in ('top', 'right', 'left'):
-    ax.spines[side].set_visible(False)
-handles = [Line2D([], [], **{**MK['E'], 'label': 'classified Elliptic'}),
-           Line2D([], [], **{**MK['H'], 'label': 'classified Hyperbolic'}),
-           Line2D([], [], **{**MK['O'], 'label': 'not classified: instrument-limited'}),
-           Line2D([], [], **{**MK['U'], 'label': 'undecided, inside a located interval'}),
-           Line2D([], [], marker='v', ms=4.6, color=INK, ls='none', label='a located change, enlarged below')]
-fig.legend(handles=handles, loc='upper center', bbox_to_anchor=(0.55, 0.995), ncol=3, columnspacing=1.4,
-           handletextpad=0.4)
-fig.text(0.012, 0.885, '(a)', fontsize=9, fontweight='bold', color=INK, va='top')
-fig.text(0.012, 0.215, '(b)', fontsize=9, fontweight='bold', color=INK, va='top')
+        xc = X((lo * hi) ** 0.5)
+        s.append(mark('V', xc, ys[key] + 0.13))
+        s.append(f'\\node[font=\\scriptsize, anchor=west, fill=white, inner sep=1pt] at ({xc + 0.07:.3f},{ys[key] + 0.24:.3f}) '
+                 f'{{({ROMAN[key]})}};')
+s.append(f'\\draw[black!70] ({X(LO):.3f},{ybot:.3f}) -- ({X(HI):.3f},{ybot:.3f});')
+for t in TICKS:
+    txt = f'{t:g}'
+    s.append(f'\\draw[black!70] ({X(t):.3f},{ybot:.3f}) -- ++(0,-0.08) node[below, font=\\footnotesize] {{{txt}}};')
+s.append(f'\\node[font=\\small] at ({W / 2:.3f},{ybot - 0.78:.3f}) {{$\\varepsilon$, in units of $1/R^2$, on a log scale}};')
+LEG = [('E', 'classified Elliptic'), ('H', 'classified Hyperbolic'), ('O', 'not classified: instrument-limited'),
+       ('U', 'undecided, inside a located interval'), ('V', 'a located change, enlarged in (b)')]
+LPOS = [(0.2, 0), (4.1, 0), (8.0, 0), (0.2, 1), (6.35, 1)]
+for (k, txt), (lx, row) in zip(LEG, LPOS):
+    ly = ytop + 0.95 - 0.42 * row
+    s.append(mark(k, lx, ly - (0.07 if k == 'V' else 0)))
+    s.append(f'\\node[font=\\footnotesize, anchor=west] at ({lx + 0.14:.3f},{ly:.3f}) {{{txt}}};')
+s.append(f'\\node[font=\\small\\bfseries, anchor=west] at (-1.75,{ytop + 0.25:.3f}) {{(a)}};')
 
 # (b): the three located intervals at scale, each between its guards
-TITLE = {'T2/R4': ('prism, $R_4$', 'harmonic, N = 24 and 32'), 'T3/R5': ('hexagon, $R_5$', 'finite element, two mesh levels'),
-         'T4/R5': (r'$\mathcal{O}_3$, $R_5$', 'harmonic, N = 24 and 32')}
+yb = ybot - 2.05
+s.append(f'\\node[font=\\small\\bfseries, anchor=west] at (-1.75,{yb + 0.75:.3f}) {{(b)}};')
 for j, key in enumerate(['T2/R4', 'T3/R5', 'T4/R5']):
     b = BRACKETS[key]
-    a = fig.add_subplot(gs[1, j])
+    x0, w = 0.0 + 4.6 * j, 3.7
     g_e, g_h = float(b['guards'][0]), float(b['guards'][1])
     span = g_h - g_e
-    a.set_xlim(g_e - 0.1 * span, g_h + 0.1 * span)
-    a.plot([g_e, g_h], [1, 1], color=GRIDC, lw=1.0, zorder=1)
-    a.plot([g_e], [1], **MK['E'])
-    a.plot([g_h], [1], **MK['H'])
-    if key == 'T3/R5':
-        a.plot([16.0], [1], **MK['U'])
-        a.text(16.0, 1.32, '16', fontsize=6.3, color=INK2, ha='center', va='bottom')
-    for i, ((lo, hi), lab) in enumerate(zip(b['nL'], b['labels'])):
-        yy = 0.25 - 0.55 * i
-        a.plot([float(lo), float(hi)], [yy, yy], color=INK, lw=3.0, solid_capstyle='butt', zorder=2)
-        a.text(float(hi) + 0.03 * span, yy, 'n(L) changes' + ('' if len(b['nL']) == 1 else f', {lab}'), fontsize=6.0,
-               color=INK2, ha='left', va='center')
-    a.set_ylim(-1.0 if len(b['nL']) > 1 else -0.45, 1.75)
-    a.set_xticks([g_e, g_h], [b['guards'][0], b['guards'][1]], fontsize=6.3)
-    a.set_yticks([])
-    for side in ('top', 'right', 'left'):
-        a.spines[side].set_visible(False)
+    a0, a1 = g_e - 0.1 * span, g_h + 0.1 * span
+    xb = lambda v: x0 + w * (v - a0) / (a1 - a0)
     t1, t2 = TITLE[key]
-    a.set_title(f'({ROMAN[key]}) {t1}\n{t2}', fontsize=7.0, color=INK, loc='left', linespacing=1.25)
-for ext in ('pdf', 'png'):
-    fig.savefig(os.path.join(FIGS, f'figure1-census.{ext}'), dpi=300 if ext == 'png' else None, bbox_inches='tight')
-plt.close(fig)
-note('wrote figures/figure1-census.pdf and .png')
+    s.append(f'\\node[font=\\footnotesize, anchor=south west, align=left, inner sep=0pt] at ({x0:.3f},{yb + 0.38:.3f}) '
+             f'{{({ROMAN[key]}) {t1}\\\\ {t2}}};')
+    s.append(f'\\draw[black!25, line width=0.8pt] ({xb(g_e):.3f},{yb:.3f}) -- ({xb(g_h):.3f},{yb:.3f});')
+    s.append(mark('E', xb(g_e), yb))
+    s.append(mark('H', xb(g_h), yb))
+    if key == 'T3/R5':
+        s.append(mark('U', xb(16.0), yb))
+        s.append(f'\\node[font=\\scriptsize, above, inner sep=2pt] at ({xb(16.0):.3f},{yb + 0.08:.3f}) {{16}};')
+    for i, ((lo, hi), lab) in enumerate(zip(b['nL'], b['labels'])):
+        yy = yb - 0.36 - 0.30 * i
+        s.append(f'\\draw[line width=2.4pt, line cap=butt] ({xb(float(lo)):.4f},{yy:.3f}) -- ({xb(float(hi)):.4f},{yy:.3f});')
+        txt = '$n(L)$ changes' + ('' if len(b['nL']) == 1 else f', {lab}')
+        s.append(f'\\node[font=\\scriptsize, anchor=west, inner sep=1pt] at ({xb(float(hi)) + 0.08:.3f},{yy:.3f}) {{{txt}}};')
+    ya = yb - 0.36 - 0.30 * max(len(c['nL']) for c in BRACKETS.values()) - 0.05
+    s.append(f'\\draw[black!70] ({x0:.3f},{ya:.3f}) -- ({x0 + w:.3f},{ya:.3f});')
+    for g in b['guards']:
+        s.append(f'\\draw[black!70] ({xb(float(g)):.3f},{ya:.3f}) -- ++(0,-0.08) node[below, font=\\scriptsize] {{{g}}};')
+s.append('\\end{tikzpicture}')
+
+PREAMBLE = ('\\pdfinfoomitdate=1\n\\pdftrailerid{}\n\\pdfsuppressptexinfo=-1\n'
+            '\\documentclass[border=6pt]{standalone}\n\\usepackage{amsmath,amssymb}\n\\usepackage{tikz}\n'
+            '\\begin{document}\n')
+NAME = 'figure1-census'
+with open(os.path.join(FIGS, NAME + '.tex'), 'w') as f:
+    f.write(PREAMBLE + '\n'.join(s) + '\n\\end{document}\n')
+r = subprocess.run(['pdflatex', '-interaction=nonstopmode', '-halt-on-error', NAME + '.tex'], cwd=FIGS,
+                   capture_output=True, text=True)
+if r.returncode:
+    raise SystemExit('pdflatex failed:\n' + r.stdout[-1500:])
+subprocess.run(['pdftocairo', '-png', '-r', '300', '-singlefile', NAME + '.pdf', NAME], cwd=FIGS, check=True)
+for ext in ('aux', 'log'):
+    os.remove(os.path.join(FIGS, f'{NAME}.{ext}'))
+note(f'wrote figures/{NAME}.tex, .pdf and .png')
 with open(os.path.join(OUT, 'fig_census_log.txt'), 'w') as f:
     f.write('\n'.join(LOG) + '\n')
