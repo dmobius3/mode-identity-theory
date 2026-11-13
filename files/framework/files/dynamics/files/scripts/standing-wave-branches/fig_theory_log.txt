@@ -1,0 +1,59 @@
+read files/framework/files/dynamics/files/standing-wave-branches.md at b0e50ae3 and files/framework/files/bedrock/files/scripts/surviving-ray-v2/sr_v2_certificates.json at 1d11a877
+
+the slots
+  ok: Table 1 has the eight slots R1 to R8
+  ok: section 2.1: R1, R3, R6, R7, R8 and the control rigid; R2 at level 7, R4 and R5 at level 6 soft
+  ok: Table 1's lowest levels agree with section 2.1's soft slots
+  ok: the graph is the McKay graph of 2I: twice each node's dimension is its neighbours' sum, with Table 1's dimensions
+  ok: each slot's distance from R0 on the graph is Table 1's lowest level
+
+Theorem R(a) and Table 4
+  ok: Theorem R(a)'s slow and fast parts
+  ok: Table 4 has thirteen rows
+  ok: Table 4's slow flows include the schematic's three kinds
+
+the orbits
+  ok: Table 2 has thirteen rows
+  ok: coherent $`v_3`$: Table 4 signature (0, 0, 10) equals Table 2's (0, 0, 10)
+  ok: coherent $`v_3`$: 924 r6 of v_3 is 1, Table 2 gives 1
+  ok: $`v_2`$: Table 4 signature (2, 0, 8) equals Table 2's (2, 0, 8)
+  ok: $`v_2`$: 924 r6 of v_2 is 36, Table 2 gives 36
+  ok: trigonal prism: Table 4 signature (3, 0, 6) equals Table 2's (3, 0, 6)
+  ok: trigonal prism: 924 r6 of v_3 + \sqrt{23/10}\,v_0 + v_{-3} is 8800/43, Table 2 gives 8800/43
+  ok: $`v_1`$: Table 4 signature (4, 2, 4) equals Table 2's (4, 2, 4)
+  ok: $`v_1`$: 924 r6 of v_1 is 225, Table 2 gives 225
+  ok: D2 ray: Table 4 signature (5, 0, 4) equals Table 2's (5, 0, 4)
+  ok: D2 ray: 924 r6 of v_2 + i\sqrt{6/5}\,v_0 + v_{-2} is 225, Table 2 gives 225
+  ok: C3 ray: Table 4 signature (5, 0, 4) equals Table 2's (5, 0, 4)
+  ok: C3 ray: 924 r6 of v_2 + 2v_{-1} is 1188/5, Table 2 gives 1188/5
+  ok: pentagonal pyramid: Table 4 signature (5, 0, 4) equals Table 2's (5, 0, 4)
+  ok: pentagonal pyramid: 924 r6 of \sqrt{12}\,v_3 + \sqrt{13}\,v_{-2} is 1188/5, Table 2 gives 1188/5
+  ok: octahedron: Table 4 signature (6, 0, 3) equals Table 2's (6, 0, 3)
+  ok: octahedron: 924 r6 of v_2 + v_{-2} is 288, Table 2 gives 288
+  ok: zonal $`v_0`$: Table 4 signature (8, 0, 2) equals Table 2's (8, 0, 2)
+  ok: zonal $`v_0`$: 924 r6 of v_0 is 400, Table 2 gives 400
+  ok: hexagon: Table 4 signature (9, 0, 0) equals Table 2's (9, 0, 0)
+  ok: hexagon: 924 r6 of v_3 + v_{-3} is 463, Table 2 gives 463
+  ok: $`\mathcal{O}_1`$: Table 4 signature (4, 0, 5) equals Table 2's (4, 0, 5)
+  ok: $`\mathcal{O}_1`$ (T1): 924 r6 at the certified centre is 215.775792502…, Table 2 prints 215.7757925…
+  ok: $`\mathcal{O}_2`$: Table 4 signature (6, 0, 3) equals Table 2's (6, 0, 3)
+  ok: $`\mathcal{O}_2`$ (T2): 924 r6 at the certified centre is 238.016528926…, Table 2 prints 238.0165289…
+  ok: $`\mathcal{O}_3`$: Table 4 signature (7, 0, 2) equals Table 2's (7, 0, 2)
+  ok: $`\mathcal{O}_3`$ (T3): 924 r6 at the certified centre is 238.356854743…, Table 2 prints 238.3568547…
+  ok: six orbits spectrally stable, seven spectrally unstable, as Table 4 types them
+wrote figures/figure-slots.tex, .pdf and .png
+wrote figures/figure-spectrum.tex, .pdf and .png
+wrote figures/figure-orbits.tex, .pdf and .png
+  coherent $`v_3`$: (c): spectrally and orbitally stable; 1 distinct stars, multiplicities [6], 0 edges
+  $`v_2`$: (e): spectrally stable; 2 distinct stars, multiplicities [1, 5], 0 edges
+  trigonal prism: (e): spectrally stable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 9 edges
+  $`v_1`$: Theorem R′(c): spectrally stable; 2 distinct stars, multiplicities [2, 4], 0 edges
+  D2 ray: (b): unstable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 12 edges
+  C3 ray: (b): unstable; 5 distinct stars, multiplicities [1, 1, 1, 1, 2], 9 edges
+  pentagonal pyramid: (b): unstable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 10 edges
+  octahedron: (b): unstable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 12 edges
+  zonal $`v_0`$: (b): unstable; 2 distinct stars, multiplicities [3, 3], 0 edges
+  hexagon: (d): spectrally stable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 6 edges
+  $`\mathcal{O}_1`$: (b): spectrally unstable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 12 edges
+  $`\mathcal{O}_2`$: (b): spectrally unstable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 11 edges
+  $`\mathcal{O}_3`$: (e): spectrally stable; 6 distinct stars, multiplicities [1, 1, 1, 1, 1, 1], 12 edges
