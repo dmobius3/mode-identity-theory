@@ -5,6 +5,8 @@
 
 # The Slot Relation: Registration
 
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/Slot_Relation.png?raw=true" width="100%">
+
 **Type:** Program
 **State:** Open
 **Status (2026-10-04):** Reported OPEN: no declared route yields a relation, so none is filed for M8.2's last row. R1 closes at its question: the allowed inputs do not establish that a nonlinear slot energy lies in the scaling law's class, and, granting it, the law's two rules for the weight, n = 1 by length-dimension and n = 3 by manifold index, conflict but are each blind to the representation. R2 falls short at each step: S³ ⊂ ℂ² supplies a common homothety geometrically, at the radius, but not the dynamically selected branch the route registers; that homothety gives one power of √Ω per McKay step rather than the elevator's 1/30; neither the degree-30 generator's role nor its normalization is derived; and an energy needs an action. R3 is DROPPED: no energy dictionary follows from the allowed inputs without an action. §§ I to VII stand as frozen.
