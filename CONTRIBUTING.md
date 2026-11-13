@@ -85,7 +85,7 @@ A yes would give an alternative the framework set aside a smooth realization, on
 
 >### Score the Euclid predictions when the data arrive
 
-Five predictions were deposited on Zenodo before Euclid's first data release, each with its scoring rule. Row IV, a ceiling on the stellar mass function at $`z \gtrsim 10`$, is the one row expected at DR1-Foundation, in November 2026; the other four read cosmology-derived products in the full DR1, in mid 2027. Both dates are tentative. DR1 can falsify the $`a_0(z)`$ evolution row and score Row IV's ceiling; Row IV's translation to galaxies runs through the standard deep-MOND relation, conditionally. Each row is scored against the latest version of the card deposited on Zenodo before the first data capable of scoring it appear. An independent scoring, including a null or a falsification, counts.
+Five predictions were deposited on Zenodo before Euclid's first data release, each with its scoring rule. Row IV, a ceiling on the stellar mass function at $`z \gtrsim 10`$, was the one row expected at DR1-Foundation, released 12 November 2026; the other four read cosmology-derived products in the full DR1, expected 16 June 2027, a date ESA calls tentative. DR1 can falsify the $`a_0(z)`$ evolution row and score Row IV's ceiling; Row IV's translation to galaxies runs through the standard deep-MOND relation, conditionally. Each row is scored against the latest version of the card deposited on Zenodo before the first data capable of scoring it appear. An independent scoring, including a null or a falsification, counts.
 
 **Skills:** galaxy surveys, cosmological data analysis. **Opens:** when qualifying data are released. **Source:** [the Euclid DR1 card](/files/cosmos/files/euclid-dr1.md).
 

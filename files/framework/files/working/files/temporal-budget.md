@@ -275,7 +275,7 @@ This carries a specific quantified discrepancy, and $`\Phi_\text{now} = 5.22`$ i
 
 Model D+Λ predictions depend on $`s_0`$, which is now constrained differently by Pantheon+-only ($`s_0 = 0.389`$) and joint SN+BAO ($`s_0 < 0.19`$ at 95% CL). The ledger carries both values.
 
-ESA now releases DR1 in two stages. DR1-Foundation, November 2026, carries the raw data and calibrated images, catalogues and spectra over about 1900 square degrees, and no cosmology-derived products. The full DR1, mid 2027, adds the higher-level science products for galaxy clustering and weak lensing. Every channel in this ledger reads one of those higher-level products, so the ledger is gated on the full DR1: nothing in the November 2026 release moves $`s_0`$. ESA states the release dates are tentative and will have to be confirmed.
+ESA now releases DR1 in two stages. DR1-Foundation, November 2026, carries the raw data and calibrated images, catalogues and spectra over about 1900 square degrees, and no cosmology-derived products. The full DR1, mid 2027, adds the higher-level science products for galaxy clustering and weak lensing. Every channel in this ledger reads one of those higher-level products, so the ledger is gated on the full DR1: nothing in the November 2026 release moves $`s_0`$. DR1-Foundation was released on 12 November 2026; ESA calls the full DR1's date tentative.
 
 If the full DR1 BAO confirms the tighter constraint, the model's observable departures from ΛCDM shrink to marginal levels at that precision, and the discriminating test moves to DR2 and next-generation surveys. If Euclid opens room for larger $`s_0`$, the Pantheon+-only predictions remain live.
 
