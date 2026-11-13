@@ -3,7 +3,7 @@
 
 ---
 
-# 🔮 Euclid DR1 Showdown
+# 🔭 Euclid DR1 Showdown
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/dr1%20banner.png?raw=true" width="100%" alt="Euclid DR1">
 
