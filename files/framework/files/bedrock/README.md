@@ -51,7 +51,7 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ---
 
-### 🌁 [Postulate Bridge](../working/files/postulate-bridge.md)
+### [Postulate Bridge](../working/files/postulate-bridge.md)
 
 **The Embedding:** $`\text{Möbius} \hookrightarrow \mathbb{RP}^3 = S^3/\{\pm I\}`$. The carrier embeds unbent in the projective layer, its underlying spherical band lies in a great $`S^2`$ of $`S^3`$, and for the conic band the temporal edge $`S^1 = \partial(\text{Möbius})`$ lifts to a circle embedded in $`S^3`$. The cone-bearing Möbius quotient is a singular surface model, not a smooth totally geodesic submanifold of $`S^3/2I`$.
 
