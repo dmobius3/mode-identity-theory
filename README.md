@@ -27,8 +27,6 @@ Around 300 BC, Euclid proved that only five regular solids close perfectly in or
 
 ***How did it begin?*** In this framework, the Big Bang was not the creation of space. Our closed spatial domain was already here. What began was the measurable history of the wave: a standing wave at maximum amplitude that evolves toward greater realization. The early universe was therefore not a smaller version of today's space, but the same underlying domain viewed at an earlier phase of the cycle. A useful analogy is a three-dimensional cymatic pattern gradually coming into definition as energy moves through it.
 
-***What is this theory's lineage?*** The search for geometric harmony beneath nature runs from Plato and Kepler to modern mathematics and physics. Klein developed icosahedral symmetry, Poincaré introduced the space $S^3/2I$, Einstein's first cosmology used a finite three-sphere, and de Broglie and Schrödinger described matter as waves. MIT follows that lineage while taking a distinct path: it keeps only the wave and treats particles as its realized samples. By 2003, Luminet and collaborators proposed the same dodecahedral space as a candidate shape for the universe; MIT simply gives that space a surface to twist.
-
 ---
 
 >[![Topology before Matter](https://img.youtube.com/vi/ANzQhGGzoAk/mqdefault.jpg)](https://www.youtube.com/watch?v=ANzQhGGzoAk)
