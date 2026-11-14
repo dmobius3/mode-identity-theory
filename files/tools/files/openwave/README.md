@@ -7,9 +7,7 @@
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)
 
-[OpenWave](https://github.com/openwave-labs/openwave) is an open-source physics simulator that holds candidate field theories to the same public pass/fail criteria, one column per model, and M8 is MIT's. Each run there is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review. The verdicts are OpenWave's, and so are the blind runs before M8.15; from M8.15 on, the author runs each task, and its run record is MIT's. This page maps every M8 task to its record on OpenWave, its outcome, and what MIT holds for it.
-
-The tasks verify the mathematics and run effective models, and none of them settles a physics criterion: in OpenWave's [comparison table](https://github.com/openwave-labs/openwave/blob/main/MODELS.md#mit-m8), M8 has one cell partially validated, Λ / cosmic acceleration, on the spectral seed M8.1 confirmed, and its other 30 criteria are not yet tested.
+Every task in M8, MIT's column on [OpenWave](https://github.com/openwave-labs/openwave): its record there, its outcome, and what MIT holds for it. The verdicts are OpenWave's, and none of the tasks settles a physics criterion; the [tools page](/files/tools/README.md#mit-on-openwave) says how the column works and where M8 stands in OpenWave's comparison table.
 
 ## The Tasks
 
