@@ -92,9 +92,7 @@ purposes, but not by that theorem.
 The four-dimensional family is the four-channel spin-3 interaction of the condensate literature [DH],
 [KU], and the surviving ray is one coupling point of it: there the governing quartic is an affine image
 of the spin-3 mean-field energy, by a polynomial identity (Proposition 6.1). The condensate literature
-has the stationary states at that point and, from numerical minimisation, the ground states. The point
-is where this interaction lands, and not the coupling of a physical condensate (Section 6.3), and
-nothing at the point is offered as evidence for the quotient or for anything physical.
+has the stationary states at that point and, from numerical minimisation, the ground states.
 
 At that point, within the class of orbits whose fixed locus has projective dimension at most one,
 there are exactly ten critical orbits, with their values and Morse indices (Section 7); the
@@ -106,7 +104,7 @@ multipole; it completes a statement of Björk et al. [Bj], and the same argument
 exactly on the hexagon orbit (Theorem 7.5); the value and the question are Romero et al.'s [RK], and
 the argument was audited on the OpenWave M8 track [M8.13].
 
-Back on the quotient, the selected equation poses a bifurcation problem on the flat bundles over $`S^3/2I`$, with the nonlinearity kept as a hypothesis, and the critical rays of Section 7 are the critical directions of its leading reduced problem, though not by themselves solutions. Whether and where they continue to branches of standing waves is the question of a companion paper [SR2], under a stated wave equation; this one stops at the geometry and makes no statement about solutions or their stability.
+Back on the quotient, the selected equation poses a bifurcation problem on the flat bundles over $`S^3/2I`$, and the critical rays of Section 7 are the critical directions of its leading reduced problem, though not by themselves solutions. Whether and where they continue to branches of standing waves is the question of a companion paper [SR2], under a stated wave equation.
 
 One boundary should be drawn explicitly. The configurations appearing below are known: the octahedral
 constellation is the anticoherent state of order 3 in the standard classification, and critical rays
@@ -1099,7 +1097,7 @@ critical set there: the critical rays of $`\widehat r_6`$ on $`\mathbb P(V_3)`$,
 and their signatures, which by Section 6.2 give the Morse indices of the reduced energy at both
 signs. Nothing in it uses $`2I`$.
 
-The critical rays matter to the equation of Section 2.5. In its Lyapunov-Schmidt reduction at the level-6 eigenvalue, the leading cubic term is the self-interaction of Sections 4 and 5 and the quartic plays the part of the reduced energy (Section 5.5), so its critical rays are the critical directions of the leading reduced problem, though not by themselves solutions: the range equation and the existence of branches are the companion paper's [SR2], under a stated wave equation, and this paper stops at their geometry.
+The critical rays matter to the equation of Section 2.5. In its Lyapunov-Schmidt reduction at the level-6 eigenvalue, the leading cubic term is the self-interaction of Sections 4 and 5 and the quartic plays the part of the reduced energy (Section 5.5), so its critical rays are the critical directions of the leading reduced problem, though not by themselves solutions: the range equation and the existence of branches are the companion paper's [SR2], under a stated wave equation.
 
 ### 7.1 Six rays found by symmetry
 
@@ -1238,8 +1236,7 @@ each line is found by elimination, not by a numerical solver; and the union, mod
 phase, is exactly ten orbits [M8.12]. At each orbit the signature $`(n_-, n_0, n_+)`$ of the second
 variation of $`\widehat r_6`$ is computed exactly, from its characteristic polynomial, on the space
 transverse to the phase and rotation directions, of dimension 10 at the weight states and 9
-elsewhere. The census was pre-registered by the author and reproduced blind in two rooms under an adversarial
-audit, which graded its arguments sound [M8.12]; it is an audited argument. In this paper that grade is the M8 track's label: an argument "checked step by step by one AI auditor and read by the designer", each step graded established, or established with the audit's supplied part named, and "never recorded as a verified or proven theorem, since AI agents sit on both the drafting and the checking side" [M8.11]. M8.12's three rooms were AI agents [M8.12], and M8.13's auditor worked as M8.11's did [M8.13].
+elsewhere. The census was specified in advance by the author, reproduced blind by two solvers and graded sound under an adversarial audit [M8.12]. We call a result so graded, but not verified as a theorem, an audited argument. In this paper that grade is the M8 track's label: an argument "checked step by step by one AI auditor and read by the designer", each step graded established, or established with the audit's supplied part named, and "never recorded as a verified or proven theorem, since AI agents sit on both the drafting and the checking side" [M8.11]. M8.12's two solvers and its auditor were AI agents [M8.12], and M8.13's auditor worked as M8.11's did [M8.13].
 
 Both tables give two notions of symmetry. The *rotation stabiliser* is the stabiliser of the ray in
 $`\mathrm{SO}(3)`$. The *full isotropy* is the stabiliser of the vector in the group generated by
@@ -1279,9 +1276,7 @@ extrema; Section 7.3 shows that they are the global ones.
 
 **Three orbits outside the class.** The class leaves out every orbit whose rotation stabiliser is
 $`C_2`$, or $`C_3`$ acting on its three-dimensional fixed space, or trivial, since the loci of those
-groups have projective dimension two or more, and the census does not look there. Numerical
-censuses of the critical set found three critical orbits outside the class, and the census's
-pre-registration disclosed them, with their values and without indices [M8.12]. Call them
+groups have projective dimension two or more, and the census does not look there. Numerical searches of the critical set found three critical orbits outside the class, and the census's specification, fixed in advance, disclosed them, with their values and without indices [M8.12]. Call them
 $`\mathcal O_1, \mathcal O_2, \mathcal O_3`$, in increasing order of value. This paper
 certifies them using 60-digit interval arithmetic, with $`\widehat r_6`$ in the form of Lemma 7.3
 and nothing from the searches but the numerical states.
@@ -1320,7 +1315,7 @@ $`3.1 \times 10^{-52}`$ that contains $`28800/121`$; no exact point is in hand, 
 claimed to be that fraction.
 
 **The indices in order of value.** At $`g = 1`$ the census's indices, in increasing order of value,
-are 0, 2, 3, 4, 5, 5, 5, 6, 8, 9. The census's pre-registration recorded this sequence, noted that 1
+are 0, 2, 3, 4, 5, 5, 5, 6, 8, 9. The census's specification, fixed in advance, recorded this sequence, noted that 1
 and 7 were absent, and left open whether the deferred orbits would break the ordering [M8.12]. They
 do. The indices of the outside orbits are 4, 6 and 7. $`\mathcal O_3`$ lies below the octahedron in
 value, 238.36… against 288, and above it in index, 7 against 6, a certified index against an exact
@@ -1351,7 +1346,7 @@ roots of negative numbers, and J reduces to P, so none supplies a formula for on
 compares their isotropy types with [KU]'s table.
 
 **What is not claimed.** Outside the class the critical set is not classified: the three orbits
-above are the ones the numerical censuses found, and nothing here says there are no others. The
+above are the ones the numerical searches found, and nothing here says there are no others. The
 signatures are Morse data of $`\widehat r_6`$, and so of the reduced energy on the block at each
 sign; they are not stability statements about the standing waves that start at these orbits, which
 the companion paper treats [SR2].
@@ -1448,7 +1443,7 @@ give the whole statement.
 > the orbit of the hexagon $`(v_3 + v_{-3})/\sqrt 2`$ under rotations and phase.
 
 The argument is the author's. An independent audit on OpenWave's M8 track [M8.13] graded every step of it established, found no
-gap and no false statement, and supplied steps that the author's text left out. Its adjudication records the uniqueness as an audited argument, in the sense of Section 7.2. The proof below
+gap and no false statement, and supplied steps that the author's text left out. Its review records the uniqueness as an audited argument, in the sense of Section 7.2. The proof below
 follows that argument, restructured in a few places, and a dagger † marks each supplied step it
 still uses, one-line facts included; a [map](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/dagger-map.md) in the paper's scripts folder
 names the restructurings and matches each dagger to the audit's records. Work on the unit sphere of $`V_3`$, with $`f`$ and
@@ -1706,7 +1701,7 @@ https://doi.org/10.5281/zenodo.22681501
 
 [![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_1_2_method_note.md)
 
-Twenty-one claims pre-registered from the concept paper [Sh] have been reproduced on the OpenWave M8 track
+Twenty-one claims specified in advance from the concept paper [Sh] have been reproduced on the OpenWave M8 track
 by an independent, blind computation. Two agents, a solver and an auditor, built every object from its
 definition in their own code, with no access to the paper, its title or any value it claims, and the
 auditor, working on disjoint primitives, tried to refute every answer the solver gave and refuted none.
@@ -1717,17 +1712,16 @@ The [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad
 
 Two later runs on the track reproduced or audited the results of Section 7, and every link to
 its records points to its repository at one commit, `b0b07867`.
-M8.12 reproduced the census of Section 7.2 in two blind rooms under an adversarial audit; the
-adjudication records every claim reproduced and the classification's arguments sound, with one clause
+M8.12 reproduced the census of Section 7.2 by two blind solvers under an adversarial audit; the review records every claim reproduced and the classification's arguments sound, with one clause
 left open, the uniqueness of the maximum
 ([task](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_12_task_details.md), [method note](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/findings/m8_12_method_note.md)).
 M8.13 audited that uniqueness: an offline auditor reached the complete maximiser set by its own route
 before it saw the author's, with one sub-step asserted, which it reported itself and the maintainer's own check had
 already closed, then graded the author's argument part by part, ten verdicts with no gap
-and no defect. The adjudication records the uniqueness as an audited argument. It did not check the
+and no defect. The review records the uniqueness as an audited argument. It did not check the
 note's attribution of the nematic bound, which Section 8.2 takes from the sources themselves, and in its
 words, "the gate's 97 checks and the mutation suite's 66 arms remain the author's report"; the package
-has since landed, [with those instruments](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/scripts/m8_13_author/MANIFEST.md)
+has since landed, [with those checks](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/scripts/m8_13_author/MANIFEST.md)
 ([task, with the adjudication](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/tasks/m8_13_task_details.md),
 [auditor's return](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/m8_13/run/stage2b_return.md),
 [author's dated correction](https://github.com/openwave-labs/openwave/blob/b0b078678ca75ad31b8813806d6b61a0a386d1e0/openwave/xperiments/m8_mit/research/scripts/m8_12_author/S0_S3_MAXIMUM_CORRECTION.md)).
@@ -1744,7 +1738,7 @@ also uses.
 The three orbits of Section 7.2 outside the census's class are certified by this paper, in 60-digit
 interval arithmetic; the certificates are its own computation, not a reproduction. They are published
 in [one folder](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/), in two layers: the record, the certification as it ran under frozen packets,
-which starts from an exploratory census that is not distributed and so is not meant to be rerun; and
+which starts from an exploratory numerical search that is not distributed and so is not meant to be rerun; and
 the reproduction, a verifier that rebuilds each certified box from a published data file and repeats
 every test, with controls started from the census's exact representatives [M8.12]. The folder's
 [README](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/README.md) maps each statement of Section 7.2 to the log lines that give it, and its
