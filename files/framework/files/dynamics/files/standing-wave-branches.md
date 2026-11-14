@@ -556,6 +556,15 @@ The scripts behind the derived results' computations are in the folders `slot-gr
 - **[XKK]** H. Xu, P. G. Kevrekidis and T. Kapitula, Existence, stability, and dynamics of harmonically trapped one-dimensional multi-component solitary waves: the near-linear limit. *J. Math. Phys.* **58** (2017), 061901; [doi:10.1063/1.4983999](https://doi.org/10.1063/1.4983999).
 - **[YZZ]** B. Yan, X. Zhao and Z. Zhou, Orbital stability of standing waves for semilinear wave equations with indefinite energy. *J. Math. Anal. Appl.* **344** (2008), 981–998; [doi:10.1016/j.jmaa.2008.03.056](https://doi.org/10.1016/j.jmaa.2008.03.056).
 
+## Citation
+
+```
+Shatto, B. (2026).
+Nonlinear Standing-Wave Branches on the Poincaré Homology Sphere: Ground States and Small-Amplitude Spectral Stability.
+Zenodo.
+https://doi.org/10.5281/zenodo.24224843
+```
+
 ---
 
 ## Adjudicated numerical census
