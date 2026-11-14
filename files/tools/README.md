@@ -27,13 +27,17 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 >
 >**[Gemini Notebook](https://notebook.google.com/notebook/510d4424-8462-44fe-9c96-25a0aedd71d1)**: a NotebookLM grounded in the framework; ask it anything, or hear the audio overview.
 
->[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)
->
->**[OpenWave](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)**: an open-source subatomic physics simulator, and a neutral arena that holds candidate field theories to the same public pass/fail criteria. MIT's column there is M8, and [M8 on OpenWave](files/openwave/README.md) maps each of its tasks to its record and to MIT's files.
-
 >[![TOE-Share](/files/assets/toe-share-banner-navy.svg)](https://theoryofeverything.ai/author/b-shatto)
 >
 >**[TOE-Share](https://theoryofeverything.ai/author/b-shatto)**: independent AI review. Each deposited paper is read and scored on its own terms; the assessments are gathered on the author profile and carried into the Publication Registry.
+
+## 🏄‍♂️ MIT on OpenWave
+
+[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)
+
+[OpenWave](https://github.com/openwave-labs/openwave) is an open-source physics simulator that holds candidate field theories to the same public pass/fail criteria, one column per model, and M8 is MIT's. Each run there is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review. The verdicts are OpenWave's, and so are the blind runs before M8.15; from M8.15 on, the author runs each task, and its run record is MIT's. This page maps every M8 task to its record on OpenWave, its outcome, and what MIT holds for it.
+
+The tasks verify the mathematics and run effective models, and none of them settles a physics criterion: in OpenWave's [comparison table](https://github.com/openwave-labs/openwave/blob/main/MODELS.md#mit-m8), M8 has one cell partially validated, Λ / cosmic acceleration, on the spectral seed M8.1 confirmed, and its other 30 criteria are not yet tested.
 
 ## 📚 Publication Registry
 
