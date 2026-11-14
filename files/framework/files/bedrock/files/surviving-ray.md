@@ -1687,7 +1687,7 @@ Three searches were run: whether the results of Section 3 are known; whether the
 - **[RK]** J. L. Romero, A. B. Klimov, A. Z. Goldberg, G. Leuchs and L. L. Sánchez-Soto, Multipoles from Majorana constellations. *Phys. Rev. A* **109** (2024), 012214; arXiv:2401.07904.
 - **[Sh]** B. Shatto, The Surviving Ray: channel selection for a cubic self-interaction on $`S^3/2I`$. *Zenodo* (2026), [https://doi.org/10.5281/zenodo.22681502](https://doi.org/10.5281/zenodo.22681502).
 - **[SP]** L. Santos and T. Pfau, Spin-3 chromium Bose-Einstein condensates. *Phys. Rev. Lett.* **96** (2006), 190404; arXiv:cond-mat/0510634.
-- **[SR2]** B. Shatto, Nonlinear Standing-Wave Branches on the Poincaré Homology Sphere: Ground States and Small-Amplitude Spectral Stability, the companion paper, in preparation: [`standing-wave-branches.md`](/files/framework/files/dynamics/files/standing-wave-branches.md).
+- **[SR2]** B. Shatto, Nonlinear Standing-Wave Branches on the Poincaré Homology Sphere: Ground States and Small-Amplitude Spectral Stability, the companion paper. *Zenodo* (2026), [https://doi.org/10.5281/zenodo.24224843](https://doi.org/10.5281/zenodo.24224843); its page is [`standing-wave-branches.md`](/files/framework/files/dynamics/files/standing-wave-branches.md).
 
 ---
 
