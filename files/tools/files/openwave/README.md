@@ -60,10 +60,6 @@ From the next M8 task on, each task's files live here, in a folder named for its
 
 MIT's own computation, [`soft-slot-dynamics-mit`](/files/framework/files/working/files/scripts/soft-slot-dynamics-mit/RECORD.md), lies outside M8: as the maintainer answered on [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19339563), it runs on a different instrument from M8.16.1's, and OpenWave reads its values as MIT's own, outside M8's outcomes and `MODELS.md`.
 
-## On OpenWave
-
-The column's [roadmap](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/m8_roadmap.md) holds every task with its gates, and its [briefing](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md) the column at a glance.
-
 ---
 
 | **[`<back`](/files/tools/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
