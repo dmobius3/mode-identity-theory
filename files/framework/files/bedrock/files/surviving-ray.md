@@ -9,23 +9,22 @@
 
 The spin-3 representation admits a four-dimensional family of equivariant cubic self-maps, the
 family known in the spinor-condensate literature as the four total-spin scattering channels. On
-$`S^3/2I`$, for a block state at level 6 with the density-type interaction
-$`\lvert\psi\rvert^2\psi`$, binary-icosahedral symmetry restricts that family to two channels, one
-of them radial; modulo the radial direction the surviving interaction is a single projective ray.
-The interaction is a hypothesis and not a consequence: a different local $`2I`$-invariant quartic,
-built from $`\psi\psi^T`$, is filtered by the same mechanism onto a different plane. The density
-of a block state is a function on the quotient, so a channel of rank $`K`$ survives only when $`V_K`$
-carries a $`2I`$-invariant, and in the density's window, ranks 0 through 6, only $`K = 0`$ and
-$`K = 6`$ do. The quartic functional reduces with the interaction, to an affine function of the top
-multipole $`\lVert \rho_6 \rVert^2`$ whose coefficient is given in closed form by the branching, not
-fitted. Separately, and with no icosahedral input, the spin-8 cubic channel built from the same
-spin-3 data closes exactly on the time-reversal-invariant rays. The ingredients are classical: the
-Jacobian criterion for nonzero binary forms of equal degree, the Majorana representation with its
-time-reversal reading, and Peter-Weyl on $`S^3`$. One result established here is the channel filter
-and the selection it forces for that interaction, together with an accounting of which parts of the
-arithmetic are icosahedral and which are universal facts about spin 3 with time reversal.
+$`S^3/2I`$, a block state at level 6 is a section of one flat bundle in the level-6 eigenspace of
+the Laplacian. For a block state with the density-type interaction $`\lvert\psi\rvert^2\psi`$,
+binary-icosahedral symmetry restricts that family to two channels, one of them radial; modulo the
+radial direction the surviving interaction is a single projective ray. The density of a block state is a function on the
+quotient, so a channel of rank $`K`$ survives only when $`V_K`$ carries a $`2I`$-invariant, and in
+the density's window, ranks 0 through 6, only $`K = 0`$ and $`K = 6`$ do. The quartic functional
+reduces with the interaction, to an affine function of the top multipole $`\lVert \rho_6 \rVert^2`$
+whose coefficient is given in closed form by the branching, not fitted. The interaction is a
+hypothesis and not a consequence: a different local $`2I`$-invariant quartic, built from
+$`\psi\psi^T`$, is filtered by the same mechanism onto a different plane. Separately, and with no
+icosahedral input, the spin-8 cubic channel built from the same spin-3 data closes exactly on the
+time-reversal-invariant rays. The ingredients are classical: the Jacobian criterion for nonzero
+binary forms of equal degree, the Majorana representation with its time-reversal reading, and
+Peter-Weyl on $`S^3`$.
 
-In the coordinates of that literature the surviving ray is one coupling point, by a polynomial identity with the spin-3 mean-field energy, where the literature has the stationary states and, numerically, the ground states. At that point the paper gives the critical geometry and both of its ends. On the unit sphere, $`\lVert\rho_6\rVert^2`$ is least, at $`1/924`$, exactly on the coherent states, through an identity that brings in the Beauzamy-Bombieri-Enflo-Montgomery inequality with Reznick's equality case, and the same argument gives the top multipole's minimum at every spin, with its equality case. It is greatest, at $`463/924`$, exactly on the hexagon orbit, the NOON state up to a rotation (Theorem 7.5), its uniqueness an audited argument. Between the ends, within the class of orbits whose fixed locus has projective dimension at most one, there are exactly ten critical orbits, with their Morse indices, by an audited argument, and three outside the class are certified by interval arithmetic; with them the index no longer increases with the value. The icosahedral content is the selection; everything at the point is spin 3, and the point is where this interaction lands, not the coupling of a physical condensate.
+In the coordinates of that literature the surviving ray is one coupling point, by a polynomial identity with the spin-3 mean-field energy; the literature has the stationary states there and, numerically, the ground states. At that point the paper gives the critical geometry and both of its ends. On the unit sphere, $`\lVert\rho_6\rVert^2`$ is least, at $`1/924`$, exactly on the coherent states, through an identity that brings in the Beauzamy-Bombieri-Enflo-Montgomery inequality with Reznick's equality case, and the same argument gives the top multipole's minimum at every spin, with its equality case. It is greatest, at $`463/924`$, exactly on the hexagon orbit, the NOON state up to a rotation (Theorem 7.5), its uniqueness an audited argument. Between the ends, within the class of orbits whose fixed locus has projective dimension at most one, there are exactly ten critical orbits, with their Morse indices, by an audited argument, and three outside the class are certified by interval arithmetic; with them the index no longer increases with the value. The icosahedral content is the selection; everything at the point is spin 3, and the point is where this interaction lands, not the coupling of a physical condensate.
 
 ---
 
@@ -37,13 +36,11 @@ constellations that extremise natural invariants: the anticoherent states, whose
 vanish, and the polyhedral configurations that realise them. Barnett, Turner and Demler [BTD]
 show four six-vertex constellations as spin-3 phases in that language. Within this setting the
 invariant quartics of a spin-3 state form a four-dimensional space, and particular members of that
-family have been studied along with the symmetric constellations attached to them. Any statement
-about a particular quartic is therefore a statement about a member of a family the community will
-already recognise.
+family have been studied along with the symmetric constellations attached to them.
 
-The question here is not which member is interesting but which member a geometry permits *for a given
-interaction*. Modes on the spherical space form $`S^3/2I`$ organise into flat bundles indexed by
-representations $`\sigma`$ of the binary icosahedral group. At level 6 a block state has left spin 3,
+The question here is which member a geometry permits *for a given interaction*. Modes on the spherical space form $`S^3/2I`$ organise into flat bundles indexed by
+representations $`\sigma`$ of the binary icosahedral group, the *sectors*, and within each bundle by
+level $`\ell = 2j`$, the Peter-Weyl degree, each level an eigenspace of the Laplacian. A *block state* at level 6, a section of one sector at that level, has left spin 3,
 so its self-interaction lies in the four-dimensional family above; the question is what the quotient
 does to that family. The answer is a filter. The density $`\lvert\psi\rvert^2`$ of a section is a
 genuine function on $`S^3/2I`$, and by Peter-Weyl its level-$`2K`$ component factors into a left
@@ -53,35 +50,33 @@ the next after that at level 20, so across ranks 0 through 6 exactly two channel
 else is switched off, not because the left-hand tensor vanishes, which it does not, but because its
 right-hand coefficient does.
 
-Two results follow. As proved they are independent, neither using the other; Section 5.7 later
-combines the ambient proposition with the quotient calculation.
+Two results follow, each proved without the other; Section 5.7 later combines the ambient
+proposition with the quotient calculation.
 
-The first is ambient and uses no icosahedral input. For spin 3 with time reversal $`\Theta`$, the
+The first is the selection, and it takes three steps. The invariant-degree filter leaves the
+density only ranks 0 and 6. The multiplicity-free branching then scalarises the right-index
+contraction, without which surviving ranks would not select single maps at all, and puts the
+self-interaction in the plane spanned by the rank-0 and rank-6 maps. The rank-0 map is radial, and
+the rank-6 coefficient is nonzero, which is proved separately by pairing the interaction against the
+quartic. Only then does the self-interaction reduce, modulo the radial direction, to the single ray
+generated by the rank-6 map. The governing quartic reduces with it, to an affine function of the
+top multipole alone. The weight attached to the surviving channel is built from
+$`\lVert R_6\rVert^2`$, the norm of the right multipole of an isotypic projector, and is positive
+because both constituents of the branching $`V_3\vert_{2I}`$ are proper (Section 5.3).
+
+The second is ambient and uses no icosahedral input. For spin 3 with time reversal $`\Theta`$, the
 spin-8 cubic channel assembled from a state, its time reverse, and itself again vanishes precisely
 on the time-reversal-invariant rays. In the language of constellations, the channel closes exactly
-when the six Majorana points are antipodally symmetric as a multiset. The proof is short and rests on a classical fact about binary forms,
-that two nonzero forms of the same degree with vanishing Jacobian are proportional, so it is billed
-as a proposition rather than a theorem; the possibility that the underlying joint covariant is named
-in the classical invariant-theory literature is left open in Section 8 rather than settled here.
-
-The second is the selection, and it takes three steps rather than one. The invariant-degree filter
-leaves the density only ranks 0 and 6. The multiplicity-free branching then scalarises the
-right-index contraction, without which surviving ranks would not select single maps at all, and puts
-the self-interaction in the plane spanned by the rank-0 and rank-6 maps. The rank-0 map is radial,
-and the rank-6 coefficient is nonzero, which is earned separately by pairing the interaction against
-the quartic. Only then does the self-interaction reduce, modulo the radial direction, to the single
-ray generated by the rank-6 map. The governing quartic reduces with it, to an affine function of the
-top multipole alone.
-
-The weight attached to the surviving channel is not fitted: it is built from $`\lVert R_6\rVert^2`$,
-the norm of the right multipole of an isotypic projector, and is positive because both constituents
-of the branching $`V_3\vert_{2I}`$ are proper (Section 5.3).
+when the six Majorana points are antipodally symmetric as a multiset. The proof is short and rests
+on a classical fact about binary forms, that two nonzero forms of the same degree with vanishing
+Jacobian are proportional; whether the underlying joint covariant is named in the classical
+invariant-theory literature is left open (Section 8.3).
 
 Little of the surrounding structure is icosahedral. The four-dimensional family, the structure of
 the surviving operator, the alternating row of binomial coefficients its weight matrix carries, the
 forced form of the time-reversal phase, and the critical rays of the reduced quartic together with
 their Majorana constellations are all universal facts about spin 3 with time reversal. None of them
-requires $`2I`$ *once the rank-6 channel has been selected*, which is the distinction worth keeping:
+requires $`2I`$ *once the rank-6 channel has been selected*:
 $`2I`$ selects, and spin-3 mathematics determines what the selected channel is. For the selection
 theorem the icosahedron contributes exactly two facts: the invariant-degree filter, which leaves
 density ranks 0 and 6, and the multiplicity-free complementary branching
@@ -96,31 +91,30 @@ has the stationary states at that point and, from numerical minimisation, the gr
 
 At that point, within the class of orbits whose fixed locus has projective dimension at most one,
 there are exactly ten critical orbits, with their values and Morse indices (Section 7); the
-classification is an audited argument, and its values were reproduced blind [M8.12]. Three critical
+classification is an audited argument (Section 7.2), and its values were reproduced blind [M8.12]. Three critical
 orbits outside the class are certified by interval arithmetic. The minimum of $`\widehat r_6`$ is
 $`1/924`$, attained exactly on the coherent states, by an identity that brings the
 Beauzamy-Bombieri-Enflo-Montgomery inequality [BBEM], with Reznick's equality case [Re], to the top
 multipole; it completes a statement of Björk et al. [Bj], and the same argument proves that statement's top order at every spin, with its equality case (Section 7.3). The maximum is $`463/924`$, attained
 exactly on the hexagon orbit (Theorem 7.5); the value and the question are Romero et al.'s [RK], and
-the argument was audited on the OpenWave M8 track [M8.13].
+the argument was audited on the M8 track of OpenWave, an open-source simulation project [M8.13].
 
-Back on the quotient, the selected equation poses a bifurcation problem on the flat bundles over $`S^3/2I`$, and the critical rays of Section 7 are the critical directions of its leading reduced problem, though not by themselves solutions. Whether and where they continue to branches of standing waves is the question of a companion paper [SR2], under a stated wave equation.
+Back on the quotient, the selected equation poses a bifurcation problem on the flat bundles over $`S^3/2I`$, and the critical rays of Section 7 are the critical directions of its leading reduced problem; whether and where they continue to branches of standing waves is the question of a companion paper [SR2].
 
-One boundary should be drawn explicitly. The configurations appearing below are known: the octahedral
-constellation is the anticoherent state of order 3 in the standard classification, and critical rays
-occur here with all four of the six-vertex shape types [BTD] names. Recognising a configuration is not
-the same as selecting it, and *configuration prior art is not selection prior art*. The contribution
-of the selection is which member of a known family a specific geometry forces, and the surrounding
-accounting of what that forcing does and does not explain. At the point the boundary has a companion:
-*knowing the phases is not classifying the critical geometry* (Section 7.2).
+The configurations that appear below are known: the octahedral constellation is the anticoherent
+state of order 3 in the standard classification, and critical rays occur here with all four of the
+six-vertex shape types [BTD] names. What the selection contributes is which member of a known family
+a specific geometry forces, and the accounting of what that forcing does and does not explain. At
+the point, likewise, the condensate literature has the phases, and what this paper adds is the classification of the critical geometry there, within a class of orbits (Section 7.2).
 
 The sentences above naming the wider constellation literature rest on abstracts and publisher records, and every search is reported as a search (Section 8.3).
 
 Sections 2 to 5 set up the state space, the quotient and the interaction, prove the ambient proposition
 and the selection theorem, and derive its consequences across levels and sectors. Section 6 places the
-selected interaction in the condensate literature's coupling space, Section 7 gives the critical
+selected interaction in the condensate literature's coupling space, and Section 7 gives the critical
 geometry there, ending with its two extremes. Section 8 gives the limits, the prior art and the
-search; the certification closes the page.
+search. The independent numerical certification and the certificates of Section 7.2 follow the
+references.
 
 ---
 
@@ -158,9 +152,9 @@ one-dimensional space by Schur, and $`\Theta J_+ = -J_- \Theta`$ forces the patt
 supplies the alternating sign in the operator of Section 5. One computes $`\Theta^2 = (-1)^{2j}`$, so
 $`\Theta^2 = +1`$ here and $`\Theta^2 = -1`$ at half-integer spin.
 
-*Spin 3* and *time reversal* are representation theory here: nothing below claims a physical spin 3,
-and the equation studied is elliptic and stationary, with no time in it, so nothing here establishes a
-physical time-reversal symmetry of a dynamics.
+*Spin 3* and *time reversal* name representation theory here: $`V_3`$ is a representation and
+$`\Theta`$ an antiunitary map on it, and the equation of Section 2.5 is elliptic and stationary, with
+no time in it.
 
 A ray is *time-reversal invariant* when $`\Theta u = \lambda u`$ for some $`\lambda`$ of modulus
 one, and the set of such $`u`$ is $`U(1)\cdot\mathrm{Fix}(\Theta)`$. The condition is projective:
@@ -199,8 +193,7 @@ projector,
 and it does not vanish for odd $`K`$ in general.
 
 The **right multipole** is the same transform at a different argument, $`R_K = \mathcal M_K(P)`$
-with $`P`$ the isotypic projector of Section 2.4. Same map, different matrix; the two multiply
-rather than merge, and Section 5 turns on that.
+with $`P`$ the isotypic projector of Section 2.4.
 
 The factorisation of Section 5 uses this one $`\mathcal M_K`$ on both sides, which is what makes
 the two multipoles multiply: the time-reversal phase sits inside $`\mathcal M_K`$ itself, and
@@ -241,7 +234,7 @@ so the left index is free and the right index carries the sector. Since $`\sigma
 $`\lvert\psi(gh)\rvert^2 = \lvert\psi(g)\rvert^2`$, so the density really is a function on $`X`$. A
 *block state* at level 6 is one for which $`j = 3`$, so its left index runs over the $`V_3`$ of
 Section 2.1 and its right index over a multiplicity space that the branching below shows to be
-one-dimensional. **Level 6 is the scope of the selection theorem of Sections 4 through 5.5.** What
+one-dimensional. Level 6 is the scope of the selection theorem of Sections 4 through 5.5. What
 fixes it is the choice of object: this paper is about spin-3 states, so the left index is $`V_3`$
 and the level is $`2 \cdot 3`$.
 
@@ -267,11 +260,10 @@ itself has no two-dimensional irreducible representation. Hence
 V_3\vert_{2I} \;=\; \sigma_3 \oplus \sigma_4 , \qquad \dim\sigma_3 + \dim\sigma_4 = 3 + 4 = 7 .
 ```
 
-The two sectors a block state can occupy are therefore **complementary in** $`\dim V_3`$. What that
-buys is specific: the surviving weight computed in Section 5 is $`\lVert R_6 \rVert^2 = d(7-d)/7`$
-with $`d = \dim\sigma`$, an expression symmetric under $`d \leftrightarrow 7-d`$, so the symmetry
-itself makes the two sectors carry the same value, and it is positive for both because
-$`0 < d < 7`$.
+The two sectors a block state can occupy are therefore **complementary in** $`\dim V_3`$.
+Section 5 computes the surviving weight as $`\lVert R_6 \rVert^2 = d(7-d)/7`$ with $`d = \dim\sigma`$;
+it is symmetric under $`d \leftrightarrow 7-d`$, so the two sectors carry the same value, and it is
+positive because $`0 < d < 7`$.
 
 Since $`\sigma`$ occurs with multiplicity one, $`\mathrm{Hom}_{2I}(\sigma, V_3)`$ is
 one-dimensional. For any nonzero intertwiner $`\eta`$ in it, Schur gives
@@ -297,9 +289,7 @@ absorbed into the amplitude, since the problem is projective in $`\psi`$ and $`g
 amplitude at which a given ray solves it. Absorbing $`\lvert g\rvert`$ leaves the sign, which no
 rescaling removes, and that sign is immaterial here because an overall nonzero real factor does not
 move the tangential critical equation, though it matters in Sections 6 and 7, where the indices and the
-least-energy ray depend on it (Section 6.2). So $`g = 1`$ is taken throughout, a normalisation rather than
-a result: its sign and its physical scale are not derived here, and the 1 is not a computed
-coupling.
+least-energy ray depend on it (Section 6.2). So $`g = 1`$ is taken throughout as a normalisation.
 
 The choice of interaction is not vacuous: a second local $`2I`$-invariant quartic genuinely exists.
 Both $`\sigma_3`$ and $`\sigma_4`$ are real representations: $`V_3`$ has integer spin, so
@@ -315,7 +305,7 @@ left-hand factors are the *holomorphic* squares $`B_0`$ and $`B_6`$ of Section 2
 $`\rho_0`$ and $`\rho_6`$, so its interaction is confined to a genuinely different plane; Section
 5.5 identifies that plane and shows it differs from the one selected here.
 
-Whether that second plane also reduces to a single ray is **not examined here**; the analogues of
+Whether that second plane also reduces to a single ray is open: the analogues of
 clauses 3 and 4 for the $`N`$ pair have not been computed. What the filter fixes is the plane.
 *Which* plane depends on the interaction, so the selection theorem is a statement about the
 density-type quartic above and not about local $`2I`$-invariant quartics in general.
@@ -329,9 +319,7 @@ trilinear data $`(u, \Theta u, u)`$ contracts equivariantly into every $`V_J`$ i
 $`\mathrm{Sym}^2 V_3 \otimes V_3`$, and those contractions are the channels of one object indexed by
 the spin of the target: the self-interaction is the spin-3 channel, which Sections 4 and 5 select
 within, and the covariant below is the spin-8 channel. Section 5.7 shows the spin-8 channel is
-populated on $`X`$, with exactly the time-reversal-invariant states annihilating it. The result is a
-proposition and not a theorem, its ingredients are classical, and whether the covariant has appeared
-before is left open in Section 8; nothing in the paper's contribution rests on the answer.
+populated on $`X`$, with exactly the time-reversal-invariant states annihilating it.
 
 ### 3.1 The cubic covariant
 
@@ -447,8 +435,7 @@ $`-2\,\mathcal C(u)`$. Antiunitarity makes the constant a phase, so $`\Theta u =
 $`\lvert\lambda\rvert = 1`$, which by Section 2.2 is exactly membership in
 $`U(1)\cdot\mathrm{Fix}(\Theta)`$. $`\square`$
 
-So the proposition is a corollary rather than a parallel result: one classical criterion, applied
-once, yields both statements.
+So the proposition is a corollary: one classical criterion, applied once, yields both statements.
 
 ### 3.4 The constellation reading
 
@@ -463,8 +450,7 @@ that the six points are antipodally symmetric, coincidences included. Combining 
 > symmetric.
 
 Section 2's Lemma 2.2 reaches the same locus by a different route, through the vanishing of the odd
-density multipoles, and the agreement is a useful check rather than a second proof: one argument
-runs through the Jacobian criterion on binary forms, the other through the exchange symmetry of a
+density multipoles, and the agreement is a check, not a second proof: one argument runs through the Jacobian criterion on binary forms, the other through the exchange symmetry of a
 simple tensor.
 
 ---
@@ -516,13 +502,12 @@ $`V_3`$, which by Section 3.1 form the space $`\mathscr E_3`$. The weight count 
 ```
 
 the weight-3 subspace having dimension 16 and the weight-4 subspace dimension 12. Both counts in
-this paper are of that form and both can be checked on the page.
+this paper are of that form and both can be checked by hand.
 
 This family is not new. A spin-3 contact interaction is specified by four scattering lengths, one
 for each total-spin channel $`S = 0, 2, 4, 6`$, and the resulting mean-field energy is the
 corresponding four-parameter combination [DH], [KU]. That is the same four-dimensional space, in the
-$`N_J`$ indexing below. Nothing in this paper claims the family; what is claimed is what the
-quotient does to it.
+$`N_J`$ indexing below.
 
 There is also a structural derivation, and it comes with a basis. Since
 $`\mathrm{Sym}^2 V_3 = V_0 \oplus V_2 \oplus V_4 \oplus V_6`$, each summand once, and since $`V_3`$
@@ -552,8 +537,8 @@ M_K(u) \;=\; A_K(u)\, u ,
 ```
 
 so $`A_K(u)`$ is a *linear operator* on $`V_3`$ with the density frozen at $`u`$, and $`M_K`$ is the
-*cubic self-map* obtained by feeding the same state back in. The distinction is not cosmetic and
-Section 5 will need it.
+*cubic self-map* obtained by feeding the same state back in. Section 5 needs the
+distinction.
 
 So the family has two natural indexings, which Section 2.3 keeps apart: the canonical basis $`N_J`$ by
 the ranks of the holomorphic square, and the $`M_K`$ by the ranks of the density, related by
@@ -561,10 +546,9 @@ recoupling. The seven $`M_K`$ are linearly dependent and span $`\mathscr E_3`$, 
 computation; the selection argument does not use the spanning, and needs only that $`M_6`$ is not
 radial, which Section 5 proves.
 
-### 4.3 The spine
+### 4.3 The two targets
 
-These are the two targets named at the head of Section 3, and the contrast between them is what
-gives the paper its shape. Put the counts side by side.
+These are the two targets named at the head of Section 3. Put the counts side by side.
 
 ```math
 \dim \mathscr E_8 = 1 , \qquad \dim \mathscr E_3 = 4 .
@@ -577,7 +561,7 @@ distinct maps, because there is only one ray. The spin-3 target is four-dimensio
 selection has genuine content there.
 
 The same method answers the corresponding *availability* question, whether the quotient supplies a
-compatible spin-8 target slot at all. Both $`V_3`$ and $`V_8`$ have integer spin and so factor
+compatible spin-8 target at all. Both $`V_3`$ and $`V_8`$ have integer spin and so factor
 through $`A_5`$, and the branching is
 
 | level | dim | $`\mathbf 1`$ | $`\mathbf 3`$ | $`\mathbf 3'`$ | $`\mathbf 4`$ | $`\mathbf 5`$ |
@@ -589,9 +573,9 @@ through $`A_5`$, and the branching is
 The two constituents of $`V_3`$ are $`\mathbf 3'`$ and $`\mathbf 4`$, and both occur in $`V_8`$
 with multiplicity one, so both sectors occurring at level 6 also occur at level 16 and the spin-8
 target is available in either. That is what the table establishes and all that is claimed here: it
-says the slot exists, not that the particular covariant has nonzero coefficient into it, which would
+says the target exists, not that the particular covariant has nonzero coefficient into it, which would
 need a right-index contraction for $`\mathcal C`$ of the kind Section 5 carries out for the
-density. The slot is at least reachable: by Lemma 4.1 the density has levels 0 and 12 only, level 0
+density. The target is at least reachable: by Lemma 4.1 the density has levels 0 and 12 only, level 0
 times level 6 returns level 6 alone, and level 12 times level 6 spans levels 6 through 18. So the
 entire level-16 output comes from $`d_{12}\psi`$, and the only obstruction is whether the right-hand
 factor vanishes. That is settled in Section 5.7, which needs the weight computed in Section 5.3 and
@@ -705,8 +689,8 @@ w_K \;=\; \frac{49}{d^2}\cdot\frac{\lVert R_K(P)\rVert^2}{2K+1} ,
 
 and $`\widetilde{Q}(u) = \sum_K w_K\lVert\rho_K(u)\rVert^2 = (49/d^2)A(u)`$. With the measure fixed
 that way there is no free constant left anywhere, and in particular $`w_0 = (49/d^2)(d^2/7) = 7`$ is
-**derived**, not chosen. The measure is the one choice being made, and it is worth saying what
-depends on it: $`Q = A/B^2`$ scales inversely with the measure, so the individual $`w_K`$ and the
+derived, not chosen. The measure is the one choice being made, and this is what depends
+on it: $`Q = A/B^2`$ scales inversely with the measure, so the individual $`w_K`$ and the
 normalisation of Section 5.6 inherit that choice, while the ratio $`w_6/w_0`$, the selection theorem
 and the critical set do not.
 
@@ -758,7 +742,7 @@ Section 5.2,
 \;>\; 0 ,
 ```
 
-which is clause 5. Since $`w_0 = 7`$ was derived rather than chosen, the absolute weight follows
+which is clause 5. Since $`w_0 = 7`$ was derived in Section 5.2, the absolute weight follows
 too: $`w_6 = 7(7-d)/(13d)`$, namely $`21/52`$ at $`d = 4`$ and $`28/39`$ at $`d = 3`$.
 
 ### 5.4 The surviving operator, and the map it generates
@@ -827,7 +811,7 @@ The same non-constancy appears on the quartic side as an identity worth recordin
 \binom{12}6\, \lVert \rho_6(v_m)\rVert^2 \;=\; \Lambda_m^2 ,
 ```
 
-which is an identity rather than a sample: at a weight state $`\rho_6`$ has only its zonal
+for every $`m`$: at a weight state $`\rho_6`$ has only its zonal
 component, so $`\lVert\rho_6\rVert^2 = \binom 6{3+m}^2/\binom{12}6`$.
 
 Both coefficients of the self-interaction are available, not only the nonvanishing of the second.
@@ -865,19 +849,17 @@ the tangential equation involves $`M_6`$ alone, with the nonzero coefficient abo
 a four-dimensional space of $`\mathrm{SU}(2)`$-invariant quartics on spin 3. That space has the same
 dimension as $`\mathscr E_3`$, and for the same reason: both are counted by the four summands
 $`V_0 \oplus V_2 \oplus V_4 \oplus V_6`$ of $`\mathrm{Sym}^2 V_3`$, so selecting a quartic and
-selecting a cubic map are the same problem in two costumes. Equal dimension alone would not say
+selecting a cubic map are the same problem in two forms. Equal dimension alone would not say
 that, so here is the map: $`\widetilde{Q} \mapsto \nabla_{\bar u}\widetilde{Q}`$ is equivariant and
 linear from invariant homogeneous quartics to $`\mathscr E_3`$, and injective, since Euler's
 identity recovers a homogeneous quartic from its gradient. Both spaces have dimension four, so it is
 an isomorphism; this section exhibits it channel by channel, as the per-rank identity
-$`\nabla_{\bar u}\lVert\rho_K\rVert^2 = c_K M_K`$ with every $`c_K`$ nonzero. The contribution is not the family, and not the quartic considered in isolation, but
-which member of it the icosahedral quotient permits, for the density-type interaction of Section 2.5.
+$`\nabla_{\bar u}\lVert\rho_K\rVert^2 = c_K M_K`$ with every $`c_K`$ nonzero.
 
 ### 5.6 The normalisation, and what it does not settle
 
-The theorem is complete; one ceiling belongs here before the discussion, on the constant its weight
-is built from. The sector normalisation is $`N = \binom{12}6/w_6`$, and Section 5.3 gives it in
-closed form:
+The weight fixes one more constant, the sector normalisation $`N = \binom{12}6/w_6`$, which
+Section 5.3 gives in closed form:
 
 ```math
 N \;=\; \binom{12}6\,\frac{\dim V_6}{\dim V_3}\,\frac{d}{7-d}
@@ -885,21 +867,19 @@ N \;=\; \binom{12}6\,\frac{\dim V_6}{\dim V_3}\,\frac{d}{7-d}
 \qquad 1287 \text{ at } d = 3 , \quad 2288 \text{ at } d = 4 .
 ```
 
-The first form is canonical because it is what the derivation produces: the left Clebsch-Gordan
-constant, times the Peter-Weyl dimension ratio, times the sector. The binomial identity
-$`\binom{12}6\cdot 13/7 = \binom{13}6`$ is noticed afterwards and is not a new primitive.
+The first form is the one the derivation produces: the left Clebsch-Gordan constant, times the
+Peter-Weyl dimension ratio, times the sector factor $`d/(7-d)`$. The binomial identity
+$`\binom{12}6\cdot 13/7 = \binom{13}6`$ is a simplification found afterwards.
 
-Two ceilings belong here rather than in the discussion. First, an earlier form of this
-normalisation, $`N = 143\,d^2`$, is **exactly correct on both sectors** and always will be, since
-$`d(7-d) = 12`$ at $`d = 3`$ and $`d = 4`$. What the derivation shows is that it is not the
-primitive form: the quadratic shape is a consequence of the two sectors being complementary in 7.
-Second, and more sharply, $`d = 3`$ and $`d = 4`$ are the only values that occur, so **no
-measurement inside this system separates the two formulas**. The
-correction is carried entirely by the derivation above and has no empirical content of its own.
+An earlier form of this normalisation, $`N = 143\,d^2`$, agrees with the closed form on both
+sectors, since $`d(7-d) = 12`$ at $`d = 3`$ and $`d = 4`$, and those are the only values of $`d`$
+that occur. No computation within this system can therefore separate the two formulas; what the
+derivation shows is that the closed form is the primitive one, and that the quadratic shape of the
+earlier form reflects the two sectors being complementary in 7.
 
 ### 5.7 The spin-8 channel on the quotient
 
-Section 4.3 left one question open, whether the spin-8 channel whose target slot exists in both
+Section 4.3 left one question open, whether the spin-8 channel whose target exists in both
 sectors actually carries a nonzero coefficient there. With Lemma 5.2 in hand it closes.
 
 This section's tool is the unequal-degree form of Lemma 3.1. With degrees $`m = \deg f`$ and
@@ -911,8 +891,8 @@ $`\mathbb C[X,Y]`$ is a unique factorisation domain, a root of multiplicity $`\m
 multiplicity $`\mu n/m`$ in $`g`$.
 
 The right-hand factor of the level-16 output is built from $`R_6(P)`$, which lies in $`(V_6)^{2I}`$.
-That space is one-dimensional by Section 2.4, and its generator has **twelve simple roots**, which
-the orbit structure forces and the picture only suggests. The zero divisor of a $`2I`$-invariant
+That space is one-dimensional by Section 2.4, and its generator has twelve simple roots, which
+the orbit structure forces. The zero divisor of a $`2I`$-invariant
 binary form is $`2I`$-invariant, hence a union of orbits of $`A_5`$ on $`\mathbb P^1`$, and those
 orbits have sizes 12, 20, 30 and 60, with stabilisers the cyclic groups of orders 5, 3, 2 and 1. A
 divisor of degree 12 must therefore be the size-12 orbit taken once, so its roots are twelve
@@ -932,7 +912,7 @@ So $`v \mapsto (I_{12}, f_v)_1`$ is injective, and composing it with the nonzero
 $`\eta`$ leaves the right-hand factor nonzero in both sectors. The left-hand factor is $`[\rho_6(u)\otimes u]_8`$. Since
 $`\dim\mathscr E_8 = 1`$ leaves no other equivariant map, it is *some* multiple of
 $`\mathcal C(u)`$, say $`\alpha\,\mathcal C(u)`$; that $`\mathcal C`$ is itself nonzero does not
-yet make $`\alpha`$ nonzero, so the constant is evaluated rather than inferred. At $`u = v_3`$,
+yet make $`\alpha`$ nonzero, so the constant is evaluated. At $`u = v_3`$,
 $`\rho_6(v_3) = -\tfrac{\sqrt{231}}{462}\,v^{(6)}_0`$ and coupling to spin 8 gives
 $`[\rho_6(v_3)\otimes v_3]_{8,3} = \tfrac{\sqrt{273}}{1092} \neq 0`$. Hence $`\alpha \neq 0`$. The
 level-16 component of the nonlinearity therefore does not vanish identically, and Proposition 3.3
@@ -989,8 +969,7 @@ So once the filter has selected rank 6, the shape problem stops being icosahedra
 question about spin 3 with time reversal, which is why Section 7.1 could be carried out without the
 group appearing again.
 
-Neither corollary is a statement about solutions of the equation; like Theorem 5.1, they
-concern the leading reduced problem.
+
 
 ---
 
@@ -1080,13 +1059,12 @@ the hexagon at the other. That placement is numerical and it is [KU]'s.
 ### 6.3 What the identity is, and what it is not
 
 It is an identity: the two sides are one function in two coordinate systems. The ten census orbits of
-Section 7 are therefore represented among [KU]'s stationary-state families, with the same values.
-That is not corroboration of anything, and it should not be
-read as such.
+Section 7 are therefore represented among [KU]'s stationary-state families with the same values, a
+consequence of the identity and not independent evidence.
 
-The point is where the density interaction of Section 2.5 lands under the quotient's selection.
-Nothing here says it is the coupling of a physical condensate, and no claim is made about chromium
-or any other spin-3 atom.
+The point is where the density interaction of Section 2.5 lands under the quotient's selection; the
+paper makes no claim about the coupling of a physical condensate, of chromium or of any other spin-3
+atom.
 
 ---
 
@@ -1095,17 +1073,16 @@ or any other spin-3 atom.
 Section 6 placed the quartic at one point of the four-channel family. This section describes its
 critical set there: the critical rays of $`\widehat r_6`$ on $`\mathbb P(V_3)`$, with their values
 and their signatures, which by Section 6.2 give the Morse indices of the reduced energy at both
-signs. Nothing in it uses $`2I`$.
+signs.
 
-The critical rays matter to the equation of Section 2.5. In its Lyapunov-Schmidt reduction at the level-6 eigenvalue, the leading cubic term is the self-interaction of Sections 4 and 5 and the quartic plays the part of the reduced energy (Section 5.5), so its critical rays are the critical directions of the leading reduced problem, though not by themselves solutions: the range equation and the existence of branches are the companion paper's [SR2], under a stated wave equation.
+The critical rays matter to the equation of Section 2.5. In its Lyapunov-Schmidt reduction at the level-6 eigenvalue, the leading cubic term is the self-interaction of Sections 4 and 5 and the quartic plays the part of the reduced energy (Section 5.5), so its critical rays are the critical directions of the leading reduced problem, though not by themselves solutions. The range equation and the existence of branches are the companion paper's [SR2], under a stated wave equation.
 
 ### 7.1 Six rays found by symmetry
 
 By clause 5 of Theorem 5.1 the reduced quartic is an increasing affine function of
 $`\widehat r_6`$ (Section 6.2), so its critical rays are those of $`\widehat r_6`$ on
 $`\mathbb P(V_3)`$. On the unit sphere $`\widehat r_6 = \lVert\rho_6\rVert^2`$, and this subsection
-computes with the latter. The question is about spin 3 with time reversal, and it does not mention
-$`2I`$. Four values, with $`\binom{12}6\lVert\rho_6\rVert^2 = 924\,\lVert\rho_6\rVert^2`$ quoted as
+computes with the latter. Four values, with $`\binom{12}6\lVert\rho_6\rVert^2 = 924\,\lVert\rho_6\rVert^2`$ quoted as
 an integer:
 
 | ray | constellation | [KU] | $`924\,\lVert\rho_6\rVert^2`$ |
@@ -1298,7 +1275,7 @@ on each fixed set modulo its continuous symmetries, so the
 transverse second variation has no kernel. Every entry of a row of the table below is computed at
 that one certified point. The same machinery reproduces the census's exact full signatures at the
 pyramid, the prism and the D2 ray from their own fixed sets, and at all six of its orbits with finite
-stabilisers from the whole sphere, and planted failures trip; the certificates section at the end of the paper gives the scripts.
+stabilisers from the whole sphere, and deliberately broken inputs fail; the certificates section at the end of the paper gives the scripts.
 
 | orbit | $`924\,\widehat r_6`$ | rotation stabiliser | full isotropy | $`(n_-, n_0, n_+)`$ | on the isotropy fixed set | on the $`C_2`$ fixed set |
 |---|---|---|---|---|---|---|
@@ -1590,12 +1567,10 @@ time reverse of a sixth power is the sixth power of the orthogonal form.
 
 ### 8.1 What is not claimed
 
-Everything above concerns a single block state in a single sector. No statement is made about a
-field occupying distinct flat-bundle sectors at once, or about a nonlinearity coupling one sector's
-density to another's amplitude. Corollary 5.4 compares the two sectors; it does not
-describe a configuration containing both. The mixed problem is not posed here, let alone solved. Nor is
-anything here a statement about solutions of the equation of Section 2.5 or their stability, which
-the companion paper [SR2] takes up.
+Everything above concerns a single block state in a single sector. Corollary 5.4 compares the two
+sectors; a field occupying both at once, or a nonlinearity coupling one sector's density to another's
+amplitude, is a different problem, not posed here. Solutions of the equation of Section 2.5, and their
+stability, are the companion paper's [SR2].
 
 ### 8.2 Prior art, and where the boundary falls
 
@@ -1649,10 +1624,9 @@ Majorana constellation which is both the orbit of a finite subgroup of $`\mathrm
 $`t`$-design is anticoherent of order at least $`t`$, and the octahedron is both at $`t = 3`$; the
 **sharpness is computed in Section 7.1**, where rank 4 is nonzero.
 
-Recognising a configuration is not the same as selecting it, and knowing the phases is not classifying
-the critical geometry: the condensate literature has the states and the ground states at the point, and
-what this paper adds there is the identity that places the ray at the point, the census within a class
-and its Morse indices, three certified orbits outside it, and the two ends, the maximum's uniqueness as an audited argument.
+At the point, the condensate literature has the states and the ground states; what this paper adds
+there is the identity that places the ray at the point, the census within a class and its Morse
+indices, three certified orbits outside it, and the two ends, the maximum's uniqueness as an audited argument.
 
 ### 8.3 The search
 
@@ -1737,7 +1711,7 @@ also uses.
 
 The three orbits of Section 7.2 outside the census's class are certified by this paper, in 60-digit
 interval arithmetic; the certificates are its own computation, not a reproduction. They are published
-in [one folder](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/), in two layers: the record, the certification as it ran under frozen packets,
+in [one folder](/files/framework/files/bedrock/files/scripts/surviving-ray-v2/), in two layers: the record, the certification as it ran on input packets fixed in advance,
 which starts from an exploratory numerical search that is not distributed and so is not meant to be rerun; and
 the reproduction, a verifier that rebuilds each certified box from a published data file and repeats
 every test, with controls started from the census's exact representatives [M8.12]. The folder's
