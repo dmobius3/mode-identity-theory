@@ -5,9 +5,7 @@
 
 # 🏄‍♂️ M8 on OpenWave
 
-[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/__M8_model_briefing.md)
-
-Every task in M8, MIT's column on [OpenWave](https://github.com/openwave-labs/openwave): its record there, its outcome, and what MIT holds for it. The verdicts are OpenWave's, and none of the tasks settles a physics criterion; the [tools page](/files/tools/README.md#mit-on-openwave) says how the column works and where M8 stands in OpenWave's comparison table.
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/M8_Overview.png?raw=true" width="100%">
 
 ## The Tasks
 
