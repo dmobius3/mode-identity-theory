@@ -60,6 +60,14 @@ From the next M8 task on, each task's files live here, in a folder named for its
 
 MIT's own computation, [`soft-slot-dynamics-mit`](/files/framework/files/working/files/scripts/soft-slot-dynamics-mit/RECORD.md), lies outside M8: as the maintainer answered on [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19339563), it runs on a different instrument from M8.16.1's, and OpenWave reads its values as MIT's own, outside M8's outcomes and `MODELS.md`.
 
+## Work in Progress
+
+| Task | What it asks | Where it stands | MIT's side |
+|---|---|---|---|
+| [M8.1.3](/files/tools/files/openwave/m8-1-3/README.md) | A blind run on the Standing-Wave Branches | Filing admitted on [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19632863): the task document is next, with each of its five blocks to be accepted or declined on its own | [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md) |
+
+Next comes the dynamics of the branches, which the [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md#62-what-stays-open) leaves to a sequel: the response to perturbations over several directions, amplitudes and durations, time integration that keeps the continuous symmetry, and evolution near the bracketed changes of type. It needs a new discretization first, since the Galerkin instrument was qualified without time integration. The same section of the paper lists what else stays open.
+
 ---
 
 | **[`<back`](/files/tools/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
