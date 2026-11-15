@@ -711,4 +711,8 @@ This is a numerical certification of the theorems as stated, not a second proof.
 
 ---
 
+[![TOE-Share AI review: 3.7 / 5](https://theoryofeverything.ai/api/badge/paper/a20ee507-d3b0-4a23-be29-79eaeea645b1?style=banner)](https://theoryofeverything.ai/review-profile/paper/a20ee507-d3b0-4a23-be29-79eaeea645b1?utm_source=toeshare_badge)
+
+---
+
 | **[`<back`](/files/framework/files/bedrock/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
