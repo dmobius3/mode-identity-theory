@@ -326,4 +326,8 @@ This is a numerical certification across the finite family the run covers, not a
 
 ---
 
+[![TOE-Share AI review: 4.2 / 5](https://theoryofeverything.ai/api/badge/paper/26f424d0-35bb-4b22-b333-00323f01a72a?style=banner)](https://theoryofeverything.ai/review-profile/paper/26f424d0-35bb-4b22-b333-00323f01a72a?utm_source=toeshare_badge)
+
+---
+
 | **[`<back`](/files/framework/files/bedrock/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
