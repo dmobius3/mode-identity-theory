@@ -577,4 +577,8 @@ The M8.17 [method note](https://github.com/openwave-labs/openwave/blob/c8aff9191
 
 ---
 
+[![TOE-Share AI review: 4.0 / 5](https://theoryofeverything.ai/api/badge/paper/5042523b-4df8-4b69-95c7-a509c4ca810a?style=banner)](https://theoryofeverything.ai/review-profile/paper/5042523b-4df8-4b69-95c7-a509c4ca810a?utm_source=toeshare_badge)
+
+---
+
 | **[`<back`](/files/framework/files/dynamics/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
