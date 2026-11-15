@@ -1721,4 +1721,8 @@ checks; the manifest's own SHA-256 is `6a3e3027683e6baad41fafa8204acd21e52b7226a
 
 ---
 
+[![TOE-Share AI review: 4.3 / 5](https://theoryofeverything.ai/api/badge/paper/a3797810-6785-4f0b-9a75-8c9a6771d879?style=banner)](https://theoryofeverything.ai/review-profile/paper/a3797810-6785-4f0b-9a75-8c9a6771d879?utm_source=toeshare_badge)
+
+---
+
 | **[`<back`](/files/framework/files/bedrock/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
