@@ -430,4 +430,8 @@ The run is scoped to the paper's computable content. Theorem 1.3(ii) and the who
 
 ---
 
+[![TOE-Share AI review: 4.2 / 5](https://theoryofeverything.ai/api/badge/paper/bfb63b33-d026-4110-95b2-90b5957291e3?style=banner)](https://theoryofeverything.ai/review-profile/paper/bfb63b33-d026-4110-95b2-90b5957291e3?utm_source=toeshare_badge)
+
+---
+
 | **[`<back`](/files/framework/files/bedrock/)** | **[`↑top`](#top)** | **[`main`](https://github.com/dmobius3/mode-identity-theory/tree/main/)** | **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
