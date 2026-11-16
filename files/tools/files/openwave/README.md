@@ -49,6 +49,7 @@ From the next M8 task on, each task's files live here, in a folder named for its
 |---|---|
 | `README.md` | the question, the links to the terms, the go, the method note and the adjudication, the outcome, and the page that carries it |
 | `terms/` | a copy of the filed terms, byte for byte, with their hash and a link to the original |
+| `<task>_claims.json` | the claims file, where a task's designer takes it from this repository: the answer key, which no room reads |
 | `run/` | the frozen code, its pins and its outputs |
 | `RECORD.md` | the run record, built from the outputs |
 | `DEVLOG.md` | the log from the build to the record |
@@ -64,7 +65,7 @@ MIT's own computation, [`soft-slot-dynamics-mit`](/files/framework/files/working
 
 | Task | What it asks | Where it stands | MIT's side |
 |---|---|---|---|
-| [M8.1.3](/files/tools/files/openwave/m8-1-3/README.md) | A blind run on the Standing-Wave Branches | Filing admitted on [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19632863): the task document is next, with each of its five blocks to be accepted or declined on its own | [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md) |
+| [M8.1.3](/files/tools/files/openwave/m8-1-3/README.md) | A blind run on the Standing-Wave Branches | Filed as [#731](https://github.com/openwave-labs/openwave/pull/731) and merged on 2026-11-16, all five blocks accepted: the designer's audit of the packet and the go come next | [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md) |
 
 Next comes the dynamics of the branches, which the [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md#62-what-stays-open) leaves to a sequel: the response to perturbations over several directions, amplitudes and durations, time integration that keeps the continuous symmetry, and evolution near the bracketed changes of type. It needs a new discretization first, since the Galerkin instrument was qualified without time integration. The same section of the paper lists what else stays open.
 
