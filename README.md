@@ -17,7 +17,7 @@ Around 300 BC, Euclid proved that only five regular solids close perfectly in or
 
 one shape, one wave, and the rest is accounting.
 
-At its core, MIT is a research program built on spectral geometry and representation theory. Its mathematical foundations live in [bedrock](/files/framework/files/bedrock/), its frontier work in [dynamics](/files/framework/files/dynamics/), its physical applications in [cosmos](/files/cosmos/) and [spectrum](/files/spectrum/), its open questions in [working](/files/framework/files/working/), and its reference materials and interactive tools in [tools](/files/tools/).
+At its core, MIT is a research program built on spectral geometry and representation theory. Its [framework](/files/framework/) holds the mathematics: foundations in [bedrock](/files/framework/files/bedrock/), frontier work in [dynamics](/files/framework/files/dynamics/), and open questions in [working](/files/framework/files/working/). The physical applications span [cosmos](/files/cosmos/) and [spectrum](/files/spectrum/), and reference and interactive materials live in [tools](/files/tools/).
 
 ---
 
