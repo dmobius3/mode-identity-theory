@@ -7,7 +7,7 @@
 
 ---
 
-Mode Identity Theory starts with a simple bet: fundamental physics is not missing more ingredients. It is missing the boundary conditions that determine the forms those ingredients take and the values they assume. Instead of changing relativity or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
+**Mode Identity Theory (MIT) starts with a simple bet:** fundamental physics is not missing more ingredients. It is missing the boundary conditions that determine the forms those ingredients take and the values they assume. Instead of changing relativity or treating the constants of nature as accidents, MIT asks what follows when form comes before function.
 
 MIT keeps Einstein's field equations and the Standard Model as the local rules of physics while adding a global geometric structure beneath them. In this picture, topology comes first. The wave is fundamental. Matter appears where that wave is sampled, and time is its phase. The observer is part of the realization rather than something standing outside it. Some of what follows is exact mathematics, some is quantitative correspondence, and some remains open research.
 
@@ -15,9 +15,9 @@ What began with an unexpected search query became a philosophical question, then
 
 Around 300 BC, Euclid proved that only five regular solids close perfectly in ordinary space, formalizing an early observation by Plato. Today, ESA's Euclid telescope is surveying billions of galaxies to measure how the universe expands and how structure grows. MIT makes its own geometric bet:
 
-one shape, one wave, and the rest is accounting.
+**one shape, one wave, and the rest is accounting.**
 
-At its core, MIT is a research program built on spectral geometry and representation theory. Its [framework](/files/framework/) holds the mathematics: foundations in [bedrock](/files/framework/files/bedrock/), frontier work in [dynamics](/files/framework/files/dynamics/), and open questions in [working](/files/framework/files/working/). The physical applications span [cosmos](/files/cosmos/) and [spectrum](/files/spectrum/), and reference and interactive materials live in [tools](/files/tools/).
+At its core, MIT is a research program built on spectral geometry and representation theory. Its [framework](/files/framework/) holds the mathematics: foundations in [bedrock](/files/framework/files/bedrock/), frontier work in [dynamics](/files/framework/files/dynamics/), and open questions in [working](/files/framework/files/working/). The physical applications span [cosmos](/files/cosmos/) and [spectrum](/files/spectrum/), and reference and interactive materials in [tools](/files/tools/).
 
 ---
 
