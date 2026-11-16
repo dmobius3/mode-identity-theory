@@ -95,7 +95,7 @@ classification is an audited argument (Section 7.2), and its values were reprodu
 orbits outside the class are certified by interval arithmetic. The minimum of $`\widehat r_6`$ is
 $`1/924`$, attained exactly on the coherent states, by an identity that brings the
 Beauzamy-Bombieri-Enflo-Montgomery inequality [BBEM], with Reznick's equality case [Re], to the top
-multipole; it completes a statement of Björk et al. [Bj], and the same argument proves that statement's top order at every spin, with its equality case (Section 7.3). The maximum is $`463/924`$, attained
+multipole; it completes a statement of Björk et al. [Bj], and the same argument gives the top multipole's minimum at every spin, with its equality case (Section 7.3). The maximum is $`463/924`$, attained
 exactly on the hexagon orbit (Theorem 7.5); the value and the question are Romero et al.'s [RK], and
 the argument was audited on the M8 track of OpenWave, an open-source simulation project [M8.13].
 
