@@ -7,7 +7,7 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/M8_Overview.png?raw=true" width="100%">
 
-## The Tasks
+## Completed Tasks
 
 | Task | What it asked | Outcome | MIT's side |
 |---|---|---|---|
@@ -37,7 +37,29 @@
 | [M8.18](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/tasks/m8_18_task_details.md) | The census's two remedies | ✅ Adjudicated as recorded: T4/R5's change of type located; the items left open close instrument-limited | [run record](/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-18/RECORD.md) |
 | [M8.19](https://github.com/openwave-labs/openwave/blob/main/openwave/xperiments/m8_mit/research/tasks/m8_19_task_details.md) | The census's persistence tests (S5) | ✅ Adjudicated, the record as filed: the coherent row in R5 Persists at 32; T1's and T4's stretches end untested | [run record](/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-19/RECORD.md) |
 
-From M8.12 on, each Done row adds that the task leaves every `MODELS.md` cell and M8.7's gate as they were, and from M8.15 on, that it stands at the Row 6 ceiling. [The Slot Dynamics Census](/files/framework/files/working/files/slot-dynamics-census.md) gathers what M8.15 to M8.19 found, row by row, and how the census closed.
+## Work in Progress
+
+| Task | What it asks | Where it stands | MIT's side |
+|---|---|---|---|
+| [M8.1.3](/files/tools/files/openwave/m8-1-3/README.md) | A blind run on the Standing-Wave Branches | Filed as [#731](https://github.com/openwave-labs/openwave/pull/731) and merged on 2026-11-16, all five blocks accepted: the designer's audit of the packet and the go come next | [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md) |
+
+Next comes the dynamics of the branches, which the [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md#62-what-stays-open) leaves to a sequel: the response to perturbations over several directions, amplitudes and durations, time integration that keeps the continuous symmetry, and evolution near the bracketed changes of type. It needs a new discretization first, since the Galerkin instrument was qualified without time integration. The same section of the paper lists what else stays open.
+
+## The Criteria
+
+| Criteria | Status | simplest test | 
+
+### PARTICLE - ELECTRON
+
+| | | |
+|---|---|---|
+| Charge quantization | 🚧 | integer topological charge; a split e → e/2 + e/2 impossible |
+
+*Summary:* Group-theoretic assignment from the 2I stabilizer structure (Z₃ face stabilizers: color triplet vs singlet), not an integrated winding; the in-platform comparison with a winding-type charge rode the M8.4 lineage, which CLOSED UNRESOLVED 2026-08-26 with no target configuration executed [`__M8_model_briefing.md`](openwave/xperiments/m8_mit/__M8_model_briefing.md)
+
+### PARTICLE - FULL SPECTRUM
+
+
 
 ## Where the Files Are
 
@@ -60,14 +82,6 @@ From the next M8 task on, each task's files live here, in a folder named for its
 ## Outside M8
 
 MIT's own computation, [`soft-slot-dynamics-mit`](/files/framework/files/working/files/scripts/soft-slot-dynamics-mit/RECORD.md), lies outside M8: as the maintainer answered on [#512](https://github.com/openwave-labs/openwave/discussions/512#discussioncomment-19339563), it runs on a different instrument from M8.16.1's, and OpenWave reads its values as MIT's own, outside M8's outcomes and `MODELS.md`.
-
-## Work in Progress
-
-| Task | What it asks | Where it stands | MIT's side |
-|---|---|---|---|
-| [M8.1.3](/files/tools/files/openwave/m8-1-3/README.md) | A blind run on the Standing-Wave Branches | Filed as [#731](https://github.com/openwave-labs/openwave/pull/731) and merged on 2026-11-16, all five blocks accepted: the designer's audit of the packet and the go come next | [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md) |
-
-Next comes the dynamics of the branches, which the [Standing-Wave Branches](/files/framework/files/dynamics/files/standing-wave-branches.md#62-what-stays-open) leaves to a sequel: the response to perturbations over several directions, amplitudes and durations, time integration that keeps the continuous symmetry, and evolution near the bracketed changes of type. It needs a new discretization first, since the Galerkin instrument was qualified without time integration. The same section of the paper lists what else stays open.
 
 ---
 
