@@ -371,7 +371,7 @@ The representatives are written in orthonormal Condon–Shortley components $`v_
 - *The other slot.* In $`R_5`$ the types are the same, and each root in $`\nu`$ is $`R_4`$'s times 81/256.
 - *The control.* The third outside orbit, rerun from its own certificate, reproduces claim I's row: its value, its signature, $`\lVert J(u)\rVert^2`$ and its four roots.
 
-**$`R_2`$, level 7.** The points are the weight states and the interior critical points of the cyclic fixed lines, each line spanned by two weights alone. Three of the seven lines, $`\lbrace 5/2, -5/2\rbrace`$, $`\lbrace 7/2, -7/2\rbrace`$ and $`\lbrace 3/2, -3/2\rbrace`$, are $`Sp(1)`$ orbits of weight states, on which $`Q`$ is constant. The column "along the family" uses the members whose complex structure is $`j`$, $`k`$, $`(i + j)/\sqrt 2`$ or $`(i + k)/\sqrt 2`$.
+**$`R_2`$, level 7.** The points are the weight states and the interior critical points of the cyclic fixed lines, each line spanned by two weights alone. Three of the seven lines, $`\lbrace 5/2, -5/2\rbrace`$, $`\lbrace 7/2, -7/2\rbrace`$ and $`\lbrace 3/2, -3/2\rbrace`$, are $`Sp(1)`$ orbits of weight states, on which $`Q`$ is constant. The column "along the family" uses the members whose complex structure is $`\Theta`$, $`\Theta i`$, $`(i + \Theta)/\sqrt 2`$ or $`(i + \Theta i)/\sqrt 2`$, with $`\Theta`$ the quaternionic structure of $`V_{7/2}`$ fixed in §I and $`\Theta i`$ the map $`w \mapsto \Theta(iw)`$.
 
 | orbit | representative | $`Q`$ | $`(n_-, n_0, n_+)`$ | $`k, r_u`$ | slow flow at the point | along the family | Theorem R |
 | --- | --- | --- | --- | --- | --- | --- | --- |
