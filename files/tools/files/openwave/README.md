@@ -47,25 +47,52 @@ Next comes the dynamics of the branches, which the [Standing-Wave Branches](/fil
 
 ## The Criteria
 
-### PARTICLE - ELECTRON
+MIT's column from the [coverage matrix](https://github.com/openwave-labs/openwave/blob/main/MODELS.md#summary-status). The [simplest test per criterion](https://github.com/openwave-labs/openwave/blob/main/MODELS.md#simplest-test-per-criterion) names what would settle each row.
 
-| Row # | Status | Criteria | simplest test |
-|---|---|---|---|
-| 1 | 🚧 | Charge quantization | integer topological charge; a split e → e/2 + e/2 impossible |
+✅ validated in-platform · ⚠️ partial / with caveats · ❌ honest negative · 🚧 planned / not tested
 
-*Summary:* Group-theoretic assignment from the 2I stabilizer structure (Z₃ face stabilizers: color triplet vs singlet), not an integrated winding; the in-platform comparison with a winding-type charge rode the M8.4 lineage, which CLOSED UNRESOLVED 2026-08-26 with no target configuration executed [`__M8_model_briefing.md`](openwave/xperiments/m8_mit/__M8_model_briefing.md)
+✅ 0 · ⚠️ 1 · ❌ 0 · 🚧 30 · **31 criteria**
 
----
-
-| Status | Criteria | simplest test |
+| # | Criteria | M8 summary |
 |---|---|---|
-| 🚧 | Electron rest energy (mass) | localized state anchored to 511 keV |
-
-*Summary:* m_e is the mass-sector calibration anchor (benchmark input, not a prediction): entering the calibration loop from measured Λ reproduces m_e to ~2%. The corrected 24-entry analytic spectrum is now reproduced in-platform (M8.3 ✅, 23/23 gates, mutation-tested), graded at the author's own ledger weight: 5 of 8 remaining charged fermions compatible within ×3, 4 adjudicated m8_3_method_note.md
-
-### PARTICLE - FULL SPECTRUM
-
-
+| | **PARTICLE - ELECTRON** | |
+| 1 | Charge quantization | 🚧 Group-theoretic assignment from the 2I stabilizer structure (Z₃ face stabilizers: color triplet vs singlet), not an integrated winding; the in-platform comparison with a winding-type charge rode the M8.4 lineage, which closed unresolved 2026-08-26 with no target configuration executed |
+| 2 | Electron rest energy (mass) | 🚧 m_e is the mass-sector calibration anchor (benchmark input, not a prediction): entering the calibration loop from measured Λ reproduces m_e to ~2%. The corrected 24-entry analytic spectrum is now reproduced in-platform (M8.3 ✅, 23/23 gates, mutation-tested); 5 of 8 remaining charged fermions compatible within ×3 |
+| 3 | de Broglie clock (Zitterbewegung) | 🚧 The Waltz clock dt/dτ_H = S^(−1/2) is not derived from the postulate: its exponent enters through the GR correspondence and is empirically unique in its family (Δχ² > 60); deriving a clock from dynamics on the arena is part of the M8 program |
+| 4 | Particle stability (Derrick escape) | 🚧 Under the frozen slot action, localized standing waves vanish in flat space (Pohozaev), so no lump much smaller than R is expected; curvature-scale states remain open. M8.4 closed unresolved 2026-08-26, successor chassis M8.5-C2-FAILED 2026-08-31; no authorized route currently exists |
+| 5 | Magnetic moment μ (g ≈ 2, magnetostatics) | 🚧 Not addressed |
+| 6 | Angular momentum J (spin ℏ/2) | 🚧 Not addressed (no native dynamics to carry angular momentum) |
+| 7 | Spin-½ statistics (720° double cover) | 🚧 2I ⊂ SU(2) carries the ordinary spinor sign: its central −I acts as −1 on half-integer-spin representations, distinct from the Mobius orientation sign. On MIT's projective carrier one loop carries both, making the spin sign geometric; this derives neither spin-statistics nor anticommutation. No field realization yet |
+| | | |
+| | **PARTICLE - FULL SPECTRUM** | |
+| 8 | Antimatter + annihilation | 🚧 Not addressed (no native dynamics to annihilate with) |
+| 9 | Neutrinos (neutral states) | 🚧 The R1 sector is an ordered ladder (0.87/7.3/66.7 meV) in qualitative resemblance to the lightest/solar/atmospheric scales, not a hard per-generation assignment; as absolute masses the NuFIT 6.0 splittings exclude it. Falsified if a global fit favors inverted ordering at χ²_NO − χ²_IO ≥ 9. Analytic only |
+| 10 | Neutrino oscillations (PMNS) | 🚧 Not addressed in-platform; the analytic ladder carries the mass side only |
+| 11 | Lepton mass spectrum (μ, τ) | 🚧 The McKay-distance ladder is a candidate mechanism for the hierarchy origin M5 leaves open, but the M8.6 cross-check closed on the M5 side (2026-08-07). Both leptons are adjudicated hits in-platform (M8.3: μ 1.03×, τ 2.74×, within ×3), but the pre-registered null gives p_A = 0.690, capping the ×3 count as uninformative |
+| 12 | Quarks | 🚧 Color from the Z₃ face stabilizers (structural). The down quark's 3.22× residual is unchanged and remains the standing miss; top quark now a 0.93× hit at its corrected address; up quark's former ~6% hit was a torsion-computation artifact and is now unassigned; charm remains unplaced |
+| 13 | Baryons: bound state (p, n) | 🚧 Not addressed |
+| 14 | Baryons: mass ordering + charge profile | 🚧 Not addressed |
+| 15 | Baryons: exact masses | 🚧 Not addressed |
+| 16 | Deuteron (binding + quadrupole) | 🚧 Not addressed |
+| 17 | Nuclear structure (levels, halos) | 🚧 Not addressed |
+| 18 | Mesons (π, K) | 🚧 Not addressed |
+| 19 | Dark matter candidate | 🚧 MIT reads dark matter as gravitational geometry of S³, with its assignment open; the present construction has no particle dark-matter sector. Rank 16 (~418 MeV) defaults to a structural residual; the 6 dead-zone states (eV-keV) carry an "unassigned" escape hatch |
+| | | |
+| | **FORCES** | |
+| 20 | Electric force (Coulomb 1/r, electrostatics) | 🚧 α read from the first Fibonacci well is input-and-output (the author's Cycle 2: a consistency check, not a prediction); no force-level computation |
+| 21 | Lorentz covariance (+ Coulomb = EM) | 🚧 No native field dynamics to be covariant; supplying a field equation on S³/2I was the M8.4 program, closed unresolved 2026-08-26. Successor chassis M8.5-C2-FAILED 2026-08-31. No authorized route currently exists |
+| 22 | Strong force: confinement | 🚧 The analytic 4/R² adjoint gap on S³/2I is verified in-platform (M8.1.1: blind, adversarially audited, with the single 36/R² exception across the whole ADE family). Icon stays 🚧 deliberately: that is a spectral gap at a flat connection, not the linear inter-charge potential this row tests |
+| 23 | Running coupling | 🚧 Not addressed; α itself is read from the first Fibonacci well (input-and-output) |
+| 24 | Weak force: muon decay | 🚧 Not addressed |
+| 25 | Weak force: beta decay (n → p) | 🚧 Not addressed |
+| 26 | Gravity: Newton limit (GEM) | 🚧 Einstein's equations are imported unchanged, so the Newton limit is inherited rather than earned in-platform |
+| 27 | Gravity: local metric phenomena | 🚧 No MIT-specific calculation of light bending, gravitational time dilation or Shapiro delay. MIT imports Einstein's equations unchanged, but importing field equations is not importing a solution: sources, boundary conditions and the local metric are still required |
+| 28 | Cosmology: Λ / cosmic acceleration | ⚠️ Spectral seed validated: M8.1 (blind two-agent eigensolve, audited 6/6) confirmed 2/R² at 10-digit precision. Under the stated Gauss lift, 6/R²; with the de Sitter ½ imported, ΛR² = 3. Two gaps: scale R (two routes, 1.7-3.2× apart) and physical identification, gated on an undetermined stress tensor. Test: Λ_obs R_ind² = 3; >5σ falsifies |
+| | | |
+| | **WAVES + QUANTUM EMERGENCE** | |
+| 29 | EM waves (Maxwell) | 🚧 No field model of radiation (photon massless at the edge-only layer level, a structural label) |
+| 30 | Quantum wave equation (Klein-Gordon) | 🚧 No native field equation exists; supplying one on S³/2I remains the M8 program's central goal. M8.4 closed unresolved 2026-08-26 with no target configuration executed |
+| 31 | Orbital quantization (atomic structure) | 🚧 Not addressed |
 
 ## Where the Files Are
 
