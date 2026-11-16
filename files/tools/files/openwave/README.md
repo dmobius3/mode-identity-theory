@@ -49,11 +49,9 @@ Next comes the dynamics of the branches, which the [Standing-Wave Branches](/fil
 
 MIT's column from the [coverage matrix](https://github.com/openwave-labs/openwave/blob/main/MODELS.md#summary-status). The [simplest test per criterion](https://github.com/openwave-labs/openwave/blob/main/MODELS.md#simplest-test-per-criterion) names what would settle each row.
 
-✅ validated in-platform · ⚠️ partial / with caveats · ❌ honest negative · 🚧 planned / not tested
+✅ validated in-platform (0/31) · ⚠️ partial / with caveats (1/31) · ❌ honest negative (0/31) · 🚧 planned / not tested (30/31)
 
-✅ 0 · ⚠️ 1 · ❌ 0 · 🚧 30 · **31 criteria**
-
-| # | Criteria | M8 summary |
+| # | Criteria | Summary |
 |---|---|---|
 | | **PARTICLE - ELECTRON** | |
 | 1 | Charge quantization | 🚧 Group-theoretic assignment from the 2I stabilizer structure (Z₃ face stabilizers: color triplet vs singlet), not an integrated winding; the in-platform comparison with a winding-type charge rode the M8.4 lineage, which closed unresolved 2026-08-26 with no target configuration executed |
