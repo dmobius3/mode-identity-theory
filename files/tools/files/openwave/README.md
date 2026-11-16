@@ -47,15 +47,21 @@ Next comes the dynamics of the branches, which the [Standing-Wave Branches](/fil
 
 ## The Criteria
 
-| Criteria | Status | simplest test | 
-
 ### PARTICLE - ELECTRON
 
-| | | |
-|---|---|---|
-| Charge quantization | 🚧 | integer topological charge; a split e → e/2 + e/2 impossible |
+| Row # | Status | Criteria | simplest test |
+|---|---|---|---|
+| 1 | 🚧 | Charge quantization | integer topological charge; a split e → e/2 + e/2 impossible |
 
 *Summary:* Group-theoretic assignment from the 2I stabilizer structure (Z₃ face stabilizers: color triplet vs singlet), not an integrated winding; the in-platform comparison with a winding-type charge rode the M8.4 lineage, which CLOSED UNRESOLVED 2026-08-26 with no target configuration executed [`__M8_model_briefing.md`](openwave/xperiments/m8_mit/__M8_model_briefing.md)
+
+---
+
+| Status | Criteria | simplest test |
+|---|---|---|
+| 🚧 | Electron rest energy (mass) | localized state anchored to 511 keV |
+
+*Summary:* m_e is the mass-sector calibration anchor (benchmark input, not a prediction): entering the calibration loop from measured Λ reproduces m_e to ~2%. The corrected 24-entry analytic spectrum is now reproduced in-platform (M8.3 ✅, 23/23 gates, mutation-tested), graded at the author's own ledger weight: 5 of 8 remaining charged fermions compatible within ×3, 4 adjudicated m8_3_method_note.md
 
 ### PARTICLE - FULL SPECTRUM
 
