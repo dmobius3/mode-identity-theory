@@ -131,11 +131,11 @@ Matter appears where the wave is sampled. Most possible modes cancel. The surviv
 
 The scaling law asks two questions about any quantity: **where is it sampled, and at what geometric scale is it defined?**
 
-> **$`A/A_P`$** measures the quantity relative to its natural Planck-scale unit.
+- **$`A/A_P`$** measures the quantity relative to its natural Planck-scale unit.
 
-> **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** gives its position on the wave.
+- **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** gives its position on the wave.
 
-> **$`(\sqrt{\Omega})^{-n}`$** gives the suppression associated with the geometric layer being read.
+- **$`(\sqrt{\Omega})^{-n}`$** gives the suppression associated with the geometric layer being read.
 
 The powers of ten come from the hierarchy; the wave position supplies the leading digits. The index $n$ describes the form of the suppression, with one power for each geometric layer crossed. It does not determine the size of the hierarchy itself. The value of $\Omega$ is fixed from an anchor and then read across the rest of the structure.
 
@@ -157,11 +157,11 @@ A particle is not identified by a single number. In MIT, each state has an addre
 
 The 120-element structure contains three natural stabilizers associated with faces, edges, and vertices. Looking at the same state through each one reveals a different aspect of its identity:
 
-> **Faces sort color.**
+- **Faces sort color.**
 
-> **Edges sort the boson-fermion divide.**
+- **Edges sort the boson-fermion divide.**
 
-> **Vertices sort the electroweak address.**
+- **Vertices sort the electroweak address.**
 
 The representation theory provides these decompositions, and MIT interprets them as the geometric origin of the Standard Model's quantum numbers. The three flat vacua provide the second part of the address. The framework identifies them with the three particle generations, although which vacuum corresponds to which generation remains an open question.
 
@@ -183,13 +183,13 @@ The mass formula treats particle masses as different addresses in one geometric 
 
 It builds a mass from four pieces:
 
-> **The Floor:** $`\mu_\Lambda`$ sets the mass scale from which the spectrum is built.
+- **The Floor:** $`\mu_\Lambda`$ sets the mass scale from which the spectrum is built.
 
-> **The Position (Kostant sunflower):** $`C_{\text{geom}}(\rho)`$ gives each representation its seat in the geometry.
+- **The Position (Kostant sunflower):** $`C_{\text{geom}}(\rho)`$ gives each representation its seat in the geometry.
 
-> **The Distance (McKay elevator):** $`(\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30}`$ moves that seat through orders of magnitude according to its distance on the McKay graph.
+- **The Distance (McKay elevator):** $`(\sqrt{\Omega_\Lambda})^{\text{dist}(\rho)/30}`$ moves that seat through orders of magnitude according to its distance on the McKay graph.
 
-> **The Vacuum (torsion dial):** $`T^2(\rho \otimes \sigma)`$ adjusts the result according to which flat vacuum the state occupies.
+- **The Vacuum (torsion dial):** $`T^2(\rho \otimes \sigma)`$ adjusts the result according to which flat vacuum the state occupies.
 
 Across the eight nontrivial representation seats and three vacua, the formula produces a 24-entry fermion spectrum. Its proximity to the measured masses is a comparison, not a prediction. The weight of the construction rests instead on the existence of the 24-entry geometric spectrum and on the exact torsion algebra, whose eight irrep-level closed forms a second, non-spectral method reproduces.
 
@@ -211,7 +211,7 @@ The Möbius embedding provides the vacuum-side geometry. The quotient $S^3 \to S
 
 The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its numerator comes from the derived geometry of the Möbius band's unbent covering surface in isotropic $S^3$, while its denominator comes from the de Sitter normalization inherited from general relativity.
 
->Gravity is not a fourth force waiting for an empty seat on the particle grid. In MIT, gravity lives at the interface between the smooth geometric substrate and the discrete representation structure built upon it. Einstein's field equations remain the local law of gravity. What remains open is the dynamical bridge that specifies exactly how realized wave content sources the geometry.
+- Gravity is not a fourth force waiting for an empty seat on the particle grid. In MIT, gravity lives at the interface between the smooth geometric substrate and the discrete representation structure built upon it. Einstein's field equations remain the local law of gravity. What remains open is the dynamical bridge that specifies exactly how realized wave content sources the geometry.
 
 ---
 
