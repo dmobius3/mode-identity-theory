@@ -12,7 +12,9 @@
 **Gated by:** `gate:clock-exponent-derivation`, `gate:amplitude-stress-tensor-dictionary`, `gate:three-halves-identity`
 **Inputs:** the spatial budget $`u_0^2 + J^2 = 1`$, the postulate, Pantheon+ and DESI DR2 BAO (Λcos paper)
 
-[![The Phantom Mirage](https://img.youtube.com/vi/23IxzJDo3pM/mqdefault.jpg)](https://www.youtube.com/watch?v=23IxzJDo3pM)
+>[![The Phantom Mirage](https://img.youtube.com/vi/23IxzJDo3pM/mqdefault.jpg)](https://www.youtube.com/watch?v=23IxzJDo3pM)
+>
+>*Video: [The Phantom Mirage](https://www.youtube.com/watch?v=23IxzJDo3pM)*
 
 Working notes on the temporal budget $`\Psi^2 + S^2 = 1`$, the Waltz clock $`d\tau_H/dt = S^{1/2}`$, and the Pantheon+ distance fit. $`\Omega_m = 0.315`$ is the flat-closure complement $`1 - \Omega_\Lambda`$ of the fixed vacuum anchor, not read off the fit.
 
