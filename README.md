@@ -93,7 +93,7 @@ MIT starts with a finite space that closes on itself, so there is no outer bound
 
 The observable domain is the smooth quotient $S^3/2I$. The same opposite-point identification forms part of that construction, while the 120-element binary icosahedral group, $2I$, provides the representation structure the framework uses to distinguish physical states. The result remains a smooth manifold.
 
-So the geometry has three jobs: **$S^3$ supplies the space, the Möbius band supplies the boundary condition, and $2I$ supplies the symmetry structure from which the physics is read.**
+- So the geometry has three jobs: **$S^3$ supplies the space, the Möbius band supplies the boundary condition, and $2I$ supplies the symmetry structure from which the physics is read.**
 
 ---
 
@@ -111,7 +111,7 @@ The underlying space remains fixed. What changes is the phase of a standing wave
 
 The Möbius twist causes the lifted wave to change sign after one circuit and return to itself only after two. As a result, its fundamental phase period is $4\pi$ rather than $2\pi$. The boundary itself also closes only after two circuits, so nothing defined on it is double-valued. The progression of that phase is what the theory identifies as time.
 
-The cosine wave has a complementary component, $S=\sin(t/2)$, and together they always form a complete whole: $`\Psi^2 + S^2 = 1`$
+- The cosine wave has a complementary component, $S=\sin(t/2)$, and together they always form a complete whole: $`\Psi^2 + S^2 = 1`$
 
 $\Psi^2$ represents the portion still carried as wave, while $S^2$ represents the portion already realized as modes. As phase advances, weight shifts from the first to the second. That single quantity, $S$, is the variable the framework associates with cosmological observations.
 
@@ -129,13 +129,13 @@ Matter appears where the wave is sampled. Most possible modes cancel. The surviv
 \Large \boxed{\frac{A}{A_P} \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}}
 ```
 
-The scaling law asks two questions about any quantity: **where is it sampled, and at what geometric scale is it defined?**
+The scaling law asks two questions about any quantity: where is it sampled, and at what geometric scale is it defined?
 
-- **$`A/A_P`$** measures the quantity relative to its natural Planck-scale unit.
+- **$`A/A_P`$ measures the quantity relative to its natural Planck-scale unit.**
 
-- **$`C(\Theta) = 2\sin^2(\pi\Theta)`$** gives its position on the wave.
+- **$`C(\Theta) = 2\sin^2(\pi\Theta)`$ gives its position on the wave.**
 
-- **$`(\sqrt{\Omega})^{-n}`$** gives the suppression associated with the geometric layer being read.
+- **$`(\sqrt{\Omega})^{-n}`$ gives the suppression associated with the geometric layer being read.**
 
 The powers of ten come from the hierarchy; the wave position supplies the leading digits. The index $n$ describes the form of the suppression, with one power for each geometric layer crossed. It does not determine the size of the hierarchy itself. The value of $\Omega$ is fixed from an anchor and then read across the rest of the structure.
 
