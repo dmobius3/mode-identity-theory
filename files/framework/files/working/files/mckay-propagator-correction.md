@@ -410,9 +410,9 @@ If a single multiplicative correction computable from the McKay graph structure 
 
 ---
 
-## 9. Connection to Open Items in Engine File
+## 9. Connection to Open Items
 
-| Engine file item | Relevance |
+| Open item | Relevance |
 |---|---|
 | Fermion mass residual (OPEN) | Direct target of this work |
 | dist/30 hierarchy exponent (ESTABLISHED) | Correction modifies the elevator without changing the exponent |
@@ -449,7 +449,7 @@ If constraints 1-6 are satisfied, the correction is structural. If constraint 7 
 4. Check if the vacuum reversal (gal misses at dist 5, triv misses at dist 7) is explained by intermediate torsion products.
 5. Examine the R8 branch point: compute effective branching ratios for R4 vs R5 exit in each vacuum.
 6. Check if the branch-point correction modifies the effective j_first at R4, potentially opening a T₃ = +1/2 slot for charm.
-7. If a candidate works: apply, recompute full 24-entry scorecard, check charm status, update engine file.
+7. If a candidate works: apply, recompute full 24-entry scorecard, check charm status, update [mass-spectrum](../../../../spectrum/files/mass-spectrum.md).
 8. If no candidate works: flag as unsolved, document what was tried, record which constraints failed.
 
 ---
