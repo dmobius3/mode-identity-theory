@@ -7,7 +7,7 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-26):** Part two closed, terminal: the three-ingredient coupling identity degenerates, the Möbius data coupling to the Galois asymmetry with coefficient exactly zero along every restriction-route formula with the canonical pullback coefficient bundle, while the gauge dictionary survives as theorems, so the staged route closes as a split.
+**Status (2026-07-01):** Part two closed, terminal: the three-ingredient coupling identity degenerates, the Möbius data coupling to the Galois asymmetry with coefficient exactly zero along every restriction-route formula with the canonical pullback coefficient bundle, while the gauge dictionary survives as theorems, so the staged route closes as a split.
 **Summary:** Proves that the Möbius channel decouples from the Galois asymmetry, route-specifically, with the boundary-interior gauge dictionary as the positive residue: the terminal document of the bridge's staged route, part two of Step 4.
 **Parent:** `postulate-bridge.md`
 

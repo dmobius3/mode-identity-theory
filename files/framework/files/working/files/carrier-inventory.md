@@ -7,7 +7,7 @@
 
 **Type:** Map
 **State:** Closed
-**Status (2026-11-11):** The inventory is complete. It records, entry by entry, what the carrier ruling of 2026-09-27 changes on other pages and what it leaves alone, with each page's wording quoted. The working-layer pages it lists have carried dated scope notes since 2026-09-27, except Cone Point Coherence, which the ruling leaves as it was, and the public pages have stated the placement, the two seams and the two signs in place since 2026-09-28. Two entries took the root README's current wording on 2026-11-11.
+**Status (2026-10-02):** The inventory is complete. It records, entry by entry, what the carrier ruling of 2026-09-27 changes on other pages and what it leaves alone, with each page's wording quoted. The working-layer pages it lists have carried dated scope notes since 2026-09-27, except Cone Point Coherence, which the ruling leaves as it was, and the public pages have stated the placement, the two seams and the two signs in place since 2026-09-28. Two entries took the root README's current wording on 2026-11-11.
 **Summary:** What the carrier ruling changes on other pages and what it leaves alone: an inventory, page by page, with each page's wording quoted and held to its source by The Projective Carrier's gate.
 **Inputs:** `projective-carrier.md` (§XI, the ruling and its five readings)
 **Parent:** `projective-carrier.md`

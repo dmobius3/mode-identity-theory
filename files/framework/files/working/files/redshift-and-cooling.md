@@ -7,7 +7,7 @@
 
 **Type:** Note
 **State:** Active
-**Status (2026-10-25):** Cooling is established as a kinematic equivalence with the FLRW thermal law, its derivation from the postulate, the photon phase-space density included, open (§II); the redshift mechanism is in outline, and the distance side rides on the Waltz clock. The Killing ledger is derived (§VI): read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share, and the exchange waits on the amplitude-to-stress-tensor dictionary.
+**Status (2026-10-08):** Cooling is established as a kinematic equivalence with the FLRW thermal law, its derivation from the postulate, the photon phase-space density included, open (§II); the redshift mechanism is in outline, and the distance side rides on the Waltz clock. The Killing ledger is derived (§VI): read as a Killing or conformal Killing charge, a rising realized energy is a non-conserved effective-frame charge or an exchange partner's share, and the exchange waits on the amplitude-to-stress-tensor dictionary.
 **Summary:** How a static universe reddens light and cools a thermal bath, both readings of the temporal budget's state S.
 **Inputs:** `temporal-budget.md`, the standing wave $`\Psi = \cos(t/2)`$, the Waltz clock
 

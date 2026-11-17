@@ -7,7 +7,7 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-26):** The analytic framework is fixed (ALE instanton on the minimal resolution of C²/2I, Kronheimer-Nakajima; the orbifold cone a consistency check), and the sign is resolved: ρ_adQ′ − ρ_adQ = −8/5 on the resolution-boundary orientation, with the magnitude 73/15 of ρ_adQ anchored in print (BHKK). The distance-six coefficient the bridge needs is set up here, not proved; Step 3 recast Step 4's test as a three-ingredient identity, and Step 4 closed it as a route-specific split.
+**Status (2026-07-01):** The analytic framework is fixed (ALE instanton on the minimal resolution of C²/2I, Kronheimer-Nakajima; the orbifold cone a consistency check), and the sign is resolved: ρ_adQ′ − ρ_adQ = −8/5 on the resolution-boundary orientation, with the magnitude 73/15 of ρ_adQ anchored in print (BHKK). The distance-six coefficient the bridge needs is set up here, not proved; Step 3 recast Step 4's test as a three-ingredient identity, and Step 4 closed it as a route-specific split.
 **Summary:** Fixes the analytic setup for the postulate-bridge coupling calculation: the ALE filling, the tautological-bundle basis, and the rho-invariant conventions the later steps compute in.
 **Inputs:** `eta-gatekeeper.md`, BHKK (arXiv:math/9908020), Kronheimer-Nakajima, Nakajima, Fintushel-Stern
 **Parent:** `postulate-bridge.md`

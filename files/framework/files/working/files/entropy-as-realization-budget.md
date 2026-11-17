@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-10-24):** MOTIVATED, not derived. The cooling half is established as a kinematic equivalence, its derivation from the postulate open; the entropy half rests on the one unwalked shell-unlock map S↦N_max(S).
+**Status (2026-07-07):** MOTIVATED, not derived. The cooling half is established as a kinematic equivalence, its derivation from the postulate open; the entropy half rests on the one unwalked shell-unlock map S↦N_max(S).
 **Summary:** A candidate account of the thermodynamic arrow in a static universe: entropy as the spread of the resolution-amplitude budget over realized modes.
 **Inputs:** `temporal-budget.md`, `redshift-and-cooling.md`, the 2I Molien shell spectrum, the chronon and the 120-domain
 

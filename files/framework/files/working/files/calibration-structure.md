@@ -7,7 +7,7 @@
 
 **Type:** Map
 **State:** Active
-**Status (2026-09-27):** The calibration architecture, the η / √Ω notation register and the named anchor's rounding and mass-ladder exception are current; the effective scale factor is normalized to a_* (settled 2026-09-02). Route reconciliation for R stays open, tracked in the R problem.
+**Status (2026-09-02):** The calibration architecture, the η / √Ω notation register and the named anchor's rounding and mass-ladder exception are current; the effective scale factor is normalized to a_* (settled 2026-09-02). Route reconciliation for R stays open, tracked in the R problem.
 **Summary:** The map of the framework's calibration scheme, one measured anchor per sector with the topology supplying exponents and ratios, plus the notation register and the named anchor in full; a draft for the engine.
 **Inputs:** the a0 paper Appendix A.2 (selection rule), the first-positive eigenvalue 2/R², the scaling law
 

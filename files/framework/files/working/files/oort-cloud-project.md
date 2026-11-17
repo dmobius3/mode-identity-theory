@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-10-25):** Working bench: Section II derived apart from its annotated rows, Section III joints under load (Joint 4 tested and dead), Section IV pieces not yet joined (A to C motivated, D and F observations, E downstream), Section V gaps. The question is whether the 120-grid nests at every gravitationally coherent scale. Standard celestial mechanics gives a solar tidal-crossover radius of the right order, without uniquely determining the Oort Cloud's outer boundary, so the central open form is whether crossing a coherence boundary does anything to $`\Theta`$, $`C(\Theta)`$ or the sampling operator (Gap 8).
+**Status (2026-09-27):** Working bench: Section II derived apart from its annotated rows, Section III joints under load (Joint 4 tested and dead), Section IV pieces not yet joined (A to C motivated, D and F observations, E downstream), Section V gaps. The question is whether the 120-grid nests at every gravitationally coherent scale. Standard celestial mechanics gives a solar tidal-crossover radius of the right order, without uniquely determining the Oort Cloud's outer boundary, so the central open form is whether crossing a coherence boundary does anything to $`\Theta`$, $`C(\Theta)`$ or the sampling operator (Gap 8).
 **Summary:** Asks whether MIT's structure projects into every gravitationally coherent scale, making the Oort Cloud the solar-scale coherence boundary.
 **Inputs:** the first positive eigenvalue (first-eigenvalue paper), the phase-field coherence scale (L_f SPARC-falsified, L_g open), the 120-grid scale-free projection, the 3/2 conversion
 

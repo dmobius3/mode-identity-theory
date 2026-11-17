@@ -8,7 +8,7 @@
 **Type:** Test
 **State:** Closed
 **Verdict:** Positive
-**Status (2026-10-26):** Step 1 closed: the boundary spectral asymmetry $`\rho_{\mathrm{ad}Q'} - \rho_{\mathrm{ad}Q} = -8/5`$ is nonzero and Galois-sourced, so the gate opens; Steps 2 to 4 have since run, and the staged route closed as a route-specific split (Step 4, part two).
+**Status (2026-07-01):** Step 1 closed: the boundary spectral asymmetry $`\rho_{\mathrm{ad}Q'} - \rho_{\mathrm{ad}Q} = -8/5`$ is nonzero and Galois-sourced, so the gate opens; Steps 2 to 4 have since run, and the staged route closed as a route-specific split (Step 4, part two).
 **Summary:** Computes the odd-signature rho-invariant difference between the Galois-conjugate flat connections Q and Q' on S³/2I, the Step-1 gate the bridge must clear.
 **Inputs:** `../../bedrock/files/galois-pair.md`, BHKK (arXiv:math/9908020)
 **Parent:** `postulate-bridge.md`

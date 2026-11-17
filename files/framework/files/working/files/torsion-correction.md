@@ -7,7 +7,7 @@
 
 **Type:** Result
 **State:** Closed
-**Status (2026-10-26):** Applied 2026-07-28: the four half-integer torsion singles were the coexact-only truncation; the corrected Ray-Singer values revised twelve of the twenty-four products. The McKay propagator question this correction reopened has since closed negative on the corrected table (see mckay-propagator-correction).
+**Status (2026-10-03):** Applied 2026-07-28: the four half-integer torsion singles were the coexact-only truncation; the corrected Ray-Singer values revised twelve of the twenty-four products. The McKay propagator question this correction reopened has since closed negative on the corrected table (see mckay-propagator-correction).
 **Summary:** Corrects the four half-integer torsion values on the mass-spectrum table from their coexact-only truncation to the full Ray-Singer closed forms.
 **Inputs:** mass-spectrum §4 torsion tables and §III ledger, `mckay-propagator-correction.md`, the registered `mass-null-v1.1` rerun
 

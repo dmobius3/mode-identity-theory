@@ -7,7 +7,7 @@
 
 **Type:** Program
 **State:** Active
-**Status (2026-10-03):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g. The framework adopts Friedrichs at the cone (ruling 1e, 2026-09-29), so the program's bridging requirements describe an alternative transmitting model rather than framework requirements (§II's scope note).
+**Status (2026-09-29):** The cosmic cone point is derived; the nested-coherence reading is motivated and the galactic-scale Frobenius program is open. SPARC removed L_f as the coherence radius, so the curvature-sourcing question now stands against an unknown L_g. The framework adopts Friedrichs at the cone (ruling 1e, 2026-09-29), so the program's bridging requirements describe an alternative transmitting model rather than framework requirements (§II's scope note).
 **Summary:** Asks whether galactic coherence is the W-independence of a nested cone-point eigenvalue problem, and what sources the galactic-scale curvature.
 **Inputs:** the first-eigenvalue paper's cone-point analysis (`../../bedrock/files/first-eigenvalue.md`), the 120-grid scale-free projection, the phase-field coherence scale (L_f SPARC-falsified, L_g open)
 
