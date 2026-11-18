@@ -74,8 +74,6 @@ mode-identity-theory/
         └─ openwave/                ← MIT's M8 column on OpenWave: every task & its files
 ```
 
-| **[`framework`](/files/framework/)** | **[`bedrock`](/files/framework/files/bedrock/)** | **[`dynamics`](/files/framework/files/dynamics/)** | **[`working`](/files/framework/files/working/)** | **[`cosmos`](/files/cosmos/)** | **[`spectrum`](/files/spectrum/)** | **[`tools`](/files/tools/)** |
-
 ---
 
 🏟️ **One Shape**
