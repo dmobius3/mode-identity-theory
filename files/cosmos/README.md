@@ -65,6 +65,8 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 
 ## [Hubble Tension](files/hubble-tension.md)
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/ht-hero.png?raw=true" width="89%" alt="Left: the 120-position grid as a ring, with two seats on one well. Middle: the phase coefficient near the H0 well, every other position filled; the CMB's 67.4 sits at the bare well, 34/120, and the local ladder's 73.04 two positions over, at 36/120, a step of +8.4%, since MIT assigns light-borne measurements every other position. Right: matched after the fact; the galactic switch proposed to produce it failed, pre-registered and tested against SPARC rotation curves; open, the cause and what selects the step and its direction"></p>
+
 **One Well, Two Seats.** Hubble fixed the velocity-distance relation in 1929, and its two headline measurements disagree: 67.4 km/s/Mpc from the microwave background, 73.04 from the local distance ladder. In MIT they are the same well read from two seats on the 120-position grid. MIT assigns this kind of measurement to every other position, so the local seat sits two positions from the bare well, and that step carries 67.4 to 73.04, an 8.4% gap. The match was found after the fact, not predicted, and the mechanism proposed to produce it, a galactic switch at the radius where gravity falls to Milgrom's acceleration scale, was pre-registered and failed against SPARC rotation curves. The numbers line up; the cause is still open.
 
 >[![Hubble Tension](https://img.youtube.com/vi/ZICE7beEQh8/mqdefault.jpg)](https://www.youtube.com/watch?v=ZICE7beEQh8)
