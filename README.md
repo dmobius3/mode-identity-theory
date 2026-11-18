@@ -214,7 +214,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 
 ## 🎼 Score
 
-**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `open` unresolved.
+**Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `open` unresolved.
 
 **📐 Structural**
 
