@@ -13,6 +13,8 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [First Eigenvalue](files/first-eigenvalue.md)
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fe-hero.png?raw=true" width="100%" alt="Left: the band M(W) drawn as its lune on the sphere, the two starred tips identified into the cone point. Right: the spectrum across realizations: every extension has bottom at most 0; Friedrichs has the zero mode at 0, bridging a bound state below 0 that moves with the defect scale; the two share the first positive level 2/R² in the narrow band"></p>
+
 **The Surface:** The twisted Laplacian on a cone-singular constant-curvature Möbius band, where the orientation twist and collapsed-fiber cone make the ground state extension-dependent while selecting a stable first-positive branch at $`2/R^2`$ in the narrow regime. The framework reads this scale as the surface spectral seed $`\Lambda_\text{top}`$. The level carrying it is the first positive one, not a ground state, and it belongs to an operator on the surface rather than on the temporal edge.
 
 >[![First Eigenvalue](https://img.youtube.com/vi/n0-Slt8gxKw/mqdefault.jpg)](https://www.youtube.com/watch?v=n0-Slt8gxKw)
