@@ -49,6 +49,8 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [Surviving Ray](files/surviving-ray.md)
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/sr-hero.png?raw=true" width="100%" alt="Left: the channel filter, the density's ranks 0 to 6 with binary-icosahedral invariants only at ranks 0 and 6, leaving span of M0 and M6 with M0 radial, the single ray M6. Right: the quartic it governs reduces to the top multipole, which runs exactly from 1/924 on the coherent states to 463/924 on the hexagon, with the six rays found by symmetry drawn as Majorana constellations at their values: coherent, trigonal prism, pentagonal pyramid, octahedron, zonal and hexagon"></p>
+
 **The Interaction:** On the Poincaré homology sphere $`S^3/2I`$, for a level-6 spin-3 block state with the density interaction, binary-icosahedral symmetry cuts the four scattering channels of the spin-3 family to two, one of them radial, so the surviving self-interaction is a single projective ray. The quartic it governs reduces to the top multipole, which runs over spin-3 states exactly from $`1/924`$, on the coherent states, to $`463/924`$, on the hexagon, the NOON state up to a rotation; between the two ends lie ten critical orbits within a stated symmetry class and three more certified outside it. The interaction is a hypothesis, not a consequence.
 
 >[![Surviving Ray](https://img.youtube.com/vi/MtDlm0uKNQ8/mqdefault.jpg)](https://youtu.be/MtDlm0uKNQ8)
