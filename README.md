@@ -268,8 +268,6 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 | [↗](/files/spectrum/files/fine-structure.md#the-prediction) Force count | `exact` | 3 rungs | vs 3 forces; conditional on the ladder |
 | [↗](/files/spectrum/files/fine-structure.md#the-prediction) Null SUSY | `open` | no gaugino-mediated force | none seen to date |
 
-**Rulers, not tests:** [$`H_0 \cdot t_P`$](/files/cosmos/files/hubble-tension.md#i-the-tension) $`\approx 1.18 \times 10^{-61}`$ from the measured $`H_0`$, and [$`m_e`$](/files/spectrum/files/mass-spectrum.md#iii-the-24-entries) $`= 0.511`$ MeV.
-
 ---
 
 ## 🔮 Pre-Registered Euclid Predictions / Falsification
