@@ -25,6 +25,8 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [Coexact Gap](files/coexact-gap.md)
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cg-hero.png?raw=true" width="100%" alt="The first coexact level d²/R² against McKay distance d, above the affine E8 McKay graph of 2I with each node at its distance: the adjoint Sym²Q at distance 2 gives the gap 4/R² shared by every other irreducible flat SU(2) connection, and the Galois adjoint Sym²Q' at distance 6 gives the single exception 36/R²"></p>
+
 **The Space:** Flat bundles on the spherical space forms $`S^3/\Gamma`$, where the coexact spectral gap is the first McKay-occurrence level: $`4/R^2`$ for every irreducible flat connection across the ADE classification, with one exception, the Galois connection on $`S^3/2I`$ at $`36/R^2`$. The adjoint bundle is the coefficient system gauge theory asks for, so the coexact gap is the linearized gauge-sector gap; the framework carries that into its Yang-Mills reading.
 
 >[![The Mass Gap](https://img.youtube.com/vi/dWKXrTIquT8/mqdefault.jpg)](https://www.youtube.com/watch?v=dWKXrTIquT8)
