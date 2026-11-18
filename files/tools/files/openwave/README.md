@@ -9,7 +9,7 @@
 
 [OpenWave](https://github.com/openwave-labs/openwave) is an open-source physics simulator built as an arena: candidate field theories run side by side in a shared computational environment and are judged against the same falsifiable criteria. It has no house model and no stake in which theory succeeds. Every result is backed by a runnable script or research record, and its coverage matrix scores each model against the same 31 criteria, from charge quantization to cosmic acceleration.
 
-M8 is MIT's column. Its tasks fall into two categories: blind reproductions of MIT's papers, where independent solvers recompute frozen claims from an evidence packet while an audit attempts to refute them; and forward tests of what MIT's geometry supports once wave content is allowed to evolve. Every run is pre-registered, frozen before execution, and reviewed in public. This page maps each task to its OpenWave record, tracks MIT's column of the coverage matrix, and serves as the archive for task files and results.
+**M8** is MIT's column. Its tasks fall into two categories: blind reproductions of MIT's papers, where independent solvers recompute frozen claims from an evidence packet while an audit attempts to refute them; and forward tests of what MIT's geometry supports once wave content is allowed to evolve. Every run is pre-registered, frozen before execution, and reviewed in public. This page maps each task to its OpenWave record, tracks MIT's column of the coverage matrix, and serves as the archive for task files and results.
 
 ## Completed Tasks
 
