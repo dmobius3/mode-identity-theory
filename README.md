@@ -216,7 +216,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 
 **Standing:** `exact` proved or structural · `anchor-free` numerical, normalization cancels · `anchored (X)` conditional on anchor X, carrying a figure where the quantity is measured · `input` a ruler, not a test · `open` unresolved.
 
-**Structural**
+**📐 Structural**
 
 | Observable | Standing | Result | Status |
 |---|---|---|---|
@@ -225,7 +225,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 | [↗](/files/spectrum/files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$ | linearized, on the compact space |
 | [↗](/files/spectrum/files/the-mirror.md#ii-main-theorem) Spectral inaccessibility | `exact` | no single L-function zero pinned | within the stated class |
 
-**Cosmos**
+**🪐 Cosmos**
 
 | Observable | Standing | Result | Status |
 |---|---|---|---|
@@ -240,7 +240,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 | [↗](/files/cosmos/files/early-galaxies.md#the-evolutionary-law) $`a_0(z) \propto H(z)`$ | `open` | ~3× by $`z = 2`$ | rising to $`z = 1.44`$; rate open |
 | [↗](/files/spectrum/files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) Null dark matter | `open` | no particle sector | direct-detection nulls |
 
-**Spectrum**
+**🌈 Spectrum**
 
 | Observable | Standing | Result | Status |
 |---|---|---|---|
@@ -257,7 +257,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 | [↗](/files/spectrum/files/mass-spectrum.md#the-neutrino-ladder) Neutrino ladder | `open` | 0.87, 7.3, 66.7 meV | ordered like the splittings; proxy only |
 | [↗](/files/spectrum/files/mass-spectrum.md#1-mass-sector-floor--mu_lambda) $`\mu_\Lambda`$ mass floor | `anchored (Λ)` | 2.25 meV | derived scale |
 
-**Couplings**
+**⚛️ Couplings**
 
 | Observable | Standing | Result | Status |
 |---|---|---|---|
