@@ -13,7 +13,7 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [First Eigenvalue](files/first-eigenvalue.md)
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fe-hero.png?raw=true" width="100%" alt="Left: the band M(W) drawn as its lune on the sphere, the two starred tips identified into the cone point. Right: the spectrum across realizations: every extension has bottom at most 0; Friedrichs has the zero mode at 0, bridging a bound state below 0 that moves with the defect scale; the two share the first positive level 2/R² in the narrow band"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fe-hero.png?raw=true" width="99%" alt="Left: the band M(W) drawn as its lune on the sphere, the two starred tips identified into the cone point. Right: the spectrum across realizations: every extension has bottom at most 0; Friedrichs has the zero mode at 0, bridging a bound state below 0 that moves with the defect scale; the two share the first positive level 2/R² in the narrow band"></p>
 
 **The Surface:** The twisted Laplacian on a cone-singular constant-curvature Möbius band, where the orientation twist and collapsed-fiber cone make the ground state extension-dependent while selecting a stable first-positive branch at $`2/R^2`$ in the narrow regime. The framework reads this scale as the surface spectral seed $`\Lambda_\text{top}`$. The level carrying it is the first positive one, not a ground state, and it belongs to an operator on the surface rather than on the temporal edge.
 
@@ -25,7 +25,7 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [Coexact Gap](files/coexact-gap.md)
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cg-hero.png?raw=true" width="100%" alt="The first coexact level d²/R² against McKay distance d, above the affine E8 McKay graph of 2I with each node at its distance: the adjoint Sym²Q at distance 2 gives the gap 4/R² shared by every other irreducible flat SU(2) connection, and the Galois adjoint Sym²Q' at distance 6 gives the single exception 36/R²"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/cg-hero.png?raw=true" width="81%" alt="The first coexact level d²/R² against McKay distance d, above the affine E8 McKay graph of 2I with each node at its distance: the adjoint Sym²Q at distance 2 gives the gap 4/R² shared by every other irreducible flat SU(2) connection, and the Galois adjoint Sym²Q' at distance 6 gives the single exception 36/R²"></p>
 
 **The Space:** Flat bundles on the spherical space forms $`S^3/\Gamma`$, where the coexact spectral gap is the first McKay-occurrence level: $`4/R^2`$ for every irreducible flat connection across the ADE classification, with one exception, the Galois connection on $`S^3/2I`$ at $`36/R^2`$. The adjoint bundle is the coefficient system gauge theory asks for, so the coexact gap is the linearized gauge-sector gap; the framework carries that into its Yang-Mills reading.
 
@@ -37,7 +37,7 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [Galois Pair](files/galois-pair.md)
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/gp-hero.png?raw=true" width="100%" alt="The E8 plumbing W, one −2 sphere per nontrivial irreducible of 2I, with boundary the Poincaré homology sphere; the Galois automorphism exchanges Q with Q' at the two ends of the diagram. The boundary's adjoint rho invariants differ by −8/5; the tautological bundles carry the asymmetry exactly as charge, while the mod-2 homology with its Pontryagin square cannot single out Sym²Q'"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/gp-hero.png?raw=true" width="82%" alt="The E8 plumbing W, one −2 sphere per nontrivial irreducible of 2I, with boundary the Poincaré homology sphere; the Galois automorphism exchanges Q with Q' at the two ends of the diagram. The boundary's adjoint rho invariants differ by −8/5; the tautological bundles carry the asymmetry exactly as charge, while the mod-2 homology with its Pontryagin square cannot single out Sym²Q'"></p>
 
 **The Filling:** The Poincaré homology sphere $`S^3/2I`$ carries a Galois pair of flat $`\mathrm{SU}(2)`$ connections, exchanged by $`\sqrt5 \mapsto -\sqrt5`$, and it bounds the $`E_8`$ plumbing. A single conversion identity ties the boundary's odd-signature rho invariant to the character sums of that filling, for every $`S^3/\Gamma`$; on $`S^3/2I`$ the filling's tautological bundles carry the Galois asymmetry exactly as charge, while its bare mod-2 homology cannot see it at all. The framework reads the filling as the interior the embedding produces, and the decoration-versus-homology split as the gatekeeper: the boundary's arithmetic reaches the interior through the tautological decoration, not the bare topology.
 
