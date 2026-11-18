@@ -53,6 +53,8 @@ The 120-element group that forms the space leaves an empty stretch in its vibrat
 
 ## [Early Galaxies](files/early-galaxies.md)
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/eg-hero.png?raw=true" width="96%" alt="Left: the phase coefficient C(Θ) = 2 sin²(πΘ) with a0 seated at 13/120 and cH at 34/120, two seats on the same edge taken to share one normalization, so a0/cH = 0.184 against a measured 0.183. Middle: the ratio holds at every epoch, so a0(z)/a0(0) = H(z)/H0 rises to 20.5 times the local value at z = 10, where JWST finds its early galaxies, against the flat line of constant a0 in standard MOND. Right: a0 times 20.5 gives effective gravity times 4.5, collapse about 2.1 times faster, and star-formation efficiency from about 1 or more down to about 0.5, upper bounds against constant-a0 MOND"></p>
+
 **A Stronger Tide.** In 1983 Milgrom identified $`a_0`$, the acceleration where galaxy dynamics start to depart from Newton, as a fundamental scale, and its closeness to $`cH_0`$, the speed of light times the Hubble rate, has never had a settled explanation. In MIT both are edge modes on the same standing wave, taken to share one normalization, so their ratio is set by where each sits, and it comes out at 0.184, in line with the measured ratio. That ratio holds at every epoch, so $`a_0`$ was larger in the past, rising with the Hubble rate, and the galaxies JWST found too early formed under that stronger tide. MUSE-DARK III has since measured $`a_0`$ rising at intermediate redshift, the predicted direction, though other evolving-scale models and ΛCDM simulations rise too.
 
 >[![Early Galaxies](https://img.youtube.com/vi/BuxnEmMGMFE/mqdefault.jpg)](https://www.youtube.com/watch?v=BuxnEmMGMFE)
