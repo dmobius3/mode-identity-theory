@@ -24,6 +24,10 @@ n is the spatial dimension, m the dimension of the carrier's cover, R the radius
        relativity's E is b = 1/2, q = 2, where E is the metric's G(u, u) of C4 and C5
   C11  at (3, 2), from the Riemann tensor of S^3(R): the three coordinate planes at a point each have sectional curvature
        1/R^2, Ric(nu, nu) = 2/R^2 and tr Ric = 6/R^2; and C(n, 2) = n only at n = 3
+  C12  over planes: tr Ric and (tr K)^2 - |K|^2 are sums over ordered pairs i != j, from the Riemann tensors of
+       S^2(R) x line and S^2(R) x S^2(r) and for a symmetric K, so G(u, u) = Sigma_{i<j} [Sec(e_i, e_j) + k_i k_j];
+       on S^n(R), R^2 Lambda_ref counts the C(n, 2) planes and R^2 Ric(nu, nu) the n - 1 through one direction, a
+       ratio of n/2 since each plane has two directions; on flat slices each plane gives k_i k_j = H^2, of degree 2
 
 The constraint is the scalar Gauss relation of a slice, G(u, u) = (1/2)[tr Ric + (tr K)^2 - |K|^2] = Sigma_{i<j}
 [Sec(e_i, e_j) + k_i k_j], with kappa rho + Lambda on its right. For a totally geodesic cover the normal bundle is flat,
@@ -482,6 +486,72 @@ def main():
                    "sectional curvatures %s; Ric(nu, nu) = %s = Sec(e1, nu) + Sec(e2, nu); tr Ric = %s; C(n, 2) = n at n = %s"
                    % (sec, ric_nu, tr, cn_eq_n)))
     controls.append(("C11 C(n, 2) against n at n = 4", comb(4, 2) != 4, "C(4, 2) = %d" % comb(4, 2)))
+
+    # C12: the constraint over planes. tr Ric = Sigma_i Sigma_{j != i} Sec(e_i, e_j) and (tr K)^2 - |K|^2 =
+    #   Sigma_{i != j} k_i k_j are sums over ordered pairs, which count every plane twice, so
+    #   G(u, u) = Sigma_{i<j} [Sec(e_i, e_j) + k_i k_j]. On S^n(R), R^2 Lambda_ref counts the C(n, 2) planes and
+    #   R^2 Ric(nu, nu) the n - 1 through one direction; on flat slices each plane gives k_i k_j = H^2.
+    def sectional_at_origin(g, xs):
+        G = christoffel(g, xs)
+        origin = {x: 0 for x in xs}
+        out = {}
+        for i, j in itertools.combinations(range(len(xs)), 2):
+            Rijij = sum(g[i, l] * riemann_up(G, xs, l, j, i, j) for l in range(len(xs)))
+            out[(i, j)] = sp.simplify((Rijij / (g[i, i] * g[j, j] - g[i, j] ** 2)).subs(origin))
+        return out
+
+    r_ = sp.symbols("r", positive=True)
+    conf_pair = lambda u, v, rad: 1 / (1 + (u ** 2 + v ** 2) / (4 * rad ** 2)) ** 2
+    x3s = sp.symbols("x1:4", real=True)
+    x4s = sp.symbols("x1:5", real=True)
+    products = {
+        "S^2(R) x line": (sp.diag(conf_pair(x3s[0], x3s[1], R), conf_pair(x3s[0], x3s[1], R), 1), x3s),
+        "S^2(R) x S^2(r)": (sp.diag(conf_pair(x4s[0], x4s[1], R), conf_pair(x4s[0], x4s[1], R),
+                                    conf_pair(x4s[2], x4s[3], r_), conf_pair(x4s[2], x4s[3], r_)), x4s),
+    }
+    rows, planes_seen = [], {}
+    ok = True
+    for name, (g, xs) in products.items():
+        sec = sectional_at_origin(g, xs)
+        ric = ricci_at_origin(g, xs)
+        through = [sp.simplify(sum(v for pl, v in sec.items() if d in pl)) for d in range(len(xs))]
+        ok = ok and all(z(ric[d, d] - through[d]) for d in range(len(xs))) and z(ric.trace() - 2 * sum(sec.values()))
+        planes_seen[name] = (sec, ric)
+        rows.append("%s: Ric(e_i, e_i) = %s, each the sum of Sec over the planes through e_i; tr Ric = %s, twice %s"
+                    % (name, [ric[d, d] for d in range(len(xs))], sp.simplify(ric.trace()), sp.simplify(sum(sec.values()))))
+    Kmat = sp.Matrix(3, 3, lambda i, j: sp.Symbol("K%d%d" % (min(i, j) + 1, max(i, j) + 1), real=True))
+    minors = sum(Kmat[i, i] * Kmat[j, j] - Kmat[i, j] ** 2 for i, j in itertools.combinations(range(3), 2))
+    ok = ok and z(Kmat.trace() ** 2 - (Kmat * Kmat).trace() - 2 * minors)
+    rows.append("a symmetric 3 x 3 K: (tr K)^2 - |K|^2 is twice the sum of its principal 2 x 2 minors, the k_i k_j of an "
+                "eigenframe")
+    counts = []
+    for n in range(2, 9):
+        planes = list(itertools.combinations(range(n), 2))
+        through = [sum(1 for pl in planes if d in pl) for d in range(n)]
+        ok = ok and len(planes) == comb(n, 2) and all(t == n - 1 for t in through) and sum(through) == 2 * len(planes)
+        if n in lam_ref:
+            ok = ok and z(R ** 2 * lam_ref[n] - len(planes))
+        if n in ric_n:
+            ok = ok and z(R ** 2 * ric_n[n] - (n - 1))
+        flat = e_sym([Hs] * n, 2)
+        ok = ok and z(flat - comb(n, 2) * Hs ** 2) and sp.degree(flat, Hs) == 2
+        counts.append("n=%d: %d plane%s, %d through each direction" % (n, len(planes), "" if len(planes) == 1 else "s", n - 1))
+    per_direction = sp.simplify(sp.expand_func(sp.binomial(n_, 2)) / (n_ - 1))
+    ok = ok and z(per_direction - n_ / 2)
+    checks.append(("C12 over planes, G(u, u) = Sigma_{i<j}[Sec + k_i k_j]; R^2 Lambda_ref counts the planes, R^2 Ric(nu, nu) "
+                   "those through one direction", ok,
+                   "; ".join(rows) + "; " + ", ".join(counts) + "; R^2 Lambda_ref and R^2 Ric(nu, nu) equal these counts "
+                   "where C5 and C3 computed them; each plane is counted once from each of its two directions, so planes over "
+                   "planes through one direction = %s; on flat slices each plane gives k_i k_j = H^2, of degree 2 in H"
+                   % per_direction))
+    sec_l, ric_l = planes_seen["S^2(R) x line"]
+    away = sp.simplify(sum(v for pl, v in sec_l.items() if 0 not in pl))
+    controls.append(("C12.i the planes not through e_1, on S^2(R) x line", not z(ric_l[0, 0] - away),
+                     "they sum to %s against Ric(e_1, e_1) = %s" % (away, ric_l[0, 0])))
+    faces = {n: sp.Rational(comb(n, 3), comb(n - 1, 2)) for n in (3, 4, 5, 6)}
+    controls.append(("C12.ii three-dimensional faces in place of planes",
+                     all(faces[n] != sp.Rational(n, 2) and faces[n] == sp.Rational(n, 3) for n in faces),
+                     "faces over faces through one direction = %s at n = 3 to 6, that is n/3" % list(faces.values())))
 
     for name, ok, info in checks:
         print("%s  %s\n      %s" % ("PASS" if ok else "FAIL", name, info))

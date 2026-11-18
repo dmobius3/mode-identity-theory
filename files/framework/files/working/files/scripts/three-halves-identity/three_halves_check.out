@@ -22,6 +22,8 @@ PASS  C10 with E's coefficient b, g'' = b n at any degree; with E's degree q in 
       n=3: g'' = 3*b at q = [1, 2, 3]; c = [3, 3/2, 1]; n=4: g'' = 4*b at q = [1, 2, 3, 4]; c = [4, 2, 4/3, 1]; n=5: g'' = 5*b at q = [1, 2, 3, 4]; c = [5, 5/2, 5/3, 5/4]; symbolic q, any prefactor P: c = n/q; at b = 1/2 and q = 2, E is the metric's G(u, u) of C4 and C5, and both ratios are n/2
 PASS  C11 at (3, 2): three planes of curvature 1/R^2, Ric(nu, nu) = 2/R^2, tr Ric = 6/R^2; C(n, 2) = n only at 3
       sectional curvatures {(1, 2): R**(-2), (1, 3): R**(-2), (2, 3): R**(-2)}; Ric(nu, nu) = 2/R**2 = Sec(e1, nu) + Sec(e2, nu); tr Ric = 6/R**2; C(n, 2) = n at n = [3]
+PASS  C12 over planes, G(u, u) = Sigma_{i<j}[Sec + k_i k_j]; R^2 Lambda_ref counts the planes, R^2 Ric(nu, nu) those through one direction
+      S^2(R) x line: Ric(e_i, e_i) = [R**(-2), R**(-2), 0], each the sum of Sec over the planes through e_i; tr Ric = 2/R**2, twice R**(-2); S^2(R) x S^2(r): Ric(e_i, e_i) = [R**(-2), R**(-2), r**(-2), r**(-2)], each the sum of Sec over the planes through e_i; tr Ric = 2/r**2 + 2/R**2, twice r**(-2) + R**(-2); a symmetric 3 x 3 K: (tr K)^2 - |K|^2 is twice the sum of its principal 2 x 2 minors, the k_i k_j of an eigenframe; n=2: 1 plane, 1 through each direction, n=3: 3 planes, 2 through each direction, n=4: 6 planes, 3 through each direction, n=5: 10 planes, 4 through each direction, n=6: 15 planes, 5 through each direction, n=7: 21 planes, 6 through each direction, n=8: 28 planes, 7 through each direction; R^2 Lambda_ref and R^2 Ric(nu, nu) equal these counts where C5 and C3 computed them; each plane is counted once from each of its two directions, so planes over planes through one direction = n/2; on flat slices each plane gives k_i k_j = H^2, of degree 2 in H
 control  C1.i the wrong zonal weight J^m                                          as required
          gives (m + 1)/R**2
 control  C1.ii a small sphere of radius r < R, at m = 2                           as required
@@ -54,4 +56,8 @@ control  C10.ii q = 3 in place of 2                                             
          c = [1, 4/3] leaves g'', while g'' stays [3/2, 2], at n = 3, 4
 control  C11 C(n, 2) against n at n = 4                                           as required
          C(4, 2) = 6
-12/12 checks pass; 16/16 controls as required
+control  C12.i the planes not through e_1, on S^2(R) x line                       as required
+         they sum to 0 against Ric(e_1, e_1) = R**(-2)
+control  C12.ii three-dimensional faces in place of planes                        as required
+         faces over faces through one direction = [1, 4/3, 5/3, 2] at n = 3 to 6, that is n/3
+13/13 checks pass; 18/18 controls as required
