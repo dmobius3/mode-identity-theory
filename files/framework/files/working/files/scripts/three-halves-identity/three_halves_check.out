@@ -1,0 +1,57 @@
+PASS  C1 the tilt sin(y/R) on S^m(R) has eigenvalue m/R^2, m = 1 to 7 and symbolic m
+      m = 1..7: R**(-2), 2/R**2, 3/R**2, 4/R**2, 5/R**2, 6/R**2, 7/R**2; symbolic: m/R**2
+PASS  C1b from an embedding: -Delta x = (m/R^2) x for linear x (m = 2, 3); the tilting rotation is x3 nu
+      m=2 x1 ok, m=2 x2 ok, m=2 x3 ok, m=3 x1 ok, m=3 x2 ok, m=3 x3 ok, m=3 x4 ok; rotation along the cover: normal part x3, tangential part [0, 0, 0, 0]
+PASS  C2 the scalar curvature of S^m(R) is m(m - 1)/R^2, m = 2 to 5
+      m=2: 2/R**2, m=3: 6/R**2, m=4: 12/R**2, m=5: 20/R**2
+PASS  C3 the Ricci tensor of S^n(R) is ((n - 1)/R^2) g, n = 2 to 5
+      n=2: R**(-2), n=3: 2/R**2, n=4: 3/R**2, n=5: 4/R**2
+PASS  C4 G(u, u) = C(n, 2) [(a'/(N a))^2 + k/a^2], n = 2 to 6
+      n=2: C(n,2) = 1; n=3: C(n,2) = 3; n=4: C(n,2) = 6; n=5: C(n,2) = 10; n=6: C(n,2) = 15
+PASS  C5 Lambda_ref = n(n - 1)/(2 R^2) on the time-symmetric vacuum slice, n = 2 to 6
+      n=2: R**(-2), n=3: 3/R**2, n=4: 6/R**2, n=5: 10/R**2, n=6: 15/R**2
+PASS  C6 c = n/2 on flat matter-only (Lambda = 0) slices, the count's dilution from div(rho u) = 0; tr K = n H
+      n=2: tr K = 2 H, rho ~ a^-2, c = 1; n=3: tr K = 3 H, rho ~ a^-3, c = 3/2; n=4: tr K = 4 H, rho ~ a^-4, c = 2; n=5: tr K = 5 H, rho ~ a^-5, c = 5/2; n=6: tr K = 6 H, rho ~ a^-6, c = 3; symbolic n: rho ~ a^-n
+PASS  C7 c = Lambda_ref / Ric(nu, nu) at every n computed, and in closed form
+      n=2: 1 = 1, n=3: 3/2 = 3/2, n=4: 2 = 2, n=5: 5/2 = 5/2; closed form n/2
+PASS  C8 the three ratios against c: g = c on m = n - 1, g'' = c everywhere, g' = c on n = m^2 - m + 1
+      computed (n, m) in [(3, 2), (4, 2), (4, 3), (5, 2), (5, 3), (5, 4)] agree with the closed forms g = n*(n - 1)/(2*m), g' = n*(n - 1)/(2*m*(m - 1)), g'' = n/2; g - c = -n*(m - n + 1)/(2*m); g' - c = -n*(m**2 - m - n + 1)/(2*m*(m - 1)); g'' - c = 0; g = c iff m = [n - 1]; on m = 2, g = n*(n - 1)/4, equal to c at n = [3]; on m = n - 1, g = n/2; g' = c iff n = [m**2 - m + 1], members below 200: [(3, 2), (7, 3), (13, 4), (21, 5), (31, 6), (43, 7), (57, 8), (73, 9), (91, 10), (111, 11), (133, 12), (157, 13), (183, 14)]; g' - c on m = 2: n*(n - 3)/4, zero at n = [3]; on m = n - 1: -n*(n - 3)/(2*(n - 2)), zero at n = [3]
+PASS  C9 the carries agree pairwise on m = n - 1, m = 2, n - 1 = m(m - 1); all three only at (3, 2)
+      tilt = normal Ricci iff m = [n - 1]; tilt = cover iff m = [2]; cover = normal Ricci iff n = [m**2 - m + 1]; all three, by algebra: [{m: 2, n: 3}]; by enumeration below 200: [(3, 2)]
+PASS  C10 with E's coefficient b, g'' = b n at any degree; with E's degree q in K, c = n/q at any coefficient
+      n=3: g'' = 3*b at q = [1, 2, 3]; c = [3, 3/2, 1]; n=4: g'' = 4*b at q = [1, 2, 3, 4]; c = [4, 2, 4/3, 1]; n=5: g'' = 5*b at q = [1, 2, 3, 4]; c = [5, 5/2, 5/3, 5/4]; symbolic q, any prefactor P: c = n/q; at b = 1/2 and q = 2, E is the metric's G(u, u) of C4 and C5, and both ratios are n/2
+PASS  C11 at (3, 2): three planes of curvature 1/R^2, Ric(nu, nu) = 2/R^2, tr Ric = 6/R^2; C(n, 2) = n only at 3
+      sectional curvatures {(1, 2): R**(-2), (1, 3): R**(-2), (2, 3): R**(-2)}; Ric(nu, nu) = 2/R**2 = Sec(e1, nu) + Sec(e2, nu); tr Ric = 6/R**2; C(n, 2) = n at n = [3]
+control  C1.i the wrong zonal weight J^m                                          as required
+         gives (m + 1)/R**2
+control  C1.ii a small sphere of radius r < R, at m = 2                           as required
+         its eigenvalue is 2/r**2, set by its own radius
+control  C1b x3^2 on S^2(R)                                                       as required
+         -Delta x3^2 - (2/R^2) x3^2 = -2*cos(2*theta), not zero
+control  C2 the hyperbolic metric of the same radius                              as required
+         gives -6/R**2 at m = 3
+control  C3 the product S^2(R) x line                                             as required
+         Ricci eigenvalues [R**(-2), R**(-2), 0], not the same in every direction
+control  C4 Ric(u, u) in place of G(u, u)                                         as required
+         Ric(u, u) at n = 3 is 3*(-N(t)*Derivative(a(t), (t, 2)) + Derivative(N(t), t)*Derivative(a(t), t))/(N(t)**3*a(t)), which carries a''
+control  C5 the 1/2 dropped (Lambda read as the slice's scalar curvature)         as required
+         gives [6/R**2, 12/R**2] at n = 3, 4: twice the reference
+control  C6.i curved slices, k != 0, n = 3                                        as required
+         -d ln H/d ln a = 3*(2*A*k1 - M*kappa)/(2*(3*A*k1 - M*kappa)), which varies with a
+control  C6.ii radiation, p = rho/n, in place of a pressureless count             as required
+         gives [2, 5/2] at n = 3, 4, that is (n + 1)/2
+control  C7 over the slice's scalar curvature instead                             as required
+         the ratio is [1/2, 1/2, 1/2] at n = 3, 4, 5
+control  C8.i g at m = n - 2                                                      as required
+         g - c = [1, 5/6, 3/4] at n = 4, 5, 6
+control  C8.ii g' at (8, 3), off the curve n - 1 = m(m - 1)                       as required
+         g' - c = 2/3 there
+control  C9 (5, 4), on the hypersurface branch beyond (3, 2)                      as required
+         the carries are {'tilt': 4, 'cover': 12, 'normal Ricci': 4} there
+control  C10.i b = 1 in place of 1/2                                              as required
+         g'' = [3, 4] leaves c, while c stays [3/2, 2], at n = 3, 4
+control  C10.ii q = 3 in place of 2                                               as required
+         c = [1, 4/3] leaves g'', while g'' stays [3/2, 2], at n = 3, 4
+control  C11 C(n, 2) against n at n = 4                                           as required
+         C(4, 2) = 6
+12/12 checks pass; 16/16 controls as required
