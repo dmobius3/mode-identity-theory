@@ -37,6 +37,8 @@ The postulate is one line, $`S^1 = \partial(\text{Möbius})`$, $`\text{Möbius} 
 
 ## [Galois Pair](files/galois-pair.md)
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/gp-hero.png?raw=true" width="100%" alt="The E8 plumbing W, one −2 sphere per nontrivial irreducible of 2I, with boundary the Poincaré homology sphere; the Galois automorphism exchanges Q with Q' at the two ends of the diagram. The boundary's adjoint rho invariants differ by −8/5; the tautological bundles carry the asymmetry exactly as charge, while the mod-2 homology with its Pontryagin square cannot single out Sym²Q'"></p>
+
 **The Filling:** The Poincaré homology sphere $`S^3/2I`$ carries a Galois pair of flat $`\mathrm{SU}(2)`$ connections, exchanged by $`\sqrt5 \mapsto -\sqrt5`$, and it bounds the $`E_8`$ plumbing. A single conversion identity ties the boundary's odd-signature rho invariant to the character sums of that filling, for every $`S^3/\Gamma`$; on $`S^3/2I`$ the filling's tautological bundles carry the Galois asymmetry exactly as charge, while its bare mod-2 homology cannot see it at all. The framework reads the filling as the interior the embedding produces, and the decoration-versus-homology split as the gatekeeper: the boundary's arithmetic reaches the interior through the tautological decoration, not the bare topology.
 
 >[![Galois Pair](https://img.youtube.com/vi/Jb1nDkJevxs/mqdefault.jpg)](https://www.youtube.com/watch?v=Jb1nDkJevxs)
