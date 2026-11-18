@@ -80,7 +80,7 @@ mode-identity-theory/
 
 🏟️ **One Shape**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="85%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with a lune laid unbent on it whose opposite tips are identified, closing it into the Möbius band with its single edge S¹"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-shape.png?raw=true" width="95%" alt="One sphere, S³ drawn one dimension down, carrying the icosahedral symmetry pattern, with a lune laid unbent on it whose opposite tips are identified, closing it into the Möbius band with its single edge S¹"></p>
 
 ---
 
@@ -98,7 +98,7 @@ The observable domain is the smooth quotient $S^3/2I$. The same opposite-point i
 
 Ψ **One Wave**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="80%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-wave.png?raw=true" width="81%" alt="Ψ = cos(t/2) and its complement S = sin(t/2) over two laps, with the sign flip after one lap, and the two shares on the circle Ψ² + S² = 1"></p>
 
 ---
 
@@ -120,7 +120,7 @@ Matter appears where the wave is sampled. Most possible modes cancel. The surviv
 
 ⚖️ **One Law**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-equation.png?raw=true" width="80%" alt="The wave C(Θ) = 2 sin²(πΘ) with a₀, α, H₀ and Λ at their positions, and the depth ladder of powers of √Ω"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-equation.png?raw=true" width="84%" alt="The wave C(Θ) = 2 sin²(πΘ) with a₀, α, H₀ and Λ at their positions, and the depth ladder of powers of √Ω"></p>
 
 ---
 
@@ -144,7 +144,7 @@ The wave is not sampled continuously across all possible positions. The golden f
 
 🔺 **One Identity**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-identity.png?raw=true" width="50%" alt="An icosahedron with a face, an edge and a vertex marked: faces sort color, edges sort the boson-fermion divide, vertices sort the electroweak address"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-identity.png?raw=true" width="64%" alt="An icosahedron with a face, an edge and a vertex marked: faces sort color, edges sort the boson-fermion divide, vertices sort the electroweak address"></p>
 
 ---
 
@@ -168,7 +168,7 @@ The representation theory provides these decompositions, and MIT interprets them
 
 ⚛️ **One Formula**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-formula.png?raw=true" width="85%" alt="The mass formula's four pieces: the floor, the seats on the E8 McKay graph with their distances and the elevator step, and the three-vacuum dial"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-formula.png?raw=true" width="84%" alt="The mass formula's four pieces: the floor, the seats on the E8 McKay graph with their distances and the elevator step, and the three-vacuum dial"></p>
 
 ---
 
@@ -194,7 +194,7 @@ Across the eight nontrivial representation seats and three vacua, the formula pr
 
 🪡 **One Interface**
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="85%" alt="The tower of quotients: S³, the smooth substrate; its quotient by ±I, RP³, where the Möbius band lies unbent on the vacuum side; and the quotient by the icosahedron's 60 rotations, S³/2I, which completes the quotient by 2I on the matter side"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/one-interface.png?raw=true" width="77%" alt="The tower of quotients: S³, the smooth substrate; its quotient by ±I, RP³, where the Möbius band lies unbent on the vacuum side; and the quotient by the icosahedron's 60 rotations, S³/2I, which completes the quotient by 2I on the matter side"></p>
 
 ---
 
