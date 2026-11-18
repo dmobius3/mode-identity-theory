@@ -71,7 +71,7 @@ Label guard: the lemma's half is the angle $`t/2`$; the target's half is the exp
 
 **Prerequisite bookkeeping, already diagnosed elsewhere.** The $`\Phi \leftrightarrow t`$ discrepancy is quantified on the budget page (§VIII): the engine phase folded in the ΛCDM 13.8 Gyr age instead of the clock-inverted $`T_\text{now} \lesssim 0.79`$ Gyr, a factor of $`\sim 17`$ in one substituted number. Both numbers are deprecated there: they were computed on the tick measure $`S^{3/2}\,dt`$, not the Hubble clock, so only the direction of the discrepancy is robust. Its resolution (re-derive $`\Phi_\text{now}`$ by inverting the clock) is prescribed there and is bookkeeping relative to this tracker: it uses the clock, it does not derive it.
 
-**Hazards carried at every stage.** The clock 3/2 (matter dilution / Friedmann root) and the Gauss-Codazzi 3/2 (Ricci trace / de Sitter normalization) are numerically equal and not shown to be the same object; the budget page fences them and this tracker keeps the fence. The space is static: dilution language is the kinematic dictionary, never expansion. And the temporal harmonic ground ($`m = 0`$ selection of $`\Psi`$) is not the spatial zero mode; the two "grounds" stay separate.
+**Hazards carried at every stage.** The clock 3/2 (matter dilution / Friedmann root) and the Gauss-Codazzi 3/2 (Ricci trace / de Sitter normalization) are numerically equal and not shown to be the same object; the [budget page](temporal-budget.md#two-three-halves) fences them and this tracker keeps the fence. The space is static: dilution language is the kinematic dictionary, never expansion. And the temporal harmonic ground ($`m = 0`$ selection of $`\Psi`$) is not the spatial zero mode; the two "grounds" stay separate.
 
 ---
 
