@@ -6,8 +6,9 @@
 # The SN-BAO Consistency Test
 
 **Type:** Test
-**State:** Active
-**Status (2026-11-18):** Frozen before any run, with the Λcos instrument qualified on the files of its design commit. Not yet run: the cut row's supernova-only profile has not been evaluated.
+**State:** Closed
+**Verdict:** Mixed
+**Status (2026-11-18):** Run once from the design commit `e3ef4e5`. Verdict Mixed, as registered: the all row MILD TENSION (graded $`p`$ 0.0166) and the cut row CONSISTENT (0.4127), so the pull is sensitive to including the light curves below $`z = 0.01`$; the rows are nested, and their difference is not itself tested. Under the cut the supernovae alone prefer $`s_0 = 0.239`$.
 **Summary:** Whether one common $`s_0`$ in Model D+Λ describes both the Pantheon+ supernovae and DESI DR2 BAO: the parameter goodness-of-fit $`T`$, graded by a sampled approximation to the largest $`p`$ over the BAO data's own confidence set, plus the set's miss probability, on all 1701 light curves and on the 1590 with $`z_\text{HD} > 0.01`$.
 **Inputs:** `temporal-budget.md`, `clock-asymmetry-fit.md`, `nonflat-distance-comparison.md`, `dark-energy.md`, the Λcos Model D+Λ pipeline
 **Parent:** `temporal-budget.md`
@@ -301,6 +302,55 @@ What remains, in order:
 4. The freeze (2026-11-18). The design commit `e3ef4e5` is pushed to the Λcos branch, holding the instrument and the four new files of §2, and nothing runs there. Then this page is committed to MIT main, its Pins table naming that commit and the script's SHA-256. The run starts only after both.
 5. The run, once (§4), from a clean checkout of the design commit. Its one results commit follows on the branch.
 6. Review of the results; then, on its own go, the record is entered here. After that, on a further go, the branch is merged into Λcos main.
+
+## Results
+
+**Executed 2026-11-18, once,** from the Λcos design commit `e3ef4e5` of the branch `sn-bao-consistency`, in a clean checkout, against this registration as it sat on MIT main (`b6f15db4`, page SHA-256 `5942e831ba57e5ad38d6ff5136d2d053da69e184967a3376988f32413dd65968`). The single results commit is `00fcf21`, on the branch. The design commit also reached Λcos main ahead of §11's step 6, through pull request #3 (merge `f518592`, 2026-11-18, after the freeze and before the run, with the design commit's tree unchanged); the results commit is on the branch alone. The run's whole record is `results/sn_bao_consistency/run.json` there, with `g6_counts.json`, the mock counts at each graded row's measured $`T`$; the saved tails behind them are qualification's, array for array.
+- The environment check passed, and every pin held: the design commit, a clean checkout, the script and all nine files.
+- G1 to G5 and G7 passed again at the frozen tolerances. G6 passed on the run's own calibration, and G5 on both graded rows.
+- The calibration repeated qualification's streams: each graded row's thresholds are the frozen ones of §4, to the last digit.
+- The all row's $`T`$ is 5.88664, its value on the registered numerics (§0).
+
+| row | $`T`$ | graded $`p`$ | grade |
+|---|---|---|---|
+| all, the 1701 light curves | 5.887 | 0.0166 | MILD TENSION |
+| cut, the 1590 with $`z_\text{HD} > 0.01`$ | 0.689 | 0.4127 | CONSISTENT |
+
+**Verdict: Mixed.** The grades differ (§5).
+
+**What it means, as §8 fixed it:**
+- **Mixed** records a grade that depends on the sample, with both grades standing. The rows are nested, and the difference between them is not itself tested.
+- **The pull is sensitive to including the 111 light curves below $`z = 0.01`$.** The test does not say which of them carry it.
+- **CONSISTENT on the cut row** means agreement within $`s_0 \ge 0`$, not that the two datasets agree: BAO's own optimum lies below $`s_0 = 0`$, and what that costs BAO is outside $`T`$.
+- **No outcome tests** $`s_0 > 0`$, the clock exponent, or MIT as a whole.
+
+**The calibration, row by row.**
+- **All row.** The largest sampled $`p`$, 0.0158, is at the last truth, $`s_0 = 0.40`$, with $`H_0 r_d`$ profiled, and the refinement leaves it there. The calibration is bounded, and the graded $`p`$ is 0.0166.
+- **Cut row.** The largest sampled $`p`$, 0.4094, is at $`s_0 = 0.35`$, with $`H_0 r_d`$ at the low end of $`J`$'s interval. The refinement moves it to the midpoint $`s_0 = 0.325`$, with $`H_0 r_d`$ at the low end of $`J`$'s interval, where it is 0.4096: a move within $`3\,\mathrm{SE}`$, so the calibration is bounded, and the graded $`p`$ is 0.4127.
+- **Neither row's $`T`$ lies between the two rules' thresholds** (§6). The registered ones are 3.953 and 9.074 on the all row and 3.921 and 9.140 on the cut row; those of the rule this calibration replaced, without its bound, are 3.899 and 9.405 on the all row and 3.867 and 9.228 on the cut row.
+
+**Reported, not graded (§6).**
+
+| | all | cut | stress |
+|---|---|---|---|
+| supernova-only best $`s_0`$, and the region within 1 of its minimum | 0.389, from 0.306 to 0.451 | 0.239, from the floor to 0.345 | 0.260, from the floor to 0.384 |
+| BAO-only best $`s_0`$, and the region within 1 of its minimum; joint best $`s_0`$ | the floor, from the floor to 0.090; the floor | the floor, from the floor to 0.090; the floor | the floor, from the floor to 0.090; the floor |
+| supernova and BAO $`\chi^2`$ at the floor | 1759.032; 13.533 | 1404.459; 13.533 | 834.858; 13.533 |
+| flat ΛCDM's supernova-only and BAO-only minima | 1752.514; 10.362 | 1403.704; 10.362 | 834.285; 10.362 |
+| $`T`$ in flat ΛCDM, $`\Omega_m`$ shared | 9.580 | 2.590 | 1.841 |
+| $`T`$ in Model D+Λ | 5.887 | 0.689 | 0.567 |
+| $`p`$ at the floor; at the row's 95% profile limit | 0.0042; 0.0065 | 0.2191; 0.3058 | |
+| the $`\chi^2`$ reading, one degree of freedom | 0.0153 | 0.4064 | |
+| $`T`$ at $`\Omega_\Lambda = 0.68`$, 0.69, 0.70 and 0.715 | 4.589, 7.356, 9.652, 10.696 | 0.303, 1.237, 2.644, 3.223 | 0.301, 0.921, 1.865, 2.205 |
+| $`T`$'s move on G5's finer grid | $`-4.4 \times 10^{-9}`$ | $`1.9 \times 10^{-9}`$ | $`-9.7 \times 10^{-9}`$, reported |
+
+$`J`$'s $`s_0`$ range runs from the floor to 0.3544, at $`q = 46.912`$, as at qualification.
+
+**Against the registered expectation (§10).**
+- **All row:** registered MILD TENSION, with a graded $`p`$ of 0.0166 and the floor's own calibration near 0.004. The run gives MILD TENSION, 0.0166, and 0.0042 at the floor.
+- **Cut row:** registered CONSISTENT if Model D+Λ fits the cut sample no better than flat ΛCDM. It fits no better, by 0.066 (1403.7701 against 1403.7044), so $`T`$ is at most 0.755. It is 0.689, and the graded $`p`$ is 0.4127, above the registered 0.38.
+- **Verdict:** registered Mixed; the run gives Mixed.
+- **The supernova-only $`s_0`$ under the cut,** registered OPEN, is 0.239. The region within 1 of its minimum runs from the floor to 0.345.
 
 ## Sources
 

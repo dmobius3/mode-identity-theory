@@ -575,6 +575,8 @@ Registered and exploratory tests run against public datasets, with verdicts.
 
 **Test:** Does one common $`s_0`$ in Model D+Λ describe both the Pantheon+ supernovae and DESI DR2 BAO? Frozen before any run: the statistic is the parameter goodness-of-fit $`T`$, graded by a sampled approximation to the largest $`p`$ over the BAO data's own confidence set, plus the set's miss probability; two graded rows, all 1701 light curves and the 1590 with $`z_\text{HD} > 0.01`$; bars at $`p = 0.05`$ and 0.0027; the Λcos instrument and its independent generator qualified on seven gates, a rehearsal and 22 mutation arms. The expectation recorded before the freeze: the all row MILD TENSION, the cut row CONSISTENT if Model D+Λ fits it no better than flat ΛCDM, and so Mixed.
 
+**Result (2026-11-18):** Mixed, as registered. On all 1701 light curves the supernovae's pull grades MILD TENSION, at $`T = 5.887`$ and a graded $`p`$ of 0.0166; on the 1590 with $`z_\text{HD} > 0.01`$ it grades CONSISTENT, at $`T = 0.689`$ and 0.4127, where the supernovae alone prefer $`s_0 = 0.239`$. The pull is sensitive to including the light curves below $`z = 0.01`$; the rows are nested, and their difference is not itself tested.
+
 ---
 
 ## :bar_chart: Waiting on External Data
