@@ -571,6 +571,12 @@ Registered and exploratory tests run against public datasets, with verdicts.
 
 ---
 
+### [The SN-BAO Consistency Test (Preregistered SN+BAO Test)](files/sn-bao-consistency.md)
+
+**Test:** Does one common $`s_0`$ in Model D+Λ describe both the Pantheon+ supernovae and DESI DR2 BAO? Frozen before any run: the statistic is the parameter goodness-of-fit $`T`$, graded by a sampled approximation to the largest $`p`$ over the BAO data's own confidence set, plus the set's miss probability; two graded rows, all 1701 light curves and the 1590 with $`z_\text{HD} > 0.01`$; bars at $`p = 0.05`$ and 0.0027; the Λcos instrument and its independent generator qualified on seven gates, a rehearsal and 22 mutation arms. The expectation recorded before the freeze: the all row MILD TENSION, the cut row CONSISTENT if Model D+Λ fits it no better than flat ΛCDM, and so Mixed.
+
+---
+
 ## :bar_chart: Waiting on External Data
 
 - **Neutrino Ladder:** The $`R_1`$ sector's entries, 0.87, 7.3 and 66.7 meV, sit in ordered qualitative resemblance to the lightest, solar (8.65 meV) and atmospheric (50.1 meV) scales; the solar and atmospheric values are splitting proxies rather than masses, so the rows carry no scorecard weight and no generation assignment is claimed ([mass spectrum](../../../spectrum/files/mass-spectrum.md#the-neutrino-ladder)). As absolute masses the ladder is excluded by the measured splittings; the proxy reading assumes a hierarchical normal ordering and is falsified if the NuFIT global fit or a successor favors the inverted ordering with $`\chi^2_\text{NO} - \chi^2_\text{IO} \geq 9`$. *Deps:* mass formula, the $`R_1`$ sector.

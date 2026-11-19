@@ -1,0 +1,1047 @@
+{
+ "date": "2026-11-18",
+ "environment": {
+  "pass": true,
+  "mismatch": {},
+  "environment": {
+   "python": "3.9.6",
+   "numpy": "2.0.2",
+   "scipy": "1.13.1",
+   "pandas": "2.3.3",
+   "platform": "macOS-15.8.2-arm64-arm-64bit"
+  }
+ },
+ "tolerances": {
+  "G1_rel": 1e-09,
+  "G2_chi2": 1e-05,
+  "G2_s0": 1e-05,
+  "G3_T": 1e-07,
+  "G4_T": 0.01,
+  "G5_T": 1e-06,
+  "G6_top": 1e-05,
+  "G6_h0rd": 0.01,
+  "G6_tail": 1e-12,
+  "G6_M": 1e-09
+ },
+ "floor_margin": 10.0,
+ "statistical_limits": {
+  "Z_LIMIT": 4.0,
+  "NOISE_SE_LIMIT": 5.0,
+  "COVERAGE_SE_LIMIT": 3.0
+ },
+ "gates": {
+  "G1": {
+   "gate": "G1",
+   "pass": true,
+   "parity": {
+    "span_lines": 101,
+    "span_sha256": "75d1089fb20328245a1ea1122b3844ac834af0e8e2d1f6cfa35b48870c788e5d",
+    "span_pinned": true,
+    "worst_rel": {
+     "E": 0.0,
+     "sn_chi2": 2.299884976380018e-16,
+     "bao_chi2": 4.669399142656452e-15,
+     "bao_pred": 3.4294641988035503e-16
+    },
+    "floor": 4.669399142656452e-15
+   },
+   "floor": 4.669399142656452e-15,
+   "tol": 1e-09,
+   "why": null
+  },
+  "G2": {
+   "gate": "G2",
+   "pass": true,
+   "against_committed": [
+    {
+     "quantity": "all sn: chi2 min",
+     "instrument": 1753.143862621676,
+     "committed": 1753.1438626259574,
+     "diff": -4.28144630859606e-09
+    },
+    {
+     "quantity": "all sn: s0 at the min",
+     "instrument": 0.38921585220043464,
+     "committed": 0.3892161379345797,
+     "diff": -2.8573414506682937e-07
+    },
+    {
+     "quantity": "all bao: chi2 min",
+     "instrument": 13.533118619263405,
+     "committed": 13.533118619266316,
+     "diff": -2.9114488597770105e-12
+    },
+    {
+     "quantity": "all bao: s0 at the min",
+     "instrument": 0.001,
+     "committed": 0.0010000000001104,
+     "diff": -1.1039997041550897e-13
+    },
+    {
+     "quantity": "all joint: chi2 min",
+     "instrument": 1772.563665070225,
+     "committed": 1772.5636650702288,
+     "diff": -3.865352482534945e-12
+    },
+    {
+     "quantity": "all joint: s0 at the min",
+     "instrument": 0.001,
+     "committed": 0.0010000000054335,
+     "diff": -5.433500004092817e-12
+    },
+    {
+     "quantity": "all T",
+     "instrument": 5.88668382928563,
+     "committed": 5.886683825005138,
+     "diff": 4.280492404973302e-09
+    },
+    {
+     "quantity": "all joint at s0 = 0.39, above its min",
+     "instrument": 40.11737873311449,
+     "committed": 40.1173787432092,
+     "diff": -1.0094709068653174e-08
+    },
+    {
+     "quantity": "cut lcdm_joint",
+     "instrument": 1416.6561419278617,
+     "committed": 1416.6561419788022,
+     "diff": -5.094057087262627e-08
+    },
+    {
+     "quantity": "cut lcdm_sn",
+     "instrument": 1403.704562838527,
+     "committed": 1403.7045628616029,
+     "diff": -2.307592694705818e-08
+    },
+    {
+     "quantity": "cut lcdm_bao",
+     "instrument": 10.36149941597784,
+     "committed": 10.36149953080476,
+     "diff": -1.1482691952835467e-07
+    },
+    {
+     "quantity": "cut lcos_joint_at_floor",
+     "instrument": 1417.9925365837312,
+     "committed": 1417.9925365837337,
+     "diff": -2.5011104298755527e-12
+    },
+    {
+     "quantity": "cut T in flat LCDM",
+     "instrument": 2.5900796733568594,
+     "committed": 2.590079586394584,
+     "diff": 8.696227560278658e-08
+    }
+   ],
+   "chi2_dev": 1.1482691952835467e-07,
+   "s0_dev": 2.8573414506682937e-07,
+   "tol": {
+    "G2_chi2": 1e-05,
+    "G2_s0": 1e-05
+   },
+   "why": null,
+   "published_numerics_reported": [
+    {
+     "quantity": "all sn: chi2 min",
+     "instrument": 1753.1455605709266,
+     "committed": 1753.1438626259574,
+     "diff": 0.0016979449692371418
+    },
+    {
+     "quantity": "all sn: s0 at the min",
+     "instrument": 0.38921545201914787,
+     "committed": 0.3892161379345797,
+     "diff": -6.859154318417104e-07
+    },
+    {
+     "quantity": "all bao: chi2 min",
+     "instrument": 13.53311711945571,
+     "committed": 13.533118619266316,
+     "diff": -1.4998106063757177e-06
+    },
+    {
+     "quantity": "all bao: s0 at the min",
+     "instrument": 0.001,
+     "committed": 0.0010000000001104,
+     "diff": -1.1039997041550897e-13
+    },
+    {
+     "quantity": "all joint: chi2 min",
+     "instrument": 1772.5653179874805,
+     "committed": 1772.5636650702288,
+     "diff": 0.0016529172517039115
+    },
+    {
+     "quantity": "all joint: s0 at the min",
+     "instrument": 0.001,
+     "committed": 0.0010000000054335,
+     "diff": -5.433500004092817e-12
+    },
+    {
+     "quantity": "all T",
+     "instrument": 5.886640297098211,
+     "committed": 5.886683825005138,
+     "diff": -4.35279069268546e-05
+    },
+    {
+     "quantity": "all joint at s0 = 0.39, above its min",
+     "instrument": 40.11741174660301,
+     "committed": 40.1173787432092,
+     "diff": 3.300339380984951e-05
+    },
+    {
+     "quantity": "cut lcdm_joint",
+     "instrument": 1416.6561110870557,
+     "committed": 1416.6561419788022,
+     "diff": -3.089174651904614e-05
+    },
+    {
+     "quantity": "cut lcdm_sn",
+     "instrument": 1403.7044468486374,
+     "committed": 1403.7045628616029,
+     "diff": -0.00011601296546359663
+    },
+    {
+     "quantity": "cut lcdm_bao",
+     "instrument": 10.361501667715551,
+     "committed": 10.36149953080476,
+     "diff": 2.136910790540014e-06
+    },
+    {
+     "quantity": "cut lcos_joint_at_floor",
+     "instrument": 1417.9924724113962,
+     "committed": 1417.9925365837337,
+     "diff": -6.417233748834406e-05
+    },
+    {
+     "quantity": "cut T in flat LCDM",
+     "instrument": 2.590162570702738,
+     "committed": 2.590079586394584,
+     "diff": 8.298430815401048e-05
+    }
+   ]
+  },
+  "G3": {
+   "gate": "G3",
+   "pass": true,
+   "T": {
+    "a_null|all": 5.072534305260363e-09,
+    "a_null|cut": 2.573825504085408e-09,
+    "b_sn0.3_bao0.3|all": 5.258471273388441e-09,
+    "b_sn0.3_bao0.3|cut": 2.5745912722541044e-09
+   },
+   "floor": 5.258471273388441e-09,
+   "tol": 1e-07,
+   "why": null
+  },
+  "G4": {
+   "gate": "G4",
+   "pass": true,
+   "sets": {
+    "b_sn0.05_bao0.3|all": {
+     "instrument": 1.4658225398107922,
+     "generator": 1.46599814413891,
+     "diff": -0.00017560432811780657
+    },
+    "b_sn0.05_bao0.3|cut": {
+     "instrument": 1.4213208718044725,
+     "generator": 1.4214427712287612,
+     "diff": -0.00012189942428864065
+    },
+    "b_sn0.25_bao0.1|all": {
+     "instrument": 0.5211438227013999,
+     "generator": 0.5210421711526578,
+     "diff": 0.0001016515487420877
+    },
+    "b_sn0.25_bao0.1|cut": {
+     "instrument": 0.5049655396378075,
+     "generator": 0.5048950505442917,
+     "diff": 7.048909351581312e-05
+    },
+    "b_sn0.389_bao0.001|all": {
+     "instrument": 4.997830470245937,
+     "generator": 4.997511032671048,
+     "diff": 0.00031943757488850366
+    },
+    "b_sn0.389_bao0.001|cut": {
+     "instrument": 4.840870439466379,
+     "generator": 4.8406490590759566,
+     "diff": 0.0002213803904220768
+    },
+    "b_sn0.3_bao0.3|all": {
+     "instrument": 5.258471273388441e-09,
+     "generator": 2.910383051435351e-11,
+     "diff": 5.229367442874088e-09
+    },
+    "b_sn0.3_bao0.3|cut": {
+     "instrument": 2.5745912722541044e-09,
+     "generator": 2.910383051407033e-11,
+     "diff": 2.5454874417400342e-09
+    }
+   },
+   "floor": 0.00031943757488850366,
+   "tol": 0.01,
+   "why": null
+  },
+  "G5": {
+   "gate": "G5",
+   "pass": true,
+   "moves": {
+    "a_null|all": -2.882389064003471e-10,
+    "a_null|cut": -2.017617308099128e-10,
+    "b_sn0.05_bao0.3|all": 1.1075405481619782e-08,
+    "b_sn0.05_bao0.3|cut": 2.1083700563195862e-08,
+    "b_sn0.25_bao0.1|all": 5.3342620542906616e-08,
+    "b_sn0.25_bao0.1|cut": -1.0597822619473618e-08,
+    "b_sn0.389_bao0.001|all": 1.5551586685091934e-09,
+    "b_sn0.389_bao0.001|cut": -3.076326038353727e-08,
+    "b_sn0.3_bao0.3|all": 1.9650525301844524e-10,
+    "b_sn0.3_bao0.3|cut": 1.3483924048283716e-10
+   },
+   "points": 1961,
+   "fine_points": 19601,
+   "floor": 5.3342620542906616e-08,
+   "tol": 1e-06,
+   "why": null
+  },
+  "G7": {
+   "gate": "G7",
+   "pass": true,
+   "files": {
+    "data/pantheon_plus.csv": true,
+    "data/pantheon_plus_cov.npy": true,
+    "data/desi_dr2_bao.csv": true,
+    "data/desi_dr2_bao_cov.npy": true,
+    "results/lcos_summary.json": true,
+    "data/sn_bao_synthetic.json": true,
+    "data/sn_bao_forecast.json": true,
+    "data/sn_bao_coverage.json": true,
+    "scripts/sn_bao_generator.py": true
+   },
+   "span": true,
+   "status": [
+    "?? data/sn_bao_coverage.json",
+    "?? data/sn_bao_forecast.json",
+    "?? data/sn_bao_synthetic.json",
+    "?? scripts/sn_bao_consistency.py",
+    "?? scripts/sn_bao_generator.py"
+   ],
+   "expected_status": [
+    "?? data/sn_bao_coverage.json",
+    "?? data/sn_bao_forecast.json",
+    "?? data/sn_bao_synthetic.json",
+    "?? scripts/sn_bao_consistency.py",
+    "?? scripts/sn_bao_generator.py"
+   ],
+   "commit": "8558124efc2b9f63120a4be0bfd8ed83e0e39e47",
+   "script_sha256": "13967fa9df0491829d801095baa4f3a14e08e2ab0ca3f5eb02ada5463551c460",
+   "why": null
+  },
+  "G6": {
+   "gate": "G6",
+   "pass": true,
+   "parts": {
+    "design": {
+     "pass": true,
+     "keys_equal": true,
+     "top": 0.3543713578035439,
+     "top_generator": 0.3543712451307556,
+     "top_diff": 1.1267278832161054e-07,
+     "h0rd_diff": 0.000471672788989963,
+     "lattice": [
+      0.001,
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4
+     ],
+     "why": null
+    },
+    "q": {
+     "pass": true,
+     "q": 46.91155312895772,
+     "k": 13,
+     "tail_closed_form": 9.999999999999979e-06,
+     "tail_generator": 9.999999999999982e-06,
+     "floor": 2.202285662861181e-20,
+     "why": null
+    },
+    "coverage": {
+     "pass": true,
+     "N": 20000000,
+     "misses": 184,
+     "expected": 200.00000000000003,
+     "sd": 14.142064912876055,
+     "z": -1.1313765067951542,
+     "why": null
+    },
+    "halves": {
+     "pass": true,
+     "worst": "all|0.35|high|0.0027",
+     "z": -2.5928148942086575,
+     "rms": 1.0130043222317247,
+     "n": 188,
+     "why": null
+    },
+    "generator": {
+     "pass": true,
+     "worst": "all|0.4|profiled|0.05",
+     "z": 2.6895926402764303,
+     "rms": 0.9842445245793279,
+     "n": 188,
+     "why": null
+    },
+    "recompute": {
+     "pass": true,
+     "instrument": {
+      "all": {
+       "thresholds": {
+        "0.05": 3.9533665656019696,
+        "0.0027": 9.07367925776867
+       },
+       "graded_p": 0.01657802590558794
+      },
+      "cut": {
+       "thresholds": {
+        "0.05": 3.920665238385956,
+        "0.0027": 9.140331960389737
+       },
+       "graded_p": 0.01667023334199856
+      }
+     },
+     "generator": {
+      "all": {
+       "thresholds": {
+        "0.05": 3.9533665656019696,
+        "0.0027": 9.07367925776867
+       },
+       "graded_p": 0.01657802590558794
+      },
+      "cut": {
+       "thresholds": {
+        "0.05": 3.920665238385956,
+        "0.0027": 9.140331960389737
+       },
+       "graded_p": 0.01667023334199856
+      }
+     },
+     "at_T_zero": {
+      "instrument": 1.0,
+      "generator": 1.0
+     },
+     "why": null
+    },
+    "noise": {
+     "pass": true,
+     "worst": "all|0.275|high|supernovae",
+     "z": -2.8180593181739475,
+     "n": 196,
+     "why": null
+    },
+    "offsets": {
+     "pass": true,
+     "box": [
+      -20.0,
+      -18.0
+     ],
+     "scope": "every grid point",
+     "closest": "cut|0.0255|profiled",
+     "margin": 0.2056266038913428,
+     "why": null
+    },
+    "M": {
+     "pass": true,
+     "moves": {
+      "all|0.001|+0.1": 1.3642420526593924e-12,
+      "all|0.001|-0.1": 1.3642420526593924e-12,
+      "all|0.3|+0.1": 1.5916157281026244e-12,
+      "all|0.3|-0.1": 1.8189894035458565e-12,
+      "cut|0.001|+0.1": 1.1368683772161603e-12,
+      "cut|0.001|-0.1": 1.3642420526593924e-12,
+      "cut|0.3|+0.1": 1.8189894035458565e-12,
+      "cut|0.3|-0.1": 1.3642420526593924e-12
+     },
+     "floor": 1.8189894035458565e-12,
+     "tol": 1e-09,
+     "why": null
+    },
+    "refinement": {
+     "pass": true,
+     "rows": {
+      "all": {
+       "at1": [
+        0.4,
+        "profiled"
+       ],
+       "at2": [
+        0.4,
+        "profiled"
+       ],
+       "moved_in_se": 0.0,
+       "bounded": true,
+       "p": 0.01657802590558794
+      },
+      "cut": {
+       "at1": [
+        0.4,
+        "profiled"
+       ],
+       "at2": [
+        0.4,
+        "profiled"
+       ],
+       "moved_in_se": 0.0,
+       "bounded": true,
+       "p": 0.01667023334199856
+      }
+     },
+     "why": null
+    }
+   },
+   "why": null
+  },
+  "R": {
+   "gate": "R",
+   "pass": true,
+   "data": "b_sn0.389_bao0.001",
+   "grades": {
+    "all": "MILD TENSION",
+    "cut": "MILD TENSION"
+   },
+   "expected": {
+    "all": "MILD TENSION",
+    "cut": "MILD TENSION"
+   },
+   "verdict": "Inconclusive",
+   "T": {
+    "all": 4.997830470245937,
+    "cut": 4.840870439466379,
+    "stress": 2.9334707374976454
+   },
+   "T_minus_generator": {
+    "all": 0.00031943757488850366,
+    "cut": 0.0002213803904220768
+   },
+   "floor": 0.00031943757488850366,
+   "graded_p": {
+    "all": 0.027484814075558923,
+    "cut": 0.029256704037251786
+   },
+   "tails_saved": true,
+   "closing": {
+    "G5_graded": true,
+    "stress_cannot_fail_G5": true,
+    "outcome_cases": true
+   },
+   "G5_moves": {
+    "all": 1.5551586685091934e-09,
+    "cut": -3.076326038353727e-08
+   },
+   "why": null
+  }
+ },
+ "arms": {
+  "G1: Omega_L = 0.686": {
+   "parent_passed": true,
+   "red": true,
+   "why": "bao_chi2 departs from fit_lcos.py's by 7.74e-02, relative"
+  },
+  "G1: the D_V exponent set to 1/2": {
+   "parent_passed": true,
+   "red": true,
+   "why": "bao_chi2 departs from fit_lcos.py's by 1.93e+02, relative"
+  },
+  "G2: a BAO point dropped": {
+   "parent_passed": true,
+   "red": true,
+   "why": "all joint at s0 = 0.39, above its min departs from its committed value by -6.629e+00"
+  },
+  "G2: the cut applied to the data, the covariance's leading block kept": {
+   "parent_passed": true,
+   "red": true,
+   "why": "cut lcdm_joint departs from its committed value by +5.092e+02"
+  },
+  "G3: a planted set given as a null set": {
+   "parent_passed": true,
+   "red": true,
+   "why": "T = 4.998 on b_sn0.389_bao0.001|all, where it must be 0"
+  },
+  "G4: the D_V exponent set to 1/2": {
+   "parent_passed": true,
+   "red": true,
+   "why": "T on b_sn0.05_bao0.3|all is 36.30848 against the generator's 1.46600"
+  },
+  "G5: the registered grid ten times coarser": {
+   "parent_passed": true,
+   "red": true,
+   "why": "T on b_sn0.389_bao0.001|cut moves by +7.594e-05 on the finer grid"
+  },
+  "G6 design: the lattice cut down to the floor alone": {
+   "parent_passed": true,
+   "red": true,
+   "why": "the lattice or the truths differ from the generator's"
+  },
+  "G6 q: q taken with 12 degrees of freedom": {
+   "parent_passed": true,
+   "red": true,
+   "why": "q's upper tail with 13 degrees of freedom is 2.032414e-05, not 1e-05"
+  },
+  "G6 coverage: the record's misses doubled": {
+   "parent_passed": true,
+   "red": true,
+   "why": "368 misses in 20000000 BAO mocks against 200 +- 14"
+  },
+  "G6 halves: each second half taken from the next set": {
+   "parent_passed": true,
+   "red": true,
+   "why": "the halves at cut|0.4|profiled|0.05 differ by +30.10 standard errors"
+  },
+  "G6 generator: the truths mislabeled by one lattice step": {
+   "parent_passed": true,
+   "red": true,
+   "why": "at cut|0.2|high|0.05 the codes' counts differ by +13.55 standard errors"
+  },
+  "G6 recompute: beta's term dropped": {
+   "parent_passed": true,
+   "red": true,
+   "why": "the all row's thresholds {'0.05': 3.9533665656019696, '0.0027': 9.07117910409534} against the generator's {'0.05': 3.9533665656019696, '0.0027': 9.07367925776867}; the all row's graded p 0.01656802590558794 against the generator's 0.01657802590558794; the cut row's thresholds {'0.05': 3.920665238385956, '0.0027': 9.134698902511726} against the generator's {'0.05': 3.920665238385956, '0.0027': 9.140331960389737}; the cut row's graded p 0.01666023334199856 against the generator's 0.01667023334199856"
+  },
+  "G6 recompute: a threshold moved": {
+   "parent_passed": true,
+   "red": true,
+   "why": "the all row's thresholds {'0.05': 3.9633665656019694, '0.0027': 9.07367925776867} against the generator's {'0.05': 3.9533665656019696, '0.0027': 9.07367925776867}; the cut row's thresholds {'0.05': 3.9306652383859557, '0.0027': 9.140331960389737} against the generator's {'0.05': 3.920665238385956, '0.0027': 9.140331960389737}"
+  },
+  "G6 recompute: the cap removed": {
+   "parent_passed": true,
+   "red": true,
+   "why": "where every mock is at or above the observed T, the graded p is 1.00001 here and 1.0 in the generator, where both must be 1"
+  },
+  "G6 noise: a mock drawn with the wrong block": {
+   "parent_passed": true,
+   "red": true,
+   "why": "at cut|0.001|profiled|supernovae the whitened noise's mean squared norm is +670.4 standard errors off"
+  },
+  "G6 offsets: the box narrowed to 0.005 about the reference offset": {
+   "parent_passed": true,
+   "red": true,
+   "why": "at cut|0.0255|profiled an offset lies 1.1434 outside the box"
+  },
+  "G6 M: the offset held at the reference, not profiled": {
+   "parent_passed": true,
+   "red": true,
+   "why": "T moves by up to 412 when the offset moves (all|0.001|-0.1)"
+  },
+  "G6 refinement: the midpoints left out": {
+   "parent_passed": true,
+   "red": true,
+   "why": "a midpoint beside the largest p is not calibrated: (0.375, 'profiled')"
+  },
+  "G7: one byte changed in a pinned file": {
+   "parent_passed": true,
+   "red": true,
+   "why": "['data/desi_dr2_bao.csv'] differ from their pins"
+  },
+  "R: the null set given as the rehearsal's data": {
+   "parent_passed": true,
+   "red": true,
+   "why": "grades {'all': 'CONSISTENT', 'cut': 'CONSISTENT'} against {'all': 'MILD TENSION', 'cut': 'MILD TENSION'}"
+  },
+  "R: a graded row's finer-grid T moved": {
+   "parent_passed": true,
+   "red": true,
+   "why": "G5 on the graded rows: the cut row's T moves by +0.001 on the finer grid"
+  }
+ },
+ "G7_probe": {
+  "parent_passes": true,
+  "arms_fail": {
+   "the registration names the base commit": true,
+   "the script's hash wrong": true,
+   "a stray file in the checkout": true
+  }
+ },
+ "floors": [
+  {
+   "gate": "G1",
+   "quantity": "worst relative departure from fit_lcos.py",
+   "floor": 4.669399142656452e-15,
+   "tolerance_key": "G1_rel",
+   "tolerance": 1e-09,
+   "clears": true
+  },
+  {
+   "gate": "G2",
+   "quantity": "chi2 and T against the committed anchors",
+   "floor": 1.1482691952835467e-07,
+   "tolerance_key": "G2_chi2",
+   "tolerance": 1e-05,
+   "clears": true
+  },
+  {
+   "gate": "G2",
+   "quantity": "s0 at the committed minima",
+   "floor": 2.8573414506682937e-07,
+   "tolerance_key": "G2_s0",
+   "tolerance": 1e-05,
+   "clears": true
+  },
+  {
+   "gate": "G3",
+   "quantity": "T on the null sets",
+   "floor": 5.258471273388441e-09,
+   "tolerance_key": "G3_T",
+   "tolerance": 1e-07,
+   "clears": true
+  },
+  {
+   "gate": "G4",
+   "quantity": "T on the planted sets against the generator's",
+   "floor": 0.00031943757488850366,
+   "tolerance_key": "G4_T",
+   "tolerance": 0.01,
+   "clears": true
+  },
+  {
+   "gate": "G5",
+   "quantity": "T's move on the finer grid",
+   "floor": 5.3342620542906616e-08,
+   "tolerance_key": "G5_T",
+   "tolerance": 1e-06,
+   "clears": true
+  },
+  {
+   "gate": "G6",
+   "quantity": "J's top against the generator's",
+   "floor": 1.1267278832161054e-07,
+   "tolerance_key": "G6_top",
+   "tolerance": 1e-05,
+   "clears": true
+  },
+  {
+   "gate": "G6",
+   "quantity": "H0rd at the truths against the generator's (km/s)",
+   "floor": 0.000471672788989963,
+   "tolerance_key": "G6_h0rd",
+   "tolerance": 0.01,
+   "clears": true
+  },
+  {
+   "gate": "G6",
+   "quantity": "q's upper tail against beta",
+   "floor": 2.202285662861181e-20,
+   "tolerance_key": "G6_tail",
+   "tolerance": 1e-12,
+   "clears": true
+  },
+  {
+   "gate": "G6",
+   "quantity": "T's move when the offset moves",
+   "floor": 1.8189894035458565e-12,
+   "tolerance_key": "G6_M",
+   "tolerance": 1e-09,
+   "clears": true
+  },
+  {
+   "gate": "R",
+   "quantity": "the rehearsal's T against the generator's",
+   "floor": 0.00031943757488850366,
+   "tolerance_key": "G4_T",
+   "tolerance": 0.01,
+   "clears": true
+  }
+ ],
+ "tolerances_clear_floors": true,
+ "frozen_thresholds": {
+  "all": {
+   "0.05": {
+    "threshold": 3.9533665656019696,
+    "set_by": "0.4|profiled",
+    "count": 4862,
+    "mc_se": 0.022083022200370728
+   },
+   "0.0027": {
+    "threshold": 9.07367925776867,
+    "set_by": "0.4|profiled",
+    "count": 237,
+    "mc_se": 0.10607200945356166
+   }
+  },
+  "cut": {
+   "0.05": {
+    "threshold": 3.920665238385956,
+    "set_by": "0.4|profiled",
+    "count": 4862,
+    "mc_se": 0.022441427694165128
+   },
+   "0.0027": {
+    "threshold": 9.140331960389737,
+    "set_by": "0.4|profiled",
+    "count": 237,
+    "mc_se": 0.08774567179592463
+   }
+  }
+ },
+ "design": {
+  "beta": 1e-05,
+  "q": 46.91155312895772,
+  "top": 0.3543713578035439,
+  "lattice": [
+   0.001,
+   0.05,
+   0.1,
+   0.15,
+   0.2,
+   0.25,
+   0.3,
+   0.35,
+   0.4
+  ],
+  "truths": [
+   [
+    0.001,
+    "profiled",
+    10025.419868584271
+   ],
+   [
+    0.001,
+    "low",
+    9868.059570340176
+   ],
+   [
+    0.001,
+    "high",
+    10187.880162775029
+   ],
+   [
+    0.05,
+    "profiled",
+    10020.679185173534
+   ],
+   [
+    0.05,
+    "low",
+    9864.083962316367
+   ],
+   [
+    0.05,
+    "high",
+    10182.326603192569
+   ],
+   [
+    0.1,
+    "profiled",
+    10006.37085314191
+   ],
+   [
+    0.1,
+    "low",
+    9852.276958182665
+   ],
+   [
+    0.1,
+    "high",
+    10165.361526870727
+   ],
+   [
+    0.15,
+    "profiled",
+    9982.25083646322
+   ],
+   [
+    0.15,
+    "low",
+    9833.055147117913
+   ],
+   [
+    0.15,
+    "high",
+    10136.043732906854
+   ],
+   [
+    0.2,
+    "profiled",
+    9947.895029708805
+   ],
+   [
+    0.2,
+    "low",
+    9807.291508521754
+   ],
+   [
+    0.2,
+    "high",
+    10092.5887522546
+   ],
+   [
+    0.25,
+    "profiled",
+    9902.678196773304
+   ],
+   [
+    0.25,
+    "low",
+    9776.831949142954
+   ],
+   [
+    0.25,
+    "high",
+    10031.806446580933
+   ],
+   [
+    0.3,
+    "profiled",
+    9845.738269066858
+   ],
+   [
+    0.3,
+    "low",
+    9746.477695353153
+   ],
+   [
+    0.3,
+    "high",
+    9947.041434207656
+   ],
+   [
+    0.35,
+    "profiled",
+    9775.923497406013
+   ],
+   [
+    0.35,
+    "low",
+    9744.968443923097
+   ],
+   [
+    0.35,
+    "high",
+    9807.075836047517
+   ],
+   [
+    0.4,
+    "profiled",
+    9691.71531403333
+   ]
+  ],
+  "midpoints": [
+   [
+    0.0255,
+    "profiled",
+    10024.189502924817
+   ],
+   [
+    0.0255,
+    "low",
+    9867.02476796512
+   ],
+   [
+    0.0255,
+    "high",
+    10186.442005129558
+   ],
+   [
+    0.075,
+    "profiled",
+    10014.732128449938
+   ],
+   [
+    0.075,
+    "low",
+    9859.141158361668
+   ],
+   [
+    0.075,
+    "high",
+    10175.312725943291
+   ],
+   [
+    0.125,
+    "profiled",
+    9995.559421268672
+   ],
+   [
+    0.125,
+    "low",
+    9843.552429589348
+   ],
+   [
+    0.125,
+    "high",
+    10152.334718615535
+   ],
+   [
+    0.175,
+    "profiled",
+    9966.386422427817
+   ],
+   [
+    0.175,
+    "low",
+    9820.909056939807
+   ],
+   [
+    0.175,
+    "high",
+    10116.23851031463
+   ],
+   [
+    0.225,
+    "profiled",
+    9926.692048261335
+   ],
+   [
+    0.225,
+    "low",
+    9792.464010212025
+   ],
+   [
+    0.225,
+    "high",
+    10064.651029777022
+   ],
+   [
+    0.275,
+    "profiled",
+    9875.73805171457
+   ],
+   [
+    0.275,
+    "low",
+    9761.074145147166
+   ],
+   [
+    0.275,
+    "high",
+    9993.12790734367
+   ],
+   [
+    0.325,
+    "profiled",
+    9812.525438993845
+   ],
+   [
+    0.325,
+    "low",
+    9736.121650816565
+   ],
+   [
+    0.325,
+    "high",
+    9890.137862647
+   ],
+   [
+    0.375,
+    "profiled",
+    9735.730597190048
+   ]
+  ]
+ },
+ "all_gates_pass": true,
+ "all_arms_red": true,
+ "seconds": 962.2,
+ "commit": "8558124efc2b9f63120a4be0bfd8ed83e0e39e47",
+ "script_sha256": "13967fa9df0491829d801095baa4f3a14e08e2ab0ca3f5eb02ada5463551c460"
+}
