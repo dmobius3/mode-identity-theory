@@ -17,7 +17,7 @@ Around 300 BC, Euclid proved that only five regular solids close perfectly in or
 
 **one shape, one wave, and the rest is accounting.**
 
->At its core, MIT is a research program in topology, spectral geometry, and representation theory. The [framework](/files/framework/) lays out the theory's structure, with mathematical foundations in [bedrock](/files/framework/files/bedrock/), current research in [dynamics](/files/framework/files/dynamics/), and open questions in [working](/files/framework/files/working/). Its physical applications span [cosmos](/files/cosmos/) and [spectrum](/files/spectrum/), while reference and interactive materials are gathered in [tools](/files/tools/). Testing takes place on [OpenWave](/files/tools/files/openwave/README.md), an independent computational platform.
+>At its core, MIT is a research program in topology, spectral geometry, and representation theory. The [framework](/files/framework/) lays out the theory's structure, with mathematical foundations in [bedrock](/files/framework/files/bedrock/), frontier research in [dynamics](/files/framework/files/dynamics/), and open questions in [working](/files/framework/files/working/). Its physical applications span [cosmos](/files/cosmos/) and [spectrum](/files/spectrum/), while reference and interactive materials are gathered in [tools](/files/tools/). Testing takes place on [OpenWave](/files/tools/files/openwave/README.md), an independent computational platform.
 ---
 
 **💬 Frequently Asked Questions**
