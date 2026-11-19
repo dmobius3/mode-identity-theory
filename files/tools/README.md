@@ -31,14 +31,9 @@ Check it yourself. Nothing below is a demonstration: each page runs the framewor
 >
 >**[TOE-Share](https://theoryofeverything.ai/author/b-shatto)**: independent AI review. Each deposited paper is read and scored on its own terms; the assessments are gathered on the author profile and carried into the Publication Registry.
 
-<a id="mit-on-openwave"></a>
-## 🏄‍♂️ MIT on OpenWave
-
->[![OpenWave](/files/assets/openwave-banner-graphite.svg)](files/openwave/README.md)
+>[![OpenWave](/files/assets/openwave-banner-graphite.svg)](https://github.com/openwave-labs/openwave)
 >
->**[Tracker](files/openwave/README.md)**: every task in the column, with its record on OpenWave, its outcome, and what MIT holds for it.
-
-[OpenWave](https://github.com/openwave-labs/openwave) is an open-source physics simulator that holds candidate field theories to the same public pass/fail criteria, one column per model, and M8 is MIT's. Each run there is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review.
+>**[OpenWave](https://github.com/openwave-labs/openwave)** is an open-source physics simulator that holds candidate field theories to the same public pass/fail criteria, one column per model, and M8 is MIT's. Each run there is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review.
 
 ## 📚 Publication Registry
 
