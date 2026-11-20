@@ -43,6 +43,10 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 **The Census:** The status of the branches at every certified critical orbit in one place, under a definition of done fixed before its runs; it closed on 2026-11-10. Past small amplitude, the runs from M8.15 to M8.19 followed nine branches born elliptic to their slots' spectral gaps on two instruments: two end elliptic throughout, three change type at located amplitudes, and four end at the instruments' limits, with no type claimed where they could not read. Every persistence test that ran held, as finite-time evidence, and at two orbits persistence stays untested. These are numerical verdicts, so finite amplitude is still open as mathematics. MIT's own computation of the open items is kept beside the record, outside M8.
 
+### [Slot Dynamics in Time](../working/files/slot-dynamics-time.md)
+
+**The Evolution:** How the branches move in time under the frozen slot action. The first step is an instrument built to keep the continuous symmetry: M8.16.1's Galerkin discretization with a time arm that keeps the phase, right-SU(2) and, in the quaternionic slots, Sp(1) charges exactly in exact arithmetic, and the instrument's cubic computed by FFT once it agrees with the instrument's own. The question it serves is whether the small-amplitude spectral types predict the response to perturbation.
+
 ### [Slot Relation](../working/files/slot-relation.md)
 
 **The Energies:** What MIT says the energies of stable states across the eight slots obey, the relation the last row of OpenWave's M8 success ladder asks for. It was registered before any derivation, with three declared routes; none yields a relation, so none is filed, and a dynamics can still aim at the ladder's other rows without it.

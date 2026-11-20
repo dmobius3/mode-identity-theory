@@ -1,0 +1,5 @@
+instrument pin checked; python 3.13.13, numpy 2.5.0, macOS-15.8.2-arm64-arm-64bit-Mach-O
+R4 N=8: m=7, nodes=9801, tables 0.00 GB, cached=True; basis 0.0 s, functional 0.0 s, cubic 0.02 s then 0.00 s
+R4 N=16: m=50, nodes=71825, tables 0.17 GB, cached=True; basis 0.0 s, functional 0.1 s, cubic 0.03 s then 0.02 s
+R4 N=24: m=138, nodes=235225, tables 1.56 GB, cached=True; basis 0.0 s, functional 1.1 s, cubic 0.48 s then 0.30 s
+R4 N=32: m=316, nodes=549153, tables 8.33 GB, cached=False; basis 0.1 s, functional 0.0 s, cubic 8.09 s then 8.02 s
