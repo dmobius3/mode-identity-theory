@@ -63,7 +63,7 @@ MIT's column from the [coverage matrix](https://github.com/openwave-labs/openwav
 | 4 | Particle stability (Derrick escape) | 🚧 Under the frozen slot action, localized standing waves vanish in flat space (Pohozaev), so no lump much smaller than R is expected; curvature-scale states remain open. M8.4 closed unresolved 2026-08-26, successor chassis M8.5-C2-FAILED 2026-08-31; no authorized route currently exists |
 | 5 | Magnetic moment μ (g ≈ 2, magnetostatics) | 🚧 Not addressed |
 | 6 | Angular momentum J (spin ℏ/2) | 🚧 Not addressed (no native dynamics to carry angular momentum) |
-| 7 | Spin-½ statistics (720° double cover) | 🚧 2I ⊂ SU(2) carries the ordinary spinor sign: its central −I acts as −1 on half-integer-spin representations, distinct from the Mobius orientation sign. On MIT's projective carrier one loop carries both, making the spin sign geometric; this derives neither spin-statistics nor anticommutation. No field realization yet |
+| 7 | Spin-½ statistics (720° double cover) | 🚧 2I ⊂ SU(2) carries the ordinary spinor sign: its central −I acts as −1 on half-integer-spin representations, distinct from the Möbius orientation sign. On MIT's projective carrier one loop carries both, making the spin sign geometric; this derives neither spin-statistics nor anticommutation. No field realization yet |
 | | | |
 | | **PARTICLE - FULL SPECTRUM** | |
 | 8 | Antimatter + annihilation | 🚧 Not addressed (no native dynamics to annihilate with) |
@@ -99,7 +99,7 @@ MIT's column from the [coverage matrix](https://github.com/openwave-labs/openwav
 
 The author's runs, M8.15 to M8.19, keep their folders beside the census, in `working/files/scripts/`, where their records pin them; the M8.15.x instrument that M8.15.1, M8.15.2 and M8.19 ran on is [`soft-slot-dynamics-m8-15x`](/files/framework/files/working/files/scripts/soft-slot-dynamics-m8-15x/REPRODUCE.md). Before M8.15 the runs and their records are on OpenWave, the author's two contributions, M8.2 and M8.3, among them; MIT holds the papers and the checks they reproduced.
 
-From the next M8 task on, each task's files live here, in a folder named for its ID with hyphens for dots, such as `m8-20/` or `m8-19-1/`:
+From the next M8 task on, each task's files live here, under `files/`, in a folder named for its ID with hyphens for dots, such as `files/m8-20/` or `files/m8-19-1/`:
 
 | File | What it holds |
 |---|---|
