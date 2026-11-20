@@ -51,9 +51,9 @@ Dynamics is one problem with two halves: how the wave content moves, and how tha
 
 ## 🏄‍♂️ Collaboration on OpenWave
 
-[![OpenWave](/files/assets/openwave-banner-graphite.svg)](/files/tools/files/openwave/README.md)
+[![OpenWave](/files/assets/openwave-banner-graphite.svg)](/files/tools/files/openwave/)
 
-[OpenWave Tracker:](/files/tools/files/openwave/README.md) The runs these pages cite are filed with OpenWave, an open-source physics simulator: each is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review. The program asks whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight slots.
+[OpenWave Tracker:](/files/tools/files/openwave/) The runs these pages cite are filed with OpenWave, an open-source physics simulator: each is pre-registered and frozen before it goes, and the maintainer reproduces or adjudicates the result in public review. The program asks whether any reasonable action on $`S^3/2I`$ carries a common finite-amplitude branch or stability structure across the eight slots.
 
 ---
 
