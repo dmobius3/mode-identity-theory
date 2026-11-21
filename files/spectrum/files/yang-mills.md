@@ -15,7 +15,7 @@ The Millennium Prize asks whether pure Yang-Mills on flat $`\mathbb{R}^4`$ has a
 | Object | nonperturbative quantum mass gap | linearized coexact gap |
 | Status | open and hard | classical, forced by the geometry |
 
-The surprise is the bottom-right cell: a mass gap appears for free from a shape, and its coefficient in units of $`1/R^2`$ is read off the McKay structure. Positive Ricci curvature forces a gap to exist; the finite group $`2I`$ gives exactly three isolated vacua (trivial, standard, Galois conjugate); and the McKay graph, the affine $`E_8`$ diagram, fixes the value at each, $`4/R^2`$ at two and $`36/R^2`$ at the third, a ninefold enhancement at the Galois sector. The same curvature that forces this gap also enters the conversion that sets the vacuum-reference $`\Lambda_\text{ref}`$: one geometry, two consequences.
+The surprise is the bottom-right cell: a coexact gap appears for free from a shape, and its coefficient in units of $`1/R^2`$ is read off the McKay structure. Positive Ricci curvature forces a gap to exist; the finite group $`2I`$ gives exactly three isolated vacua (trivial, standard, Galois conjugate); and the McKay graph, the affine $`E_8`$ diagram, fixes the value at each, $`4/R^2`$ at two and $`36/R^2`$ at the third, a ninefold enhancement at the Galois sector. The same curvature that forces this gap also enters the conversion that sets the vacuum-reference $`\Lambda_\text{ref}`$: one geometry, two consequences.
 
 (Throughout, $`R`$ is the curvature radius of the round metric, the framework's $`R_\Lambda`$; for $`S^3/2I`$, $`\Lambda_\text{ref} = 3/R_\Lambda^2`$.)
 

@@ -89,7 +89,6 @@ With the electron setting the scale, entries land within a factor of 3 of five o
 | [↗](files/mass-spectrum.md#1-color-from-faces) Color from $`Z_3`$ | `exact` | singlet / triplet | consistent (a reading) |
 | [↗](files/mass-spectrum.md#2-domain-from-edges) Domain from $`Z_4`$ | `exact` | integer / half-integer | consistent (a reading) |
 | [↗](files/mass-spectrum.md#4-weak-isospin-from-the-coxeter-galois-gate) Weak isospin $`T_3`$ | `exact` | 11 evaluations consistent | rule written knowing the answers |
-| [↗](files/mass-spectrum.md#3-the-eta-sign-gate) Eta sign gate | `exact` | $`\eta > 0 \implies Q \leq 0`$ | all assigned entries pass |
 | [↗](files/mass-spectrum.md#iii-the-24-entries) Fermion masses | `anchored (m_e, Λ)` | 5 of 8 within ×3 | null $`p = 0.690`$: no evidence |
 | [↗](files/mass-spectrum.md#iii-the-24-entries) $`m_\mu`$ (muon) | `anchored (m_e, Λ)` | 0.103 vs 0.1057 GeV | ~3% |
 | [↗](files/mass-spectrum.md#iii-the-24-entries) $`m_t`$ (top quark) | `anchored (m_e, Λ)` | 161.3 vs 172.7 GeV | 7% |

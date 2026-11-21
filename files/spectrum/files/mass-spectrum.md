@@ -107,7 +107,7 @@ Half-integer spin: R₁, R₂, R₆, R₈. Integer spin: R₀, R₃, R₄, R₅,
 | $`R_7`$ | 5 | Int | 4 | 2 | {4, 8, 10, 12, 14, 16, 18, 20, 22, 26} | No |
 | $`R_8`$ | 6 | Half | 5 | 5/2 | {5, 7, 9, 11, 13, 15², 17, 19, 21, 23, 25} | 6/12 |
 
-The $`j_\text{first}`$ rule follows from the McKay multiplicity structure: the spin-<i>j</i> representation of $`SU(2)`$, restricted to $`2I`$, first contains irrep $`\rho`$ at exactly $`j = \text{dist}(\rho)/2`$. This holds for both spin parities and is a consequence of the McKay correspondence between the $`2I`$ representation graph and the extended $`E_8`$ Dynkin diagram.
+In the trivial vacuum, $`j_\text{first}`$ follows from the McKay multiplicity structure: the spin-<i>j</i> representation of $`SU(2)`$, restricted to $`2I`$, first contains irrep $`\rho`$ at exactly $`j = \text{dist}(\rho)/2`$. This holds for both spin parities and is a consequence of the McKay correspondence between the $`2I`$ representation graph and the extended $`E_8`$ Dynkin diagram.
 
 ### 4. Torsion Factors  $`T^2(\rho \otimes \sigma)`$
 
@@ -179,7 +179,7 @@ The two definitions are joined by the Cheeger-Müller theorem, which equates the
 
 24 entries from the formula. The table below shows the comparison to Standard Model (SM) fermions and the entries with no SM match. Bold rows are the preferred SM assignments counted in the headline scorecard. Unbolded repeated labels show nearby candidate entries or mass-shell clusters; they are not counted as separate assignments.
 
-The assignment is constrained, not free. The formula produces 24 ranked entries; four structural filters narrow which entries can correspond to which fermions. The Coxeter-Galois gate (§IV.4) assigns weak isospin $`T_3 = \pm 1/2`$ to each entry. The $`Z_3`$ face decomposition (§IV.1) restricts color-charged assignments to irreps carrying colored pairs. The $`Z_4`$ edge decomposition (§IV.2) fixes the domain for each spin parity. The eta sign gate (§IV.3) restricts positive electric charge to negative-eta entries. Together these filters determine the quantum numbers $`(T_3, Y, Q)`$ at each $`(\rho, \sigma)`$ pair before any mass comparison is made.
+The assignment is constrained, not free. The formula produces 24 ranked entries; three structural filters narrow which entries can correspond to which fermions. The Coxeter-Galois gate (§IV.4) assigns weak isospin $`T_3 = \pm 1/2`$ to each entry. The $`Z_3`$ face decomposition (§IV.1) restricts color-charged assignments to irreps carrying colored pairs. The $`Z_4`$ edge decomposition (§IV.2) fixes the domain for each spin parity. Together these filters assign $`T_3`$, color content and spin parity at each $`(\rho, \sigma)`$ pair. With the adopted Standard Model left-doublet hypercharges $`Y`$, they give $`Q = T_3 + Y/2`$ before any mass comparison is made.
 
 Assignment then proceeds **sector-first**: where the vertex structure (§IV.5) names a fermion's irrep sector (the neutrinos on $`R_1`$, the top and bottom on $`R_2`$, the electron on $`R_7`$), the fermion is assigned to its nearest compatible address within that sector, and does not slide onto a compatible address outside it to fill a gap. Fermions without a vertex-named sector go to their nearest quantum-number-compatible entry. This is why the bottom quark, whose nearest compatible entry sits at ratio 1.17 on $`(R_4,\text{gal})`$, is nevertheless unassigned: its sector is $`R_2`$, where its nearest entry is 38× away. Compatible coverage and adjudicated assignment are therefore reported as separate counts.
 
@@ -274,17 +274,25 @@ The domain size $`D = 60`$ vs 120 introduced in §II.2 traces to a deeper struct
 
 The real/complex $`Z_4`$ split is exact. MIT reads it as the domain and spin-statistics distinction the mass formula then uses through $`C_\text{geom}`$, which evaluates the Kostant exponents on the $`D = 60`$ or $`D = 120`$ grid.
 
-### 3. The Eta Sign Gate
+<a id="3-the-eta-sign-gate"></a>
+### 3. The Eta Invariant by Address
 
-The Dirac eta invariant $`\eta(\rho, \sigma)`$ varies with the vacuum. Across the mass-formula entries, a strict constraint links it to the charge slot the gates fix:
+The Dirac eta invariant of an address, $`\eta(\rho, \sigma)`$, is $`\eta_D(0)`$ on $`S^3/2I`$ twisted by the flat bundle of the propagating mode $`\rho \otimes \sigma`$, a measure of that operator's spectral asymmetry. It adds over the components of $`\rho \otimes \sigma`$, so each value sums the per-irrep values of [the mirror](the-mirror.md#c-eta-character-selection), and it varies with the vacuum:
 
-```math
-\eta(\rho, \sigma) > 0 \implies Q \leq 0
-```
+| Irrep | triv | std | gal |
+|---|---|---|---|
+| $`R_1`$ | 73/72 | 371/180 | -61/180 |
+| $`R_2`$ | -67/360 | -61/180 | 227/180 |
+| $`R_3`$ | 9/16 | 47/40 | -17/40 |
+| $`R_4`$ | -19/80 | -17/40 | -1/40 |
+| $`R_5`$ | -61/180 | -11/18 | 53/90 |
+| $`R_6`$ | 29/180 | 7/18 | -37/90 |
+| $`R_7`$ | -25/144 | -19/72 | -19/72 |
+| $`R_8`$ | -17/40 | -3/4 | 1/20 |
 
-Equivalently: positive electric charge requires negative eta. All up-type ($`Q = +2/3`$) entries have $`\eta < 0`$. All entries with $`\eta > 0`$ (the addresses at ranks 2, 13, 16, 23) sit in $`Q = 0`$ or $`Q = -1/3`$ slots; rank 23 is such a down-type slot but carries no assigned fermion (it sits 47× the bottom mass, see §III). The eta values are per-address invariants.
+It is positive at nine addresses: ranks 1, 2, 4, 5, 7, 8, 13, 16 and 23. [mass-identity.test.py](scripts/mass-identity.test.py) recomputes every value from the 120 elements of $`2I`$.
 
-The eta invariant measures spectral asymmetry: the parity content of the mode. This gate connects parity to electric charge through the spectral geometry.
+**Retired (2026-11-21): the eta sign gate.** This section proposed a strict constraint across the entries, $`\eta(\rho, \sigma) > 0 \implies Q \leq 0`$, and listed four eta-positive addresses, ranks 2, 13, 16 and 23. Computed at all 24, eta is positive at nine, and the gate fails at ranks 1, 2 and 8, which admit up-type channels ($`T_3 = +1/2`$, colored). It holds at every assigned entry, where it tests two cases: the down quark's rank 13 has $`\eta = 1/20`$ in a $`Q = -1/3`$ slot, and the top's rank 22 has $`\eta = -67/360`$. The gate determined no recorded placement and no mass score; the null test's slots read the $`T_3`$ gate and the $`Z_3`$ colors alone. The eta values above remain valid spectral data.
 
 ### 4. Weak Isospin from the Coxeter-Galois Gate
 
@@ -399,6 +407,7 @@ The $`R_1`$ sector spans 0.87 meV (triv), 7.3 meV (std), 66.7 meV (gal) in ascen
 |------|--------|
 | Entry rule | Open, and unargued rather than tested. The fourth factor enters as $`T^2(\rho\otimes\sigma)`$ rather than $`T`$, on the tensor product rather than on $`\rho`$ alone, multiplying the Kostant seat. Each choice is used throughout and none is derived here. The reproduction (§II.5) certifies the values these choices are applied to, not the choices; the null test (§III) scores the placement of the results, not their construction. |
 | $`T_3`$ assignment rule (status note, not an open item) | Established as a gate rule though bespoke, with the reading of its output as weak isospin carried per §IV.6. Two-stage filter: $`j_\text{first}`$ parity + Coxeter-Galois gate. Eleven featured evaluations consistent: five carrying assigned charged fermions, two carrying neutrino-scale proxy rows, and four serving as structural checks. See §IV.4. |
+| Right-handed weak singlets | Open. The gate (§IV.4) assigns $`T_3 = \pm 1/2`$, read as the components of left-handed doublets; the dictionary specifies no right-handed weak singlet ($`T_3 = 0`$) and no left-right mass coupling. In the Standard Model a charged fermion's mass couples its left-handed doublet component to a right-handed singlet through the Higgs Yukawa coupling, so each charged-fermion mass placed at an address presumes a right-handed partner the addresses do not supply. Nothing here assumes Dirac rather than Majorana neutrino masses. |
 | $`\mu`$/$`s`$ single-entry count | Rank 15 supplies both the muon and the strange via the $`R_8`$ singlet/triplet color split, so two fermions are credited to one $`(\rho,\sigma)`$ address; rank 17 repeats the pattern with $`\tau`$ counted and $`b`$ recorded. Whether a shared address is one hit or two is a standing convention question (a strict one-entry-one-hit reading would give 3 of 8). |
 | Up quark assignment | Open. $`(R_8,\text{triv})`$ sits at 31.6 MeV, 14.6× the up mass, and no up-type entry sits near 2.16 MeV. |
 | Charm quark assignment | Open. No compatible entry within ×3 anywhere: the nearest entry (rank 16, 418 MeV) is 3.04 away and carries $`T_3 = -1/2`$. All $`R_4`$ entries have integer $`j_\text{first}`$ ($`T_3 = -1/2`$), so $`R_4`$ offers no $`T_3 = +1/2`$ address for charm's left-handed component. |

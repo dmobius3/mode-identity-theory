@@ -39,7 +39,16 @@ table that the group does not support fails here. It certifies:
      integer-spin and a McKay distance has the parity of twice the spin;
   5. the gate's eleven featured evaluations in section IV.4: j_first, the
      (13, 17) status, the product rho x sigma and T3, recomputed from the rule
-     and the two-stage gate.
+     and the two-stage gate;
+  6. the eta invariant by address in section IV.3. Donnelly's sum,
+     eta = (1/120) sum over g != e of chi(g) / (1 - Re g), over the 120
+     elements reproduces the mirror page's nine values (its section C) and the
+     section's 24, each of which is also the mirror's values added over the
+     components of rho x sigma. Eta is positive at the nine ranks the section
+     lists, and the retired eta sign gate fails exactly at the ranks its note
+     names, where an up-type channel (T3 = +1/2, colored) carries positive eta.
+     Section IV.5's (5/2)(eta_std - eta_gal) is an integer for every irrep and
+     zero at R7 alone.
 
 Run: python3 mass-identity.test.py   (standard library only)
 """
@@ -190,7 +199,7 @@ def restrict(r, n):
 Z3, Z4, Z5 = ({r: restrict(r, n) for r in IRR} for n in (3, 4, 5))
 NONTRIV = IRR[1:]
 p3 = section('### 1. Color from Faces', '### 2. Domain from Edges')
-p4 = section('### 2. Domain from Edges', '### 3. The Eta Sign Gate')
+p4 = section('### 2. Domain from Edges', '### 3. The Eta Invariant by Address')
 p5 = section('### 5. The Vertex and the Twist', '### 6. Summary')
 page3 = {f'R{m[0]}': (int(m[1]), int(m[2]), int(m[3]))
          for m in re.findall(r'^\| \$`R_(\d)`\$ \| (\d) \| (\d) \| (\d) \|', p3, re.M)}
@@ -273,5 +282,58 @@ for rank, n, s, jf, pair, prod, t3 in rows:
     check(f"rank {rank} ({r}, {s})",
           Fraction(jf) == j and pair.strip() == status and sorted(re.findall(r'R_(\d)', prod)) == sorted(c[1:] for c in comps)
           and page_t3 == T3, f"j_first {fmt(j)}, {status}, T3 {fmt(T3)}")
+
+# ============================================== 6. the eta invariant by address
+print("\nCHECK 6  section IV.3's eta table, recomputed by Donnelly's sum over the 120 elements")
+MIRROR = open(os.path.join(HERE, '..', 'the-mirror.md'), encoding='utf-8').read()
+
+
+def eta(f):
+    x = sum(f(a) / (1 - math.cos(a)) for a in ANG if a > 1e-9) / 120
+    q = Fraction(x).limit_denominator(720)
+    if abs(x - q) > 1e-9:
+        raise AssertionError(f"an eta value is not a fraction over 720: {x}")
+    return q
+
+
+def gate_t3(r, s):
+    status = 'N/A' if r not in PAIR else 'kept' if s == 'triv' else 'stripped'
+    stripped = status == 'stripped' and any(c in NONFIXED for c in decompose(r, SIGMA[s]))
+    return Fraction(-1, 2) if rule(r, s).denominator == 1 or stripped else Fraction(1, 2)
+
+
+mir = {f'R{m[0]}': Fraction(m[1])
+       for m in re.findall(r'^\| R(\d) \| \d \| \d \| \d+ \| [\d, ]+ \| (-?\d+/\d+) \|$', MIRROR, re.M)}
+check("the mirror page's nine values, by the sum", sorted(mir) == IRR and all(eta(CH[r]) == mir[r] for r in IRR))
+check("the regular representation's eta is zero", sum(DIM[r] * mir[r] for r in IRR) == 0)
+p6 = section('### 3. The Eta Invariant by Address', '### 4. Weak Isospin')
+etatab = {}
+for m in re.findall(r'^\| \$`R_(\d)`\$ \| (-?[\d/]+) \| (-?[\d/]+) \| (-?[\d/]+) \|$', p6, re.M):
+    for s, v in zip(VAC, m[1:]):
+        etatab[(f'R{m[0]}', s)] = Fraction(v)
+ETA = {(r, s): eta(lambda a, r=r, s=s: CH[r](a) * CH[SIGMA[s]](a)) for r in NONTRIV for s in VAC}
+check("the section's 24 values equal the sums", len(etatab) == 24 and etatab == ETA)
+check("each is the mirror's values added over the components of rho x sigma",
+      all(ETA[(r, s)] == sum(mir[t] for t in decompose(r, SIGMA[s])) for r in NONTRIV for s in VAC))
+p_rank = section('## III. The 24 Entries', '## IV. Particle Identity')
+B = r'(?:\*\*)?'
+RANK = {int(m[0]): (f'R{m[1]}', m[2])
+        for m in re.findall(rf'^\| {B}(\d+){B} \| {B}\$`R_(\d)`\${B} \| {B}\d{B} \| {B}(triv|std|gal){B} \|', p_rank, re.M)}
+check("section III's 24 ranks", sorted(RANK) == list(range(1, 25)) and sorted(RANK.values()) == sorted(ETA))
+listed = lambda pat: [int(x) for x in re.findall(r'\d+', re.search(pat, p6).group(1))]
+pos = [k for k in sorted(RANK) if ETA[RANK[k]] > 0]
+check("eta is positive at the nine ranks the section lists",
+      len(pos) == 9 and pos == listed(r'positive at nine addresses: ranks ([\d, and]+)\.'), ', '.join(map(str, pos)))
+face = lambda r, s: round(sum(CH[r](2 * math.pi * k / 3) * CH[SIGMA[s]](2 * math.pi * k / 3) for k in range(3)) / 3)
+up = [k for k in sorted(RANK) if gate_t3(*RANK[k]) == Fraction(1, 2) and face(*RANK[k]) < DIM[RANK[k][0]] * DIM[SIGMA[RANK[k][1]]]]
+fail = [k for k in up if ETA[RANK[k]] > 0]
+check("the retired gate fails exactly at the ranks its note names", fail == listed(r'the gate fails at ranks ([\d, and]+), which'),
+      f"up-type channels at ranks {', '.join(map(str, up))}; eta > 0 at {', '.join(map(str, fail))}")
+p5 = section('### 5. The Vertex and the Twist', '### 6. Summary')
+v5 = {r: Fraction(5, 2) * (eta(lambda a, r=r: CH[r](a) * CH['R1'](a)) - eta(lambda a, r=r: CH[r](a) * CH['R2'](a)))
+      for r in IRR}
+check("section IV.5: (5/2)(eta_std - eta_gal) is an integer for every irrep and zero at R7 alone",
+      'uniquely zero at $`R_7`$' in p5 and all(v.denominator == 1 for v in v5.values())
+      and [r for r in IRR if v5[r] == 0] == ['R7'], ', '.join(fmt(v5[r]) for r in IRR))
 
 print("\nALL CHECKS PASSED\n")

@@ -545,7 +545,7 @@ The four-fold edge stabilizer $`Z_4`$ contains the central element $`-I`$, which
 
 ### Vertices set the electroweak address
 
-The five-fold vertex decomposition makes the Galois distinction explicit: $`R_1`$ and $`R_2`$ occupy complementary fifth-root sectors exchanged by $`\sqrt5 \mapsto -\sqrt5`$, writing $`R_n`$ for the eight nontrivial irreps of $`2I`$ in their McKay ordering. That distinction is the framework's electroweak address, and it feeds the Coxeter-Galois gate: the weak isospin $`T_3`$ of a left-handed doublet component is assigned by that gate from spectral parity, whether $`j_\text{first}(\rho, \sigma)`$ is an integer (on the tabulated addresses, the sign the central $`-I`$ carries on the seat), together with the Galois structure, with a separate eta-sign gate constraining the electric-charge slot, so the isospin is the gate's output and not furnished by $`Z_5`$ alone. This is the same $`T_3`$ gate One Formula's mass table leans on, and it is the identification doing the most work in the section: representation theory distinguishes the pair, and the framework's dictionary gives the distinction its electroweak meaning.
+The five-fold vertex decomposition makes the Galois distinction explicit: $`R_1`$ and $`R_2`$ occupy complementary fifth-root sectors exchanged by $`\sqrt5 \mapsto -\sqrt5`$, writing $`R_n`$ for the eight nontrivial irreps of $`2I`$ in their McKay ordering. That distinction is the framework's electroweak address, and it feeds the Coxeter-Galois gate: the weak isospin $`T_3`$ of a left-handed doublet component is assigned by that gate from spectral parity, whether $`j_\text{first}(\rho, \sigma)`$ is an integer (on the tabulated addresses, the sign the central $`-I`$ carries on the seat), together with the Galois structure, so the isospin is the gate's output and not furnished by $`Z_5`$ alone. This is the same $`T_3`$ gate One Formula's mass table leans on, and it is the identification doing the most work in the section: representation theory distinguishes the pair, and the framework's dictionary gives the distinction its electroweak meaning.
 
 The same stabilizers give two further entries that are not primes but corrections, each tying back to a section of its own.
 
@@ -637,7 +637,7 @@ Confinement is usually told as a story about energy: the cost keeps climbing unt
 
 Why three, and not two or seven? Because the space has exactly three ways to hold a flat field still, with no path from one to another. Flat $`\text{SU}(2)`$ connections on $`S^3/2I`$ are classified by conjugacy classes of homomorphisms $`2I \to \text{SU}(2)`$, and exactly three exist: the trivial map, the standard connection $`Q`$, and its Galois conjugate $`Q'`$. Each is isolated ($`H^1 = 0`$), with no continuous moduli and no Goldstone mode bridging the families.
 
-| Vacuum | Mass gap | Source |
+| Vacuum | Coexact gap | Source |
 |---|---|---|
 | Trivial | $`4/R_\Lambda^2`$ | flat connection |
 | Standard | $`4/R_\Lambda^2`$ | irreducible connection |
