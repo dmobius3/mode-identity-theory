@@ -595,7 +595,7 @@ function build() {
       var v = ["triv","std","gal"][vi];
       var ir = IR[r];
       var m_ = mass(r, v);
-      ent.push({r:r, l:ir.l, dim:ir.dim, dist:ir.dist, sp:ir.sp, jf:ir.dist/2, v:v, t2:T2[r][v], m:m_, sm:"", rat:0, dz:ir.dist===2||ir.dist===3, t3:computeT3(r, v)});
+      ent.push({r:r, l:ir.l, dim:ir.dim, dist:ir.dist, sp:ir.sp, jf:JFIRST[r][v], v:v, t2:T2[r][v], m:m_, sm:"", rat:0, dz:ir.dist===2||ir.dist===3, t3:computeT3(r, v)});
     }
   }
   ent.sort(function(a, b) { return a.m - b.m; });
