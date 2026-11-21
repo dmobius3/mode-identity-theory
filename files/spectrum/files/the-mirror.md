@@ -79,24 +79,26 @@ The Reidemeister torsion (analytic torsion by Cheeger-Müller) for all integer-s
 
 Two independent derivation paths (combinatorial Reidemeister + spectral analytic torsion via Kummer/Gauss). Verified to 79 digits. The Galois pair satisfies $`T^2(R_3)/T^2(R_4) = \varphi^{-4}`$ (exact), with the golden ratio entering through the Legendre character of $`\mathbb{Q}(\sqrt{5})`$.
 
-| Irrep | $`\log T^2`$ | L-basis |
-|-------|------------|---------|
-| R3 | -1.186 | $`-4L'(0,\chi_0^{(2)}) + 2L'(0,\chi_0^{(5)}) - \sqrt{5}\cdot L(1,\chi_2)`$ |
-| R7 | +0.811 | $`4L'(0,\chi_0^{(2)}) - 4L'(0,\chi_0^{(3)})`$ |
-| R5 | +1.022 | $`4L'(0,\chi_0^{(3)}) - 4L'(0,\chi_0^{(5)})`$ |
-| R4 | +0.739 | $`-4L'(0,\chi_0^{(2)}) + 2L'(0,\chi_0^{(5)}) + \sqrt{5}\cdot L(1,\chi_2)`$ |
+| Irrep | $`T^2`$ | $`\log T^2`$ | L-basis |
+|-------|---------|------------|---------|
+| R3 | $`(4/5)\varphi^{-2}`$ | -1.186 | $`-4L'(0,\chi_0^{(2)}) + 2L'(0,\chi_0^{(5)}) - \sqrt{5}\cdot L(1,\chi_2)`$ |
+| R7 | $`9/4`$ | +0.811 | $`4L'(0,\chi_0^{(2)}) - 4L'(0,\chi_0^{(3)})`$ |
+| R5 | $`25/9`$ | +1.022 | $`4L'(0,\chi_0^{(3)}) - 4L'(0,\chi_0^{(5)})`$ |
+| R4 | $`(4/5)\varphi^{2}`$ | +0.739 | $`-4L'(0,\chi_0^{(2)}) + 2L'(0,\chi_0^{(5)}) + \sqrt{5}\cdot L(1,\chi_2)`$ |
+
+With $`L'(0,\chi_0^{(p)})=-\tfrac12\log p`$ and $`\sqrt{5}\cdot L(1,\chi_2)=2\log\varphi`$, where $`\chi_2`$ is the Legendre character mod 5, each L-basis entry is the logarithm of its closed form.
 
 Selectivity: maximum (4 of 16 characters). Domain: $`s=0`$ only.
 
-For half-integer irreps (R1, R2, R6, R8), the same spectral method gives exact closed forms as well: the full Ray-Singer torsion resolves to $`\varphi^{-4}/4`$, $`\varphi^{4}/4`$, $`1`$, and $`4`$ respectively, so the maximal-selectivity reading holds across both spin parities. A coexact-only truncation, which drops the scalar tower, leaves 28 to 32 characters unreduced; with the scalar tower included, the half-integer torsions collapse to the golden-ratio closed forms above (see [the torsion correction](../../framework/files/working/files/torsion-correction.md)).
+For half-integer irreps (R1, R2, R6, R8), the same spectral method gives exact closed forms as well: the full Ray-Singer torsion resolves to $`\varphi^{-4}/4`$, $`\varphi^{4}/4`$, $`1`$, and $`4`$ respectively, so the maximal-selectivity reading holds across both spin parities. A coexact-only truncation drops the scalar tower; with the scalar tower included, the half-integer torsions collapse to the golden-ratio closed forms above (see [the torsion correction](../../framework/files/working/files/torsion-correction.md)).
 
 ### B. Dirac Factorization
 
-The Dirac operator on $`S^3/2I`$ has eigenvalues $`\pm(n+3/2)/R`$, linear in $`n`$ with no curvature shift. Its spectral zeta factors finitely at all $`s`$ into three L-function layers: $`L(s,\chi)`$, $`L(s-1,\chi)`$, $`L(s-2,\chi)`$ for Dirichlet characters mod 120. The 120-grid carries $`\phi(120)=32`$ characters; of these, 28–32 survive depending on the irrep. That count belongs to the Dirac zeta; the coexact-only truncation of section III.A gives the same numbers for a different operator.
+The Dirac operator on $`S^3/2I`$ has eigenvalues $`\pm(n+3/2)/R`$, linear in $`n`$ with no curvature shift. In the coprime sector $`U(120)`$, its spectral zeta factors finitely at all $`s`$ into three L-function layers: $`L(s,\chi)`$, $`L(s-1,\chi)`$, $`L(s-2,\chi)`$ for Dirichlet characters mod 120; the numerators that share a factor with 120 contribute separately. The 120-grid carries $`\phi(120)=32`$ characters; of these, 6 to 12 survive depending on the irrep, the same counts as the eta of § III.C. Each level carries one chirality: by spin parity, $`\sigma`$ enters $`m_n^+`$ or $`m_n^-`$ but never both, so the zeta's coefficients are the eta's times $`\pm\chi_{-1}(2n+3)`$ and the two keep the same number of characters for every irrep. Fitting each residue class in its period index, instead of in the numerator $`2n+3`$, spreads the same data over 28 to 30 characters for the zeta and the eta alike; only the numerator layers say which $`L(s-p,\chi)`$ appear.
 
-Selectivity: minimum (28–32 of 32 characters). Domain: all $`s`$.
+Selectivity: 6 to 12 of 32 characters per irrep, in the coprime sector. Domain: all $`s`$.
 
-The contrast with the torsion defines the landscape: maximum selectivity at a single point, or minimum selectivity across a full strip. § IV tests whether that reading capacity can be leveraged to constrain individual zeros.
+The contrast with the torsion defines the landscape: four characters at a single point, or six to twelve per irrep across the full strip. § IV tests whether that reading capacity can be leveraged to constrain individual zeros.
 
 ### C. Eta Character Selection
 
@@ -106,7 +108,21 @@ The Dirac eta invariant
 \eta_D(\sigma,s) = \sum_{n}(m_n^+ - m_n^-)(n+3/2)^{-s}
 ```
 
-kills 60–80% of Dirichlet characters mod 120 in the coprime sector. The killing pattern maps to the stabilizer structure of the icosahedron through $`\mathrm{CRT}(8,3,5)`$:
+with $`m_n^+=(n+2)\,N(\sigma,n)`$ and $`m_n^-=(n+1)\,N(\sigma,n+1)`$, where $`N(\sigma,j)`$ is the multiplicity of $`\sigma`$ in the $`(j+1)`$-dimensional representation of SU(2) (Bär's multiplicities), kills 20 to 26 of the 32 Dirichlet characters mod 120 in the coprime sector. A character $`\chi`$ survives when $`L(s-p,\chi)`$ appears for some $`p\in\{0,1,2\}`$:
+
+| Irrep | dim | McKay distance | Characters surviving | Surviving conductors | $`\eta_D(\sigma,0)`$ |
+|-------|-----|----------------|----------------------|----------------------|----------------------|
+| R0 | 1 | 0 | 12 | 1, 3, 4, 5, 8, 12, 20 | 1079/720 |
+| R1 | 2 | 1 | 10 | 1, 3, 4, 5, 12, 20 | 73/72 |
+| R3 | 3 | 2 | 10 | 1, 4, 5, 8, 20 | 9/16 |
+| R6 | 4 | 3 | 10 | 1, 3, 4, 5, 12, 20 | 29/180 |
+| R7 | 5 | 4 | 6 | 1, 3, 4, 8, 12 | -25/144 |
+| R8 | 6 | 5 | 8 | 1, 4, 5, 20 | -17/40 |
+| R5 | 4 | 6 | 10 | 1, 3, 4, 5, 12, 20 | -61/180 |
+| R4 | 3 | 6 | 8 | 1, 4, 5, 8, 20 | -19/80 |
+| R2 | 2 | 7 | 8 | 1, 3, 4, 5, 12, 20 | -67/360 |
+
+The principal character and $`\chi_{-1}`$ survive for every irrep, and the twenty characters of conductor 15, 24, 40, 60 or 120 die for every irrep. The rest of the killing pattern maps to the stabilizer structure of the icosahedron through $`\mathrm{CRT}(8,3,5)`$:
 
 | Stabilizer | Killed | Which irreps |
 |-----------|--------|--------------|
@@ -114,9 +130,21 @@ kills 60–80% of Dirichlet characters mod 120 in the coprime sector. The killin
 | Vertex ($`Z_5`$) | mod-5 | R7 only (graph center, dim 5) |
 | Edge ($`Z_4`$ ref.) | mod-8 | All half-integer irreps + R5 |
 
-Exact rational values at $`s=0`$ verified by two independent paths (Hurwitz + Donnelly) to $`10^{-15}`$. All denominators divide $`720=6!`$.
+The values at $`s=0`$ come from two independent paths: the Bernoulli values of the Hurwitz layers, which are exact, and Donnelly's group sum $`\eta_D(\sigma,0)=\tfrac{1}{120}\sum_{\gamma\neq e}\chi_\sigma(\gamma)/(1-\cos\alpha_\gamma)`$, with $`e^{\pm i\alpha_\gamma}`$ the eigenvalues of $`\gamma`$; the two agree to 30 digits. All denominators divide $`720=6!`$, the dimension-weighted sum vanishes, and the sign turns from positive to negative between McKay distance 3 and 4.
 
 ### D. Equivariant Eta and the C2 Closed Form
+
+The nine conjugacy classes of $`2I`$, by the angle $`\alpha`$ of their eigenvalues $`e^{\pm i\alpha}`$ in SU(2), with the tier each falls in below:
+
+| Class | $`\alpha/\pi`$ | Order | Size | Tier |
+|-------|----------------|-------|------|------|
+| C1 | 0 | 1 | 1 | identity |
+| C2 | 1 | 2 | 1 | 1 |
+| C3, C5 | 1/5, 3/5 | 10 | 12 each | 3 |
+| C4, C6 | 2/5, 4/5 | 5 | 12 each | 3 |
+| C7 | 1/3 | 6 | 20 | 2 |
+| C8 | 2/3 | 3 | 20 | 2 |
+| C9 | 1/2 | 4 | 30 | 2 |
 
 The character-table rotation transforms 9 per-irrep etas (6–12 survivors each) into 8 non-trivial conjugacy-class combinations (1–4 survivors each; the identity class contributes zero by dimension-weighted cancellation). The central element $`C2=[-e]`$ isolates a single L-function at all $`s`$:
 
@@ -130,41 +158,51 @@ where $`\beta(s)=L(s,\chi_{-1})`$ is the Dirichlet beta function. All equivarian
 \eta_g(n) = \frac{(n+2)\sin((n+1)\alpha)-(n+1)\sin((n+2)\alpha)}{\sin\alpha}
 ```
 
-The Tier 2 classes each retain 2 L-functions in their closed-form equivariant eta expressions. $`C8`$ (order 3) involves $`\zeta(s)`$ directly:
+Over the odd numerators $`m=2n+3`$ of the eigenvalues, $`\eta([g],s)=2^{s}\sum_m c_g(m)\,m^{-s}`$ with
 
 ```math
-\eta([C8],s) = 2^{s-1}[(1+2^{-s})L(s,\chi_3)-(1-2^{1-s})(1-3^{2-s})\zeta(s-1)]
+c_g(m)=\frac12\left[\frac{\sin(m\alpha/2)}{\sin(\alpha/2)}-m\,\frac{\cos(m\alpha/2)}{\cos(\alpha/2)}\right],
 ```
 
-The factors at 2 and 3 are finite: the Dirac eigenvalues $`(2n+3)/2`$ have odd numerators, and the odd multiples of 3 carry their own coefficient. On numerators prime to 6, which include the coprime sector $`U(120)`$, the terms are those of $`L(s,\chi_3)`$ and $`\zeta(s-1)`$. The 2-term count is a property of the closed-form structure. The number of Dirichlet characters with nonzero projection in the coprime sector $`U(120)`$ differs by class and is tabulated in Lemma 3.
+one periodic function of $`m`$ at each of the layers $`s`$ and $`s-1`$; at C2 the limit $`\alpha\to\pi`$ moves the second layer to $`s-2`$. The Tier 2 classes each retain 2 L-functions, one per layer:
+
+| Class | $`\eta([g],s)`$ |
+|-------|----------------|
+| C7 | $`2^{s-1}[(1+3^{1-s})\beta(s)-L(s-1,\chi_{12})]`$ |
+| C8 | $`2^{s-1}[(1+2^{-s})L(s,\chi_3)-(1-2^{1-s})(1-3^{2-s})\zeta(s-1)]`$ |
+| C9 | $`2^{s-1}[L(s,\chi_{-8})-L(s-1,\chi_8)]`$ |
+
+with $`\chi_{\pm8}(m)=(\pm2/m)`$ and $`\chi_{12}=\chi_{-1}\chi_3`$. $`C8`$ (order 3) involves $`\zeta(s-1)`$ directly. The factors at 2 and 3 are finite: the Dirac eigenvalues $`(2n+3)/2`$ have odd numerators, and the odd multiples of 3 carry their own coefficient. On numerators prime to 6, which include the coprime sector $`U(120)`$, the terms are those of $`L(s,\chi_3)`$ and $`\zeta(s-1)`$. The Tier 3 classes C3 to C6 retain 4 each, two per layer, with coefficients in $`\mathbb{Q}(\sqrt5,i)`$: at $`s`$, $`\chi_{-1}`$ and $`\chi_{-1}\chi_2`$ for C3 and C5, and the two quartic characters mod 5 for C4 and C6; at $`s-1`$, $`\chi_{-1}`$ times the quartic pair for C3 and C5, and the principal character with $`\chi_2`$ for C4 and C6. Each tier's count is a property of the closed-form structure. The number of Dirichlet characters with nonzero projection in the coprime sector $`U(120)`$ differs by class and is tabulated in Lemma 3.
 
 ### E. Vacuum Structure
 
-Per-irrep twisted etas computed via fusion matrices for all three flat connections (trivial, standard, Galois). Three distinct sign patterns: the Galois twist changes the vacuum-dependent eta pattern across the McKay graph. The antisymmetric combination $`\eta_\text{std}-\eta_\text{gal}=(2/5)\times\mathrm{integer}`$ for every irrep, with R7 in the kernel. Equivariant class selection is invariant under vacuum twist: $`\eta_\rho([g])=\chi_\rho(g)\cdot\eta([g])`$.
+Per-irrep twisted etas computed via fusion matrices for all three flat connections (trivial, standard, Galois). The Galois twist changes the vacuum-dependent eta pattern across the McKay graph. The antisymmetric combination $`\eta_\text{std}-\eta_\text{gal}=(2/5)\times\mathrm{integer}`$ for every irrep, with R7 in the kernel. Equivariant class selection is invariant under vacuum twist: $`\eta_\rho([g])=\chi_\rho(g)\cdot\eta([g])`$.
 
 ### Computational Record
 
 | Computation | Result | Precision |
 |------------|--------|-----------|
-| Torsion L-basis | 5 int-spin irreps → 4 L-functions | 79 digits, two paths |
+| Torsion L-basis | 5 int-spin irreps → 4 L-functions | 79 digits, two paths; closed forms (G10) |
 | $`E_8`$ char. selection | 4 of 16 survive | Exact |
 | Curvature obstruction | Pochhammer tower | Structural proof |
-| Dirac factorization | 3-layer L-decomp. all $`s`$ | Structural |
+| Dirac factorization | 3-layer L-decomp. all $`s`$; 6–12 of 32 survive (coprime sector) | Structural; counts exact (G08) |
 | $`S^1`$ bridge | Non-existence proved | 4 proofs |
-| Eta multiplicities | $`9\times120`$ signed table | Integer-exact |
-| Eta char. decomp. | 6–12 of 32 survive | Numerical, $`10^{-8}`$ |
-| $`\eta(\sigma,0)`$ exact | 9 rationals, denom divides 720 | Two-path, $`10^{-15}`$ |
-| Equiv. eta (Type 1) | C2: 1 survivor; Tier 2: 2 terms/expr. | Exact |
-| C2 closed form | $`\eta([-e],s)=2^{s-1}[\beta(s)-\beta(s-2)]`$ | Algebraic + numerical |
-| Tier 2 closed forms | Universal trig. formula; C8 involves $`\zeta(s)`$ | Exact |
+| Eta multiplicities | $`9\times120`$ signed table | Integer-exact (G03) |
+| Eta char. decomp. | 6–12 of 32 survive (coprime sector) | Exact (G07) |
+| $`\eta(\sigma,0)`$ exact | 9 rationals, denom divides 720 | Two-path, exact (G06) |
+| Equiv. eta (Type 1) | C2: 1 survivor; Tier 2: 2; Tier 3: 4 | Exact (G09) |
+| C2 closed form | $`\eta([-e],s)=2^{s-1}[\beta(s)-\beta(s-2)]`$ | Algebraic + numerical (G05) |
+| Tier 2 closed forms | Universal trig. formula; C8 involves $`\zeta(s-1)`$ | Exact (G04, G05) |
 | Torsion $`\times`$ eta | Inherited arithmetic, no emergent structure | Exact |
-| Vacuum-twisted eta | 3 sign patterns; (2/5)×integer | Exact |
+| Vacuum-twisted eta | (2/5)×integer; C7, C9 twist factors | Exact (G11) |
 | Higher-form Laplacians | Hodge duality; no combination factors | Structural proof |
 | Signature operator | Collapsed to Dirac eta | Structural |
 | Type 2 equiv. eta | Uniformly worse, all 8 classes | C2: structural; non-central: mod-120 exact ($`S_1/S_0`$) |
 | Selberg/Ruelle $`\zeta`$ | Finite cyclotomic product | Exact |
 | Artin L-function | Brauer virtual; Hecke $`\neq`$ Dirichlet | Structural |
 | Matrix coefficients | Characters exhaust content | Structural |
+
+Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum in eleven gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about ten seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py). The Type 2 counts of Lemma 3 come from the original computation, outside both scripts, and are fitted in the period index.
 
 ---
 
@@ -185,7 +223,7 @@ Z_{0,\sigma}(s)=\sum_{k\geq0}\frac{(s)_k}{k!}\cdot\widetilde{H}_k(s)
 
 At $`s=0`$: $`(0)_k=0`$ for $`k\geq1`$ collapses the tower to a single term, the mechanism that produces maximum selectivity. At general $`s`$: $`(s)_k\neq0`$, the full infinite tower activates, and no finite closed form exists. Dowker's cancellation formula confirms $`F(\gamma;0)=F'(\gamma;0)=0`$ only at $`s=0`$.
 
-No linear combination $`a\cdot Z_0+b\cdot Z_1`$ with $`a\neq0`$ factors at general $`s`$: the Pochhammer tower from $`Z_0`$ cannot be cancelled by the unshifted $`Z_1`$. The Lichnerowicz formula $`D^2=\nabla^*\nabla+R_\text{scalar}/4`$ connects Dirac eigenvalues to scalar Laplacian eigenvalues through an additive constant shift ($`3/(2R^2)`$). This does not recreate the Pochhammer obstruction for the Dirac operator, whose spectral zeta does factor finitely at all $`s`$ (§ III.B). The obstruction here is specific to the scalar/torsion route: the curvature shift blocks the extension of torsion selectivity from $`s=0`$ to general $`s`$. The Dirac route avoids this obstruction but faces a different one: insufficient character selectivity (28–32 of 32 characters survive, making zero isolation impossible).
+No linear combination $`a\cdot Z_0+b\cdot Z_1`$ with $`a\neq0`$ factors at general $`s`$: the Pochhammer tower from $`Z_0`$ cannot be cancelled by the unshifted $`Z_1`$. The Lichnerowicz formula $`D^2=\nabla^*\nabla+R_\text{scalar}/4`$ connects Dirac eigenvalues to scalar Laplacian eigenvalues through an additive constant shift ($`3/(2R^2)`$). This does not recreate the Pochhammer obstruction for the Dirac operator, whose spectral zeta does factor finitely at all $`s`$ (§ III.B). The obstruction here is specific to the scalar/torsion route: the curvature shift blocks the extension of torsion selectivity from $`s=0`$ to general $`s`$. The Dirac route avoids this obstruction but faces a different one: insufficient character selectivity (in the coprime sector, 6 to 12 of 32 characters survive for every irrep, so each Dirac zeta stays a combination of several L-functions).
 
 The torsion's selectivity is a property of $`s=0`$, not a property that extends. The curvature that gives the Yang-Mills mass gap blocks the general-<i>s</i> factorization for the scalar route. $`\square`$
 
@@ -216,7 +254,7 @@ For the central element $`C2=[-e]`$, the SU(2) character evaluates to $`\chi_j(-
 
 Type 2 at C2 is structurally blind to this mechanism. The weights $`(2j+1)^2`$ are strictly positive for all $`j`$, introducing no sign alternation and no cancellation between bosonic and fermionic contributions. Type 2 is strictly worse than Type 1 at C2. $`\square`$
 
-*Proof (non-central classes).* For each of the 7 non-central conjugacy classes $`g\in2I`$, the Type 2 weight on unit residues mod 120 takes the exact form $`W_{120k+r}(g)=f_r(g)\cdot(32k+B_r)`$, where $`f_r(g)=\sin(r\alpha)/\sin(\alpha)`$ is periodic with period $`2q`$, and since $`2q`$ divides 120 for each class ($`2q\in\{6,8,10,12,20\}`$), restriction to residues mod 120 captures complete periods. $`B_r`$ is the residue-class intercept determined by the McKay recurrence. The Dirichlet character projection decomposes into two independent sums:
+*Proof (non-central classes).* For each of the 7 non-central conjugacy classes $`g\in2I`$, the Type 2 weight on unit residues mod 120 takes the exact form $`W_{120k+r}(g)=f_r(g)\cdot(32k+B_r)`$, where $`f_r(g)=\sin(r\alpha/2)/\sin(\alpha/2)`$ is periodic with period $`2q`$, and since $`2q`$ divides 120 for each class ($`2q\in\{6,8,10,12,20\}`$), restriction to residues mod 120 captures complete periods. $`B_r`$ is the residue-class intercept determined by the McKay recurrence. The Dirichlet character projection decomposes into two independent sums:
 
 ```math
 S_1(g,\chi) = \sum_{r\in U(120)} f_r(g)\cdot\bar{\chi}(r)
@@ -227,12 +265,12 @@ S_0(g,\chi) = \sum_{r\in U(120)} B_r\cdot f_r(g)\cdot\bar{\chi}(r)
 
 both finite and exact over the cyclotomic field $`\mathbb{Q}(\zeta_{2q})`$. A character survives when at least one sum is nonzero. Exact computation over the full 32-character Dirichlet basis on $`U(120)\cong U(8)\times U(3)\times U(5)`$ yields:
 
-| Class | Type 1 | Type 2 |
+| Class | $`S_1`$ layer | Type 2 |
 |-------|--------|--------|
-| C3, C4, C6 | 1 | 12 |
-| C5a, C5b, C10a, C10b | 2 | 16 |
+| C7, C8, C9 (orders 6, 3, 4) | 1 | 12 |
+| C3 to C6 (orders 10 and 5) | 2 | 16 |
 
-In all 7 cases Type 2 strictly exceeds Type 1. The mechanism is the two-component structure: the slope term $`32\cdot S_1(g,\chi)`$ preserves the Type 1 support pattern, while the nonconstant intercept term $`S_0(g,\chi)`$ activates additional characters not present in Type 1. Type 2 is strictly worse than Type 1 for all non-central classes. $`\square`$
+The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The full Type 1 eta retains two characters for C7 to C9 and four for C3 to C6 (§ III.D). In all 7 cases Type 2 strictly exceeds Type 1. The mechanism is the two-component structure: the slope term $`32\cdot S_1(g,\chi)`$ preserves the $`S_1`$ support, while the nonconstant intercept term $`S_0(g,\chi)`$ activates additional characters not present in Type 1. Type 2 is strictly worse than Type 1 for all non-central classes. $`\square`$
 
 ---
 
@@ -423,7 +461,7 @@ The spectral inaccessibility theorem is a negative result for the RH direction. 
 | 120/60 grid | Half-integer vs. integer char. domains | Fermionic vs. bosonic phase domain |
 | Eta sign crossover | McKay graph chirality | Eta charge gate: $`\eta > 0 \implies Q \leq 0`$ |
 | Vacuum sign inversion | Galois twist structure, § III.E | Vacuum-dependent eta structure; feeds the particle-identity and charge gates |
-| C8 involves $`\zeta(s)`$ | Reads $`\zeta`$ as component, not constraint | Order-3 face stabilizer encoding |
+| C8 involves $`\zeta(s-1)`$ | Reads $`\zeta`$ as component, not constraint | Order-3 face stabilizer encoding |
 
 ---
 
