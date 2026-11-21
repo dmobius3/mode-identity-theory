@@ -1,0 +1,8 @@
+209fba67eecf8c2b6ecaa432aafda3c6a161024d83d14a060809b81ca2e1061d  ../soft-slot-dynamics-m8-15x/m8_15x_solver/fem.py
+788e10eb6973668e84370c13a8bd7b16dc9e712f6fa681c7386e15e9b1d1abff  ../soft-slot-dynamics-m8-15x/m8_15x_solver/geometry.py
+3c137e773f7890478b2495d6b466dc167c2aeffc4a8d179a0b7775b9b6b58096  ../soft-slot-dynamics-m8-15x/m8_15x_solver/integrate.py
+cbc7f4481706a08d7ca0229914980e773125c642da616e867580fe1620b5a149  ../soft-slot-dynamics-m8-15x/m8_15x_solver/irreps.py
+f00ca41c1406d123dac4384cd2f7336410be49e851426db15cad79da3102a060  ../soft-slot-dynamics-m8-15x/m8_15x_solver/nonlinear.py
+455cfc94f4bb10b97eaf0c426c86cb933e32fd7b199b00fc153bcad88fde5efb  ../soft-slot-dynamics-m8-15x/m8_15x_solver/standing.py
+803789547892654e3d8b0df5216aeb171463cfc9e248687f3ad5a751987debd2  ../soft-slot-dynamics-m8-15x/m8_15x_solver/out/dt_L2.json
+c46b102c5ded4a78667dfb0e87e1311d729b006cb1362c6aeb91cbe1b9fe369f  ../soft-slot-dynamics-m8-15x/m8_15x_solver/out/freeze_numbers.json
