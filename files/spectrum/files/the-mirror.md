@@ -62,7 +62,7 @@ A relation of the form $`L(s,\chi)=L(s-2,\chi)`$, or $`L(s,\chi_1)=L(s,\chi_2)`$
 **Note on reading without constraining.** The manifold reads the Riemann zeta function directly through the $`C8`$ equivariant eta:
 
 ```math
-\eta([C8],s) = 2^{s-1}[L(s,\chi_3) - \zeta(s-1)].
+\eta([C8],s) = 2^{s-1}[(1+2^{-s})L(s,\chi_3) - (1-2^{1-s})(1-3^{2-s})\zeta(s-1)].
 ```
 
 This is reading, not constraining. Isolating a zero of $`\zeta(s)`$ would require $`L(s,\chi_3)`$ to vanish simultaneously, a coincidence condition in the sense of Definition 4.
@@ -133,10 +133,10 @@ where $`\beta(s)=L(s,\chi_{-1})`$ is the Dirichlet beta function. All equivarian
 The Tier 2 classes each retain 2 L-functions in their closed-form equivariant eta expressions. $`C8`$ (order 3) involves $`\zeta(s)`$ directly:
 
 ```math
-\eta([C8],s) = 2^{s-1}[L(s,\chi_3)-\zeta(s-1)]
+\eta([C8],s) = 2^{s-1}[(1+2^{-s})L(s,\chi_3)-(1-2^{1-s})(1-3^{2-s})\zeta(s-1)]
 ```
 
-The 2-term count is a property of the closed-form structure. The number of Dirichlet characters with nonzero projection in the coprime sector $`U(120)`$ differs by class and is tabulated in Lemma 3.
+The factors at 2 and 3 are finite: the Dirac eigenvalues $`(2n+3)/2`$ have odd numerators, and the odd multiples of 3 carry their own coefficient. On numerators prime to 6, which include the coprime sector $`U(120)`$, the terms are those of $`L(s,\chi_3)`$ and $`\zeta(s-1)`$. The 2-term count is a property of the closed-form structure. The number of Dirichlet characters with nonzero projection in the coprime sector $`U(120)`$ differs by class and is tabulated in Lemma 3.
 
 ### E. Vacuum Structure
 
@@ -391,7 +391,7 @@ $`S^3/2I`$ is a perfect arithmetic mirror. It reflects:
 - The L-function special values through torsion (79-digit precision)
 - The Dirichlet characters through spectral decomposition
 - Individual L-functions through the equivariant eta (C2: single beta function at all $`s`$)
-- The Riemann zeta function itself through C8: $`\eta([C8],s)=2^{s-1}[L(s,\chi_3)-\zeta(s-1)]`$
+- The Riemann zeta function itself through C8: $`\eta([C8],s)=2^{s-1}[(1+2^{-s})L(s,\chi_3)-(1-2^{1-s})(1-3^{2-s})\zeta(s-1)]`$
 
 ---
 
