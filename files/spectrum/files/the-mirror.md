@@ -287,7 +287,7 @@ The survey is complete. The signature operator at C9 is the one candidate that a
 
 Brauer decomposition: $`R_1=\mathrm{Ind}(C_6,\lambda_6)+\mathrm{Ind}(C_{10},\lambda_{10})-\mathrm{Ind}(C_4,\lambda_4)`$. This is virtual (negative exponent), not isolable. Shared prime support $`\{2,3,5\}`$ is forced by $`\lvert 2I\rvert=120`$ and carries no analytic content.
 
-The spectral and arithmetic L-functions attached to $`2I`$ are different mathematical objects. The Artin L-function's automorphy, open for image $`2I`$, would not constrain the spectral Dirichlet L-functions. $`\square`$
+The spectral and arithmetic L-functions attached to $`2I`$ are different mathematical objects. The Artin L-function's automorphy, open for image $`2I`$ (Calegari), would not constrain the spectral Dirichlet L-functions. $`\square`$
 
 ---
 
@@ -327,14 +327,14 @@ On $`S^3/2I`$: the McKay correspondence resolves the basis ambiguity (multiplici
 
 ## V. The Wall
 
-The eight lemmas of § IV sort the natural strategies into four obstruction layers. The signature operator at C9 meets none of them: it isolates $`\zeta(s-1)`$, and the identity locates none of its zeros. Lemmas A to D below prove Theorem 1.
+The eight lemmas of § IV sort the natural strategies into four obstruction layers. The signature operator and the coexact Laplacian at C9 meet none of them: the first isolates $`\zeta(s-1)`$, the second reads $`\zeta(2s)`$ (after Lemma C), and neither identity locates any zero. Lemmas A to D below prove Theorem 1.
 
 | Layer | Obstruction | Lemmas |
 |-------|------------|--------|
 | Coincidence condition | A Dirac combination carries L-functions at two shifts, so its zeros are coincidences (Def. 4, Lemma B); torsion selectivity stays at $`s=0`$. | 1, 2, 3 |
-| Encoding degeneracy | Multiplicative structure degenerates on finite groups. No Selberg machinery without Anosov dynamics. Spectral zeros reduce to holonomy or cyclotomic phases, not L-function zeros. | 5 |
-| Framework mismatch | Spectral Dirichlet L-functions over $`\mathbb{Q}`$ $`\neq`$ Arithmetic Hecke L-functions over number fields. Modularity does not transfer. | 6 |
-| Character completeness | Characters exhaust basis-independent content by Propositions 1, 2, and 3. No "beyond characters" on this manifold. | 4, 7, 8 |
+| Encoding degeneracy | The geodesic flow is Besse: closed geodesics come in families, and the Selberg and Ruelle products, built on the isolated orbits of Anosov flows, do not apply. | 5 |
+| Framework mismatch | Spectral Dirichlet L-functions over $`\mathbb{Q}`$ $`\neq`$ Hecke L-functions over number fields. Automorphy, open for image $`2I`$, would not transfer. | 6 |
+| Character completeness | The class-indexed spectral traces are class functions, which the characters span (Propositions 1 to 3), and continuous position drops out (Lemma 8). | 4, 7, 8 |
 
 **Conventions.** We take $`R=1`$. $`2I`$ acts on the left, so a block $`V_a\boxtimes V_b`$ of an eigenspace contributes $`N(\sigma,a)(b+1)`$ to the multiplicity of $`\sigma`$ and $`(b+1)\chi_a(g)`$ to the trace of a class $`g`$, where $`\chi_a(g)=\sin((a+1)\alpha)/\sin\alpha`$ for eigenvalues $`e^{\pm i\alpha}`$ of $`g`$. The Dirac eigenvalue $`+(n+3/2)`$ sits on $`V_n\boxtimes V_{n+1}`$ and $`-(n+3/2)`$ on $`V_{n+1}\boxtimes V_n`$, which gives the multiplicities $`m_n^\pm`$ of § III.C.
 
@@ -377,23 +377,21 @@ At $`s=0`$ this gives $`\cot^2(\alpha/2)`$ at every class, Atiyah, Patodi and Si
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-curvature-duality.png?raw=true" width="80%" alt="A fork from positive Ricci curvature, Ric = 2/R^2 > 0. Physics branch: the Weitzenbock floor, lambda at least 2/R^2 on coexact gauge fluctuations, so the linearized gauge fluctuations are gapped, 4/R^2 at the trivial and standard vacua and 36/R^2 at the Galois vacuum. Arithmetic branch: the eigenvalue shift from (l+1)^2 to l(l+2) = (l+1)^2 - 1, whose -1 builds the Pochhammer tower at s not 0, locking the torsion selectivity to s = 0"></p>
 
-*The proof of Theorem 1 is complete at § V. Sections VI–IX provide the mechanism behind the scalar route, its interpretation, scope, and physics implications.*
+*The proof of Theorem 1 is complete at § V. Sections VI to IX give a mechanism behind the scalar route, an interpretation, the scope and a physics application; they do not extend the theorem beyond its class $`\mathcal{L}`$.*
 
-A geometric mechanism behind the scalar route is captured by a single equation.
+A geometric mechanism lies behind the scalar route. The Ricci curvature of $`S^3`$ is $`\mathrm{Ric}=2/R^2>0`$, and this one positive number does two things:
 
-The Ricci curvature of $`S^3`$ is $`\mathrm{Ric}=2/R^2>0`$. This positive number does two things simultaneously:
+**Physics (the linearized gap):** Positive Ricci puts a Weitzenböck floor $`\lambda\geq2/R^2>0`$ under every physical coexact gauge fluctuation around the three flat vacua, since $`\Delta=\nabla^*\nabla+\mathrm{Ric}`$ on 1-forms, lifting the linearized spectrum off zero. The exact gap is sharper than the floor: the coexact spectrum read through the McKay structure gives $`4/R^2`$ at the trivial and standard vacua and $`36/R^2`$ at the Galois vacuum, a ninefold enhancement (the [coexact gap](../../framework/files/bedrock/files/coexact-gap.md) paper). The linearized gauge fluctuations are gapped.
 
-**Physics (the mass gap):** Positive Ricci puts a Weitzenböck floor $`\lambda\geq2/R^2>0`$ under every physical coexact gauge fluctuation around the analyzed flat vacua, lifting the spectrum off zero so the mass gap exists. The exact gap is sharper than the floor: the coexact spectrum read through the McKay structure gives $`4/R^2`$ at the trivial and standard vacua and $`36/R^2`$ at the Galois vacuum, a ninefold enhancement (the [coexact gap](../../framework/files/bedrock/files/coexact-gap.md) paper). The linearized gauge fluctuations are gapped.
-
-**Arithmetic (Pochhammer obstruction):** The scalar Laplacian eigenvalues shift from $`(l+1)^2`$ to $`l(l+2)=(l+1)^2-1`$. The "-1" generates the infinite Pochhammer tower that blocks general-<i>s</i> factorization. The torsion's maximum selectivity is locked to $`s=0`$. The shift belongs to the scalar route: on the same metric, curl and the coexact Laplacian have the unshifted eigenvalues $`\pm(l+1)`$ and $`(l+1)^2`$, and the signature operator's C9 eta isolates $`\zeta(s-1)`$ (Theorem 1).
+**Arithmetic (Pochhammer obstruction):** The scalar Laplacian eigenvalues shift from $`(l+1)^2`$ to $`l(l+2)=(l+1)^2-1`$. The "-1" generates the infinite Pochhammer tower that blocks general-<i>s</i> factorization; at $`s=0`$, Dowker and Chang's cancellation $`F(0)=F'(0)=0`$ gives the torsion's closed forms, even though the tower contributes to $`Z_{0,\sigma}'(0)`$ (Lemma 1). The shift belongs to the scalar route: on the same metric, curl and the coexact Laplacian have the unshifted eigenvalues $`\pm(l+1)`$ and $`(l+1)^2`$, the signature operator's C9 eta isolates $`\zeta(s-1)`$ (Theorem 1), and the coexact Laplacian's C9 zeta reads $`\zeta(2s)`$ (after Lemma C).
 
 | Step | Physics | Arithmetic |
 |------|---------|-----------|
 | Positive Ricci | Weitzenböck floor $`\lambda\geq2/R^2`$ | Eigenvalue shift: $`l(l+2)\neq(l+1)^2`$ |
-| Consequence | Mass gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois | Pochhammer tower at $`s\neq0`$ |
+| Consequence | Gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois | Pochhammer tower at $`s\neq0`$ |
 | Result | Linearized gauge fluctuations are gapped | Torsion selectivity confined to $`s=0`$ |
 
-Formally dropping the $`-1`$ in the scalar spectrum makes its eigenvalues perfect squares, removes the Pochhammer tower, and lets the scalar zeta factor at all $`s`$; the coexact spectrum already has that form. The same step removes the positive-curvature lower bound on the gauge spectrum. It does not by itself establish that every Ricci-flat realization is gapless.
+Formally dropping the $`-1`$ in the scalar spectrum makes its eigenvalues perfect squares, removes the Pochhammer tower, and lets the scalar zeta factor at all $`s`$; the coexact spectrum already has that form. This formal change of the scalar eigenvalues leaves the metric, and so the gauge Weitzenböck floor, unchanged.
 
 MIT reads this as a structural opposition: the same positive curvature puts the floor under the gauge spectrum and generates the Pochhammer shift that blocks the factorization.
 
@@ -403,15 +401,13 @@ MIT reads this as a structural opposition: the same positive curvature puts the 
 
 ## VII. Discussion
 
-*The following sections interpret Theorem 1 within the structure of $`S^3/2I`$ and the Mode Identity Theory (MIT) framework. They do not extend the theorem beyond its class $`\mathcal{L}`$.*
-
-Hurwitz's theorem establishes that $`\varphi=(1+\sqrt{5})/2`$ is the hardest irrational to approximate by rationals: its continued fraction $`[1;1,1,1,\ldots]`$ converges as slowly as possible. In the MIT framework that property does not place the matter wells ([Fibonacci Wells](../../framework/files/working/files/fibonacci-wells.md)). They continue the icosahedral branch recurrence on the 120-grid, a structural label the recurrence carries rather than a derived extremum, and why the realized positions continue it is open.
+Hurwitz's theorem establishes that $`\varphi=(1+\sqrt{5})/2`$ is the hardest irrational to approximate by rationals: its continued fraction $`[1;1,1,1,\ldots]`$ converges as slowly as possible. In the MIT framework that property does not place the matter wells ([Fibonacci Wells](../../framework/files/working/files/fibonacci-wells.md)). They continue the icosahedral branch recurrence on the grid of phase positions $`\Theta=k/120`$, a structural label the recurrence carries rather than a derived extremum, and why the realized positions continue it is open.
 
 The Riemann zeros encode the distribution of primes. The primes build the integers. The integers build the grid ($`120=2^3\times3\times5`$). The grid builds the domain. The domain builds the wells. $`S^3/2I`$ gives you $`\varphi`$ through the character field $`\mathbb{Q}(\sqrt{5})`$ and gives you the L-function structure through the McKay correspondence with $`E_8`$. The manifold does not choose between them. Its geometry requires both.
 
 Both $`\varphi`$ and the zeros are stability results: the most irrational number cannot be rationalized; the zeros are read by this manifold's spectra, once in isolation, and not located by them, which is consistent with their role as the foundation of arithmetic structure. Whether that is itself a stability requirement, a theorem rather than an observation, is an open question not addressed by the proof above.
 
-Lemma 8 has a direct consequence for the MIT mass formula. The non-existence of a natural map between the phase position $`\Theta`$ and the spectral parameter $`s`$ means the fine structure of the mass formula cannot be completed by extending the spectral arithmetic. The bridge is not merely unbuilt; it is proved not to exist. The failed bridge therefore supplies no additional factor: the formula separates shells by the McKay distance and sets the fine structure within each shell by the torsion $`T^2(\rho \otimes \sigma)`$, each defined without reference to the spectral parameter. This is not a limitation of the framework; it is a constraint the geometry itself imposes.
+Lemma 8 has a direct consequence for the MIT mass formula. The spectral zeta cannot recover a distinguished phase position $`\Theta`$, so this route cannot fix the phase-dependent part of the mass formula or supply an additional factor: the formula separates shells by the McKay distance and sets the fine structure within each shell by the torsion $`T^2(\rho \otimes \sigma)`$, each defined without reference to the spectral parameter. This is a constraint the geometry imposes, not a limitation of the framework.
 
 ### The Mirror
 
@@ -423,12 +419,13 @@ $`S^3/2I`$ is a perfect arithmetic mirror. It reflects:
 - The Dirichlet characters through spectral decomposition
 - A single character through the C2 eta ($`\beta`$ at $`s`$ and $`s-2`$)
 - The Riemann zeta function itself, in isolation, through the signature eta at C9 (Theorem 1)
+- The Riemann zeta function again, at the argument $`2s`$, through the coexact Laplacian at C9 (after Lemma C)
 
 ---
 
 ## VIII. Scope
 
-**Theorem 1** is local to $`S^3/2I`$ at $`R=1`$ and to $`\mathcal{L}`$, the finite linear combinations of the admissible zeta and eta functions. Sums of products, quotients, and combinations with the Type 2 sums of Lemma 3 lie outside it.
+**Theorem 1** is local to $`S^3/2I`$ at $`R=1`$ and to $`\mathcal{L}`$, the finite linear combinations of the admissible zeta and eta functions, with isolation read at the argument $`s-p`$ (Definition 4). Sums of products, quotients, and combinations with the Type 2 sums of Lemma 3 lie outside it.
 
 **Reminder on scope.** Isolation (Definition 4) is an identity of functions: an isolating construction carries the zeros of one L-function, and the C9 identity says nothing about where they lie. Theorem 1 finds one isolating construction on $`S^3/2I`$ and shows that every other combination of the Dirac functions and the signature etas mixes L-functions at two shifts. It is not a claim about other manifolds, or about every approach to L-function zeros.
 
@@ -444,12 +441,12 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 |----------------|--------------|-----------------|
 | Reidemeister torsion | L-factorization at $`s=0`$ | Fermion mass comparison ($`m_e`$ anchors the scale; 5 of 8 charged compatible within $`\times3`$, 4 after sector adjudication; the $`\times3`$ count is uninformative under the registered null, $`p_A = 0.690`$) |
 | $`\varphi^{-4}`$ Galois pair | $`-2\sqrt{5}\cdot L(1,\chi_2)`$, exact to 79 digits | Exact torsion ratio; contributes to mass-shell fine structure through $`T^2`$ |
-| $`h(E_8)=30`$ | McKay multiplicity period | Mass hierarchy exponent ($`\mathrm{dist}/30`$) |
+| $`h(E_8)=30`$ | Coxeter number; the multiplicities are degree-one quasi-polynomials of period dividing $`2h=60`$ (Proposition 1) | Mass hierarchy exponent ($`\mathrm{dist}/30`$) |
 | Three flat connections | Three isolated vacua, $`H^1=0`$ | MIT reads as three generations; vacuum-to-generation assignment open |
-| Curvature shift $`l(l+2)`$ | Pochhammer obstruction, Lemma 1 | Mass-gap floor $`2/R^2`$; gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois |
-| 120/60 grid | Half-integer vs. integer char. domains | Fermionic vs. bosonic phase domain |
-| Eta sign crossover | McKay graph chirality | Eta charge gate: $`\eta > 0 \implies Q \leq 0`$ |
-| Vacuum sign inversion | Galois twist structure, § III.E | Vacuum-dependent eta structure; feeds the particle-identity and charge gates |
+| Curvature shift $`l(l+2)`$ | Pochhammer obstruction, Lemma 1 | Linearized-gap floor $`2/R^2`$; gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois |
+| 120/60 grid | Dirac numerators mod 120 (§ III.B), torsion characters mod 60 (§ III.A) | Fermionic vs. bosonic phase domain |
+| Eta sign crossover | The sign of $`\eta_D(\sigma,0)`$ turns between McKay distance 3 and 4 (§ III.C) | Eta charge gate: $`\eta > 0 \implies Q \leq 0`$ |
+| Galois-twisted eta | At $`s=0`$, $`\eta_\text{std}-\eta_\text{gal}`$ is $`2/5`$ times an integer (§ III.E) | Vacuum-dependent eta structure; feeds the particle-identity and charge gates |
 | C8 involves $`\zeta(s-1)`$ | Reads $`\zeta`$ as component, not constraint | Order-3 face stabilizer encoding |
 
 ---
@@ -466,25 +463,44 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 | Torsion characters | 2 of 16 mod 60, through four special values | Exact; closed forms (G10) |
 | Curvature obstruction | Pochhammer tower at $`s\neq0`$; at $`s=0`$, Dowker and Chang's cancellation | Structural proof; cancellation at all nine classes (G14) |
 | Dirac factorization | 3-layer L-decomp. all $`s`$; 6–12 of 32 survive (coprime sector) | Structural; counts exact (G08) |
-| $`S^1`$ bridge | Non-existence proved | 4 proofs |
+| $`S^1`$ bridge | The spectral zeta cannot recover a phase position (Lemma 8) | Invariance argument |
 | Eta multiplicities | $`9\times120`$ signed table | Integer-exact (G03) |
 | Eta char. decomp. | 6–12 of 32 survive (coprime sector) | Exact (G07) |
 | $`\eta(\sigma,0)`$ exact | 9 rationals, denom divides 720 | Two-path, exact (G06) |
 | Equiv. eta (Type 1) | C2: 1 survivor; Tier 2: 2; Tier 3: 4 | Exact (G09) |
 | C2 closed form | $`\eta([-e],s)=2^{s-1}[\beta(s)-\beta(s-2)]`$ | Algebraic + numerical (G05) |
-| Tier 2 closed forms | Universal trig. formula; C8 involves $`\zeta(s-1)`$ | Exact (G04, G05) |
+| Tier 2 closed forms | The Dirac trig. formula; C8 involves $`\zeta(s-1)`$ | Exact (G04, G05) |
 | Torsion $`\times`$ eta | Inherited arithmetic, no emergent structure | Exact |
 | Twisted eta | (2/5)×integer at $`s=0`$; C7, C9 twist factors | Exact (G11) |
 | Higher-form Laplacians | Hodge duality: the scalar and coexact zetas; no combination isolates (Lemma C) | Structural proof |
 | Coexact zeta at C9 | $`2\cdot4^{-s}(1-2^{1-2s})\zeta(2s)`$: $`\zeta`$ at the argument $`2s`$ | Exact (G15) |
 | Signature operator | Curl traces; the C9 eta isolates $`\zeta(s-1)`$ | $`s=0`$ values match the APS defect; Ruberman–Saveliev (G13) |
 | Isolation in $`\mathcal{L}`$ | Only the C9 signature eta isolates (Theorem 1) | Lemmas A to D; ranks 16, 14 and 2 (G12) |
-| Type 2 equiv. eta | Uniformly worse, all 8 classes | C2: structural; non-central: mod-120 exact ($`S_1/S_0`$) |
+| Type 2 equiv. eta | Uniformly worse, all 8 classes | C2: structural; non-central: the original computation, in the period index (Lemma 3) |
 | Selberg/Ruelle $`\zeta`$ | Besse flow: closed geodesics in families; standard Anosov products do not apply | Structural |
 | Artin L-function | Brauer virtual; Hecke $`\neq`$ Dirichlet | Structural |
-| Matrix coefficients | Characters exhaust content | Structural |
+| Matrix coefficients | The class-indexed traces are class functions (Lemma 7) | Structural |
 
 Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum, and checks Lemma 1's cancellation at $`s=0`$, Lemmas B and D of § V and the coexact zeta after Lemma C, in fifteen gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about twenty seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py).
+
+## References
+
+- M. F. Atiyah, V. K. Patodi and I. M. Singer, "Spectral asymmetry and Riemannian geometry. II", *Math. Proc. Cambridge Philos. Soc.* 78 (1975), 405–432, [doi:10.1017/S0305004100051872](https://doi.org/10.1017/S0305004100051872).
+- C. Bär, "The Dirac operator on space forms of positive curvature", *J. Math. Soc. Japan* 48 (1996), 69–83, [doi:10.2969/jmsj/04810069](https://doi.org/10.2969/jmsj/04810069).
+- A. L. Besse, *Manifolds all of whose geodesics are closed*, Ergebnisse der Mathematik und ihrer Grenzgebiete 93, Springer (1978), [doi:10.1007/978-3-642-61876-5](https://doi.org/10.1007/978-3-642-61876-5).
+- F. Calegari, "Reciprocity in the Langlands program since Fermat's Last Theorem", preprint (2021), [arXiv:2109.14145](https://arxiv.org/abs/2109.14145).
+- J. Cheeger, "Analytic torsion and the heat equation", *Ann. of Math. (2)* 109 (1979), 259–322, [doi:10.2307/1971113](https://doi.org/10.2307/1971113).
+- H. Donnelly, "Eta invariants for G-spaces", *Indiana Univ. Math. J.* 27 (1978), 889–918, [doi:10.1512/iumj.1978.27.27060](https://doi.org/10.1512/iumj.1978.27.27060).
+- J. S. Dowker and P. Chang, "Analytic torsion on spherical factors and tessellations", preprint (2009), [arXiv:0904.0744](https://arxiv.org/abs/0904.0744).
+- C. F. Gauss, "Disquisitiones generales circa seriem infinitam $`1+\frac{\alpha\beta}{1\cdot\gamma}x+\cdots`$, Pars prior", *Comment. Soc. Reg. Sci. Gotting. Recent.* 2 (1813); *Werke* III (1866), 123–162.
+- A. Hurwitz, "Ueber die angenäherte Darstellung der Irrationalzahlen durch rationale Brüche", *Math. Ann.* 39 (1891), 279–284, [doi:10.1007/BF01206656](https://doi.org/10.1007/BF01206656).
+- A. Ikeda and Y. Taniguchi, "Spectra and eigenforms of the Laplacian on $`S^n`$ and $`P^n(\mathbb{C})`$", *Osaka J. Math.* 15 (1978), 515–546, [doi:10.18910/6956](https://doi.org/10.18910/6956).
+- E. E. Kummer, "Beitrag zur Theorie der Function $`\Gamma(x)=\int_0^\infty e^{-v}v^{x-1}\,dv`$", *J. Reine Angew. Math.* 35 (1847), 1–4, [doi:10.1515/crll.1847.35.1](https://doi.org/10.1515/crll.1847.35.1).
+- A. Lichnerowicz, "Spineurs harmoniques", *C. R. Acad. Sci. Paris* 257 (1963), 7–9.
+- J. McKay, "Graphs, singularities, and finite groups", *Proc. Sympos. Pure Math.* 37 (1980), 183–186, [doi:10.1090/pspum/037/604577](https://doi.org/10.1090/pspum/037/604577).
+- W. Müller, "Analytic torsion and R-torsion of Riemannian manifolds", *Adv. Math.* 28 (1978), 233–305, [doi:10.1016/0001-8708(78)90116-0](https://doi.org/10.1016/0001-8708(78)90116-0).
+- D. B. Ray and I. M. Singer, "R-torsion and the Laplacian on Riemannian manifolds", *Adv. Math.* 7 (1971), 145–210, [doi:10.1016/0001-8708(71)90045-4](https://doi.org/10.1016/0001-8708(71)90045-4).
+- D. Ruberman and N. Saveliev, "The $`\bar\mu`$-invariant of Seifert fibered homology spheres and the Dirac operator", *Geom. Dedicata* 154 (2011), 93–101, [doi:10.1007/s10711-010-9569-5](https://doi.org/10.1007/s10711-010-9569-5), [arXiv:1009.3201](https://arxiv.org/abs/1009.3201).
 
 ---
 
