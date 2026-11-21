@@ -382,7 +382,6 @@ The apparent phantom crossing is demonstrated for CPL, BA, and JBP fitted to the
 |---|---|---|
 | Λ(z) variation with redshift | 0 | 0 |
 | Lensing mass / clustering mass (hidden DM component) | 1 | 1 with particulate DM |
-| Fourth fundamental force, SUSY partners, new gauge bosons | 0 | 0 |
 | Time variation of $`\alpha`$ | 0 | 0 |
 
 ### G. CMB–galaxy lensing cross-checks  *(from cosmos papers)*

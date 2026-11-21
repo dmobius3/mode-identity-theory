@@ -263,8 +263,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 | [↗](/files/spectrum/files/fine-structure.md#alpha_s-the-strong-coupling) $`\alpha_s`$ | `anchored (Λ)` | 0.1162 vs 0.1180 | 1.5%; ladder conjecture |
 | [↗](/files/spectrum/files/fine-structure.md#alpha_w-the-weak-coupling-and-the-plato-twist) $`\alpha_W`$ | `anchored (Λ)` | 0.0339 vs 0.0338 | 0.3%; ladder conjecture |
 | [↗](/files/spectrum/files/fine-structure.md#alpha_s--alpha_w-pure-geometry) $`\alpha_s / \alpha_W`$ | `anchor-free` | 3.426 vs 3.490 | 1.8% |
-| [↗](/files/spectrum/files/fine-structure.md#the-prediction) Force count | `exact` | 3 rungs | vs 3 forces; conditional on the ladder |
-| [↗](/files/spectrum/files/fine-structure.md#the-prediction) Null SUSY | `open` | no gaugino-mediated force | none seen to date |
+| [↗](/files/spectrum/files/fine-structure.md#the-prediction) Force count | `exact` | 3 rungs | vs 3 forces; a classification, not an exclusion |
 
 ---
 

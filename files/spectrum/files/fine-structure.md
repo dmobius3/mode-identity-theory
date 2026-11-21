@@ -289,22 +289,23 @@ Spinorial content increases. The reverse move (from 2 spinorial slots to 1 boson
 
 In the language of particle physics, the 120/60 entry requires:
 
-1. A **fermionic force carrier** (spinorial phase grid). All known mediators (photon, gluons, W, Z) are spin-1 bosons.
-2. A **bosonic confinement target** (bosonic exponent grid). The force would bind or confine integer-spin matter.
+1. A **fermionic force carrier**, since a spinorial action with a bosonic target turns a fermion into a boson. All known mediators (photon, gluons, W, Z) are spin-1 bosons.
+2. A **bosonic target** (bosonic exponent grid): the carrier would act on integer-spin matter.
 
-This is the structure of supersymmetric gauge interaction. Gauginos (spin-1/2 superpartners of gauge bosons) mediate forces between scalar partners of fermions (squarks, sleptons). The SUSY force sector is the natural occupant of the 120/60 rung: spinorial (gaugino) carriers acting on bosonic (scalar) matter.
+This is the structure of the supersymmetric gaugino couplings. Gauginos (spin-1/2 superpartners of gauge bosons) couple the scalar partners of fermions (squarks, sleptons) to their fermions: each gaugino vertex joins a sfermion, its fermion and the gaugino, and no gaugino vertex joins scalars alone, whose forces the gauge bosons carry. The gaugino couplings have the structure of the 120/60 rung: spinorial (gaugino) carriers acting on bosonic (scalar) matter, which they join to its fermions.
 
 ### The obstruction
 
-The vacancy is a rule of the ladder, not a spin-statistics theorem. Every gauge rung here acts within a statistics class: it changes phase, charge, or representation but preserves the fermion-or-boson character of what it acts on, and the three occupied rungs climb monotonically in spinorial content. The weak rung is the test case: its charged-current action swaps one fermion for another, so the target stays a fermion and the carrier stays a spin-1 boson. The 120/60 cell reverses that climb, sending the full-domain action into a bosonic target, so it falls outside the pattern the three forces trace; the cell that would sit there needs a fermionic (gaugino) carrier binding bosonic matter, which no observed gauge force provides. Ordinary quantum field theory does permit fermionic mediators between fermions and bosons, so the obstruction here is the ladder's own rule, not a spin-statistics prohibition. Nothing underneath the rule closes the rung. Every slot is read through the same intensity, so the non-invertibility of $`\psi \to |\psi|^2`$ does not separate the 120 and 60R grids: roles are assigned to them by representation type, and the vacancy rests on the ladder rule alone.
+The vacancy is a rule of the ladder, not a spin-statistics theorem. Every gauge rung here acts within a statistics class: it changes phase, charge, or representation but preserves the fermion-or-boson character of what it acts on, and the three occupied rungs climb monotonically in spinorial content. The weak rung is the test case: its charged-current action swaps one fermion for another, so the target stays a fermion and the carrier stays a spin-1 boson. The 120/60 cell reverses that climb, sending the full-domain action into a bosonic target, so it falls outside the pattern the three forces trace; the cell that would sit there needs a fermionic (gaugino) carrier acting on bosonic matter, which no observed gauge force provides. Ordinary quantum field theory does permit fermionic mediators between fermions and bosons, so the obstruction here is the ladder's own rule, not a spin-statistics prohibition. Nothing underneath the rule closes the rung. Every slot is read through the same intensity, so the non-invertibility of $`\psi \to |\psi|^2`$ does not separate the 120 and 60R grids: roles are assigned to them by representation type, and the vacancy rests on the ladder rule alone.
 
-### The prediction
+<a id="the-prediction"></a>
+### What the vacancy claims
 
-Within the grid-action reading, the three observed gauge forces exhaust the three realized rungs. A fourth fundamental force would require the 120/60 rung, which the ladder does not generate. The empty rung is therefore a conditional structural prediction of the ladder, not a theorem that no fourth force can exist.
+Under the adopted grid dictionary, the three observed gauge interactions occupy three of the four pairings. The remaining pairing has the statistics-crossing structure of a gaugino-fermion-sfermion interaction in supersymmetric gauge theory. Its vacancy in the present assignment is a structural classification, not a derivation that the interaction is physically absent. Supersymmetry adds no fourth gauge force, since its gaugino couplings sit inside the existing gauge interactions, and nothing in the ladder forbids the fourth pairing; whether nature realizes it is an open question.
 
-Supersymmetric partners, in their standard formulation as gaugino-mediated interactions between scalar matter, are the natural occupant of that ungenerated rung. The prediction is not that superpartners are heavy. It is that the gaugino-mediated SUSY force sector does not appear as a realized fundamental interaction, as long as the selected ladder's rule holds.
+The count of forces is a classification too. A new gauge force would have a bosonic carrier and keep the statistics of what it acts on, so it would land on one of the three filled pairings, not on 120/60. That the observed forces fill three of the four cells is a structural result of the assignment; that nature has no fourth force would need a separate exclusion principle, which the ladder does not supply.
 
-The grid ladder was constructed to derive coupling constants. It was not designed to count forces. That it produces exactly three occupied rungs matching exactly three observed gauge interactions, with the vacancy mapping onto exactly the sector that decades of collider searches have failed to populate, is a conditional structural output of the selected ladder rather than an input to it.
+The grid ladder was constructed to derive coupling constants from the three known forces, so its three filled pairings are an input. What the construction adds is the place of the empty one: the statistics-crossing cell.
 
 ## VIII. Falsification
 
@@ -320,12 +321,10 @@ The grid ladder was constructed to derive coupling constants. It was not designe
 
 | Test | Kills the extension if | Sharpness |
 |---|---|---|
-| Force count | A fourth fundamental force occupies the 120/60 rung | Decisive |
-| SUSY vacancy | Gaugino-mediated interactions observed at any energy scale | Decisive |
 | Scale consistency / running | The three coupling values cannot be assigned to consistent reference scales, or MIT cannot connect the infrared $`\alpha`$ value to conventional $`\alpha(q^2)`$ running | Open |
 | $`\alpha`$ – $`\Lambda`$ correlation | Refined Λ pushes predicted $`\alpha`$ further from CODATA | Weak (sensitivity suppressed by 1/60) |
 
-The deposited conditions name in advance what would kill the construction. The extension tests are where the working framework meets data: the force count and SUSY vacancy are tested by every collider run. The open question spanning both is scale consistency: the three values sit at different energy scales ($`\alpha`$ at $`q^2 = 0`$, $`\alpha_s`$ and $`\alpha_W`$ at $`M_Z`$), and deriving RG running from the MIT hierarchy structure remains open.
+The deposited conditions name in advance what would kill the construction. The extension tests are where the working framework meets data. The open question spanning both is scale consistency: the three values sit at different energy scales ($`\alpha`$ at $`q^2 = 0`$, $`\alpha_s`$ and $`\alpha_W`$ at $`M_Z`$), and deriving RG running from the MIT hierarchy structure remains open.
 
 ---
 
