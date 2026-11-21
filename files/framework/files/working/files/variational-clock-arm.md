@@ -32,7 +32,7 @@ the overall sign fixed by the action convention. The lapse equation gives
 N^2 = \frac{T}{W},
 ```
 
-and eliminating $`N`$ leaves $`2\sqrt{TW}`$: the arithmetic-geometric mean bound $`T/N + NW \geq 2\sqrt{TW}`$, attained. Reparametrization invariance fixes the lapse powers. Under a change of parameter, $`(T/N + NW)\,dt`$ is invariant, while $`(T/N^a + N^b W)\,dt`$ is invariant only at $`a = b = 1`$; unequal powers would eliminate to a weighted mean $`T^{b/(a+b)} W^{a/(a+b)}`$. Inside the class the mean is symmetric. The parameter is gauge, and the parent fixes the gauge: the corpus phase $`t`$ stays fundamental, and [Lemma 0.1](friedmann-as-output.md) makes $`t`$ the lift of the core's lap angle to the two-lap edge, with $`t/2`$ the edge's own angle. With the gauge fixed, the lapse equation determines $`N`$. The half that follows belongs to the quadratic kinetic term. For a kinetic term homogeneous of degree $`p`$ in the velocities, invariance forces $`T/N^{p-1} + NW`$, the lapse equation gives $`N^p = (p-1)\,T/W`$, and the lapse exponent becomes the level difference over $`p`$; every natural kinetic term in the corpus is quadratic, so $`p = 2`$ throughout.
+and, for positive $`T`$, $`W`$ and $`N`$, eliminating $`N`$ leaves $`2\sqrt{TW}`$: the arithmetic-geometric mean bound $`T/N + NW \geq 2\sqrt{TW}`$, attained. Reparametrization invariance fixes the lapse powers. Under a change of parameter, $`(T/N + NW)\,dt`$ is invariant, while $`(T/N^a + N^b W)\,dt`$ is invariant only at $`a = b = 1`$; unequal powers would eliminate to a weighted mean $`T^{b/(a+b)} W^{a/(a+b)}`$. Inside the class the mean is symmetric. The parameter is gauge, and the parent fixes the gauge: the corpus phase $`t`$ stays fundamental, and [Lemma 0.1](friedmann-as-output.md) makes $`t`$ the lift of the core's lap angle to the two-lap edge, with $`t/2`$ the edge's own angle. With the gauge fixed, the lapse equation determines $`N`$. The half that follows belongs to the quadratic kinetic term. For a kinetic term homogeneous of degree $`p`$ in the velocities, invariance forces $`T/N^{p-1} + NW`$, the lapse equation gives $`N^p = (p-1)\,T/W`$, and the lapse exponent becomes the level difference over $`p`$; every natural kinetic term in the corpus is quadratic, so $`p = 2`$ throughout.
 
 ## II. The kinetic term
 
@@ -46,7 +46,7 @@ which sits at the intensity level. The budget identity is this oscillator's ener
 
 ## III. The potential's level sets the lapse
 
-With $`T`$ at the intensity level and a potential $`W = c\,S^w`$ at level $`w`$,
+With $`T`$ at the intensity level and a potential $`W = c\,S^w`$, $`c > 0`$, at a real level $`w`$,
 
 ```math
 N = \frac{S^{(2-w)/2}}{2\sqrt{c}}, \qquad 2\sqrt{TW} = \sqrt{c}\; S^{(2+w)/2} .
@@ -70,7 +70,7 @@ The arm varies $`N`$, $`S`$, $`\Psi`$ and a multiplier $`\lambda`$, with the bud
 \mathcal{L} = \frac{\Psi'^2}{N} + N\,c\,S^w + \lambda\,(\Psi^2 + S^2 - 1).
 ```
 
-The $`S`$ equation gives $`\lambda = -\tfrac{1}{2} N c\, w\, S^{w-2}`$, and the $`\Psi`$ equation, $`(2\Psi'/N)' = 2\lambda\Psi`$, is solved by $`\Psi = \cos(t/2)`$, $`S = \sin(t/2)`$ with the lapse of §III, for every $`w`$ and $`c`$, wherever $`S > 0`$. The equations of motion therefore select no level: the level sets the lapse and nothing else. The multiplier does real work here: without it, the $`\Psi`$ equation fails at the amplitude level.
+The $`S`$ equation gives $`\lambda = -\tfrac{1}{2} N c\, w\, S^{w-2}`$, and the $`\Psi`$ equation, $`(2\Psi'/N)' = 2\lambda\Psi`$, is solved by $`\Psi = \cos(t/2)`$, $`S = \sin(t/2)`$ with the lapse of §III, for every real $`w`$ and every $`c > 0`$, wherever $`S > 0`$. The equations of motion therefore select no level: the level sets the lapse and nothing else. The multiplier does real work here: without it, the $`\Psi`$ equation fails at the amplitude level.
 
 ## V. Scoring against the parent's terms
 

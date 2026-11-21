@@ -29,7 +29,7 @@ The space is static. What advances is the observer's phase along the standing wa
 
 No space stretches. The reddening is the difference in phase position between emission and observation on a fixed domain, sampling rather than stretching. The mechanism is understood in outline; the full chain from the postulate to the observed $`H(z)`$ is partially walked (temporal budget §X).
 
-**This is not tired light.** Tired light bleeds photon energy to scattering and smears both the image and the spectrum. Here every wavelength scales by the single factor $`S(t_\text{emit})/S(t_\text{obs})`$, a uniform rescaling that preserves the spectral shape and keeps point sources sharp. The blackbody stays a blackbody (§II); the image stays focused.
+**This is not tired light.** Tired light bleeds photon energy to scattering and smears both the image and the spectrum. Here every wavelength scales by the single factor $`S(t_\text{obs})/S(t_\text{emit})`$, a uniform rescaling that preserves the spectral shape and keeps point sources sharp. The blackbody stays a blackbody (§II); the image stays focused.
 
 ## II. Cooling is redshift of the bath
 
