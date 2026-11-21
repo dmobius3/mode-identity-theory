@@ -221,7 +221,7 @@ The familiar factor $3/2$ belongs only to the vacuum side of the theory. Its num
 | [↗](/files/spectrum/files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2 | the ½ imported from GR |
 | [↗](/files/cosmos/files/cosmological-constant.md#iii-the-spectral-seed) $`\Lambda_\text{top}`$ eigenvalue | `exact` | $`2/R^2`$ | narrow band, Friedrichs |
 | [↗](/files/spectrum/files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$ | linearized, on the compact space |
-| [↗](/files/spectrum/files/the-mirror.md#ii-main-theorem) Spectral inaccessibility | `exact` | no single L-function zero pinned | within the stated class |
+| [↗](/files/spectrum/files/the-mirror.md#ii-main-theorem) Spectral isolation | `exact` | no single L-function zero pinned | within the stated class |
 
 **🪐 Cosmos**
 

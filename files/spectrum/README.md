@@ -83,7 +83,7 @@ With the electron setting the scale, entries land within a factor of 3 of five o
 |---|---|---|---|
 | [↗](files/the-waltz.md#ii-gravity-as-the-cost-to-dance) $`\Lambda_\text{ref}/\Lambda_\text{top}`$ | `exact` | 3/2 | the ½ imported from GR |
 | [↗](files/yang-mills.md#i-the-geometry) Mass gap | `exact` | $`> 0`$ | linearized, on the compact space |
-| [↗](files/the-mirror.md#ii-main-theorem) Spectral inaccessibility | `exact` | no single L-function zero pinned | within the stated class |
+| [↗](files/the-mirror.md#ii-main-theorem) Spectral isolation | `exact` | no single L-function zero pinned | within the stated class |
 | [↗](files/the-waltz.md#iv-dark-matter-and-dark-energy-as-geometry) Null dark matter | `open` | no particle sector | direct-detection nulls |
 | [↗](files/yang-mills.md#ii-three-vacua) Flat-vacuum count | `exact` | 3 | vs 3 generations (a reading) |
 | [↗](files/mass-spectrum.md#1-color-from-faces) Color from $`Z_3`$ | `exact` | singlet / triplet | consistent (a reading) |

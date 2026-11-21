@@ -49,7 +49,7 @@ for a constant $`c>0`$, an integer $`p`$ and a nonzero Dirichlet polynomial $`a(
 
 ## II. Main Theorem
 
-> **Theorem 1 (Spectral Inaccessibility on $`S^3/2I`$).** With $`R=1`$, a nonzero $`F\in\mathcal{L}`$ isolates a Dirichlet L-function if and only if it is a nonzero constant multiple of the C9 equivariant eta of the odd signature operator,
+> **Theorem 1 (Spectral Isolation on $`S^3/2I`$).** With $`R=1`$, a nonzero $`F\in\mathcal{L}`$ isolates a Dirichlet L-function if and only if it is a nonzero constant multiple of the C9 equivariant eta of the odd signature operator,
 >
 > ```math
 > \eta^{\mathrm{sig}}([C9],s)=2^{2-s}\left(1-2^{2-s}\right)\zeta(s-1).
