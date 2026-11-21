@@ -450,10 +450,6 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 
 ---
 
-*The manifold is a perfect mirror of arithmetic, but not a tool for proving the Riemann hypothesis. Mirrors show you everything. They locate nothing. That's not a failure, it's the theorem.*
-
----
-
 ## Computational Record
 
 | Computation | Result | Precision |
@@ -482,24 +478,9 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 
 Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum, and checks Lemma 1's cancellation at $`s=0`$, Lemmas B and D of § V and the coexact zeta after Lemma C, in fifteen gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about twenty seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py).
 
-## References
+---
 
-- M. F. Atiyah, V. K. Patodi and I. M. Singer, "Spectral asymmetry and Riemannian geometry. II", *Math. Proc. Cambridge Philos. Soc.* 78 (1975), 405–432, [doi:10.1017/S0305004100051872](https://doi.org/10.1017/S0305004100051872).
-- C. Bär, "The Dirac operator on space forms of positive curvature", *J. Math. Soc. Japan* 48 (1996), 69–83, [doi:10.2969/jmsj/04810069](https://doi.org/10.2969/jmsj/04810069).
-- A. L. Besse, *Manifolds all of whose geodesics are closed*, Ergebnisse der Mathematik und ihrer Grenzgebiete 93, Springer (1978), [doi:10.1007/978-3-642-61876-5](https://doi.org/10.1007/978-3-642-61876-5).
-- F. Calegari, "Reciprocity in the Langlands program since Fermat's Last Theorem", preprint (2021), [arXiv:2109.14145](https://arxiv.org/abs/2109.14145).
-- J. Cheeger, "Analytic torsion and the heat equation", *Ann. of Math. (2)* 109 (1979), 259–322, [doi:10.2307/1971113](https://doi.org/10.2307/1971113).
-- H. Donnelly, "Eta invariants for G-spaces", *Indiana Univ. Math. J.* 27 (1978), 889–918, [doi:10.1512/iumj.1978.27.27060](https://doi.org/10.1512/iumj.1978.27.27060).
-- J. S. Dowker and P. Chang, "Analytic torsion on spherical factors and tessellations", preprint (2009), [arXiv:0904.0744](https://arxiv.org/abs/0904.0744).
-- C. F. Gauss, "Disquisitiones generales circa seriem infinitam $`1+\frac{\alpha\beta}{1\cdot\gamma}x+\cdots`$, Pars prior", *Comment. Soc. Reg. Sci. Gotting. Recent.* 2 (1813); *Werke* III (1866), 123–162.
-- A. Hurwitz, "Ueber die angenäherte Darstellung der Irrationalzahlen durch rationale Brüche", *Math. Ann.* 39 (1891), 279–284, [doi:10.1007/BF01206656](https://doi.org/10.1007/BF01206656).
-- A. Ikeda and Y. Taniguchi, "Spectra and eigenforms of the Laplacian on $`S^n`$ and $`P^n(\mathbb{C})`$", *Osaka J. Math.* 15 (1978), 515–546, [doi:10.18910/6956](https://doi.org/10.18910/6956).
-- E. E. Kummer, "Beitrag zur Theorie der Function $`\Gamma(x)=\int_0^\infty e^{-v}v^{x-1}\,dv`$", *J. Reine Angew. Math.* 35 (1847), 1–4, [doi:10.1515/crll.1847.35.1](https://doi.org/10.1515/crll.1847.35.1).
-- A. Lichnerowicz, "Spineurs harmoniques", *C. R. Acad. Sci. Paris* 257 (1963), 7–9.
-- J. McKay, "Graphs, singularities, and finite groups", *Proc. Sympos. Pure Math.* 37 (1980), 183–186, [doi:10.1090/pspum/037/604577](https://doi.org/10.1090/pspum/037/604577).
-- W. Müller, "Analytic torsion and R-torsion of Riemannian manifolds", *Adv. Math.* 28 (1978), 233–305, [doi:10.1016/0001-8708(78)90116-0](https://doi.org/10.1016/0001-8708(78)90116-0).
-- D. B. Ray and I. M. Singer, "R-torsion and the Laplacian on Riemannian manifolds", *Adv. Math.* 7 (1971), 145–210, [doi:10.1016/0001-8708(71)90045-4](https://doi.org/10.1016/0001-8708(71)90045-4).
-- D. Ruberman and N. Saveliev, "The $`\bar\mu`$-invariant of Seifert fibered homology spheres and the Dirac operator", *Geom. Dedicata* 154 (2011), 93–101, [doi:10.1007/s10711-010-9569-5](https://doi.org/10.1007/s10711-010-9569-5), [arXiv:1009.3201](https://arxiv.org/abs/1009.3201).
+*The manifold is a perfect mirror of arithmetic, but not a tool for proving the Riemann hypothesis. Mirrors show you everything. They locate nothing. That's not a failure, it's the theorem.*
 
 ---
 
