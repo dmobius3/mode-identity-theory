@@ -5,7 +5,7 @@
 
 # 🪩 The Mirror
 
-<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The%20mirror%20banner.png?raw=true" width="100%" alt="The Mirror">
+<img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The%20mirror%20banner.png?raw=true" width="100%" alt="Infographic: The Arithmetic Mirror on S³/2I. Left panel: spectral isolation and operator invariants, showing the signature eta, Dirac eta and coexact Laplacian operators, the unique spectral isolation theorem, coincidence conditions, torsion reading at a single point, and a table of L-expressions by operator class. Right panel: theoretical obstructions and curvature duality, including positive Ricci curvature duality at 4/R², the inviolable character table ceiling of 2I, and the conclusion that the geometry mirrors without locating zeros.">
 
 On the Poincaré homology sphere $`S^3/2I`$, the quotient of the 3-sphere by the binary icosahedral group $`2I`$ of order 120, the torsion and the Dirac spectrum read Dirichlet L-functions exactly (Definition 3). Among the finite linear combinations of the zeta and eta functions of its admissible operators, one function and its multiples isolate an individual Dirichlet L-function (Definition 4): the equivariant eta of the odd signature operator at the elements of order 4, equal to $`2^{2-s}(1-2^{2-s})\zeta(s-1)`$. Every other combination of the Dirac functions and the signature etas carries L-functions at two different shifts, so its zeros are coincidences between L-values (Theorem 1).
 
