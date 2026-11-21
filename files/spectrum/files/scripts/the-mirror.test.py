@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""The Mirror (2026-11-20): reproducible verification artifact for section III.
+"""The Mirror (2026-11-20, section V added 2026-11-21): reproducible verification artifact
+for sections III and V.
 
 Rebuilds, from the McKay graph of 2I and Bar's Dirac spectrum on S^3/2I, the spectral
 results that the-mirror.md section III reports, and certifies them gate by gate:
@@ -30,7 +31,15 @@ results that the-mirror.md section III reports, and certifies them gate by gate:
        (4/5) phi^-2, 9/4, 25/9 and (4/5) phi^2 to 45 digits, with the Galois ratio phi^-4;
   G11  the vacuum twist: eta_std - eta_gal at s = 0 is (2/5) x integer for every irrep, zero
        at R7; twisting multiplies each class eta by the twist's character, which is 0 on C9
-       and 1 on C7 for both nontrivial twists (Lemma 4).
+       and 1 on C7 for both nontrivial twists (Lemma 4);
+  G12  Lemma B of section V, exactly over Q: the 18 Dirac etas and zetas of the irreps have
+       shift-0 layers of rank 16, shift-1 layers of rank 14 with a 4-dimensional kernel, and on
+       that kernel shift-2 layers of rank 2, so every nonzero combination carries two shifts;
+  G13  Lemma D of section V: the odd signature operator's eta of each irrep, from the curl
+       blocks V_{l-1} x V_{l+1} (+) and V_{l+1} x V_{l-1} (-); its class values at s = 0 are
+       cot^2(a/2), its R0 value 361/180 meets Ruberman-Saveliev with eta_Dir(R0) = 1079/720,
+       1/2 eta_Dir + 1/8 eta_Sign = 1, the C9 eta equals 2^(2-s)(1 - 2^(2-s)) zeta(s-1) at real
+       and complex s with no shift-0 layer, and among the signature etas only C9 drops a layer.
 
 The torsions themselves are recomputed from the spectrum by
 files/framework/files/working/files/scripts/torsion-correction.test.py; G10 checks that the
@@ -48,8 +57,8 @@ Meta-guard (as in torsion-correction.test.py): every gate has a stable id, every
 names the gate it attacks, and --mutation-tests fails unless the mutation targets equal the
 gate ids and every mutation turns its gate red.
 
-  python3 the-mirror.test.py                   # verify (11 gates)
-  python3 the-mirror.test.py --mutation-tests  # 11 defects, each must turn its gate red
+  python3 the-mirror.test.py                   # verify (13 gates)
+  python3 the-mirror.test.py --mutation-tests  # 13 defects, each must turn its gate red
 
 Needs mpmath.
 """
@@ -501,6 +510,136 @@ def g11(defect):
                 rhs = CHI[IX[rho]][c] * sum(CHI[i][c] * ((n + 2) * MULT[n][i] - (n + 1) * MULT[n + 1][i]) for i in range(9))
                 ok &= abs(lhs - rhs) < TINY
     return ok, "(eta_std - eta_gal)/(2/5): " + " ".join(f"{l}:{k[l]}" for l in MCKAY_ORDER)
+
+
+# ---------- section V: Lemma B (Dirac, two shifts) and Lemma D (odd signature operator) ----------
+
+
+def frac_rank(rows):
+    """Rank over Q of a list of rows of Fractions."""
+    M = [list(r) for r in rows]
+    rank, ncols = 0, (len(M[0]) if M else 0)
+    for col in range(ncols):
+        piv = next((i for i in range(rank, len(M)) if M[i][col] != 0), None)
+        if piv is None:
+            continue
+        M[rank], M[piv] = M[piv], M[rank]
+        for i in range(len(M)):
+            if i != rank and M[i][col] != 0:
+                f = M[i][col] / M[rank][col]
+                M[i] = [a - f * b for a, b in zip(M[i], M[rank])]
+        rank += 1
+    return rank
+
+
+def frac_kernel(rows, ncols):
+    """A basis over Q of the vectors x with rows . x = 0."""
+    M = [list(r) for r in rows]
+    pivots, r = [], 0
+    for col in range(ncols):
+        piv = next((i for i in range(r, len(M)) if M[i][col] != 0), None)
+        if piv is None:
+            continue
+        M[r], M[piv] = M[piv], M[r]
+        M[r] = [a / M[r][col] for a in M[r]]
+        for i in range(len(M)):
+            if i != r and M[i][col] != 0:
+                f = M[i][col]
+                M[i] = [a - f * b for a, b in zip(M[i], M[r])]
+        pivots.append(col)
+        r += 1
+    basis = []
+    for fc in (c for c in range(ncols) if c not in pivots):
+        v = [F(0)] * ncols
+        v[fc] = F(1)
+        for i, pc in enumerate(pivots):
+            v[pc] = -M[i][fc]
+        basis.append(v)
+    return basis
+
+
+@gate("G12", "the Dirac zeta taken as the eta")
+def g12(defect):
+    funcs = [coeff(MULT, i, "eta") for i in range(9)] + [coeff(MULT, i, "eta" if defect else "zeta") for i in range(9)]
+    lay = [{r: fit_m(f, r) for r in ODD} for f in funcs]
+    layer = lambda p: [[lay[k][r][p] for k in range(18)] for r in ODD]
+    A, B, C = layer(0), layer(1), layer(2)
+    r_all, rA, rB = frac_rank(A + B + C), frac_rank(A), frac_rank(B)
+    ker = frac_kernel(B, 18)
+    rC = frac_rank([[sum(row[k] * v[k] for k in range(18)) for v in ker] for row in C])
+    ok = r_all == 16 and rA == 16 and rB == 14 and len(ker) == 4 and rC == 2
+    return ok, (f"18 Dirac functions span {r_all}; shift-0 rank {rA}, shift-1 rank {rB} "
+                f"(kernel {len(ker)}), shift-2 rank {rC} on that kernel")
+
+
+MULT_SIG = mckay(jmax=640)
+INT_RES = list(range(2, 122))           # one residue mod 120 for each class of m >= 2
+
+
+def sig_coeff(i, flip=False):
+    """Signature eta of the bundle of irrep i at the curl eigenvalue m = l + 1 >= 2: the + block
+    V_{l-1} x V_{l+1} gives (m+1) N(sigma, m-2), the - block V_{l+1} x V_{l-1} gives (m-1) N(sigma, m).
+    flip swaps the blocks, the opposite orientation."""
+    def c(m):
+        if m < 2:
+            return 0
+        v = (m + 1) * MULT_SIG[m - 2][i] - (m - 1) * MULT_SIG[m][i]
+        return -v if flip else v
+    return c
+
+
+def fit_int(cfun, r):
+    """Exact a2 m^2 + a1 m + a0 on the integers m = r mod 120, through r, r+120, r+240;
+    checked at r+360 and r+480."""
+    xs = [r, r + 120, r + 240]
+    ys = [F(cfun(x)) for x in xs]
+    a = [F(0)] * 3
+    for i in range(3):
+        o = [xs[k] for k in range(3) if k != i]
+        d = F((xs[i] - o[0]) * (xs[i] - o[1]))
+        a[2] += ys[i] / d
+        a[1] -= ys[i] * (o[0] + o[1]) / d
+        a[0] += ys[i] * o[0] * o[1] / d
+    for x in (r + 360, r + 480):
+        if a[2] * x * x + a[1] * x + a[0] != cfun(x):
+            raise AssertionError(f"residue {r} is not a quadratic quasi-polynomial in m")
+    return a
+
+
+def sig_layers(flip=False):
+    return [{r: fit_int(sig_coeff(i, flip), r) for r in INT_RES} for i in range(9)]
+
+
+def sig_eta0(lay):
+    """eta at s = 0 from the layers: sum of a_{r,p} 120^p zeta(-p, r/120), zeta(-p, x) = -B_{p+1}(x)/(p+1)."""
+    return sum(lay[r][p] * F(120) ** p * (-bern(p + 1, F(r, 120)) / (p + 1)) for r in INT_RES for p in range(3))
+
+
+@gate("G13", "curl's + block taken as V_{l+1} x V_{l-1}, the opposite orientation")
+def g13(defect):
+    lay = sig_layers(flip=defect)
+    e0 = [sig_eta0(lay[i]) for i in range(9)]
+    ok = all(lay[i][r][2] == 0 for i in range(9) for r in INT_RES)          # the eta is linear in m
+    for c, (lab, a, order, size) in enumerate(CLASSES):                      # class values at s = 0
+        val = sum(CHI[i][c] * e0[i] for i in range(9))
+        want = 0 if lab in ("C1", "C2") else mp.cot(ang(a) / 2) ** 2
+        ok &= abs(val - want) < TINY
+    rs = F(1, 2) * eta0_all()["R0"] + F(1, 8) * e0[IX["R0"]]
+    ok &= e0[IX["R0"]] == F(361, 180) and rs == 1
+    c9 = [int(mp.nint(CHI[i][8])) for i in range(9)]
+    l9 = {r: [sum(c9[i] * lay[i][r][p] for i in range(9)) for p in range(3)] for r in INT_RES}
+    ok &= all(l9[r][0] == 0 for r in INT_RES)                                  # no shift-0 layer at C9
+    worst = mp.mpf(0)
+    for s in (mp.mpf(4), mp.mpc(2.5, 3), mp.mpc(-1, 7)):
+        val = sum(l9[r][p] * mp.mpf(120) ** (p - s) * mp.zeta(s - p, mp.mpf(r) / 120) for r in INT_RES for p in range(2))
+        worst = max(worst, abs(val - 2 ** (2 - s) * (1 - 2 ** (2 - s)) * mp.zeta(s - 1)))
+    ok &= worst < TINY
+    L0 = [[lay[i][r][0] for i in range(9)] for r in INT_RES]
+    L1 = [[lay[i][r][1] for i in range(9)] for r in INT_RES]
+    r0, r1, rall = frac_rank(L0), frac_rank(L1), frac_rank(L0 + L1)
+    ok &= rall == 7 and r1 == 7 and r0 == 6                                  # only C9 drops a layer
+    return ok, (f"eta_Sign(R0, 0) = {e0[IX['R0']]}, 1/2 eta_Dir + 1/8 eta_Sign = {rs}; C9 closed form to "
+                f"{mp.nstr(worst, 3)}; signature etas span {rall}, shift-1 rank {r1}, shift-0 rank {r0}")
 
 
 def run(gid, defect=False):

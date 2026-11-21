@@ -7,71 +7,65 @@
 
 <img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/The%20mirror%20banner.png?raw=true" width="100%" alt="The Mirror">
 
-On S³/2I, intrinsic spectral constructions in the admissible class defined below can read L-function structure with arbitrary precision, but none constrains the zeros of an individual Dirichlet or Hecke L-function attached to the 2I arithmetic data, in the sense of Definition 4. The reading capacity and the writing incapacity are two faces of a single structural fact, forced by the geometry, representation theory, and arithmetic of the manifold.
+On the Poincaré homology sphere $`S^3/2I`$, the quotient of the 3-sphere by the binary icosahedral group $`2I`$ of order 120, the torsion and the Dirac spectrum read Dirichlet L-functions exactly (Definition 3). Among the finite linear combinations of the zeta and eta functions of its admissible operators, one function and its multiples isolate an individual Dirichlet L-function (Definition 4): the equivariant eta of the odd signature operator at the elements of order 4, equal to $`2^{2-s}(1-2^{2-s})\zeta(s-1)`$. Every other combination of the Dirac functions and the signature etas carries L-functions at two different shifts, so its zeros are coincidences between L-values (Theorem 1).
 
 ## I. Definitions
 
-**Definition 1 (Admissible Operators).** The admissible operators on $`S^3/2I`$ are the natural, self-adjoint elliptic operators on sections of natural bundles within the following scoped class:
+**Setting.** $`2I\subset\mathrm{SU}(2)`$ is the binary icosahedral group of order 120. It acts on $`S^3=\mathrm{SU}(2)`$ by left multiplication; the quotient $`S^3/2I`$ is the Poincaré homology sphere, with the round metric of radius $`R`$, and right multiplication by $`\mathrm{SU}(2)`$ acts on it by isometries. The irreducible representations of $`2I`$ are R0 (dimension 1), R1 and R2 (2), R3 and R4 (3), R5 and R6 (4), R7 (5) and R8 (6). R0, R3, R4, R5 and R7 factor through the icosahedral group $`A_5`$ (integer spin); R1, R2, R6 and R8 are faithful (half-integer spin). Tensoring with the inclusion representation R1 gives the affine $`E_8`$ McKay graph, and McKay distance means graph distance from R0. The conjugacy classes C1 to C9 are tabulated in § III.D.
+
+**Characters.** $`\chi_{-1}`$ is the nontrivial character mod 4, with $`\beta(s)=L(s,\chi_{-1})`$; $`\chi_3`$ is the nontrivial character mod 3; $`\chi_2`$ is the Legendre character mod 5; $`\chi_{\pm8}(m)=(\pm2/m)`$ and $`\chi_{12}=\chi_{-1}\chi_3`$; $`\chi_0^{(p)}`$ is the principal character mod $`p`$.
+
+**Definition 1 (Admissible Operators).** The admissible operators on $`S^3/2I`$ are the following natural, self-adjoint elliptic operators on sections of natural bundles:
 
 - Hodge Laplacians on $`p`$-forms ($`p = 0,1,2,3`$)
 - The Dirac operator and odd signature operator
-- Flat connection twists of the above under the three vacua (trivial, standard, Galois)
-
-Every natural bundle over $`S^3/2I = \mathrm{SU}(2)/2I`$ corresponds to a representation of $`2I`$. This is the admissible class considered here for natural bundles arising from representations of $`2I`$; operators on bundles outside this classification are outside the scope of the present theorem.
+- Twists of the above by the flat bundles $`E_\sigma=\mathrm{SU}(2)\times_{2I}V_\sigma`$ of the representations $`\sigma`$ of $`2I`$; among them, the three flat SU(2) connections are the trivial one, the standard one (R1) and its Galois conjugate (R2)
 
 ---
 
-**Definition 2 (Admissible Spectral Constructions).** Let $`\mathcal{F}`$ be the class of admissible spectral constructions on $`S^3/2I`$: all intrinsic, basis-independent constructions generated from Definition 1 operators under finite algebraic operations, consisting of:
+**Definition 2 (Admissible Spectral Constructions).** For an admissible operator $`A`$ with nonzero eigenvalues $`\lambda`$, the zeta function is $`Z_A(s)=\sum_\lambda\lvert\lambda\rvert^{-s}`$ and the eta function is $`\eta_A(s)=\sum_\lambda\mathrm{sign}(\lambda)\lvert\lambda\rvert^{-s}`$. The admissible class $`\mathcal{F}`$ consists of the intrinsic, basis-independent constructions on $`S^3/2I`$ generated, under finite additive and multiplicative combination, by:
 
-- The spectral zeta $`Z_A(s)`$, eta invariant $`\eta_A(s)`$, and analytic torsion $`T_A`$ for any admissible operator $`A`$
-- Equivariant class averages over conjugacy classes of $`2I`$
-- Finite additive or multiplicative combinations of the above
-- Basis-independent functions of the $`2I`$ character table and McKay multiplicities (explicitly: symmetric functions of eigenvalues and character-weighted spectral sums)
+- the zeta and eta functions of the admissible operators on the bundles $`E_\sigma`$, and the analytic torsion $`T(E)`$ of each flat de Rham complex;
+- their equivariant versions at each conjugacy class of $`2I`$ (§ III.D);
+- symmetric polynomials in the eigenvalues of the representation matrices, and character-weighted spectral sums of Definition 1 operators.
 
-Constructions outside $`\mathcal{F}`$ are outside the scope of the present theorem.
-
----
-
-**Definition 3 (Reading).** A construction $`F\in\mathcal{F}`$ *reads* arithmetic if it decomposes into Dirichlet or Hecke L-values or L-functions with coefficients determined by the group-theoretic data of $`2I`$.
+$`\mathcal{L}\subset\mathcal{F}`$ is the set of finite linear combinations of these zeta and eta functions and their equivariant versions.
 
 ---
 
-**Definition 4 (Zero Constraint).** A construction $`F\in\mathcal{F}`$ *constrains zeros* of a target L-function $`L(s,\chi)`$ only if
+**Definition 3 (Reading).** A construction $`F\in\mathcal{F}`$ *reads* arithmetic if it decomposes finitely into Dirichlet or Hecke L-values or L-functions with coefficients determined by the group-theoretic data of $`2I`$.
+
+---
+
+**Definition 4 (Isolation).** A construction $`F\in\mathcal{F}`$ *isolates* the Dirichlet L-function $`L(s,\chi)`$, with $`\chi`$ primitive, if
 
 ```math
-F(s_0)=0 \implies L(s_0,\chi)=0.
+F(s)=c^{s}\,a(s)\,L(s-p,\chi)
 ```
 
-A relation of the form $`L(s,\chi)=L(s-2,\chi)`$, or $`L(s,\chi_1)=L(s,\chi_2)`$ for distinct characters, is a *coincidence condition*, not a zero constraint.
+for a constant $`c>0`$, an integer $`p`$ and a nonzero Dirichlet polynomial $`a(s)`$, a finite sum $`\sum_{n\le N}a_n n^{-s}`$. Away from the poles of $`L`$, the zeros of an isolating $`F`$ are those of $`L(s-p,\chi)`$ and the explicit zeros of $`a(s)`$. An equation $`\sum_k a_k(s)\,L(s-p_k,\chi_k)=0`$ among two or more distinct pairs $`(p_k,\chi_k)`$, with each $`\chi_k`$ primitive and each $`a_k(s)`$ a nonzero Dirichlet polynomial, is a *coincidence condition*; by Lemma A of § V it never reduces to a single L-function.
 
 ---
 
 ## II. Main Theorem
 
-> **Theorem 1 (Spectral Inaccessibility on $`S^3/2I`$).** Let $`\mathcal{F}`$ be the admissible class of Definition 2. Then no $`F\in\mathcal{F}`$ constrains zeros of any individual Dirichlet or Hecke L-function attached to the $`2I`$ arithmetic data in the sense of Definition 4. Every vanishing condition on $`F`$ reduces to one of:
+> **Theorem 1 (Spectral Inaccessibility on $`S^3/2I`$).** With $`R=1`$, a nonzero $`F\in\mathcal{L}`$ isolates a Dirichlet L-function if and only if it is a nonzero constant multiple of the C9 equivariant eta of the odd signature operator,
 >
-> (i) a shifted-value coincidence condition (Definition 4),
-> (ii) encoding degeneracy: multiplicative spectral structure collapses on finite groups, with spectral zeros reducing to holonomy or cyclotomic phases rather than L-function zeros,
-> (iii) framework mismatch between spectral Dirichlet L-functions over $`\mathbb{Q}`$ and arithmetic Hecke L-functions over number fields, or
-> (iv) character completeness: basis-independent content is exhausted by the class table of $`2I`$.
+> ```math
+> \eta^{\mathrm{sig}}([C9],s)=2^{2-s}\left(1-2^{2-s}\right)\zeta(s-1).
+> ```
 >
-> *Proof: by Lemmas 1–8 in § IV.*
+> Every other nonzero combination of the Dirac zeta and eta functions and the signature eta functions carries L-functions at two different shifts, so its vanishing condition is a coincidence condition. A finite product of elements of $`\mathcal{L}`$ vanishes only where a factor does.
+>
+> *Proof: § V, from Lemmas A to D.*
 
-> **Corollary 1.** Within the admissible class $`\mathcal{F}`$ on $`S^3/2I`$, the four obstruction layers are exhaustive: coincidence condition, encoding degeneracy, framework mismatch, and character completeness. Every vanishing condition on every $`F\in\mathcal{F}`$ reduces to at least one of them.
-
-**Note on reading without constraining.** The manifold reads the Riemann zeta function directly through the $`C8`$ equivariant eta:
-
-```math
-\eta([C8],s) = 2^{s-1}[(1+2^{-s})L(s,\chi_3) - (1-2^{1-s})(1-3^{2-s})\zeta(s-1)].
-```
-
-This is reading, not constraining. Isolating a zero of $`\zeta(s)`$ would require $`L(s,\chi_3)`$ to vanish simultaneously, a coincidence condition in the sense of Definition 4.
+**Note on reading without locating.** The isolation in Theorem 1 is elementary. At C9 the signature trace at the eigenvalue $`m`$ is $`-2m\cos(m\pi/2)`$: zero for odd $`m`$, and alternating in sign over even $`m`$, so the eta is a rescaled alternating zeta series in $`s-1`$. It reads $`\zeta`$ exactly and moves its zeros to $`s=\rho+1`$ without saying where they lie. The Dirac eta at C8 reads $`\zeta(s-1)`$ as well, alongside $`L(s,\chi_3)`$ (§ III.D).
 
 ---
 
 ## III. The Reading
 
-The spectral geometry of $`S^3/2I`$ reads L-function structure completely. Each result is proved and locked. Together they motivate the question answered in § IV: whether this reading capacity can be leveraged to constrain individual zeros.
+The spectral geometry of $`S^3/2I`$ gives the exact L-function readings below. Each result is proved and locked. Together they motivate the question that § IV and § V answer: whether this reading can isolate an individual L-function, and what isolation says about its zeros.
 
 ### A. Torsion L-Basis
 
@@ -98,7 +92,7 @@ The Dirac operator on $`S^3/2I`$ has eigenvalues $`\pm(n+3/2)/R`$, linear in $`n
 
 Selectivity: 6 to 12 of 32 characters per irrep, in the coprime sector. Domain: all $`s`$.
 
-The contrast with the torsion defines the landscape: four characters at a single point, or six to twelve per irrep across the full strip. § IV tests whether that reading capacity can be leveraged to constrain individual zeros.
+The contrast with the torsion defines the landscape: four characters at a single point, or six to twelve per irrep across the full strip. § IV and § V test whether that reading can isolate an individual L-function.
 
 ### C. Eta Character Selection
 
@@ -146,7 +140,7 @@ The nine conjugacy classes of $`2I`$, by the angle $`\alpha`$ of their eigenvalu
 | C8 | 2/3 | 3 | 20 | 2 |
 | C9 | 1/2 | 4 | 30 | 2 |
 
-The character-table rotation transforms 9 per-irrep etas (6–12 survivors each) into 8 non-trivial conjugacy-class combinations (1–4 survivors each; the identity class contributes zero by dimension-weighted cancellation). The central element $`C2=[-e]`$ isolates a single L-function at all $`s`$:
+The character-table rotation transforms 9 per-irrep etas (6–12 survivors each) into 8 non-trivial conjugacy-class combinations (1–4 survivors each; the identity class contributes zero by dimension-weighted cancellation). The central element $`C2=[-e]`$ carries a single character, $`\chi_{-1}`$, at the shifts $`s`$ and $`s-2`$:
 
 ```math
 \eta([-e],s) = 2^{s-1}\cdot[\beta(s)-\beta(s-2)]
@@ -196,19 +190,20 @@ Per-irrep twisted etas computed via fusion matrices for all three flat connectio
 | Torsion $`\times`$ eta | Inherited arithmetic, no emergent structure | Exact |
 | Vacuum-twisted eta | (2/5)×integer; C7, C9 twist factors | Exact (G11) |
 | Higher-form Laplacians | Hodge duality; no combination factors | Structural proof |
-| Signature operator | Collapsed to Dirac eta | Structural |
+| Signature operator | Curl traces; the C9 eta isolates $`\zeta(s-1)`$ | $`s=0`$ values match the APS defect; Ruberman–Saveliev (G13) |
+| Isolation in $`\mathcal{L}`$ | Only the C9 signature eta isolates (Theorem 1) | Lemmas A to D; ranks 16, 14 and 2 (G12) |
 | Type 2 equiv. eta | Uniformly worse, all 8 classes | C2: structural; non-central: mod-120 exact ($`S_1/S_0`$) |
 | Selberg/Ruelle $`\zeta`$ | Finite cyclotomic product | Exact |
 | Artin L-function | Brauer virtual; Hecke $`\neq`$ Dirichlet | Structural |
 | Matrix coefficients | Characters exhaust content | Structural |
 
-Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum in eleven gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about ten seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py). The Type 2 counts of Lemma 3 come from the original computation, outside both scripts, and are fitted in the period index.
+Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum, and checks Lemmas B and D of § V, in thirteen gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about fifteen seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py). The Type 2 counts of Lemma 3 come from the original computation, outside both scripts, and are fitted in the period index.
 
 ---
 
 ## IV. Lemmas 1–8
 
-The eight lemmas defeat specific strategies for leveraging the reading capacity of § III to constrain L-function zeros. Theorem 1 follows from their conjunction. Three supporting propositions are interspersed before the lemmas they enable: Propositions 1 and 2 precede Lemma 4; Proposition 3 precedes Lemma 7.
+The eight lemmas test specific strategies for turning the reading of § III into a hold on L-function zeros; § V proves Theorem 1. Three supporting propositions are interspersed before the lemmas they enable: Propositions 1 and 2 precede Lemma 4; Proposition 3 precedes Lemma 7.
 
 ---
 
@@ -230,11 +225,11 @@ The torsion's selectivity is a property of $`s=0`$, not a property that extends.
 ---
 
 **Lemma 2 (Coincidence is Not Vanishing).**
-**Strategy defeated:** Use the C2 equivariant eta's single-L-function selectivity at all $`s`$ to constrain zeros of $`\beta(s)`$.
+**Strategy defeated:** Use the C2 equivariant eta's single-character selectivity at all $`s`$ to isolate $`\beta(s)`$.
 
-*Proof.* The zeros of $`\eta([-e],s)`$ satisfy $`\beta(s)=\beta(s-2)`$. By Definition 4, this is a coincidence condition: it requires two values of $`\beta`$ to be equal at shifted arguments, not any individual value to vanish. It is therefore not a zero constraint. $`\square`$
+*Proof.* The zeros of $`\eta([-e],s)`$ satisfy $`\beta(s)=\beta(s-2)`$. This is a coincidence condition (Definition 4): it equates two values of $`\beta`$ at shifted arguments, and by Lemma A of § V the two shifts never merge, so the C2 eta does not isolate $`\beta`$. $`\square`$
 
-*Remark (non-load-bearing, confirmatory only).* Numerical evaluation at the first 10 nontrivial zeros of $`\beta`$ confirms $`\lvert\beta(s_0-2)\rvert`$ is far from zero in each case (values 13.98 to 341.84 at 50-digit precision). This is consistent with but not required by the proof above, which rests entirely on Definition 4.
+*Remark (non-load-bearing, confirmatory only).* Numerical evaluation at the first 10 nontrivial zeros of $`\beta`$ confirms $`\lvert\beta(s_0-2)\rvert`$ is far from zero in each case (values 13.98 to 341.84 at 50-digit precision). This is consistent with but not required by the proof above, which rests on Definition 4 and Lemma A.
 
 ---
 
@@ -250,7 +245,7 @@ The torsion's selectivity is a property of $`s=0`$, not a property that extends.
 | Type 1 | $`\sum_\sigma\chi_\sigma(g)\cdot\eta_D(\sigma,s)`$ |
 | Type 2 | $`\sum_\sigma\chi_\sigma(g)\cdot\widetilde{\eta}_{\sigma}(s)`$ |
 
-For the central element $`C2=[-e]`$, the SU(2) character evaluates to $`\chi_j(-e)=-(2j+1)`$ for all half-integer $`j`$, monotone and strictly negative, with no sign variation. Type 1 achieves single-character selectivity at C2 precisely because the $`2I`$ character table produces sign alternation between bosonic irreps ($`\chi_\sigma(C2)=+\dim\sigma`$) and fermionic irreps ($`\chi_\sigma(C2)=-\dim\sigma`$). That alternation drives the cancellations that isolate $`\beta(s)`$.
+For the central element $`C2=[-e]`$, the SU(2) character evaluates to $`\chi_j(-e)=-(2j+1)`$ for all half-integer $`j`$, monotone and strictly negative, with no sign variation. Type 1 achieves single-character selectivity at C2 precisely because the $`2I`$ character table produces sign alternation between bosonic irreps ($`\chi_\sigma(C2)=+\dim\sigma`$) and fermionic irreps ($`\chi_\sigma(C2)=-\dim\sigma`$). That alternation drives the cancellations that leave the single character $`\chi_{-1}`$.
 
 Type 2 at C2 is structurally blind to this mechanism. The weights $`(2j+1)^2`$ are strictly positive for all $`j`$, introducing no sign alternation and no cancellation between bosonic and fermionic contributions. Type 2 is strictly worse than Type 1 at C2. $`\square`$
 
@@ -274,14 +269,14 @@ The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The full Type 
 
 ---
 
-**Proposition 1 (Operator Classification).** Every admissible operator $`A`$ (Definition 1) on sections of a natural bundle $`E_\sigma`$ over $`S^3/2I`$ has L-function character content determined by the McKay multiplicities $`\{m(\sigma,l)\}`$ alone. The eigenvalue function $`a(l)`$ may vary freely within Definition 1 without introducing characters beyond those identified by the $`2I`$ character table and the $`E_8`$ McKay correspondence.
+**Proposition 1 (Operator Classification).** Every admissible operator $`A`$ (Definition 1) on sections of a bundle $`E_\sigma`$ over $`S^3/2I`$ has L-function character content among the Dirichlet characters of conductor dividing 120, fixed by the multiplicities of $`\sigma`$ in the representations that carry its eigenspaces. The listed operators have different eigenvalue functions, and none of them introduces characters outside that set.
 
 *Proof.*
-*Step 1: Bundle classification.* Every natural bundle over $`S^3/2I=\mathrm{SU}(2)/2I`$ is $`E_\sigma=\mathrm{SU}(2)\times_{2I}V_\sigma`$ for one of the 9 irreps of $`2I`$. Definition 1 is exhaustive at the bundle level.
+*Step 1: Bundle classification.* The homogeneous bundles over $`S^3/2I`$ are $`E_\sigma=\mathrm{SU}(2)\times_{2I}V_\sigma`$, for the 9 irreps $`\sigma`$ of $`2I`$ and their sums. Definition 1 is exhaustive at the bundle level.
 
-*Step 2: Schur scalar reduction.* By Peter-Weyl, sections decompose as $`\Gamma(E_\sigma)=\bigoplus_l V_l^{m(\sigma,l)}`$. Any admissible operator commutes with $`\mathrm{SU}(2)`$ and acts as a scalar $`a(l)`$ on each block. The spectral zeta $`Z_A(s)=\sum_l m(\sigma,l)\cdot(2l+1)\cdot a(l)^{-s}`$.
+*Step 2: Reduction to blocks.* Lifted to $`S^3`$, any admissible operator commutes with left and right multiplication by $`\mathrm{SU}(2)`$, so its eigenspaces are sums of blocks $`V_a\boxtimes V_b`$, and $`\sigma`$ occurs in a block $`N(\sigma,a)(b+1)`$ times (Bär for spinors, Ikeda and Taniguchi for forms).
 
-*Step 3: Characters fixed by multiplicities.* Character orthogonality mod 120 extracts Dirichlet character content from $`m(\sigma,l)`$ alone. The function $`a(l)`$ is a Mellin-type weight; it shifts poles and domains but cannot introduce or remove characters. Different operators produce different spectral zetas with the same character set. $`\square`$
+*Step 3: Characters from the multiplicities.* $`N(\sigma,a)`$ is a quasi-polynomial of degree one in $`a`$, with period dividing 60, so character orthogonality mod 120 extracts the character content, among the characters of conductor dividing 120. Which characters survive depends on the operator through its blocks: at C9 the Dirac eta keeps $`\chi_{-8}`$ and $`\chi_8`$, and the signature eta only the principal character (Lemma D of § V). $`\square`$
 
 ---
 
@@ -292,16 +287,16 @@ The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The full Type 
 ---
 
 **Lemma 4 (Operator Completeness Inside Admissible Class).**
-**Strategy defeated:** Find a different natural operator on $`S^3/2I`$ that avoids the obstructions of Lemmas 1–3.
+**Strategy tested:** Find a different natural operator on $`S^3/2I`$ that avoids the obstructions of Lemmas 1–3.
 
-*Proof.* By Propositions 1 and 2, every $`F\in\mathcal{F}`$ has character content within the set identified by the McKay multiplicities of the 9 irreps of $`2I`$. The following exhaust the candidates within $`\mathcal{F}`$:
+*Proof.* By Propositions 1 and 2, every $`F\in\mathcal{F}`$ has character content among the characters of conductor dividing 120. The candidates within $`\mathcal{F}`$:
 
-- **Hodge duality:** $`p`$-form Laplacians for $`p=2,3`$ are isospectral with $`p=1,0`$. Only two independent spectral zetas exist, both already computed.
-- **Signature operator:** No self-dual/anti-self-dual decomposition on 3-manifolds. Reduces to the known Dirac eta.
-- **Vacuum twists:** Three flat connections produce three distinct per-irrep eta vectors, but equivariant class-level selection is invariant. C9 is killed by both nontrivial twists; C7 is perfectly vacuum-invariant.
+- **Hodge duality:** $`p`$-form Laplacians for $`p=2,3`$ are isospectral with $`p=1,0`$. Only two independent spectral zetas exist, both already computed, and no combination of them isolates an L-function (Lemma C of § V).
+- **Signature operator:** its eta comes from curl on coexact 1-forms, whose blocks differ from the Dirac operator's. At C9 it isolates $`\zeta(s-1)`$ (Lemma D of § V): the strategy's one success, and the only isolation in $`\mathcal{L}`$.
+- **Vacuum twists:** Three flat connections produce three distinct per-irrep eta vectors, but equivariant class-level selection is invariant. C9 is killed by both nontrivial twists, so the isolation needs the trivial connection; C7 is perfectly vacuum-invariant.
 - **Combined invariants:** Products $`T^2(\sigma)\cdot\eta(\sigma,0)`$ inherit factor arithmetic. No emergent L-basis from combining the two spectral invariants.
 
-No unexplored operator remains within $`\mathcal{F}`$. $`\square`$
+The survey is complete. The signature operator at C9 is the one candidate that avoids the obstructions of Lemmas 1 to 3, and its identity locates none of the zeros it carries (§ II). $`\square`$
 
 ---
 
@@ -367,56 +362,87 @@ On $`S^3/2I`$: the McKay correspondence resolves the basis ambiguity (multiplici
 
 ## V. The Wall
 
-The eight lemmas organize into four independent obstruction layers. Each layer would suffice alone to block a spectral Hilbert-Pólya argument on $`S^3/2I`$.
+The eight lemmas of § IV sort the natural strategies into four obstruction layers. The signature operator at C9 meets none of them: it isolates $`\zeta(s-1)`$, and the identity locates none of its zeros. Lemmas A to D below prove Theorem 1.
 
 | Layer | Obstruction | Lemmas |
 |-------|------------|--------|
-| Coincidence condition | Spectral zeros are L-value coincidence conditions (Def. 4), not vanishing conditions. Selectivity and domain together are insufficient. | 1, 2, 3 |
+| Coincidence condition | A Dirac combination carries L-functions at two shifts, so its zeros are coincidences (Def. 4, Lemma B); torsion selectivity stays at $`s=0`$. | 1, 2, 3 |
 | Encoding degeneracy | Multiplicative structure degenerates on finite groups. No Selberg machinery without Anosov dynamics. Spectral zeros reduce to holonomy or cyclotomic phases, not L-function zeros. | 5 |
 | Framework mismatch | Spectral Dirichlet L-functions over $`\mathbb{Q}`$ $`\neq`$ Arithmetic Hecke L-functions over number fields. Modularity does not transfer. | 6 |
 | Character completeness | Characters exhaust basis-independent content by Propositions 1, 2, and 3. No "beyond characters" on this manifold. | 4, 7, 8 |
 
-**Proof of Theorem 1.** Every $`F\in\mathcal{F}`$ falls under at least one obstruction layer. Lemma 1 handles the torsion selectivity strategy. Lemma 2 handles the C2 single-character strategy and establishes the coincidence/vanishing distinction of Definition 4. Lemma 3 handles character-weight oscillation; the C2 case is proved structurally, and the 7 non-central classes are proved by exact mod-120 character decomposition. Together, Lemmas 1–3 establish the coincidence condition layer. Lemma 4 (via Propositions 1 and 2) confirms the operator space is exhausted (character completeness layer). Lemma 5 handles multiplicative encoding (encoding degeneracy layer). Lemma 6 handles the Langlands/modularity route (framework mismatch layer). Lemmas 7–8 (via Proposition 3) handle matrix coefficients and the phase-to-spectral bridge (character completeness layer). Every vanishing condition on every $`F\in\mathcal{F}`$ reduces to at least one of (i)–(iv). $`\square`$
+**Conventions.** We take $`R=1`$. $`2I`$ acts on the left, so a block $`V_a\boxtimes V_b`$ of an eigenspace contributes $`N(\sigma,a)(b+1)`$ to the multiplicity of $`\sigma`$ and $`(b+1)\chi_a(g)`$ to the trace of a class $`g`$, where $`\chi_a(g)=\sin((a+1)\alpha)/\sin\alpha`$ for eigenvalues $`e^{\pm i\alpha}`$ of $`g`$. The Dirac eigenvalue $`+(n+3/2)`$ sits on $`V_n\boxtimes V_{n+1}`$ and $`-(n+3/2)`$ on $`V_{n+1}\boxtimes V_n`$, which gives the multiplicities $`m_n^\pm`$ of § III.C.
+
+**Lemma A (Independence).** Let $`a_k(s)=\sum_\lambda a_{k,\lambda}\lambda^{-s}`$ be finite sums over real $`\lambda>0`$. If $`\sum_k a_k(s)L(s-p_k,\chi_k)=0`$ for distinct pairs $`(p_k,\chi_k)`$ with each $`\chi_k`$ primitive, then every $`a_k=0`$.
+
+*Proof.* A general Dirichlet series vanishes only if its coefficients do, and the frequencies $`\lambda n`$ stay in the coset $`\lambda\mathbb{Q}_{>0}`$, so each coset gives its own identity; in each, a common denominator makes the $`a_k`$ Dirichlet polynomials, supported on $`n\le N`$ say. For a prime $`q>N`$, the coefficient of $`(dq)^{-s}`$ is $`\sum_k\chi_k(q)\,q^{p_k}B_k(d)`$, with $`B_k(d)=\sum_{e\mid d}a_{k,e}\,\chi_k(d/e)(d/e)^{p_k}`$. The largest power of $`q`$ separates the shifts, and Dirichlet's theorem with character orthogonality separates the characters at one shift, so every $`B_k(d)=0`$. Its term $`e=d`$ is $`a_{k,d}`$, and induction on $`d`$ gives $`a_k=0`$. The same count shows that a nonzero finite combination of L-functions has nonzero coefficients at $`dq`$ for some $`d`$ and infinitely many primes $`q`$. $`\square`$
+
+**Lemma B (Dirac: two shifts).** Every nonzero finite linear combination of the Dirac zeta and eta functions, over the bundles $`E_\sigma`$, the classes and the flat twists, has L-function terms at shift 0 and at shift 1 or 2.
+
+*Proof.* By character orthogonality the combinations are those of the class functions. Over the odd numerators $`m=2n+3`$, with $`\theta=\alpha/2`$, the class traces give
+
+```math
+\eta_g(m)=\tfrac12\left[\frac{\sin m\theta}{\sin\theta}-m\,\frac{\cos m\theta}{\cos\theta}\right],\qquad
+\zeta_g(m)=\tfrac12\left[m\,\frac{\sin m\theta}{\sin\theta}-\frac{\cos m\theta}{\cos\theta}\right]
+```
+
+at the seven non-central classes. The C2 eta is $`\tfrac12(1-m^2)\chi_{-1}(m)`$, the identity zeta is $`\tfrac12(m^2-1)`$, and the identity eta and the C2 zeta vanish. Each function is $`A(m)+mB(m)+m^2C(m)`$ with $`A`$, $`B`$, $`C`$ periodic, the terms at shifts 0, 1 and 2. On odd $`m`$ the sequences $`e^{\pm im\theta}`$ are independent when the frequencies differ mod $`\pi`$, and the fourteen values $`\pm\theta`$ of the non-central classes, $`\pi/2`$ for C2 and $`0`$ for the identity, are sixteen distinct classes mod $`\pi`$. So the sixteen shift-0 parts are independent, and a combination with no shift-1 part lies in the span of the C2 eta and the identity zeta, whose shift-2 parts $`-\tfrac12\chi_{-1}`$ and $`\tfrac12`$ are independent. Lemma A keeps the shifts apart. $`\square`$
+
+**Lemma C (Laplacians).** No nonzero finite linear combination of the Hodge Laplacians' zeta functions isolates an L-function.
+
+*Proof.* The eigenvalues are $`l(l+2)`$ and $`(l+1)^2`$, so the zeta functions are supported on $`\{k^2-1\}\cup\{k^2\}`$. An isolating $`c^s a(s)L(s-p,\chi)`$, with $`d`$ the least element of the support of $`a`$, has the coefficient $`a_d\chi(q)q^p\neq0`$ at $`dq`$ for every prime $`q`$ above that support and prime to the conductor, and a fixed multiple of $`(k-1)(k+1)`$ or of $`k^2`$ equals $`dq`$ for only finitely many primes $`q`$. $`\square`$
+
+**Lemma D (The odd signature operator).** The C9 equivariant eta of the odd signature operator is $`2^{2-s}(1-2^{2-s})\zeta(s-1)`$. Among the finite linear combinations of the signature zeta and eta functions, only its multiples isolate an L-function, and a combination whose integer-frequency terms all vanish is zero.
+
+*Proof.* The exact forms pair off at $`\pm\sqrt{l(l+2)}`$ and cancel in the eta, which is that of curl on coexact 1-forms. Curl has eigenvalue $`+(l+1)`$ on $`V_{l-1}\boxtimes V_{l+1}`$ and $`-(l+1)`$ on $`V_{l+1}\boxtimes V_{l-1}`$, $`l\ge1`$ (Ikeda and Taniguchi), so with $`m=l+1`$ the class trace is
+
+```math
+\eta^{\mathrm{sig}}_g(m)=(m+1)\chi_{m-2}(g)-(m-1)\chi_m(g)=2\sin m\alpha\,\cot\alpha-2m\cos m\alpha .
+```
+
+At $`s=0`$ this gives $`\cot^2(\alpha/2)`$ at every class, Atiyah, Patodi and Singer's defect for an isoclinic rotation. The class average is $`361/180`$, and with the Dirac value $`1079/720`$ of § III.C it satisfies Ruberman and Saveliev's relation $`\tfrac12\eta_{\mathrm{Dir}}+\tfrac18\eta_{\mathrm{Sign}}=-\bar\mu=1`$, which fixes the orientation. At C9, $`\alpha=\pi/2`$: the sine term drops, odd $`m`$ give zero, and $`m=2k`$ gives $`-4k(-1)^k`$, which sums to the closed form. It isolates $`\zeta(s-1)`$ with $`c=1/2`$, $`p=1`$ and $`a(s)=4-16\cdot2^{-s}`$; at $`s=2`$ the zero of $`a`$ meets the pole of $`\zeta(s-1)`$, and the eta is $`\log2`$ there. The shift-1 parts $`-2\cos m\alpha`$ of the seven non-central etas are independent, so a combination of etas with no shift-1 part is zero; the shift-0 parts $`2\sin m\alpha\cot\alpha`$ are independent over the six classes other than C9, so a combination with no shift-0 part is a multiple of the C9 eta. A signature zeta adds the exact pairs, at the irrational frequencies $`\sqrt{l(l+2)}`$; they cancel in a combination only if $`\sum_g c_g\chi_l(g)=0`$ for every $`l\ge1`$, and the $`\chi_l`$ with $`l\ge1`$ span the class functions (for instance $`2\chi_{120}-\chi_{240}=1`$ on $`2I`$), so every zeta coefficient $`c_g`$ is zero. If instead the integer-frequency terms of a combination vanish, the identity and C2 zetas, whose terms are $`2(m^2-1)`$ and $`2(-1)^m(m^2-1)`$, drop out, and for the other classes the two layers give $`\sum_g(c_g+e_g)\chi_{m-2}(g)=0`$ and $`\sum_g(c_g-e_g)\chi_m(g)=0`$ for every $`m`$, so every coefficient is zero. $`\square`$
+
+**Proof of Theorem 1.** The C9 eta isolates $`\zeta(s-1)`$ (Lemma D). Conversely, let a nonzero $`F\in\mathcal{L}`$ equal $`c^s a(s)L(s-p,\chi)`$, and split it into its Dirac, signature and Laplacian parts. Their frequencies are half-integers; integers together with the irrational $`\sqrt{l(l+2)}`$; and integers on the thin set of Lemma C. By Lemma A the frequencies separate by coset of $`\mathbb{Q}_{>0}`$. If $`c`$ is irrational, the right side has no rational frequencies. The Dirac part, which lives on the half-integers, then vanishes, and by Lemma B so does its combination. On the integers the signature part is a finite combination of shifted L-functions; if it cancels the Laplacian part, it is supported on the thin set of Lemma C, and the remark after Lemma A makes both vanish. Lemma D then makes every signature coefficient zero, so $`F=0`$. So $`c=u/v`$ is rational, in lowest terms; the irrational exact pairs cancel, and Lemma D removes the signature zetas. Whether a frequency $`dn/c`$ of the right side is half-integral is decided by finitely many conditions on its valuations at the primes dividing $`2u`$. Each exact-valuation filter is a difference of divisibility filters, and filtering $`c^s a(s)L(s-p,\chi)`$ by divisibility by a prime power gives $`c^s b(s)L(s-p,\chi)`$ for a Dirichlet polynomial $`b`$, or zero, because $`\chi`$ is completely multiplicative. So the half-integral part of $`F`$, which is its Dirac part, isolates or vanishes, and by Lemma B it vanishes. On the integers, $`F`$ minus its signature etas is a finite combination of L-functions supported on the thin Laplacian set, hence zero, so the Laplacian part vanishes and $`F`$ is a combination of signature etas that isolates: a constant multiple of $`\eta^{\mathrm{sig}}([C9],s)`$ (Lemma D). For a combination of Dirac functions and signature etas that is not such a multiple, Lemmas B and D give terms at two shifts, which is a coincidence condition. A finite product vanishes exactly where a factor does. $`\square`$
 
 ---
 
 ## VI. The Mechanism: Curvature Duality
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-curvature-duality.png?raw=true" width="80%" alt="A fork from positive Ricci curvature, Ric = 2/R^2 > 0. Physics branch: the Weitzenbock floor, lambda at least 2/R^2 on coexact gauge fluctuations, so the linearized gauge fluctuations are gapped, 4/R^2 at the trivial and standard vacua and 36/R^2 at the Galois vacuum. Arithmetic branch: the eigenvalue shift from (l+1)^2 to l(l+2) = (l+1)^2 - 1, whose -1 builds the Pochhammer tower at s not 0, locking the torsion selectivity to s = 0 and shielding the zeros"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-curvature-duality.png?raw=true" width="80%" alt="A fork from positive Ricci curvature, Ric = 2/R^2 > 0. Physics branch: the Weitzenbock floor, lambda at least 2/R^2 on coexact gauge fluctuations, so the linearized gauge fluctuations are gapped, 4/R^2 at the trivial and standard vacua and 36/R^2 at the Galois vacuum. Arithmetic branch: the eigenvalue shift from (l+1)^2 to l(l+2) = (l+1)^2 - 1, whose -1 builds the Pochhammer tower at s not 0, locking the torsion selectivity to s = 0"></p>
 
-*The proof of Theorem 1 is complete at § V. Sections VI–IX provide the structural mechanism behind the obstruction, its interpretation, scope, and physics implications.*
+*The proof of Theorem 1 is complete at § V. Sections VI–IX provide the mechanism behind the scalar route, its interpretation, scope, and physics implications.*
 
-The wall is structural, not technical. A unifying geometric mechanism is captured by a single equation.
+A geometric mechanism behind the scalar route is captured by a single equation.
 
 The Ricci curvature of $`S^3`$ is $`\mathrm{Ric}=2/R^2>0`$. This positive number does two things simultaneously:
 
 **Physics (the mass gap):** Positive Ricci puts a Weitzenböck floor $`\lambda\geq2/R^2>0`$ under every physical coexact gauge fluctuation around the analyzed flat vacua, lifting the spectrum off zero so the mass gap exists. The exact gap is sharper than the floor: the coexact spectrum read through the McKay structure gives $`4/R^2`$ at the trivial and standard vacua and $`36/R^2`$ at the Galois vacuum, a ninefold enhancement (the [coexact gap](../../framework/files/bedrock/files/coexact-gap.md) paper). The linearized gauge fluctuations are gapped.
 
-**Arithmetic (Pochhammer obstruction):** The scalar Laplacian eigenvalues shift from $`(l+1)^2`$ to $`l(l+2)=(l+1)^2-1`$. The "-1" generates the infinite Pochhammer tower that blocks general-<i>s</i> factorization. The torsion's maximum selectivity is locked to $`s=0`$. L-function zeros are shielded.
+**Arithmetic (Pochhammer obstruction):** The scalar Laplacian eigenvalues shift from $`(l+1)^2`$ to $`l(l+2)=(l+1)^2-1`$. The "-1" generates the infinite Pochhammer tower that blocks general-<i>s</i> factorization. The torsion's maximum selectivity is locked to $`s=0`$. The shift belongs to the scalar route: on the same metric, curl and the coexact Laplacian have the unshifted eigenvalues $`\pm(l+1)`$ and $`(l+1)^2`$, and the signature operator's C9 eta isolates $`\zeta(s-1)`$ (Theorem 1).
 
 | Step | Physics | Arithmetic |
 |------|---------|-----------|
 | Positive Ricci | Weitzenböck floor $`\lambda\geq2/R^2`$ | Eigenvalue shift: $`l(l+2)\neq(l+1)^2`$ |
 | Consequence | Mass gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois | Pochhammer tower at $`s\neq0`$ |
-| Result | Linearized gauge fluctuations are gapped | L-function zeros inaccessible |
+| Result | Linearized gauge fluctuations are gapped | Torsion selectivity confined to $`s=0`$ |
 
-To remove the obstruction, formally drop the $`-1`$ curvature shift in this spectral model. The eigenvalues become perfect squares, the Pochhammer tower vanishes, and the spectral zeta factors at all $`s`$. The same step removes the positive-curvature lower bound on the gauge spectrum. It does not by itself establish that every Ricci-flat realization is gapless.
+Formally dropping the $`-1`$ in the scalar spectrum makes its eigenvalues perfect squares, removes the Pochhammer tower, and lets the scalar zeta factor at all $`s`$; the coexact spectrum already has that form. The same step removes the positive-curvature lower bound on the gauge spectrum. It does not by itself establish that every Ricci-flat realization is gapless.
 
 MIT reads this as a structural opposition: the same positive curvature puts the floor under the gauge spectrum and generates the Pochhammer shift that blocks the factorization.
 
-*This is the structural interpretation of Theorem 1, not an extension of its scope. The theorem proves inaccessibility within the admissible class $`\mathcal{F}`$ in the sense of Definition 4. The curvature duality is the geometric explanation for the coincidence-condition layer, Lemmas 1 through 3; the encoding-degeneracy, framework-mismatch and character-completeness layers rest on separate mechanisms, as the table in section V records.*
+*The curvature duality explains the scalar route of Lemma 1. The other strategies of § IV rest on separate mechanisms, as the table in § V records, and Theorem 1 rests on Lemmas A to D.*
 
 ---
 
 ## VII. Discussion
 
-*The following sections interpret Theorem 1 within the structure of $`S^3/2I`$ and the Mode Identity Theory (MIT) framework. They do not extend the theorem's scope beyond the admissible class $`\mathcal{F}`$ and the sense of Definition 4.*
+*The following sections interpret Theorem 1 within the structure of $`S^3/2I`$ and the Mode Identity Theory (MIT) framework. They do not extend the theorem beyond its class $`\mathcal{L}`$.*
 
 Hurwitz's theorem establishes that $`\varphi=(1+\sqrt{5})/2`$ is the hardest irrational to approximate by rationals: its continued fraction $`[1;1,1,1,\ldots]`$ converges as slowly as possible. In the MIT framework that property does not place the matter wells ([Fibonacci Wells](../../framework/files/working/files/fibonacci-wells.md)). They continue the icosahedral branch recurrence on the 120-grid, a structural label the recurrence carries rather than a derived extremum, and why the realized positions continue it is open.
 
 The Riemann zeros encode the distribution of primes. The primes build the integers. The integers build the grid ($`120=2^3\times3\times5`$). The grid builds the domain. The domain builds the wells. $`S^3/2I`$ gives you $`\varphi`$ through the character field $`\mathbb{Q}(\sqrt{5})`$ and gives you the L-function structure through the McKay correspondence with $`E_8`$. The manifold does not choose between them. Its geometry requires both.
 
-Both $`\varphi`$ and the zeros are stability results: the most irrational number cannot be rationalized; the zeros cannot be spectrally accessed from this manifold, which is consistent with their role as the foundation of arithmetic structure. Whether zero inaccessibility is itself a stability requirement, a theorem rather than an observation, is an open question not addressed by the proof above.
+Both $`\varphi`$ and the zeros are stability results: the most irrational number cannot be rationalized; the zeros are read by this manifold's spectra, once in isolation, and not located by them, which is consistent with their role as the foundation of arithmetic structure. Whether that is itself a stability requirement, a theorem rather than an observation, is an open question not addressed by the proof above.
 
 Lemma 8 has a direct consequence for the MIT mass formula. The non-existence of a natural map between the phase position $`\Theta`$ and the spectral parameter $`s`$ means the fine structure of the mass formula cannot be completed by extending the spectral arithmetic. The bridge is not merely unbuilt; it is proved not to exist. The failed bridge therefore supplies no additional factor: the formula separates shells by the McKay distance and sets the fine structure within each shell by the torsion $`T^2(\rho \otimes \sigma)`$, each defined without reference to the spectral parameter. This is not a limitation of the framework; it is a constraint the geometry itself imposes.
 
@@ -428,28 +454,24 @@ $`S^3/2I`$ is a perfect arithmetic mirror. It reflects:
 - The golden ratio $`\varphi`$ from the character field $`\mathbb{Q}(\sqrt{5})`$
 - The L-function special values through torsion (79-digit precision)
 - The Dirichlet characters through spectral decomposition
-- Individual L-functions through the equivariant eta (C2: single beta function at all $`s`$)
-- The Riemann zeta function itself through C8: $`\eta([C8],s)=2^{s-1}[(1+2^{-s})L(s,\chi_3)-(1-2^{1-s})(1-3^{2-s})\zeta(s-1)]`$
+- A single character through the C2 eta ($`\beta`$ at $`s`$ and $`s-2`$)
+- The Riemann zeta function itself, in isolation, through the signature eta at C9 (Theorem 1)
 
 ---
 
 ## VIII. Scope
 
-**Theorem 1** (local to $`S^3/2I`$): For intrinsic natural operators in the admissible class $`\mathcal{F}`$ on $`S^3/2I`$, spectral vanishing does not constrain the zeros of any individual Dirichlet or Hecke L-function attached to the $`2I`$ arithmetic data, in the sense of Definition 4.
+**Theorem 1** is local to $`S^3/2I`$ at $`R=1`$ and to $`\mathcal{L}`$, the finite linear combinations of the admissible zeta and eta functions. Sums of products, quotients, and combinations with the Type 2 sums of Lemma 3 lie outside it.
 
-**Corollary 1** (local to $`S^3/2I`$): Within the admissible class $`\mathcal{F}`$ on $`S^3/2I`$, the four obstruction layers are exhaustive: coincidence condition, encoding degeneracy, framework mismatch, and character completeness. Every vanishing condition reduces to at least one of them.
+**Reminder on scope.** Isolation (Definition 4) is an identity of functions: an isolating construction carries the zeros of one L-function, and the C9 identity says nothing about where they lie. Theorem 1 finds one isolating construction on $`S^3/2I`$ and shows that every other combination of the Dirac functions and the signature etas mixes L-functions at two shifts. It is not a claim about other manifolds, or about every approach to L-function zeros.
 
-**Reminder on scope.** The impossibility claim is in the sense of Definition 4: a construction $`F`$ constrains zeros only if $`F(s_0)=0`$ implies $`L(s_0,\chi)=0`$. Shifted-equality relations and cross-function coincidences do not qualify. The theorem is narrower than a casual reading of "spectral inaccessibility" might suggest, and is not a claim about all possible approaches to L-function zeros.
-
-**Remark.** The curvature duality mechanism of § VI arises from the positive-curvature spectral shift realized by the round spherical geometry, and is not specific to the group $`2I`$. Whether an analogous obstruction follows from positive Ricci curvature more generally is the conjecture below.
-
-**Conjecture 1.** Positive Ricci curvature with finite $`\pi_1`$ imposes zero-inaccessibility in the sense of Definition 4 on any compact Riemannian manifold whose spectral zeta factors into Dirichlet L-functions. $`S^3/2I`$ is the extremal case: $`2I`$ is the largest exceptional discrete subgroup of $`\mathrm{SU}(2)`$, $`E_8`$ is the largest exceptional Lie algebra, and $`\lvert 2I\rvert=120`$ captures the maximum arithmetic structure through the McKay correspondence.
+**Remark.** The curvature shift of § VI governs the scalar Laplacian on every round spherical space form and is not specific to $`2I`$. On the same metric, curl and the coexact Laplacian have unshifted spectra.
 
 ---
 
 ## IX. Physics Application
 
-The spectral inaccessibility theorem is a negative result for the RH direction. For physics it is a resource and a constraint rather than a verdict: the same L-function structure that cannot constrain zeros feeds the physical comparisons and structural readings of the MIT framework, at the statuses their own pages give them, and Lemma 8 closes one route to completing the mass formula (§VII).
+Theorem 1 is a negative result for the RH direction: one construction isolates $`\zeta`$, and the identity locates none of its zeros. For physics it is a resource and a constraint rather than a verdict: the same L-function structure, read without locating any zero, feeds the physical comparisons and structural readings of the MIT framework, at the statuses their own pages give them, and Lemma 8 closes one route to completing the mass formula (§ VII).
 
 | Spectral object | Role in § III | MIT physics role |
 |----------------|--------------|-----------------|
