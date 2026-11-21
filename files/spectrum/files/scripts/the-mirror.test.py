@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""The Mirror (2026-11-20, section V added 2026-11-21): reproducible verification artifact
-for sections III and V.
+"""The Mirror (2026-11-20; sections IV and V added 2026-11-21): reproducible verification
+artifact for sections III, IV and V.
 
 Rebuilds, from the McKay graph of 2I and Bar's Dirac spectrum on S^3/2I, the spectral
 results that the-mirror.md section III reports, and certifies them gate by gate:
@@ -39,7 +39,14 @@ results that the-mirror.md section III reports, and certifies them gate by gate:
        blocks V_{l-1} x V_{l+1} (+) and V_{l+1} x V_{l-1} (-); its class values at s = 0 are
        cot^2(a/2), its R0 value 361/180 meets Ruberman-Saveliev with eta_Dir(R0) = 1079/720,
        1/2 eta_Dir + 1/8 eta_Sign = 1, the C9 eta equals 2^(2-s)(1 - 2^(2-s)) zeta(s-1) at real
-       and complex s with no shift-0 layer, and among the signature etas only C9 drops a layer.
+       and complex s with no shift-0 layer, and among the signature etas only C9 drops a layer;
+  G14  Lemma 1 of section IV: at every class the scalar zeta's piece sum c_n (n^2-1)^-s and its
+       factored form agree at s = 0 in value and derivative, so Dowker and Chang's cancellation
+       F = Z_- + Z_+ - 2 Z_0 (eigenvalues (n-1)^2, (n+1)^2) has F(0) = F'(0) = 0, while the
+       Pochhammer tower's share of Z_0'(0) is nonzero at every class and irrep and F(1/2+i) != 0;
+  G15  the coexact Laplacian of Lemma C: its class trace at m^2 is 2m sin(ma) cot(a) - 2cos(ma),
+       with 2(m^2-1) and 2(-1)^m (m^2-1) at C1 and C2; C9 alone has one power of m, its trace is
+       2(-1)^(k+1) at m = 2k and 0 at odd m, and so its zeta is 2 4^-s (1 - 2^(1-2s)) zeta(2s).
 
 The torsions themselves are recomputed from the spectrum by
 files/framework/files/working/files/scripts/torsion-correction.test.py; G10 checks that the
@@ -57,8 +64,8 @@ Meta-guard (as in torsion-correction.test.py): every gate has a stable id, every
 names the gate it attacks, and --mutation-tests fails unless the mutation targets equal the
 gate ids and every mutation turns its gate red.
 
-  python3 the-mirror.test.py                   # verify (13 gates)
-  python3 the-mirror.test.py --mutation-tests  # 13 defects, each must turn its gate red
+  python3 the-mirror.test.py                   # verify (15 gates)
+  python3 the-mirror.test.py --mutation-tests  # 15 defects, each must turn its gate red
 
 Needs mpmath.
 """
@@ -640,6 +647,101 @@ def g13(defect):
     ok &= rall == 7 and r1 == 7 and r0 == 6                                  # only C9 drops a layer
     return ok, (f"eta_Sign(R0, 0) = {e0[IX['R0']]}, 1/2 eta_Dir + 1/8 eta_Sign = {rs}; C9 closed form to "
                 f"{mp.nstr(worst, 3)}; signature etas span {rall}, shift-1 rank {r1}, shift-0 rank {r0}")
+
+
+def lemma1_series(frac, shift, s):
+    """sum_{n>=2} c_n (n+shift)^-s for the class of angle pi*frac, where c_n is the scalar trace on
+    V_{n-1} x V_{n-1} (n sin(n a)/sin a; n^2 at C1; (-1)^(n-1) n^2 at C2), continued in s through
+    Hurwitz zetas over one period of c_n. At zeta_H(1, x) the weights of a period sum to zero, so
+    the poles cancel and the finite part -psi(x)/P remains."""
+    central = frac in (0, 1)
+    P = 2 if central else 2 * frac.denominator
+    a = ang(frac)
+    if central:
+        per = (lambda n: 1) if frac == 0 else (lambda n: (-1) ** (n - 1))
+        terms = [(2, 1), (1, -2 * shift), (0, shift * shift)]
+    else:
+        per = lambda n: mp.sin(n * a) / mp.sin(a)
+        terms = [(1, 1), (0, -shift)]
+    total, pole = mp.mpf(0), mp.mpf(0)
+    for r in range(1, P + 1):
+        w = per(r - shift)
+        for j, e in terms:
+            if e == 0 or abs(w) < mp.mpf(10) ** -20:
+                continue
+            if abs(s - j - 1) < mp.mpf(10) ** -20:
+                total += w * e * (-mp.digamma(mp.mpf(r) / P)) / P
+                pole += w * e
+            else:
+                total += w * e * mp.power(P, j - s) * mp.zeta(s - j, mp.mpf(r) / P)
+    if abs(pole) > mp.mpf(10) ** -15:
+        raise AssertionError("a Hurwitz pole does not cancel")
+    for m in range(1, 2 + shift):                 # the terms with n < 2
+        n = m - shift
+        total -= (per(n) * n * n if central else per(n) * n) * mp.power(m, -s)
+    return total
+
+
+def lemma1_class(frac, drop_tower=False, kmax=45):
+    """(F(0), F'(0), the tower's share of Z'(0), F(1/2 + i)) at one class, with
+    Z(s) = sum_k (s)_k/k! H_k(s), H_k(s) = sum c_n n^(-2s-2k), and F = Z_- + Z_+ - 2Z."""
+    H = lambda s, k: lemma1_series(frac, 0, 2 * s + 2 * k)
+    tail = sum(H(0, k) / k for k in range(1, kmax))
+    dZ = mp.diff(lambda s: H(s, 0), 0) + (0 if drop_tower else tail)
+    Zm = lambda s: lemma1_series(frac, -1, 2 * s)
+    Zp = lambda s: lemma1_series(frac, 1, 2 * s)
+    F0 = Zm(0) + Zp(0) - 2 * H(0, 0)
+    dF = mp.diff(Zm, 0) + mp.diff(Zp, 0) - 2 * dZ
+    s1 = mp.mpc(0.5, 1)
+    Zs = sum(mp.rf(s1, k) / mp.factorial(k) * H(s1, k) for k in range(kmax))
+    return F0, dF, tail, Zm(s1) + Zp(s1) - 2 * Zs
+
+
+@gate("G14", "the Pochhammer tower dropped from Z'(0)")
+def g14(defect):
+    with mp.workdps(30):
+        rows = {lab: lemma1_class(a, drop_tower=defect) for lab, a, order, size in CLASSES}
+        tiny = mp.mpf(10) ** -20
+        w0 = max(abs(r[0]) for r in rows.values())
+        w1 = max(abs(r[1]) for r in rows.values())
+        t_cls = min(abs(r[2]) for r in rows.values())
+        t_irr = min(abs(sum(cl[3] * CHI[i][c] * rows[cl[0]][2] for c, cl in enumerate(CLASSES)) / 120) for i in range(9))
+        f_s = min(abs(r[3]) for r in rows.values())
+        ok = w0 < tiny and w1 < tiny and t_cls > mp.mpf("0.01") and t_irr > mp.mpf("0.001") and f_s > mp.mpf("0.1")
+        return ok, (f"F(0), F'(0) at most {mp.nstr(w0, 2)}, {mp.nstr(w1, 2)} over the nine classes; tower share "
+                    f"of Z'(0) at least {mp.nstr(t_cls, 3)} per class (C9 {mp.nstr(rows['C9'][2], 6)}), "
+                    f"{mp.nstr(t_irr, 3)} per irrep; |F(1/2+i)| at least {mp.nstr(f_s, 3)}")
+
+
+def coexact_trace(i, m, signed=False):
+    """Multiplicity of irrep i at the coexact eigenvalue m^2, m = l + 1 >= 2: (m+1) N(sigma, m-2) from
+    V_{l-1} x V_{l+1} and (m-1) N(sigma, m) from V_{l+1} x V_{l-1}; signed gives curl's eta instead."""
+    return (m + 1) * MULT_SIG[m - 2][i] + (-1 if signed else 1) * (m - 1) * MULT_SIG[m][i]
+
+
+@gate("G15", "the coexact trace taken signed, as curl's eta")
+def g15(defect):
+    c9 = [int(mp.nint(CHI[i][8])) for i in range(9)]
+    ok = all(sum(c9[i] * coexact_trace(i, m, defect) for i in range(9)) == (0 if m % 2 else 2 * (-1) ** (m // 2 + 1))
+             for m in range(2, 600))
+    worst = mp.mpf(0)
+    for c, (lab, a, order, size) in enumerate(CLASSES):
+        for m in range(2, 300):
+            v = sum(CHI[i][c] * coexact_trace(i, m) for i in range(9))
+            if lab == "C1":
+                f = 2 * (m * m - 1)
+            elif lab == "C2":
+                f = 2 * (-1) ** m * (m * m - 1)
+            else:
+                f = 2 * m * mp.sin(m * ang(a)) * mp.cos(ang(a)) / mp.sin(ang(a)) - 2 * mp.cos(m * ang(a))
+            worst = max(worst, abs(v - f))
+    single = [lab for lab, a, order, size in CLASSES if lab not in ("C1", "C2") and abs(mp.cos(ang(a))) < TINY]
+    direct = lambda s: 2 * mp.power(4, -s) * mp.power(2, -2 * s) * (mp.zeta(2 * s, mp.mpf(1) / 2) - mp.zeta(2 * s, 1))
+    closed = lambda s: 2 * mp.power(4, -s) * (1 - mp.power(2, 1 - 2 * s)) * mp.zeta(2 * s)
+    gap = max(abs(direct(s) - closed(s)) for s in (mp.mpf("1.7"), mp.mpc("0.8", "5")))
+    ok = ok and worst < TINY and single == ["C9"] and gap < TINY
+    return ok, (f"C9 coexact trace 2(-1)^(k+1) at m = 2k, 0 at odd m, m < 600; class traces to {mp.nstr(worst, 2)}; "
+                f"one power of m only at {', '.join(single)}; closed form to {mp.nstr(gap, 2)}")
 
 
 def run(gid, defect=False):

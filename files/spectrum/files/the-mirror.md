@@ -43,7 +43,7 @@ $`\mathcal{L}\subset\mathcal{F}`$ is the set of finite linear combinations of th
 F(s)=c^{s}\,a(s)\,L(s-p,\chi)
 ```
 
-for a constant $`c>0`$, an integer $`p`$ and a nonzero Dirichlet polynomial $`a(s)`$, a finite sum $`\sum_{n\le N}a_n n^{-s}`$. Away from the poles of $`L`$, the zeros of an isolating $`F`$ are those of $`L(s-p,\chi)`$ and the explicit zeros of $`a(s)`$. An equation $`\sum_k a_k(s)\,L(s-p_k,\chi_k)=0`$ among two or more distinct pairs $`(p_k,\chi_k)`$, with each $`\chi_k`$ primitive and each $`a_k(s)`$ a nonzero Dirichlet polynomial, is a *coincidence condition*; by Lemma A of § V it never reduces to a single L-function.
+for a constant $`c>0`$, an integer $`p`$ and a nonzero Dirichlet polynomial $`a(s)`$, a finite sum $`\sum_{n\le N}a_n n^{-s}`$. Isolation reads the L-function at the argument $`s-p`$; the coexact Laplacian's C9 zeta reads $`\zeta(2s)`$ instead (after Lemma C of § V), and this definition does not count it. Away from the poles of $`L`$, the zeros of an isolating $`F`$ are those of $`L(s-p,\chi)`$ and the explicit zeros of $`a(s)`$. An equation $`\sum_k a_k(s)\,L(s-p_k,\chi_k)=0`$ among two or more distinct pairs $`(p_k,\chi_k)`$, with each $`\chi_k`$ primitive and each $`a_k(s)`$ a nonzero Dirichlet polynomial, is a *coincidence condition*; by Lemma A of § V it never reduces to a single L-function.
 
 ---
 
@@ -176,42 +176,42 @@ The per-irrep etas twisted by each of the three flat connections (trivial, stand
 
 ## IV. Lemmas 1–8
 
-The eight lemmas test specific strategies for turning the reading of § III into a hold on L-function zeros; § V proves Theorem 1. Three supporting propositions are interspersed before the lemmas they enable: Propositions 1 and 2 precede Lemma 4; Proposition 3 precedes Lemma 7.
+The eight lemmas test strategies for turning the reading of § III into a hold on L-function zeros, and § V proves Theorem 1. Propositions 1 and 2 support Lemma 4, and Proposition 3 supports Lemma 7.
 
 ---
 
 **Lemma 1 (Curvature / Pochhammer Obstruction).**
 **Strategy defeated:** Extend the torsion's selectivity (2 of 16 characters mod 60) from $`s=0`$ to a strip containing the critical strip.
 
-*Proof.* The scalar Laplacian on $`S^3/2I`$ has eigenvalues $`l(l+2)=(l+1)^2-1`$. The Ricci curvature shift "-1" generates a Pochhammer expansion:
+*Proof.* The scalar Laplacian on $`S^3/2I`$ has eigenvalues $`l(l+2)=(l+1)^2-1`$, the squares $`(l+1)^2`$ shifted down by the curvature. Expanding $`(l(l+2))^{-s}=(l+1)^{-2s}\left(1-(l+1)^{-2}\right)^{-s}`$ binomially gives the Pochhammer tower
 
 ```math
 Z_{0,\sigma}(s)=\sum_{k\geq0}\frac{(s)_k}{k!}\cdot\widetilde{H}_k(s)
 ```
 
-At $`s=0`$: $`(0)_k=0`$ for $`k\geq1`$ collapses the tower to a single term, the mechanism that produces maximum selectivity. At general $`s`$: $`(s)_k\neq0`$, the full infinite tower activates, and no finite closed form exists. Dowker's cancellation formula confirms $`F(\gamma;0)=F'(\gamma;0)=0`$ only at $`s=0`$.
+with $`\widetilde{H}_k(s)=\sum_{l\geq1}m_l(\sigma)\,(l+1)^{-2s-2k}`$, where $`m_l(\sigma)=N(\sigma,l)(l+1)`$ is the multiplicity of $`\sigma`$ at $`l(l+2)`$ (the block $`V_l\boxtimes V_l`$).
 
-No linear combination $`a\cdot Z_0+b\cdot Z_1`$ with $`a\neq0`$ factors at general $`s`$: the Pochhammer tower from $`Z_0`$ cannot be cancelled by the unshifted $`Z_1`$. The Lichnerowicz formula $`D^2=\nabla^*\nabla+R_\text{scalar}/4`$ connects Dirac eigenvalues to scalar Laplacian eigenvalues through an additive constant shift ($`3/(2R^2)`$). This does not recreate the Pochhammer obstruction for the Dirac operator, whose spectral zeta does factor finitely at all $`s`$ (§ III.B). The obstruction here is specific to the scalar/torsion route: the curvature shift blocks the extension of torsion selectivity from $`s=0`$ to general $`s`$. The Dirac route avoids this obstruction but faces a different one: insufficient character selectivity (in the coprime sector, 6 to 12 of 32 characters survive for every irrep, so each Dirac zeta stays a combination of several L-functions).
+The torsion is built from $`Z_{0,\sigma}'(0)`$. At $`s=0`$ the factor $`(s)_k/k!`$ vanishes for $`k\geq1`$, but its derivative $`1/k`$ does not, so the tower stays in $`Z_{0,\sigma}'(0)`$. What makes $`s=0`$ exact is that the eigenvalue factors as $`l\cdot(l+2)`$. Let $`Z_\mp`$ have the multiplicities $`m_l(\sigma)`$ and the eigenvalues $`l^2`$ and $`(l+2)^2`$, whose logarithms average to $`\log l(l+2)`$. Dowker and Chang's cancellation function, $`F(s)=Z_-(s)+Z_+(s)-2Z_{0,\sigma}(s)`$, vanishes at $`s=0`$ with its derivative (arXiv:0904.0744), so there the scalar zeta has the value and derivative of $`\tfrac12(Z_-+Z_+)`$, whose eigenvalues are perfect squares, and that gives the torsion's closed forms. At other $`s`$, $`F`$ is not identically zero, and off the nonpositive integers $`(s)_k\neq0`$ for every $`k`$, so the tower does not terminate.
 
-The torsion's selectivity is a property of $`s=0`$, not a property that extends. The curvature that gives the Yang-Mills mass gap blocks the general-<i>s</i> factorization for the scalar route. $`\square`$
+Write $`Z_1^{\mathrm{coex}}`$ for the zeta function of the Laplacian on coexact 1-forms, whose eigenvalues $`(l+1)^2`$ are unshifted; the exact 1-forms repeat the nonzero scalar spectrum, so the full 1-form zeta is $`Z_0+Z_1^{\mathrm{coex}}`$. No linear combination $`a\cdot Z_0+b\cdot Z_1^{\mathrm{coex}}`$ with $`a\neq0`$ factors at general $`s`$: the two spectra are disjoint, and $`Z_0`$, supported on $`\{k^2-1\}`$, is not a finite combination of L-functions (the remark after Lemma A, and the count in Lemma C, of § V). The Lichnerowicz formula $`D^2=\nabla^*\nabla+R_\text{scalar}/4`$ shifts the spinor Laplacian $`\nabla^*\nabla`$ by the constant $`3/(2R^2)`$, but the Dirac eigenvalues $`\pm(n+3/2)/R`$ themselves are unshifted, and the Dirac zeta factors finitely at all $`s`$ (§ III.B). The obstruction here is specific to the scalar/torsion route: the curvature shift blocks the extension of torsion selectivity from $`s=0`$ to general $`s`$. The Dirac route avoids this obstruction but faces a different one: insufficient character selectivity (in the coprime sector, 6 to 12 of 32 characters survive for every irrep, so each Dirac zeta stays a combination of several L-functions).
+
+The torsion's selectivity is a property of $`s=0`$, not a property that extends. The curvature that gaps the linearized gauge spectrum (§ VI) blocks the general-<i>s</i> factorization for the scalar route. $`\square`$
 
 ---
 
 **Lemma 2 (Coincidence is Not Vanishing).**
 **Strategy defeated:** Use the C2 equivariant eta's single-character selectivity at all $`s`$ to isolate $`\beta(s)`$.
 
-*Proof.* The zeros of $`\eta([-e],s)`$ satisfy $`\beta(s)=\beta(s-2)`$. This is a coincidence condition (Definition 4): it equates two values of $`\beta`$ at shifted arguments, and by Lemma A of § V the two shifts never merge, so the C2 eta does not isolate $`\beta`$. $`\square`$
-
-*Remark (non-load-bearing, confirmatory only).* Numerical evaluation at the first 10 nontrivial zeros of $`\beta`$ confirms $`\lvert\beta(s_0-2)\rvert`$ is far from zero in each case (values 13.98 to 341.84 at 50-digit precision). This is consistent with but not required by the proof above, which rests on Definition 4 and Lemma A.
+*Proof.* The zeros of $`\eta([-e],s)`$ satisfy $`\beta(s)=\beta(s-2)`$. This is a coincidence condition (Definition 4): it equates two values of $`\beta`$ at shifted arguments, and by Lemma A of § V the two shifts never merge, so the C2 eta does not isolate $`\beta`$. Nor does it vanish at a nontrivial zero of $`\beta`$. Let $`\beta(s_0)=0`$ with $`0<\mathrm{Re}\,s_0<1`$. Then $`\mathrm{Re}(s_0-2)`$ lies in $`(-2,-1)`$, where $`\beta`$ has no zeros: by the functional equation, its zeros with negative real part are the trivial zeros $`-1,-3,-5,\ldots`$. So $`\eta([-e],s_0)=-2^{s_0-1}\beta(s_0-2)\neq0`$, and at $`s_0+2`$ the C2 eta is $`2^{s_0+1}\beta(s_0+2)`$, which the Euler product keeps nonzero. $`\square`$
 
 ---
 
 **Lemma 3 (Oscillatory Weighting Degrades Selectivity).**
 **Strategy defeated:** Couple the SU(2) character weight $`\chi_j(g)`$ inside the spectral sum (Type 2 equivariant eta) to achieve deeper group-theoretic constraints on the canonical Dirac eta data.
 
-**Claim:** For the canonical equivariant Dirac eta invariant of $`S^3/2I`$, constructed from the actual Dirac spectrum without added spectral projectors or custom level filters, Type 2 weighting never reduces Dirichlet character support below the Type 1 baseline.
+**Claim:** For the canonical equivariant Dirac eta function of $`S^3/2I`$, constructed from the actual Dirac spectrum without added spectral projectors or custom level filters, Type 2 weighting never reduces Dirichlet character support below the Type 1 baseline.
 
-*Proof (C2 case, structural).* Both types reduce to the same linear combination form via the McKay decomposition identity $`\chi_j(g)=\sum_\sigma m(\sigma,j)\chi_\sigma(g)`$. The shared outer structure conceals a critical difference in the inner kernel: $`\eta_D(\sigma,s)`$ uses only the diagonal McKay kernel $`K_{\sigma\sigma}(s)`$, while $`\widetilde{\eta}_{\sigma}(s)`$ uses the full off-diagonal matrix $`K_{\sigma\sigma^\prime}(s)`$.
+*Proof (C2 case, structural).* Both types reduce to the same linear combination form via the McKay decomposition identity $`\chi_j(g)=\sum_\sigma m(\sigma,j)\chi_\sigma(g)`$. Type 1 applies the characters of $`2I`$ after the spectral sum; Type 2 puts the SU(2) character $`\chi_j(g)`$ of each level $`j`$ inside it, and $`\widetilde{\eta}_{\sigma}(s)`$ is the part of the Type 2 sum that the decomposition assigns to $`\sigma`$.
 
 | | Formula |
 |---|---------|
@@ -238,7 +238,7 @@ both finite and exact over the cyclotomic field $`\mathbb{Q}(\zeta_{2q})`$. A ch
 | C7, C8, C9 (orders 6, 3, 4) | 1 | 12 |
 | C3 to C6 (orders 10 and 5) | 2 | 16 |
 
-The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The full Type 1 eta retains two characters for C7 to C9 and four for C3 to C6 (§ III.D). In all 7 cases Type 2 strictly exceeds Type 1. The mechanism is the two-component structure: the slope term $`32\cdot S_1(g,\chi)`$ preserves the $`S_1`$ support, while the nonconstant intercept term $`S_0(g,\chi)`$ activates additional characters not present in Type 1. Type 2 is strictly worse than Type 1 for all non-central classes. $`\square`$
+The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The Type 2 counts come from the original computation: $`B_r`$ is the intercept in the period index $`k`$, so they are fitted in $`k`$ rather than in the numerator $`120k+r`$, and no gate rebuilds them; G09 rebuilds the $`S_1`$ column. The full Type 1 eta retains two characters for C7 to C9 and four for C3 to C6 (§ III.D). In all 7 cases Type 2 strictly exceeds Type 1. The mechanism is the two-component structure: the slope term $`32\cdot S_1(g,\chi)`$ preserves the $`S_1`$ support, while the nonconstant intercept term $`S_0(g,\chi)`$ activates additional characters not present in Type 1. Type 2 is strictly worse than Type 1 for all non-central classes. $`\square`$
 
 ---
 
@@ -255,7 +255,7 @@ The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The full Type 
 
 **Proposition 2 (Combination Closure).** Every construction $`F\in\mathcal{F}`$ built from Definition 1 operators by the operations of Definition 2 has L-function character content contained within the finite character algebra determined by the $`2I`$ group data. No genuinely new arithmetic source enters from finite additive or multiplicative combination.
 
-*Proof.* Every spectral invariant built from a Definition 1 operator decomposes into the algebra generated by character-indexed L-expressions: finite linear combinations of terms $`\chi(n)\cdot f(n)`$ where $`\chi`$ ranges over Dirichlet characters mod 120 and $`f(n)`$ encodes the eigenvalue structure. Under finite addition, support on a character set $`S`$ remains on $`S`$. Under finite multiplication, products may mix within the ambient character algebra mod 120, but cannot introduce characters from outside that algebra; no new arithmetic source enters beyond what the $`2I`$ group data and McKay multiplicities already determine. Vacuum twists leave equivariant class selection invariant: $`\eta_\rho([g])=\chi_\rho(g)\cdot\eta([g])`$, confirming no new character support enters through twisting. The finite character algebra over $`U(120)`$ is the ceiling. $`\square`$
+*Proof.* Every spectral invariant built from a Definition 1 operator decomposes into the algebra generated by character-indexed L-expressions: finite linear combinations of terms $`\chi(n)\cdot f(n)`$ where $`\chi`$ ranges over Dirichlet characters mod 120 and $`f(n)`$ encodes the eigenvalue structure. Under finite addition, support on a character set $`S`$ remains on $`S`$. Under finite multiplication, products may mix within the ambient character algebra mod 120, but cannot introduce characters from outside that algebra; no new arithmetic source enters beyond what the $`2I`$ group data and McKay multiplicities already determine. Twisting by a flat connection multiplies each class eta by a character value, $`\eta_\rho([g])=\chi_\rho(g)\cdot\eta([g])`$, so no new character support enters. The finite character algebra over $`U(120)`$ is the ceiling. $`\square`$
 
 ---
 
@@ -264,9 +264,9 @@ The $`S_1`$ column counts the $`f_r`$ layer of the Type 2 weight. The full Type 
 
 *Proof.* By Propositions 1 and 2, every $`F\in\mathcal{F}`$ has character content among the characters of conductor dividing 120. The candidates within $`\mathcal{F}`$:
 
-- **Hodge duality:** $`p`$-form Laplacians for $`p=2,3`$ are isospectral with $`p=1,0`$. Only two independent spectral zetas exist, both already computed, and no combination of them isolates an L-function (Lemma C of § V).
+- **Hodge duality:** the $`p`$-form Laplacians for $`p=2,3`$ are isospectral with $`p=1,0`$, and the exact 1-forms repeat the scalar spectrum, so the independent zetas are $`Z_0`$ and $`Z_1^{\mathrm{coex}}`$ of Lemma 1. No combination of them isolates an L-function (Lemma C of § V).
 - **Signature operator:** its eta comes from curl on coexact 1-forms, whose blocks differ from the Dirac operator's. At C9 it isolates $`\zeta(s-1)`$ (Lemma D of § V): the strategy's one success, and the only isolation in $`\mathcal{L}`$.
-- **Vacuum twists:** Three flat connections produce three distinct per-irrep eta vectors, but equivariant class-level selection is invariant. C9 is killed by both nontrivial twists, so the isolation needs the trivial connection; C7 is perfectly vacuum-invariant.
+- **Flat twists:** the three flat connections give three distinct per-irrep eta vectors, but twisting multiplies each class eta by a character value (§ III.E). Both nontrivial twists vanish at C9, where $`\chi_{R1}`$ and $`\chi_{R2}`$ are zero, so the isolation needs the trivial connection; at C7 both characters equal 1, and the eta is unchanged.
 - **Combined invariants:** Products $`T^2(\sigma)\cdot\eta(\sigma,0)`$ inherit factor arithmetic. No emergent L-basis from combining the two spectral invariants.
 
 The survey is complete. The signature operator at C9 is the one candidate that avoids the obstructions of Lemmas 1 to 3, and its identity locates none of the zeros it carries (§ II). $`\square`$
@@ -276,38 +276,30 @@ The survey is complete. The signature operator at C9 is the one candidate that a
 **Lemma 5 (Finite-Product Collapse).**
 **Strategy defeated:** Use multiplicative (Selberg/Ruelle) encoding of spectral data, exploiting positivity properties that additive encoding lacks.
 
-*Proof.* The Ruelle zeta on $`S^3/2I`$ is a finite product over 3 geometric-primitive conjugacy classes (C3 order 10, C7 order 6, C9 order 4). The zeros are roots of unity (holonomy phases), not Laplacian eigenvalues. No functional equation of Selberg type exists. Integer-spin twists give $`\det(I-\sigma(\gamma))=0`$. The passage from sums to products is invertible for finite products and introduces no new constraints.
-
-The Selberg zeta machinery requires Anosov (hyperbolic) dynamics. The round $`S^3`$ has periodic (Zoll) geodesic flow. Product-side zeros are holonomy/cyclotomic zeros determined by group elements, not by spectral parameters or L-function arguments. $`\square`$
+*Proof.* The round metric on $`S^3/2I`$ is Besse: every geodesic closes by length $`\pi`$, since $`-e\in2I`$, and those along the axes of the elements of orders 10, 6 and 4 close sooner, at $`\pi/5`$, $`\pi/3`$ and $`\pi/2`$. The closed geodesics come in continuous families, so the Selberg and Ruelle Euler products, taken over the isolated closed orbits of an Anosov flow, do not apply, and choosing one factor per family does not define a canonical product. This route supplies no Selberg-type constraint on zeros. $`\square`$
 
 ---
 
 **Lemma 6 (Framework Disconnect).**
-**Strategy defeated:** Connect spectral L-functions to the icosahedral Artin L-function via Langlands/modularity, using known automorphicity (Khare-Wintenberger) to constrain the spectral side.
+**Strategy defeated:** Connect spectral L-functions to an icosahedral Artin L-function via Langlands/modularity, using its conjectured automorphy to constrain the spectral side.
 
-*Proof.* The spectral L-functions are Dirichlet L-functions over $`\mathbb{Q}`$, arising from Fourier analysis of McKay multiplicities (modulus 120). The Artin L-function $`L(s,R_1)`$ is a 2-dimensional L-function attached to a Galois representation, decomposing via Brauer induction into Hecke L-functions over intermediate number fields.
+*Proof.* The spectral L-functions are Dirichlet L-functions over $`\mathbb{Q}`$, arising from Fourier analysis of McKay multiplicities (modulus 120). An icosahedral Artin L-function $`L(s,R_1)`$, for a Galois extension of $`\mathbb{Q}`$ with group $`2I`$, is a 2-dimensional L-function, decomposing via Brauer induction into Hecke L-functions over intermediate number fields.
 
-Brauer decomposition: $`R_1=\mathrm{Ind}(C_6,\lambda_6)+\mathrm{Ind}(C_{10},\lambda_{10})-\mathrm{Ind}(C_4,\lambda_4)`$. This is virtual (negative exponent), not isolable. Known icosahedral extensions have discriminants far larger than 120, making conductor overlap numerically impossible. Shared prime support $`\{2,3,5\}`$ is forced by $`\lvert 2I\rvert=120`$ and carries no analytic content.
+Brauer decomposition: $`R_1=\mathrm{Ind}(C_6,\lambda_6)+\mathrm{Ind}(C_{10},\lambda_{10})-\mathrm{Ind}(C_4,\lambda_4)`$. This is virtual (negative exponent), not isolable. Shared prime support $`\{2,3,5\}`$ is forced by $`\lvert 2I\rvert=120`$ and carries no analytic content.
 
-The spectral and arithmetic L-functions attached to $`2I`$ are different mathematical objects. Modularity of the Artin L-function does not constrain the spectral Dirichlet L-functions. $`\square`$
+The spectral and arithmetic L-functions attached to $`2I`$ are different mathematical objects. The Artin L-function's automorphy, open for image $`2I`$, would not constrain the spectral Dirichlet L-functions. $`\square`$
 
 ---
 
-**Proposition 3 (Kernel Reduction).** Let $`\sigma`$ be any irrep of $`2I`$ and $`A`$ any admissible operator on sections of $`E_\sigma`$ over $`S^3/2I`$. Then: (1) $`K_t^A(x,x)=\sum_{\gamma\in2I}\sigma(\gamma)\cdot k_t(d(x,\gamma x))`$ with $`k_t`$ scalar; (2) every spectral invariant reduces to $`\sum_{[g]\subset2I}\chi_\sigma(g)\cdot G_t([g])`$; (3) no basis-independent content of the kernel lies outside the character table of $`2I`$.
+**Proposition 3 (Kernel Reduction).** Let $`\sigma`$ be any irrep of $`2I`$ and $`A`$ any admissible operator on sections of $`E_\sigma`$ over $`S^3/2I`$. Then: (1) $`K_t^A([x],[x])=\sum_{\gamma\in2I}U_\gamma\,\widetilde{K}_t^A(x,\gamma x)`$, where $`\widetilde{K}_t^A`$ is the heat kernel of the lifted operator on $`S^3`$ and $`U_\gamma`$ identifies the fibers by the deck transformation $`\gamma`$, including the twist $`\sigma(\gamma)`$; (2) every spectral invariant reduces to $`\sum_{[g]\subset2I}\chi_\sigma(g)\cdot G_t([g])`$; (3) no basis-independent content of the kernel lies outside the character table of $`2I`$.
 
-*Proof.* The right-<i>SU(2)</i> action commutes with any natural operator, so the heat kernel depends only on geodesic distance. Combined with left-<i>2I</i> equivariance:
-
-```math
-\tilde{K}_t^A(x,\gamma x) = \sigma(\gamma)\cdot k_t(d(x,\gamma x))
-```
-
-Every spectral invariant is defined via the integrated diagonal trace:
+*Proof.* The heat kernel of the quotient is the sum of the lifted kernel over the deck transformations, which is (1). Every spectral invariant is defined via the integrated diagonal trace:
 
 ```math
 \int_M\mathrm{Tr}[K_t^A(x,x)]\,dx = \sum_{\gamma\in2I}\chi_\sigma(\gamma)\cdot G_t(\gamma)
 ```
 
-The matrix $`\sigma(\gamma)`$ collapses to the scalar $`\chi_\sigma(\gamma)`$ under the trace. Any basis-independent function of the residual matrix is a symmetric function of eigenvalues, expressible as characters at powers of $`\gamma`$, which land in known conjugacy classes. The character table is exhaustive. $`\square`$
+The matrix $`\sigma(\gamma)`$ collapses to the scalar $`\chi_\sigma(\gamma)`$ under the trace, and conjugation by any $`h\in\mathrm{SU}(2)`$ is an isometry of $`S^3`$ that commutes with the lifted operator, so $`G_t(\gamma)`$ depends only on the class of $`\gamma`$. Any basis-independent function of the residual matrix is a symmetric function of eigenvalues, expressible as characters at powers of $`\gamma`$, which land in known conjugacy classes. The character table is exhaustive. $`\square`$
 
 ---
 
@@ -320,16 +312,16 @@ The matrix $`\sigma(\gamma)`$ collapses to the scalar $`\chi_\sigma(\gamma)`$ un
 - **SU(2) Wigner $`D`$-matrices $`D^j(g)`$:** Diagonal for conjugacy class representatives: $`D^j(g)=\mathrm{diag}(e^{2im\alpha})`$. Off-diagonal entries are basis-dependent. $`\det D^j(g)=1`$ identically. Any basis-independent function is expressible as characters at powers of $`g`$ (Proposition 3).
 - **Operator kernel:** By Proposition 3, the kernel reduces to character data. Redundant given the character ceiling.
 
-The character table is the complete basis-independent invariant of the group action on $`S^3`$. $`\square`$
+The class-indexed traces of Proposition 3 are class functions on $`2I`$, and the irreducible characters span them. $`\square`$
 
 ---
 
 **Lemma 8 ($`\Theta\leftrightarrow s`$ Bridge).**
-**Strategy defeated:** Construct a natural map between the phase position $`\Theta`$ (from the scaling law $`C(\Theta)=2\sin^2(\pi\Theta)`$) and the spectral parameter $`s`$, exploiting their shared $`Z_2`$ symmetry.
+**Strategy defeated:** Construct a natural map between the phase position $`\Theta`$ of the scaling law of Mode Identity Theory (MIT) and the spectral parameter $`s`$, exploiting their shared $`Z_2`$ symmetry. In the scaling law, $`C(\Theta)=2\sin^2(\pi\Theta)`$ is the intensity of the first positive mode on the unit interval, normalized to unit mean ([One Law](../../framework/README.md#one-law)).
 
-*Proof.* Four approaches on $`S^1`$ (heat kernel, theta function, Poisson summation, direct decomposition) prove no such map exists. Every eigenspace on $`S^1`$ with anti-periodic BC is 2-dimensional (sin and cos). $`C(\Theta)`$ depends on choosing $`\sin`$ over $`\cos`$. The spectral zeta sees only eigenvalues and multiplicities, blind to this choice. The two $`Z_2`$ symmetries, $`C(\Theta)=C(1-\Theta)`$ from spatial reflection and $`\xi(s)=\xi(1-s)`$ from Poisson/modular duality, arise from different mechanisms and are not related by a natural map.
+*Proof.* On $`S^1`$ with anti-periodic boundary conditions every eigenspace is two-dimensional, spanned by $`\sin`$ and $`\cos`$, and rotating $`S^1`$ mixes the two. $`C(\Theta)`$ depends on choosing $`\sin`$ over $`\cos`$, so a rotation changes it, while the spectral zeta, which sees only eigenvalues and multiplicities, does not change. Thus the spectral zeta alone cannot recover a distinguished $`\Theta`$, and each of the four routes tried on $`S^1`$ (heat kernel, theta function, Poisson summation, direct decomposition) meets this. The two $`Z_2`$ symmetries, $`C(\Theta)=C(1-\Theta)`$ from spatial reflection and $`\xi(s)=\xi(1-s)`$ from Poisson/modular duality, arise from different mechanisms, and their shared symmetry alone supplies no phase-to-spectrum map.
 
-On $`S^3/2I`$: the McKay correspondence resolves the basis ambiguity (multiplicities are canonical), but continuous geometric position drops out by Schur's lemma: the right-<i>SU(2)</i> acts transitively, forcing the twisted heat kernel to be constant on the diagonal of each fiber. $`\square`$
+On $`S^3/2I`$: the McKay correspondence resolves the basis ambiguity (multiplicities are canonical), but continuous geometric position drops out: right multiplication by $`\mathrm{SU}(2)`$ acts transitively, by isometries that commute with every natural operator, so the trace of the twisted heat kernel on the diagonal is the same at every point. $`\square`$
 
 ---
 
@@ -364,6 +356,8 @@ at the seven non-central classes. The C2 eta is $`\tfrac12(1-m^2)\chi_{-1}(m)`$,
 **Lemma C (Laplacians).** No nonzero finite linear combination of the Hodge Laplacians' zeta functions isolates an L-function.
 
 *Proof.* The eigenvalues are $`l(l+2)`$ and $`(l+1)^2`$, so the zeta functions are supported on $`\{k^2-1\}\cup\{k^2\}`$. An isolating $`c^s a(s)L(s-p,\chi)`$, with $`d`$ the least element of the support of $`a`$, has the coefficient $`a_d\chi(q)q^p\neq0`$ at $`dq`$ for every prime $`q`$ above that support and prime to the conductor, and a fixed multiple of $`(k-1)(k+1)`$ or of $`k^2`$ equals $`dq`$ for only finitely many primes $`q`$. $`\square`$
+
+The coexact zeta alone reads $`\zeta`$ at the argument $`2s`$. At C9 its trace at the eigenvalue $`m^2`$ is $`2(-1)^{k+1}`$ for $`m=2k`$ and zero for odd $`m`$, so $`Z_1^{\mathrm{coex}}([C9],s)=2\cdot4^{-s}\left(1-2^{1-2s}\right)\zeta(2s)`$ (G15), whose zeros include those of $`\zeta`$, at $`\rho/2`$. Definition 4 reads the L-function at $`s-p`$, so this is not an isolation in its sense.
 
 **Lemma D (The odd signature operator).** The C9 equivariant eta of the odd signature operator is $`2^{2-s}(1-2^{2-s})\zeta(s-1)`$. Among the finite linear combinations of the signature zeta and eta functions, only its multiples isolate an L-function, and a combination whose integer-frequency terms all vanish is zero.
 
@@ -470,7 +464,7 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 |------------|--------|-----------|
 | Torsion L-basis | 5 int-spin irreps → 4 L-functions | 79 digits, two paths; closed forms (G10) |
 | Torsion characters | 2 of 16 mod 60, through four special values | Exact; closed forms (G10) |
-| Curvature obstruction | Pochhammer tower | Structural proof |
+| Curvature obstruction | Pochhammer tower at $`s\neq0`$; at $`s=0`$, Dowker and Chang's cancellation | Structural proof; cancellation at all nine classes (G14) |
 | Dirac factorization | 3-layer L-decomp. all $`s`$; 6–12 of 32 survive (coprime sector) | Structural; counts exact (G08) |
 | $`S^1`$ bridge | Non-existence proved | 4 proofs |
 | Eta multiplicities | $`9\times120`$ signed table | Integer-exact (G03) |
@@ -481,15 +475,16 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 | Tier 2 closed forms | Universal trig. formula; C8 involves $`\zeta(s-1)`$ | Exact (G04, G05) |
 | Torsion $`\times`$ eta | Inherited arithmetic, no emergent structure | Exact |
 | Twisted eta | (2/5)×integer at $`s=0`$; C7, C9 twist factors | Exact (G11) |
-| Higher-form Laplacians | Hodge duality; no combination factors | Structural proof |
+| Higher-form Laplacians | Hodge duality: the scalar and coexact zetas; no combination isolates (Lemma C) | Structural proof |
+| Coexact zeta at C9 | $`2\cdot4^{-s}(1-2^{1-2s})\zeta(2s)`$: $`\zeta`$ at the argument $`2s`$ | Exact (G15) |
 | Signature operator | Curl traces; the C9 eta isolates $`\zeta(s-1)`$ | $`s=0`$ values match the APS defect; Ruberman–Saveliev (G13) |
 | Isolation in $`\mathcal{L}`$ | Only the C9 signature eta isolates (Theorem 1) | Lemmas A to D; ranks 16, 14 and 2 (G12) |
 | Type 2 equiv. eta | Uniformly worse, all 8 classes | C2: structural; non-central: mod-120 exact ($`S_1/S_0`$) |
-| Selberg/Ruelle $`\zeta`$ | Finite cyclotomic product | Exact |
+| Selberg/Ruelle $`\zeta`$ | Besse flow: closed geodesics in families; standard Anosov products do not apply | Structural |
 | Artin L-function | Brauer virtual; Hecke $`\neq`$ Dirichlet | Structural |
 | Matrix coefficients | Characters exhaust content | Structural |
 
-Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum, and checks Lemmas B and D of § V, in thirteen gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about fifteen seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py). The Type 2 counts of Lemma 3 come from the original computation, outside both scripts, and are fitted in the period index.
+Gate numbers refer to [`the-mirror.test.py`](scripts/the-mirror.test.py), which rebuilds § III.B to § III.E from the McKay graph and Bär's spectrum, and checks Lemma 1's cancellation at $`s=0`$, Lemmas B and D of § V and the coexact zeta after Lemma C, in fifteen gates, each paired with a defect that must turn it red (`--mutation-tests`); it needs mpmath and runs in about twenty seconds. The torsions of § III.A are recomputed from the spectrum by [`torsion-correction.test.py`](../../framework/files/working/files/scripts/torsion-correction.test.py).
 
 ---
 
