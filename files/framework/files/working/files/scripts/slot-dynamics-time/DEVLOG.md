@@ -121,3 +121,12 @@ The confirmation of the review found one path unguarded. The rule of § 4 ran ou
 - Every part ran. Controls 1 to 8 passed on the development inputs, and control 9 failed only on the rigid waves' drift at the development T9 = 100.
 - The rule's measured runs: τ_s/τ_v was 1.143 in R1 and 0.939 in R3. At the equal-cost step the splitting's errors were 1.11e-4 and 2.98e-4 in R1, against Verlet's 1.36e-3 and 1.59e-3, and 3.16e-5 and 9.03e-5 in R3, against 2.91e-3 and 3.10e-3. The rule kept Verlet, since the splitting failed control 9 there.
 - Control 11's figures were those of entry 10.
+
+## 14. After the registered run: control 9's window in R2 at N = 12, replayed (2026-11-21T15:05:20Z)
+
+The note on the registered run reads control 9's window in R2 at N = 12, where the truncation holds the single level n = 7. The record observes each energy-order run at the times common to every step of the ladder, so at h₀/2 it observes every second step. `dev/dev_window_replay.py` rebuilds that state from REG, the registered seed. It runs after the registered run, outside entry 1's boundary, which governed development before it. Its energy ladder under Verlet reproduces `record/09_c9.json` exactly on the run's machine, and to round-off elsewhere (the script requires 10⁻⁹). It then steps the run at h₀/2 again, with every step observed:
+
+- The exact h·ω_max, from the largest eigenvalue of K + Hess V₄ on the real form through the instrument's `hess_apply` at λ = 0, is at most 0.4277 at every step: its largest value is 0.427650, at a step the record does not observe, and 0.427641 at the steps it does.
+- The largest relative energy error over every step is the record's, 1.541021 × 10⁻³. The largest ‖c‖² is 1.069127, and § 5's inequalities at each step's own ‖c‖² give at most 0.4545.
+
+Nothing of it enters `record/`, and the registered verdict stands as reading 7 made it.

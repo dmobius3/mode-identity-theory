@@ -1,0 +1,312 @@
+{
+ "control": 11,
+ "line": "The finite-element cross-check, last and report-only.",
+ "result": {
+  "passed": null,
+  "report": {
+   "mesh_level": 2,
+   "nq": 3,
+   "dt": 0.008186672656923915,
+   "steps": 2443,
+   "galerkin_N": 12,
+   "amplitude2": 1e-06,
+   "frozen_lift_s2": 0.0006739134989217632,
+   "fe_lowest_level": {
+    "eigenvalues": [
+     48.02491641675656,
+     48.02491641675671,
+     48.024916416756746,
+     48.02559033025523,
+     48.02559033025533,
+     48.025590330255376,
+     48.025590330255554
+    ],
+    "exact": 48.0,
+    "mean_rel": 0.0005271147955106711,
+    "spread": 0.0006739134989928175
+   },
+   "conjugator_u": [
+    0.0,
+    0.0,
+    0.7071067811865475,
+    0.7071067811865475
+   ],
+   "intertwiner": {
+    "unitarity": 8.162954141904415e-16,
+    "residual": 1.4199206295870486e-15
+   },
+   "convention_residual": 9.123920206826554e-15,
+   "norm_ratio": 0.9990792061733823,
+   "observations": [
+    {
+     "t": 0.0,
+     "distance": 0.0,
+     "fe_charge_drift": 0.0,
+     "galerkin_charge_drift": 0.0
+    },
+    {
+     "t": 0.8186672656923916,
+     "distance": 0.0021614366458443564,
+     "fe_charge_drift": 1.1623835191894803e-16,
+     "galerkin_charge_drift": 7.641167189214881e-17
+    },
+    {
+     "t": 1.6373345313847831,
+     "distance": 0.0034767453728241004,
+     "fe_charge_drift": 1.1042643432300062e-16,
+     "galerkin_charge_drift": 5.3488170324504174e-17
+    },
+    {
+     "t": 2.4560017970771746,
+     "distance": 0.004408588511301251,
+     "fe_charge_drift": 2.3247670383789605e-16,
+     "galerkin_charge_drift": 1.681056781627274e-16
+    },
+    {
+     "t": 3.2746690627695663,
+     "distance": 0.005469467565412056,
+     "fe_charge_drift": 1.1623835191894803e-17,
+     "galerkin_charge_drift": 2.59799684433306e-16
+    },
+    {
+     "t": 4.093336328461958,
+     "distance": 0.007442913789827056,
+     "fe_charge_drift": 1.8598136307031685e-16,
+     "galerkin_charge_drift": 4.202641954068185e-16
+    },
+    {
+     "t": 4.912003594154349,
+     "distance": 0.00987999531094316,
+     "fe_charge_drift": 3.2546738537305446e-16,
+     "galerkin_charge_drift": 6.571403782724798e-16
+    },
+    {
+     "t": 5.73067085984674,
+     "distance": 0.011373125356236661,
+     "fe_charge_drift": 3.5452697335279144e-16,
+     "galerkin_charge_drift": 6.494992110832649e-16
+    },
+    {
+     "t": 6.5493381255391325,
+     "distance": 0.011610542413657202,
+     "fe_charge_drift": 3.487150557568441e-16,
+     "galerkin_charge_drift": 8.558107251920668e-16
+    },
+    {
+     "t": 7.368005391231524,
+     "distance": 0.0122283736811757,
+     "fe_charge_drift": 3.2546738537305446e-16,
+     "galerkin_charge_drift": 7.946813876783477e-16
+    },
+    {
+     "t": 8.186672656923916,
+     "distance": 0.01451181809202404,
+     "fe_charge_drift": 4.068342317163181e-16,
+     "galerkin_charge_drift": 9.01657728327356e-16
+    },
+    {
+     "t": 9.005339922616306,
+     "distance": 0.01775479952519607,
+     "fe_charge_drift": 5.579440892109505e-16,
+     "galerkin_charge_drift": 9.627870658410752e-16
+    },
+    {
+     "t": 9.824007188308698,
+     "distance": 0.019535932956966734,
+     "fe_charge_drift": 4.998249132514765e-16,
+     "galerkin_charge_drift": 5.80728706380331e-16
+    },
+    {
+     "t": 10.64267445400109,
+     "distance": 0.01914306267075982,
+     "fe_charge_drift": 4.649534076757921e-16,
+     "galerkin_charge_drift": 1.0086340689763645e-15
+    },
+    {
+     "t": 11.46134171969348,
+     "distance": 0.01906226081429352,
+     "fe_charge_drift": 5.579440892109505e-16,
+     "galerkin_charge_drift": 1.1920220815175215e-15
+    },
+    {
+     "t": 12.280008985385873,
+     "distance": 0.02140776665306547,
+     "fe_charge_drift": 6.741824411298985e-16,
+     "galerkin_charge_drift": 1.0697634064900833e-15
+    },
+    {
+     "t": 13.098676251078265,
+     "distance": 0.02544166389776332,
+     "fe_charge_drift": 5.579440892109505e-16,
+     "galerkin_charge_drift": 6.571403782724798e-16
+    },
+    {
+     "t": 13.917343516770655,
+     "distance": 0.02779165424310503,
+     "fe_charge_drift": 6.334990179582667e-16,
+     "galerkin_charge_drift": 4.279053625960334e-16
+    },
+    {
+     "t": 14.736010782463048,
+     "distance": 0.02693264950715191,
+     "fe_charge_drift": 6.974301115136882e-16,
+     "galerkin_charge_drift": 5.960110407587607e-16
+    },
+    {
+     "t": 15.55467804815544,
+     "distance": 0.026002139087766243,
+     "fe_charge_drift": 7.904207930488465e-16,
+     "galerkin_charge_drift": 8.099637220567775e-16
+    },
+    {
+     "t": 16.37334531384783,
+     "distance": 0.02814785482464049,
+     "fe_charge_drift": 8.311042162204783e-16,
+     "galerkin_charge_drift": 7.717578861107031e-16
+    },
+    {
+     "t": 17.192012579540222,
+     "distance": 0.032888913015351406,
+     "fe_charge_drift": 8.369161338164257e-16,
+     "galerkin_charge_drift": 1.0544810721116536e-15
+    },
+    {
+     "t": 18.010679845232612,
+     "distance": 0.03607077708860268,
+     "fe_charge_drift": 9.182829801596894e-16,
+     "galerkin_charge_drift": 8.40528390813637e-16
+    },
+    {
+     "t": 18.829347110925006,
+     "distance": 0.03497552472465621,
+     "fe_charge_drift": 9.99649826502953e-16,
+     "galerkin_charge_drift": 7.946813876783477e-16
+    },
+    {
+     "t": 19.648014376617397,
+     "distance": 0.033103487570002636,
+     "fe_charge_drift": 1.0926405080381115e-15,
+     "galerkin_charge_drift": 8.558107251920668e-16
+    }
+   ],
+   "max_distance": 0.03607077708860268,
+   "final_distance": 0.033103487570002636
+  }
+ },
+ "env": {
+  "python": "3.13.13",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": 1,
+  "git_head": "d14d06be501830b1a14009707dee9476938d80e8",
+  "uncommitted": "",
+  "new_code": {
+   "controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c",
+   "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89",
+   "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93",
+   "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"
+  },
+  "pins": {
+   "pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305",
+   "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed",
+   "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"
+  }
+ },
+ "params": {
+  "seed": 20261120,
+  "slots": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rigid": [
+   "R1",
+   "R3"
+  ],
+  "kinds": [
+   "verlet",
+   "strang"
+  ],
+  "cubic_tol": 1e-11,
+  "ceiling": 1e-10,
+  "charge_tol": 1e-10,
+  "ratio": [
+   3.5,
+   4.5
+  ],
+  "hw_read": 0.5,
+  "drift": 0.01,
+  "quarter": 0.25,
+  "margin": 0.8,
+  "floor": 10.0,
+  "N1": [
+   8,
+   12,
+   16,
+   24,
+   32
+  ],
+  "NA": [
+   12,
+   16
+  ],
+  "NB": 12,
+  "N10": [
+   16,
+   24,
+   32
+  ],
+  "cost_slot": "R4",
+  "states1": 2,
+  "dirs2": 2,
+  "TA": 20.0,
+  "nobsA": 200,
+  "kappa": 1.0,
+  "ladder": 5,
+  "T9": 2000.0,
+  "dtobs9": 0.2,
+  "t5": 50.0,
+  "T6": 100.0,
+  "eps6": 1e-05,
+  "rank6": 1e-08,
+  "time6": 2000,
+  "cost_steps": {
+   "fft": 20,
+   "dense": 3
+  },
+  "fe": {
+   "N": 12,
+   "level": 2,
+   "nq": 3,
+   "amp2": 1e-06,
+   "T": 20.0,
+   "every": 100
+  }
+ },
+ "readings": [
+  "The floors (the dry run): each is the same machinery, seeds, sizes, steps and durations with the cubic switched off, where each stepper's answer is exact in exact arithmetic: the splitting is then the exact linear flow, and Verlet keeps its modified energy and carries its discrete rotations. Control 9's \"above the measured floor\" reads as above ten times it, as control 7 reports against ten times its floor. A ladder with no error above ten floors where h w-bar <= 0.5 passes as at floor; one with such an error and no ratio read fails as unread.",
+  "The splitting's matched rigid wave reads kappa = ||c||^2 where its kick reads the state, after the first half rotation (DEVLOG entry 4); Verlet's kicks read the step's ends.",
+  "Control 3 takes section 5's step at its free-field limit, 1.6/sqrt(N(N+2)), since its cubic is off. It reads each level's angle per step from z_{k+1} + z_{k-1} = 2 cos(theta) z_k, which holds exactly for a stepper whose map on one mode is 2 x 2 of determinant 1, by least squares over the run, from a generic position and momentum.",
+  "Controls 4, 7 and 8 read one set of runs, made at control 4: each multi-level state forward over TA and back, and each transformed state forward.",
+  "Charges are normalized by ||D|| |q(0)| |p(0)|, ||D|| the spectral norm. Each input's charges are checked nonzero at the start, each at least 1e-6 of that normalization.",
+  "Control 5's continuum-started convergence is read by control 9's ratio rule, at control 5. Control 9 then reads control 6's frequencies and the energy, so no quantity is read twice.",
+  "Control 9's h w_max is read with section 5's bound: a ratio e(h)/e(h/2) is read where h w-bar <= 0.5, which implies h w_max <= 0.5.",
+  "Control 9's unperturbed controls are the runs without a perturbation, read in two parts (DEVLOG entry 8). The order of the energy error is read on the multi-level states of controls 4, 7 and 8, under halving over TA: on a rigid wave the error's O(h^2) part is constant along the rotation, by the phase invariance, so the error there comes out O(h^4). Its secular drift is read on control 5's continuum-started rigid waves, at every step of the ladder over T9 = 2000, where the error oscillates at the single radial frequency: observed every 0.2 or so, below the Nyquist period of that oscillation and its harmonic, a pure oscillation at R1's radial frequency moves the two tenths' means apart by at most 0.0047 of its amplitude over T9.",
+  "Control 6 reads Theorem 3.7's frequencies on E0: 2 omega, n times, and (4 omega^2 + 2 kappa)^(1/2), with omega^2 = lambda_0 + kappa and kappa = |psi|^2 = ||phi||^2 in the normalized measure. The perturbation lies in E0, of relative size eps6, with its first-order charge removed, so it leaves the family at fixed charge and moves the frequencies only at second order. The state is demodulated at the scheme's own discrete rotation, and the frequencies are the arguments of the eigenvalues of the least-squares one-step map of the demodulated E0 data at its numerical rank (dynamic mode decomposition). Their moduli are an extraction diagnostic, not a growth or decay rate: the read eigenvalues sat on the unit circle to about 1e-9 in development, the zero-frequency ones fitted from weakly excited directions did not (DEVLOG entry 11), and the outputs record the two apart.",
+  "The rule of section 4 compares, for each of Theorem 3.7's two frequencies in R1 and R3, Verlet's relative error at section 5's step h0 with the splitting's, measured at the step at which the splitting costs Verlet's wall-clock per unit of evolved time, h0 tau_s/tau_v, with tau each stepper's measured time per step at h0. The registered perturbation is evolved there over T6 and read as in control 6. The rule adopts the splitting only if each of its errors there is at most a quarter of Verlet's, that step stays below pi/w-bar, and the splitting passed controls 3 to 9.",
+  "Control 10 runs in R4, the slot of the timing before the dated note, each measurement in its own process: the time per step alone, and with every diagnostic at every step, and the peak resident memory. Verlet's force at the end of each call is carried into the next, so every timing counts one cubic per step.",
+  "Control 11 runs at ||c||^2 = 1e-6, so the nonlinearity's phase over its duration is about 1e-6 rad: it compares the two discretizations of the field on R4's lowest level, where the frozen record gives the mesh's lift, and reads no slow flow.",
+  "The equivariance maps: the phase e^{i phi}, right translation by a random U and, in R1, R2, R6 and R8, J and a random element a + bJ of Sp(1); in the real slots, charge conjugation. Each acts on position and velocity.",
+  "Control 1's arms (DEVLOG entry 7): the aliased grid is M = 4 max(levels), one point short of exactness for the levels present; the missing conjugation of A is planted in a basis whose intertwiners carry a complex phase per copy, against the instrument's cubic transformed to that basis, since the instrument's intertwiners are real. The FFT path on that phased basis must itself agree to 1e-11. An arm is red when its worst discrepancy over every slot, N and state exceeds 1e-11.",
+  "Control 6 reads distinct frequencies: one trajectory excites one direction of each degenerate eigenspace, so 2 omega, n times, reads once, and a degeneracy the scheme split would read as further values (DEVLOG entry 7).",
+  "A failure of control 4, 7, 8 or 9 by the splitting alone disqualifies the splitting under the rule of section 4, and the controls go on with Verlet. A failure by Verlet, a failure of control 1 or 2, or a run past C-bar stops them."
+ ],
+ "rests_on_new_code": [
+  "controls.py",
+  "fecheck.py",
+  "fftcubic.py",
+  "timearm.py"
+ ]
+}

@@ -1,0 +1,548 @@
+{
+ "control": 2,
+ "line": "Energy and gradient: the FFT cubic is the gradient of the quartic energy of the same assembly, which equals the instrument's energy, each at most 1e-11 normalized.",
+ "result": {
+  "passed": true,
+  "worst_energy": 6.61674446422576e-14,
+  "worst_gradient": 8.881784197001258e-16,
+  "rows": [
+   {
+    "slot": "R1",
+    "N": 8,
+    "state": 0,
+    "energy": 2.220446049250315e-16,
+    "gradient": 1.665334536937736e-16
+   },
+   {
+    "slot": "R1",
+    "N": 8,
+    "state": 1,
+    "energy": 0.0,
+    "gradient": 5.551115123125784e-16
+   },
+   {
+    "slot": "R1",
+    "N": 8,
+    "state": "lowest",
+    "energy": 5.551115123125788e-16,
+    "gradient": 5.551115123125786e-16
+   },
+   {
+    "slot": "R1",
+    "N": 12,
+    "state": 0,
+    "energy": 6.156687085195452e-15,
+    "gradient": 1.1548330451160884e-16
+   },
+   {
+    "slot": "R1",
+    "N": 12,
+    "state": 1,
+    "energy": 2.3075061185815344e-15,
+    "gradient": 1.3113981515242137e-16
+   },
+   {
+    "slot": "R1",
+    "N": 12,
+    "state": "lowest",
+    "energy": 3.3306690738754696e-16,
+    "gradient": 1.1102230246251568e-16
+   },
+   {
+    "slot": "R1",
+    "N": 16,
+    "state": 0,
+    "energy": 1.3270501680220644e-14,
+    "gradient": 1.4495711598661615e-16
+   },
+   {
+    "slot": "R1",
+    "N": 16,
+    "state": 1,
+    "energy": 1.1514614637904773e-14,
+    "gradient": 1.3473902517880644e-16
+   },
+   {
+    "slot": "R1",
+    "N": 16,
+    "state": "lowest",
+    "energy": 6.661338147750945e-16,
+    "gradient": 1.9428902930940244e-16
+   },
+   {
+    "slot": "R1",
+    "N": 24,
+    "state": 0,
+    "energy": 2.199953577096807e-14,
+    "gradient": 0.0
+   },
+   {
+    "slot": "R1",
+    "N": 24,
+    "state": 1,
+    "energy": 3.356479706389062e-14,
+    "gradient": 1.8223944524137493e-16
+   },
+   {
+    "slot": "R1",
+    "N": 24,
+    "state": "lowest",
+    "energy": 1.1102230246251565e-16,
+    "gradient": 2.7061686225238196e-16
+   },
+   {
+    "slot": "R1",
+    "N": 32,
+    "state": 0,
+    "energy": 1.0284750953258847e-14,
+    "gradient": 3.0249360311234865e-16
+   },
+   {
+    "slot": "R1",
+    "N": 32,
+    "state": 1,
+    "energy": 4.470941489486754e-14,
+    "gradient": 2.5676388067650794e-17
+   },
+   {
+    "slot": "R1",
+    "N": 32,
+    "state": "lowest",
+    "energy": 0.0,
+    "gradient": 1.6187138435208584e-16
+   },
+   {
+    "slot": "R2",
+    "N": 8,
+    "state": 0,
+    "energy": 9.876608410135612e-16,
+    "gradient": 3.248043530144279e-16
+   },
+   {
+    "slot": "R2",
+    "N": 8,
+    "state": 1,
+    "energy": 4.530510836010539e-15,
+    "gradient": 1.726354669435429e-16
+   },
+   {
+    "slot": "R2",
+    "N": 8,
+    "state": "lowest",
+    "energy": 4.7624741925771205e-15,
+    "gradient": 1.6793369538583882e-16
+   },
+   {
+    "slot": "R2",
+    "N": 12,
+    "state": 0,
+    "energy": 4.129959775494972e-15,
+    "gradient": 1.6132925472749856e-16
+   },
+   {
+    "slot": "R2",
+    "N": 12,
+    "state": 1,
+    "energy": 3.234498574564048e-15,
+    "gradient": 3.9963512065323354e-16
+   },
+   {
+    "slot": "R2",
+    "N": 12,
+    "state": "lowest",
+    "energy": 2.621254491376874e-15,
+    "gradient": 2.4354692148858107e-16
+   },
+   {
+    "slot": "R2",
+    "N": 16,
+    "state": 0,
+    "energy": 1.915818690224043e-14,
+    "gradient": 2.2299150964826164e-16
+   },
+   {
+    "slot": "R2",
+    "N": 16,
+    "state": 1,
+    "energy": 9.648251055862232e-15,
+    "gradient": 6.44977858733807e-17
+   },
+   {
+    "slot": "R2",
+    "N": 16,
+    "state": "lowest",
+    "energy": 4.379782742677192e-15,
+    "gradient": 1.6870477476834746e-16
+   },
+   {
+    "slot": "R2",
+    "N": 24,
+    "state": 0,
+    "energy": 9.647583340644496e-15,
+    "gradient": 3.052339524166669e-17
+   },
+   {
+    "slot": "R2",
+    "N": 24,
+    "state": 1,
+    "energy": 2.8147698287369153e-14,
+    "gradient": 7.290260127154044e-17
+   },
+   {
+    "slot": "R2",
+    "N": 24,
+    "state": "lowest",
+    "energy": 2.6563625439016733e-15,
+    "gradient": 2.2805602525932306e-16
+   },
+   {
+    "slot": "R2",
+    "N": 32,
+    "state": 0,
+    "energy": 6.61674446422576e-14,
+    "gradient": 1.3688443859548917e-16
+   },
+   {
+    "slot": "R2",
+    "N": 32,
+    "state": 1,
+    "energy": 1.6386186256303368e-14,
+    "gradient": 1.7418657550753097e-16
+   },
+   {
+    "slot": "R2",
+    "N": 32,
+    "state": "lowest",
+    "energy": 2.8972803774812976e-15,
+    "gradient": 1.6404065824833927e-16
+   },
+   {
+    "slot": "R3",
+    "N": 8,
+    "state": 0,
+    "energy": 2.220446049250313e-16,
+    "gradient": 3.330669073875469e-16
+   },
+   {
+    "slot": "R3",
+    "N": 8,
+    "state": 1,
+    "energy": 6.661338147750939e-16,
+    "gradient": 8.881784197001258e-16
+   },
+   {
+    "slot": "R3",
+    "N": 8,
+    "state": "lowest",
+    "energy": 1.3322676295501902e-15,
+    "gradient": 2.775557561562893e-16
+   },
+   {
+    "slot": "R3",
+    "N": 12,
+    "state": 0,
+    "energy": 5.834023421573124e-15,
+    "gradient": 7.871632103664478e-17
+   },
+   {
+    "slot": "R3",
+    "N": 12,
+    "state": 1,
+    "energy": 6.576971815800597e-16,
+    "gradient": 1.9886562697535424e-17
+   },
+   {
+    "slot": "R3",
+    "N": 12,
+    "state": "lowest",
+    "energy": 7.771561172376096e-16,
+    "gradient": 2.2204460492503146e-16
+   },
+   {
+    "slot": "R3",
+    "N": 16,
+    "state": 0,
+    "energy": 7.895015689251976e-15,
+    "gradient": 9.034214016576924e-17
+   },
+   {
+    "slot": "R3",
+    "N": 16,
+    "state": 1,
+    "energy": 1.3353715121790665e-14,
+    "gradient": 7.775359209683012e-17
+   },
+   {
+    "slot": "R3",
+    "N": 16,
+    "state": "lowest",
+    "energy": 6.661338147750939e-16,
+    "gradient": 1.6653345369377358e-16
+   },
+   {
+    "slot": "R3",
+    "N": 24,
+    "state": 0,
+    "energy": 1.0585328951010112e-14,
+    "gradient": 1.6609253017107234e-16
+   },
+   {
+    "slot": "R3",
+    "N": 24,
+    "state": 1,
+    "energy": 1.040470247437225e-14,
+    "gradient": 2.4757291766573604e-16
+   },
+   {
+    "slot": "R3",
+    "N": 24,
+    "state": "lowest",
+    "energy": 4.440892098500626e-16,
+    "gradient": 1.5959455978986623e-16
+   },
+   {
+    "slot": "R3",
+    "N": 32,
+    "state": 0,
+    "energy": 6.366988841691133e-14,
+    "gradient": 1.1461088800715233e-16
+   },
+   {
+    "slot": "R3",
+    "N": 32,
+    "state": 1,
+    "energy": 3.9799187509118824e-14,
+    "gradient": 8.302269223486795e-17
+   },
+   {
+    "slot": "R3",
+    "N": 32,
+    "state": "lowest",
+    "energy": 6.661338147750939e-16,
+    "gradient": 8.32667268468868e-17
+   },
+   {
+    "slot": "R4",
+    "N": 8,
+    "state": 0,
+    "energy": 1.3257633604386379e-15,
+    "gradient": 9.43304455800894e-17
+   },
+   {
+    "slot": "R4",
+    "N": 8,
+    "state": 1,
+    "energy": 2.459187666117648e-15,
+    "gradient": 4.1282798369481606e-17
+   },
+   {
+    "slot": "R4",
+    "N": 8,
+    "state": "lowest",
+    "energy": 3.493575495554692e-15,
+    "gradient": 8.713118709481774e-17
+   },
+   {
+    "slot": "R4",
+    "N": 12,
+    "state": 0,
+    "energy": 5.0923734960428936e-15,
+    "gradient": 1.2343241741545824e-16
+   },
+   {
+    "slot": "R4",
+    "N": 12,
+    "state": 1,
+    "energy": 5.261918949949128e-15,
+    "gradient": 1.1962579331173664e-16
+   },
+   {
+    "slot": "R4",
+    "N": 12,
+    "state": "lowest",
+    "energy": 5.109454435148304e-15,
+    "gradient": 1.1560338627749527e-17
+   },
+   {
+    "slot": "R4",
+    "N": 16,
+    "state": 0,
+    "energy": 1.5705391884544902e-14,
+    "gradient": 8.898552665835828e-17
+   },
+   {
+    "slot": "R4",
+    "N": 16,
+    "state": 1,
+    "energy": 1.4072349423055618e-14,
+    "gradient": 1.4267536173811974e-16
+   },
+   {
+    "slot": "R4",
+    "N": 16,
+    "state": "lowest",
+    "energy": 4.165550226984515e-15,
+    "gradient": 1.6380581708647614e-16
+   },
+   {
+    "slot": "R4",
+    "N": 24,
+    "state": 0,
+    "energy": 3.1746789392722576e-14,
+    "gradient": 2.0573575758000158e-16
+   },
+   {
+    "slot": "R4",
+    "N": 24,
+    "state": 1,
+    "energy": 4.1919326883727287e-14,
+    "gradient": 1.2762860526407412e-16
+   },
+   {
+    "slot": "R4",
+    "N": 24,
+    "state": "lowest",
+    "energy": 5.6541782228934766e-15,
+    "gradient": 2.7017374496696513e-17
+   },
+   {
+    "slot": "R4",
+    "N": 32,
+    "state": 0,
+    "energy": 5.298822987142794e-14,
+    "gradient": 5.0827769344275094e-17
+   },
+   {
+    "slot": "R4",
+    "N": 32,
+    "state": 1,
+    "energy": 1.340787954644456e-14,
+    "gradient": 2.4858481692456103e-16
+   },
+   {
+    "slot": "R4",
+    "N": 32,
+    "state": "lowest",
+    "energy": 5.432226361259223e-15,
+    "gradient": 1.3825597563790866e-16
+   }
+  ],
+  "stencil": "five-point, exact for the quartic polynomial V(c + s d), s = 0.5"
+ },
+ "env": {
+  "python": "3.13.13",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": 1,
+  "git_head": "d14d06be501830b1a14009707dee9476938d80e8",
+  "uncommitted": "",
+  "new_code": {
+   "controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c",
+   "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89",
+   "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93",
+   "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"
+  },
+  "pins": {
+   "pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305",
+   "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed",
+   "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"
+  }
+ },
+ "params": {
+  "seed": 20261120,
+  "slots": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rigid": [
+   "R1",
+   "R3"
+  ],
+  "kinds": [
+   "verlet",
+   "strang"
+  ],
+  "cubic_tol": 1e-11,
+  "ceiling": 1e-10,
+  "charge_tol": 1e-10,
+  "ratio": [
+   3.5,
+   4.5
+  ],
+  "hw_read": 0.5,
+  "drift": 0.01,
+  "quarter": 0.25,
+  "margin": 0.8,
+  "floor": 10.0,
+  "N1": [
+   8,
+   12,
+   16,
+   24,
+   32
+  ],
+  "NA": [
+   12,
+   16
+  ],
+  "NB": 12,
+  "N10": [
+   16,
+   24,
+   32
+  ],
+  "cost_slot": "R4",
+  "states1": 2,
+  "dirs2": 2,
+  "TA": 20.0,
+  "nobsA": 200,
+  "kappa": 1.0,
+  "ladder": 5,
+  "T9": 2000.0,
+  "dtobs9": 0.2,
+  "t5": 50.0,
+  "T6": 100.0,
+  "eps6": 1e-05,
+  "rank6": 1e-08,
+  "time6": 2000,
+  "cost_steps": {
+   "fft": 20,
+   "dense": 3
+  },
+  "fe": {
+   "N": 12,
+   "level": 2,
+   "nq": 3,
+   "amp2": 1e-06,
+   "T": 20.0,
+   "every": 100
+  }
+ },
+ "readings": [
+  "The floors (the dry run): each is the same machinery, seeds, sizes, steps and durations with the cubic switched off, where each stepper's answer is exact in exact arithmetic: the splitting is then the exact linear flow, and Verlet keeps its modified energy and carries its discrete rotations. Control 9's \"above the measured floor\" reads as above ten times it, as control 7 reports against ten times its floor. A ladder with no error above ten floors where h w-bar <= 0.5 passes as at floor; one with such an error and no ratio read fails as unread.",
+  "The splitting's matched rigid wave reads kappa = ||c||^2 where its kick reads the state, after the first half rotation (DEVLOG entry 4); Verlet's kicks read the step's ends.",
+  "Control 3 takes section 5's step at its free-field limit, 1.6/sqrt(N(N+2)), since its cubic is off. It reads each level's angle per step from z_{k+1} + z_{k-1} = 2 cos(theta) z_k, which holds exactly for a stepper whose map on one mode is 2 x 2 of determinant 1, by least squares over the run, from a generic position and momentum.",
+  "Controls 4, 7 and 8 read one set of runs, made at control 4: each multi-level state forward over TA and back, and each transformed state forward.",
+  "Charges are normalized by ||D|| |q(0)| |p(0)|, ||D|| the spectral norm. Each input's charges are checked nonzero at the start, each at least 1e-6 of that normalization.",
+  "Control 5's continuum-started convergence is read by control 9's ratio rule, at control 5. Control 9 then reads control 6's frequencies and the energy, so no quantity is read twice.",
+  "Control 9's h w_max is read with section 5's bound: a ratio e(h)/e(h/2) is read where h w-bar <= 0.5, which implies h w_max <= 0.5.",
+  "Control 9's unperturbed controls are the runs without a perturbation, read in two parts (DEVLOG entry 8). The order of the energy error is read on the multi-level states of controls 4, 7 and 8, under halving over TA: on a rigid wave the error's O(h^2) part is constant along the rotation, by the phase invariance, so the error there comes out O(h^4). Its secular drift is read on control 5's continuum-started rigid waves, at every step of the ladder over T9 = 2000, where the error oscillates at the single radial frequency: observed every 0.2 or so, below the Nyquist period of that oscillation and its harmonic, a pure oscillation at R1's radial frequency moves the two tenths' means apart by at most 0.0047 of its amplitude over T9.",
+  "Control 6 reads Theorem 3.7's frequencies on E0: 2 omega, n times, and (4 omega^2 + 2 kappa)^(1/2), with omega^2 = lambda_0 + kappa and kappa = |psi|^2 = ||phi||^2 in the normalized measure. The perturbation lies in E0, of relative size eps6, with its first-order charge removed, so it leaves the family at fixed charge and moves the frequencies only at second order. The state is demodulated at the scheme's own discrete rotation, and the frequencies are the arguments of the eigenvalues of the least-squares one-step map of the demodulated E0 data at its numerical rank (dynamic mode decomposition). Their moduli are an extraction diagnostic, not a growth or decay rate: the read eigenvalues sat on the unit circle to about 1e-9 in development, the zero-frequency ones fitted from weakly excited directions did not (DEVLOG entry 11), and the outputs record the two apart.",
+  "The rule of section 4 compares, for each of Theorem 3.7's two frequencies in R1 and R3, Verlet's relative error at section 5's step h0 with the splitting's, measured at the step at which the splitting costs Verlet's wall-clock per unit of evolved time, h0 tau_s/tau_v, with tau each stepper's measured time per step at h0. The registered perturbation is evolved there over T6 and read as in control 6. The rule adopts the splitting only if each of its errors there is at most a quarter of Verlet's, that step stays below pi/w-bar, and the splitting passed controls 3 to 9.",
+  "Control 10 runs in R4, the slot of the timing before the dated note, each measurement in its own process: the time per step alone, and with every diagnostic at every step, and the peak resident memory. Verlet's force at the end of each call is carried into the next, so every timing counts one cubic per step.",
+  "Control 11 runs at ||c||^2 = 1e-6, so the nonlinearity's phase over its duration is about 1e-6 rad: it compares the two discretizations of the field on R4's lowest level, where the frozen record gives the mesh's lift, and reads no slow flow.",
+  "The equivariance maps: the phase e^{i phi}, right translation by a random U and, in R1, R2, R6 and R8, J and a random element a + bJ of Sp(1); in the real slots, charge conjugation. Each acts on position and velocity.",
+  "Control 1's arms (DEVLOG entry 7): the aliased grid is M = 4 max(levels), one point short of exactness for the levels present; the missing conjugation of A is planted in a basis whose intertwiners carry a complex phase per copy, against the instrument's cubic transformed to that basis, since the instrument's intertwiners are real. The FFT path on that phased basis must itself agree to 1e-11. An arm is red when its worst discrepancy over every slot, N and state exceeds 1e-11.",
+  "Control 6 reads distinct frequencies: one trajectory excites one direction of each degenerate eigenspace, so 2 omega, n times, reads once, and a degeneracy the scheme split would read as further values (DEVLOG entry 7).",
+  "A failure of control 4, 7, 8 or 9 by the splitting alone disqualifies the splitting under the rule of section 4, and the controls go on with Verlet. A failure by Verlet, a failure of control 1 or 2, or a run past C-bar stops them."
+ ],
+ "rests_on_new_code": [
+  "controls.py",
+  "fecheck.py",
+  "fftcubic.py",
+  "timearm.py"
+ ]
+}

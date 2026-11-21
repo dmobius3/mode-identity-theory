@@ -1,0 +1,836 @@
+{
+ "control": 1,
+ "line": "The FFT cubic against the instrument's: normalized discrepancy at most 1e-11, absolute errors recorded; each mutation arm turns it red.",
+ "result": {
+  "passed": true,
+  "worst": 3.762288939939272e-15,
+  "phased_basis_worst": 1.440242324193911e-15,
+  "rows": [
+   {
+    "slot": "R1",
+    "N": 8,
+    "state": 0,
+    "levels": 1,
+    "m": 2,
+    "normalized": 4.611102534756208e-16,
+    "absolute": 4.611102534756203e-16,
+    "max_abs": 4.0029660424867215e-16
+   },
+   {
+    "slot": "R1",
+    "N": 8,
+    "state": 1,
+    "levels": 1,
+    "m": 2,
+    "normalized": 2.6331251014325263e-16,
+    "absolute": 2.633125101432526e-16,
+    "max_abs": 2.3714374201337736e-16
+   },
+   {
+    "slot": "R1",
+    "N": 8,
+    "state": "lowest",
+    "levels": 1,
+    "m": 2,
+    "normalized": 3.8157607864707036e-16,
+    "absolute": 3.815760786470701e-16,
+    "max_abs": 3.376611507232129e-16
+   },
+   {
+    "slot": "R1",
+    "N": 12,
+    "state": 0,
+    "levels": 2,
+    "m": 14,
+    "normalized": 2.917131586786111e-16,
+    "absolute": 4.2066686615973495e-16,
+    "max_abs": 2.0014830212433607e-16
+   },
+   {
+    "slot": "R1",
+    "N": 12,
+    "state": 1,
+    "levels": 2,
+    "m": 14,
+    "normalized": 5.360274496587851e-16,
+    "absolute": 6.806971808111063e-16,
+    "max_abs": 3.7238012298709097e-16
+   },
+   {
+    "slot": "R1",
+    "N": 12,
+    "state": "lowest",
+    "levels": 2,
+    "m": 14,
+    "normalized": 4.852918777010952e-16,
+    "absolute": 4.852918777010953e-16,
+    "max_abs": 4.47545209131181e-16
+   },
+   {
+    "slot": "R1",
+    "N": 16,
+    "state": 0,
+    "levels": 3,
+    "m": 28,
+    "normalized": 5.024239402665292e-16,
+    "absolute": 7.696105469679689e-16,
+    "max_abs": 3.9739936517281115e-16
+   },
+   {
+    "slot": "R1",
+    "N": 16,
+    "state": 1,
+    "levels": 3,
+    "m": 28,
+    "normalized": 5.123555692715518e-16,
+    "absolute": 8.443417919126806e-16,
+    "max_abs": 2.9893669801409083e-16
+   },
+   {
+    "slot": "R1",
+    "N": 16,
+    "state": "lowest",
+    "levels": 3,
+    "m": 28,
+    "normalized": 9.193905061518464e-16,
+    "absolute": 9.193905061518454e-16,
+    "max_abs": 9.036560719766055e-16
+   },
+   {
+    "slot": "R1",
+    "N": 24,
+    "state": 0,
+    "levels": 6,
+    "m": 94,
+    "normalized": 8.213717084375455e-16,
+    "absolute": 1.287760687651793e-15,
+    "max_abs": 5.003707553108401e-16
+   },
+   {
+    "slot": "R1",
+    "N": 24,
+    "state": 1,
+    "levels": 6,
+    "m": 94,
+    "normalized": 8.407847217420972e-16,
+    "absolute": 1.2485251089643391e-15,
+    "max_abs": 4.126162952233366e-16
+   },
+   {
+    "slot": "R1",
+    "N": 24,
+    "state": "lowest",
+    "levels": 6,
+    "m": 94,
+    "normalized": 7.078204617760206e-16,
+    "absolute": 7.078204617760203e-16,
+    "max_abs": 4.577566798522237e-16
+   },
+   {
+    "slot": "R1",
+    "N": 32,
+    "state": 0,
+    "levels": 9,
+    "m": 214,
+    "normalized": 8.579093475158117e-16,
+    "absolute": 1.2693318181986919e-15,
+    "max_abs": 2.6694457840969114e-16
+   },
+   {
+    "slot": "R1",
+    "N": 32,
+    "state": 1,
+    "levels": 9,
+    "m": 214,
+    "normalized": 8.074079634805233e-16,
+    "absolute": 1.3091837171957212e-15,
+    "max_abs": 2.7755575615628914e-16
+   },
+   {
+    "slot": "R1",
+    "N": 32,
+    "state": "lowest",
+    "levels": 9,
+    "m": 214,
+    "normalized": 8.870998188145911e-16,
+    "absolute": 8.87099818814591e-16,
+    "max_abs": 3.925231146709438e-16
+   },
+   {
+    "slot": "R2",
+    "N": 8,
+    "state": 0,
+    "levels": 1,
+    "m": 8,
+    "normalized": 3.298794210302784e-16,
+    "absolute": 4.510281037539698e-16,
+    "max_abs": 3.337167946540778e-16
+   },
+   {
+    "slot": "R2",
+    "N": 8,
+    "state": 1,
+    "levels": 1,
+    "m": 8,
+    "normalized": 3.828069226503323e-16,
+    "absolute": 4.923681871828675e-16,
+    "max_abs": 2.7755575615628914e-16
+   },
+   {
+    "slot": "R2",
+    "N": 8,
+    "state": "lowest",
+    "levels": 1,
+    "m": 8,
+    "normalized": 4.3288248984708537e-16,
+    "absolute": 5.723641179706052e-16,
+    "max_abs": 3.608224830031759e-16
+   },
+   {
+    "slot": "R2",
+    "N": 12,
+    "state": 0,
+    "levels": 1,
+    "m": 8,
+    "normalized": 4.1361773002948784e-16,
+    "absolute": 5.159103781804704e-16,
+    "max_abs": 3.510833468576701e-16
+   },
+   {
+    "slot": "R2",
+    "N": 12,
+    "state": 1,
+    "levels": 1,
+    "m": 8,
+    "normalized": 3.385953369513504e-16,
+    "absolute": 4.703244530906579e-16,
+    "max_abs": 3.376611507232129e-16
+   },
+   {
+    "slot": "R2",
+    "N": 12,
+    "state": "lowest",
+    "levels": 1,
+    "m": 8,
+    "normalized": 3.799411796062931e-16,
+    "absolute": 5.195952915651114e-16,
+    "max_abs": 2.9893669801409083e-16
+   },
+   {
+    "slot": "R2",
+    "N": 16,
+    "state": 0,
+    "levels": 2,
+    "m": 22,
+    "normalized": 3.08521084405e-16,
+    "absolute": 4.608164840388431e-16,
+    "max_abs": 2.220446049250313e-16
+   },
+   {
+    "slot": "R2",
+    "N": 16,
+    "state": 1,
+    "levels": 2,
+    "m": 22,
+    "normalized": 2.7389319579650454e-16,
+    "absolute": 4.714619705836218e-16,
+    "max_abs": 1.821377042022605e-16
+   },
+   {
+    "slot": "R2",
+    "N": 16,
+    "state": "lowest",
+    "levels": 2,
+    "m": 22,
+    "normalized": 3.6774468796971473e-16,
+    "absolute": 4.8401548839170465e-16,
+    "max_abs": 2.9893669801409083e-16
+   },
+   {
+    "slot": "R2",
+    "N": 24,
+    "state": 0,
+    "levels": 5,
+    "m": 84,
+    "normalized": 8.146683742731312e-16,
+    "absolute": 1.2963918855800338e-15,
+    "max_abs": 3.1031676915590914e-16
+   },
+   {
+    "slot": "R2",
+    "N": 24,
+    "state": 1,
+    "levels": 5,
+    "m": 84,
+    "normalized": 1.043207150845789e-15,
+    "absolute": 1.5886848728602725e-15,
+    "max_abs": 4.552252871008668e-16
+   },
+   {
+    "slot": "R2",
+    "N": 24,
+    "state": "lowest",
+    "levels": 5,
+    "m": 84,
+    "normalized": 9.579677616161238e-16,
+    "absolute": 1.3990744571455234e-15,
+    "max_abs": 6.866350197783356e-16
+   },
+   {
+    "slot": "R2",
+    "N": 32,
+    "state": 0,
+    "levels": 9,
+    "m": 200,
+    "normalized": 9.50166820045844e-16,
+    "absolute": 1.5412958429367104e-15,
+    "max_abs": 3.0727628532573784e-16
+   },
+   {
+    "slot": "R2",
+    "N": 32,
+    "state": 1,
+    "levels": 9,
+    "m": 200,
+    "normalized": 9.794523749250298e-16,
+    "absolute": 1.4046282233539443e-15,
+    "max_abs": 3.663841114510704e-16
+   },
+   {
+    "slot": "R2",
+    "N": 32,
+    "state": "lowest",
+    "levels": 9,
+    "m": 200,
+    "normalized": 8.446761347058985e-16,
+    "absolute": 1.2862680094131881e-15,
+    "max_abs": 7.447602459741819e-16
+   },
+   {
+    "slot": "R3",
+    "N": 8,
+    "state": 0,
+    "levels": 1,
+    "m": 3,
+    "normalized": 2.020636405220132e-16,
+    "absolute": 2.0206364052201326e-16,
+    "max_abs": 1.4946834900704541e-16
+   },
+   {
+    "slot": "R3",
+    "N": 8,
+    "state": 1,
+    "levels": 1,
+    "m": 3,
+    "normalized": 4.013417155560485e-16,
+    "absolute": 4.013417155560483e-16,
+    "max_abs": 3.337167946540778e-16
+   },
+   {
+    "slot": "R3",
+    "N": 8,
+    "state": "lowest",
+    "levels": 1,
+    "m": 3,
+    "normalized": 4.0415706527084576e-16,
+    "absolute": 4.0415706527084546e-16,
+    "max_abs": 3.376611507232129e-16
+   },
+   {
+    "slot": "R3",
+    "N": 12,
+    "state": 0,
+    "levels": 3,
+    "m": 27,
+    "normalized": 5.0840241982913085e-16,
+    "absolute": 6.274239658708739e-16,
+    "max_abs": 3.337167946540778e-16
+   },
+   {
+    "slot": "R3",
+    "N": 12,
+    "state": 1,
+    "levels": 3,
+    "m": 27,
+    "normalized": 6.221032540824787e-16,
+    "absolute": 8.682663852992032e-16,
+    "max_abs": 3.356589068483857e-16
+   },
+   {
+    "slot": "R3",
+    "N": 12,
+    "state": "lowest",
+    "levels": 3,
+    "m": 27,
+    "normalized": 3.8948510006962436e-16,
+    "absolute": 3.8948510006962406e-16,
+    "max_abs": 1.6653345369377348e-16
+   },
+   {
+    "slot": "R3",
+    "N": 16,
+    "state": 0,
+    "levels": 4,
+    "m": 42,
+    "normalized": 8.742228888234562e-16,
+    "absolute": 1.3429258733039657e-15,
+    "max_abs": 6.112531465858672e-16
+   },
+   {
+    "slot": "R3",
+    "N": 16,
+    "state": 1,
+    "levels": 4,
+    "m": 42,
+    "normalized": 7.298916011913129e-16,
+    "absolute": 1.172467077312912e-15,
+    "max_abs": 4.652682298944613e-16
+   },
+   {
+    "slot": "R3",
+    "N": 16,
+    "state": "lowest",
+    "levels": 4,
+    "m": 42,
+    "normalized": 7.961705286279493e-16,
+    "absolute": 7.961705286279486e-16,
+    "max_abs": 6.667118051786499e-16
+   },
+   {
+    "slot": "R3",
+    "N": 24,
+    "state": 0,
+    "levels": 8,
+    "m": 153,
+    "normalized": 9.959145820160697e-16,
+    "absolute": 1.3314112300840275e-15,
+    "max_abs": 3.3335590258932494e-16
+   },
+   {
+    "slot": "R3",
+    "N": 24,
+    "state": 1,
+    "levels": 8,
+    "m": 153,
+    "normalized": 9.002236775486804e-16,
+    "absolute": 1.2615589473985518e-15,
+    "max_abs": 3.614224653754443e-16
+   },
+   {
+    "slot": "R3",
+    "N": 24,
+    "state": "lowest",
+    "levels": 8,
+    "m": 153,
+    "normalized": 3.762288939939272e-15,
+    "absolute": 3.7622889399392625e-15,
+    "max_abs": 3.6642535075095e-15
+   },
+   {
+    "slot": "R3",
+    "N": 32,
+    "state": 0,
+    "levels": 12,
+    "m": 337,
+    "normalized": 8.431033307234041e-16,
+    "absolute": 1.1229692274456452e-15,
+    "max_abs": 1.9279638981753175e-16
+   },
+   {
+    "slot": "R3",
+    "N": 32,
+    "state": 1,
+    "levels": 12,
+    "m": 337,
+    "normalized": 8.474509900241996e-16,
+    "absolute": 1.1576032479716681e-15,
+    "max_abs": 1.6262049547602305e-16
+   },
+   {
+    "slot": "R3",
+    "N": 32,
+    "state": "lowest",
+    "levels": 12,
+    "m": 337,
+    "normalized": 1.1101813451925868e-15,
+    "absolute": 1.1101813451925868e-15,
+    "max_abs": 7.776515945702111e-16
+   },
+   {
+    "slot": "R4",
+    "N": 8,
+    "state": 0,
+    "levels": 1,
+    "m": 7,
+    "normalized": 2.6758730982029425e-16,
+    "absolute": 3.1493712409930753e-16,
+    "max_abs": 2.3263411494723067e-16
+   },
+   {
+    "slot": "R4",
+    "N": 8,
+    "state": 1,
+    "levels": 1,
+    "m": 7,
+    "normalized": 2.42302173327884e-16,
+    "absolute": 2.850863792837907e-16,
+    "max_abs": 1.6653345369377348e-16
+   },
+   {
+    "slot": "R4",
+    "N": 8,
+    "state": "lowest",
+    "levels": 1,
+    "m": 7,
+    "normalized": 3.177720943535893e-16,
+    "absolute": 4.049042684920515e-16,
+    "max_abs": 2.2887833992611187e-16
+   },
+   {
+    "slot": "R4",
+    "N": 12,
+    "state": 0,
+    "levels": 2,
+    "m": 18,
+    "normalized": 6.646624715926065e-16,
+    "absolute": 8.220246699767679e-16,
+    "max_abs": 4.2276033262255756e-16
+   },
+   {
+    "slot": "R4",
+    "N": 12,
+    "state": 1,
+    "levels": 2,
+    "m": 18,
+    "normalized": 5.996742138435494e-16,
+    "absolute": 8.348184380455586e-16,
+    "max_abs": 3.855927796350635e-16
+   },
+   {
+    "slot": "R4",
+    "N": 12,
+    "state": "lowest",
+    "levels": 2,
+    "m": 18,
+    "normalized": 5.307719599057369e-16,
+    "absolute": 6.371734316007284e-16,
+    "max_abs": 3.554447978966673e-16
+   },
+   {
+    "slot": "R4",
+    "N": 16,
+    "state": 0,
+    "levels": 4,
+    "m": 50,
+    "normalized": 6.944040114344507e-16,
+    "absolute": 8.663693421138888e-16,
+    "max_abs": 3.4021815010030383e-16
+   },
+   {
+    "slot": "R4",
+    "N": 16,
+    "state": 1,
+    "levels": 4,
+    "m": 50,
+    "normalized": 7.76012948016892e-16,
+    "absolute": 1.1322217337491748e-15,
+    "max_abs": 3.3422138886441676e-16
+   },
+   {
+    "slot": "R4",
+    "N": 16,
+    "state": "lowest",
+    "levels": 4,
+    "m": 50,
+    "normalized": 8.87511255178443e-16,
+    "absolute": 1.127862223895683e-15,
+    "max_abs": 8.252325904466732e-16
+   },
+   {
+    "slot": "R4",
+    "N": 24,
+    "state": 0,
+    "levels": 8,
+    "m": 138,
+    "normalized": 1.0829822042768805e-15,
+    "absolute": 1.5066963639534426e-15,
+    "max_abs": 5.566705740848049e-16
+   },
+   {
+    "slot": "R4",
+    "N": 24,
+    "state": 1,
+    "levels": 8,
+    "m": 138,
+    "normalized": 1.0790128424169488e-15,
+    "absolute": 1.4079268112021818e-15,
+    "max_abs": 4.996485455209446e-16
+   },
+   {
+    "slot": "R4",
+    "N": 24,
+    "state": "lowest",
+    "levels": 8,
+    "m": 138,
+    "normalized": 1.5313641589788296e-15,
+    "absolute": 1.966507409648465e-15,
+    "max_abs": 1.4752290795525882e-15
+   },
+   {
+    "slot": "R4",
+    "N": 32,
+    "state": 0,
+    "levels": 12,
+    "m": 316,
+    "normalized": 9.055898753467288e-16,
+    "absolute": 1.2362911350527896e-15,
+    "max_abs": 2.0516726431624886e-16
+   },
+   {
+    "slot": "R4",
+    "N": 32,
+    "state": 1,
+    "levels": 12,
+    "m": 316,
+    "normalized": 7.926932266169979e-16,
+    "absolute": 1.0399648317097021e-15,
+    "max_abs": 1.4152622167509192e-16
+   },
+   {
+    "slot": "R4",
+    "N": 32,
+    "state": "lowest",
+    "levels": 12,
+    "m": 316,
+    "normalized": 8.063111209610825e-16,
+    "absolute": 1.011693580706862e-15,
+    "max_abs": 4.0029660424867215e-16
+   }
+  ],
+  "arms": {
+   "transform_sign": {
+    "worst": 1.2618427000953765,
+    "red": true
+   },
+   "negative_frequency": {
+    "worst": 0.8050452835594862,
+    "red": true
+   },
+   "overwritten_bin": {
+    "worst": 1.0,
+    "red": true
+   },
+   "unconjugated_A": {
+    "worst": 1.9965144753560975,
+    "red": true
+   },
+   "doubled_normalization": {
+    "worst": 0.9999399074574846,
+    "red": true
+   },
+   "aliased_grid": {
+    "worst": 0.02461536841505404,
+    "red": true
+   }
+  },
+  "unconjugated_A_in_the_real_basis": 3.762414342151589e-15,
+  "floors": {
+   "R1/8": {
+    "phase": 2.603703785810338e-16,
+    "right_su2": 6.591583993652522e-16
+   },
+   "R1/12": {
+    "phase": 4.194738107269749e-16,
+    "right_su2": 1.6070699444997706e-15
+   },
+   "R1/16": {
+    "phase": 3.9086703141041306e-16,
+    "right_su2": 1.923161102746751e-15
+   },
+   "R1/24": {
+    "phase": 1.1273640454212031e-15,
+    "right_su2": 3.246087990612759e-15
+   },
+   "R1/32": {
+    "phase": 8.001906774996833e-16,
+    "right_su2": 3.725759820654088e-15
+   },
+   "R2/8": {
+    "phase": 4.0385074962569843e-16,
+    "right_su2": 1.5205229010013195e-15
+   },
+   "R2/12": {
+    "phase": 4.059141146225248e-16,
+    "right_su2": 1.800066172227455e-15
+   },
+   "R2/16": {
+    "phase": 4.501588513468209e-16,
+    "right_su2": 1.2868662286245368e-15
+   },
+   "R2/24": {
+    "phase": 1.0445642658712485e-15,
+    "right_su2": 2.817530350104264e-15
+   },
+   "R2/32": {
+    "phase": 8.348032379930024e-16,
+    "right_su2": 2.5453270236868748e-15
+   },
+   "R3/8": {
+    "phase": 7.691850745534253e-16,
+    "right_su2": 9.176146095644398e-16
+   },
+   "R3/12": {
+    "phase": 4.844825363500125e-16,
+    "right_su2": 1.791922592195872e-15
+   },
+   "R3/16": {
+    "phase": 1.06951633510724e-15,
+    "right_su2": 1.8607656678345335e-15
+   },
+   "R3/24": {
+    "phase": 1.3273789259310323e-15,
+    "right_su2": 3.3493526109295174e-15
+   },
+   "R3/32": {
+    "phase": 7.635002626978527e-16,
+    "right_su2": 3.586188819001914e-15
+   },
+   "R4/8": {
+    "phase": 3.5939311743334233e-16,
+    "right_su2": 3.668086445783434e-15
+   },
+   "R4/12": {
+    "phase": 3.4669361455298887e-16,
+    "right_su2": 1.2653082300325002e-15
+   },
+   "R4/16": {
+    "phase": 1.054994850716306e-15,
+    "right_su2": 1.9084444947091528e-15
+   },
+   "R4/24": {
+    "phase": 1.5360595270018137e-15,
+    "right_su2": 3.1419703242986668e-15
+   },
+   "R4/32": {
+    "phase": 6.773033503300028e-16,
+    "right_su2": 3.040437624257521e-15
+   }
+  }
+ },
+ "env": {
+  "python": "3.13.13",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": 1,
+  "git_head": "d14d06be501830b1a14009707dee9476938d80e8",
+  "uncommitted": "",
+  "new_code": {
+   "controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c",
+   "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89",
+   "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93",
+   "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"
+  },
+  "pins": {
+   "pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305",
+   "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed",
+   "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"
+  }
+ },
+ "params": {
+  "seed": 20261120,
+  "slots": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rigid": [
+   "R1",
+   "R3"
+  ],
+  "kinds": [
+   "verlet",
+   "strang"
+  ],
+  "cubic_tol": 1e-11,
+  "ceiling": 1e-10,
+  "charge_tol": 1e-10,
+  "ratio": [
+   3.5,
+   4.5
+  ],
+  "hw_read": 0.5,
+  "drift": 0.01,
+  "quarter": 0.25,
+  "margin": 0.8,
+  "floor": 10.0,
+  "N1": [
+   8,
+   12,
+   16,
+   24,
+   32
+  ],
+  "NA": [
+   12,
+   16
+  ],
+  "NB": 12,
+  "N10": [
+   16,
+   24,
+   32
+  ],
+  "cost_slot": "R4",
+  "states1": 2,
+  "dirs2": 2,
+  "TA": 20.0,
+  "nobsA": 200,
+  "kappa": 1.0,
+  "ladder": 5,
+  "T9": 2000.0,
+  "dtobs9": 0.2,
+  "t5": 50.0,
+  "T6": 100.0,
+  "eps6": 1e-05,
+  "rank6": 1e-08,
+  "time6": 2000,
+  "cost_steps": {
+   "fft": 20,
+   "dense": 3
+  },
+  "fe": {
+   "N": 12,
+   "level": 2,
+   "nq": 3,
+   "amp2": 1e-06,
+   "T": 20.0,
+   "every": 100
+  }
+ },
+ "readings": [
+  "The floors (the dry run): each is the same machinery, seeds, sizes, steps and durations with the cubic switched off, where each stepper's answer is exact in exact arithmetic: the splitting is then the exact linear flow, and Verlet keeps its modified energy and carries its discrete rotations. Control 9's \"above the measured floor\" reads as above ten times it, as control 7 reports against ten times its floor. A ladder with no error above ten floors where h w-bar <= 0.5 passes as at floor; one with such an error and no ratio read fails as unread.",
+  "The splitting's matched rigid wave reads kappa = ||c||^2 where its kick reads the state, after the first half rotation (DEVLOG entry 4); Verlet's kicks read the step's ends.",
+  "Control 3 takes section 5's step at its free-field limit, 1.6/sqrt(N(N+2)), since its cubic is off. It reads each level's angle per step from z_{k+1} + z_{k-1} = 2 cos(theta) z_k, which holds exactly for a stepper whose map on one mode is 2 x 2 of determinant 1, by least squares over the run, from a generic position and momentum.",
+  "Controls 4, 7 and 8 read one set of runs, made at control 4: each multi-level state forward over TA and back, and each transformed state forward.",
+  "Charges are normalized by ||D|| |q(0)| |p(0)|, ||D|| the spectral norm. Each input's charges are checked nonzero at the start, each at least 1e-6 of that normalization.",
+  "Control 5's continuum-started convergence is read by control 9's ratio rule, at control 5. Control 9 then reads control 6's frequencies and the energy, so no quantity is read twice.",
+  "Control 9's h w_max is read with section 5's bound: a ratio e(h)/e(h/2) is read where h w-bar <= 0.5, which implies h w_max <= 0.5.",
+  "Control 9's unperturbed controls are the runs without a perturbation, read in two parts (DEVLOG entry 8). The order of the energy error is read on the multi-level states of controls 4, 7 and 8, under halving over TA: on a rigid wave the error's O(h^2) part is constant along the rotation, by the phase invariance, so the error there comes out O(h^4). Its secular drift is read on control 5's continuum-started rigid waves, at every step of the ladder over T9 = 2000, where the error oscillates at the single radial frequency: observed every 0.2 or so, below the Nyquist period of that oscillation and its harmonic, a pure oscillation at R1's radial frequency moves the two tenths' means apart by at most 0.0047 of its amplitude over T9.",
+  "Control 6 reads Theorem 3.7's frequencies on E0: 2 omega, n times, and (4 omega^2 + 2 kappa)^(1/2), with omega^2 = lambda_0 + kappa and kappa = |psi|^2 = ||phi||^2 in the normalized measure. The perturbation lies in E0, of relative size eps6, with its first-order charge removed, so it leaves the family at fixed charge and moves the frequencies only at second order. The state is demodulated at the scheme's own discrete rotation, and the frequencies are the arguments of the eigenvalues of the least-squares one-step map of the demodulated E0 data at its numerical rank (dynamic mode decomposition). Their moduli are an extraction diagnostic, not a growth or decay rate: the read eigenvalues sat on the unit circle to about 1e-9 in development, the zero-frequency ones fitted from weakly excited directions did not (DEVLOG entry 11), and the outputs record the two apart.",
+  "The rule of section 4 compares, for each of Theorem 3.7's two frequencies in R1 and R3, Verlet's relative error at section 5's step h0 with the splitting's, measured at the step at which the splitting costs Verlet's wall-clock per unit of evolved time, h0 tau_s/tau_v, with tau each stepper's measured time per step at h0. The registered perturbation is evolved there over T6 and read as in control 6. The rule adopts the splitting only if each of its errors there is at most a quarter of Verlet's, that step stays below pi/w-bar, and the splitting passed controls 3 to 9.",
+  "Control 10 runs in R4, the slot of the timing before the dated note, each measurement in its own process: the time per step alone, and with every diagnostic at every step, and the peak resident memory. Verlet's force at the end of each call is carried into the next, so every timing counts one cubic per step.",
+  "Control 11 runs at ||c||^2 = 1e-6, so the nonlinearity's phase over its duration is about 1e-6 rad: it compares the two discretizations of the field on R4's lowest level, where the frozen record gives the mesh's lift, and reads no slow flow.",
+  "The equivariance maps: the phase e^{i phi}, right translation by a random U and, in R1, R2, R6 and R8, J and a random element a + bJ of Sp(1); in the real slots, charge conjugation. Each acts on position and velocity.",
+  "Control 1's arms (DEVLOG entry 7): the aliased grid is M = 4 max(levels), one point short of exactness for the levels present; the missing conjugation of A is planted in a basis whose intertwiners carry a complex phase per copy, against the instrument's cubic transformed to that basis, since the instrument's intertwiners are real. The FFT path on that phased basis must itself agree to 1e-11. An arm is red when its worst discrepancy over every slot, N and state exceeds 1e-11.",
+  "Control 6 reads distinct frequencies: one trajectory excites one direction of each degenerate eigenspace, so 2 omega, n times, reads once, and a degeneracy the scheme split would read as further values (DEVLOG entry 7).",
+  "A failure of control 4, 7, 8 or 9 by the splitting alone disqualifies the splitting under the rule of section 4, and the controls go on with Verlet. A failure by Verlet, a failure of control 1 or 2, or a run past C-bar stops them."
+ ],
+ "rests_on_new_code": [
+  "controls.py",
+  "fecheck.py",
+  "fftcubic.py",
+  "timearm.py"
+ ]
+}

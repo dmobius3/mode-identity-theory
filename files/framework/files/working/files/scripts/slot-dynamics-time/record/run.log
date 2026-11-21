@@ -1,0 +1,192 @@
+[      0.0 s] REGISTERED run, into record/
+[      0.0 s] {"python": "3.13.13", "numpy": "2.5.0", "scipy": "1.18.0", "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O", "blas_threads": 1, "git_head": "d14d06be501830b1a14009707dee9476938d80e8", "uncommitted": "", "new_code": {"controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c", "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89", "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93", "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"}, "pins": {"pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305", "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed", "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"}}
+[      0.0 s] dry run: every floor, the cubic off
+[      0.2 s]   R1 N=12 verlet: {'rev': 2.401215311738879e-15, 'charge': np.float64(1.602468905319627e-15), 'equiv': 1.8091103062069042e-15, 'energy': 7.949006784916e-16, 'energy_ladder': [7.949006784916e-16, 1.086008990638237e-15, 2.4787529387399822e-15, 2.993591417840352e-15, 2.989538326483067e-15]}
+[      0.2 s]   R1 N=12 strang: {'rev': 3.6029889493565135e-15, 'charge': np.float64(1.6345182834260202e-15), 'equiv': 3.4544959849517773e-15, 'energy': 8.78879333485731e-16, 'energy_ladder': [8.78879333485731e-16, 2.2850862670629006e-15, 3.339741467245778e-15, 3.339741467245778e-15, 5.976379467702971e-15]}
+[      0.4 s]   R1 N=16 verlet: {'rev': 2.9740750430785728e-15, 'charge': np.float64(6.730369402342464e-16), 'equiv': 2.499300965270637e-15, 'energy': 8.994435658938926e-16, 'energy_ladder': [8.994435658938926e-16, 1.5304342252901175e-15, 1.00652448718112e-15, 1.5047116147842221e-15, 3.8421453042380846e-15]}
+[      0.5 s]   R1 N=16 strang: {'rev': 3.756087281435661e-15, 'charge': np.float64(1.025580099404566e-15), 'equiv': 4.021025235540793e-15, 'energy': 8.350152684134007e-16, 'energy_ladder': [8.350152684134007e-16, 3.173058019970923e-15, 1.169021375778761e-15, 3.507064127336283e-15, 1.8370335905094814e-15]}
+[      0.5 s]   R2 N=12 verlet: {'rev': 2.193028274375076e-15, 'charge': np.float64(5.594998139002096e-16), 'equiv': 2.0771799739238123e-15, 'energy': 9.869514396210597e-16, 'energy_ladder': [9.869514396210597e-16, 9.220532513041372e-16, 1.020533306545841e-15, 2.1457831676733334e-15, 9.0257897524909e-16]}
+[      0.6 s]   R2 N=12 strang: {'rev': 2.5864885911755213e-15, 'charge': np.float64(5.315248232051992e-16), 'equiv': 2.1536500628498608e-15, 'energy': 9.022764898540954e-16, 'energy_ladder': [9.022764898540954e-16, 1.3534147347811431e-15, 1.804552979708191e-15, 1.804552979708191e-15, 4.8497361329657625e-15]}
+[      0.7 s]   R2 N=16 verlet: {'rev': 2.3592384545215952e-15, 'charge': np.float64(5.035498325101886e-16), 'equiv': 2.156879215643504e-15, 'energy': 6.676895135323239e-16, 'energy_ladder': [6.676895135323239e-16, 7.542024682451693e-16, 1.325635358144039e-15, 1.4643182087344778e-15, 3.509235412711734e-15]}
+[      0.8 s]   R2 N=16 strang: {'rev': 3.4165998974749166e-15, 'charge': np.float64(7.832997394602934e-16), 'equiv': 3.0647729600355825e-15, 'energy': 1.1691764358757005e-15, 'energy_ladder': [1.1691764358757005e-15, 1.753764653813551e-15, 1.6076175993290883e-15, 4.384411634533877e-15, 2.9229410896892514e-15]}
+[      0.9 s]   R3 N=12 verlet: {'rev': 3.894361992973026e-15, 'charge': np.float64(3.9252311467094373e-16), 'equiv': 2.6417896031413723e-15, 'energy': 4.890422402363112e-16, 'energy_ladder': [4.890422402363112e-16, 1.590033363371089e-15, 1.4506912462055389e-15, 1.2221753917743737e-15, 1.5538084250880536e-15]}
+[      1.0 s]   R3 N=12 strang: {'rev': 3.4215043511717315e-15, 'charge': np.float64(2.5514002453611344e-16), 'equiv': 3.1811889988855357e-15, 'energy': 4.437847797452745e-16, 'energy_ladder': [4.437847797452745e-16, 1.3313543392358236e-15, 1.1094619493631862e-15, 3.3283858480895587e-15, 4.437847797452745e-15]}
+[      1.3 s]   R3 N=16 verlet: {'rev': 4.15402952376918e-15, 'charge': np.float64(4.219623482712646e-16), 'equiv': 3.068535720985807e-15, 'energy': 3.9643035205593915e-16, 'energy_ladder': [3.9643035205593915e-16, 5.629787047771071e-16, 9.259701055538377e-16, 9.22938620528877e-16, 2.5821147749041633e-15]}
+[      1.4 s]   R3 N=16 strang: {'rev': 5.015739058407025e-15, 'charge': np.float64(4.12149270404491e-16), 'equiv': 2.9358267791395768e-15, 'energy': 7.375460253235641e-16, 'energy_ladder': [7.375460253235641e-16, 2.9501841012942563e-15, 1.84386506330891e-15, 2.9501841012942563e-15, 5.347208683595839e-15]}
+[      1.5 s]   R4 N=12 verlet: {'rev': 1.741131763649307e-15, 'charge': np.float64(6.08938184021462e-16), 'equiv': 1.9752865356294613e-15, 'energy': 2.613209226641764e-16, 'energy_ladder': [2.613209226641764e-16, 9.474319055234873e-16, 1.9672528567878693e-15, 1.150629419750698e-15, 2.8724913821247862e-15]}
+[      1.6 s]   R4 N=12 strang: {'rev': 2.4391462813270645e-15, 'charge': np.float64(4.166419153831056e-16), 'equiv': 2.875926495732944e-15, 'energy': 6.890719759612975e-16, 'energy_ladder': [6.890719759612975e-16, 8.039173052881805e-16, 8.039173052881805e-16, 3.100823891825839e-15, 2.5265972451914244e-15]}
+[      1.9 s]   R4 N=16 verlet: {'rev': 2.7995990919510208e-15, 'charge': np.float64(3.044690920107309e-16), 'equiv': 2.18184160812143e-15, 'energy': 3.460776273886858e-16, 'energy_ladder': [3.460776273886858e-16, 1.4171619134374054e-15, 1.847962360541894e-15, 1.2252334040359512e-15, 9.17669655556348e-16]}
+[      2.0 s]   R4 N=16 strang: {'rev': 3.2824804903629213e-15, 'charge': np.float64(2.563950248511418e-16), 'equiv': 3.215735582718808e-15, 'energy': 4.586259758200783e-16, 'energy_ladder': [4.586259758200783e-16, 6.115013010934377e-16, 1.5287532527335942e-15, 1.6816285780069537e-15, 2.293129879100391e-15]}
+[      2.4 s]   R1 verlet h0/1: {'state_t5': 2.7446979987457042e-15, 'state_max': 5.65599999423274e-13, 'energy': 9.502972246036869e-15, 'freq': 1.371208749966325e-12, 'freq_read': True}
+[      2.9 s]   R1 verlet h0/2: {'state_t5': 9.731011392066365e-15, 'state_max': 4.831945079139093e-13, 'energy': 1.24440142754601e-14, 'freq': 1.8227600575342306e-12, 'freq_read': True}
+[      3.8 s]   R1 verlet h0/4: {'state_t5': 6.015374791972775e-15, 'state_max': 4.2940927135519415e-13, 'energy': 1.806308124442547e-14, 'freq': 7.38242419179984e-13, 'freq_read': True}
+[      5.5 s]   R1 verlet h0/8: {'state_t5': 1.104927684107051e-14, 'state_max': 5.039344530570168e-13, 'energy': 2.8423067941351824e-14, 'freq': 1.8712692744877247e-12, 'freq_read': True}
+[      8.9 s]   R1 verlet h0/16: {'state_t5': 2.533518442347979e-14, 'state_max': 8.842213224749968e-13, 'energy': 4.4705514645217614e-14, 'freq': 1.9385950613809913e-12, 'freq_read': True}
+[      9.3 s]   R1 strang h0/1: {'state_t5': 1.9397652776429787e-15, 'state_max': 3.7237575292554693e-13, 'energy': 2.1612341546036386e-14, 'freq': 1.983087319711157e-12, 'freq_read': True}
+[     10.1 s]   R1 strang h0/2: {'state_t5': 8.097115383814662e-15, 'state_max': 3.296979720067141e-13, 'energy': 3.2122452845821206e-14, 'freq': 1.4787583058289607e-12, 'freq_read': True}
+[     11.4 s]   R1 strang h0/4: {'state_t5': 2.4636884569139042e-15, 'state_max': 4.440904171753032e-13, 'energy': 3.2714571792287954e-14, 'freq': 3.913870054352681e-13, 'freq_read': True}
+[     14.0 s]   R1 strang h0/8: {'state_t5': 6.756701397407821e-15, 'state_max': 3.154469795548197e-13, 'energy': 5.210646728907403e-14, 'freq': 8.750762198169473e-13, 'freq_read': True}
+[     19.1 s]   R1 strang h0/16: {'state_t5': 5.067958340234082e-15, 'state_max': 4.3915236619325163e-13, 'energy': 8.496906881797868e-14, 'freq': 1.4163261172777076e-12, 'freq_read': True}
+[     19.5 s]   R3 verlet h0/1: {'state_t5': 2.8983636768566427e-15, 'state_max': 1.0665910859809117e-12, 'energy': 8.838904474488871e-15, 'freq': 9.357088231787183e-13, 'freq_read': True}
+[     20.0 s]   R3 verlet h0/2: {'state_t5': 6.567201235758166e-15, 'state_max': 1.243063478069686e-12, 'energy': 3.4928322005289806e-14, 'freq': 2.2968231830170237e-12, 'freq_read': True}
+[     21.0 s]   R3 verlet h0/4: {'state_t5': 6.075360765490867e-15, 'state_max': 1.0631546019940314e-12, 'energy': 1.4439856977545163e-14, 'freq': 5.723637418712681e-13, 'freq_read': True}
+[     23.0 s]   R3 verlet h0/8: {'state_t5': 2.405852037808445e-14, 'state_max': 1.0943378140160889e-12, 'energy': 4.896673388205157e-14, 'freq': 8.195553521901913e-14, 'freq_read': True}
+[     26.6 s]   R3 verlet h0/16: {'state_t5': 6.330863112383391e-15, 'state_max': 9.973060400221214e-13, 'energy': 3.96361556145215e-14, 'freq': 1.1075321023469146e-12, 'freq_read': True}
+[     27.0 s]   R3 strang h0/1: {'state_t5': 1.229258691507385e-14, 'state_max': 4.601181578998132e-13, 'energy': 8.548717289613707e-15, 'freq': 2.8088954085852733e-13, 'freq_read': True}
+[     27.7 s]   R3 strang h0/2: {'state_t5': 1.2158906396671977e-14, 'state_max': 4.591156915687734e-13, 'energy': 2.1427304375265524e-14, 'freq': 3.6787266306960846e-13, 'freq_read': True}
+[     29.1 s]   R3 strang h0/4: {'state_t5': 1.2840633100825516e-14, 'state_max': 1.0749057031697362e-12, 'energy': 5.5178084323870286e-14, 'freq': 1.2403730423601822e-13, 'freq_read': True}
+[     31.6 s]   R3 strang h0/8: {'state_t5': 1.0763086117792727e-14, 'state_max': 5.874460227425688e-13, 'energy': 9.78106484694763e-14, 'freq': 8.180181709742468e-13, 'freq_read': True}
+[     36.8 s]   R3 strang h0/16: {'state_t5': 1.4190306274530741e-14, 'state_max': 5.532893784942975e-13, 'energy': 1.3400391907225642e-13, 'freq': 3.4479230392695696e-13, 'freq_read': True}
+[     36.9 s]   dense cubic floor R1 N=8: {'phase': 2.603703785810338e-16, 'right_su2': 6.591583993652522e-16}
+[     36.9 s]   dense cubic floor R1 N=12: {'phase': 4.194738107269749e-16, 'right_su2': 1.6070699444997706e-15}
+[     37.0 s]   dense cubic floor R1 N=16: {'phase': 3.9086703141041306e-16, 'right_su2': 1.923161102746751e-15}
+[     38.1 s]   dense cubic floor R1 N=24: {'phase': 1.1273640454212031e-15, 'right_su2': 3.246087990612759e-15}
+[     48.0 s]   dense cubic floor R1 N=32: {'phase': 8.001906774996833e-16, 'right_su2': 3.725759820654088e-15}
+[     48.0 s]   dense cubic floor R2 N=8: {'phase': 4.0385074962569843e-16, 'right_su2': 1.5205229010013195e-15}
+[     48.0 s]   dense cubic floor R2 N=12: {'phase': 4.059141146225248e-16, 'right_su2': 1.800066172227455e-15}
+[     48.1 s]   dense cubic floor R2 N=16: {'phase': 4.501588513468209e-16, 'right_su2': 1.2868662286245368e-15}
+[     49.0 s]   dense cubic floor R2 N=24: {'phase': 1.0445642658712485e-15, 'right_su2': 2.817530350104264e-15}
+[     58.7 s]   dense cubic floor R2 N=32: {'phase': 8.348032379930024e-16, 'right_su2': 2.5453270236868748e-15}
+[     58.7 s]   dense cubic floor R3 N=8: {'phase': 7.691850745534253e-16, 'right_su2': 9.176146095644398e-16}
+[     58.8 s]   dense cubic floor R3 N=12: {'phase': 4.844825363500125e-16, 'right_su2': 1.791922592195872e-15}
+[     59.0 s]   dense cubic floor R3 N=16: {'phase': 1.06951633510724e-15, 'right_su2': 1.8607656678345335e-15}
+[     61.7 s]   dense cubic floor R3 N=24: {'phase': 1.3273789259310323e-15, 'right_su2': 3.3493526109295174e-15}
+[     87.0 s]   dense cubic floor R3 N=32: {'phase': 7.635002626978527e-16, 'right_su2': 3.586188819001914e-15}
+[     87.0 s]   dense cubic floor R4 N=8: {'phase': 3.5939311743334233e-16, 'right_su2': 3.668086445783434e-15}
+[     87.0 s]   dense cubic floor R4 N=12: {'phase': 3.4669361455298887e-16, 'right_su2': 1.2653082300325002e-15}
+[     87.3 s]   dense cubic floor R4 N=16: {'phase': 1.054994850716306e-15, 'right_su2': 1.9084444947091528e-15}
+[     89.3 s]   dense cubic floor R4 N=24: {'phase': 1.5360595270018137e-15, 'right_su2': 3.1419703242986668e-15}
+[    112.2 s]   dense cubic floor R4 N=32: {'phase': 6.773033503300028e-16, 'right_su2': 3.040437624257521e-15}
+[    112.2 s] control 1: The FFT cubic against the instrument's: normalized discrepancy at most 1e-11, absolute errors recorded; each mutation arm turns it red.
+[    112.3 s]   R1 N=8: worst 4.61e-16
+[    112.4 s]   R1 N=12: worst 5.36e-16
+[    112.6 s]   R1 N=16: worst 9.19e-16
+[    115.1 s]   R1 N=24: worst 8.41e-16
+[    135.9 s]   R1 N=32: worst 8.87e-16
+[    136.0 s]   R2 N=8: worst 4.33e-16
+[    136.0 s]   R2 N=12: worst 4.14e-16
+[    136.3 s]   R2 N=16: worst 3.68e-16
+[    138.7 s]   R2 N=24: worst 1.04e-15
+[    159.8 s]   R2 N=32: worst 9.79e-16
+[    159.8 s]   R3 N=8: worst 4.04e-16
+[    159.9 s]   R3 N=12: worst 6.22e-16
+[    160.5 s]   R3 N=16: worst 8.74e-16
+[    166.0 s]   R3 N=24: worst 3.76e-15
+[    215.9 s]   R3 N=32: worst 1.11e-15
+[    215.9 s]   R4 N=8: worst 3.18e-16
+[    216.0 s]   R4 N=12: worst 6.65e-16
+[    216.6 s]   R4 N=16: worst 8.88e-16
+[    221.1 s]   R4 N=24: worst 1.53e-15
+[    267.7 s]   R4 N=32: worst 9.06e-16
+[    267.7 s] control 1: pass
+[    267.7 s] control 2: Energy and gradient: the FFT cubic is the gradient of the quartic energy of the same assembly, which equals the instrument's energy, each at most 1e-11 normalized.
+[    267.7 s]   R1 N=8: energy 5.55e-16, gradient 5.55e-16
+[    267.7 s]   R1 N=12: energy 6.16e-15, gradient 1.31e-16
+[    267.9 s]   R1 N=16: energy 1.33e-14, gradient 1.94e-16
+[    269.5 s]   R1 N=24: energy 3.36e-14, gradient 2.71e-16
+[    277.9 s]   R1 N=32: energy 4.47e-14, gradient 3.02e-16
+[    277.9 s]   R2 N=8: energy 4.76e-15, gradient 3.25e-16
+[    278.0 s]   R2 N=12: energy 4.13e-15, gradient 4.00e-16
+[    278.1 s]   R2 N=16: energy 1.92e-14, gradient 2.23e-16
+[    279.5 s]   R2 N=24: energy 2.81e-14, gradient 2.28e-16
+[    287.7 s]   R2 N=32: energy 6.62e-14, gradient 1.74e-16
+[    287.8 s]   R3 N=8: energy 1.33e-15, gradient 8.88e-16
+[    287.9 s]   R3 N=12: energy 5.83e-15, gradient 2.22e-16
+[    288.2 s]   R3 N=16: energy 1.34e-14, gradient 1.67e-16
+[    290.6 s]   R3 N=24: energy 1.06e-14, gradient 2.48e-16
+[    310.7 s]   R3 N=32: energy 6.37e-14, gradient 1.15e-16
+[    310.8 s]   R4 N=8: energy 3.49e-15, gradient 9.43e-17
+[    310.9 s]   R4 N=12: energy 5.26e-15, gradient 1.23e-16
+[    311.3 s]   R4 N=16: energy 1.57e-14, gradient 1.64e-16
+[    313.8 s]   R4 N=24: energy 4.19e-14, gradient 2.06e-16
+[    332.2 s]   R4 N=32: energy 5.30e-14, gradient 2.49e-16
+[    332.2 s] control 2: pass
+[    332.2 s] control 3: Free modes, cubic off: Verlet at (2/h) arcsin(h w/2), the splitting at w, within the ceiling of control 4.
+[    332.2 s]   R1 N=12: worst 1.30e-16
+[    332.2 s]   R1 N=16: worst 3.37e-16
+[    332.2 s]   R2 N=12: worst 0.00e+00
+[    332.2 s]   R2 N=16: worst 1.55e-16
+[    332.2 s]   R3 N=12: worst 1.58e-16
+[    332.2 s]   R3 N=16: worst 2.84e-16
+[    332.3 s]   R4 N=12: worst 0.00e+00
+[    332.3 s]   R4 N=16: worst 2.84e-16
+[    332.3 s] control 3: pass
+[    332.3 s] control 4: Reversibility: forward then backward returns within 1e-10 of |(q, p)|, the floor recorded.
+[    339.8 s]   R1/12/verlet: reversibility 8.39e-15 (floor 2.4e-15)
+[    343.6 s]   R1/12/strang: reversibility 4.00e-15 (floor 3.6e-15)
+[    358.4 s]   R1/16/verlet: reversibility 3.28e-15 (floor 3.0e-15)
+[    375.8 s]   R1/16/strang: reversibility 3.59e-15 (floor 3.8e-15)
+[    377.9 s]   R2/12/verlet: reversibility 1.56e-15 (floor 2.2e-15)
+[    379.6 s]   R2/12/strang: reversibility 1.84e-15 (floor 2.6e-15)
+[    388.8 s]   R2/16/verlet: reversibility 2.37e-15 (floor 2.4e-15)
+[    403.9 s]   R2/16/strang: reversibility 3.24e-15 (floor 3.4e-15)
+[    414.9 s]   R3/12/verlet: reversibility 5.67e-15 (floor 3.9e-15)
+[    423.0 s]   R3/12/strang: reversibility 4.50e-15 (floor 3.4e-15)
+[    445.6 s]   R3/16/verlet: reversibility 4.61e-15 (floor 4.2e-15)
+[    468.5 s]   R3/16/strang: reversibility 5.79e-15 (floor 5.0e-15)
+[    474.1 s]   R4/12/verlet: reversibility 1.84e-15 (floor 1.7e-15)
+[    478.9 s]   R4/12/strang: reversibility 2.27e-15 (floor 2.4e-15)
+[    504.2 s]   R4/16/verlet: reversibility 2.82e-15 (floor 2.8e-15)
+[    526.2 s]   R4/16/strang: reversibility 3.17e-15 (floor 3.3e-15)
+[    526.2 s] control 4: pass
+[    526.2 s] control 5: The rigid standing waves in R1 and R3: each matched discrete wave within the ceiling of control 4, and the continuum-started wave converging at second order.
+[   2595.7 s]   R1 verlet: matched 2.14e-12; continuum at t5 [1.83e-01, 4.57e-02, 1.14e-02, 2.86e-03, 7.14e-04] (ok)
+[   4316.9 s]   R1 strang: matched 7.34e-12; continuum at t5 [2.25e-02, 5.59e-03, 1.40e-03, 3.49e-04, 8.73e-05] (ok)
+[   6663.1 s]   R3 verlet: matched 2.21e-12; continuum at t5 [4.98e-01, 1.25e-01, 3.13e-02, 7.82e-03, 1.95e-03] (ok)
+[   8997.3 s]   R3 strang: matched 1.47e-12; continuum at t5 [1.56e-02, 3.86e-03, 9.65e-04, 2.41e-04, 6.03e-05] (ok)
+[   8997.4 s] control 5: pass
+[   8997.4 s] control 6: Theorem 3.7's distinct nonzero E0 frequencies read in time in R1 and R3, under step halving, for both steppers.
+[   9132.8 s]   R1 verlet: errors 2w [1.36e-03, 3.40e-04, 8.50e-05, 2.12e-05, 5.31e-06], radial [1.59e-03, 3.97e-04, 9.92e-05, 2.48e-05, 6.19e-06]; 2.62 ms per step
+[   9214.7 s]   R1 strang: errors 2w [8.52e-05, 2.13e-05, 5.31e-06, 1.33e-06, 3.31e-07], radial [2.28e-04, 5.67e-05, 1.42e-05, 3.54e-06, 8.84e-07]; 2.58 ms per step
+[   9371.7 s]   R3 verlet: errors 2w [2.91e-03, 7.24e-04, 1.81e-04, 4.52e-05, 1.13e-05], radial [3.10e-03, 7.71e-04, 1.92e-04, 4.81e-05, 1.20e-05]; 3.54 ms per step
+[   9495.4 s]   R3 strang: errors 2w [3.59e-05, 8.93e-06, 2.23e-06, 5.57e-07, 1.39e-07], radial [1.03e-04, 2.54e-05, 6.34e-06, 1.59e-06, 3.96e-07]; 3.36 ms per step
+[   9495.4 s] control 6: pass
+[   9495.4 s] control 7: Charges: every applicable J_D within 1e-10 of ||D|| |q| |p|, reported against ten times the dry-run floor.
+[   9495.4 s] control 7: pass
+[   9495.4 s] control 8: Equivariance under right SU(2), the phase, Sp(1) and, in the real slots, charge conjugation: within the ceiling of control 4.
+[   9495.4 s] control 8: pass
+[   9495.4 s] control 9: Convergence and energy: halving ratios in [3.5, 4.5] where h w_max <= 0.5 and above the floor; the energy error at O(h^2) with its drift within 1e-2 of its largest oscillation; linear Verlet under C-bar.
+[   9495.4 s]   R1 verlet: rigid-wave energy [3.19e-05, 1.98e-06, 1.23e-07, 7.70e-09, 4.81e-10]; drift [1.82e-03, 5.49e-04, 9.04e-05, 1.41e-04, 2.23e-04] of the largest oscillation
+[   9495.4 s]   R1 strang: rigid-wave energy [1.99e-06, 1.24e-07, 7.71e-09, 4.81e-10, 3.01e-11]; drift [1.54e-04, 1.15e-04, 1.40e-04, 8.21e-05, 1.24e-03] of the largest oscillation
+[   9495.4 s]   R3 verlet: rigid-wave energy [1.49e-04, 9.21e-06, 5.73e-07, 3.58e-08, 2.24e-09]; drift [1.72e-05, 1.81e-04, 6.20e-04, 1.11e-03, 8.60e-04] of the largest oscillation
+[   9495.4 s]   R3 strang: rigid-wave energy [1.22e-06, 7.54e-08, 4.70e-09, 2.94e-10, 1.84e-11]; drift [8.78e-04, 1.07e-03, 8.78e-04, 9.79e-04, 4.20e-03] of the largest oscillation
+[   9521.5 s]   R1/12/verlet: energy [9.29e-02, 2.39e-02, 6.00e-03, 1.50e-03, 3.76e-04] (ok)
+[   9551.7 s]   R1/12/strang: energy [6.37e-04, 1.50e-04, 3.69e-05, 9.19e-06, 2.30e-06] (ok)
+[   9616.9 s]   R1/16/verlet: energy [5.67e-02, 1.39e-02, 3.62e-03, 9.06e-04, 2.26e-04] (ok)
+[   9682.8 s]   R1/16/strang: energy [3.38e-04, 8.14e-05, 2.02e-05, 5.03e-06, 1.26e-06] (ok)
+[   9691.3 s]   R2/12/verlet: energy [1.76e-02, 1.54e-03, 3.26e-04, 8.33e-05, 2.11e-05] (ok)
+[   9716.1 s]   R2/12/strang: energy [2.22e-04, 4.34e-05, 1.03e-05, 2.55e-06, 6.35e-07] (ok)
+[   9758.1 s]   R2/16/verlet: energy [5.67e-02, 1.67e-02, 4.31e-03, 1.09e-03, 2.72e-04] (ok)
+[   9799.1 s]   R2/16/strang: energy [4.13e-04, 9.13e-05, 2.23e-05, 5.53e-06, 1.38e-06] (ok)
+[   9836.9 s]   R3/12/verlet: energy [7.53e-02, 1.96e-02, 4.91e-03, 1.23e-03, 3.08e-04] (ok)
+[   9875.6 s]   R3/12/strang: energy [4.54e-04, 1.08e-04, 2.67e-05, 6.64e-06, 1.66e-06] (ok)
+[   9991.1 s]   R3/16/verlet: energy [6.07e-02, 1.53e-02, 3.51e-03, 9.11e-04, 2.31e-04] (ok)
+[  10103.1 s]   R3/16/strang: energy [2.75e-04, 6.58e-05, 1.63e-05, 4.06e-06, 1.02e-06] (ok)
+[  10123.9 s]   R4/12/verlet: energy [4.41e-02, 1.47e-02, 3.85e-03, 9.71e-04, 2.43e-04] (ok)
+[  10146.3 s]   R4/12/strang: energy [6.48e-04, 1.38e-04, 3.34e-05, 8.29e-06, 2.07e-06] (ok)
+[  10255.2 s]   R4/16/verlet: energy [6.96e-02, 1.86e-02, 4.92e-03, 1.23e-03, 3.10e-04] (ok)
+[  10354.9 s]   R4/16/strang: energy [3.14e-04, 7.02e-05, 1.71e-05, 4.25e-06, 1.06e-06] (ok)
+[  10354.9 s] control 9: pass
+[  10354.9 s] control 10: Cost: complete-step time with diagnostics, and peak memory, at N = 16, 24 and 32, each stepper and cubic.
+[  10355.4 s]   N=16 fft verlet: 0.0056 s per step, 0.0088 s with diagnostics, peak 0.05 GB
+[  10355.9 s]   N=16 fft strang: 0.0057 s per step, 0.0090 s with diagnostics, peak 0.05 GB
+[  10356.3 s]   N=16 dense verlet: 0.0240 s per step, 0.0426 s with diagnostics, peak 0.25 GB
+[  10356.8 s]   N=16 dense strang: 0.0239 s per step, 0.0440 s with diagnostics, peak 0.25 GB
+[  10359.9 s]   N=24 fft verlet: 0.0563 s per step, 0.0875 s with diagnostics, peak 0.05 GB
+[  10363.2 s]   N=24 fft strang: 0.0595 s per step, 0.0909 s with diagnostics, peak 0.05 GB
+[  10367.7 s]   N=24 dense verlet: 0.3095 s per step, 0.4880 s with diagnostics, peak 1.82 GB
+[  10371.7 s]   N=24 dense strang: 0.3137 s per step, 0.4835 s with diagnostics, peak 1.79 GB
+[  10375.7 s]   N=32 fft verlet: 0.0694 s per step, 0.1098 s with diagnostics, peak 0.08 GB
+[  10379.6 s]   N=32 fft strang: 0.0700 s per step, 0.1088 s with diagnostics, peak 0.08 GB
+[  10462.4 s]   N=32 dense verlet: 7.4319 s per step, 13.0160 s with diagnostics, peak 0.88 GB
+[  10538.9 s]   N=32 dense strang: 7.6682 s per step, 13.4020 s with diagnostics, peak 0.87 GB
+[  10538.9 s] control 10: report
+[  10540.6 s]   R1: tau ratio 0.985, equal-cost step 0.08894; 2omega 8.26e-05 against 1.36e-03, radial 2.21e-04 against 1.59e-03
+[  10545.0 s]   R3: tau ratio 0.949, equal-cost step 0.08334; 2omega 3.23e-05 against 2.91e-03, radial 9.23e-05 against 3.10e-03
+[  10545.0 s] the rule of section 4: production stepper splitting
+[  10545.0 s] control 11: The finite-element cross-check, last and report-only.
+[  10545.2 s]   finite elements: mesh level 2, step 0.008186672656923915 (dt_L2.json), frozen lowest-level lift s2 = 6.739e-04
+[  10605.3 s]   intertwiner residual 1.4e-15, convention residual 9.1e-15, M-norm ratio 0.999079
+[  10605.3 s]   finite-element lowest level: mean 48.025302 against 48, spread 6.74e-04
+[  10605.3 s]   relative M-distance at t = 19.65: 3.310e-02 (largest 3.607e-02)
+[  10605.3 s] done: every control ran

@@ -1,0 +1,555 @@
+{
+ "control": "the dry run: the floors",
+ "floors": {
+  "A": {
+   "R1/12/verlet": {
+    "rev": 2.401215311738879e-15,
+    "charge": 1.602468905319627e-15,
+    "equiv": 1.8091103062069042e-15,
+    "energy": 7.949006784916e-16,
+    "energy_ladder": [
+     7.949006784916e-16,
+     1.086008990638237e-15,
+     2.4787529387399822e-15,
+     2.993591417840352e-15,
+     2.989538326483067e-15
+    ]
+   },
+   "R1/12/strang": {
+    "rev": 3.6029889493565135e-15,
+    "charge": 1.6345182834260202e-15,
+    "equiv": 3.4544959849517773e-15,
+    "energy": 8.78879333485731e-16,
+    "energy_ladder": [
+     8.78879333485731e-16,
+     2.2850862670629006e-15,
+     3.339741467245778e-15,
+     3.339741467245778e-15,
+     5.976379467702971e-15
+    ]
+   },
+   "R1/16/verlet": {
+    "rev": 2.9740750430785728e-15,
+    "charge": 6.730369402342464e-16,
+    "equiv": 2.499300965270637e-15,
+    "energy": 8.994435658938926e-16,
+    "energy_ladder": [
+     8.994435658938926e-16,
+     1.5304342252901175e-15,
+     1.00652448718112e-15,
+     1.5047116147842221e-15,
+     3.8421453042380846e-15
+    ]
+   },
+   "R1/16/strang": {
+    "rev": 3.756087281435661e-15,
+    "charge": 1.025580099404566e-15,
+    "equiv": 4.021025235540793e-15,
+    "energy": 8.350152684134007e-16,
+    "energy_ladder": [
+     8.350152684134007e-16,
+     3.173058019970923e-15,
+     1.169021375778761e-15,
+     3.507064127336283e-15,
+     1.8370335905094814e-15
+    ]
+   },
+   "R2/12/verlet": {
+    "rev": 2.193028274375076e-15,
+    "charge": 5.594998139002096e-16,
+    "equiv": 2.0771799739238123e-15,
+    "energy": 9.869514396210597e-16,
+    "energy_ladder": [
+     9.869514396210597e-16,
+     9.220532513041372e-16,
+     1.020533306545841e-15,
+     2.1457831676733334e-15,
+     9.0257897524909e-16
+    ]
+   },
+   "R2/12/strang": {
+    "rev": 2.5864885911755213e-15,
+    "charge": 5.315248232051992e-16,
+    "equiv": 2.1536500628498608e-15,
+    "energy": 9.022764898540954e-16,
+    "energy_ladder": [
+     9.022764898540954e-16,
+     1.3534147347811431e-15,
+     1.804552979708191e-15,
+     1.804552979708191e-15,
+     4.8497361329657625e-15
+    ]
+   },
+   "R2/16/verlet": {
+    "rev": 2.3592384545215952e-15,
+    "charge": 5.035498325101886e-16,
+    "equiv": 2.156879215643504e-15,
+    "energy": 6.676895135323239e-16,
+    "energy_ladder": [
+     6.676895135323239e-16,
+     7.542024682451693e-16,
+     1.325635358144039e-15,
+     1.4643182087344778e-15,
+     3.509235412711734e-15
+    ]
+   },
+   "R2/16/strang": {
+    "rev": 3.4165998974749166e-15,
+    "charge": 7.832997394602934e-16,
+    "equiv": 3.0647729600355825e-15,
+    "energy": 1.1691764358757005e-15,
+    "energy_ladder": [
+     1.1691764358757005e-15,
+     1.753764653813551e-15,
+     1.6076175993290883e-15,
+     4.384411634533877e-15,
+     2.9229410896892514e-15
+    ]
+   },
+   "R3/12/verlet": {
+    "rev": 3.894361992973026e-15,
+    "charge": 3.9252311467094373e-16,
+    "equiv": 2.6417896031413723e-15,
+    "energy": 4.890422402363112e-16,
+    "energy_ladder": [
+     4.890422402363112e-16,
+     1.590033363371089e-15,
+     1.4506912462055389e-15,
+     1.2221753917743737e-15,
+     1.5538084250880536e-15
+    ]
+   },
+   "R3/12/strang": {
+    "rev": 3.4215043511717315e-15,
+    "charge": 2.5514002453611344e-16,
+    "equiv": 3.1811889988855357e-15,
+    "energy": 4.437847797452745e-16,
+    "energy_ladder": [
+     4.437847797452745e-16,
+     1.3313543392358236e-15,
+     1.1094619493631862e-15,
+     3.3283858480895587e-15,
+     4.437847797452745e-15
+    ]
+   },
+   "R3/16/verlet": {
+    "rev": 4.15402952376918e-15,
+    "charge": 4.219623482712646e-16,
+    "equiv": 3.068535720985807e-15,
+    "energy": 3.9643035205593915e-16,
+    "energy_ladder": [
+     3.9643035205593915e-16,
+     5.629787047771071e-16,
+     9.259701055538377e-16,
+     9.22938620528877e-16,
+     2.5821147749041633e-15
+    ]
+   },
+   "R3/16/strang": {
+    "rev": 5.015739058407025e-15,
+    "charge": 4.12149270404491e-16,
+    "equiv": 2.9358267791395768e-15,
+    "energy": 7.375460253235641e-16,
+    "energy_ladder": [
+     7.375460253235641e-16,
+     2.9501841012942563e-15,
+     1.84386506330891e-15,
+     2.9501841012942563e-15,
+     5.347208683595839e-15
+    ]
+   },
+   "R4/12/verlet": {
+    "rev": 1.741131763649307e-15,
+    "charge": 6.08938184021462e-16,
+    "equiv": 1.9752865356294613e-15,
+    "energy": 2.613209226641764e-16,
+    "energy_ladder": [
+     2.613209226641764e-16,
+     9.474319055234873e-16,
+     1.9672528567878693e-15,
+     1.150629419750698e-15,
+     2.8724913821247862e-15
+    ]
+   },
+   "R4/12/strang": {
+    "rev": 2.4391462813270645e-15,
+    "charge": 4.166419153831056e-16,
+    "equiv": 2.875926495732944e-15,
+    "energy": 6.890719759612975e-16,
+    "energy_ladder": [
+     6.890719759612975e-16,
+     8.039173052881805e-16,
+     8.039173052881805e-16,
+     3.100823891825839e-15,
+     2.5265972451914244e-15
+    ]
+   },
+   "R4/16/verlet": {
+    "rev": 2.7995990919510208e-15,
+    "charge": 3.044690920107309e-16,
+    "equiv": 2.18184160812143e-15,
+    "energy": 3.460776273886858e-16,
+    "energy_ladder": [
+     3.460776273886858e-16,
+     1.4171619134374054e-15,
+     1.847962360541894e-15,
+     1.2252334040359512e-15,
+     9.17669655556348e-16
+    ]
+   },
+   "R4/16/strang": {
+    "rev": 3.2824804903629213e-15,
+    "charge": 2.563950248511418e-16,
+    "equiv": 3.215735582718808e-15,
+    "energy": 4.586259758200783e-16,
+    "energy_ladder": [
+     4.586259758200783e-16,
+     6.115013010934377e-16,
+     1.5287532527335942e-15,
+     1.6816285780069537e-15,
+     2.293129879100391e-15
+    ]
+   }
+  },
+  "B": {
+   "R1/verlet/0": {
+    "state_t5": 2.7446979987457042e-15,
+    "state_max": 5.65599999423274e-13,
+    "energy": 9.502972246036869e-15,
+    "freq": 1.371208749966325e-12,
+    "freq_read": true
+   },
+   "R1/verlet/1": {
+    "state_t5": 9.731011392066365e-15,
+    "state_max": 4.831945079139093e-13,
+    "energy": 1.24440142754601e-14,
+    "freq": 1.8227600575342306e-12,
+    "freq_read": true
+   },
+   "R1/verlet/2": {
+    "state_t5": 6.015374791972775e-15,
+    "state_max": 4.2940927135519415e-13,
+    "energy": 1.806308124442547e-14,
+    "freq": 7.38242419179984e-13,
+    "freq_read": true
+   },
+   "R1/verlet/3": {
+    "state_t5": 1.104927684107051e-14,
+    "state_max": 5.039344530570168e-13,
+    "energy": 2.8423067941351824e-14,
+    "freq": 1.8712692744877247e-12,
+    "freq_read": true
+   },
+   "R1/verlet/4": {
+    "state_t5": 2.533518442347979e-14,
+    "state_max": 8.842213224749968e-13,
+    "energy": 4.4705514645217614e-14,
+    "freq": 1.9385950613809913e-12,
+    "freq_read": true
+   },
+   "R1/strang/0": {
+    "state_t5": 1.9397652776429787e-15,
+    "state_max": 3.7237575292554693e-13,
+    "energy": 2.1612341546036386e-14,
+    "freq": 1.983087319711157e-12,
+    "freq_read": true
+   },
+   "R1/strang/1": {
+    "state_t5": 8.097115383814662e-15,
+    "state_max": 3.296979720067141e-13,
+    "energy": 3.2122452845821206e-14,
+    "freq": 1.4787583058289607e-12,
+    "freq_read": true
+   },
+   "R1/strang/2": {
+    "state_t5": 2.4636884569139042e-15,
+    "state_max": 4.440904171753032e-13,
+    "energy": 3.2714571792287954e-14,
+    "freq": 3.913870054352681e-13,
+    "freq_read": true
+   },
+   "R1/strang/3": {
+    "state_t5": 6.756701397407821e-15,
+    "state_max": 3.154469795548197e-13,
+    "energy": 5.210646728907403e-14,
+    "freq": 8.750762198169473e-13,
+    "freq_read": true
+   },
+   "R1/strang/4": {
+    "state_t5": 5.067958340234082e-15,
+    "state_max": 4.3915236619325163e-13,
+    "energy": 8.496906881797868e-14,
+    "freq": 1.4163261172777076e-12,
+    "freq_read": true
+   },
+   "R3/verlet/0": {
+    "state_t5": 2.8983636768566427e-15,
+    "state_max": 1.0665910859809117e-12,
+    "energy": 8.838904474488871e-15,
+    "freq": 9.357088231787183e-13,
+    "freq_read": true
+   },
+   "R3/verlet/1": {
+    "state_t5": 6.567201235758166e-15,
+    "state_max": 1.243063478069686e-12,
+    "energy": 3.4928322005289806e-14,
+    "freq": 2.2968231830170237e-12,
+    "freq_read": true
+   },
+   "R3/verlet/2": {
+    "state_t5": 6.075360765490867e-15,
+    "state_max": 1.0631546019940314e-12,
+    "energy": 1.4439856977545163e-14,
+    "freq": 5.723637418712681e-13,
+    "freq_read": true
+   },
+   "R3/verlet/3": {
+    "state_t5": 2.405852037808445e-14,
+    "state_max": 1.0943378140160889e-12,
+    "energy": 4.896673388205157e-14,
+    "freq": 8.195553521901913e-14,
+    "freq_read": true
+   },
+   "R3/verlet/4": {
+    "state_t5": 6.330863112383391e-15,
+    "state_max": 9.973060400221214e-13,
+    "energy": 3.96361556145215e-14,
+    "freq": 1.1075321023469146e-12,
+    "freq_read": true
+   },
+   "R3/strang/0": {
+    "state_t5": 1.229258691507385e-14,
+    "state_max": 4.601181578998132e-13,
+    "energy": 8.548717289613707e-15,
+    "freq": 2.8088954085852733e-13,
+    "freq_read": true
+   },
+   "R3/strang/1": {
+    "state_t5": 1.2158906396671977e-14,
+    "state_max": 4.591156915687734e-13,
+    "energy": 2.1427304375265524e-14,
+    "freq": 3.6787266306960846e-13,
+    "freq_read": true
+   },
+   "R3/strang/2": {
+    "state_t5": 1.2840633100825516e-14,
+    "state_max": 1.0749057031697362e-12,
+    "energy": 5.5178084323870286e-14,
+    "freq": 1.2403730423601822e-13,
+    "freq_read": true
+   },
+   "R3/strang/3": {
+    "state_t5": 1.0763086117792727e-14,
+    "state_max": 5.874460227425688e-13,
+    "energy": 9.78106484694763e-14,
+    "freq": 8.180181709742468e-13,
+    "freq_read": true
+   },
+   "R3/strang/4": {
+    "state_t5": 1.4190306274530741e-14,
+    "state_max": 5.532893784942975e-13,
+    "energy": 1.3400391907225642e-13,
+    "freq": 3.4479230392695696e-13,
+    "freq_read": true
+   }
+  },
+  "cubic": {
+   "R1/8": {
+    "phase": 2.603703785810338e-16,
+    "right_su2": 6.591583993652522e-16
+   },
+   "R1/12": {
+    "phase": 4.194738107269749e-16,
+    "right_su2": 1.6070699444997706e-15
+   },
+   "R1/16": {
+    "phase": 3.9086703141041306e-16,
+    "right_su2": 1.923161102746751e-15
+   },
+   "R1/24": {
+    "phase": 1.1273640454212031e-15,
+    "right_su2": 3.246087990612759e-15
+   },
+   "R1/32": {
+    "phase": 8.001906774996833e-16,
+    "right_su2": 3.725759820654088e-15
+   },
+   "R2/8": {
+    "phase": 4.0385074962569843e-16,
+    "right_su2": 1.5205229010013195e-15
+   },
+   "R2/12": {
+    "phase": 4.059141146225248e-16,
+    "right_su2": 1.800066172227455e-15
+   },
+   "R2/16": {
+    "phase": 4.501588513468209e-16,
+    "right_su2": 1.2868662286245368e-15
+   },
+   "R2/24": {
+    "phase": 1.0445642658712485e-15,
+    "right_su2": 2.817530350104264e-15
+   },
+   "R2/32": {
+    "phase": 8.348032379930024e-16,
+    "right_su2": 2.5453270236868748e-15
+   },
+   "R3/8": {
+    "phase": 7.691850745534253e-16,
+    "right_su2": 9.176146095644398e-16
+   },
+   "R3/12": {
+    "phase": 4.844825363500125e-16,
+    "right_su2": 1.791922592195872e-15
+   },
+   "R3/16": {
+    "phase": 1.06951633510724e-15,
+    "right_su2": 1.8607656678345335e-15
+   },
+   "R3/24": {
+    "phase": 1.3273789259310323e-15,
+    "right_su2": 3.3493526109295174e-15
+   },
+   "R3/32": {
+    "phase": 7.635002626978527e-16,
+    "right_su2": 3.586188819001914e-15
+   },
+   "R4/8": {
+    "phase": 3.5939311743334233e-16,
+    "right_su2": 3.668086445783434e-15
+   },
+   "R4/12": {
+    "phase": 3.4669361455298887e-16,
+    "right_su2": 1.2653082300325002e-15
+   },
+   "R4/16": {
+    "phase": 1.054994850716306e-15,
+    "right_su2": 1.9084444947091528e-15
+   },
+   "R4/24": {
+    "phase": 1.5360595270018137e-15,
+    "right_su2": 3.1419703242986668e-15
+   },
+   "R4/32": {
+    "phase": 6.773033503300028e-16,
+    "right_su2": 3.040437624257521e-15
+   }
+  }
+ },
+ "env": {
+  "python": "3.13.13",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": 1,
+  "git_head": "d14d06be501830b1a14009707dee9476938d80e8",
+  "uncommitted": "",
+  "new_code": {
+   "controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c",
+   "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89",
+   "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93",
+   "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"
+  },
+  "pins": {
+   "pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305",
+   "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed",
+   "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"
+  }
+ },
+ "params": {
+  "seed": 20261120,
+  "slots": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rigid": [
+   "R1",
+   "R3"
+  ],
+  "kinds": [
+   "verlet",
+   "strang"
+  ],
+  "cubic_tol": 1e-11,
+  "ceiling": 1e-10,
+  "charge_tol": 1e-10,
+  "ratio": [
+   3.5,
+   4.5
+  ],
+  "hw_read": 0.5,
+  "drift": 0.01,
+  "quarter": 0.25,
+  "margin": 0.8,
+  "floor": 10.0,
+  "N1": [
+   8,
+   12,
+   16,
+   24,
+   32
+  ],
+  "NA": [
+   12,
+   16
+  ],
+  "NB": 12,
+  "N10": [
+   16,
+   24,
+   32
+  ],
+  "cost_slot": "R4",
+  "states1": 2,
+  "dirs2": 2,
+  "TA": 20.0,
+  "nobsA": 200,
+  "kappa": 1.0,
+  "ladder": 5,
+  "T9": 2000.0,
+  "dtobs9": 0.2,
+  "t5": 50.0,
+  "T6": 100.0,
+  "eps6": 1e-05,
+  "rank6": 1e-08,
+  "time6": 2000,
+  "cost_steps": {
+   "fft": 20,
+   "dense": 3
+  },
+  "fe": {
+   "N": 12,
+   "level": 2,
+   "nq": 3,
+   "amp2": 1e-06,
+   "T": 20.0,
+   "every": 100
+  }
+ },
+ "readings": [
+  "The floors (the dry run): each is the same machinery, seeds, sizes, steps and durations with the cubic switched off, where each stepper's answer is exact in exact arithmetic: the splitting is then the exact linear flow, and Verlet keeps its modified energy and carries its discrete rotations. Control 9's \"above the measured floor\" reads as above ten times it, as control 7 reports against ten times its floor. A ladder with no error above ten floors where h w-bar <= 0.5 passes as at floor; one with such an error and no ratio read fails as unread.",
+  "The splitting's matched rigid wave reads kappa = ||c||^2 where its kick reads the state, after the first half rotation (DEVLOG entry 4); Verlet's kicks read the step's ends.",
+  "Control 3 takes section 5's step at its free-field limit, 1.6/sqrt(N(N+2)), since its cubic is off. It reads each level's angle per step from z_{k+1} + z_{k-1} = 2 cos(theta) z_k, which holds exactly for a stepper whose map on one mode is 2 x 2 of determinant 1, by least squares over the run, from a generic position and momentum.",
+  "Controls 4, 7 and 8 read one set of runs, made at control 4: each multi-level state forward over TA and back, and each transformed state forward.",
+  "Charges are normalized by ||D|| |q(0)| |p(0)|, ||D|| the spectral norm. Each input's charges are checked nonzero at the start, each at least 1e-6 of that normalization.",
+  "Control 5's continuum-started convergence is read by control 9's ratio rule, at control 5. Control 9 then reads control 6's frequencies and the energy, so no quantity is read twice.",
+  "Control 9's h w_max is read with section 5's bound: a ratio e(h)/e(h/2) is read where h w-bar <= 0.5, which implies h w_max <= 0.5.",
+  "Control 9's unperturbed controls are the runs without a perturbation, read in two parts (DEVLOG entry 8). The order of the energy error is read on the multi-level states of controls 4, 7 and 8, under halving over TA: on a rigid wave the error's O(h^2) part is constant along the rotation, by the phase invariance, so the error there comes out O(h^4). Its secular drift is read on control 5's continuum-started rigid waves, at every step of the ladder over T9 = 2000, where the error oscillates at the single radial frequency: observed every 0.2 or so, below the Nyquist period of that oscillation and its harmonic, a pure oscillation at R1's radial frequency moves the two tenths' means apart by at most 0.0047 of its amplitude over T9.",
+  "Control 6 reads Theorem 3.7's frequencies on E0: 2 omega, n times, and (4 omega^2 + 2 kappa)^(1/2), with omega^2 = lambda_0 + kappa and kappa = |psi|^2 = ||phi||^2 in the normalized measure. The perturbation lies in E0, of relative size eps6, with its first-order charge removed, so it leaves the family at fixed charge and moves the frequencies only at second order. The state is demodulated at the scheme's own discrete rotation, and the frequencies are the arguments of the eigenvalues of the least-squares one-step map of the demodulated E0 data at its numerical rank (dynamic mode decomposition). Their moduli are an extraction diagnostic, not a growth or decay rate: the read eigenvalues sat on the unit circle to about 1e-9 in development, the zero-frequency ones fitted from weakly excited directions did not (DEVLOG entry 11), and the outputs record the two apart.",
+  "The rule of section 4 compares, for each of Theorem 3.7's two frequencies in R1 and R3, Verlet's relative error at section 5's step h0 with the splitting's, measured at the step at which the splitting costs Verlet's wall-clock per unit of evolved time, h0 tau_s/tau_v, with tau each stepper's measured time per step at h0. The registered perturbation is evolved there over T6 and read as in control 6. The rule adopts the splitting only if each of its errors there is at most a quarter of Verlet's, that step stays below pi/w-bar, and the splitting passed controls 3 to 9.",
+  "Control 10 runs in R4, the slot of the timing before the dated note, each measurement in its own process: the time per step alone, and with every diagnostic at every step, and the peak resident memory. Verlet's force at the end of each call is carried into the next, so every timing counts one cubic per step.",
+  "Control 11 runs at ||c||^2 = 1e-6, so the nonlinearity's phase over its duration is about 1e-6 rad: it compares the two discretizations of the field on R4's lowest level, where the frozen record gives the mesh's lift, and reads no slow flow.",
+  "The equivariance maps: the phase e^{i phi}, right translation by a random U and, in R1, R2, R6 and R8, J and a random element a + bJ of Sp(1); in the real slots, charge conjugation. Each acts on position and velocity.",
+  "Control 1's arms (DEVLOG entry 7): the aliased grid is M = 4 max(levels), one point short of exactness for the levels present; the missing conjugation of A is planted in a basis whose intertwiners carry a complex phase per copy, against the instrument's cubic transformed to that basis, since the instrument's intertwiners are real. The FFT path on that phased basis must itself agree to 1e-11. An arm is red when its worst discrepancy over every slot, N and state exceeds 1e-11.",
+  "Control 6 reads distinct frequencies: one trajectory excites one direction of each degenerate eigenspace, so 2 omega, n times, reads once, and a degeneracy the scheme split would read as further values (DEVLOG entry 7).",
+  "A failure of control 4, 7, 8 or 9 by the splitting alone disqualifies the splitting under the rule of section 4, and the controls go on with Verlet. A failure by Verlet, a failure of control 1 or 2, or a run past C-bar stops them."
+ ],
+ "rests_on_new_code": [
+  "controls.py",
+  "fecheck.py",
+  "fftcubic.py",
+  "timearm.py"
+ ]
+}

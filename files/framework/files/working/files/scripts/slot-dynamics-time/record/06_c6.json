@@ -1,0 +1,669 @@
+{
+ "control": 6,
+ "line": "Theorem 3.7's distinct nonzero E0 frequencies read in time in R1 and R3, under step halving, for both steppers.",
+ "result": {
+  "passed": true,
+  "by_kind": {
+   "verlet": true,
+   "strang": true
+  },
+  "rows": [
+   {
+    "slot": "R1",
+    "kind": "verlet",
+    "h0": 0.09031719639076166,
+    "wbar": 17.715341750396277,
+    "tau": 0.0026228851460618897,
+    "reads": [
+     {
+      "h": 0.09031719639076166,
+      "steps": 1108,
+      "rank": 8,
+      "frequencies": [
+       4.005458184843003,
+       4.249402588289443
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 1.137776047041848e-17,
+      "extraction_moduli": {
+       "read": 1.8645307520159804e-11,
+       "rest": 0.2797738155364894
+      },
+      "cmax_over_cbar": 0.1440009866792674,
+      "read": true,
+      "errors": {
+       "2omega": 0.0013645462107507722,
+       "radial": 0.0015937953903773405,
+       "all": 0.0015937953903773405
+      }
+     },
+     {
+      "h": 0.04515859819538083,
+      "steps": 2216,
+      "rank": 8,
+      "frequencies": [
+       4.0013607763630965,
+       4.244325041716464
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 1.0959868709240211e-17,
+      "extraction_moduli": {
+       "read": 5.2009174744682696e-11,
+       "rest": 0.07236151855634387
+      },
+      "cmax_over_cbar": 0.14400098680885895,
+      "read": true,
+      "errors": {
+       "2omega": 0.0003401940907741263,
+       "radial": 0.00039700618586271464,
+       "all": 0.00039700618586271464
+      }
+     },
+     {
+      "h": 0.022579299097690415,
+      "steps": 4432,
+      "rank": 8,
+      "frequencies": [
+       4.000339955809741,
+       4.24306139330711
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 5.074281866210084e-18,
+      "extraction_moduli": {
+       "read": 3.8817948855296436e-11,
+       "rest": 0.018215998675990552
+      },
+      "cmax_over_cbar": 0.14400098684401963,
+      "read": true,
+      "errors": {
+       "2omega": 8.498895243524984e-05,
+       "radial": 9.916139943288306e-05,
+       "all": 9.916139943288306e-05
+      }
+     },
+     {
+      "h": 0.011289649548845208,
+      "steps": 8864,
+      "rank": 8,
+      "frequencies": [
+       4.000084970323352,
+       4.24274583702437
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 4.415454887421454e-18,
+      "extraction_moduli": {
+       "read": 2.1765589330868806e-11,
+       "rest": 0.004539975901325266
+      },
+      "cmax_over_cbar": 0.1440009868551207,
+      "read": true,
+      "errors": {
+       "2omega": 2.1242580837910197e-05,
+       "radial": 2.4784070308968685e-05,
+       "all": 2.4784070308968685e-05
+      }
+     },
+     {
+      "h": 0.005644824774422604,
+      "steps": 17728,
+      "rank": 8,
+      "frequencies": [
+       4.000021237681776,
+       4.242666970133128
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 4.038153824913941e-18,
+      "extraction_moduli": {
+       "read": 1.1295964164048655e-11,
+       "rest": 0.0011225717401087687
+      },
+      "cmax_over_cbar": 0.14400098685750398,
+      "read": true,
+      "errors": {
+       "2omega": 5.309420443966317e-06,
+       "radial": 6.194965772932136e-06,
+       "all": 6.194965772932136e-06
+      }
+     }
+    ],
+    "ok": true
+   },
+   {
+    "slot": "R1",
+    "kind": "strang",
+    "h0": 0.09031719639076166,
+    "wbar": 17.715341750396277,
+    "tau": 0.0025828313955571502,
+    "reads": [
+     {
+      "h": 0.09031719639076166,
+      "steps": 1108,
+      "rank": 8,
+      "frequencies": [
+       4.000340790764255,
+       4.243608253441217
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 1.0130319615466205e-17,
+      "extraction_moduli": {
+       "read": 1.274410577067897e-10,
+       "rest": 0.2798640601572935
+      },
+      "cmax_over_cbar": 0.14370668306857853,
+      "read": true,
+      "errors": {
+       "2omega": 8.519769106385411e-05,
+       "radial": 0.0002280575691620945,
+       "all": 0.0002280575691620945
+      }
+     },
+     {
+      "h": 0.04515859819538083,
+      "steps": 2216,
+      "rank": 8,
+      "frequencies": [
+       4.000085022495369,
+       4.24288140360406
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 1.0685175368451105e-17,
+      "extraction_moduli": {
+       "read": 7.740785790133486e-11,
+       "rest": 0.07248366870748457
+      },
+      "cmax_over_cbar": 0.1439275136110146,
+      "read": true,
+      "errors": {
+       "2omega": 2.1255623842142413e-05,
+       "radial": 5.6737419576002206e-05,
+       "all": 5.6737419576002206e-05
+      }
+     },
+     {
+      "h": 0.022579299097690415,
+      "steps": 4432,
+      "rank": 8,
+      "frequencies": [
+       4.000021241006792,
+       4.242700790865563
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 6.193255734967948e-18,
+      "extraction_moduli": {
+       "read": 4.2722381188298186e-11,
+       "rest": 0.018237119194079332
+      },
+      "cmax_over_cbar": 0.14398262061282663,
+      "read": true,
+      "errors": {
+       "2omega": 5.310251697920876e-06,
+       "radial": 1.41665888561112e-05,
+       "all": 1.41665888561112e-05
+      }
+     },
+     {
+      "h": 0.011289649548845208,
+      "steps": 8864,
+      "rank": 8,
+      "frequencies": [
+       4.00000530559407,
+       4.2426557056123935
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 4.897731184639258e-18,
+      "extraction_moduli": {
+       "read": 2.2505330932176548e-11,
+       "rest": 0.004544613575454992
+      },
+      "cmax_over_cbar": 0.1439963932588083,
+      "read": true,
+      "errors": {
+       "2omega": 1.3263985174649662e-06,
+       "radial": 3.539892773454666e-06,
+       "all": 3.539892773454666e-06
+      }
+     },
+     {
+      "h": 0.005644824774422604,
+      "steps": 17728,
+      "rank": 8,
+      "frequencies": [
+       4.000001322363439,
+       4.242644438540471
+      ],
+      "expected": [
+       4.0,
+       4.242640687119285
+      ],
+      "off_E0": 3.827429082390976e-18,
+      "extraction_moduli": {
+       "read": 1.1784684339488649e-11,
+       "rest": 0.001123973679289736
+      },
+      "cmax_over_cbar": 0.14399983724748283,
+      "read": true,
+      "errors": {
+       "2omega": 3.305908597983631e-07,
+       "radial": 8.842184532683077e-07,
+       "all": 8.842184532683077e-07
+      }
+     }
+    ],
+    "ok": true
+   },
+   {
+    "slot": "R3",
+    "kind": "verlet",
+    "h0": 0.08780314377753308,
+    "wbar": 18.22258214414192,
+    "tau": 0.003537814020528458,
+    "reads": [
+     {
+      "h": 0.08780314377753308,
+      "steps": 1139,
+      "rank": 9,
+      "frequencies": [
+       6.017482943867149,
+       6.183546019358994
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 8.042352603465678e-18,
+      "extraction_moduli": {
+       "read": 2.335807103293064e-10,
+       "rest": 0.5331404980506584
+      },
+      "cmax_over_cbar": 0.16457354971661228,
+      "read": true,
+      "errors": {
+       "2omega": 0.002913823977858184,
+       "radial": 0.003103622887885787,
+       "all": 0.003103622887885787
+      }
+     },
+     {
+      "h": 0.04390157188876654,
+      "steps": 2278,
+      "rank": 9,
+      "frequencies": [
+       6.004345014993002,
+       6.169166133331464
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 6.972546825372107e-18,
+      "extraction_moduli": {
+       "read": 4.1534220507344344e-11,
+       "rest": 0.14293622398145822
+      },
+      "cmax_over_cbar": 0.16457355547629537,
+      "read": true,
+      "errors": {
+       "2omega": 0.0007241691655003694,
+       "radial": 0.000770897340801414,
+       "all": 0.000770897340801414
+      }
+     },
+     {
+      "h": 0.02195078594438327,
+      "steps": 4556,
+      "rank": 9,
+      "frequencies": [
+       6.001084660558465,
+       6.165600127560003
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 4.557663000327061e-18,
+      "extraction_moduli": {
+       "read": 3.986189156535147e-11,
+       "rest": 0.03620197395156399
+      },
+      "cmax_over_cbar": 0.16457355714756577,
+      "read": true,
+      "errors": {
+       "2omega": 0.0001807767597442241,
+       "radial": 0.000192414816794538,
+       "all": 0.000192414816794538
+      }
+     },
+     {
+      "h": 0.010975392972191635,
+      "steps": 9112,
+      "rank": 9,
+      "frequencies": [
+       6.000271064557531,
+       6.164710414874815
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 5.031801531103473e-18,
+      "extraction_moduli": {
+       "read": 2.061384396512267e-11,
+       "rest": 0.0090351397569155
+      },
+      "cmax_over_cbar": 0.1645735575196131,
+      "read": true,
+      "errors": {
+       "2omega": 4.517742625509413e-05,
+       "radial": 4.808436060525518e-05,
+       "all": 4.808436060525518e-05
+      }
+     },
+     {
+      "h": 0.0054876964860958175,
+      "steps": 18224,
+      "rank": 9,
+      "frequencies": [
+       6.000067758599767,
+       6.16448809823303
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 3.823492454720015e-18,
+      "extraction_moduli": {
+       "read": 1.0205725153866751e-11,
+       "rest": 0.0022349913421113587
+      },
+      "cmax_over_cbar": 0.1645735576125053,
+      "read": true,
+      "errors": {
+       "2omega": 1.1293099961099765e-05,
+       "radial": 1.2019839033916532e-05,
+       "all": 1.2019839033916532e-05
+      }
+     }
+    ],
+    "ok": true
+   },
+   {
+    "slot": "R3",
+    "kind": "strang",
+    "h0": 0.08780314377753308,
+    "wbar": 18.22258214414192,
+    "tau": 0.003357827728963457,
+    "reads": [
+     {
+      "h": 0.08780314377753308,
+      "steps": 1139,
+      "rank": 9,
+      "frequencies": [
+       6.000215252492459,
+       6.1650465078634715
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 8.998574920971316e-18,
+      "extraction_moduli": {
+       "read": 5.994515994700578e-11,
+       "rest": 0.5306118316311433
+      },
+      "cmax_over_cbar": 0.1642546784120064,
+      "read": true,
+      "errors": {
+       "2omega": 3.587541540979918e-05,
+       "radial": 0.00010260584285722489,
+       "all": 0.00010260584285722489
+      }
+     },
+     {
+      "h": 0.04390157188876654,
+      "steps": 2278,
+      "rank": 9,
+      "frequencies": [
+       6.0000536045079755,
+       6.164570772073897
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 6.29424059920343e-18,
+      "extraction_moduli": {
+       "read": 7.366018905941019e-11,
+       "rest": 0.14254584898269795
+      },
+      "cmax_over_cbar": 0.16449413489178244,
+      "read": true,
+      "errors": {
+       "2omega": 8.934084662589234e-06,
+       "radial": 2.5431306989631027e-05,
+       "all": 2.5431306989631027e-05
+      }
+     },
+     {
+      "h": 0.02195078594438327,
+      "steps": 4556,
+      "rank": 9,
+      "frequencies": [
+       6.000013386949102,
+       6.164453111584185
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 4.4466155047258115e-18,
+      "extraction_moduli": {
+       "read": 4.2653103271561577e-11,
+       "rest": 0.03617764069708562
+      },
+      "cmax_over_cbar": 0.16455371560076584,
+      "read": true,
+      "errors": {
+       "2omega": 2.231158183689056e-06,
+       "radial": 6.3442551377239436e-06,
+       "all": 6.3442551377239436e-06
+      }
+     },
+     {
+      "h": 0.010975392972191635,
+      "steps": 9112,
+      "rank": 9,
+      "frequencies": [
+       6.000003344611827,
+       6.164423774559186
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 3.8172955623247096e-18,
+      "extraction_moduli": {
+       "read": 2.135314147722056e-11,
+       "rest": 0.009032375363253076
+      },
+      "cmax_over_cbar": 0.16456859558018042,
+      "read": true,
+      "errors": {
+       "2omega": 5.574353044342691e-07,
+       "radial": 1.585161250553e-06,
+       "all": 1.585161250553e-06
+      }
+     },
+     {
+      "h": 0.0054876964860958175,
+      "steps": 18224,
+      "rank": 9,
+      "frequencies": [
+       6.000000834769665,
+       6.164416445254041
+      ],
+      "expected": [
+       6.0,
+       6.164414002968976
+      ],
+      "off_E0": 4.136733040565841e-18,
+      "extraction_moduli": {
+       "read": 1.022815165896418e-11,
+       "rest": 0.0022345498411373566
+      },
+      "cmax_over_cbar": 0.1645723158285592,
+      "read": true,
+      "errors": {
+       "2omega": 1.3912827749133308e-07,
+       "radial": 3.961909540267282e-07,
+       "all": 3.961909540267282e-07
+      }
+     }
+    ],
+    "ok": true
+   }
+  ]
+ },
+ "env": {
+  "python": "3.13.13",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": 1,
+  "git_head": "d14d06be501830b1a14009707dee9476938d80e8",
+  "uncommitted": "",
+  "new_code": {
+   "controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c",
+   "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89",
+   "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93",
+   "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"
+  },
+  "pins": {
+   "pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305",
+   "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed",
+   "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"
+  }
+ },
+ "params": {
+  "seed": 20261120,
+  "slots": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rigid": [
+   "R1",
+   "R3"
+  ],
+  "kinds": [
+   "verlet",
+   "strang"
+  ],
+  "cubic_tol": 1e-11,
+  "ceiling": 1e-10,
+  "charge_tol": 1e-10,
+  "ratio": [
+   3.5,
+   4.5
+  ],
+  "hw_read": 0.5,
+  "drift": 0.01,
+  "quarter": 0.25,
+  "margin": 0.8,
+  "floor": 10.0,
+  "N1": [
+   8,
+   12,
+   16,
+   24,
+   32
+  ],
+  "NA": [
+   12,
+   16
+  ],
+  "NB": 12,
+  "N10": [
+   16,
+   24,
+   32
+  ],
+  "cost_slot": "R4",
+  "states1": 2,
+  "dirs2": 2,
+  "TA": 20.0,
+  "nobsA": 200,
+  "kappa": 1.0,
+  "ladder": 5,
+  "T9": 2000.0,
+  "dtobs9": 0.2,
+  "t5": 50.0,
+  "T6": 100.0,
+  "eps6": 1e-05,
+  "rank6": 1e-08,
+  "time6": 2000,
+  "cost_steps": {
+   "fft": 20,
+   "dense": 3
+  },
+  "fe": {
+   "N": 12,
+   "level": 2,
+   "nq": 3,
+   "amp2": 1e-06,
+   "T": 20.0,
+   "every": 100
+  }
+ },
+ "readings": [
+  "The floors (the dry run): each is the same machinery, seeds, sizes, steps and durations with the cubic switched off, where each stepper's answer is exact in exact arithmetic: the splitting is then the exact linear flow, and Verlet keeps its modified energy and carries its discrete rotations. Control 9's \"above the measured floor\" reads as above ten times it, as control 7 reports against ten times its floor. A ladder with no error above ten floors where h w-bar <= 0.5 passes as at floor; one with such an error and no ratio read fails as unread.",
+  "The splitting's matched rigid wave reads kappa = ||c||^2 where its kick reads the state, after the first half rotation (DEVLOG entry 4); Verlet's kicks read the step's ends.",
+  "Control 3 takes section 5's step at its free-field limit, 1.6/sqrt(N(N+2)), since its cubic is off. It reads each level's angle per step from z_{k+1} + z_{k-1} = 2 cos(theta) z_k, which holds exactly for a stepper whose map on one mode is 2 x 2 of determinant 1, by least squares over the run, from a generic position and momentum.",
+  "Controls 4, 7 and 8 read one set of runs, made at control 4: each multi-level state forward over TA and back, and each transformed state forward.",
+  "Charges are normalized by ||D|| |q(0)| |p(0)|, ||D|| the spectral norm. Each input's charges are checked nonzero at the start, each at least 1e-6 of that normalization.",
+  "Control 5's continuum-started convergence is read by control 9's ratio rule, at control 5. Control 9 then reads control 6's frequencies and the energy, so no quantity is read twice.",
+  "Control 9's h w_max is read with section 5's bound: a ratio e(h)/e(h/2) is read where h w-bar <= 0.5, which implies h w_max <= 0.5.",
+  "Control 9's unperturbed controls are the runs without a perturbation, read in two parts (DEVLOG entry 8). The order of the energy error is read on the multi-level states of controls 4, 7 and 8, under halving over TA: on a rigid wave the error's O(h^2) part is constant along the rotation, by the phase invariance, so the error there comes out O(h^4). Its secular drift is read on control 5's continuum-started rigid waves, at every step of the ladder over T9 = 2000, where the error oscillates at the single radial frequency: observed every 0.2 or so, below the Nyquist period of that oscillation and its harmonic, a pure oscillation at R1's radial frequency moves the two tenths' means apart by at most 0.0047 of its amplitude over T9.",
+  "Control 6 reads Theorem 3.7's frequencies on E0: 2 omega, n times, and (4 omega^2 + 2 kappa)^(1/2), with omega^2 = lambda_0 + kappa and kappa = |psi|^2 = ||phi||^2 in the normalized measure. The perturbation lies in E0, of relative size eps6, with its first-order charge removed, so it leaves the family at fixed charge and moves the frequencies only at second order. The state is demodulated at the scheme's own discrete rotation, and the frequencies are the arguments of the eigenvalues of the least-squares one-step map of the demodulated E0 data at its numerical rank (dynamic mode decomposition). Their moduli are an extraction diagnostic, not a growth or decay rate: the read eigenvalues sat on the unit circle to about 1e-9 in development, the zero-frequency ones fitted from weakly excited directions did not (DEVLOG entry 11), and the outputs record the two apart.",
+  "The rule of section 4 compares, for each of Theorem 3.7's two frequencies in R1 and R3, Verlet's relative error at section 5's step h0 with the splitting's, measured at the step at which the splitting costs Verlet's wall-clock per unit of evolved time, h0 tau_s/tau_v, with tau each stepper's measured time per step at h0. The registered perturbation is evolved there over T6 and read as in control 6. The rule adopts the splitting only if each of its errors there is at most a quarter of Verlet's, that step stays below pi/w-bar, and the splitting passed controls 3 to 9.",
+  "Control 10 runs in R4, the slot of the timing before the dated note, each measurement in its own process: the time per step alone, and with every diagnostic at every step, and the peak resident memory. Verlet's force at the end of each call is carried into the next, so every timing counts one cubic per step.",
+  "Control 11 runs at ||c||^2 = 1e-6, so the nonlinearity's phase over its duration is about 1e-6 rad: it compares the two discretizations of the field on R4's lowest level, where the frozen record gives the mesh's lift, and reads no slow flow.",
+  "The equivariance maps: the phase e^{i phi}, right translation by a random U and, in R1, R2, R6 and R8, J and a random element a + bJ of Sp(1); in the real slots, charge conjugation. Each acts on position and velocity.",
+  "Control 1's arms (DEVLOG entry 7): the aliased grid is M = 4 max(levels), one point short of exactness for the levels present; the missing conjugation of A is planted in a basis whose intertwiners carry a complex phase per copy, against the instrument's cubic transformed to that basis, since the instrument's intertwiners are real. The FFT path on that phased basis must itself agree to 1e-11. An arm is red when its worst discrepancy over every slot, N and state exceeds 1e-11.",
+  "Control 6 reads distinct frequencies: one trajectory excites one direction of each degenerate eigenspace, so 2 omega, n times, reads once, and a degeneracy the scheme split would read as further values (DEVLOG entry 7).",
+  "A failure of control 4, 7, 8 or 9 by the splitting alone disqualifies the splitting under the rule of section 4, and the controls go on with Verlet. A failure by Verlet, a failure of control 1 or 2, or a run past C-bar stops them."
+ ],
+ "rests_on_new_code": [
+  "controls.py",
+  "fecheck.py",
+  "fftcubic.py",
+  "timearm.py"
+ ]
+}

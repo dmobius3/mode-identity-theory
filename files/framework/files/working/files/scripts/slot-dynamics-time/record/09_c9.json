@@ -1,0 +1,1685 @@
+{
+ "control": 9,
+ "line": "Convergence and energy: halving ratios in [3.5, 4.5] where h w_max <= 0.5 and above the floor; the energy error at O(h^2) with its drift within 1e-2 of its largest oscillation; linear Verlet under C-bar.",
+ "result": {
+  "passed": true,
+  "by_kind": {
+   "verlet": true,
+   "strang": true
+  },
+  "rows": [
+   {
+    "part": "frequency",
+    "slot": "R1",
+    "kind": "verlet",
+    "quantity": "2omega",
+    "errors": [
+     0.0013645462107507722,
+     0.0003401940907741263,
+     8.498895243524984e-05,
+     2.1242580837910197e-05,
+     5.309420443966317e-06
+    ],
+    "floors": [
+     1.371208749966325e-12,
+     1.8227600575342306e-12,
+     7.38242419179984e-13,
+     1.8712692744877247e-12,
+     1.9385950613809913e-12
+    ],
+    "rows": [
+     {
+      "h": 0.09031719639076166,
+      "hw": 1.6,
+      "ratio": 4.011081461308421,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04515859819538083,
+      "hw": 0.8,
+      "ratio": 4.002803670668944,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.022579299097690415,
+      "hw": 0.4,
+      "ratio": 4.000876968940413,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.011289649548845208,
+      "hw": 0.2,
+      "ratio": 4.00092271126324,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R1",
+    "kind": "verlet",
+    "quantity": "radial",
+    "errors": [
+     0.0015937953903773405,
+     0.00039700618586271464,
+     9.916139943288306e-05,
+     2.4784070308968685e-05,
+     6.194965772932136e-06
+    ],
+    "floors": [
+     1.371208749966325e-12,
+     1.8227600575342306e-12,
+     7.38242419179984e-13,
+     1.8712692744877247e-12,
+     1.9385950613809913e-12
+    ],
+    "rows": [
+     {
+      "h": 0.09031719639076166,
+      "hw": 1.6,
+      "ratio": 4.014535408091796,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04515859819538083,
+      "hw": 0.8,
+      "ratio": 4.003636375981427,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.022579299097690415,
+      "hw": 0.4,
+      "ratio": 4.0010134815103084,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.011289649548845208,
+      "hw": 0.2,
+      "ratio": 4.000679134864397,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy drift",
+    "slot": "R1",
+    "kind": "verlet",
+    "energy": [
+     3.186589930474308e-05,
+     1.9765278567026226e-06,
+     1.2329954361215795e-07,
+     7.70260299987058e-09,
+     4.813938877153609e-10
+    ],
+    "floors": [
+     9.502972246036869e-15,
+     1.24440142754601e-14,
+     1.806308124442547e-14,
+     2.8423067941351824e-14,
+     4.4705514645217614e-14
+    ],
+    "drift": [
+     {
+      "h": 0.09031719639076166,
+      "drift": 5.809478801838873e-08,
+      "largest": 3.186589930474308e-05,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.04515859819538083,
+      "drift": 1.084603889373188e-09,
+      "largest": 1.9765278567026226e-06,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.022579299097690415,
+      "drift": 1.1144691111935089e-11,
+      "largest": 1.2329954361215795e-07,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.011289649548845208,
+      "drift": 1.087943519607565e-12,
+      "largest": 7.70260299987058e-09,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.005644824774422604,
+      "drift": 1.0757148459160001e-13,
+      "largest": 4.813938877153609e-10,
+      "read": true,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R1",
+    "kind": "strang",
+    "quantity": "2omega",
+    "errors": [
+     8.519769106385411e-05,
+     2.1255623842142413e-05,
+     5.310251697920876e-06,
+     1.3263985174649662e-06,
+     3.305908597983631e-07
+    ],
+    "floors": [
+     1.983087319711157e-12,
+     1.4787583058289607e-12,
+     3.913870054352681e-13,
+     8.750762198169473e-13,
+     1.4163261172777076e-12
+    ],
+    "rows": [
+     {
+      "h": 0.09031719639076166,
+      "hw": 1.6,
+      "ratio": 4.008242321965498,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04515859819538083,
+      "hw": 0.8,
+      "ratio": 4.002752609723685,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.022579299097690415,
+      "hw": 0.4,
+      "ratio": 4.003511484670469,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.011289649548845208,
+      "hw": 0.2,
+      "ratio": 4.012205655879218,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R1",
+    "kind": "strang",
+    "quantity": "radial",
+    "errors": [
+     0.0002280575691620945,
+     5.6737419576002206e-05,
+     1.41665888561112e-05,
+     3.539892773454666e-06,
+     8.842184532683077e-07
+    ],
+    "floors": [
+     1.983087319711157e-12,
+     1.4787583058289607e-12,
+     3.913870054352681e-13,
+     8.750762198169473e-13,
+     1.4163261172777076e-12
+    ],
+    "rows": [
+     {
+      "h": 0.09031719639076166,
+      "hw": 1.6,
+      "ratio": 4.019526634562603,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04515859819538083,
+      "hw": 0.8,
+      "ratio": 4.005016320603301,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.022579299097690415,
+      "hw": 0.4,
+      "ratio": 4.001982478775957,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.011289649548845208,
+      "hw": 0.2,
+      "ratio": 4.003414269822436,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy drift",
+    "slot": "R1",
+    "kind": "strang",
+    "energy": [
+     1.990898388252542e-06,
+     1.235225627264451e-07,
+     7.706097922740205e-09,
+     4.814547575430577e-10,
+     3.0136130628003845e-11
+    ],
+    "floors": [
+     2.1612341546036386e-14,
+     3.2122452845821206e-14,
+     3.2714571792287954e-14,
+     5.210646728907403e-14,
+     8.496906881797868e-14
+    ],
+    "drift": [
+     {
+      "h": 0.09031719639076166,
+      "drift": 3.065279560573989e-10,
+      "largest": 1.990898388252542e-06,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.04515859819538083,
+      "drift": 1.4216781146547712e-11,
+      "largest": 1.235225627264451e-07,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.022579299097690415,
+      "drift": 1.082133800413017e-12,
+      "largest": 7.706097922740205e-09,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.011289649548845208,
+      "drift": 3.952273618288954e-14,
+      "largest": 4.814547575430577e-10,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.005644824774422604,
+      "drift": 3.7258884124121176e-14,
+      "largest": 3.0136130628003845e-11,
+      "read": true,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R3",
+    "kind": "verlet",
+    "quantity": "2omega",
+    "errors": [
+     0.002913823977858184,
+     0.0007241691655003694,
+     0.0001807767597442241,
+     4.517742625509413e-05,
+     1.1293099961099765e-05
+    ],
+    "floors": [
+     9.357088231787183e-13,
+     2.2968231830170237e-12,
+     5.723637418712681e-13,
+     8.195553521901913e-14,
+     1.1075321023469146e-12
+    ],
+    "rows": [
+     {
+      "h": 0.08780314377753308,
+      "hw": 1.6,
+      "ratio": 4.023678605322637,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04390157188876654,
+      "hw": 0.8,
+      "ratio": 4.00587534882789,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02195078594438327,
+      "hw": 0.4,
+      "ratio": 4.001484252853825,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.010975392972191635,
+      "hw": 0.2,
+      "ratio": 4.000445086886009,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R3",
+    "kind": "verlet",
+    "quantity": "radial",
+    "errors": [
+     0.003103622887885787,
+     0.000770897340801414,
+     0.000192414816794538,
+     4.808436060525518e-05,
+     1.2019839033916532e-05
+    ],
+    "floors": [
+     9.357088231787183e-13,
+     2.2968231830170237e-12,
+     5.723637418712681e-13,
+     8.195553521901913e-14,
+     1.1075321023469146e-12
+    ],
+    "rows": [
+     {
+      "h": 0.08780314377753308,
+      "hw": 1.6,
+      "ratio": 4.02598727952454,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04390157188876654,
+      "hw": 0.8,
+      "ratio": 4.006434398576405,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02195078594438327,
+      "hw": 0.4,
+      "ratio": 4.001609138034557,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.010975392972191635,
+      "hw": 0.2,
+      "ratio": 4.000416350799285,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy drift",
+    "slot": "R3",
+    "kind": "verlet",
+    "energy": [
+     0.00014947321269512975,
+     9.20663410702056e-06,
+     5.733380165549665e-07,
+     3.5801348831552926e-08,
+     2.23709142639044e-09
+    ],
+    "floors": [
+     8.838904474488871e-15,
+     3.4928322005289806e-14,
+     1.4439856977545163e-14,
+     4.896673388205157e-14,
+     3.96361556145215e-14
+    ],
+    "drift": [
+     {
+      "h": 0.08780314377753308,
+      "drift": 2.5756437099767014e-09,
+      "largest": 0.00014947321269512975,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.04390157188876654,
+      "drift": 1.6639707486762006e-09,
+      "largest": 9.20663410702056e-06,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.02195078594438327,
+      "drift": 3.5552378192633895e-10,
+      "largest": 5.733380165549665e-07,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.010975392972191635,
+      "drift": 3.967573194188364e-11,
+      "largest": 3.5801348831552926e-08,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.0054876964860958175,
+      "drift": 1.9243249356400368e-12,
+      "largest": 2.23709142639044e-09,
+      "read": true,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R3",
+    "kind": "strang",
+    "quantity": "2omega",
+    "errors": [
+     3.587541540979918e-05,
+     8.934084662589234e-06,
+     2.231158183689056e-06,
+     5.574353044342691e-07,
+     1.3912827749133308e-07
+    ],
+    "floors": [
+     2.8088954085852733e-13,
+     3.6787266306960846e-13,
+     1.2403730423601822e-13,
+     8.180181709742468e-13,
+     3.4479230392695696e-13
+    ],
+    "rows": [
+     {
+      "h": 0.08780314377753308,
+      "hw": 1.6,
+      "ratio": 4.015566984721403,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04390157188876654,
+      "hw": 0.8,
+      "ratio": 4.00423633245823,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02195078594438327,
+      "hw": 0.4,
+      "ratio": 4.002541937944561,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.010975392972191635,
+      "hw": 0.2,
+      "ratio": 4.006628375521966,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "frequency",
+    "slot": "R3",
+    "kind": "strang",
+    "quantity": "radial",
+    "errors": [
+     0.00010260584285722489,
+     2.5431306989631027e-05,
+     6.3442551377239436e-06,
+     1.585161250553e-06,
+     3.961909540267282e-07
+    ],
+    "floors": [
+     2.8088954085852733e-13,
+     3.6787266306960846e-13,
+     1.2403730423601822e-13,
+     8.180181709742468e-13,
+     3.4479230392695696e-13
+    ],
+    "rows": [
+     {
+      "h": 0.08780314377753308,
+      "hw": 1.6,
+      "ratio": 4.0346271978494785,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.04390157188876654,
+      "hw": 0.8,
+      "ratio": 4.008556786818433,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02195078594438327,
+      "hw": 0.4,
+      "ratio": 4.002277456322304,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.010975392972191635,
+      "hw": 0.2,
+      "ratio": 4.001003138618001,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy drift",
+    "slot": "R3",
+    "kind": "strang",
+    "energy": [
+     1.2237642063642595e-06,
+     7.544313831431284e-08,
+     4.69914291605684e-09,
+     2.935140384709355e-10,
+     1.8383161659585317e-11
+    ],
+    "floors": [
+     8.548717289613707e-15,
+     2.1427304375265524e-14,
+     5.5178084323870286e-14,
+     9.78106484694763e-14,
+     1.3400391907225642e-13
+    ],
+    "drift": [
+     {
+      "h": 0.08780314377753308,
+      "drift": 1.0749729358733948e-09,
+      "largest": 1.2237642063642595e-06,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.04390157188876654,
+      "drift": 8.062544820495826e-11,
+      "largest": 7.544313831431284e-08,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.02195078594438327,
+      "drift": 4.127756369356241e-12,
+      "largest": 4.69914291605684e-09,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.010975392972191635,
+      "drift": 2.873656550533523e-13,
+      "largest": 2.935140384709355e-10,
+      "read": true,
+      "ok": true
+     },
+     {
+      "h": 0.0054876964860958175,
+      "drift": 7.712752910800337e-14,
+      "largest": 1.8383161659585317e-11,
+      "read": true,
+      "ok": true
+     }
+    ],
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R1/12/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.09291621712766308,
+     0.02387432048772327,
+     0.005998429487595818,
+     0.0015039714046100978,
+     0.0003760227407658704
+    ],
+    "floors": [
+     7.949006784916e-16,
+     1.086008990638237e-15,
+     2.4787529387399822e-15,
+     2.993591417840352e-15,
+     2.989538326483067e-15
+    ],
+    "rows": [
+     {
+      "h": 0.06693462405534216,
+      "hw": 1.6,
+      "ratio": 3.891889495889224,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.03346731202767108,
+      "hw": 0.8,
+      "ratio": 3.9800952127707916,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.01673365601383554,
+      "hw": 0.4,
+      "ratio": 3.988393309346797,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.00836682800691777,
+      "hw": 0.2,
+      "ratio": 3.9996820446201196,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R1/12/strang",
+    "kind": "strang",
+    "errors": [
+     0.0006368714895735204,
+     0.0001497817443028154,
+     3.689604432967911e-05,
+     9.190264818404544e-06,
+     2.2954661419257e-06
+    ],
+    "floors": [
+     8.78879333485731e-16,
+     2.2850862670629006e-15,
+     3.339741467245778e-15,
+     3.339741467245778e-15,
+     5.976379467702971e-15
+    ],
+    "rows": [
+     {
+      "h": 0.06693462405534216,
+      "hw": 1.6,
+      "ratio": 4.251996747253459,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.03346731202767108,
+      "hw": 0.8,
+      "ratio": 4.059561045744171,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.01673365601383554,
+      "hw": 0.4,
+      "ratio": 4.014687830952446,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.00836682800691777,
+      "hw": 0.2,
+      "ratio": 4.003659496669681,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R1",
+    "N": 12,
+    "kind": "verlet",
+    "max_norm2": 1.0039931461631837,
+    "cbar": 19.209403036002204,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R1/16/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.056668109448910875,
+     0.013907844371427433,
+     0.0036199686123137985,
+     0.0009060933517277254,
+     0.00022640314000572952
+    ],
+    "floors": [
+     8.994435658938926e-16,
+     1.5304342252901175e-15,
+     1.00652448718112e-15,
+     1.5047116147842221e-15,
+     3.8421453042380846e-15
+    ],
+    "rows": [
+     {
+      "h": 0.047467255732258566,
+      "hw": 1.6,
+      "ratio": 4.074542965503053,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.023733627866129283,
+      "hw": 0.8,
+      "ratio": 3.841979271344529,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.011866813933064642,
+      "hw": 0.4,
+      "ratio": 3.995138696704149,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.005933406966532321,
+      "hw": 0.2,
+      "ratio": 4.0021236088191845,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R1/16/strang",
+    "kind": "strang",
+    "errors": [
+     0.00033800705451984716,
+     8.140838182388322e-05,
+     2.0167211379852663e-05,
+     5.030373351720992e-06,
+     1.2568809367782904e-06
+    ],
+    "floors": [
+     8.350152684134007e-16,
+     3.173058019970923e-15,
+     1.169021375778761e-15,
+     3.507064127336283e-15,
+     1.8370335905094814e-15
+    ],
+    "rows": [
+     {
+      "h": 0.047467255732258566,
+      "hw": 1.6,
+      "ratio": 4.151993283088255,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.023733627866129283,
+      "hw": 0.8,
+      "ratio": 4.036670231225492,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.011866813933064642,
+      "hw": 0.4,
+      "ratio": 4.009088385646973,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.005933406966532321,
+      "hw": 0.2,
+      "ratio": 4.002267203300207,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R1",
+    "N": 16,
+    "kind": "verlet",
+    "max_norm2": 1.001626121660757,
+    "cbar": 20.195046989447302,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R2/12/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.017622617620929273,
+     0.0015410208316954618,
+     0.000325828034640415,
+     8.331631088335342e-05,
+     2.110711205734075e-05
+    ],
+    "floors": [
+     9.869514396210597e-16,
+     9.220532513041372e-16,
+     1.020533306545841e-15,
+     2.1457831676733334e-15,
+     9.0257897524909e-16
+    ],
+    "rows": [
+     {
+      "h": 0.10437687741650985,
+      "hw": 1.6,
+      "ratio": 11.43567773937262,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.052188438708254924,
+      "hw": 0.8,
+      "ratio": 4.729552610155655,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.026094219354127462,
+      "hw": 0.4,
+      "ratio": 3.910735259228999,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.013047109677063731,
+      "hw": 0.2,
+      "ratio": 3.947309828886667,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R2/12/strang",
+    "kind": "strang",
+    "errors": [
+     0.00022180110339332354,
+     4.343076433985078e-05,
+     1.0311918326170671e-05,
+     2.5461419943518195e-06,
+     6.345786332743781e-07
+    ],
+    "floors": [
+     9.022764898540954e-16,
+     1.3534147347811431e-15,
+     1.804552979708191e-15,
+     1.804552979708191e-15,
+     4.8497361329657625e-15
+    ],
+    "rows": [
+     {
+      "h": 0.10437687741650985,
+      "hw": 1.6,
+      "ratio": 5.107004372700055,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.052188438708254924,
+      "hw": 0.8,
+      "ratio": 4.211705617336749,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.026094219354127462,
+      "hw": 0.4,
+      "ratio": 4.05001698610914,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.013047109677063731,
+      "hw": 0.2,
+      "ratio": 4.012334895699085,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R2",
+    "N": 12,
+    "kind": "verlet",
+    "max_norm2": 1.2207207464873833,
+    "cbar": 5.581687655281909,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R2/16/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.056673494142678534,
+     0.016723013103163542,
+     0.004313175507577347,
+     0.0010862150542377215,
+     0.0002720435149962016
+    ],
+    "floors": [
+     6.676895135323239e-16,
+     7.542024682451693e-16,
+     1.325635358144039e-15,
+     1.4643182087344778e-15,
+     3.509235412711734e-15
+    ],
+    "rows": [
+     {
+      "h": 0.06689550613634496,
+      "hw": 1.6,
+      "ratio": 3.3889523253412652,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.03344775306817248,
+      "hw": 0.8,
+      "ratio": 3.877192818559019,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.01672387653408624,
+      "hw": 0.4,
+      "ratio": 3.9708301691732912,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.00836193826704312,
+      "hw": 0.2,
+      "ratio": 3.992798925028181,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R2/16/strang",
+    "kind": "strang",
+    "errors": [
+     0.00041349113194018305,
+     9.13432453615051e-05,
+     2.2253315389791556e-05,
+     5.528276708630687e-06,
+     1.379898589290676e-06
+    ],
+    "floors": [
+     1.1691764358757005e-15,
+     1.753764653813551e-15,
+     1.6076175993290883e-15,
+     4.384411634533877e-15,
+     2.9229410896892514e-15
+    ],
+    "rows": [
+     {
+      "h": 0.06689550613634496,
+      "hw": 1.6,
+      "ratio": 4.526783894131718,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.03344775306817248,
+      "hw": 0.8,
+      "ratio": 4.10470277176801,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.01672387653408624,
+      "hw": 0.4,
+      "ratio": 4.025362072605721,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.00836193826704312,
+      "hw": 0.2,
+      "ratio": 4.006292021410389,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R2",
+    "N": 16,
+    "kind": "verlet",
+    "max_norm2": 1.0626742082791096,
+    "cbar": 8.608058232170384,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R3/12/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.07527069281821182,
+     0.019648154729963747,
+     0.004910373834912465,
+     0.0012301558048379887,
+     0.0003079031639569254
+    ],
+    "floors": [
+     4.890422402363112e-16,
+     1.590033363371089e-15,
+     1.4506912462055389e-15,
+     1.2221753917743737e-15,
+     1.5538084250880536e-15
+    ],
+    "rows": [
+     {
+      "h": 0.057515052866356685,
+      "hw": 1.6,
+      "ratio": 3.8309293596626057,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.028757526433178342,
+      "hw": 0.8,
+      "ratio": 4.001356188049582,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.014378763216589171,
+      "hw": 0.4,
+      "ratio": 3.991668222513619,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.007189381608294586,
+      "hw": 0.2,
+      "ratio": 3.9952684767152418,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R3/12/strang",
+    "kind": "strang",
+    "errors": [
+     0.0004541112139481199,
+     0.00010793867926737284,
+     2.665961922128562e-05,
+     6.644929924820978e-06,
+     1.6599892506591356e-06
+    ],
+    "floors": [
+     4.437847797452745e-16,
+     1.3313543392358236e-15,
+     1.1094619493631862e-15,
+     3.3283858480895587e-15,
+     4.437847797452745e-15
+    ],
+    "rows": [
+     {
+      "h": 0.057515052866356685,
+      "hw": 1.6,
+      "ratio": 4.207122201516379,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.028757526433178342,
+      "hw": 0.8,
+      "ratio": 4.0487704783567295,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.014378763216589171,
+      "hw": 0.4,
+      "ratio": 4.012024133121895,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.007189381608294586,
+      "hw": 0.2,
+      "ratio": 4.0029957556547195,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R3",
+    "N": 12,
+    "kind": "verlet",
+    "max_norm2": 1.0000000000000002,
+    "cbar": 22.440217506968533,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R3/16/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.060688124762393963,
+     0.015299844300753422,
+     0.0035057965653577422,
+     0.0009113768684290294,
+     0.00023089251360180799
+    ],
+    "floors": [
+     3.9643035205593915e-16,
+     5.629787047771071e-16,
+     9.259701055538377e-16,
+     9.22938620528877e-16,
+     2.5821147749041633e-15
+    ],
+    "rows": [
+     {
+      "h": 0.0424465707046195,
+      "hw": 1.6,
+      "ratio": 3.9665844677520967,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02122328535230975,
+      "hw": 0.8,
+      "ratio": 4.364156338088082,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.010611642676154874,
+      "hw": 0.4,
+      "ratio": 3.8467034733949306,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.005305821338077437,
+      "hw": 0.2,
+      "ratio": 3.947191072642439,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R3/16/strang",
+    "kind": "strang",
+    "errors": [
+     0.00027470480425749867,
+     6.58338819984121e-05,
+     1.6291591220692907e-05,
+     4.06262230472358e-06,
+     1.015015719920478e-06
+    ],
+    "floors": [
+     7.375460253235641e-16,
+     2.9501841012942563e-15,
+     1.84386506330891e-15,
+     2.9501841012942563e-15,
+     5.347208683595839e-15
+    ],
+    "rows": [
+     {
+      "h": 0.0424465707046195,
+      "hw": 1.6,
+      "ratio": 4.172696428020521,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02122328535230975,
+      "hw": 0.8,
+      "ratio": 4.040973107328682,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.010611642676154874,
+      "hw": 0.4,
+      "ratio": 4.010117111243838,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.005305821338077437,
+      "hw": 0.2,
+      "ratio": 4.002521561973314,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R3",
+    "N": 16,
+    "kind": "verlet",
+    "max_norm2": 0.9999999999999996,
+    "cbar": 26.97312660253452,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R4/12/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.04405600200014566,
+     0.014687048392695693,
+     0.0038469326744357195,
+     0.0009706281036433273,
+     0.00024318068054685467
+    ],
+    "floors": [
+     2.613209226641764e-16,
+     9.474319055234873e-16,
+     1.9672528567878693e-15,
+     1.150629419750698e-15,
+     2.8724913821247862e-15
+    ],
+    "rows": [
+     {
+      "h": 0.09274985402308188,
+      "hw": 1.6000000000000003,
+      "ratio": 2.99964981541533,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.04637492701154094,
+      "hw": 0.8000000000000002,
+      "ratio": 3.8178594832960098,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02318746350577047,
+      "hw": 0.4000000000000001,
+      "ratio": 3.963343591635109,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.011593731752885235,
+      "hw": 0.20000000000000004,
+      "ratio": 3.991386575038029,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R4/12/strang",
+    "kind": "strang",
+    "errors": [
+     0.0006480813662354917,
+     0.00013779214117673656,
+     3.3400535883621466e-05,
+     8.28801100946325e-06,
+     2.068168751711032e-06
+    ],
+    "floors": [
+     6.890719759612975e-16,
+     8.039173052881805e-16,
+     8.039173052881805e-16,
+     3.100823891825839e-15,
+     2.5265972451914244e-15
+    ],
+    "rows": [
+     {
+      "h": 0.09274985402308188,
+      "hw": 1.6000000000000003,
+      "ratio": 4.703326043857915,
+      "read": false,
+      "in_window": false
+     },
+     {
+      "h": 0.04637492701154094,
+      "hw": 0.8000000000000002,
+      "ratio": 4.125447018480483,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02318746350577047,
+      "hw": 0.4000000000000001,
+      "ratio": 4.029982084421068,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.011593731752885235,
+      "hw": 0.20000000000000004,
+      "ratio": 4.007415256906108,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R4",
+    "N": 12,
+    "kind": "verlet",
+    "max_norm2": 1.2254685551635136,
+    "cbar": 7.1992602866857665,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R4/16/verlet",
+    "kind": "verlet",
+    "errors": [
+     0.06961696252500776,
+     0.018626566853053222,
+     0.004918645635467067,
+     0.0012337446678345504,
+     0.0003101736055136815
+    ],
+    "floors": [
+     3.460776273886858e-16,
+     1.4171619134374054e-15,
+     1.847962360541894e-15,
+     1.2252334040359512e-15,
+     9.17669655556348e-16
+    ],
+    "rows": [
+     {
+      "h": 0.05560783375540144,
+      "hw": 1.6,
+      "ratio": 3.737509068322825,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02780391687770072,
+      "hw": 0.8,
+      "ratio": 3.7869300277991,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.01390195843885036,
+      "hw": 0.4,
+      "ratio": 3.9867614132024563,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.00695097921942518,
+      "hw": 0.2,
+      "ratio": 3.9775939857659193,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "energy order",
+    "key": "R4/16/strang",
+    "kind": "strang",
+    "errors": [
+     0.000313755518911832,
+     7.020081518323854e-05,
+     1.7120371635629194e-05,
+     4.2542717356284524e-06,
+     1.061969574670658e-06
+    ],
+    "floors": [
+     4.586259758200783e-16,
+     6.115013010934377e-16,
+     1.5287532527335942e-15,
+     1.6816285780069537e-15,
+     2.293129879100391e-15
+    ],
+    "rows": [
+     {
+      "h": 0.05560783375540144,
+      "hw": 1.6,
+      "ratio": 4.469399936352102,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.02780391687770072,
+      "hw": 0.8,
+      "ratio": 4.10042589479446,
+      "read": false,
+      "in_window": true
+     },
+     {
+      "h": 0.01390195843885036,
+      "hw": 0.4,
+      "ratio": 4.024277878690823,
+      "read": true,
+      "in_window": true
+     },
+     {
+      "h": 0.00695097921942518,
+      "hw": 0.2,
+      "ratio": 4.006020357925794,
+      "read": true,
+      "in_window": true
+     }
+    ],
+    "status": "ok",
+    "passed": true,
+    "ok": true
+   },
+   {
+    "part": "C-bar",
+    "slot": "R4",
+    "N": 16,
+    "kind": "verlet",
+    "max_norm2": 1.0000000000000002,
+    "cbar": 10.797623639029455,
+    "ok": true
+   }
+  ]
+ },
+ "env": {
+  "python": "3.13.13",
+  "numpy": "2.5.0",
+  "scipy": "1.18.0",
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "blas_threads": 1,
+  "git_head": "d14d06be501830b1a14009707dee9476938d80e8",
+  "uncommitted": "",
+  "new_code": {
+   "controls.py": "86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c",
+   "fecheck.py": "e58766e20874c57255ddb99d030e452a9604bf34685f82c886d1925b7332cf89",
+   "fftcubic.py": "cf31a82c65d8d2730d125d74aa2b3397e36b829ed6ae1553c1266278e3e25b93",
+   "timearm.py": "975ff084e1d12e16d47464251e0bfe840b900756f443c3ee5a24c5d6d2635015"
+  },
+  "pins": {
+   "pin.py": "46cb835561a2dc095cbe02062f5d792db7c57987f41803b0365435f2e21cd305",
+   "INSTRUMENT.sha256": "25efccd885ee55044da382c2c3276ead5f7a6b8168608736c03e4a5df7f912ed",
+   "FE.sha256": "c4640be7623211e5834c50b13e2dc51e7facc99b164e43e1ac2e9b8e7dfaff51"
+  }
+ },
+ "params": {
+  "seed": 20261120,
+  "slots": [
+   "R1",
+   "R2",
+   "R3",
+   "R4"
+  ],
+  "rigid": [
+   "R1",
+   "R3"
+  ],
+  "kinds": [
+   "verlet",
+   "strang"
+  ],
+  "cubic_tol": 1e-11,
+  "ceiling": 1e-10,
+  "charge_tol": 1e-10,
+  "ratio": [
+   3.5,
+   4.5
+  ],
+  "hw_read": 0.5,
+  "drift": 0.01,
+  "quarter": 0.25,
+  "margin": 0.8,
+  "floor": 10.0,
+  "N1": [
+   8,
+   12,
+   16,
+   24,
+   32
+  ],
+  "NA": [
+   12,
+   16
+  ],
+  "NB": 12,
+  "N10": [
+   16,
+   24,
+   32
+  ],
+  "cost_slot": "R4",
+  "states1": 2,
+  "dirs2": 2,
+  "TA": 20.0,
+  "nobsA": 200,
+  "kappa": 1.0,
+  "ladder": 5,
+  "T9": 2000.0,
+  "dtobs9": 0.2,
+  "t5": 50.0,
+  "T6": 100.0,
+  "eps6": 1e-05,
+  "rank6": 1e-08,
+  "time6": 2000,
+  "cost_steps": {
+   "fft": 20,
+   "dense": 3
+  },
+  "fe": {
+   "N": 12,
+   "level": 2,
+   "nq": 3,
+   "amp2": 1e-06,
+   "T": 20.0,
+   "every": 100
+  }
+ },
+ "readings": [
+  "The floors (the dry run): each is the same machinery, seeds, sizes, steps and durations with the cubic switched off, where each stepper's answer is exact in exact arithmetic: the splitting is then the exact linear flow, and Verlet keeps its modified energy and carries its discrete rotations. Control 9's \"above the measured floor\" reads as above ten times it, as control 7 reports against ten times its floor. A ladder with no error above ten floors where h w-bar <= 0.5 passes as at floor; one with such an error and no ratio read fails as unread.",
+  "The splitting's matched rigid wave reads kappa = ||c||^2 where its kick reads the state, after the first half rotation (DEVLOG entry 4); Verlet's kicks read the step's ends.",
+  "Control 3 takes section 5's step at its free-field limit, 1.6/sqrt(N(N+2)), since its cubic is off. It reads each level's angle per step from z_{k+1} + z_{k-1} = 2 cos(theta) z_k, which holds exactly for a stepper whose map on one mode is 2 x 2 of determinant 1, by least squares over the run, from a generic position and momentum.",
+  "Controls 4, 7 and 8 read one set of runs, made at control 4: each multi-level state forward over TA and back, and each transformed state forward.",
+  "Charges are normalized by ||D|| |q(0)| |p(0)|, ||D|| the spectral norm. Each input's charges are checked nonzero at the start, each at least 1e-6 of that normalization.",
+  "Control 5's continuum-started convergence is read by control 9's ratio rule, at control 5. Control 9 then reads control 6's frequencies and the energy, so no quantity is read twice.",
+  "Control 9's h w_max is read with section 5's bound: a ratio e(h)/e(h/2) is read where h w-bar <= 0.5, which implies h w_max <= 0.5.",
+  "Control 9's unperturbed controls are the runs without a perturbation, read in two parts (DEVLOG entry 8). The order of the energy error is read on the multi-level states of controls 4, 7 and 8, under halving over TA: on a rigid wave the error's O(h^2) part is constant along the rotation, by the phase invariance, so the error there comes out O(h^4). Its secular drift is read on control 5's continuum-started rigid waves, at every step of the ladder over T9 = 2000, where the error oscillates at the single radial frequency: observed every 0.2 or so, below the Nyquist period of that oscillation and its harmonic, a pure oscillation at R1's radial frequency moves the two tenths' means apart by at most 0.0047 of its amplitude over T9.",
+  "Control 6 reads Theorem 3.7's frequencies on E0: 2 omega, n times, and (4 omega^2 + 2 kappa)^(1/2), with omega^2 = lambda_0 + kappa and kappa = |psi|^2 = ||phi||^2 in the normalized measure. The perturbation lies in E0, of relative size eps6, with its first-order charge removed, so it leaves the family at fixed charge and moves the frequencies only at second order. The state is demodulated at the scheme's own discrete rotation, and the frequencies are the arguments of the eigenvalues of the least-squares one-step map of the demodulated E0 data at its numerical rank (dynamic mode decomposition). Their moduli are an extraction diagnostic, not a growth or decay rate: the read eigenvalues sat on the unit circle to about 1e-9 in development, the zero-frequency ones fitted from weakly excited directions did not (DEVLOG entry 11), and the outputs record the two apart.",
+  "The rule of section 4 compares, for each of Theorem 3.7's two frequencies in R1 and R3, Verlet's relative error at section 5's step h0 with the splitting's, measured at the step at which the splitting costs Verlet's wall-clock per unit of evolved time, h0 tau_s/tau_v, with tau each stepper's measured time per step at h0. The registered perturbation is evolved there over T6 and read as in control 6. The rule adopts the splitting only if each of its errors there is at most a quarter of Verlet's, that step stays below pi/w-bar, and the splitting passed controls 3 to 9.",
+  "Control 10 runs in R4, the slot of the timing before the dated note, each measurement in its own process: the time per step alone, and with every diagnostic at every step, and the peak resident memory. Verlet's force at the end of each call is carried into the next, so every timing counts one cubic per step.",
+  "Control 11 runs at ||c||^2 = 1e-6, so the nonlinearity's phase over its duration is about 1e-6 rad: it compares the two discretizations of the field on R4's lowest level, where the frozen record gives the mesh's lift, and reads no slow flow.",
+  "The equivariance maps: the phase e^{i phi}, right translation by a random U and, in R1, R2, R6 and R8, J and a random element a + bJ of Sp(1); in the real slots, charge conjugation. Each acts on position and velocity.",
+  "Control 1's arms (DEVLOG entry 7): the aliased grid is M = 4 max(levels), one point short of exactness for the levels present; the missing conjugation of A is planted in a basis whose intertwiners carry a complex phase per copy, against the instrument's cubic transformed to that basis, since the instrument's intertwiners are real. The FFT path on that phased basis must itself agree to 1e-11. An arm is red when its worst discrepancy over every slot, N and state exceeds 1e-11.",
+  "Control 6 reads distinct frequencies: one trajectory excites one direction of each degenerate eigenspace, so 2 omega, n times, reads once, and a degeneracy the scheme split would read as further values (DEVLOG entry 7).",
+  "A failure of control 4, 7, 8 or 9 by the splitting alone disqualifies the splitting under the rule of section 4, and the controls go on with Verlet. A failure by Verlet, a failure of control 1 or 2, or a run past C-bar stops them."
+ ],
+ "rests_on_new_code": [
+  "controls.py",
+  "fecheck.py",
+  "fftcubic.py",
+  "timearm.py"
+ ]
+}
