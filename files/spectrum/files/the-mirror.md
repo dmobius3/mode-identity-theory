@@ -381,14 +381,14 @@ At $`s=0`$ this gives $`\cot^2(\alpha/2)`$ at every class, Atiyah, Patodi and Si
 
 A geometric mechanism lies behind the scalar route. The Ricci curvature of $`S^3`$ is $`\mathrm{Ric}=2/R^2>0`$, and this one positive number does two things:
 
-**Physics (the linearized gap):** Positive Ricci puts a Weitzenböck floor $`\lambda\geq2/R^2>0`$ under every physical coexact gauge fluctuation around the three flat vacua, since $`\Delta=\nabla^*\nabla+\mathrm{Ric}`$ on 1-forms, lifting the linearized spectrum off zero. The exact gap is sharper than the floor: the coexact spectrum read through the McKay structure gives $`4/R^2`$ at the trivial and standard vacua and $`36/R^2`$ at the Galois vacuum, a ninefold enhancement (the [coexact gap](../../framework/files/bedrock/files/coexact-gap.md) paper). The linearized gauge fluctuations are gapped.
+**Physics (the coexact gap):** Positive Ricci puts a Weitzenböck floor $`\lambda\geq2/R^2>0`$ under every physical coexact gauge fluctuation around the three flat vacua, since $`\Delta=\nabla^*\nabla+\mathrm{Ric}`$ on 1-forms, lifting the linearized spectrum off zero. The exact gap is sharper than the floor: the coexact spectrum read through the McKay structure gives $`4/R^2`$ at the trivial and standard vacua and $`36/R^2`$ at the Galois vacuum, a ninefold enhancement (the [coexact gap](../../framework/files/bedrock/files/coexact-gap.md) paper). The linearized gauge fluctuations are gapped.
 
 **Arithmetic (Pochhammer obstruction):** The scalar Laplacian eigenvalues shift from $`(l+1)^2`$ to $`l(l+2)=(l+1)^2-1`$. The "-1" generates the infinite Pochhammer tower that blocks general-<i>s</i> factorization; at $`s=0`$, Dowker and Chang's cancellation $`F(0)=F'(0)=0`$ gives the torsion's closed forms, even though the tower contributes to $`Z_{0,\sigma}'(0)`$ (Lemma 1). The shift belongs to the scalar route: on the same metric, curl and the coexact Laplacian have the unshifted eigenvalues $`\pm(l+1)`$ and $`(l+1)^2`$, the signature operator's C9 eta isolates $`\zeta(s-1)`$ (Theorem 1), and the coexact Laplacian's C9 zeta reads $`\zeta(2s)`$ (after Lemma C).
 
 | Step | Physics | Arithmetic |
 |------|---------|-----------|
 | Positive Ricci | Weitzenböck floor $`\lambda\geq2/R^2`$ | Eigenvalue shift: $`l(l+2)\neq(l+1)^2`$ |
-| Consequence | Gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois | Pochhammer tower at $`s\neq0`$ |
+| Consequence | Coexact gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois | Pochhammer tower at $`s\neq0`$ |
 | Result | Linearized gauge fluctuations are gapped | Torsion selectivity confined to $`s=0`$ |
 
 Formally dropping the $`-1`$ in the scalar spectrum makes its eigenvalues perfect squares, removes the Pochhammer tower, and lets the scalar zeta factor at all $`s`$; the coexact spectrum already has that form. This formal change of the scalar eigenvalues leaves the metric, and so the gauge Weitzenböck floor, unchanged.
@@ -443,10 +443,9 @@ Theorem 1 is a negative result for the RH direction: one construction isolates $
 | $`\varphi^{-4}`$ Galois pair | $`\log\varphi^{-4}=-2\sqrt{5}\cdot L(1,\chi_2)`$, exact to 79 digits | Exact torsion ratio; contributes to mass-shell fine structure through $`T^2`$ |
 | $`h(E_8)=30`$ | Coxeter number; the multiplicities are degree-one quasi-polynomials of period dividing $`2h=60`$ (Proposition 1) | Mass hierarchy exponent ($`\mathrm{dist}/30`$) |
 | Three flat connections | Three isolated vacua, $`H^1=0`$ | MIT reads as three generations; vacuum-to-generation assignment open |
-| Curvature shift $`l(l+2)`$ | Pochhammer obstruction, Lemma 1 | Linearized-gap floor $`2/R^2`$; gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois |
+| Curvature shift $`l(l+2)`$ | Pochhammer obstruction, Lemma 1 | Coexact-gap floor $`2/R^2`$; coexact gap $`4/R^2`$ (McKay), $`36/R^2`$ Galois |
 | 120/60 grid | Dirac numerators mod 120 (§ III.B), torsion characters mod 60 (§ III.A) | Fermionic vs. bosonic phase domain |
-| Eta sign crossover | The sign of $`\eta_D(\sigma,0)`$ turns between McKay distance 3 and 4 (§ III.C) | Eta charge gate: $`\eta > 0 \implies Q \leq 0`$ |
-| Galois-twisted eta | At $`s=0`$, $`\eta_\text{std}-\eta_\text{gal}`$ is $`2/5`$ times an integer (§ III.E) | Vacuum-dependent eta structure; feeds the particle-identity and charge gates |
+| Galois-twisted eta | At $`s=0`$, $`\eta_\text{std}-\eta_\text{gal}`$ is $`2/5`$ times an integer (§ III.E) | Vacuum-dependent eta structure |
 | C8 involves $`\zeta(s-1)`$ | Reads $`\zeta`$ as component, not constraint | Order-3 face stabilizer encoding |
 
 ---
