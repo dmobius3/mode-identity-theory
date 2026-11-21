@@ -34,6 +34,9 @@ The observable domain is not that smooth covering space itself but its quotient 
 **[The Firing Order](#the-firing-order)**
   - The ontological chain
 
+**[Premises](#premises)**
+  - Assumed, adopted, under test
+
 **[One Shape](#one-shape)**
   - Space, Surface, Temporal Edge
   - Why $`S^3/2I`$
@@ -115,6 +118,55 @@ Mode Identity Theory is built upon a specific order of operation. Each step depe
 [↑ Table of Contents](#table-of-contents)
 
 ---
+<a id="premises"></a>
+## 🧱 Premises
+
+*What does the theory take as given?*
+
+The firing order runs on premises of three kinds. What the theory **assumes** is where the construction starts: it is not derived, and it stands or falls with what is built on it. What it **adopts** is a modeling input the postulate does not fix: a choice the construction needs, made where it is used, and open to replacement. What it holds **under test** is a commitment that can still fail against observation, or that waits on a derivation it needs. Each row names the section that states it. Numerical inputs, the unit constants and one measured anchor for each sector, are of another kind and live in [Inputs and Calibration](#inputs-and-calibration). The selection layer is graded where it is made: the readings that assign observables to well positions, grids and exponents, and structural rules such as the mass formula's elevator and entry rule.
+
+**Assumed**
+
+| Premise | Stated in |
+|---|---|
+| The postulate: time is the boundary of a non-orientable surface embedded in a closed three-space, whose simply connected closed cover is $`S^3`$ by the Poincaré theorem | [One Shape](#one-shape) |
+| Anti-periodicity: the band's anti-periodic sector, $`\psi(y + L) = -\psi(y)`$ per lap, whose $`4\pi`$ period the standing wave inherits | [Surface](#surface) |
+| The cosmic wave, $`\Psi = \cos(t/2)`$, fixed by anti-periodicity, its maximum at $`t = 0`$ and its fundamental mode | [One Wave](#one-wave) |
+| Matter is wave, sampled: where the observer samples the standing wave, matter appears | [One Wave](#one-wave) |
+| Einstein's field equations governing local gravitational dynamics, their placement open, and the Standard Model particle content, unchanged | [the opening](#top); [Gravity is what crosses](#gravity-is-what-crosses) |
+
+**Adopted**
+
+| Premise | Stated in |
+|---|---|
+| Minimality selects the surface: the Möbius band, the minimal non-orientable surface with one boundary, so $`S^1 = \partial(\text{Möbius})`$ | [One Shape](#one-shape); [Surface](#surface) |
+| The carrier is unbent: its Möbius character is topological rather than a product of bending, so it cannot lie in $`S^3`$ itself and embeds in $`\mathbb{RP}^3 = S^3/\{\pm I\}`$ | [One Shape](#one-shape) |
+| The carrier's model is the conic band, the leading realization, not shown unique, with its width below a critical value | [One Shape](#one-shape) |
+| The band's edge is held fixed | [One Shape](#one-shape) |
+| The temporal edge is the band's abstract boundary circle; on the conic model its image is a figure-eight | [Temporal Edge](#temporal-edge) |
+| Input-minimization: an external choice the geometry leaves free is dropped, such as the open families' $`n`$ and a bridging realization's defect length | [Surface](#surface); [Why S³/2I](#why-s32i) |
+| The Friedrichs realization at the cone point, in both sectors | [Surface](#surface) |
+| The sampler: the derivative across the carrier, taken at unit radius, one operator independent of spin and statistics | [Surface](#surface) |
+| The sampling grids, 120 and 60R, take their resolutions from the orders of $`2I`$ and of its central-sign quotient $`I`$; grid and group share a count, and the present structure supplies no canonical pointwise map between them | [The Sampling Grids](#the-sampling-grids) |
+| The phase profile's member and normalization: the first positive mode, selected by isotropy and orthogonality, normalized to unit mean in the flat measure $`d\Theta`$, $`C(\Theta) = 2\sin^2(\pi\Theta)`$ | [The Phase Operator](#the-phase-operator) |
+| The readout: the registered quantity is the intensity, read linearly at one weight | [The Phase Operator](#the-phase-operator) |
+| The observer reads the band's first positive mode, which no sampling of the ambient wave has been found to supply; the scaling law's separation rests its weight on it | [One Law](#one-law) |
+| Distances are read through flat effective slices, with $`a_\text{eff} \propto S`$; their projection from the closed static domain is missing | [Redshift and Cooling](#redshift-and-cooling); [Gravity is what crosses](#gravity-is-what-crosses) |
+| Two inputs from general relativity: the de Sitter normalization, the denominator 2 of the vacuum seam's 3/2, and the clock's half power, which enters through the Friedmann relation | [The two seams](#the-two-seams); [The Waltz Clock](#the-waltz-clock) |
+
+**Under test**
+
+| Premise | Stated in |
+|---|---|
+| The space is fixed: $`S^3`$, its radius $`R_\Lambda`$ unchanging, with the cosmological description effective and phase-based and its dynamical completion open | [One Wave](#one-wave) |
+| The vacuum reference $`\Lambda_\text{ref} = 3/R_\Lambda^2`$ is the physical $`\Lambda`$: the default anchor reads $`R_\Lambda`$ from the measured $`\Lambda`$ through that identification, which is open | [Gravity is what crosses](#gravity-is-what-crosses); [Inputs and Calibration](#inputs-and-calibration) |
+| $`2I`$ is the physical symmetry and $`S^3/2I`$ the observable domain, on two grounds, terminality and perfectness; the theorem folding them into one proof is open | [Why S³/2I](#why-s32i) |
+| The observer sits at the self-dual point $`\sqrt{\Omega}`$, an identification whose reason the framework does not derive | [The Hierarchy and the Observer](#the-hierarchy-and-the-observer) |
+| The scaling law, $`A/A_P \approx C(\Theta) \cdot (\sqrt{\Omega})^{-n}`$, for single-position observables in the spectral-boundary class | [One Law](#one-law) |
+
+[↑ Table of Contents](#table-of-contents)
+
+---
 <a id="one-shape"></a>
 ## 🏟️ One Shape
 
@@ -134,7 +186,7 @@ Its model, the conic model of the sections below, is the conic band: the lune of
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/fw-space.png?raw=true" width="71%" alt="Two views of S³, drawn one dimension down as a round sphere. Left, closed: finite and round, of curvature radius R_Λ, with no boundary. Right, simply connected: nested loops on the sphere shrink to a point"></p>
 
-$`S^3`$ is the only simply connected closed 3-manifold (Poincaré). It is diffeomorphic to SU(2) and admits a spin structure, and the framework equips it with the round metric of curvature radius $`R_\Lambda`$. The space has no boundary:
+$`S^3`$ is, up to homeomorphism, the only simply connected closed 3-manifold (the Poincaré conjecture, proved by Perelman). It is diffeomorphic to SU(2) and admits a spin structure, and the framework equips it with the round metric of curvature radius $`R_\Lambda`$. The space has no boundary:
 
 ```math
 \Large {\partial S^3 = \emptyset}
