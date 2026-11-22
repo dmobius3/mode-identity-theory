@@ -13,6 +13,10 @@ On the Poincaré homology sphere $`S^3/2I`$, the quotient of the 3-sphere by the
 
 **Setting.** $`2I\subset\mathrm{SU}(2)`$ is the binary icosahedral group of order 120. It acts on $`S^3=\mathrm{SU}(2)`$ by left multiplication; the quotient $`S^3/2I`$ is the Poincaré homology sphere, with the round metric of radius $`R`$, and right multiplication by $`\mathrm{SU}(2)`$ acts on it by isometries. The irreducible representations of $`2I`$ are R0 (dimension 1), R1 and R2 (2), R3 and R4 (3), R5 and R6 (4), R7 (5) and R8 (6). R0, R3, R4, R5 and R7 factor through the icosahedral group $`A_5`$ (integer spin); R1, R2, R6 and R8 are faithful (half-integer spin). Tensoring with the inclusion representation R1 gives the affine $`E_8`$ McKay graph, and McKay distance means graph distance from R0. The conjugacy classes C1 to C9 are tabulated in § III.D.
 
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-mckay-graph.png?raw=true" width="80%" alt="The McKay graph of 2I, the affine E8 diagram: R0, R1, R3, R6, R7, R8, R5 and R2 in a line at McKay distances 0 to 7, with dimensions 1, 2, 3, 4, 5, 6, 4 and 2, and R4 (dimension 3) joined to R8 at distance 6. Filled nodes are integer spin, open nodes half-integer spin."></p>
+
+**Figure 1.** The McKay graph of $`2I`$, the affine $`E_8`$ diagram. Each node is an irreducible representation, marked with its dimension and set in the column of its McKay distance from R0. Filled nodes are integer spin (they factor through $`A_5`$) and open nodes half-integer spin. Tensoring with R1 moves along the edges. R1 and R2 are the standard and Galois flat SU(2) connections, and Galois conjugation exchanges R1 with R2 and R3 with R4.
+
 **Characters.** $`\chi_{-1}`$ is the nontrivial character mod 4, with $`\beta(s)=L(s,\chi_{-1})`$; $`\chi_3`$ is the nontrivial character mod 3; $`\chi_2`$ is the Legendre character mod 5; $`\chi_{\pm8}(m)=(\pm2/m)`$ and $`\chi_{12}=\chi_{-1}\chi_3`$; $`\chi_0^{(p)}`$ is the principal character mod $`p`$. A character's conductor is the modulus of the primitive character that induces it.
 
 **Definition 1 (Admissible Operators).** The admissible operators on $`S^3/2I`$ are the following natural, self-adjoint elliptic operators on sections of natural bundles:
@@ -60,6 +64,10 @@ for a constant $`c>0`$, an integer $`p`$ and a nonzero Dirichlet polynomial $`a(
 > *Proof: § V, from Lemmas A to D.*
 
 **Note on reading without locating.** The isolation in Theorem 1 is elementary. At C9 the signature trace at the eigenvalue $`m`$ is $`-2m\cos(m\pi/2)`$: zero for odd $`m`$, and alternating in sign over even $`m`$, so the eta is a rescaled alternating zeta series in $`s-1`$. It reads $`\zeta`$ exactly and moves its zeros to $`s=\rho+1`$ without saying where they lie. The Dirac eta at C8 reads $`\zeta(s-1)`$ as well, alongside $`L(s,\chi_3)`$ (§ III.D).
+
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-isolation.png?raw=true" width="80%" alt="Two panels over t from 0 to 40 on the line Re s = 3/2. Top: the size of the C9 signature eta, which touches zero at the ordinates of the first six zeros of zeta, marked by dotted lines. Bottom: the size of the C8 Dirac eta, which stays away from zero at those ordinates; its smallest value is about 0.273, near t = 33.27."></p>
+
+**Figure 2.** Isolation and coincidence on the line $`\mathrm{Re}\,s=3/2`$, where $`\zeta(s-1)`$ has its critical line. Top: the signature eta $`2^{2-s}(1-2^{2-s})\zeta(s-1)`$ of Theorem 1 vanishes at the ordinates of the first six zeros of $`\zeta`$ (dotted lines, filled dots). Bottom: the Dirac eta at C8 carries $`\zeta(s-1)`$ alongside $`L(s,\chi_3)`$ (§ III.D). At $`s=\rho+1`$, for every nontrivial zero $`\rho`$ of $`\zeta`$, it equals $`2^{s-1}(1+2^{-s})L(s,\chi_3)`$, which is nonzero since $`\mathrm{Re}\,s>1`$ (open dots, at the first six). Numerically, its smallest modulus on this segment is about 0.273, near $`t=33.27`$; any zeros it has are coincidences between its two terms.
 
 ---
 
@@ -384,6 +392,8 @@ At $`s=0`$ this gives Atiyah, Patodi and Singer's defect $`\cot^2(\alpha/2)`$ fo
 ## VI. The Mechanism: Curvature Duality
 
 <p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-curvature-duality.png?raw=true" width="80%" alt="A fork from positive Ricci curvature, Ric = (2/R^2) g. Physics branch: the Weitzenbock floor, lambda at least 2/R^2 on coexact gauge fluctuations, so the linearized gauge fluctuations are gapped, 4/R^2 at the trivial and standard vacua and 36/R^2 at the Galois vacuum. Arithmetic branch: the eigenvalue shift from (l+1)^2 to l(l+2) = (l+1)^2 - 1, whose -1 builds the Pochhammer tower at s not 0, locking the torsion selectivity to s = 0"></p>
+
+**Figure 3.** Curvature duality. The one positive number $`2/R^2`$ in $`\mathrm{Ric}=(2/R^2)\,g`$ puts a Weitzenböck floor under the coexact gauge spectrum and shifts the scalar spectrum down by $`1/R^2`$, which builds the Pochhammer tower away from $`s=0`$ (Lemma 1).
 
 *The proof of Theorem 1 is complete at § V. Sections VI to IX give a mechanism behind the scalar route, an interpretation, the scope and a physics application; they do not extend the theorem beyond its class $`\mathcal{L}`$.*
 
