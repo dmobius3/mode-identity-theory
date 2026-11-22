@@ -1,0 +1,6 @@
+replay of entry 4: seed 7300202; T 30.0; h0 alone; numpy 2.5.0
+  R1 kappa 0.5 N 16 h0/1: rank: 2 admitted slow eigenvalues against 4 for the stored groups; 6 s
+  R1 kappa 0.5 N 24 h0/1: rank: 2 admitted slow eigenvalues against 4 for the stored groups; 82 s
+  R1 kappa 2.0 N 16 h0/1: rank: 2 admitted slow eigenvalues against 4 for the stored groups; 10 s
+  R1 kappa 2.0 N 24 h0/1: rank: 2 admitted slow eigenvalues against 4 for the stored groups; 137 s
+  R3 kappa 0.5 N 16 h0/1: errors 1.99e-05, 4.21e-05; floor/b 4.8e-03; Krein [[1, True], [1, True]]; 17 s

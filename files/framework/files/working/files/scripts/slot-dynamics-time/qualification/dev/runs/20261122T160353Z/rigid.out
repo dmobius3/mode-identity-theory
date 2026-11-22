@@ -1,0 +1,38 @@
+dev_rigid: seed 7300202; T 30.0; ladder (1, 2, 4, 8, 16, 32); numpy 2.5.0
+  R1 kappa 0.5 N 16 h0/1: errors 5.10e-05, 9.46e-05; floor/b 2.5e-03; Krein [[1, True], [1, True]]; 7 s
+  R1 kappa 0.5 N 16 h0/2: errors 1.27e-05, 2.36e-05; floor/b 6.2e-04; Krein [[1, True], [1, True]]; 12 s
+  R1 kappa 0.5 N 16 h0/4: errors 3.18e-06, 5.90e-06; floor/b 1.6e-04; Krein [[1, True], [1, True]]; 25 s
+  R1 kappa 0.5 N 16 h0/8: errors 7.95e-07, 1.47e-06; floor/b 3.9e-05; Krein [[1, True], [1, True]]; 51 s
+  R1 kappa 0.5 N 16 h0/16: errors 1.99e-07, 3.69e-07; floor/b 9.7e-06; Krein [[1, True], [1, True]]; 96 s
+  R1 kappa 0.5 N 16 h0/32: errors 4.97e-08, 9.22e-08; floor/b 2.4e-06; Krein [[1, True], [1, True]]; 180 s
+R1 kappa 0.5 N 16: m 28, n 1, residual 3.5e-17, record E0 True, held to C1 None, ratios [4.000169013928505, 4.000180045769294]
+  R1 kappa 0.5 N 24 h0/1: errors 2.01e-05, 3.72e-05; floor/b 4.5e-04; Krein [[1, True], [1, True]]; 82 s
+R1 kappa 0.5 N 24: m 94, n 1, residual 2.5e-16, record E0 True, held to C1 None, ratios None
+  R1 kappa 2.0 N 16 h0/1: errors 2.17e-04, 3.79e-04; floor/b 7.2e-04; Krein [[1, True], [1, True]]; 8 s
+  R1 kappa 2.0 N 16 h0/2: errors 5.41e-05, 9.46e-05; floor/b 1.7e-04; Krein [[1, True], [1, True]]; 16 s
+  R1 kappa 2.0 N 16 h0/4: errors 1.35e-05, 2.36e-05; floor/b 4.3e-05; Krein [[1, True], [1, True]]; 33 s
+  R1 kappa 2.0 N 16 h0/8: errors 3.38e-06, 5.91e-06; floor/b 1.1e-05; Krein [[1, True], [1, True]]; 63 s
+  R1 kappa 2.0 N 16 h0/16: errors 8.44e-07, 1.48e-06; floor/b 2.7e-06; Krein [[1, True], [1, True]]; 131 s
+  R1 kappa 2.0 N 16 h0/32: errors 2.11e-07, 3.69e-07; floor/b 6.7e-07; Krein [[1, True], [1, True]]; 283 s
+R1 kappa 2.0 N 16: m 28, n 1, residual 1.8e-16, record E0 True, held to C1 None, ratios [4.000117356537991, 4.000191299448376]
+  R1 kappa 2.0 N 24 h0/1: errors 7.19e-05, 1.26e-04; floor/b 2.1e-04; Krein [[1, True], [1, True]]; 142 s
+R1 kappa 2.0 N 24: m 94, n 1, residual 7.2e-16, record E0 True, held to C1 None, ratios None
+  R3 kappa 0.5 N 16 h0/1: errors 1.99e-05, 4.21e-05; floor/b 4.8e-03; Krein [[1, True], [1, True]]; 15 s
+  R3 kappa 0.5 N 16 h0/2: errors 5.17e-06, 1.05e-05; floor/b 1.2e-03; Krein [[1, True], [1, True]]; 32 s
+  R3 kappa 0.5 N 16 h0/4: errors 1.31e-06, 2.63e-06; floor/b 3.1e-04; Krein [[1, True], [1, True]]; 63 s
+  R3 kappa 0.5 N 16 h0/8: errors 3.27e-07, 6.58e-07; floor/b 7.7e-05; Krein [[1, True], [1, True]]; 117 s
+  R3 kappa 0.5 N 16 h0/16: errors 8.19e-08, 1.64e-07; floor/b 1.9e-05; Krein [[1, True], [1, True]]; 245 s
+  R3 kappa 0.5 N 16 h0/32: errors 2.05e-08, 4.11e-08; floor/b 4.9e-06; Krein [[1, True], [1, True]]; 313 s
+R3 kappa 0.5 N 16: m 42, n 2, residual 1.8e-17, record E0 True, held to C1 True, ratios [3.995949500497291, 4.00001994286472]
+  R3 kappa 0.5 N 24 h0/1: errors 8.04e-06, 1.71e-05; floor/b 2.5e-04; Krein [[1, True], [1, True]]; 139 s
+R3 kappa 0.5 N 24: m 153, n 2, residual 1.0e-16, record E0 True, held to C1 True, ratios None
+  R3 kappa 2.0 N 16 h0/1: errors 1.38e-04, 2.62e-04; floor/b 3.9e-03; Krein [[1, True], [1, True]]; 13 s
+  R3 kappa 2.0 N 16 h0/2: errors 3.45e-05, 6.53e-05; floor/b 9.6e-04; Krein [[1, True], [1, True]]; 27 s
+  R3 kappa 2.0 N 16 h0/4: errors 8.62e-06, 1.63e-05; floor/b 2.4e-04; Krein [[1, True], [1, True]]; 47 s
+  R3 kappa 2.0 N 16 h0/8: errors 2.16e-06, 4.08e-06; floor/b 6.0e-05; Krein [[1, True], [1, True]]; 102 s
+  R3 kappa 2.0 N 16 h0/16: errors 5.39e-07, 1.02e-06; floor/b 1.5e-05; Krein [[1, True], [1, True]]; 197 s
+  R3 kappa 2.0 N 16 h0/32: errors 1.35e-07, 2.55e-07; floor/b 3.7e-06; Krein [[1, True], [1, True]]; 400 s
+R3 kappa 2.0 N 16: m 42, n 2, residual 6.1e-17, record E0 True, held to C1 True, ratios [4.0002334234279235, 4.000287480665742]
+  R3 kappa 2.0 N 24 h0/1: errors 4.36e-05, 8.19e-05; floor/b 3.0e-04; Krein [[1, True], [1, True]]; 218 s
+R3 kappa 2.0 N 24: m 153, n 2, residual 3.4e-16, record E0 True, held to C1 True, ratios None
+  arms: {'kick': True, 'broken_pair': True, 'flipped_form': True}

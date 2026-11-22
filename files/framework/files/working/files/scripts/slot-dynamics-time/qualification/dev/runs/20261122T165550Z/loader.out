@@ -1,0 +1,7 @@
+PASS  every planned read loads and pairs with the frozen spectrum: 41 points; deviation from leading order up to 41.7 %
+PASS  C2a's recorded deviations reproduced: computed {1.0: [2.76, 2.86, 2.86], 2.0: [5.4, 5.59, 5.59]}, RECORD.md {1: [2.76, 2.86, 2.86], 2: [5.4, 5.59, 5.59]}
+PASS  arm refused: N = 16 for a read at N = 24: by its case, cutoff or amplitude, before any value
+PASS  arm refused: eps = 1 for a read at eps = 2: by its case, cutoff or amplitude, before any value
+PASS  arm refused: another member: by its case, cutoff or amplitude, before any value
+PASS  arm refused: a record that is not the pinned one: by its SHA-256
+6 of 6 checks pass

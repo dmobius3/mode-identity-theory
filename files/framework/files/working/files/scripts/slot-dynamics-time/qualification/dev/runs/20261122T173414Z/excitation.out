@@ -1,0 +1,9 @@
+dev_excitation: seed 7300202; entry 5's points in its order; numpy 2.5.0
+  R1 kappa 0.5 N 16: rebuilt as entry 5 ran it; the read at h0 again, value for value; share 0.869; singular values [[0.4375027396918541], [0.4295621374839424]]; on E0, dimension 8, rank 8
+  R1 kappa 0.5 N 24: rebuilt as entry 5 ran it; share 0.977; singular values [[0.7909383500678598], [0.8909479402804225]]; on E0, dimension 8, rank 8
+  R1 kappa 2.0 N 16: rebuilt as entry 5 ran it; the read at h0 again, value for value; share 1.000; singular values [[1.227438106363924], [0.5181788495369342]]; on E0, dimension 8, rank 8
+  R1 kappa 2.0 N 24: rebuilt as entry 5 ran it; share 1.000; singular values [[0.708370219428357], [1.1667443432093771]]; on E0, dimension 8, rank 8
+  R3 kappa 0.5 N 16: rebuilt as entry 5 ran it; the read at h0 again, value for value; share 0.941, 0.984; singular values [[1.134866589414342, 0.10956009320862908], [0.583811982543991]]; on E0, dimension 12, rank 12
+  R3 kappa 0.5 N 24: rebuilt as entry 5 ran it; share 0.996, 0.932; singular values [[1.1813235290568391, 0.17207020541563314], [0.8266643972957067]]; on E0, dimension 12, rank 12
+  R3 kappa 2.0 N 16: rebuilt as entry 5 ran it; the read at h0 again, value for value; share 0.963, 0.990; singular values [[1.207571242198069, 0.4823035573790285], [0.30978842805848456]]; on E0, dimension 12, rank 12
+  R3 kappa 2.0 N 24: rebuilt as entry 5 ran it; share 0.986, 0.992; singular values [[1.4454108889003363, 0.16990884539746826], [0.5595493472576051]]; on E0, dimension 12, rank 12

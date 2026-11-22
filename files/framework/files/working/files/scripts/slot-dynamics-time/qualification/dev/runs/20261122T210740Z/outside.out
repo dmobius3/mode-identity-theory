@@ -1,0 +1,9 @@
+dev_outside: seed 7300202; entry 5's points in its order; numpy 2.5.0
+  R1 kappa 0.5 N 16: outside part kept 2.7e-16 of its norm; directions bit for bit
+  R1 kappa 0.5 N 24: outside part kept 2.8e-16 of its norm; directions bit for bit
+  R1 kappa 2.0 N 16: outside part kept 5.3e-16 of its norm; directions bit for bit
+  R1 kappa 2.0 N 24: outside part kept 5.7e-16 of its norm; directions bit for bit
+  R3 kappa 0.5 N 16: outside part kept 5.0e-16, 3.5e-16 of its norm; directions bit for bit
+  R3 kappa 0.5 N 24: outside part kept 4.2e-16, 4.2e-16 of its norm; directions bit for bit
+  R3 kappa 2.0 N 16: outside part kept 2.7e-16, 1.8e-16 of its norm; directions bit for bit
+  R3 kappa 2.0 N 24: outside part kept 3.3e-16, 2.4e-16 of its norm; directions bit for bit

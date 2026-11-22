@@ -1,0 +1,31 @@
+seed 7300101; dt 0.09; delta 1e-05; numpy 2.5.0
+PASS  elliptic five, Krein +: recovered: rank 23; worst relative error 2.11e-07 over 5 groups; T 3142
+PASS  elliptic five, Krein +: floor below a tenth of b_g: floor / b_g at most 4.79e-04
+PASS  elliptic five, Krein +: Krein signs: 5 of 5 imaginary groups definite with their sign
+PASS  elliptic five, Krein +: arm, the mode fraction off: the weak directions fail the admission without the fraction
+PASS  elliptic five, Krein +: arm, demodulation at the continuum: worst error / b_g nan
+PASS  elliptic five, Krein +: arm, the broken pair: rank: 11 admitted slow eigenvalues again
+PASS  elliptic five, Krein +: arm, the flipped form: every imaginary group refused by its sign
+PASS  hexagon-like, Krein -, simple and double: recovered: rank 20; worst relative error 1.77e-11 over 2 groups; T 495
+PASS  hexagon-like, Krein -, simple and double: floor below a tenth of b_g: floor / b_g at most 2.72e-09
+PASS  hexagon-like, Krein -, simple and double: Krein signs: 2 of 2 imaginary groups definite with their sign
+PASS  hexagon-like, Krein -, simple and double: arm, the mode fraction off: the weak directions fail the admission without the fraction
+PASS  hexagon-like, Krein -, simple and double: arm, demodulation at the continuum: worst error / b_g 44.5
+PASS  hexagon-like, Krein -, simple and double: arm, the broken pair: rank: 8 admitted slow eigenvalues agains
+PASS  hexagon-like, Krein -, simple and double: arm, the flipped form: every imaginary group refused by its sign
+PASS  hexagon-like, Krein -, simple and double: arm, one direction for a multiple group: the multiplicity is lost and the admission fails
+PASS  C3-like, a real triple: recovered: rank 21; worst relative error 2.43e-09 over 1 groups; T 309
+PASS  C3-like, a real triple: floor below a tenth of b_g: floor / b_g at most 4.81e-07
+PASS  C3-like, a real triple: Krein signs: 0 of 0 imaginary groups definite with their sign
+PASS  C3-like, a real triple: arm, the mode fraction off: the weak directions fail the admission without the fraction
+PASS  C3-like, a real triple: arm, demodulation at the continuum: worst error / b_g 5.0
+PASS  C3-like, a real triple: arm, the broken pair: rank: 8 admitted slow eigenvalues agains
+PASS  C3-like, a real triple: arm, one direction for a multiple group: the multiplicity is lost and the admission fails
+PASS  P5-like, a quartet and two pairs: recovered: rank 21; worst relative error 2.66e-10 over 3 groups; T 6614
+PASS  P5-like, a quartet and two pairs: floor below a tenth of b_g: floor / b_g at most 2.28e-07
+PASS  P5-like, a quartet and two pairs: Krein signs: 2 of 2 imaginary groups definite with their sign
+PASS  P5-like, a quartet and two pairs: arm, the mode fraction off: the weak directions fail the admission without the fraction
+PASS  P5-like, a quartet and two pairs: arm, demodulation at the continuum: worst error / b_g nan
+PASS  P5-like, a quartet and two pairs: arm, the broken pair: rank: 10 admitted slow eigenvalues again
+PASS  P5-like, a quartet and two pairs: arm, the flipped form: every imaginary group refused by its sign
+29 of 29 checks pass
