@@ -383,7 +383,7 @@ At $`s=0`$ this gives Atiyah, Patodi and Singer's defect $`\cot^2(\alpha/2)`$ fo
 
 ## VI. The Mechanism: Curvature Duality
 
-<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-curvature-duality.png?raw=true" width="80%" alt="A fork from positive Ricci curvature, Ric = 2/R^2 > 0. Physics branch: the Weitzenbock floor, lambda at least 2/R^2 on coexact gauge fluctuations, so the linearized gauge fluctuations are gapped, 4/R^2 at the trivial and standard vacua and 36/R^2 at the Galois vacuum. Arithmetic branch: the eigenvalue shift from (l+1)^2 to l(l+2) = (l+1)^2 - 1, whose -1 builds the Pochhammer tower at s not 0, locking the torsion selectivity to s = 0"></p>
+<p align="center"><img src="https://github.com/dmobius3/mode-identity-theory/blob/main/files/assets/mr-curvature-duality.png?raw=true" width="80%" alt="A fork from positive Ricci curvature, Ric = (2/R^2) g. Physics branch: the Weitzenbock floor, lambda at least 2/R^2 on coexact gauge fluctuations, so the linearized gauge fluctuations are gapped, 4/R^2 at the trivial and standard vacua and 36/R^2 at the Galois vacuum. Arithmetic branch: the eigenvalue shift from (l+1)^2 to l(l+2) = (l+1)^2 - 1, whose -1 builds the Pochhammer tower at s not 0, locking the torsion selectivity to s = 0"></p>
 
 *The proof of Theorem 1 is complete at § V. Sections VI to IX give a mechanism behind the scalar route, an interpretation, the scope and a physics application; they do not extend the theorem beyond its class $`\mathcal{L}`$.*
 
