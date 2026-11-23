@@ -131,6 +131,10 @@ The first robust intermediate-redshift measurement of the acceleration scale arr
 
 This sits alongside the companion paper's standing 2.9σ trend-shape tension with the Übler KMOS3D Tully–Fisher data: the intermediate-redshift record is direction confirmed, details contested, clean test pending.
 
+**Since Update 1 (November 2026): a reanalysis and an HI-selected sample**
+
+A reanalysis of MUSE-DARK III's binned measurements ([Alcock 2026, *MNRAS* 551, stag1485](https://doi.org/10.1093/mnras/stag1485)) finds Hubble tracking, $`a_0(z) \propto H(z)`$, consistent with them within 2.1σ and the information-criterion-preferred one-parameter description, its amplitude 17 per cent above the SPARC value and within that value's systematic-dominated uncertainty. It reuses the MUSE data, so it is not an independent test. At low redshift, a purely HI-selected sample of 130 galaxies reaching $`z \approx 0.09`$ ([Vărăşteanu et al. 2026, MIGHTEE-HI / LADUMA; arXiv:2608.03576](https://arxiv.org/abs/2608.03576)), from the group behind Vărăşteanu et al. 2025 above, finds no significant redshift evolution of the RAR acceleration scale in its fiducial fit to that sample alone. Its other fits disagree with each other in sign: combined with SPARC as the $`z \approx 0`$ anchor, a formal 5.0σ preference for a rising scale, and from the baryonic Tully–Fisher zero-point of the sample alone a falling one, at 3.4σ in its fiducial inverse fit and 8.7σ forward. It reads the SPARC-anchored rise, Vărăşteanu et al. 2025's included, as largely driven by the different selection of the SPARC anchor and the HI sample, and the dependence on fit direction as the signature of its HI selection. Over that range the predicted rise of $`a_0`$, $`H(z)/H_0 - 1`$, is about 4.6 per cent at the SN+BAO posterior median $`s_0 = 0.076`$. The sample-alone RAR fit's standard deviation over the range is about three times that, so its null does not reach the prediction, and those other fits lie several standard deviations off it, on either side.
+
 ---
 
 ## III. $`w_\text{eff}(z)`$ Trajectory

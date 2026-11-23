@@ -59,7 +59,7 @@ The Codazzi equation (momentum conservation) is satisfied to leading order in an
 
 The full Gauss equation contains extrinsic curvature terms ($`A_{ij}`$) beyond the vacuum. Excited modes ($`m > 0`$) on the Möbius surface bend the embedding, producing corrections to $`R_{\text{space}}`$ with the correct algebraic form. The scale is wrong by $`\sqrt{\Omega_\Lambda} \approx 10^{61}`$: the surface lives at $`n = 2`$, and extracting an $`n = 0`$ quantity ($`G`$) from $`n = 2`$ data introduces exactly this offset.
 
-The ratio of mode amplitude to energy density ($`f^2/\rho`$) grows with $`R`$, so any $`G`$ extracted from a single surface mode scales with the domain size rather than remaining constant. The scaling law enforces manifold-depth separation: matter enters through $`S^3/2I`$ spectral geometry (the particle spectrum, the mass gap, and the three flat vacua MIT reads as generations), while the Möbius surface determines the vacuum. The binary icosahedral group supplies the representation structure the matter sector reads.
+The ratio of mode amplitude to energy density ($`f^2/\rho`$) grows with $`R`$, so any $`G`$ extracted from a single surface mode scales with the domain size rather than remaining constant. The scaling law enforces manifold-depth separation: matter enters through $`S^3/2I`$ spectral geometry (the particle spectrum, the coexact gap, and the three flat vacua MIT reads as generations), while the Möbius surface determines the vacuum. The binary icosahedral group supplies the representation structure the matter sector reads.
 
 | Coefficient | Source |
 |---|---|
@@ -122,7 +122,7 @@ Two limits ride on that calibration. The absolute scale enters only through $`R`
 
 Gravity is an interface connecting two sectors of differing character: continuous geometry ($`S^3`$) and discrete sampling (the 120-domain). Gravity bridges that difference in kind. Within MIT, a single-type quantization would have to either discretize the smooth substrate or make the mode spectrum continuous, and each move removes a source.
 
-Discretizing $`S^3`$ would remove the structure that sources $`\Lambda_{\text{top}}`$ through the Gauss equation: it is the first positive eigenvalue of a cone-singular constant-curvature surface. Continualizing the 120-domain would dissolve the particle spectrum, the mass gap, and the three vacua, which come from the finite quotient. Once $`2I`$ is selected, its order fixes the 120-domain; it is the largest exceptional discrete subgroup of $`\text{SU}(2) \cong S^3`$, and why the framework requires it is an open selection problem rather than a settled theorem.
+Discretizing $`S^3`$ would remove the structure that sources $`\Lambda_{\text{top}}`$ through the Gauss equation: it is the first positive eigenvalue of a cone-singular constant-curvature surface. Continualizing the 120-domain would dissolve the particle spectrum, the coexact gap, and the three vacua, which come from the finite quotient. Once $`2I`$ is selected, its order fixes the 120-domain; it is the largest exceptional discrete subgroup of $`\text{SU}(2) \cong S^3`$, and why the framework requires it is an open selection problem rather than a settled theorem.
 
 A quantum completion of this construction has to keep both sides, and MIT does not yet supply one that does. The claim is about this construction, not a general no-go: it says what closing this interface requires, not that no quantization can. The 3/2 factor is the cost of that crossing in the vacuum sector specifically: it carries the Möbius surface's curvature into the spatial geometry of $`S^3`$ in the $`\Lambda_{\text{ref}}`$ derivation. It is not a charge on every gravitational observation. Two masses bind through the ordinary stress-energy coupling at $`8\pi G`$, where no 3/2 appears.
 
@@ -163,7 +163,7 @@ The topological postulate $`S^1 = \partial(\text{Möbius}), \quad \text{Möbius}
 | Structure | What it determines | Mechanism |
 |---|---|---|
 | Möbius surface (2D) | Vacuum seed $`\Lambda_{\text{top}}`$, lifted to $`\Lambda_{\text{ref}}`$ | First positive eigenvalue, Gauss lift, de Sitter vacuum normalization |
-| Binary icosahedral group 2I | Representation structure and torsion values, mass gap, three vacua (read as generations) | McKay decomposition, Reidemeister torsion |
+| Binary icosahedral group 2I | Representation structure and torsion values, coexact gap, three vacua (read as generations) | McKay decomposition, Reidemeister torsion |
 | Stabilizer triple (2, 3, 5) | Representation channels and the domain split; the force and gravity correspondences | Face/edge/vertex decompositions and the MIT dictionary |
 | Observer at $`\sqrt{\Omega_\Lambda}`$ | The sampling depth the coupling and hierarchy readings are taken at | Scaling law at Fibonacci wells |
 | $`S^3`$ space | Spatial curvature | Responds to all of the above |

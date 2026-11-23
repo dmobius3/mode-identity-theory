@@ -25,8 +25,10 @@ and certifies:
      Lambda^((15-d)/60), so the electron at d = 4 moves as Lambda^(11/60). Checked
      numerically by perturbing Lambda and refitting the exponent, not asserted;
   4. the anchor-free class: a ratio of two entries at the same rho shares both
-     C_geom and the distance, so it reduces to T^2/T^2 and carries no Lambda. The
-     R1 neutrino ladder is the only such family in the table;
+     C_geom and the distance, so it reduces to T^2/T^2 and carries no Lambda.
+     Every seat's three entries form such a family, the R1 neutrino ladder among
+     them, and across seats the anchor cancels where the distances agree, once,
+     for R4 and R5 at distance 6, whose ratios keep the two C_geom;
   5. the m_e <-> Lambda loop: the forward comparison closes to 2% in mass, which
      inverts through the 11/60 exponent to ~11% in Lambda;
   6. the exact torsion algebra the table rests on (Galois ratios phi^-4 and
@@ -213,26 +215,38 @@ check("the electron (R7, d=4) moves as Lambda^(11/60)",
       abs((15 - DIST["R7"]) / 60 - 11 / 60) < 1e-12)
 
 # ====================================================== 4. anchor-free class
-print("\nCHECK 4  same-rho ratios are Lambda-free; the R1 ladder is the only one")
-r1_base = [mass("R1", s) for s in ("triv", "std", "gal")]
-r1_bump = [mass("R1", s, mu=MU_LAMBDA_GEV * BUMP ** 0.25,
+print("\nCHECK 4  same-rho ratios are Lambda-free in every seat, and so is an R4/R5 ratio")
+def bumped(rho, sigma):
+    """An entry under the 10% Lambda shift of check 3."""
+    return mass(rho, sigma, mu=MU_LAMBDA_GEV * BUMP ** 0.25,
                 sqrt_omega=SQRT_OMEGA_LAMBDA * BUMP ** -0.5)
-           for s in ("triv", "std", "gal")]
-ratios_base = [r1_base[1] / r1_base[0], r1_base[2] / r1_base[0]]
-ratios_bump = [r1_bump[1] / r1_bump[0], r1_bump[2] / r1_bump[0]]
-check("R1 ladder ratios invariant under a 10% Lambda shift",
-      all(abs(a / b - 1) < 1e-12 for a, b in zip(ratios_base, ratios_bump)),
-      f"ratios {ratios_base[0]:.4g}, {ratios_base[1]:.4g}")
-check("those ratios are pure torsion ratios",
-      abs(ratios_base[0] - T2["R1"][1] / T2["R1"][0]) < 1e-12)
+
+
+moved, impure = [], []
+for rho in sorted(DIST):
+    base = [mass(rho, s) for s in ("triv", "std", "gal")]
+    bump = [bumped(rho, s) for s in ("triv", "std", "gal")]
+    rb = [base[1] / base[0], base[2] / base[0]]
+    rp = [bump[1] / bump[0], bump[2] / bump[0]]
+    if not all(abs(a / b - 1) < 1e-12 for a, b in zip(rb, rp)):
+        moved.append(rho)
+    if (abs(rb[0] - T2[rho][1] / T2[rho][0]) > 1e-12
+            or abs(rb[1] - T2[rho][2] / T2[rho][0]) > 1e-12):
+        impure.append(rho)
+r1 = [mass("R1", s) for s in ("triv", "std", "gal")]
+check("same-rho ratios invariant under a 10% Lambda shift, in all eight seats",
+      not moved and len(DIST) == 8, f"moved: {moved}; R1 ladder {r1[1] / r1[0]:.4g}, {r1[2] / r1[0]:.4g}")
+check("those ratios are pure torsion ratios, in all eight seats", not impure, f"impure: {impure}")
+r45_base = mass("R4", "triv") / mass("R5", "triv")
+r45_bump = bumped("R4", "triv") / bumped("R5", "triv")
+check("an R4/R5 ratio, both seats at McKay distance 6, is invariant too",
+      DIST["R4"] == DIST["R5"] and abs(r45_bump / r45_base - 1) < 1e-12, f"ratio {r45_base:.4g}")
 # A cross-rho ratio must NOT be invariant, or check 4 would be vacuous. Its
 # Lambda exponent is (d_a - d_b)/60, so assert that value rather than clearing
 # some arbitrary threshold: the shift is only 0.5% for a 10% bump on this pair,
 # and a threshold loose enough to catch it would not distinguish it from noise.
 cross_base = mass("R7", "triv") / mass("R1", "triv")
-cross_bump = (mass("R7", "triv", mu=MU_LAMBDA_GEV * BUMP ** 0.25,
-                   sqrt_omega=SQRT_OMEGA_LAMBDA * BUMP ** -0.5)
-              / r1_bump[0])
+cross_bump = bumped("R7", "triv") / bumped("R1", "triv")
 cross_exp = math.log(cross_bump / cross_base) / math.log(BUMP)
 cross_pred = (DIST["R1"] - DIST["R7"]) / 60
 check("a cross-rho ratio DOES move, at exactly the predicted exponent",

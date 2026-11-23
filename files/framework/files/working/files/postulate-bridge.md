@@ -97,7 +97,7 @@ The framework's claim is "one shape, two consequences." The shared $`S^3`$ of ra
 
 If the index computation yields a genuine connection, the result relates the gauge eta to the band's topological embedding. If it yields a negative result, that is also a result, but state it route-specifically: the interior term is topological, and any $`2/R^2`$ in it reduces to the curvature-scale coincidence (provably, since the band's eigenvalue equals its curvature by Obata) rather than a spectral link to the surface paper. That route-specific negative is provable; a universal claim that the two spectra are independent is not.
 
-This became the bedrock pillar [Galois pair](../../bedrock/files/galois-pair.md), written to that standard: no physics vocabulary, the mathematics leading, the two pillars cited by content, and the surface eigenvalue kept out of every index ingredient. The route it reports is the negative-and-positive split, not the $`\Lambda \leftrightarrow`$ mass-gap link, which the pillar does not claim.
+This became the bedrock pillar [Galois pair](../../bedrock/files/galois-pair.md), written to that standard: no physics vocabulary, the mathematics leading, the two pillars cited by content, and the surface eigenvalue kept out of every index ingredient. The route it reports is the negative-and-positive split, not the $`\Lambda \leftrightarrow`$ coexact-gap link, which the pillar does not claim.
 
 ---
 

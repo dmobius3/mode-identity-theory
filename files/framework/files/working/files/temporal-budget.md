@@ -179,7 +179,7 @@ At the Pantheon+-only best fit $`s_0 = 0.389`$, the effective reading is 0.371; 
 
 ## V. The $`(1+z)^1`$ Signature
 
-For $`s_0 > 0`$ a negative $`(1+z)^1`$ term appears in $`H^2(z)`$, below $`0.8\%`$ of $`H^2`$ at $`z = 1`$ under the joint SN+BAO bound ($`\sim 3\%`$ at the earlier Pantheon+-only reading); at $`s_0 = 0`$, which the data still allow, it vanishes. The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign and the algebraic tie:
+For $`s_0 > 0`$ a negative $`(1+z)^1`$ term appears in $`H^2(z)`$, below $`0.8\%`$ of $`H^2`$ at $`z = 1`$ under the joint SN+BAO bound ($`\sim 3\%`$ at the earlier Pantheon+-only reading); at $`s_0 = 0`$, which the data still allow, it vanishes. The exponent itself is not unavailable to FLRW: a constant-$`w = -2/3`$ component (an idealized domain-wall network) scales as $`(1+z)^1`$. What is distinctive is the sign:
 
 | Component | Redshift scaling |
 |---|---|
@@ -190,7 +190,7 @@ For $`s_0 > 0`$ a negative $`(1+z)^1`$ term appears in $`H^2(z)`$, below $`0.8\%
 | Phantom ($`w<-1`$) | $`(1+z)^n`$, $`n<0`$ |
 | Domain walls ($`w=-2/3`$) | $`(1+z)^1`$, positive coefficient |
 
-A positive-energy $`w = -2/3`$ fluid would contribute this term with the opposite, positive sign. The Λcos fingerprint is the *negative* coefficient, tied algebraically to the positive $`(1+z)^3`$ deformation by the single parameter $`s_0`$ ($`\beta = -(1-\Omega_\Lambda)s_0^2/(1-s_0^2)`$). That tie, not the bare exponent, is what no independent FLRW component reproduces.
+A positive-energy $`w = -2/3`$ fluid would contribute this term with the opposite, positive sign. The Λcos fingerprint is the *negative* coefficient, tied algebraically to the positive $`(1+z)^3`$ deformation by the single parameter $`s_0`$ ($`-\beta = -(1-\Omega_\Lambda)s_0^2/(1-s_0^2)`$). The tie is structural: at the level of the homogeneous background, with flat closure, a wall model's matter and wall densities reproduce it one to one, so expansion data separate the two only by the sign.
 
 Currently below Pantheon+ detection threshold. Future surveys (Euclid, Roman, LSST) are expected to reach percent-level $`H(z)`$ precision. The sign and approximate magnitude of the term are prediction.
 
@@ -337,7 +337,7 @@ At $`s_0 = 0.19`$: $`\quad H^2/H_0^2 = 0.327(1+z)^3 - 0.012(1+z) + 0.685`$
 | coefficient of $`(1+z)`$ in $`H^2/H_0^2`$ | −0.056 | −0.012 | 0 |
 | fractional contribution at $`z=1`$ | −3.2% | −0.7% | 0 |
 
-No independent FLRW component produces a negative $`(1+z)^1`$ term tied to the $`(1+z)^3`$ deformation by one parameter (§V); a positive-energy $`w = -2/3`$ component gives the exponent with a positive coefficient. At the joint 95% CL, the signature is below current per-bin precision. Detection requires $`\sim 0.5\%`$ per-bin BAO measurements (Euclid DR2 / DESI full-survey) or aggregate multi-bin analysis.
+A positive-energy $`w = -2/3`$ component gives the exponent with a positive coefficient; at the background level the sign is what separates the clock from a wall fluid (§V). At the joint 95% CL, the signature is below current per-bin precision. Detection requires $`\sim 0.5\%`$ per-bin BAO measurements (Euclid DR2 / DESI full-survey) or aggregate multi-bin analysis.
 
 ### C. Growth of structure $`f(z)\sigma_8(z)`$ from RSD
 
