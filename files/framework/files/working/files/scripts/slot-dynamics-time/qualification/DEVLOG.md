@@ -96,3 +96,40 @@ These are readings the terms name as known outcomes.
 ## 9. A correction to entry 8 (2026-11-22T21:09:03Z)
 
 Entry 8 says another machine rebuilds the record, the step and the targets exactly. They are computed from the member and the instrument, not from the directions, so another machine reproduces them to its own round-off, not bit for bit. That is enough to stop `dev/dev_excitation.py`'s check of its rebuild, which compares by equality. No file changed and nothing ran for this entry.
+
+## 10. Runs that entries 1 to 9 do not name, and `readcore.py` between entries 2 and 4 (2026-11-23T16:35:05Z)
+
+The session's record of the commands run lists these besides the runs entries 2 to 9 name. Each ran from the console and kept no file in this folder. None read a member, or a point the terms register.
+- **Before entry 2,** `dev/dev_synthetic.py` once, as entry 2 names it: 29 of 29, as entry 2's run then printed. **Before entry 3,** `dev/dev_loader.py` once, as entry 3 names it: 6 of 6, as entry 3's printed.
+- **Before entry 4,** `dev/dev_rigid.py` three times in its smoke mode, `T` = 10, reading `R3` at `‖φ‖²` = 0.5, `N = 16`, at `h₀` alone, with entry 4's `member.py` and `readcore.py`:
+  - as first written, SHA-256 `1df78e6054860bbaa8aeeb1a8dfd7130811c315074825ffd303052df8a15b7bf`, it stopped on a syntax error before any read;
+  - with the ladder passed as a parameter, SHA-256 `7c62cad6abbe97d81abb553df72d3606c2b790d300495f06ba941672999d8777`, it read both frequencies, with errors of 2.2 × 10⁻⁵ and 4.2 × 10⁻⁵, Krein + and definite, and its comparison with C1's stored record failed, because it compared every group where the store keeps representatives only; the three arms ran, each red;
+  - with that comparison fixed, entry 4's script itself, kept in `dev/entry4_as_run/`, it read the same, held the record to C1's, and ran the arms, each red.
+- **Checking two review packets,** from their unpacked copies: `dev/dev_synthetic.py` and `dev/dev_loader.py` with each; `dev/dev_rigid.py`'s smoke mode once, reading as the third run above; and `dev/dev_entry4_replay.py` and `dev/dev_excitation.py` once. Each run that a logged run names reproduced its logged output.
+
+**`readcore.py` between entries 2 and 4.** Entry 2 names it `67d7b197…` and entry 4 `4c307afc…`. One edit lies between them. `floor` gained a `radius` argument, passed to its refit's admission, so that the rigid reads' widened circle governs their floor as well. Its default is the slow circle, so the synthetic reads are unchanged, and entry 5's synthetic output is entry 2's byte for byte. Taking the argument out of today's file, in its signature and its call to `admit`, gives entry 2's file back, to its SHA-256.
+
+## 11. Control 6 at the development points, with its floor (2026-11-23T17:07:46Z)
+
+`dev/dev_control6.py` `a60cdfa27c3a1873f63a9d7b44842bba68bf58ec6e471331f99574eb55198793`, development seed 7300303, ran on 2026-11-23 into `dev/runs/20261123T163147Z/`, its outputs `control6.out` `94165aa5b2a47e97863b3c8861e73ea3731db49ad8975a0f499bdeb1f3bba476` and `control6.json` `c4d5563fafab2cd5c8ddfc36064addb0a442820ab37f14316212cecfe9e87043`. It reads Theorem 3.7's two frequencies on `E₀` as the prototype's control 6 reads them, through the prototype's `controls.py`, read only, SHA-256 `86e167e4a9a33db6eea834a3eee071f613d2a28109250d77557269f9fb54805c`, with the prototype's registered parameters for control 6. It reads `R1` and `R3` at `‖φ‖²` = 0.5 and 2, `N = 16`, on the ladder `h₀` to `h₀/32`, and computes each read frequency's floor as the terms' step 8 does. Its copy of the read equals `controls.perturbed_run`'s at `h₀`, value for value. It ran because a review of the filed terms asked how control 6's floor enters (R1)'s rule.
+- **Every read admitted both frequencies,** at every step.
+- **The errors fell fourfold per halving,** to between 7.4 × 10⁻⁹ and 2.1 × 10⁻⁷ relative at `h₀/32`. The ratios of successive differences ran from 3.9999 to 4.0043.
+- **The floors stayed level down the ladder,** within a factor of 5.8 at every frequency, where entry 5's fall about fourfold per halving at those steps, from 3.89 to 4.01.
+- **Every ratio is eligible** under each reading of (R1)'s ten floors: the finer read's, the larger of a difference's two reads, and the largest of the three. The least margin is 3.18.
+- **Not run:** `N = 24`, whose ladder would take hours, and the registered point, `‖φ‖² = 1`, which lies between the two read here. The run took about 35 minutes on one core.
+
+## 12. Entry 10's two earlier scripts kept, and a docstring (2026-11-23T17:46:33Z)
+
+Entry 10's first two smoke runs used `dev/dev_rigid.py` as first written and with the ladder passed as a parameter. Both are rebuilt from the session's edit record, as entry 10 hashed them, and are now kept: `dev/entry10_as_run/dev_rigid_first.py` `1df78e6054860bbaa8aeeb1a8dfd7130811c315074825ffd303052df8a15b7bf` and `dev/entry10_as_run/dev_rigid_second.py` `7c62cad6abbe97d81abb553df72d3606c2b790d300495f06ba941672999d8777`. The session's edit for the ladder takes the first to the second, and its edit for the comparison with C1 takes the second to entry 4's file, kept in `dev/entry4_as_run/`. `dev/dev_control6.py` calls its log entry 10 in its docstring; it is entry 11, and the file stays as it ran. Nothing ran for this entry.
+
+## 13. A packet check's runs after entry 10 (2026-11-23T18:08:31Z)
+
+The session's record of the commands run lists one run that entries 1 to 12 do not name. Checking the review packet of 2026-11-23, from its unpacked copy, `dev/dev_synthetic.py` and `dev/dev_loader.py` ran once each at 17:11Z, after entry 10 was written, as entry 10's packet checks did. Both scripts were this folder's, at the SHA-256s entries 2 and 3 name, `bf29b5af…` and `7222d662…`. Their outputs, kept outside this folder, are `dev/dev_synthetic.out` and `dev/dev_loader.out` byte for byte, `2bcc745b…` and `03ddc2fb…`: 29 of 29 and 6 of 6. Neither reads a member or a point the terms register. Every other run in the record is named by an entry: each run with a folder in `dev/runs/` by the entry that gives the folder, and the rest by entries 2, 3 and 10. Nothing ran for this entry.
+
+## 14. Runs from the review packets on other machines, and a count in entry 13 (2026-11-23T18:29:51Z)
+
+The review packets carried this folder, and its development scripts were also run from them on other machines, outside this session. Those runs are logged here as they were reported to this session; their outputs are not in this folder. The packets' scripts were at the SHA-256s their entries name; the wrapper and the copy below were written there. None read a member or a point the terms register, and every read of a rigid family was at entry 5's or entry 11's points, from their seeds.
+- **From the packets of 2026-11-22, before filing:** `dev/dev_synthetic.py` and `dev/dev_loader.py`, four times each; `dev/dev_entry4_replay.py`, once whole and once in part; the first point of entry 7's report, twice; entry 5's eight points from its seed, by another wrapper and without the arms; and entry 5's directions, rebuilt by a copy of `directions()` that kept the outside part's norm, with the four `N = 16` points read again at `h₀`.
+- **From the first packet of 2026-11-23, after filing:** `dev/dev_control6.py` at `R1`, `‖φ‖²` = 0.5, over the whole ladder, and at 2 to `h₀/8`, where it was stopped; and its first read at `R1`, 0.5, once more, against `controls.perturbed_run`.
+
+Entry 13 counts one run where there were two, one per script, from one check. Nothing ran for this entry.

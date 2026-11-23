@@ -1,0 +1,29 @@
+dev_control6: seed 7300303; N 16; ladder h0 to h0/32; T6 100.0; eps6 1e-05; rank6 1e-08; numpy 2.5.0
+  R1 kappa 0.5 h0/1: errors 1.82e-05, 5.11e-05; floors 7.4e-09, 1.8e-09; 10 s
+  R1 kappa 0.5 h0/2: errors 4.55e-06, 1.27e-05; floors 6.8e-09, 1.3e-09; 10 s
+  R1 kappa 0.5 h0/4: errors 1.14e-06, 3.18e-06; floors 6.5e-09, 1.6e-09; 20 s
+  R1 kappa 0.5 h0/8: errors 2.85e-07, 7.96e-07; floors 6.3e-09, 1.9e-09; 41 s
+  R1 kappa 0.5 h0/16: errors 7.19e-08, 1.99e-07; floors 6.1e-09, 2.1e-09; 81 s
+  R1 kappa 0.5 h0/32: errors 1.87e-08, 5.03e-08; floors 6.1e-09, 2.2e-09; 160 s
+R1 kappa 0.5: ratios 4.0043, 3.9999; eligibility, the margin over ten floors: finer 3.24, 26.6; larger 3.24, 26.6; largest 3.18, 26.6
+  R1 kappa 2.0 h0/1: errors 8.65e-05, 2.17e-04; floors 1.3e-08, 2.5e-09; 17 s
+  R1 kappa 2.0 h0/2: errors 2.16e-05, 5.40e-05; floors 1.3e-08, 4.0e-09; 16 s
+  R1 kappa 2.0 h0/4: errors 5.40e-06, 1.35e-05; floors 1.4e-08, 5.7e-09; 33 s
+  R1 kappa 2.0 h0/8: errors 1.35e-06, 3.37e-06; floors 1.4e-08, 6.7e-09; 65 s
+  R1 kappa 2.0 h0/16: errors 3.38e-07, 8.44e-07; floors 1.4e-08, 7.2e-09; 130 s
+  R1 kappa 2.0 h0/32: errors 8.53e-08, 2.11e-07; floors 1.4e-08, 7.5e-09; 260 s
+R1 kappa 2.0: ratios 4.0000, 4.0002; eligibility, the margin over ten floors: finer 7.93, 41.5; larger 7.93, 41.5; largest 7.93, 41.5
+  R3 kappa 0.5 h0/1: errors 7.68e-06, 2.25e-05; floors 1.7e-09, 2.1e-09; 17 s
+  R3 kappa 0.5 h0/2: errors 1.91e-06, 5.58e-06; floors 1.6e-09, 2.0e-09; 16 s
+  R3 kappa 0.5 h0/4: errors 4.78e-07, 1.39e-06; floors 1.5e-09, 1.9e-09; 33 s
+  R3 kappa 0.5 h0/8: errors 1.19e-07, 3.48e-07; floors 1.4e-09, 1.8e-09; 64 s
+  R3 kappa 0.5 h0/16: errors 2.98e-08, 8.70e-08; floors 1.4e-09, 1.8e-09; 128 s
+  R3 kappa 0.5 h0/32: errors 7.39e-09, 2.17e-08; floors 1.4e-09, 1.8e-09; 256 s
+R3 kappa 0.5: ratios 4.0000, 4.0004; eligibility, the margin over ten floors: finer 9.34, 22; larger 9.3, 21.9; largest 9.21, 21.6
+  R3 kappa 2.0 h0/1: errors 5.08e-05, 1.39e-04; floors 3.6e-09, 1.4e-09; 24 s
+  R3 kappa 2.0 h0/2: errors 1.27e-05, 3.46e-05; floors 3.0e-09, 3.0e-10; 23 s
+  R3 kappa 2.0 h0/4: errors 3.17e-06, 8.64e-06; floors 2.9e-09, 1.1e-09; 46 s
+  R3 kappa 2.0 h0/8: errors 7.92e-07, 2.16e-06; floors 2.8e-09, 1.6e-09; 91 s
+  R3 kappa 2.0 h0/16: errors 1.99e-07, 5.40e-07; floors 2.6e-09, 1.7e-09; 183 s
+  R3 kappa 2.0 h0/32: errors 5.01e-08, 1.35e-07; floors 2.5e-09, 1.7e-09; 371 s
+R3 kappa 2.0: ratios 4.0001, 4.0004; eligibility, the margin over ten floors: finer 37.4, 154; larger 36.2, 154; largest 34, 154
